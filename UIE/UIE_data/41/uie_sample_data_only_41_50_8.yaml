@@ -1,0 +1,417 @@
+02_initial_prompt: Create a histogram showing the distribution of the "GluR4_N" protein
+  expression levels from the "Mice Protein Expression" data. Highlight any significant
+  peaks or outliers to help understand the variation across the observed MouseIDs.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a histogram showing the distribution of the "GluR4_N" protein expression
+  levels from the "Mice Protein Expression" data. Highlight any significant peaks
+  or outliers to help understand the variation across the observed MouseIDs.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/41.csv'': {''summary'': {''Column'': [''MouseID'', ''DYRK1A_N'',
+  ''ITSN1_N'', ''BDNF_N'', ''NR1_N'', ''NR2A_N'', ''pAKT_N'', ''pBRAF_N'', ''pCAMKII_N'',
+  ''pCREB_N'', ''pELK_N'', ''pERK_N'', ''pJNK_N'', ''PKCA_N'', ''pMEK_N'', ''pNR1_N'',
+  ''pNR2A_N'', ''pNR2B_N'', ''pPKCAB_N'', ''pRSK_N'', ''AKT_N'', ''BRAF_N'', ''CAMKII_N'',
+  ''CREB_N'', ''ELK_N'', ''ERK_N'', ''GSK3B_N'', ''JNK_N'', ''MEK_N'', ''TRKA_N'',
+  ''RSK_N'', ''APP_N'', ''Bcatenin_N'', ''SOD1_N'', ''MTOR_N'', ''P38_N'', ''pMTOR_N'',
+  ''DSCR1_N'', ''AMPKA_N'', ''NR2B_N'', ''pNUMB_N'', ''RAPTOR_N'', ''TIAM1_N'', ''pP70S6_N'',
+  ''NUMB_N'', ''P70S6_N'', ''pGSK3B_N'', ''pPKCG_N'', ''CDK5_N'', ''S6_N'', ''ADARB1_N'',
+  ''AcetylH3K9_N'', ''RRP1_N'', ''BAX_N'', ''ARC_N'', ''ERBB4_N'', ''nNOS_N'', ''Tau_N'',
+  ''GFAP_N'', ''GluR3_N'', ''GluR4_N'', ''IL1B_N'', ''P3525_N'', ''pCASP9_N'', ''PSD95_N'',
+  ''SNCA_N'', ''Ubiquitin_N'', ''pGSK3B_Tyr216_N'', ''SHH_N'', ''BAD_N'', ''BCL2_N'',
+  ''pS6_N'', ''pCFOS_N'', ''SYP_N'', ''H3AcK18_N'', ''EGR1_N'', ''H3MeK4_N'', ''CaNA_N'',
+  ''Genotype'', ''Treatment'', ''Behavior'', ''class''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+  3, 18, 3, 3, 3, 7, 3, 3, 3, 18, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 213, 285, 0, 75, 0,
+  180, 210, 270, 0, 0, 0, 0, 0], ''Unique Values'': [1080, 1077, 1076, 1077, 1077,
+  1077, 1076, 1075, 1077, 1077, 1077, 1077, 1076, 1077, 1077, 1077, 1077, 1077, 1077,
+  1077, 1077, 1077, 1077, 1073, 1062, 1077, 1077, 1077, 1072, 1075, 1074, 1077, 1062,
+  1077, 1077, 1075, 1077, 1077, 1075, 1077, 1077, 1077, 1075, 1076, 1080, 1080, 1080,
+  1080, 1080, 1080, 1080, 1080, 1080, 1080, 1080, 1079, 1079, 1080, 1079, 1080, 1079,
+  1080, 1080, 1080, 1080, 1079, 1080, 1080, 1080, 866, 795, 1080, 1005, 1079, 900,
+  870, 810, 1080, 2, 2, 2, 8]}, ''sample_data'': {''MouseID'': [''309_1'', ''309_2'',
+  ''309_3''], ''DYRK1A_N'': [0.503643884, 0.51461708, 0.509183088], ''ITSN1_N'': [0.747193224,
+  0.689063548, 0.730246795], ''BDNF_N'': [0.4301753, 0.411770344, 0.418308781], ''NR1_N'':
+  [2.81632854, 2.789514042, 2.687201071], ''NR2A_N'': [5.990151664, 5.685037861, 5.622058542],
+  ''pAKT_N'': [0.218830018, 0.211636155, 0.209010905], ''pBRAF_N'': [0.177565491,
+  0.172817023, 0.175722212], ''pCAMKII_N'': [2.373744337, 2.292149909, 2.283336522],
+  ''pCREB_N'': [0.232223754, 0.226972108, 0.230246795], ''pELK_N'': [1.750935592,
+  1.596376881, 1.561316243], ''pERK_N'': [0.687906244, 0.69500623, 0.677348383], ''pJNK_N'':
+  [0.306381721, 0.299051088, 0.291276067], ''PKCA_N'': [0.402698444, 0.385986773,
+  0.381002487], ''pMEK_N'': [0.296927319, 0.281318892, 0.28171035], ''pNR1_N'': [1.022060272,
+  0.956675932, 1.003634972], ''pNR2A_N'': [0.605672641, 0.587558708, 0.602448823],
+  ''pNR2B_N'': [1.877683671, 1.725773986, 1.731872967], ''pPKCAB_N'': [2.308745322,
+  2.043036519, 2.017983547], ''pRSK_N'': [0.44159937, 0.445221892, 0.467667878], ''AKT_N'':
+  [0.859365767, 0.834659254, 0.814329443], ''BRAF_N'': [0.416289147, 0.400364229,
+  0.399846949], ''CAMKII_N'': [0.369608036, 0.356177514, 0.36808877], ''CREB_N'':
+  [0.178944258, 0.17367967, 0.173904725], ''ELK_N'': [1.866358085, 1.761046679, 1.765544289],
+  ''ERK_N'': [3.685247193, 3.48528707, 3.571455902], ''GSK3B_N'': [1.537226709, 1.509249497,
+  1.501243543], ''JNK_N'': [0.264526295, 0.25572702, 0.259613545], ''MEK_N'': [0.319676975,
+  0.304418672, 0.3117467], ''TRKA_N'': [0.813866457, 0.780504169, 0.785154008], ''RSK_N'':
+  [0.165845972, 0.157193521, 0.160895351], ''APP_N'': [0.453909789, 0.430940286, 0.423187297],
+  ''Bcatenin_N'': [3.037620642, 2.921882488, 2.944136216], ''SOD1_N'': [0.369509553,
+  0.342279306, 0.343696193], ''MTOR_N'': [0.458538507, 0.423559858, 0.425004783],
+  ''P38_N'': [0.335335828, 0.324834659, 0.324851731], ''pMTOR_N'': [0.825192043, 0.761717627,
+  0.757030802], ''DSCR1_N'': [0.576915501, 0.545097287, 0.543619667], ''AMPKA_N'':
+  [0.448099271, 0.420876066, 0.404629807], ''NR2B_N'': [0.58627142, 0.545097287, 0.552994069],
+  ''pNUMB_N'': [0.394721292, 0.368254577, 0.363879855], ''RAPTOR_N'': [0.339570613,
+  0.321959168, 0.3130859], ''TIAM1_N'': [0.482863896, 0.454519314, 0.447197245], ''pP70S6_N'':
+  [0.294169785, 0.276430557, 0.256648173], ''NUMB_N'': [0.182150472, 0.182086309,
+  0.18438769], ''P70S6_N'': [0.84272515, 0.847614612, 0.856165847], ''pGSK3B_N'':
+  [0.192608387, 0.194815275, 0.200737337], ''pPKCG_N'': [1.443090669, 1.439459795,
+  1.52436418], ''CDK5_N'': [0.29469997, 0.294059816, 0.301880744], ''S6_N'': [0.354604528,
+  0.354548277, 0.386086771], ''ADARB1_N'': [1.339069956, 1.306323088, 1.279600342],
+  ''AcetylH3K9_N'': [0.170118794, 0.171427093, 0.185456294], ''RRP1_N'': [0.159102447,
+  0.158128945, 0.148696303], ''BAX_N'': [0.18885166, 0.184570009, 0.190532165], ''ARC_N'':
+  [0.106305209, 0.106592156, 0.108303056], ''ERBB4_N'': [0.144989339, 0.150470868,
+  0.145330199], ''nNOS_N'': [0.176667682, 0.178309014, 0.176212866], ''Tau_N'': [0.125190375,
+  0.13427507, 0.132560376], ''GFAP_N'': [0.115290892, 0.118234503, 0.117760205], ''GluR3_N'':
+  [0.228043456, 0.238073062, 0.244817269], ''GluR4_N'': [0.14275561, 0.142036635,
+  0.142444967], ''IL1B_N'': [0.430957458, 0.457156163, 0.510472323], ''P3525_N'':
+  [0.247537821, 0.257632205, 0.255343022], ''pCASP9_N'': [1.603309981, 1.671737556,
+  1.663549904], ''PSD95_N'': [2.014874607, 2.004605195, 2.016830519], ''SNCA_N'':
+  [0.108234339, 0.109748525, 0.108196196], ''Ubiquitin_N'': [1.044979186, 1.009883059,
+  0.996847617], ''pGSK3B_Tyr216_N'': [0.831556503, 0.849270413, 0.846708698], ''SHH_N'':
+  [0.18885166, 0.200403601, 0.193684548], ''BAD_N'': [0.122652046, 0.11668219, 0.118508228],
+  ''BCL2_N'': [nan, nan, nan], ''pS6_N'': [0.106305209, 0.106592156, 0.108303056],
+  ''pCFOS_N'': [0.108335872, 0.10431543, 0.106219278], ''SYP_N'': [0.427099198, 0.441581289,
+  0.435776875], ''H3AcK18_N'': [0.114783227, 0.111973507, 0.111882881], ''EGR1_N'':
+  [0.131790029, 0.13510297, 0.133361829], ''H3MeK4_N'': [0.128185603, 0.1311187, 0.127431075],
+  ''CaNA_N'': [1.67565235, 1.743609645, 1.926426587], ''Genotype'': [''Control'',
+  ''Control'', ''Control''], ''Treatment'': [''Memantine'', ''Memantine'', ''Memantine''],
+  ''Behavior'': [''C/S'', ''C/S'', ''C/S''], ''class'': [''c-CS-m'', ''c-CS-m'', ''c-CS-m'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["MouseID", "GluR4_N"],
+
+  "Task": "Distribution with variability",
+
+  "Purpose": "Understand the distribution and variation of the GluR4_N protein expression
+  levels, highlighting significant peaks and outliers",
+
+  "Audience": "Researchers and scientists studying mice protein expression"
+
+  }'
+05_audience: Researchers and scientists studying mice protein expression
+05_data_attributes:
+- MouseID
+- GluR4_N
+05_purpose: Understand the distribution and variation of the GluR4_N protein expression
+  levels, highlighting significant peaks and outliers
+05_task: Distribution with variability
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/41.csv'': {''summary'': {''Column'': [''MouseID'', ''DYRK1A_N'',
+  ''ITSN1_N'', ''BDNF_N'', ''NR1_N'', ''NR2A_N'', ''pAKT_N'', ''pBRAF_N'', ''pCAMKII_N'',
+  ''pCREB_N'', ''pELK_N'', ''pERK_N'', ''pJNK_N'', ''PKCA_N'', ''pMEK_N'', ''pNR1_N'',
+  ''pNR2A_N'', ''pNR2B_N'', ''pPKCAB_N'', ''pRSK_N'', ''AKT_N'', ''BRAF_N'', ''CAMKII_N'',
+  ''CREB_N'', ''ELK_N'', ''ERK_N'', ''GSK3B_N'', ''JNK_N'', ''MEK_N'', ''TRKA_N'',
+  ''RSK_N'', ''APP_N'', ''Bcatenin_N'', ''SOD1_N'', ''MTOR_N'', ''P38_N'', ''pMTOR_N'',
+  ''DSCR1_N'', ''AMPKA_N'', ''NR2B_N'', ''pNUMB_N'', ''RAPTOR_N'', ''TIAM1_N'', ''pP70S6_N'',
+  ''NUMB_N'', ''P70S6_N'', ''pGSK3B_N'', ''pPKCG_N'', ''CDK5_N'', ''S6_N'', ''ADARB1_N'',
+  ''AcetylH3K9_N'', ''RRP1_N'', ''BAX_N'', ''ARC_N'', ''ERBB4_N'', ''nNOS_N'', ''Tau_N'',
+  ''GFAP_N'', ''GluR3_N'', ''GluR4_N'', ''IL1B_N'', ''P3525_N'', ''pCASP9_N'', ''PSD95_N'',
+  ''SNCA_N'', ''Ubiquitin_N'', ''pGSK3B_Tyr216_N'', ''SHH_N'', ''BAD_N'', ''BCL2_N'',
+  ''pS6_N'', ''pCFOS_N'', ''SYP_N'', ''H3AcK18_N'', ''EGR1_N'', ''H3MeK4_N'', ''CaNA_N'',
+  ''Genotype'', ''Treatment'', ''Behavior'', ''class''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+  3, 18, 3, 3, 3, 7, 3, 3, 3, 18, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 213, 285, 0, 75, 0,
+  180, 210, 270, 0, 0, 0, 0, 0], ''Unique Values'': [1080, 1077, 1076, 1077, 1077,
+  1077, 1076, 1075, 1077, 1077, 1077, 1077, 1076, 1077, 1077, 1077, 1077, 1077, 1077,
+  1077, 1077, 1077, 1077, 1073, 1062, 1077, 1077, 1077, 1072, 1075, 1074, 1077, 1062,
+  1077, 1077, 1075, 1077, 1077, 1075, 1077, 1077, 1077, 1075, 1076, 1080, 1080, 1080,
+  1080, 1080, 1080, 1080, 1080, 1080, 1080, 1080, 1079, 1079, 1080, 1079, 1080, 1079,
+  1080, 1080, 1080, 1080, 1079, 1080, 1080, 1080, 866, 795, 1080, 1005, 1079, 900,
+  870, 810, 1080, 2, 2, 2, 8]}, ''sample_data'': {''MouseID'': [''309_1'', ''309_2'',
+  ''309_3''], ''DYRK1A_N'': [0.503643884, 0.51461708, 0.509183088], ''ITSN1_N'': [0.747193224,
+  0.689063548, 0.730246795], ''BDNF_N'': [0.4301753, 0.411770344, 0.418308781], ''NR1_N'':
+  [2.81632854, 2.789514042, 2.687201071], ''NR2A_N'': [5.990151664, 5.685037861, 5.622058542],
+  ''pAKT_N'': [0.218830018, 0.211636155, 0.209010905], ''pBRAF_N'': [0.177565491,
+  0.172817023, 0.175722212], ''pCAMKII_N'': [2.373744337, 2.292149909, 2.283336522],
+  ''pCREB_N'': [0.232223754, 0.226972108, 0.230246795], ''pELK_N'': [1.750935592,
+  1.596376881, 1.561316243], ''pERK_N'': [0.687906244, 0.69500623, 0.677348383], ''pJNK_N'':
+  [0.306381721, 0.299051088, 0.291276067], ''PKCA_N'': [0.402698444, 0.385986773,
+  0.381002487], ''pMEK_N'': [0.296927319, 0.281318892, 0.28171035], ''pNR1_N'': [1.022060272,
+  0.956675932, 1.003634972], ''pNR2A_N'': [0.605672641, 0.587558708, 0.602448823],
+  ''pNR2B_N'': [1.877683671, 1.725773986, 1.731872967], ''pPKCAB_N'': [2.308745322,
+  2.043036519, 2.017983547], ''pRSK_N'': [0.44159937, 0.445221892, 0.467667878], ''AKT_N'':
+  [0.859365767, 0.834659254, 0.814329443], ''BRAF_N'': [0.416289147, 0.400364229,
+  0.399846949], ''CAMKII_N'': [0.369608036, 0.356177514, 0.36808877], ''CREB_N'':
+  [0.178944258, 0.17367967, 0.173904725], ''ELK_N'': [1.866358085, 1.761046679, 1.765544289],
+  ''ERK_N'': [3.685247193, 3.48528707, 3.571455902], ''GSK3B_N'': [1.537226709, 1.509249497,
+  1.501243543], ''JNK_N'': [0.264526295, 0.25572702, 0.259613545], ''MEK_N'': [0.319676975,
+  0.304418672, 0.3117467], ''TRKA_N'': [0.813866457, 0.780504169, 0.785154008], ''RSK_N'':
+  [0.165845972, 0.157193521, 0.160895351], ''APP_N'': [0.453909789, 0.430940286, 0.423187297],
+  ''Bcatenin_N'': [3.037620642, 2.921882488, 2.944136216], ''SOD1_N'': [0.369509553,
+  0.342279306, 0.343696193], ''MTOR_N'': [0.458538507, 0.423559858, 0.425004783],
+  ''P38_N'': [0.335335828, 0.324834659, 0.324851731], ''pMTOR_N'': [0.825192043, 0.761717627,
+  0.757030802], ''DSCR1_N'': [0.576915501, 0.545097287, 0.543619667], ''AMPKA_N'':
+  [0.448099271, 0.420876066, 0.404629807], ''NR2B_N'': [0.58627142, 0.545097287, 0.552994069],
+  ''pNUMB_N'': [0.394721292, 0.368254577, 0.363879855], ''RAPTOR_N'': [0.339570613,
+  0.321959168, 0.3130859], ''TIAM1_N'': [0.482863896, 0.454519314, 0.447197245], ''pP70S6_N'':
+  [0.294169785, 0.276430557, 0.256648173], ''NUMB_N'': [0.182150472, 0.182086309,
+  0.18438769], ''P70S6_N'': [0.84272515, 0.847614612, 0.856165847], ''pGSK3B_N'':
+  [0.192608387, 0.194815275, 0.200737337], ''pPKCG_N'': [1.443090669, 1.439459795,
+  1.52436418], ''CDK5_N'': [0.29469997, 0.294059816, 0.301880744], ''S6_N'': [0.354604528,
+  0.354548277, 0.386086771], ''ADARB1_N'': [1.339069956, 1.306323088, 1.279600342],
+  ''AcetylH3K9_N'': [0.170118794, 0.171427093, 0.185456294], ''RRP1_N'': [0.159102447,
+  0.158128945, 0.148696303], ''BAX_N'': [0.18885166, 0.184570009, 0.190532165], ''ARC_N'':
+  [0.106305209, 0.106592156, 0.108303056], ''ERBB4_N'': [0.144989339, 0.150470868,
+  0.145330199], ''nNOS_N'': [0.176667682, 0.178309014, 0.176212866], ''Tau_N'': [0.125190375,
+  0.13427507, 0.132560376], ''GFAP_N'': [0.115290892, 0.118234503, 0.117760205], ''GluR3_N'':
+  [0.228043456, 0.238073062, 0.244817269], ''GluR4_N'': [0.14275561, 0.142036635,
+  0.142444967], ''IL1B_N'': [0.430957458, 0.457156163, 0.510472323], ''P3525_N'':
+  [0.247537821, 0.257632205, 0.255343022], ''pCASP9_N'': [1.603309981, 1.671737556,
+  1.663549904], ''PSD95_N'': [2.014874607, 2.004605195, 2.016830519], ''SNCA_N'':
+  [0.108234339, 0.109748525, 0.108196196], ''Ubiquitin_N'': [1.044979186, 1.009883059,
+  0.996847617], ''pGSK3B_Tyr216_N'': [0.831556503, 0.849270413, 0.846708698], ''SHH_N'':
+  [0.18885166, 0.200403601, 0.193684548], ''BAD_N'': [0.122652046, 0.11668219, 0.118508228],
+  ''BCL2_N'': [nan, nan, nan], ''pS6_N'': [0.106305209, 0.106592156, 0.108303056],
+  ''pCFOS_N'': [0.108335872, 0.10431543, 0.106219278], ''SYP_N'': [0.427099198, 0.441581289,
+  0.435776875], ''H3AcK18_N'': [0.114783227, 0.111973507, 0.111882881], ''EGR1_N'':
+  [0.131790029, 0.13510297, 0.133361829], ''H3MeK4_N'': [0.128185603, 0.1311187, 0.127431075],
+  ''CaNA_N'': [1.67565235, 1.743609645, 1.926426587], ''Genotype'': [''Control'',
+  ''Control'', ''Control''], ''Treatment'': [''Memantine'', ''Memantine'', ''Memantine''],
+  ''Behavior'': [''C/S'', ''C/S'', ''C/S''], ''class'': [''c-CS-m'', ''c-CS-m'', ''c-CS-m'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a histogram showing the distribution of the "GluR4_N" protein expression
+  levels from the "Mice Protein Expression" data. Highlight any significant peaks
+  or outliers to help understand the variation across the observed MouseIDs.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''MouseID'', ''GluR4_N'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers and scientists studying mice protein expression
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution with variability
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand the distribution and variation of the GluR4_N protein expression levels,
+  highlighting significant peaks and outliers
+
+  <end of purpose>'
+07_questions: '1. What title would you like for the histogram?
+
+  2. Do you have a preferred color scheme for the histogram bars?
+
+  3. Would you like to set specific bin widths or the number of bins?
+
+  4. Should the x-axis be labeled as ''GluR4_N Expression Level'' and the y-axis as
+  ''Frequency''?
+
+  5. Would you prefer to include a legend or annotations for significant peaks and
+  outliers?
+
+  6. Do you have any specific requirements for the axis scales (linear, logarithmic,
+  etc.)?
+
+  7. Would you like to display gridlines in the background?
+
+  8. Do you have a specific format for showing data labels or values on the histogram
+  bars?
+
+  9. Are there any particular reference lines or markers (such as mean or median)
+  you want to include in the chart?
+
+  10. Would you like to include a subtitle or any additional information about the
+  dataset in the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a histogram showing the distribution of the \"\
+  GluR4_N\" protein expression levels from the \"Mice Protein Expression\" data. Highlight\
+  \ any significant peaks or outliers to help understand the variation across the\
+  \ observed MouseIDs.\n<end of user request>\n\nImagine the best result that can\
+  \ be achieved based on the given instructions and is the final output you want from\
+  \ the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 25% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nUnderstand the distribution and variation of the GluR4_N protein\
+  \ expression levels, highlighting significant peaks and outliers\n<end of purpose>\n\
+  \n<start service provider message>\n1. What title would you like for the histogram?\n\
+  2. Do you have a preferred color scheme for the histogram bars?\n3. Would you like\
+  \ to set specific bin widths or the number of bins?\n4. Should the x-axis be labeled\
+  \ as 'GluR4_N Expression Level' and the y-axis as 'Frequency'?\n5. Would you prefer\
+  \ to include a legend or annotations for significant peaks and outliers?\n6. Do\
+  \ you have any specific requirements for the axis scales (linear, logarithmic, etc.)?\n\
+  7. Would you like to display gridlines in the background?\n8. Do you have a specific\
+  \ format for showing data labels or values on the histogram bars?\n9. Are there\
+  \ any particular reference lines or markers (such as mean or median) you want to\
+  \ include in the chart?\n10. Would you like to include a subtitle or any additional\
+  \ information about the dataset in the chart?\n<end service provider message>\n\n\
+  Also, remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, please label the x-axis as ''GluR4_N Expression Level'' and the y-axis as
+  ''Frequency''.
+
+  5. Yes, please include annotations for significant peaks and outliers.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. Yes, please include reference lines for the mean and median.
+
+  10. I am not sure.'

@@ -1,0 +1,274 @@
+02_initial_prompt: I'd like a stacked bar chart showing the distribution of different
+  car categories by manufacturer. Please use the 'Category' and 'Manufacturer' columns
+  to create this visualization. Each bar should represent a manufacturer, and the
+  sections of the bar should represent the different categories. The chart should
+  help identify which manufacturers produce the most Jeeps, Hatchbacks, etc. Additionally,
+  use different colors for each category for better distinction. This will help me
+  understand the variety of car categories each manufacturer offers in the dataset.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I''d like a stacked bar chart showing the distribution of different car categories
+  by manufacturer. Please use the ''Category'' and ''Manufacturer'' columns to create
+  this visualization. Each bar should represent a manufacturer, and the sections of
+  the bar should represent the different categories. The chart should help identify
+  which manufacturers produce the most Jeeps, Hatchbacks, etc. Additionally, use different
+  colors for each category for better distinction. This will help me understand the
+  variety of car categories each manufacturer offers in the dataset.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/28.csv'': {''summary'': {''Column'': [''ID'', ''Price'',
+  ''Levy'', ''Manufacturer'', ''Model'', ''Prod. year'', ''Category'', ''Leather interior'',
+  ''Fuel type'', ''Engine volume'', ''Mileage'', ''Cylinders'', ''Gear box type'',
+  ''Drive wheels'', ''Doors'', ''Wheel'', ''Color'', ''Airbags''], ''Data Type'':
+  [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [18924, 2315, 559, 65, 1590, 54, 11, 2, 7, 107, 7687, 13, 4, 3, 3, 2,
+  16, 17]}, ''sample_data'': {''ID'': [45654403, 44731507, 45774419], ''Price'': [13328,
+  16621, 8467], ''Levy'': [''1399'', ''1018'', ''-''], ''Manufacturer'': [''LEXUS'',
+  ''CHEVROLET'', ''HONDA''], ''Model'': [''RX 450'', ''Equinox'', ''FIT''], ''Prod.
+  year'': [2010, 2011, 2006], ''Category'': [''Jeep'', ''Jeep'', ''Hatchback''], ''Leather
+  interior'': [''Yes'', ''No'', ''No''], ''Fuel type'': [''Hybrid'', ''Petrol'', ''Petrol''],
+  ''Engine volume'': [''3.5'', ''3'', ''1.3''], ''Mileage'': [''186005 km'', ''192000
+  km'', ''200000 km''], ''Cylinders'': [6.0, 6.0, 4.0], ''Gear box type'': [''Automatic'',
+  ''Tiptronic'', ''Variator''], ''Drive wheels'': [''4x4'', ''4x4'', ''Front''], ''Doors'':
+  [''04-May'', ''04-May'', ''04-May''], ''Wheel'': [''Left wheel'', ''Left wheel'',
+  ''Right-hand drive''], ''Color'': [''Silver'', ''Black'', ''Black''], ''Airbags'':
+  [12, 8, 2]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n\"Data Attribute\": [\"Category\", \"Manufacturer\"\
+  ], \n\"Task\": \"Distribution By Category\", \n\"Purpose\": \"Understand the variety\
+  \ of car categories each manufacturer offers in the dataset\", \n\"Audience\": \"\
+  Stakeholders interested in the diversity of car production, such as automotive market\
+  \ analysts, company executives, or product managers\"\n}"
+05_audience: Stakeholders interested in the diversity of car production, such as automotive
+  market analysts, company executives, or product managers
+05_data_attributes:
+- Category
+- Manufacturer
+05_purpose: Understand the variety of car categories each manufacturer offers in the
+  dataset
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/28.csv'': {''summary'': {''Column'': [''ID'', ''Price'',
+  ''Levy'', ''Manufacturer'', ''Model'', ''Prod. year'', ''Category'', ''Leather interior'',
+  ''Fuel type'', ''Engine volume'', ''Mileage'', ''Cylinders'', ''Gear box type'',
+  ''Drive wheels'', ''Doors'', ''Wheel'', ''Color'', ''Airbags''], ''Data Type'':
+  [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [18924, 2315, 559, 65, 1590, 54, 11, 2, 7, 107, 7687, 13, 4, 3, 3, 2,
+  16, 17]}, ''sample_data'': {''ID'': [45654403, 44731507, 45774419], ''Price'': [13328,
+  16621, 8467], ''Levy'': [''1399'', ''1018'', ''-''], ''Manufacturer'': [''LEXUS'',
+  ''CHEVROLET'', ''HONDA''], ''Model'': [''RX 450'', ''Equinox'', ''FIT''], ''Prod.
+  year'': [2010, 2011, 2006], ''Category'': [''Jeep'', ''Jeep'', ''Hatchback''], ''Leather
+  interior'': [''Yes'', ''No'', ''No''], ''Fuel type'': [''Hybrid'', ''Petrol'', ''Petrol''],
+  ''Engine volume'': [''3.5'', ''3'', ''1.3''], ''Mileage'': [''186005 km'', ''192000
+  km'', ''200000 km''], ''Cylinders'': [6.0, 6.0, 4.0], ''Gear box type'': [''Automatic'',
+  ''Tiptronic'', ''Variator''], ''Drive wheels'': [''4x4'', ''4x4'', ''Front''], ''Doors'':
+  [''04-May'', ''04-May'', ''04-May''], ''Wheel'': [''Left wheel'', ''Left wheel'',
+  ''Right-hand drive''], ''Color'': [''Silver'', ''Black'', ''Black''], ''Airbags'':
+  [12, 8, 2]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I''d like a stacked bar chart showing the distribution of different car categories
+  by manufacturer. Please use the ''Category'' and ''Manufacturer'' columns to create
+  this visualization. Each bar should represent a manufacturer, and the sections of
+  the bar should represent the different categories. The chart should help identify
+  which manufacturers produce the most Jeeps, Hatchbacks, etc. Additionally, use different
+  colors for each category for better distinction. This will help me understand the
+  variety of car categories each manufacturer offers in the dataset.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Category'', ''Manufacturer'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Stakeholders interested in the diversity of car production, such as automotive market
+  analysts, company executives, or product managers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand the variety of car categories each manufacturer offers in the dataset
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the different car categories?
+
+  2. Would you like to display the values or percentages on the bars?
+
+  3. Should the categories be presented in any specific order (e.g., alphabetical,
+  by frequency)?
+
+  4. Do you prefer a specific orientation for the bar chart (vertical or horizontal)?
+
+  5. Would you like gridlines to be included for easier reading of the chart?
+
+  6. Do you need a legend to identify the different car categories?
+
+  7. Is there a specific font style or size you''d like for the labels and titles?
+
+  8. Would you like any specific titles or labels for the axes and the chart itself?
+
+  9. Do you have a preferred layout for the axis labels (e.g., rotated, horizontal)?
+
+  10. Are there any specific dimensions or aspect ratios you prefer for the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI'd like a stacked bar chart showing the distribution\
+  \ of different car categories by manufacturer. Please use the 'Category' and 'Manufacturer'\
+  \ columns to create this visualization. Each bar should represent a manufacturer,\
+  \ and the sections of the bar should represent the different categories. The chart\
+  \ should help identify which manufacturers produce the most Jeeps, Hatchbacks, etc.\
+  \ Additionally, use different colors for each category for better distinction. This\
+  \ will help me understand the variety of car categories each manufacturer offers\
+  \ in the dataset.\n<end of user request>\n\nImagine the best result that can be\
+  \ achieved based on the given instructions and is the final output you want from\
+  \ the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nUnderstand the variety of car categories each manufacturer\
+  \ offers in the dataset\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have a preferred color scheme for the different car categories?\n2. Would\
+  \ you like to display the values or percentages on the bars?\n3. Should the categories\
+  \ be presented in any specific order (e.g., alphabetical, by frequency)?\n4. Do\
+  \ you prefer a specific orientation for the bar chart (vertical or horizontal)?\n\
+  5. Would you like gridlines to be included for easier reading of the chart?\n6.\
+  \ Do you need a legend to identify the different car categories?\n7. Is there a\
+  \ specific font style or size you'd like for the labels and titles?\n8. Would you\
+  \ like any specific titles or labels for the axes and the chart itself?\n9. Do you\
+  \ have a preferred layout for the axis labels (e.g., rotated, horizontal)?\n10.\
+  \ Are there any specific dimensions or aspect ratios you prefer for the chart?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Display values on the bars.
+
+  3. I do not know.
+
+  4. I prefer a vertical orientation.
+
+  5. Yes, please include gridlines.
+
+  6. Yes, including a legend would be helpful.
+
+  7. I have no specific preference.
+
+  8. No specific titles or labels, just make it clear and understandable.
+
+  9. I am not sure.
+
+  10. I do not have any specific preferences for dimensions or aspect ratios.'

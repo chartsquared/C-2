@@ -1,0 +1,120 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Parallel coordinates
+
+  * Radar chart
+
+  * Dumbbell
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Heatmap
+
+  * Donut chart
+
+  * Treemap
+
+  * Sunburst chart
+
+  * Line chart
+
+  * Area chart
+
+  * Strip plot
+
+  * Histogram
+
+  * Box chart
+
+  * Violin plot'
+- 1189
+- 1112
+- 77
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 954
+- 816
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/79.csv': {'summary': {'Column':\
+  \ ['sl_no', 'gender', 'ssc_p', 'ssc_b', 'hsc_p', 'hsc_b', 'hsc_s', 'degree_p', 'degree_t',\
+  \ 'workex', 'etest_p', 'specialisation', 'mba_p', 'status', 'salary'], 'Data Type':\
+  \ [dtype('int64'), dtype('O'), dtype('float64'), dtype('O'), dtype('float64'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('float64'), dtype('O'),\
+  \ dtype('float64'), dtype('O'), dtype('float64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67], 'Unique Values': [215, 2, 103, 2, 97, 2, 3,\
+  \ 89, 3, 2, 100, 2, 205, 2, 45]}, 'sample_data': {'sl_no': [1, 2, 3], 'gender':\
+  \ ['M', 'M', 'M'], 'ssc_p': [67.0, 79.33, 65.0], 'ssc_b': ['Others', 'Central',\
+  \ 'Central'], 'hsc_p': [91.0, 78.33, 68.0], 'hsc_b': ['Others', 'Others', 'Central'],\
+  \ 'hsc_s': ['Commerce', 'Science', 'Arts'], 'degree_p': [58.0, 77.48, 64.0], 'degree_t':\
+  \ ['Sci&Tech', 'Sci&Tech', 'Comm&Mgmt'], 'workex': ['No', 'Yes', 'No'], 'etest_p':\
+  \ [55.0, 86.5, 75.0], 'specialisation': ['Mkt&HR', 'Mkt&Fin', 'Mkt&Fin'], 'mba_p':\
+  \ [58.8, 66.28, 57.8], 'status': ['Placed', 'Placed', 'Placed'], 'salary': [270000.0,\
+  \ 200000.0, 250000.0]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '2. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nCampus Recruitment\neducation\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nConsider what purpose the data\
+  \ has and the practical purpose of visualization and include it in the instructions.\n\
+  You need to imagine a chart with * Column chart and given annotations that utilizes\
+  \ the data format.\nIf there are multiple given data formats, imagine a chart with\
+  \ * Column chart and given annotations that utilizes all the data formats.\nSince\
+  \ you are an amateur user, your instruction will be partially SUBJECTIVE and NOT\
+  \ DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Column chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Violin plot'
+- '* Strip plot'
+- '* Sunburst chart'
+- '* Heatmap'
+- '* Parallel coordinates'
+- '* Dumbbell'
+- '* Radar chart'
+- '* Box chart'
+- '* Line chart'
+- '* Treemap'
+- '* Histogram'
+- '* Grouped bar/column chart'
+- '* Column chart'
+2. initial_prompt: !!python/tuple
+- Create a column chart visualizing the relationship between educational factors and
+  salary in campus recruitment data. Highlight the average salary for different degree
+  specializations and add text annotations to show average salaries. Include gender
+  and work experience as categories by different colors or patterns within columns.
+  Use highlights to distinguish between different specializations and statuses. The
+  purpose is to analyze how educational background affects placement and salary outcomes.
+  Add annotations to the highest and lowest average salaries for easy comparison,
+  aimed at helping students and educators understand key factors in employability.
+- 987
+- 885
+- 102

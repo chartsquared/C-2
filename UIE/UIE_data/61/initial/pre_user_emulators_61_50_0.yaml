@@ -1,0 +1,86 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Donut chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1263
+- 1228
+- 35
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1076
+- 937
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/61.csv': {'summary': {'Column':\
+  \ ['brand_name', 'model_name', 'discounted_price', 'original_price', 'rating', 'colour',\
+  \ 'rom', 'ratings', 'reviews', 'ram', 'screen_size_cm', 'display_size_inch', 'display_type',\
+  \ 'front_camera', 'rear_camera', 'battery', 'processor'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('float64'), dtype('O'), dtype('int64'),\
+  \ dtype('float64'), dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('O')], 'Missing Values':\
+  \ [0, 0, 0, 0, 80, 0, 0, 71, 71, 94, 0, 0, 0, 243, 0, 125, 94], 'Unique Values':\
+  \ [22, 296, 402, 136, 17, 391, 7, 460, 375, 8, 33, 33, 13, 17, 137, 43, 206]}, 'sample_data':\
+  \ {'brand_name': ['Realme', 'Realme', 'Poco'], 'model_name': ['12 pro 5g', '12 pro+\
+  \ 5g', 'c51'], 'discounted_price': [26999, 33999, 5499], 'original_price': [31999,\
+  \ 37999, 9999], 'rating': [4.5, nan, 4.0], 'colour': ['Submarine Blue', 'Navigator\
+  \ Beige', 'Royal Blue'], 'rom': [256, 256, 64], 'ratings': [186.0, 119.0, 174397.0],\
+  \ 'reviews': ['\\xa0\\xa042', '11', '\\xa0\\xa09736'], 'ram': [8.0, 12.0, 4.0],\
+  \ 'screen_size_cm': [17.02, 17.02, 16.56], 'display_size_inch': [6.7, 6.7, 6.52],\
+  \ 'display_type': [' Full HD+ ', ' Full HD+ ', ' HD+ '], 'front_camera': [16.0,\
+  \ 32.0, 5.0], 'rear_camera': ['50MP + 8MP + 32MP ', '50MP + 8MP + 64MP ', '8MP Dual\
+  \ Rear Camera '], 'battery': ['5000 mAh Battery', '5000 mAh Battery', '5000 mAh\
+  \ Battery'], 'processor': ['Snapdragon 6 Gen 1 ', 'Snapdragon 7s Gen 2 ', 'Helio\
+  \ G36 ']}}}\n<end of data example format>\n\n<start of annotations format>\n['<start\
+  \ of the annotation list>', '1. Text Annotations:', 'Description: Data-driven text\
+  \ annotations display values linked to chart elements, such as data points in a\
+  \ scatterplot. They draw attention to specific elements by highlighting their values.',\
+  \ 'Purpose: When only some elements are annotated, the intent is to focus the viewer\u2019\
+  s attention on those before examining others.', 'Other Uses: Non-data-driven annotations\
+  \ can provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nSmartPhone Dataset\n\
+  computers-and-technology\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nConsider what purpose the data has and the practical purpose of visualization\
+  \ and include it in the instructions.\nYou need to imagine a chart with * Box chart\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Box chart and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 50 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- Create a box chart to compare smartphone prices and ratings. Highlight significant
+  discounts and ratings variances. Annotate outliers and specific brands. Use box
+  colors to differentiate price ranges. Visualize trends in smartphones under "computers-and-technology"
+  category. Ensure chart is easily comprehensible.
+- 1063
+- 1006
+- 57

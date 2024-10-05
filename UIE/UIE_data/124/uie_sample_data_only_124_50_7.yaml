@@ -1,0 +1,262 @@
+02_initial_prompt: Create a Box chart to visualize the distribution of player_height
+  and player_weight from the NBA Players dataset.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a Box chart to visualize the distribution of player_height and player_weight
+  from the NBA Players dataset.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/124.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''player_name'',
+  ''team_abbreviation'', ''age'', ''player_height'', ''player_weight'', ''college'',
+  ''country'', ''draft_year'', ''draft_round'', ''draft_number'', ''gp'', ''pts'',
+  ''reb'', ''ast'', ''net_rating'', ''oreb_pct'', ''dreb_pct'', ''usg_pct'', ''ts_pct'',
+  ''ast_pct'', ''season''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 1854, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [12844, 2551, 36, 27, 30, 157, 356,
+  82, 48, 9, 76, 85, 319, 153, 115, 772, 216, 352, 348, 563, 483, 27]}, ''sample_data'':
+  {''Unnamed: 0'': [0, 1, 2], ''player_name'': [''Randy Livingston'', ''Gaylon Nickerson'',
+  ''George Lynch''], ''team_abbreviation'': [''HOU'', ''WAS'', ''VAN''], ''age'':
+  [22.0, 28.0, 26.0], ''player_height'': [193.04, 190.5, 203.2], ''player_weight'':
+  [94.800728, 86.18248, 103.418976], ''college'': [''Louisiana State'', ''Northwestern
+  Oklahoma'', ''North Carolina''], ''country'': [''USA'', ''USA'', ''USA''], ''draft_year'':
+  [''1996'', ''1994'', ''1993''], ''draft_round'': [''2'', ''2'', ''1''], ''draft_number'':
+  [''42'', ''34'', ''12''], ''gp'': [64, 4, 41], ''pts'': [3.9, 3.8, 8.3], ''reb'':
+  [1.5, 1.3, 6.4], ''ast'': [2.4, 0.3, 1.9], ''net_rating'': [0.3, 8.9, -8.2], ''oreb_pct'':
+  [0.042, 0.03, 0.106], ''dreb_pct'': [0.071, 0.111, 0.185], ''usg_pct'': [0.1689999999999999,
+  0.174, 0.175], ''ts_pct'': [0.487, 0.497, 0.512], ''ast_pct'': [0.248, 0.043, 0.125],
+  ''season'': [''1996-97'', ''1996-97'', ''1996-97'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["player_height", "player_weight"],
+
+  "Task": "Distribution with variability",
+
+  "Purpose": "Visualize the distribution of players'' height and weight",
+
+  "Audience": "Sports analysts, NBA team coaches, and basketball enthusiasts"
+
+  }'
+05_audience: Sports analysts, NBA team coaches, and basketball enthusiasts
+05_data_attributes:
+- player_height
+- player_weight
+05_purpose: Visualize the distribution of players' height and weight
+05_task: Distribution with variability
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/124.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''player_name'',
+  ''team_abbreviation'', ''age'', ''player_height'', ''player_weight'', ''college'',
+  ''country'', ''draft_year'', ''draft_round'', ''draft_number'', ''gp'', ''pts'',
+  ''reb'', ''ast'', ''net_rating'', ''oreb_pct'', ''dreb_pct'', ''usg_pct'', ''ts_pct'',
+  ''ast_pct'', ''season''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 1854, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [12844, 2551, 36, 27, 30, 157, 356,
+  82, 48, 9, 76, 85, 319, 153, 115, 772, 216, 352, 348, 563, 483, 27]}, ''sample_data'':
+  {''Unnamed: 0'': [0, 1, 2], ''player_name'': [''Randy Livingston'', ''Gaylon Nickerson'',
+  ''George Lynch''], ''team_abbreviation'': [''HOU'', ''WAS'', ''VAN''], ''age'':
+  [22.0, 28.0, 26.0], ''player_height'': [193.04, 190.5, 203.2], ''player_weight'':
+  [94.800728, 86.18248, 103.418976], ''college'': [''Louisiana State'', ''Northwestern
+  Oklahoma'', ''North Carolina''], ''country'': [''USA'', ''USA'', ''USA''], ''draft_year'':
+  [''1996'', ''1994'', ''1993''], ''draft_round'': [''2'', ''2'', ''1''], ''draft_number'':
+  [''42'', ''34'', ''12''], ''gp'': [64, 4, 41], ''pts'': [3.9, 3.8, 8.3], ''reb'':
+  [1.5, 1.3, 6.4], ''ast'': [2.4, 0.3, 1.9], ''net_rating'': [0.3, 8.9, -8.2], ''oreb_pct'':
+  [0.042, 0.03, 0.106], ''dreb_pct'': [0.071, 0.111, 0.185], ''usg_pct'': [0.1689999999999999,
+  0.174, 0.175], ''ts_pct'': [0.487, 0.497, 0.512], ''ast_pct'': [0.248, 0.043, 0.125],
+  ''season'': [''1996-97'', ''1996-97'', ''1996-97'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a Box chart to visualize the distribution of player_height and player_weight
+  from the NBA Players dataset.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''player_height'', ''player_weight'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Sports analysts, NBA team coaches, and basketball enthusiasts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution with variability
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visualize the distribution of players'' height and weight
+
+  <end of purpose>'
+07_questions: '1. Do you have any preference for the color scheme of the box chart?
+
+  2. Would you like to include any specific annotations or labels on the chart?
+
+  3. Do you want to display any specific percentiles (e.g., median, quartiles) on
+  the box chart?
+
+  4. Should the chart display outliers or exclude them?
+
+  5. Do you want to include grid lines for better readability?
+
+  6. Would you like to add a title and/or subtitle to the chart? If yes, what should
+  it be?
+
+  7. Is there a preference for the background color of the chart?
+
+  8. Do you need customized axis labels or axis scales?
+
+  9. Should the chart include a legend or any other descriptive labels?
+
+  10. Do you have any preference for the aspect ratio or dimensions of the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a Box chart to visualize the distribution of player_height\
+  \ and player_weight from the NBA Players dataset.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 25% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nVisualize the distribution of players'\
+  \ height and weight\n<end of purpose>\n\n<start service provider message>\n1. Do\
+  \ you have any preference for the color scheme of the box chart?\n2. Would you like\
+  \ to include any specific annotations or labels on the chart?\n3. Do you want to\
+  \ display any specific percentiles (e.g., median, quartiles) on the box chart?\n\
+  4. Should the chart display outliers or exclude them?\n5. Do you want to include\
+  \ grid lines for better readability?\n6. Would you like to add a title and/or subtitle\
+  \ to the chart? If yes, what should it be?\n7. Is there a preference for the background\
+  \ color of the chart?\n8. Do you need customized axis labels or axis scales?\n9.\
+  \ Should the chart include a legend or any other descriptive labels?\n10. Do you\
+  \ have any preference for the aspect ratio or dimensions of the chart?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. I would like to display the median and quartiles.
+
+  4. I prefer the chart to display outliers.
+
+  5. Yes, I''d like to include grid lines for better readability.
+
+  6. I am not sure.
+
+  7. I do not have any specific preference.
+
+  8. I am not sure.
+
+  9. I do not have any specific preference.
+
+  10. I am not sure.'

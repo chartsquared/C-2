@@ -1,0 +1,278 @@
+02_initial_prompt: Create a line chart representing the interaction between tech companies,
+  specifically highlighting Apple, Samsung, Microsoft, Google, Amazon, and Facebook.
+  Include text annotations for notable data points to draw attention to key values,
+  such as peaks or significant changes in trends. Modify the appearance of each company's
+  line to distinguish them visually, using different colors or line styles. Ensure
+  that the annotations are data-driven to focus on critical elements. This will help
+  in understanding the competitive landscape and performance among these tech giants
+  in the field of computers and technology.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the accurate data and user request, your task is to delve into the user request
+  to figure out the (1) data attributes needed for data visualization, (2) select
+  the most suitable task that the user is willing to do from the list of various tasks
+  in data visualization, (3) specifically figure out the purpose of the user''s request
+  in data visualization, and (4) prospective audience of the data visualization.
+
+
+  <start of user request>
+
+  Create a line chart representing the interaction between tech companies, specifically
+  highlighting Apple, Samsung, Microsoft, Google, Amazon, and Facebook. Include text
+  annotations for notable data points to draw attention to key values, such as peaks
+  or significant changes in trends. Modify the appearance of each company''s line
+  to distinguish them visually, using different colors or line styles. Ensure that
+  the annotations are data-driven to focus on critical elements. This will help in
+  understanding the competitive landscape and performance among these tech giants
+  in the field of computers and technology.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/397.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''Apple'',
+  ''Samsung'', ''Microsoft'', ''Google'', ''Amazon'', ''Facebook''], ''Data Type'':
+  [dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [6, 5, 6, 6, 6, 6, 6]}, ''sample_data'': {''Unnamed: 0'': [''Apple'',
+  ''Samsung'', ''Microsoft''], ''Apple'': [0, 2000, 3000], ''Samsung'': [5000, 0,
+  2000], ''Microsoft'': [3000, 4000, 0], ''Google'': [7000, 6000, 8000], ''Amazon'':
+  [4000, 3000, 5000], ''Facebook'': [2000, 1000, 2500]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be possible normally.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Apple", "Samsung", "Microsoft", "Google", "Amazon", "Facebook"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Understand the competitive landscape and performance among tech giants
+  in the field of computers and technology",
+
+  "Audience": "Industry analysts, investors, stakeholders, and business strategists"
+
+  }'
+05_audience: Industry analysts, investors, stakeholders, and business strategists
+05_data_attributes:
+- Apple
+- Samsung
+- Microsoft
+- Google
+- Amazon
+- Facebook
+05_purpose: Understand the competitive landscape and performance among tech giants
+  in the field of computers and technology
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/397.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''Apple'',
+  ''Samsung'', ''Microsoft'', ''Google'', ''Amazon'', ''Facebook''], ''Data Type'':
+  [dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [6, 5, 6, 6, 6, 6, 6]}, ''sample_data'': {''Unnamed: 0'': [''Apple'',
+  ''Samsung'', ''Microsoft''], ''Apple'': [0, 2000, 3000], ''Samsung'': [5000, 0,
+  2000], ''Microsoft'': [3000, 4000, 0], ''Google'': [7000, 6000, 8000], ''Amazon'':
+  [4000, 3000, 5000], ''Facebook'': [2000, 1000, 2500]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a line chart representing the interaction between tech companies, specifically
+  highlighting Apple, Samsung, Microsoft, Google, Amazon, and Facebook. Include text
+  annotations for notable data points to draw attention to key values, such as peaks
+  or significant changes in trends. Modify the appearance of each company''s line
+  to distinguish them visually, using different colors or line styles. Ensure that
+  the annotations are data-driven to focus on critical elements. This will help in
+  understanding the competitive landscape and performance among these tech giants
+  in the field of computers and technology.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Apple'', ''Samsung'', ''Microsoft'', ''Google'', ''Amazon'', ''Facebook'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Industry analysts, investors, stakeholders, and business strategists
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand the competitive landscape and performance among tech giants in the field
+  of computers and technology
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the different companies''
+  lines?
+
+  2. Are there any specific line styles (e.g., dashed, dotted) you would like to use
+  for certain companies?
+
+  3. Do you want the X-axis and Y-axis titles and labels to follow any specific format
+  or naming convention?
+
+  4. Should we include gridlines in the background of the chart? If so, do you have
+  any preferences for their appearance?
+
+  5. Are there any specific time intervals or data points you would like to be highlighted
+  more prominently?
+
+  6. What level of prominence do you want for the text annotations (e.g., font size,
+  boldness)?
+
+  7. Should we include a legend, and if so, do you have any preferences for its position
+  on the chart?
+
+  8. Do you have a preferred style for the data markers at each data point (e.g.,
+  circles, squares)?
+
+  9. Would you like any specific metadata or additional information included in tooltips
+  for the data points?
+
+  10. Are there any particular visual effects or design elements you would like to
+  incorporate to make the chart visually appealing?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a line chart representing the interaction between\
+  \ tech companies, specifically highlighting Apple, Samsung, Microsoft, Google, Amazon,\
+  \ and Facebook. Include text annotations for notable data points to draw attention\
+  \ to key values, such as peaks or significant changes in trends. Modify the appearance\
+  \ of each company's line to distinguish them visually, using different colors or\
+  \ line styles. Ensure that the annotations are data-driven to focus on critical\
+  \ elements. This will help in understanding the competitive landscape and performance\
+  \ among these tech giants in the field of computers and technology.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nUnderstand the competitive\
+  \ landscape and performance among tech giants in the field of computers and technology\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have a preferred\
+  \ color scheme for the different companies' lines?\n2. Are there any specific line\
+  \ styles (e.g., dashed, dotted) you would like to use for certain companies?\n3.\
+  \ Do you want the X-axis and Y-axis titles and labels to follow any specific format\
+  \ or naming convention?\n4. Should we include gridlines in the background of the\
+  \ chart? If so, do you have any preferences for their appearance?\n5. Are there\
+  \ any specific time intervals or data points you would like to be highlighted more\
+  \ prominently?\n6. What level of prominence do you want for the text annotations\
+  \ (e.g., font size, boldness)?\n7. Should we include a legend, and if so, do you\
+  \ have any preferences for its position on the chart?\n8. Do you have a preferred\
+  \ style for the data markers at each data point (e.g., circles, squares)?\n9. Would\
+  \ you like any specific metadata or additional information included in tooltips\
+  \ for the data points?\n10. Are there any particular visual effects or design elements\
+  \ you would like to incorporate to make the chart visually appealing?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, include gridlines, but I do not have any specific preferences for their
+  appearance.
+
+  5. I am not sure. Focus on peaks or significant changes in trends.
+
+  6. Medium prominence, make them noticeable but not too large.
+
+  7. Yes, include a legend. I do not have a preference for its position.
+
+  8. Circles would be nice.
+
+  9. I am not sure.
+
+  10. I do not know.'

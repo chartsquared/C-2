@@ -1,0 +1,84 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Heatmap
+
+  * Pie chart
+
+  * Treemap
+
+  * Donut chart
+
+  * Scatter plot
+
+  * Line chart
+
+  * Bubble chart
+
+  * Box chart'
+- 1032
+- 992
+- 40
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 846
+- 707
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/106.csv': {'summary': {'Column':\
+  \ ['Product Name', 'Price', 'Details', 'Rating'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O')], 'Missing Values': [761, 761, 771, 1455], 'Unique Values':\
+  \ [1335, 773, 1127, 28]}, 'sample_data': {'Product Name': ['Private Extra -Thin\
+  \ Feminine Napkin - Normal Size - 18 Pads', 'Funny Bunny - Set Of (3) Basic Bodysuit\
+  \ Cut - For Newborn Baby', 'Mesery Bundle Of Three Full Coverage Non-wired Cross\
+  \ Back Sportive Bra'], 'Price': ['EGP 73.00', 'EGP 181.00 - EGP 199.00', 'EGP 119.99'],\
+  \ 'Details': ['Natural cotton feel\\r\\nAbsorbent core for long lasting protection\\\
+  r\\n3mm thick pads with wide wings to fit body shape\\r\\nIndividually wrapped for\
+  \ discretion & hygiene\\r\\nIdeal for normal to heavy flow', 'Feel comfortable with\
+  \ these products from FUNNY BUNNY for KIDS underwears and clothing. They make an\
+  \ excellent use of theEgyptian cotton offering a wide range of under wear products\
+  \ with affordableprices', 'This item cannot be exchanged or returned\\r\\nBe more\
+  \ comfortable with these comfort cotton Bra 3-Pack from Mesery. This versatile sports\
+  \ bras give you high support plus personalized comfort. Its soft pads mold to the\
+  \ shape of your body. . They are lightly lined wireless cup soft, stretchy and so\
+  \ comfy you might never want to take them off all-day .\\r\\nThis item cannot be\
+  \ exchanged or returned'], 'Rating': ['4.6/5', '4.8/5', '3.9/5']}}}\n<end of data\
+  \ example format>\n\n<start of data details format>\nJumia Prices and Ratings  for\
+  \ all Products 2024\U0001F525\nbusiness\n<end of data details format>\n\nGiven a\
+  \ data format, imagine a chart that visualizes this data as the final output you\
+  \ want from the service provider.\nIt MUST be a chart that can be created using\
+  \ only data columns.\nYou need to imagine a chart with * Heatmap that utilizes the\
+  \ data format.\nIf there are multiple given data formats, imagine a chart with *\
+  \ Heatmap that utilizes all the data formats.\nSince you are an amateur user, your\
+  \ instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the\
+  \ data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 50 in size (word count).\nYour response should ONLY\
+  \ contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Bubble chart'
+- '* Box chart'
+- '* Donut chart'
+- '* Bar chart'
+- '* Pie chart'
+- '* Column chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Create a heatmap to visualize the missing values across the different columns in
+  the dataset. Highlight the higher number of missing values in darker shades to easily
+  spot data gaps.
+- 629
+- 596
+- 33

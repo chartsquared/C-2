@@ -1,0 +1,297 @@
+02_initial_prompt: Create a population pyramid chart showing the distribution of units
+  sold grouped by product color and rated across different ratings. Highlight colors
+  with high sales. Provide text annotations for unique products with notable high
+  or low ratings. Focus on summer-themed products.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a population pyramid chart showing the distribution\
+  \ of units sold grouped by product color and rated across different ratings. Highlight\
+  \ colors with high sales. Provide text annotations for unique products with notable\
+  \ high or low ratings. Focus on summer-themed products.\n<end of user request>\n\
+  \n<start of data format>\n{'../Extra_datas/data/100.csv': {'summary': {'Column':\
+  \ ['title', 'title_orig', 'price', 'retail_price', 'currency_buyer', 'units_sold',\
+  \ 'uses_ad_boosts', 'rating', 'rating_count', 'rating_five_count', 'rating_four_count',\
+  \ 'rating_three_count', 'rating_two_count', 'rating_one_count', 'badges_count',\
+  \ 'badge_local_product', 'badge_product_quality', 'badge_fast_shipping', 'tags',\
+  \ 'product_color', 'product_variation_size_id', 'product_variation_inventory', 'shipping_option_name',\
+  \ 'shipping_option_price', 'shipping_is_express', 'countries_shipped_to', 'inventory_total',\
+  \ 'has_urgency_banner', 'urgency_text', 'origin_country', 'merchant_title', 'merchant_name',\
+  \ 'merchant_info_subtitle', 'merchant_rating_count', 'merchant_rating', 'merchant_id',\
+  \ 'merchant_has_profile_picture', 'merchant_profile_picture', 'product_url', 'product_picture',\
+  \ 'product_id', 'theme', 'crawl_month'], 'Data Type': [dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('float64'),\
+  \ dtype('int64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('float64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('float64'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 45, 45, 45, 45,\
+  \ 0, 0, 0, 0, 0, 41, 14, 0, 0, 0, 0, 0, 0, 1100, 1100, 17, 0, 4, 1, 0, 0, 0, 0,\
+  \ 1347, 0, 0, 0, 0, 0], 'Unique Values': [1201, 1203, 127, 104, 1, 15, 2, 192, 761,\
+  \ 605, 440, 384, 262, 330, 4, 2, 2, 2, 1230, 101, 106, 48, 15, 8, 2, 94, 10, 1,\
+  \ 2, 6, 958, 957, 1058, 917, 952, 958, 2, 125, 1341, 1341, 1341, 1, 1]}, 'sample_data':\
+  \ {'title': ['2020 Summer Vintage Flamingo Print  Pajamas Set Casual Loose T Shirt\
+  \ Top And Elastic Shorts Women Sleepwear Night Wear Loungewear Sets', 'SSHOUSE Summer\
+  \ Casual Sleeveless Soir\xE9e Party Soir\xE9e sans manches V\xEAtements de plage\
+  \ sexy Mini robe femme wshC1612242400387A21', '2020 Nouvelle Arriv\xE9e Femmes Printemps\
+  \ et \xC9t\xE9 Plage Porter Longue Mince Cardigan Ouvert Avant Kimono Vert Feuille\
+  \ Imprim\xE9 En Mousseline de Soie Cardigan S-5XL'], 'title_orig': ['2020 Summer\
+  \ Vintage Flamingo Print  Pajamas Set Casual Loose T Shirt Top And Elastic Shorts\
+  \ Women Sleepwear Night Wear Loungewear Sets', \"Women's Casual Summer Sleeveless\
+  \ Sexy Mini Dress\", '2020 New Arrival Women Spring and Summer Beach Wear Long Thin\
+  \ Cardigan Open Front Kimono Green Leaf Printed Chiffon Cardigan S-5XL'], 'price':\
+  \ [16.0, 8.0, 8.0], 'retail_price': [14, 22, 43], 'currency_buyer': ['EUR', 'EUR',\
+  \ 'EUR'], 'units_sold': [100, 20000, 100], 'uses_ad_boosts': [0, 1, 0], 'rating':\
+  \ [3.76, 3.45, 3.57], 'rating_count': [54, 6135, 14], 'rating_five_count': [26.0,\
+  \ 2269.0, 5.0], 'rating_four_count': [8.0, 1027.0, 4.0], 'rating_three_count': [10.0,\
+  \ 1118.0, 2.0], 'rating_two_count': [1.0, 644.0, 0.0], 'rating_one_count': [9.0,\
+  \ 1077.0, 3.0], 'badges_count': [0, 0, 0], 'badge_local_product': [0, 0, 0], 'badge_product_quality':\
+  \ [0, 0, 0], 'badge_fast_shipping': [0, 0, 0], 'tags': [\"Summer,Fashion,womenunderwearsuit,printedpajamasset,womencasualshort,Women's\
+  \ Fashion,flamingo,loungewearset,Casual,Shirt,casualsleepwear,Shorts,flamingotshirt,Elastic,Vintage,Tops,tshirtandshortsset,Women,Sleepwear,Print,womenpajamasset,womennightwear,Pajamas,womensleepwearset\"\
+  , \"Mini,womens dresses,Summer,Patchwork,fashion dress,Dress,Mini dress,Women's\
+  \ Fashion,Women S Clothing,backless,party,summer dresses,sleeveless,sexy,Casual\"\
+  , \"Summer,cardigan,women beachwear,chiffon,Sexy women,Coat,summercardigan,openfront,short\
+  \ sleeves,Swimsuit,Women's Fashion,leaf,Green,printed,Spring,longcardigan,Women,Beach,kimono\"\
+  ], 'product_color': ['white', 'green', 'leopardprint'], 'product_variation_size_id':\
+  \ ['M', 'XS', 'XS'], 'product_variation_inventory': [50, 50, 1], 'shipping_option_name':\
+  \ ['Livraison standard', 'Livraison standard', 'Livraison standard'], 'shipping_option_price':\
+  \ [4, 2, 3], 'shipping_is_express': [0, 0, 0], 'countries_shipped_to': [34, 41,\
+  \ 36], 'inventory_total': [50, 50, 50], 'has_urgency_banner': [1.0, 1.0, 1.0], 'urgency_text':\
+  \ ['Quantit\xE9 limit\xE9e !', 'Quantit\xE9 limit\xE9e !', 'Quantit\xE9 limit\xE9\
+  e !'], 'origin_country': ['CN', 'CN', 'CN'], 'merchant_title': ['zgrdejia', 'SaraHouse',\
+  \ 'hxt520'], 'merchant_name': ['zgrdejia', 'sarahouse', 'hxt520'], 'merchant_info_subtitle':\
+  \ ['(568 notes)', '83 % avis positifs (17,752 notes)', '86 % avis positifs (295\
+  \ notes)'], 'merchant_rating_count': [568, 17752, 295], 'merchant_rating': [4.128521126760563,\
+  \ 3.8996732762505633, 3.989830508474576], 'merchant_id': ['595097d6a26f6e070cb878d1',\
+  \ '56458aa03a698c35c9050988', '5d464a1ffdf7bc44ee933c65'], 'merchant_has_profile_picture':\
+  \ [0, 0, 0], 'merchant_profile_picture': [nan, nan, nan], 'product_url': ['https://www.wish.com/c/5e9ae51d43d6a96e303acdb0',\
+  \ 'https://www.wish.com/c/58940d436a0d3d5da4e95a38', 'https://www.wish.com/c/5ea10e2c617580260d55310a'],\
+  \ 'product_picture': ['https://contestimg.wish.com/api/webimage/5e9ae51d43d6a96e303acdb0-medium.jpg',\
+  \ 'https://contestimg.wish.com/api/webimage/58940d436a0d3d5da4e95a38-medium.jpg',\
+  \ 'https://contestimg.wish.com/api/webimage/5ea10e2c617580260d55310a-medium.jpg'],\
+  \ 'product_id': ['5e9ae51d43d6a96e303acdb0', '58940d436a0d3d5da4e95a38', '5ea10e2c617580260d55310a'],\
+  \ 'theme': ['summer', 'summer', 'summer'], 'crawl_month': ['2020-08', '2020-08',\
+  \ '2020-08']}}}\n<end of data format>\n\n<start of various task types>\n{'Show External\
+  \ Context': 'Uncaptured data provided by the self-tracker to understand and explain\
+  \ a phenomenon shown in the data', 'Show Confirmation': 'Collected data confirms\
+  \ existing knowledge', 'Show Contradiction': 'Collected data contradicts existing\
+  \ knowledge', 'Focus on Identifying value': 'Explicitly specify the measured value,\
+  \ its range for one or more clearly identified data points, or the difference between\
+  \ two measured values', 'Focus on Identifying extreme': 'Explicitly state the identities\
+  \ of the data points possessing extreme values of the measure variable', 'Focus\
+  \ on Identifying references': 'Explicitly state the values of categorical variables,\
+  \ labels from the axes, or legends', 'Comparison by Time Segmentation': 'Compare\
+  \ measured values segmented by time', 'Comparison by Multiple services': 'Compare\
+  \ the same data type from two or more services', 'Comparison against external data':\
+  \ 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare measured\
+  \ values by a factor (other than time)', 'Comparison By Instances': 'Compare two\
+  \ specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute'].\nStore the selected\
+  \ task from the task types in query['Task'].\nStore the purpose of visualization\
+  \ in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\n\
+  Please reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["product_color", "units_sold", "rating", "tags", "title", "theme",
+  "rating_count"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "To show the distribution of units sold across different product colors
+  and ratings, highlighting colors with high sales and annotating unique products
+  with notable ratings",
+
+  "Audience": "E-commerce business analysts, marketing teams focusing on summer products,
+  product managers"
+
+  }'
+05_audience: E-commerce business analysts, marketing teams focusing on summer products,
+  product managers
+05_data_attributes:
+- product_color
+- units_sold
+- rating
+- tags
+- title
+- theme
+- rating_count
+05_purpose: To show the distribution of units sold across different product colors
+  and ratings, highlighting colors with high sales and annotating unique products
+  with notable ratings
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/100.csv':\
+  \ {'summary': {'Column': ['title', 'title_orig', 'price', 'retail_price', 'currency_buyer',\
+  \ 'units_sold', 'uses_ad_boosts', 'rating', 'rating_count', 'rating_five_count',\
+  \ 'rating_four_count', 'rating_three_count', 'rating_two_count', 'rating_one_count',\
+  \ 'badges_count', 'badge_local_product', 'badge_product_quality', 'badge_fast_shipping',\
+  \ 'tags', 'product_color', 'product_variation_size_id', 'product_variation_inventory',\
+  \ 'shipping_option_name', 'shipping_option_price', 'shipping_is_express', 'countries_shipped_to',\
+  \ 'inventory_total', 'has_urgency_banner', 'urgency_text', 'origin_country', 'merchant_title',\
+  \ 'merchant_name', 'merchant_info_subtitle', 'merchant_rating_count', 'merchant_rating',\
+  \ 'merchant_id', 'merchant_has_profile_picture', 'merchant_profile_picture', 'product_url',\
+  \ 'product_picture', 'product_id', 'theme', 'crawl_month'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'),\
+  \ dtype('float64'), dtype('int64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('float64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('float64'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 45, 45, 45, 45,\
+  \ 0, 0, 0, 0, 0, 41, 14, 0, 0, 0, 0, 0, 0, 1100, 1100, 17, 0, 4, 1, 0, 0, 0, 0,\
+  \ 1347, 0, 0, 0, 0, 0], 'Unique Values': [1201, 1203, 127, 104, 1, 15, 2, 192, 761,\
+  \ 605, 440, 384, 262, 330, 4, 2, 2, 2, 1230, 101, 106, 48, 15, 8, 2, 94, 10, 1,\
+  \ 2, 6, 958, 957, 1058, 917, 952, 958, 2, 125, 1341, 1341, 1341, 1, 1]}, 'sample_data':\
+  \ {'title': ['2020 Summer Vintage Flamingo Print  Pajamas Set Casual Loose T Shirt\
+  \ Top And Elastic Shorts Women Sleepwear Night Wear Loungewear Sets', 'SSHOUSE Summer\
+  \ Casual Sleeveless Soir\xE9e Party Soir\xE9e sans manches V\xEAtements de plage\
+  \ sexy Mini robe femme wshC1612242400387A21', '2020 Nouvelle Arriv\xE9e Femmes Printemps\
+  \ et \xC9t\xE9 Plage Porter Longue Mince Cardigan Ouvert Avant Kimono Vert Feuille\
+  \ Imprim\xE9 En Mousseline de Soie Cardigan S-5XL'], 'title_orig': ['2020 Summer\
+  \ Vintage Flamingo Print  Pajamas Set Casual Loose T Shirt Top And Elastic Shorts\
+  \ Women Sleepwear Night Wear Loungewear Sets', \"Women's Casual Summer Sleeveless\
+  \ Sexy Mini Dress\", '2020 New Arrival Women Spring and Summer Beach Wear Long Thin\
+  \ Cardigan Open Front Kimono Green Leaf Printed Chiffon Cardigan S-5XL'], 'price':\
+  \ [16.0, 8.0, 8.0], 'retail_price': [14, 22, 43], 'currency_buyer': ['EUR', 'EUR',\
+  \ 'EUR'], 'units_sold': [100, 20000, 100], 'uses_ad_boosts': [0, 1, 0], 'rating':\
+  \ [3.76, 3.45, 3.57], 'rating_count': [54, 6135, 14], 'rating_five_count': [26.0,\
+  \ 2269.0, 5.0], 'rating_four_count': [8.0, 1027.0, 4.0], 'rating_three_count': [10.0,\
+  \ 1118.0, 2.0], 'rating_two_count': [1.0, 644.0, 0.0], 'rating_one_count': [9.0,\
+  \ 1077.0, 3.0], 'badges_count': [0, 0, 0], 'badge_local_product': [0, 0, 0], 'badge_product_quality':\
+  \ [0, 0, 0], 'badge_fast_shipping': [0, 0, 0], 'tags': [\"Summer,Fashion,womenunderwearsuit,printedpajamasset,womencasualshort,Women's\
+  \ Fashion,flamingo,loungewearset,Casual,Shirt,casualsleepwear,Shorts,flamingotshirt,Elastic,Vintage,Tops,tshirtandshortsset,Women,Sleepwear,Print,womenpajamasset,womennightwear,Pajamas,womensleepwearset\"\
+  , \"Mini,womens dresses,Summer,Patchwork,fashion dress,Dress,Mini dress,Women's\
+  \ Fashion,Women S Clothing,backless,party,summer dresses,sleeveless,sexy,Casual\"\
+  , \"Summer,cardigan,women beachwear,chiffon,Sexy women,Coat,summercardigan,openfront,short\
+  \ sleeves,Swimsuit,Women's Fashion,leaf,Green,printed,Spring,longcardigan,Women,Beach,kimono\"\
+  ], 'product_color': ['white', 'green', 'leopardprint'], 'product_variation_size_id':\
+  \ ['M', 'XS', 'XS'], 'product_variation_inventory': [50, 50, 1], 'shipping_option_name':\
+  \ ['Livraison standard', 'Livraison standard', 'Livraison standard'], 'shipping_option_price':\
+  \ [4, 2, 3], 'shipping_is_express': [0, 0, 0], 'countries_shipped_to': [34, 41,\
+  \ 36], 'inventory_total': [50, 50, 50], 'has_urgency_banner': [1.0, 1.0, 1.0], 'urgency_text':\
+  \ ['Quantit\xE9 limit\xE9e !', 'Quantit\xE9 limit\xE9e !', 'Quantit\xE9 limit\xE9\
+  e !'], 'origin_country': ['CN', 'CN', 'CN'], 'merchant_title': ['zgrdejia', 'SaraHouse',\
+  \ 'hxt520'], 'merchant_name': ['zgrdejia', 'sarahouse', 'hxt520'], 'merchant_info_subtitle':\
+  \ ['(568 notes)', '83 % avis positifs (17,752 notes)', '86 % avis positifs (295\
+  \ notes)'], 'merchant_rating_count': [568, 17752, 295], 'merchant_rating': [4.128521126760563,\
+  \ 3.8996732762505633, 3.989830508474576], 'merchant_id': ['595097d6a26f6e070cb878d1',\
+  \ '56458aa03a698c35c9050988', '5d464a1ffdf7bc44ee933c65'], 'merchant_has_profile_picture':\
+  \ [0, 0, 0], 'merchant_profile_picture': [nan, nan, nan], 'product_url': ['https://www.wish.com/c/5e9ae51d43d6a96e303acdb0',\
+  \ 'https://www.wish.com/c/58940d436a0d3d5da4e95a38', 'https://www.wish.com/c/5ea10e2c617580260d55310a'],\
+  \ 'product_picture': ['https://contestimg.wish.com/api/webimage/5e9ae51d43d6a96e303acdb0-medium.jpg',\
+  \ 'https://contestimg.wish.com/api/webimage/58940d436a0d3d5da4e95a38-medium.jpg',\
+  \ 'https://contestimg.wish.com/api/webimage/5ea10e2c617580260d55310a-medium.jpg'],\
+  \ 'product_id': ['5e9ae51d43d6a96e303acdb0', '58940d436a0d3d5da4e95a38', '5ea10e2c617580260d55310a'],\
+  \ 'theme': ['summer', 'summer', 'summer'], 'crawl_month': ['2020-08', '2020-08',\
+  \ '2020-08']}}}\n<end of data format>\n\n<start of data visualization instruction>\n\
+  Create a population pyramid chart showing the distribution of units sold grouped\
+  \ by product color and rated across different ratings. Highlight colors with high\
+  \ sales. Provide text annotations for unique products with notable high or low ratings.\
+  \ Focus on summer-themed products.\n<end of data visualization instruction>\n\n\
+  <start of data attributes>\n['product_color', 'units_sold', 'rating', 'tags', 'title',\
+  \ 'theme', 'rating_count']\n<end of data attributes>\n\n<start of prospective audience>\n\
+  E-commerce business analysts, marketing teams focusing on summer products, product\
+  \ managers\n<end of prospective audience>\n\n<start of type of tasks>\nDistribution\
+  \ By Category\n<end of type of tasks>\n\n<start of purpose>\nTo show the distribution\
+  \ of units sold across different product colors and ratings, highlighting colors\
+  \ with high sales and annotating unique products with notable ratings\n<end of purpose>"
+07_questions: '1. Do you have a preferred color scheme for highlighting high sales?
+
+  2. How would you like text annotations for notable products to be displayed (font
+  size, color, positioning, etc.)?
+
+  3. Is there a specific way you prefer the ratings to be categorized (e.g., 1-2,
+  3-4, 4-5)?
+
+  4. Would you like any specific products to be highlighted apart from those with
+  high or low ratings?
+
+  5. Is there a particular order in which you want product colors to appear in the
+  chart?
+
+  6. Do you prefer any specific font style and size for the axis labels and titles?
+
+  7. How detailed would you like the legend to be (e.g., just high sales or all sales
+  categories)?
+
+  8. Should the chart include grid lines for easier reference of values?
+
+  9. Are there any specific data points or ranges you''d like to exclude from the
+  visualization?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a population pyramid chart showing the distribution\
+  \ of units sold grouped by product color and rated across different ratings. Highlight\
+  \ colors with high sales. Provide text annotations for unique products with notable\
+  \ high or low ratings. Focus on summer-themed products.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 25% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nTo show the distribution\
+  \ of units sold across different product colors and ratings, highlighting colors\
+  \ with high sales and annotating unique products with notable ratings\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a preferred color scheme for\
+  \ highlighting high sales?\n2. How would you like text annotations for notable products\
+  \ to be displayed (font size, color, positioning, etc.)?\n3. Is there a specific\
+  \ way you prefer the ratings to be categorized (e.g., 1-2, 3-4, 4-5)?\n4. Would\
+  \ you like any specific products to be highlighted apart from those with high or\
+  \ low ratings?\n5. Is there a particular order in which you want product colors\
+  \ to appear in the chart?\n6. Do you prefer any specific font style and size for\
+  \ the axis labels and titles?\n7. How detailed would you like the legend to be (e.g.,\
+  \ just high sales or all sales categories)?\n8. Should the chart include grid lines\
+  \ for easier reference of values?\n9. Are there any specific data points or ranges\
+  \ you'd like to exclude from the visualization?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I prefer the ratings to be categorized as 1-2, 3-4, 4-5.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. Yes, the chart should include grid lines.
+
+  9. No, include all data points and ranges.'

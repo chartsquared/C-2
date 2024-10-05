@@ -1,0 +1,80 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram'
+- 1006
+- 988
+- 18
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 832
+- 693
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/349.csv': {'summary': {'Column':\
+  \ ['rank', 'name', 'platform', 'year', 'genre', 'publisher', 'na_sales', 'eu_sales',\
+  \ 'jp_sales', 'other_sales', 'global_sales'], 'Data Type': [dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64')], 'Missing Values': [0, 0,\
+  \ 0, 271, 0, 58, 0, 0, 0, 0, 0], 'Unique Values': [16598, 11493, 31, 39, 12, 578,\
+  \ 409, 305, 244, 157, 623]}, 'sample_data': {'rank': [1, 2, 3], 'name': ['Wii Sports',\
+  \ 'Super Mario Bros.', 'Mario Kart Wii'], 'platform': ['Wii', 'NES', 'Wii'], 'year':\
+  \ [2006.0, 1985.0, 2008.0], 'genre': ['Sports', 'Platform', 'Racing'], 'publisher':\
+  \ ['Nintendo', 'Nintendo', 'Nintendo'], 'na_sales': [41.49, 29.08, 15.85], 'eu_sales':\
+  \ [29.02, 3.58, 12.88], 'jp_sales': [3.77, 6.81, 3.79], 'other_sales': [8.46, 0.77,\
+  \ 3.31], 'global_sales': [82.74, 40.24, 35.82]}}}\n<end of data example format>\n\
+  \n<start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '3. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nVideo Games Sales\ngames\n<end of data details format>\n\
+  \nGiven a data format, imagine a chart that visualizes this data as the final output\
+  \ you want from the service provider.\nConsider what purpose the data has and the\
+  \ practical purpose of visualization and include it in the instructions.\nYou need\
+  \ to imagine a chart with * Treemap and given annotations that utilizes the data\
+  \ format.\nIf there are multiple given data formats, imagine a chart with * Treemap\
+  \ and given annotations that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Treemap'
+- '* Histogram'
+- '* Bar chart'
+- '* Scatter plot'
+- '* Line chart'
+- '* Treemap'
+2. initial_prompt: !!python/tuple
+- Create a Treemap chart to visualize the global sales of video games. Use the 'genre'
+  as the main category and 'publisher' as subcategories within the genres. Each block
+  should represent a game, sized by 'global_sales'. Add text annotations to highlight
+  the top-selling games in each genre to emphasize their significance. Use different
+  colors to distinguish between genres. The purpose is to easily compare the sales
+  performance of different publishers and their games across genres and regions. This
+  will help identify market trends and major players in the video gaming industry.
+- 869
+- 762
+- 107

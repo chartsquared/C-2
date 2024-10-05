@@ -1,0 +1,267 @@
+02_initial_prompt: Please create a bar chart visualizing the leading and trailing
+  candidates' margins from the Lok Sabha Election Results 2024 data. The x-axis should
+  display the constituencies and the y-axis the margin numbers. Highlight candidates
+  with different colors based on their parties. Ensure the chart features clear labels
+  and a legend for party identification. This will help us quickly assess which parties
+  had the largest or smallest margins in specific constituencies across the dataset
+  provided. The goal is to get insights into the competitive landscape of various
+  regions during these elections.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a bar chart visualizing the leading and trailing candidates'' margins
+  from the Lok Sabha Election Results 2024 data. The x-axis should display the constituencies
+  and the y-axis the margin numbers. Highlight candidates with different colors based
+  on their parties. Ensure the chart features clear labels and a legend for party
+  identification. This will help us quickly assess which parties had the largest or
+  smallest margins in specific constituencies across the dataset provided. The goal
+  is to get insights into the competitive landscape of various regions during these
+  elections.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/146.csv'': {''summary'': {''Column'': [''Constituency'',
+  ''Const. No.'', ''Leading Candidate'', ''Leading Party'', ''Trailing Candidate'',
+  ''Trailing Party'', ''Margin'', ''Status''], ''Data Type'': [dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 1, 1, 0, 0], ''Unique Values'': [541, 80, 542,
+  42, 542, 42, 543, 2]}, ''sample_data'': {''Constituency'': [''AJMER'', ''ALWAR'',
+  ''AMBALA''], ''Const. No.'': [13, 8, 1], ''Leading Candidate'': [''BHAGIRATH CHOUDHARY'',
+  ''BHUPENDER YADAV'', ''VARUN CHAUDHRY''], ''Leading Party'': [''Bharatiya Janata
+  Party'', ''Bharatiya Janata Party'', ''Indian National Congress''], ''Trailing Candidate'':
+  [''RAMCHANDRA CHOUDHARY'', ''LALIT YADAV'', ''BANTO KATARIA''], ''Trailing Party'':
+  [''Indian National Congress'', ''Indian National Congress'', ''Bharatiya Janata
+  Party''], ''Margin'': [''329991'', ''48282'', ''49036''], ''Status'': [''Result
+  Declared'', ''Result Declared'', ''Result Declared'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Constituency", "Leading Candidate", "Leading Party", "Trailing
+  Candidate", "Trailing Party", "Margin"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Assess the competitive landscape of various regions during the elections
+  by identifying which parties had the largest or smallest margins in specific constituencies",
+
+  "Audience": "Political analysts, Party strategists, Election enthusiasts"
+
+  }'
+05_audience: Political analysts, Party strategists, Election enthusiasts
+05_data_attributes:
+- Constituency
+- Leading Candidate
+- Leading Party
+- Trailing Candidate
+- Trailing Party
+- Margin
+05_purpose: Assess the competitive landscape of various regions during the elections
+  by identifying which parties had the largest or smallest margins in specific constituencies
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/146.csv'': {''summary'': {''Column'': [''Constituency'',
+  ''Const. No.'', ''Leading Candidate'', ''Leading Party'', ''Trailing Candidate'',
+  ''Trailing Party'', ''Margin'', ''Status''], ''Data Type'': [dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 1, 1, 0, 0], ''Unique Values'': [541, 80, 542,
+  42, 542, 42, 543, 2]}, ''sample_data'': {''Constituency'': [''AJMER'', ''ALWAR'',
+  ''AMBALA''], ''Const. No.'': [13, 8, 1], ''Leading Candidate'': [''BHAGIRATH CHOUDHARY'',
+  ''BHUPENDER YADAV'', ''VARUN CHAUDHRY''], ''Leading Party'': [''Bharatiya Janata
+  Party'', ''Bharatiya Janata Party'', ''Indian National Congress''], ''Trailing Candidate'':
+  [''RAMCHANDRA CHOUDHARY'', ''LALIT YADAV'', ''BANTO KATARIA''], ''Trailing Party'':
+  [''Indian National Congress'', ''Indian National Congress'', ''Bharatiya Janata
+  Party''], ''Margin'': [''329991'', ''48282'', ''49036''], ''Status'': [''Result
+  Declared'', ''Result Declared'', ''Result Declared'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a bar chart visualizing the leading and trailing candidates'' margins
+  from the Lok Sabha Election Results 2024 data. The x-axis should display the constituencies
+  and the y-axis the margin numbers. Highlight candidates with different colors based
+  on their parties. Ensure the chart features clear labels and a legend for party
+  identification. This will help us quickly assess which parties had the largest or
+  smallest margins in specific constituencies across the dataset provided. The goal
+  is to get insights into the competitive landscape of various regions during these
+  elections.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Constituency'', ''Leading Candidate'', ''Leading Party'', ''Trailing Candidate'',
+  ''Trailing Party'', ''Margin'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Political analysts, Party strategists, Election enthusiasts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Assess the competitive landscape of various regions during the elections by identifying
+  which parties had the largest or smallest margins in specific constituencies
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color palette for highlighting different
+  parties?
+
+  2. Should we sort the constituencies on the x-axis alphabetically or by margin size?
+
+  3. Do you prefer vertical or horizontal bars?
+
+  4. Is there a specific font style or size you would like for the labels and legend?
+
+  5. Would you like the margins to be displayed in thousands or in full numbers on
+  the y-axis?
+
+  6. Should the bar chart include grid lines for easier comparison?
+
+  7. Do you prefer any specific styling for the chart title and axis labels?
+
+  8. Are there any specific parties that you would like to be highlighted more prominently?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a bar chart visualizing the leading and\
+  \ trailing candidates' margins from the Lok Sabha Election Results 2024 data. The\
+  \ x-axis should display the constituencies and the y-axis the margin numbers. Highlight\
+  \ candidates with different colors based on their parties. Ensure the chart features\
+  \ clear labels and a legend for party identification. This will help us quickly\
+  \ assess which parties had the largest or smallest margins in specific constituencies\
+  \ across the dataset provided. The goal is to get insights into the competitive\
+  \ landscape of various regions during these elections.\n<end of user request>\n\n\
+  Imagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nAssess the competitive\
+  \ landscape of various regions during the elections by identifying which parties\
+  \ had the largest or smallest margins in specific constituencies\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a preferred color palette for\
+  \ highlighting different parties?\n2. Should we sort the constituencies on the x-axis\
+  \ alphabetically or by margin size?\n3. Do you prefer vertical or horizontal bars?\n\
+  4. Is there a specific font style or size you would like for the labels and legend?\n\
+  5. Would you like the margins to be displayed in thousands or in full numbers on\
+  \ the y-axis?\n6. Should the bar chart include grid lines for easier comparison?\n\
+  7. Do you prefer any specific styling for the chart title and axis labels?\n8. Are\
+  \ there any specific parties that you would like to be highlighted more prominently?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I have no specific preference.
+
+  2. By margin size.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. In thousands.
+
+  6. Yes.
+
+  7. No specific preference.
+
+  8. I am not sure.'

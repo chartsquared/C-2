@@ -1,0 +1,104 @@
+1-1. selected_chart_types: !!python/tuple
+- 'Bar chart
+
+  Heatmap
+
+  Bubble chart
+
+  Scatter plot
+
+  Pie chart
+
+  Donut chart
+
+  Area chart
+
+  Line chart
+
+  Histogram
+
+  Box chart
+
+  Geographic heatmap
+
+  Choropleth map'
+- 1050
+- 1010
+- 40
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 856
+- 717
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/126.csv'': {''summary'': {''Column'': [''longitude'', ''latitude'',
+  ''housing_median_age'', ''total_rooms'', ''total_bedrooms'', ''population'', ''households'',
+  ''median_income'', ''median_house_value'', ''ocean_proximity''], ''Data Type'':
+  [dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 207, 0, 0, 0,
+  0, 0], ''Unique Values'': [844, 862, 52, 5926, 1923, 3888, 1815, 12928, 3842, 5]},
+  ''sample_data'': {''longitude'': [-122.23, -122.22, -122.24], ''latitude'': [37.88,
+  37.86, 37.85], ''housing_median_age'': [41.0, 21.0, 52.0], ''total_rooms'': [880.0,
+  7099.0, 1467.0], ''total_bedrooms'': [129.0, 1106.0, 190.0], ''population'': [322.0,
+  2401.0, 496.0], ''households'': [126.0, 1138.0, 177.0], ''median_income'': [8.3252,
+  8.3014, 7.2574], ''median_house_value'': [452600.0, 358500.0, 352100.0], ''ocean_proximity'':
+  [''NEAR BAY'', ''NEAR BAY'', ''NEAR BAY'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  California Housing Prices
+
+  real-estate
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- Geographic heatmap
+- Bubble chart
+- Heatmap
+- Donut chart
+- Scatter plot
+2. initial_prompt: !!python/tuple
+- Create a scatter plot to visualize the relationship between median_income and median_house_value
+  for California housing prices. Use color to differentiate ocean_proximity.
+- 618
+- 590
+- 28

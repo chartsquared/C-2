@@ -1,0 +1,76 @@
+1-1. selected_chart_types: !!python/tuple
+- 'Line chart
+
+  Scatter plot
+
+  Heatmap
+
+  Histogram
+
+  Box chart'
+- 836
+- 823
+- 13
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Shapes:\n\
+  Description: Shape annotations include lines, arrows, rectangles, and other shapes.\
+  \ They can highlight or enclose specific chart elements to emphasize or compare\
+  \ them.\nData-Driven Use: Some shapes, like trend lines, are calculated from the\
+  \ underlying data.\n<end of the annotation list> "
+- 675
+- 526
+- 149
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/460.csv': {'summary': {'Column':\
+  \ ['t', 'bond 1-2', 'bond 1-14', 'tot energy / Eh'], 'Data Type': [dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64')], 'Missing Values': [0, 0,\
+  \ 0, 0], 'Unique Values': [1001, 1001, 1001, 261]}, 'sample_data': {'t': [0.0, 0.5,\
+  \ 1.0], 'bond 1-2': [1.7932532599, 1.7893317017, 1.7854749657], 'bond 1-14': [1.8242087929,\
+  \ 1.8191210855, 1.8140250779], 'tot energy / Eh': [-1112.682393, -1112.68241, -1112.682424]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '2. Shapes:', 'Description:\
+  \ Shape annotations include lines, arrows, rectangles, and other shapes. They can\
+  \ highlight or enclose specific chart elements to emphasize or compare them.', 'Data-Driven\
+  \ Use: Some shapes, like trend lines, are calculated from the underlying data.',\
+  \ '<end of the annotation list>']\n<end of annotations format>\n\n<start of data\
+  \ details format>\nunknown\nenergy\n<end of data details format>\n\nGiven a data\
+  \ format, imagine a chart that visualizes this data as the final output you want\
+  \ from the service provider.\nConsider what purpose the data has and the practical\
+  \ purpose of visualization and include it in the instructions.\nYou need to imagine\
+  \ a chart with Line chart and given annotations that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with Line chart and given\
+  \ annotations that utilizes all the data formats.\nSince you are an amateur user,\
+  \ your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to\
+  \ the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- Line chart
+- Heatmap
+- Scatter plot
+- Histogram
+- Box chart
+- Line chart
+2. initial_prompt: !!python/tuple
+- Please create a line chart visualizing the data over time (t) for the bonds "bond
+  1-2" and "bond 1-14" along with the "tot energy / Eh". Annotate specific key points
+  where significant changes or trends occur in the energy values using text annotations.
+  Use different colors to distinguish between the bonds and energy lines. Highlight
+  any trends or patterns using shape annotations like arrows or rectangles. The chart
+  should aim to provide insights into the relationship between bond lengths and total
+  energy over time. Ensure the visualization is easy to interpret and clearly labeled.
+- 717
+- 602
+- 115

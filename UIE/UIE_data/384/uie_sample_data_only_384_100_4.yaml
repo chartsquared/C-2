@@ -1,0 +1,188 @@
+02_initial_prompt: "Please create a box chart visualizing the R&D Investment by country\
+  \ from the provided data. The x-axis should represent the countries and the y-axis\
+  \ should indicate the R&D Investment (Billion USD). Additionally, include the R&D\
+  \ Investment as a percentage of GDP on a secondary y-axis to show correlation. Ensure\
+  \ to highlight the variations and outliers for each country with clear labels. Since\
+  \ this data seems related to government investment in R&D, it\u2019s crucial to\
+  \ emphasize the differences significantly. Use different colors or shades to differentiate\
+  \ countries. Include a legend and appropriate titles for clarity."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the accurate data and user request, your task is to delve into\
+  \ the user request to figure out the (1) data attributes needed for data visualization,\
+  \ (2) select the most suitable task that the user is willing to do from the list\
+  \ of various tasks in data visualization, (3) specifically figure out the purpose\
+  \ of the user's request in data visualization, and (4) prospective audience of the\
+  \ data visualization.\n\n<start of user request>\nPlease create a box chart visualizing\
+  \ the R&D Investment by country from the provided data. The x-axis should represent\
+  \ the countries and the y-axis should indicate the R&D Investment (Billion USD).\
+  \ Additionally, include the R&D Investment as a percentage of GDP on a secondary\
+  \ y-axis to show correlation. Ensure to highlight the variations and outliers for\
+  \ each country with clear labels. Since this data seems related to government investment\
+  \ in R&D, it\u2019s crucial to emphasize the differences significantly. Use different\
+  \ colors or shades to differentiate countries. Include a legend and appropriate\
+  \ titles for clarity.\n<end of user request>\n\n<start of data format>\n{'../Extra_datas/data/384.csv':\
+  \ {'summary': {'Column': ['Country', 'R&D Investment (Billion USD)', 'R&D Investment\
+  \ as % of GDP'], 'Data Type': [dtype('O'), dtype('float64'), dtype('float64')],\
+  \ 'Missing Values': [0, 0, 0], 'Unique Values': [10, 10, 9]}, 'sample_data': {'Country':\
+  \ ['United States', 'China', 'Japan'], 'R&D Investment (Billion USD)': [581.0, 378.0,\
+  \ 179.0], 'R&D Investment as % of GDP': [2.8, 2.2, 3.4]}}}\n<end of data format>\n\
+  \n<start of various task types>\n{'Show External Context': 'Uncaptured data provided\
+  \ by the self-tracker to understand and explain a phenomenon shown in the data',\
+  \ 'Show Confirmation': 'Collected data confirms existing knowledge', 'Show Contradiction':\
+  \ 'Collected data contradicts existing knowledge', 'Focus on Identifying value':\
+  \ 'Explicitly specify the measured value, its range for one or more clearly identified\
+  \ data points, or the difference between two measured values', 'Focus on Identifying\
+  \ extreme': 'Explicitly state the identities of the data points possessing extreme\
+  \ values of the measure variable', 'Focus on Identifying references': 'Explicitly\
+  \ state the values of categorical variables, labels from the axes, or legends',\
+  \ 'Comparison by Time Segmentation': 'Compare measured values segmented by time',\
+  \ 'Comparison by Multiple services': 'Compare the same data type from two or more\
+  \ services', 'Comparison against external data': 'Bringing in external data for\
+  \ comparison', 'Comparison By Factor': 'Compare measured values by a factor (other\
+  \ than time)', 'Comparison By Instances': 'Compare two specific instances', 'Show\
+  \ Trend': 'Describe changes over time', 'Value judgement': 'Convey positive or negative\
+  \ connotations about the data', 'Distribution with variability': 'Explicitly state\
+  \ the variability of measured values', 'Distribution By Category': 'Explicitly describe\
+  \ the variation of measured values across all or most of the values of a categorical\
+  \ variable', 'Correlation': 'Specify the direct relationship between two variables\
+  \ (but not as comparison)', 'Outlier': 'Explicitly point out outliers or state the\
+  \ effect of outliers', 'Summarization of data': 'Summary of collected data (such\
+  \ as number of data points, duration of tracking, and averages)', 'Prediction/Forecasting':\
+  \ 'Predict the future based on the collected data'}\n<end of various task types>\n\
+  \nFor data attributes needed in data visualization, store them in query['Data Attribute'].\n\
+  Store the selected task from the task types in query['Task'].\nStore the purpose\
+  \ of visualization in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\
+  \nPlease reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be possible\
+  \ normally."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country", "R&D Investment (Billion USD)", "R&D Investment as
+  % of GDP"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Visualize R&D Investment by country and show the variation, highlighting
+  outliers and including a secondary axis for R&D Investment as a percentage of GDP
+  to illustrate the correlation.",
+
+  "Audience": "Government policymakers, analysts, research institutions, economists,
+  and the general public with interest in R&D investments."
+
+  }'
+05_audience: Government policymakers, analysts, research institutions, economists,
+  and the general public with interest in R&D investments.
+05_data_attributes:
+- Country
+- R&D Investment (Billion USD)
+- R&D Investment as % of GDP
+05_purpose: Visualize R&D Investment by country and show the variation, highlighting
+  outliers and including a secondary axis for R&D Investment as a percentage of GDP
+  to illustrate the correlation.
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/384.csv':\
+  \ {'summary': {'Column': ['Country', 'R&D Investment (Billion USD)', 'R&D Investment\
+  \ as % of GDP'], 'Data Type': [dtype('O'), dtype('float64'), dtype('float64')],\
+  \ 'Missing Values': [0, 0, 0], 'Unique Values': [10, 10, 9]}, 'sample_data': {'Country':\
+  \ ['United States', 'China', 'Japan'], 'R&D Investment (Billion USD)': [581.0, 378.0,\
+  \ 179.0], 'R&D Investment as % of GDP': [2.8, 2.2, 3.4]}}}\n<end of data format>\n\
+  \n<start of data visualization instruction>\nPlease create a box chart visualizing\
+  \ the R&D Investment by country from the provided data. The x-axis should represent\
+  \ the countries and the y-axis should indicate the R&D Investment (Billion USD).\
+  \ Additionally, include the R&D Investment as a percentage of GDP on a secondary\
+  \ y-axis to show correlation. Ensure to highlight the variations and outliers for\
+  \ each country with clear labels. Since this data seems related to government investment\
+  \ in R&D, it\u2019s crucial to emphasize the differences significantly. Use different\
+  \ colors or shades to differentiate countries. Include a legend and appropriate\
+  \ titles for clarity.\n<end of data visualization instruction>\n\n<start of data\
+  \ attributes>\n['Country', 'R&D Investment (Billion USD)', 'R&D Investment as %\
+  \ of GDP']\n<end of data attributes>\n\n<start of prospective audience>\nGovernment\
+  \ policymakers, analysts, research institutions, economists, and the general public\
+  \ with interest in R&D investments.\n<end of prospective audience>\n\n<start of\
+  \ type of tasks>\nDistribution By Category\n<end of type of tasks>\n\n<start of\
+  \ purpose>\nVisualize R&D Investment by country and show the variation, highlighting\
+  \ outliers and including a secondary axis for R&D Investment as a percentage of\
+  \ GDP to illustrate the correlation.\n<end of purpose>"
+07_questions: '1. Do you have any specific color preferences or schemes for differentiating
+  the countries?
+
+  2. Would you prefer the labels for variations and outliers to be displayed inside
+  or outside the box chart?
+
+  3. Are there any specific fonts or styles you would like for the titles and legends?
+
+  4. Do you want gridlines on the chart for better readability?
+
+  5. Do you have a preferred placement for the legend (e.g., top, bottom, left, right
+  of the chart)?
+
+  6. Should the secondary y-axis for R&D Investment as a percentage of GDP use a specific
+  scale or range?
+
+  7. Would you like any specific countries to be particularly highlighted or emphasized
+  in the visualization?
+
+  8. Do you want any additional annotations or notes to be included on the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a box chart visualizing the R&D Investment\
+  \ by country from the provided data. The x-axis should represent the countries and\
+  \ the y-axis should indicate the R&D Investment (Billion USD). Additionally, include\
+  \ the R&D Investment as a percentage of GDP on a secondary y-axis to show correlation.\
+  \ Ensure to highlight the variations and outliers for each country with clear labels.\
+  \ Since this data seems related to government investment in R&D, it\u2019s crucial\
+  \ to emphasize the differences significantly. Use different colors or shades to\
+  \ differentiate countries. Include a legend and appropriate titles for clarity.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nVisualize R&D Investment by country and show the variation, highlighting\
+  \ outliers and including a secondary axis for R&D Investment as a percentage of\
+  \ GDP to illustrate the correlation.\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have any specific color preferences or schemes for differentiating\
+  \ the countries?\n2. Would you prefer the labels for variations and outliers to\
+  \ be displayed inside or outside the box chart?\n3. Are there any specific fonts\
+  \ or styles you would like for the titles and legends?\n4. Do you want gridlines\
+  \ on the chart for better readability?\n5. Do you have a preferred placement for\
+  \ the legend (e.g., top, bottom, left, right of the chart)?\n6. Should the secondary\
+  \ y-axis for R&D Investment as a percentage of GDP use a specific scale or range?\n\
+  7. Would you like any specific countries to be particularly highlighted or emphasized\
+  \ in the visualization?\n8. Do you want any additional annotations or notes to be\
+  \ included on the chart?\n<end service provider message>\n\nAlso, remember that\
+  \ the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have any specific color preferences or schemes.
+
+  2. I am not sure about the labels for variations and outliers.
+
+  3. I do not know about any specific fonts or styles for the titles and legends.
+
+  4. Yes, I would like gridlines on the chart for better readability.
+
+  5. I have no specific preference for the placement of the legend.
+
+  6. I am not sure about the scale or range for the secondary y-axis.
+
+  7. I do not want any specific countries to be particularly highlighted or emphasized.
+
+  8. I do not know if any additional annotations or notes should be included on the
+  chart.'

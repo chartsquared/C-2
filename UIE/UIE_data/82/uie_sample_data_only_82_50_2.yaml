@@ -1,0 +1,307 @@
+02_initial_prompt: Create a pie chart showing the distribution of land area percentages
+  for Afghanistan, Albania, and Algeria. Use text annotations to display the exact
+  percentage values for each country segment on the chart. Highlight segments with
+  different colors for clarity.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a pie chart showing the distribution of land area percentages for Afghanistan,
+  Albania, and Algeria. Use text annotations to display the exact percentage values
+  for each country segment on the chart. Highlight segments with different colors
+  for clarity.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/82.csv'': {''summary'': {''Column'': [''Country'', ''Density\n(P/Km2)'',
+  ''Abbreviation'', ''Agricultural Land( %)'', ''Land Area(Km2)'', ''Armed Forces
+  size'', ''Birth Rate'', ''Calling Code'', ''Capital/Major City'', ''Co2-Emissions'',
+  ''CPI'', ''CPI Change (%)'', ''Currency-Code'', ''Fertility Rate'', ''Forested Area
+  (%)'', ''Gasoline Price'', ''GDP'', ''Gross primary education enrollment (%)'',
+  ''Gross tertiary education enrollment (%)'', ''Infant mortality'', ''Largest city'',
+  ''Life expectancy'', ''Maternal mortality ratio'', ''Minimum wage'', ''Official
+  language'', ''Out of pocket health expenditure'', ''Physicians per thousand'', ''Population'',
+  ''Population: Labor force participation (%)'', ''Tax revenue (%)'', ''Total tax
+  rate'', ''Unemployment rate'', ''Urban_population'', ''Latitude'', ''Longitude''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 7, 7, 1, 24,
+  6, 1, 3, 7, 17, 16, 15, 7, 7, 20, 2, 7, 12, 6, 6, 8, 14, 45, 5, 7, 7, 1, 19, 26,
+  12, 19, 5, 1, 1], ''Unique Values'': [195, 137, 188, 168, 194, 105, 170, 182, 192,
+  184, 175, 86, 133, 139, 161, 101, 193, 141, 171, 144, 188, 134, 114, 114, 76, 160,
+  152, 194, 145, 119, 156, 164, 190, 194, 194]}, ''sample_data'': {''Country'': [''Afghanistan'',
+  ''Albania'', ''Algeria''], ''Density\n(P/Km2)'': [''60'', ''105'', ''18''], ''Abbreviation'':
+  [''AF'', ''AL'', ''DZ''], ''Agricultural Land( %)'': [''58.10%'', ''43.10%'', ''17.40%''],
+  ''Land Area(Km2)'': [''652,230'', ''28,748'', ''2,381,741''], ''Armed Forces size'':
+  [''323,000'', ''9,000'', ''317,000''], ''Birth Rate'': [32.49, 11.78, 24.28], ''Calling
+  Code'': [93.0, 355.0, 213.0], ''Capital/Major City'': [''Kabul'', ''Tirana'', ''Algiers''],
+  ''Co2-Emissions'': [''8,672'', ''4,536'', ''150,006''], ''CPI'': [''149.9'', ''119.05'',
+  ''151.36''], ''CPI Change (%)'': [''2.30%'', ''1.40%'', ''2.00%''], ''Currency-Code'':
+  [''AFN'', ''ALL'', ''DZD''], ''Fertility Rate'': [4.47, 1.62, 3.02], ''Forested
+  Area (%)'': [''2.10%'', ''28.10%'', ''0.80%''], ''Gasoline Price'': [''$0.70 '',
+  ''$1.36 '', ''$0.28 ''], ''GDP'': [''$19,101,353,833 '', ''$15,278,077,447 '', ''$169,988,236,398
+  ''], ''Gross primary education enrollment (%)'': [''104.00%'', ''107.00%'', ''109.90%''],
+  ''Gross tertiary education enrollment (%)'': [''9.70%'', ''55.00%'', ''51.40%''],
+  ''Infant mortality'': [47.9, 7.8, 20.1], ''Largest city'': [''Kabul'', ''Tirana'',
+  ''Algiers''], ''Life expectancy'': [64.5, 78.5, 76.7], ''Maternal mortality ratio'':
+  [638.0, 15.0, 112.0], ''Minimum wage'': [''$0.43 '', ''$1.12 '', ''$0.95 ''], ''Official
+  language'': [''Pashto'', ''Albanian'', ''Arabic''], ''Out of pocket health expenditure'':
+  [''78.40%'', ''56.90%'', ''28.10%''], ''Physicians per thousand'': [0.28, 1.2, 1.72],
+  ''Population'': [''38,041,754'', ''2,854,191'', ''43,053,054''], ''Population: Labor
+  force participation (%)'': [''48.90%'', ''55.70%'', ''41.20%''], ''Tax revenue (%)'':
+  [''9.30%'', ''18.60%'', ''37.20%''], ''Total tax rate'': [''71.40%'', ''36.60%'',
+  ''66.10%''], ''Unemployment rate'': [''11.12%'', ''12.33%'', ''11.70%''], ''Urban_population'':
+  [''9,797,273'', ''1,747,593'', ''31,510,100''], ''Latitude'': [33.93911, 41.153332,
+  28.033886], ''Longitude'': [67.709953, 20.168331, 1.659626]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country", "Land Area(Km2)"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Visualize the proportion of land area distribution among specified countries",
+
+  "Audience": "General public, geography students, educators"
+
+  }'
+05_audience: General public, geography students, educators
+05_data_attributes:
+- Country
+- Land Area(Km2)
+05_purpose: Visualize the proportion of land area distribution among specified countries
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/82.csv'': {''summary'': {''Column'': [''Country'', ''Density\n(P/Km2)'',
+  ''Abbreviation'', ''Agricultural Land( %)'', ''Land Area(Km2)'', ''Armed Forces
+  size'', ''Birth Rate'', ''Calling Code'', ''Capital/Major City'', ''Co2-Emissions'',
+  ''CPI'', ''CPI Change (%)'', ''Currency-Code'', ''Fertility Rate'', ''Forested Area
+  (%)'', ''Gasoline Price'', ''GDP'', ''Gross primary education enrollment (%)'',
+  ''Gross tertiary education enrollment (%)'', ''Infant mortality'', ''Largest city'',
+  ''Life expectancy'', ''Maternal mortality ratio'', ''Minimum wage'', ''Official
+  language'', ''Out of pocket health expenditure'', ''Physicians per thousand'', ''Population'',
+  ''Population: Labor force participation (%)'', ''Tax revenue (%)'', ''Total tax
+  rate'', ''Unemployment rate'', ''Urban_population'', ''Latitude'', ''Longitude''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 7, 7, 1, 24,
+  6, 1, 3, 7, 17, 16, 15, 7, 7, 20, 2, 7, 12, 6, 6, 8, 14, 45, 5, 7, 7, 1, 19, 26,
+  12, 19, 5, 1, 1], ''Unique Values'': [195, 137, 188, 168, 194, 105, 170, 182, 192,
+  184, 175, 86, 133, 139, 161, 101, 193, 141, 171, 144, 188, 134, 114, 114, 76, 160,
+  152, 194, 145, 119, 156, 164, 190, 194, 194]}, ''sample_data'': {''Country'': [''Afghanistan'',
+  ''Albania'', ''Algeria''], ''Density\n(P/Km2)'': [''60'', ''105'', ''18''], ''Abbreviation'':
+  [''AF'', ''AL'', ''DZ''], ''Agricultural Land( %)'': [''58.10%'', ''43.10%'', ''17.40%''],
+  ''Land Area(Km2)'': [''652,230'', ''28,748'', ''2,381,741''], ''Armed Forces size'':
+  [''323,000'', ''9,000'', ''317,000''], ''Birth Rate'': [32.49, 11.78, 24.28], ''Calling
+  Code'': [93.0, 355.0, 213.0], ''Capital/Major City'': [''Kabul'', ''Tirana'', ''Algiers''],
+  ''Co2-Emissions'': [''8,672'', ''4,536'', ''150,006''], ''CPI'': [''149.9'', ''119.05'',
+  ''151.36''], ''CPI Change (%)'': [''2.30%'', ''1.40%'', ''2.00%''], ''Currency-Code'':
+  [''AFN'', ''ALL'', ''DZD''], ''Fertility Rate'': [4.47, 1.62, 3.02], ''Forested
+  Area (%)'': [''2.10%'', ''28.10%'', ''0.80%''], ''Gasoline Price'': [''$0.70 '',
+  ''$1.36 '', ''$0.28 ''], ''GDP'': [''$19,101,353,833 '', ''$15,278,077,447 '', ''$169,988,236,398
+  ''], ''Gross primary education enrollment (%)'': [''104.00%'', ''107.00%'', ''109.90%''],
+  ''Gross tertiary education enrollment (%)'': [''9.70%'', ''55.00%'', ''51.40%''],
+  ''Infant mortality'': [47.9, 7.8, 20.1], ''Largest city'': [''Kabul'', ''Tirana'',
+  ''Algiers''], ''Life expectancy'': [64.5, 78.5, 76.7], ''Maternal mortality ratio'':
+  [638.0, 15.0, 112.0], ''Minimum wage'': [''$0.43 '', ''$1.12 '', ''$0.95 ''], ''Official
+  language'': [''Pashto'', ''Albanian'', ''Arabic''], ''Out of pocket health expenditure'':
+  [''78.40%'', ''56.90%'', ''28.10%''], ''Physicians per thousand'': [0.28, 1.2, 1.72],
+  ''Population'': [''38,041,754'', ''2,854,191'', ''43,053,054''], ''Population: Labor
+  force participation (%)'': [''48.90%'', ''55.70%'', ''41.20%''], ''Tax revenue (%)'':
+  [''9.30%'', ''18.60%'', ''37.20%''], ''Total tax rate'': [''71.40%'', ''36.60%'',
+  ''66.10%''], ''Unemployment rate'': [''11.12%'', ''12.33%'', ''11.70%''], ''Urban_population'':
+  [''9,797,273'', ''1,747,593'', ''31,510,100''], ''Latitude'': [33.93911, 41.153332,
+  28.033886], ''Longitude'': [67.709953, 20.168331, 1.659626]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a pie chart showing the distribution of land area percentages for Afghanistan,
+  Albania, and Algeria. Use text annotations to display the exact percentage values
+  for each country segment on the chart. Highlight segments with different colors
+  for clarity.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country'', ''Land Area(Km2)'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  General public, geography students, educators
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visualize the proportion of land area distribution among specified countries
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color preferences for the different country
+  segments?
+
+  2. What font style and size would you prefer for the text annotations displaying
+  the percentage values?
+
+  3. Do you want a legend included in the pie chart? If yes, should it be positioned
+  externally or embedded within the chart?
+
+  4. Are there any particular titles or labels you would like to see on the chart
+  (e.g., chart title, segment labels)?
+
+  5. Do you have any preferences for the chart''s background color or other design
+  elements?
+
+  6. Would you like the segments to be exploded (slightly separated) for easier visualization,
+  or should they remain together?
+
+  7. Are there any additional details or information you would like to include in
+  the annotations or the chart itself?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a pie chart showing the distribution of land area\
+  \ percentages for Afghanistan, Albania, and Algeria. Use text annotations to display\
+  \ the exact percentage values for each country segment on the chart. Highlight segments\
+  \ with different colors for clarity.\n<end of user request>\n\nImagine the best\
+  \ result that can be achieved based on the given instructions and is the final output\
+  \ you want from the service provider with your purpose given below.\nBased on your\
+  \ imagination you are to respond to the service provider.\nSince you are an amateur\
+  \ user you should concretely answer 25% of the questions you think are most important,\
+  \ and the remaining questions should be answer with uncertainty, e.g. \u201CI am\
+  \ not sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\n\
+  Finally, remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nVisualize the proportion of land area distribution among specified\
+  \ countries\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ any specific color preferences for the different country segments?\n2. What font\
+  \ style and size would you prefer for the text annotations displaying the percentage\
+  \ values?\n3. Do you want a legend included in the pie chart? If yes, should it\
+  \ be positioned externally or embedded within the chart?\n4. Are there any particular\
+  \ titles or labels you would like to see on the chart (e.g., chart title, segment\
+  \ labels)?\n5. Do you have any preferences for the chart's background color or other\
+  \ design elements?\n6. Would you like the segments to be exploded (slightly separated)\
+  \ for easier visualization, or should they remain together?\n7. Are there any additional\
+  \ details or information you would like to include in the annotations or the chart\
+  \ itself?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Please include a chart title: "Land Area Distribution of Afghanistan, Albania,
+  and Algeria".
+
+  5. I do not know.
+
+  6. I would like the segments to be exploded for easier visualization.
+
+  7. I am not sure.'

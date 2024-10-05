@@ -1,0 +1,295 @@
+02_initial_prompt: Create a heatmap using the given dataset on book sales and ratings
+  in the arts-and-entertainment category. The heatmap should display the correlation
+  between different numerical features such as 'Book_average_rating', 'Book_ratings_count',
+  'gross sales', 'publisher revenue', 'sale price', 'sales rank', and 'units sold'.
+  Use a color gradient to depict the strength of the correlation, allowing easy identification
+  of strong and weak relationships between these features. This will help in understanding
+  patterns and insights related to how various factors affect book sales and ratings.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a heatmap using the given dataset on book sales and ratings in the arts-and-entertainment
+  category. The heatmap should display the correlation between different numerical
+  features such as ''Book_average_rating'', ''Book_ratings_count'', ''gross sales'',
+  ''publisher revenue'', ''sale price'', ''sales rank'', and ''units sold''. Use a
+  color gradient to depict the strength of the correlation, allowing easy identification
+  of strong and weak relationships between these features. This will help in understanding
+  patterns and insights related to how various factors affect book sales and ratings.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/182.csv'': {''summary'': {''Column'': [''index'', ''Publishing
+  Year'', ''Book Name'', ''Author'', ''language_code'', ''Author_Rating'', ''Book_average_rating'',
+  ''Book_ratings_count'', ''genre'', ''gross sales'', ''publisher revenue'', ''sale
+  price'', ''sales rank'', ''Publisher '', ''units sold''], ''Data Type'': [dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64''), dtype(''O''), dtype(''int64'')], ''Missing Values'': [0, 1, 23,
+  0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [1070, 150, 1045, 735,
+  8, 4, 134, 1064, 4, 831, 610, 149, 865, 9, 491]}, ''sample_data'': {''index'': [0,
+  1, 2], ''Publishing Year'': [1975.0, 1987.0, 2015.0], ''Book Name'': [''Beowulf'',
+  ''Batman: Year One'', ''Go Set a Watchman''], ''Author'': [''Unknown, Seamus Heaney'',
+  "Frank Miller, David Mazzucchelli, Richmond Lewis, Dennis O''Neil", ''Harper Lee''],
+  ''language_code'': [''en-US'', ''eng'', ''eng''], ''Author_Rating'': [''Novice'',
+  ''Intermediate'', ''Novice''], ''Book_average_rating'': [3.42, 4.23, 3.31], ''Book_ratings_count'':
+  [155903, 145267, 138669], ''genre'': [''genre fiction'', ''genre fiction'', ''genre
+  fiction''], ''gross sales'': [34160.0, 12437.5, 47795.0], ''publisher revenue'':
+  [20496.0, 7462.5, 28677.0], ''sale price'': [4.88, 1.99, 8.69], ''sales rank'':
+  [1, 2, 3], ''Publisher '': [''HarperCollins Publishers'', ''HarperCollins Publishers'',
+  ''Amazon Digital Services,  Inc.''], ''units sold'': [7000, 6250, 5500]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": [
+
+  "Book_average_rating",
+
+  "Book_ratings_count",
+
+  "gross sales",
+
+  "publisher revenue",
+
+  "sale price",
+
+  "sales rank",
+
+  "units sold"
+
+  ],
+
+  "Task": "Correlation",
+
+  "Purpose": "To understand patterns and insights related to how various factors affect
+  book sales and ratings",
+
+  "Audience": "Data analysts, Publishers, Authors"
+
+  }'
+05_audience: Data analysts, Publishers, Authors
+05_data_attributes:
+- Book_average_rating
+- Book_ratings_count
+- gross sales
+- publisher revenue
+- sale price
+- sales rank
+- units sold
+05_purpose: To understand patterns and insights related to how various factors affect
+  book sales and ratings
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/182.csv'': {''summary'': {''Column'': [''index'', ''Publishing
+  Year'', ''Book Name'', ''Author'', ''language_code'', ''Author_Rating'', ''Book_average_rating'',
+  ''Book_ratings_count'', ''genre'', ''gross sales'', ''publisher revenue'', ''sale
+  price'', ''sales rank'', ''Publisher '', ''units sold''], ''Data Type'': [dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64''), dtype(''O''), dtype(''int64'')], ''Missing Values'': [0, 1, 23,
+  0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [1070, 150, 1045, 735,
+  8, 4, 134, 1064, 4, 831, 610, 149, 865, 9, 491]}, ''sample_data'': {''index'': [0,
+  1, 2], ''Publishing Year'': [1975.0, 1987.0, 2015.0], ''Book Name'': [''Beowulf'',
+  ''Batman: Year One'', ''Go Set a Watchman''], ''Author'': [''Unknown, Seamus Heaney'',
+  "Frank Miller, David Mazzucchelli, Richmond Lewis, Dennis O''Neil", ''Harper Lee''],
+  ''language_code'': [''en-US'', ''eng'', ''eng''], ''Author_Rating'': [''Novice'',
+  ''Intermediate'', ''Novice''], ''Book_average_rating'': [3.42, 4.23, 3.31], ''Book_ratings_count'':
+  [155903, 145267, 138669], ''genre'': [''genre fiction'', ''genre fiction'', ''genre
+  fiction''], ''gross sales'': [34160.0, 12437.5, 47795.0], ''publisher revenue'':
+  [20496.0, 7462.5, 28677.0], ''sale price'': [4.88, 1.99, 8.69], ''sales rank'':
+  [1, 2, 3], ''Publisher '': [''HarperCollins Publishers'', ''HarperCollins Publishers'',
+  ''Amazon Digital Services,  Inc.''], ''units sold'': [7000, 6250, 5500]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a heatmap using the given dataset on book sales and ratings in the arts-and-entertainment
+  category. The heatmap should display the correlation between different numerical
+  features such as ''Book_average_rating'', ''Book_ratings_count'', ''gross sales'',
+  ''publisher revenue'', ''sale price'', ''sales rank'', and ''units sold''. Use a
+  color gradient to depict the strength of the correlation, allowing easy identification
+  of strong and weak relationships between these features. This will help in understanding
+  patterns and insights related to how various factors affect book sales and ratings.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Book_average_rating'', ''Book_ratings_count'', ''gross sales'', ''publisher revenue'',
+  ''sale price'', ''sales rank'', ''units sold'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Data analysts, Publishers, Authors
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To understand patterns and insights related to how various factors affect book sales
+  and ratings
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color gradient for the heatmap?
+
+  2. Do you have a specific color palette in mind (e.g., blue-to-red, green-to-yellow)?
+
+  3. Should the heatmap display numerical values directly on the cells?
+
+  4. Do you prefer a specific layout or size for the heatmap?
+
+  5. Should there be any labeling or annotations on specific correlations of interest?
+
+  6. Do you have preferences regarding the heatmap''s axis labels and title?
+
+  7. Would you like to include gridlines or borders within the heatmap cells?
+
+  8. Are there any specific ranges or thresholds you would like to highlight within
+  the heatmap?
+
+  9. Should the color gradient be linear or logarithmic?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap using the given dataset on book sales\
+  \ and ratings in the arts-and-entertainment category. The heatmap should display\
+  \ the correlation between different numerical features such as 'Book_average_rating',\
+  \ 'Book_ratings_count', 'gross sales', 'publisher revenue', 'sale price', 'sales\
+  \ rank', and 'units sold'. Use a color gradient to depict the strength of the correlation,\
+  \ allowing easy identification of strong and weak relationships between these features.\
+  \ This will help in understanding patterns and insights related to how various factors\
+  \ affect book sales and ratings.\n<end of user request>\n\nImagine the best result\
+  \ that can be achieved based on the given instructions and is the final output you\
+  \ want from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nTo understand patterns and insights related to how various\
+  \ factors affect book sales and ratings\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have a preferred color gradient for the heatmap?\n2. Do you\
+  \ have a specific color palette in mind (e.g., blue-to-red, green-to-yellow)?\n\
+  3. Should the heatmap display numerical values directly on the cells?\n4. Do you\
+  \ prefer a specific layout or size for the heatmap?\n5. Should there be any labeling\
+  \ or annotations on specific correlations of interest?\n6. Do you have preferences\
+  \ regarding the heatmap's axis labels and title?\n7. Would you like to include gridlines\
+  \ or borders within the heatmap cells?\n8. Are there any specific ranges or thresholds\
+  \ you would like to highlight within the heatmap?\n9. Should the color gradient\
+  \ be linear or logarithmic?\n<end service provider message>\n\nAlso, remember that\
+  \ the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, the heatmap should display numerical values directly on the cells.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Yes, include gridlines within the heatmap cells.
+
+  8. I am not sure.
+
+  9. I am not sure.'

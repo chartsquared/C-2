@@ -1,0 +1,107 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Dot plot
+
+  * Table chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Treemap
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 1129
+- 1076
+- 53
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 925
+- 785
+- 140
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/317.csv': {'summary': {'Column':\
+  \ ['S.No.', 'State', 'City', 'Category', 'Alcohol', 'Hotel Name', 'Address', 'Start\
+  \ Date', 'Expiry Date', 'Total Rooms'], 'Data Type': [dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('int64')], 'Missing Values': [0, 0, 0, 0, 536, 0, 0, 0, 0, 0], 'Unique Values':\
+  \ [1212, 30, 247, 5, 2, 1185, 1210, 340, 342, 253]}, 'sample_data': {'S.No.': [1,\
+  \ 2, 3], 'State': ['Delhi', 'Gujarat', 'Gujarat'], 'City': ['New Delhi', 'Adalaj',\
+  \ 'Ahmedabad'], 'Category': ['1 Star', '1 Star', '1 Star'], 'Alcohol': [nan, nan,\
+  \ nan], 'Hotel Name': ['Hotel LA (A unit of L A Hotels And Retreats Pvt. Ltd.)',\
+  \ 'Amba Suites, Unit of Amba Township Private Limited', 'Hotel Pragati The Grand\
+  \ (A Unit of Pragati The Grand Residency)'], 'Address': ['plot no A-1, Community\
+  \ Centre, Road No 43, Mangolpuri Industrial Area Phase - 2, Pitampura New Delhi',\
+  \ 'Amba Business Park, Shivam \xE2\u20AC\u201C II, Sub-Plot No. M1, Block No. 477\
+  \ & 478', 'SP-2,FP 2342,PAIKI, NR ZYDUS CADILA HOSPITAL,HEBATPUR ROAD,THALTEJ Ahmedabad'],\
+  \ 'Start Date': ['20/01/2020', '15/07/2022', '22/09/2021'], 'Expiry Date': ['19/01/2025',\
+  \ '14/07/2027', '21/09/2026'], 'Total Rooms': [35, 64, 45]}}}\n<end of data example\
+  \ format>\n\n<start of annotations format>\n['<start of the annotation list>', '1.\
+  \ Text Annotations:', 'Description: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.', 'Purpose: When only some\
+  \ elements are annotated, the intent is to focus the viewer\u2019s attention on\
+  \ those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nHotels in India Dataset(2023)\n\
+  travel\n<end of data details format>\n\nGiven a data format, imagine a chart that\
+  \ visualizes this data as the final output you want from the service provider.\n\
+  Consider what purpose the data has and the practical purpose of visualization and\
+  \ include it in the instructions.\nYou need to imagine a chart with * Line chart\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Line chart and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 100 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Pie chart'
+- '* Choropleth map'
+- '* Grouped bar/column chart'
+- '* Histogram'
+- '* Scatter plot'
+- '* Dot plot'
+- '* Treemap'
+- '* Heatmap'
+- '* Table chart'
+- '* Geographic heatmap'
+- '* Box chart'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart visualizing the total number of hotel rooms over time for different
+  cities in India. Highlight key points where significant changes occur, such as spikes
+  or drops in total rooms. Annotate the chart with specific hotel names and their
+  addresses at these key points to provide context. The purpose of this visualization
+  is to track the growth or decline of hotel rooms availability in various cities,
+  helping travel enthusiasts, researchers, and policymakers understand trends in the
+  hospitality industry. Use colorful lines to differentiate between cities and ensure
+  annotations are clear and informative.
+- 960
+- 854
+- 106

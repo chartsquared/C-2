@@ -1,0 +1,194 @@
+02_initial_prompt: "Create a grouped bar chart to visualize the weather data from\
+  \ the Global Metropolis Weather Dataset. Each group should represent a different\
+  \ location, with bars for each weather attribute like Temperature (\xB0C), Feels\
+  \ Like (\xB0C), Humidity (%), Wind Speed (kph), Cloud Cover (%), Pressure (mb),\
+  \ UV Index, and Visibility (km). Make sure each bar's color represents a unique\
+  \ weather attribute for clear distinction and comparison between locations. Include\
+  \ a legend for the weather attributes and label the x-axis with different locations\
+  \ and the y-axis with the corresponding values."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a grouped bar chart to visualize the weather data\
+  \ from the Global Metropolis Weather Dataset. Each group should represent a different\
+  \ location, with bars for each weather attribute like Temperature (\xB0C), Feels\
+  \ Like (\xB0C), Humidity (%), Wind Speed (kph), Cloud Cover (%), Pressure (mb),\
+  \ UV Index, and Visibility (km). Make sure each bar's color represents a unique\
+  \ weather attribute for clear distinction and comparison between locations. Include\
+  \ a legend for the weather attributes and label the x-axis with different locations\
+  \ and the y-axis with the corresponding values.\n<end of user request>\n\n<start\
+  \ of data format>\n{'../Extra_datas/data/243.csv': {'summary': {'Column': ['Location',\
+  \ 'Observation Time', 'Temperature (\xB0C)', 'Feels Like (\xB0C)', 'Humidity (%)',\
+  \ 'Wind Speed (kph)', 'Weather Condition', 'Cloud Cover (%)', 'Pressure (mb)', 'UV\
+  \ Index', 'Visibility (km)'], 'Data Type': [dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('int64'), dtype('float64'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [8, 7, 7, 8, 8, 7, 3, 3, 7, 4, 2]}, 'sample_data':\
+  \ {'Location': ['New York', 'New York', 'New York'], 'Observation Time': ['4/5/2024\
+  \ 14:15', '4/5/2024 14:15', '4/5/2024 14:15'], 'Temperature (\xB0C)': [8.3, 8.3,\
+  \ 8.3], 'Feels Like (\xB0C)': [4.5, 4.5, 4.5], 'Humidity (%)': [40, 40, 40], 'Wind\
+  \ Speed (kph)': [29.9, 29.9, 29.9], 'Weather Condition': ['Partly cloudy', 'Partly\
+  \ cloudy', 'Partly cloudy'], 'Cloud Cover (%)': [75, 75, 75], 'Pressure (mb)': [1003,\
+  \ 1003, 1003], 'UV Index': [2, 2, 2], 'Visibility (km)': [16, 16, 16]}}}\n<end of\
+  \ data format>\n\n<start of various task types>\n{'Show External Context': 'Uncaptured\
+  \ data provided by the self-tracker to understand and explain a phenomenon shown\
+  \ in the data', 'Show Confirmation': 'Collected data confirms existing knowledge',\
+  \ 'Show Contradiction': 'Collected data contradicts existing knowledge', 'Focus\
+  \ on Identifying value': 'Explicitly specify the measured value, its range for one\
+  \ or more clearly identified data points, or the difference between two measured\
+  \ values', 'Focus on Identifying extreme': 'Explicitly state the identities of the\
+  \ data points possessing extreme values of the measure variable', 'Focus on Identifying\
+  \ references': 'Explicitly state the values of categorical variables, labels from\
+  \ the axes, or legends', 'Comparison by Time Segmentation': 'Compare measured values\
+  \ segmented by time', 'Comparison by Multiple services': 'Compare the same data\
+  \ type from two or more services', 'Comparison against external data': 'Bringing\
+  \ in external data for comparison', 'Comparison By Factor': 'Compare measured values\
+  \ by a factor (other than time)', 'Comparison By Instances': 'Compare two specific\
+  \ instances', 'Show Trend': 'Describe changes over time', 'Value judgement': 'Convey\
+  \ positive or negative connotations about the data', 'Distribution with variability':\
+  \ 'Explicitly state the variability of measured values', 'Distribution By Category':\
+  \ 'Explicitly describe the variation of measured values across all or most of the\
+  \ values of a categorical variable', 'Correlation': 'Specify the direct relationship\
+  \ between two variables (but not as comparison)', 'Outlier': 'Explicitly point out\
+  \ outliers or state the effect of outliers', 'Summarization of data': 'Summary of\
+  \ collected data (such as number of data points, duration of tracking, and averages)',\
+  \ 'Prediction/Forecasting': 'Predict the future based on the collected data'}\n\
+  <end of various task types>\n\nFor data attributes needed in data visualization,\
+  \ store them in query['Data Attribute'].\nStore the selected task from the task\
+  \ types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: "{\n\"Data Attribute\": [\"Location\", \"Temperature\
+  \ (\xB0C)\", \"Feels Like (\xB0C)\", \"Humidity (%)\", \"Wind Speed (kph)\", \"\
+  Cloud Cover (%)\", \"Pressure (mb)\", \"UV Index\", \"Visibility (km)\"],\n\"Task\"\
+  : \"Comparison By Factor\",\n\"Purpose\": \"Visualize and compare weather attributes\
+  \ across different locations\",\n\"Audience\": \"Meteorologists, urban planners,\
+  \ and general public interested in weather data\"\n}"
+05_audience: Meteorologists, urban planners, and general public interested in weather
+  data
+05_data_attributes:
+- Location
+- "Temperature (\xB0C)"
+- "Feels Like (\xB0C)"
+- Humidity (%)
+- Wind Speed (kph)
+- Cloud Cover (%)
+- Pressure (mb)
+- UV Index
+- Visibility (km)
+05_purpose: Visualize and compare weather attributes across different locations
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/243.csv':\
+  \ {'summary': {'Column': ['Location', 'Observation Time', 'Temperature (\xB0C)',\
+  \ 'Feels Like (\xB0C)', 'Humidity (%)', 'Wind Speed (kph)', 'Weather Condition',\
+  \ 'Cloud Cover (%)', 'Pressure (mb)', 'UV Index', 'Visibility (km)'], 'Data Type':\
+  \ [dtype('O'), dtype('O'), dtype('float64'), dtype('float64'), dtype('int64'), dtype('float64'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64')], 'Missing\
+  \ Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [8, 7, 7, 8, 8, 7,\
+  \ 3, 3, 7, 4, 2]}, 'sample_data': {'Location': ['New York', 'New York', 'New York'],\
+  \ 'Observation Time': ['4/5/2024 14:15', '4/5/2024 14:15', '4/5/2024 14:15'], 'Temperature\
+  \ (\xB0C)': [8.3, 8.3, 8.3], 'Feels Like (\xB0C)': [4.5, 4.5, 4.5], 'Humidity (%)':\
+  \ [40, 40, 40], 'Wind Speed (kph)': [29.9, 29.9, 29.9], 'Weather Condition': ['Partly\
+  \ cloudy', 'Partly cloudy', 'Partly cloudy'], 'Cloud Cover (%)': [75, 75, 75], 'Pressure\
+  \ (mb)': [1003, 1003, 1003], 'UV Index': [2, 2, 2], 'Visibility (km)': [16, 16,\
+  \ 16]}}}\n<end of data format>\n\n<start of data visualization instruction>\nCreate\
+  \ a grouped bar chart to visualize the weather data from the Global Metropolis Weather\
+  \ Dataset. Each group should represent a different location, with bars for each\
+  \ weather attribute like Temperature (\xB0C), Feels Like (\xB0C), Humidity (%),\
+  \ Wind Speed (kph), Cloud Cover (%), Pressure (mb), UV Index, and Visibility (km).\
+  \ Make sure each bar's color represents a unique weather attribute for clear distinction\
+  \ and comparison between locations. Include a legend for the weather attributes\
+  \ and label the x-axis with different locations and the y-axis with the corresponding\
+  \ values.\n<end of data visualization instruction>\n\n<start of data attributes>\n\
+  ['Location', 'Temperature (\xB0C)', 'Feels Like (\xB0C)', 'Humidity (%)', 'Wind\
+  \ Speed (kph)', 'Cloud Cover (%)', 'Pressure (mb)', 'UV Index', 'Visibility (km)']\n\
+  <end of data attributes>\n\n<start of prospective audience>\nMeteorologists, urban\
+  \ planners, and general public interested in weather data\n<end of prospective audience>\n\
+  \n<start of type of tasks>\nComparison By Factor\n<end of type of tasks>\n\n<start\
+  \ of purpose>\nVisualize and compare weather attributes across different locations\n\
+  <end of purpose>"
+07_questions: '1. Do you have any specific color preferences for each weather attribute?
+
+  2. Do you want the bars to be displayed in a particular order within each group?
+
+  3. Would you like to display data labels on each bar to show exact values?
+
+  4. Do you have a preference for the format or style of the legend?
+
+  5. Is there a specific range or scaling you prefer for the y-axis?
+
+  6. Do you have a preferred font type or size for the x-axis and y-axis labels?
+
+  7. Should the chart include gridlines for easier comparison across different locations
+  and attributes?
+
+  8. Are there any specific visual elements (like background color or border styles)
+  you would like included in the chart?
+
+  9. How many locations do you plan to include in the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a grouped bar chart to visualize the weather data\
+  \ from the Global Metropolis Weather Dataset. Each group should represent a different\
+  \ location, with bars for each weather attribute like Temperature (\xB0C), Feels\
+  \ Like (\xB0C), Humidity (%), Wind Speed (kph), Cloud Cover (%), Pressure (mb),\
+  \ UV Index, and Visibility (km). Make sure each bar's color represents a unique\
+  \ weather attribute for clear distinction and comparison between locations. Include\
+  \ a legend for the weather attributes and label the x-axis with different locations\
+  \ and the y-axis with the corresponding values.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nVisualize and compare weather attributes\
+  \ across different locations\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have any specific color preferences for each weather attribute?\n2. Do\
+  \ you want the bars to be displayed in a particular order within each group?\n3.\
+  \ Would you like to display data labels on each bar to show exact values?\n4. Do\
+  \ you have a preference for the format or style of the legend?\n5. Is there a specific\
+  \ range or scaling you prefer for the y-axis?\n6. Do you have a preferred font type\
+  \ or size for the x-axis and y-axis labels?\n7. Should the chart include gridlines\
+  \ for easier comparison across different locations and attributes?\n8. Are there\
+  \ any specific visual elements (like background color or border styles) you would\
+  \ like included in the chart?\n9. How many locations do you plan to include in the\
+  \ chart?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please display data labels on each bar.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please include gridlines for easier comparison.
+
+  8. I do not have any specific visual elements in mind.
+
+  9. Around 4-5 locations.'

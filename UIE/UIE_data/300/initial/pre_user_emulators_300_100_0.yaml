@@ -1,0 +1,95 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Line chart
+
+  * Radar chart
+
+  * Heatmap
+
+  * Box chart
+
+  * Histogram
+
+  * Pie chart'
+- 1210
+- 1180
+- 30
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1031
+- 892
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/300.csv': {'summary': {'Column':\
+  \ ['DATE', 'Raw TOC (mg/l)', 'Finish TOC (mg/l)', 'Raw DOC (mg/l)', 'Fin DOC (mg/l)',\
+  \ 'Raw UV254 (cm-1)', 'Raw SUVA (l/mg-m)', 'TOC ReductionPCT (%)', 'IDEM Requirement\
+  \ (%)', 'Quarter', 'Quarterly Average (%)', 'Running Annual Average Compliance (%)',\
+  \ 'Raw Alkalinity', 'TOC Removal Ratio'], 'Data Type': [dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64')], 'Missing Values': [0, 1, 1, 2, 2, 2, 6, 2,\
+  \ 1, 1, 74, 74, 80, 81], 'Unique Values': [111, 76, 56, 68, 59, 63, 28, 81, 2, 4,\
+  \ 35, 37, 13, 24]}, 'sample_data': {'DATE': ['01/12/2015', '02/10/2015', '03/11/2015'],\
+  \ 'Raw TOC (mg/l)': [3.76, 3.92, 3.31], 'Finish TOC (mg/l)': [2.0, 2.04, 1.88],\
+  \ 'Raw DOC (mg/l)': [3.83, 3.65, 3.71], 'Fin DOC (mg/l)': [2.0, 1.95, 2.07], 'Raw\
+  \ UV254 (cm-1)': [0.136, 0.136, 0.116], 'Raw SUVA (l/mg-m)': [3.5, 3.7, 3.1], 'TOC\
+  \ ReductionPCT (%)': [0.47, 0.48, 0.43], 'IDEM Requirement (%)': [0.35, 0.35, 0.35],\
+  \ 'Quarter': [1.0, 1.0, 1.0], 'Quarterly Average (%)': [nan, nan, 0.46], 'Running\
+  \ Annual Average Compliance (%)': [nan, nan, 0.46], 'Raw Alkalinity': [nan, nan,\
+  \ nan], 'TOC Removal Ratio': [nan, nan, nan]}}}\n<end of data example format>\n\n\
+  <start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '3. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nOrganic Carbon & Dissolved Organic Carbon\nenvironmental-science\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Histogram and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Histogram and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Histogram'
+- '* Pie chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Radar chart'
+- '* Heatmap'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Create a histogram to visualize the distribution of "Raw TOC (mg/l)" and "Finish
+  TOC (mg/l)" values. Use text annotations for notable data points, highlighting trends
+  or outliers. Annotate specific elements like outliers to focus viewer attention
+  before diving deeper. Highlight important elements in the chart for emphasis. The
+  dataset seems concerned with environmental science, specifically organic and dissolved
+  organic carbon, so aim to reveal any noticeable patterns or compliance issues. Provide
+  context and editorial comments to help interpret the data. The ultimate goal is
+  to make the data's story clear and insightful.
+- 1075
+- 959
+- 116

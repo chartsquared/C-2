@@ -1,0 +1,94 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap'
+- 1335
+- 1288
+- 47
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1144
+- 1004
+- 140
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/261.csv': {'summary': {'Column':\
+  \ ['Name', 'Year', 'Group', 'Status', 'Birth Date', 'Birth Place', 'Gender', 'Alma\
+  \ Mater', 'Undergraduate Major', 'Graduate Major', 'Military Rank', 'Military Branch',\
+  \ 'Space Flights', 'Space Flight (hr)', 'Space Walks', 'Space Walks (hr)', 'Missions',\
+  \ 'Death Date', 'Death Mission'], 'Data Type': [dtype('O'), dtype('float64'), dtype('float64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('float64'),\
+  \ dtype('O'), dtype('O'), dtype('O')], 'Missing Values': [0, 27, 27, 0, 0, 0, 0,\
+  \ 1, 22, 59, 150, 146, 0, 0, 0, 0, 23, 305, 341], 'Unique Values': [357, 20, 20,\
+  \ 4, 348, 272, 2, 280, 83, 143, 12, 14, 8, 270, 11, 52, 305, 38, 3]}, 'sample_data':\
+  \ {'Name': ['Joseph M. Acaba', 'Loren W. Acton', 'James C. Adamson'], 'Year': [2004.0,\
+  \ nan, 1984.0], 'Group': [19.0, nan, 10.0], 'Status': ['Active', 'Retired', 'Retired'],\
+  \ 'Birth Date': ['5/17/1967', '3/7/1936', '3/3/1946'], 'Birth Place': ['Inglewood,\
+  \ CA', 'Lewiston, MT', 'Warsaw, NY'], 'Gender': ['Male', 'Male', 'Male'], 'Alma\
+  \ Mater': ['University of California-Santa Barbara; University of Arizona', 'Montana\
+  \ State University; University of Colorado', 'US Military Academy; Princeton University'],\
+  \ 'Undergraduate Major': ['Geology', 'Engineering Physics', 'Engineering'], 'Graduate\
+  \ Major': ['Geology', 'Solar Physics', 'Aerospace Engineering'], 'Military Rank':\
+  \ [nan, nan, 'Colonel'], 'Military Branch': [nan, nan, 'US Army (Retired)'], 'Space\
+  \ Flights': [2, 1, 2], 'Space Flight (hr)': [3307, 190, 334], 'Space Walks': [2,\
+  \ 0, 0], 'Space Walks (hr)': [13.0, 0.0, 0.0], 'Missions': ['STS-119 (Discovery),\
+  \ ISS-31/32 (Soyuz)', 'STS 51-F (Challenger)', 'STS-28 (Columbia), STS-43 (Atlantis)'],\
+  \ 'Death Date': [nan, nan, nan], 'Death Mission': [nan, nan, nan]}}}\n<end of data\
+  \ example format>\n\n<start of annotations format>\n['<start of the annotation list>',\
+  \ '1. Text Annotations:', 'Description: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.', 'Purpose: When only some\
+  \ elements are annotated, the intent is to focus the viewer\u2019s attention on\
+  \ those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nNASA Astronauts, 1959-Present\n\
+  space-and-astronomy\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nConsider what purpose the data has and the practical purpose of visualization\
+  \ and include it in the instructions.\nYou need to imagine a chart with * Bar chart\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Bar chart and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 50 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart comparing the number of space flights and space flight hours
+  for selected astronauts. Highlight astronauts with the highest values. Add annotations
+  for space flights and flight hours to emphasize achievements. This visualizes NASA
+  astronaut achievements from 1959 to present.
+- 1123
+- 1073
+- 50

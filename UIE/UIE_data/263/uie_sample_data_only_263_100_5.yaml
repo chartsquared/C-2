@@ -1,0 +1,274 @@
+02_initial_prompt: I want a bar chart visualizing NASA's exoplanet data. The X-axis
+  should show discovery years and the Y-axis should show the count of discovered exoplanets
+  for each year. Highlight the planet types with different colors. Make sure the chart
+  also includes labels and a legend for clarity. This will help illustrate the discovery
+  trends of various planet types over time.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I want a bar chart visualizing NASA''s exoplanet data. The X-axis should show discovery
+  years and the Y-axis should show the count of discovered exoplanets for each year.
+  Highlight the planet types with different colors. Make sure the chart also includes
+  labels and a legend for clarity. This will help illustrate the discovery trends
+  of various planet types over time.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/263.csv'': {''summary'': {''Column'': [''name'', ''distance'',
+  ''stellar_magnitude'', ''planet_type'', ''discovery_year'', ''mass_multiplier'',
+  ''mass_wrt'', ''radius_multiplier'', ''radius_wrt'', ''orbital_radius'', ''orbital_period'',
+  ''eccentricity'', ''detection_method''], ''Data Type'': [dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 17, 161, 0, 0, 23, 23, 17, 17, 289, 0, 0,
+  0], ''Unique Values'': [5250, 2542, 2875, 5, 31, 1721, 2, 1032, 2, 2827, 1278, 178,
+  11]}, ''sample_data'': {''name'': [''11 Comae Berenices b'', ''11 Ursae Minoris
+  b'', ''14 Andromedae b''], ''distance'': [304.0, 409.0, 246.0], ''stellar_magnitude'':
+  [4.72307, 5.013, 5.23133], ''planet_type'': [''Gas Giant'', ''Gas Giant'', ''Gas
+  Giant''], ''discovery_year'': [2007, 2009, 2008], ''mass_multiplier'': [19.4, 14.74,
+  4.8], ''mass_wrt'': [''Jupiter'', ''Jupiter'', ''Jupiter''], ''radius_multiplier'':
+  [1.08, 1.09, 1.15], ''radius_wrt'': [''Jupiter'', ''Jupiter'', ''Jupiter''], ''orbital_radius'':
+  [1.29, 1.53, 0.83], ''orbital_period'': [0.8925394, 1.4, 0.5086927], ''eccentricity'':
+  [0.23, 0.08, 0.0], ''detection_method'': [''Radial Velocity'', ''Radial Velocity'',
+  ''Radial Velocity'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["discovery_year", "planet_type", "name"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Illustrate the discovery trends of various planet types over time",
+
+  "Audience": "Researchers, astronomers, and the general public interested in exoplanet
+  discoveries"
+
+  }'
+05_audience: Researchers, astronomers, and the general public interested in exoplanet
+  discoveries
+05_data_attributes:
+- discovery_year
+- planet_type
+- name
+05_purpose: Illustrate the discovery trends of various planet types over time
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/263.csv'': {''summary'': {''Column'': [''name'', ''distance'',
+  ''stellar_magnitude'', ''planet_type'', ''discovery_year'', ''mass_multiplier'',
+  ''mass_wrt'', ''radius_multiplier'', ''radius_wrt'', ''orbital_radius'', ''orbital_period'',
+  ''eccentricity'', ''detection_method''], ''Data Type'': [dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 17, 161, 0, 0, 23, 23, 17, 17, 289, 0, 0,
+  0], ''Unique Values'': [5250, 2542, 2875, 5, 31, 1721, 2, 1032, 2, 2827, 1278, 178,
+  11]}, ''sample_data'': {''name'': [''11 Comae Berenices b'', ''11 Ursae Minoris
+  b'', ''14 Andromedae b''], ''distance'': [304.0, 409.0, 246.0], ''stellar_magnitude'':
+  [4.72307, 5.013, 5.23133], ''planet_type'': [''Gas Giant'', ''Gas Giant'', ''Gas
+  Giant''], ''discovery_year'': [2007, 2009, 2008], ''mass_multiplier'': [19.4, 14.74,
+  4.8], ''mass_wrt'': [''Jupiter'', ''Jupiter'', ''Jupiter''], ''radius_multiplier'':
+  [1.08, 1.09, 1.15], ''radius_wrt'': [''Jupiter'', ''Jupiter'', ''Jupiter''], ''orbital_radius'':
+  [1.29, 1.53, 0.83], ''orbital_period'': [0.8925394, 1.4, 0.5086927], ''eccentricity'':
+  [0.23, 0.08, 0.0], ''detection_method'': [''Radial Velocity'', ''Radial Velocity'',
+  ''Radial Velocity'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I want a bar chart visualizing NASA''s exoplanet data. The X-axis should show discovery
+  years and the Y-axis should show the count of discovered exoplanets for each year.
+  Highlight the planet types with different colors. Make sure the chart also includes
+  labels and a legend for clarity. This will help illustrate the discovery trends
+  of various planet types over time.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''discovery_year'', ''planet_type'', ''name'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, astronomers, and the general public interested in exoplanet discoveries
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Illustrate the discovery trends of various planet types over time
+
+  <end of purpose>'
+07_questions: '1. Do you prefer a particular order for the planet types when highlighting
+  them with different colors?
+
+  2. Do you have any specific color scheme or palette in mind for the different planet
+  types?
+
+  3. Would you like the chart title to be customized, and if so, what should it be?
+
+  4. Should the x-axis and y-axis labels have any specific formatting or font style
+  preferences?
+
+  5. Do you have any particular font preferences or sizes for the chart labels and
+  legend?
+
+  6. Should the bars be displayed in a specific style or shape, such as traditional,
+  stacked, or grouped bars?
+
+  7. Do you want grid lines on the chart, and if so, should they be subtle or prominent?
+
+  8. Do you prefer any specific positioning for the legend (e.g., top, bottom, left,
+  right) to enhance clarity?
+
+  9. Are there any annotations or additional information you would like to include
+  on the chart?
+
+  10. Do you require any specific margins or padding between the elements of the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI want a bar chart visualizing NASA's exoplanet data.\
+  \ The X-axis should show discovery years and the Y-axis should show the count of\
+  \ discovered exoplanets for each year. Highlight the planet types with different\
+  \ colors. Make sure the chart also includes labels and a legend for clarity. This\
+  \ will help illustrate the discovery trends of various planet types over time.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nIllustrate the discovery trends of various planet types over time\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you prefer a particular\
+  \ order for the planet types when highlighting them with different colors?\n2. Do\
+  \ you have any specific color scheme or palette in mind for the different planet\
+  \ types?\n3. Would you like the chart title to be customized, and if so, what should\
+  \ it be?\n4. Should the x-axis and y-axis labels have any specific formatting or\
+  \ font style preferences?\n5. Do you have any particular font preferences or sizes\
+  \ for the chart labels and legend?\n6. Should the bars be displayed in a specific\
+  \ style or shape, such as traditional, stacked, or grouped bars?\n7. Do you want\
+  \ grid lines on the chart, and if so, should they be subtle or prominent?\n8. Do\
+  \ you prefer any specific positioning for the legend (e.g., top, bottom, left, right)\
+  \ to enhance clarity?\n9. Are there any annotations or additional information you\
+  \ would like to include on the chart?\n10. Do you require any specific margins or\
+  \ padding between the elements of the chart?\n<end service provider message>\n\n\
+  Also, remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not have any specific color scheme or palette in mind.
+
+  3. I would like the title to be "Exoplanet Discoveries by Year and Type".
+
+  4. I do not have any specific preferences for axis label formatting or font style.
+
+  5. I have no specific font preferences or sizes for the chart labels and legend.
+
+  6. I am not sure.
+
+  7. I would like the grid lines to be subtle.
+
+  8. I do not know.
+
+  9. I do not have any additional annotations or information to include.
+
+  10. I do not have any specific requirements for margins or padding.'

@@ -1,0 +1,205 @@
+02_initial_prompt: Create a Choropleth map showing European Ski Resorts. Color-code
+  countries based on the average DayPassPriceAdult. Use the provided data to highlight
+  ski resorts in each country, indicating locations with markers or icons. Display
+  tooltip information for each resort including Resort name, TotalSlope, Snowparks,
+  NightSki options, and LiftCapacity. The map should give a quick visual cue of skiing
+  costs across Europe while providing detailed resort-specific data on hover. Adjust
+  map zoom to focus on Europe for better clarity. Include a legend for price ranges.
+  Make the map interactive for user engagement.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a Choropleth map showing European Ski Resorts. Color-code\
+  \ countries based on the average DayPassPriceAdult. Use the provided data to highlight\
+  \ ski resorts in each country, indicating locations with markers or icons. Display\
+  \ tooltip information for each resort including Resort name, TotalSlope, Snowparks,\
+  \ NightSki options, and LiftCapacity. The map should give a quick visual cue of\
+  \ skiing costs across Europe while providing detailed resort-specific data on hover.\
+  \ Adjust map zoom to focus on Europe for better clarity. Include a legend for price\
+  \ ranges. Make the map interactive for user engagement.\n<end of user request>\n\
+  \n<start of data format>\n{'../Extra_datas/data/114.csv': {'summary': {'Column':\
+  \ ['Unnamed: 0', 'Resort', 'Country', 'HighestPoint', 'LowestPoint', 'DayPassPriceAdult',\
+  \ 'BeginnerSlope', 'IntermediateSlope', 'DifficultSlope', 'TotalSlope', 'Snowparks',\
+  \ 'NightSki', 'SurfaceLifts', 'ChairLifts', 'GondolaLifts', 'TotalLifts', 'LiftCapacity',\
+  \ 'SnowCannons'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [376, 376, 27, 286,\
+  \ 241, 53, 82, 86, 44, 129, 3, 2, 47, 37, 23, 67, 339, 152]}, 'sample_data': {'Unnamed:\
+  \ 0': [1, 2, 3], 'Resort': ['Alpendorf (Ski amed\xE9)', 'Soldeu-Pas de la Casa/\\\
+  u200bGrau Roig/\\u200bEl Tarter/\\u200bCanillo/\\u200bEncamp (Grandvalira)', 'Oberau\
+  \ (Wildscho\u0308nau)'], 'Country': ['Austria', 'Andorra', 'Austria'], 'HighestPoint':\
+  \ [1980, 2640, 1130], 'LowestPoint': [740, 1710, 900], 'DayPassPriceAdult': [52,\
+  \ 47, 30], 'BeginnerSlope': [30, 100, 1], 'IntermediateSlope': [81, 77, 0], 'DifficultSlope':\
+  \ [4, 33, 1], 'TotalSlope': [115, 210, 2], 'Snowparks': ['Yes', 'Yes', 'No'], 'NightSki':\
+  \ ['No', 'Yes', 'No'], 'SurfaceLifts': [22, 37, 2], 'ChairLifts': [16, 28, 0], 'GondolaLifts':\
+  \ [11, 7, 0], 'TotalLifts': [49, 72, 2], 'LiftCapacity': [75398, 99017, 1932], 'SnowCannons':\
+  \ [600, 1032, 0]}}}\n<end of data format>\n\n<start of various task types>\n{'Show\
+  \ External Context': 'Uncaptured data provided by the self-tracker to understand\
+  \ and explain a phenomenon shown in the data', 'Show Confirmation': 'Collected data\
+  \ confirms existing knowledge', 'Show Contradiction': 'Collected data contradicts\
+  \ existing knowledge', 'Focus on Identifying value': 'Explicitly specify the measured\
+  \ value, its range for one or more clearly identified data points, or the difference\
+  \ between two measured values', 'Focus on Identifying extreme': 'Explicitly state\
+  \ the identities of the data points possessing extreme values of the measure variable',\
+  \ 'Focus on Identifying references': 'Explicitly state the values of categorical\
+  \ variables, labels from the axes, or legends', 'Comparison by Time Segmentation':\
+  \ 'Compare measured values segmented by time', 'Comparison by Multiple services':\
+  \ 'Compare the same data type from two or more services', 'Comparison against external\
+  \ data': 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare\
+  \ measured values by a factor (other than time)', 'Comparison By Instances': 'Compare\
+  \ two specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute']. Data attributes\
+  \ MUST match exactly the column names of the data.\nStore the selected task from\
+  \ the task types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: '```json
+
+  {"Data Attribute": ["Resort", "Country", "DayPassPriceAdult", "TotalSlope", "Snowparks",
+  "NightSki", "LiftCapacity"], "Task": "Distribution By Category", "Purpose": "Provide
+  a visual representation of skiing costs and detailed resort information across Europe",
+  "Audience": "Ski enthusiasts, tourists, travel planners"}
+
+  ```'
+05_audience: Ski enthusiasts, tourists, travel planners
+05_data_attributes:
+- Resort
+- Country
+- DayPassPriceAdult
+- TotalSlope
+- Snowparks
+- NightSki
+- LiftCapacity
+05_purpose: Provide a visual representation of skiing costs and detailed resort information
+  across Europe
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/114.csv':\
+  \ {'summary': {'Column': ['Unnamed: 0', 'Resort', 'Country', 'HighestPoint', 'LowestPoint',\
+  \ 'DayPassPriceAdult', 'BeginnerSlope', 'IntermediateSlope', 'DifficultSlope', 'TotalSlope',\
+  \ 'Snowparks', 'NightSki', 'SurfaceLifts', 'ChairLifts', 'GondolaLifts', 'TotalLifts',\
+  \ 'LiftCapacity', 'SnowCannons'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values':\
+  \ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [376,\
+  \ 376, 27, 286, 241, 53, 82, 86, 44, 129, 3, 2, 47, 37, 23, 67, 339, 152]}, 'sample_data':\
+  \ {'Unnamed: 0': [1, 2, 3], 'Resort': ['Alpendorf (Ski amed\xE9)', 'Soldeu-Pas de\
+  \ la Casa/\\u200bGrau Roig/\\u200bEl Tarter/\\u200bCanillo/\\u200bEncamp (Grandvalira)',\
+  \ 'Oberau (Wildscho\u0308nau)'], 'Country': ['Austria', 'Andorra', 'Austria'], 'HighestPoint':\
+  \ [1980, 2640, 1130], 'LowestPoint': [740, 1710, 900], 'DayPassPriceAdult': [52,\
+  \ 47, 30], 'BeginnerSlope': [30, 100, 1], 'IntermediateSlope': [81, 77, 0], 'DifficultSlope':\
+  \ [4, 33, 1], 'TotalSlope': [115, 210, 2], 'Snowparks': ['Yes', 'Yes', 'No'], 'NightSki':\
+  \ ['No', 'Yes', 'No'], 'SurfaceLifts': [22, 37, 2], 'ChairLifts': [16, 28, 0], 'GondolaLifts':\
+  \ [11, 7, 0], 'TotalLifts': [49, 72, 2], 'LiftCapacity': [75398, 99017, 1932], 'SnowCannons':\
+  \ [600, 1032, 0]}}}\n<end of data format>\n\n<start of data visualization instruction>\n\
+  Create a Choropleth map showing European Ski Resorts. Color-code countries based\
+  \ on the average DayPassPriceAdult. Use the provided data to highlight ski resorts\
+  \ in each country, indicating locations with markers or icons. Display tooltip information\
+  \ for each resort including Resort name, TotalSlope, Snowparks, NightSki options,\
+  \ and LiftCapacity. The map should give a quick visual cue of skiing costs across\
+  \ Europe while providing detailed resort-specific data on hover. Adjust map zoom\
+  \ to focus on Europe for better clarity. Include a legend for price ranges. Make\
+  \ the map interactive for user engagement.\n<end of data visualization instruction>\n\
+  \n<start of data attributes>\n['Resort', 'Country', 'DayPassPriceAdult', 'TotalSlope',\
+  \ 'Snowparks', 'NightSki', 'LiftCapacity']\n<end of data attributes>\n\n<start of\
+  \ prospective audience>\nSki enthusiasts, tourists, travel planners\n<end of prospective\
+  \ audience>\n\n<start of type of tasks>\nDistribution By Category\n<end of type\
+  \ of tasks>\n\n<start of purpose>\nProvide a visual representation of skiing costs\
+  \ and detailed resort information across Europe\n<end of purpose>"
+07_questions: '1. Do you have any specific color preferences for the country color-coding
+  based on the average DayPassPriceAdult?
+
+  2. What style of markers or icons would you prefer for indicating the locations
+  of ski resorts?
+
+  3. How detailed do you want the tooltip information to be for each resort?
+
+  4. Are there any additional attributes that you would like to include in the tooltip
+  information?
+
+  5. Do you have preferred ranges for the legend indicating price ranges?
+
+  6. What map style or background (e.g., satellite, terrain, streets) do you prefer
+  for the Choropleth map?
+
+  7. Would you like to set any specific zoom levels or centers for the initial display
+  of the map?
+
+  8. Do you have a preferred font style for the labels and tooltips?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a Choropleth map showing European Ski Resorts.\
+  \ Color-code countries based on the average DayPassPriceAdult. Use the provided\
+  \ data to highlight ski resorts in each country, indicating locations with markers\
+  \ or icons. Display tooltip information for each resort including Resort name, TotalSlope,\
+  \ Snowparks, NightSki options, and LiftCapacity. The map should give a quick visual\
+  \ cue of skiing costs across Europe while providing detailed resort-specific data\
+  \ on hover. Adjust map zoom to focus on Europe for better clarity. Include a legend\
+  \ for price ranges. Make the map interactive for user engagement.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nProvide a visual\
+  \ representation of skiing costs and detailed resort information across Europe\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have any specific\
+  \ color preferences for the country color-coding based on the average DayPassPriceAdult?\n\
+  2. What style of markers or icons would you prefer for indicating the locations\
+  \ of ski resorts?\n3. How detailed do you want the tooltip information to be for\
+  \ each resort?\n4. Are there any additional attributes that you would like to include\
+  \ in the tooltip information?\n5. Do you have preferred ranges for the legend indicating\
+  \ price ranges?\n6. What map style or background (e.g., satellite, terrain, streets)\
+  \ do you prefer for the Choropleth map?\n7. Would you like to set any specific zoom\
+  \ levels or centers for the initial display of the map?\n8. Do you have a preferred\
+  \ font style for the labels and tooltips?\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I do not have a specific preference for the colors.
+
+  2. I am not sure, any style that is clear and stands out is fine.
+
+  3. Detailed enough to include Resort name, TotalSlope, Snowparks, NightSki options,
+  and LiftCapacity.
+
+  4. No additional attributes.
+
+  5. I am not sure about the price ranges.
+
+  6. I do not have a preference for the map style or background.
+
+  7. No specific zoom levels or centers, just focus on Europe for clarity.
+
+  8. I do not have a preferred font style for labels and tooltips.'

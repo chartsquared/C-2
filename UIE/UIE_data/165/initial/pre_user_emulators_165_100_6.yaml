@@ -1,0 +1,92 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Bubble chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1439
+- 1409
+- 30
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1253
+- 1114
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/165.csv': {'summary': {'Column':\
+  \ ['index', 'Patient Id', 'Age', 'Gender', 'Air Pollution', 'Alcohol use', 'Dust\
+  \ Allergy', 'OccuPational Hazards', 'Genetic Risk', 'chronic Lung Disease', 'Balanced\
+  \ Diet', 'Obesity', 'Smoking', 'Passive Smoker', 'Chest Pain', 'Coughing of Blood',\
+  \ 'Fatigue', 'Weight Loss', 'Shortness of Breath', 'Wheezing', 'Swallowing Difficulty',\
+  \ 'Clubbing of Finger Nails', 'Frequent Cold', 'Dry Cough', 'Snoring', 'Level'],\
+  \ 'Data Type': [dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [1000, 1000, 40, 2, 8, 8, 8, 8,\
+  \ 7, 7, 7, 7, 8, 8, 9, 9, 8, 8, 8, 8, 8, 9, 7, 7, 7, 3]}, 'sample_data': {'index':\
+  \ [0, 1, 2], 'Patient Id': ['P1', 'P10', 'P100'], 'Age': [33, 17, 35], 'Gender':\
+  \ [1, 1, 1], 'Air Pollution': [2, 3, 4], 'Alcohol use': [4, 1, 5], 'Dust Allergy':\
+  \ [5, 5, 6], 'OccuPational Hazards': [4, 3, 5], 'Genetic Risk': [3, 4, 5], 'chronic\
+  \ Lung Disease': [2, 2, 4], 'Balanced Diet': [2, 2, 6], 'Obesity': [4, 2, 7], 'Smoking':\
+  \ [3, 2, 2], 'Passive Smoker': [2, 4, 3], 'Chest Pain': [2, 2, 4], 'Coughing of\
+  \ Blood': [4, 3, 8], 'Fatigue': [3, 1, 8], 'Weight Loss': [4, 3, 7], 'Shortness\
+  \ of Breath': [2, 7, 9], 'Wheezing': [2, 8, 2], 'Swallowing Difficulty': [3, 6,\
+  \ 1], 'Clubbing of Finger Nails': [1, 2, 4], 'Frequent Cold': [2, 1, 6], 'Dry Cough':\
+  \ [3, 7, 7], 'Snoring': [4, 2, 2], 'Level': ['Low', 'Medium', 'High']}}}\n<end of\
+  \ data example format>\n\n<start of data details format>\n Lung Cancer Prediction\n\
+  health\n<end of data details format>\n\nGiven a data format, imagine a chart that\
+  \ visualizes this data as the final output you want from the service provider.\n\
+  You need to imagine a chart with * Bubble chart that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Bubble chart that\
+  \ utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data.\nTo emulate a real-world user your instruction\
+  \ should be 100 in size (word count).\nYour response should ONLY contain the user\
+  \ emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Bar chart'
+- '* Histogram'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Line chart'
+- '* Bubble chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Histogram'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Line chart'
+- '* Bubble chart'
+2. initial_prompt: !!python/tuple
+- I'd like a bubble chart to visualize this health data for lung cancer prediction.
+  Use Age, Air Pollution, Alcohol Use, Dust Allergy, Smoking, and Genetic Risk on
+  the x and y axes. The bubble sizes should represent the Level of lung cancer risk
+  (Low, Medium, High). Different colors should denote Gender. Please ensure it's easy
+  to see the potential correlation between these factors and lung cancer risk. Use
+  the sample data provided (first three entries) for this visualization. This will
+  help identify any patterns or trends in lung cancer predictors. Include a legend
+  for clarity.
+- 1102
+- 989
+- 113

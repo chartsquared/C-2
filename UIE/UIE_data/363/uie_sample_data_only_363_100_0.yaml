@@ -1,0 +1,276 @@
+02_initial_prompt: Please create a choropleth map visualizing the summary of US police
+  shootings data. Use the state as the geographical variable and display the number
+  of police shootings per state. Include text annotations to highlight states with
+  the highest and lowest shooting incidents. Use color highlights to differentiate
+  between these extremes. The purpose is to provide a clear visual representation
+  of how police shootings are distributed across the United States, emphasizing areas
+  with significantly higher or lower occurrences. Ensure the map is easy to understand
+  for viewers unfamiliar with the data.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a choropleth map visualizing the summary of US police shootings data.
+  Use the state as the geographical variable and display the number of police shootings
+  per state. Include text annotations to highlight states with the highest and lowest
+  shooting incidents. Use color highlights to differentiate between these extremes.
+  The purpose is to provide a clear visual representation of how police shootings
+  are distributed across the United States, emphasizing areas with significantly higher
+  or lower occurrences. Ensure the map is easy to understand for viewers unfamiliar
+  with the data.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/363.csv'': {''summary'': {''Column'': [''id'', ''name'',
+  ''date'', ''manner_of_death'', ''armed'', ''age'', ''gender'', ''race'', ''city'',
+  ''state'', ''signs_of_mental_illness'', ''threat_level'', ''flee'', ''body_camera'',
+  ''arms_category''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''bool''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [4895, 4851, 1792, 2, 89, 76, 2, 6, 2288, 51, 2, 3, 4, 2, 12]}, ''sample_data'':
+  {''id'': [3, 4, 5], ''name'': [''Tim Elliot'', ''Lewis Lee Lembke'', ''John Paul
+  Quintero''], ''date'': [''2015-01-02'', ''2015-01-02'', ''2015-01-03''], ''manner_of_death'':
+  [''shot'', ''shot'', ''shot and Tasered''], ''armed'': [''gun'', ''gun'', ''unarmed''],
+  ''age'': [53.0, 47.0, 23.0], ''gender'': [''M'', ''M'', ''M''], ''race'': [''Asian'',
+  ''White'', ''Hispanic''], ''city'': [''Shelton'', ''Aloha'', ''Wichita''], ''state'':
+  [''WA'', ''OR'', ''KS''], ''signs_of_mental_illness'': [True, False, False], ''threat_level'':
+  [''attack'', ''attack'', ''other''], ''flee'': [''Not fleeing'', ''Not fleeing'',
+  ''Not fleeing''], ''body_camera'': [False, False, False], ''arms_category'': [''Guns'',
+  ''Guns'', ''Unarmed'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["state", "id"],
+
+  "Task": "Focus on Identifying extreme",
+
+  "Purpose": "Provide a clear visual representation of the distribution of police
+  shootings across the US, emphasizing states with significantly higher or lower occurrences",
+
+  "Audience": "Viewers unfamiliar with the data"
+
+  }'
+05_audience: Viewers unfamiliar with the data
+05_data_attributes:
+- state
+- id
+05_purpose: Provide a clear visual representation of the distribution of police shootings
+  across the US, emphasizing states with significantly higher or lower occurrences
+05_task: Focus on Identifying extreme
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/363.csv'': {''summary'': {''Column'': [''id'', ''name'',
+  ''date'', ''manner_of_death'', ''armed'', ''age'', ''gender'', ''race'', ''city'',
+  ''state'', ''signs_of_mental_illness'', ''threat_level'', ''flee'', ''body_camera'',
+  ''arms_category''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''bool''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [4895, 4851, 1792, 2, 89, 76, 2, 6, 2288, 51, 2, 3, 4, 2, 12]}, ''sample_data'':
+  {''id'': [3, 4, 5], ''name'': [''Tim Elliot'', ''Lewis Lee Lembke'', ''John Paul
+  Quintero''], ''date'': [''2015-01-02'', ''2015-01-02'', ''2015-01-03''], ''manner_of_death'':
+  [''shot'', ''shot'', ''shot and Tasered''], ''armed'': [''gun'', ''gun'', ''unarmed''],
+  ''age'': [53.0, 47.0, 23.0], ''gender'': [''M'', ''M'', ''M''], ''race'': [''Asian'',
+  ''White'', ''Hispanic''], ''city'': [''Shelton'', ''Aloha'', ''Wichita''], ''state'':
+  [''WA'', ''OR'', ''KS''], ''signs_of_mental_illness'': [True, False, False], ''threat_level'':
+  [''attack'', ''attack'', ''other''], ''flee'': [''Not fleeing'', ''Not fleeing'',
+  ''Not fleeing''], ''body_camera'': [False, False, False], ''arms_category'': [''Guns'',
+  ''Guns'', ''Unarmed'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a choropleth map visualizing the summary of US police shootings data.
+  Use the state as the geographical variable and display the number of police shootings
+  per state. Include text annotations to highlight states with the highest and lowest
+  shooting incidents. Use color highlights to differentiate between these extremes.
+  The purpose is to provide a clear visual representation of how police shootings
+  are distributed across the United States, emphasizing areas with significantly higher
+  or lower occurrences. Ensure the map is easy to understand for viewers unfamiliar
+  with the data.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''state'', ''id'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Viewers unfamiliar with the data
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying extreme
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Provide a clear visual representation of the distribution of police shootings across
+  the US, emphasizing states with significantly higher or lower occurrences
+
+  <end of purpose>'
+07_questions: '1. Do you have any preference for the color scheme used to highlight
+  the states with the highest and lowest shooting incidents?
+
+  2. Would you prefer any specific font style or size for the text annotations on
+  the map?
+
+  3. Are there any additional geographical regions, such as territories, that you
+  would like to include in the map?
+
+  4. Do you have any preference regarding the display of state names or abbreviations
+  on the map?
+
+  5. Would you like the legend to be placed in a specific position on the map?
+
+  6. Is there a particular range or scale for the color gradient that you would prefer?
+
+  7. Would you like to include any supplementary information or context in the annotations,
+  aside from highlighting the extreme values?
+
+  8. Do you have a preferred layout or aspect ratio for the map to ensure it''s easy
+  to understand for viewers?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a choropleth map visualizing the summary\
+  \ of US police shootings data. Use the state as the geographical variable and display\
+  \ the number of police shootings per state. Include text annotations to highlight\
+  \ states with the highest and lowest shooting incidents. Use color highlights to\
+  \ differentiate between these extremes. The purpose is to provide a clear visual\
+  \ representation of how police shootings are distributed across the United States,\
+  \ emphasizing areas with significantly higher or lower occurrences. Ensure the map\
+  \ is easy to understand for viewers unfamiliar with the data.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nProvide a clear\
+  \ visual representation of the distribution of police shootings across the US, emphasizing\
+  \ states with significantly higher or lower occurrences\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have any preference for the color scheme\
+  \ used to highlight the states with the highest and lowest shooting incidents?\n\
+  2. Would you prefer any specific font style or size for the text annotations on\
+  \ the map?\n3. Are there any additional geographical regions, such as territories,\
+  \ that you would like to include in the map?\n4. Do you have any preference regarding\
+  \ the display of state names or abbreviations on the map?\n5. Would you like the\
+  \ legend to be placed in a specific position on the map?\n6. Is there a particular\
+  \ range or scale for the color gradient that you would prefer?\n7. Would you like\
+  \ to include any supplementary information or context in the annotations, aside\
+  \ from highlighting the extreme values?\n8. Do you have a preferred layout or aspect\
+  \ ratio for the map to ensure it's easy to understand for viewers?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I don''t have a specific preference for the color scheme.
+
+  2. I am not sure about font style or size for the text annotations.
+
+  3. I do not know if any additional geographical regions should be included.
+
+  4. I would prefer state abbreviations on the map.
+
+  5. I don''t have a specific preference for the legend''s position.
+
+  6. I am not sure about the range or scale for the color gradient.
+
+  7. I do not know if supplementary information should be included in the annotations.
+
+  8. I do not have a preferred layout or aspect ratio.'

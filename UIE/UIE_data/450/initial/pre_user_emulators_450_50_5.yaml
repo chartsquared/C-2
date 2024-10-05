@@ -1,0 +1,86 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Histogram
+
+  * Box chart'
+- 738
+- 707
+- 31
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Highlights:\nDescription: Highlights modify\
+  \ the appearance of chart elements (e.g., size, color) to emphasize or reduce their\
+  \ importance.\nPurpose: Used to distinguish certain elements from others, making\
+  \ them stand out visually\n<end of the annotation list> \n\n<start of the annotation\
+  \ list> \n2. Shapes:\nDescription: Shape annotations include lines, arrows, rectangles,\
+  \ and other shapes. They can highlight or enclose specific chart elements to emphasize\
+  \ or compare them.\nData-Driven Use: Some shapes, like trend lines, are calculated\
+  \ from the underlying data.\n<end of the annotation list>"
+- 542
+- 414
+- 128
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/450.csv'': {''summary'': {''Column'': [''blueberry'', ''blueberry.1''],
+  ''Data Type'': [dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0], ''Unique
+  Values'': [5, 5]}, ''sample_data'': {''blueberry'': [''apple'', ''blueberry'', ''lime''],
+  ''blueberry.1'': [''blueberry'', ''blueberry'', ''lime'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  fruit color
+
+  food-and-drink
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Donut chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Donut chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Box chart'
+- '* Pie chart'
+- '* Donut chart'
+2. initial_prompt: !!python/tuple
+- Create a donut chart to visualize the distribution of fruit names from the given
+  data. Ensure each segment represents unique fruit names appearing in the 'blueberry'
+  and 'blueberry.1' columns. Use different colors for each fruit to enhance clarity.
+- 340
+- 291
+- 49

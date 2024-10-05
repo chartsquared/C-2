@@ -1,0 +1,93 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Heatmap
+
+  * Histogram
+
+  * Violin plot
+
+  * Box chart'
+- 1666
+- 1627
+- 39
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1473
+- 1334
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/233.csv': {'summary': {'Column':\
+  \ ['STUDENTID', 'AGE', 'GENDER', 'HS_TYPE', 'SCHOLARSHIP', 'WORK', 'ACTIVITY', 'PARTNER',\
+  \ 'SALARY', 'TRANSPORT', 'LIVING', 'MOTHER_EDU', 'FATHER_EDU', '#_SIBLINGS', 'KIDS',\
+  \ 'MOTHER_JOB', 'FATHER_JOB', 'STUDY_HRS', 'READ_FREQ', 'READ_FREQ_SCI', 'ATTEND_DEPT',\
+  \ 'IMPACT', 'ATTEND', 'PREP_STUDY', 'PREP_EXAM', 'NOTES', 'LISTENS', 'LIKES_DISCUSS',\
+  \ 'CLASSROOM', 'CUML_GPA', 'EXP_GPA', 'COURSE ID', 'GRADE'], 'Data Type': [dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique\
+  \ Values': [145, 3, 2, 3, 5, 2, 2, 2, 5, 4, 4, 6, 6, 5, 3, 5, 5, 5, 3, 3, 2, 3,\
+  \ 2, 3, 3, 3, 3, 3, 3, 5, 4, 9, 8]}, 'sample_data': {'STUDENTID': ['STUDENT1', 'STUDENT2',\
+  \ 'STUDENT3'], 'AGE': [2, 2, 2], 'GENDER': [2, 2, 2], 'HS_TYPE': [3, 3, 2], 'SCHOLARSHIP':\
+  \ [3, 3, 3], 'WORK': [1, 1, 2], 'ACTIVITY': [2, 2, 2], 'PARTNER': [2, 2, 2], 'SALARY':\
+  \ [1, 1, 2], 'TRANSPORT': [1, 1, 4], 'LIVING': [1, 1, 2], 'MOTHER_EDU': [1, 2, 2],\
+  \ 'FATHER_EDU': [2, 3, 2], '#_SIBLINGS': [3, 2, 2], 'KIDS': [1, 1, 1], 'MOTHER_JOB':\
+  \ [2, 2, 2], 'FATHER_JOB': [5, 1, 1], 'STUDY_HRS': [3, 2, 2], 'READ_FREQ': [2, 2,\
+  \ 1], 'READ_FREQ_SCI': [2, 2, 2], 'ATTEND_DEPT': [1, 1, 1], 'IMPACT': [1, 1, 1],\
+  \ 'ATTEND': [1, 1, 1], 'PREP_STUDY': [1, 1, 1], 'PREP_EXAM': [1, 1, 1], 'NOTES':\
+  \ [3, 3, 2], 'LISTENS': [2, 2, 2], 'LIKES_DISCUSS': [1, 3, 1], 'CLASSROOM': [2,\
+  \ 2, 1], 'CUML_GPA': [1, 2, 2], 'EXP_GPA': [1, 3, 2], 'COURSE ID': [1, 1, 1], 'GRADE':\
+  \ [1, 1, 1]}}}\n<end of data example format>\n\n<start of data details format>\n\
+  \ Higher Education Students Performance Evaluation\neducation\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nYou need to imagine a chart\
+  \ with * Grouped bar/column chart that utilizes the data format.\nIf there are multiple\
+  \ given data formats, imagine a chart with * Grouped bar/column chart that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 100 in size (word count).\nYour response should ONLY contain the user emulated\
+  \ instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Violin plot'
+- '* Bar chart'
+- '* Histogram'
+- '* Grouped bar/column chart'
+- '* Box chart'
+- '* Stacked bar/column chart'
+- '* Scatter plot'
+- '* Heatmap'
+- '* Violin plot'
+- '* Bar chart'
+- '* Histogram'
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- Please create a grouped bar chart to compare the GPA (CUML_GPA and EXP_GPA) of students.
+  Use the STUDENTID for the x-axis and plot their cumulative GPA and expected GPA
+  side by side for each student. Highlight each student's performance differences
+  based on their ID. Ensure each bar is distinctly colored for easy comparison. This
+  will help visualize the performance evaluation of higher education students by comparing
+  their cumulative and expected GPAs effectively.
+- 1305
+- 1217
+- 88

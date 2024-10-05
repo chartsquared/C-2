@@ -1,0 +1,258 @@
+02_initial_prompt: Create a scatter plot to visualize the age-standardized suicide
+  rates per 100,000 population across different countries for the year 2019. On the
+  X-axis, we'll have the different countries (Location), and on the Y-axis, the suicide
+  rates (FactValueNumeric) for both sexes combined, male, and female (Dim1). This
+  will help understand the gender differences in suicide rates among various nations.
+  Add data points for each combination of country and gender, with varying colors
+  or markers to distinguish between male, female, and both sexes categories. Ensure
+  it's clear and distinguishable.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a scatter plot to visualize the age-standardized\
+  \ suicide rates per 100,000 population across different countries for the year 2019.\
+  \ On the X-axis, we'll have the different countries (Location), and on the Y-axis,\
+  \ the suicide rates (FactValueNumeric) for both sexes combined, male, and female\
+  \ (Dim1). This will help understand the gender differences in suicide rates among\
+  \ various nations. Add data points for each combination of country and gender, with\
+  \ varying colors or markers to distinguish between male, female, and both sexes\
+  \ categories. Ensure it's clear and distinguishable.\n<end of user request>\n\n\
+  <start of data format>\n{'../Extra_datas/data/145.csv': {'summary': {'Column': ['IndicatorCode',\
+  \ 'Indicator', 'ValueType', 'ParentLocationCode', 'ParentLocation', 'Location type',\
+  \ 'SpatialDimValueCode', 'Location', 'Period type', 'Period', 'IsLatestYear', 'Dim1\
+  \ type', 'Dim1', 'Dim1ValueCode', 'Dim2 type', 'Dim2', 'Dim2ValueCode', 'Dim3 type',\
+  \ 'Dim3', 'Dim3ValueCode', 'DataSourceDimValueCode', 'DataSource', 'FactValueNumericPrefix',\
+  \ 'FactValueNumeric', 'FactValueUoM', 'FactValueNumericLowPrefix', 'FactValueNumericLow',\
+  \ 'FactValueNumericHighPrefix', 'FactValueNumericHigh', 'Value', 'FactValueTranslationID',\
+  \ 'FactComments', 'Language', 'DateModified'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('bool'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('O'), dtype('O')], 'Missing Values':\
+  \ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10980, 10980, 10980, 10980, 10980,\
+  \ 10980, 10980, 10980, 10980, 0, 10980, 10980, 0, 10980, 0, 0, 10980, 10980, 0,\
+  \ 0], 'Unique Values': [1, 1, 1, 6, 6, 1, 183, 183, 1, 20, 2, 1, 3, 3, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 3155, 0, 0, 2464, 0, 3936, 10907, 0, 0, 1, 1]}, 'sample_data':\
+  \ {'IndicatorCode': ['MH_12', 'MH_12', 'MH_12'], 'Indicator': ['Age-standardized\
+  \ suicide rates (per 100 000 population)', 'Age-standardized suicide rates (per\
+  \ 100 000 population)', 'Age-standardized suicide rates (per 100 000 population)'],\
+  \ 'ValueType': ['numeric', 'numeric', 'numeric'], 'ParentLocationCode': ['AMR',\
+  \ 'AMR', 'AMR'], 'ParentLocation': ['Americas', 'Americas', 'Americas'], 'Location\
+  \ type': ['Country', 'Country', 'Country'], 'SpatialDimValueCode': ['ATG', 'BRB',\
+  \ 'BRB'], 'Location': ['Antigua and Barbuda', 'Barbados', 'Barbados'], 'Period type':\
+  \ ['Year', 'Year', 'Year'], 'Period': [2019, 2019, 2019], 'IsLatestYear': [True,\
+  \ True, True], 'Dim1 type': ['Sex', 'Sex', 'Sex'], 'Dim1': ['Male', 'Female', 'Both\
+  \ sexes'], 'Dim1ValueCode': ['MLE', 'FMLE', 'BTSX'], 'Dim2 type': [nan, nan, nan],\
+  \ 'Dim2': [nan, nan, nan], 'Dim2ValueCode': [nan, nan, nan], 'Dim3 type': [nan,\
+  \ nan, nan], 'Dim3': [nan, nan, nan], 'Dim3ValueCode': [nan, nan, nan], 'DataSourceDimValueCode':\
+  \ [nan, nan, nan], 'DataSource': [nan, nan, nan], 'FactValueNumericPrefix': [nan,\
+  \ nan, nan], 'FactValueNumeric': [0.0, 0.16, 0.31], 'FactValueUoM': [nan, nan, nan],\
+  \ 'FactValueNumericLowPrefix': [nan, nan, nan], 'FactValueNumericLow': [0.0, 0.11,\
+  \ 0.22], 'FactValueNumericHighPrefix': [nan, nan, nan], 'FactValueNumericHigh':\
+  \ [0.0, 0.22, 0.42], 'Value': ['0 [0 \u2013 0]', '0.16 [0.11 \u2013 0.22]', '0.31\
+  \ [0.22 \u2013 0.42]'], 'FactValueTranslationID': [nan, nan, nan], 'FactComments':\
+  \ [nan, nan, nan], 'Language': ['EN', 'EN', 'EN'], 'DateModified': ['2021-02-08T18:30:00.000Z',\
+  \ '2021-02-08T18:30:00.000Z', '2021-02-08T18:30:00.000Z']}}}\n<end of data format>\n\
+  \n<start of various task types>\n{'Show External Context': 'Uncaptured data provided\
+  \ by the self-tracker to understand and explain a phenomenon shown in the data',\
+  \ 'Show Confirmation': 'Collected data confirms existing knowledge', 'Show Contradiction':\
+  \ 'Collected data contradicts existing knowledge', 'Focus on Identifying value':\
+  \ 'Explicitly specify the measured value, its range for one or more clearly identified\
+  \ data points, or the difference between two measured values', 'Focus on Identifying\
+  \ extreme': 'Explicitly state the identities of the data points possessing extreme\
+  \ values of the measure variable', 'Focus on Identifying references': 'Explicitly\
+  \ state the values of categorical variables, labels from the axes, or legends',\
+  \ 'Comparison by Time Segmentation': 'Compare measured values segmented by time',\
+  \ 'Comparison by Multiple services': 'Compare the same data type from two or more\
+  \ services', 'Comparison against external data': 'Bringing in external data for\
+  \ comparison', 'Comparison By Factor': 'Compare measured values by a factor (other\
+  \ than time)', 'Comparison By Instances': 'Compare two specific instances', 'Show\
+  \ Trend': 'Describe changes over time', 'Value judgement': 'Convey positive or negative\
+  \ connotations about the data', 'Distribution with variability': 'Explicitly state\
+  \ the variability of measured values', 'Distribution By Category': 'Explicitly describe\
+  \ the variation of measured values across all or most of the values of a categorical\
+  \ variable', 'Correlation': 'Specify the direct relationship between two variables\
+  \ (but not as comparison)', 'Outlier': 'Explicitly point out outliers or state the\
+  \ effect of outliers', 'Summarization of data': 'Summary of collected data (such\
+  \ as number of data points, duration of tracking, and averages)', 'Prediction/Forecasting':\
+  \ 'Predict the future based on the collected data'}\n<end of various task types>\n\
+  \nFor data attributes needed in data visualization, store them in query['Data Attribute'].\
+  \ Data attributes MUST match exactly the column names of the data.\nStore the selected\
+  \ task from the task types in query['Task'].\nStore the purpose of visualization\
+  \ in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\n\
+  Please reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Location", "FactValueNumeric", "Dim1"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Understand gender differences in suicide rates among various nations
+  for the year 2019",
+
+  "Audience": "Researchers, policymakers, and public health officials"
+
+  }'
+05_audience: Researchers, policymakers, and public health officials
+05_data_attributes:
+- Location
+- FactValueNumeric
+- Dim1
+05_purpose: Understand gender differences in suicide rates among various nations for
+  the year 2019
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/145.csv':\
+  \ {'summary': {'Column': ['IndicatorCode', 'Indicator', 'ValueType', 'ParentLocationCode',\
+  \ 'ParentLocation', 'Location type', 'SpatialDimValueCode', 'Location', 'Period\
+  \ type', 'Period', 'IsLatestYear', 'Dim1 type', 'Dim1', 'Dim1ValueCode', 'Dim2 type',\
+  \ 'Dim2', 'Dim2ValueCode', 'Dim3 type', 'Dim3', 'Dim3ValueCode', 'DataSourceDimValueCode',\
+  \ 'DataSource', 'FactValueNumericPrefix', 'FactValueNumeric', 'FactValueUoM', 'FactValueNumericLowPrefix',\
+  \ 'FactValueNumericLow', 'FactValueNumericHighPrefix', 'FactValueNumericHigh', 'Value',\
+  \ 'FactValueTranslationID', 'FactComments', 'Language', 'DateModified'], 'Data Type':\
+  \ [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('bool'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('O'), dtype('float64'), dtype('float64'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10980,\
+  \ 10980, 10980, 10980, 10980, 10980, 10980, 10980, 10980, 0, 10980, 10980, 0, 10980,\
+  \ 0, 0, 10980, 10980, 0, 0], 'Unique Values': [1, 1, 1, 6, 6, 1, 183, 183, 1, 20,\
+  \ 2, 1, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3155, 0, 0, 2464, 0, 3936, 10907, 0, 0,\
+  \ 1, 1]}, 'sample_data': {'IndicatorCode': ['MH_12', 'MH_12', 'MH_12'], 'Indicator':\
+  \ ['Age-standardized suicide rates (per 100 000 population)', 'Age-standardized\
+  \ suicide rates (per 100 000 population)', 'Age-standardized suicide rates (per\
+  \ 100 000 population)'], 'ValueType': ['numeric', 'numeric', 'numeric'], 'ParentLocationCode':\
+  \ ['AMR', 'AMR', 'AMR'], 'ParentLocation': ['Americas', 'Americas', 'Americas'],\
+  \ 'Location type': ['Country', 'Country', 'Country'], 'SpatialDimValueCode': ['ATG',\
+  \ 'BRB', 'BRB'], 'Location': ['Antigua and Barbuda', 'Barbados', 'Barbados'], 'Period\
+  \ type': ['Year', 'Year', 'Year'], 'Period': [2019, 2019, 2019], 'IsLatestYear':\
+  \ [True, True, True], 'Dim1 type': ['Sex', 'Sex', 'Sex'], 'Dim1': ['Male', 'Female',\
+  \ 'Both sexes'], 'Dim1ValueCode': ['MLE', 'FMLE', 'BTSX'], 'Dim2 type': [nan, nan,\
+  \ nan], 'Dim2': [nan, nan, nan], 'Dim2ValueCode': [nan, nan, nan], 'Dim3 type':\
+  \ [nan, nan, nan], 'Dim3': [nan, nan, nan], 'Dim3ValueCode': [nan, nan, nan], 'DataSourceDimValueCode':\
+  \ [nan, nan, nan], 'DataSource': [nan, nan, nan], 'FactValueNumericPrefix': [nan,\
+  \ nan, nan], 'FactValueNumeric': [0.0, 0.16, 0.31], 'FactValueUoM': [nan, nan, nan],\
+  \ 'FactValueNumericLowPrefix': [nan, nan, nan], 'FactValueNumericLow': [0.0, 0.11,\
+  \ 0.22], 'FactValueNumericHighPrefix': [nan, nan, nan], 'FactValueNumericHigh':\
+  \ [0.0, 0.22, 0.42], 'Value': ['0 [0 \u2013 0]', '0.16 [0.11 \u2013 0.22]', '0.31\
+  \ [0.22 \u2013 0.42]'], 'FactValueTranslationID': [nan, nan, nan], 'FactComments':\
+  \ [nan, nan, nan], 'Language': ['EN', 'EN', 'EN'], 'DateModified': ['2021-02-08T18:30:00.000Z',\
+  \ '2021-02-08T18:30:00.000Z', '2021-02-08T18:30:00.000Z']}}}\n<end of data format>\n\
+  \n<start of data visualization instruction>\nCreate a scatter plot to visualize\
+  \ the age-standardized suicide rates per 100,000 population across different countries\
+  \ for the year 2019. On the X-axis, we'll have the different countries (Location),\
+  \ and on the Y-axis, the suicide rates (FactValueNumeric) for both sexes combined,\
+  \ male, and female (Dim1). This will help understand the gender differences in suicide\
+  \ rates among various nations. Add data points for each combination of country and\
+  \ gender, with varying colors or markers to distinguish between male, female, and\
+  \ both sexes categories. Ensure it's clear and distinguishable.\n<end of data visualization\
+  \ instruction>\n\n<start of data attributes>\n['Location', 'FactValueNumeric', 'Dim1']\n\
+  <end of data attributes>\n\n<start of prospective audience>\nResearchers, policymakers,\
+  \ and public health officials\n<end of prospective audience>\n\n<start of type of\
+  \ tasks>\nComparison By Factor\n<end of type of tasks>\n\n<start of purpose>\nUnderstand\
+  \ gender differences in suicide rates among various nations for the year 2019\n\
+  <end of purpose>"
+07_questions: '1. Do you have a preferred color scheme for differentiating between
+  male, female, and both sexes categories?
+
+  2. Would you like to use specific markers (e.g., circles, triangles, squares) to
+  represent different genders?
+
+  3. Do you have a specific preference for the size of the markers in the scatter
+  plot?
+
+  4. Should we add gridlines for better readability, or do you prefer a cleaner look
+  without them?
+
+  5. Do you want any specific formatting for the X-axis labels, such as rotation or
+  font size?
+
+  6. How would you like the legend to be positioned (e.g., right, bottom, top)?
+
+  7. Do you have a preferred font style or size for the axis titles and labels?
+
+  8. Should we include a title for the scatter plot? If yes, do you have a specific
+  title in mind?
+
+  9. Are there any additional annotations or text that you want to include on the
+  plot for better context or clarity?
+
+  10. Are there specific ranges or limits you would like to set for the X-axis (countries)
+  and Y-axis (suicide rates)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a scatter plot to visualize the age-standardized\
+  \ suicide rates per 100,000 population across different countries for the year 2019.\
+  \ On the X-axis, we'll have the different countries (Location), and on the Y-axis,\
+  \ the suicide rates (FactValueNumeric) for both sexes combined, male, and female\
+  \ (Dim1). This will help understand the gender differences in suicide rates among\
+  \ various nations. Add data points for each combination of country and gender, with\
+  \ varying colors or markers to distinguish between male, female, and both sexes\
+  \ categories. Ensure it's clear and distinguishable.\n<end of user request>\n\n\
+  Imagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nUnderstand gender\
+  \ differences in suicide rates among various nations for the year 2019\n<end of\
+  \ purpose>\n\n<start service provider message>\n1. Do you have a preferred color\
+  \ scheme for differentiating between male, female, and both sexes categories?\n\
+  2. Would you like to use specific markers (e.g., circles, triangles, squares) to\
+  \ represent different genders?\n3. Do you have a specific preference for the size\
+  \ of the markers in the scatter plot?\n4. Should we add gridlines for better readability,\
+  \ or do you prefer a cleaner look without them?\n5. Do you want any specific formatting\
+  \ for the X-axis labels, such as rotation or font size?\n6. How would you like the\
+  \ legend to be positioned (e.g., right, bottom, top)?\n7. Do you have a preferred\
+  \ font style or size for the axis titles and labels?\n8. Should we include a title\
+  \ for the scatter plot? If yes, do you have a specific title in mind?\n9. Are there\
+  \ any additional annotations or text that you want to include on the plot for better\
+  \ context or clarity?\n10. Are there specific ranges or limits you would like to\
+  \ set for the X-axis (countries) and Y-axis (suicide rates)?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. Yes, please rotate the X-axis labels by 45 degrees for better readability.
+
+  6. Legend at the bottom would be fine.
+
+  7. I am not sure.
+
+  8. Yes, the title should be "Age-Standardized Suicide Rates by Country and Gender
+  (2019)".
+
+  9. I do not know.
+
+  10. I am not sure.'

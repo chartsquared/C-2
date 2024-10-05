@@ -1,0 +1,93 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 921
+- 893
+- 28
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n2. Shapes:\n\
+  Description: Shape annotations include lines, arrows, rectangles, and other shapes.\
+  \ They can highlight or enclose specific chart elements to emphasize or compare\
+  \ them.\nData-Driven Use: Some shapes, like trend lines, are calculated from the\
+  \ underlying data.   \n<end of the annotation list>"
+- 750
+- 600
+- 150
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/290.csv'': {''summary'': {''Column'': [''genus'', ''species'',
+  ''date'', ''locality'', ''family'', ''flight_call'', ''habitat'', ''stratum''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0,
+  0, 0], ''Unique Values'': [43, 81, 5316, 2, 15, 3, 3, 2]}, ''sample_data'': {''genus'':
+  [''Passerculus'', ''Passerculus'', ''Passerculus''], ''species'': [''sandwichensis'',
+  ''sandwichensis'', ''sandwichensis''], ''date'': [''1978-10-27'', ''1979-10-23'',
+  ''1980-04-19''], ''locality'': [''MP'', ''MP'', ''MP''], ''family'': [''Passerellidae'',
+  ''Passerellidae'', ''Passerellidae''], ''flight_call'': [''Yes'', ''Yes'', ''Yes''],
+  ''habitat'': [''Open'', ''Open'', ''Open''], ''stratum'': [''Lower'', ''Lower'',
+  ''Lower'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  bird_collisions
+
+  zoology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Stacked bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Stacked bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Please create a stacked bar chart showing the number of unique species observed
+  per genus in different habitats. Each bar will represent a genus, and the segments
+  will represent distinct habitats such as Open, Forest, and Urban.
+- 525
+- 483
+- 42

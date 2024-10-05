@@ -1,0 +1,92 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Pictogram
+
+  * Icon chart
+
+  * Heatmap
+
+  * Donut chart
+
+  * Treemap
+
+  * Circular treemap
+
+  * Choropleth map'
+- 786
+- 738
+- 48
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 589
+- 450
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/147.csv': {'summary': {'Column':\
+  \ ['Country', 'Languages Spoken'], 'Data Type': [dtype('O'), dtype('O')], 'Missing\
+  \ Values': [0, 0], 'Unique Values': [198, 191]}, 'sample_data': {'Country': ['Afghanistan',\
+  \ 'Albania', 'Algeria'], 'Languages Spoken': ['Dari Persian, Pashtu (both official),\
+  \ other Turkic and minor languages', 'Albanian (Tosk is the official dialect), Greek',\
+  \ 'Arabic (official), French, Berber dialects']}}}\n<end of data example format>\n\
+  \n<start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '3. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nLanguages spoken across various nations\nliterature-and-linguistics\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Donut chart and given\
+  \ annotations that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Donut chart and given annotations that utilizes all the\
+  \ data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 100 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Donut chart'
+- '* Icon chart'
+- '* Treemap'
+- '* Column chart'
+- '* Choropleth map'
+- '* Circular treemap'
+- '* Bar chart'
+- '* Grouped bar/column chart'
+- '* Pictogram'
+- '* Heatmap'
+- '* Donut chart'
+2. initial_prompt: !!python/tuple
+- "<start of user emulated instruction>\nCreate a donut chart to visualize the languages\
+  \ spoken across various countries. Use text annotations to highlight specific languages\
+  \ spoken in selected countries like Afghanistan, Albania, and Algeria. Employ highlights\
+  \ to distinguish official languages from other languages. This visualization will\
+  \ help understand the linguistic diversity stated in the data. Keep it concise and\
+  \ ensure annotations focus the viewer\u2019s attention on the highlighted data points.\
+  \ Include context related to the number of unique languages and ensure the chart\
+  \ is intuitive for literature and linguistics enthusiasts.\n<end of user emulated\
+  \ instruction>"
+- 631
+- 521
+- 110

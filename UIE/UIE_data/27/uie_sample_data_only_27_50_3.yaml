@@ -1,0 +1,276 @@
+02_initial_prompt: Create a grouped column chart displaying total sales by different
+  cities. Group by CITY, showing SALES per CUSTOMERNAME. Make sure to distinguish
+  between different DEALSIZE categories using different colors.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a grouped column chart displaying total sales by different cities. Group
+  by CITY, showing SALES per CUSTOMERNAME. Make sure to distinguish between different
+  DEALSIZE categories using different colors.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/27.csv'': {''summary'': {''Column'': [''ORDERNUMBER'', ''QUANTITYORDERED'',
+  ''PRICEEACH'', ''ORDERLINENUMBER'', ''SALES'', ''ORDERDATE'', ''DAYS_SINCE_LASTORDER'',
+  ''STATUS'', ''PRODUCTLINE'', ''MSRP'', ''PRODUCTCODE'', ''CUSTOMERNAME'', ''PHONE'',
+  ''ADDRESSLINE1'', ''CITY'', ''POSTALCODE'', ''COUNTRY'', ''CONTACTLASTNAME'', ''CONTACTFIRSTNAME'',
+  ''DEALSIZE''], ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [298, 58, 1843, 18, 2690, 246, 1832, 6, 7, 80, 109, 89, 88, 89,
+  71, 73, 19, 76, 72, 3]}, ''sample_data'': {''ORDERNUMBER'': [10107, 10121, 10134],
+  ''QUANTITYORDERED'': [30, 34, 41], ''PRICEEACH'': [95.7, 81.35, 94.74], ''ORDERLINENUMBER'':
+  [2, 5, 2], ''SALES'': [2871.0, 2765.9, 3884.34], ''ORDERDATE'': [''24/02/2018'',
+  ''07/05/2018'', ''01/07/2018''], ''DAYS_SINCE_LASTORDER'': [828, 757, 703], ''STATUS'':
+  [''Shipped'', ''Shipped'', ''Shipped''], ''PRODUCTLINE'': [''Motorcycles'', ''Motorcycles'',
+  ''Motorcycles''], ''MSRP'': [95, 95, 95], ''PRODUCTCODE'': [''S10_1678'', ''S10_1678'',
+  ''S10_1678''], ''CUSTOMERNAME'': [''Land of Toys Inc.'', ''Reims Collectables'',
+  ''Lyon Souveniers''], ''PHONE'': [''2125557818'', ''26.47.1555'', ''+33 1 46 62
+  7555''], ''ADDRESSLINE1'': [''897 Long Airport Avenue'', "59 rue de l''Abbaye",
+  ''27 rue du Colonel Pierre Avia''], ''CITY'': [''NYC'', ''Reims'', ''Paris''], ''POSTALCODE'':
+  [''10022'', ''51100'', ''75508''], ''COUNTRY'': [''USA'', ''France'', ''France''],
+  ''CONTACTLASTNAME'': [''Yu'', ''Henriot'', ''Da Cunha''], ''CONTACTFIRSTNAME'':
+  [''Kwai'', ''Paul'', ''Daniel''], ''DEALSIZE'': [''Small'', ''Small'', ''Medium'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["CITY", "SALES", "CUSTOMERNAME", "DEALSIZE"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "To compare total sales across different cities, categorized by the size
+  of deals per customer",
+
+  "Audience": "Sales Team, Business Analysts, Sales Managers"
+
+  }'
+05_audience: Sales Team, Business Analysts, Sales Managers
+05_data_attributes:
+- CITY
+- SALES
+- CUSTOMERNAME
+- DEALSIZE
+05_purpose: To compare total sales across different cities, categorized by the size
+  of deals per customer
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/27.csv'': {''summary'': {''Column'': [''ORDERNUMBER'', ''QUANTITYORDERED'',
+  ''PRICEEACH'', ''ORDERLINENUMBER'', ''SALES'', ''ORDERDATE'', ''DAYS_SINCE_LASTORDER'',
+  ''STATUS'', ''PRODUCTLINE'', ''MSRP'', ''PRODUCTCODE'', ''CUSTOMERNAME'', ''PHONE'',
+  ''ADDRESSLINE1'', ''CITY'', ''POSTALCODE'', ''COUNTRY'', ''CONTACTLASTNAME'', ''CONTACTFIRSTNAME'',
+  ''DEALSIZE''], ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [298, 58, 1843, 18, 2690, 246, 1832, 6, 7, 80, 109, 89, 88, 89,
+  71, 73, 19, 76, 72, 3]}, ''sample_data'': {''ORDERNUMBER'': [10107, 10121, 10134],
+  ''QUANTITYORDERED'': [30, 34, 41], ''PRICEEACH'': [95.7, 81.35, 94.74], ''ORDERLINENUMBER'':
+  [2, 5, 2], ''SALES'': [2871.0, 2765.9, 3884.34], ''ORDERDATE'': [''24/02/2018'',
+  ''07/05/2018'', ''01/07/2018''], ''DAYS_SINCE_LASTORDER'': [828, 757, 703], ''STATUS'':
+  [''Shipped'', ''Shipped'', ''Shipped''], ''PRODUCTLINE'': [''Motorcycles'', ''Motorcycles'',
+  ''Motorcycles''], ''MSRP'': [95, 95, 95], ''PRODUCTCODE'': [''S10_1678'', ''S10_1678'',
+  ''S10_1678''], ''CUSTOMERNAME'': [''Land of Toys Inc.'', ''Reims Collectables'',
+  ''Lyon Souveniers''], ''PHONE'': [''2125557818'', ''26.47.1555'', ''+33 1 46 62
+  7555''], ''ADDRESSLINE1'': [''897 Long Airport Avenue'', "59 rue de l''Abbaye",
+  ''27 rue du Colonel Pierre Avia''], ''CITY'': [''NYC'', ''Reims'', ''Paris''], ''POSTALCODE'':
+  [''10022'', ''51100'', ''75508''], ''COUNTRY'': [''USA'', ''France'', ''France''],
+  ''CONTACTLASTNAME'': [''Yu'', ''Henriot'', ''Da Cunha''], ''CONTACTFIRSTNAME'':
+  [''Kwai'', ''Paul'', ''Daniel''], ''DEALSIZE'': [''Small'', ''Small'', ''Medium'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a grouped column chart displaying total sales by different cities. Group
+  by CITY, showing SALES per CUSTOMERNAME. Make sure to distinguish between different
+  DEALSIZE categories using different colors.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''CITY'', ''SALES'', ''CUSTOMERNAME'', ''DEALSIZE'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Sales Team, Business Analysts, Sales Managers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To compare total sales across different cities, categorized by the size of deals
+  per customer
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color preferences for each DEALSIZE category?
+
+  2. Do you prefer any particular order for displaying the cities on the axis?
+
+  3. Would you like to display the values of SALES on the columns?
+
+  4. Do you have any specific preferences for the chart''s title or labels for the
+  axes?
+
+  5. Are there any custom fonts or styling preferences you would like to use for the
+  chart?
+
+  6. Do you have a preference on how the legend is displayed or where it is located?
+
+  7. Are there any specific gridline styles or background colors you would like to
+  apply to the chart?
+
+  8. Do you prefer a specific width for the columns in the grouped column chart?
+
+  9. Would you like to add tooltips to provide additional information when hovering
+  over the columns?
+
+  10. Are there any additional annotations or markers you want to include in the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a grouped column chart displaying total sales\
+  \ by different cities. Group by CITY, showing SALES per CUSTOMERNAME. Make sure\
+  \ to distinguish between different DEALSIZE categories using different colors.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nTo compare total sales across different cities, categorized by the size\
+  \ of deals per customer\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have any specific color preferences for each DEALSIZE category?\n2. Do\
+  \ you prefer any particular order for displaying the cities on the axis?\n3. Would\
+  \ you like to display the values of SALES on the columns?\n4. Do you have any specific\
+  \ preferences for the chart's title or labels for the axes?\n5. Are there any custom\
+  \ fonts or styling preferences you would like to use for the chart?\n6. Do you have\
+  \ a preference on how the legend is displayed or where it is located?\n7. Are there\
+  \ any specific gridline styles or background colors you would like to apply to the\
+  \ chart?\n8. Do you prefer a specific width for the columns in the grouped column\
+  \ chart?\n9. Would you like to add tooltips to provide additional information when\
+  \ hovering over the columns?\n10. Are there any additional annotations or markers\
+  \ you want to include in the chart?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. Yes, I would like to display the values of SALES on the columns.
+
+  4. I do not have any specific preferences for the chart''s title or labels for the
+  axes.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not have any specific preference.
+
+  9. I am not sure.
+
+  10. I do not know.'

@@ -1,0 +1,95 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1043
+- 1012
+- 31
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 862
+- 724
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/78.csv'': {''summary'': {''Column'': [''title'', ''score'',
+  ''id'', ''url'', ''comms_num'', ''created'', ''body'', ''timestamp''], ''Data Type'':
+  [dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''float64''),
+  dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 1133, 0, 0, 376, 0],
+  ''Unique Values'': [470, 40, 1602, 469, 36, 1602, 1204, 1602]}, ''sample_data'':
+  {''title'': [''Health Canada approves AstraZeneca COVID-19 vaccine'', "COVID-19
+  in Canada: ''Vaccination passports'' a near certainty says bio-ethicist", "Coronavirus
+  variants could fuel Canada''s third wave"], ''score'': [7, 2, 6], ''id'': [''lt74vw'',
+  ''lsh0ij'', ''lohlle''], ''url'': [''https://www.canadaforums.ca/2021/02/health-canada-approves-astrazeneca.html'',
+  ''https://www.canadaforums.ca/2021/02/covid-19-in-canada-vaccination.html'', ''https://www.canadaforums.ca/2021/02/coronavirus-variants-could-fuel-canadas.html''],
+  ''comms_num'': [0, 1, 0], ''created'': [1614400425.0, 1614316267.0, 1613886608.0],
+  ''body'': [nan, nan, nan], ''timestamp'': [''2021-02-27 06:33:45'', ''2021-02-26
+  07:11:07'', ''2021-02-21 07:50:08'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Reddit Vaccine Myths
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Geographic heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Geographic heatmap
+  that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Line chart'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Scatter plot'
+- '* Geographic heatmap'
+2. initial_prompt: !!python/tuple
+- Create a geographic heatmap highlighting the distribution of discussions and interest
+  related to COVID-19 vaccines across different regions in Canada using the provided
+  dataset.
+- 629
+- 601
+- 28

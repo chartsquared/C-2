@@ -1,0 +1,104 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 1185
+- 1153
+- 32
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 999
+- 861
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/265.csv'': {''summary'': {''Column'': [''#'', ''Country,\r\nOther'',
+  ''Total\r\nCases'', ''Total\r\nDeaths'', ''New\r\nDeaths'', ''Total\r\nRecovered'',
+  ''Active\r\nCases'', ''Serious,\r\nCritical'', ''Tot Cases/\r\n1M pop'', ''Deaths/\r\n1M
+  pop'', ''Total\r\nTests'', ''Tests/\r\n1M pop'', ''Population''], ''Data Type'':
+  [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 5, 227, 16, 15, 83, 2,
+  7, 16, 16, 2], ''Unique Values'': [230, 230, 230, 210, 3, 214, 196, 77, 228, 205,
+  213, 214, 228]}, ''sample_data'': {''#'': [1, 2, 3], ''Country,\r\nOther'': [''USA'',
+  ''India'', ''France''], ''Total\r\nCases'': [''98,166,904'', ''44,587,307'', ''35,342,950''],
+  ''Total\r\nDeaths'': [''1,084,282'', ''528,629'', ''155,078''], ''New\r\nDeaths'':
+  [nan, nan, nan], ''Total\r\nRecovered'': [''94,962,112'', ''44,019,095'', ''34,527,115''],
+  ''Active\r\nCases'': [''2,120,510'', ''39,583'', ''660,757''], ''Serious,\r\nCritical'':
+  [''2,970'', ''698'', ''869''], ''Tot Cases/\r\n1M pop'': [''293,206'', ''31,698'',
+  ''538,892''], ''Deaths/\r\n1M pop'': [''3,239'', ''376'', ''2,365''], ''Total\r\nTests'':
+  [''1,118,158,870'', ''894,416,853'', ''271,490,188''], ''Tests/\r\n1M pop'': [''3,339,729'',
+  ''635,857'', ''4,139,547''], ''Population'': [''334,805,269'', ''1,406,631,776'',
+  ''65,584,518'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  COVID -19 Coronavirus Pandemic Dataset
+
+  health
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Stacked bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Stacked bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Choropleth map'
+- '* Bar chart'
+- '* Scatter plot'
+- '* Line chart'
+- '* Heatmap'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a stacked column chart showing Total Cases, Total Deaths, and Total Recovered
+  for USA, India, and France. Use different colors for each metric. Title it "COVID-19
+  Impact by Country."
+- 800
+- 758
+- 42

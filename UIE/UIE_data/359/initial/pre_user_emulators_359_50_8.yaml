@@ -1,0 +1,121 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart
+
+  * Violin plot
+
+  * Histogram
+
+  * Table chart'
+- 1523
+- 1484
+- 39
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1331
+- 1192
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/359.csv'': {''summary'': {''Column'': [''Institution'', ''Course
+  Number'', ''Launch Date'', ''Course Title'', ''Instructors'', ''Course Subject'',
+  ''Year'', ''Honor Code Certificates'', ''Participants (Course Content Accessed)'',
+  ''Audited (> 50% Course Content Accessed)'', ''Certified'', ''% Audited'', ''% Certified'',
+  ''% Certified of > 50% Course Content Accessed'', ''% Played Video'', ''% Posted
+  in Forum'', ''% Grade Higher Than Zero'', ''Total Course Hours (Thousands)'', ''Median
+  Hours for Certification'', ''Median Age'', ''% Male'', ''% Female'', "% Bachelor''s
+  Degree or Higher"], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0], ''Unique Values'': [2, 188, 205, 202, 140, 4, 4, 2, 289, 279, 249, 277,
+  263, 281, 282, 249, 281, 286, 279, 22, 286, 286, 278]}, ''sample_data'': {''Institution'':
+  [''MITx'', ''MITx'', ''MITx''], ''Course Number'': [''6.002x'', ''6.00x'', ''3.091x''],
+  ''Launch Date'': [''09/05/2012'', ''09/26/2012'', ''10/09/2012''], ''Course Title'':
+  [''Circuits and Electronics'', ''Introduction to Computer Science and Programming'',
+  ''Introduction to Solid State Chemistry''], ''Instructors'': [''Khurram Afridi'',
+  ''Eric Grimson, John Guttag, Chris Terman'', ''Michael Cima''], ''Course Subject'':
+  [''Science, Technology, Engineering, and Mathematics'', ''Computer Science'', ''Science,
+  Technology, Engineering, and Mathematics''], ''Year'': [1, 1, 1], ''Honor Code Certificates'':
+  [1, 1, 1], ''Participants (Course Content Accessed)'': [36105, 62709, 16663], ''Audited
+  (> 50% Course Content Accessed)'': [5431, 8949, 2855], ''Certified'': [3003, 5783,
+  2082], ''% Audited'': [15.04, 14.27, 17.13], ''% Certified'': [8.32, 9.22, 12.49],
+  ''% Certified of > 50% Course Content Accessed'': [54.98, 64.05, 72.85], ''% Played
+  Video'': [''83.2'', ''89.14'', ''87.49''], ''% Posted in Forum'': [8.17, 14.38,
+  14.42], ''% Grade Higher Than Zero'': [28.97, 39.5, 34.89], ''Total Course Hours
+  (Thousands)'': [418.94, 884.04, 227.55], ''Median Hours for Certification'': [64.45,
+  78.53, 61.28], ''Median Age'': [26.0, 28.0, 27.0], ''% Male'': [88.28, 83.5, 70.32],
+  ''% Female'': [11.72, 16.5, 29.68], "% Bachelor''s Degree or Higher": [60.68, 63.04,
+  58.76]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Online Courses from Harvard and MIT
+
+  education
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Heatmap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Box chart'
+- '* Stacked bar/column chart'
+- '* Scatter plot'
+- '* Table chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Violin plot'
+- '* Line chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Create a heatmap showing % Audited, % Certified, % Certified of > 50% Accessed,
+  % Played Video for different MITx courses. Use varying coloration.
+- 1102
+- 1067
+- 35

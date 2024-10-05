@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    { "id": 1, "name": "New York", "weight": 6, "region": "East" },
+    { "id": 2, "name": "Los Angeles", "weight": 5, "region": "West" },
+    { "id": 3, "name": "Chicago", "weight": 4, "region": "Midwest" },
+    { "id": 4, "name": "Houston", "weight": 3, "region": "South" },
+    { "id": 5, "name": "Miami", "weight": 4, "region": "South" },
+    { "id": 6, "name": "Atlanta", "weight": 3, "region": "South" },
+    { "id": 7, "name": "San Francisco", "weight": 3, "region": "West" },
+    { "id": 8, "name": "Seattle", "weight": 2, "region": "West" },
+    { "id": 9, "name": "Denver", "weight": 2, "region": "West" },
+    { "id": 10, "name": "Boston", "weight": 2, "region": "East" }
+  ],
+  "links": [
+    { "source": 1, "target": 2, "passengers": 200 },
+    { "source": 1, "target": 3, "passengers": 150 },
+    { "source": 1, "target": 4, "passengers": 100 },
+    { "source": 1, "target": 5, "passengers": 180 },
+    { "source": 1, "target": 6, "passengers": 160 },
+    { "source": 2, "target": 3, "passengers": 140 },
+    { "source": 2, "target": 7, "passengers": 170 },
+    { "source": 2, "target": 8, "passengers": 130 },
+    { "source": 2, "target": 9, "passengers": 120 },
+    { "source": 2, "target": 10, "passengers": 110 },
+    { "source": 3, "target": 4, "passengers": 90 },
+    { "source": 3, "target": 5, "passengers": 80 },
+    { "source": 4, "target": 5, "passengers": 70 },
+    { "source": 5, "target": 6, "passengers": 60 },
+    { "source": 6, "target": 7, "passengers": 50 },
+    { "source": 7, "target": 8, "passengers": 40 },
+    { "source": 8, "target": 9, "passengers": 30 },
+    { "source": 9, "target": 10, "passengers": 20 },
+    { "source": 10, "target": 1, "passengers": 10 }
+  ]
+}

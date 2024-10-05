@@ -1,0 +1,85 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1097
+- 1074
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 927
+- 789
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/173.csv': {'summary': {'Column':\
+  \ ['Unnamed: 0', 'title', 'artist', 'top genre', 'year', 'bpm', 'nrgy', 'dnce',\
+  \ 'dB', 'live', 'val', 'dur', 'acous', 'spch', 'pop'], 'Data Type': [dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [603, 584, 184, 50, 10, 104,\
+  \ 77, 70, 14, 61, 94, 144, 75, 39, 71]}, 'sample_data': {'Unnamed: 0': [1, 2, 3],\
+  \ 'title': ['Hey, Soul Sister', 'Love The Way You Lie', 'TiK ToK'], 'artist': ['Train',\
+  \ 'Eminem', 'Kesha'], 'top genre': ['neo mellow', 'detroit hip hop', 'dance pop'],\
+  \ 'year': [2010, 2010, 2010], 'bpm': [97, 87, 120], 'nrgy': [89, 93, 84], 'dnce':\
+  \ [67, 75, 76], 'dB': [-4, -5, -3], 'live': [8, 52, 29], 'val': [80, 64, 71], 'dur':\
+  \ [217, 263, 200], 'acous': [19, 24, 10], 'spch': [4, 23, 14], 'pop': [83, 82, 80]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nTop Spotify songs from\
+  \ 2010-2019 - BY YEAR\nmusic\n<end of data details format>\n\nGiven a data format,\
+  \ imagine a chart that visualizes this data as the final output you want from the\
+  \ service provider.\nConsider what purpose the data has and the practical purpose\
+  \ of visualization and include it in the instructions.\nYou need to imagine a chart\
+  \ with * Pie chart and given annotations that utilizes the data format.\nIf there\
+  \ are multiple given data formats, imagine a chart with * Pie chart and given annotations\
+  \ that utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data.\nTo emulate a real-world user your instruction\
+  \ should be 100 in size (word count). Do not include data path in the instruction.\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Pie chart'
+- '* Bar chart'
+- '* Geographic heatmap'
+- '* Heatmap'
+- '* Histogram'
+- '* Line chart'
+- '* Pie chart'
+2. initial_prompt: !!python/tuple
+- Create a pie chart to visualize the top genres of Spotify songs from 2010-2019,
+  focusing on the distribution of genres. Use text annotations to highlight the most
+  popular genres. Highlight the top three genres to make them stand out visually by
+  using different colors or sizes. This will help to focus the viewer's attention
+  on the most prominent genres while providing a clear overview of the music trends
+  during this decade. Ensure the chart is easy to read and visually appealing for
+  music enthusiasts and industry analysts.
+- 957
+- 858
+- 99

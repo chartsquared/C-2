@@ -1,0 +1,97 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Violin plot
+
+  * Choropleth map'
+- 1325
+- 1268
+- 57
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1113
+- 974
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/224.csv': {'summary': {'Column':\
+  \ ['Row ID', 'Order ID', 'Order Date', 'Ship Date', 'Ship Mode', 'Customer ID',\
+  \ 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Postal Code', 'Region',\
+  \ 'Product ID', 'Category', 'Sub-Category', 'Product Name', 'Sales'], 'Data Type':\
+  \ [dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('float64')], 'Missing Values':\
+  \ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0], 'Unique Values': [9800,\
+  \ 4922, 1230, 1326, 4, 793, 793, 3, 1, 529, 49, 626, 4, 1861, 3, 17, 1849, 5757]},\
+  \ 'sample_data': {'Row ID': [1, 2, 3], 'Order ID': ['CA-2017-152156', 'CA-2017-152156',\
+  \ 'CA-2017-138688'], 'Order Date': ['08/11/2017', '08/11/2017', '12/06/2017'], 'Ship\
+  \ Date': ['11/11/2017', '11/11/2017', '16/06/2017'], 'Ship Mode': ['Second Class',\
+  \ 'Second Class', 'Second Class'], 'Customer ID': ['CG-12520', 'CG-12520', 'DV-13045'],\
+  \ 'Customer Name': ['Claire Gute', 'Claire Gute', 'Darrin Van Huff'], 'Segment':\
+  \ ['Consumer', 'Consumer', 'Corporate'], 'Country': ['United States', 'United States',\
+  \ 'United States'], 'City': ['Henderson', 'Henderson', 'Los Angeles'], 'State':\
+  \ ['Kentucky', 'Kentucky', 'California'], 'Postal Code': [42420.0, 42420.0, 90036.0],\
+  \ 'Region': ['South', 'South', 'West'], 'Product ID': ['FUR-BO-10001798', 'FUR-CH-10000454',\
+  \ 'OFF-LA-10000240'], 'Category': ['Furniture', 'Furniture', 'Office Supplies'],\
+  \ 'Sub-Category': ['Bookcases', 'Chairs', 'Labels'], 'Product Name': ['Bush Somerset\
+  \ Collection Bookcase', 'Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded\
+  \ Back', 'Self-Adhesive Address Labels for Typewriters by Universal'], 'Sales':\
+  \ [261.96, 731.94, 14.62]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '2. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nSuperstore Sales Dataset\nbusiness\n<end of data\
+  \ details format>\n\nGiven a data format, imagine a chart that visualizes this data\
+  \ as the final output you want from the service provider.\nConsider what purpose\
+  \ the data has and the practical purpose of visualization and include it in the\
+  \ instructions.\nYou need to imagine a chart with * Box chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Box chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 50 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- Please create a box chart to visualize the sales distribution across different product
+  categories. Add text annotations for the highest and lowest sales categories. Highlight
+  the median sales value with a different color.
+- 1079
+- 1043
+- 36

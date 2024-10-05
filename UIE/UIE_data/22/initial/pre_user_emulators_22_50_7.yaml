@@ -1,0 +1,113 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1510
+- 1476
+- 34
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1324
+- 1185
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/22.csv'': {''summary'': {''Column'': [''car_ID'', ''symboling'',
+  ''CarName'', ''fueltype'', ''aspiration'', ''doornumber'', ''carbody'', ''drivewheel'',
+  ''enginelocation'', ''wheelbase'', ''carlength'', ''carwidth'', ''carheight'', ''curbweight'',
+  ''enginetype'', ''cylindernumber'', ''enginesize'', ''fuelsystem'', ''boreratio'',
+  ''stroke'', ''compressionratio'', ''horsepower'', ''peakrpm'', ''citympg'', ''highwaympg'',
+  ''price''], ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [205, 6, 147, 2, 2, 2,
+  5, 3, 2, 53, 75, 44, 49, 171, 7, 7, 44, 8, 38, 37, 32, 59, 23, 29, 30, 189]}, ''sample_data'':
+  {''car_ID'': [1, 2, 3], ''symboling'': [3, 3, 1], ''CarName'': [''alfa-romero giulia'',
+  ''alfa-romero stelvio'', ''alfa-romero Quadrifoglio''], ''fueltype'': [''gas'',
+  ''gas'', ''gas''], ''aspiration'': [''std'', ''std'', ''std''], ''doornumber'':
+  [''two'', ''two'', ''two''], ''carbody'': [''convertible'', ''convertible'', ''hatchback''],
+  ''drivewheel'': [''rwd'', ''rwd'', ''rwd''], ''enginelocation'': [''front'', ''front'',
+  ''front''], ''wheelbase'': [88.6, 88.6, 94.5], ''carlength'': [168.8, 168.8, 171.2],
+  ''carwidth'': [64.1, 64.1, 65.5], ''carheight'': [48.8, 48.8, 52.4], ''curbweight'':
+  [2548, 2548, 2823], ''enginetype'': [''dohc'', ''dohc'', ''ohcv''], ''cylindernumber'':
+  [''four'', ''four'', ''six''], ''enginesize'': [130, 130, 152], ''fuelsystem'':
+  [''mpfi'', ''mpfi'', ''mpfi''], ''boreratio'': [3.47, 3.47, 2.68], ''stroke'': [2.68,
+  2.68, 3.47], ''compressionratio'': [9.0, 9.0, 9.0], ''horsepower'': [111, 111, 154],
+  ''peakrpm'': [5000, 5000, 5000], ''citympg'': [21, 21, 19], ''highwaympg'': [27,
+  27, 26], ''price'': [13495.0, 16500.0, 16500.0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Car Price Prediction Multiple Linear Regression
+
+  automobiles
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Heatmap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+- '* Treemap'
+- '* Histogram'
+- '* Box chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Create a heatmap to visualize the correlation between different features and car
+  prices from the provided data. Highlight strong correlations to understand key price
+  influencers.
+- 1088
+- 1060
+- 28

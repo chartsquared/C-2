@@ -1,0 +1,213 @@
+02_initial_prompt: Create a word cloud highlighting the different words and their
+  categories. Use text annotations to clarify the category of each word, and highlights
+  to emphasize specific words.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the accurate data and user request, your task is to delve into the user request
+  to figure out the (1) data attributes needed for data visualization, (2) select
+  the most suitable task that the user is willing to do from the list of various tasks
+  in data visualization, (3) specifically figure out the purpose of the user''s request
+  in data visualization, and (4) prospective audience of the data visualization.
+
+
+  <start of user request>
+
+  Create a word cloud highlighting the different words and their categories. Use text
+  annotations to clarify the category of each word, and highlights to emphasize specific
+  words.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/371.json'': {''summary'': {''Column'': [''index''], ''Data
+  Type'': [dtype(''int64'')], ''Missing Values'': [0], ''Unique Values'': [0]}, ''sample_data'':
+  {''index'': []}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be possible normally.'
+04_response_w_attributes_task_purpose: "{\n \"Data Attribute\": [\"words\", \"categories\"\
+  ],\n \"Task\": \"Distribution By Category\",\n \"Purpose\": \"Highlight the different\
+  \ words and their categories, with emphasis on specific words\",\n \"Audience\"\
+  : \"Users interested in textual data analysis, such as researchers, analysts, or\
+  \ general audiences interested in word distribution and categorization\"\n}"
+05_audience: Users interested in textual data analysis, such as researchers, analysts,
+  or general audiences interested in word distribution and categorization
+05_data_attributes:
+- words
+- categories
+05_purpose: Highlight the different words and their categories, with emphasis on specific
+  words
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/371.json'': {''summary'': {''Column'': [''index''], ''Data
+  Type'': [dtype(''int64'')], ''Missing Values'': [0], ''Unique Values'': [0]}, ''sample_data'':
+  {''index'': []}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a word cloud highlighting the different words and their categories. Use text
+  annotations to clarify the category of each word, and highlights to emphasize specific
+  words.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''words'', ''categories'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Users interested in textual data analysis, such as researchers, analysts, or general
+  audiences interested in word distribution and categorization
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight the different words and their categories, with emphasis on specific words
+
+  <end of purpose>'
+07_questions: '1. Do you have specific color preferences for different word categories?
+
+  2. Are there any particular words you would like to emphasize more than others?
+
+  3. Do you prefer a particular font style or size for the words in the word cloud?
+
+  4. Should the text annotations for categories be placed in a specific position relative
+  to the words?
+
+  5. Would you like the word cloud to have a specific shape, such as a circle or a
+  thematic shape related to the data?
+
+  6. Do you have any preferences regarding the overall layout or design of the word
+  cloud?
+
+  7. Is there any specific background color or design you would like for the word
+  cloud?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a word cloud highlighting the different words\
+  \ and their categories. Use text annotations to clarify the category of each word,\
+  \ and highlights to emphasize specific words.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 25% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nHighlight the different words and their\
+  \ categories, with emphasis on specific words\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have specific color preferences for different word\
+  \ categories?\n2. Are there any particular words you would like to emphasize more\
+  \ than others?\n3. Do you prefer a particular font style or size for the words in\
+  \ the word cloud?\n4. Should the text annotations for categories be placed in a\
+  \ specific position relative to the words?\n5. Would you like the word cloud to\
+  \ have a specific shape, such as a circle or a thematic shape related to the data?\n\
+  6. Do you have any preferences regarding the overall layout or design of the word\
+  \ cloud?\n7. Is there any specific background color or design you would like for\
+  \ the word cloud?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please emphasize the words "important", "category", and "highlight".
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.'

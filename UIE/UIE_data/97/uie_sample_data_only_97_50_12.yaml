@@ -1,0 +1,277 @@
+02_initial_prompt: Create a choropleth map showing the revenue generated across different
+  supplier locations. Highlight variations in stock levels and defect rates for each
+  region.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a choropleth map showing the revenue generated across different supplier
+  locations. Highlight variations in stock levels and defect rates for each region.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/97.csv'': {''summary'': {''Column'': [''Product type'', ''SKU'',
+  ''Price'', ''Availability'', ''Number of products sold'', ''Revenue generated'',
+  ''Customer demographics'', ''Stock levels'', ''Lead times'', ''Order quantities'',
+  ''Shipping times'', ''Shipping carriers'', ''Shipping costs'', ''Supplier name'',
+  ''Location'', ''Lead time'', ''Production volumes'', ''Manufacturing lead time'',
+  ''Manufacturing costs'', ''Inspection results'', ''Defect rates'', ''Transportation
+  modes'', ''Routes'', ''Costs''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [3, 100, 100, 63, 96, 100,
+  4, 65, 29, 61, 10, 3, 100, 5, 5, 29, 96, 30, 100, 3, 100, 4, 3, 100]}, ''sample_data'':
+  {''Product type'': [''haircare'', ''skincare'', ''haircare''], ''SKU'': [''SKU0'',
+  ''SKU1'', ''SKU2''], ''Price'': [69.80800554211577, 14.84352327508434, 11.319683293090566],
+  ''Availability'': [55, 95, 34], ''Number of products sold'': [802, 736, 8], ''Revenue
+  generated'': [8661.996792392383, 7460.900065445849, 9577.74962586873], ''Customer
+  demographics'': [''Non-binary'', ''Female'', ''Unknown''], ''Stock levels'': [58,
+  53, 1], ''Lead times'': [7, 30, 10], ''Order quantities'': [96, 37, 88], ''Shipping
+  times'': [4, 2, 2], ''Shipping carriers'': [''Carrier B'', ''Carrier A'', ''Carrier
+  B''], ''Shipping costs'': [2.956572139430807, 9.71657477143131, 8.054479261732155],
+  ''Supplier name'': [''Supplier 3'', ''Supplier 3'', ''Supplier 1''], ''Location'':
+  [''Mumbai'', ''Mumbai'', ''Mumbai''], ''Lead time'': [29, 23, 12], ''Production
+  volumes'': [215, 517, 971], ''Manufacturing lead time'': [29, 30, 27], ''Manufacturing
+  costs'': [46.27987924050832, 33.61676895373, 30.688019348284204], ''Inspection results'':
+  [''Pending'', ''Pending'', ''Pending''], ''Defect rates'': [0.2264103608499251,
+  4.854068026388706, 4.580592619199229], ''Transportation modes'': [''Road'', ''Road'',
+  ''Air''], ''Routes'': [''Route B'', ''Route B'', ''Route C''], ''Costs'': [187.75207545920392,
+  503.0655791496692, 141.92028177151906]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"Location\", \"\
+  Revenue generated\", \"Stock levels\", \"Defect rates\"],\n  \"Task\": \"Correlation\"\
+  ,\n  \"Purpose\": \"Highlight geographic distribution of revenue and analyze variations\
+  \ in stock levels and defect rates across different regions\",\n  \"Audience\":\
+  \ \"Supply chain managers, business analysts, upper management\"\n}"
+05_audience: Supply chain managers, business analysts, upper management
+05_data_attributes:
+- Location
+- Revenue generated
+- Stock levels
+- Defect rates
+05_purpose: Highlight geographic distribution of revenue and analyze variations in
+  stock levels and defect rates across different regions
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/97.csv'': {''summary'': {''Column'': [''Product type'', ''SKU'',
+  ''Price'', ''Availability'', ''Number of products sold'', ''Revenue generated'',
+  ''Customer demographics'', ''Stock levels'', ''Lead times'', ''Order quantities'',
+  ''Shipping times'', ''Shipping carriers'', ''Shipping costs'', ''Supplier name'',
+  ''Location'', ''Lead time'', ''Production volumes'', ''Manufacturing lead time'',
+  ''Manufacturing costs'', ''Inspection results'', ''Defect rates'', ''Transportation
+  modes'', ''Routes'', ''Costs''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [3, 100, 100, 63, 96, 100,
+  4, 65, 29, 61, 10, 3, 100, 5, 5, 29, 96, 30, 100, 3, 100, 4, 3, 100]}, ''sample_data'':
+  {''Product type'': [''haircare'', ''skincare'', ''haircare''], ''SKU'': [''SKU0'',
+  ''SKU1'', ''SKU2''], ''Price'': [69.80800554211577, 14.84352327508434, 11.319683293090566],
+  ''Availability'': [55, 95, 34], ''Number of products sold'': [802, 736, 8], ''Revenue
+  generated'': [8661.996792392383, 7460.900065445849, 9577.74962586873], ''Customer
+  demographics'': [''Non-binary'', ''Female'', ''Unknown''], ''Stock levels'': [58,
+  53, 1], ''Lead times'': [7, 30, 10], ''Order quantities'': [96, 37, 88], ''Shipping
+  times'': [4, 2, 2], ''Shipping carriers'': [''Carrier B'', ''Carrier A'', ''Carrier
+  B''], ''Shipping costs'': [2.956572139430807, 9.71657477143131, 8.054479261732155],
+  ''Supplier name'': [''Supplier 3'', ''Supplier 3'', ''Supplier 1''], ''Location'':
+  [''Mumbai'', ''Mumbai'', ''Mumbai''], ''Lead time'': [29, 23, 12], ''Production
+  volumes'': [215, 517, 971], ''Manufacturing lead time'': [29, 30, 27], ''Manufacturing
+  costs'': [46.27987924050832, 33.61676895373, 30.688019348284204], ''Inspection results'':
+  [''Pending'', ''Pending'', ''Pending''], ''Defect rates'': [0.2264103608499251,
+  4.854068026388706, 4.580592619199229], ''Transportation modes'': [''Road'', ''Road'',
+  ''Air''], ''Routes'': [''Route B'', ''Route B'', ''Route C''], ''Costs'': [187.75207545920392,
+  503.0655791496692, 141.92028177151906]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a choropleth map showing the revenue generated across different supplier
+  locations. Highlight variations in stock levels and defect rates for each region.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Location'', ''Revenue generated'', ''Stock levels'', ''Defect rates'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Supply chain managers, business analysts, upper management
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight geographic distribution of revenue and analyze variations in stock levels
+  and defect rates across different regions
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme or gradient for representing
+  revenue on the choropleth map?
+
+  2. Should the map have specific labels or tooltips to display exact values for stock
+  levels and defect rates?
+
+  3. Do you want regions with different ranges of defect rates to be highlighted using
+  specific colors or patterns?
+
+  4. How would you like to indicate variations in stock levels (e.g., color intensity,
+  overlays, symbols)?
+
+  5. Are there particular geographical boundaries or regions you want to emphasize
+  more prominently?
+
+  6. Should the choropleth map include any additional thematic layers, such as major
+  transportation routes or supplier names?
+
+  7. Do you prefer a specific map projection (e.g., Mercator, Albers, Robinson)?
+
+  8. Would you like annotations or markers for regions with particularly high or low
+  revenue, stock levels, or defect rates?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a choropleth map showing the revenue generated\
+  \ across different supplier locations. Highlight variations in stock levels and\
+  \ defect rates for each region.\n<end of user request>\n\nImagine the best result\
+  \ that can be achieved based on the given instructions and is the final output you\
+  \ want from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 25% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nHighlight geographic distribution of revenue and analyze variations\
+  \ in stock levels and defect rates across different regions\n<end of purpose>\n\n\
+  <start service provider message>\n1. Do you have a preferred color scheme or gradient\
+  \ for representing revenue on the choropleth map?\n2. Should the map have specific\
+  \ labels or tooltips to display exact values for stock levels and defect rates?\n\
+  3. Do you want regions with different ranges of defect rates to be highlighted using\
+  \ specific colors or patterns?\n4. How would you like to indicate variations in\
+  \ stock levels (e.g., color intensity, overlays, symbols)?\n5. Are there particular\
+  \ geographical boundaries or regions you want to emphasize more prominently?\n6.\
+  \ Should the choropleth map include any additional thematic layers, such as major\
+  \ transportation routes or supplier names?\n7. Do you prefer a specific map projection\
+  \ (e.g., Mercator, Albers, Robinson)?\n8. Would you like annotations or markers\
+  \ for regions with particularly high or low revenue, stock levels, or defect rates?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. Yes, the map should have specific labels or tooltips to display exact values
+  for stock levels and defect rates.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, I would like annotations or markers for regions with particularly high or
+  low revenue, stock levels, or defect rates.'

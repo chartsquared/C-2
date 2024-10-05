@@ -1,0 +1,131 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Population pyramid
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 1962
+- 1913
+- 49
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1765
+- 1627
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/82.csv': {'summary': {'Column':\
+  \ ['Country', 'Density\\r\\n(P/Km2)', 'Abbreviation', 'Agricultural Land( %)', 'Land\
+  \ Area(Km2)', 'Armed Forces size', 'Birth Rate', 'Calling Code', 'Capital/Major\
+  \ City', 'Co2-Emissions', 'CPI', 'CPI Change (%)', 'Currency-Code', 'Fertility Rate',\
+  \ 'Forested Area (%)', 'Gasoline Price', 'GDP', 'Gross primary education enrollment\
+  \ (%)', 'Gross tertiary education enrollment (%)', 'Infant mortality', 'Largest\
+  \ city', 'Life expectancy', 'Maternal mortality ratio', 'Minimum wage', 'Official\
+  \ language', 'Out of pocket health expenditure', 'Physicians per thousand', 'Population',\
+  \ 'Population: Labor force participation (%)', 'Tax revenue (%)', 'Total tax rate',\
+  \ 'Unemployment rate', 'Urban_population', 'Latitude', 'Longitude'], 'Data Type':\
+  \ [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('O'), dtype('float64'), dtype('float64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('float64'), dtype('float64')], 'Missing\
+  \ Values': [0, 0, 7, 7, 1, 24, 6, 1, 3, 7, 17, 16, 15, 7, 7, 20, 2, 7, 12, 6, 6,\
+  \ 8, 14, 45, 5, 7, 7, 1, 19, 26, 12, 19, 5, 1, 1], 'Unique Values': [195, 137, 188,\
+  \ 168, 194, 105, 170, 182, 192, 184, 175, 86, 133, 139, 161, 101, 193, 141, 171,\
+  \ 144, 188, 134, 114, 114, 76, 160, 152, 194, 145, 119, 156, 164, 190, 194, 194]},\
+  \ 'sample_data': {'Country': ['Afghanistan', 'Albania', 'Algeria'], 'Density\\r\\\
+  n(P/Km2)': ['60', '105', '18'], 'Abbreviation': ['AF', 'AL', 'DZ'], 'Agricultural\
+  \ Land( %)': ['58.10%', '43.10%', '17.40%'], 'Land Area(Km2)': ['652,230', '28,748',\
+  \ '2,381,741'], 'Armed Forces size': ['323,000', '9,000', '317,000'], 'Birth Rate':\
+  \ [32.49, 11.78, 24.28], 'Calling Code': [93.0, 355.0, 213.0], 'Capital/Major City':\
+  \ ['Kabul', 'Tirana', 'Algiers'], 'Co2-Emissions': ['8,672', '4,536', '150,006'],\
+  \ 'CPI': ['149.9', '119.05', '151.36'], 'CPI Change (%)': ['2.30%', '1.40%', '2.00%'],\
+  \ 'Currency-Code': ['AFN', 'ALL', 'DZD'], 'Fertility Rate': [4.47, 1.62, 3.02],\
+  \ 'Forested Area (%)': ['2.10%', '28.10%', '0.80%'], 'Gasoline Price': ['$0.70 ',\
+  \ '$1.36 ', '$0.28 '], 'GDP': ['$19,101,353,833 ', '$15,278,077,447 ', '$169,988,236,398\
+  \ '], 'Gross primary education enrollment (%)': ['104.00%', '107.00%', '109.90%'],\
+  \ 'Gross tertiary education enrollment (%)': ['9.70%', '55.00%', '51.40%'], 'Infant\
+  \ mortality': [47.9, 7.8, 20.1], 'Largest city': ['Kabul', 'Tirana', 'Algiers'],\
+  \ 'Life expectancy': [64.5, 78.5, 76.7], 'Maternal mortality ratio': [638.0, 15.0,\
+  \ 112.0], 'Minimum wage': ['$0.43 ', '$1.12 ', '$0.95 '], 'Official language': ['Pashto',\
+  \ 'Albanian', 'Arabic'], 'Out of pocket health expenditure': ['78.40%', '56.90%',\
+  \ '28.10%'], 'Physicians per thousand': [0.28, 1.2, 1.72], 'Population': ['38,041,754',\
+  \ '2,854,191', '43,053,054'], 'Population: Labor force participation (%)': ['48.90%',\
+  \ '55.70%', '41.20%'], 'Tax revenue (%)': ['9.30%', '18.60%', '37.20%'], 'Total\
+  \ tax rate': ['71.40%', '36.60%', '66.10%'], 'Unemployment rate': ['11.12%', '12.33%',\
+  \ '11.70%'], 'Urban_population': ['9,797,273', '1,747,593', '31,510,100'], 'Latitude':\
+  \ [33.93911, 41.153332, 28.033886], 'Longitude': [67.709953, 20.168331, 1.659626]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nGlobal Country Information\
+  \ Dataset 2023\ndata-science-and-analytics\n<end of data details format>\n\nGiven\
+  \ a data format, imagine a chart that visualizes this data as the final output you\
+  \ want from the service provider.\nIt MUST be a chart that can be created using\
+  \ only data columns.\nConsider what purpose the data has and the practical purpose\
+  \ of visualization and include it in the instructions.\nYou need to imagine a chart\
+  \ with * Choropleth map and given annotations that utilizes the data format.\nIf\
+  \ there are multiple given data formats, imagine a chart with * Choropleth map and\
+  \ given annotations that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data. \nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Choropleth map'
+- '* Population pyramid'
+- '* Pie chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Heatmap'
+- '* Box chart'
+- '* Geographic heatmap'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+- '* Choropleth map'
+2. initial_prompt: !!python/tuple
+- Create a Choropleth map showcasing global data from the "Global Country Information
+  Dataset 2023." Use "Population" data to determine the color gradient, highlighting
+  countries with higher populations in darker shades. Include text annotations for
+  countries with the top five highest and lowest populations. Incorporate highlights
+  like country borders to distinguish individual nations. Add labels for "Country"
+  and "Population" to provide context. This visualization should help identify population
+  distribution trends, making it easier to analyze geographical population densities.
+  Ensure the map is both informative and visually engaging to aid in data interpretation.
+- 1827
+- 1715
+- 112

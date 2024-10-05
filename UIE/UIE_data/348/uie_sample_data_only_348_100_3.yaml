@@ -1,0 +1,302 @@
+02_initial_prompt: '<start of data details format>
+
+  Create a heatmap visualizing player performance across games in Settlers of Catan.
+  Player numbers on y-axis and game numbers on x-axis. Use color gradients to highlight
+  total points, where darker shades represent higher points. Ensure the heatmap has
+  clear labels and a color legend for easy understanding. Include missing data points
+  as a distinct color or pattern. Summarize key stats per player. Also, compare production
+  values between players using another heatmap. Make the heatmaps visually appealing
+  and informative to help analyze player performance trends.
+
+  <end of data details format>'
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  <start of data details format>
+
+  Create a heatmap visualizing player performance across games in Settlers of Catan.
+  Player numbers on y-axis and game numbers on x-axis. Use color gradients to highlight
+  total points, where darker shades represent higher points. Ensure the heatmap has
+  clear labels and a color legend for easy understanding. Include missing data points
+  as a distinct color or pattern. Summarize key stats per player. Also, compare production
+  values between players using another heatmap. Make the heatmaps visually appealing
+  and informative to help analyze player performance trends.
+
+  <end of data details format>
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/348.csv'': {''summary'': {''Column'': [''gameNum'', ''player'',
+  ''points'', ''me'', ''2'', ''3'', ''4'', ''5'', ''6'', ''7'', ''8'', ''9'', ''10'',
+  ''11'', ''12'', ''settlement1'', ''Unnamed: 16'', ''Unnamed: 17'', ''Unnamed: 18'',
+  ''Unnamed: 19'', ''Unnamed: 20'', ''settlement2'', ''Unnamed: 22'', ''Unnamed: 23'',
+  ''Unnamed: 24'', ''Unnamed: 25'', ''Unnamed: 26'', ''production'', ''tradeGain'',
+  ''robberCardsGain'', ''totalGain'', ''tradeLoss'', ''robberCardsLoss'', ''tribute'',
+  ''totalLoss'', ''totalAvailable''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0,
+  0, 150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [50, 4, 11, 1, 6, 10, 10, 11, 14, 18,
+  13, 11, 11, 9, 7, 6, 5, 9, 5, 8, 10, 6, 5, 11, 6, 8, 13, 61, 20, 20, 71, 41, 19,
+  17, 50, 46]}, ''sample_data'': {''gameNum'': [1, 1, 1], ''player'': [1, 2, 3], ''points'':
+  [5, 9, 10], ''me'': [nan, 1.0, nan], ''2'': [1, 1, 1], ''3'': [3, 3, 3], ''4'':
+  [5, 5, 5], ''5'': [8, 8, 8], ''6'': [7, 7, 7], ''7'': [10, 10, 10], ''8'': [6, 6,
+  6], ''9'': [7, 7, 7], ''10'': [3, 3, 3], ''11'': [4, 4, 4], ''12'': [1, 1, 1], ''settlement1'':
+  [6, 5, 5], ''Unnamed: 16'': [''L'', ''W'', ''S''], ''Unnamed: 17'': [3, 8, 6], ''Unnamed:
+  18'': [''C'', ''O'', ''S''], ''Unnamed: 19'': [11, 10, 12], ''Unnamed: 20'': [''C'',
+  ''W'', ''W''], ''settlement2'': [9, 4, 8], ''Unnamed: 22'': [''L'', ''L'', ''O''],
+  ''Unnamed: 23'': [10, 5, 4], ''Unnamed: 24'': [''W'', ''S'', ''S''], ''Unnamed:
+  25'': [11, 11, 3], ''Unnamed: 26'': [''O'', ''O'', ''C''], ''production'': [38,
+  48, 44], ''tradeGain'': [5, 8, 14], ''robberCardsGain'': [2, 6, 9], ''totalGain'':
+  [45, 62, 67], ''tradeLoss'': [10, 11, 24], ''robberCardsLoss'': [2, 1, 4], ''tribute'':
+  [4, 8, 0], ''totalLoss'': [16, 20, 28], ''totalAvailable'': [29, 42, 39]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["gameNum", "player", "points", "production"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Analyze player performance trends",
+
+  "Audience": "Settlers of Catan players, game strategists, and data analysts"
+
+  }'
+05_audience: Settlers of Catan players, game strategists, and data analysts
+05_data_attributes:
+- gameNum
+- player
+- points
+- production
+05_purpose: Analyze player performance trends
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/348.csv'': {''summary'': {''Column'': [''gameNum'', ''player'',
+  ''points'', ''me'', ''2'', ''3'', ''4'', ''5'', ''6'', ''7'', ''8'', ''9'', ''10'',
+  ''11'', ''12'', ''settlement1'', ''Unnamed: 16'', ''Unnamed: 17'', ''Unnamed: 18'',
+  ''Unnamed: 19'', ''Unnamed: 20'', ''settlement2'', ''Unnamed: 22'', ''Unnamed: 23'',
+  ''Unnamed: 24'', ''Unnamed: 25'', ''Unnamed: 26'', ''production'', ''tradeGain'',
+  ''robberCardsGain'', ''totalGain'', ''tradeLoss'', ''robberCardsLoss'', ''tribute'',
+  ''totalLoss'', ''totalAvailable''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0,
+  0, 150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [50, 4, 11, 1, 6, 10, 10, 11, 14, 18,
+  13, 11, 11, 9, 7, 6, 5, 9, 5, 8, 10, 6, 5, 11, 6, 8, 13, 61, 20, 20, 71, 41, 19,
+  17, 50, 46]}, ''sample_data'': {''gameNum'': [1, 1, 1], ''player'': [1, 2, 3], ''points'':
+  [5, 9, 10], ''me'': [nan, 1.0, nan], ''2'': [1, 1, 1], ''3'': [3, 3, 3], ''4'':
+  [5, 5, 5], ''5'': [8, 8, 8], ''6'': [7, 7, 7], ''7'': [10, 10, 10], ''8'': [6, 6,
+  6], ''9'': [7, 7, 7], ''10'': [3, 3, 3], ''11'': [4, 4, 4], ''12'': [1, 1, 1], ''settlement1'':
+  [6, 5, 5], ''Unnamed: 16'': [''L'', ''W'', ''S''], ''Unnamed: 17'': [3, 8, 6], ''Unnamed:
+  18'': [''C'', ''O'', ''S''], ''Unnamed: 19'': [11, 10, 12], ''Unnamed: 20'': [''C'',
+  ''W'', ''W''], ''settlement2'': [9, 4, 8], ''Unnamed: 22'': [''L'', ''L'', ''O''],
+  ''Unnamed: 23'': [10, 5, 4], ''Unnamed: 24'': [''W'', ''S'', ''S''], ''Unnamed:
+  25'': [11, 11, 3], ''Unnamed: 26'': [''O'', ''O'', ''C''], ''production'': [38,
+  48, 44], ''tradeGain'': [5, 8, 14], ''robberCardsGain'': [2, 6, 9], ''totalGain'':
+  [45, 62, 67], ''tradeLoss'': [10, 11, 24], ''robberCardsLoss'': [2, 1, 4], ''tribute'':
+  [4, 8, 0], ''totalLoss'': [16, 20, 28], ''totalAvailable'': [29, 42, 39]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  <start of data details format>
+
+  Create a heatmap visualizing player performance across games in Settlers of Catan.
+  Player numbers on y-axis and game numbers on x-axis. Use color gradients to highlight
+  total points, where darker shades represent higher points. Ensure the heatmap has
+  clear labels and a color legend for easy understanding. Include missing data points
+  as a distinct color or pattern. Summarize key stats per player. Also, compare production
+  values between players using another heatmap. Make the heatmaps visually appealing
+  and informative to help analyze player performance trends.
+
+  <end of data details format>
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''gameNum'', ''player'', ''points'', ''production'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Settlers of Catan players, game strategists, and data analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze player performance trends
+
+  <end of purpose>'
+07_questions: '1. What color scheme would you prefer for the color gradient to highlight
+  total points and production values?
+
+  2. Do you have a preferred style for indicating missing data points, such as a specific
+  color or pattern?
+
+  3. Should the heatmaps include additional annotations or markers to highlight key
+  stats per player, and if so, what kind?
+
+  4. Are there any specific font styles or sizes you prefer for labels and legends
+  to enhance readability?
+
+  5. Do you have any preferences for the layout or positioning of the color legend
+  in the heatmaps?
+
+  6. Would you like gridlines to be displayed or hidden in the heatmaps?
+
+  7. Should the charts include titles or subtitles, and if so, what title should each
+  heatmap have?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\n<start of data details format>\nCreate a heatmap visualizing\
+  \ player performance across games in Settlers of Catan. Player numbers on y-axis\
+  \ and game numbers on x-axis. Use color gradients to highlight total points, where\
+  \ darker shades represent higher points. Ensure the heatmap has clear labels and\
+  \ a color legend for easy understanding. Include missing data points as a distinct\
+  \ color or pattern. Summarize key stats per player. Also, compare production values\
+  \ between players using another heatmap. Make the heatmaps visually appealing and\
+  \ informative to help analyze player performance trends.\n<end of data details format>\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nAnalyze player performance trends\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. What color scheme would you prefer for the color gradient\
+  \ to highlight total points and production values?\n2. Do you have a preferred style\
+  \ for indicating missing data points, such as a specific color or pattern?\n3. Should\
+  \ the heatmaps include additional annotations or markers to highlight key stats\
+  \ per player, and if so, what kind?\n4. Are there any specific font styles or sizes\
+  \ you prefer for labels and legends to enhance readability?\n5. Do you have any\
+  \ preferences for the layout or positioning of the color legend in the heatmaps?\n\
+  6. Would you like gridlines to be displayed or hidden in the heatmaps?\n7. Should\
+  \ the charts include titles or subtitles, and if so, what title should each heatmap\
+  \ have?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, the titles should be "Player Performance Across Games" for the first heatmap
+  and "Player Production Values Comparison" for the second heatmap.'

@@ -1,0 +1,91 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Bubble chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Treemap
+
+  * Line chart
+
+  * Box chart
+
+  * Choropleth map'
+- 1277
+- 1235
+- 42
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1089
+- 950
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/296.csv': {'summary': {'Column':\
+  \ ['type', 'name', 'rankingPosition', 'priceLevel', 'category', 'rating', 'phone',\
+  \ 'address', 'email', 'webUrl', 'website', 'rankingDenominator', 'rankingString',\
+  \ 'numberOfReviews'], 'Data Type': [dtype('O'), dtype('O'), dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('int64')], 'Missing Values': [0,\
+  \ 0, 0, 39, 0, 0, 19, 0, 62, 0, 34, 0, 0, 0], 'Unique Values': [3, 200, 83, 5, 3,\
+  \ 8, 172, 194, 134, 200, 163, 11, 200, 159]}, 'sample_data': {'type': ['ATTRACTION',\
+  \ 'ATTRACTION', 'RESTAURANT'], 'name': ['Beira Lake', 'Marino Mall', 'The Fishery'],\
+  \ 'rankingPosition': [24, 27, 1], 'priceLevel': [nan, nan, '$$ - $$$'], 'category':\
+  \ ['attraction', 'attraction', 'restaurant'], 'rating': [3.5, 4.0, 4.5], 'phone':\
+  \ [nan, '+94 11 2 375375', '+94 11 2 049600'], 'address': ['02 Colombo, Colombo\
+  \ 01200 Sri Lanka', '590 Galle Road Colombo 03, Colombo 00300 Sri Lanka', 'Pegasus\
+  \ Reef Hotel No 2 Hendala, Wattala 11300 Sri Lanka'], 'email': [nan, 'premises@marinomall.com',\
+  \ 'info@pegasusreefhotel.com'], 'webUrl': ['https://www.tripadvisor.com/Attraction_Review-g293962-d7155436-Reviews-Beira_Lake-Colombo_Western_Province.html',\
+  \ 'https://www.tripadvisor.com/Attraction_Review-g293962-d15084869-Reviews-Marino_Mall-Colombo_Western_Province.html',\
+  \ 'https://www.tripadvisor.com/Restaurant_Review-g1189028-d12384471-Reviews-The_Fishery-Wattala_Western_Province.html'],\
+  \ 'website': [nan, 'http://www.marinomall.com/', 'http://www.thefishery.lk/'], 'rankingDenominator':\
+  \ [156, 156, 12], 'rankingString': ['#24 of 156 things to do in Colombo', '#27 of\
+  \ 156 things to do in Colombo', '#1 of 15 places to eat in Wattala'], 'numberOfReviews':\
+  \ [200, 75, 103]}}}\n<end of data example format>\n\n<start of annotations format>\n\
+  ['<start of the annotation list>', '1. Text Annotations:', 'Description: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.', 'Purpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.', 'Other Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.', '3. Highlights:',\
+  \ 'Description: Highlights modify the appearance of chart elements (e.g., size,\
+  \ color) to emphasize or reduce their importance.', 'Purpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually', '<end of the annotation\
+  \ list>']\n<end of annotations format>\n\n<start of data details format>\n\u2708\
+  \uFE0F Colombo Gems: 200 Prime Spots on TripAdvisor\ntravel\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nConsider what purpose the data\
+  \ has and the practical purpose of visualization and include it in the instructions.\n\
+  You need to imagine a chart with * Bubble chart and given annotations that utilizes\
+  \ the data format.\nIf there are multiple given data formats, imagine a chart with\
+  \ * Bubble chart and given annotations that utilizes all the data formats.\nSince\
+  \ you are an amateur user, your instruction will be partially SUBJECTIVE and NOT\
+  \ DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 50 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Bubble chart'
+2. initial_prompt: !!python/tuple
+- Create a bubble chart visualizing top Colombo attractions and restaurants, highlighting
+  their ranking position and price levels. Annotate ratings and number of reviews
+  for emphasis. Use different bubble sizes for reviews count and colors for price
+  levels to enhance visual distinction.
+- 1066
+- 1019
+- 47

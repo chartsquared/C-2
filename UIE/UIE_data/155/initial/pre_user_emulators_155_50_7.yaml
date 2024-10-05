@@ -1,0 +1,125 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap'
+- 1811
+- 1772
+- 39
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1617
+- 1478
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/155.csv'': {''summary'': {''Column'': [''ID'', ''Gender'',
+  ''DOB'', ''10percentage'', ''10board'', ''12graduation'', ''12percentage'', ''12board'',
+  ''CollegeID'', ''CollegeTier'', ''Degree'', ''Specialization'', ''collegeGPA'',
+  ''CollegeCityID'', ''CollegeCityTier'', ''CollegeState'', ''GraduationYear'', ''English'',
+  ''Logical'', ''Quant'', ''Domain'', ''ComputerProgramming'', ''ElectronicsAndSemicon'',
+  ''ComputerScience'', ''MechanicalEngg'', ''ElectricalEngg'', ''TelecomEngg'', ''CivilEngg'',
+  ''conscientiousness'', ''agreeableness'', ''extraversion'', ''nueroticism'', ''openess_to_experience'',
+  ''Salary''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [2998, 2, 1633, 736, 221, 13, 717, 277, 1173, 2, 4, 42, 1064, 1173, 2, 26, 11, 109,
+  104, 133, 221, 76, 29, 19, 39, 29, 24, 15, 129, 136, 142, 204, 131, 165]}, ''sample_data'':
+  {''ID'': [604399, 988334, 301647], ''Gender'': [''f'', ''m'', ''m''], ''DOB'': [''1990-10-22'',
+  ''1990-05-15'', ''1989-08-21''], ''10percentage'': [87.8, 57.0, 77.33], ''10board'':
+  [''cbse'', ''cbse'', ''maharashtra state board,pune''], ''12graduation'': [2009,
+  2010, 2007], ''12percentage'': [84.0, 64.5, 85.17], ''12board'': [''cbse'', ''cbse'',
+  ''amravati divisional board''], ''CollegeID'': [6920, 6624, 9084], ''CollegeTier'':
+  [1, 2, 2], ''Degree'': [''B.Tech/B.E.'', ''B.Tech/B.E.'', ''B.Tech/B.E.''], ''Specialization'':
+  [''instrumentation and control engineering'', ''computer science & engineering'',
+  ''electronics & telecommunications''], ''collegeGPA'': [73.82, 65.0, 61.94], ''CollegeCityID'':
+  [6920, 6624, 9084], ''CollegeCityTier'': [1, 0, 0], ''CollegeState'': [''Delhi'',
+  ''Uttar Pradesh'', ''Maharashtra''], ''GraduationYear'': [2013, 2014, 2011], ''English'':
+  [650, 440, 485], ''Logical'': [665, 435, 475], ''Quant'': [810, 210, 505], ''Domain'':
+  [0.694479327708463, 0.342314899911815, 0.824666400671332], ''ComputerProgramming'':
+  [485, 365, -1], ''ElectronicsAndSemicon'': [366, -1, 400], ''ComputerScience'':
+  [-1, -1, -1], ''MechanicalEngg'': [-1, -1, -1], ''ElectricalEngg'': [-1, -1, -1],
+  ''TelecomEngg'': [-1, -1, 260], ''CivilEngg'': [-1, -1, -1], ''conscientiousness'':
+  [-0.159, 1.1336, 0.51], ''agreeableness'': [0.3789, 0.0459, -0.1232], ''extraversion'':
+  [1.2396, 1.2396, 1.5428], ''nueroticism'': [0.1459, 0.5262, -0.2902], ''openess_to_experience'':
+  [0.2889, -0.2859, -0.2875], ''Salary'': [445000, 110000, 255000]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Engineering Graduate Salary Prediction
+
+  education
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Box chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Box chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Scatter plot'
+- '* Treemap'
+- '* Heatmap'
+- '* Line chart'
+- '* Geographic heatmap'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- Create a box chart to visualize the salary distribution of engineering graduates.
+  Use `collegeGPA`, `English`, `Logical`, `Quant`, and `Domain` scores to compare
+  their effect on the salary.
+- 1394
+- 1353
+- 41

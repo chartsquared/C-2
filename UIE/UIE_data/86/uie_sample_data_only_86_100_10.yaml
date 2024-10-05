@@ -1,0 +1,277 @@
+02_initial_prompt: 'I''d like a Heatmap to visualize the correlation between different
+  Spotify song attributes. Use attributes like ''acousticness'', ''danceability'',
+  ''energy'', ''instrumentalness'', ''liveness'', ''loudness'', ''speechiness'', ''tempo'',
+  and ''valence''. The goal is to see how these attributes relate to each other and
+  identify any strong or weak correlations. Ensure each attribute is clearly labeled
+  on the heatmap and use a color gradient to indicate the strength of correlations:
+  darker colors for stronger correlations and lighter colors for weaker ones. Thank
+  you!'
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I''d like a Heatmap to visualize the correlation between different Spotify song
+  attributes. Use attributes like ''acousticness'', ''danceability'', ''energy'',
+  ''instrumentalness'', ''liveness'', ''loudness'', ''speechiness'', ''tempo'', and
+  ''valence''. The goal is to see how these attributes relate to each other and identify
+  any strong or weak correlations. Ensure each attribute is clearly labeled on the
+  heatmap and use a color gradient to indicate the strength of correlations: darker
+  colors for stronger correlations and lighter colors for weaker ones. Thank you!
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/86.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''acousticness'',
+  ''danceability'', ''duration_ms'', ''energy'', ''instrumentalness'', ''key'', ''liveness'',
+  ''loudness'', ''mode'', ''speechiness'', ''tempo'', ''time_signature'', ''valence'',
+  ''target'', ''song_title'', ''artist''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [2017, 1394, 632, 1921, 719, 1107, 12, 793, 1808, 2, 792, 1919, 4, 853,
+  2, 1956, 1343]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''acousticness'':
+  [0.0102, 0.199, 0.0344], ''danceability'': [0.833, 0.743, 0.838], ''duration_ms'':
+  [204600, 326933, 185707], ''energy'': [0.434, 0.359, 0.412], ''instrumentalness'':
+  [0.0219, 0.00611, 0.000234], ''key'': [2, 1, 2], ''liveness'': [0.165, 0.137, 0.159],
+  ''loudness'': [-8.795, -10.401, -7.148], ''mode'': [1, 1, 1], ''speechiness'': [0.431,
+  0.0794, 0.289], ''tempo'': [150.062, 160.083, 75.044], ''time_signature'': [4.0,
+  4.0, 4.0], ''valence'': [0.286, 0.588, 0.173], ''target'': [1, 1, 1], ''song_title'':
+  [''Mask Off'', ''Redbone'', ''Xanny Family''], ''artist'': [''Future'', ''Childish
+  Gambino'', ''Future'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["acousticness", "danceability", "energy", "instrumentalness",
+  "liveness", "loudness", "speechiness", "tempo", "valence"],
+
+  "Task": "Correlation",
+
+  "Purpose": "to see how these attributes relate to each other and identify any strong
+  or weak correlations",
+
+  "Audience": "Spotify users, data analysts, music industry professionals"
+
+  }'
+05_audience: Spotify users, data analysts, music industry professionals
+05_data_attributes:
+- acousticness
+- danceability
+- energy
+- instrumentalness
+- liveness
+- loudness
+- speechiness
+- tempo
+- valence
+05_purpose: to see how these attributes relate to each other and identify any strong
+  or weak correlations
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/86.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''acousticness'',
+  ''danceability'', ''duration_ms'', ''energy'', ''instrumentalness'', ''key'', ''liveness'',
+  ''loudness'', ''mode'', ''speechiness'', ''tempo'', ''time_signature'', ''valence'',
+  ''target'', ''song_title'', ''artist''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [2017, 1394, 632, 1921, 719, 1107, 12, 793, 1808, 2, 792, 1919, 4, 853,
+  2, 1956, 1343]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''acousticness'':
+  [0.0102, 0.199, 0.0344], ''danceability'': [0.833, 0.743, 0.838], ''duration_ms'':
+  [204600, 326933, 185707], ''energy'': [0.434, 0.359, 0.412], ''instrumentalness'':
+  [0.0219, 0.00611, 0.000234], ''key'': [2, 1, 2], ''liveness'': [0.165, 0.137, 0.159],
+  ''loudness'': [-8.795, -10.401, -7.148], ''mode'': [1, 1, 1], ''speechiness'': [0.431,
+  0.0794, 0.289], ''tempo'': [150.062, 160.083, 75.044], ''time_signature'': [4.0,
+  4.0, 4.0], ''valence'': [0.286, 0.588, 0.173], ''target'': [1, 1, 1], ''song_title'':
+  [''Mask Off'', ''Redbone'', ''Xanny Family''], ''artist'': [''Future'', ''Childish
+  Gambino'', ''Future'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I''d like a Heatmap to visualize the correlation between different Spotify song
+  attributes. Use attributes like ''acousticness'', ''danceability'', ''energy'',
+  ''instrumentalness'', ''liveness'', ''loudness'', ''speechiness'', ''tempo'', and
+  ''valence''. The goal is to see how these attributes relate to each other and identify
+  any strong or weak correlations. Ensure each attribute is clearly labeled on the
+  heatmap and use a color gradient to indicate the strength of correlations: darker
+  colors for stronger correlations and lighter colors for weaker ones. Thank you!
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''acousticness'', ''danceability'', ''energy'', ''instrumentalness'', ''liveness'',
+  ''loudness'', ''speechiness'', ''tempo'', ''valence'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Spotify users, data analysts, music industry professionals
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  to see how these attributes relate to each other and identify any strong or weak
+  correlations
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like any specific labels or titles on the heatmap?
+
+  3. Should the chart include a legend explaining the color gradient?
+
+  4. What gridline style or thickness do you prefer, if any, on the heatmap?
+
+  5. Are there any specific font preferences for the labels and titles?
+
+  6. Do you want the heatmap to display exact numerical correlation values within
+  each cell?
+
+  7. Would you like the chart to have specific spacing or padding around the plot
+  area?
+
+  8. Should there be any annotations or highlights on particular areas of the heatmap?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI'd like a Heatmap to visualize the correlation between\
+  \ different Spotify song attributes. Use attributes like 'acousticness', 'danceability',\
+  \ 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo',\
+  \ and 'valence'. The goal is to see how these attributes relate to each other and\
+  \ identify any strong or weak correlations. Ensure each attribute is clearly labeled\
+  \ on the heatmap and use a color gradient to indicate the strength of correlations:\
+  \ darker colors for stronger correlations and lighter colors for weaker ones. Thank\
+  \ you!\n<end of user request>\n\nImagine the best result that can be achieved based\
+  \ on the given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nto see how these attributes relate to each other and identify any strong\
+  \ or weak correlations\n<end of purpose>\n\n<start service provider message>\n1.\
+  \ Do you have a preferred color scheme for the heatmap?\n2. Would you like any specific\
+  \ labels or titles on the heatmap?\n3. Should the chart include a legend explaining\
+  \ the color gradient?\n4. What gridline style or thickness do you prefer, if any,\
+  \ on the heatmap?\n5. Are there any specific font preferences for the labels and\
+  \ titles?\n6. Do you want the heatmap to display exact numerical correlation values\
+  \ within each cell?\n7. Would you like the chart to have specific spacing or padding\
+  \ around the plot area?\n8. Should there be any annotations or highlights on particular\
+  \ areas of the heatmap?\n<end service provider message>\n\nAlso, remember that the\
+  \ service provider can not see the image you have access to.\nYour response should\
+  \ ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Yes, the chart should include a legend explaining the color gradient.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, I would like the heatmap to display exact numerical correlation values within
+  each cell.
+
+  7. I have no specific preference.
+
+  8. I am not sure.'

@@ -1,0 +1,131 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Bar chart
+
+  * Line chart
+
+  * Heatmap
+
+  * Box chart
+
+  * Scatter plot
+
+  * Pie chart
+
+  * Radar chart
+
+  * Treemap'
+- 1708
+- 1669
+- 39
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1517
+- 1378
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/348.csv'': {''summary'': {''Column'': [''gameNum'', ''player'',
+  ''points'', ''me'', ''2'', ''3'', ''4'', ''5'', ''6'', ''7'', ''8'', ''9'', ''10'',
+  ''11'', ''12'', ''settlement1'', ''Unnamed: 16'', ''Unnamed: 17'', ''Unnamed: 18'',
+  ''Unnamed: 19'', ''Unnamed: 20'', ''settlement2'', ''Unnamed: 22'', ''Unnamed: 23'',
+  ''Unnamed: 24'', ''Unnamed: 25'', ''Unnamed: 26'', ''production'', ''tradeGain'',
+  ''robberCardsGain'', ''totalGain'', ''tradeLoss'', ''robberCardsLoss'', ''tribute'',
+  ''totalLoss'', ''totalAvailable''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0,
+  0, 150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [50, 4, 11, 1, 6, 10, 10, 11, 14, 18,
+  13, 11, 11, 9, 7, 6, 5, 9, 5, 8, 10, 6, 5, 11, 6, 8, 13, 61, 20, 20, 71, 41, 19,
+  17, 50, 46]}, ''sample_data'': {''gameNum'': [1, 1, 1], ''player'': [1, 2, 3], ''points'':
+  [5, 9, 10], ''me'': [nan, 1.0, nan], ''2'': [1, 1, 1], ''3'': [3, 3, 3], ''4'':
+  [5, 5, 5], ''5'': [8, 8, 8], ''6'': [7, 7, 7], ''7'': [10, 10, 10], ''8'': [6, 6,
+  6], ''9'': [7, 7, 7], ''10'': [3, 3, 3], ''11'': [4, 4, 4], ''12'': [1, 1, 1], ''settlement1'':
+  [6, 5, 5], ''Unnamed: 16'': [''L'', ''W'', ''S''], ''Unnamed: 17'': [3, 8, 6], ''Unnamed:
+  18'': [''C'', ''O'', ''S''], ''Unnamed: 19'': [11, 10, 12], ''Unnamed: 20'': [''C'',
+  ''W'', ''W''], ''settlement2'': [9, 4, 8], ''Unnamed: 22'': [''L'', ''L'', ''O''],
+  ''Unnamed: 23'': [10, 5, 4], ''Unnamed: 24'': [''W'', ''S'', ''S''], ''Unnamed:
+  25'': [11, 11, 3], ''Unnamed: 26'': [''O'', ''O'', ''C''], ''production'': [38,
+  48, 44], ''tradeGain'': [5, 8, 14], ''robberCardsGain'': [2, 6, 9], ''totalGain'':
+  [45, 62, 67], ''tradeLoss'': [10, 11, 24], ''robberCardsLoss'': [2, 1, 4], ''tribute'':
+  [4, 8, 0], ''totalLoss'': [16, 20, 28], ''totalAvailable'': [29, 42, 39]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  My Settlers of Catan Games
+
+  games
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Heatmap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Grouped bar/column chart'
+- '* Scatter plot'
+- '* Radar chart'
+- '* Heatmap'
+- '* Box chart'
+- '* Treemap'
+- '* Pie chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Scatter plot'
+- '* Radar chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- '<start of data details format>
+
+  Create a heatmap visualizing player performance across games in Settlers of Catan.
+  Player numbers on y-axis and game numbers on x-axis. Use color gradients to highlight
+  total points, where darker shades represent higher points. Ensure the heatmap has
+  clear labels and a color legend for easy understanding. Include missing data points
+  as a distinct color or pattern. Summarize key stats per player. Also, compare production
+  values between players using another heatmap. Make the heatmaps visually appealing
+  and informative to help analyze player performance trends.
+
+  <end of data details format>'
+- 1372
+- 1253
+- 119

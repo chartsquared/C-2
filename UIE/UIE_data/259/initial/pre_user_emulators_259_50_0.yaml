@@ -1,0 +1,90 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 1576
+- 1552
+- 24
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list> "
+- 1404
+- 1263
+- 141
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/259.csv': {'summary': {'Column':\
+  \ ['PlanetIdentifier', 'TypeFlag', 'PlanetaryMassJpt', 'RadiusJpt', 'PeriodDays',\
+  \ 'SemiMajorAxisAU', 'Eccentricity', 'PeriastronDeg', 'LongitudeDeg', 'AscendingNodeDeg',\
+  \ 'InclinationDeg', 'SurfaceTempK', 'AgeGyr', 'DiscoveryMethod', 'DiscoveryYear',\
+  \ 'LastUpdated', 'RightAscension', 'Declination', 'DistFromSunParsec', 'HostStarMassSlrMass',\
+  \ 'HostStarRadiusSlrRad', 'HostStarMetallicity', 'HostStarTempK', 'HostStarAgeGyr',\
+  \ 'ListsPlanetIsOn'], 'Data Type': [dtype('O'), dtype('int64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 2271, 810, 99, 2178, 2476, 3256, 3541, 3538,\
+  \ 2919, 2843, 3582, 63, 10, 8, 10, 10, 1451, 168, 321, 1075, 129, 3067, 0], 'Unique\
+  \ Values': [3582, 4, 887, 1137, 3467, 1048, 323, 278, 43, 37, 389, 700, 2, 5, 28,\
+  \ 505, 2358, 2592, 1054, 538, 721, 176, 1459, 191, 13]}, 'sample_data': {'PlanetIdentifier':\
+  \ ['HD 143761 b', 'HD 143761 c', 'KOI-1843.03'], 'TypeFlag': [0, 0, 0], 'PlanetaryMassJpt':\
+  \ [1.045, 0.079, 0.0014], 'RadiusJpt': [nan, nan, 0.054], 'PeriodDays': [39.8458,\
+  \ 102.54, 0.1768913], 'SemiMajorAxisAU': [0.2196, 0.4123, 0.0048], 'Eccentricity':\
+  \ [0.037, 0.05, nan], 'PeriastronDeg': [270.6, 190.0, nan], 'LongitudeDeg': [nan,\
+  \ nan, nan], 'AscendingNodeDeg': [nan, nan, nan], 'InclinationDeg': [nan, nan, 72.0],\
+  \ 'SurfaceTempK': [nan, nan, nan], 'AgeGyr': [nan, nan, nan], 'DiscoveryMethod':\
+  \ ['RV', 'RV', 'transit'], 'DiscoveryYear': [2016.0, 2016.0, 2012.0], 'LastUpdated':\
+  \ ['16/07/11', '16/07/11', '13/07/15'], 'RightAscension': ['16 01 03', '16 01 03',\
+  \ '19 00 03.14'], 'Declination': ['+33 18 13', '+33 18 13', '+40 13 14.7'], 'DistFromSunParsec':\
+  \ [17.236, 17.236, nan], 'HostStarMassSlrMass': [0.889, 0.889, 0.46], 'HostStarRadiusSlrRad':\
+  \ [1.362, 1.362, 0.45], 'HostStarMetallicity': [-0.31, -0.31, 0.0], 'HostStarTempK':\
+  \ [5627.0, 5627.0, 3584.0], 'HostStarAgeGyr': [nan, nan, nan], 'ListsPlanetIsOn':\
+  \ ['Confirmed planets', 'Confirmed planets', 'Controversial']}}}\n<end of data example\
+  \ format>\n\n<start of annotations format>\n['<start of the annotation list>', '1.\
+  \ Text Annotations:', 'Description: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.', 'Purpose: When only some\
+  \ elements are annotated, the intent is to focus the viewer\u2019s attention on\
+  \ those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nOpen Exoplanet Catalogue\n\
+  space-and-astronomy\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nConsider what purpose the data has and the practical purpose of visualization\
+  \ and include it in the instructions.\nYou need to imagine a chart with * Bar chart\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Bar chart and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 50 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- 'Create a bar chart showcasing the discovery method of exoplanets. Highlight methods
+  with most planets discovered. Annotate exact number for each bar. Key purpose: to
+  visualize the prominent discovery methods in exoplanet research.'
+- 1375
+- 1332
+- 43

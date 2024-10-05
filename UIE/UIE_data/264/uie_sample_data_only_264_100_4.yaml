@@ -1,0 +1,282 @@
+02_initial_prompt: Please create a scatter plot using the data from the Near-Earth
+  Comets dataset. Plot the inclination (i) on the x-axis and the eccentricity (e)
+  on the y-axis. Each point should represent a comet. Include data labels with the
+  comet names. This visualization will help analyze the relationship between the inclination
+  of orbits and their eccentricities for near-Earth comets. Use the different types
+  of comets listed in the 'Object' column. Add a title and labels for clarity. Use
+  a distinct color for each comet type if possible.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a scatter plot using the data from the Near-Earth Comets dataset.
+  Plot the inclination (i) on the x-axis and the eccentricity (e) on the y-axis. Each
+  point should represent a comet. Include data labels with the comet names. This visualization
+  will help analyze the relationship between the inclination of orbits and their eccentricities
+  for near-Earth comets. Use the different types of comets listed in the ''Object''
+  column. Add a title and labels for clarity. Use a distinct color for each comet
+  type if possible.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/264.csv'': {''summary'': {''Column'': [''Object'', ''Epoch'',
+  ''TP'', ''e'', ''i'', ''w'', ''Node'', ''q'', ''Q'', ''P'', ''MOID'', ''A1'', ''A2'',
+  ''A3'', ''DT'', ''ref'', ''Object_name''], ''Data Type'': [dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 122, 119, 150, 156, 0, 0], ''Unique Values'': [160, 93, 159,
+  150, 160, 160, 160, 160, 112, 117, 159, 38, 41, 10, 4, 68, 160]}, ''sample_data'':
+  {''Object'': [''1P/Halley'', ''2P/Encke'', ''3D/Biela''], ''Epoch'': [49400, 56870,
+  -9480], ''TP'': [2446467.395, 2456618.204, 2390514.115], ''e'': [0.9671429085, 0.8482682514,
+  0.751299], ''i'': [162.2626906, 11.77999525, 13.2164], ''w'': [111.3324851, 186.5403463,
+  221.6588], ''Node'': [58.42008098, 334.5698056, 250.669], ''q'': [0.5859781115,
+  0.3360923855, 0.879073], ''Q'': [35.08, 4.09, 6.19], ''P'': [75.32, 3.3, 6.65],
+  ''MOID'': [0.063782, 0.173092, 0.000518], ''A1'': [2.7e-10, 1.58e-10, 3.9e-09],
+  ''A2'': [1.55e-10, -5.05e-12, -2.54e-10], ''A3'': [nan, nan, nan], ''DT'': [nan,
+  nan, nan], ''ref'': [''J863/77'', ''74'', ''IAUCAT03''], ''Object_name'': [''1P/Halley'',
+  ''2P/Encke'', ''3D/Biela'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["i", "e", "Object", "Object_name"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Analyze the relationship between the inclination of orbits and their
+  eccentricities for near-Earth comets",
+
+  "Audience": "Astronomers, Space scientists, Researchers studying near-Earth objects"
+
+  }'
+05_audience: Astronomers, Space scientists, Researchers studying near-Earth objects
+05_data_attributes:
+- i
+- e
+- Object
+- Object_name
+05_purpose: Analyze the relationship between the inclination of orbits and their eccentricities
+  for near-Earth comets
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/264.csv'': {''summary'': {''Column'': [''Object'', ''Epoch'',
+  ''TP'', ''e'', ''i'', ''w'', ''Node'', ''q'', ''Q'', ''P'', ''MOID'', ''A1'', ''A2'',
+  ''A3'', ''DT'', ''ref'', ''Object_name''], ''Data Type'': [dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 122, 119, 150, 156, 0, 0], ''Unique Values'': [160, 93, 159,
+  150, 160, 160, 160, 160, 112, 117, 159, 38, 41, 10, 4, 68, 160]}, ''sample_data'':
+  {''Object'': [''1P/Halley'', ''2P/Encke'', ''3D/Biela''], ''Epoch'': [49400, 56870,
+  -9480], ''TP'': [2446467.395, 2456618.204, 2390514.115], ''e'': [0.9671429085, 0.8482682514,
+  0.751299], ''i'': [162.2626906, 11.77999525, 13.2164], ''w'': [111.3324851, 186.5403463,
+  221.6588], ''Node'': [58.42008098, 334.5698056, 250.669], ''q'': [0.5859781115,
+  0.3360923855, 0.879073], ''Q'': [35.08, 4.09, 6.19], ''P'': [75.32, 3.3, 6.65],
+  ''MOID'': [0.063782, 0.173092, 0.000518], ''A1'': [2.7e-10, 1.58e-10, 3.9e-09],
+  ''A2'': [1.55e-10, -5.05e-12, -2.54e-10], ''A3'': [nan, nan, nan], ''DT'': [nan,
+  nan, nan], ''ref'': [''J863/77'', ''74'', ''IAUCAT03''], ''Object_name'': [''1P/Halley'',
+  ''2P/Encke'', ''3D/Biela'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a scatter plot using the data from the Near-Earth Comets dataset.
+  Plot the inclination (i) on the x-axis and the eccentricity (e) on the y-axis. Each
+  point should represent a comet. Include data labels with the comet names. This visualization
+  will help analyze the relationship between the inclination of orbits and their eccentricities
+  for near-Earth comets. Use the different types of comets listed in the ''Object''
+  column. Add a title and labels for clarity. Use a distinct color for each comet
+  type if possible.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''i'', ''e'', ''Object'', ''Object_name'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Astronomers, Space scientists, Researchers studying near-Earth objects
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze the relationship between the inclination of orbits and their eccentricities
+  for near-Earth comets
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific colors in mind for the different types
+  of comets?
+
+  2. What size would you like the data points to be?
+
+  3. How would you prefer the data labels with comet names to be displayed (e.g.,
+  font size, position)?
+
+  4. Is there a preferred aspect ratio for the plot?
+
+  5. Do you want any specific grid lines or background style on the plot?
+
+  6. Are there any specific markers you want to use for the scatter points?
+
+  7. Do you have preferences for the title font style and size?
+
+  8. Would you like to include a legend, and if so, do you have a preference for its
+  position?
+
+  9. Should there be any specific range for the x-axis (inclination) and y-axis (eccentricity)?
+
+  10. Are there any additional annotations or highlights you want included in the
+  chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a scatter plot using the data from the\
+  \ Near-Earth Comets dataset. Plot the inclination (i) on the x-axis and the eccentricity\
+  \ (e) on the y-axis. Each point should represent a comet. Include data labels with\
+  \ the comet names. This visualization will help analyze the relationship between\
+  \ the inclination of orbits and their eccentricities for near-Earth comets. Use\
+  \ the different types of comets listed in the 'Object' column. Add a title and labels\
+  \ for clarity. Use a distinct color for each comet type if possible.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nAnalyze the relationship\
+  \ between the inclination of orbits and their eccentricities for near-Earth comets\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have any specific\
+  \ colors in mind for the different types of comets?\n2. What size would you like\
+  \ the data points to be?\n3. How would you prefer the data labels with comet names\
+  \ to be displayed (e.g., font size, position)?\n4. Is there a preferred aspect ratio\
+  \ for the plot?\n5. Do you want any specific grid lines or background style on the\
+  \ plot?\n6. Are there any specific markers you want to use for the scatter points?\n\
+  7. Do you have preferences for the title font style and size?\n8. Would you like\
+  \ to include a legend, and if so, do you have a preference for its position?\n9.\
+  \ Should there be any specific range for the x-axis (inclination) and y-axis (eccentricity)?\n\
+  10. Are there any additional annotations or highlights you want included in the\
+  \ chart?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Please use a readable font size for the data labels, with comet names positioned
+  near the points.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. Yes, please include a legend. I have no preference for its position.
+
+  9. I do not have any specific range in mind.
+
+  10. I do not know.'

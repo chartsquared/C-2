@@ -1,0 +1,25 @@
+{
+    "code feedback": [
+        {
+            "tag": "EDIT",
+            "explanation": "Modify the color palette to ensure accessibility for individuals with color vision deficiencies. Use a more colorblind-friendly palette.",
+            "before": [
+                "Line 15: sns.heatmap(data, annot=True, cmap='coolwarm', fmt='g', linewidths=0.5)"
+            ],
+            "after": [
+                "Line 15: sns.heatmap(data, annot=True, cmap='viridis', fmt='g', linewidths=0.5)"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Update the text annotation to correctly format the penetration rates. Remove confusing extra annotations since seaborn already annotates values within the cells.",
+            "before": [
+                "Line 26: for i in range(len(data.columns)):",
+                "Line 27: for j in range(len(data.index)):",
+                "Line 28: value = data.iloc[j, i]",
+                "Line 29: ax.text(i, j, f'{value}%', ha='center', va='center', size=8)"
+            ],
+            "after": []
+        }
+    ]
+}

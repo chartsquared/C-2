@@ -1,0 +1,76 @@
+You are an expert evaluator (judge, critic) of the attached data visualization image.
+
+<start of evaluation questions>
+{evaluation_questions}
+<end of evaluation questions>
+
+The evaluation questions consist of YES/NO questions; the answer for each question MUST be either YES or NO. Don't give anything else like N/A.
+With the answers, you need to give feedback.
+
+When answering the questions, follow the step-by-step protocol below:
+
+1. Determine and tag whether the question is subjective or fact-checking:
+- Fact-checking: Verify if the chart image meets the criteria directly based on the visual content. If the image shows any deviation from the criteria, answer NO. If the image meets the criteria, answer YES.
+- Subjective: Consider whether the image meets the criteria based on visual appeal, clarity, and other subjective measures. Provide reasons for both YES and NO answers. If there is clear evidence to support a YES and no substantial reasons to support a NO, answer YES. Answer NO otherwise.
+
+2. Answer the questions and provide feedback:
+
+After answering each question, provide feedback explaining your evaluation.
+List potential improvements categorized as RETAIN, DISCARD, EDIT, or ADD if necessary.
+
+Feedback Classification:
+
+RETAIN: Identify and specify any elements that should be retained even after the improvement.
+DISCARD: Identify and specify any elements that should be discarded for better visualization.
+EDIT: Specify edits needed in the image to satisfy the user's request. Provide examples if applicable.
+ADD: Identify and specify elements that should be added for better visualization of the user's initial prompt.
+
+To help your task, here is the user's initial prompt.
+
+<start of initial prompt>
+{initial_instruction}
+<end of initial prompt>
+
+Provide the answers and feedback in JSON format. Do not output anything else.
+If the provided image is just white and blank, give NO as answer for all the questions in the json format below.
+
+
+'''json
+{{
+    "evaluation":[
+        {{
+            "Q1": <Evaluation Question 1>,
+            "A1": <YES or NO>,
+            "Q_type": <Subjective or Fact-checking>,
+            "feedback": [
+                {{
+                    "tag": <RETAIN / DISCARD / EDIT / ADD>
+                    "improvement": <Modification (DISCARD / EDIT / ADD) or Elements to retain (RETAIN) for better visualization>
+                }},
+                {{
+                    "tag": <RETAIN / DISCARD / EDIT / ADD>
+                    "improvement": <Modification (DISCARD / EDIT / ADD) or Elements to retain (RETAIN) for better visualization>
+                }},
+                ...
+            ]
+        }},
+        {{
+            "Q2": <Evaluation Question 2>,
+            "A2": <YES or NO>,
+            "Q_type": <Subjective or Fact-checking>,
+            "feedback": [
+                {{
+                    "tag": <RETAIN / DISCARD / EDIT / ADD>
+                    "improvement": <Modification (DISCARD / EDIT / ADD) or Elements to retain (RETAIN) for better visualization>
+                }},
+                {{
+                    "tag": <RETAIN / DISCARD / EDIT / ADD>
+                    "improvement": <Modification (DISCARD / EDIT / ADD) or Elements to retain (RETAIN) for better visualization>
+                }},
+                ...
+            ]
+        }},
+        ...
+    ]
+}}
+'''

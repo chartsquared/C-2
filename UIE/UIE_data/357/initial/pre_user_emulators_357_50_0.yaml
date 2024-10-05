@@ -1,0 +1,74 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1088
+- 1061
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 905
+- 767
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/357.csv': {'summary': {'Column':\
+  \ ['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Geography', 'Gender', 'Age',\
+  \ 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary',\
+  \ 'Exited'], 'Data Type': [dtype('int64'), dtype('int64'), dtype('O'), dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('float64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('float64'), dtype('int64')], 'Missing Values':\
+  \ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [10000, 10000, 2932,\
+  \ 460, 3, 2, 70, 11, 6382, 4, 2, 2, 9999, 2]}, 'sample_data': {'RowNumber': [1,\
+  \ 2, 3], 'CustomerId': [15634602, 15647311, 15619304], 'Surname': ['Hargrave', 'Hill',\
+  \ 'Onio'], 'CreditScore': [619, 608, 502], 'Geography': ['France', 'Spain', 'France'],\
+  \ 'Gender': ['Female', 'Female', 'Female'], 'Age': [42, 41, 42], 'Tenure': [2, 1,\
+  \ 8], 'Balance': [0.0, 83807.86, 159660.8], 'NumOfProducts': [1, 1, 3], 'HasCrCard':\
+  \ [1, 0, 1], 'IsActiveMember': [1, 1, 0], 'EstimatedSalary': [101348.88, 112542.58,\
+  \ 113931.57], 'Exited': [1, 0, 1]}}}\n<end of data example format>\n\n<start of\
+  \ annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '3. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nChurn Modelling\nbusiness\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nConsider what purpose the data\
+  \ has and the practical purpose of visualization and include it in the instructions.\n\
+  You need to imagine a chart with * Stacked bar/column chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Stacked bar/column chart and given annotations that utilizes all\
+  \ the data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 50 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Visualize churn by age and geography. Use stacked bar chart with text annotations
+  on values. Highlight columns by geography for emphasis. Place legends for clarity.
+- 874
+- 844
+- 30

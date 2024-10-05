@@ -1,0 +1,121 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Pie chart
+
+  * Histogram
+
+  * Box chart'
+- 1246
+- 1204
+- 42
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1047
+- 908
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/103.csv'': {''summary'': {''Column'': [''Invoice ID'', ''Branch'',
+  ''City'', ''Customer type'', ''Gender'', ''Product line'', ''Unit price'', ''Quantity'',
+  ''Tax 5%'', ''Total'', ''Date'', ''Time'', ''Payment'', ''cogs'', ''gross margin
+  percentage'', ''gross income'', ''Rating''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [1000, 3, 3, 2, 2, 6, 943, 10, 990, 990, 89, 506, 3, 990, 1, 990, 61]},
+  ''sample_data'': {''Invoice ID'': [''750-67-8428'', ''226-31-3081'', ''631-41-3108''],
+  ''Branch'': [''A'', ''C'', ''A''], ''City'': [''Yangon'', ''Naypyitaw'', ''Yangon''],
+  ''Customer type'': [''Member'', ''Normal'', ''Normal''], ''Gender'': [''Female'',
+  ''Female'', ''Male''], ''Product line'': [''Health and beauty'', ''Electronic accessories'',
+  ''Home and lifestyle''], ''Unit price'': [74.69, 15.28, 46.33], ''Quantity'': [7,
+  5, 7], ''Tax 5%'': [26.1415, 3.82, 16.2155], ''Total'': [548.9715, 80.22, 340.5255],
+  ''Date'': [''1/5/2019'', ''3/8/2019'', ''3/3/2019''], ''Time'': [''13:08'', ''10:29'',
+  ''13:23''], ''Payment'': [''Ewallet'', ''Cash'', ''Credit card''], ''cogs'': [522.83,
+  76.4, 324.31], ''gross margin percentage'': [4.761904762, 4.761904762, 4.761904762],
+  ''gross income'': [26.1415, 3.82, 16.2155], ''Rating'': [9.1, 9.6, 7.4]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Sales Dataset
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Grouped bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Grouped bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Pie chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Box chart'
+- '* Dot plot'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Pie chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Box chart'
+- '* Dot plot'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- I want a bar chart comparing average unit prices of different product lines across
+  the three branches (A, B, and C). Use data from 'Unit price' and 'Product line'
+  columns, with separate bars for each branch within each product line. Label the
+  x-axis with product lines and the y-axis with average unit prices. Ensure each product
+  line category groups the bars by branch. This will help analyze pricing trends and
+  differences in product categories sold in different branches to make strategic decisions.
+  Highlighting the branches within each product line is crucial for this comparison.
+- 902
+- 791
+- 111

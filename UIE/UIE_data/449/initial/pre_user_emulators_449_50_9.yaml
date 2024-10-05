@@ -1,0 +1,101 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Heatmap
+
+  * Histogram
+
+  * Box chart
+
+  * Violin plot
+
+  * Radar chart
+
+  * Matrix chart
+
+  * Parallel coordinates'
+- 860
+- 817
+- 43
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 663
+- 524
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/449.csv'': {''summary'': {''Column'': [''0-60 mph(sec)'',
+  ''Gas Mileage(mpg)'', ''Power(kW)'', ''Weight(kg)'', ''Engine Displacement(cc)''],
+  ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0], ''Unique Values'': [18,
+  27, 76, 292, 76]}, ''sample_data'': {''0-60 mph(sec)'': [14, 12, 13], ''Gas Mileage(mpg)'':
+  [11, 11, 10], ''Power(kW)'': [132, 154, 158], ''Weight(kg)'': [2238, 2324, 1531],
+  ''Engine Displacement(cc)'': [5736.5, 5212.0, 5900.4]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Engine displacement gas mileage
+
+  automobiles
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Column chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Column chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Histogram'
+- '* Parallel coordinates'
+- '* Scatter plot'
+- '* Box chart'
+- '* Bubble chart'
+- '* Violin plot'
+- '* Heatmap'
+- '* Radar chart'
+- '* Column chart'
+2. initial_prompt: !!python/tuple
+- Please create a column chart showing the average gas mileage for different engine
+  displacements in automobiles.
+- 417
+- 399
+- 18

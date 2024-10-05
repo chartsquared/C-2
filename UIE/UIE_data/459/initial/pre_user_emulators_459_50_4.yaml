@@ -1,0 +1,92 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Line chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Box chart
+
+  * Geographic heatmap'
+- 1059
+- 1031
+- 28
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 873
+- 734
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/459.csv'': {''summary'': {''Column'': [''Time'', ''Region'',
+  ''Level'', ''Water Quality'', ''Quantities of Exceed Standard'', ''Pollution Index'',
+  ''Water Temp'', ''Ammonia Nitrogen(mg/L)'', ''Hosphorus(mg/L)'', ''Dissolved Oxygen(mg/L)''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [84, 1, 4,
+  2, 4, 56, 33, 38, 62, 72]}, ''sample_data'': {''Time'': [''2020/3/1 00:00:00'',
+  ''2020/3/1 04:00:00'', ''2020/3/1 08:00:00''], ''Region'': [''LV-SW-012'', ''LV-SW-012'',
+  ''LV-SW-012''], ''Level'': [''IV'', ''IV'', ''IV''], ''Water Quality'': [''Normal'',
+  ''Normal'', ''Normal''], ''Quantities of Exceed Standard'': [1, 1, 1], ''Pollution
+  Index'': [19.8, 23.8, 20.9], ''Water Temp'': [23.7, 23.4, 23.5], ''Ammonia Nitrogen(mg/L)'':
+  [0.69, 0.79, 0.69], ''Hosphorus(mg/L)'': [''0.207'', ''0.261'', ''0.222''], ''Dissolved
+  Oxygen(mg/L)'': [2.28, 2.0, 1.13]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  unknown
+
+  energy
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Line chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Line chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Geographic heatmap'
+- '* Grouped bar/column chart'
+- '* Heatmap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- I'd like a line chart showing 'Pollution Index', 'Water Temp', and 'Dissolved Oxygen(mg/L)'
+  over time. I want to observe any visible trends or correlations between these parameters.
+- 650
+- 609
+- 41

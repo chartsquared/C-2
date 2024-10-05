@@ -1,0 +1,343 @@
+02_initial_prompt: Create a heatmap to visualize the coffee ratings data. Use columns
+  like total_cup_points, aroma, flavor, aftertaste, acidity, body, balance, and sweetness
+  to show how different coffee attributes score across various samples. Highlight
+  missing values and defects using distinct colors. Ensure the chart showcases correlation
+  patterns among the attributes. This will help identify quality trends and any anomalies
+  in the dataset. Include a clear legend and labels for easy interpretation, and consider
+  different color gradients to represent scoring variations effectively. Make it interactive
+  for better user engagement.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a heatmap to visualize the coffee ratings data. Use columns like total_cup_points,
+  aroma, flavor, aftertaste, acidity, body, balance, and sweetness to show how different
+  coffee attributes score across various samples. Highlight missing values and defects
+  using distinct colors. Ensure the chart showcases correlation patterns among the
+  attributes. This will help identify quality trends and any anomalies in the dataset.
+  Include a clear legend and labels for easy interpretation, and consider different
+  color gradients to represent scoring variations effectively. Make it interactive
+  for better user engagement.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/438.csv'': {''summary'': {''Column'': [''total_cup_points'',
+  ''species'', ''owner'', ''country_of_origin'', ''farm_name'', ''lot_number'', ''mill'',
+  ''ico_number'', ''company'', ''altitude'', ''region'', ''producer'', ''number_of_bags'',
+  ''bag_weight'', ''in_country_partner'', ''harvest_year'', ''grading_date'', ''owner_1'',
+  ''variety'', ''processing_method'', ''aroma'', ''flavor'', ''aftertaste'', ''acidity'',
+  ''body'', ''balance'', ''uniformity'', ''clean_cup'', ''sweetness'', ''cupper_points'',
+  ''moisture'', ''category_one_defects'', ''quakers'', ''color'', ''category_two_defects'',
+  ''expiration'', ''certification_body'', ''certification_address'', ''certification_contact'',
+  ''unit_of_measurement'', ''altitude_low_meters'', ''altitude_high_meters'', ''altitude_mean_meters''],
+  ''Data Type'': [dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 7, 1, 359, 1063,
+  318, 159, 209, 226, 59, 232, 0, 0, 0, 47, 0, 7, 226, 170, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 1, 270, 0, 0, 0, 0, 0, 0, 230, 230, 230], ''Unique Values'': [180, 2,
+  315, 36, 571, 227, 459, 845, 281, 396, 356, 690, 131, 56, 27, 46, 567, 319, 29,
+  5, 33, 35, 35, 31, 33, 33, 10, 11, 17, 42, 23, 18, 11, 3, 38, 566, 26, 32, 29, 2,
+  198, 198, 211]}, ''sample_data'': {''total_cup_points'': [90.58, 89.92, 89.75],
+  ''species'': [''Arabica'', ''Arabica'', ''Arabica''], ''owner'': [''metad plc'',
+  ''metad plc'', ''grounds for health admin''], ''country_of_origin'': [''Ethiopia'',
+  ''Ethiopia'', ''Guatemala''], ''farm_name'': [''metad plc'', ''metad plc'', ''san
+  marcos barrancas "san cristobal cuch''], ''lot_number'': [nan, nan, nan], ''mill'':
+  [''metad plc'', ''metad plc'', nan], ''ico_number'': [''2014/2015'', ''2014/2015'',
+  nan], ''company'': [''metad agricultural developmet plc'', ''metad agricultural
+  developmet plc'', nan], ''altitude'': [''1950-2200'', ''1950-2200'', ''1600 - 1800
+  m''], ''region'': [''guji-hambela'', ''guji-hambela'', nan], ''producer'': [''METAD
+  PLC'', ''METAD PLC'', nan], ''number_of_bags'': [300, 300, 5], ''bag_weight'': [''60
+  kg'', ''60 kg'', ''1''], ''in_country_partner'': [''METAD Agricultural Development
+  plc'', ''METAD Agricultural Development plc'', ''Specialty Coffee Association''],
+  ''harvest_year'': [''2014'', ''2014'', nan], ''grading_date'': [''April 4th, 2015'',
+  ''April 4th, 2015'', ''May 31st, 2010''], ''owner_1'': [''metad plc'', ''metad plc'',
+  ''Grounds for Health Admin''], ''variety'': [nan, ''Other'', ''Bourbon''], ''processing_method'':
+  [''Washed / Wet'', ''Washed / Wet'', nan], ''aroma'': [8.67, 8.75, 8.42], ''flavor'':
+  [8.83, 8.67, 8.5], ''aftertaste'': [8.67, 8.5, 8.42], ''acidity'': [8.75, 8.58,
+  8.42], ''body'': [8.5, 8.42, 8.33], ''balance'': [8.42, 8.42, 8.42], ''uniformity'':
+  [10.0, 10.0, 10.0], ''clean_cup'': [10.0, 10.0, 10.0], ''sweetness'': [10.0, 10.0,
+  10.0], ''cupper_points'': [8.75, 8.58, 9.25], ''moisture'': [0.12, 0.12, 0.0], ''category_one_defects'':
+  [0, 0, 0], ''quakers'': [0.0, 0.0, 0.0], ''color'': [''Green'', ''Green'', nan],
+  ''category_two_defects'': [0, 1, 0], ''expiration'': [''April 3rd, 2016'', ''April
+  3rd, 2016'', ''May 31st, 2011''], ''certification_body'': [''METAD Agricultural
+  Development plc'', ''METAD Agricultural Development plc'', ''Specialty Coffee Association''],
+  ''certification_address'': [''309fcf77415a3661ae83e027f7e5f05dad786e44'', ''309fcf77415a3661ae83e027f7e5f05dad786e44'',
+  ''36d0d00a3724338ba7937c52a378d085f2172daa''], ''certification_contact'': [''19fef5a731de2db57d16da10287413f5f99bc2dd'',
+  ''19fef5a731de2db57d16da10287413f5f99bc2dd'', ''0878a7d4b9d35ddbf0fe2ce69a2062cceb45a660''],
+  ''unit_of_measurement'': [''m'', ''m'', ''m''], ''altitude_low_meters'': [1950.0,
+  1950.0, 1600.0], ''altitude_high_meters'': [2200.0, 2200.0, 1800.0], ''altitude_mean_meters'':
+  [2075.0, 2075.0, 1700.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"total_cup_points\"\
+  , \"aroma\", \"flavor\", \"aftertaste\", \"acidity\", \"body\", \"balance\", \"\
+  sweetness\", \"category_one_defects\", \"category_two_defects\"],\n  \"Task\": \"\
+  Correlation\",\n  \"Purpose\": \"Identify quality trends and anomalies in the coffee\
+  \ ratings dataset by analyzing correlations and highlighting missing values and\
+  \ defects.\",\n  \"Audience\": \"Coffee quality analysts, coffee producers, and\
+  \ coffee enthusiasts interested in understanding coffee quality attributes and trends.\"\
+  \n}"
+05_audience: Coffee quality analysts, coffee producers, and coffee enthusiasts interested
+  in understanding coffee quality attributes and trends.
+05_data_attributes:
+- total_cup_points
+- aroma
+- flavor
+- aftertaste
+- acidity
+- body
+- balance
+- sweetness
+- category_one_defects
+- category_two_defects
+05_purpose: Identify quality trends and anomalies in the coffee ratings dataset by
+  analyzing correlations and highlighting missing values and defects.
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/438.csv'': {''summary'': {''Column'': [''total_cup_points'',
+  ''species'', ''owner'', ''country_of_origin'', ''farm_name'', ''lot_number'', ''mill'',
+  ''ico_number'', ''company'', ''altitude'', ''region'', ''producer'', ''number_of_bags'',
+  ''bag_weight'', ''in_country_partner'', ''harvest_year'', ''grading_date'', ''owner_1'',
+  ''variety'', ''processing_method'', ''aroma'', ''flavor'', ''aftertaste'', ''acidity'',
+  ''body'', ''balance'', ''uniformity'', ''clean_cup'', ''sweetness'', ''cupper_points'',
+  ''moisture'', ''category_one_defects'', ''quakers'', ''color'', ''category_two_defects'',
+  ''expiration'', ''certification_body'', ''certification_address'', ''certification_contact'',
+  ''unit_of_measurement'', ''altitude_low_meters'', ''altitude_high_meters'', ''altitude_mean_meters''],
+  ''Data Type'': [dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 7, 1, 359, 1063,
+  318, 159, 209, 226, 59, 232, 0, 0, 0, 47, 0, 7, 226, 170, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 1, 270, 0, 0, 0, 0, 0, 0, 230, 230, 230], ''Unique Values'': [180, 2,
+  315, 36, 571, 227, 459, 845, 281, 396, 356, 690, 131, 56, 27, 46, 567, 319, 29,
+  5, 33, 35, 35, 31, 33, 33, 10, 11, 17, 42, 23, 18, 11, 3, 38, 566, 26, 32, 29, 2,
+  198, 198, 211]}, ''sample_data'': {''total_cup_points'': [90.58, 89.92, 89.75],
+  ''species'': [''Arabica'', ''Arabica'', ''Arabica''], ''owner'': [''metad plc'',
+  ''metad plc'', ''grounds for health admin''], ''country_of_origin'': [''Ethiopia'',
+  ''Ethiopia'', ''Guatemala''], ''farm_name'': [''metad plc'', ''metad plc'', ''san
+  marcos barrancas "san cristobal cuch''], ''lot_number'': [nan, nan, nan], ''mill'':
+  [''metad plc'', ''metad plc'', nan], ''ico_number'': [''2014/2015'', ''2014/2015'',
+  nan], ''company'': [''metad agricultural developmet plc'', ''metad agricultural
+  developmet plc'', nan], ''altitude'': [''1950-2200'', ''1950-2200'', ''1600 - 1800
+  m''], ''region'': [''guji-hambela'', ''guji-hambela'', nan], ''producer'': [''METAD
+  PLC'', ''METAD PLC'', nan], ''number_of_bags'': [300, 300, 5], ''bag_weight'': [''60
+  kg'', ''60 kg'', ''1''], ''in_country_partner'': [''METAD Agricultural Development
+  plc'', ''METAD Agricultural Development plc'', ''Specialty Coffee Association''],
+  ''harvest_year'': [''2014'', ''2014'', nan], ''grading_date'': [''April 4th, 2015'',
+  ''April 4th, 2015'', ''May 31st, 2010''], ''owner_1'': [''metad plc'', ''metad plc'',
+  ''Grounds for Health Admin''], ''variety'': [nan, ''Other'', ''Bourbon''], ''processing_method'':
+  [''Washed / Wet'', ''Washed / Wet'', nan], ''aroma'': [8.67, 8.75, 8.42], ''flavor'':
+  [8.83, 8.67, 8.5], ''aftertaste'': [8.67, 8.5, 8.42], ''acidity'': [8.75, 8.58,
+  8.42], ''body'': [8.5, 8.42, 8.33], ''balance'': [8.42, 8.42, 8.42], ''uniformity'':
+  [10.0, 10.0, 10.0], ''clean_cup'': [10.0, 10.0, 10.0], ''sweetness'': [10.0, 10.0,
+  10.0], ''cupper_points'': [8.75, 8.58, 9.25], ''moisture'': [0.12, 0.12, 0.0], ''category_one_defects'':
+  [0, 0, 0], ''quakers'': [0.0, 0.0, 0.0], ''color'': [''Green'', ''Green'', nan],
+  ''category_two_defects'': [0, 1, 0], ''expiration'': [''April 3rd, 2016'', ''April
+  3rd, 2016'', ''May 31st, 2011''], ''certification_body'': [''METAD Agricultural
+  Development plc'', ''METAD Agricultural Development plc'', ''Specialty Coffee Association''],
+  ''certification_address'': [''309fcf77415a3661ae83e027f7e5f05dad786e44'', ''309fcf77415a3661ae83e027f7e5f05dad786e44'',
+  ''36d0d00a3724338ba7937c52a378d085f2172daa''], ''certification_contact'': [''19fef5a731de2db57d16da10287413f5f99bc2dd'',
+  ''19fef5a731de2db57d16da10287413f5f99bc2dd'', ''0878a7d4b9d35ddbf0fe2ce69a2062cceb45a660''],
+  ''unit_of_measurement'': [''m'', ''m'', ''m''], ''altitude_low_meters'': [1950.0,
+  1950.0, 1600.0], ''altitude_high_meters'': [2200.0, 2200.0, 1800.0], ''altitude_mean_meters'':
+  [2075.0, 2075.0, 1700.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a heatmap to visualize the coffee ratings data. Use columns like total_cup_points,
+  aroma, flavor, aftertaste, acidity, body, balance, and sweetness to show how different
+  coffee attributes score across various samples. Highlight missing values and defects
+  using distinct colors. Ensure the chart showcases correlation patterns among the
+  attributes. This will help identify quality trends and any anomalies in the dataset.
+  Include a clear legend and labels for easy interpretation, and consider different
+  color gradients to represent scoring variations effectively. Make it interactive
+  for better user engagement.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''total_cup_points'', ''aroma'', ''flavor'', ''aftertaste'', ''acidity'', ''body'',
+  ''balance'', ''sweetness'', ''category_one_defects'', ''category_two_defects'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Coffee quality analysts, coffee producers, and coffee enthusiasts interested in
+  understanding coffee quality attributes and trends.
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify quality trends and anomalies in the coffee ratings dataset by analyzing
+  correlations and highlighting missing values and defects.
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color schemes or palettes in mind for the
+  heatmap?
+
+  2. How would you prefer the missing values and defects to be highlighted, in terms
+  of color or pattern?
+
+  3. Do you have a preferred layout for the legend and labels on the chart?
+
+  4. Are there specific scoring variations that you want particular attention drawn
+  to through color gradients?
+
+  5. Is there a specific range or scaling you''d prefer for the heatmap values?
+
+  6. Are there any specific fonts or font sizes you prefer for the labels and legend?
+
+  7. Would you like the axes to be labeled in a specific way or order?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap to visualize the coffee ratings data.\
+  \ Use columns like total_cup_points, aroma, flavor, aftertaste, acidity, body, balance,\
+  \ and sweetness to show how different coffee attributes score across various samples.\
+  \ Highlight missing values and defects using distinct colors. Ensure the chart showcases\
+  \ correlation patterns among the attributes. This will help identify quality trends\
+  \ and any anomalies in the dataset. Include a clear legend and labels for easy interpretation,\
+  \ and consider different color gradients to represent scoring variations effectively.\
+  \ Make it interactive for better user engagement.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nIdentify quality trends and anomalies\
+  \ in the coffee ratings dataset by analyzing correlations and highlighting missing\
+  \ values and defects.\n<end of purpose>\n\n<start service provider message>\n1.\
+  \ Do you have any specific color schemes or palettes in mind for the heatmap?\n\
+  2. How would you prefer the missing values and defects to be highlighted, in terms\
+  \ of color or pattern?\n3. Do you have a preferred layout for the legend and labels\
+  \ on the chart?\n4. Are there specific scoring variations that you want particular\
+  \ attention drawn to through color gradients?\n5. Is there a specific range or scaling\
+  \ you'd prefer for the heatmap values?\n6. Are there any specific fonts or font\
+  \ sizes you prefer for the labels and legend?\n7. Would you like the axes to be\
+  \ labeled in a specific way or order?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure, but maybe a distinct color like red for defects and a pattern
+  for missing values.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I have no specific range or scaling in mind.
+
+  6. I do not have any specific preferences for fonts or font sizes.
+
+  7. I am not sure about the axes labeling.'

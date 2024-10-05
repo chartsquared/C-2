@@ -1,0 +1,286 @@
+02_initial_prompt: Create a stacked bar chart depicting the duration of reign for
+  each Roman Emperor. Use colors to differentiate between causes of death and display
+  birth city on the Y-axis. Include dynasty and verification source in the legend.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a stacked bar chart depicting the duration of reign for each Roman Emperor.
+  Use colors to differentiate between causes of death and display birth city on the
+  Y-axis. Include dynasty and verification source in the legend.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/426.csv'': {''summary'': {''Column'': [''index'', ''name'',
+  ''name_full'', ''birth'', ''death'', ''birth_cty'', ''birth_prv'', ''rise'', ''reign_start'',
+  ''reign_end'', ''cause'', ''killer'', ''dynasty'', ''era'', ''notes'', ''verif_who''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 5, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 22, 57], ''Unique Values'':
+  [68, 68, 67, 60, 66, 30, 18, 8, 57, 65, 7, 14, 8, 2, 23, 2]}, ''sample_data'': {''index'':
+  [1, 2, 3], ''name'': [''Augustus'', ''Tiberius'', ''Caligula''], ''name_full'':
+  [''IMPERATOR CAESAR DIVI FILIVS AVGVSTVS'', ''TIBERIVS CAESAR DIVI AVGVSTI FILIVS
+  AVGVSTVS'', ''GAIVS IVLIVS CAESAR AVGVSTVS GERMANICVS''], ''birth'': [''0062-09-23'',
+  ''0041-11-16'', ''0012-08-31''], ''death'': [''0014-08-19'', ''0037-03-16'', ''0041-01-24''],
+  ''birth_cty'': [''Rome'', ''Rome'', ''Antitum''], ''birth_prv'': [''Italia'', ''Italia'',
+  ''Italia''], ''rise'': [''Birthright'', ''Birthright'', ''Birthright''], ''reign_start'':
+  [''0026-01-16'', ''0014-09-18'', ''0037-03-18''], ''reign_end'': [''0014-08-19'',
+  ''0037-03-16'', ''0041-01-24''], ''cause'': [''Assassination'', ''Assassination'',
+  ''Assassination''], ''killer'': [''Wife'', ''Other Emperor'', ''Senate''], ''dynasty'':
+  [''Julio-Claudian'', ''Julio-Claudian'', ''Julio-Claudian''], ''era'': [''Principate'',
+  ''Principate'', ''Principate''], ''notes'': [''birth, reign.start are BCE. Assign
+  negative for correct ISO 8601 dates. Cause may have been Natural'', ''birth is BCE.
+  Assign negative for correct ISO 8601 dates. Possibly assassinated by praetorian
+  guard'', ''assassination may have only involved the Praetorian Guard''], ''verif_who'':
+  [''Reddit user zonination'', ''Reddit user zonination'', ''Reddit user zonination'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["name", "birth_cty", "reign_start", "reign_end", "cause", "dynasty",
+  "verif_who"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "To compare the duration of reign for each Roman Emperor while highlighting
+  the causes of death and providing contextual information such as birth city, dynasty,
+  and source of verification.",
+
+  "Audience": "Historians, educators, students, and enthusiasts of Roman history"
+
+  }'
+05_audience: Historians, educators, students, and enthusiasts of Roman history
+05_data_attributes:
+- name
+- birth_cty
+- reign_start
+- reign_end
+- cause
+- dynasty
+- verif_who
+05_purpose: To compare the duration of reign for each Roman Emperor while highlighting
+  the causes of death and providing contextual information such as birth city, dynasty,
+  and source of verification.
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/426.csv'': {''summary'': {''Column'': [''index'', ''name'',
+  ''name_full'', ''birth'', ''death'', ''birth_cty'', ''birth_prv'', ''rise'', ''reign_start'',
+  ''reign_end'', ''cause'', ''killer'', ''dynasty'', ''era'', ''notes'', ''verif_who''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 5, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 22, 57], ''Unique Values'':
+  [68, 68, 67, 60, 66, 30, 18, 8, 57, 65, 7, 14, 8, 2, 23, 2]}, ''sample_data'': {''index'':
+  [1, 2, 3], ''name'': [''Augustus'', ''Tiberius'', ''Caligula''], ''name_full'':
+  [''IMPERATOR CAESAR DIVI FILIVS AVGVSTVS'', ''TIBERIVS CAESAR DIVI AVGVSTI FILIVS
+  AVGVSTVS'', ''GAIVS IVLIVS CAESAR AVGVSTVS GERMANICVS''], ''birth'': [''0062-09-23'',
+  ''0041-11-16'', ''0012-08-31''], ''death'': [''0014-08-19'', ''0037-03-16'', ''0041-01-24''],
+  ''birth_cty'': [''Rome'', ''Rome'', ''Antitum''], ''birth_prv'': [''Italia'', ''Italia'',
+  ''Italia''], ''rise'': [''Birthright'', ''Birthright'', ''Birthright''], ''reign_start'':
+  [''0026-01-16'', ''0014-09-18'', ''0037-03-18''], ''reign_end'': [''0014-08-19'',
+  ''0037-03-16'', ''0041-01-24''], ''cause'': [''Assassination'', ''Assassination'',
+  ''Assassination''], ''killer'': [''Wife'', ''Other Emperor'', ''Senate''], ''dynasty'':
+  [''Julio-Claudian'', ''Julio-Claudian'', ''Julio-Claudian''], ''era'': [''Principate'',
+  ''Principate'', ''Principate''], ''notes'': [''birth, reign.start are BCE. Assign
+  negative for correct ISO 8601 dates. Cause may have been Natural'', ''birth is BCE.
+  Assign negative for correct ISO 8601 dates. Possibly assassinated by praetorian
+  guard'', ''assassination may have only involved the Praetorian Guard''], ''verif_who'':
+  [''Reddit user zonination'', ''Reddit user zonination'', ''Reddit user zonination'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a stacked bar chart depicting the duration of reign for each Roman Emperor.
+  Use colors to differentiate between causes of death and display birth city on the
+  Y-axis. Include dynasty and verification source in the legend.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''name'', ''birth_cty'', ''reign_start'', ''reign_end'', ''cause'', ''dynasty'',
+  ''verif_who'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Historians, educators, students, and enthusiasts of Roman history
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To compare the duration of reign for each Roman Emperor while highlighting the causes
+  of death and providing contextual information such as birth city, dynasty, and source
+  of verification.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preference for the bar color palette to represent
+  different causes of death?
+
+  2. How would you like the emperors to be ordered on the Y-axis (e.g., alphabetically,
+  chronologically, by reign duration)?
+
+  3. Do you prefer a specific font style or size for labels and legends?
+
+  4. Should the chart include gridlines for better readability?
+
+  5. Do you want any specific annotations or callouts on the chart for certain emperors
+  or events?
+
+  6. Would you like to display the exact duration of reign as text on the bars?
+
+  7. Is there a preferred position for the legend (e.g., top, bottom, left, right)?
+
+  8. Do you want any additional titles or subtitles on the chart?
+
+  9. Should the chart include a tooltip to show detailed information when hovering
+  over the bars?
+
+  10. Do you have any preference for the axis titles or any specific formatting for
+  them?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a stacked bar chart depicting the duration of\
+  \ reign for each Roman Emperor. Use colors to differentiate between causes of death\
+  \ and display birth city on the Y-axis. Include dynasty and verification source\
+  \ in the legend.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nTo compare the duration of reign for each Roman Emperor while highlighting\
+  \ the causes of death and providing contextual information such as birth city, dynasty,\
+  \ and source of verification.\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have a preference for the bar color palette to represent different causes\
+  \ of death?\n2. How would you like the emperors to be ordered on the Y-axis (e.g.,\
+  \ alphabetically, chronologically, by reign duration)?\n3. Do you prefer a specific\
+  \ font style or size for labels and legends?\n4. Should the chart include gridlines\
+  \ for better readability?\n5. Do you want any specific annotations or callouts on\
+  \ the chart for certain emperors or events?\n6. Would you like to display the exact\
+  \ duration of reign as text on the bars?\n7. Is there a preferred position for the\
+  \ legend (e.g., top, bottom, left, right)?\n8. Do you want any additional titles\
+  \ or subtitles on the chart?\n9. Should the chart include a tooltip to show detailed\
+  \ information when hovering over the bars?\n10. Do you have any preference for the\
+  \ axis titles or any specific formatting for them?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. By reign duration.
+
+  3. I have no specific preference.
+
+  4. Yes, include gridlines for better readability.
+
+  5. I do not know.
+
+  6. Yes, display the exact duration of reign as text on the bars.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'

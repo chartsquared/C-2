@@ -1,0 +1,133 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Parallel coordinates
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Pie chart
+
+  * Donut chart
+
+  * Treemap
+
+  * Line chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 1499
+- 1437
+- 62
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1280
+- 1142
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/97.csv'': {''summary'': {''Column'': [''Product type'', ''SKU'',
+  ''Price'', ''Availability'', ''Number of products sold'', ''Revenue generated'',
+  ''Customer demographics'', ''Stock levels'', ''Lead times'', ''Order quantities'',
+  ''Shipping times'', ''Shipping carriers'', ''Shipping costs'', ''Supplier name'',
+  ''Location'', ''Lead time'', ''Production volumes'', ''Manufacturing lead time'',
+  ''Manufacturing costs'', ''Inspection results'', ''Defect rates'', ''Transportation
+  modes'', ''Routes'', ''Costs''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [3, 100, 100, 63, 96, 100,
+  4, 65, 29, 61, 10, 3, 100, 5, 5, 29, 96, 30, 100, 3, 100, 4, 3, 100]}, ''sample_data'':
+  {''Product type'': [''haircare'', ''skincare'', ''haircare''], ''SKU'': [''SKU0'',
+  ''SKU1'', ''SKU2''], ''Price'': [69.80800554211577, 14.84352327508434, 11.319683293090566],
+  ''Availability'': [55, 95, 34], ''Number of products sold'': [802, 736, 8], ''Revenue
+  generated'': [8661.996792392383, 7460.900065445849, 9577.74962586873], ''Customer
+  demographics'': [''Non-binary'', ''Female'', ''Unknown''], ''Stock levels'': [58,
+  53, 1], ''Lead times'': [7, 30, 10], ''Order quantities'': [96, 37, 88], ''Shipping
+  times'': [4, 2, 2], ''Shipping carriers'': [''Carrier B'', ''Carrier A'', ''Carrier
+  B''], ''Shipping costs'': [2.956572139430807, 9.71657477143131, 8.054479261732155],
+  ''Supplier name'': [''Supplier 3'', ''Supplier 3'', ''Supplier 1''], ''Location'':
+  [''Mumbai'', ''Mumbai'', ''Mumbai''], ''Lead time'': [29, 23, 12], ''Production
+  volumes'': [215, 517, 971], ''Manufacturing lead time'': [29, 30, 27], ''Manufacturing
+  costs'': [46.27987924050832, 33.61676895373, 30.688019348284204], ''Inspection results'':
+  [''Pending'', ''Pending'', ''Pending''], ''Defect rates'': [0.2264103608499251,
+  4.854068026388706, 4.580592619199229], ''Transportation modes'': [''Road'', ''Road'',
+  ''Air''], ''Routes'': [''Route B'', ''Route B'', ''Route C''], ''Costs'': [187.75207545920392,
+  503.0655791496692, 141.92028177151906]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Supply Chain Analysis
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Choropleth map that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Choropleth map
+  that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Box chart'
+- '* Area chart'
+- '* Line chart'
+- '* Geographic heatmap'
+- '* Heatmap'
+- '* Pie chart'
+- '* Treemap'
+- '* Donut chart'
+- '* Histogram'
+- '* Choropleth map'
+2. initial_prompt: !!python/tuple
+- Create a choropleth map showing the revenue generated across different supplier
+  locations. Highlight variations in stock levels and defect rates for each region.
+- 1048
+- 1021
+- 27

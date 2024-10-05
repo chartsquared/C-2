@@ -1,0 +1,114 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Treemap'
+- 1188
+- 1162
+- 26
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1009
+- 871
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/102.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''brand'',
+  ''name'', ''old_price'', ''new_price'', ''ml'', ''concentration'', ''department'',
+  ''scents'', ''base_note'', ''middle_note'', ''item_rating'', ''seller'', ''seller_rating'',
+  ''num_seller_ratings''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [1003, 160, 594, 438, 644, 28, 5, 4, 22, 739, 726, 23, 117, 15,
+  60]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''brand'': [''PACO RABANNE'',
+  ''Roberto Cavalli'', ''S.T.Dupont''], ''name'': [''1 Million Lucky'', ''Paradiso
+  Assoluto'', ''Royal Amber''], ''old_price'': [395.0, 415.0, 265.0], ''new_price'':
+  [244.55, 107.95, 186.9], ''ml'': [100, 50, 100], ''concentration'': [''EDT'', ''EDP'',
+  ''EDP''], ''department'': [''Men'', ''Women'', ''Unisex''], ''scents'': [''Woody'',
+  ''Floral'', ''Arabian''], ''base_note'': [''Oakmoss, Patchouli and Vetiver'', ''Vanilla,
+  Sandalwood And Patchouli'', ''Lemon, Mint and Wood Moss''], ''middle_note'': [''Hazelnut,
+  Jasmine, Cashmir Wood, Cedar and Honey'', ''Wild Jasmine and Red Lily'', ''Sandalwood
+  and Cedar''], ''item_rating'': [5.0, 4.8, 5.0], ''seller'': [''noon'', ''noon'',
+  ''noon''], ''seller_rating'': [4.2, 4.2, 4.2], ''num_seller_ratings'': [''98.1K'',
+  ''98.1K'', ''98.1K'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  noon perfume
+
+  fashion-and-beauty
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Histogram that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Histogram that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Treemap'
+- '* Scatter plot'
+- '* Heatmap'
+- '* Line chart'
+- '* Pie chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Treemap'
+- '* Scatter plot'
+- '* Heatmap'
+- '* Line chart'
+- '* Pie chart'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Please create a histogram to visualize the distribution of new prices for perfumes
+  from the dataset. Use separate bins for different price ranges. Ensure the histogram
+  highlights variations among different brands and perfume types (EDT, EDP). Include
+  labels for the x-axis (New Price) and y-axis (Frequency). Additionally, incorporate
+  distinct color coding for the brands (e.g., PACO RABANNE, Roberto Cavalli, S.T.Dupont)
+  to clearly distinguish each one. Also, add a legend to the histogram to interpret
+  the colored sections corresponding to each brand.
+- 857
+- 744
+- 113

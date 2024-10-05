@@ -1,0 +1,111 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram'
+- 1765
+- 1743
+- 22
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 1592
+- 1453
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/121.csv': {'summary': {'Column':\
+  \ ['Food product', 'Land use change', 'Animal Feed', 'Farm', 'Processing', 'Transport',\
+  \ 'Packging', 'Retail', 'Total_emissions', 'Eutrophying emissions per 1000kcal (gPO\u2084\
+  eq per 1000kcal)', 'Eutrophying emissions per kilogram (gPO\u2084eq per kilogram)',\
+  \ 'Eutrophying emissions per 100g protein (gPO\u2084eq per 100 grams protein)',\
+  \ 'Freshwater withdrawals per 1000kcal (liters per 1000kcal)', 'Freshwater withdrawals\
+  \ per 100g protein (liters per 100g protein)', 'Freshwater withdrawals per kilogram\
+  \ (liters per kilogram)', 'Greenhouse gas emissions per 1000kcal (kgCO\u2082eq per\
+  \ 1000kcal)', 'Greenhouse gas emissions per 100g protein (kgCO\u2082eq per 100g\
+  \ protein)', 'Land use per 1000kcal (m\xB2 per 1000kcal)', 'Land use per kilogram\
+  \ (m\xB2 per kilogram)', 'Land use per 100g protein (m\xB2 per 100g protein)', 'Scarcity-weighted\
+  \ water use per kilogram (liters per kilogram)', 'Scarcity-weighted water use per\
+  \ 100g protein (liters per 100g protein)', 'Scarcity-weighted water use per 1000kcal\
+  \ (liters per 1000 kilocalories)'], 'Data Type': [dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 16, 13,\
+  \ 17, 5, 10, 16, 10, 5, 16, 5, 17, 13], 'Unique Values': [43, 21, 10, 24, 10, 8,\
+  \ 10, 4, 33, 33, 38, 27, 30, 26, 38, 33, 27, 33, 38, 27, 38, 26, 30]}, 'sample_data':\
+  \ {'Food product': ['Wheat & Rye (Bread)', 'Maize (Meal)', 'Barley (Beer)'], 'Land\
+  \ use change': [0.1, 0.3, 0.0], 'Animal Feed': [0.0, 0.0, 0.0], 'Farm': [0.8, 0.5,\
+  \ 0.2], 'Processing': [0.2, 0.1, 0.1], 'Transport': [0.1, 0.1, 0.0], 'Packging':\
+  \ [0.1, 0.1, 0.5], 'Retail': [0.1, 0.0, 0.3], 'Total_emissions': [1.4000000000000004,\
+  \ 1.1, 1.1], 'Eutrophying emissions per 1000kcal (gPO\u2084eq per 1000kcal)': [nan,\
+  \ nan, nan], 'Eutrophying emissions per kilogram (gPO\u2084eq per kilogram)': [nan,\
+  \ nan, nan], 'Eutrophying emissions per 100g protein (gPO\u2084eq per 100 grams\
+  \ protein)': [nan, nan, nan], 'Freshwater withdrawals per 1000kcal (liters per 1000kcal)':\
+  \ [nan, nan, nan], 'Freshwater withdrawals per 100g protein (liters per 100g protein)':\
+  \ [nan, nan, nan], 'Freshwater withdrawals per kilogram (liters per kilogram)':\
+  \ [nan, nan, nan], 'Greenhouse gas emissions per 1000kcal (kgCO\u2082eq per 1000kcal)':\
+  \ [nan, nan, nan], 'Greenhouse gas emissions per 100g protein (kgCO\u2082eq per\
+  \ 100g protein)': [nan, nan, nan], 'Land use per 1000kcal (m\xB2 per 1000kcal)':\
+  \ [nan, nan, nan], 'Land use per kilogram (m\xB2 per kilogram)': [nan, nan, nan],\
+  \ 'Land use per 100g protein (m\xB2 per 100g protein)': [nan, nan, nan], 'Scarcity-weighted\
+  \ water use per kilogram (liters per kilogram)': [nan, nan, nan], 'Scarcity-weighted\
+  \ water use per 100g protein (liters per 100g protein)': [nan, nan, nan], 'Scarcity-weighted\
+  \ water use per 1000kcal (liters per 1000 kilocalories)': [nan, nan, nan]}}}\n<end\
+  \ of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually.', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nEnvironment Impact of\
+  \ Food Production\nfood-and-drink\n<end of data details format>\n\nGiven a data\
+  \ format, imagine a chart that visualizes this data as the final output you want\
+  \ from the service provider.\nConsider what purpose the data has and the practical\
+  \ purpose of visualization and include it in the instructions.\nYou need to imagine\
+  \ a chart with * Histogram and given annotations that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Histogram and given\
+  \ annotations that utilizes all the data formats.\nSince you are an amateur user,\
+  \ your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to\
+  \ the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Histogram'
+- '* Heatmap'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Create a histogram displaying the Total_emissions of various food products from
+  the provided data. Highlight specific food products like 'Wheat & Rye (Bread)',
+  'Maize (Meal)', and 'Barley (Beer)' to draw attention to their Total_emissions values.
+  Annotate these highlighted elements with their exact emission values to emphasize
+  their environmental impact. The purpose of this visualization is to compare the
+  environmental impact of different food products, focusing on their total emissions.
+  This can help viewers understand and analyze which food products contribute most
+  to environmental degradation, guiding sustainable food choices.
+- 1632
+- 1520
+- 112

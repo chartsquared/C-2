@@ -1,0 +1,446 @@
+02_initial_prompt: Please create a bar chart using the given data to visualize the
+  population trends of selected countries from 1960 to 2022. Highlight key countries
+  like Aruba, Africa Eastern and Southern, and Afghanistan, as the annotations focus
+  on these. This will help in comparing their population growth visually. Add text
+  annotations on peaks, dips, and significant changes in the population to provide
+  context. The visualization will aid in understanding global population changes over
+  time, emphasizing the importance and impact on social-science research. Use color
+  to distinguish between the different countries clearly.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a bar chart using the given data to visualize the population trends
+  of selected countries from 1960 to 2022. Highlight key countries like Aruba, Africa
+  Eastern and Southern, and Afghanistan, as the annotations focus on these. This will
+  help in comparing their population growth visually. Add text annotations on peaks,
+  dips, and significant changes in the population to provide context. The visualization
+  will aid in understanding global population changes over time, emphasizing the importance
+  and impact on social-science research. Use color to distinguish between the different
+  countries clearly.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/308.csv'': {''summary'': {''Column'': [''Country Name'',
+  ''Country Code'', ''1960'', ''1961'', ''1962'', ''1963'', ''1964'', ''1965'', ''1966'',
+  ''1967'', ''1968'', ''1969'', ''1970'', ''1971'', ''1972'', ''1973'', ''1974'',
+  ''1975'', ''1976'', ''1977'', ''1978'', ''1979'', ''1980'', ''1981'', ''1982'',
+  ''1983'', ''1984'', ''1985'', ''1986'', ''1987'', ''1988'', ''1989'', ''1990'',
+  ''1991'', ''1992'', ''1993'', ''1994'', ''1995'', ''1996'', ''1997'', ''1998'',
+  ''1999'', ''2000'', ''2001'', ''2002'', ''2003'', ''2004'', ''2005'', ''2006'',
+  ''2007'', ''2008'', ''2009'', ''2010'', ''2011'', ''2012'', ''2013'', ''2014'',
+  ''2015'', ''2016'', ''2017'', ''2018'', ''2019'', ''2020'', ''2021'', ''2022''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+  2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1,
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], ''Unique
+  Values'': [266, 266, 260, 260, 260, 261, 261, 261, 261, 261, 261, 261, 261, 261,
+  261, 261, 261, 261, 261, 261, 261, 261, 261, 261, 261, 261, 260, 261, 261, 261,
+  261, 261, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263,
+  263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263,
+  263, 263, 263]}, ''sample_data'': {''Country Name'': [''Aruba'', ''Africa Eastern
+  and Southern'', ''Afghanistan''], ''Country Code'': [''ABW'', ''AFE'', ''AFG''],
+  ''1960'': [54608.0, 130692579.0, 8622466.0], ''1961'': [55811.0, 134169237.0, 8790140.0],
+  ''1962'': [56682.0, 137835590.0, 8969047.0], ''1963'': [57475.0, 141630546.0, 9157465.0],
+  ''1964'': [58178.0, 145605995.0, 9355514.0], ''1965'': [58782.0, 149742351.0, 9565147.0],
+  ''1966'': [59291.0, 153955516.0, 9783147.0], ''1967'': [59522.0, 158313235.0, 10010030.0],
+  ''1968'': [59471.0, 162875171.0, 10247780.0], ''1969'': [59330.0, 167596160.0, 10494489.0],
+  ''1970'': [59106.0, 172475766.0, 10752971.0], ''1971'': [58816.0, 177503186.0, 11015857.0],
+  ''1972'': [58855.0, 182599092.0, 11286753.0], ''1973'': [59365.0, 187901657.0, 11575305.0],
+  ''1974'': [60028.0, 193512956.0, 11869879.0], ''1975'': [60715.0, 199284304.0, 12157386.0],
+  ''1976'': [61193.0, 205202669.0, 12425267.0], ''1977'': [61465.0, 211120911.0, 12687301.0],
+  ''1978'': [61738.0, 217481420.0, 12938862.0], ''1979'': [62006.0, 224315978.0, 12986369.0],
+  ''1980'': [62267.0, 230967858.0, 12486631.0], ''1981'': [62614.0, 237937461.0, 11155195.0],
+  ''1982'': [63116.0, 245386717.0, 10088289.0], ''1983'': [63683.0, 252779730.0, 9951449.0],
+  ''1984'': [64174.0, 260209149.0, 10243686.0], ''1985'': [64478.0, 267938123.0, 10512221.0],
+  ''1986'': [64553.0, 276035920.0, 10448442.0], ''1987'': [64450.0, 284490394.0, 10322758.0],
+  ''1988'': [64332.0, 292795186.0, 10383460.0], ''1989'': [64596.0, 301124880.0, 10673168.0],
+  ''1990'': [65712.0, 309890664.0, 10694796.0], ''1991'': [67864.0, 318544083.0, 10745167.0],
+  ''1992'': [70192.0, 326933522.0, 12057433.0], ''1993'': [72360.0, 335625136.0, 14003760.0],
+  ''1994'': [74710.0, 344418362.0, 15455555.0], ''1995'': [77050.0, 353466601.0, 16418912.0],
+  ''1996'': [79417.0, 362985802.0, 17106595.0], ''1997'': [81858.0, 372352230.0, 17788819.0],
+  ''1998'': [84355.0, 381715600.0, 18493132.0], ''1999'': [86867.0, 391486231.0, 19262847.0],
+  ''2000'': [89101.0, 401600588.0, 19542982.0], ''2001'': [90691.0, 412001885.0, 19688632.0],
+  ''2002'': [91781.0, 422741118.0, 21000256.0], ''2003'': [92701.0, 433807484.0, 22645130.0],
+  ''2004'': [93540.0, 445281555.0, 23553551.0], ''2005'': [94483.0, 457153837.0, 24411191.0],
+  ''2006'': [95606.0, 469508516.0, 25442944.0], ''2007'': [96787.0, 482406426.0, 25903301.0],
+  ''2008'': [97996.0, 495748900.0, 26427199.0], ''2009'': [99212.0, 509410477.0, 27385307.0],
+  ''2010'': [100341.0, 523459657.0, 28189672.0], ''2011'': [101288.0, 537792950.0,
+  29249157.0], ''2012'': [102112.0, 552530654.0, 30466479.0], ''2013'': [102880.0,
+  567892149.0, 31541209.0], ''2014'': [103594.0, 583651101.0, 32716210.0], ''2015'':
+  [104257.0, 600008424.0, 33753499.0], ''2016'': [104874.0, 616377605.0, 34636207.0],
+  ''2017'': [105439.0, 632746570.0, 35643418.0], ''2018'': [105962.0, 649757148.0,
+  36686784.0], ''2019'': [106442.0, 667242986.0, 37769499.0], ''2020'': [106585.0,
+  685112979.0, 38972230.0], ''2021'': [106537.0, 702977106.0, 40099462.0], ''2022'':
+  [106445.0, 720859132.0, 41128771.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country Name", "1960", "1961", "1962", "1963", "1964", "1965",
+  "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975",
+  "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985",
+  "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995",
+  "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005",
+  "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015",
+  "2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Understanding global population changes over time, emphasizing the importance
+  and impact on social-science research",
+
+  "Audience": "Researchers, policymakers, and social scientists"
+
+  }'
+05_audience: Researchers, policymakers, and social scientists
+05_data_attributes:
+- Country Name
+- '1960'
+- '1961'
+- '1962'
+- '1963'
+- '1964'
+- '1965'
+- '1966'
+- '1967'
+- '1968'
+- '1969'
+- '1970'
+- '1971'
+- '1972'
+- '1973'
+- '1974'
+- '1975'
+- '1976'
+- '1977'
+- '1978'
+- '1979'
+- '1980'
+- '1981'
+- '1982'
+- '1983'
+- '1984'
+- '1985'
+- '1986'
+- '1987'
+- '1988'
+- '1989'
+- '1990'
+- '1991'
+- '1992'
+- '1993'
+- '1994'
+- '1995'
+- '1996'
+- '1997'
+- '1998'
+- '1999'
+- '2000'
+- '2001'
+- '2002'
+- '2003'
+- '2004'
+- '2005'
+- '2006'
+- '2007'
+- '2008'
+- '2009'
+- '2010'
+- '2011'
+- '2012'
+- '2013'
+- '2014'
+- '2015'
+- '2016'
+- '2017'
+- '2018'
+- '2019'
+- '2020'
+- '2021'
+- '2022'
+05_purpose: Understanding global population changes over time, emphasizing the importance
+  and impact on social-science research
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/308.csv'': {''summary'': {''Column'': [''Country Name'',
+  ''Country Code'', ''1960'', ''1961'', ''1962'', ''1963'', ''1964'', ''1965'', ''1966'',
+  ''1967'', ''1968'', ''1969'', ''1970'', ''1971'', ''1972'', ''1973'', ''1974'',
+  ''1975'', ''1976'', ''1977'', ''1978'', ''1979'', ''1980'', ''1981'', ''1982'',
+  ''1983'', ''1984'', ''1985'', ''1986'', ''1987'', ''1988'', ''1989'', ''1990'',
+  ''1991'', ''1992'', ''1993'', ''1994'', ''1995'', ''1996'', ''1997'', ''1998'',
+  ''1999'', ''2000'', ''2001'', ''2002'', ''2003'', ''2004'', ''2005'', ''2006'',
+  ''2007'', ''2008'', ''2009'', ''2010'', ''2011'', ''2012'', ''2013'', ''2014'',
+  ''2015'', ''2016'', ''2017'', ''2018'', ''2019'', ''2020'', ''2021'', ''2022''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+  2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1,
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], ''Unique
+  Values'': [266, 266, 260, 260, 260, 261, 261, 261, 261, 261, 261, 261, 261, 261,
+  261, 261, 261, 261, 261, 261, 261, 261, 261, 261, 261, 261, 260, 261, 261, 261,
+  261, 261, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263,
+  263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263, 263,
+  263, 263, 263]}, ''sample_data'': {''Country Name'': [''Aruba'', ''Africa Eastern
+  and Southern'', ''Afghanistan''], ''Country Code'': [''ABW'', ''AFE'', ''AFG''],
+  ''1960'': [54608.0, 130692579.0, 8622466.0], ''1961'': [55811.0, 134169237.0, 8790140.0],
+  ''1962'': [56682.0, 137835590.0, 8969047.0], ''1963'': [57475.0, 141630546.0, 9157465.0],
+  ''1964'': [58178.0, 145605995.0, 9355514.0], ''1965'': [58782.0, 149742351.0, 9565147.0],
+  ''1966'': [59291.0, 153955516.0, 9783147.0], ''1967'': [59522.0, 158313235.0, 10010030.0],
+  ''1968'': [59471.0, 162875171.0, 10247780.0], ''1969'': [59330.0, 167596160.0, 10494489.0],
+  ''1970'': [59106.0, 172475766.0, 10752971.0], ''1971'': [58816.0, 177503186.0, 11015857.0],
+  ''1972'': [58855.0, 182599092.0, 11286753.0], ''1973'': [59365.0, 187901657.0, 11575305.0],
+  ''1974'': [60028.0, 193512956.0, 11869879.0], ''1975'': [60715.0, 199284304.0, 12157386.0],
+  ''1976'': [61193.0, 205202669.0, 12425267.0], ''1977'': [61465.0, 211120911.0, 12687301.0],
+  ''1978'': [61738.0, 217481420.0, 12938862.0], ''1979'': [62006.0, 224315978.0, 12986369.0],
+  ''1980'': [62267.0, 230967858.0, 12486631.0], ''1981'': [62614.0, 237937461.0, 11155195.0],
+  ''1982'': [63116.0, 245386717.0, 10088289.0], ''1983'': [63683.0, 252779730.0, 9951449.0],
+  ''1984'': [64174.0, 260209149.0, 10243686.0], ''1985'': [64478.0, 267938123.0, 10512221.0],
+  ''1986'': [64553.0, 276035920.0, 10448442.0], ''1987'': [64450.0, 284490394.0, 10322758.0],
+  ''1988'': [64332.0, 292795186.0, 10383460.0], ''1989'': [64596.0, 301124880.0, 10673168.0],
+  ''1990'': [65712.0, 309890664.0, 10694796.0], ''1991'': [67864.0, 318544083.0, 10745167.0],
+  ''1992'': [70192.0, 326933522.0, 12057433.0], ''1993'': [72360.0, 335625136.0, 14003760.0],
+  ''1994'': [74710.0, 344418362.0, 15455555.0], ''1995'': [77050.0, 353466601.0, 16418912.0],
+  ''1996'': [79417.0, 362985802.0, 17106595.0], ''1997'': [81858.0, 372352230.0, 17788819.0],
+  ''1998'': [84355.0, 381715600.0, 18493132.0], ''1999'': [86867.0, 391486231.0, 19262847.0],
+  ''2000'': [89101.0, 401600588.0, 19542982.0], ''2001'': [90691.0, 412001885.0, 19688632.0],
+  ''2002'': [91781.0, 422741118.0, 21000256.0], ''2003'': [92701.0, 433807484.0, 22645130.0],
+  ''2004'': [93540.0, 445281555.0, 23553551.0], ''2005'': [94483.0, 457153837.0, 24411191.0],
+  ''2006'': [95606.0, 469508516.0, 25442944.0], ''2007'': [96787.0, 482406426.0, 25903301.0],
+  ''2008'': [97996.0, 495748900.0, 26427199.0], ''2009'': [99212.0, 509410477.0, 27385307.0],
+  ''2010'': [100341.0, 523459657.0, 28189672.0], ''2011'': [101288.0, 537792950.0,
+  29249157.0], ''2012'': [102112.0, 552530654.0, 30466479.0], ''2013'': [102880.0,
+  567892149.0, 31541209.0], ''2014'': [103594.0, 583651101.0, 32716210.0], ''2015'':
+  [104257.0, 600008424.0, 33753499.0], ''2016'': [104874.0, 616377605.0, 34636207.0],
+  ''2017'': [105439.0, 632746570.0, 35643418.0], ''2018'': [105962.0, 649757148.0,
+  36686784.0], ''2019'': [106442.0, 667242986.0, 37769499.0], ''2020'': [106585.0,
+  685112979.0, 38972230.0], ''2021'': [106537.0, 702977106.0, 40099462.0], ''2022'':
+  [106445.0, 720859132.0, 41128771.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a bar chart using the given data to visualize the population trends
+  of selected countries from 1960 to 2022. Highlight key countries like Aruba, Africa
+  Eastern and Southern, and Afghanistan, as the annotations focus on these. This will
+  help in comparing their population growth visually. Add text annotations on peaks,
+  dips, and significant changes in the population to provide context. The visualization
+  will aid in understanding global population changes over time, emphasizing the importance
+  and impact on social-science research. Use color to distinguish between the different
+  countries clearly.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country Name'', ''1960'', ''1961'', ''1962'', ''1963'', ''1964'', ''1965'', ''1966'',
+  ''1967'', ''1968'', ''1969'', ''1970'', ''1971'', ''1972'', ''1973'', ''1974'',
+  ''1975'', ''1976'', ''1977'', ''1978'', ''1979'', ''1980'', ''1981'', ''1982'',
+  ''1983'', ''1984'', ''1985'', ''1986'', ''1987'', ''1988'', ''1989'', ''1990'',
+  ''1991'', ''1992'', ''1993'', ''1994'', ''1995'', ''1996'', ''1997'', ''1998'',
+  ''1999'', ''2000'', ''2001'', ''2002'', ''2003'', ''2004'', ''2005'', ''2006'',
+  ''2007'', ''2008'', ''2009'', ''2010'', ''2011'', ''2012'', ''2013'', ''2014'',
+  ''2015'', ''2016'', ''2017'', ''2018'', ''2019'', ''2020'', ''2021'', ''2022'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, policymakers, and social scientists
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understanding global population changes over time, emphasizing the importance and
+  impact on social-science research
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for differentiating the countries?
+
+  2. Would you like to use a specific font or style for the text annotations?
+
+  3. How would you like the key countries (Aruba, Africa Eastern and Southern, and
+  Afghanistan) to be highlighted?
+
+  4. Do you want a specific arrangement for the countries on the x-axis?
+
+  5. Do you have any preferences for the format of the data labels on the y-axis?
+
+  6. Is there a particular way you''d like to display significant changes in population,
+  such as using arrows or other markers?
+
+  7. Would you prefer a specific chart title or would you like it to be generated
+  automatically based on the data?
+
+  8. Do you want any grid lines or background shading to assist with reading the data?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a bar chart using the given data to visualize\
+  \ the population trends of selected countries from 1960 to 2022. Highlight key countries\
+  \ like Aruba, Africa Eastern and Southern, and Afghanistan, as the annotations focus\
+  \ on these. This will help in comparing their population growth visually. Add text\
+  \ annotations on peaks, dips, and significant changes in the population to provide\
+  \ context. The visualization will aid in understanding global population changes\
+  \ over time, emphasizing the importance and impact on social-science research. Use\
+  \ color to distinguish between the different countries clearly.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nUnderstanding global\
+  \ population changes over time, emphasizing the importance and impact on social-science\
+  \ research\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ a preferred color scheme for differentiating the countries?\n2. Would you like\
+  \ to use a specific font or style for the text annotations?\n3. How would you like\
+  \ the key countries (Aruba, Africa Eastern and Southern, and Afghanistan) to be\
+  \ highlighted?\n4. Do you want a specific arrangement for the countries on the x-axis?\n\
+  5. Do you have any preferences for the format of the data labels on the y-axis?\n\
+  6. Is there a particular way you'd like to display significant changes in population,\
+  \ such as using arrows or other markers?\n7. Would you prefer a specific chart title\
+  \ or would you like it to be generated automatically based on the data?\n8. Do you\
+  \ want any grid lines or background shading to assist with reading the data?\n<end\
+  \ service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would like the key countries highlighted with bolder and brighter colors.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. Using arrows or markers for significant changes would be great.
+
+  7. Generated automatically based on the data is fine.
+
+  8. I am not sure.'

@@ -1,0 +1,146 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 1720
+- 1659
+- 61
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1512
+- 1373
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/81.csv'': {''summary'': {''Column'': [''rank'', ''Youtuber'',
+  ''subscribers'', ''video views'', ''category'', ''Title'', ''uploads'', ''Country'',
+  ''Abbreviation'', ''channel_type'', ''video_views_rank'', ''country_rank'', ''channel_type_rank'',
+  ''video_views_for_the_last_30_days'', ''lowest_monthly_earnings'', ''highest_monthly_earnings'',
+  ''lowest_yearly_earnings'', ''highest_yearly_earnings'', ''subscribers_for_last_30_days'',
+  ''created_year'', ''created_month'', ''created_date'', ''Gross tertiary education
+  enrollment (%)'', ''Population'', ''Unemployment rate'', ''Urban_population'', ''Latitude'',
+  ''Longitude''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 46, 0,
+  0, 122, 122, 30, 1, 116, 33, 56, 0, 0, 0, 0, 337, 5, 5, 5, 123, 123, 123, 123, 123,
+  123], ''Unique Values'': [995, 995, 289, 988, 18, 992, 777, 49, 49, 14, 953, 246,
+  286, 908, 557, 736, 757, 419, 53, 19, 12, 31, 47, 48, 47, 48, 48, 48]}, ''sample_data'':
+  {''rank'': [1, 2, 3], ''Youtuber'': [''T-Series'', ''YouTube Movies'', ''MrBeast''],
+  ''subscribers'': [245000000, 170000000, 166000000], ''video views'': [228000000000.0,
+  0.0, 28368841870.0], ''category'': [''Music'', ''Film & Animation'', ''Entertainment''],
+  ''Title'': [''T-Series'', ''youtubemovies'', ''MrBeast''], ''uploads'': [20082,
+  1, 741], ''Country'': [''India'', ''United States'', ''United States''], ''Abbreviation'':
+  [''IN'', ''US'', ''US''], ''channel_type'': [''Music'', ''Games'', ''Entertainment''],
+  ''video_views_rank'': [1.0, 4055159.0, 48.0], ''country_rank'': [1.0, 7670.0, 1.0],
+  ''channel_type_rank'': [1.0, 7423.0, 1.0], ''video_views_for_the_last_30_days'':
+  [2258000000.0, 12.0, 1348000000.0], ''lowest_monthly_earnings'': [564600.0, 0.0,
+  337000.0], ''highest_monthly_earnings'': [9000000.0, 0.05, 5400000.0], ''lowest_yearly_earnings'':
+  [6800000.0, 0.04, 4000000.0], ''highest_yearly_earnings'': [108400000.0, 0.58, 64700000.0],
+  ''subscribers_for_last_30_days'': [2000000.0, nan, 8000000.0], ''created_year'':
+  [2006.0, 2006.0, 2012.0], ''created_month'': [''Mar'', ''Mar'', ''Feb''], ''created_date'':
+  [13.0, 5.0, 20.0], ''Gross tertiary education enrollment (%)'': [28.1, 88.2, 88.2],
+  ''Population'': [1366417754.0, 328239523.0, 328239523.0], ''Unemployment rate'':
+  [5.36, 14.7, 14.7], ''Urban_population'': [471031528.0, 270663028.0, 270663028.0],
+  ''Latitude'': [20.593684, 37.09024, 37.09024], ''Longitude'': [78.96288, -95.712891,
+  -95.712891]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Global YouTube Statistics 2023
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Grouped bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Grouped bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Geographic heatmap'
+- '* Box chart'
+- '* Heatmap'
+- '* Grouped bar/column chart'
+- '* Histogram'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Bar chart'
+- '* Scatter plot'
+- '* Column chart'
+- '* Choropleth map'
+- '* Dot plot'
+- '* Pie chart'
+- '* Geographic heatmap'
+- '* Box chart'
+- '* Heatmap'
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- 'I need a grouped column chart visualizing the top 3 YouTubers by ''subscribers''
+  and ''video views''. Highlight ''subscribers'', ''video views'', and ''video_views_for_the_last_30_days''
+  for each Youtuber. Include data from ''category'' and ''Country'' to differentiate
+  groups. Title the chart "Top YouTubers Statistics 2023". Use different colors for
+  each Youtuber and respective metrics for clarity. Ensure all labels are clear for
+  easy understanding. Include a legend and axis titles for completeness. Reference:
+  Global YouTube Statistics 2023 and ../Extra_datas/data/81.csv.'
+- 1384
+- 1256
+- 128

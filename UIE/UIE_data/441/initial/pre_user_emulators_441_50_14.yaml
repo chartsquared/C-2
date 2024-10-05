@@ -1,0 +1,151 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Radial bar chart
+
+  * Parallel coordinates
+
+  * Radar chart
+
+  * Waterfall chart
+
+  * Small multiples
+
+  * Table chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Bubble chart
+
+  * Stacked bar/column chart
+
+  * Population pyramid
+
+  * Treemap
+
+  * Circular treemap
+
+  * Donut chart
+
+  * Area chart
+
+  * Line chart
+
+  * Spline chart
+
+  * Step line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Violin plot
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 1332
+- 1207
+- 125
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1054
+- 915
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/441.csv'': {''summary'': {''Column'': [''year'', ''school'',
+  ''seed'', ''conference'', ''conf_w'', ''conf_l'', ''conf_percent'', ''conf_place'',
+  ''reg_w'', ''reg_l'', ''reg_percent'', ''how_qual'', ''x1st_game_at_home'', ''tourney_w'',
+  ''tourney_l'', ''tourney_finish'', ''full_w'', ''full_l'', ''full_percent''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''float64'')], ''Missing
+  Values'': [0, 0, 8, 0, 61, 61, 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [37, 284, 16, 62, 18, 15, 60, 63, 24, 19, 134, 2, 3, 7, 2, 8, 29, 21,
+  171]}, ''sample_data'': {''year'': [1982, 1982, 1982], ''school'': [''Arizona St.'',
+  ''Auburn'', ''Cheyney''], ''seed'': [4.0, 7.0, 2.0], ''conference'': [''Western
+  Collegiate'', ''Southeastern'', ''Independent''], ''conf_w'': [nan, nan, nan], ''conf_l'':
+  [nan, nan, nan], ''conf_percent'': [nan, nan, nan], ''conf_place'': [''-'', ''-'',
+  ''-''], ''reg_w'': [23, 24, 24], ''reg_l'': [6, 4, 2], ''reg_percent'': [79.3, 85.7,
+  92.3], ''how_qual'': [''at-large'', ''at-large'', ''at-large''], ''x1st_game_at_home'':
+  [''Y'', ''N'', ''Y''], ''tourney_w'': [1, 0, 4], ''tourney_l'': [1, 1, 1], ''tourney_finish'':
+  [''RSF'', ''1st'', ''N2nd''], ''full_w'': [24, 24, 28], ''full_l'': [7, 5, 3], ''full_percent'':
+  [77.4, 82.8, 90.3]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Women college basketball
+
+  sports-and-recreation
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Line chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Line chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Small multiples'
+- '* Dot plot'
+- '* Circular treemap'
+- '* Radar chart'
+- '* Column chart'
+- '* Area chart'
+- '* Histogram'
+- '* Grouped bar/column chart'
+- '* Donut chart'
+- '* Step line chart'
+- '* Spline chart'
+- '* Stacked bar/column chart'
+- '* Choropleth map'
+- '* Geographic heatmap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart showing the full season win percentages of women college basketball
+  teams over the years. Include data for different schools and conferences, highlighting
+  trends and performance variations.
+- 823
+- 790
+- 33

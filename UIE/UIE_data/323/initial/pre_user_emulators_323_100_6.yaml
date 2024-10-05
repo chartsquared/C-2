@@ -1,0 +1,110 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 818
+- 770
+- 48
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 619
+- 480
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/323.csv'': {''summary'': {''Column'': [''state'', ''mlsrc'',
+  ''quantumsrc'', ''dlsrc''], ''Data Type'': [dtype(''O''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0], ''Unique Values'': [36, 21,
+  22, 19]}, ''sample_data'': {''state'': [''Andaman & Nicobar Island'', ''Andhra Pradesh'',
+  ''Arunanchal Pradesh''], ''mlsrc'': [0, 100, 8], ''quantumsrc'': [0, 67, 0], ''dlsrc'':
+  [0, 73, 0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  google-trends web search
+
+  online-communities
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Column chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Column chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Line chart'
+- '* Pie chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Grouped bar/column chart'
+- '* Column chart'
+- '* Histogram'
+- '* Scatter plot'
+- '* Choropleth map'
+- '* Line chart'
+- '* Pie chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Grouped bar/column chart'
+- '* Column chart'
+2. initial_prompt: !!python/tuple
+- I need a column chart visualizing the data from 323.csv. The chart should show the
+  states on the x-axis and have three separate bars for mlsrc, quantumsrc, and dlsrc
+  values for each state. This chart will help us analyze which states have the highest
+  values in each of the three data sources. Also, use different colors for each data
+  source for better distinction and add a legend to clarify. We're mainly interested
+  in understanding the trends in online communities usage across different states.
+  Please ensure the chart is clear and easy to interpret. Thank you!
+- 470
+- 355
+- 115

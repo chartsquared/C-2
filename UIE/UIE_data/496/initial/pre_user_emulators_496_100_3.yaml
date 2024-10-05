@@ -1,0 +1,87 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Scatter plot
+
+  * Line chart
+
+  * Heatmap
+
+  * Parallel coordinates'
+- 781
+- 766
+- 15
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 613
+- 474
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/496.csv'': {''summary'': {''Column'': [''y'', ''x1'', ''x2''],
+  ''Data Type'': [dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing
+  Values'': [0, 0, 0], ''Unique Values'': [200, 159, 143]}, ''sample_data'': {''y'':
+  [0.0, 0.01, 0.02], ''x1'': [0.0, 0.0627905195293133, 0.1253332335643042], ''x2'':
+  [0.0, 0.1503998802771651, 0.2984278645978257]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  unknown
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Parallel coordinates'
+- '* Line chart'
+- '* Scatter plot'
+- '* Heatmap'
+- '* Parallel coordinates'
+- '* Line chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- Please create a scatter plot using the data from the CSV file located at '../Extra_datas/data/496.csv'.
+  Plot 'x1' on the x-axis and 'y' on the y-axis. Use another scatter plot for 'x2'
+  on the x-axis and 'y' on the y-axis. Since there are no missing values and the data
+  types are uniform float64, please ensure the scatter plot points are clearly legible
+  and differentiated by color or marker. Include appropriate axis labels and a legend
+  to distinguish between the two scatter plots ('x1 vs y' and 'x2 vs y').
+- 470
+- 349
+- 121

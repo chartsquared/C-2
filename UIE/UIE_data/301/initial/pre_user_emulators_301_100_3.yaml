@@ -1,0 +1,95 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Scatter plot
+
+  * Histogram
+
+  * Box chart
+
+  * Area chart'
+- 915
+- 897
+- 18
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 748
+- 609
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/301.csv'': {''summary'': {''Column'': [''Year'', ''Month'',
+  ''Decimal Date'', ''Carbon Dioxide (ppm)'', ''Seasonally Adjusted CO2 (ppm)'', ''Carbon
+  Dioxide Fit (ppm)'', ''Seasonally Adjusted CO2 Fit (ppm)''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 17, 17, 13, 13], ''Unique Values'':
+  [60, 12, 720, 679, 667, 680, 707]}, ''sample_data'': {''Year'': [1958, 1958, 1958],
+  ''Month'': [1, 2, 3], ''Decimal Date'': [1958.0411, 1958.126, 1958.2027], ''Carbon
+  Dioxide (ppm)'': [nan, nan, 315.69], ''Seasonally Adjusted CO2 (ppm)'': [nan, nan,
+  314.42], ''Carbon Dioxide Fit (ppm)'': [nan, nan, 316.18], ''Seasonally Adjusted
+  CO2 Fit (ppm)'': [nan, nan, 314.89]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Carbon Dioxide Levels in Atmosphere
+
+  environmental-science
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Histogram that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Histogram that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Line chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Histogram'
+- '* Area chart'
+- '* Line chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- I would like a histogram visualization for the Carbon Dioxide Levels in the atmosphere.
+  Use the data provided to plot the distribution of Carbon Dioxide (ppm) over the
+  years. Also, include the Seasonally Adjusted CO2 (ppm) for a clearer analysis. Make
+  sure to highlight any missing values in the dataset. The aim is to observe the trend
+  and variability of CO2 levels from 1958 to the present. Include labels and a legend
+  for clarity.
+- 575
+- 482
+- 93

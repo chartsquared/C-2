@@ -1,0 +1,281 @@
+02_initial_prompt: I want a scatter plot visualizing the change in minimum wages over
+  time for different states from 1968 to 2020. The x-axis should represent the years,
+  and the y-axis should show the Effective Minimum Wage in 2020 dollars. Each point
+  should represent a state's minimum wage for a specific year, with different colors
+  representing different states. Make sure to include a legend to identify the states.
+  This will help analyze how minimum wages have evolved across states over the years.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I want a scatter plot visualizing the change in minimum wages over time for different
+  states from 1968 to 2020. The x-axis should represent the years, and the y-axis
+  should show the Effective Minimum Wage in 2020 dollars. Each point should represent
+  a state''s minimum wage for a specific year, with different colors representing
+  different states. Make sure to include a legend to identify the states. This will
+  help analyze how minimum wages have evolved across states over the years.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/140.csv'': {''summary'': {''Column'': [''Year'', ''State'',
+  ''State.Minimum.Wage'', ''State.Minimum.Wage.2020.Dollars'', ''Federal.Minimum.Wage'',
+  ''Federal.Minimum.Wage.2020.Dollars'', ''Effective.Minimum.Wage'', ''Effective.Minimum.Wage.2020.Dollars'',
+  ''CPI.Average'', ''Department.Of.Labor.Uncleaned.Data'', ''Department.Of.Labor.Cleaned.Low.Value'',
+  ''Department.Of.Labor.Cleaned.Low.Value.2020.Dollars'', ''Department.Of.Labor.Cleaned.High.Value'',
+  ''Department.Of.Labor.Cleaned.High.Value.2020.Dollars'', ''Footnote''], ''Data Type'':
+  [dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 15,
+  2406], ''Unique Values'': [53, 54, 196, 593, 14, 49, 163, 292, 53, 326, 196, 593,
+  190, 528, 11]}, ''sample_data'': {''Year'': [1968, 1968, 1968], ''State'': [''Alabama'',
+  ''Alaska'', ''Arizona''], ''State.Minimum.Wage'': [0.0, 2.1, 0.468], ''State.Minimum.Wage.2020.Dollars'':
+  [0.0, 15.61, 3.48], ''Federal.Minimum.Wage'': [1.15, 1.15, 1.15], ''Federal.Minimum.Wage.2020.Dollars'':
+  [8.55, 8.55, 8.55], ''Effective.Minimum.Wage'': [1.15, 2.1, 1.15], ''Effective.Minimum.Wage.2020.Dollars'':
+  [8.55, 15.61, 8.55], ''CPI.Average'': [34.8, 34.8, 34.8], ''Department.Of.Labor.Uncleaned.Data'':
+  [''...'', ''2.1'', ''18.72 - 26.40/wk(b)''], ''Department.Of.Labor.Cleaned.Low.Value'':
+  [0.0, 2.1, 0.468], ''Department.Of.Labor.Cleaned.Low.Value.2020.Dollars'': [0.0,
+  15.61, 3.48], ''Department.Of.Labor.Cleaned.High.Value'': [0.0, 2.1, 0.66], ''Department.Of.Labor.Cleaned.High.Value.2020.Dollars'':
+  [0.0, 15.61, 4.91], ''Footnote'': [nan, nan, ''(b)'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Year", "State", "Effective.Minimum.Wage.2020.Dollars"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Analyze how minimum wages have evolved across states over the years",
+
+  "Audience": "Policy makers, economists, and researchers studying wage trends"
+
+  }'
+05_audience: Policy makers, economists, and researchers studying wage trends
+05_data_attributes:
+- Year
+- State
+- Effective.Minimum.Wage.2020.Dollars
+05_purpose: Analyze how minimum wages have evolved across states over the years
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/140.csv'': {''summary'': {''Column'': [''Year'', ''State'',
+  ''State.Minimum.Wage'', ''State.Minimum.Wage.2020.Dollars'', ''Federal.Minimum.Wage'',
+  ''Federal.Minimum.Wage.2020.Dollars'', ''Effective.Minimum.Wage'', ''Effective.Minimum.Wage.2020.Dollars'',
+  ''CPI.Average'', ''Department.Of.Labor.Uncleaned.Data'', ''Department.Of.Labor.Cleaned.Low.Value'',
+  ''Department.Of.Labor.Cleaned.Low.Value.2020.Dollars'', ''Department.Of.Labor.Cleaned.High.Value'',
+  ''Department.Of.Labor.Cleaned.High.Value.2020.Dollars'', ''Footnote''], ''Data Type'':
+  [dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 15,
+  2406], ''Unique Values'': [53, 54, 196, 593, 14, 49, 163, 292, 53, 326, 196, 593,
+  190, 528, 11]}, ''sample_data'': {''Year'': [1968, 1968, 1968], ''State'': [''Alabama'',
+  ''Alaska'', ''Arizona''], ''State.Minimum.Wage'': [0.0, 2.1, 0.468], ''State.Minimum.Wage.2020.Dollars'':
+  [0.0, 15.61, 3.48], ''Federal.Minimum.Wage'': [1.15, 1.15, 1.15], ''Federal.Minimum.Wage.2020.Dollars'':
+  [8.55, 8.55, 8.55], ''Effective.Minimum.Wage'': [1.15, 2.1, 1.15], ''Effective.Minimum.Wage.2020.Dollars'':
+  [8.55, 15.61, 8.55], ''CPI.Average'': [34.8, 34.8, 34.8], ''Department.Of.Labor.Uncleaned.Data'':
+  [''...'', ''2.1'', ''18.72 - 26.40/wk(b)''], ''Department.Of.Labor.Cleaned.Low.Value'':
+  [0.0, 2.1, 0.468], ''Department.Of.Labor.Cleaned.Low.Value.2020.Dollars'': [0.0,
+  15.61, 3.48], ''Department.Of.Labor.Cleaned.High.Value'': [0.0, 2.1, 0.66], ''Department.Of.Labor.Cleaned.High.Value.2020.Dollars'':
+  [0.0, 15.61, 4.91], ''Footnote'': [nan, nan, ''(b)'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I want a scatter plot visualizing the change in minimum wages over time for different
+  states from 1968 to 2020. The x-axis should represent the years, and the y-axis
+  should show the Effective Minimum Wage in 2020 dollars. Each point should represent
+  a state''s minimum wage for a specific year, with different colors representing
+  different states. Make sure to include a legend to identify the states. This will
+  help analyze how minimum wages have evolved across states over the years.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Year'', ''State'', ''Effective.Minimum.Wage.2020.Dollars'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Policy makers, economists, and researchers studying wage trends
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze how minimum wages have evolved across states over the years
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific preferences for the color scheme of the
+  states on the scatter plot?
+
+  2. Would you like any specific formatting for the x-axis or y-axis labels?
+
+  3. Are there any specific fonts you prefer for the title, axes, or legend?
+
+  4. Would you like grid lines to be included in the background for easier reading
+  of the data points?
+
+  5. Do you have any preference for the shape or size of the scatter plot points?
+
+  6. Should the chart include titles and labels for the axes? If yes, do you have
+  specific wording in mind?
+
+  7. Do you prefer the chart to be in a specific aspect ratio or size?
+
+  8. Are there any additional annotations or markers you would like to include on
+  the plot?
+
+  9. Would you like a trend line added to the scatter plot to better show the trend
+  over time?
+
+  10. How would you prefer the legend to be placed on the chart (e.g., top-right,
+  bottom-right, outside the chart area)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI want a scatter plot visualizing the change in minimum\
+  \ wages over time for different states from 1968 to 2020. The x-axis should represent\
+  \ the years, and the y-axis should show the Effective Minimum Wage in 2020 dollars.\
+  \ Each point should represent a state's minimum wage for a specific year, with different\
+  \ colors representing different states. Make sure to include a legend to identify\
+  \ the states. This will help analyze how minimum wages have evolved across states\
+  \ over the years.\n<end of user request>\n\nImagine the best result that can be\
+  \ achieved based on the given instructions and is the final output you want from\
+  \ the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nAnalyze how minimum wages have evolved across states over\
+  \ the years\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ any specific preferences for the color scheme of the states on the scatter plot?\n\
+  2. Would you like any specific formatting for the x-axis or y-axis labels?\n3. Are\
+  \ there any specific fonts you prefer for the title, axes, or legend?\n4. Would\
+  \ you like grid lines to be included in the background for easier reading of the\
+  \ data points?\n5. Do you have any preference for the shape or size of the scatter\
+  \ plot points?\n6. Should the chart include titles and labels for the axes? If yes,\
+  \ do you have specific wording in mind?\n7. Do you prefer the chart to be in a specific\
+  \ aspect ratio or size?\n8. Are there any additional annotations or markers you\
+  \ would like to include on the plot?\n9. Would you like a trend line added to the\
+  \ scatter plot to better show the trend over time?\n10. How would you prefer the\
+  \ legend to be placed on the chart (e.g., top-right, bottom-right, outside the chart\
+  \ area)?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, I would like grid lines to be included.
+
+  5. I do not know.
+
+  6. Yes, please include titles and labels. For the y-axis, use "Effective Minimum
+  Wage (2020 dollars)" and for the x-axis, use "Year".
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes, please add a trend line.
+
+  10. Top-right would be preferred for the legend.'

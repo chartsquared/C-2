@@ -1,0 +1,276 @@
+02_initial_prompt: Create a geographic heatmap displaying the count of Netflix movies
+  and TV shows per country from the provided dataset. Highlight regions with higher
+  concentrations by darker hues.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a geographic heatmap displaying the count of Netflix movies and TV shows
+  per country from the provided dataset. Highlight regions with higher concentrations
+  by darker hues.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/367.csv'': {''summary'': {''Column'': [''show_id'', ''type'',
+  ''title'', ''director'', ''cast'', ''country'', ''date_added'', ''release_year'',
+  ''rating'', ''duration'', ''listed_in'', ''description''], ''Data Type'': [dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 2634, 825, 831, 10, 0, 4, 3, 0, 0], ''Unique Values'': [8807,
+  2, 8807, 4528, 7692, 748, 1767, 74, 17, 220, 514, 8775]}, ''sample_data'': {''show_id'':
+  [''s1'', ''s2'', ''s3''], ''type'': [''Movie'', ''TV Show'', ''TV Show''], ''title'':
+  [''Dick Johnson Is Dead'', ''Blood & Water'', ''Ganglands''], ''director'': [''Kirsten
+  Johnson'', nan, ''Julien Leclercq''], ''cast'': [nan, ''Ama Qamata, Khosi Ngema,
+  Gail Mabalane, Thabang Molaba, Dillon Windvogel, Natasha Thahane, Arno Greeff, Xolile
+  Tshabalala, Getmore Sithole, Cindy Mahlangu, Ryle De Morny, Greteli Fincham, Sello
+  Maake Ka-Ncube, Odwa Gwanya, Mekaila Mathys, Sandi Schultz, Duane Williams, Shamilla
+  Miller, Patrick Mofokeng'', ''Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabiha Akkari,
+  Sofia Lesaffre, Salim Kechiouche, Noureddine Farihi, Geert Van Rampelberg, Bakary
+  Diombera''], ''country'': [''United States'', ''South Africa'', nan], ''date_added'':
+  [''September 25, 2021'', ''September 24, 2021'', ''September 24, 2021''], ''release_year'':
+  [2020, 2021, 2021], ''rating'': [''PG-13'', ''TV-MA'', ''TV-MA''], ''duration'':
+  [''90 min'', ''2 Seasons'', ''1 Season''], ''listed_in'': [''Documentaries'', ''International
+  TV Shows, TV Dramas, TV Mysteries'', ''Crime TV Shows, International TV Shows, TV
+  Action & Adventure''], ''description'': [''As her father nears the end of his life,
+  filmmaker Kirsten Johnson stages his death in inventive and comical ways to help
+  them both face the inevitable.'', ''After crossing paths at a party, a Cape Town
+  teen sets out to prove whether a private-school swimming star is her sister who
+  was abducted at birth.'', ''To protect his family from a powerful drug lord, skilled
+  thief Mehdi and his expert team of robbers are pulled into a violent and deadly
+  turf war.'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n \"Data Attribute\": [\"country\", \"type\"\
+  ],\n \"Task\": \"Distribution By Category\",\n \"Purpose\": \"Highlight regions\
+  \ with higher concentrations of Netflix movies and TV shows\",\n \"Audience\": \"\
+  Netflix analytics team, media researchers, and regional content managers\"\n}"
+05_audience: Netflix analytics team, media researchers, and regional content managers
+05_data_attributes:
+- country
+- type
+05_purpose: Highlight regions with higher concentrations of Netflix movies and TV
+  shows
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/367.csv'': {''summary'': {''Column'': [''show_id'', ''type'',
+  ''title'', ''director'', ''cast'', ''country'', ''date_added'', ''release_year'',
+  ''rating'', ''duration'', ''listed_in'', ''description''], ''Data Type'': [dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 2634, 825, 831, 10, 0, 4, 3, 0, 0], ''Unique Values'': [8807,
+  2, 8807, 4528, 7692, 748, 1767, 74, 17, 220, 514, 8775]}, ''sample_data'': {''show_id'':
+  [''s1'', ''s2'', ''s3''], ''type'': [''Movie'', ''TV Show'', ''TV Show''], ''title'':
+  [''Dick Johnson Is Dead'', ''Blood & Water'', ''Ganglands''], ''director'': [''Kirsten
+  Johnson'', nan, ''Julien Leclercq''], ''cast'': [nan, ''Ama Qamata, Khosi Ngema,
+  Gail Mabalane, Thabang Molaba, Dillon Windvogel, Natasha Thahane, Arno Greeff, Xolile
+  Tshabalala, Getmore Sithole, Cindy Mahlangu, Ryle De Morny, Greteli Fincham, Sello
+  Maake Ka-Ncube, Odwa Gwanya, Mekaila Mathys, Sandi Schultz, Duane Williams, Shamilla
+  Miller, Patrick Mofokeng'', ''Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabiha Akkari,
+  Sofia Lesaffre, Salim Kechiouche, Noureddine Farihi, Geert Van Rampelberg, Bakary
+  Diombera''], ''country'': [''United States'', ''South Africa'', nan], ''date_added'':
+  [''September 25, 2021'', ''September 24, 2021'', ''September 24, 2021''], ''release_year'':
+  [2020, 2021, 2021], ''rating'': [''PG-13'', ''TV-MA'', ''TV-MA''], ''duration'':
+  [''90 min'', ''2 Seasons'', ''1 Season''], ''listed_in'': [''Documentaries'', ''International
+  TV Shows, TV Dramas, TV Mysteries'', ''Crime TV Shows, International TV Shows, TV
+  Action & Adventure''], ''description'': [''As her father nears the end of his life,
+  filmmaker Kirsten Johnson stages his death in inventive and comical ways to help
+  them both face the inevitable.'', ''After crossing paths at a party, a Cape Town
+  teen sets out to prove whether a private-school swimming star is her sister who
+  was abducted at birth.'', ''To protect his family from a powerful drug lord, skilled
+  thief Mehdi and his expert team of robbers are pulled into a violent and deadly
+  turf war.'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a geographic heatmap displaying the count of Netflix movies and TV shows
+  per country from the provided dataset. Highlight regions with higher concentrations
+  by darker hues.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''country'', ''type'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Netflix analytics team, media researchers, and regional content managers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight regions with higher concentrations of Netflix movies and TV shows
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Would you like to differentiate between movies and TV shows using different shades
+  or colors within the map?
+
+  3. Is there any specific geographical region you would like to focus on or highlight
+  in more detail?
+
+  4. Do you prefer any particular map projection (e.g., Mercator, Robinson, etc.)
+  for the geographic heatmap?
+
+  5. Are there any labels or annotations you would like to include on the map (e.g.,
+  country names, counts)?
+
+  6. Would you like the heatmap to include a legend explaining the color intensity?
+
+  7. Do you prefer to include any specific data filters (e.g., filter by year of release,
+  rating)?
+
+  8. Should the heatmap consider missing data or only include countries with available
+  data?
+
+  9. Is there a particular way you''d like the data aggregated (e.g., by release year,
+  by director''s country of origin)?
+
+  10. Do you have any preferences on the map''s layout or size?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a geographic heatmap displaying the count of Netflix\
+  \ movies and TV shows per country from the provided dataset. Highlight regions with\
+  \ higher concentrations by darker hues.\n<end of user request>\n\nImagine the best\
+  \ result that can be achieved based on the given instructions and is the final output\
+  \ you want from the service provider with your purpose given below.\nBased on your\
+  \ imagination you are to respond to the service provider.\nSince you are an amateur\
+  \ user you should concretely answer 25% of the questions you think are most important,\
+  \ and the remaining questions should be answer with uncertainty, e.g. \u201CI am\
+  \ not sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\n\
+  Finally, remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nHighlight regions with higher concentrations of Netflix movies\
+  \ and TV shows\n<end of purpose>\n\n<start service provider message>\n1. Do you\
+  \ have any specific color scheme preferences for the heatmap?\n2. Would you like\
+  \ to differentiate between movies and TV shows using different shades or colors\
+  \ within the map?\n3. Is there any specific geographical region you would like to\
+  \ focus on or highlight in more detail?\n4. Do you prefer any particular map projection\
+  \ (e.g., Mercator, Robinson, etc.) for the geographic heatmap?\n5. Are there any\
+  \ labels or annotations you would like to include on the map (e.g., country names,\
+  \ counts)?\n6. Would you like the heatmap to include a legend explaining the color\
+  \ intensity?\n7. Do you prefer to include any specific data filters (e.g., filter\
+  \ by year of release, rating)?\n8. Should the heatmap consider missing data or only\
+  \ include countries with available data?\n9. Is there a particular way you'd like\
+  \ the data aggregated (e.g., by release year, by director's country of origin)?\n\
+  10. Do you have any preferences on the map's layout or size?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include country names and counts.
+
+  6. Yes, I would like the heatmap to include a legend explaining the color intensity.
+
+  7. I am not sure.
+
+  8. I prefer only to include countries with available data.
+
+  9. I have no specific preference.
+
+  10. I do not know.'

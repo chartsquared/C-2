@@ -1,0 +1,278 @@
+02_initial_prompt: Create a bar chart showing the total amount spent to influence
+  by each lobbyist, based on the given data. Each bar should represent a different
+  lobbyist. Ensure that all unique lobbyist names are combined into single entries
+  (e.g., "Airbnb Inc," "Airbnb Inc.," and "Airbnb, Inc." should be treated as one).
+  The x-axis should list the lobbyist names, and the y-axis should show the total
+  amount spent. Include data from all provided time periods. Color-code the bars to
+  easily distinguish between different lobbyists. Also, account for missing values
+  and handle them appropriately.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bar chart showing the total amount spent to influence by each lobbyist,
+  based on the given data. Each bar should represent a different lobbyist. Ensure
+  that all unique lobbyist names are combined into single entries (e.g., "Airbnb Inc,"
+  "Airbnb Inc.," and "Airbnb, Inc." should be treated as one). The x-axis should list
+  the lobbyist names, and the y-axis should show the total amount spent. Include data
+  from all provided time periods. Color-code the bars to easily distinguish between
+  different lobbyists. Also, account for missing values and handle them appropriately.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/164.csv'': {''summary'': {''Column'': [''Lobbyist Name'',
+  ''Report'', ''Report Type'', ''Date Filed'', ''Period Start Date'', ''Period End
+  Date'', ''Activity'', ''Termination'', ''Amendment Filing'', ''Amendment to Report
+  Filed'', ''Type of Expenditure Lobbyist'', ''Total Amount Spent to Influence'',
+  ''Filing''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0,
+  0, 0, 1, 1, 37, 63, 64, 62, 35, 39, 70], ''Unique Values'': [10, 70, 2, 50, 28,
+  31, 1, 2, 2, 7, 4, 29, 0]}, ''sample_data'': {''Lobbyist Name'': [''Airbnb Inc'',
+  ''Airbnb Inc.'', ''Airbnb, Inc.''], ''Report'': ["{''file_id'': ''fa7a4e99-552c-4495-8cb6-fd1321b64d8c'',
+  ''content_type'': ''application/pdf'', ''filename'': ''20170301_20170417_2110B_Airbnb_Inc_Redacted.pdf''}",
+  "{''file_id'': ''2ead71c3-59e4-4632-bc29-747df03520db'', ''content_type'': ''application/pdf'',
+  ''filename'': ''20170401_20170515_2110B_Airbnb_Inc_Redacted.pdf''}", "{''file_id'':
+  ''3146827c-4ef9-4042-a7f9-473e8c7e28e3'', ''content_type'': ''application/pdf'',
+  ''filename'': ''20160601_20160714_2110B_Airbnb_Inc._Redacted.pdf''}"], ''Report
+  Type'': [''Disclosure Form SFEC 2110B'', ''Disclosure Form SFEC 2110B'', ''Disclosure
+  Form SFEC 2110B''], ''Date Filed'': [''2017-04-17T00:00:00.000'', ''2017-05-15T00:00:00.000'',
+  ''2016-07-14T00:00:00.000''], ''Period Start Date'': [''2017-03-01T00:00:00.000'',
+  ''2017-04-01T00:00:00.000'', ''2016-06-01T00:00:00.000''], ''Period End Date'':
+  [''2017-03-31T00:00:00.000'', ''2017-04-30T00:00:00.000'', ''2016-06-30T00:00:00.000''],
+  ''Activity'': [nan, nan, True], ''Termination'': [nan, nan, nan], ''Amendment Filing'':
+  [nan, nan, nan], ''Amendment to Report Filed'': [nan, nan, ''2016-07-26T22:09:56.000''],
+  ''Type of Expenditure Lobbyist'': [''Corporation'', ''Corporation'', ''Corporation''],
+  ''Total Amount Spent to Influence'': [nan, nan, 12945.14], ''Filing'': [nan, nan,
+  nan]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Lobbyist Name", "Total Amount Spent to Influence"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Focus on Identifying value",
+
+  "Audience": "Policy makers, lobbyist firms, public interest groups"
+
+  }'
+05_audience: Policy makers, lobbyist firms, public interest groups
+05_data_attributes:
+- Lobbyist Name
+- Total Amount Spent to Influence
+05_purpose: Focus on Identifying value
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/164.csv'': {''summary'': {''Column'': [''Lobbyist Name'',
+  ''Report'', ''Report Type'', ''Date Filed'', ''Period Start Date'', ''Period End
+  Date'', ''Activity'', ''Termination'', ''Amendment Filing'', ''Amendment to Report
+  Filed'', ''Type of Expenditure Lobbyist'', ''Total Amount Spent to Influence'',
+  ''Filing''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0,
+  0, 0, 1, 1, 37, 63, 64, 62, 35, 39, 70], ''Unique Values'': [10, 70, 2, 50, 28,
+  31, 1, 2, 2, 7, 4, 29, 0]}, ''sample_data'': {''Lobbyist Name'': [''Airbnb Inc'',
+  ''Airbnb Inc.'', ''Airbnb, Inc.''], ''Report'': ["{''file_id'': ''fa7a4e99-552c-4495-8cb6-fd1321b64d8c'',
+  ''content_type'': ''application/pdf'', ''filename'': ''20170301_20170417_2110B_Airbnb_Inc_Redacted.pdf''}",
+  "{''file_id'': ''2ead71c3-59e4-4632-bc29-747df03520db'', ''content_type'': ''application/pdf'',
+  ''filename'': ''20170401_20170515_2110B_Airbnb_Inc_Redacted.pdf''}", "{''file_id'':
+  ''3146827c-4ef9-4042-a7f9-473e8c7e28e3'', ''content_type'': ''application/pdf'',
+  ''filename'': ''20160601_20160714_2110B_Airbnb_Inc._Redacted.pdf''}"], ''Report
+  Type'': [''Disclosure Form SFEC 2110B'', ''Disclosure Form SFEC 2110B'', ''Disclosure
+  Form SFEC 2110B''], ''Date Filed'': [''2017-04-17T00:00:00.000'', ''2017-05-15T00:00:00.000'',
+  ''2016-07-14T00:00:00.000''], ''Period Start Date'': [''2017-03-01T00:00:00.000'',
+  ''2017-04-01T00:00:00.000'', ''2016-06-01T00:00:00.000''], ''Period End Date'':
+  [''2017-03-31T00:00:00.000'', ''2017-04-30T00:00:00.000'', ''2016-06-30T00:00:00.000''],
+  ''Activity'': [nan, nan, True], ''Termination'': [nan, nan, nan], ''Amendment Filing'':
+  [nan, nan, nan], ''Amendment to Report Filed'': [nan, nan, ''2016-07-26T22:09:56.000''],
+  ''Type of Expenditure Lobbyist'': [''Corporation'', ''Corporation'', ''Corporation''],
+  ''Total Amount Spent to Influence'': [nan, nan, 12945.14], ''Filing'': [nan, nan,
+  nan]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bar chart showing the total amount spent to influence by each lobbyist,
+  based on the given data. Each bar should represent a different lobbyist. Ensure
+  that all unique lobbyist names are combined into single entries (e.g., "Airbnb Inc,"
+  "Airbnb Inc.," and "Airbnb, Inc." should be treated as one). The x-axis should list
+  the lobbyist names, and the y-axis should show the total amount spent. Include data
+  from all provided time periods. Color-code the bars to easily distinguish between
+  different lobbyists. Also, account for missing values and handle them appropriately.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Lobbyist Name'', ''Total Amount Spent to Influence'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Policy makers, lobbyist firms, public interest groups
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Focus on Identifying value
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color palette for the bars?
+
+  2. How would you like missing values to be handled (e.g., exclude bars with missing
+  data, fill with zero)?
+
+  3. Are there any specific fonts or styles you would like for the labels and title?
+
+  4. Do you prefer the bars to be sorted in a particular order (e.g., alphabetical,
+  by total amount spent)?
+
+  5. Is there a specific title you would like for the chart?
+
+  6. Do you require any additional annotations or labels on the bars?
+
+  7. Are there any specific dimensions or aspect ratios you would prefer for the chart?
+
+  8. Would you like gridlines on the chart for easier comparison?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart showing the total amount spent to\
+  \ influence by each lobbyist, based on the given data. Each bar should represent\
+  \ a different lobbyist. Ensure that all unique lobbyist names are combined into\
+  \ single entries (e.g., \"Airbnb Inc,\" \"Airbnb Inc.,\" and \"Airbnb, Inc.\" should\
+  \ be treated as one). The x-axis should list the lobbyist names, and the y-axis\
+  \ should show the total amount spent. Include data from all provided time periods.\
+  \ Color-code the bars to easily distinguish between different lobbyists. Also, account\
+  \ for missing values and handle them appropriately.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nFocus on Identifying value\n<end of\
+  \ purpose>\n\n<start service provider message>\n1. Do you have a preferred color\
+  \ palette for the bars?\n2. How would you like missing values to be handled (e.g.,\
+  \ exclude bars with missing data, fill with zero)?\n3. Are there any specific fonts\
+  \ or styles you would like for the labels and title?\n4. Do you prefer the bars\
+  \ to be sorted in a particular order (e.g., alphabetical, by total amount spent)?\n\
+  5. Is there a specific title you would like for the chart?\n6. Do you require any\
+  \ additional annotations or labels on the bars?\n7. Are there any specific dimensions\
+  \ or aspect ratios you would prefer for the chart?\n8. Would you like gridlines\
+  \ on the chart for easier comparison?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Fill missing values with zero.
+
+  3. I do not know.
+
+  4. Sort by total amount spent.
+
+  5. "Total Amount Spent by Each Lobbyist"
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, include gridlines.'

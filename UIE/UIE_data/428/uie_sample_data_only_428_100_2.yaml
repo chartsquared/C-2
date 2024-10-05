@@ -1,0 +1,250 @@
+02_initial_prompt: Create a histogram to visualize the distribution of unique words
+  used by different rappers from the 1990s and 2010s. Use text annotations to highlight
+  the average number of words per rapper and any significant outliers. Apply color
+  highlights to distinguish between decades for clearer comparison. Add a brief summary
+  to provide context on how language styles might have evolved. The purpose is to
+  analyze and compare linguistic diversity in rap lyrics across different eras, shedding
+  light on cultural and artistic shifts in the hip-hop industry.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a histogram to visualize the distribution of unique words used by different
+  rappers from the 1990s and 2010s. Use text annotations to highlight the average
+  number of words per rapper and any significant outliers. Apply color highlights
+  to distinguish between decades for clearer comparison. Add a brief summary to provide
+  context on how language styles might have evolved. The purpose is to analyze and
+  compare linguistic diversity in rap lyrics across different eras, shedding light
+  on cultural and artistic shifts in the hip-hop industry.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/428.csv'': {''summary'': {''Column'': [''notes'', ''recalc'',
+  ''era'', ''rapper'', ''rapper_clean'', ''color'', ''words'', ''id'', ''source''],
+  ''Data Type'': [dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [172,
+  26, 26, 0, 0, 101, 5, 24, 26], ''Unique Values'': [2, 157, 5, 183, 183, 29, 161,
+  162, 3]}, ''sample_data'': {''notes'': [nan, nan, nan], ''recalc'': [2988.0, 3812.0,
+  3815.0], ''era'': [''2010s'', ''2010s'', ''1990s''], ''rapper'': [''21 Savage'',
+  ''2 Chainz'', ''2Pac''], ''rapper_clean'': [''21 Savage'', ''2 Chainz'', ''2Pac''],
+  ''color'': [nan, nan, ''west nowutang second''], ''words'': [''2988'', ''4148'',
+  ''3,970''], ''id'': [''21-savage'', ''2chainz'', ''2pac''], ''source'': [''new'',
+  ''poster'', ''site'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"era\", \"rapper\"\
+  , \"words\"],\n  \"Task\": \"Distribution By Category\",\n  \"Purpose\": \"Analyze\
+  \ and compare linguistic diversity in rap lyrics across different eras to shed light\
+  \ on cultural and artistic shifts in the hip-hop industry\",\n  \"Audience\": \"\
+  Hip-hop enthusiasts, music historians, cultural analysts\"\n}"
+05_audience: Hip-hop enthusiasts, music historians, cultural analysts
+05_data_attributes:
+- era
+- rapper
+- words
+05_purpose: Analyze and compare linguistic diversity in rap lyrics across different
+  eras to shed light on cultural and artistic shifts in the hip-hop industry
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/428.csv'': {''summary'': {''Column'': [''notes'', ''recalc'',
+  ''era'', ''rapper'', ''rapper_clean'', ''color'', ''words'', ''id'', ''source''],
+  ''Data Type'': [dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [172,
+  26, 26, 0, 0, 101, 5, 24, 26], ''Unique Values'': [2, 157, 5, 183, 183, 29, 161,
+  162, 3]}, ''sample_data'': {''notes'': [nan, nan, nan], ''recalc'': [2988.0, 3812.0,
+  3815.0], ''era'': [''2010s'', ''2010s'', ''1990s''], ''rapper'': [''21 Savage'',
+  ''2 Chainz'', ''2Pac''], ''rapper_clean'': [''21 Savage'', ''2 Chainz'', ''2Pac''],
+  ''color'': [nan, nan, ''west nowutang second''], ''words'': [''2988'', ''4148'',
+  ''3,970''], ''id'': [''21-savage'', ''2chainz'', ''2pac''], ''source'': [''new'',
+  ''poster'', ''site'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a histogram to visualize the distribution of unique words used by different
+  rappers from the 1990s and 2010s. Use text annotations to highlight the average
+  number of words per rapper and any significant outliers. Apply color highlights
+  to distinguish between decades for clearer comparison. Add a brief summary to provide
+  context on how language styles might have evolved. The purpose is to analyze and
+  compare linguistic diversity in rap lyrics across different eras, shedding light
+  on cultural and artistic shifts in the hip-hop industry.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''era'', ''rapper'', ''words'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Hip-hop enthusiasts, music historians, cultural analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze and compare linguistic diversity in rap lyrics across different eras to
+  shed light on cultural and artistic shifts in the hip-hop industry
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for distinguishing between
+  the 1990s and 2010s?
+
+  2. What style of text annotations would you prefer for highlighting the average
+  number of words per rapper and significant outliers? (e.g., font size, font type)
+
+  3. Is there a specific layout or orientation you prefer for the histogram (e.g.,
+  vertical bars, horizontal bars)?
+
+  4. How detailed do you want the brief summary context to be? Should it include specific
+  examples, historical context, or just a general overview?
+
+  5. Do you have a preference for the histogram bin width or specific ranges of unique
+  words?
+
+  6. Would you like any additional statistical measures besides the average (e.g.,
+  median, mode) displayed on the chart?
+
+  7. Should the labels for rappers and eras be displayed in any specific format?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a histogram to visualize the distribution of unique\
+  \ words used by different rappers from the 1990s and 2010s. Use text annotations\
+  \ to highlight the average number of words per rapper and any significant outliers.\
+  \ Apply color highlights to distinguish between decades for clearer comparison.\
+  \ Add a brief summary to provide context on how language styles might have evolved.\
+  \ The purpose is to analyze and compare linguistic diversity in rap lyrics across\
+  \ different eras, shedding light on cultural and artistic shifts in the hip-hop\
+  \ industry.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nAnalyze and compare linguistic diversity in rap lyrics across different\
+  \ eras to shed light on cultural and artistic shifts in the hip-hop industry\n<end\
+  \ of purpose>\n\n<start service provider message>\n1. Do you have a preferred color\
+  \ scheme for distinguishing between the 1990s and 2010s?\n2. What style of text\
+  \ annotations would you prefer for highlighting the average number of words per\
+  \ rapper and significant outliers? (e.g., font size, font type)\n3. Is there a specific\
+  \ layout or orientation you prefer for the histogram (e.g., vertical bars, horizontal\
+  \ bars)?\n4. How detailed do you want the brief summary context to be? Should it\
+  \ include specific examples, historical context, or just a general overview?\n5.\
+  \ Do you have a preference for the histogram bin width or specific ranges of unique\
+  \ words?\n6. Would you like any additional statistical measures besides the average\
+  \ (e.g., median, mode) displayed on the chart?\n7. Should the labels for rappers\
+  \ and eras be displayed in any specific format?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Vertical bars would be best.
+
+  4. A general overview would suffice.
+
+  5. I don''t know.
+
+  6. No, just the average is fine.
+
+  7. I do not have a specific preference.'

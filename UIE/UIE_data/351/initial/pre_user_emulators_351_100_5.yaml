@@ -1,0 +1,111 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Pie chart
+
+  * Line chart
+
+  * Box chart
+
+  * Geographic heatmap'
+- 1190
+- 1166
+- 24
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1013
+- 874
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/351.csv'': {''summary'': {''Column'': [''index,Name'', ''Platform'',
+  ''Year_of_Release'', ''Genre'', ''Publisher'', ''NA_Sales'', ''EU_Sales'', ''JP_Sales'',
+  ''Other_Sales'', ''Global_Sales'', ''Critic_Score'', ''Critic_Count'', ''User_Score'',
+  ''User_Count'', ''Developer'', ''Rating'', ''Unnamed: 16'', ''Unnamed: 17''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 11587, 11707, 11711, 14833, 14798, 14799, 14997, 14997,
+  14997, 14997, 14997, 14997, 14997, 14997, 14997, 14997, 14997], ''Unique Values'':
+  [14997, 446, 808, 13, 127, 134, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, ''sample_data'':
+  {''index,Name'': [''0,53'', ''1,24'', ''2,77''], ''Platform'': [''76'', nan, ''80''],
+  ''Year_of_Release'': [''51'', nan, ''73''], ''Genre'': [''8'', nan, ''8''], ''Publisher'':
+  [322.0, nan, 192.0], ''NA_Sales'': [''Nintendo'', nan, ''Nintendo''], ''EU_Sales'':
+  [''E'', nan, ''E''], ''JP_Sales'': [nan, nan, nan], ''Other_Sales'': [nan, nan,
+  nan], ''Global_Sales'': [nan, nan, nan], ''Critic_Score'': [nan, nan, nan], ''Critic_Count'':
+  [nan, nan, nan], ''User_Score'': [nan, nan, nan], ''User_Count'': [nan, nan, nan],
+  ''Developer'': [nan, nan, nan], ''Rating'': [nan, nan, nan], ''Unnamed: 16'': [nan,
+  nan, nan], ''Unnamed: 17'': [nan, nan, nan]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Global Video Game Sales and Ratings
+
+  games
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Geographic heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Geographic heatmap
+  that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Pie chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Box chart'
+- '* Heatmap'
+- '* Geographic heatmap'
+- '* Pie chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Box chart'
+- '* Heatmap'
+- '* Geographic heatmap'
+2. initial_prompt: !!python/tuple
+- 'Please create a geographic heatmap visualizing global video game sales from the
+  provided dataset. The heatmap should highlight sales data across different regions:
+  North America, Europe, Japan, and others. Each region''s sales should be represented
+  by different color intensities based on the sales volume. Ensure the map is clear
+  and interactive, allowing for a detailed view of sales distribution. Additionally,
+  include tooltips to display specific sales numbers when hovering over each region.
+  This visualization will help in understanding the global market performance of various
+  video games. Thank you!'
+- 858
+- 751
+- 107

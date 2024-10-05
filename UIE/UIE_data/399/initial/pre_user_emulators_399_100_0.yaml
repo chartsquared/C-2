@@ -1,0 +1,75 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Area chart
+
+  * Bar chart
+
+  * Scatter plot
+
+  * Histogram
+
+  * Box chart'
+- 742
+- 720
+- 22
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 567
+- 428
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/399.csv': {'summary': {'Column':\
+  \ ['date', 'price'], 'Data Type': [dtype('O'), dtype('float64')], 'Missing Values':\
+  \ [0, 0], 'Unique Values': [1822, 1793]}, 'sample_data': {'date': ['2013-04-28',\
+  \ '2013-04-29', '2013-04-30'], 'price': [135.98, 147.49, 146.93]}}}\n<end of data\
+  \ example format>\n\n<start of annotations format>\n['<start of the annotation list>',\
+  \ '1. Text Annotations:', 'Description: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.', 'Purpose: When only some\
+  \ elements are annotated, the intent is to focus the viewer\u2019s attention on\
+  \ those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\ncorn price\nagriculture-and-farming\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Area chart and given\
+  \ annotations that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Area chart and given annotations that utilizes all the\
+  \ data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 100 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Area chart'
+- '* Scatter plot'
+- '* Histogram'
+- '* Bar chart'
+- '* Line chart'
+- '* Box chart'
+- '* Area chart'
+2. initial_prompt: !!python/tuple
+- Please create an area chart visualizing corn prices over time using the given data.
+  The x-axis should represent the date, and the y-axis should represent the price.
+  Highlight significant price changes to draw attention. Annotate important data points
+  to provide insight, and use text annotations to explain trends or anomalies in price,
+  emphasizing high and low points. The chart should clearly distinguish these highlighted
+  points to help viewers quickly understand the key information. This visualization
+  will help in understanding trends in corn prices in agriculture and farming.
+- 597
+- 497
+- 100

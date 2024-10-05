@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    { "id": 1, "name": "Alice", "group": "Marketing" },
+    { "id": 2, "name": "Bob", "group": "Marketing" },
+    { "id": 3, "name": "Charlie", "group": "Marketing" },
+    { "id": 4, "name": "David", "group": "Marketing" },
+    { "id": 5, "name": "Eve", "group": "Marketing" },
+    { "id": 11, "name": "Mia", "group": "Marketing" },
+    { "id": 12, "name": "Nina", "group": "Marketing" },
+    { "id": 13, "name": "Olivia", "group": "Marketing" },
+    { "id": 6, "name": "Frank", "group": "Development" },
+    { "id": 7, "name": "Grace", "group": "Development" },
+    { "id": 8, "name": "Hank", "group": "Development" },
+    { "id": 9, "name": "Ivy", "group": "Development" },
+    { "id": 10, "name": "Jack", "group": "Development" },
+    { "id": 14, "name": "Paul", "group": "Development" },
+    { "id": 15, "name": "Quinn", "group": "Development" }
+  ],
+  "links": [
+    { "source": 1, "target": 2, "weight": 2 },
+    { "source": 1, "target": 3, "weight": 4 },
+    { "source": 1, "target": 4, "weight": 6 },
+    { "source": 1, "target": 5, "weight": 8 },
+    { "source": 2, "target": 11, "weight": 3 },
+    { "source": 3, "target": 12, "weight": 5 },
+    { "source": 4, "target": 13, "weight": 7 },
+    { "source": 11, "target": 12, "weight": 1 },
+    { "source": 6, "target": 7, "weight": 2 },
+    { "source": 6, "target": 8, "weight": 4 },
+    { "source": 6, "target": 9, "weight": 6 },
+    { "source": 6, "target": 10, "weight": 8 },
+    { "source": 7, "target": 14, "weight": 3 },
+    { "source": 8, "target": 15, "weight": 5 },
+    { "source": 14, "target": 15, "weight": 7 },
+    { "source": 2, "target": 6, "weight": 5 },
+    { "source": 3, "target": 7, "weight": 7 },
+    { "source": 4, "target": 8, "weight": 3 },
+    { "source": 5, "target": 9, "weight": 5 },
+    { "source": 10, "target": 1, "weight": 1 }
+  ]
+}

@@ -1,0 +1,275 @@
+02_initial_prompt: I have a dataset on cardiovascular health with multiple variables
+  like age, gender, chest pain, and more. I want to visualize the distribution and
+  spread of a few key numeric variables to understand their variability and central
+  tendency across different categories. Specifically, create a violin plot for the
+  'age' variable segmented by 'gender,' 'chestpain,' and 'target.' This will help
+  me analyze the spread and median age in different patient groups. Ensure that the
+  plot allows comparison between these categories clearly. This can offer insights
+  into how age distribution varies across different conditions and outcomes in heart
+  disease.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I have a dataset on cardiovascular health with multiple variables like age, gender,
+  chest pain, and more. I want to visualize the distribution and spread of a few key
+  numeric variables to understand their variability and central tendency across different
+  categories. Specifically, create a violin plot for the ''age'' variable segmented
+  by ''gender,'' ''chestpain,'' and ''target.'' This will help me analyze the spread
+  and median age in different patient groups. Ensure that the plot allows comparison
+  between these categories clearly. This can offer insights into how age distribution
+  varies across different conditions and outcomes in heart disease.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/361.csv'': {''summary'': {''Column'': [''patientid'', ''age'',
+  ''gender'', ''chestpain'', ''restingBP'', ''serumcholestrol'', ''fastingbloodsugar'',
+  ''restingrelectro'', ''maxheartrate'', ''exerciseangia'', ''oldpeak'', ''slope'',
+  ''noofmajorvessels'', ''target''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0], ''Unique Values'': [1000, 61, 2, 4, 95, 344, 2, 3, 129, 2, 63,
+  4, 4, 2]}, ''sample_data'': {''patientid'': [103368, 119250, 119372], ''age'': [53,
+  40, 49], ''gender'': [1, 1, 1], ''chestpain'': [2, 0, 2], ''restingBP'': [171, 94,
+  133], ''serumcholestrol'': [0, 229, 142], ''fastingbloodsugar'': [0, 0, 0], ''restingrelectro'':
+  [1, 1, 0], ''maxheartrate'': [147, 115, 202], ''exerciseangia'': [0, 0, 1], ''oldpeak'':
+  [5.3, 3.7, 5.0], ''slope'': [3, 1, 1], ''noofmajorvessels'': [3, 1, 0], ''target'':
+  [1, 0, 0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["age", "gender", "chestpain", "target"],
+
+  "Task": "Distribution with variability",
+
+  "Purpose": "Analyze the spread and median age in different patient groups",
+
+  "Audience": "Healthcare professionals, researchers"
+
+  }'
+05_audience: Healthcare professionals, researchers
+05_data_attributes:
+- age
+- gender
+- chestpain
+- target
+05_purpose: Analyze the spread and median age in different patient groups
+05_task: Distribution with variability
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/361.csv'': {''summary'': {''Column'': [''patientid'', ''age'',
+  ''gender'', ''chestpain'', ''restingBP'', ''serumcholestrol'', ''fastingbloodsugar'',
+  ''restingrelectro'', ''maxheartrate'', ''exerciseangia'', ''oldpeak'', ''slope'',
+  ''noofmajorvessels'', ''target''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0], ''Unique Values'': [1000, 61, 2, 4, 95, 344, 2, 3, 129, 2, 63,
+  4, 4, 2]}, ''sample_data'': {''patientid'': [103368, 119250, 119372], ''age'': [53,
+  40, 49], ''gender'': [1, 1, 1], ''chestpain'': [2, 0, 2], ''restingBP'': [171, 94,
+  133], ''serumcholestrol'': [0, 229, 142], ''fastingbloodsugar'': [0, 0, 0], ''restingrelectro'':
+  [1, 1, 0], ''maxheartrate'': [147, 115, 202], ''exerciseangia'': [0, 0, 1], ''oldpeak'':
+  [5.3, 3.7, 5.0], ''slope'': [3, 1, 1], ''noofmajorvessels'': [3, 1, 0], ''target'':
+  [1, 0, 0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I have a dataset on cardiovascular health with multiple variables like age, gender,
+  chest pain, and more. I want to visualize the distribution and spread of a few key
+  numeric variables to understand their variability and central tendency across different
+  categories. Specifically, create a violin plot for the ''age'' variable segmented
+  by ''gender,'' ''chestpain,'' and ''target.'' This will help me analyze the spread
+  and median age in different patient groups. Ensure that the plot allows comparison
+  between these categories clearly. This can offer insights into how age distribution
+  varies across different conditions and outcomes in heart disease.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''age'', ''gender'', ''chestpain'', ''target'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Healthcare professionals, researchers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution with variability
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze the spread and median age in different patient groups
+
+  <end of purpose>'
+07_questions: '1. Do you have a specific color palette or theme preference for the
+  chart?
+
+  2. Do you prefer any specific ordering for the ''gender,'' ''chestpain,'' and ''target''
+  categories in the chart?
+
+  3. Should the chart include specific axis labels or titles?
+
+  4. Would you like individual data points to be displayed in the violin plot?
+
+  5. Do you want to include a legend to distinguish between categories?
+
+  6. Should the chart have grid lines to enhance readability?
+
+  7. Do you prefer any specific font style or size for the text in the chart?
+
+  8. Would you like to include summary statistics (e.g., mean, median) overlay on
+  the violin plots?
+
+  9. Do you want any annotations or notes on the chart to highlight key observations?
+
+  10. Should the chart include confidence intervals or any other statistical indicators?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI have a dataset on cardiovascular health with multiple\
+  \ variables like age, gender, chest pain, and more. I want to visualize the distribution\
+  \ and spread of a few key numeric variables to understand their variability and\
+  \ central tendency across different categories. Specifically, create a violin plot\
+  \ for the 'age' variable segmented by 'gender,' 'chestpain,' and 'target.' This\
+  \ will help me analyze the spread and median age in different patient groups. Ensure\
+  \ that the plot allows comparison between these categories clearly. This can offer\
+  \ insights into how age distribution varies across different conditions and outcomes\
+  \ in heart disease.\n<end of user request>\n\nImagine the best result that can be\
+  \ achieved based on the given instructions and is the final output you want from\
+  \ the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nAnalyze the spread and median age in different patient groups\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have a specific\
+  \ color palette or theme preference for the chart?\n2. Do you prefer any specific\
+  \ ordering for the 'gender,' 'chestpain,' and 'target' categories in the chart?\n\
+  3. Should the chart include specific axis labels or titles?\n4. Would you like individual\
+  \ data points to be displayed in the violin plot?\n5. Do you want to include a legend\
+  \ to distinguish between categories?\n6. Should the chart have grid lines to enhance\
+  \ readability?\n7. Do you prefer any specific font style or size for the text in\
+  \ the chart?\n8. Would you like to include summary statistics (e.g., mean, median)\
+  \ overlay on the violin plots?\n9. Do you want any annotations or notes on the chart\
+  \ to highlight key observations?\n10. Should the chart include confidence intervals\
+  \ or any other statistical indicators?\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include specific axis labels and titles.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend to distinguish between categories.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, please include summary statistics like the median overlay on the violin
+  plots.
+
+  9. I am not sure.
+
+  10. I do not know.'

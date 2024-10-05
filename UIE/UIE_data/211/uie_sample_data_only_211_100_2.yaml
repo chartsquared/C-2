@@ -1,0 +1,283 @@
+02_initial_prompt: Please create a line chart to visualize the "San Francisco Park
+  Scores" dataset. The chart should display the trends in park scores over time (FQ)
+  across different parks (Park). Use text annotations to highlight specific data points
+  with notably high or low scores. Also, add highlights to emphasize certain parks
+  that show significant trends or anomalies in their scores. This visualization will
+  help us analyze park performance trends and identify areas needing improvement.
+  Make sure to include axis labels for clarity. Use different colors for different
+  parks for better differentiation.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a line chart to visualize the "San Francisco Park Scores" dataset.
+  The chart should display the trends in park scores over time (FQ) across different
+  parks (Park). Use text annotations to highlight specific data points with notably
+  high or low scores. Also, add highlights to emphasize certain parks that show significant
+  trends or anomalies in their scores. This visualization will help us analyze park
+  performance trends and identify areas needing improvement. Make sure to include
+  axis labels for clarity. Use different colors for different parks for better differentiation.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/211.csv'': {''summary'': {''Column'': [''ParkID'', ''PSA'',
+  ''Park'', ''FQ'', ''Score'', ''Facility Type'', ''Facility Name'', ''Address'',
+  ''State'', ''Zipcode'', ''Floor Count'', ''Square Feet'', ''Perimeter Length'',
+  ''Acres'', ''Longitude'', ''Latitude''], ''Data Type'': [dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 775, 775, 775, 775, 775, 4170, 775, 775, 775, 775, 775], ''Unique
+  Values'': [184, 7, 184, 38, 462, 10, 158, 105, 1, 22, 3, 158, 158, 158, 158, 158]},
+  ''sample_data'': {''ParkID'': [86, 13, 9], ''PSA'': [''PSA4'', ''PSA4'', ''PSA4''],
+  ''Park'': [''Carl Larsen Park'', ''Junipero Serra Playground'', ''Rolph Nicol Playground''],
+  ''FQ'': [''FY05Q3'', ''FY05Q3'', ''FY05Q3''], ''Score'': [0.795, 0.957, 0.864],
+  ''Facility Type'': [''Basketball Court'', ''Ball Field'', ''Dog Play Area''], ''Facility
+  Name'': [''Ocean View Basketball Courts'', ''Glen ball fields'', ''Douglass dog
+  play area''], ''Address'': [''Capitol & Montana St'', ''Diamond & Farnum Street'',
+  ''26th & Douglass Street''], ''State'': [''CA'', ''CA'', ''CA''], ''Zipcode'': [94112.0,
+  94131.0, 94114.0], ''Floor Count'': [nan, nan, nan], ''Square Feet'': [5572.02031431,
+  124520.486259, 70655.3372339], ''Perimeter Length'': [311.98222779, 1891.67544541,
+  1153.01964642], ''Acres'': [0.1279165, 2.85860846, 1.62202984], ''Longitude'': [-122.45670775,
+  -122.44059154, -122.43889466], ''Latitude'': [37.71633478, 37.73600816, 37.74674101]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Park", "FQ", "Score"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Analyze park performance trends and identify areas needing improvement",
+
+  "Audience": "City planners and park management officials"
+
+  }'
+05_audience: City planners and park management officials
+05_data_attributes:
+- Park
+- FQ
+- Score
+05_purpose: Analyze park performance trends and identify areas needing improvement
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/211.csv'': {''summary'': {''Column'': [''ParkID'', ''PSA'',
+  ''Park'', ''FQ'', ''Score'', ''Facility Type'', ''Facility Name'', ''Address'',
+  ''State'', ''Zipcode'', ''Floor Count'', ''Square Feet'', ''Perimeter Length'',
+  ''Acres'', ''Longitude'', ''Latitude''], ''Data Type'': [dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 775, 775, 775, 775, 775, 4170, 775, 775, 775, 775, 775], ''Unique
+  Values'': [184, 7, 184, 38, 462, 10, 158, 105, 1, 22, 3, 158, 158, 158, 158, 158]},
+  ''sample_data'': {''ParkID'': [86, 13, 9], ''PSA'': [''PSA4'', ''PSA4'', ''PSA4''],
+  ''Park'': [''Carl Larsen Park'', ''Junipero Serra Playground'', ''Rolph Nicol Playground''],
+  ''FQ'': [''FY05Q3'', ''FY05Q3'', ''FY05Q3''], ''Score'': [0.795, 0.957, 0.864],
+  ''Facility Type'': [''Basketball Court'', ''Ball Field'', ''Dog Play Area''], ''Facility
+  Name'': [''Ocean View Basketball Courts'', ''Glen ball fields'', ''Douglass dog
+  play area''], ''Address'': [''Capitol & Montana St'', ''Diamond & Farnum Street'',
+  ''26th & Douglass Street''], ''State'': [''CA'', ''CA'', ''CA''], ''Zipcode'': [94112.0,
+  94131.0, 94114.0], ''Floor Count'': [nan, nan, nan], ''Square Feet'': [5572.02031431,
+  124520.486259, 70655.3372339], ''Perimeter Length'': [311.98222779, 1891.67544541,
+  1153.01964642], ''Acres'': [0.1279165, 2.85860846, 1.62202984], ''Longitude'': [-122.45670775,
+  -122.44059154, -122.43889466], ''Latitude'': [37.71633478, 37.73600816, 37.74674101]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a line chart to visualize the "San Francisco Park Scores" dataset.
+  The chart should display the trends in park scores over time (FQ) across different
+  parks (Park). Use text annotations to highlight specific data points with notably
+  high or low scores. Also, add highlights to emphasize certain parks that show significant
+  trends or anomalies in their scores. This visualization will help us analyze park
+  performance trends and identify areas needing improvement. Make sure to include
+  axis labels for clarity. Use different colors for different parks for better differentiation.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Park'', ''FQ'', ''Score'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  City planners and park management officials
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze park performance trends and identify areas needing improvement
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color palette for differentiating the parks?
+
+  2. How would you like the highlights for significant trends or anomalies to be displayed?
+
+  3. What style of text annotations do you prefer for noting specific data points
+  with high or low scores?
+
+  4. Do you have any specific font requirements for the axis labels and annotations?
+
+  5. Should the time intervals (FQ) on the x-axis be displayed in a specific format?
+
+  6. Would you prefer solid lines, dashed lines, or another style for the lines representing
+  each park?
+
+  7. Do you have any specific size requirements for the chart (dimensions)?
+
+  8. Should the chart include a title or subtitle? If so, what should it be?
+
+  9. Is there a preferred position for the legend on the chart?
+
+  10. Are there any specific parks that you want to prioritize or emphasize in the
+  chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a line chart to visualize the \"San Francisco\
+  \ Park Scores\" dataset. The chart should display the trends in park scores over\
+  \ time (FQ) across different parks (Park). Use text annotations to highlight specific\
+  \ data points with notably high or low scores. Also, add highlights to emphasize\
+  \ certain parks that show significant trends or anomalies in their scores. This\
+  \ visualization will help us analyze park performance trends and identify areas\
+  \ needing improvement. Make sure to include axis labels for clarity. Use different\
+  \ colors for different parks for better differentiation.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nAnalyze park performance\
+  \ trends and identify areas needing improvement\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color palette for differentiating\
+  \ the parks?\n2. How would you like the highlights for significant trends or anomalies\
+  \ to be displayed?\n3. What style of text annotations do you prefer for noting specific\
+  \ data points with high or low scores?\n4. Do you have any specific font requirements\
+  \ for the axis labels and annotations?\n5. Should the time intervals (FQ) on the\
+  \ x-axis be displayed in a specific format?\n6. Would you prefer solid lines, dashed\
+  \ lines, or another style for the lines representing each park?\n7. Do you have\
+  \ any specific size requirements for the chart (dimensions)?\n8. Should the chart\
+  \ include a title or subtitle? If so, what should it be?\n9. Is there a preferred\
+  \ position for the legend on the chart?\n10. Are there any specific parks that you\
+  \ want to prioritize or emphasize in the chart?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. I am not sure; maybe use brighter or bolder colors to emphasize?
+
+  3. I do not know, perhaps simple and clear annotations?
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Solid lines would be fine.
+
+  7. I do not have any specific preference for size.
+
+  8. Yes, a title would be great. Something like "San Francisco Park Scores Over Time."
+
+  9. I do not have a specific preference.
+
+  10. I am not sure which ones, but any parks showing significant trends or anomalies
+  should be emphasized.'

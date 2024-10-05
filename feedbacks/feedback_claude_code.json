@@ -1,0 +1,93 @@
+{
+    "code feedback": [
+        {
+            "tag": "EDIT",
+            "explanation": "Adjust the color gradient to make differences more distinct, especially for mid-range values",
+            "before": [
+                "Line 15: sns.heatmap(data, annot=True, cmap='coolwarm', fmt='g', linewidths=0.5)"
+            ],
+            "after": [
+                "Line 15: sns.heatmap(data, annot=True, cmap='RdYlBu_r', fmt='g', linewidths=0.5, vmin=50, vmax=95)"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Increase font size for better readability",
+            "before": [
+                "Line 33: ax.text(i, j, f'{value}%', ha='center', va='center', size=8)"
+            ],
+            "after": [
+                "Line 33: ax.text(i, j, f'{value}%', ha='center', va='center', size=10, fontweight='bold')"
+            ]
+        },
+        {
+            "tag": "ADD",
+            "explanation": "Add percentage labels to the color key for easier interpretation",
+            "before": [],
+            "after": [
+                "Line 16: cbar = ax.collections[0].colorbar",
+                "Line 17: cbar.set_ticks([50, 60, 70, 80, 90])",
+                "Line 18: cbar.set_ticklabels(['50%', '60%', '70%', '80%', '90%'])"
+            ]
+        },
+        {
+            "tag": "ADD",
+            "explanation": "Include visual cues to highlight significant patterns or outliers",
+            "before": [],
+            "after": [
+                "Line 35: # Highlight countries with highest and lowest penetration rates",
+                "Line 36: ax.add_patch(plt.Rectangle((0, 0), 2, 1, fill=False, edgecolor='black', lw=2))",
+                "Line 37: ax.add_patch(plt.Rectangle((0, len(data.index)-1), 2, 1, fill=False, edgecolor='black', lw=2))"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Adjust the figure size to improve overall layout",
+            "before": [
+                "Line 11: fig, ax = plt.subplots(figsize=(10, 8))"
+            ],
+            "after": [
+                "Line 11: fig, ax = plt.subplots(figsize=(12, 10))"
+            ]
+        },
+        {
+            "tag": "ADD",
+            "explanation": "Add a brief summary of key findings for quicker insights",
+            "before": [],
+            "after": [
+                "Line 39: # Add summary of key findings",
+                "Line 40: plt.figtext(0.5, 0.01, 'Key Findings: South Korea has the highest penetration rates overall. \\nNigeria has the lowest rates for both categories.', ha='center', fontsize=10, bbox={'facecolor':'white', 'alpha':0.8, 'pad':5})"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Adjust x-axis label for clarity",
+            "before": [
+                "Line 21: ax.set_xlabel('Penetration Rates')"
+            ],
+            "after": [
+                "Line 21: ax.set_xlabel('Penetration Rates (%)', fontsize=12)"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Adjust y-axis label for consistency",
+            "before": [
+                "Line 24: ax.set_ylabel('Country')"
+            ],
+            "after": [
+                "Line 24: ax.set_ylabel('Country', fontsize=12)"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Enhance title visibility",
+            "before": [
+                "Line 18: ax.set_title('Internet and Smartphone Penetration Rates by Country')"
+            ],
+            "after": [
+                "Line 18: ax.set_title('Internet and Smartphone Penetration Rates by Country', fontsize=14, fontweight='bold')"
+            ]
+        }
+    ]
+}

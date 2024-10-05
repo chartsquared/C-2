@@ -1,0 +1,87 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 1088
+- 1060
+- 28
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 905
+- 766
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/23.csv': {'summary': {'Column':\
+  \ ['Unnamed: 0', 'price', 'brand', 'model', 'year', 'title_status', 'mileage', 'color',\
+  \ 'vin', 'lot', 'state', 'country', 'condition'], 'Data Type': [dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'), dtype('float64'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('O'), dtype('O'), dtype('O')], 'Missing\
+  \ Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [2499, 790,\
+  \ 28, 127, 30, 2, 2439, 49, 2495, 2495, 44, 2, 47]}, 'sample_data': {'Unnamed: 0':\
+  \ [0, 1, 2], 'price': [6300, 2899, 5350], 'brand': ['toyota', 'ford', 'dodge'],\
+  \ 'model': ['cruiser', 'se', 'mpv'], 'year': [2008, 2011, 2018], 'title_status':\
+  \ ['clean vehicle', 'clean vehicle', 'clean vehicle'], 'mileage': [274117.0, 190552.0,\
+  \ 39590.0], 'color': ['black', 'silver', 'silver'], 'vin': ['  jtezu11f88k007763',\
+  \ '  2fmdk3gc4bbb02217', '  3c4pdcgg5jt346413'], 'lot': [159348797, 166951262, 167655728],\
+  \ 'state': ['new jersey', 'tennessee', 'georgia'], 'country': [' usa', ' usa', '\
+  \ usa'], 'condition': ['10 days left', '6 days left', '2 days left']}}}\n<end of\
+  \ data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '2. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nUS Cars Dataset\nautomobiles\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Bar chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Bar chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Choropleth map'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Heatmap'
+- '* Histogram'
+- '* Choropleth map'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Visualize a bar chart reflecting the average price of cars, categorized by brand.
+  Emphasize brands with the highest and lowest average prices using highlights to
+  distinguish them. Annotate the bars with the average price values to provide clear,
+  data-driven insights. The purpose is to help users easily compare car prices across
+  different brands and identify any significant price variations, aiding in purchasing
+  decisions. Leverage text annotations to highlight key findings, and add editorial
+  comments to guide user interpretation. Focus on making the chart informative and
+  user-friendly.
+- 938
+- 835
+- 103

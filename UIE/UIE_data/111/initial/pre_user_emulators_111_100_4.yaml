@@ -1,0 +1,112 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Line chart
+
+  * Table chart'
+- 1194
+- 1171
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n   \n3.\
+  \ Highlights:\nDescription: Highlights modify the appearance of chart elements (e.g.,\
+  \ size, color) to emphasize or reduce their importance.\nPurpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually\n<end of the annotation\
+  \ list>"
+- 1019
+- 879
+- 140
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/111.csv'': {''summary'': {''Column'': [''Year'', ''Married
+  Filing Jointly (Rates/Brackets)'', ''Unnamed: 2'', ''Married Filing Jointly ($)'',
+  ''Married Filing Separately (Rates/Brackets)'', ''Unnamed: 5'', ''Married Filing
+  Separately ($)'', ''Single Filer (Rates/Brackets)'', ''Unnamed: 8'', ''Single Filer
+  ($)'', ''Head of Household (Rates/Brackets)'', ''Unnamed: 11'', ''Head of Household
+  ($)'', ''Notes:''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [122,
+  275, 314, 314, 314, 315, 314, 307, 308, 307, 168, 169, 168, 2337], ''Unique Values'':
+  [160, 122, 1, 283, 121, 1, 284, 121, 1, 286, 121, 1, 291, 64]}, ''sample_data'':
+  {''Year'': [''2021'', ''2021'', ''2021''], ''Married Filing Jointly (Rates/Brackets)'':
+  [''10.00%'', ''12.00%'', ''22.00%''], ''Unnamed: 2'': [''>'', ''>'', ''>''], ''Married
+  Filing Jointly ($)'': [''$0 '', ''$19,900 '', ''$81,050 ''], ''Married Filing Separately
+  (Rates/Brackets)'': [''10.00%'', ''12.00%'', ''22.00%''], ''Unnamed: 5'': [''>'',
+  ''>'', ''>''], ''Married Filing Separately ($)'': [''$0 '', ''$9,950 '', ''$40,525
+  ''], ''Single Filer (Rates/Brackets)'': [''10.00%'', ''12.00%'', ''22.00%''], ''Unnamed:
+  8'': [''>'', ''>'', ''>''], ''Single Filer ($)'': [''$0 '', ''$9,950 '', ''$40,525
+  ''], ''Head of Household (Rates/Brackets)'': [''10.00%'', ''12.00%'', ''22.00%''],
+  ''Unnamed: 11'': [''>'', ''>'', ''>''], ''Head of Household ($)'': [''$0 '', ''$14,200
+  '', ''$54,200 ''], ''Notes:'': [''Last law to change rates was the Tax Cuts and
+  Jobs Act of 2017.'', nan, nan]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  unknown
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Table chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Table chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Column chart'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Bar chart'
+- '* Table chart'
+- '* Column chart'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Bar chart'
+- '* Table chart'
+2. initial_prompt: !!python/tuple
+- Create a table chart to visualize the tax brackets for different filing statuses
+  over various years. The columns should include 'Year,' 'Married Filing Jointly (Rates/Brackets),'
+  'Married Filing Jointly ($),' 'Married Filing Separately (Rates/Brackets),' 'Married
+  Filing Separately ($),' 'Single Filer (Rates/Brackets),' 'Single Filer ($),' 'Head
+  of Household (Rates/Brackets),' and 'Head of Household ($).' Highlight the rates
+  and corresponding income brackets for each filing category clearly. Include notes
+  where applicable. This will help compare tax obligations over time for each filing
+  status.
+- 896
+- 768
+- 128

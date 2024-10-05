@@ -1,0 +1,92 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart'
+- 1215
+- 1184
+- 31
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1035
+- 897
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/257.csv': {'summary': {'Column':\
+  \ ['Admission_DATE ', 'Discharge_DATE or date of Death', 'Outcome', 'Patient Age',\
+  \ 'Gender', 'Sample Collection Date ', 'What kind of Treatment provided ', 'Ventilated\
+  \ (Y/N)', 'Red blood cell distribution width', 'Monocytes(%)', 'White blood cell\
+  \ count', 'Platelet Count', 'Lymphocyte Count', 'Neutrophils Count'], 'Data Type':\
+  \ [dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0], 'Unique Values': [55, 51, 2, 46, 2, 61, 14, 2, 56, 29, 74,\
+  \ 77, 63, 63]}, 'sample_data': {'Admission_DATE ': ['8/10/2020', '7/24/2020', '7/22/2020'],\
+  \ 'Discharge_DATE or date of Death': ['8/8/2020', '8/5/2020', '8/8/2020'], 'Outcome':\
+  \ ['Not Recovered', 'Not Recovered', 'Recovered'], 'Patient Age': [51, 65, 32],\
+  \ 'Gender': ['Male', 'Female', 'Male'], 'Sample Collection Date ': ['8/10/2020',\
+  \ '7/24/2020', '7/22/2020'], 'What kind of Treatment provided ': ['antibiotics,\
+  \  O2', 'Paracetamol, Antibiotics,  O2', 'Antibiotics, O2'], 'Ventilated (Y/N)':\
+  \ ['Yes', 'Yes', 'No'], 'Red blood cell distribution width': [13.2, 40.0, 11.7],\
+  \ 'Monocytes(%)': [3.3, 3.0, 5.3], 'White blood cell count': [21.0, 8.79, 9.9],\
+  \ 'Platelet Count': [462.0, 180.66, 336.0], 'Lymphocyte Count': [0.44, 4.39, 3.47],\
+  \ 'Neutrophils Count': [19.43, 7.56, 5.34]}}}\n<end of data example format>\n\n\
+  <start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '2. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nCOVID-19  Complete Blood Count (CBC) Database\n\
+  biology\n<end of data details format>\n\nGiven a data format, imagine a chart that\
+  \ visualizes this data as the final output you want from the service provider.\n\
+  Consider what purpose the data has and the practical purpose of visualization and\
+  \ include it in the instructions.\nYou need to imagine a chart with * Grouped bar/column\
+  \ chart and given annotations that utilizes the data format.\nIf there are multiple\
+  \ given data formats, imagine a chart with * Grouped bar/column chart and given\
+  \ annotations that utilizes all the data formats.\nSince you are an amateur user,\
+  \ your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to\
+  \ the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Scatter plot'
+- '* Box chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Line chart'
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a grouped bar chart to compare the average values of "Red blood cell distribution
+  width", "Monocytes(%)", "White blood cell count", "Platelet Count", "Lymphocyte
+  Count", and "Neutrophils Count" for patients who recovered vs. those not recovered.
+  Highlight differences in these metrics between the two outcomes. Add annotations
+  to the bars indicating the precise average values. The chart should help identify
+  key blood count differences correlating with recovery outcomes for COVID-19 patients.
+- 1074
+- 974
+- 100

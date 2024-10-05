@@ -1,0 +1,202 @@
+02_initial_prompt: "I have a dataset on mushroom characteristics with various categorical\
+  \ features like cap shape, cap color, odor, and habitat. I'd like to create a box\
+  \ plot to visualize the distribution of different attributes, focusing particularly\
+  \ on how the different types of mushrooms ('class' column) vary based on attributes\
+  \ like 'cap-shape', 'cap-color', 'odor', and 'habitat\u2019. Please prepare a box\
+  \ plot for each of these features across the different classes of mushrooms to help\
+  \ identify any distinguishing patterns or tendencies between edible and poisonous\
+  \ mushrooms."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nI have a dataset on mushroom characteristics with various\
+  \ categorical features like cap shape, cap color, odor, and habitat. I'd like to\
+  \ create a box plot to visualize the distribution of different attributes, focusing\
+  \ particularly on how the different types of mushrooms ('class' column) vary based\
+  \ on attributes like 'cap-shape', 'cap-color', 'odor', and 'habitat\u2019. Please\
+  \ prepare a box plot for each of these features across the different classes of\
+  \ mushrooms to help identify any distinguishing patterns or tendencies between edible\
+  \ and poisonous mushrooms.\n<end of user request>\n\n<start of data format>\n{'../Extra_datas/data/131.csv':\
+  \ {'summary': {'Column': ['class', 'cap-shape', 'cap-surface', 'cap-color', 'bruises',\
+  \ 'odor', 'gill-attachment', 'gill-spacing', 'gill-size', 'gill-color', 'stalk-shape',\
+  \ 'stalk-root', 'stalk-surface-above-ring', 'stalk-surface-below-ring', 'stalk-color-above-ring',\
+  \ 'stalk-color-below-ring', 'veil-type', 'veil-color', 'ring-number', 'ring-type',\
+  \ 'spore-print-color', 'population', 'habitat'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0], 'Unique Values': [2, 6, 4, 10, 2, 9, 2, 2, 2, 12, 2, 5, 4, 4, 9, 9,\
+  \ 1, 4, 3, 5, 9, 6, 7]}, 'sample_data': {'class': ['p', 'e', 'e'], 'cap-shape':\
+  \ ['x', 'x', 'b'], 'cap-surface': ['s', 's', 's'], 'cap-color': ['n', 'y', 'w'],\
+  \ 'bruises': ['t', 't', 't'], 'odor': ['p', 'a', 'l'], 'gill-attachment': ['f',\
+  \ 'f', 'f'], 'gill-spacing': ['c', 'c', 'c'], 'gill-size': ['n', 'b', 'b'], 'gill-color':\
+  \ ['k', 'k', 'n'], 'stalk-shape': ['e', 'e', 'e'], 'stalk-root': ['e', 'c', 'c'],\
+  \ 'stalk-surface-above-ring': ['s', 's', 's'], 'stalk-surface-below-ring': ['s',\
+  \ 's', 's'], 'stalk-color-above-ring': ['w', 'w', 'w'], 'stalk-color-below-ring':\
+  \ ['w', 'w', 'w'], 'veil-type': ['p', 'p', 'p'], 'veil-color': ['w', 'w', 'w'],\
+  \ 'ring-number': ['o', 'o', 'o'], 'ring-type': ['p', 'p', 'p'], 'spore-print-color':\
+  \ ['k', 'n', 'n'], 'population': ['s', 'n', 'n'], 'habitat': ['u', 'g', 'm']}}}\n\
+  <end of data format>\n\n<start of various task types>\n{'Show External Context':\
+  \ 'Uncaptured data provided by the self-tracker to understand and explain a phenomenon\
+  \ shown in the data', 'Show Confirmation': 'Collected data confirms existing knowledge',\
+  \ 'Show Contradiction': 'Collected data contradicts existing knowledge', 'Focus\
+  \ on Identifying value': 'Explicitly specify the measured value, its range for one\
+  \ or more clearly identified data points, or the difference between two measured\
+  \ values', 'Focus on Identifying extreme': 'Explicitly state the identities of the\
+  \ data points possessing extreme values of the measure variable', 'Focus on Identifying\
+  \ references': 'Explicitly state the values of categorical variables, labels from\
+  \ the axes, or legends', 'Comparison by Time Segmentation': 'Compare measured values\
+  \ segmented by time', 'Comparison by Multiple services': 'Compare the same data\
+  \ type from two or more services', 'Comparison against external data': 'Bringing\
+  \ in external data for comparison', 'Comparison By Factor': 'Compare measured values\
+  \ by a factor (other than time)', 'Comparison By Instances': 'Compare two specific\
+  \ instances', 'Show Trend': 'Describe changes over time', 'Value judgement': 'Convey\
+  \ positive or negative connotations about the data', 'Distribution with variability':\
+  \ 'Explicitly state the variability of measured values', 'Distribution By Category':\
+  \ 'Explicitly describe the variation of measured values across all or most of the\
+  \ values of a categorical variable', 'Correlation': 'Specify the direct relationship\
+  \ between two variables (but not as comparison)', 'Outlier': 'Explicitly point out\
+  \ outliers or state the effect of outliers', 'Summarization of data': 'Summary of\
+  \ collected data (such as number of data points, duration of tracking, and averages)',\
+  \ 'Prediction/Forecasting': 'Predict the future based on the collected data'}\n\
+  <end of various task types>\n\nFor data attributes needed in data visualization,\
+  \ store them in query['Data Attribute'].\nStore the selected task from the task\
+  \ types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["class", "cap-shape", "cap-color", "odor", "habitat"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Identify distinguishing patterns or tendencies between edible and poisonous
+  mushrooms based on their characteristics",
+
+  "Audience": "Mushroom researchers, mycologists, and possibly for educational purposes
+  for students interested in mycology"
+
+  }'
+05_audience: Mushroom researchers, mycologists, and possibly for educational purposes
+  for students interested in mycology
+05_data_attributes:
+- class
+- cap-shape
+- cap-color
+- odor
+- habitat
+05_purpose: Identify distinguishing patterns or tendencies between edible and poisonous
+  mushrooms based on their characteristics
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/131.csv':\
+  \ {'summary': {'Column': ['class', 'cap-shape', 'cap-surface', 'cap-color', 'bruises',\
+  \ 'odor', 'gill-attachment', 'gill-spacing', 'gill-size', 'gill-color', 'stalk-shape',\
+  \ 'stalk-root', 'stalk-surface-above-ring', 'stalk-surface-below-ring', 'stalk-color-above-ring',\
+  \ 'stalk-color-below-ring', 'veil-type', 'veil-color', 'ring-number', 'ring-type',\
+  \ 'spore-print-color', 'population', 'habitat'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0], 'Unique Values': [2, 6, 4, 10, 2, 9, 2, 2, 2, 12, 2, 5, 4, 4, 9, 9,\
+  \ 1, 4, 3, 5, 9, 6, 7]}, 'sample_data': {'class': ['p', 'e', 'e'], 'cap-shape':\
+  \ ['x', 'x', 'b'], 'cap-surface': ['s', 's', 's'], 'cap-color': ['n', 'y', 'w'],\
+  \ 'bruises': ['t', 't', 't'], 'odor': ['p', 'a', 'l'], 'gill-attachment': ['f',\
+  \ 'f', 'f'], 'gill-spacing': ['c', 'c', 'c'], 'gill-size': ['n', 'b', 'b'], 'gill-color':\
+  \ ['k', 'k', 'n'], 'stalk-shape': ['e', 'e', 'e'], 'stalk-root': ['e', 'c', 'c'],\
+  \ 'stalk-surface-above-ring': ['s', 's', 's'], 'stalk-surface-below-ring': ['s',\
+  \ 's', 's'], 'stalk-color-above-ring': ['w', 'w', 'w'], 'stalk-color-below-ring':\
+  \ ['w', 'w', 'w'], 'veil-type': ['p', 'p', 'p'], 'veil-color': ['w', 'w', 'w'],\
+  \ 'ring-number': ['o', 'o', 'o'], 'ring-type': ['p', 'p', 'p'], 'spore-print-color':\
+  \ ['k', 'n', 'n'], 'population': ['s', 'n', 'n'], 'habitat': ['u', 'g', 'm']}}}\n\
+  <end of data format>\n\n<start of data visualization instruction>\nI have a dataset\
+  \ on mushroom characteristics with various categorical features like cap shape,\
+  \ cap color, odor, and habitat. I'd like to create a box plot to visualize the distribution\
+  \ of different attributes, focusing particularly on how the different types of mushrooms\
+  \ ('class' column) vary based on attributes like 'cap-shape', 'cap-color', 'odor',\
+  \ and 'habitat\u2019. Please prepare a box plot for each of these features across\
+  \ the different classes of mushrooms to help identify any distinguishing patterns\
+  \ or tendencies between edible and poisonous mushrooms.\n<end of data visualization\
+  \ instruction>\n\n<start of data attributes>\n['class', 'cap-shape', 'cap-color',\
+  \ 'odor', 'habitat']\n<end of data attributes>\n\n<start of prospective audience>\n\
+  Mushroom researchers, mycologists, and possibly for educational purposes for students\
+  \ interested in mycology\n<end of prospective audience>\n\n<start of type of tasks>\n\
+  Distribution By Category\n<end of type of tasks>\n\n<start of purpose>\nIdentify\
+  \ distinguishing patterns or tendencies between edible and poisonous mushrooms based\
+  \ on their characteristics\n<end of purpose>"
+07_questions: '1. Do you have any specific preferences for the color scheme of the
+  box plots?
+
+  2. Would you prefer the box plots to be displayed individually or combined into
+  a single multi-panel figure?
+
+  3. Do you have a preference for the orientation of the box plots (vertical or horizontal)?
+
+  4. Would you like the box plots to include data points to show individual observations
+  along with the distribution?
+
+  5. Should the box plots include additional statistical indicators such as mean or
+  median lines?
+
+  6. Do you have any specific preferences for the labeling and font size of the axes,
+  titles, and legends?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI have a dataset on mushroom characteristics with various\
+  \ categorical features like cap shape, cap color, odor, and habitat. I'd like to\
+  \ create a box plot to visualize the distribution of different attributes, focusing\
+  \ particularly on how the different types of mushrooms ('class' column) vary based\
+  \ on attributes like 'cap-shape', 'cap-color', 'odor', and 'habitat\u2019. Please\
+  \ prepare a box plot for each of these features across the different classes of\
+  \ mushrooms to help identify any distinguishing patterns or tendencies between edible\
+  \ and poisonous mushrooms.\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nIdentify distinguishing patterns or tendencies between edible\
+  \ and poisonous mushrooms based on their characteristics\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have any specific preferences for the color\
+  \ scheme of the box plots?\n2. Would you prefer the box plots to be displayed individually\
+  \ or combined into a single multi-panel figure?\n3. Do you have a preference for\
+  \ the orientation of the box plots (vertical or horizontal)?\n4. Would you like\
+  \ the box plots to include data points to show individual observations along with\
+  \ the distribution?\n5. Should the box plots include additional statistical indicators\
+  \ such as mean or median lines?\n6. Do you have any specific preferences for the\
+  \ labeling and font size of the axes, titles, and legends?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure if they should be displayed individually or combined.
+
+  3. I have no specific preference for the orientation of the box plots.
+
+  4. Yes, it would be helpful to include data points to show individual observations.
+
+  5. Yes, please include mean or median lines in the box plots.
+
+  6. I am not sure about the labeling and font size for the axes, titles, and legends.'

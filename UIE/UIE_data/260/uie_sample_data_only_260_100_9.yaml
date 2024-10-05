@@ -1,0 +1,388 @@
+02_initial_prompt: Create a Box chart to visualize the distribution of the stellar
+  distances (st_dist) of planets discovered by the Kepler Telescope. The chart should
+  display the interquartile range, median, and potential outliers of the distances.
+  Highlight any significant variability or outliers to demonstrate the spread of stellar
+  distances. This visualization will provide insights into the typical range and extraordinary
+  values, aiding in understanding the diversity of stars hosting exoplanets. Ensure
+  that axis labels, units of measurement, and a title are clearly defined to improve
+  readability and context.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a Box chart to visualize the distribution of the stellar distances (st_dist)
+  of planets discovered by the Kepler Telescope. The chart should display the interquartile
+  range, median, and potential outliers of the distances. Highlight any significant
+  variability or outliers to demonstrate the spread of stellar distances. This visualization
+  will provide insights into the typical range and extraordinary values, aiding in
+  understanding the diversity of stars hosting exoplanets. Ensure that axis labels,
+  units of measurement, and a title are clearly defined to improve readability and
+  context.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/260.csv'': {''summary'': {''Column'': [''rowid'', ''pl_hostname'',
+  ''pl_letter'', ''pl_discmethod'', ''pl_pnum'', ''pl_orbper'', ''pl_orbpererr1'',
+  ''pl_orbpererr2'', ''pl_orbperlim'', ''pl_orbsmax'', ''pl_orbsmaxerr1'', ''pl_orbsmaxerr2'',
+  ''pl_orbsmaxlim'', ''pl_orbeccen'', ''pl_orbeccenerr1'', ''pl_orbeccenerr2'', ''pl_orbeccenlim'',
+  ''pl_orbincl'', ''pl_orbinclerr1'', ''pl_orbinclerr2'', ''pl_orbincllim'', ''pl_bmassj'',
+  ''pl_bmassjerr1'', ''pl_bmassjerr2'', ''pl_bmassjlim'', ''pl_bmassprov'', ''pl_radj'',
+  ''pl_radjerr1'', ''pl_radjerr2'', ''pl_radjlim'', ''pl_dens'', ''pl_denserr1'',
+  ''pl_denserr2'', ''pl_denslim'', ''pl_ttvflag'', ''pl_kepflag'', ''pl_k2flag'',
+  ''pl_nnotes'', ''ra_str'', ''ra'', ''dec_str'', ''dec'', ''st_dist'', ''st_disterr1'',
+  ''st_disterr2'', ''st_distlim'', ''st_optmag'', ''st_optmagerr'', ''st_optmaglim'',
+  ''st_optmagblend'', ''st_optband'', ''st_teff'', ''st_tefferr1'', ''st_tefferr2'',
+  ''st_tefflim'', ''st_teffblend'', ''st_mass'', ''st_masserr1'', ''st_masserr2'',
+  ''st_masslim'', ''st_massblend'', ''st_rad'', ''st_raderr1'', ''st_raderr2'', ''st_radlim'',
+  ''st_radblend'', ''rowupdate''], ''Data Type'': [dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 67, 192, 192, 68, 1475, 2352, 2353, 1480, 2398, 2671,
+  2671, 2401, 2870, 2900, 2898, 2868, 2198, 2385, 2385, 2198, 2198, 678, 716, 716,
+  678, 2984, 2994, 2994, 2985, 0, 0, 0, 0, 0, 0, 0, 0, 1076, 1185, 1185, 1079, 121,
+  2831, 121, 121, 121, 167, 272, 351, 168, 153, 321, 914, 992, 325, 395, 357, 417,
+  494, 358, 187, 0], ''Unique Values'': [3372, 2509, 7, 10, 7, 3301, 1947, 1944, 3,
+  1079, 286, 281, 1, 338, 162, 155, 3, 320, 181, 174, 2, 774, 289, 283, 3, 3, 692,
+  219, 188, 2, 295, 184, 180, 3, 2, 2, 2, 4, 2506, 2509, 2508, 2509, 1365, 1541, 1533,
+  2, 1926, 89, 1, 2, 2, 1433, 1280, 1298, 2, 1, 191, 43, 39, 2, 1, 302, 105, 91, 1,
+  1, 82]}, ''sample_data'': {''rowid'': [1, 2, 3], ''pl_hostname'': [''11 Com'', ''11
+  UMi'', ''14 And''], ''pl_letter'': [''b'', ''b'', ''b''], ''pl_discmethod'': [''Radial
+  Velocity'', ''Radial Velocity'', ''Radial Velocity''], ''pl_pnum'': [1, 1, 1], ''pl_orbper'':
+  [326.03, 516.22, 185.84], ''pl_orbpererr1'': [0.32, 3.25, 0.23], ''pl_orbpererr2'':
+  [-0.32, -3.25, -0.23], ''pl_orbperlim'': [0.0, 0.0, 0.0], ''pl_orbsmax'': [1.29,
+  1.54, 0.83], ''pl_orbsmaxerr1'': [0.05, 0.07, nan], ''pl_orbsmaxerr2'': [-0.05,
+  -0.07, nan], ''pl_orbsmaxlim'': [0.0, 0.0, 0.0], ''pl_orbeccen'': [0.231, 0.08,
+  0.0], ''pl_orbeccenerr1'': [0.005, 0.03, nan], ''pl_orbeccenerr2'': [-0.005, -0.03,
+  nan], ''pl_orbeccenlim'': [0.0, 0.0, 0.0], ''pl_orbincl'': [nan, nan, nan], ''pl_orbinclerr1'':
+  [nan, nan, nan], ''pl_orbinclerr2'': [nan, nan, nan], ''pl_orbincllim'': [nan, nan,
+  nan], ''pl_bmassj'': [19.4, 10.5, 4.8], ''pl_bmassjerr1'': [1.5, 2.47, nan], ''pl_bmassjerr2'':
+  [-1.5, -2.47, nan], ''pl_bmassjlim'': [0.0, 0.0, 0.0], ''pl_bmassprov'': [''Msini'',
+  ''Msini'', ''Msini''], ''pl_radj'': [nan, nan, nan], ''pl_radjerr1'': [nan, nan,
+  nan], ''pl_radjerr2'': [nan, nan, nan], ''pl_radjlim'': [nan, nan, nan], ''pl_dens'':
+  [nan, nan, nan], ''pl_denserr1'': [nan, nan, nan], ''pl_denserr2'': [nan, nan, nan],
+  ''pl_denslim'': [nan, nan, nan], ''pl_ttvflag'': [0, 0, 0], ''pl_kepflag'': [0,
+  0, 0], ''pl_k2flag'': [0, 0, 0], ''pl_nnotes'': [0, 0, 0], ''ra_str'': [''12h20m43.03s'',
+  ''15h17m05.89s'', ''23h31m17.42s''], ''ra'': [185.179276, 229.274536, 352.822571],
+  ''dec_str'': [''+17d47m34.3s'', ''+71d49m26.0s'', ''+39d14m10.3s''], ''dec'': [17.792868,
+  71.823898, 39.236198], ''st_dist'': [110.62, 119.47, 76.39], ''st_disterr1'': [9.61,
+  6.22, 3.93], ''st_disterr2'': [-11.63, -6.95, -4.38], ''st_distlim'': [0.0, 0.0,
+  0.0], ''st_optmag'': [4.74, 5.016, nan], ''st_optmagerr'': [nan, 0.009, nan], ''st_optmaglim'':
+  [0.0, 0.0, nan], ''st_optmagblend'': [0.0, 0.0, nan], ''st_optband'': [''V (Johnson)'',
+  ''V (Johnson)'', nan], ''st_teff'': [4742.0, 4340.0, 4813.0], ''st_tefferr1'': [100.0,
+  70.0, 20.0], ''st_tefferr2'': [-100.0, -70.0, -20.0], ''st_tefflim'': [0.0, 0.0,
+  0.0], ''st_teffblend'': [0.0, 0.0, 0.0], ''st_mass'': [2.7, 1.8, 2.2], ''st_masserr1'':
+  [0.3, 0.25, 0.1], ''st_masserr2'': [-0.3, -0.25, -0.2], ''st_masslim'': [0.0, 0.0,
+  0.0], ''st_massblend'': [0.0, 0.0, 0.0], ''st_rad'': [19.0, 24.08, 11.0], ''st_raderr1'':
+  [2.0, 1.84, 1.0], ''st_raderr2'': [-2.0, -1.84, -1.0], ''st_radlim'': [0.0, 0.0,
+  0.0], ''st_radblend'': [0.0, 0.0, 0.0], ''rowupdate'': [''2014-05-14'', ''2014-05-14'',
+  ''2014-05-14'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["st_dist"],
+
+  "Task": "Distribution with variability",
+
+  "Purpose": "To visualize the distribution and variability of stellar distances of
+  planets discovered by the Kepler Telescope, highlighting typical ranges and outliers
+  to understand the diversity of stars hosting exoplanets",
+
+  "Audience": "Astronomers, astrophysicists, space researchers, and potentially educators
+  or students with an interest in exoplanetary systems and their host stars"
+
+  }'
+05_audience: Astronomers, astrophysicists, space researchers, and potentially educators
+  or students with an interest in exoplanetary systems and their host stars
+05_data_attributes:
+- st_dist
+05_purpose: To visualize the distribution and variability of stellar distances of
+  planets discovered by the Kepler Telescope, highlighting typical ranges and outliers
+  to understand the diversity of stars hosting exoplanets
+05_task: Distribution with variability
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/260.csv'': {''summary'': {''Column'': [''rowid'', ''pl_hostname'',
+  ''pl_letter'', ''pl_discmethod'', ''pl_pnum'', ''pl_orbper'', ''pl_orbpererr1'',
+  ''pl_orbpererr2'', ''pl_orbperlim'', ''pl_orbsmax'', ''pl_orbsmaxerr1'', ''pl_orbsmaxerr2'',
+  ''pl_orbsmaxlim'', ''pl_orbeccen'', ''pl_orbeccenerr1'', ''pl_orbeccenerr2'', ''pl_orbeccenlim'',
+  ''pl_orbincl'', ''pl_orbinclerr1'', ''pl_orbinclerr2'', ''pl_orbincllim'', ''pl_bmassj'',
+  ''pl_bmassjerr1'', ''pl_bmassjerr2'', ''pl_bmassjlim'', ''pl_bmassprov'', ''pl_radj'',
+  ''pl_radjerr1'', ''pl_radjerr2'', ''pl_radjlim'', ''pl_dens'', ''pl_denserr1'',
+  ''pl_denserr2'', ''pl_denslim'', ''pl_ttvflag'', ''pl_kepflag'', ''pl_k2flag'',
+  ''pl_nnotes'', ''ra_str'', ''ra'', ''dec_str'', ''dec'', ''st_dist'', ''st_disterr1'',
+  ''st_disterr2'', ''st_distlim'', ''st_optmag'', ''st_optmagerr'', ''st_optmaglim'',
+  ''st_optmagblend'', ''st_optband'', ''st_teff'', ''st_tefferr1'', ''st_tefferr2'',
+  ''st_tefflim'', ''st_teffblend'', ''st_mass'', ''st_masserr1'', ''st_masserr2'',
+  ''st_masslim'', ''st_massblend'', ''st_rad'', ''st_raderr1'', ''st_raderr2'', ''st_radlim'',
+  ''st_radblend'', ''rowupdate''], ''Data Type'': [dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 67, 192, 192, 68, 1475, 2352, 2353, 1480, 2398, 2671,
+  2671, 2401, 2870, 2900, 2898, 2868, 2198, 2385, 2385, 2198, 2198, 678, 716, 716,
+  678, 2984, 2994, 2994, 2985, 0, 0, 0, 0, 0, 0, 0, 0, 1076, 1185, 1185, 1079, 121,
+  2831, 121, 121, 121, 167, 272, 351, 168, 153, 321, 914, 992, 325, 395, 357, 417,
+  494, 358, 187, 0], ''Unique Values'': [3372, 2509, 7, 10, 7, 3301, 1947, 1944, 3,
+  1079, 286, 281, 1, 338, 162, 155, 3, 320, 181, 174, 2, 774, 289, 283, 3, 3, 692,
+  219, 188, 2, 295, 184, 180, 3, 2, 2, 2, 4, 2506, 2509, 2508, 2509, 1365, 1541, 1533,
+  2, 1926, 89, 1, 2, 2, 1433, 1280, 1298, 2, 1, 191, 43, 39, 2, 1, 302, 105, 91, 1,
+  1, 82]}, ''sample_data'': {''rowid'': [1, 2, 3], ''pl_hostname'': [''11 Com'', ''11
+  UMi'', ''14 And''], ''pl_letter'': [''b'', ''b'', ''b''], ''pl_discmethod'': [''Radial
+  Velocity'', ''Radial Velocity'', ''Radial Velocity''], ''pl_pnum'': [1, 1, 1], ''pl_orbper'':
+  [326.03, 516.22, 185.84], ''pl_orbpererr1'': [0.32, 3.25, 0.23], ''pl_orbpererr2'':
+  [-0.32, -3.25, -0.23], ''pl_orbperlim'': [0.0, 0.0, 0.0], ''pl_orbsmax'': [1.29,
+  1.54, 0.83], ''pl_orbsmaxerr1'': [0.05, 0.07, nan], ''pl_orbsmaxerr2'': [-0.05,
+  -0.07, nan], ''pl_orbsmaxlim'': [0.0, 0.0, 0.0], ''pl_orbeccen'': [0.231, 0.08,
+  0.0], ''pl_orbeccenerr1'': [0.005, 0.03, nan], ''pl_orbeccenerr2'': [-0.005, -0.03,
+  nan], ''pl_orbeccenlim'': [0.0, 0.0, 0.0], ''pl_orbincl'': [nan, nan, nan], ''pl_orbinclerr1'':
+  [nan, nan, nan], ''pl_orbinclerr2'': [nan, nan, nan], ''pl_orbincllim'': [nan, nan,
+  nan], ''pl_bmassj'': [19.4, 10.5, 4.8], ''pl_bmassjerr1'': [1.5, 2.47, nan], ''pl_bmassjerr2'':
+  [-1.5, -2.47, nan], ''pl_bmassjlim'': [0.0, 0.0, 0.0], ''pl_bmassprov'': [''Msini'',
+  ''Msini'', ''Msini''], ''pl_radj'': [nan, nan, nan], ''pl_radjerr1'': [nan, nan,
+  nan], ''pl_radjerr2'': [nan, nan, nan], ''pl_radjlim'': [nan, nan, nan], ''pl_dens'':
+  [nan, nan, nan], ''pl_denserr1'': [nan, nan, nan], ''pl_denserr2'': [nan, nan, nan],
+  ''pl_denslim'': [nan, nan, nan], ''pl_ttvflag'': [0, 0, 0], ''pl_kepflag'': [0,
+  0, 0], ''pl_k2flag'': [0, 0, 0], ''pl_nnotes'': [0, 0, 0], ''ra_str'': [''12h20m43.03s'',
+  ''15h17m05.89s'', ''23h31m17.42s''], ''ra'': [185.179276, 229.274536, 352.822571],
+  ''dec_str'': [''+17d47m34.3s'', ''+71d49m26.0s'', ''+39d14m10.3s''], ''dec'': [17.792868,
+  71.823898, 39.236198], ''st_dist'': [110.62, 119.47, 76.39], ''st_disterr1'': [9.61,
+  6.22, 3.93], ''st_disterr2'': [-11.63, -6.95, -4.38], ''st_distlim'': [0.0, 0.0,
+  0.0], ''st_optmag'': [4.74, 5.016, nan], ''st_optmagerr'': [nan, 0.009, nan], ''st_optmaglim'':
+  [0.0, 0.0, nan], ''st_optmagblend'': [0.0, 0.0, nan], ''st_optband'': [''V (Johnson)'',
+  ''V (Johnson)'', nan], ''st_teff'': [4742.0, 4340.0, 4813.0], ''st_tefferr1'': [100.0,
+  70.0, 20.0], ''st_tefferr2'': [-100.0, -70.0, -20.0], ''st_tefflim'': [0.0, 0.0,
+  0.0], ''st_teffblend'': [0.0, 0.0, 0.0], ''st_mass'': [2.7, 1.8, 2.2], ''st_masserr1'':
+  [0.3, 0.25, 0.1], ''st_masserr2'': [-0.3, -0.25, -0.2], ''st_masslim'': [0.0, 0.0,
+  0.0], ''st_massblend'': [0.0, 0.0, 0.0], ''st_rad'': [19.0, 24.08, 11.0], ''st_raderr1'':
+  [2.0, 1.84, 1.0], ''st_raderr2'': [-2.0, -1.84, -1.0], ''st_radlim'': [0.0, 0.0,
+  0.0], ''st_radblend'': [0.0, 0.0, 0.0], ''rowupdate'': [''2014-05-14'', ''2014-05-14'',
+  ''2014-05-14'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a Box chart to visualize the distribution of the stellar distances (st_dist)
+  of planets discovered by the Kepler Telescope. The chart should display the interquartile
+  range, median, and potential outliers of the distances. Highlight any significant
+  variability or outliers to demonstrate the spread of stellar distances. This visualization
+  will provide insights into the typical range and extraordinary values, aiding in
+  understanding the diversity of stars hosting exoplanets. Ensure that axis labels,
+  units of measurement, and a title are clearly defined to improve readability and
+  context.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''st_dist'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Astronomers, astrophysicists, space researchers, and potentially educators or students
+  with an interest in exoplanetary systems and their host stars
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution with variability
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To visualize the distribution and variability of stellar distances of planets discovered
+  by the Kepler Telescope, highlighting typical ranges and outliers to understand
+  the diversity of stars hosting exoplanets
+
+  <end of purpose>'
+07_questions: '1. Do you have any preferences for the color scheme or style of the
+  box chart?
+
+  2. Would you like to include grid lines in the background for better readability?
+
+  3. Do you have any preferred font style or size for the title, axis labels, and
+  units of measurement?
+
+  4. Should the chart have specific annotations highlighting significant outliers
+  or variability?
+
+  5. Do you want to include a legend or any other descriptive text in the chart?
+
+  6. Are there specific formats for the title, axis labels, or any other text elements
+  that you prefer?
+
+  7. Would you like to set a custom range for the y-axis to focus on a specific range
+  of stellar distances?
+
+  8. Do you prefer the box plots to be oriented vertically or horizontally?
+
+  9. Should the whiskers of the box plot represent the full data range or a specific
+  percentile range?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a Box chart to visualize the distribution of the\
+  \ stellar distances (st_dist) of planets discovered by the Kepler Telescope. The\
+  \ chart should display the interquartile range, median, and potential outliers of\
+  \ the distances. Highlight any significant variability or outliers to demonstrate\
+  \ the spread of stellar distances. This visualization will provide insights into\
+  \ the typical range and extraordinary values, aiding in understanding the diversity\
+  \ of stars hosting exoplanets. Ensure that axis labels, units of measurement, and\
+  \ a title are clearly defined to improve readability and context.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nTo visualize the\
+  \ distribution and variability of stellar distances of planets discovered by the\
+  \ Kepler Telescope, highlighting typical ranges and outliers to understand the diversity\
+  \ of stars hosting exoplanets\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have any preferences for the color scheme or style of the box chart?\n\
+  2. Would you like to include grid lines in the background for better readability?\n\
+  3. Do you have any preferred font style or size for the title, axis labels, and\
+  \ units of measurement?\n4. Should the chart have specific annotations highlighting\
+  \ significant outliers or variability?\n5. Do you want to include a legend or any\
+  \ other descriptive text in the chart?\n6. Are there specific formats for the title,\
+  \ axis labels, or any other text elements that you prefer?\n7. Would you like to\
+  \ set a custom range for the y-axis to focus on a specific range of stellar distances?\n\
+  8. Do you prefer the box plots to be oriented vertically or horizontally?\n9. Should\
+  \ the whiskers of the box plot represent the full data range or a specific percentile\
+  \ range?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. Yes, I would like to include grid lines in the background for better readability.
+
+  3. I am not sure.
+
+  4. Yes, please include specific annotations highlighting significant outliers or
+  variability.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I am not sure.'

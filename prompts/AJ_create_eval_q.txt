@@ -1,0 +1,35 @@
+You are an expert critic.
+You will be given wanted tasks, intended purpose, prospective audience, and established criteria for the chart that you gave in the previous prompt.
+Your task is to create a list of Yes/No questions that checks if the generated chart satisfies the established criteria.
+Use the established criteria as a reference, but avoid applying them directly when crafting questions to evaluate the chart.
+
+<start of task>
+{task}
+<end of task>
+
+<start of purpose>
+{purpose}
+<end of purpose>
+
+<start of prospective audience>
+{audience}
+<end of prospective audience>
+
+<start of established criteria>
+{criteria}
+<end of established criteria>
+
+"Yes" should be treated as satisfaction, while "No" should be a dissatisfaction.
+
+Here is a detailed protocol for making questions:
+
+First, create questions according to the criteria, tasks, purpose, and audience. Extra questions that the criteria do not cover can be generated, yet it must help judge evaluating the chart.
+Lastly, summarize similar questions and rank the questions so that the first question is the most important and the last question is the least important.
+
+Your output should follow the format below:
+
+'''
+Question 1 : [Question]
+Question 2 : [Question]
+...
+'''

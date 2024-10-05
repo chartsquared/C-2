@@ -1,0 +1,96 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map'
+- 917
+- 881
+- 36
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 739
+- 600
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/223.csv'': {''summary'': {''Column'': [''Country'', ''Export'',
+  ''Import'', ''Total Trade'', ''Trade Balance'', ''Financial Year(start)'', ''Financial
+  Year(end)''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O'')], ''Missing Values'': [0, 8, 552, 585,
+  586, 0, 0], ''Unique Values'': [250, 4455, 3728, 4603, 4499, 26, 26]}, ''sample_data'':
+  {''Country'': [''AFGHANISTAN'', ''AFGHANISTAN'', ''AFGHANISTAN''], ''Export'': [''21.25'',
+  ''12.81'', ''33.2''], ''Import'': [''10.7'', ''28.14'', ''21.06''], ''Total Trade'':
+  [''31.95'', ''40.95'', ''54.26''], ''Trade Balance'': [''10.55'', ''-15.33'', ''12.15''],
+  ''Financial Year(start)'': [1997, 1998, 1999], ''Financial Year(end)'': [''1998'',
+  ''1999'', ''2000'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Exports and Imports of India(1997-July 2022)
+
+  transportation-and-logistics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Box chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Box chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Choropleth map'
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Scatter plot'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- Create a box chart to visualize India's trade data (Exports, Imports, Total Trade,
+  Trade Balance) from 1997 to July 2022, highlighting trends and outliers.
+- 511
+- 475
+- 36

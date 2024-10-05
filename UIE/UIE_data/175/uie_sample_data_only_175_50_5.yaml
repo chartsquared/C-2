@@ -1,0 +1,225 @@
+02_initial_prompt: Create a stacked bar chart showing the final worth of billionaires
+  by industry and country. Include the top 10 ranks based on final worth.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a stacked bar chart showing the final worth of billionaires\
+  \ by industry and country. Include the top 10 ranks based on final worth.\n<end\
+  \ of user request>\n\n<start of data format>\n{'../Extra_datas/data/175.csv': {'summary':\
+  \ {'Column': ['rank', 'finalWorth', 'category', 'personName', 'age', 'country',\
+  \ 'city', 'source', 'industries', 'countryOfCitizenship', 'organization', 'selfMade',\
+  \ 'status', 'gender', 'birthDate', 'lastName', 'firstName', 'title', 'date', 'state',\
+  \ 'residenceStateRegion', 'birthYear', 'birthMonth', 'birthDay', 'cpi_country',\
+  \ 'cpi_change_country', 'gdp_country', 'gross_tertiary_education_enrollment', 'gross_primary_education_enrollment_country',\
+  \ 'life_expectancy_country', 'tax_revenue_country_country', 'total_tax_rate_country',\
+  \ 'population_country', 'latitude_country', 'longitude_country'], 'Data Type': [dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O'), dtype('float64'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('bool'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64')], 'Missing\
+  \ Values': [0, 0, 0, 0, 65, 38, 72, 0, 0, 0, 2315, 0, 0, 0, 76, 0, 3, 2301, 0, 1887,\
+  \ 1893, 76, 76, 76, 184, 184, 164, 182, 181, 182, 183, 182, 164, 164, 164], 'Unique\
+  \ Values': [219, 219, 18, 2638, 79, 78, 741, 906, 18, 77, 294, 2, 6, 2, 2060, 1736,\
+  \ 1770, 97, 2, 45, 5, 77, 12, 31, 63, 44, 68, 63, 60, 54, 57, 63, 68, 68, 68]},\
+  \ 'sample_data': {'rank': [1, 2, 3], 'finalWorth': [211000, 180000, 114000], 'category':\
+  \ ['Fashion & Retail', 'Automotive', 'Technology'], 'personName': ['Bernard Arnault\
+  \ & family', 'Elon Musk', 'Jeff Bezos'], 'age': [74.0, 51.0, 59.0], 'country': ['France',\
+  \ 'United States', 'United States'], 'city': ['Paris', 'Austin', 'Medina'], 'source':\
+  \ ['LVMH', 'Tesla, SpaceX', 'Amazon'], 'industries': ['Fashion & Retail', 'Automotive',\
+  \ 'Technology'], 'countryOfCitizenship': ['France', 'United States', 'United States'],\
+  \ 'organization': ['LVMH Mo\xEBt Hennessy Louis Vuitton', 'Tesla', 'Amazon'], 'selfMade':\
+  \ [False, True, True], 'status': ['U', 'D', 'D'], 'gender': ['M', 'M', 'M'], 'birthDate':\
+  \ ['3/5/1949 0:00', '6/28/1971 0:00', '1/12/1964 0:00'], 'lastName': ['Arnault',\
+  \ 'Musk', 'Bezos'], 'firstName': ['Bernard', 'Elon', 'Jeff'], 'title': ['Chairman\
+  \ and CEO', 'CEO', 'Chairman and Founder'], 'date': ['4/4/2023 5:01', '4/4/2023\
+  \ 5:01', '4/4/2023 5:01'], 'state': [nan, 'Texas', 'Washington'], 'residenceStateRegion':\
+  \ [nan, 'South', 'West'], 'birthYear': [1949.0, 1971.0, 1964.0], 'birthMonth': [3.0,\
+  \ 6.0, 1.0], 'birthDay': [5.0, 28.0, 12.0], 'cpi_country': [110.05, 117.24, 117.24],\
+  \ 'cpi_change_country': [1.1, 7.5, 7.5], 'gdp_country': ['$2,715,518,274,227 ',\
+  \ '$21,427,700,000,000 ', '$21,427,700,000,000 '], 'gross_tertiary_education_enrollment':\
+  \ [65.6, 88.2, 88.2], 'gross_primary_education_enrollment_country': [102.5, 101.8,\
+  \ 101.8], 'life_expectancy_country': [82.5, 78.5, 78.5], 'tax_revenue_country_country':\
+  \ [24.2, 9.6, 9.6], 'total_tax_rate_country': [60.7, 36.6, 36.6], 'population_country':\
+  \ [67059887.0, 328239523.0, 328239523.0], 'latitude_country': [46.227638, 37.09024,\
+  \ 37.09024], 'longitude_country': [2.213749, -95.712891, -95.712891]}}}\n<end of\
+  \ data format>\n\n<start of various task types>\n{'Show External Context': 'Uncaptured\
+  \ data provided by the self-tracker to understand and explain a phenomenon shown\
+  \ in the data', 'Show Confirmation': 'Collected data confirms existing knowledge',\
+  \ 'Show Contradiction': 'Collected data contradicts existing knowledge', 'Focus\
+  \ on Identifying value': 'Explicitly specify the measured value, its range for one\
+  \ or more clearly identified data points, or the difference between two measured\
+  \ values', 'Focus on Identifying extreme': 'Explicitly state the identities of the\
+  \ data points possessing extreme values of the measure variable', 'Focus on Identifying\
+  \ references': 'Explicitly state the values of categorical variables, labels from\
+  \ the axes, or legends', 'Comparison by Time Segmentation': 'Compare measured values\
+  \ segmented by time', 'Comparison by Multiple services': 'Compare the same data\
+  \ type from two or more services', 'Comparison against external data': 'Bringing\
+  \ in external data for comparison', 'Comparison By Factor': 'Compare measured values\
+  \ by a factor (other than time)', 'Comparison By Instances': 'Compare two specific\
+  \ instances', 'Show Trend': 'Describe changes over time', 'Value judgement': 'Convey\
+  \ positive or negative connotations about the data', 'Distribution with variability':\
+  \ 'Explicitly state the variability of measured values', 'Distribution By Category':\
+  \ 'Explicitly describe the variation of measured values across all or most of the\
+  \ values of a categorical variable', 'Correlation': 'Specify the direct relationship\
+  \ between two variables (but not as comparison)', 'Outlier': 'Explicitly point out\
+  \ outliers or state the effect of outliers', 'Summarization of data': 'Summary of\
+  \ collected data (such as number of data points, duration of tracking, and averages)',\
+  \ 'Prediction/Forecasting': 'Predict the future based on the collected data'}\n\
+  <end of various task types>\n\nFor data attributes needed in data visualization,\
+  \ store them in query['Data Attribute'].\nStore the selected task from the task\
+  \ types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["rank", "finalWorth", "country", "industries"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Compare the final worth of top 10 billionaires by their industry and
+  country",
+
+  "Audience": "General public, financial analysts, industry researchers"
+
+  }'
+05_audience: General public, financial analysts, industry researchers
+05_data_attributes:
+- rank
+- finalWorth
+- country
+- industries
+05_purpose: Compare the final worth of top 10 billionaires by their industry and country
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/175.csv':\
+  \ {'summary': {'Column': ['rank', 'finalWorth', 'category', 'personName', 'age',\
+  \ 'country', 'city', 'source', 'industries', 'countryOfCitizenship', 'organization',\
+  \ 'selfMade', 'status', 'gender', 'birthDate', 'lastName', 'firstName', 'title',\
+  \ 'date', 'state', 'residenceStateRegion', 'birthYear', 'birthMonth', 'birthDay',\
+  \ 'cpi_country', 'cpi_change_country', 'gdp_country', 'gross_tertiary_education_enrollment',\
+  \ 'gross_primary_education_enrollment_country', 'life_expectancy_country', 'tax_revenue_country_country',\
+  \ 'total_tax_rate_country', 'population_country', 'latitude_country', 'longitude_country'],\
+  \ 'Data Type': [dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('bool'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('O'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64')], 'Missing Values': [0, 0, 0, 0, 65, 38, 72, 0, 0, 0, 2315, 0,\
+  \ 0, 0, 76, 0, 3, 2301, 0, 1887, 1893, 76, 76, 76, 184, 184, 164, 182, 181, 182,\
+  \ 183, 182, 164, 164, 164], 'Unique Values': [219, 219, 18, 2638, 79, 78, 741, 906,\
+  \ 18, 77, 294, 2, 6, 2, 2060, 1736, 1770, 97, 2, 45, 5, 77, 12, 31, 63, 44, 68,\
+  \ 63, 60, 54, 57, 63, 68, 68, 68]}, 'sample_data': {'rank': [1, 2, 3], 'finalWorth':\
+  \ [211000, 180000, 114000], 'category': ['Fashion & Retail', 'Automotive', 'Technology'],\
+  \ 'personName': ['Bernard Arnault & family', 'Elon Musk', 'Jeff Bezos'], 'age':\
+  \ [74.0, 51.0, 59.0], 'country': ['France', 'United States', 'United States'], 'city':\
+  \ ['Paris', 'Austin', 'Medina'], 'source': ['LVMH', 'Tesla, SpaceX', 'Amazon'],\
+  \ 'industries': ['Fashion & Retail', 'Automotive', 'Technology'], 'countryOfCitizenship':\
+  \ ['France', 'United States', 'United States'], 'organization': ['LVMH Mo\xEBt Hennessy\
+  \ Louis Vuitton', 'Tesla', 'Amazon'], 'selfMade': [False, True, True], 'status':\
+  \ ['U', 'D', 'D'], 'gender': ['M', 'M', 'M'], 'birthDate': ['3/5/1949 0:00', '6/28/1971\
+  \ 0:00', '1/12/1964 0:00'], 'lastName': ['Arnault', 'Musk', 'Bezos'], 'firstName':\
+  \ ['Bernard', 'Elon', 'Jeff'], 'title': ['Chairman and CEO', 'CEO', 'Chairman and\
+  \ Founder'], 'date': ['4/4/2023 5:01', '4/4/2023 5:01', '4/4/2023 5:01'], 'state':\
+  \ [nan, 'Texas', 'Washington'], 'residenceStateRegion': [nan, 'South', 'West'],\
+  \ 'birthYear': [1949.0, 1971.0, 1964.0], 'birthMonth': [3.0, 6.0, 1.0], 'birthDay':\
+  \ [5.0, 28.0, 12.0], 'cpi_country': [110.05, 117.24, 117.24], 'cpi_change_country':\
+  \ [1.1, 7.5, 7.5], 'gdp_country': ['$2,715,518,274,227 ', '$21,427,700,000,000 ',\
+  \ '$21,427,700,000,000 '], 'gross_tertiary_education_enrollment': [65.6, 88.2, 88.2],\
+  \ 'gross_primary_education_enrollment_country': [102.5, 101.8, 101.8], 'life_expectancy_country':\
+  \ [82.5, 78.5, 78.5], 'tax_revenue_country_country': [24.2, 9.6, 9.6], 'total_tax_rate_country':\
+  \ [60.7, 36.6, 36.6], 'population_country': [67059887.0, 328239523.0, 328239523.0],\
+  \ 'latitude_country': [46.227638, 37.09024, 37.09024], 'longitude_country': [2.213749,\
+  \ -95.712891, -95.712891]}}}\n<end of data format>\n\n<start of data visualization\
+  \ instruction>\nCreate a stacked bar chart showing the final worth of billionaires\
+  \ by industry and country. Include the top 10 ranks based on final worth.\n<end\
+  \ of data visualization instruction>\n\n<start of data attributes>\n['rank', 'finalWorth',\
+  \ 'country', 'industries']\n<end of data attributes>\n\n<start of prospective audience>\n\
+  General public, financial analysts, industry researchers\n<end of prospective audience>\n\
+  \n<start of type of tasks>\nComparison By Factor\n<end of type of tasks>\n\n<start\
+  \ of purpose>\nCompare the final worth of top 10 billionaires by their industry\
+  \ and country\n<end of purpose>"
+07_questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Should the chart include a legend for the industries?
+
+  3. How would you like the countries to be ordered (e.g., alphabetically, by total
+  worth)?
+
+  4. Do you prefer displaying the exact value of final worth on the bars?
+
+  5. Should value labels be inside or outside the bars?
+
+  6. Is there a specific font type or size you prefer for labels and titles?
+
+  7. Do you want gridlines in the background of the chart?
+
+  8. Would you like to display the total final worth at the top of each stack?
+
+  9. Is there a particular title or subtitle you would like for the chart?
+
+  10. Do you have any preferences for the y-axis scale (e.g., linear, logarithmic)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a stacked bar chart showing the final worth of\
+  \ billionaires by industry and country. Include the top 10 ranks based on final\
+  \ worth.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nCompare the final worth of top 10 billionaires by their industry and\
+  \ country\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ a preferred color scheme for the stacked bar chart?\n2. Should the chart include\
+  \ a legend for the industries?\n3. How would you like the countries to be ordered\
+  \ (e.g., alphabetically, by total worth)?\n4. Do you prefer displaying the exact\
+  \ value of final worth on the bars?\n5. Should value labels be inside or outside\
+  \ the bars?\n6. Is there a specific font type or size you prefer for labels and\
+  \ titles?\n7. Do you want gridlines in the background of the chart?\n8. Would you\
+  \ like to display the total final worth at the top of each stack?\n9. Is there a\
+  \ particular title or subtitle you would like for the chart?\n10. Do you have any\
+  \ preferences for the y-axis scale (e.g., linear, logarithmic)?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. Yes, include a legend for the industries.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Yes, display the total final worth at the top of each stack.
+
+  9. I do not have a specific title in mind.
+
+  10. I am not sure.'

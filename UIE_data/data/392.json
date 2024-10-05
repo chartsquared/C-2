@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    { "node": 0, "name": "Coal" },
+    { "node": 1, "name": "NaturalGas" },
+    { "node": 2, "name": "Nuclear" },
+    { "node": 3, "name": "Renewables" },
+    { "node": 4, "name": "Residential" },
+    { "node": 5, "name": "Commercial" },
+    { "node": 6, "name": "Industrial" },
+    { "node": 7, "name": "Transportation" },
+    { "node": 8, "name": "Heating" },
+    { "node": 9, "name": "Cooling" },
+    { "node": 10, "name": "Lighting" },
+    { "node": 11, "name": "Machinery" },
+    { "node": 12, "name": "Electronics" }
+  ],
+  "links": [
+    { "source": 0, "target": 4, "value": 5 },
+    { "source": 0, "target": 5, "value": 10 },
+    { "source": 1, "target": 4, "value": 15 },
+    { "source": 1, "target": 5, "value": 5 },
+    { "source": 1, "target": 6, "value": 20 },
+    { "source": 2, "target": 5, "value": 10 },
+    { "source": 2, "target": 6, "value": 5 },
+    { "source": 3, "target": 4, "value": 5 },
+    { "source": 3, "target": 7, "value": 5 },
+    { "source": 3, "target": 5, "value": 10 },
+    { "source": 4, "target": 8, "value": 10 },
+    { "source": 4, "target": 9, "value": 5 },
+    { "source": 5, "target": 10, "value": 10 },
+    { "source": 5, "target": 12, "value": 5 },
+    { "source": 6, "target": 11, "value": 20 },
+    { "source": 6, "target": 10, "value": 5 },
+    { "source": 7, "target": 11, "value": 5 },
+    { "source": 7, "target": 12, "value": 5 }
+  ]
+}

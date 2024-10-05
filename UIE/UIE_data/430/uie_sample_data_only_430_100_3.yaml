@@ -1,0 +1,276 @@
+02_initial_prompt: I have data showing various Christmas songs charting on the Billboard
+  Hot 100, including song titles, performer names, their chart positions, peak positions,
+  and weeks on the chart. I'd like to see a stacked bar chart that visualizes the
+  chart performance over the weeks on the Billboard Hot 100. Specifically, I want
+  to compare different songs by their peak positions over time. Include all provided
+  data points like week position, performer, and other relevant metrics. Please ensure
+  the chart is visually appealing and easy to interpret for a general audience.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I have data showing various Christmas songs charting on the Billboard Hot 100, including
+  song titles, performer names, their chart positions, peak positions, and weeks on
+  the chart. I''d like to see a stacked bar chart that visualizes the chart performance
+  over the weeks on the Billboard Hot 100. Specifically, I want to compare different
+  songs by their peak positions over time. Include all provided data points like week
+  position, performer, and other relevant metrics. Please ensure the chart is visually
+  appealing and easy to interpret for a general audience.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/430.csv'': {''summary'': {''Column'': [''url'', ''weekid'',
+  ''week_position'', ''song'', ''performer'', ''songid'', ''instance'', ''previous_week_position'',
+  ''peak_position'', ''weeks_on_chart'', ''year'', ''month'', ''day''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 108,
+  0, 0, 0, 0, 0], ''Unique Values'': [206, 206, 89, 70, 69, 78, 6, 83, 61, 18, 46,
+  3, 31]}, ''sample_data'': {''url'': [''http://www.billboard.com/charts/hot-100/1958-12-13'',
+  ''http://www.billboard.com/charts/hot-100/1958-12-20'', ''http://www.billboard.com/charts/hot-100/1958-12-20''],
+  ''weekid'': [''12/13/1958'', ''12/20/1958'', ''12/20/1958''], ''week_position'':
+  [83, 57, 73], ''song'': [''RUN RUDOLPH RUN'', ''JINGLE BELL ROCK'', ''RUN RUDOLPH
+  RUN''], ''performer'': [''Chuck Berry'', ''Bobby Helms'', ''Chuck Berry''], ''songid'':
+  [''Run Rudolph RunChuck Berry'', ''Jingle Bell RockBobby Helms'', ''Run Rudolph
+  RunChuck Berry''], ''instance'': [1, 1, 1], ''previous_week_position'': [nan, nan,
+  83.0], ''peak_position'': [69, 29, 69], ''weeks_on_chart'': [3, 19, 3], ''year'':
+  [1958, 1958, 1958], ''month'': [12, 12, 12], ''day'': [13, 20, 20]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["song", "performer", "week_position", "peak_position", "weeks_on_chart"],
+
+  "Task": "Comparison by Time Segmentation",
+
+  "Purpose": "Compare different songs by their peak positions over time to visualize
+  their chart performance",
+
+  "Audience": "General audience interested in Christmas music and chart performance"
+
+  }'
+05_audience: General audience interested in Christmas music and chart performance
+05_data_attributes:
+- song
+- performer
+- week_position
+- peak_position
+- weeks_on_chart
+05_purpose: Compare different songs by their peak positions over time to visualize
+  their chart performance
+05_task: Comparison by Time Segmentation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/430.csv'': {''summary'': {''Column'': [''url'', ''weekid'',
+  ''week_position'', ''song'', ''performer'', ''songid'', ''instance'', ''previous_week_position'',
+  ''peak_position'', ''weeks_on_chart'', ''year'', ''month'', ''day''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 108,
+  0, 0, 0, 0, 0], ''Unique Values'': [206, 206, 89, 70, 69, 78, 6, 83, 61, 18, 46,
+  3, 31]}, ''sample_data'': {''url'': [''http://www.billboard.com/charts/hot-100/1958-12-13'',
+  ''http://www.billboard.com/charts/hot-100/1958-12-20'', ''http://www.billboard.com/charts/hot-100/1958-12-20''],
+  ''weekid'': [''12/13/1958'', ''12/20/1958'', ''12/20/1958''], ''week_position'':
+  [83, 57, 73], ''song'': [''RUN RUDOLPH RUN'', ''JINGLE BELL ROCK'', ''RUN RUDOLPH
+  RUN''], ''performer'': [''Chuck Berry'', ''Bobby Helms'', ''Chuck Berry''], ''songid'':
+  [''Run Rudolph RunChuck Berry'', ''Jingle Bell RockBobby Helms'', ''Run Rudolph
+  RunChuck Berry''], ''instance'': [1, 1, 1], ''previous_week_position'': [nan, nan,
+  83.0], ''peak_position'': [69, 29, 69], ''weeks_on_chart'': [3, 19, 3], ''year'':
+  [1958, 1958, 1958], ''month'': [12, 12, 12], ''day'': [13, 20, 20]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I have data showing various Christmas songs charting on the Billboard Hot 100, including
+  song titles, performer names, their chart positions, peak positions, and weeks on
+  the chart. I''d like to see a stacked bar chart that visualizes the chart performance
+  over the weeks on the Billboard Hot 100. Specifically, I want to compare different
+  songs by their peak positions over time. Include all provided data points like week
+  position, performer, and other relevant metrics. Please ensure the chart is visually
+  appealing and easy to interpret for a general audience.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''song'', ''performer'', ''week_position'', ''peak_position'', ''weeks_on_chart'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  General audience interested in Christmas music and chart performance
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison by Time Segmentation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Compare different songs by their peak positions over time to visualize their chart
+  performance
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Should we include a legend in the chart to distinguish between different songs
+  and performers?
+
+  3. Do you prefer a specific arrangement for the bars (e.g., sorted by song title,
+  peak position, or another attribute)?
+
+  4. Would you like to see data labels on the bars, such as week position or peak
+  position values?
+
+  5. Should the chart include grid lines to enhance readability?
+
+  6. Do you want to include any additional annotations or comments on the chart?
+
+  7. Do you have a preferred font style and size for the axis labels and titles?
+
+  8. Would you like to include a title and subtitle for the chart? If so, do you have
+  specific wording in mind?
+
+  9. Should there be specific focus or highlight on certain songs or time periods
+  in the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI have data showing various Christmas songs charting\
+  \ on the Billboard Hot 100, including song titles, performer names, their chart\
+  \ positions, peak positions, and weeks on the chart. I'd like to see a stacked bar\
+  \ chart that visualizes the chart performance over the weeks on the Billboard Hot\
+  \ 100. Specifically, I want to compare different songs by their peak positions over\
+  \ time. Include all provided data points like week position, performer, and other\
+  \ relevant metrics. Please ensure the chart is visually appealing and easy to interpret\
+  \ for a general audience.\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nCompare different songs by their peak positions over time\
+  \ to visualize their chart performance\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have a preferred color scheme for the stacked bar chart?\n\
+  2. Should we include a legend in the chart to distinguish between different songs\
+  \ and performers?\n3. Do you prefer a specific arrangement for the bars (e.g., sorted\
+  \ by song title, peak position, or another attribute)?\n4. Would you like to see\
+  \ data labels on the bars, such as week position or peak position values?\n5. Should\
+  \ the chart include grid lines to enhance readability?\n6. Do you want to include\
+  \ any additional annotations or comments on the chart?\n7. Do you have a preferred\
+  \ font style and size for the axis labels and titles?\n8. Would you like to include\
+  \ a title and subtitle for the chart? If so, do you have specific wording in mind?\n\
+  9. Should there be specific focus or highlight on certain songs or time periods\
+  \ in the chart?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please include a legend to distinguish between different songs and performers.
+
+  3. I do not know.
+
+  4. Yes, I would like to see data labels on the bars.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not have a specific preference.
+
+  8. Yes, please include a title and subtitle. Title: "Christmas Songs on the Billboard
+  Hot 100". Subtitle: "Comparing Chart Performance Over Time by Peak Positions".
+
+  9. I am not sure.'

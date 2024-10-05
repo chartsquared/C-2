@@ -1,0 +1,288 @@
+02_initial_prompt: Create a line chart illustrating the trend of accommodation and
+  transportation costs over time for different travel destinations using the given
+  travel dataset. Highlight key data points where costs significantly change, and
+  add text annotations for those points. The chart should help travelers and trip
+  planners quickly understand cost patterns in different destinations and make informed
+  decisions. Additionally, use annotations to provide context or comments about the
+  data, such as peak travel times or special events influencing costs. This visualization
+  will assist in comparative analysis and budgeting for future trips.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a line chart illustrating the trend of accommodation and transportation costs
+  over time for different travel destinations using the given travel dataset. Highlight
+  key data points where costs significantly change, and add text annotations for those
+  points. The chart should help travelers and trip planners quickly understand cost
+  patterns in different destinations and make informed decisions. Additionally, use
+  annotations to provide context or comments about the data, such as peak travel times
+  or special events influencing costs. This visualization will assist in comparative
+  analysis and budgeting for future trips.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/221.csv'': {''summary'': {''Column'': [''Trip ID'', ''Destination'',
+  ''Start date'', ''End date'', ''Duration (days)'', ''Traveler name'', ''Traveler
+  age'', ''Traveler gender'', ''Traveler nationality'', ''Accommodation type'', ''Accommodation
+  cost'', ''Transportation type'', ''Transportation cost''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3], ''Unique Values'':
+  [139, 59, 111, 125, 9, 109, 29, 2, 41, 8, 53, 9, 48]}, ''sample_data'': {''Trip
+  ID'': [1, 2, 3], ''Destination'': [''London, UK'', ''Phuket, Thailand'', ''Bali,
+  Indonesia''], ''Start date'': [''5/1/2023'', ''6/15/2023'', ''7/1/2023''], ''End
+  date'': [''5/8/2023'', ''6/20/2023'', ''7/8/2023''], ''Duration (days)'': [7.0,
+  5.0, 7.0], ''Traveler name'': [''John Smith'', ''Jane Doe'', ''David Lee''], ''Traveler
+  age'': [35.0, 28.0, 45.0], ''Traveler gender'': [''Male'', ''Female'', ''Male''],
+  ''Traveler nationality'': [''American'', ''Canadian'', ''Korean''], ''Accommodation
+  type'': [''Hotel'', ''Resort'', ''Villa''], ''Accommodation cost'': [''1200'', ''800'',
+  ''1000''], ''Transportation type'': [''Flight'', ''Flight'', ''Flight''], ''Transportation
+  cost'': [''600'', ''500'', ''700'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Accommodation cost", "Transportation cost", "Destination", "Start
+  date", "End date"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Assist travelers and trip planners in quickly understanding cost patterns
+  in different travel destinations to make informed decisions",
+
+  "Audience": "Travelers and trip planners"
+
+  }'
+05_audience: Travelers and trip planners
+05_data_attributes:
+- Accommodation cost
+- Transportation cost
+- Destination
+- Start date
+- End date
+05_purpose: Assist travelers and trip planners in quickly understanding cost patterns
+  in different travel destinations to make informed decisions
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/221.csv'': {''summary'': {''Column'': [''Trip ID'', ''Destination'',
+  ''Start date'', ''End date'', ''Duration (days)'', ''Traveler name'', ''Traveler
+  age'', ''Traveler gender'', ''Traveler nationality'', ''Accommodation type'', ''Accommodation
+  cost'', ''Transportation type'', ''Transportation cost''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3], ''Unique Values'':
+  [139, 59, 111, 125, 9, 109, 29, 2, 41, 8, 53, 9, 48]}, ''sample_data'': {''Trip
+  ID'': [1, 2, 3], ''Destination'': [''London, UK'', ''Phuket, Thailand'', ''Bali,
+  Indonesia''], ''Start date'': [''5/1/2023'', ''6/15/2023'', ''7/1/2023''], ''End
+  date'': [''5/8/2023'', ''6/20/2023'', ''7/8/2023''], ''Duration (days)'': [7.0,
+  5.0, 7.0], ''Traveler name'': [''John Smith'', ''Jane Doe'', ''David Lee''], ''Traveler
+  age'': [35.0, 28.0, 45.0], ''Traveler gender'': [''Male'', ''Female'', ''Male''],
+  ''Traveler nationality'': [''American'', ''Canadian'', ''Korean''], ''Accommodation
+  type'': [''Hotel'', ''Resort'', ''Villa''], ''Accommodation cost'': [''1200'', ''800'',
+  ''1000''], ''Transportation type'': [''Flight'', ''Flight'', ''Flight''], ''Transportation
+  cost'': [''600'', ''500'', ''700'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a line chart illustrating the trend of accommodation and transportation costs
+  over time for different travel destinations using the given travel dataset. Highlight
+  key data points where costs significantly change, and add text annotations for those
+  points. The chart should help travelers and trip planners quickly understand cost
+  patterns in different destinations and make informed decisions. Additionally, use
+  annotations to provide context or comments about the data, such as peak travel times
+  or special events influencing costs. This visualization will assist in comparative
+  analysis and budgeting for future trips.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Accommodation cost'', ''Transportation cost'', ''Destination'', ''Start date'',
+  ''End date'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Travelers and trip planners
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Assist travelers and trip planners in quickly understanding cost patterns in different
+  travel destinations to make informed decisions
+
+  <end of purpose>'
+07_questions: '1. Do you have a preference for the color scheme of the chart?
+
+  2. Should the chart use a specific style for the lines (e.g., solid, dashed, dotted)?
+
+  3. Do you want the x-axis to use the start date, end date, or both?
+
+  4. How do you prefer the destinations to be differentiated in the chart (e.g., different
+  colors, line styles)?
+
+  5. Would you like to include a legend, and if so, where should it be positioned?
+
+  6. Are there specific travel destinations you want to focus on or exclude from the
+  chart?
+
+  7. Do you prefer the chart to show the data in a specific time range (e.g., last
+  year only)?
+
+  8. How should significant changes in cost be highlighted (e.g., larger markers,
+  different colors)?
+
+  9. What type of text annotations would you like to add (e.g., descriptive comments,
+  numerical values)?
+
+  10. Should the y-axis have a specific range or start from zero?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a line chart illustrating the trend of accommodation\
+  \ and transportation costs over time for different travel destinations using the\
+  \ given travel dataset. Highlight key data points where costs significantly change,\
+  \ and add text annotations for those points. The chart should help travelers and\
+  \ trip planners quickly understand cost patterns in different destinations and make\
+  \ informed decisions. Additionally, use annotations to provide context or comments\
+  \ about the data, such as peak travel times or special events influencing costs.\
+  \ This visualization will assist in comparative analysis and budgeting for future\
+  \ trips.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nAssist travelers and trip planners in quickly understanding cost patterns\
+  \ in different travel destinations to make informed decisions\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a preference for the color scheme\
+  \ of the chart?\n2. Should the chart use a specific style for the lines (e.g., solid,\
+  \ dashed, dotted)?\n3. Do you want the x-axis to use the start date, end date, or\
+  \ both?\n4. How do you prefer the destinations to be differentiated in the chart\
+  \ (e.g., different colors, line styles)?\n5. Would you like to include a legend,\
+  \ and if so, where should it be positioned?\n6. Are there specific travel destinations\
+  \ you want to focus on or exclude from the chart?\n7. Do you prefer the chart to\
+  \ show the data in a specific time range (e.g., last year only)?\n8. How should\
+  \ significant changes in cost be highlighted (e.g., larger markers, different colors)?\n\
+  9. What type of text annotations would you like to add (e.g., descriptive comments,\
+  \ numerical values)?\n10. Should the y-axis have a specific range or start from\
+  \ zero?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Both start date and end date should be used.
+
+  4. Different colors would be good.
+
+  5. Yes, include a legend. I am not sure about the position.
+
+  6. I do not have specific destinations to focus on or exclude.
+
+  7. I do not know.
+
+  8. Larger markers and different colors would be helpful.
+
+  9. Descriptive comments about significant changes and events.
+
+  10. I am not sure.'

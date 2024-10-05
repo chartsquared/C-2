@@ -1,0 +1,259 @@
+02_initial_prompt: Create a scatter plot using the yeast.csv dataset from the genomics
+  category. Plot the 'mcg' values on the X-axis and 'gvh' values on the Y-axis. Highlight
+  data points classified under 'name' column as 'MIT' in a different color to distinguish
+  them. Include text annotations displaying 'alm' values for these highlighted points.
+  The purpose of this chart is to visually analyze the relationship between 'mcg'
+  and 'gvh', with a focus on how 'alm' values vary among the 'MIT' classified points.
+  This will help in understanding specific patterns and anomalies within the genomics
+  data.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a scatter plot using the yeast.csv dataset from the genomics category. Plot
+  the ''mcg'' values on the X-axis and ''gvh'' values on the Y-axis. Highlight data
+  points classified under ''name'' column as ''MIT'' in a different color to distinguish
+  them. Include text annotations displaying ''alm'' values for these highlighted points.
+  The purpose of this chart is to visually analyze the relationship between ''mcg''
+  and ''gvh'', with a focus on how ''alm'' values vary among the ''MIT'' classified
+  points. This will help in understanding specific patterns and anomalies within the
+  genomics data.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/328.csv'': {''summary'': {''Column'': [''mcg'', ''gvh'',
+  ''alm'', ''mit'', ''erl'', ''pox'', ''vac'', ''nuc'', ''name''], ''Data Type'':
+  [dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [81, 79, 53, 78, 2, 3, 48, 68, 10]}, ''sample_data'': {''mcg'': [0.58, 0.43, 0.64],
+  ''gvh'': [0.61, 0.67, 0.62], ''alm'': [0.47, 0.48, 0.49], ''mit'': [0.13, 0.27,
+  0.15], ''erl'': [0.5, 0.5, 0.5], ''pox'': [0.0, 0.0, 0.0], ''vac'': [0.48, 0.53,
+  0.53], ''nuc'': [0.22, 0.22, 0.22], ''name'': [''MIT'', ''MIT'', ''MIT'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"mcg\", \"gvh\"\
+  , \"alm\", \"name\"],\n  \"Task\": \"Correlation\",\n  \"Purpose\": \"Visually analyze\
+  \ the relationship between 'mcg' and 'gvh', focusing on variations of 'alm' values\
+  \ among 'MIT' classified points for identifying specific patterns and anomalies\
+  \ within the genomics data\",\n  \"Audience\": \"Genomics researchers and data analysts\"\
+  \n}"
+05_audience: Genomics researchers and data analysts
+05_data_attributes:
+- mcg
+- gvh
+- alm
+- name
+05_purpose: Visually analyze the relationship between 'mcg' and 'gvh', focusing on
+  variations of 'alm' values among 'MIT' classified points for identifying specific
+  patterns and anomalies within the genomics data
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/328.csv'': {''summary'': {''Column'': [''mcg'', ''gvh'',
+  ''alm'', ''mit'', ''erl'', ''pox'', ''vac'', ''nuc'', ''name''], ''Data Type'':
+  [dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [81, 79, 53, 78, 2, 3, 48, 68, 10]}, ''sample_data'': {''mcg'': [0.58, 0.43, 0.64],
+  ''gvh'': [0.61, 0.67, 0.62], ''alm'': [0.47, 0.48, 0.49], ''mit'': [0.13, 0.27,
+  0.15], ''erl'': [0.5, 0.5, 0.5], ''pox'': [0.0, 0.0, 0.0], ''vac'': [0.48, 0.53,
+  0.53], ''nuc'': [0.22, 0.22, 0.22], ''name'': [''MIT'', ''MIT'', ''MIT'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a scatter plot using the yeast.csv dataset from the genomics category. Plot
+  the ''mcg'' values on the X-axis and ''gvh'' values on the Y-axis. Highlight data
+  points classified under ''name'' column as ''MIT'' in a different color to distinguish
+  them. Include text annotations displaying ''alm'' values for these highlighted points.
+  The purpose of this chart is to visually analyze the relationship between ''mcg''
+  and ''gvh'', with a focus on how ''alm'' values vary among the ''MIT'' classified
+  points. This will help in understanding specific patterns and anomalies within the
+  genomics data.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''mcg'', ''gvh'', ''alm'', ''name'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Genomics researchers and data analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visually analyze the relationship between ''mcg'' and ''gvh'', focusing on variations
+  of ''alm'' values among ''MIT'' classified points for identifying specific patterns
+  and anomalies within the genomics data
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the scatter plot, especially
+  for highlighting the ''MIT'' classified points?
+
+  2. Are there specific sizes or types of markers you prefer for the data points?
+
+  3. Do you want grid lines to be displayed on the chart? If yes, should they be major
+  grid lines, minor grid lines, or both?
+
+  4. Should the axis labels and title have any specific formatting (font size, style,
+  or color)?
+
+  5. Do you want to display a legend on the chart? If yes, where should it be placed
+  (top, bottom, left, right)?
+
+  6. Should the chart have a specific title? If yes, please provide the title.
+
+  7. Do you have any preferences for the size or resolution of the text annotations
+  for ''alm'' values?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a scatter plot using the yeast.csv dataset from\
+  \ the genomics category. Plot the 'mcg' values on the X-axis and 'gvh' values on\
+  \ the Y-axis. Highlight data points classified under 'name' column as 'MIT' in a\
+  \ different color to distinguish them. Include text annotations displaying 'alm'\
+  \ values for these highlighted points. The purpose of this chart is to visually\
+  \ analyze the relationship between 'mcg' and 'gvh', with a focus on how 'alm' values\
+  \ vary among the 'MIT' classified points. This will help in understanding specific\
+  \ patterns and anomalies within the genomics data.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nVisually analyze the relationship between\
+  \ 'mcg' and 'gvh', focusing on variations of 'alm' values among 'MIT' classified\
+  \ points for identifying specific patterns and anomalies within the genomics data\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have a preferred\
+  \ color scheme for the scatter plot, especially for highlighting the 'MIT' classified\
+  \ points?\n2. Are there specific sizes or types of markers you prefer for the data\
+  \ points?\n3. Do you want grid lines to be displayed on the chart? If yes, should\
+  \ they be major grid lines, minor grid lines, or both?\n4. Should the axis labels\
+  \ and title have any specific formatting (font size, style, or color)?\n5. Do you\
+  \ want to display a legend on the chart? If yes, where should it be placed (top,\
+  \ bottom, left, right)?\n6. Should the chart have a specific title? If yes, please\
+  \ provide the title.\n7. Do you have any preferences for the size or resolution\
+  \ of the text annotations for 'alm' values?\n<end service provider message>\n\n\
+  Also, remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '<start of user emulated response>
+
+  1. I do not have a specific color scheme in mind, so please choose one that makes
+  the ''MIT'' points clearly distinguishable.
+
+  2. I am not sure about the marker types or sizes.
+
+  3. I am not sure about grid lines.
+
+  4. I do not have any specific preferences for the formatting of the axis labels
+  and title.
+
+  5. Yes, please display a legend on the chart. The placement can be on the right.
+
+  6. Yes, the title should be "Scatter Plot of mcg vs gvh with MIT Points Highlighted".
+
+  7. I do not know about specific preferences for the size or resolution of the text
+  annotations for ''alm'' values.
+
+  <end of user emulated response>'

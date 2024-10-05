@@ -1,0 +1,318 @@
+02_initial_prompt: Create a heatmap to visualize the global air transport data from
+  2005 to 2020. Each cell should represent the registered carrier departures for different
+  countries and years. Use a color gradient to depict the number of departures, with
+  darker shades for higher values. Make sure to handle missing data appropriately
+  by either marking or excluding it. Provide separate columns for each year and rows
+  for each country coded by their respective names. Include a legend for clarity and
+  ensure the map is easily interpretable for both data analysts and stakeholders.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a heatmap to visualize the global air transport data from 2005 to 2020. Each
+  cell should represent the registered carrier departures for different countries
+  and years. Use a color gradient to depict the number of departures, with darker
+  shades for higher values. Make sure to handle missing data appropriately by either
+  marking or excluding it. Provide separate columns for each year and rows for each
+  country coded by their respective names. Include a legend for clarity and ensure
+  the map is easily interpretable for both data analysts and stakeholders.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/216.csv'': {''summary'': {''Column'': [''Series Name'', ''Series
+  Code'', ''Country Name'', ''Country Code'', ''2005 [YR2005]'', ''2006 [YR2006]'',
+  ''2007 [YR2007]'', ''2008 [YR2008]'', ''2009 [YR2009]'', ''2010 [YR2010]'', ''2011
+  [YR2011]'', ''2012 [YR2012]'', ''2013 [YR2013]'', ''2014 [YR2014]'', ''2015 [YR2015]'',
+  ''2016 [YR2016]'', ''2017 [YR2017]'', ''2018 [YR2018]'', ''2019 [YR2019]'', ''2020
+  [YR2020]''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [3,
+  5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], ''Unique Values'': [6,
+  4, 264, 264, 524, 520, 654, 521, 527, 728, 586, 738, 586, 776, 576, 778, 571, 731,
+  570, 1]}, ''sample_data'': {''Series Name'': [''Air transport, registered carrier
+  departures worldwide'', ''Air transport, registered carrier departures worldwide'',
+  ''Air transport, registered carrier departures worldwide''], ''Series Code'': [''IS.AIR.DPRT'',
+  ''IS.AIR.DPRT'', ''IS.AIR.DPRT''], ''Country Name'': [''Afghanistan'', ''Albania'',
+  ''Algeria''], ''Country Code'': [''AFG'', ''ALB'', ''DZA''], ''2005 [YR2005]'':
+  [''..'', ''4309'', ''45692''], ''2006 [YR2006]'': [''..'', ''4481'', ''44822''],
+  ''2007 [YR2007]'': [''..'', ''4930'', ''44136''], ''2008 [YR2008]'': [''..'', ''5058'',
+  ''31026''], ''2009 [YR2009]'': [''..'', ''5140'', ''52731''], ''2010 [YR2010]'':
+  [''21677'', ''9412'', ''53088''], ''2011 [YR2011]'': [''25021'', ''10373.2109418273'',
+  ''53286''], ''2012 [YR2012]'': [''17775'', ''10309.1791376912'', ''54292''], ''2013
+  [YR2013]'': [''21696'', ''11196'', ''55516''], ''2014 [YR2014]'': [''25920'', ''1992'',
+  ''60066''], ''2015 [YR2015]'': [''23532'', ''..'', ''65940''], ''2016 [YR2016]'':
+  [''22770'', ''306'', ''73465''], ''2017 [YR2017]'': [''24207'', ''1904'', ''74714''],
+  ''2018 [YR2018]'': [''10454'', ''2935'', ''77463''], ''2019 [YR2019]'': [''7334'',
+  ''2558'', ''76001''], ''2020 [YR2020]'': [''..'', ''..'', ''..'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country Name", "2005 [YR2005]", "2006 [YR2006]", "2007 [YR2007]",
+  "2008 [YR2008]", "2009 [YR2009]", "2010 [YR2010]", "2011 [YR2011]", "2012 [YR2012]",
+  "2013 [YR2013]", "2014 [YR2014]", "2015 [YR2015]", "2016 [YR2016]", "2017 [YR2017]",
+  "2018 [YR2018]", "2019 [YR2019]", "2020 [YR2020]"],
+
+  "Task": "Comparison by Time Segmentation",
+
+  "Purpose": "To provide a visual representation of the registered carrier departures
+  across different years and countries, highlighting trends, variations, and patterns
+  in global air transport data from 2005 to 2020.",
+
+  "Audience": ["Data analysts", "Stakeholders"]
+
+  }'
+05_audience:
+- Data analysts
+- Stakeholders
+05_data_attributes:
+- Country Name
+- 2005 [YR2005]
+- 2006 [YR2006]
+- 2007 [YR2007]
+- 2008 [YR2008]
+- 2009 [YR2009]
+- 2010 [YR2010]
+- 2011 [YR2011]
+- 2012 [YR2012]
+- 2013 [YR2013]
+- 2014 [YR2014]
+- 2015 [YR2015]
+- 2016 [YR2016]
+- 2017 [YR2017]
+- 2018 [YR2018]
+- 2019 [YR2019]
+- 2020 [YR2020]
+05_purpose: To provide a visual representation of the registered carrier departures
+  across different years and countries, highlighting trends, variations, and patterns
+  in global air transport data from 2005 to 2020.
+05_task: Comparison by Time Segmentation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/216.csv'': {''summary'': {''Column'': [''Series Name'', ''Series
+  Code'', ''Country Name'', ''Country Code'', ''2005 [YR2005]'', ''2006 [YR2006]'',
+  ''2007 [YR2007]'', ''2008 [YR2008]'', ''2009 [YR2009]'', ''2010 [YR2010]'', ''2011
+  [YR2011]'', ''2012 [YR2012]'', ''2013 [YR2013]'', ''2014 [YR2014]'', ''2015 [YR2015]'',
+  ''2016 [YR2016]'', ''2017 [YR2017]'', ''2018 [YR2018]'', ''2019 [YR2019]'', ''2020
+  [YR2020]''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [3,
+  5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], ''Unique Values'': [6,
+  4, 264, 264, 524, 520, 654, 521, 527, 728, 586, 738, 586, 776, 576, 778, 571, 731,
+  570, 1]}, ''sample_data'': {''Series Name'': [''Air transport, registered carrier
+  departures worldwide'', ''Air transport, registered carrier departures worldwide'',
+  ''Air transport, registered carrier departures worldwide''], ''Series Code'': [''IS.AIR.DPRT'',
+  ''IS.AIR.DPRT'', ''IS.AIR.DPRT''], ''Country Name'': [''Afghanistan'', ''Albania'',
+  ''Algeria''], ''Country Code'': [''AFG'', ''ALB'', ''DZA''], ''2005 [YR2005]'':
+  [''..'', ''4309'', ''45692''], ''2006 [YR2006]'': [''..'', ''4481'', ''44822''],
+  ''2007 [YR2007]'': [''..'', ''4930'', ''44136''], ''2008 [YR2008]'': [''..'', ''5058'',
+  ''31026''], ''2009 [YR2009]'': [''..'', ''5140'', ''52731''], ''2010 [YR2010]'':
+  [''21677'', ''9412'', ''53088''], ''2011 [YR2011]'': [''25021'', ''10373.2109418273'',
+  ''53286''], ''2012 [YR2012]'': [''17775'', ''10309.1791376912'', ''54292''], ''2013
+  [YR2013]'': [''21696'', ''11196'', ''55516''], ''2014 [YR2014]'': [''25920'', ''1992'',
+  ''60066''], ''2015 [YR2015]'': [''23532'', ''..'', ''65940''], ''2016 [YR2016]'':
+  [''22770'', ''306'', ''73465''], ''2017 [YR2017]'': [''24207'', ''1904'', ''74714''],
+  ''2018 [YR2018]'': [''10454'', ''2935'', ''77463''], ''2019 [YR2019]'': [''7334'',
+  ''2558'', ''76001''], ''2020 [YR2020]'': [''..'', ''..'', ''..'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a heatmap to visualize the global air transport data from 2005 to 2020. Each
+  cell should represent the registered carrier departures for different countries
+  and years. Use a color gradient to depict the number of departures, with darker
+  shades for higher values. Make sure to handle missing data appropriately by either
+  marking or excluding it. Provide separate columns for each year and rows for each
+  country coded by their respective names. Include a legend for clarity and ensure
+  the map is easily interpretable for both data analysts and stakeholders.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country Name'', ''2005 [YR2005]'', ''2006 [YR2006]'', ''2007 [YR2007]'', ''2008
+  [YR2008]'', ''2009 [YR2009]'', ''2010 [YR2010]'', ''2011 [YR2011]'', ''2012 [YR2012]'',
+  ''2013 [YR2013]'', ''2014 [YR2014]'', ''2015 [YR2015]'', ''2016 [YR2016]'', ''2017
+  [YR2017]'', ''2018 [YR2018]'', ''2019 [YR2019]'', ''2020 [YR2020]'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  [''Data analysts'', ''Stakeholders'']
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison by Time Segmentation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To provide a visual representation of the registered carrier departures across different
+  years and countries, highlighting trends, variations, and patterns in global air
+  transport data from 2005 to 2020.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color gradient for the heatmap?
+
+  2. How would you like missing data to be handled: marked explicitly or excluded?
+
+  3. Do you want any specific annotations on the heatmap for better clarity?
+
+  4. What level of detail should the legend include?
+
+  5. Is there a specific order in which countries should be displayed (e.g., alphabetically,
+  by number of departures)?
+
+  6. Are there any specific countries or regions you want to highlight or focus on
+  in the heatmap?
+
+  7. Do you have a preferred font style or size for country names and years?
+
+  8. Should the chart include gridlines for better cell separation, and if so, how
+  prominent should they be?
+
+  9. Are there any particular thresholds for the number of departures that you would
+  like to mark or emphasize?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap to visualize the global air transport\
+  \ data from 2005 to 2020. Each cell should represent the registered carrier departures\
+  \ for different countries and years. Use a color gradient to depict the number of\
+  \ departures, with darker shades for higher values. Make sure to handle missing\
+  \ data appropriately by either marking or excluding it. Provide separate columns\
+  \ for each year and rows for each country coded by their respective names. Include\
+  \ a legend for clarity and ensure the map is easily interpretable for both data\
+  \ analysts and stakeholders.\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nTo provide a visual representation of the registered carrier\
+  \ departures across different years and countries, highlighting trends, variations,\
+  \ and patterns in global air transport data from 2005 to 2020.\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a preferred color gradient for\
+  \ the heatmap?\n2. How would you like missing data to be handled: marked explicitly\
+  \ or excluded?\n3. Do you want any specific annotations on the heatmap for better\
+  \ clarity?\n4. What level of detail should the legend include?\n5. Is there a specific\
+  \ order in which countries should be displayed (e.g., alphabetically, by number\
+  \ of departures)?\n6. Are there any specific countries or regions you want to highlight\
+  \ or focus on in the heatmap?\n7. Do you have a preferred font style or size for\
+  \ country names and years?\n8. Should the chart include gridlines for better cell\
+  \ separation, and if so, how prominent should they be?\n9. Are there any particular\
+  \ thresholds for the number of departures that you would like to mark or emphasize?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Mark missing data explicitly.
+
+  3. I do not know.
+
+  4. Detail enough to differentiate various ranges of departures.
+
+  5. Alphabetically.
+
+  6. I do not have specific countries or regions to highlight.
+
+  7. I do not have a specific preference.
+
+  8. Yes, include gridlines. I do not know how prominent they should be.
+
+  9. I am not sure.'

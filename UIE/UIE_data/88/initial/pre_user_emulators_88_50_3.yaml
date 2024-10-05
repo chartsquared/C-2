@@ -1,0 +1,102 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map'
+- 1054
+- 1010
+- 44
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 863
+- 724
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/88.csv'': {''summary'': {''Column'': [''work_year'', ''job_title'',
+  ''job_category'', ''salary_currency'', ''salary'', ''salary_in_usd'', ''employee_residence'',
+  ''experience_level'', ''employment_type'', ''work_setting'', ''company_location'',
+  ''company_size''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0], ''Unique Values'': [4, 125, 10, 11, 1507, 1786, 83, 4, 4, 3,
+  70, 3]}, ''sample_data'': {''work_year'': [2023, 2023, 2023], ''job_title'': [''Data
+  DevOps Engineer'', ''Data Architect'', ''Data Architect''], ''job_category'': [''Data
+  Engineering'', ''Data Architecture and Modeling'', ''Data Architecture and Modeling''],
+  ''salary_currency'': [''EUR'', ''USD'', ''USD''], ''salary'': [88000, 186000, 81800],
+  ''salary_in_usd'': [95012, 186000, 81800], ''employee_residence'': [''Germany'',
+  ''United States'', ''United States''], ''experience_level'': [''Mid-level'', ''Senior'',
+  ''Senior''], ''employment_type'': [''Full-time'', ''Full-time'', ''Full-time''],
+  ''work_setting'': [''Hybrid'', ''In-person'', ''In-person''], ''company_location'':
+  [''Germany'', ''United States'', ''United States''], ''company_size'': [''L'', ''M'',
+  ''M'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Jobs and Salaries in Data Science
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Histogram'
+- '* Bar chart'
+- '* Line chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- Create a scatter plot showing the relationship between 'salary_in_usd' and 'work_year'
+  for different 'job_category'. Use color coding for 'job_title'. Make sure to include
+  all unique job categories and titles. Add data labels to show 'company_size'.
+- 652
+- 599
+- 53

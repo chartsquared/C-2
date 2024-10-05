@@ -1,0 +1,111 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Pictogram
+
+  * Radar chart
+
+  * Table chart
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Heatmap
+
+  * Treemap
+
+  * Pie chart
+
+  * Donut chart
+
+  * Line chart
+
+  * Box chart
+
+  * Violin plot'
+- 1102
+- 1032
+- 70
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 885
+- 745
+- 140
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/115.csv'': {''summary'': {''Column'': [''id'', ''calories'',
+  ''proteins'', ''fat'', ''carbohydrate'', ''name'', ''image''], ''Data Type'': [dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [1346, 472, 312, 279, 544, 1346, 1307]}, ''sample_data'': {''id'': [1,
+  2, 3], ''calories'': [280.0, 513.0, 0.0], ''proteins'': [9.2, 23.7, 0.0], ''fat'':
+  [28.4, 37.0, 0.2], ''carbohydrate'': [0.0, 21.3, 0.0], ''name'': [''Abon'', ''Abon
+  haruwan'', ''Agar-agar''], ''image'': [''https://img-cdn.medkomtek.com/PbrY9X3ignQ8sVuj_LU9UXljyew=/0x0/smart/filters:quality(75):strip_icc():format(webp)/article/7g8ceHGDNMuttlBcXEl8d/original/099726800_1605161502-Mana-yang-Lebih-Sehat-Abon-Sapi-atau-Abon-Ayam-shutterstock_1361446550.jpg'',
+  ''https://img-global.cpcdn.com/recipes/cbf330fbd1ba6316/1200x630cq70/photo.jpg'',
+  ''https://res.cloudinary.com/dk0z4ums3/image/upload/v1644389489/attached_image/manfaat-agar-agar-untuk-tubuh.jpg'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Indonesian Food and Drink Nutrition Dataset
+
+  food-and-drink
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bar chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bar chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Treemap'
+- '* Scatter plot'
+- '* Pictogram'
+- '* Column chart'
+- '* Grouped bar/column chart'
+- '* Heatmap'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- I want a bar chart showing the average calories, proteins, fat, and carbohydrates
+  for the Indonesian foods listed.
+- 642
+- 620
+- 22

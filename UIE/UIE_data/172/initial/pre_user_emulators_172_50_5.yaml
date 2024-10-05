@@ -1,0 +1,141 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Radar chart
+
+  * Table chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Line chart
+
+  * Spline chart
+
+  * Histogram
+
+  * Box chart
+
+  * Area chart'
+- 1852
+- 1781
+- 71
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1630
+- 1491
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/172.csv'': {''summary'': {''Column'': [''Track'', ''Album
+  Name'', ''Artist'', ''Release Date'', ''ISRC'', ''All Time Rank'', ''Track Score'',
+  ''Spotify Streams'', ''Spotify Playlist Count'', ''Spotify Playlist Reach'', ''Spotify
+  Popularity'', ''YouTube Views'', ''YouTube Likes'', ''TikTok Posts'', ''TikTok Likes'',
+  ''TikTok Views'', ''YouTube Playlist Reach'', ''Apple Music Playlist Count'', ''AirPlay
+  Spins'', ''SiriusXM Spins'', ''Deezer Playlist Count'', ''Deezer Playlist Reach'',
+  ''Amazon Playlist Count'', ''Pandora Streams'', ''Pandora Track Stations'', ''Soundcloud
+  Streams'', ''Shazam Counts'', ''TIDAL Popularity'', ''Explicit Track''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 5, 0, 0, 0, 0, 113, 70, 72, 804, 308,
+  315, 1173, 980, 981, 1009, 561, 498, 2123, 921, 928, 1055, 1106, 1268, 3333, 577,
+  4600, 0], ''Unique Values'': [4370, 4005, 1999, 1562, 4598, 4577, 862, 4425, 4207,
+  4478, 94, 4290, 4283, 3318, 3615, 3616, 3458, 322, 3267, 689, 233, 3558, 147, 3491,
+  2975, 1265, 4002, 0, 2]}, ''sample_data'': {''Track'': [''MILLION DOLLAR BABY'',
+  ''Not Like Us'', ''i like the way you kiss me''], ''Album Name'': [''Million Dollar
+  Baby - Single'', ''Not Like Us'', ''I like the way you kiss me''], ''Artist'': [''Tommy
+  Richman'', ''Kendrick Lamar'', ''Artemas''], ''Release Date'': [''4/26/2024'', ''5/4/2024'',
+  ''3/19/2024''], ''ISRC'': [''QM24S2402528'', ''USUG12400910'', ''QZJ842400387''],
+  ''All Time Rank'': [''1'', ''2'', ''3''], ''Track Score'': [725.4, 545.9, 538.4],
+  ''Spotify Streams'': [''390,470,936'', ''323,703,884'', ''601,309,283''], ''Spotify
+  Playlist Count'': [''30,716'', ''28,113'', ''54,331''], ''Spotify Playlist Reach'':
+  [''196,631,588'', ''174,597,137'', ''211,607,669''], ''Spotify Popularity'': [92.0,
+  92.0, 92.0], ''YouTube Views'': [''84,274,754'', ''116,347,040'', ''122,599,116''],
+  ''YouTube Likes'': [''1,713,126'', ''3,486,739'', ''2,228,730''], ''TikTok Posts'':
+  [''5,767,700'', ''674,700'', ''3,025,400''], ''TikTok Likes'': [''651,565,900'',
+  ''35,223,547'', ''275,154,237''], ''TikTok Views'': [''5,332,281,936'', ''208,339,025'',
+  ''3,369,120,610''], ''YouTube Playlist Reach'': [''150,597,040'', ''156,380,351'',
+  ''373,784,955''], ''Apple Music Playlist Count'': [210.0, 188.0, 190.0], ''AirPlay
+  Spins'': [''40,975'', ''40,778'', ''74,333''], ''SiriusXM Spins'': [''684'', ''3'',
+  ''536''], ''Deezer Playlist Count'': [62.0, 67.0, 136.0], ''Deezer Playlist Reach'':
+  [''17,598,718'', ''10,422,430'', ''36,321,847''], ''Amazon Playlist Count'': [114.0,
+  111.0, 172.0], ''Pandora Streams'': [''18,004,655'', ''7,780,028'', ''5,022,621''],
+  ''Pandora Track Stations'': [''22,931'', ''28,444'', ''5,639''], ''Soundcloud Streams'':
+  [''4,818,457'', ''6,623,075'', ''7,208,651''], ''Shazam Counts'': [''2,669,262'',
+  ''1,118,279'', ''5,285,340''], ''TIDAL Popularity'': [nan, nan, nan], ''Explicit
+  Track'': [0, 1, 0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Most Streamed Spotify Songs 2024
+
+  music
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Area chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Area chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Treemap'
+- '* Bubble chart'
+- '* Heatmap'
+- '* Table chart'
+- '* Line chart'
+- '* Area chart'
+2. initial_prompt: !!python/tuple
+- Create an area chart visualizing the Spotify streams for the top 3 most streamed
+  songs of 2024. Include each song's data points for streams over time, with unique
+  colors for each track.
+- 1406
+- 1366
+- 40

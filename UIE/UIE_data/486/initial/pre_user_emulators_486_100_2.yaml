@@ -1,0 +1,72 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Scatter plot
+
+  * Line chart
+
+  * Density plot
+
+  * Box chart'
+- 734
+- 719
+- 15
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 567
+- 427
+- 140
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/486.csv': {'summary': {'Column':\
+  \ ['x', 'y'], 'Data Type': [dtype('float64'), dtype('float64')], 'Missing Values':\
+  \ [0, 0], 'Unique Values': [300, 300]}, 'sample_data': {'x': [0.0, 0.01, 0.02],\
+  \ 'y': [1.0, 0.9880961965576364, 0.972469513996579]}}}\n<end of data example format>\n\
+  \n<start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '2. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually.', '<end of the annotation list>']\n<end of annotations format>\n\
+  \n<start of data details format>\nunknown\ndata-science-and-analytics\n<end of data\
+  \ details format>\n\nGiven a data format, imagine a chart that visualizes this data\
+  \ as the final output you want from the service provider.\nConsider what purpose\
+  \ the data has and the practical purpose of visualization and include it in the\
+  \ instructions.\nYou need to imagine a chart with * Line chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Line chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Box chart'
+- '* Line chart'
+- '* Density plot'
+- '* Scatter plot'
+- '* Box chart'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart to visualize the provided dataset focusing on columns 'x' and
+  'y'. Highlight specific data points with annotations to showcase key trends and
+  patterns. Use different colors or sizes to emphasize important values. This will
+  help in comprehending the relationship between 'x' and 'y' easily. Add textual annotations
+  to provide context or highlight crucial points. The purpose of this visualization
+  is to analyze how 'y' changes with 'x', potentially revealing cyclic patterns or
+  trends over the data range. This will aid in data-driven decision-making and understanding.
+- 606
+- 496
+- 110

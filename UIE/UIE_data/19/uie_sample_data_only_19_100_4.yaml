@@ -1,0 +1,265 @@
+02_initial_prompt: I need a scatter plot for the Amazon Top 50 Bestselling Books from
+  2009 to 2019. On one axis, plot the user ratings, and on the other axis, plot the
+  number of reviews. Use different colors to differentiate between Fiction and Non-Fiction
+  genres. The points should represent different books, with their price as the size
+  of the scatter points. This will help visualize the correlation between user ratings
+  and reviews and identify any notable trends in book genres over the years. Please
+  ensure all relevant data is included for accuracy.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I need a scatter plot for the Amazon Top 50 Bestselling Books from 2009 to 2019.
+  On one axis, plot the user ratings, and on the other axis, plot the number of reviews.
+  Use different colors to differentiate between Fiction and Non-Fiction genres. The
+  points should represent different books, with their price as the size of the scatter
+  points. This will help visualize the correlation between user ratings and reviews
+  and identify any notable trends in book genres over the years. Please ensure all
+  relevant data is included for accuracy.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/19.csv'': {''summary'': {''Column'': [''Name'', ''Author'',
+  ''User Rating'', ''Reviews'', ''Price'', ''Year'', ''Genre''], ''Data Type'': [dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [351,
+  248, 14, 346, 40, 11, 2]}, ''sample_data'': {''Name'': [''10-Day Green Smoothie
+  Cleanse'', ''11/22/63: A Novel'', ''12 Rules for Life: An Antidote to Chaos''],
+  ''Author'': [''JJ Smith'', ''Stephen King'', ''Jordan B. Peterson''], ''User Rating'':
+  [4.7, 4.6, 4.7], ''Reviews'': [17350, 2052, 18979], ''Price'': [8, 22, 15], ''Year'':
+  [2016, 2011, 2018], ''Genre'': [''Non Fiction'', ''Fiction'', ''Non Fiction'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["User Rating", "Reviews", "Genre", "Price", "Name"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Visualize the correlation between user ratings and reviews, and identify
+  any notable trends in book genres over the years",
+
+  "Audience": "Amazon book analysts, authors, publishers, and general readers interested
+  in bestselling book trends"
+
+  }'
+05_audience: Amazon book analysts, authors, publishers, and general readers interested
+  in bestselling book trends
+05_data_attributes:
+- User Rating
+- Reviews
+- Genre
+- Price
+- Name
+05_purpose: Visualize the correlation between user ratings and reviews, and identify
+  any notable trends in book genres over the years
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/19.csv'': {''summary'': {''Column'': [''Name'', ''Author'',
+  ''User Rating'', ''Reviews'', ''Price'', ''Year'', ''Genre''], ''Data Type'': [dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [351,
+  248, 14, 346, 40, 11, 2]}, ''sample_data'': {''Name'': [''10-Day Green Smoothie
+  Cleanse'', ''11/22/63: A Novel'', ''12 Rules for Life: An Antidote to Chaos''],
+  ''Author'': [''JJ Smith'', ''Stephen King'', ''Jordan B. Peterson''], ''User Rating'':
+  [4.7, 4.6, 4.7], ''Reviews'': [17350, 2052, 18979], ''Price'': [8, 22, 15], ''Year'':
+  [2016, 2011, 2018], ''Genre'': [''Non Fiction'', ''Fiction'', ''Non Fiction'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I need a scatter plot for the Amazon Top 50 Bestselling Books from 2009 to 2019.
+  On one axis, plot the user ratings, and on the other axis, plot the number of reviews.
+  Use different colors to differentiate between Fiction and Non-Fiction genres. The
+  points should represent different books, with their price as the size of the scatter
+  points. This will help visualize the correlation between user ratings and reviews
+  and identify any notable trends in book genres over the years. Please ensure all
+  relevant data is included for accuracy.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''User Rating'', ''Reviews'', ''Genre'', ''Price'', ''Name'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Amazon book analysts, authors, publishers, and general readers interested in bestselling
+  book trends
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visualize the correlation between user ratings and reviews, and identify any notable
+  trends in book genres over the years
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color palette for differentiating between
+  Fiction and Non-Fiction genres?
+
+  2. Would you like the axis labels and title to follow a specific format or style?
+
+  3. Do you have any preference for the size scaling of the scatter points based on
+  the book prices?
+
+  4. Would you like to include any specific annotations or data labels on the scatter
+  points, such as book names or authors?
+
+  5. Is there a particular font style or size you would prefer for the chart labels
+  and legends?
+
+  6. Do you want any specific grid lines or background color for the scatter plot?
+
+  7. Should the chart include a legend explaining the colors and sizes used for different
+  genres and price ranges?
+
+  8. Are there any specific aspects of the chart''s design that should align with
+  your organization''s branding guidelines?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI need a scatter plot for the Amazon Top 50 Bestselling\
+  \ Books from 2009 to 2019. On one axis, plot the user ratings, and on the other\
+  \ axis, plot the number of reviews. Use different colors to differentiate between\
+  \ Fiction and Non-Fiction genres. The points should represent different books, with\
+  \ their price as the size of the scatter points. This will help visualize the correlation\
+  \ between user ratings and reviews and identify any notable trends in book genres\
+  \ over the years. Please ensure all relevant data is included for accuracy.\n<end\
+  \ of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nVisualize the correlation between user ratings and reviews, and identify\
+  \ any notable trends in book genres over the years\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color palette for differentiating\
+  \ between Fiction and Non-Fiction genres?\n2. Would you like the axis labels and\
+  \ title to follow a specific format or style?\n3. Do you have any preference for\
+  \ the size scaling of the scatter points based on the book prices?\n4. Would you\
+  \ like to include any specific annotations or data labels on the scatter points,\
+  \ such as book names or authors?\n5. Is there a particular font style or size you\
+  \ would prefer for the chart labels and legends?\n6. Do you want any specific grid\
+  \ lines or background color for the scatter plot?\n7. Should the chart include a\
+  \ legend explaining the colors and sizes used for different genres and price ranges?\n\
+  8. Are there any specific aspects of the chart's design that should align with your\
+  \ organization's branding guidelines?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, please include data labels with book names.
+
+  5. I do not have any specific preference.
+
+  6. I am not sure.
+
+  7. Yes, please include a legend explaining the colors and sizes.
+
+  8. I do not know.
+
+  <end of user emulated response>'

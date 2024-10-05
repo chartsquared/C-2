@@ -1,0 +1,269 @@
+02_initial_prompt: Please create a heatmap using the salary data for different blockchain-related
+  job titles in various companies and locations across India for 2022. Use "Title"
+  on the y-axis and "Location" on the x-axis. The color intensity should represent
+  the range between "Salary_Lower_Limit" and "Salary_Upper_Limit." Make sure to highlight
+  where "Easy Apply" jobs are available. This visualization should help users quickly
+  understand salary trends and readily available positions within the blockchain sector
+  in different regions. Use contrasting colors to distinguish salary ranges effectively.
+  Thanks!
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a heatmap using the salary data for different blockchain-related job
+  titles in various companies and locations across India for 2022. Use "Title" on
+  the y-axis and "Location" on the x-axis. The color intensity should represent the
+  range between "Salary_Lower_Limit" and "Salary_Upper_Limit." Make sure to highlight
+  where "Easy Apply" jobs are available. This visualization should help users quickly
+  understand salary trends and readily available positions within the blockchain sector
+  in different regions. Use contrasting colors to distinguish salary ranges effectively.
+  Thanks!
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/344.csv'': {''summary'': {''Column'': [''Title'', ''Company'',
+  ''Location'', ''Easy Apply'', ''Salary_Lower_Limit'', ''Salary_Upper_Limit''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0], ''Unique Values'': [23,
+  32, 12, 2, 9, 12]}, ''sample_data'': {''Title'': [''Consultant'', ''Blockchain Developer
+  Intern'', ''Trainer''], ''Company'': [''Infosys Limited'', ''Synergy Labs'', ''REGex
+  Software Services''], ''Location'': [''Bangalore'', ''Gurgaon'', ''Remote''], ''Easy
+  Apply'': [False, True, True], ''Salary_Lower_Limit'': [100000, 200000, 96000], ''Salary_Upper_Limit'':
+  [100000, 300000, 100000]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Title", "Location", "Salary_Lower_Limit", "Salary_Upper_Limit",
+  "Easy Apply"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Understand salary trends and availability of Easy Apply jobs in the
+  blockchain sector across different regions in India.",
+
+  "Audience": "Job seekers looking for blockchain-related positions, HR professionals,
+  and companies in the blockchain sector."
+
+  }'
+05_audience: Job seekers looking for blockchain-related positions, HR professionals,
+  and companies in the blockchain sector.
+05_data_attributes:
+- Title
+- Location
+- Salary_Lower_Limit
+- Salary_Upper_Limit
+- Easy Apply
+05_purpose: Understand salary trends and availability of Easy Apply jobs in the blockchain
+  sector across different regions in India.
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/344.csv'': {''summary'': {''Column'': [''Title'', ''Company'',
+  ''Location'', ''Easy Apply'', ''Salary_Lower_Limit'', ''Salary_Upper_Limit''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0], ''Unique Values'': [23,
+  32, 12, 2, 9, 12]}, ''sample_data'': {''Title'': [''Consultant'', ''Blockchain Developer
+  Intern'', ''Trainer''], ''Company'': [''Infosys Limited'', ''Synergy Labs'', ''REGex
+  Software Services''], ''Location'': [''Bangalore'', ''Gurgaon'', ''Remote''], ''Easy
+  Apply'': [False, True, True], ''Salary_Lower_Limit'': [100000, 200000, 96000], ''Salary_Upper_Limit'':
+  [100000, 300000, 100000]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a heatmap using the salary data for different blockchain-related job
+  titles in various companies and locations across India for 2022. Use "Title" on
+  the y-axis and "Location" on the x-axis. The color intensity should represent the
+  range between "Salary_Lower_Limit" and "Salary_Upper_Limit." Make sure to highlight
+  where "Easy Apply" jobs are available. This visualization should help users quickly
+  understand salary trends and readily available positions within the blockchain sector
+  in different regions. Use contrasting colors to distinguish salary ranges effectively.
+  Thanks!
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Title'', ''Location'', ''Salary_Lower_Limit'', ''Salary_Upper_Limit'', ''Easy
+  Apply'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Job seekers looking for blockchain-related positions, HR professionals, and companies
+  in the blockchain sector.
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand salary trends and availability of Easy Apply jobs in the blockchain sector
+  across different regions in India.
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color preferences for the heatmap, particularly
+  for distinguishing the salary ranges?
+
+  2. How would you like the "Easy Apply" jobs to be highlighted on the heatmap? Do
+  you prefer specific symbols or color overlays?
+
+  3. What should be the range of the color scale used in the heatmap? Do you want
+  it to be adjusted to specific salary ranges (e.g., 50,000 INR increments)?
+
+  4. Do you have any specific font preferences or size considerations for the axis
+  labels ("Title" and "Location") and the legend?
+
+  5. Would you prefer the heatmap to display exact salary values or just color gradients
+  to represent salary ranges?
+
+  6. Are there any particular companies or job titles you want to be prominently displayed
+  or highlighted in a different way?
+
+  7. Do you want to include any annotations or notes on the heatmap to explain specific
+  trends or highlight particular regions and job titles?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a heatmap using the salary data for different\
+  \ blockchain-related job titles in various companies and locations across India\
+  \ for 2022. Use \"Title\" on the y-axis and \"Location\" on the x-axis. The color\
+  \ intensity should represent the range between \"Salary_Lower_Limit\" and \"Salary_Upper_Limit.\"\
+  \ Make sure to highlight where \"Easy Apply\" jobs are available. This visualization\
+  \ should help users quickly understand salary trends and readily available positions\
+  \ within the blockchain sector in different regions. Use contrasting colors to distinguish\
+  \ salary ranges effectively. Thanks!\n<end of user request>\n\nImagine the best\
+  \ result that can be achieved based on the given instructions and is the final output\
+  \ you want from the service provider with your purpose given below.\nBased on your\
+  \ imagination you are to respond to the service provider.\nSince you are an amateur\
+  \ user you should concretely answer 50% of the questions you think are most important,\
+  \ and the remaining questions should be answer with uncertainty, e.g. \u201CI am\
+  \ not sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\n\
+  Finally, remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nUnderstand salary trends and availability of Easy Apply jobs\
+  \ in the blockchain sector across different regions in India.\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have any specific color preferences\
+  \ for the heatmap, particularly for distinguishing the salary ranges?\n2. How would\
+  \ you like the \"Easy Apply\" jobs to be highlighted on the heatmap? Do you prefer\
+  \ specific symbols or color overlays?\n3. What should be the range of the color\
+  \ scale used in the heatmap? Do you want it to be adjusted to specific salary ranges\
+  \ (e.g., 50,000 INR increments)?\n4. Do you have any specific font preferences or\
+  \ size considerations for the axis labels (\"Title\" and \"Location\") and the legend?\n\
+  5. Would you prefer the heatmap to display exact salary values or just color gradients\
+  \ to represent salary ranges?\n6. Are there any particular companies or job titles\
+  \ you want to be prominently displayed or highlighted in a different way?\n7. Do\
+  \ you want to include any annotations or notes on the heatmap to explain specific\
+  \ trends or highlight particular regions and job titles?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '<start of user emulated response>
+
+  1. I don''t have any specific color preferences.
+
+  2. I am not sure, maybe a symbol or a color overlay could work.
+
+  3. I do not know, you can decide on a suitable range.
+
+  4. I have no specific preference.
+
+  5. Just color gradients to represent salary ranges.
+
+  6. No specific companies or job titles to be highlighted.
+
+  7. I am not sure.
+
+  <end of user emulated response>'

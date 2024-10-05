@@ -1,0 +1,279 @@
+02_initial_prompt: Create a bubble chart to visualize the Hepatitis C Prediction Dataset.
+  Use 'Age' on the X-axis and 'ALB' on the Y-axis. The size of bubbles should represent
+  'CHOL' levels. Include text annotations for key data points to highlight unusual
+  'CHOL' levels, and add highlights to emphasize trends or anomalies in 'ALB' values.
+  This will help to identify patterns related to age, albumin, and cholesterol levels
+  among the different categories like 'Blood Donor'. Utilize color coding to distinguish
+  between 'Sex' (male/female) for better clarity.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bubble chart to visualize the Hepatitis C Prediction Dataset. Use ''Age''
+  on the X-axis and ''ALB'' on the Y-axis. The size of bubbles should represent ''CHOL''
+  levels. Include text annotations for key data points to highlight unusual ''CHOL''
+  levels, and add highlights to emphasize trends or anomalies in ''ALB'' values. This
+  will help to identify patterns related to age, albumin, and cholesterol levels among
+  the different categories like ''Blood Donor''. Utilize color coding to distinguish
+  between ''Sex'' (male/female) for better clarity.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/40.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''Category'',
+  ''Age'', ''Sex'', ''ALB'', ''ALP'', ''ALT'', ''AST'', ''BIL'', ''CHE'', ''CHOL'',
+  ''CREA'', ''GGT'', ''PROT''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 1, 18,
+  1, 0, 0, 0, 10, 0, 0, 1], ''Unique Values'': [615, 5, 49, 2, 189, 414, 341, 297,
+  188, 407, 313, 117, 358, 198]}, ''sample_data'': {''Unnamed: 0'': [1, 2, 3], ''Category'':
+  [''0=Blood Donor'', ''0=Blood Donor'', ''0=Blood Donor''], ''Age'': [32, 32, 32],
+  ''Sex'': [''m'', ''m'', ''m''], ''ALB'': [38.5, 38.5, 46.9], ''ALP'': [52.5, 70.3,
+  74.7], ''ALT'': [7.7, 18.0, 36.2], ''AST'': [22.1, 24.7, 52.6], ''BIL'': [7.5, 3.9,
+  6.1], ''CHE'': [6.93, 11.17, 8.84], ''CHOL'': [3.23, 4.8, 5.2], ''CREA'': [106.0,
+  74.0, 86.0], ''GGT'': [12.1, 15.6, 33.2], ''PROT'': [69.0, 76.5, 79.3]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Age", "ALB", "CHOL", "Sex"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify patterns related to age, albumin, and cholesterol levels among
+  different categories like ''Blood Donor'' and highlight unusual ''CHOL'' levels
+  and trends/anomalies in ''ALB'' values",
+
+  "Audience": "Medical professionals, researchers studying Hepatitis C, data analysts
+  in healthcare"
+
+  }'
+05_audience: Medical professionals, researchers studying Hepatitis C, data analysts
+  in healthcare
+05_data_attributes:
+- Age
+- ALB
+- CHOL
+- Sex
+05_purpose: Identify patterns related to age, albumin, and cholesterol levels among
+  different categories like 'Blood Donor' and highlight unusual 'CHOL' levels and
+  trends/anomalies in 'ALB' values
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/40.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''Category'',
+  ''Age'', ''Sex'', ''ALB'', ''ALP'', ''ALT'', ''AST'', ''BIL'', ''CHE'', ''CHOL'',
+  ''CREA'', ''GGT'', ''PROT''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 1, 18,
+  1, 0, 0, 0, 10, 0, 0, 1], ''Unique Values'': [615, 5, 49, 2, 189, 414, 341, 297,
+  188, 407, 313, 117, 358, 198]}, ''sample_data'': {''Unnamed: 0'': [1, 2, 3], ''Category'':
+  [''0=Blood Donor'', ''0=Blood Donor'', ''0=Blood Donor''], ''Age'': [32, 32, 32],
+  ''Sex'': [''m'', ''m'', ''m''], ''ALB'': [38.5, 38.5, 46.9], ''ALP'': [52.5, 70.3,
+  74.7], ''ALT'': [7.7, 18.0, 36.2], ''AST'': [22.1, 24.7, 52.6], ''BIL'': [7.5, 3.9,
+  6.1], ''CHE'': [6.93, 11.17, 8.84], ''CHOL'': [3.23, 4.8, 5.2], ''CREA'': [106.0,
+  74.0, 86.0], ''GGT'': [12.1, 15.6, 33.2], ''PROT'': [69.0, 76.5, 79.3]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bubble chart to visualize the Hepatitis C Prediction Dataset. Use ''Age''
+  on the X-axis and ''ALB'' on the Y-axis. The size of bubbles should represent ''CHOL''
+  levels. Include text annotations for key data points to highlight unusual ''CHOL''
+  levels, and add highlights to emphasize trends or anomalies in ''ALB'' values. This
+  will help to identify patterns related to age, albumin, and cholesterol levels among
+  the different categories like ''Blood Donor''. Utilize color coding to distinguish
+  between ''Sex'' (male/female) for better clarity.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Age'', ''ALB'', ''CHOL'', ''Sex'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Medical professionals, researchers studying Hepatitis C, data analysts in healthcare
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify patterns related to age, albumin, and cholesterol levels among different
+  categories like ''Blood Donor'' and highlight unusual ''CHOL'' levels and trends/anomalies
+  in ''ALB'' values
+
+  <end of purpose>'
+07_questions: '1. Do you prefer any specific color palette for distinguishing between
+  ''Sex'' categories?
+
+  2. How would you like the key data points with unusual ''CHOL'' levels to be annotated
+  (e.g., specific labels, symbols)?
+
+  3. Do you have any preferences for the size scale of the bubbles representing ''CHOL''
+  levels?
+
+  4. Should the highlights for trends or anomalies in ''ALB'' values be in a specific
+  color or style?
+
+  5. Do you have any preferences for the font size or style of the text annotations?
+
+  6. Would you like a legend to be included, and if so, where should it be positioned
+  on the chart?
+
+  7. Do you prefer a specific layout or aspect ratio for the chart?
+
+  8. Is there a specific range or format you prefer for the ''Age'' and ''ALB'' axes?
+
+  9. Do you want gridlines to be included in the chart, and if so, any specific styling?
+
+  10. Should there be any specific titles or labels for the axes and chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bubble chart to visualize the Hepatitis C Prediction\
+  \ Dataset. Use 'Age' on the X-axis and 'ALB' on the Y-axis. The size of bubbles\
+  \ should represent 'CHOL' levels. Include text annotations for key data points to\
+  \ highlight unusual 'CHOL' levels, and add highlights to emphasize trends or anomalies\
+  \ in 'ALB' values. This will help to identify patterns related to age, albumin,\
+  \ and cholesterol levels among the different categories like 'Blood Donor'. Utilize\
+  \ color coding to distinguish between 'Sex' (male/female) for better clarity.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nIdentify patterns related to age, albumin, and cholesterol levels among\
+  \ different categories like 'Blood Donor' and highlight unusual 'CHOL' levels and\
+  \ trends/anomalies in 'ALB' values\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you prefer any specific color palette for distinguishing between\
+  \ 'Sex' categories?\n2. How would you like the key data points with unusual 'CHOL'\
+  \ levels to be annotated (e.g., specific labels, symbols)?\n3. Do you have any preferences\
+  \ for the size scale of the bubbles representing 'CHOL' levels?\n4. Should the highlights\
+  \ for trends or anomalies in 'ALB' values be in a specific color or style?\n5. Do\
+  \ you have any preferences for the font size or style of the text annotations?\n\
+  6. Would you like a legend to be included, and if so, where should it be positioned\
+  \ on the chart?\n7. Do you prefer a specific layout or aspect ratio for the chart?\n\
+  8. Is there a specific range or format you prefer for the 'Age' and 'ALB' axes?\n\
+  9. Do you want gridlines to be included in the chart, and if so, any specific styling?\n\
+  10. Should there be any specific titles or labels for the axes and chart?\n<end\
+  \ service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Specific labels for unusual ''CHOL'' levels.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, include a legend. I am not sure about the position.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. Yes, include gridlines. I do not know the styling.
+
+  10. Yes, include titles and labels for the axes and chart.'

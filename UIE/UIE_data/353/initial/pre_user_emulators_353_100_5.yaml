@@ -1,0 +1,95 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Area chart
+
+  * Column chart
+
+  * Bar chart
+
+  * Scatter plot
+
+  * Spline chart'
+- 732
+- 708
+- 24
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 554
+- 416
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/353.csv'': {''summary'': {''Column'': [''REPORTDATE;VALUE''],
+  ''Data Type'': [dtype(''O'')], ''Missing Values'': [0], ''Unique Values'': [2111]},
+  ''sample_data'': {''REPORTDATE;VALUE'': [''30.12.2013;3457625638'', ''31.12.2013;3417092149'',
+  ''01.01.2014;3417092149'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Virtual internship at Sberbank
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Column chart'
+- '* Spline chart'
+- '* Area chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Column chart'
+- '* Spline chart'
+- '* Area chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- I have data that includes report dates and their corresponding values from a Sberbank
+  internship project. Please create a scatter plot where the x-axis represents the
+  REPORTDATE and the y-axis represents the VALUE. Ensure that the dates are correctly
+  formatted in a chronological order on the x-axis, and the values are accurately
+  plotted on the y-axis. Highlight trends if any, and ensure the chart is clean and
+  easy to read, with labeled axes and title. The scatter plot should help visualizing
+  any patterns or anomalies in the data over time.
+- 397
+- 291
+- 106

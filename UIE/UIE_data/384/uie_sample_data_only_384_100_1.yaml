@@ -1,0 +1,254 @@
+02_initial_prompt: 'Create a bar chart that compares R&D Investment among different
+  countries. Use text annotations to display the investment values for the top 3 countries:
+  United States, China, and Japan, and highlight these bars in different colors. Additionally,
+  show R&D Investment as a percentage of GDP for added context. This visualization
+  will help analyze government spending on R&D and emphasize the importance of investment
+  in innovation. Include contextual notes to explain the significance of these investments
+  related to economic growth and technological advancements. The x-axis should list
+  the countries, and the y-axis should measure the investment in billion USD.'
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the accurate data and user request, your task is to delve into the user request
+  to figure out the (1) data attributes needed for data visualization, (2) select
+  the most suitable task that the user is willing to do from the list of various tasks
+  in data visualization, (3) specifically figure out the purpose of the user''s request
+  in data visualization, and (4) prospective audience of the data visualization.
+
+
+  <start of user request>
+
+  Create a bar chart that compares R&D Investment among different countries. Use text
+  annotations to display the investment values for the top 3 countries: United States,
+  China, and Japan, and highlight these bars in different colors. Additionally, show
+  R&D Investment as a percentage of GDP for added context. This visualization will
+  help analyze government spending on R&D and emphasize the importance of investment
+  in innovation. Include contextual notes to explain the significance of these investments
+  related to economic growth and technological advancements. The x-axis should list
+  the countries, and the y-axis should measure the investment in billion USD.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/384.csv'': {''summary'': {''Column'': [''Country'', ''R&D
+  Investment (Billion USD)'', ''R&D Investment as % of GDP''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0], ''Unique
+  Values'': [10, 10, 9]}, ''sample_data'': {''Country'': [''United States'', ''China'',
+  ''Japan''], ''R&D Investment (Billion USD)'': [581.0, 378.0, 179.0], ''R&D Investment
+  as % of GDP'': [2.8, 2.2, 3.4]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be possible normally.'
+04_response_w_attributes_task_purpose: "{\n \"Data Attribute\": [\"Country\", \"R&D\
+  \ Investment (Billion USD)\", \"R&D Investment as % of GDP\"],\n \"Task\": \"Comparison\
+  \ By Factor\",\n \"Purpose\": \"Analyze government spending on R&D and emphasize\
+  \ the importance of investment in innovation\",\n \"Audience\": \"Policy makers,\
+  \ economists, researchers, and the general public interested in economic growth\
+  \ and technological advancements\"\n}"
+05_audience: Policy makers, economists, researchers, and the general public interested
+  in economic growth and technological advancements
+05_data_attributes:
+- Country
+- R&D Investment (Billion USD)
+- R&D Investment as % of GDP
+05_purpose: Analyze government spending on R&D and emphasize the importance of investment
+  in innovation
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/384.csv'': {''summary'': {''Column'': [''Country'', ''R&D
+  Investment (Billion USD)'', ''R&D Investment as % of GDP''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0], ''Unique
+  Values'': [10, 10, 9]}, ''sample_data'': {''Country'': [''United States'', ''China'',
+  ''Japan''], ''R&D Investment (Billion USD)'': [581.0, 378.0, 179.0], ''R&D Investment
+  as % of GDP'': [2.8, 2.2, 3.4]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bar chart that compares R&D Investment among different countries. Use text
+  annotations to display the investment values for the top 3 countries: United States,
+  China, and Japan, and highlight these bars in different colors. Additionally, show
+  R&D Investment as a percentage of GDP for added context. This visualization will
+  help analyze government spending on R&D and emphasize the importance of investment
+  in innovation. Include contextual notes to explain the significance of these investments
+  related to economic growth and technological advancements. The x-axis should list
+  the countries, and the y-axis should measure the investment in billion USD.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country'', ''R&D Investment (Billion USD)'', ''R&D Investment as % of GDP'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Policy makers, economists, researchers, and the general public interested in economic
+  growth and technological advancements
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze government spending on R&D and emphasize the importance of investment in
+  innovation
+
+  <end of purpose>'
+07_questions: '1. Do you have specific colors in mind for highlighting the bars representing
+  the top 3 countries?
+
+  2. What font style and size would you prefer for the text annotations?
+
+  3. Where would you like to position the text annotations on each bar?
+
+  4. Do you have a preference for the order in which countries appear on the x-axis?
+
+  5. Are there any specific types of contextual notes or examples you want to include
+  to explain the significance of the investments?
+
+  6. Would you prefer a particular style or format for the contextual notes (e.g.,
+  tooltip, footnote)?
+
+  7. Should the y-axis for R&D Investment as a percentage of GDP be on the secondary
+  axis or incorporated directly within the chart?
+
+  8. Are there any specific styling preferences for the chart, such as color scheme,
+  grid lines, or background?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart that compares R&D Investment among\
+  \ different countries. Use text annotations to display the investment values for\
+  \ the top 3 countries: United States, China, and Japan, and highlight these bars\
+  \ in different colors. Additionally, show R&D Investment as a percentage of GDP\
+  \ for added context. This visualization will help analyze government spending on\
+  \ R&D and emphasize the importance of investment in innovation. Include contextual\
+  \ notes to explain the significance of these investments related to economic growth\
+  \ and technological advancements. The x-axis should list the countries, and the\
+  \ y-axis should measure the investment in billion USD.\n<end of user request>\n\n\
+  Imagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nAnalyze government\
+  \ spending on R&D and emphasize the importance of investment in innovation\n<end\
+  \ of purpose>\n\n<start service provider message>\n1. Do you have specific colors\
+  \ in mind for highlighting the bars representing the top 3 countries?\n2. What font\
+  \ style and size would you prefer for the text annotations?\n3. Where would you\
+  \ like to position the text annotations on each bar?\n4. Do you have a preference\
+  \ for the order in which countries appear on the x-axis?\n5. Are there any specific\
+  \ types of contextual notes or examples you want to include to explain the significance\
+  \ of the investments?\n6. Would you prefer a particular style or format for the\
+  \ contextual notes (e.g., tooltip, footnote)?\n7. Should the y-axis for R&D Investment\
+  \ as a percentage of GDP be on the secondary axis or incorporated directly within\
+  \ the chart?\n8. Are there any specific styling preferences for the chart, such\
+  \ as color scheme, grid lines, or background?\n<end service provider message>\n\n\
+  Also, remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure about specific colors. Maybe you can choose some that
+  will make the bars stand out clearly.
+
+  2. I do not have a specific preference. A legible font that fits well within the
+  chart would be good.
+
+  3. I am not sure, wherever it looks best and is most readable.
+
+  4. I have no specific preference for the order on the x-axis.
+
+  5. Maybe an example or note on how R&D investment drives technological advancements
+  and economic growth.
+
+  6. I am not sure about the format for contextual notes.
+
+  7. I do not know, whichever way would be more informative and clear.
+
+  8. I have no specific styling preferences for the chart.'

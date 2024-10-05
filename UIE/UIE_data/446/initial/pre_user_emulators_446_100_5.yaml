@@ -1,0 +1,161 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Lollipop chart
+
+  * Bubble chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Line chart
+
+  * Spline chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 1826
+- 1750
+- 76
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1596
+- 1457
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/446.csv'': {''summary'': {''Column'': [''incident_number'',
+  ''date_time_of_call'', ''cal_year'', ''fin_year'', ''type_of_incident'', ''pump_count'',
+  ''pump_hours_total'', ''hourly_notional_cost'', ''incident_notional_cost'', ''final_description'',
+  ''animal_group_parent'', ''originof_call'', ''property_type'', ''property_category'',
+  ''special_service_type_category'', ''special_service_type'', ''ward_code'', ''ward'',
+  ''borough_code'', ''borough'', ''stn_ground_name'', ''uprn'', ''street'', ''usrn'',
+  ''postcode_district'', ''easting_m'', ''northing_m'', ''easting_rounded'', ''northing_rounded'',
+  ''latitude'', ''longitude''], ''Data Type'': [dtype(''float64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [3478, 0, 0, 0, 0,
+  50, 51, 0, 51, 5, 0, 0, 0, 0, 0, 0, 10, 10, 9, 9, 0, 4862, 0, 1156, 0, 3843, 3843,
+  0, 0, 3843, 3843], ''Unique Values'': [4066, 7533, 13, 14, 1, 4, 12, 11, 71, 4555,
+  28, 8, 180, 7, 4, 24, 709, 1253, 37, 70, 107, 1452, 5804, 5069, 272, 3430, 3380,
+  524, 420, 3632, 3633]}, ''sample_data'': {''incident_number'': [139091.0, 275091.0,
+  2075091.0], ''date_time_of_call'': [''01/01/2009 03:01'', ''01/01/2009 08:51'',
+  ''04/01/2009 10:07''], ''cal_year'': [2009, 2009, 2009], ''fin_year'': [''2008/09'',
+  ''2008/09'', ''2008/09''], ''type_of_incident'': [''Special Service'', ''Special
+  Service'', ''Special Service''], ''pump_count'': [1.0, 1.0, 1.0], ''pump_hours_total'':
+  [2.0, 1.0, 1.0], ''hourly_notional_cost'': [255, 255, 255], ''incident_notional_cost'':
+  [510.0, 255.0, 255.0], ''final_description'': [''Redacted'', ''Redacted'', ''Redacted''],
+  ''animal_group_parent'': [''Dog'', ''Fox'', ''Dog''], ''originof_call'': [''Person
+  (land line)'', ''Person (land line)'', ''Person (mobile)''], ''property_type'':
+  [''House - single occupancy'', ''Railings'', ''Pipe or drain''], ''property_category'':
+  [''Dwelling'', ''Outdoor Structure'', ''Outdoor Structure''], ''special_service_type_category'':
+  [''Other animal assistance'', ''Other animal assistance'', ''Animal rescue from
+  below ground''], ''special_service_type'': [''Animal assistance involving livestock
+  - Other action'', ''Animal assistance involving livestock - Other action'', ''Animal
+  rescue from below ground - Domestic pet''], ''ward_code'': [''E05011467'', ''E05000169'',
+  ''E05000558''], ''ward'': [''Crystal Palace & Upper Norwood'', ''Woodside'', ''Carshalton
+  Central''], ''borough_code'': [''E09000008'', ''E09000008'', ''E09000029''], ''borough'':
+  [''Croydon'', ''Croydon'', ''Sutton''], ''stn_ground_name'': [''Norbury'', ''Woodside'',
+  ''Wallington''], ''uprn'': [nan, nan, nan], ''street'': [''Waddington Way'', ''Grasmere
+  Road'', ''Mill Lane''], ''usrn'': [20500146.0, nan, nan], ''postcode_district'':
+  [''SE19'', ''SE25'', ''SM5''], ''easting_m'': [nan, 534785.0, 528041.0], ''northing_m'':
+  [nan, 167546.0, 164923.0], ''easting_rounded'': [532350, 534750, 528050], ''northing_rounded'':
+  [170050, 167550, 164950], ''latitude'': [nan, 51.39095371, 51.36894086], ''longitude'':
+  [nan, -0.064166887, -0.161985191]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  animal rescues
+
+  zoology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Pie chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Pie chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Box chart'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Choropleth map'
+- '* Donut chart'
+- '* Pie chart'
+- '* Histogram'
+- '* Geographic heatmap'
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+- '* Column chart'
+- '* Bar chart'
+- '* Heatmap'
+- '* Spline chart'
+- '* Lollipop chart'
+- '* Box chart'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Choropleth map'
+- '* Donut chart'
+- '* Pie chart'
+2. initial_prompt: !!python/tuple
+- Please create a pie chart to visualize the distribution of property categories involved
+  in animal rescues. Highlight categories like 'Dwelling', 'Outdoor Structure', and
+  others from the provided data. This will help better understand the common locations
+  where animal rescues are needed. Include percentages for each category to make the
+  data clear. Ensure the chart is visually appealing with distinct colors and labels
+  for each segment. This would be incredibly useful for our zoology team to focus
+  on areas that need more attention in our upcoming report. Thank you!
+- 1435
+- 1332
+- 103

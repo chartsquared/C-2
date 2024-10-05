@@ -1,0 +1,299 @@
+02_initial_prompt: Create a bar chart to visualize the top 10 countries based on Total
+  Cases of COVID-19. Use different colors to highlight the top three countries. Include
+  text annotations for Total Cases, Total Deaths, and Total Recovered for these top
+  three countries to focus attention on them. The x-axis should represent countries,
+  and the y-axis should represent the number of cases. This visualization aims to
+  provide a clear comparison of the COVID-19 impact across these countries, aiding
+  in understanding the spread and severity of the pandemic.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bar chart to visualize the top 10 countries based on Total Cases of COVID-19.
+  Use different colors to highlight the top three countries. Include text annotations
+  for Total Cases, Total Deaths, and Total Recovered for these top three countries
+  to focus attention on them. The x-axis should represent countries, and the y-axis
+  should represent the number of cases. This visualization aims to provide a clear
+  comparison of the COVID-19 impact across these countries, aiding in understanding
+  the spread and severity of the pandemic.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/265.csv'': {''summary'': {''Column'': [''#'', ''Country,\nOther'',
+  ''Total\nCases'', ''Total\nDeaths'', ''New\nDeaths'', ''Total\nRecovered'', ''Active\nCases'',
+  ''Serious,\nCritical'', ''Tot Cases/\n1M pop'', ''Deaths/\n1M pop'', ''Total\nTests'',
+  ''Tests/\n1M pop'', ''Population''], ''Data Type'': [dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 5, 227, 16, 15, 83, 2, 7, 16, 16, 2], ''Unique Values'': [230,
+  230, 230, 210, 3, 214, 196, 77, 228, 205, 213, 214, 228]}, ''sample_data'': {''#'':
+  [1, 2, 3], ''Country,\nOther'': [''USA'', ''India'', ''France''], ''Total\nCases'':
+  [''98,166,904'', ''44,587,307'', ''35,342,950''], ''Total\nDeaths'': [''1,084,282'',
+  ''528,629'', ''155,078''], ''New\nDeaths'': [nan, nan, nan], ''Total\nRecovered'':
+  [''94,962,112'', ''44,019,095'', ''34,527,115''], ''Active\nCases'': [''2,120,510'',
+  ''39,583'', ''660,757''], ''Serious,\nCritical'': [''2,970'', ''698'', ''869''],
+  ''Tot Cases/\n1M pop'': [''293,206'', ''31,698'', ''538,892''], ''Deaths/\n1M pop'':
+  [''3,239'', ''376'', ''2,365''], ''Total\nTests'': [''1,118,158,870'', ''894,416,853'',
+  ''271,490,188''], ''Tests/\n1M pop'': [''3,339,729'', ''635,857'', ''4,139,547''],
+  ''Population'': [''334,805,269'', ''1,406,631,776'', ''65,584,518'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country,\nOther", "Total\nCases", "Total\nDeaths", "Total\nRecovered"],
+
+  "Task": "Focus on Identifying extreme",
+
+  "Purpose": "Provide a clear comparison of the COVID-19 impact across the top 10
+  countries, highlighting the most affected ones to aid in understanding the spread
+  and severity of the pandemic.",
+
+  "Audience": "Public health officials, policymakers, researchers, and the general
+  public interested in understanding the COVID-19 pandemic impact."
+
+  }'
+05_audience: Public health officials, policymakers, researchers, and the general public
+  interested in understanding the COVID-19 pandemic impact.
+05_data_attributes:
+- 'Country,
+
+  Other'
+- 'Total
+
+  Cases'
+- 'Total
+
+  Deaths'
+- 'Total
+
+  Recovered'
+05_purpose: Provide a clear comparison of the COVID-19 impact across the top 10 countries,
+  highlighting the most affected ones to aid in understanding the spread and severity
+  of the pandemic.
+05_task: Focus on Identifying extreme
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/265.csv'': {''summary'': {''Column'': [''#'', ''Country,\nOther'',
+  ''Total\nCases'', ''Total\nDeaths'', ''New\nDeaths'', ''Total\nRecovered'', ''Active\nCases'',
+  ''Serious,\nCritical'', ''Tot Cases/\n1M pop'', ''Deaths/\n1M pop'', ''Total\nTests'',
+  ''Tests/\n1M pop'', ''Population''], ''Data Type'': [dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 5, 227, 16, 15, 83, 2, 7, 16, 16, 2], ''Unique Values'': [230,
+  230, 230, 210, 3, 214, 196, 77, 228, 205, 213, 214, 228]}, ''sample_data'': {''#'':
+  [1, 2, 3], ''Country,\nOther'': [''USA'', ''India'', ''France''], ''Total\nCases'':
+  [''98,166,904'', ''44,587,307'', ''35,342,950''], ''Total\nDeaths'': [''1,084,282'',
+  ''528,629'', ''155,078''], ''New\nDeaths'': [nan, nan, nan], ''Total\nRecovered'':
+  [''94,962,112'', ''44,019,095'', ''34,527,115''], ''Active\nCases'': [''2,120,510'',
+  ''39,583'', ''660,757''], ''Serious,\nCritical'': [''2,970'', ''698'', ''869''],
+  ''Tot Cases/\n1M pop'': [''293,206'', ''31,698'', ''538,892''], ''Deaths/\n1M pop'':
+  [''3,239'', ''376'', ''2,365''], ''Total\nTests'': [''1,118,158,870'', ''894,416,853'',
+  ''271,490,188''], ''Tests/\n1M pop'': [''3,339,729'', ''635,857'', ''4,139,547''],
+  ''Population'': [''334,805,269'', ''1,406,631,776'', ''65,584,518'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bar chart to visualize the top 10 countries based on Total Cases of COVID-19.
+  Use different colors to highlight the top three countries. Include text annotations
+  for Total Cases, Total Deaths, and Total Recovered for these top three countries
+  to focus attention on them. The x-axis should represent countries, and the y-axis
+  should represent the number of cases. This visualization aims to provide a clear
+  comparison of the COVID-19 impact across these countries, aiding in understanding
+  the spread and severity of the pandemic.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country,\nOther'', ''Total\nCases'', ''Total\nDeaths'', ''Total\nRecovered'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Public health officials, policymakers, researchers, and the general public interested
+  in understanding the COVID-19 pandemic impact.
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying extreme
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Provide a clear comparison of the COVID-19 impact across the top 10 countries, highlighting
+  the most affected ones to aid in understanding the spread and severity of the pandemic.
+
+  <end of purpose>'
+07_questions: '1. Do you have any preference for the colors used to highlight the
+  top three countries?
+
+  2. Would you like specific font styles or sizes for the text annotations?
+
+  3. Should the x-axis labels be rotated for better readability? If so, what angle
+  would you prefer?
+
+  4. Do you have a preferred ordering for the countries on the x-axis (e.g., descending
+  order of Total Cases)?
+
+  5. Would you like gridlines on the chart? If yes, should they be major, minor, or
+  both?
+
+  6. Is there any specific title or subtitle you would like to include for the chart?
+
+  7. Do you want legend placement to be in any specific location on the chart?
+
+  8. Should the data values (Total Cases, Total Deaths, Total Recovered) for the top
+  three countries be displayed in a particular format (e.g., comma-separated, abbreviated
+  with ''K'', ''M'')?
+
+  9. Do you have any preferences for the background color or border style of the chart?
+
+  10. Would you require any additional labels or descriptions on the chart to enhance
+  clarity?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart to visualize the top 10 countries\
+  \ based on Total Cases of COVID-19. Use different colors to highlight the top three\
+  \ countries. Include text annotations for Total Cases, Total Deaths, and Total Recovered\
+  \ for these top three countries to focus attention on them. The x-axis should represent\
+  \ countries, and the y-axis should represent the number of cases. This visualization\
+  \ aims to provide a clear comparison of the COVID-19 impact across these countries,\
+  \ aiding in understanding the spread and severity of the pandemic.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nProvide a clear\
+  \ comparison of the COVID-19 impact across the top 10 countries, highlighting the\
+  \ most affected ones to aid in understanding the spread and severity of the pandemic.\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have any preference\
+  \ for the colors used to highlight the top three countries?\n2. Would you like specific\
+  \ font styles or sizes for the text annotations?\n3. Should the x-axis labels be\
+  \ rotated for better readability? If so, what angle would you prefer?\n4. Do you\
+  \ have a preferred ordering for the countries on the x-axis (e.g., descending order\
+  \ of Total Cases)?\n5. Would you like gridlines on the chart? If yes, should they\
+  \ be major, minor, or both?\n6. Is there any specific title or subtitle you would\
+  \ like to include for the chart?\n7. Do you want legend placement to be in any specific\
+  \ location on the chart?\n8. Should the data values (Total Cases, Total Deaths,\
+  \ Total Recovered) for the top three countries be displayed in a particular format\
+  \ (e.g., comma-separated, abbreviated with 'K', 'M')?\n9. Do you have any preferences\
+  \ for the background color or border style of the chart?\n10. Would you require\
+  \ any additional labels or descriptions on the chart to enhance clarity?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please rotate the x-axis labels. 45 degrees should be fine.
+
+  4. Yes, descending order of Total Cases.
+
+  5. Yes, major gridlines should be fine.
+
+  6. Title: "Top 10 Countries by COVID-19 Total Cases"
+
+  7. I have no specific preference.
+
+  8. Comma-separated values would be good.
+
+  9. I have no specific preference.
+
+  10. No, that should be enough.'

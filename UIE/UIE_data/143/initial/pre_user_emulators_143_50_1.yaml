@@ -1,0 +1,78 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Pie chart
+
+  * Line chart
+
+  * Box chart
+
+  * Choropleth map'
+- 1010
+- 985
+- 25
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 838
+- 699
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/143.csv': {'summary': {'Column':\
+  \ ['Index ', 'distict_name', 'member ', 'party ', 'prior_experience ', 'education\
+  \ ', 'assumed_office ', 'residence ', 'born '], 'Data Type': [dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 4, 4, 4, 4, 4, 4, 4], 'Unique Values': [435, 435, 431,\
+  \ 2, 281, 416, 48, 375, 426]}, 'sample_data': {'Index ': [1, 2, 3], 'distict_name':\
+  \ ['Alabama 1', 'Alabama 2', 'Alabama 3'], 'member ': ['Jerry Carl', 'Barry Moore',\
+  \ 'Mike Rogers'], 'party ': ['Republican', 'Republican', 'Republican'], 'prior_experience\
+  \ ': ['Mobile County Commission ', 'Alabama House of Representatives', 'Alabama\
+  \ House of Representatives'], 'education ': ['Florida Gateway College', 'Enterprise\
+  \ State Community College (AS)\\r\\nAuburn University (BS)', 'Jacksonville State\
+  \ University (BA, MPA)\\r\\nBirmingham School of Law (JD)'], 'assumed_office ':\
+  \ ['2021', '2021', '2003'], 'residence ': ['Mobile', 'Enterprise', 'Anniston '],\
+  \ 'born ': ['June 17, 1958 (age 64)', 'September 26, 1966 (age 55)', 'July 16, 1958\
+  \ (age 64)']}}}\n<end of data example format>\n\n<start of annotations format>\n\
+  ['<start of the annotation list>', '1. Text Annotations:', 'Description: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.', 'Purpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.', 'Other Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.', '3. Highlights:',\
+  \ 'Description: Highlights modify the appearance of chart elements (e.g., size,\
+  \ color) to emphasize or reduce their importance.', 'Purpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually', '<end of the annotation\
+  \ list>']\n<end of annotations format>\n\n<start of data details format>\nU.S. 117th\
+  \ House of Representatives \nlaw-and-politics\n<end of data details format>\n\n\
+  Given a data format, imagine a chart that visualizes this data as the final output\
+  \ you want from the service provider.\nIt MUST be a chart that can be created using\
+  \ only data columns.\nConsider what purpose the data has and the practical purpose\
+  \ of visualization and include it in the instructions.\nYou need to imagine a chart\
+  \ with * Bar chart and given annotations that utilizes the data format.\nIf there\
+  \ are multiple given data formats, imagine a chart with * Bar chart and given annotations\
+  \ that utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data. \nTo emulate a real-world user your instruction\
+  \ should be 50 in size (word count). Do not include data path in the instruction.\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart visualizing the number of representatives per district from the
+  U.S. 117th House. Use colors to distinguish their party affiliation (Republican
+  or Democrat). Include annotations for those with the longest-held positions.
+- 828
+- 783
+- 45

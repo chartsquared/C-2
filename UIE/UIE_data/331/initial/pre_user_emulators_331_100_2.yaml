@@ -1,0 +1,95 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Histogram
+
+  * Box chart'
+- 1430
+- 1404
+- 26
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1253
+- 1114
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/331.csv': {'summary': {'Column':\
+  \ ['ID', 'Name', 'Sequence', 'Molecular_Weight', 'Isoelectric_Point', 'Protein_Length',\
+  \ 'Amino_Acid_Composition', 'Hydrophobicity'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('float64'), dtype('int64'), dtype('O'), dtype('float64')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [1000, 106, 1000,\
+  \ 990, 834, 378, 996, 975]}, 'sample_data': {'ID': ['WP_369686368.1', 'WP_369686367.1',\
+  \ 'WP_369686366.1'], 'Name': ['ATP-binding cassette domain-containing protein, partial\
+  \ [Pseudomonas aeruginosa]', 'aldehyde dehydrogenase family protein, partial [Pseudomonas\
+  \ aeruginosa]', 'hypothetical protein, partial [Pseudomonas aeruginosa]'], 'Sequence':\
+  \ ['MLELNFTQTLGSHTLTLNETLPASGITAIFGVSGAGKTSLINAISGLTRPQSGRIV', 'MQSRDNGKPLAEARGLVMSAAGTARYFAAACELLDGELPTPRQPDRLTLSRYEPLGVVAAIT',\
+  \ 'GGEYLEIIEAARDIRVELDAHNYISNILTKLGIDRPSGLTRVMDLASRHPEWHQYVSEVTDWLQPVVSDLMERLPENDTVD'],\
+  \ 'Molecular_Weight': [5756.543, 6617.5065, 9303.289199999996], 'Isoelectric_Point':\
+  \ [8.517643547058107, 6.106917762756347, 4.533444023132325], 'Protein_Length': [56,\
+  \ 62, 81], 'Amino_Acid_Composition': [\"{'M': 1, 'L': 8, 'E': 2, 'N': 3, 'F': 2,\
+  \ 'T': 8, 'Q': 2, 'G': 7, 'S': 6, 'H': 1, 'P': 2, 'A': 4, 'I': 5, 'V': 2, 'K': 1,\
+  \ 'R': 2}\", \"{'M': 2, 'Q': 2, 'S': 3, 'R': 6, 'D': 3, 'N': 1, 'G': 5, 'K': 1,\
+  \ 'P': 5, 'L': 8, 'A': 10, 'E': 4, 'V': 3, 'T': 4, 'Y': 2, 'F': 1, 'C': 1, 'I':\
+  \ 1}\", \"{'G': 4, 'E': 8, 'Y': 3, 'L': 9, 'I': 6, 'A': 4, 'R': 6, 'D': 8, 'V':\
+  \ 7, 'H': 3, 'N': 3, 'S': 5, 'T': 4, 'K': 1, 'P': 4, 'M': 2, 'W': 2, 'Q': 2}\"],\
+  \ 'Hydrophobicity': [0.3392857142857143, -0.146774193548387, -0.4061728395061729]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nPseudomonas aeruginosa\
+  \ Protein\nbiology\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nConsider what purpose the data has and the practical purpose of visualization\
+  \ and include it in the instructions.\nYou need to imagine a chart with * Stacked\
+  \ bar/column chart and given annotations that utilizes the data format.\nIf there\
+  \ are multiple given data formats, imagine a chart with * Stacked bar/column chart\
+  \ and given annotations that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Histogram'
+- '* Box chart'
+- '* Heatmap'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a stacked bar chart to visualize the amino acid composition of different
+  proteins from Pseudomonas aeruginosa. Each bar represents a protein, and sections
+  within the bar represent counts of each amino acid type. Annotate the chart with
+  data-driven elements highlighting proteins with the highest and lowest molecular
+  weights. Further, use highlights to differentiate between more and less hydrophobic
+  proteins. This visualization aims to compare the composition and properties of these
+  proteins, helping in biological analysis and interpretation. Make sure to label
+  axes and proteins clearly for better understanding.
+- 1297
+- 1191
+- 106

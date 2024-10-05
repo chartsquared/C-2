@@ -1,0 +1,112 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Parallel coordinates
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Histogram
+
+  * Box chart'
+- 926
+- 884
+- 42
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 728
+- 589
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/151.csv'': {''summary'': {''Column'': [''gender'', ''race/ethnicity'',
+  ''parental level of education'', ''lunch'', ''test preparation course'', ''math
+  score'', ''reading score'', ''writing score''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [2, 5, 6, 2, 2,
+  79, 71, 74]}, ''sample_data'': {''gender'': [''female'', ''male'', ''female''],
+  ''race/ethnicity'': [''group D'', ''group D'', ''group D''], ''parental level of
+  education'': [''some college'', "associate''s degree", ''some college''], ''lunch'':
+  [''standard'', ''standard'', ''free/reduced''], ''test preparation course'': [''completed'',
+  ''none'', ''none''], ''math score'': [59, 96, 57], ''reading score'': [70, 93, 76],
+  ''writing score'': [78, 87, 77]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Student performance prediction
+
+  education
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Grouped bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Grouped bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Heatmap'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Grouped bar/column chart'
+- '* Histogram'
+- '* Parallel coordinates'
+- '* Scatter plot'
+- '* Dot plot'
+- '* Bar chart'
+- '* Heatmap'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a grouped column chart to visualize the average scores of students in math,
+  reading, and writing across different races/ethnicities. Use data from Student performance
+  prediction. Group columns by race/ethnicity and have separate colored bars for each
+  subject. Label the x-axis with race/ethnicity groups and the y-axis with average
+  scores. Ensure the chart is easy to read and interpret, showcasing performance comparisons
+  among groups. Please include a legend to differentiate between subjects. Add a title
+  such as "Average Student Performance by Race/Ethnicity". This will help in understanding
+  educational disparities.
+- 588
+- 472
+- 116

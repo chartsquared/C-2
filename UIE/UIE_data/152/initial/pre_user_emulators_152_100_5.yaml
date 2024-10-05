@@ -1,0 +1,106 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Small multiples
+
+  * Scatter plot
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1165
+- 1143
+- 22
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n    \n3.\
+  \ Highlights:\nDescription: Highlights modify the appearance of chart elements (e.g.,\
+  \ size, color) to emphasize or reduce their importance.\nPurpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually\n<end of the annotation\
+  \ list>"
+- 989
+- 849
+- 140
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/152.csv'': {''summary'': {''Column'': [''Density'', ''BodyFat'',
+  ''Age'', ''Weight'', ''Height'', ''Neck'', ''Chest'', ''Abdomen'', ''Hip'', ''Thigh'',
+  ''Knee'', ''Ankle'', ''Biceps'', ''Forearm'', ''Wrist''], ''Data Type'': [dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0], ''Unique Values'': [218, 176, 51, 197, 48, 90, 174, 185, 152, 139, 90, 61,
+  104, 77, 44]}, ''sample_data'': {''Density'': [1.0708, 1.0853, 1.0414], ''BodyFat'':
+  [12.3, 6.1, 25.3], ''Age'': [23, 22, 22], ''Weight'': [154.25, 173.25, 154.0], ''Height'':
+  [67.75, 72.25, 66.25], ''Neck'': [36.2, 38.5, 34.0], ''Chest'': [93.1, 93.6, 95.8],
+  ''Abdomen'': [85.2, 83.0, 87.9], ''Hip'': [94.5, 98.7, 99.2], ''Thigh'': [59.0,
+  58.7, 59.6], ''Knee'': [37.3, 37.3, 38.9], ''Ankle'': [21.9, 23.4, 24.0], ''Biceps'':
+  [32.0, 30.5, 28.8], ''Forearm'': [27.4, 28.9, 25.2], ''Wrist'': [17.1, 18.2, 16.6]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Body Fat Prediction Dataset
+
+  health
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Box chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Box chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Histogram'
+- '* Scatter plot'
+- '* Line chart'
+- '* Small multiples'
+- '* Treemap'
+- '* Box chart'
+- '* Histogram'
+- '* Scatter plot'
+- '* Line chart'
+- '* Small multiples'
+- '* Treemap'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- I'd like to see a box plot visualizing the distribution of body fat percentage across
+  different age groups from the Body Fat Prediction Dataset. Please divide the age
+  groups into appropriate ranges (like 20-30, 30-40, etc.) and plot the body fat percentages
+  for each range on the y-axis. Use the x-axis to represent the different age groups.
+  Include whiskers to show the variability outside the upper and lower quartiles,
+  and ideally, highlight any outliers. This would help in understanding how body fat
+  distribution varies with age.
+- 833
+- 724
+- 109

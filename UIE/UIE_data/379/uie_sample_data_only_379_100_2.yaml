@@ -1,0 +1,192 @@
+02_initial_prompt: "Please create a scatter plot visualizing Sepal_Length and Petal_Length\
+  \ on the x and y axes, respectively, with different colors representing different\
+  \ Species. Annotate key data points to highlight values, drawing attention to outliers\
+  \ or extreme values in each species category. Additionally, use highlights to distinguish\
+  \ between species. The chart should help understand the distribution of Sepal and\
+  \ Petal Lengths by Species, aiding in biological analysis. Add a title \"Sepal and\
+  \ Petal Length Distribution by Species\" and ensure the annotations and highlights\
+  \ help focus the viewer\u2019s attention."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the accurate data and user request, your task is to delve into\
+  \ the user request to figure out the (1) data attributes needed for data visualization,\
+  \ (2) select the most suitable task that the user is willing to do from the list\
+  \ of various tasks in data visualization, (3) specifically figure out the purpose\
+  \ of the user's request in data visualization, and (4) prospective audience of the\
+  \ data visualization.\n\n<start of user request>\nPlease create a scatter plot visualizing\
+  \ Sepal_Length and Petal_Length on the x and y axes, respectively, with different\
+  \ colors representing different Species. Annotate key data points to highlight values,\
+  \ drawing attention to outliers or extreme values in each species category. Additionally,\
+  \ use highlights to distinguish between species. The chart should help understand\
+  \ the distribution of Sepal and Petal Lengths by Species, aiding in biological analysis.\
+  \ Add a title \"Sepal and Petal Length Distribution by Species\" and ensure the\
+  \ annotations and highlights help focus the viewer\u2019s attention.\n<end of user\
+  \ request>\n\n<start of data format>\n{'../Extra_datas/data/379.csv': {'summary':\
+  \ {'Column': ['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width', 'Species'],\
+  \ 'Data Type': [dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0], 'Unique Values': [35, 23, 43,\
+  \ 22, 3]}, 'sample_data': {'Sepal_Length': [5.1, 4.9, 4.7], 'Sepal_Width': [3.5,\
+  \ 3.0, 3.2], 'Petal_Length': [1.4, 1.4, 1.3], 'Petal_Width': [0.2, 0.2, 0.2], 'Species':\
+  \ ['setosa', 'setosa', 'setosa']}}}\n<end of data format>\n\n<start of various task\
+  \ types>\n{'Show External Context': 'Uncaptured data provided by the self-tracker\
+  \ to understand and explain a phenomenon shown in the data', 'Show Confirmation':\
+  \ 'Collected data confirms existing knowledge', 'Show Contradiction': 'Collected\
+  \ data contradicts existing knowledge', 'Focus on Identifying value': 'Explicitly\
+  \ specify the measured value, its range for one or more clearly identified data\
+  \ points, or the difference between two measured values', 'Focus on Identifying\
+  \ extreme': 'Explicitly state the identities of the data points possessing extreme\
+  \ values of the measure variable', 'Focus on Identifying references': 'Explicitly\
+  \ state the values of categorical variables, labels from the axes, or legends',\
+  \ 'Comparison by Time Segmentation': 'Compare measured values segmented by time',\
+  \ 'Comparison by Multiple services': 'Compare the same data type from two or more\
+  \ services', 'Comparison against external data': 'Bringing in external data for\
+  \ comparison', 'Comparison By Factor': 'Compare measured values by a factor (other\
+  \ than time)', 'Comparison By Instances': 'Compare two specific instances', 'Show\
+  \ Trend': 'Describe changes over time', 'Value judgement': 'Convey positive or negative\
+  \ connotations about the data', 'Distribution with variability': 'Explicitly state\
+  \ the variability of measured values', 'Distribution By Category': 'Explicitly describe\
+  \ the variation of measured values across all or most of the values of a categorical\
+  \ variable', 'Correlation': 'Specify the direct relationship between two variables\
+  \ (but not as comparison)', 'Outlier': 'Explicitly point out outliers or state the\
+  \ effect of outliers', 'Summarization of data': 'Summary of collected data (such\
+  \ as number of data points, duration of tracking, and averages)', 'Prediction/Forecasting':\
+  \ 'Predict the future based on the collected data'}\n<end of various task types>\n\
+  \nFor data attributes needed in data visualization, store them in query['Data Attribute'].\n\
+  Store the selected task from the task types in query['Task'].\nStore the purpose\
+  \ of visualization in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\
+  \nPlease reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be possible\
+  \ normally."
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"Sepal_Length\"\
+  , \"Petal_Length\", \"Species\"],\n  \"Task\": \"Distribution By Category\",\n \
+  \ \"Purpose\": \"Understand the distribution of Sepal and Petal Lengths by Species\
+  \ to aid in biological analysis\",\n  \"Audience\": \"Biologists and researchers\
+  \ analyzing species characteristics\"\n}"
+05_audience: Biologists and researchers analyzing species characteristics
+05_data_attributes:
+- Sepal_Length
+- Petal_Length
+- Species
+05_purpose: Understand the distribution of Sepal and Petal Lengths by Species to aid
+  in biological analysis
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/379.csv':\
+  \ {'summary': {'Column': ['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width',\
+  \ 'Species'], 'Data Type': [dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0], 'Unique Values':\
+  \ [35, 23, 43, 22, 3]}, 'sample_data': {'Sepal_Length': [5.1, 4.9, 4.7], 'Sepal_Width':\
+  \ [3.5, 3.0, 3.2], 'Petal_Length': [1.4, 1.4, 1.3], 'Petal_Width': [0.2, 0.2, 0.2],\
+  \ 'Species': ['setosa', 'setosa', 'setosa']}}}\n<end of data format>\n\n<start of\
+  \ data visualization instruction>\nPlease create a scatter plot visualizing Sepal_Length\
+  \ and Petal_Length on the x and y axes, respectively, with different colors representing\
+  \ different Species. Annotate key data points to highlight values, drawing attention\
+  \ to outliers or extreme values in each species category. Additionally, use highlights\
+  \ to distinguish between species. The chart should help understand the distribution\
+  \ of Sepal and Petal Lengths by Species, aiding in biological analysis. Add a title\
+  \ \"Sepal and Petal Length Distribution by Species\" and ensure the annotations\
+  \ and highlights help focus the viewer\u2019s attention.\n<end of data visualization\
+  \ instruction>\n\n<start of data attributes>\n['Sepal_Length', 'Petal_Length', 'Species']\n\
+  <end of data attributes>\n\n<start of prospective audience>\nBiologists and researchers\
+  \ analyzing species characteristics\n<end of prospective audience>\n\n<start of\
+  \ type of tasks>\nDistribution By Category\n<end of type of tasks>\n\n<start of\
+  \ purpose>\nUnderstand the distribution of Sepal and Petal Lengths by Species to\
+  \ aid in biological analysis\n<end of purpose>"
+07_questions: '1. Do you have a preferred color palette for differentiating between
+  species?
+
+  2. Should the annotations for key data points include exact values or just highlight
+  the points visually?
+
+  3. How would you like the outliers or extreme values to be marked? (e.g., with different
+  shapes, larger size, or labels)
+
+  4. What style of highlights do you prefer to distinguish between species? (e.g.,
+  background shading, borders)
+
+  5. Do you have a preferred font or style for the chart title and annotations?
+
+  6. Are there specific threshold values for Sepal_Length or Petal_Length that you
+  consider important for annotation or highlighting?
+
+  7. Do you prefer specific axis ranges or should the chart automatically adjust based
+  on the data?
+
+  8. Would you like gridlines on the chart? If so, in which style (e.g., dashed, solid)?
+
+  9. Do you have preferences for the chart legend placement or style?
+
+  10. Are there any additional labels or notes you''d like to include on the chart
+  (e.g., source of data, explanatory notes)?
+
+  '
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a scatter plot visualizing Sepal_Length\
+  \ and Petal_Length on the x and y axes, respectively, with different colors representing\
+  \ different Species. Annotate key data points to highlight values, drawing attention\
+  \ to outliers or extreme values in each species category. Additionally, use highlights\
+  \ to distinguish between species. The chart should help understand the distribution\
+  \ of Sepal and Petal Lengths by Species, aiding in biological analysis. Add a title\
+  \ \"Sepal and Petal Length Distribution by Species\" and ensure the annotations\
+  \ and highlights help focus the viewer\u2019s attention.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nUnderstand the distribution\
+  \ of Sepal and Petal Lengths by Species to aid in biological analysis\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a preferred color palette for\
+  \ differentiating between species?\n2. Should the annotations for key data points\
+  \ include exact values or just highlight the points visually?\n3. How would you\
+  \ like the outliers or extreme values to be marked? (e.g., with different shapes,\
+  \ larger size, or labels)\n4. What style of highlights do you prefer to distinguish\
+  \ between species? (e.g., background shading, borders)\n5. Do you have a preferred\
+  \ font or style for the chart title and annotations?\n6. Are there specific threshold\
+  \ values for Sepal_Length or Petal_Length that you consider important for annotation\
+  \ or highlighting?\n7. Do you prefer specific axis ranges or should the chart automatically\
+  \ adjust based on the data?\n8. Would you like gridlines on the chart? If so, in\
+  \ which style (e.g., dashed, solid)?\n9. Do you have preferences for the chart legend\
+  \ placement or style?\n10. Are there any additional labels or notes you'd like to\
+  \ include on the chart (e.g., source of data, explanatory notes)?\n\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Exact values would be helpful for annotations.
+
+  3. Different shapes would be great for marking outliers or extreme values.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. The chart should automatically adjust based on the data.
+
+  8. I am not sure.
+
+  9. I do not have a specific preference.
+
+  10. I do not have any additional labels or notes to include.
+
+  <end of user emulated response>'

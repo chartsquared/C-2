@@ -1,0 +1,268 @@
+02_initial_prompt: Create a grouped bar chart to visualize the blockchain job data
+  in India for 2022 from Glassdoor.com. Display the average salary range (lower and
+  upper limits) for different job titles across various companies and locations. Highlight
+  jobs that offer "Easy Apply" to show their accessibility. Include annotations to
+  specifically point out standout salaries and notable companies. This helps focus
+  on key job opportunities and salary expectations in the blockchain sector, assisting
+  job seekers in making informed decisions.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a grouped bar chart to visualize the blockchain job data in India for 2022
+  from Glassdoor.com. Display the average salary range (lower and upper limits) for
+  different job titles across various companies and locations. Highlight jobs that
+  offer "Easy Apply" to show their accessibility. Include annotations to specifically
+  point out standout salaries and notable companies. This helps focus on key job opportunities
+  and salary expectations in the blockchain sector, assisting job seekers in making
+  informed decisions.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/344.csv'': {''summary'': {''Column'': [''Title'', ''Company'',
+  ''Location'', ''Easy Apply'', ''Salary_Lower_Limit'', ''Salary_Upper_Limit''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0], ''Unique Values'': [23,
+  32, 12, 2, 9, 12]}, ''sample_data'': {''Title'': [''Consultant'', ''Blockchain Developer
+  Intern'', ''Trainer''], ''Company'': [''Infosys Limited'', ''Synergy Labs'', ''REGex
+  Software Services''], ''Location'': [''Bangalore'', ''Gurgaon'', ''Remote''], ''Easy
+  Apply'': [False, True, True], ''Salary_Lower_Limit'': [100000, 200000, 96000], ''Salary_Upper_Limit'':
+  [100000, 300000, 100000]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Title", "Company", "Location", "Easy Apply", "Salary_Lower_Limit",
+  "Salary_Upper_Limit"],
+
+  "Task": "Focus on Identifying value",
+
+  "Purpose": "Assist job seekers in making informed decisions by highlighting key
+  job opportunities and salary expectations in the blockchain sector",
+
+  "Audience": "Job seekers in the blockchain sector in India"
+
+  }'
+05_audience: Job seekers in the blockchain sector in India
+05_data_attributes:
+- Title
+- Company
+- Location
+- Easy Apply
+- Salary_Lower_Limit
+- Salary_Upper_Limit
+05_purpose: Assist job seekers in making informed decisions by highlighting key job
+  opportunities and salary expectations in the blockchain sector
+05_task: Focus on Identifying value
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/344.csv'': {''summary'': {''Column'': [''Title'', ''Company'',
+  ''Location'', ''Easy Apply'', ''Salary_Lower_Limit'', ''Salary_Upper_Limit''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0], ''Unique Values'': [23,
+  32, 12, 2, 9, 12]}, ''sample_data'': {''Title'': [''Consultant'', ''Blockchain Developer
+  Intern'', ''Trainer''], ''Company'': [''Infosys Limited'', ''Synergy Labs'', ''REGex
+  Software Services''], ''Location'': [''Bangalore'', ''Gurgaon'', ''Remote''], ''Easy
+  Apply'': [False, True, True], ''Salary_Lower_Limit'': [100000, 200000, 96000], ''Salary_Upper_Limit'':
+  [100000, 300000, 100000]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a grouped bar chart to visualize the blockchain job data in India for 2022
+  from Glassdoor.com. Display the average salary range (lower and upper limits) for
+  different job titles across various companies and locations. Highlight jobs that
+  offer "Easy Apply" to show their accessibility. Include annotations to specifically
+  point out standout salaries and notable companies. This helps focus on key job opportunities
+  and salary expectations in the blockchain sector, assisting job seekers in making
+  informed decisions.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Title'', ''Company'', ''Location'', ''Easy Apply'', ''Salary_Lower_Limit'', ''Salary_Upper_Limit'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Job seekers in the blockchain sector in India
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying value
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Assist job seekers in making informed decisions by highlighting key job opportunities
+  and salary expectations in the blockchain sector
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like specific companies or job titles to be highlighted in a certain
+  way?
+
+  3. Should the chart include a legend to indicate which bars represent which data
+  attributes?
+
+  4. Is there a specific way you want the salary ranges to be annotated on the chart?
+
+  5. Do you prefer displaying the data in a particular order (e.g., by company, location,
+  or salary range)?
+
+  6. Would you like to display the "Easy Apply" jobs with a distinct marker or color?
+
+  7. Is there a specific font style or size you prefer for annotations and labels?
+
+  8. Should we include any specific additional information in the annotations, such
+  as job responsibilities or company benefits?
+
+  9. Do you want grid lines on the chart for better readability?
+
+  10. Is there a preferred title for the chart or particular headings for the axes?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a grouped bar chart to visualize the blockchain\
+  \ job data in India for 2022 from Glassdoor.com. Display the average salary range\
+  \ (lower and upper limits) for different job titles across various companies and\
+  \ locations. Highlight jobs that offer \"Easy Apply\" to show their accessibility.\
+  \ Include annotations to specifically point out standout salaries and notable companies.\
+  \ This helps focus on key job opportunities and salary expectations in the blockchain\
+  \ sector, assisting job seekers in making informed decisions.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nAssist job seekers\
+  \ in making informed decisions by highlighting key job opportunities and salary\
+  \ expectations in the blockchain sector\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have a preferred color scheme for the chart?\n2. Would you\
+  \ like specific companies or job titles to be highlighted in a certain way?\n3.\
+  \ Should the chart include a legend to indicate which bars represent which data\
+  \ attributes?\n4. Is there a specific way you want the salary ranges to be annotated\
+  \ on the chart?\n5. Do you prefer displaying the data in a particular order (e.g.,\
+  \ by company, location, or salary range)?\n6. Would you like to display the \"Easy\
+  \ Apply\" jobs with a distinct marker or color?\n7. Is there a specific font style\
+  \ or size you prefer for annotations and labels?\n8. Should we include any specific\
+  \ additional information in the annotations, such as job responsibilities or company\
+  \ benefits?\n9. Do you want grid lines on the chart for better readability?\n10.\
+  \ Is there a preferred title for the chart or particular headings for the axes?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please highlight jobs from top companies like Infosys, TCS, and Wipro.
+
+  3. Yes, a legend would be helpful.
+
+  4. I am not sure.
+
+  5. Display the data by salary range.
+
+  6. Yes, use a distinct color for "Easy Apply" jobs.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. Yes, include grid lines for better readability.
+
+  10. "Blockchain Job Salaries in India (2022)" for the title, and "Job Titles" for
+  the X-axis and "Salary Range (INR)" for the Y-axis.'

@@ -1,0 +1,237 @@
+02_initial_prompt: "Create a heatmap to visualize the New York Housing Market dataset.\
+  \ Highlight correlations between PROPERTY SQFT, PRICE, BEDS, and BATHS across various\
+  \ localities. Use different shades to show high and low values\u2014darker shades\
+  \ for higher values and lighter for lower. Ensure the heatmap includes labels for\
+  \ the types of properties, such as Condos and Houses. The goal is to easily identify\
+  \ trends and outliers in the housing market. Also, include state and locality information\
+  \ for more insightful analysis. This will help in understanding where larger, more\
+  \ expensive homes are located."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a heatmap to visualize the New York Housing Market\
+  \ dataset. Highlight correlations between PROPERTY SQFT, PRICE, BEDS, and BATHS\
+  \ across various localities. Use different shades to show high and low values\u2014\
+  darker shades for higher values and lighter for lower. Ensure the heatmap includes\
+  \ labels for the types of properties, such as Condos and Houses. The goal is to\
+  \ easily identify trends and outliers in the housing market. Also, include state\
+  \ and locality information for more insightful analysis. This will help in understanding\
+  \ where larger, more expensive homes are located.\n<end of user request>\n\n<start\
+  \ of data format>\n{'../Extra_datas/data/209.csv': {'summary': {'Column': ['BROKERTITLE',\
+  \ 'TYPE', 'PRICE', 'BEDS', 'BATH', 'PROPERTYSQFT', 'ADDRESS', 'STATE', 'MAIN_ADDRESS',\
+  \ 'ADMINISTRATIVE_AREA_LEVEL_2', 'LOCALITY', 'SUBLOCALITY', 'STREET_NAME', 'LONG_NAME',\
+  \ 'FORMATTED_ADDRESS', 'LATITUDE', 'LONGITUDE'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('float64'), dtype('float64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('float64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [1036, 13, 1274, 27,\
+  \ 22, 1445, 4582, 308, 4583, 29, 11, 21, 174, 2731, 4550, 4196, 4118]}, 'sample_data':\
+  \ {'BROKERTITLE': ['Brokered by Douglas Elliman  -111 Fifth Ave', 'Brokered by Serhant',\
+  \ 'Brokered by Sowae Corp'], 'TYPE': ['Condo for sale', 'Condo for sale', 'House\
+  \ for sale'], 'PRICE': [315000, 195000000, 260000], 'BEDS': [2, 7, 4], 'BATH': [2.0,\
+  \ 10.0, 2.0], 'PROPERTYSQFT': [1400.0, 17545.0, 2015.0], 'ADDRESS': ['2 E 55th St\
+  \ Unit 803', 'Central Park Tower Penthouse-217 W 57th New York St Unit Penthouse',\
+  \ '620 Sinclair Ave'], 'STATE': ['New York, NY 10022', 'New York, NY 10019', 'Staten\
+  \ Island, NY 10312'], 'MAIN_ADDRESS': ['2 E 55th St Unit 803New York, NY 10022',\
+  \ 'Central Park Tower Penthouse-217 W 57th New York St Unit PenthouseNew York, NY\
+  \ 10019', '620 Sinclair AveStaten Island, NY 10312'], 'ADMINISTRATIVE_AREA_LEVEL_2':\
+  \ ['New York County', 'United States', 'United States'], 'LOCALITY': ['New York',\
+  \ 'New York', 'New York'], 'SUBLOCALITY': ['Manhattan', 'New York County', 'Richmond\
+  \ County'], 'STREET_NAME': ['East 55th Street', 'New York', 'Staten Island'], 'LONG_NAME':\
+  \ ['Regis Residence', 'West 57th Street', 'Sinclair Avenue'], 'FORMATTED_ADDRESS':\
+  \ ['Regis Residence, 2 E 55th St #803, New York, NY 10022, USA', '217 W 57th St,\
+  \ New York, NY 10019, USA', '620 Sinclair Ave, Staten Island, NY 10312, USA'], 'LATITUDE':\
+  \ [40.761255, 40.7663935, 40.5418051], 'LONGITUDE': [-73.9744834, -73.9809909, -74.1961086]}}}\n\
+  <end of data format>\n\n<start of various task types>\n{'Show External Context':\
+  \ 'Uncaptured data provided by the self-tracker to understand and explain a phenomenon\
+  \ shown in the data', 'Show Confirmation': 'Collected data confirms existing knowledge',\
+  \ 'Show Contradiction': 'Collected data contradicts existing knowledge', 'Focus\
+  \ on Identifying value': 'Explicitly specify the measured value, its range for one\
+  \ or more clearly identified data points, or the difference between two measured\
+  \ values', 'Focus on Identifying extreme': 'Explicitly state the identities of the\
+  \ data points possessing extreme values of the measure variable', 'Focus on Identifying\
+  \ references': 'Explicitly state the values of categorical variables, labels from\
+  \ the axes, or legends', 'Comparison by Time Segmentation': 'Compare measured values\
+  \ segmented by time', 'Comparison by Multiple services': 'Compare the same data\
+  \ type from two or more services', 'Comparison against external data': 'Bringing\
+  \ in external data for comparison', 'Comparison By Factor': 'Compare measured values\
+  \ by a factor (other than time)', 'Comparison By Instances': 'Compare two specific\
+  \ instances', 'Show Trend': 'Describe changes over time', 'Value judgement': 'Convey\
+  \ positive or negative connotations about the data', 'Distribution with variability':\
+  \ 'Explicitly state the variability of measured values', 'Distribution By Category':\
+  \ 'Explicitly describe the variation of measured values across all or most of the\
+  \ values of a categorical variable', 'Correlation': 'Specify the direct relationship\
+  \ between two variables (but not as comparison)', 'Outlier': 'Explicitly point out\
+  \ outliers or state the effect of outliers', 'Summarization of data': 'Summary of\
+  \ collected data (such as number of data points, duration of tracking, and averages)',\
+  \ 'Prediction/Forecasting': 'Predict the future based on the collected data'}\n\
+  <end of various task types>\n\nFor data attributes needed in data visualization,\
+  \ store them in query['Data Attribute']. Data attributes MUST match exactly the\
+  \ column names of the data.\nStore the selected task from the task types in query['Task'].\n\
+  Store the purpose of visualization in query['Purpose'].\nStore the prospective audience\
+  \ in query['Audience'].\n\nPlease reply in the same format without altering the\
+  \ key value.\n{'Data Attribute': None, 'Task': None, 'Purpose': None, 'Audience':\
+  \ None}\nBut, please make sure there is no ' in each keys and values. Use only \"\
+  \ for the response. But when you write a value sentence or each data attribute's\
+  \ title, you only can use '. Unless you are writing a sentence or each data attribute's\
+  \ title, you should never include ' in response. If there are multiple pieces of\
+  \ data, there is no need to reveal which file each is. Please consider that JSON\
+  \ conversion must be done properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["PROPERTY SQFT", "PRICE", "BEDS", "BATH", "LOCALITY", "TYPE",
+  "STATE"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify trends and outliers in the housing market to understand where
+  larger, more expensive homes are located",
+
+  "Audience": "Real estate analysts, home buyers, property investors, and urban planners"
+
+  }'
+05_audience: Real estate analysts, home buyers, property investors, and urban planners
+05_data_attributes:
+- PROPERTYSQFT
+- PRICE
+- BEDS
+- BATH
+- LOCALITY
+- TYPE
+- STATE
+05_purpose: Identify trends and outliers in the housing market to understand where
+  larger, more expensive homes are located
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/209.csv':\
+  \ {'summary': {'Column': ['BROKERTITLE', 'TYPE', 'PRICE', 'BEDS', 'BATH', 'PROPERTYSQFT',\
+  \ 'ADDRESS', 'STATE', 'MAIN_ADDRESS', 'ADMINISTRATIVE_AREA_LEVEL_2', 'LOCALITY',\
+  \ 'SUBLOCALITY', 'STREET_NAME', 'LONG_NAME', 'FORMATTED_ADDRESS', 'LATITUDE', 'LONGITUDE'],\
+  \ 'Data Type': [dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('float64'),\
+  \ dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'), dtype('float64')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique\
+  \ Values': [1036, 13, 1274, 27, 22, 1445, 4582, 308, 4583, 29, 11, 21, 174, 2731,\
+  \ 4550, 4196, 4118]}, 'sample_data': {'BROKERTITLE': ['Brokered by Douglas Elliman\
+  \  -111 Fifth Ave', 'Brokered by Serhant', 'Brokered by Sowae Corp'], 'TYPE': ['Condo\
+  \ for sale', 'Condo for sale', 'House for sale'], 'PRICE': [315000, 195000000, 260000],\
+  \ 'BEDS': [2, 7, 4], 'BATH': [2.0, 10.0, 2.0], 'PROPERTYSQFT': [1400.0, 17545.0,\
+  \ 2015.0], 'ADDRESS': ['2 E 55th St Unit 803', 'Central Park Tower Penthouse-217\
+  \ W 57th New York St Unit Penthouse', '620 Sinclair Ave'], 'STATE': ['New York,\
+  \ NY 10022', 'New York, NY 10019', 'Staten Island, NY 10312'], 'MAIN_ADDRESS': ['2\
+  \ E 55th St Unit 803New York, NY 10022', 'Central Park Tower Penthouse-217 W 57th\
+  \ New York St Unit PenthouseNew York, NY 10019', '620 Sinclair AveStaten Island,\
+  \ NY 10312'], 'ADMINISTRATIVE_AREA_LEVEL_2': ['New York County', 'United States',\
+  \ 'United States'], 'LOCALITY': ['New York', 'New York', 'New York'], 'SUBLOCALITY':\
+  \ ['Manhattan', 'New York County', 'Richmond County'], 'STREET_NAME': ['East 55th\
+  \ Street', 'New York', 'Staten Island'], 'LONG_NAME': ['Regis Residence', 'West\
+  \ 57th Street', 'Sinclair Avenue'], 'FORMATTED_ADDRESS': ['Regis Residence, 2 E\
+  \ 55th St #803, New York, NY 10022, USA', '217 W 57th St, New York, NY 10019, USA',\
+  \ '620 Sinclair Ave, Staten Island, NY 10312, USA'], 'LATITUDE': [40.761255, 40.7663935,\
+  \ 40.5418051], 'LONGITUDE': [-73.9744834, -73.9809909, -74.1961086]}}}\n<end of\
+  \ data format>\n\n<start of data visualization instruction>\nCreate a heatmap to\
+  \ visualize the New York Housing Market dataset. Highlight correlations between\
+  \ PROPERTY SQFT, PRICE, BEDS, and BATHS across various localities. Use different\
+  \ shades to show high and low values\u2014darker shades for higher values and lighter\
+  \ for lower. Ensure the heatmap includes labels for the types of properties, such\
+  \ as Condos and Houses. The goal is to easily identify trends and outliers in the\
+  \ housing market. Also, include state and locality information for more insightful\
+  \ analysis. This will help in understanding where larger, more expensive homes are\
+  \ located.\n<end of data visualization instruction>\n\n<start of data attributes>\n\
+  ['PROPERTY SQFT', 'PRICE', 'BEDS', 'BATH', 'LOCALITY', 'TYPE', 'STATE']\n<end of\
+  \ data attributes>\n\n<start of prospective audience>\nReal estate analysts, home\
+  \ buyers, property investors, and urban planners\n<end of prospective audience>\n\
+  \n<start of type of tasks>\nCorrelation\n<end of type of tasks>\n\n<start of purpose>\n\
+  Identify trends and outliers in the housing market to understand where larger, more\
+  \ expensive homes are located\n<end of purpose>"
+07_questions: '1. Do you have specific preferences regarding the color scheme for
+  the heatmap?
+
+  2. What size and resolution do you prefer for the heatmap?
+
+  3. Are there any specific font styles or sizes you prefer for the labels?
+
+  4. Should the heatmap include any specific annotations or markers for outliers?
+
+  5. Do you have a preference for the layout or orientation of the heatmap?
+
+  6. Would you like any additional legends or explanations included for better understanding
+  of the color gradations?
+
+  7. Are there any specific thresholds for ''high'' and ''low'' values that you would
+  like us to use for the different shades?
+
+  8. Should the labels for property types (e.g., Condos, Houses) be prominently displayed
+  in a particular way?
+
+  9. Is there a need to group or categorize localities in any specific manner on the
+  heatmap?
+
+  10. Are there any other specific visual elements you would like to include to enhance
+  the interpretability for your target audience?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap to visualize the New York Housing Market\
+  \ dataset. Highlight correlations between PROPERTY SQFT, PRICE, BEDS, and BATHS\
+  \ across various localities. Use different shades to show high and low values\u2014\
+  darker shades for higher values and lighter for lower. Ensure the heatmap includes\
+  \ labels for the types of properties, such as Condos and Houses. The goal is to\
+  \ easily identify trends and outliers in the housing market. Also, include state\
+  \ and locality information for more insightful analysis. This will help in understanding\
+  \ where larger, more expensive homes are located.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nIdentify trends and outliers in the\
+  \ housing market to understand where larger, more expensive homes are located\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have specific preferences\
+  \ regarding the color scheme for the heatmap?\n2. What size and resolution do you\
+  \ prefer for the heatmap?\n3. Are there any specific font styles or sizes you prefer\
+  \ for the labels?\n4. Should the heatmap include any specific annotations or markers\
+  \ for outliers?\n5. Do you have a preference for the layout or orientation of the\
+  \ heatmap?\n6. Would you like any additional legends or explanations included for\
+  \ better understanding of the color gradations?\n7. Are there any specific thresholds\
+  \ for 'high' and 'low' values that you would like us to use for the different shades?\n\
+  8. Should the labels for property types (e.g., Condos, Houses) be prominently displayed\
+  \ in a particular way?\n9. Is there a need to group or categorize localities in\
+  \ any specific manner on the heatmap?\n10. Are there any other specific visual elements\
+  \ you would like to include to enhance the interpretability for your target audience?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include specific annotations or markers for outliers.
+
+  5. I do not know.
+
+  6. Yes, additional legends or explanations for better understanding of the color
+  gradations would be helpful.
+
+  7. I am not sure.
+
+  8. Yes, the labels for property types (e.g., Condos, Houses) should be prominently
+  displayed.
+
+  9. I do not know.
+
+  10. I am not sure.'

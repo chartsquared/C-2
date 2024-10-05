@@ -1,0 +1,93 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1234
+- 1207
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1054
+- 915
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/211.csv': {'summary': {'Column':\
+  \ ['ParkID', 'PSA', 'Park', 'FQ', 'Score', 'Facility Type', 'Facility Name', 'Address',\
+  \ 'State', 'Zipcode', 'Floor Count', 'Square Feet', 'Perimeter Length', 'Acres',\
+  \ 'Longitude', 'Latitude'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64')], 'Missing Values': [0, 0, 0, 0, 0, 775, 775,\
+  \ 775, 775, 775, 4170, 775, 775, 775, 775, 775], 'Unique Values': [184, 7, 184,\
+  \ 38, 462, 10, 158, 105, 1, 22, 3, 158, 158, 158, 158, 158]}, 'sample_data': {'ParkID':\
+  \ [86, 13, 9], 'PSA': ['PSA4', 'PSA4', 'PSA4'], 'Park': ['Carl Larsen Park', 'Junipero\
+  \ Serra Playground', 'Rolph Nicol Playground'], 'FQ': ['FY05Q3', 'FY05Q3', 'FY05Q3'],\
+  \ 'Score': [0.795, 0.957, 0.864], 'Facility Type': ['Basketball Court', 'Ball Field',\
+  \ 'Dog Play Area'], 'Facility Name': ['Ocean View Basketball Courts', 'Glen ball\
+  \ fields', 'Douglass dog play area'], 'Address': ['Capitol & Montana St', 'Diamond\
+  \ & Farnum Street', '26th & Douglass Street'], 'State': ['CA', 'CA', 'CA'], 'Zipcode':\
+  \ [94112.0, 94131.0, 94114.0], 'Floor Count': [nan, nan, nan], 'Square Feet': [5572.02031431,\
+  \ 124520.486259, 70655.3372339], 'Perimeter Length': [311.98222779, 1891.67544541,\
+  \ 1153.01964642], 'Acres': [0.1279165, 2.85860846, 1.62202984], 'Longitude': [-122.45670775,\
+  \ -122.44059154, -122.43889466], 'Latitude': [37.71633478, 37.73600816, 37.74674101]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nSan Francisco Park Scores\n\
+  real-estate\n<end of data details format>\n\nGiven a data format, imagine a chart\
+  \ that visualizes this data as the final output you want from the service provider.\n\
+  Consider what purpose the data has and the practical purpose of visualization and\
+  \ include it in the instructions.\nYou need to imagine a chart with * Heatmap and\
+  \ given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Heatmap and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 100 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Geographic heatmap'
+- '* Heatmap'
+- '* Line chart'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Histogram'
+- '* Geographic heatmap'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Visualize park scores in San Francisco using a heatmap that highlights parks by
+  score and facility type. Include annotations for top-scoring parks to draw attention
+  to high-quality facilities. Use color variations to emphasize park scores, and text
+  annotations for key data points, noting their names and locations. Aim for clear
+  representation of both park quality and geographical distribution to aid in real-estate
+  decisions. Include a legend for score interpretation and ensure clear labeling of
+  facilities and PQ scores. Highlight outliers and ensure the map is user-friendly
+  for quick insights on park quality across the city.
+- 1096
+- 984
+- 112

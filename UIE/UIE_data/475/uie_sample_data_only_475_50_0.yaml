@@ -1,0 +1,325 @@
+02_initial_prompt: Visualize a choropleth map displaying the number of immigrants
+  from various regions and countries of last residence in 1825, 1835, and 1845. Highlight
+  notable immigration trends with text annotations on significant data points.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Visualize a choropleth map displaying the number of immigrants from various regions
+  and countries of last residence in 1825, 1835, and 1845. Highlight notable immigration
+  trends with text annotations on significant data points.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/475.csv'': {''summary'': {''Column'': [''Region and country
+  of last residence 1'', ''Austria-Hungary'', ''Germany'', ''Ireland'', ''Italy'',
+  ''Russia'', ''Norway and Sweden'', ''United Kingdom'', ''Rest of Europe'', ''China'',
+  ''India'', ''Philippines'', ''Rest of Asia'', ''Canada and Newfoundland'', ''Mexico'',
+  ''Caribbean'', ''Rest of America'', ''Central America'', ''South America'', ''Africa'',
+  ''Oceania'', ''Not Specified''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0], ''Unique Values'': [19, 16, 19, 19, 19, 19, 19, 19, 19, 19, 19, 13, 19, 19,
+  19, 19, 19, 19, 19, 19, 19, 19]}, ''sample_data'': {''Region and country of last
+  residence 1'': [1825, 1835, 1845], ''Austria-Hungary'': [0, 0, 0], ''Germany'':
+  [5753, 124726, 385434], ''Ireland'': [51617, 170672, 656145], ''Italy'': [430, 2225,
+  1476], ''Russia'': [86, 280, 520], ''Norway and Sweden'': [91, 1149, 12389], ''United
+  Kingdom'': [26336, 74350, 218572], ''Rest of Europe'': [15305, 49451, 94887], ''China'':
+  [3, 8, 32], ''India'': [9, 38, 33], ''Philippines'': [0, 0, 0], ''Rest of Asia'':
+  [22, 9, 56], ''Canada and Newfoundland'': [2297, 11875, 34285], ''Mexico'': [3835,
+  7187, 3069], ''Caribbean'': [3061, 11792, 11803], ''Rest of America'': [463, 1057,
+  1370], ''Central America'': [57, 94, 297], ''South America'': [405, 957, 1062],
+  ''Africa'': [19, 66, 67], ''Oceania'': [2, 1, 3], ''Not Specified'': [19173, 83495,
+  7196]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Region and country of last residence 1", "Austria-Hungary",
+  "Germany", "Ireland", "Italy", "Russia", "Norway and Sweden", "United Kingdom",
+  "Rest of Europe", "China", "India", "Philippines", "Rest of Asia", "Canada and Newfoundland",
+  "Mexico", "Caribbean", "Rest of America", "Central America", "South America", "Africa",
+  "Oceania", "Not Specified"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Highlight notable immigration trends over time using choropleth maps
+  with textual annotations on significant data points",
+
+  "Audience": "Historians, demographers, policymakers, educators, and general public
+  interested in historical immigration patterns"
+
+  }'
+05_audience: Historians, demographers, policymakers, educators, and general public
+  interested in historical immigration patterns
+05_data_attributes:
+- Region and country of last residence 1
+- Austria-Hungary
+- Germany
+- Ireland
+- Italy
+- Russia
+- Norway and Sweden
+- United Kingdom
+- Rest of Europe
+- China
+- India
+- Philippines
+- Rest of Asia
+- Canada and Newfoundland
+- Mexico
+- Caribbean
+- Rest of America
+- Central America
+- South America
+- Africa
+- Oceania
+- Not Specified
+05_purpose: Highlight notable immigration trends over time using choropleth maps with
+  textual annotations on significant data points
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/475.csv'': {''summary'': {''Column'': [''Region and country
+  of last residence 1'', ''Austria-Hungary'', ''Germany'', ''Ireland'', ''Italy'',
+  ''Russia'', ''Norway and Sweden'', ''United Kingdom'', ''Rest of Europe'', ''China'',
+  ''India'', ''Philippines'', ''Rest of Asia'', ''Canada and Newfoundland'', ''Mexico'',
+  ''Caribbean'', ''Rest of America'', ''Central America'', ''South America'', ''Africa'',
+  ''Oceania'', ''Not Specified''], ''Data Type'': [dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0], ''Unique Values'': [19, 16, 19, 19, 19, 19, 19, 19, 19, 19, 19, 13, 19, 19,
+  19, 19, 19, 19, 19, 19, 19, 19]}, ''sample_data'': {''Region and country of last
+  residence 1'': [1825, 1835, 1845], ''Austria-Hungary'': [0, 0, 0], ''Germany'':
+  [5753, 124726, 385434], ''Ireland'': [51617, 170672, 656145], ''Italy'': [430, 2225,
+  1476], ''Russia'': [86, 280, 520], ''Norway and Sweden'': [91, 1149, 12389], ''United
+  Kingdom'': [26336, 74350, 218572], ''Rest of Europe'': [15305, 49451, 94887], ''China'':
+  [3, 8, 32], ''India'': [9, 38, 33], ''Philippines'': [0, 0, 0], ''Rest of Asia'':
+  [22, 9, 56], ''Canada and Newfoundland'': [2297, 11875, 34285], ''Mexico'': [3835,
+  7187, 3069], ''Caribbean'': [3061, 11792, 11803], ''Rest of America'': [463, 1057,
+  1370], ''Central America'': [57, 94, 297], ''South America'': [405, 957, 1062],
+  ''Africa'': [19, 66, 67], ''Oceania'': [2, 1, 3], ''Not Specified'': [19173, 83495,
+  7196]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Visualize a choropleth map displaying the number of immigrants from various regions
+  and countries of last residence in 1825, 1835, and 1845. Highlight notable immigration
+  trends with text annotations on significant data points.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Region and country of last residence 1'', ''Austria-Hungary'', ''Germany'', ''Ireland'',
+  ''Italy'', ''Russia'', ''Norway and Sweden'', ''United Kingdom'', ''Rest of Europe'',
+  ''China'', ''India'', ''Philippines'', ''Rest of Asia'', ''Canada and Newfoundland'',
+  ''Mexico'', ''Caribbean'', ''Rest of America'', ''Central America'', ''South America'',
+  ''Africa'', ''Oceania'', ''Not Specified'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Historians, demographers, policymakers, educators, and general public interested
+  in historical immigration patterns
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight notable immigration trends over time using choropleth maps with textual
+  annotations on significant data points
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color schemes or palettes in mind for the
+  choropleth map?
+
+  2. Should the color intensity represent higher or lower numbers of immigrants?
+
+  3. Do you prefer a particular style or format for the text annotations on significant
+  data points?
+
+  4. Would you like to include legends or keys to help interpret the color scales
+  and data?
+
+  5. Do you have any preferences for the geographical boundaries to be used in the
+  map projection?
+
+  6. Should the map show additional geographic details such as major cities or only
+  country/region boundaries?
+
+  7. How would you like to display the timeline for 1825, 1835, and 1845? Would you
+  prefer separate maps for each year, or a single map with a time slider?
+
+  8. Are there specific regions or countries you want to be emphasized or highlighted
+  differently than others?
+
+  9. What level of detail or granularity do you prefer for the immigration trends
+  (e.g., country-level, region-level)?
+
+  10. Is there a specific font or style you would like for labels and annotations?
+
+  11. Are there any additional contextual details you want to be included in the map
+  (e.g., historical events, migration policies)?
+
+  12. Would you prefer a static representation or one that allows for zooming in and
+  out on specific areas?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nVisualize a choropleth map displaying the number of immigrants\
+  \ from various regions and countries of last residence in 1825, 1835, and 1845.\
+  \ Highlight notable immigration trends with text annotations on significant data\
+  \ points.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nHighlight notable immigration trends over time using choropleth maps\
+  \ with textual annotations on significant data points\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have any specific color schemes or palettes\
+  \ in mind for the choropleth map?\n2. Should the color intensity represent higher\
+  \ or lower numbers of immigrants?\n3. Do you prefer a particular style or format\
+  \ for the text annotations on significant data points?\n4. Would you like to include\
+  \ legends or keys to help interpret the color scales and data?\n5. Do you have any\
+  \ preferences for the geographical boundaries to be used in the map projection?\n\
+  6. Should the map show additional geographic details such as major cities or only\
+  \ country/region boundaries?\n7. How would you like to display the timeline for\
+  \ 1825, 1835, and 1845? Would you prefer separate maps for each year, or a single\
+  \ map with a time slider?\n8. Are there specific regions or countries you want to\
+  \ be emphasized or highlighted differently than others?\n9. What level of detail\
+  \ or granularity do you prefer for the immigration trends (e.g., country-level,\
+  \ region-level)?\n10. Is there a specific font or style you would like for labels\
+  \ and annotations?\n11. Are there any additional contextual details you want to\
+  \ be included in the map (e.g., historical events, migration policies)?\n12. Would\
+  \ you prefer a static representation or one that allows for zooming in and out on\
+  \ specific areas?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Higher numbers of immigrants.
+
+  3. I am not sure.
+
+  4. Yes, please include legends or keys.
+
+  5. I am not sure.
+
+  6. Only country/region boundaries.
+
+  7. Separate maps for each year.
+
+  8. I do not know.
+
+  9. Country-level.
+
+  10. I have no specific preference.
+
+  11. I am not sure.
+
+  12. A static representation.'

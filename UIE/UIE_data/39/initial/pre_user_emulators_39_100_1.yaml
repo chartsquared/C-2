@@ -1,0 +1,97 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Parallel coordinates
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1013
+- 963
+- 50
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 807
+- 668
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/39.csv': {'summary': {'Column':\
+  \ ['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe', 'Type'], 'Data Type': [dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('int64')], 'Missing\
+  \ Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [178, 142, 94, 118,\
+  \ 133, 65, 143, 34, 32, 6]}, 'sample_data': {'RI': [1.52101, 1.51761, 1.51618],\
+  \ 'Na': [13.64, 13.89, 13.53], 'Mg': [4.49, 3.6, 3.55], 'Al': [1.1, 1.36, 1.54],\
+  \ 'Si': [71.78, 72.73, 72.99], 'K': [0.06, 0.48, 0.39], 'Ca': [8.75, 7.83, 7.78],\
+  \ 'Ba': [0.0, 0.0, 0.0], 'Fe': [0.0, 0.0, 0.0], 'Type': [1, 1, 1]}}}\n<end of data\
+  \ example format>\n\n<start of annotations format>\n['<start of the annotation list>',\
+  \ '1. Text Annotations:', 'Description: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.', 'Purpose: When only some\
+  \ elements are annotated, the intent is to focus the viewer\u2019s attention on\
+  \ those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '2. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nGlass Classification\n\
+  chemistry\n<end of data details format>\n\nGiven a data format, imagine a chart\
+  \ that visualizes this data as the final output you want from the service provider.\n\
+  Consider what purpose the data has and the practical purpose of visualization and\
+  \ include it in the instructions.\nYou need to imagine a chart with * Histogram\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Histogram and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 100 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Parallel coordinates'
+- '* Histogram'
+- '* Box chart'
+- '* Column chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Grouped bar/column chart'
+- '* Treemap'
+- '* Heatmap'
+- '* Parallel coordinates'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Create a histogram to visualize the distribution of types in the glass classification
+  dataset. Ensure the x-axis represents the different types of glass, and the y-axis
+  shows the frequency of each type. The intent is to highlight how frequently each
+  type occurs. Also, annotate the histogram bars with precise counts for clarity.
+  This visualization will help identify the most common glass types and facilitate
+  data-driven decisions in glass chemistry analysis. Use highlights to emphasize the
+  most and least frequent types, making them visually distinct for easier interpretation.
+- 834
+- 735
+- 99

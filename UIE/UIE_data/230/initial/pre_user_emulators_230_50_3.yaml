@@ -1,0 +1,85 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Scatter plot
+
+  * Column chart
+
+  * Bubble chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 778
+- 752
+- 26
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 603
+- 465
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/230.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''YearsExperience'',
+  ''Salary''], ''Data Type'': [dtype(''int64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0], ''Unique Values'': [30, 28, 30]}, ''sample_data'':
+  {''Unnamed: 0'': [0, 1, 2], ''YearsExperience'': [1.2000000000000002, 1.4, 1.6],
+  ''Salary'': [39344.0, 46206.0, 37732.0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Salary Dataset - Simple linear regression
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bubble chart'
+- '* Pie chart'
+- '* Column chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- Create a scatter plot to visualize the relationship between YearsExperience and
+  Salary from the Salary Dataset for a simple linear regression analysis.
+- 364
+- 340
+- 24

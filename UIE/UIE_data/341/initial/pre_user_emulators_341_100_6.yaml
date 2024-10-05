@@ -1,0 +1,104 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 856
+- 825
+- 31
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 673
+- 535
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/341.csv'': {''summary'': {''Column'': [''Product Name'',
+  ''Product Category'', ''Product Price'', ''Product Price (INR)'', ''Quantity''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0], ''Unique Values'': [5087, 38, 1600, 1468, 510]},
+  ''sample_data'': {''Product Name'': [''Organic Tattva Cinnamon Stick'', ''24 Mantra
+  Organic Moong Dal'', ''24 Mantra Organic Himalaya Pink Salt''], ''Product Category'':
+  [''Organic Products'', ''Organic Products'', ''Organic Products''], ''Product Price'':
+  [''$2.84'', ''$9.45'', ''$6.28''], ''Product Price (INR)'': [154.07, 512.66, 340.69],
+  ''Quantity'': [''50g'', ''1kg'', ''1kg'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Indian Grocery Prices in Sydney
+
+  food-and-drink
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Geographic heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Geographic heatmap
+  that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Pie chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+- '* Heatmap'
+- '* Geographic heatmap'
+- '* Bar chart'
+- '* Pie chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+- '* Heatmap'
+- '* Geographic heatmap'
+2. initial_prompt: !!python/tuple
+- Can you create a geographic heatmap indicating the price distribution of various
+  grocery items sold in Sydney, detailed by their product categories from the given
+  data? Please focus on highlighting hotspots where certain categories, such as organic
+  products, are more expensive, and where prices are lower. This heatmap will help
+  visualize and compare the cost variability of these products across different areas
+  in Sydney. Specifically, emphasize the variations in the prices when converted to
+  INR, as it provides a better understanding for our target audience. Thank you!
+- 512
+- 412
+- 100

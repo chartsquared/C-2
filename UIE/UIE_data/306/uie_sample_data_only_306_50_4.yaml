@@ -1,0 +1,333 @@
+02_initial_prompt: Create a choropleth map showing net migration across different
+  countries over the years. Highlight regions with highest internal displacements
+  from conflict and disasters. Use color gradients to depict values.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a choropleth map showing net migration across different countries over the
+  years. Highlight regions with highest internal displacements from conflict and disasters.
+  Use color gradients to depict values.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/306.csv'': {''summary'': {''Column'': [''Year'', ''Country'',
+  ''Resettled by destination per capita'', ''Child migrants (UNICEF)'', ''Child migrants
+  (under-20s)'', ''Asylum seekers by origin (per capita)'', ''Child migrants per capita
+  (under-20s)'', ''Refugees by destination.1'', ''Internal displacement (disasters)'',
+  ''Annual internal displacements (Disaster)'', ''Asylum seekers by destination'',
+  ''Annual internal displacement from conflict (%)'', ''Refugees by destination (per
+  capita)'', ''Refugees by origin (per capita)'', ''Child migrants (UNICEF, under-18s)'',
+  ''Refugees by origin'', ''Internal displacement (disaster)'', ''Emigrants'', ''Annual
+  internal displacement (conflict)'', ''Internal displacement share (conflict)'',
+  ''Asylum seekers by origin'', ''International immigrants (% population)'', ''International
+  migrants'', ''Internal displacement (conflict)'', ''Asylum seekers by destination
+  (per capita)'', ''Resettled arrivals by origin (per capita)'', ''Annual internal
+  displacement from disaster (%)'', ''Child migrants (UNDESA)'', ''Child migrants
+  per capita (UNDESA)'', ''Net migration'', ''Remittances cost (from)'', ''International
+  emigrants (% population)'', ''Refugees by destination (per capita).1''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 16032, 16317, 10566, 13475, 15121,
+  10349, 16371, 15743, 14057, 16247, 15503, 10963, 16368, 10677, 16363, 10559, 16242,
+  16202, 13378, 15136, 10602, 16189, 14102, 14096, 15751, 10566, 15121, 9791, 16358,
+  15121, 10489], ''Unique Values'': [68, 351, 511, 137, 1888, 2845, 1393, 5111, 98,
+  806, 1776, 193, 843, 2449, 183, 3898, 140, 1946, 254, 328, 1974, 1348, 1927, 352,
+  2308, 1614, 421, 1869, 1359, 3048, 203, 1385, 3480]}, ''sample_data'': {''Year'':
+  [1955, 1960, 1965], ''Country'': ['' Central and Southern Asia'', '' Central and
+  Southern Asia'', '' Central and Southern Asia''], ''Resettled by destination per
+  capita'': [nan, nan, nan], ''Child migrants (UNICEF)'': [nan, nan, nan], ''Child
+  migrants (under-20s)'': [nan, nan, nan], ''Asylum seekers by origin (per capita)'':
+  [nan, nan, nan], ''Child migrants per capita (under-20s)'': [nan, nan, nan], ''Refugees
+  by destination.1'': [nan, nan, nan], ''Internal displacement (disasters)'': [nan,
+  nan, nan], ''Annual internal displacements (Disaster)'': [nan, nan, nan], ''Asylum
+  seekers by destination'': [nan, nan, nan], ''Annual internal displacement from conflict
+  (%)'': [nan, nan, nan], ''Refugees by destination (per capita)'': [nan, nan, nan],
+  ''Refugees by origin (per capita)'': [nan, nan, nan], ''Child migrants (UNICEF,
+  under-18s)'': [nan, nan, nan], ''Refugees by origin'': [nan, nan, nan], ''Internal
+  displacement (disaster)'': [nan, nan, nan], ''Emigrants'': [nan, nan, nan], ''Annual
+  internal displacement (conflict)'': [nan, nan, nan], ''Internal displacement share
+  (conflict)'': [nan, nan, nan], ''Asylum seekers by origin'': [nan, nan, nan], ''International
+  immigrants (% population)'': [nan, nan, nan], ''International migrants'': [nan,
+  nan, nan], ''Internal displacement (conflict)'': [nan, nan, nan], ''Asylum seekers
+  by destination (per capita)'': [nan, nan, nan], ''Resettled arrivals by origin (per
+  capita)'': [nan, nan, nan], ''Annual internal displacement from disaster (%)'':
+  [nan, nan, nan], ''Child migrants (UNDESA)'': [nan, nan, nan], ''Child migrants
+  per capita (UNDESA)'': [nan, nan, nan], ''Net migration'': [525786.0, 809851.0,
+  577018.0], ''Remittances cost (from)'': [nan, nan, nan], ''International emigrants
+  (% population)'': [nan, nan, nan], ''Refugees by destination (per capita).1'': [nan,
+  nan, nan]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Year", "Country", "Net migration", "Internal displacement (conflict)",
+  "Internal displacement (disasters)"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Highlight regions with highest internal displacements from conflict
+  and disasters over the years and depict net migration using color gradients.",
+
+  "Audience": "Policy makers, researchers, and humanitarian organizations"
+
+  }'
+05_audience: Policy makers, researchers, and humanitarian organizations
+05_data_attributes:
+- Year
+- Country
+- Net migration
+- Internal displacement (conflict)
+- Internal displacement (disasters)
+05_purpose: Highlight regions with highest internal displacements from conflict and
+  disasters over the years and depict net migration using color gradients.
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/306.csv'': {''summary'': {''Column'': [''Year'', ''Country'',
+  ''Resettled by destination per capita'', ''Child migrants (UNICEF)'', ''Child migrants
+  (under-20s)'', ''Asylum seekers by origin (per capita)'', ''Child migrants per capita
+  (under-20s)'', ''Refugees by destination.1'', ''Internal displacement (disasters)'',
+  ''Annual internal displacements (Disaster)'', ''Asylum seekers by destination'',
+  ''Annual internal displacement from conflict (%)'', ''Refugees by destination (per
+  capita)'', ''Refugees by origin (per capita)'', ''Child migrants (UNICEF, under-18s)'',
+  ''Refugees by origin'', ''Internal displacement (disaster)'', ''Emigrants'', ''Annual
+  internal displacement (conflict)'', ''Internal displacement share (conflict)'',
+  ''Asylum seekers by origin'', ''International immigrants (% population)'', ''International
+  migrants'', ''Internal displacement (conflict)'', ''Asylum seekers by destination
+  (per capita)'', ''Resettled arrivals by origin (per capita)'', ''Annual internal
+  displacement from disaster (%)'', ''Child migrants (UNDESA)'', ''Child migrants
+  per capita (UNDESA)'', ''Net migration'', ''Remittances cost (from)'', ''International
+  emigrants (% population)'', ''Refugees by destination (per capita).1''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 16032, 16317, 10566, 13475, 15121,
+  10349, 16371, 15743, 14057, 16247, 15503, 10963, 16368, 10677, 16363, 10559, 16242,
+  16202, 13378, 15136, 10602, 16189, 14102, 14096, 15751, 10566, 15121, 9791, 16358,
+  15121, 10489], ''Unique Values'': [68, 351, 511, 137, 1888, 2845, 1393, 5111, 98,
+  806, 1776, 193, 843, 2449, 183, 3898, 140, 1946, 254, 328, 1974, 1348, 1927, 352,
+  2308, 1614, 421, 1869, 1359, 3048, 203, 1385, 3480]}, ''sample_data'': {''Year'':
+  [1955, 1960, 1965], ''Country'': ['' Central and Southern Asia'', '' Central and
+  Southern Asia'', '' Central and Southern Asia''], ''Resettled by destination per
+  capita'': [nan, nan, nan], ''Child migrants (UNICEF)'': [nan, nan, nan], ''Child
+  migrants (under-20s)'': [nan, nan, nan], ''Asylum seekers by origin (per capita)'':
+  [nan, nan, nan], ''Child migrants per capita (under-20s)'': [nan, nan, nan], ''Refugees
+  by destination.1'': [nan, nan, nan], ''Internal displacement (disasters)'': [nan,
+  nan, nan], ''Annual internal displacements (Disaster)'': [nan, nan, nan], ''Asylum
+  seekers by destination'': [nan, nan, nan], ''Annual internal displacement from conflict
+  (%)'': [nan, nan, nan], ''Refugees by destination (per capita)'': [nan, nan, nan],
+  ''Refugees by origin (per capita)'': [nan, nan, nan], ''Child migrants (UNICEF,
+  under-18s)'': [nan, nan, nan], ''Refugees by origin'': [nan, nan, nan], ''Internal
+  displacement (disaster)'': [nan, nan, nan], ''Emigrants'': [nan, nan, nan], ''Annual
+  internal displacement (conflict)'': [nan, nan, nan], ''Internal displacement share
+  (conflict)'': [nan, nan, nan], ''Asylum seekers by origin'': [nan, nan, nan], ''International
+  immigrants (% population)'': [nan, nan, nan], ''International migrants'': [nan,
+  nan, nan], ''Internal displacement (conflict)'': [nan, nan, nan], ''Asylum seekers
+  by destination (per capita)'': [nan, nan, nan], ''Resettled arrivals by origin (per
+  capita)'': [nan, nan, nan], ''Annual internal displacement from disaster (%)'':
+  [nan, nan, nan], ''Child migrants (UNDESA)'': [nan, nan, nan], ''Child migrants
+  per capita (UNDESA)'': [nan, nan, nan], ''Net migration'': [525786.0, 809851.0,
+  577018.0], ''Remittances cost (from)'': [nan, nan, nan], ''International emigrants
+  (% population)'': [nan, nan, nan], ''Refugees by destination (per capita).1'': [nan,
+  nan, nan]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a choropleth map showing net migration across different countries over the
+  years. Highlight regions with highest internal displacements from conflict and disasters.
+  Use color gradients to depict values.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Year'', ''Country'', ''Net migration'', ''Internal displacement (conflict)'',
+  ''Internal displacement (disasters)'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Policy makers, researchers, and humanitarian organizations
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight regions with highest internal displacements from conflict and disasters
+  over the years and depict net migration using color gradients.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color gradient for depicting net migration
+  values?
+
+  2. How would you like the regions with highest internal displacements from conflict
+  and disasters to be highlighted (e.g., specific color, border, intensity)?
+
+  3. Should the map display data for each year separately, or would you prefer an
+  aggregated view over a range of years?
+
+  4. Do you have a specific projection (e.g., Mercator, Robinson) you prefer for the
+  world map?
+
+  5. Do you want any specific annotations or labels on the map (e.g., country names,
+  values)?
+
+  6. Would you like a legend to explain the color gradients and highlighted areas?
+  If so, where should it be placed on the map?
+
+  7. Is there a particular font style or size you would prefer for the text on the
+  map?
+
+  8. Should any specific regions, countries, or areas be emphasized or marked in a
+  special way?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a choropleth map showing net migration across\
+  \ different countries over the years. Highlight regions with highest internal displacements\
+  \ from conflict and disasters. Use color gradients to depict values.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 25% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nHighlight regions\
+  \ with highest internal displacements from conflict and disasters over the years\
+  \ and depict net migration using color gradients.\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color gradient for depicting net\
+  \ migration values?\n2. How would you like the regions with highest internal displacements\
+  \ from conflict and disasters to be highlighted (e.g., specific color, border, intensity)?\n\
+  3. Should the map display data for each year separately, or would you prefer an\
+  \ aggregated view over a range of years?\n4. Do you have a specific projection (e.g.,\
+  \ Mercator, Robinson) you prefer for the world map?\n5. Do you want any specific\
+  \ annotations or labels on the map (e.g., country names, values)?\n6. Would you\
+  \ like a legend to explain the color gradients and highlighted areas? If so, where\
+  \ should it be placed on the map?\n7. Is there a particular font style or size you\
+  \ would prefer for the text on the map?\n8. Should any specific regions, countries,\
+  \ or areas be emphasized or marked in a special way?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would prefer an aggregated view over a range of years.
+
+  4. I do not know.
+
+  5. Country names, please.
+
+  6. Yes, a legend would be helpful. I am not sure where it should be placed.
+
+  7. I do not know.
+
+  8. I am not sure.'

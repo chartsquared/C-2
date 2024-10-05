@@ -1,0 +1,161 @@
+02_initial_prompt: "Create a line chart using the baby name data, plotting each name\
+  \ (Amanda, Ashley, Betty, etc.) over the years from 1880 to 1882. Use text annotations\
+  \ to display specific values for key points, like the peak values for Helen and\
+  \ Betty. Highlight Amanda's growth trend and Helen\u2019s peak using different colors\
+  \ to emphasize their importance. The chart should help visualize name popularity\
+  \ trends over time, useful for social-science students studying cultural shifts.\
+  \ Limit the x-axis to the years available and ensure the y-axis represents the number\
+  \ of babies."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the accurate data and user request, your task is to delve into\
+  \ the user request to figure out the (1) data attributes needed for data visualization,\
+  \ (2) select the most suitable task that the user is willing to do from the list\
+  \ of various tasks in data visualization, (3) specifically figure out the purpose\
+  \ of the user's request in data visualization, and (4) prospective audience of the\
+  \ data visualization.\n\n<start of user request>\nCreate a line chart using the\
+  \ baby name data, plotting each name (Amanda, Ashley, Betty, etc.) over the years\
+  \ from 1880 to 1882. Use text annotations to display specific values for key points,\
+  \ like the peak values for Helen and Betty. Highlight Amanda's growth trend and\
+  \ Helen\u2019s peak using different colors to emphasize their importance. The chart\
+  \ should help visualize name popularity trends over time, useful for social-science\
+  \ students studying cultural shifts. Limit the x-axis to the years available and\
+  \ ensure the y-axis represents the number of babies.\n<end of user request>\n\n\
+  <start of data format>\n{'../Extra_datas/data/400.csv': {'summary': {'Column': ['year',\
+  \ 'Amanda', 'Ashley', 'Betty', 'Deborah', 'Dorothy', 'Helen', 'Linda', 'Patricia'],\
+  \ 'Data Type': [dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [136, 121, 72,\
+  \ 130, 117, 135, 134, 131, 132]}, 'sample_data': {'year': [1880, 1881, 1882], 'Amanda':\
+  \ [241, 263, 288], 'Ashley': [0, 0, 0], 'Betty': [117, 112, 123], 'Deborah': [12,\
+  \ 14, 15], 'Dorothy': [112, 109, 115], 'Helen': [636, 612, 838], 'Linda': [27, 38,\
+  \ 36], 'Patricia': [0, 0, 0]}}}\n<end of data format>\n\n<start of various task\
+  \ types>\n{'Show External Context': 'Uncaptured data provided by the self-tracker\
+  \ to understand and explain a phenomenon shown in the data', 'Show Confirmation':\
+  \ 'Collected data confirms existing knowledge', 'Show Contradiction': 'Collected\
+  \ data contradicts existing knowledge', 'Focus on Identifying value': 'Explicitly\
+  \ specify the measured value, its range for one or more clearly identified data\
+  \ points, or the difference between two measured values', 'Focus on Identifying\
+  \ extreme': 'Explicitly state the identities of the data points possessing extreme\
+  \ values of the measure variable', 'Focus on Identifying references': 'Explicitly\
+  \ state the values of categorical variables, labels from the axes, or legends',\
+  \ 'Comparison by Time Segmentation': 'Compare measured values segmented by time',\
+  \ 'Comparison by Multiple services': 'Compare the same data type from two or more\
+  \ services', 'Comparison against external data': 'Bringing in external data for\
+  \ comparison', 'Comparison By Factor': 'Compare measured values by a factor (other\
+  \ than time)', 'Comparison By Instances': 'Compare two specific instances', 'Show\
+  \ Trend': 'Describe changes over time', 'Value judgement': 'Convey positive or negative\
+  \ connotations about the data', 'Distribution with variability': 'Explicitly state\
+  \ the variability of measured values', 'Distribution By Category': 'Explicitly describe\
+  \ the variation of measured values across all or most of the values of a categorical\
+  \ variable', 'Correlation': 'Specify the direct relationship between two variables\
+  \ (but not as comparison)', 'Outlier': 'Explicitly point out outliers or state the\
+  \ effect of outliers', 'Summarization of data': 'Summary of collected data (such\
+  \ as number of data points, duration of tracking, and averages)', 'Prediction/Forecasting':\
+  \ 'Predict the future based on the collected data'}\n<end of various task types>\n\
+  \nFor data attributes needed in data visualization, store them in query['Data Attribute'].\n\
+  Store the selected task from the task types in query['Task'].\nStore the purpose\
+  \ of visualization in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\
+  \nPlease reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be possible\
+  \ normally."
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"year\", \"Amanda\"\
+  , \"Ashley\", \"Betty\", \"Dorothy\", \"Helen\"],\n  \"Task\": \"Show Trend\",\n\
+  \  \"Purpose\": \"To visualize name popularity trends over time for social-science\
+  \ studies focusing on cultural shifts\",\n  \"Audience\": \"social-science students\"\
+  \n}"
+05_audience: social-science students
+05_data_attributes:
+- year
+- Amanda
+- Ashley
+- Betty
+- Dorothy
+- Helen
+05_purpose: To visualize name popularity trends over time for social-science studies
+  focusing on cultural shifts
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/400.csv':\
+  \ {'summary': {'Column': ['year', 'Amanda', 'Ashley', 'Betty', 'Deborah', 'Dorothy',\
+  \ 'Helen', 'Linda', 'Patricia'], 'Data Type': [dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values':\
+  \ [136, 121, 72, 130, 117, 135, 134, 131, 132]}, 'sample_data': {'year': [1880,\
+  \ 1881, 1882], 'Amanda': [241, 263, 288], 'Ashley': [0, 0, 0], 'Betty': [117, 112,\
+  \ 123], 'Deborah': [12, 14, 15], 'Dorothy': [112, 109, 115], 'Helen': [636, 612,\
+  \ 838], 'Linda': [27, 38, 36], 'Patricia': [0, 0, 0]}}}\n<end of data format>\n\n\
+  <start of data visualization instruction>\nCreate a line chart using the baby name\
+  \ data, plotting each name (Amanda, Ashley, Betty, etc.) over the years from 1880\
+  \ to 1882. Use text annotations to display specific values for key points, like\
+  \ the peak values for Helen and Betty. Highlight Amanda's growth trend and Helen\u2019\
+  s peak using different colors to emphasize their importance. The chart should help\
+  \ visualize name popularity trends over time, useful for social-science students\
+  \ studying cultural shifts. Limit the x-axis to the years available and ensure the\
+  \ y-axis represents the number of babies.\n<end of data visualization instruction>\n\
+  \n<start of data attributes>\n['year', 'Amanda', 'Ashley', 'Betty', 'Dorothy', 'Helen']\n\
+  <end of data attributes>\n\n<start of prospective audience>\nsocial-science students\n\
+  <end of prospective audience>\n\n<start of type of tasks>\nShow Trend\n<end of type\
+  \ of tasks>\n\n<start of purpose>\nTo visualize name popularity trends over time\
+  \ for social-science studies focusing on cultural shifts\n<end of purpose>"
+07_questions: "1. Do you have any preference for font style or size for the text annotations?\n\
+  2. Would you like the lines representing each name to have specific colors, or should\
+  \ they be chosen automatically for clarity?\n3. Do you have a preferred color for\
+  \ highlighting Amanda's growth trend and Helen\u2019s peak?\n4. Are there any specific\
+  \ line styles (e.g., solid, dashed, dotted) you prefer for differentiating the names?\n\
+  5. Would you like to include gridlines on the chart for better readability?\n6.\
+  \ Do you want a specific title or subtitle for the chart?\n7. What should be the\
+  \ labels for the x-axis and y-axis?\n8. Should there be a legend indicating which\
+  \ line corresponds to which name?\n9. Do you prefer any particular format for the\
+  \ numerical values on the y-axis (e.g., commas for thousands)?\n10. Would you like\
+  \ to include any descriptive text or footnotes on the chart for additional context?"
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a line chart using the baby name data, plotting\
+  \ each name (Amanda, Ashley, Betty, etc.) over the years from 1880 to 1882. Use\
+  \ text annotations to display specific values for key points, like the peak values\
+  \ for Helen and Betty. Highlight Amanda's growth trend and Helen\u2019s peak using\
+  \ different colors to emphasize their importance. The chart should help visualize\
+  \ name popularity trends over time, useful for social-science students studying\
+  \ cultural shifts. Limit the x-axis to the years available and ensure the y-axis\
+  \ represents the number of babies.\n<end of user request>\n\nImagine the best result\
+  \ that can be achieved based on the given instructions and is the final output you\
+  \ want from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nTo visualize name popularity trends over time for social-science\
+  \ studies focusing on cultural shifts\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have any preference for font style or size for the text annotations?\n\
+  2. Would you like the lines representing each name to have specific colors, or should\
+  \ they be chosen automatically for clarity?\n3. Do you have a preferred color for\
+  \ highlighting Amanda's growth trend and Helen\u2019s peak?\n4. Are there any specific\
+  \ line styles (e.g., solid, dashed, dotted) you prefer for differentiating the names?\n\
+  5. Would you like to include gridlines on the chart for better readability?\n6.\
+  \ Do you want a specific title or subtitle for the chart?\n7. What should be the\
+  \ labels for the x-axis and y-axis?\n8. Should there be a legend indicating which\
+  \ line corresponds to which name?\n9. Do you prefer any particular format for the\
+  \ numerical values on the y-axis (e.g., commas for thousands)?\n10. Would you like\
+  \ to include any descriptive text or footnotes on the chart for additional context?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: "1. I do not know.\n2. I am not sure.\n3. Highlighting Amanda\u2019s growth\
+  \ trend in blue and Helen\u2019s peak in red would be good.\n4. I do not know.\n\
+  5. Yes, include gridlines for better readability.\n6. No specific preference for\
+  \ a title.\n7. X-axis: Years, Y-axis: Number of Babies.\n8. Yes, include a legend.\n\
+  9. I am not sure.\n10. No additional text or footnotes needed."

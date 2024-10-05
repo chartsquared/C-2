@@ -1,0 +1,91 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Treemap
+
+  * Area chart
+
+  * Histogram
+
+  * Choropleth map'
+- 1189
+- 1165
+- 24
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1017
+- 878
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/91.csv': {'summary': {'Column':\
+  \ ['title', 'description', 'url', 'owner', 'kernels', 'discussions', 'views', 'downloads',\
+  \ 'last_updated', 'license', 'size', 'featured', 'super_featured', 'upvotes'], 'Data\
+  \ Type': [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('float64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64')], 'Missing Values': [2, 4951, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 1, 0, 0, 0], 'Unique Values': [7538, 3050, 8024, 4286, 159, 45, 2005, 887,\
+  \ 518, 6, 6542, 2, 2, 158]}, 'sample_data': {'title': ['Trending YouTube Video Statistics\
+  \ (UPDATED)', '7ecb8f4fe2ece9f4c8ffd23af10c310f', 'Atom Dataset'], 'description':\
+  \ ['Daily statistics (views, likes, category, tags+) for trending YouTube videos',\
+  \ nan, 'Dataset with atom features'], 'url': ['https://www.kaggle.com/datasnaek/youtube-new',\
+  \ 'https://www.kaggle.com/veralei/7ecb8f4fe2ece9f4c8ffd23af10c310f', 'https://www.kaggle.com/chfly2000/nomad2018-atom-dataset'],\
+  \ 'owner': ['Mitchell J', 'Vera Lei', 'chfly2000'], 'kernels': [3, 0, 0], 'discussions':\
+  \ [4, 0, 0], 'views': [9484, 55, 26], 'downloads': [1668, 2, 1], 'last_updated':\
+  \ ['2018-01-16', '2018-01-16', '2018-01-16'], 'license': ['CC0', 'Other', 'Other'],\
+  \ 'size': [35087677.0, 127264365.0, 0.0], 'featured': [1, 0, 0], 'super_featured':\
+  \ [0, 0, 0], 'upvotes': [46, 0, 0]}}}\n<end of data example format>\n\n<start of\
+  \ annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '3. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nComplete Kaggle Datasets Collection\ndata-science-and-analytics\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Area chart and given\
+  \ annotations that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Area chart and given annotations that utilizes all the\
+  \ data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 100 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Histogram'
+- '* Bar chart'
+- '* Area chart'
+- '* Treemap'
+- '* Heatmap'
+- '* Choropleth map'
+- '* Histogram'
+- '* Bar chart'
+- '* Area chart'
+2. initial_prompt: !!python/tuple
+- Create an area chart that visualizes the trend of views and downloads over time
+  for datasets. Highlight the most viewed and downloaded datasets with different colors.
+  Use text annotations to display the total upvotes for these highlighted datasets
+  to draw attention. The chart should focus on showing the relationship between views
+  and downloads to provide insights into dataset popularity. Include context about
+  the dataset owner and last updated date in non-data-driven annotations to offer
+  additional information. The chart should reflect a snapshot from the most recent
+  data update and aim to guide data scientists in identifying popular datasets.
+- 1055
+- 947
+- 108

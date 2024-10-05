@@ -1,0 +1,295 @@
+02_initial_prompt: Create a box chart to visualize the distribution of variables V1
+  to V24 based on the 'Class'. Highlight the median and identify outliers. Annotate
+  key data points that exhibit extreme values for better insights into robot navigation
+  performance variations.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a box chart to visualize the distribution of variables V1 to V24 based on
+  the ''Class''. Highlight the median and identify outliers. Annotate key data points
+  that exhibit extreme values for better insights into robot navigation performance
+  variations.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/258.csv'': {''summary'': {''Column'': [''id'', ''V1'', ''V2'',
+  ''V3'', ''V4'', ''V5'', ''V6'', ''V7'', ''V8'', ''V9'', ''V10'', ''V11'', ''V12'',
+  ''V13'', ''V14'', ''V15'', ''V16'', ''V17'', ''V18'', ''V19'', ''V20'', ''V21'',
+  ''V22'', ''V23'', ''V24'', ''Class''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0], ''Unique Values'': [5456, 1977, 2034, 1786, 1767, 1822, 1828, 1530, 2068,
+  1870, 2003, 1873, 1797, 1570, 1487, 1465, 1295, 1083, 971, 1042, 1136, 1355, 1736,
+  1758, 1856, 4]}, ''sample_data'': {''id'': [1, 2, 3], ''V1'': [0.438, 0.438, 0.438],
+  ''V2'': [0.498, 0.498, 0.498], ''V3'': [3.625, 3.625, 3.625], ''V4'': [3.645, 3.648,
+  3.629], ''V5'': [5.0, 5.0, 5.0], ''V6'': [2.918, 2.918, 2.918], ''V7'': [5.0, 5.0,
+  5.0], ''V8'': [2.351, 2.637, 2.637], ''V9'': [2.332, 2.332, 2.334], ''V10'': [2.643,
+  2.649, 2.643], ''V11'': [1.698, 1.695, 1.696], ''V12'': [1.687, 1.687, 1.687], ''V13'':
+  [1.698, 1.695, 1.695], ''V14'': [1.717, 1.72, 1.717], ''V15'': [1.744, 1.744, 1.744],
+  ''V16'': [0.593, 0.592, 0.593], ''V17'': [0.502, 0.502, 0.502], ''V18'': [0.493,
+  0.493, 0.493], ''V19'': [0.504, 0.504, 0.504], ''V20'': [0.445, 0.449, 0.449], ''V21'':
+  [0.431, 0.431, 0.431], ''V22'': [0.444, 0.444, 0.444], ''V23'': [0.44, 0.443, 0.446],
+  ''V24'': [0.429, 0.429, 0.429], ''Class'': [4, 4, 4]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10",
+  "V11", "V12", "V13", "V14", "V15", "V16", "V17", "V18", "V19", "V20", "V21", "V22",
+  "V23", "V24", "Class"],
+
+  "Task": "Outlier",
+
+  "Purpose": "Visualize the distribution of variables to highlight median and identify
+  outliers, providing insights into robot navigation performance variations",
+
+  "Audience": "Data analysts and robotics engineers"
+
+  }'
+05_audience: Data analysts and robotics engineers
+05_data_attributes:
+- V1
+- V2
+- V3
+- V4
+- V5
+- V6
+- V7
+- V8
+- V9
+- V10
+- V11
+- V12
+- V13
+- V14
+- V15
+- V16
+- V17
+- V18
+- V19
+- V20
+- V21
+- V22
+- V23
+- V24
+- Class
+05_purpose: Visualize the distribution of variables to highlight median and identify
+  outliers, providing insights into robot navigation performance variations
+05_task: Outlier
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/258.csv'': {''summary'': {''Column'': [''id'', ''V1'', ''V2'',
+  ''V3'', ''V4'', ''V5'', ''V6'', ''V7'', ''V8'', ''V9'', ''V10'', ''V11'', ''V12'',
+  ''V13'', ''V14'', ''V15'', ''V16'', ''V17'', ''V18'', ''V19'', ''V20'', ''V21'',
+  ''V22'', ''V23'', ''V24'', ''Class''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0], ''Unique Values'': [5456, 1977, 2034, 1786, 1767, 1822, 1828, 1530, 2068,
+  1870, 2003, 1873, 1797, 1570, 1487, 1465, 1295, 1083, 971, 1042, 1136, 1355, 1736,
+  1758, 1856, 4]}, ''sample_data'': {''id'': [1, 2, 3], ''V1'': [0.438, 0.438, 0.438],
+  ''V2'': [0.498, 0.498, 0.498], ''V3'': [3.625, 3.625, 3.625], ''V4'': [3.645, 3.648,
+  3.629], ''V5'': [5.0, 5.0, 5.0], ''V6'': [2.918, 2.918, 2.918], ''V7'': [5.0, 5.0,
+  5.0], ''V8'': [2.351, 2.637, 2.637], ''V9'': [2.332, 2.332, 2.334], ''V10'': [2.643,
+  2.649, 2.643], ''V11'': [1.698, 1.695, 1.696], ''V12'': [1.687, 1.687, 1.687], ''V13'':
+  [1.698, 1.695, 1.695], ''V14'': [1.717, 1.72, 1.717], ''V15'': [1.744, 1.744, 1.744],
+  ''V16'': [0.593, 0.592, 0.593], ''V17'': [0.502, 0.502, 0.502], ''V18'': [0.493,
+  0.493, 0.493], ''V19'': [0.504, 0.504, 0.504], ''V20'': [0.445, 0.449, 0.449], ''V21'':
+  [0.431, 0.431, 0.431], ''V22'': [0.444, 0.444, 0.444], ''V23'': [0.44, 0.443, 0.446],
+  ''V24'': [0.429, 0.429, 0.429], ''Class'': [4, 4, 4]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a box chart to visualize the distribution of variables V1 to V24 based on
+  the ''Class''. Highlight the median and identify outliers. Annotate key data points
+  that exhibit extreme values for better insights into robot navigation performance
+  variations.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''V1'', ''V2'', ''V3'', ''V4'', ''V5'', ''V6'', ''V7'', ''V8'', ''V9'', ''V10'',
+  ''V11'', ''V12'', ''V13'', ''V14'', ''V15'', ''V16'', ''V17'', ''V18'', ''V19'',
+  ''V20'', ''V21'', ''V22'', ''V23'', ''V24'', ''Class'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Data analysts and robotics engineers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Outlier
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visualize the distribution of variables to highlight median and identify outliers,
+  providing insights into robot navigation performance variations
+
+  <end of purpose>'
+07_questions: '1. Do you have a specific color scheme preference for the box chart?
+
+  2. Should the box chart include grid lines for easier reading?
+
+  3. Do you prefer any particular style for highlighting the median, such as a different
+  color or line thickness?
+
+  4. Would you like to have specific annotations for the key data points that exhibit
+  extreme values, and if so, how would you like them to be styled (e.g., arrows, labels)?
+
+  5. Should the outliers be represented by specific symbols or colors?
+
+  6. Do you have a preference for the orientation of the box chart, vertical or horizontal?
+
+  7. Would you like the chart to include a title and axis labels, and if so, do you
+  have specific phrasing in mind?
+
+  8. Should the chart include a legend explaining the annotations and highlights?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a box chart to visualize the distribution of variables\
+  \ V1 to V24 based on the 'Class'. Highlight the median and identify outliers. Annotate\
+  \ key data points that exhibit extreme values for better insights into robot navigation\
+  \ performance variations.\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 25% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nVisualize the distribution of variables to highlight median\
+  \ and identify outliers, providing insights into robot navigation performance variations\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have a specific\
+  \ color scheme preference for the box chart?\n2. Should the box chart include grid\
+  \ lines for easier reading?\n3. Do you prefer any particular style for highlighting\
+  \ the median, such as a different color or line thickness?\n4. Would you like to\
+  \ have specific annotations for the key data points that exhibit extreme values,\
+  \ and if so, how would you like them to be styled (e.g., arrows, labels)?\n5. Should\
+  \ the outliers be represented by specific symbols or colors?\n6. Do you have a preference\
+  \ for the orientation of the box chart, vertical or horizontal?\n7. Would you like\
+  \ the chart to include a title and axis labels, and if so, do you have specific\
+  \ phrasing in mind?\n8. Should the chart include a legend explaining the annotations\
+  \ and highlights?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I prefer highlighting the median with a different color.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. Yes, I would like the chart to include a title and axis labels. No specific phrasing
+  in mind.
+
+  8. I am not sure.'

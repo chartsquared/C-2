@@ -1,0 +1,108 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Candlestick chart
+
+  * Dot plot
+
+  * Histogram
+
+  * Area chart'
+- 973
+- 942
+- 31
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n    \n3.\
+  \ Highlights:\nDescription: Highlights modify the appearance of chart elements (e.g.,\
+  \ size, color) to emphasize or reduce their importance.\nPurpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually\n<end of the annotation\
+  \ list>"
+- 801
+- 662
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/253.csv'': {''summary'': {''Column'': [''Type'', ''Date'',
+  ''Open'', ''High'', ''Low'', ''Close'', ''Adj Close'', ''Volume''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 2, 2, 2, 2, 2, 2], ''Unique Values'': [12, 1826, 19030, 19035, 19057, 19022,
+  19022, 17105]}, ''sample_data'': {''Type'': [''Tether USD'', ''Tether USD'', ''Tether
+  USD''], ''Date'': [''1/1/2018'', ''1/2/2018'', ''1/3/2018''], ''Open'': [1.01255,
+  1.00574, 1.0066], ''High'': [1.01536, 1.00988, 1.02328], ''Low'': [1.00153, 0.99325,
+  1.00264], ''Close'': [1.00728, 1.0049, 1.01344], ''Adj Close'': [1.00728, 1.0049,
+  1.01344], ''Volume'': [1685299968.0, 2635859968.0, 2471689984.0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  12 Well-known Crypto(currencies) | 2018-2023
+
+  cryptocurrency-and-blockchain
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Line chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Line chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Dot plot'
+- '* Candlestick chart'
+- '* Scatter plot'
+- '* Area chart'
+- '* Heatmap'
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Dot plot'
+- '* Candlestick chart'
+- '* Scatter plot'
+- '* Area chart'
+- '* Heatmap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart that visualizes the price movements of Tether USD from 2018
+  to 2023. The x-axis should represent the date, and the y-axis should represent the
+  adjusted closing price. Make sure to highlight the trends over this period. Additionally,
+  use different colors to denote the high, low, and closing prices. Ensure the data
+  points are clearly marked and include grid lines for better readability. Include
+  a legend and title for context. Lastly, represent the trading volume in a secondary
+  y-axis to see the correlation between price movements and trading volume.
+- 650
+- 537
+- 113

@@ -1,0 +1,67 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Line chart
+
+  * Stacked bar/column chart
+
+  * Heatmap'
+- 895
+- 872
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 724
+- 585
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/412.csv': {'summary': {'Column':\
+  \ ['country', 'country_name', 'type', 'level', '2016', '2017', '2018'], 'Data Type':\
+  \ [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64')], 'Missing Values': [0, 8, 0, 0, 0, 0, 0], 'Unique Values': [37,\
+  \ 36, 8, 2, 194, 203, 184]}, 'sample_data': {'country': ['BE', 'BE', 'BE'], 'country_name':\
+  \ ['Belgium', 'Belgium', 'Belgium'], 'type': ['Conventional thermal', 'Nuclear',\
+  \ 'Hydro'], 'level': ['Level 1', 'Level 1', 'Level 1'], '2016': [30728.0, 41430.0,\
+  \ 1476.0], '2017': [31316.0, 40128.5, 1360.9], '2018': [30092.635, 26995.628, 1239.248]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nHow European Countries\
+  \ Generated Electricity in 2018\nsocial-science\n<end of data details format>\n\n\
+  Given a data format, imagine a chart that visualizes this data as the final output\
+  \ you want from the service provider.\nConsider what purpose the data has and the\
+  \ practical purpose of visualization and include it in the instructions.\nYou need\
+  \ to imagine a chart with * Grouped bar/column chart and given annotations that\
+  \ utilizes the data format.\nIf there are multiple given data formats, imagine a\
+  \ chart with * Grouped bar/column chart and given annotations that utilizes all\
+  \ the data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 50 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- Generate a grouped bar chart showing electricity generation in European countries
+  in 2018, categorized by type (Conventional thermal, Nuclear, Hydro). Highlight Belgium
+  data points for better comparison. Include annotations for specific data values
+  to draw attention.
+- 708
+- 662
+- 46

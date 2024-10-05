@@ -1,0 +1,102 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Pie chart
+
+  * Line chart
+
+  * Box chart
+
+  * Choropleth map'
+- 1217
+- 1192
+- 25
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1038
+- 899
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/315.csv'': {''summary'': {''Column'': [''Animal'', ''Height
+  (cm)'', ''Weight (kg)'', ''Color'', ''Lifespan (years)'', ''Diet'', ''Habitat'',
+  ''Predators'', ''Average Speed (km/h)'', ''Countries Found'', ''Conservation Status'',
+  ''Family'', ''Gestation Period (days)'', ''Top Speed (km/h)'', ''Social Structure'',
+  ''Offspring per Birth''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0], ''Unique Values'': [196, 162, 184, 85, 93, 16, 97, 113, 97, 104, 12, 120, 161,
+  71, 10, 68]}, ''sample_data'': {''Animal'': [''Aardvark'', ''Aardwolf'', ''African
+  Elephant''], ''Height (cm)'': [''105-130'', ''40-50'', ''270-310''], ''Weight (kg)'':
+  [''40-65'', ''8-14'', ''2700-6000''], ''Color'': [''Grey'', ''Yellow-brown'', ''Grey''],
+  ''Lifespan (years)'': [''20-30'', ''10-12'', ''60-70''], ''Diet'': [''Insectivore'',
+  ''Insectivore'', ''Herbivore''], ''Habitat'': [''Savannas, Grasslands'', ''Grasslands,
+  Savannas'', ''Savannah, Forest''], ''Predators'': [''Lions, Hyenas'', ''Lions, Leopards'',
+  ''Lions, Hyenas''], ''Average Speed (km/h)'': [''40'', ''24-30'', ''25''], ''Countries
+  Found'': [''Africa'', ''Eastern and Southern Africa'', ''Africa''], ''Conservation
+  Status'': [''Least Concern'', ''Least Concern'', ''Vulnerable''], ''Family'': [''Orycteropodidae'',
+  ''Hyaenidae'', ''Elephantidae''], ''Gestation Period (days)'': [''210-240'', ''90'',
+  ''640-660''], ''Top Speed (km/h)'': [''40'', ''40'', ''40''], ''Social Structure'':
+  [''Solitary'', ''Solitary'', ''Herd-based''], ''Offspring per Birth'': [''1'', ''2-5'',
+  ''1'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Animal Information Dataset
+
+  zoology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Choropleth map that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Choropleth map
+  that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Pie chart'
+- '* Line chart'
+- '* Choropleth map'
+2. initial_prompt: !!python/tuple
+- Create a Choropleth map visualizing the distribution of animal species across different
+  countries, based on the "Countries Found" column from the given dataset.
+- 808
+- 778
+- 30

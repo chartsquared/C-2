@@ -1,0 +1,270 @@
+02_initial_prompt: I need a scatter plot to visualize job salaries in the data science
+  field. Use the 'salary_in_usd' on the y-axis and 'work_year' on the x-axis. Differentiate
+  the points by 'job_category' using different colors. Additionally, use different
+  shapes to represent 'experience_level'. This will allow me to see how salaries change
+  over time across various data science job categories and experience levels. Please
+  ensure to label the axes and include a legend for both job categories and experience
+  levels for better understanding.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I need a scatter plot to visualize job salaries in the data science field. Use the
+  ''salary_in_usd'' on the y-axis and ''work_year'' on the x-axis. Differentiate the
+  points by ''job_category'' using different colors. Additionally, use different shapes
+  to represent ''experience_level''. This will allow me to see how salaries change
+  over time across various data science job categories and experience levels. Please
+  ensure to label the axes and include a legend for both job categories and experience
+  levels for better understanding.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/88.csv'': {''summary'': {''Column'': [''work_year'', ''job_title'',
+  ''job_category'', ''salary_currency'', ''salary'', ''salary_in_usd'', ''employee_residence'',
+  ''experience_level'', ''employment_type'', ''work_setting'', ''company_location'',
+  ''company_size''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0], ''Unique Values'': [4, 125, 10, 11, 1507, 1786, 83, 4, 4, 3,
+  70, 3]}, ''sample_data'': {''work_year'': [2023, 2023, 2023], ''job_title'': [''Data
+  DevOps Engineer'', ''Data Architect'', ''Data Architect''], ''job_category'': [''Data
+  Engineering'', ''Data Architecture and Modeling'', ''Data Architecture and Modeling''],
+  ''salary_currency'': [''EUR'', ''USD'', ''USD''], ''salary'': [88000, 186000, 81800],
+  ''salary_in_usd'': [95012, 186000, 81800], ''employee_residence'': [''Germany'',
+  ''United States'', ''United States''], ''experience_level'': [''Mid-level'', ''Senior'',
+  ''Senior''], ''employment_type'': [''Full-time'', ''Full-time'', ''Full-time''],
+  ''work_setting'': [''Hybrid'', ''In-person'', ''In-person''], ''company_location'':
+  [''Germany'', ''United States'', ''United States''], ''company_size'': [''L'', ''M'',
+  ''M'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["work_year", "salary_in_usd", "job_category", "experience_level"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "To visualize how job salaries in the data science field have changed
+  over time, with distinctions made between various job categories and experience
+  levels",
+
+  "Audience": "Data science professionals, employers, HR specialists, and researchers"
+
+  }'
+05_audience: Data science professionals, employers, HR specialists, and researchers
+05_data_attributes:
+- work_year
+- salary_in_usd
+- job_category
+- experience_level
+05_purpose: To visualize how job salaries in the data science field have changed over
+  time, with distinctions made between various job categories and experience levels
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/88.csv'': {''summary'': {''Column'': [''work_year'', ''job_title'',
+  ''job_category'', ''salary_currency'', ''salary'', ''salary_in_usd'', ''employee_residence'',
+  ''experience_level'', ''employment_type'', ''work_setting'', ''company_location'',
+  ''company_size''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0], ''Unique Values'': [4, 125, 10, 11, 1507, 1786, 83, 4, 4, 3,
+  70, 3]}, ''sample_data'': {''work_year'': [2023, 2023, 2023], ''job_title'': [''Data
+  DevOps Engineer'', ''Data Architect'', ''Data Architect''], ''job_category'': [''Data
+  Engineering'', ''Data Architecture and Modeling'', ''Data Architecture and Modeling''],
+  ''salary_currency'': [''EUR'', ''USD'', ''USD''], ''salary'': [88000, 186000, 81800],
+  ''salary_in_usd'': [95012, 186000, 81800], ''employee_residence'': [''Germany'',
+  ''United States'', ''United States''], ''experience_level'': [''Mid-level'', ''Senior'',
+  ''Senior''], ''employment_type'': [''Full-time'', ''Full-time'', ''Full-time''],
+  ''work_setting'': [''Hybrid'', ''In-person'', ''In-person''], ''company_location'':
+  [''Germany'', ''United States'', ''United States''], ''company_size'': [''L'', ''M'',
+  ''M'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I need a scatter plot to visualize job salaries in the data science field. Use the
+  ''salary_in_usd'' on the y-axis and ''work_year'' on the x-axis. Differentiate the
+  points by ''job_category'' using different colors. Additionally, use different shapes
+  to represent ''experience_level''. This will allow me to see how salaries change
+  over time across various data science job categories and experience levels. Please
+  ensure to label the axes and include a legend for both job categories and experience
+  levels for better understanding.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''work_year'', ''salary_in_usd'', ''job_category'', ''experience_level'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Data science professionals, employers, HR specialists, and researchers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To visualize how job salaries in the data science field have changed over time,
+  with distinctions made between various job categories and experience levels
+
+  <end of purpose>'
+07_questions: '1. Do you have a specific color palette preference for the ''job_category''
+  differentiation?
+
+  2. Do you prefer any specific shapes for different ''experience_level'' representations?
+
+  3. What title would you like to give to the scatter plot?
+
+  4. Do you have any particular font preferences or sizes for the axis labels and
+  legend?
+
+  5. Would you like to include any annotations or data point labels on the scatter
+  plot?
+
+  6. Are there any specific axis ranges you would like to set for the x-axis (''work_year'')
+  and y-axis (''salary_in_usd'')?
+
+  7. Do you prefer gridlines on the chart, and if so, should they be light or bold?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI need a scatter plot to visualize job salaries in the\
+  \ data science field. Use the 'salary_in_usd' on the y-axis and 'work_year' on the\
+  \ x-axis. Differentiate the points by 'job_category' using different colors. Additionally,\
+  \ use different shapes to represent 'experience_level'. This will allow me to see\
+  \ how salaries change over time across various data science job categories and experience\
+  \ levels. Please ensure to label the axes and include a legend for both job categories\
+  \ and experience levels for better understanding.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nTo visualize how job salaries in the\
+  \ data science field have changed over time, with distinctions made between various\
+  \ job categories and experience levels\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have a specific color palette preference for the 'job_category'\
+  \ differentiation?\n2. Do you prefer any specific shapes for different 'experience_level'\
+  \ representations?\n3. What title would you like to give to the scatter plot?\n\
+  4. Do you have any particular font preferences or sizes for the axis labels and\
+  \ legend?\n5. Would you like to include any annotations or data point labels on\
+  \ the scatter plot?\n6. Are there any specific axis ranges you would like to set\
+  \ for the x-axis ('work_year') and y-axis ('salary_in_usd')?\n7. Do you prefer gridlines\
+  \ on the chart, and if so, should they be light or bold?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '<start of user emulated response>
+
+  1. I am not sure about the color palette preference.
+
+  2. I do not know which specific shapes to use.
+
+  3. "Data Science Job Salaries Over Time"
+
+  4. I have no specific preference for font or size.
+
+  5. I am not sure about annotations or data point labels.
+
+  6. I do not have specific axis ranges in mind.
+
+  7. I prefer gridlines, but I am not sure if they should be light or bold.
+
+  <end of user emulated response>'

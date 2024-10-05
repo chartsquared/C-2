@@ -1,0 +1,169 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Radar chart
+
+  * Table chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Spline chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map'
+- 2340
+- 2271
+- 69
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 2117
+- 1979
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/141.csv'': {''summary'': {''Column'': [''year'', ''ISO_code'',
+  ''countries'', ''ECONOMIC FREEDOM'', ''rank'', ''quartile'', ''1a_government_consumption'',
+  ''1b_transfers'', ''1c_gov_enterprises'', ''1d_top_marg_tax_rate'', ''1_size_government'',
+  ''2a_judicial_independence'', ''2b_impartial_courts'', ''2c_protection_property_rights'',
+  ''2d_military_interference'', ''2e_integrity_legal_system'', ''2f_legal_enforcement_contracts'',
+  ''2g_restrictions_sale_real_property'', ''2h_reliability_police'', ''2i_business_costs_crime'',
+  ''2j_gender_adjustment'', ''2_property_rights'', ''3a_money_growth'', ''3b_std_inflation'',
+  ''3c_inflation'', ''3d_freedom_own_foreign_currency'', ''3_sound_money'', ''4a_tariffs'',
+  ''4b_regulatory_trade_barriers'', ''4c_black_market'', ''4d_control_movement_capital_ppl'',
+  ''4_trade'', ''5a_credit_market_reg'', ''5b_labor_market_reg'', ''5c_business_reg'',
+  ''5_regulation''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 723, 723, 723, 589, 960, 646,
+  1047, 647, 1553, 1179, 1129, 1186, 1153, 1361, 1384, 2071, 2071, 66, 755, 644, 607,
+  607, 621, 611, 681, 1348, 617, 592, 691, 619, 1158, 1402, 728], ''Unique Values'':
+  [23, 162, 162, 529, 162, 4, 2462, 1672, 7, 21, 3033, 1884, 2092, 1975, 274, 87,
+  586, 1003, 1448, 1584, 106, 2776, 2994, 2871, 2791, 3, 3085, 2047, 2054, 144, 2103,
+  2877, 2485, 2342, 2319, 2954]}, ''sample_data'': {''year'': [2016, 2016, 2016],
+  ''ISO_code'': [''ALB'', ''DZA'', ''AGO''], ''countries'': [''Albania'', ''Algeria'',
+  ''Angola''], ''ECONOMIC FREEDOM'': [7.54, 4.99, 5.17], ''rank'': [34.0, 159.0, 155.0],
+  ''quartile'': [1.0, 4.0, 4.0], ''1a_government_consumption'': [8.232352941, 2.15,
+  7.6], ''1b_transfers'': [7.509902296, 7.817129014, 8.886739306], ''1c_gov_enterprises'':
+  [8.0, 0.0, 0.0], ''1d_top_marg_tax_rate'': [8.0, 4.5, 9.5], ''1_size_government'':
+  [7.935563809, 3.616782254, 6.496684826], ''2a_judicial_independence'': [2.668221792,
+  4.186704158, 1.843129164], ''2b_impartial_courts'': [3.145461678, 4.327112635, 1.974565724],
+  ''2c_protection_property_rights'': [4.512227773, 4.689952135, 2.512364187], ''2d_military_interference'':
+  [8.333333333, 4.166666667, 3.333333333], ''2e_integrity_legal_system'': [4.166666667,
+  5.0, 4.166666667], ''2f_legal_enforcement_contracts'': [4.387444055, 4.507538039,
+  2.302200397], ''2g_restrictions_sale_real_property'': [6.48528661, 6.626692153,
+  5.455882288], ''2h_reliability_police'': [6.933499972, 6.136844953, 3.016103987],
+  ''2i_business_costs_crime'': [6.215400695, 6.737383207, 4.291196631], ''2j_gender_adjustment'':
+  [0.948717949, 0.820512821, 0.846153846], ''2_property_rights'': [5.071813726, 4.690742835,
+  2.963635116], ''3a_money_growth'': [8.986454287, 6.955962198, 9.385679482], ''3b_std_inflation'':
+  [9.484575272, 8.339152127, 4.986741972], ''3c_inflation'': [9.7436, 8.72046, 3.054],
+  ''3d_freedom_own_foreign_currency'': [10.0, 5.0, 5.0], ''3_sound_money'': [9.55365739,
+  7.253893581, 5.606605364], ''4a_tariffs'': [8.963555556, 6.872533333, 6.989244444],
+  ''4b_regulatory_trade_barriers'': [7.489904631, 2.481294473, 2.024949049], ''4c_black_market'':
+  [10.0, 5.563909774, 10.0], ''4d_control_movement_capital_ppl'': [6.406137855, 1.590361717,
+  2.044822683], ''4_trade'': [8.21489951, 4.127024824, 5.264754044], ''5a_credit_market_reg'':
+  [7.098562307, 5.100508618, 7.064905164], ''5b_labor_market_reg'': [6.916277916,
+  5.029512576, 4.560324821], ''5c_business_reg'': [6.705863193, 5.676955998, 4.930271338],
+  ''5_regulation'': [6.906901139, 5.268992397, 5.518500441]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Economic Freedom of the World
+
+  economics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Dot plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Dot plot that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Grouped bar/column chart'
+- '* Area chart'
+- '* Histogram'
+- '* Radar chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Column chart'
+- '* Dot plot'
+- '* Scatter plot'
+- '* Spline chart'
+- '* Choropleth map'
+- '* Box chart'
+- '* Table chart'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Area chart'
+- '* Histogram'
+- '* Radar chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Column chart'
+- '* Dot plot'
+2. initial_prompt: !!python/tuple
+- Please create a dot plot using the "Economic Freedom of the World" data. The x-axis
+  should represent the "countries" while the y-axis depicts the "ECONOMIC FREEDOM"
+  scores for the year 2016. Points should be color-coded based on the "quartile" they
+  belong to. Make sure to label the axes clearly and provide a legend indicating the
+  quartiles. Display the top 10 countries with the highest economic freedom scores
+  and ensure the plot is easy to interpret with adequately spaced points for clarity.
+- 1960
+- 1854
+- 106

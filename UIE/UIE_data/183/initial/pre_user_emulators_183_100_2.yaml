@@ -1,0 +1,85 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart
+
+  * Treemap'
+- 934
+- 907
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 756
+- 617
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/183.csv': {'summary': {'Column':\
+  \ ['Rank', 'Title', 'Sales', 'Series', 'Platform(s)', 'Initial release date', 'Developer(s)',\
+  \ 'Publisher(s)'], 'Data Type': [dtype('int64'), dtype('O'), dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 5,\
+  \ 0, 0, 0, 0], 'Unique Values': [45, 50, 45, 22, 13, 50, 27, 18]}, 'sample_data':\
+  \ {'Rank': [1, 2, 3], 'Title': ['Minecraft', 'Grand Theft Auto V', 'Tetris (EA)'],\
+  \ 'Sales': [238000000, 175000000, 100000000], 'Series': ['Minecraft', 'Grand Theft\
+  \ Auto', 'Tetris'], 'Platform(s)': ['Multi-platform', 'Multi-platform', 'Multi-platform'],\
+  \ 'Initial release date': ['November 18, 2011', 'September 17, 2013', 'September\
+  \ 12, 2006'], 'Developer(s)': ['Mojang Studios', 'Rockstar North', 'EA Mobile'],\
+  \ 'Publisher(s)': ['Xbox Game Studios', 'Rockstar Games', 'Electronic Arts']}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nBest-Selling Video Games\
+  \ of All Time\ngames\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nIt MUST be a chart that can be created using only data columns.\nConsider\
+  \ what purpose the data has and the practical purpose of visualization and include\
+  \ it in the instructions.\nYou need to imagine a chart with * Line chart and given\
+  \ annotations that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Line chart and given annotations that utilizes all the\
+  \ data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data. \nTo emulate a real-world user your instruction should be 100 in\
+  \ size (word count). Do not include data path in the instruction.\nYour response\
+  \ should ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Treemap'
+- '* Line chart'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Treemap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart visualizing the sales data of the best-selling video games of
+  all time. The x-axis should represent the rank, and the y-axis should indicate the
+  sales figures. Annotate specific data points for titles like "Minecraft," "Grand
+  Theft Auto V," and "Tetris (EA)" to highlight their remarkable sales. Use different
+  colors or sizes to emphasize these top-selling games, making them stand out visually.
+  This will help viewers quickly identify the leading titles and their sales performance.
+  Include data labels for major data points to provide additional context and clarity.
+- 814
+- 701
+- 113

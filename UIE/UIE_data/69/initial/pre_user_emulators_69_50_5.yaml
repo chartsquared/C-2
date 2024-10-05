@@ -1,0 +1,103 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1308
+- 1281
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1133
+- 994
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/69.csv'': {''summary'': {''Column'': [''bytes_in'', ''bytes_out'',
+  ''creation_time'', ''end_time'', ''src_ip'', ''src_ip_country_code'', ''protocol'',
+  ''response.code'', ''dst_port'', ''dst_ip'', ''rule_names'', ''observation_name'',
+  ''source.meta'', ''source.name'', ''time'', ''detection_types''], ''Data Type'':
+  [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [260, 239, 30,
+  30, 28, 7, 1, 1, 1, 1, 1, 1, 1, 1, 30, 1]}, ''sample_data'': {''bytes_in'': [5602,
+  30912, 28506], ''bytes_out'': [12990, 18186, 13468], ''creation_time'': [''2024-04-25T23:00:00Z'',
+  ''2024-04-25T23:00:00Z'', ''2024-04-25T23:00:00Z''], ''end_time'': [''2024-04-25T23:10:00Z'',
+  ''2024-04-25T23:10:00Z'', ''2024-04-25T23:10:00Z''], ''src_ip'': [''147.161.161.82'',
+  ''165.225.33.6'', ''165.225.212.255''], ''src_ip_country_code'': [''AE'', ''US'',
+  ''CA''], ''protocol'': [''HTTPS'', ''HTTPS'', ''HTTPS''], ''response.code'': [200,
+  200, 200], ''dst_port'': [443, 443, 443], ''dst_ip'': [''10.138.69.97'', ''10.138.69.97'',
+  ''10.138.69.97''], ''rule_names'': [''Suspicious Web Traffic'', ''Suspicious Web
+  Traffic'', ''Suspicious Web Traffic''], ''observation_name'': [''Adversary Infrastructure
+  Interaction'', ''Adversary Infrastructure Interaction'', ''Adversary Infrastructure
+  Interaction''], ''source.meta'': [''AWS_VPC_Flow'', ''AWS_VPC_Flow'', ''AWS_VPC_Flow''],
+  ''source.name'': [''prod_webserver'', ''prod_webserver'', ''prod_webserver''], ''time'':
+  [''2024-04-25T23:00:00Z'', ''2024-04-25T23:00:00Z'', ''2024-04-25T23:00:00Z''],
+  ''detection_types'': [''waf_rule'', ''waf_rule'', ''waf_rule'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Cybersecurity: Suspicious Web Threat Interactions
+
+  cybersecurity
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bar chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bar chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Geographic heatmap'
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart showing 'bytes_in' and 'bytes_out' for each 'src_ip'. Include
+  'protocol' and 'src_ip_country_code' as color-coded categories. Title the chart
+  'Web Traffic Data'.
+- 913
+- 869
+- 44

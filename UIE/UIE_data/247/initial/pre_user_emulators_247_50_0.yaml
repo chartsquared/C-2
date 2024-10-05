@@ -1,0 +1,94 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1673
+- 1643
+- 30
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1493
+- 1354
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/247.csv': {'summary': {'Column':\
+  \ ['GSM', 'Smoking Status', 'Gender', 'Age', 'cg00050873', 'cg00212031', 'cg00213748',\
+  \ 'cg00214611', 'cg00455876', 'cg01707559', 'cg02004872', 'cg02011394', 'cg02050847',\
+  \ 'cg02233190', 'cg02494853', 'cg02839557', 'cg02842889', 'cg03052502', 'cg03155755',\
+  \ 'cg03244189', 'cg03443143', 'cg03683899', 'cg03695421', 'cg03706273'], 'Data Type':\
+  \ [dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64')], 'Missing Values': [0, 0,\
+  \ 0, 0, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62,\
+  \ 62, 62], 'Unique Values': [671, 2, 4, 57, 621, 621, 621, 621, 621, 621, 621, 621,\
+  \ 621, 621, 621, 621, 621, 621, 621, 621, 621, 621, 621, 621]}, 'sample_data': {'GSM':\
+  \ ['GSM1051525', 'GSM1051526', 'GSM1051527'], 'Smoking Status': ['current', 'current',\
+  \ 'current'], 'Gender': [' f', ' f', ' f'], 'Age': [67, 49, 53], 'cg00050873': [0.607563363,\
+  \ 0.345054241, 0.321349738], 'cg00212031': [0.422842728, 0.568661522, 0.360909141],\
+  \ 'cg00213748': [0.37245485, 0.500599521, 0.352731517], 'cg00214611': [0.621561887,\
+  \ 0.498606688, 0.373824034], 'cg00455876': [0.290777253, 0.374590868, 0.230673954],\
+  \ 'cg01707559': [0.267143145, 0.190274348, 0.314705159], 'cg02004872': [0.179143865,\
+  \ 0.15597746, 0.105744843], 'cg02011394': [0.480251743, 0.418080929, 0.615102994],\
+  \ 'cg02050847': [0.327607771, 0.346462704, 0.237539238], 'cg02233190': [0.241120383,\
+  \ 0.175490699, 0.24640917], 'cg02494853': [0.067069584, 0.046938891, 0.038237118],\
+  \ 'cg02839557': [0.246993368, 0.236742313, 0.244611725], 'cg02842889': [0.469239561,\
+  \ 0.307466553, 0.357752571], 'cg03052502': [0.400246567, 0.377031305, 0.305044161],\
+  \ 'cg03155755': [0.41503134, 0.397371461, 0.521277501], 'cg03244189': [0.221433054,\
+  \ 0.217122107, 0.185049491], 'cg03443143': [0.475825801, 0.544468998, 0.53705997],\
+  \ 'cg03683899': [0.207724171, 0.184446243, 0.393123137], 'cg03695421': [0.209197429,\
+  \ 0.193773201, 0.268003033], 'cg03706273': [0.129982552, 0.098532655, 0.040248079]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\n CpG Values of Smoking\
+  \ and Non Smoking Patients\nbiology\n<end of data details format>\n\nGiven a data\
+  \ format, imagine a chart that visualizes this data as the final output you want\
+  \ from the service provider.\nIt MUST be a chart that can be created using only\
+  \ data columns.\nConsider what purpose the data has and the practical purpose of\
+  \ visualization and include it in the instructions.\nYou need to imagine a chart\
+  \ with * Stacked bar/column chart and given annotations that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Stacked bar/column\
+  \ chart and given annotations that utilizes all the data formats.\nSince you are\
+  \ an amateur user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\n\
+  Also, refer to the data details to create as practical and realistic instructions\
+  \ as possible.\nInstructions must reflect the context of the data. \nTo emulate\
+  \ a real-world user your instruction should be 50 in size (word count). Do not include\
+  \ data path in the instruction.\nYour response should ONLY contain the user emulated\
+  \ instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a stacked bar chart representing CpG values for smoking and non-smoking patients,
+  segmented by gender. Highlight specific CpG sites and provide text annotations for
+  significant data points to emphasize differences. Ensure the chart clearly shows
+  variations in methylation levels.
+- 1494
+- 1446
+- 48

@@ -1,0 +1,91 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Column chart
+
+  * Line chart
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Heatmap
+
+  * Stacked area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map'
+- 885
+- 847
+- 38
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 698
+- 559
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/419.csv': {'summary': {'Column':\
+  \ ['date', 'crossing', 'direction', 'bike_count', 'ped_count'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('float64'), dtype('float64')], 'Missing Values':\
+  \ [0, 0, 0, 6603, 261713], 'Unique Values': [45576, 7, 4, 329, 1279]}, 'sample_data':\
+  \ {'date': ['01/01/2014 12:00:00 AM', '01/01/2014 01:00:00 AM', '01/01/2014 02:00:00\
+  \ AM'], 'crossing': ['Broadway Cycle Track North Of E Union St', 'Broadway Cycle\
+  \ Track North Of E Union St', 'Broadway Cycle Track North Of E Union St'], 'direction':\
+  \ ['North', 'North', 'North'], 'bike_count': [0.0, 3.0, 0.0], 'ped_count': [nan,\
+  \ nan, nan]}}}\n<end of data example format>\n\n<start of annotations format>\n\
+  ['<start of the annotation list>', '1. Text Annotations:', 'Description: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.', 'Purpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.', 'Other Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.', '3. Highlights:',\
+  \ 'Description: Highlights modify the appearance of chart elements (e.g., size,\
+  \ color) to emphasize or reduce their importance.', 'Purpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually', '<end of the annotation\
+  \ list>']\n<end of annotations format>\n\n<start of data details format>\nRiding\
+  \ the green wave in seattle\nurban-planning\n<end of data details format>\n\nGiven\
+  \ a data format, imagine a chart that visualizes this data as the final output you\
+  \ want from the service provider.\nConsider what purpose the data has and the practical\
+  \ purpose of visualization and include it in the instructions.\nYou need to imagine\
+  \ a chart with * Bubble chart and given annotations that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Bubble chart and\
+  \ given annotations that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Box chart'
+- '* Bubble chart'
+- '* Scatter plot'
+- '* Stacked area chart'
+- '* Column chart'
+- '* Choropleth map'
+- '* Histogram'
+- '* Heatmap'
+- '* Line chart'
+- '* Box chart'
+- '* Bubble chart'
+2. initial_prompt: !!python/tuple
+- Create a bubble chart visualizing bike counts and pedestrian counts at different
+  crossings in Seattle. The x-axis should represent time (dates), and the y-axis should
+  represent bike and pedestrian counts. Use bubbles of different sizes or colors to
+  distinguish between bike and pedestrian counts. Highlight times and crossings with
+  the highest and lowest counts. Add text annotations to note significant data points
+  or trends. The chart should help urban planners identify peak times for bike and
+  pedestrian traffic, assisting in traffic management and infrastructure improvements.
+  Include data from the specified time range for accurate analysis.
+- 736
+- 628
+- 108

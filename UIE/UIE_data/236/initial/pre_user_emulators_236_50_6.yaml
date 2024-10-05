@@ -1,0 +1,103 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart'
+- 1251
+- 1221
+- 30
+1-2. selected_annotations: !!python/tuple
+- "1. Text Annotations:\nDescription: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.\nPurpose: When only some elements\
+  \ are annotated, the intent is to focus the viewer\u2019s attention on those before\
+  \ examining others.\nOther Uses: Non-data-driven annotations can provide context,\
+  \ orientation, or editorial comments.\n\n3. Highlights:\nDescription: Highlights\
+  \ modify the appearance of chart elements (e.g., size, color) to emphasize or reduce\
+  \ their importance.\nPurpose: Used to distinguish certain elements from others,\
+  \ making them stand out visually"
+- 1050
+- 927
+- 123
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/236.csv'': {''summary'': {''Column'': [''artist'', ''song'',
+  ''duration_ms'', ''explicit'', ''year'', ''popularity'', ''danceability'', ''energy'',
+  ''key'', ''loudness'', ''mode'', ''speechiness'', ''acousticness'', ''instrumentalness'',
+  ''liveness'', ''valence'', ''tempo'', ''genre''], ''Data Type'': [dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''bool''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O'')], ''Missing Values'': [0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [835, 1879,
+  1793, 2, 23, 76, 565, 580, 12, 1671, 2, 837, 1208, 772, 783, 760, 1831, 59]}, ''sample_data'':
+  {''artist'': [''Britney Spears'', ''blink-182'', ''Faith Hill''], ''song'': [''Oops!...I
+  Did It Again'', ''All The Small Things'', ''Breathe''], ''duration_ms'': [211160,
+  167066, 250546], ''explicit'': [False, False, False], ''year'': [2000, 1999, 1999],
+  ''popularity'': [77, 79, 66], ''danceability'': [0.751, 0.434, 0.529], ''energy'':
+  [0.834, 0.897, 0.496], ''key'': [1, 0, 7], ''loudness'': [-5.444, -4.918, -9.007],
+  ''mode'': [0, 1, 1], ''speechiness'': [0.0437, 0.0488, 0.029], ''acousticness'':
+  [0.3, 0.0103, 0.173], ''instrumentalness'': [1.77e-05, 0.0, 0.0], ''liveness'':
+  [0.355, 0.612, 0.251], ''valence'': [0.894, 0.684, 0.278], ''tempo'': [95.053, 148.726,
+  136.859], ''genre'': [''pop'', ''rock, pop'', ''pop, country'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Spotify Analysis & Visualization
+
+  music
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bar chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bar chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Histogram'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Heatmap'
+- '* Area chart'
+- '* Scatter plot'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart using the given music dataset. Show the average popularity of
+  songs per genre. Include all genres and label the x-axis with the genre names and
+  the y-axis with the popularity scores.
+- 842
+- 802
+- 40

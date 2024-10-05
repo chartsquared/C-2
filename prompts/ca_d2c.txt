@@ -1,0 +1,53 @@
+You are an expert data visualizer.
+
+The following instruction asks you to generate code for data visualization of the underlying data file that we have attached.
+I will give you the data, but you can ignore some parts from the data if it is not necessary and unrelated to the instruction.
+Assume that the data file that has been attached in the path “{data_path}” in the generated code.
+The file format of the data is **f”.json or .csv”.**
+Your code should include loading the data file, and check and verify the data type and representation of the data to avoid errors while executing.
+
+<start of data format>
+{data}
+<end of data format>
+
+Your code should also automatically download the final visualization in a lower level directory (contained within the current directory) named “plots_d2c”.
+You MUST name your final generated visualization as ”{file_index}.png”.
+You can freely choose package(s) that work best to make the visualization.
+
+Here is the instruction set:
+
+<start of initial instruction>
+{initial_instruction}
+<end of initial instruction>
+
+<start of further instruction>
+Questions:
+{Q}
+Answers:
+{A}
+<end of further instruction>
+
+Ensure you use this code format in order to avoid errors, and only give the executable Python Code.
+
+Programming Language: [Python]
+
+Code:
+```Python
+# CODE FOR IMPORTING PACKAGES
+
+try:
+    # CODE FOR LOADING AND PLOTTING THE DATA
+
+except Exception as e:
+    print("An error occurred", e)
+
+finally:
+    # Create plots directory if it does not exist
+    plots_dir = 'plots_d2c'
+    if not os.path.exists(plots_dir):
+        os.makedirs(plots_dir)
+
+    # CODE FOR SAVING THE PLOT, THEN SHOWING THE PLOT
+
+    print("Plot saved and then shown")
+```

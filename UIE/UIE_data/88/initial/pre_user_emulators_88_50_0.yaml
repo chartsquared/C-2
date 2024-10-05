@@ -1,0 +1,84 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map'
+- 1054
+- 1010
+- 44
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 863
+- 724
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/88.csv': {'summary': {'Column':\
+  \ ['work_year', 'job_title', 'job_category', 'salary_currency', 'salary', 'salary_in_usd',\
+  \ 'employee_residence', 'experience_level', 'employment_type', 'work_setting', 'company_location',\
+  \ 'company_size'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\
+  \ 'Unique Values': [4, 125, 10, 11, 1507, 1786, 83, 4, 4, 3, 70, 3]}, 'sample_data':\
+  \ {'work_year': [2023, 2023, 2023], 'job_title': ['Data DevOps Engineer', 'Data\
+  \ Architect', 'Data Architect'], 'job_category': ['Data Engineering', 'Data Architecture\
+  \ and Modeling', 'Data Architecture and Modeling'], 'salary_currency': ['EUR', 'USD',\
+  \ 'USD'], 'salary': [88000, 186000, 81800], 'salary_in_usd': [95012, 186000, 81800],\
+  \ 'employee_residence': ['Germany', 'United States', 'United States'], 'experience_level':\
+  \ ['Mid-level', 'Senior', 'Senior'], 'employment_type': ['Full-time', 'Full-time',\
+  \ 'Full-time'], 'work_setting': ['Hybrid', 'In-person', 'In-person'], 'company_location':\
+  \ ['Germany', 'United States', 'United States'], 'company_size': ['L', 'M', 'M']}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nJobs and Salaries in\
+  \ Data Science\ndata-science-and-analytics\n<end of data details format>\n\nGiven\
+  \ a data format, imagine a chart that visualizes this data as the final output you\
+  \ want from the service provider.\nConsider what purpose the data has and the practical\
+  \ purpose of visualization and include it in the instructions.\nYou need to imagine\
+  \ a chart with * Histogram and given annotations that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Histogram and given\
+  \ annotations that utilizes all the data formats.\nSince you are an amateur user,\
+  \ your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to\
+  \ the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 50 in size (word count). Do not include data path in\
+  \ the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Create a histogram visualizing the salary distribution of data science jobs. Highlight
+  the experience levels and specify the work settings. Annotate the highest salary
+  and median salary points. Title it "Salary Distribution in Data Science by Experience
+  Level and Work Setting."
+- 839
+- 791
+- 48

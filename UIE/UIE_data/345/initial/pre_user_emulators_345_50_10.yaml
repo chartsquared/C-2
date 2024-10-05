@@ -1,0 +1,144 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Word cloud
+
+  * Bubble chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Donut chart
+
+  * Pie chart
+
+  * Sunburst chart
+
+  * Line chart
+
+  * Spline chart
+
+  * Step line chart
+
+  * Density plot
+
+  * Violin plot
+
+  * Histogram
+
+  * Box chart
+
+  * Scatter plot'
+- 1823
+- 1740
+- 83
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Highlights:\nDescription: Highlights modify\
+  \ the appearance of chart elements (e.g., size, color) to emphasize or reduce their\
+  \ importance.\nPurpose: Used to distinguish certain elements from others, making\
+  \ them stand out visually\n\n2. Shapes:\nDescription: Shape annotations include\
+  \ lines, arrows, rectangles, and other shapes. They can highlight or enclose specific\
+  \ chart elements to emphasize or compare them.\nData-Driven Use: Some shapes, like\
+  \ trend lines, are calculated from the underlying data.\n<end of the annotation\
+  \ list>"
+- 1564
+- 1452
+- 112
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/345.csv': {'summary': {'Column':\
+  \ ['Company_Name', 'JobTitles', 'Skills', 'Description', 'Stipend', 'Links'], 'Data\
+  \ Type': [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0], 'Unique Values': [301, 222, 344, 424, 109,\
+  \ 431]}, 'sample_data': {'Company_Name': ['Bauer Bodoni', 'Bauer Bodoni', 'ESSI\
+  \ Integrated Technologies'], 'JobTitles': ['WordPress Development Intern', 'WordPress\
+  \ Development Intern', 'ERPNext And HRMS Admin Intern'], 'Skills': ['WordPress',\
+  \ 'MS-PowerPoint , WordPress', 'Accounting , Enterprise Resource Planning(ERP) ,\
+  \ HR Analytics'], 'Description': [\"Are you a WordPress whiz looking to gain hands-on\
+  \ experience? Bauer Bodoni is seeking a talented WordPress Development intern to\
+  \ join our dynamic team! As an intern, you will have the opportunity to work on\
+  \ exciting projects, collaborate with experienced developers, and enhance your skills\
+  \ in a fast-paced environment. \\r\\n\\r\\nSelected intern's day-to-day responsibilities\
+  \ include:\\r\\n\\r\\n1. Develop and customize WordPress themes and plugins to enhance\
+  \ website functionality\\r\\n2. Collaborate with design and marketing teams to implement\
+  \ website updates and improvements\\r\\n3. Conduct website maintenance tasks, such\
+  \ as backups, updates, and optimization\\r\\n4. Troubleshoot and resolve any technical\
+  \ issues that arise on the WordPress platform\\r\\n5. Assist in the creation of\
+  \ new website features and functionalities to improve user experience\\r\\n6. Stay\
+  \ up-to-date on the latest WordPress trends and best practices\\r\\n7. Provide support\
+  \ and training to team members on using WordPress effectively\\r\\n\\r\\nIf you\
+  \ are a self-motivated individual with a passion for WordPress development, then\
+  \ this internship is perfect for you! Apply now and take your skills to the next\
+  \ level with Bauer Bodoni.. WordPress\", \"As a WordPress Development intern at\
+  \ Bauer Bodoni, you will have the exciting opportunity to work closely with our\
+  \ team to enhance our online presence and create stunning websites for our clients.\
+  \ If you have a strong knowledge of WordPress and MS-PowerPoint, this internship\
+  \ is perfect for you! \\r\\n\\r\\nSelected intern's day-to-day responsibilities\
+  \ include:\\r\\n\\r\\n1. Assist in the development and maintenance of WordPress\
+  \ websites for various clients.\\r\\n2. Collaborate with the design team to implement\
+  \ creative and engaging website designs.\\r\\n3. Troubleshoot and resolve any technical\
+  \ issues with WordPress websites.\\r\\n4. Optimize website performance through SEO\
+  \ strategies and best practices.\\r\\n5. Create and update content on websites using\
+  \ MS-PowerPoint.\\r\\n6. Stay up-to-date on the latest trends in WordPress development\
+  \ and implement new features when necessary.\\r\\n7. Provide support to clients\
+  \ and internal team members on website-related tasks.\\r\\n\\r\\nIf you are passionate\
+  \ about web development and eager to learn, apply now to join our team and gain\
+  \ valuable hands-on experience in the world of WordPress development!. MS-PowerPoint\
+  \ , WordPress\", \"Selected intern's day-to-day responsibilities include:\\r\\n\\\
+  r\\n1. Analyze business requirements and processes to configure and customize ERPNext\
+  \ to meet specific needs.\\r\\n2. Develop and implement custom modules, reports,\
+  \ and integrations using the ERPNext framework.\\r\\n3. Provide training and support\
+  \ to end-users on the effective use of ERPNext modules.\\r\\n4. Optimize ERPNext\
+  \ performance and troubleshoot issues as needed.\\r\\n5. Configure and customize\
+  \ the HRMS module within ERPNext to manage HR processes efficiently.\\r\\n6. Set\
+  \ up and maintain employee records, leave management, payroll, performance management,\
+  \ and other HR-related functionalities.\\r\\n7. Develop custom reports and dashboards\
+  \ to support HR analytics and decision-making.\\r\\n8. Ensure data integrity and\
+  \ security in the HRMS system.\\r\\n9. Integrate ERPNext and HRMS with other business\
+  \ systems, such as accounting software, time tracking, or third-party applications.\\\
+  r\\n10. Plan and execute data migration processes from legacy systems to ERPNext\
+  \ and HRMS.\\r\\n11. Ensure data accuracy and integrity during the migration process.\\\
+  r\\n12. Develop comprehensive user guides, training materials, and documentation\
+  \ for ERPNext and HRMS solutions.\\r\\n13. Conduct training sessions and workshops\
+  \ for end-users, administrators, and support staff.\\r\\n14. Stay up-to-date with\
+  \ ERPNext and HRMS updates, new features, and best practices.. Accounting , Enterprise\
+  \ Resource Planning(ERP) , HR Analytics\"], 'Stipend': ['\u20B9 15,000-20,000 /month',\
+  \ '\u20B9 15,000-20,000 /month', '\u20B9 10,000 /month'], 'Links': ['https://internshala.com/internship/detail/wordpress-development-internship-in-faridabad-at-bauer-bodoni1711712202',\
+  \ 'https://internshala.com/internship/detail/wordpress-development-internship-in-faridabad-at-bauer-bodoni1711712308',\
+  \ 'https://internshala.com/internship/detail/erpnext-and-hrms-admin-internship-in-delhi-at-essi-integrated-technologies1711702313']}}}\n\
+  <end of data example format>\n\n<start of data details format>\nInternshala Jobs\
+  \ Dataset\ndata-science-and-analytics\n<end of data details format>\n\nGiven a data\
+  \ format, imagine a chart that visualizes this data as the final output you want\
+  \ from the service provider.\nIt MUST be a chart that can be created using only\
+  \ data columns.\nYou need to imagine a chart with * Grouped bar/column chart that\
+  \ utilizes the data format.\nIf there are multiple given data formats, imagine a\
+  \ chart with * Grouped bar/column chart that utilizes all the data formats.\nSince\
+  \ you are an amateur user, your instruction will be partially SUBJECTIVE and NOT\
+  \ DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 50 in size (word count).\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Word cloud'
+- '* Violin plot'
+- '* Spline chart'
+- '* Bubble chart'
+- '* Step line chart'
+- '* Sunburst chart'
+- '* Density plot'
+- '* Box chart'
+- '* Pie chart'
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a grouped bar chart comparing internship stipends for different job titles
+  across companies. Use "Company_Name" as the x-axis, distinguish jobs by different
+  colors, and display stipend ranges on the y-axis.
+- 1390
+- 1349
+- 41

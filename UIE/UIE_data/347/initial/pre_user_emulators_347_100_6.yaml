@@ -1,0 +1,116 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart
+
+  * Choropleth map
+
+  * Heatmap
+
+  * Treemap'
+- 1198
+- 1161
+- 37
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1011
+- 872
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/347.csv'': {''summary'': {''Column'': [''Name'', ''Platform'',
+  ''Year_of_Release'', ''Genre'', ''Publisher'', ''NA_Sales'', ''EU_Sales'', ''JP_Sales'',
+  ''Other_Sales'', ''Global_Sales'', ''Critic_Score'', ''Critic_Count'', ''User_Score'',
+  ''User_Count'', ''Developer'', ''Rating''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [2, 0, 269, 2, 54, 0, 0, 0, 0, 0, 8582, 8582, 6704, 9129, 6623,
+  6769], ''Unique Values'': [11562, 31, 39, 12, 581, 402, 307, 244, 155, 629, 82,
+  106, 96, 888, 1696, 8]}, ''sample_data'': {''Name'': [''Wii Sports'', ''Super Mario
+  Bros.'', ''Mario Kart Wii''], ''Platform'': [''Wii'', ''NES'', ''Wii''], ''Year_of_Release'':
+  [2006.0, 1985.0, 2008.0], ''Genre'': [''Sports'', ''Platform'', ''Racing''], ''Publisher'':
+  [''Nintendo'', ''Nintendo'', ''Nintendo''], ''NA_Sales'': [41.36, 29.08, 15.68],
+  ''EU_Sales'': [28.96, 3.58, 12.76], ''JP_Sales'': [3.77, 6.81, 3.79], ''Other_Sales'':
+  [8.45, 0.77, 3.29], ''Global_Sales'': [82.53, 40.24, 35.52], ''Critic_Score'': [76.0,
+  nan, 82.0], ''Critic_Count'': [51.0, nan, 73.0], ''User_Score'': [''8'', nan, ''8.3''],
+  ''User_Count'': [322.0, nan, 709.0], ''Developer'': [''Nintendo'', nan, ''Nintendo''],
+  ''Rating'': [''E'', nan, ''E'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Video Game Sales Dataset Updated -Extra Feat
+
+  games
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Treemap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Treemap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Choropleth map'
+- '* Box chart'
+- '* Scatter plot'
+- '* Treemap'
+- '* Line chart'
+- '* Heatmap'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Choropleth map'
+- '* Box chart'
+- '* Scatter plot'
+- '* Treemap'
+2. initial_prompt: !!python/tuple
+- Create a treemap visualization for the "Video Game Sales Dataset Updated - Extra
+  Feat." The treemap should illustrate the distribution of global sales across different
+  genres. Each genre should be divided into subcategories representing different publishers,
+  and the size of each block should correspond to the global sales figures. Additionally,
+  color-code the blocks based on the platform. Make sure to include tooltips that
+  display the game name, year of release, and sales data for each segment when hovered
+  over, for more detailed insights.
+- 847
+- 747
+- 100

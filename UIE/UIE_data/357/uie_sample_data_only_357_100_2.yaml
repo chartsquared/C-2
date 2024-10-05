@@ -1,0 +1,277 @@
+02_initial_prompt: Create a heatmap to visualize the correlation between customer
+  demographics, behavior, and churn status. Highlight key metrics like Age, Balance,
+  and CreditScore. Include text annotations for high correlation spots to draw attention
+  to critical factors influencing churn. This will help identify patterns and areas
+  for improvement in customer retention strategies. Keep the chart clear and focused
+  on visual distinctions for easy interpretation. Highlight important elements like
+  Geography and Gender for better insights. The purpose is to aid business decisions
+  in customer management and marketing strategies effectively.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a heatmap to visualize the correlation between customer demographics, behavior,
+  and churn status. Highlight key metrics like Age, Balance, and CreditScore. Include
+  text annotations for high correlation spots to draw attention to critical factors
+  influencing churn. This will help identify patterns and areas for improvement in
+  customer retention strategies. Keep the chart clear and focused on visual distinctions
+  for easy interpretation. Highlight important elements like Geography and Gender
+  for better insights. The purpose is to aid business decisions in customer management
+  and marketing strategies effectively.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/357.csv'': {''summary'': {''Column'': [''RowNumber'', ''CustomerId'',
+  ''Surname'', ''CreditScore'', ''Geography'', ''Gender'', ''Age'', ''Tenure'', ''Balance'',
+  ''NumOfProducts'', ''HasCrCard'', ''IsActiveMember'', ''EstimatedSalary'', ''Exited''],
+  ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [10000, 10000, 2932, 460, 3, 2, 70, 11, 6382, 4, 2, 2, 9999, 2]}, ''sample_data'':
+  {''RowNumber'': [1, 2, 3], ''CustomerId'': [15634602, 15647311, 15619304], ''Surname'':
+  [''Hargrave'', ''Hill'', ''Onio''], ''CreditScore'': [619, 608, 502], ''Geography'':
+  [''France'', ''Spain'', ''France''], ''Gender'': [''Female'', ''Female'', ''Female''],
+  ''Age'': [42, 41, 42], ''Tenure'': [2, 1, 8], ''Balance'': [0.0, 83807.86, 159660.8],
+  ''NumOfProducts'': [1, 1, 3], ''HasCrCard'': [1, 0, 1], ''IsActiveMember'': [1,
+  1, 0], ''EstimatedSalary'': [101348.88, 112542.58, 113931.57], ''Exited'': [1, 0,
+  1]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Age", "Balance", "CreditScore", "Geography", "Gender", "Exited"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify patterns and areas for improvement in customer retention strategies
+  to aid business decisions in customer management and marketing strategies",
+
+  "Audience": "Business decision-makers, customer management teams, marketing teams"
+
+  }'
+05_audience: Business decision-makers, customer management teams, marketing teams
+05_data_attributes:
+- Age
+- Balance
+- CreditScore
+- Geography
+- Gender
+- Exited
+05_purpose: Identify patterns and areas for improvement in customer retention strategies
+  to aid business decisions in customer management and marketing strategies
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/357.csv'': {''summary'': {''Column'': [''RowNumber'', ''CustomerId'',
+  ''Surname'', ''CreditScore'', ''Geography'', ''Gender'', ''Age'', ''Tenure'', ''Balance'',
+  ''NumOfProducts'', ''HasCrCard'', ''IsActiveMember'', ''EstimatedSalary'', ''Exited''],
+  ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [10000, 10000, 2932, 460, 3, 2, 70, 11, 6382, 4, 2, 2, 9999, 2]}, ''sample_data'':
+  {''RowNumber'': [1, 2, 3], ''CustomerId'': [15634602, 15647311, 15619304], ''Surname'':
+  [''Hargrave'', ''Hill'', ''Onio''], ''CreditScore'': [619, 608, 502], ''Geography'':
+  [''France'', ''Spain'', ''France''], ''Gender'': [''Female'', ''Female'', ''Female''],
+  ''Age'': [42, 41, 42], ''Tenure'': [2, 1, 8], ''Balance'': [0.0, 83807.86, 159660.8],
+  ''NumOfProducts'': [1, 1, 3], ''HasCrCard'': [1, 0, 1], ''IsActiveMember'': [1,
+  1, 0], ''EstimatedSalary'': [101348.88, 112542.58, 113931.57], ''Exited'': [1, 0,
+  1]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a heatmap to visualize the correlation between customer demographics, behavior,
+  and churn status. Highlight key metrics like Age, Balance, and CreditScore. Include
+  text annotations for high correlation spots to draw attention to critical factors
+  influencing churn. This will help identify patterns and areas for improvement in
+  customer retention strategies. Keep the chart clear and focused on visual distinctions
+  for easy interpretation. Highlight important elements like Geography and Gender
+  for better insights. The purpose is to aid business decisions in customer management
+  and marketing strategies effectively.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Age'', ''Balance'', ''CreditScore'', ''Geography'', ''Gender'', ''Exited'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Business decision-makers, customer management teams, marketing teams
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify patterns and areas for improvement in customer retention strategies to
+  aid business decisions in customer management and marketing strategies
+
+  <end of purpose>'
+07_questions: '1. Do you have any color preferences for the heatmap?
+
+  2. Are there any specific ranges of "Age", "Balance", or "CreditScore" you would
+  like to focus on in the heatmap?
+
+  3. How would you like the text annotations for high correlation spots to be formatted?
+  Any specific font style or size?
+
+  4. Do you prefer a specific layout or ordering for the axes in the heatmap?
+
+  5. Would you like to include a legend in the heatmap? If yes, do you have preferences
+  for its placement?
+
+  6. Are there any specific labels or titles you would like to include in the heatmap
+  for clarity?
+
+  7. Should the heatmap include gridlines for better readability?
+
+  8. How would you like to differentiate or highlight important elements like "Geography"
+  and "Gender"?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap to visualize the correlation between\
+  \ customer demographics, behavior, and churn status. Highlight key metrics like\
+  \ Age, Balance, and CreditScore. Include text annotations for high correlation spots\
+  \ to draw attention to critical factors influencing churn. This will help identify\
+  \ patterns and areas for improvement in customer retention strategies. Keep the\
+  \ chart clear and focused on visual distinctions for easy interpretation. Highlight\
+  \ important elements like Geography and Gender for better insights. The purpose\
+  \ is to aid business decisions in customer management and marketing strategies effectively.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nIdentify patterns and areas for improvement in customer retention strategies\
+  \ to aid business decisions in customer management and marketing strategies\n<end\
+  \ of purpose>\n\n<start service provider message>\n1. Do you have any color preferences\
+  \ for the heatmap?\n2. Are there any specific ranges of \"Age\", \"Balance\", or\
+  \ \"CreditScore\" you would like to focus on in the heatmap?\n3. How would you like\
+  \ the text annotations for high correlation spots to be formatted? Any specific\
+  \ font style or size?\n4. Do you prefer a specific layout or ordering for the axes\
+  \ in the heatmap?\n5. Would you like to include a legend in the heatmap? If yes,\
+  \ do you have preferences for its placement?\n6. Are there any specific labels or\
+  \ titles you would like to include in the heatmap for clarity?\n7. Should the heatmap\
+  \ include gridlines for better readability?\n8. How would you like to differentiate\
+  \ or highlight important elements like \"Geography\" and \"Gender\"?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. No, I don''t have any specific ranges in mind.
+
+  3. I would like the text annotations for high correlation spots to be clear and
+  legible, maybe in bold and slightly larger font.
+
+  4. I do not have a specific preference for the layout or ordering for the axes.
+
+  5. Yes, a legend would be helpful. I don''t have a preference for its placement.
+
+  6. Please include a title like "Correlation Heatmap: Customer Demographics, Behavior,
+  and Churn" and label the axes clearly.
+
+  7. Yes, including gridlines would improve readability.
+
+  8. I am not sure how to differentiate or highlight "Geography" and "Gender", but
+  they should stand out clearly.'

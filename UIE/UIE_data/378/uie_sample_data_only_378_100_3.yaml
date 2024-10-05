@@ -1,0 +1,280 @@
+02_initial_prompt: Create a Treemap to visualize the progression of the 2022 World
+  Cup from the Round of 16 to the Final. Use the nested structure of the matches including
+  details such as match names, winners, and scores. Make sure each match level (Round
+  of 16, Quarter-final, Semi-final, Final) is distinctly colored for clarity. Highlight
+  the winning team, Argentina, and their path to victory with a distinct color or
+  shade. Include score details as labels within each rectangular section of the Treemap.
+  Ensure readability at all levels for a comprehensive view of the tournament's progression.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a Treemap to visualize the progression of the 2022 World Cup from the Round
+  of 16 to the Final. Use the nested structure of the matches including details such
+  as match names, winners, and scores. Make sure each match level (Round of 16, Quarter-final,
+  Semi-final, Final) is distinctly colored for clarity. Highlight the winning team,
+  Argentina, and their path to victory with a distinct color or shade. Include score
+  details as labels within each rectangular section of the Treemap. Ensure readability
+  at all levels for a comprehensive view of the tournament''s progression.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/378.json'': {''summary'': {''Column'': [''name'', ''winner'',
+  ''score'', ''children''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0], ''Unique Values'': [1, 1, 1, ''N/A'']},
+  ''sample_data'': {''name'': [''Final'', ''Final''], ''winner'': [''Argentina'',
+  ''Argentina''], ''score'': [''3-3 (4-2 on penalties)'', ''3-3 (4-2 on penalties)''],
+  ''children'': [{''name'': ''Semi-final 1'', ''winner'': ''Argentina'', ''score'':
+  ''3-0'', ''children'': [{''name'': ''Quarter-final 1'', ''winner'': ''Argentina'',
+  ''score'': ''2-2 (4-3 on penalties)'', ''children'': [{''name'': ''Round of 16 -
+  Match 1'', ''winner'': ''Netherlands'', ''score'': ''3-1'', ''children'': [{''name'':
+  ''Netherlands''}, {''name'': ''USA''}]}, {''name'': ''Round of 16 - Match 2'', ''winner'':
+  ''Argentina'', ''score'': ''2-1'', ''children'': [{''name'': ''Argentina''}, {''name'':
+  ''Australia''}]}]}, {''name'': ''Quarter-final 2'', ''winner'': ''Croatia'', ''score'':
+  ''1-1 (4-2 on penalties)'', ''children'': [{''name'': ''Round of 16 - Match 3'',
+  ''winner'': ''Croatia'', ''score'': ''1-1 (3-1 on penalties)'', ''children'': [{''name'':
+  ''Japan''}, {''name'': ''Croatia''}]}, {''name'': ''Round of 16 - Match 4'', ''winner'':
+  ''Brazil'', ''score'': ''4-1'', ''children'': [{''name'': ''Brazil''}, {''name'':
+  ''South Korea''}]}]}]}, {''name'': ''Semi-final 2'', ''winner'': ''France'', ''score'':
+  ''2-0'', ''children'': [{''name'': ''Quarter-final 3'', ''winner'': ''France'',
+  ''score'': ''2-1'', ''children'': [{''name'': ''Round of 16 - Match 5'', ''winner'':
+  ''England'', ''score'': ''3-0'', ''children'': [{''name'': ''England''}, {''name'':
+  ''Senegal''}]}, {''name'': ''Round of 16 - Match 6'', ''winner'': ''France'', ''score'':
+  ''3-1'', ''children'': [{''name'': ''France''}, {''name'': ''Poland''}]}]}, {''name'':
+  ''Quarter-final 4'', ''winner'': ''Morocco'', ''score'': ''1-0'', ''children'':
+  [{''name'': ''Round of 16 - Match 7'', ''winner'': ''Morocco'', ''score'': ''0-0
+  (3-0 on penalties)'', ''children'': [{''name'': ''Morocco''}, {''name'': ''Spain''}]},
+  {''name'': ''Round of 16 - Match 8'', ''winner'': ''Portugal'', ''score'': ''6-1'',
+  ''children'': [{''name'': ''Portugal''}, {''name'': ''Switzerland''}]}]}]}]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["name", "winner", "score", "children"],
+
+  "Task": "Summarization of data",
+
+  "Purpose": "Provide a comprehensive view of the progression of the 2022 World Cup,
+  highlighting Argentina''s path to victory",
+
+  "Audience": "Soccer fans, analysts, and general public interested in the World Cup
+  results"
+
+  }'
+05_audience: Soccer fans, analysts, and general public interested in the World Cup
+  results
+05_data_attributes:
+- name
+- winner
+- score
+- children
+05_purpose: Provide a comprehensive view of the progression of the 2022 World Cup,
+  highlighting Argentina's path to victory
+05_task: Summarization of data
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/378.json'': {''summary'': {''Column'': [''name'', ''winner'',
+  ''score'', ''children''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0], ''Unique Values'': [1, 1, 1, ''N/A'']},
+  ''sample_data'': {''name'': [''Final'', ''Final''], ''winner'': [''Argentina'',
+  ''Argentina''], ''score'': [''3-3 (4-2 on penalties)'', ''3-3 (4-2 on penalties)''],
+  ''children'': [{''name'': ''Semi-final 1'', ''winner'': ''Argentina'', ''score'':
+  ''3-0'', ''children'': [{''name'': ''Quarter-final 1'', ''winner'': ''Argentina'',
+  ''score'': ''2-2 (4-3 on penalties)'', ''children'': [{''name'': ''Round of 16 -
+  Match 1'', ''winner'': ''Netherlands'', ''score'': ''3-1'', ''children'': [{''name'':
+  ''Netherlands''}, {''name'': ''USA''}]}, {''name'': ''Round of 16 - Match 2'', ''winner'':
+  ''Argentina'', ''score'': ''2-1'', ''children'': [{''name'': ''Argentina''}, {''name'':
+  ''Australia''}]}]}, {''name'': ''Quarter-final 2'', ''winner'': ''Croatia'', ''score'':
+  ''1-1 (4-2 on penalties)'', ''children'': [{''name'': ''Round of 16 - Match 3'',
+  ''winner'': ''Croatia'', ''score'': ''1-1 (3-1 on penalties)'', ''children'': [{''name'':
+  ''Japan''}, {''name'': ''Croatia''}]}, {''name'': ''Round of 16 - Match 4'', ''winner'':
+  ''Brazil'', ''score'': ''4-1'', ''children'': [{''name'': ''Brazil''}, {''name'':
+  ''South Korea''}]}]}]}, {''name'': ''Semi-final 2'', ''winner'': ''France'', ''score'':
+  ''2-0'', ''children'': [{''name'': ''Quarter-final 3'', ''winner'': ''France'',
+  ''score'': ''2-1'', ''children'': [{''name'': ''Round of 16 - Match 5'', ''winner'':
+  ''England'', ''score'': ''3-0'', ''children'': [{''name'': ''England''}, {''name'':
+  ''Senegal''}]}, {''name'': ''Round of 16 - Match 6'', ''winner'': ''France'', ''score'':
+  ''3-1'', ''children'': [{''name'': ''France''}, {''name'': ''Poland''}]}]}, {''name'':
+  ''Quarter-final 4'', ''winner'': ''Morocco'', ''score'': ''1-0'', ''children'':
+  [{''name'': ''Round of 16 - Match 7'', ''winner'': ''Morocco'', ''score'': ''0-0
+  (3-0 on penalties)'', ''children'': [{''name'': ''Morocco''}, {''name'': ''Spain''}]},
+  {''name'': ''Round of 16 - Match 8'', ''winner'': ''Portugal'', ''score'': ''6-1'',
+  ''children'': [{''name'': ''Portugal''}, {''name'': ''Switzerland''}]}]}]}]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a Treemap to visualize the progression of the 2022 World Cup from the Round
+  of 16 to the Final. Use the nested structure of the matches including details such
+  as match names, winners, and scores. Make sure each match level (Round of 16, Quarter-final,
+  Semi-final, Final) is distinctly colored for clarity. Highlight the winning team,
+  Argentina, and their path to victory with a distinct color or shade. Include score
+  details as labels within each rectangular section of the Treemap. Ensure readability
+  at all levels for a comprehensive view of the tournament''s progression.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''name'', ''winner'', ''score'', ''children'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Soccer fans, analysts, and general public interested in the World Cup results
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Summarization of data
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Provide a comprehensive view of the progression of the 2022 World Cup, highlighting
+  Argentina''s path to victory
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the different match levels
+  (Round of 16, Quarter-final, Semi-final, Final)?
+
+  2. How would you like Argentina''s path to victory to be highlighted (e.g., a specific
+  color, shade, or pattern)?
+
+  3. Would you like the scores to be displayed in a specific format or style within
+  each section of the Treemap?
+
+  4. Is there a specific font style or size you prefer for the match titles and score
+  details to ensure readability?
+
+  5. Do you have any preferences for the overall layout or orientation of the Treemap?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a Treemap to visualize the progression of the\
+  \ 2022 World Cup from the Round of 16 to the Final. Use the nested structure of\
+  \ the matches including details such as match names, winners, and scores. Make sure\
+  \ each match level (Round of 16, Quarter-final, Semi-final, Final) is distinctly\
+  \ colored for clarity. Highlight the winning team, Argentina, and their path to\
+  \ victory with a distinct color or shade. Include score details as labels within\
+  \ each rectangular section of the Treemap. Ensure readability at all levels for\
+  \ a comprehensive view of the tournament's progression.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nProvide a comprehensive\
+  \ view of the progression of the 2022 World Cup, highlighting Argentina's path to\
+  \ victory\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ a preferred color scheme for the different match levels (Round of 16, Quarter-final,\
+  \ Semi-final, Final)?\n2. How would you like Argentina's path to victory to be highlighted\
+  \ (e.g., a specific color, shade, or pattern)?\n3. Would you like the scores to\
+  \ be displayed in a specific format or style within each section of the Treemap?\n\
+  4. Is there a specific font style or size you prefer for the match titles and score\
+  \ details to ensure readability?\n5. Do you have any preferences for the overall\
+  \ layout or orientation of the Treemap?\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. Please use a distinct color, like a bright blue or gold, to highlight Argentina''s
+  path.
+
+  3. I do not know.
+
+  4. No specific preference.
+
+  5. I have no specific preference.'

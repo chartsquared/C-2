@@ -1,0 +1,318 @@
+02_initial_prompt: Please create a radar chart visualizing the profiles of Indian
+  candidates for the General Election 2019. The parameters to include are AGE, CRIMINAL
+  CASES, GENERAL VOTES, POSTAL VOTES, ASSETS, and LIABILITIES. Each axis should represent
+  one of these categories, and the chart should compare the profiles of multiple candidates
+  within the same constituency. Ensure the radar chart highlights the distinctions
+  among candidates from different parties to reflect any variations. This will help
+  in understanding the diverse backgrounds and standings of the candidates in a visually
+  intuitive manner.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a radar chart visualizing the profiles of Indian candidates for the
+  General Election 2019. The parameters to include are AGE, CRIMINAL CASES, GENERAL
+  VOTES, POSTAL VOTES, ASSETS, and LIABILITIES. Each axis should represent one of
+  these categories, and the chart should compare the profiles of multiple candidates
+  within the same constituency. Ensure the radar chart highlights the distinctions
+  among candidates from different parties to reflect any variations. This will help
+  in understanding the diverse backgrounds and standings of the candidates in a visually
+  intuitive manner.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/142.csv'': {''summary'': {''Column'': [''STATE'', ''CONSTITUENCY'',
+  ''NAME'', ''WINNER'', ''PARTY'', ''SYMBOL'', ''GENDER'', ''CRIMINAL\nCASES'', ''AGE'',
+  ''CATEGORY'', ''EDUCATION'', ''ASSETS'', ''LIABILITIES'', ''GENERAL\nVOTES'', ''POSTAL\nVOTES'',
+  ''TOTAL\nVOTES'', ''OVER TOTAL ELECTORS \nIN CONSTITUENCY'', ''OVER TOTAL VOTES
+  POLLED \nIN CONSTITUENCY'', ''TOTAL ELECTORS''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 245, 245, 245, 245, 245, 245, 245, 245, 0, 0,
+  0, 0, 0, 0], ''Unique Values'': [36, 539, 2014, 2, 133, 126, 2, 29, 60, 3, 13, 1979,
+  1226, 2244, 1217, 2247, 2263, 2263, 542]}, ''sample_data'': {''STATE'': [''Telangana'',
+  ''Telangana'', ''Telangana''], ''CONSTITUENCY'': [''ADILABAD'', ''ADILABAD'', ''ADILABAD''],
+  ''NAME'': [''SOYAM BAPU RAO'', ''Godam Nagesh'', ''RATHOD RAMESH''], ''WINNER'':
+  [1, 0, 0], ''PARTY'': [''BJP'', ''TRS'', ''INC''], ''SYMBOL'': [''Lotus'', ''Car'',
+  ''Hand''], ''GENDER'': [''MALE'', ''MALE'', ''MALE''], ''CRIMINAL\nCASES'': [''52'',
+  ''0'', ''3''], ''AGE'': [52.0, 54.0, 52.0], ''CATEGORY'': [''ST'', ''ST'', ''ST''],
+  ''EDUCATION'': [''12th Pass'', ''Post Graduate'', ''12th Pass''], ''ASSETS'': [''Rs
+  30,99,414\n ~ 30 Lacs+'', ''Rs 1,84,77,888\n ~ 1 Crore+'', ''Rs 3,64,91,000\n ~
+  3 Crore+''], ''LIABILITIES'': [''Rs 2,31,450\n ~ 2 Lacs+'', ''Rs 8,47,000\n ~ 8
+  Lacs+'', ''Rs 1,53,00,000\n ~ 1 Crore+''], ''GENERAL\nVOTES'': [376892, 318665,
+  314057], ''POSTAL\nVOTES'': [482, 149, 181], ''TOTAL\nVOTES'': [377374, 318814,
+  314238], ''OVER TOTAL ELECTORS \nIN CONSTITUENCY'': [25.33068419, 21.39992885, 21.09277146],
+  ''OVER TOTAL VOTES POLLED \nIN CONSTITUENCY'': [35.4682479, 29.96436953, 29.53428505],
+  ''TOTAL ELECTORS'': [1489790, 1489790, 1489790]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["AGE", "CRIMINAL\nCASES", "GENERAL\nVOTES", "POSTAL\nVOTES",
+  "ASSETS", "LIABILITIES", "CONSTITUENCY", "NAME", "PARTY"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Compare the profiles of multiple candidates within the same constituency
+  to highlight distinctions among candidates from different parties",
+
+  "Audience": "Voters, Political Analysts, Researchers, General Public interested
+  in elections"
+
+  }'
+05_audience: Voters, Political Analysts, Researchers, General Public interested in
+  elections
+05_data_attributes:
+- AGE
+- 'CRIMINAL
+
+  CASES'
+- 'GENERAL
+
+  VOTES'
+- 'POSTAL
+
+  VOTES'
+- ASSETS
+- LIABILITIES
+- CONSTITUENCY
+- NAME
+- PARTY
+05_purpose: Compare the profiles of multiple candidates within the same constituency
+  to highlight distinctions among candidates from different parties
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/142.csv'': {''summary'': {''Column'': [''STATE'', ''CONSTITUENCY'',
+  ''NAME'', ''WINNER'', ''PARTY'', ''SYMBOL'', ''GENDER'', ''CRIMINAL\nCASES'', ''AGE'',
+  ''CATEGORY'', ''EDUCATION'', ''ASSETS'', ''LIABILITIES'', ''GENERAL\nVOTES'', ''POSTAL\nVOTES'',
+  ''TOTAL\nVOTES'', ''OVER TOTAL ELECTORS \nIN CONSTITUENCY'', ''OVER TOTAL VOTES
+  POLLED \nIN CONSTITUENCY'', ''TOTAL ELECTORS''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 245, 245, 245, 245, 245, 245, 245, 245, 0, 0,
+  0, 0, 0, 0], ''Unique Values'': [36, 539, 2014, 2, 133, 126, 2, 29, 60, 3, 13, 1979,
+  1226, 2244, 1217, 2247, 2263, 2263, 542]}, ''sample_data'': {''STATE'': [''Telangana'',
+  ''Telangana'', ''Telangana''], ''CONSTITUENCY'': [''ADILABAD'', ''ADILABAD'', ''ADILABAD''],
+  ''NAME'': [''SOYAM BAPU RAO'', ''Godam Nagesh'', ''RATHOD RAMESH''], ''WINNER'':
+  [1, 0, 0], ''PARTY'': [''BJP'', ''TRS'', ''INC''], ''SYMBOL'': [''Lotus'', ''Car'',
+  ''Hand''], ''GENDER'': [''MALE'', ''MALE'', ''MALE''], ''CRIMINAL\nCASES'': [''52'',
+  ''0'', ''3''], ''AGE'': [52.0, 54.0, 52.0], ''CATEGORY'': [''ST'', ''ST'', ''ST''],
+  ''EDUCATION'': [''12th Pass'', ''Post Graduate'', ''12th Pass''], ''ASSETS'': [''Rs
+  30,99,414\n ~ 30 Lacs+'', ''Rs 1,84,77,888\n ~ 1 Crore+'', ''Rs 3,64,91,000\n ~
+  3 Crore+''], ''LIABILITIES'': [''Rs 2,31,450\n ~ 2 Lacs+'', ''Rs 8,47,000\n ~ 8
+  Lacs+'', ''Rs 1,53,00,000\n ~ 1 Crore+''], ''GENERAL\nVOTES'': [376892, 318665,
+  314057], ''POSTAL\nVOTES'': [482, 149, 181], ''TOTAL\nVOTES'': [377374, 318814,
+  314238], ''OVER TOTAL ELECTORS \nIN CONSTITUENCY'': [25.33068419, 21.39992885, 21.09277146],
+  ''OVER TOTAL VOTES POLLED \nIN CONSTITUENCY'': [35.4682479, 29.96436953, 29.53428505],
+  ''TOTAL ELECTORS'': [1489790, 1489790, 1489790]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a radar chart visualizing the profiles of Indian candidates for the
+  General Election 2019. The parameters to include are AGE, CRIMINAL CASES, GENERAL
+  VOTES, POSTAL VOTES, ASSETS, and LIABILITIES. Each axis should represent one of
+  these categories, and the chart should compare the profiles of multiple candidates
+  within the same constituency. Ensure the radar chart highlights the distinctions
+  among candidates from different parties to reflect any variations. This will help
+  in understanding the diverse backgrounds and standings of the candidates in a visually
+  intuitive manner.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''AGE'', ''CRIMINAL\nCASES'', ''GENERAL\nVOTES'', ''POSTAL\nVOTES'', ''ASSETS'',
+  ''LIABILITIES'', ''CONSTITUENCY'', ''NAME'', ''PARTY'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Voters, Political Analysts, Researchers, General Public interested in elections
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Compare the profiles of multiple candidates within the same constituency to highlight
+  distinctions among candidates from different parties
+
+  <end of purpose>'
+07_questions: '1. Do you have specific color preferences for each political party?
+
+  2. Should the chart include labels for each data point on the axes?
+
+  3. Do you prefer a specific style or format for the legend?
+
+  4. Do you want gridlines on the radar chart for easier comparison?
+
+  5. Is there a particular order you want the parameters (AGE, CRIMINAL CASES, GENERAL
+  VOTES, POSTAL VOTES, ASSETS, LIABILITIES) to be arranged on the axes?
+
+  6. Do you require any specific annotations or highlights for certain candidates
+  or data points?
+
+  7. Should each axis have the same scale, or would you prefer customized scales for
+  each parameter?
+
+  8. Do you have any preferences for the thickness or style of the lines representing
+  each candidate?
+
+  9. Would you like to include a title and subtitle for the chart? If yes, please
+  specify the text.
+
+  10. Do you need a descriptive caption or notes section included below the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a radar chart visualizing the profiles\
+  \ of Indian candidates for the General Election 2019. The parameters to include\
+  \ are AGE, CRIMINAL CASES, GENERAL VOTES, POSTAL VOTES, ASSETS, and LIABILITIES.\
+  \ Each axis should represent one of these categories, and the chart should compare\
+  \ the profiles of multiple candidates within the same constituency. Ensure the radar\
+  \ chart highlights the distinctions among candidates from different parties to reflect\
+  \ any variations. This will help in understanding the diverse backgrounds and standings\
+  \ of the candidates in a visually intuitive manner.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nCompare the profiles of multiple candidates\
+  \ within the same constituency to highlight distinctions among candidates from different\
+  \ parties\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ specific color preferences for each political party?\n2. Should the chart include\
+  \ labels for each data point on the axes?\n3. Do you prefer a specific style or\
+  \ format for the legend?\n4. Do you want gridlines on the radar chart for easier\
+  \ comparison?\n5. Is there a particular order you want the parameters (AGE, CRIMINAL\
+  \ CASES, GENERAL VOTES, POSTAL VOTES, ASSETS, LIABILITIES) to be arranged on the\
+  \ axes?\n6. Do you require any specific annotations or highlights for certain candidates\
+  \ or data points?\n7. Should each axis have the same scale, or would you prefer\
+  \ customized scales for each parameter?\n8. Do you have any preferences for the\
+  \ thickness or style of the lines representing each candidate?\n9. Would you like\
+  \ to include a title and subtitle for the chart? If yes, please specify the text.\n\
+  10. Do you need a descriptive caption or notes section included below the chart?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have specific color preferences for each political party.
+
+  2. Yes, the chart should include labels for each data point on the axes.
+
+  3. I am not sure about a specific style or format for the legend.
+
+  4. Yes, I want gridlines on the radar chart for easier comparison.
+
+  5. I do not have a particular order for the parameters to be arranged on the axes.
+
+  6. I do not know if specific annotations or highlights are needed.
+
+  7. I prefer customized scales for each parameter.
+
+  8. I do not have any preferences for the thickness or style of the lines representing
+  each candidate.
+
+  9. Yes, the title should be "Profiles of Candidates for Indian General Election
+  2019 in [Constituency Name]" and the subtitle "Comparison Among Different Parties".
+
+  10. No, I do not need a descriptive caption or notes section included below the
+  chart.'

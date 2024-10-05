@@ -1,0 +1,65 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart
+
+  * Geographic heatmap'
+- 984
+- 956
+- 28
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 813
+- 675
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/262.csv': {'summary': {'Column':\
+  \ ['Company', 'Location', 'Year', 'Time', 'Rocket', 'MissionStatus', 'RocketStatus',\
+  \ 'Price', 'Mission'], 'Data Type': [dtype('O'), dtype('O'), dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('float64'), dtype('O')], 'Missing\
+  \ Values': [0, 0, 0, 125, 0, 0, 0, 3362, 0], 'Unique Values': [62, 158, 66, 1300,\
+  \ 370, 2, 2, 59, 4555]}, 'sample_data': {'Company': ['AEB', 'AEB', 'AEB'], 'Location':\
+  \ ['VLS Pad, Alc\xE2ntara Launch Center, Maranh\xE3o, Brazil', 'VLS Pad, Alc\xE2\
+  ntara Launch Center, Maranh\xE3o, Brazil', 'VLS Pad, Alc\xE2ntara Launch Center,\
+  \ Maranh\xE3o, Brazil'], 'Year': [1997, 1999, 2003], 'Time': [nan, '1899-12-30 19:40:00',\
+  \ nan], 'Rocket': ['VLS-1', 'VLS-1', 'VLS-1'], 'MissionStatus': [0, 0, 0], 'RocketStatus':\
+  \ ['Retired', 'Retired', 'Retired'], 'Price': [nan, nan, nan], 'Mission': ['SCD-2A',\
+  \ 'SACI-2', 'SATEC, UNOSAT']}}}\n<end of data example format>\n\n<start of data\
+  \ details format>\n\U0001FA90 Real Time Space Mission Dataset \U0001F680 \U0001FA90\
+  \nspace-and-astronomy\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nYou need to imagine a chart with * Bar chart that utilizes the data\
+  \ format.\nIf there are multiple given data formats, imagine a chart with * Bar\
+  \ chart that utilizes all the data formats.\nSince you are an amateur user, your\
+  \ instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the\
+  \ data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 50 in size (word count).\nYour response should ONLY\
+  \ contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Stacked bar/column chart'
+- '* Geographic heatmap'
+- '* Scatter plot'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart visualizing the number of missions launched each year, categorized
+  by mission status. Use colors to distinguish successful and failed missions. Allocate
+  the x-axis for years and y-axis for mission count.
+- 591
+- 550
+- 41

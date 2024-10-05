@@ -1,0 +1,99 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart'
+- 1025
+- 1002
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 845
+- 706
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/350.csv'': {''summary'': {''Column'': [''number'', ''name'',
+  ''type1'', ''type2'', ''total'', ''hp'', ''attack'', ''defense'', ''sp_attack'',
+  ''sp_defense'', ''speed'', ''generation'', ''legendary''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''bool'')], ''Missing Values'': [0, 0, 0, 498, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [898, 1072, 20, 18, 219, 103, 123, 114, 119, 107, 127, 9, 2]},
+  ''sample_data'': {''number'': [1, 2, 3], ''name'': [''Bulbasaur'', ''Ivysaur'',
+  ''Venusaur''], ''type1'': [''Grass'', ''Grass'', ''Grass''], ''type2'': [''Poison'',
+  ''Poison'', ''Poison''], ''total'': [318, 405, 525], ''hp'': [45, 60, 80], ''attack'':
+  [49, 62, 82], ''defense'': [49, 63, 83], ''sp_attack'': [65, 80, 100], ''sp_defense'':
+  [65, 80, 100], ''speed'': [45, 60, 80], ''generation'': [1, 1, 1], ''legendary'':
+  [False, False, False]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Pokemon Stats
+
+  games
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Line chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Line chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Line chart'
+- '* Box chart'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- "Please create a line chart displaying the progression of the Pok\xE9mon stats over\
+  \ generations. Use the 'total', 'hp', 'attack', 'defense', 'sp_attack', 'sp_defense',\
+  \ and 'speed' columns as separate lines. The x-axis should represent the 'number'\
+  \ of the Pok\xE9mon, and the y-axis should reflect the different stat values. Include\
+  \ a legend to distinguish between the different stats. Ensure missing values are\
+  \ handled appropriately. This will help visualize the evolution of Pok\xE9mon attributes\
+  \ through the generations."
+- 683
+- 581
+- 102

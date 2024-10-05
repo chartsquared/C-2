@@ -1,0 +1,270 @@
+02_initial_prompt: Create a line chart showing Patient Age vs. White blood cell count
+  for both genders. Highlight Recovered vs. Not Recovered outcomes. Include text annotations
+  showing peak and lowest values to focus attention. Reflect on CBC data trends for
+  COVID-19 patients.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a line chart showing Patient Age vs. White blood cell count for both genders.
+  Highlight Recovered vs. Not Recovered outcomes. Include text annotations showing
+  peak and lowest values to focus attention. Reflect on CBC data trends for COVID-19
+  patients.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/257.csv'': {''summary'': {''Column'': [''Admission_DATE '',
+  ''Discharge_DATE or date of Death'', ''Outcome'', ''Patient Age'', ''Gender'', ''Sample
+  Collection Date '', ''What kind of Treatment provided '', ''Ventilated (Y/N)'',
+  ''Red blood cell distribution width'', ''Monocytes(%)'', ''White blood cell count'',
+  ''Platelet Count'', ''Lymphocyte Count'', ''Neutrophils Count''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [55, 51, 2, 46, 2,
+  61, 14, 2, 56, 29, 74, 77, 63, 63]}, ''sample_data'': {''Admission_DATE '': [''8/10/2020'',
+  ''7/24/2020'', ''7/22/2020''], ''Discharge_DATE or date of Death'': [''8/8/2020'',
+  ''8/5/2020'', ''8/8/2020''], ''Outcome'': [''Not Recovered'', ''Not Recovered'',
+  ''Recovered''], ''Patient Age'': [51, 65, 32], ''Gender'': [''Male'', ''Female'',
+  ''Male''], ''Sample Collection Date '': [''8/10/2020'', ''7/24/2020'', ''7/22/2020''],
+  ''What kind of Treatment provided '': [''antibiotics,  O2'', ''Paracetamol, Antibiotics,  O2'',
+  ''Antibiotics, O2''], ''Ventilated (Y/N)'': [''Yes'', ''Yes'', ''No''], ''Red blood
+  cell distribution width'': [13.2, 40.0, 11.7], ''Monocytes(%)'': [3.3, 3.0, 5.3],
+  ''White blood cell count'': [21.0, 8.79, 9.9], ''Platelet Count'': [462.0, 180.66,
+  336.0], ''Lymphocyte Count'': [0.44, 4.39, 3.47], ''Neutrophils Count'': [19.43,
+  7.56, 5.34]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Patient Age", "White blood cell count", "Gender", "Outcome"],
+
+  "Task": "Focus on Identifying extreme",
+
+  "Purpose": "To highlight the differences in white blood cell count between genders
+  and recovery outcomes, and to showcase extreme values such as peaks and lows.",
+
+  "Audience": "Healthcare professionals, medical researchers, and epidemiologists
+  studying COVID-19 patient data trends."
+
+  }'
+05_audience: Healthcare professionals, medical researchers, and epidemiologists studying
+  COVID-19 patient data trends.
+05_data_attributes:
+- Patient Age
+- White blood cell count
+- Gender
+- Outcome
+05_purpose: To highlight the differences in white blood cell count between genders
+  and recovery outcomes, and to showcase extreme values such as peaks and lows.
+05_task: Focus on Identifying extreme
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/257.csv'': {''summary'': {''Column'': [''Admission_DATE '',
+  ''Discharge_DATE or date of Death'', ''Outcome'', ''Patient Age'', ''Gender'', ''Sample
+  Collection Date '', ''What kind of Treatment provided '', ''Ventilated (Y/N)'',
+  ''Red blood cell distribution width'', ''Monocytes(%)'', ''White blood cell count'',
+  ''Platelet Count'', ''Lymphocyte Count'', ''Neutrophils Count''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [55, 51, 2, 46, 2,
+  61, 14, 2, 56, 29, 74, 77, 63, 63]}, ''sample_data'': {''Admission_DATE '': [''8/10/2020'',
+  ''7/24/2020'', ''7/22/2020''], ''Discharge_DATE or date of Death'': [''8/8/2020'',
+  ''8/5/2020'', ''8/8/2020''], ''Outcome'': [''Not Recovered'', ''Not Recovered'',
+  ''Recovered''], ''Patient Age'': [51, 65, 32], ''Gender'': [''Male'', ''Female'',
+  ''Male''], ''Sample Collection Date '': [''8/10/2020'', ''7/24/2020'', ''7/22/2020''],
+  ''What kind of Treatment provided '': [''antibiotics,  O2'', ''Paracetamol, Antibiotics,  O2'',
+  ''Antibiotics, O2''], ''Ventilated (Y/N)'': [''Yes'', ''Yes'', ''No''], ''Red blood
+  cell distribution width'': [13.2, 40.0, 11.7], ''Monocytes(%)'': [3.3, 3.0, 5.3],
+  ''White blood cell count'': [21.0, 8.79, 9.9], ''Platelet Count'': [462.0, 180.66,
+  336.0], ''Lymphocyte Count'': [0.44, 4.39, 3.47], ''Neutrophils Count'': [19.43,
+  7.56, 5.34]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a line chart showing Patient Age vs. White blood cell count for both genders.
+  Highlight Recovered vs. Not Recovered outcomes. Include text annotations showing
+  peak and lowest values to focus attention. Reflect on CBC data trends for COVID-19
+  patients.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Patient Age'', ''White blood cell count'', ''Gender'', ''Outcome'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Healthcare professionals, medical researchers, and epidemiologists studying COVID-19
+  patient data trends.
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying extreme
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To highlight the differences in white blood cell count between genders and recovery
+  outcomes, and to showcase extreme values such as peaks and lows.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for differentiating between
+  genders and recovery outcomes?
+
+  2. Would you like the chart to display gridlines for better readability?
+
+  3. Do you prefer any specific style for text annotations (e.g., font size, color,
+  bold)?
+
+  4. Should the axis labels include specific units or additional descriptions?
+
+  5. How would you like the line styles to be represented for each gender (e.g., solid,
+  dashed, dotted)?
+
+  6. Do you want a legend to identify the genders and recovery outcomes, and if so,
+  where should it be placed?
+
+  7. Is there a specific range for the axes (Patient Age and White Blood Cell Count)
+  that you would like to be set?
+
+  8. Would you prefer to include data point markers on the line chart (e.g., circles,
+  squares) to highlight individual data points?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a line chart showing Patient Age vs. White blood\
+  \ cell count for both genders. Highlight Recovered vs. Not Recovered outcomes. Include\
+  \ text annotations showing peak and lowest values to focus attention. Reflect on\
+  \ CBC data trends for COVID-19 patients.\n<end of user request>\n\nImagine the best\
+  \ result that can be achieved based on the given instructions and is the final output\
+  \ you want from the service provider with your purpose given below.\nBased on your\
+  \ imagination you are to respond to the service provider.\nSince you are an amateur\
+  \ user you should concretely answer 25% of the questions you think are most important,\
+  \ and the remaining questions should be answer with uncertainty, e.g. \u201CI am\
+  \ not sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\n\
+  Finally, remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nTo highlight the differences in white blood cell count between\
+  \ genders and recovery outcomes, and to showcase extreme values such as peaks and\
+  \ lows.\n<end of purpose>\n\n<start service provider message>\n1. Do you have a\
+  \ preferred color scheme for differentiating between genders and recovery outcomes?\n\
+  2. Would you like the chart to display gridlines for better readability?\n3. Do\
+  \ you prefer any specific style for text annotations (e.g., font size, color, bold)?\n\
+  4. Should the axis labels include specific units or additional descriptions?\n5.\
+  \ How would you like the line styles to be represented for each gender (e.g., solid,\
+  \ dashed, dotted)?\n6. Do you want a legend to identify the genders and recovery\
+  \ outcomes, and if so, where should it be placed?\n7. Is there a specific range\
+  \ for the axes (Patient Age and White Blood Cell Count) that you would like to be\
+  \ set?\n8. Would you prefer to include data point markers on the line chart (e.g.,\
+  \ circles, squares) to highlight individual data points?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend. I have no specific preference for its placement.
+
+  7. I do not know.
+
+  8. I am not sure.'

@@ -1,0 +1,87 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Treemap'
+- 909
+- 890
+- 19
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 740
+- 602
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/46.csv'': {''summary'': {''Column'': [''LOCATION'', ''INDICATOR'',
+  ''SUBJECT'', ''MEASURE'', ''FREQUENCY'', ''TIME'', ''Value'', ''Flag Codes''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 361],
+  ''Unique Values'': [39, 1, 1, 1, 1, 15, 382, 2]}, ''sample_data'': {''LOCATION'':
+  [''DNK'', ''DNK'', ''DNK''], ''INDICATOR'': [''HOMECOMP'', ''HOMECOMP'', ''HOMECOMP''],
+  ''SUBJECT'': [''TOT'', ''TOT'', ''TOT''], ''MEASURE'': [''PC_HH'', ''PC_HH'', ''PC_HH''],
+  ''FREQUENCY'': [''A'', ''A'', ''A''], ''TIME'': [2006, 2007, 2008], ''Value'': [84.9749,
+  82.9604, 85.4588], ''Flag Codes'': [nan, nan, nan]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Access to Computers From Home OECD
+
+  computers-and-technology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Heatmap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Treemap'
+- '* Scatter plot'
+- '* Line chart'
+- '* Bar chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Create a heatmap showing the yearly percentage of households with access to computers
+  at home across different countries from 2006 to 2020.
+- 505
+- 477
+- 28

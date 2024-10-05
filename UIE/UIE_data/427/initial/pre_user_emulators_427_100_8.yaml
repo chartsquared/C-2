@@ -1,0 +1,197 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Table chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Bubble chart
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Geographic heatmap
+
+  * Choropleth map'
+- 3492
+- 3423
+- 69
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 3271
+- 3132
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/427.csv'': {''summary'': {''Column'': [''barrels08'', ''barrelsA08'',
+  ''charge120'', ''charge240'', ''city08'', ''city08U'', ''cityA08'', ''cityA08U'',
+  ''cityCD'', ''cityE'', ''cityUF'', ''co2'', ''co2A'', ''co2TailpipeAGpm'', ''co2TailpipeGpm'',
+  ''comb08'', ''comb08U'', ''combA08'', ''combA08U'', ''combE'', ''combinedCD'', ''combinedUF'',
+  ''cylinders'', ''displ'', ''drive'', ''engId'', ''eng_dscr'', ''feScore'', ''fuelCost08'',
+  ''fuelCostA08'', ''fuelType'', ''fuelType1'', ''ghgScore'', ''ghgScoreA'', ''highway08'',
+  ''highway08U'', ''highwayA08'', ''highwayA08U'', ''highwayCD'', ''highwayE'', ''highwayUF'',
+  ''hlv'', ''hpv'', ''id'', ''lv2'', ''lv4'', ''make'', ''model'', ''mpgData'', ''phevBlended'',
+  ''pv2'', ''pv4'', ''range'', ''rangeCity'', ''rangeCityA'', ''rangeHwy'', ''rangeHwyA'',
+  ''trany'', ''UCity'', ''UCityA'', ''UHighway'', ''UHighwayA'', ''VClass'', ''year'',
+  ''youSaveSpend'', ''guzzler'', ''trans_dscr'', ''tCharger'', ''sCharger'', ''atvType'',
+  ''fuelType2'', ''rangeA'', ''evMotor'', ''mfrCode'', ''c240Dscr'', ''charge240b'',
+  ''c240bDscr'', ''createdOn'', ''modifiedOn'', ''startStop'', ''phevCity'', ''phevHwy'',
+  ''phevComb''], ''Data Type'': [dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''bool''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 212, 210, 1189, 0, 16248,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 39347, 26757, 34591, 40942, 38147, 40167, 40172,
+  40886, 30818, 41720, 0, 41724, 0, 0, 31704, 0, 0, 0], ''Unique Values'': [211, 81,
+  1, 34, 107, 4129, 65, 527, 12, 106, 77, 551, 202, 221, 636, 98, 6023, 67, 553, 99,
+  9, 72, 9, 66, 7, 2687, 558, 11, 66, 35, 14, 6, 11, 10, 93, 4364, 63, 541, 9, 95,
+  76, 40, 52, 41804, 29, 53, 137, 4130, 2, 2, 67, 76, 81, 89, 84, 91, 81, 37, 7654,
+  548, 7886, 603, 34, 37, 66, 3, 52, 1, 1, 8, 4, 229, 155, 49, 5, 11, 7, 286, 155,
+  2, 40, 44, 43]}, ''sample_data'': {''barrels08'': [15.695714285714288, 29.96454545454546,
+  12.207777777777778], ''barrelsA08'': [0.0, 0.0, 0.0], ''charge120'': [0, 0, 0],
+  ''charge240'': [0.0, 0.0, 0.0], ''city08'': [19, 9, 23], ''city08U'': [0.0, 0.0,
+  0.0], ''cityA08'': [0, 0, 0], ''cityA08U'': [0.0, 0.0, 0.0], ''cityCD'': [0.0, 0.0,
+  0.0], ''cityE'': [0.0, 0.0, 0.0], ''cityUF'': [0.0, 0.0, 0.0], ''co2'': [-1, -1,
+  -1], ''co2A'': [-1, -1, -1], ''co2TailpipeAGpm'': [0.0, 0.0, 0.0], ''co2TailpipeGpm'':
+  [423.1904761904762, 807.9090909090909, 329.14814814814815], ''comb08'': [21, 11,
+  27], ''comb08U'': [0.0, 0.0, 0.0], ''combA08'': [0, 0, 0], ''combA08U'': [0.0, 0.0,
+  0.0], ''combE'': [0.0, 0.0, 0.0], ''combinedCD'': [0.0, 0.0, 0.0], ''combinedUF'':
+  [0.0, 0.0, 0.0], ''cylinders'': [4.0, 12.0, 4.0], ''displ'': [2.0, 4.9, 2.2], ''drive'':
+  [''Rear-Wheel Drive'', ''Rear-Wheel Drive'', ''Front-Wheel Drive''], ''engId'':
+  [9011, 22020, 2100], ''eng_dscr'': [''(FFS)'', ''(GUZZLER)'', ''(FFS)''], ''feScore'':
+  [-1, -1, -1], ''fuelCost08'': [1900, 3600, 1450], ''fuelCostA08'': [0, 0, 0], ''fuelType'':
+  [''Regular'', ''Regular'', ''Regular''], ''fuelType1'': [''Regular Gasoline'', ''Regular
+  Gasoline'', ''Regular Gasoline''], ''ghgScore'': [-1, -1, -1], ''ghgScoreA'': [-1,
+  -1, -1], ''highway08'': [25, 14, 33], ''highway08U'': [0.0, 0.0, 0.0], ''highwayA08'':
+  [0, 0, 0], ''highwayA08U'': [0.0, 0.0, 0.0], ''highwayCD'': [0.0, 0.0, 0.0], ''highwayE'':
+  [0.0, 0.0, 0.0], ''highwayUF'': [0.0, 0.0, 0.0], ''hlv'': [0, 0, 19], ''hpv'': [0,
+  0, 77], ''id'': [1, 10, 100], ''lv2'': [0, 0, 0], ''lv4'': [0, 0, 0], ''make'':
+  [''Alfa Romeo'', ''Ferrari'', ''Dodge''], ''model'': [''Spider Veloce 2000'', ''Testarossa'',
+  ''Charger''], ''mpgData'': [''Y'', ''N'', ''Y''], ''phevBlended'': [False, False,
+  False], ''pv2'': [0, 0, 0], ''pv4'': [0, 0, 0], ''range'': [0, 0, 0], ''rangeCity'':
+  [0.0, 0.0, 0.0], ''rangeCityA'': [0.0, 0.0, 0.0], ''rangeHwy'': [0.0, 0.0, 0.0],
+  ''rangeHwyA'': [0.0, 0.0, 0.0], ''trany'': [''Manual 5-spd'', ''Manual 5-spd'',
+  ''Manual 5-spd''], ''UCity'': [23.3333, 11.0, 29.0], ''UCityA'': [0.0, 0.0, 0.0],
+  ''UHighway'': [35.0, 19.0, 47.0], ''UHighwayA'': [0.0, 0.0, 0.0], ''VClass'': [''Two
+  Seaters'', ''Two Seaters'', ''Subcompact Cars''], ''year'': [1985, 1985, 1985],
+  ''youSaveSpend'': [-2250, -10750, 0], ''guzzler'': [nan, ''T'', nan], ''trans_dscr'':
+  [nan, nan, ''SIL''], ''tCharger'': [nan, nan, nan], ''sCharger'': [nan, nan, nan],
+  ''atvType'': [nan, nan, nan], ''fuelType2'': [nan, nan, nan], ''rangeA'': [nan,
+  nan, nan], ''evMotor'': [nan, nan, nan], ''mfrCode'': [nan, nan, nan], ''c240Dscr'':
+  [nan, nan, nan], ''charge240b'': [0.0, 0.0, 0.0], ''c240bDscr'': [nan, nan, nan],
+  ''createdOn'': [''Tue Jan 01 00:00:00 EST 2013'', ''Tue Jan 01 00:00:00 EST 2013'',
+  ''Tue Jan 01 00:00:00 EST 2013''], ''modifiedOn'': [''Tue Jan 01 00:00:00 EST 2013'',
+  ''Tue Jan 01 00:00:00 EST 2013'', ''Tue Jan 01 00:00:00 EST 2013''], ''startStop'':
+  [nan, nan, nan], ''phevCity'': [0, 0, 0], ''phevHwy'': [0, 0, 0], ''phevComb'':
+  [0, 0, 0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  money saving with an electric car
+
+  automobiles
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Area chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Area chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Column chart'
+- '* Histogram'
+- '* Line chart'
+- '* Box chart'
+- '* Bubble chart'
+- '* Stacked bar/column chart'
+- '* Dot plot'
+- '* Choropleth map'
+- '* Area chart'
+- '* Table chart'
+- '* Bar chart'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Geographic heatmap'
+- '* Heatmap'
+- '* Column chart'
+- '* Histogram'
+- '* Line chart'
+- '* Box chart'
+- '* Bubble chart'
+- '* Stacked bar/column chart'
+- '* Dot plot'
+- '* Choropleth map'
+- '* Area chart'
+2. initial_prompt: !!python/tuple
+- Create an area chart highlighting the fuel costs (fuelCost08), CO2 emissions (co2TailpipeGpm),
+  and combined MPG (comb08) for various car models and makes across different years.
+  This will help visualize the savings potential and environmental impact of transitioning
+  to electric cars. Focus on data trends over time to showcase improvements in fuel
+  efficiency and reductions in emissions. Make sure to differentiate the data for
+  electric cars versus traditional gasoline cars. This chart will be useful for those
+  considering the switch to electric vehicles to understand the long-term savings
+  and benefits.
+- 3117
+- 3007
+- 110

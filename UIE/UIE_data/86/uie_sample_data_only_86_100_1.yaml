@@ -1,0 +1,280 @@
+02_initial_prompt: Please create a histogram using the Spotify Song Attributes data.
+  The histogram should display the distribution of 'danceability' scores among the
+  songs. Use text annotations to highlight the mean value of 'danceability' and any
+  notable outliers. Additionally, use visual highlights such as color changes to emphasize
+  these annotated points. The purpose of this visualization is to understand the overall
+  danceability trend in the dataset, helping to see if most songs are generally danceable
+  or not. This will give insights into the general tempo and rhythm trends in popular
+  songs.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a histogram using the Spotify Song Attributes data. The histogram
+  should display the distribution of ''danceability'' scores among the songs. Use
+  text annotations to highlight the mean value of ''danceability'' and any notable
+  outliers. Additionally, use visual highlights such as color changes to emphasize
+  these annotated points. The purpose of this visualization is to understand the overall
+  danceability trend in the dataset, helping to see if most songs are generally danceable
+  or not. This will give insights into the general tempo and rhythm trends in popular
+  songs.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/86.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''acousticness'',
+  ''danceability'', ''duration_ms'', ''energy'', ''instrumentalness'', ''key'', ''liveness'',
+  ''loudness'', ''mode'', ''speechiness'', ''tempo'', ''time_signature'', ''valence'',
+  ''target'', ''song_title'', ''artist''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [2017, 1394, 632, 1921, 719, 1107, 12, 793, 1808, 2, 792, 1919, 4, 853,
+  2, 1956, 1343]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''acousticness'':
+  [0.0102, 0.199, 0.0344], ''danceability'': [0.833, 0.743, 0.838], ''duration_ms'':
+  [204600, 326933, 185707], ''energy'': [0.434, 0.359, 0.412], ''instrumentalness'':
+  [0.0219, 0.00611, 0.000234], ''key'': [2, 1, 2], ''liveness'': [0.165, 0.137, 0.159],
+  ''loudness'': [-8.795, -10.401, -7.148], ''mode'': [1, 1, 1], ''speechiness'': [0.431,
+  0.0794, 0.289], ''tempo'': [150.062, 160.083, 75.044], ''time_signature'': [4.0,
+  4.0, 4.0], ''valence'': [0.286, 0.588, 0.173], ''target'': [1, 1, 1], ''song_title'':
+  [''Mask Off'', ''Redbone'', ''Xanny Family''], ''artist'': [''Future'', ''Childish
+  Gambino'', ''Future'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["danceability"],
+
+  "Task": "Distribution with variability",
+
+  "Purpose": "To understand the overall danceability trend in the dataset, helping
+  to see if most songs are generally danceable or not",
+
+  "Audience": "Music analysts, Spotify data scientists, music producers, and general
+  researchers interested in music trends"
+
+  }'
+05_audience: Music analysts, Spotify data scientists, music producers, and general
+  researchers interested in music trends
+05_data_attributes:
+- danceability
+05_purpose: To understand the overall danceability trend in the dataset, helping to
+  see if most songs are generally danceable or not
+05_task: Distribution with variability
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/86.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''acousticness'',
+  ''danceability'', ''duration_ms'', ''energy'', ''instrumentalness'', ''key'', ''liveness'',
+  ''loudness'', ''mode'', ''speechiness'', ''tempo'', ''time_signature'', ''valence'',
+  ''target'', ''song_title'', ''artist''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [2017, 1394, 632, 1921, 719, 1107, 12, 793, 1808, 2, 792, 1919, 4, 853,
+  2, 1956, 1343]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''acousticness'':
+  [0.0102, 0.199, 0.0344], ''danceability'': [0.833, 0.743, 0.838], ''duration_ms'':
+  [204600, 326933, 185707], ''energy'': [0.434, 0.359, 0.412], ''instrumentalness'':
+  [0.0219, 0.00611, 0.000234], ''key'': [2, 1, 2], ''liveness'': [0.165, 0.137, 0.159],
+  ''loudness'': [-8.795, -10.401, -7.148], ''mode'': [1, 1, 1], ''speechiness'': [0.431,
+  0.0794, 0.289], ''tempo'': [150.062, 160.083, 75.044], ''time_signature'': [4.0,
+  4.0, 4.0], ''valence'': [0.286, 0.588, 0.173], ''target'': [1, 1, 1], ''song_title'':
+  [''Mask Off'', ''Redbone'', ''Xanny Family''], ''artist'': [''Future'', ''Childish
+  Gambino'', ''Future'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a histogram using the Spotify Song Attributes data. The histogram
+  should display the distribution of ''danceability'' scores among the songs. Use
+  text annotations to highlight the mean value of ''danceability'' and any notable
+  outliers. Additionally, use visual highlights such as color changes to emphasize
+  these annotated points. The purpose of this visualization is to understand the overall
+  danceability trend in the dataset, helping to see if most songs are generally danceable
+  or not. This will give insights into the general tempo and rhythm trends in popular
+  songs.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''danceability'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Music analysts, Spotify data scientists, music producers, and general researchers
+  interested in music trends
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution with variability
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To understand the overall danceability trend in the dataset, helping to see if most
+  songs are generally danceable or not
+
+  <end of purpose>'
+07_questions: '1. Do you have a specific range of ''danceability'' scores that you
+  would like to focus on in the histogram?
+
+  2. What color scheme would you prefer for highlighting the mean value and outliers
+  in the histogram?
+
+  3. Are there specific bin widths or number of bins you would prefer for the histogram?
+
+  4. Would you prefer to include any labels or titles for the x-axis and y-axis?
+
+  5. Do you have any preferences for the overall style or theme of the histogram (e.g.,
+  minimalist, detailed, color palette)?
+
+  6. Would you like the mean value and outliers to be annotated with specific labels
+  or text descriptions? If yes, please specify.
+
+  7. Is there a specific font style or size you would like to use for the text annotations?
+
+  8. Do you want any additional statistics or metrics displayed on the histogram besides
+  the mean value and outliers?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a histogram using the Spotify Song Attributes\
+  \ data. The histogram should display the distribution of 'danceability' scores among\
+  \ the songs. Use text annotations to highlight the mean value of 'danceability'\
+  \ and any notable outliers. Additionally, use visual highlights such as color changes\
+  \ to emphasize these annotated points. The purpose of this visualization is to understand\
+  \ the overall danceability trend in the dataset, helping to see if most songs are\
+  \ generally danceable or not. This will give insights into the general tempo and\
+  \ rhythm trends in popular songs.\n<end of user request>\n\nImagine the best result\
+  \ that can be achieved based on the given instructions and is the final output you\
+  \ want from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nTo understand the overall danceability trend in the dataset,\
+  \ helping to see if most songs are generally danceable or not\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a specific range of 'danceability'\
+  \ scores that you would like to focus on in the histogram?\n2. What color scheme\
+  \ would you prefer for highlighting the mean value and outliers in the histogram?\n\
+  3. Are there specific bin widths or number of bins you would prefer for the histogram?\n\
+  4. Would you prefer to include any labels or titles for the x-axis and y-axis?\n\
+  5. Do you have any preferences for the overall style or theme of the histogram (e.g.,\
+  \ minimalist, detailed, color palette)?\n6. Would you like the mean value and outliers\
+  \ to be annotated with specific labels or text descriptions? If yes, please specify.\n\
+  7. Is there a specific font style or size you would like to use for the text annotations?\n\
+  8. Do you want any additional statistics or metrics displayed on the histogram besides\
+  \ the mean value and outliers?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I would prefer a blue color for highlighting the mean value and a red color for
+  outliers.
+
+  3. I do not have a specific preference.
+
+  4. Yes, please include labels for the x-axis as ''Danceability Scores'' and the
+  y-axis as ''Number of Songs''.
+
+  5. I do not know.
+
+  6. Yes, please annotate the mean value with ''Mean Danceability'' and the outliers
+  with ''Outlier'' labels.
+
+  7. I do not know.
+
+  8. No, just the mean value and outliers are fine.'

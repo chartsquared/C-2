@@ -1,0 +1,275 @@
+02_initial_prompt: Create a network diagram showcasing the relationships between external_ips
+  and name. Highlight nodes with a higher number of tcp_packets to visually differentiate
+  more active connections. Annotate nodes representing "AntiVirus" by noting their
+  respective dist_port_tcp values to draw attention to specific port distributions.
+  Additionally, emphasize any anomalies in the udp_packets values by changing the
+  node color to prompt further investigation. Given the context of Network Traffic
+  Android Malware in cybersecurity, the diagram will help in identifying potential
+  malicious patterns and anomalies in network behavior.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a network diagram showcasing the relationships between external_ips and name.
+  Highlight nodes with a higher number of tcp_packets to visually differentiate more
+  active connections. Annotate nodes representing "AntiVirus" by noting their respective
+  dist_port_tcp values to draw attention to specific port distributions. Additionally,
+  emphasize any anomalies in the udp_packets values by changing the node color to
+  prompt further investigation. Given the context of Network Traffic Android Malware
+  in cybersecurity, the diagram will help in identifying potential malicious patterns
+  and anomalies in network behavior.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/73.csv'': {''summary'': {''Column'': [''name;tcp_packets;dist_port_tcp;external_ips;vulume_bytes;udp_packets;tcp_urg_packet;source_app_packets;remote_app_packets;source_app_bytes;remote_app_bytes;duracion;avg_local_pkt_rate;avg_remote_pkt_rate;source_app_packets;dns_query_times;type''],
+  ''Data Type'': [dtype(''O'')], ''Missing Values'': [0], ''Unique Values'': [6060]},
+  ''sample_data'': {''name;tcp_packets;dist_port_tcp;external_ips;vulume_bytes;udp_packets;tcp_urg_packet;source_app_packets;remote_app_packets;source_app_bytes;remote_app_bytes;duracion;avg_local_pkt_rate;avg_remote_pkt_rate;source_app_packets;dns_query_times;type'':
+  [''AntiVirus;36;6;3;3911;0;0;39;33;5100;4140;NA;NA;NA;39;3;benign'', ''AntiVirus;117;0;9;23514;0;0;128;107;26248;24358;NA;NA;NA;128;11;benign'',
+  ''AntiVirus;196;0;6;24151;0;0;205;214;163887;24867;NA;NA;NA;205;9;benign'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["external_ips", "name", "tcp_packets", "dist_port_tcp", "udp_packets"],
+
+  "Task": "Outlier",
+
+  "Purpose": "To identify potential malicious patterns and anomalies in network behavior
+  by visualizing network connections, highlighting active connections, and emphasizing
+  potential issues.",
+
+  "Audience": "Cybersecurity Analysts"
+
+  }'
+05_audience: Cybersecurity Analysts
+05_data_attributes:
+- external_ips
+- name
+- tcp_packets
+- dist_port_tcp
+- udp_packets
+05_purpose: To identify potential malicious patterns and anomalies in network behavior
+  by visualizing network connections, highlighting active connections, and emphasizing
+  potential issues.
+05_task: Outlier
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/73.csv'': {''summary'': {''Column'': [''name;tcp_packets;dist_port_tcp;external_ips;vulume_bytes;udp_packets;tcp_urg_packet;source_app_packets;remote_app_packets;source_app_bytes;remote_app_bytes;duracion;avg_local_pkt_rate;avg_remote_pkt_rate;source_app_packets;dns_query_times;type''],
+  ''Data Type'': [dtype(''O'')], ''Missing Values'': [0], ''Unique Values'': [6060]},
+  ''sample_data'': {''name;tcp_packets;dist_port_tcp;external_ips;vulume_bytes;udp_packets;tcp_urg_packet;source_app_packets;remote_app_packets;source_app_bytes;remote_app_bytes;duracion;avg_local_pkt_rate;avg_remote_pkt_rate;source_app_packets;dns_query_times;type'':
+  [''AntiVirus;36;6;3;3911;0;0;39;33;5100;4140;NA;NA;NA;39;3;benign'', ''AntiVirus;117;0;9;23514;0;0;128;107;26248;24358;NA;NA;NA;128;11;benign'',
+  ''AntiVirus;196;0;6;24151;0;0;205;214;163887;24867;NA;NA;NA;205;9;benign'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a network diagram showcasing the relationships between external_ips and name.
+  Highlight nodes with a higher number of tcp_packets to visually differentiate more
+  active connections. Annotate nodes representing "AntiVirus" by noting their respective
+  dist_port_tcp values to draw attention to specific port distributions. Additionally,
+  emphasize any anomalies in the udp_packets values by changing the node color to
+  prompt further investigation. Given the context of Network Traffic Android Malware
+  in cybersecurity, the diagram will help in identifying potential malicious patterns
+  and anomalies in network behavior.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''external_ips'', ''name'', ''tcp_packets'', ''dist_port_tcp'', ''udp_packets'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Cybersecurity Analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Outlier
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To identify potential malicious patterns and anomalies in network behavior by visualizing
+  network connections, highlighting active connections, and emphasizing potential
+  issues.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred layout style for the network diagram (e.g.,
+  circular, hierarchical, force-directed)?
+
+  2. What color scheme would you prefer for differentiating node types and highlighting
+  anomalies?
+
+  3. Are there specific labels or legends you would like to include for better interpretation
+  of the diagram?
+
+  4. How would you prefer node size to be represented, given that it will reflect
+  the number of ''tcp_packets''?
+
+  5. Is there a specific threshold for what should be considered a "higher" number
+  of ''tcp_packets''?
+
+  6. What color would you like to use to highlight nodes with anomalies in ''udp_packets''?
+
+  7. Would you like tooltips or annotations to include additional data attributes
+  when hovering over nodes?
+
+  8. Is there a particular format or content you''d like for the annotations on ''AntiVirus''
+  nodes regarding their ''dist_port_tcp'' values?
+
+  9. Are there specific visual markers or highlights you would like for connections
+  originating from or terminating at ''external_ips''?
+
+  10. Should the diagram include any filtering options to focus on specific ranges
+  or categories of data?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a network diagram showcasing the relationships\
+  \ between external_ips and name. Highlight nodes with a higher number of tcp_packets\
+  \ to visually differentiate more active connections. Annotate nodes representing\
+  \ \"AntiVirus\" by noting their respective dist_port_tcp values to draw attention\
+  \ to specific port distributions. Additionally, emphasize any anomalies in the udp_packets\
+  \ values by changing the node color to prompt further investigation. Given the context\
+  \ of Network Traffic Android Malware in cybersecurity, the diagram will help in\
+  \ identifying potential malicious patterns and anomalies in network behavior.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nTo identify potential malicious patterns and anomalies in network behavior\
+  \ by visualizing network connections, highlighting active connections, and emphasizing\
+  \ potential issues.\n<end of purpose>\n\n<start service provider message>\n1. Do\
+  \ you have a preferred layout style for the network diagram (e.g., circular, hierarchical,\
+  \ force-directed)?\n2. What color scheme would you prefer for differentiating node\
+  \ types and highlighting anomalies?\n3. Are there specific labels or legends you\
+  \ would like to include for better interpretation of the diagram?\n4. How would\
+  \ you prefer node size to be represented, given that it will reflect the number\
+  \ of 'tcp_packets'?\n5. Is there a specific threshold for what should be considered\
+  \ a \"higher\" number of 'tcp_packets'?\n6. What color would you like to use to\
+  \ highlight nodes with anomalies in 'udp_packets'?\n7. Would you like tooltips or\
+  \ annotations to include additional data attributes when hovering over nodes?\n\
+  8. Is there a particular format or content you'd like for the annotations on 'AntiVirus'\
+  \ nodes regarding their 'dist_port_tcp' values?\n9. Are there specific visual markers\
+  \ or highlights you would like for connections originating from or terminating at\
+  \ 'external_ips'?\n10. Should the diagram include any filtering options to focus\
+  \ on specific ranges or categories of data?\n<end service provider message>\n\n\
+  Also, remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I think labels for each node reflecting their ''name'' and legends to differentiate
+  node types would be helpful.
+
+  4. Node size should be proportional to the number of ''tcp_packets''.
+
+  5. I am not sure.
+
+  6. Perhaps a bright color like red to highlight nodes with anomalies in ''udp_packets''.
+
+  7. I do not know.
+
+  8. I would like the annotations to clearly indicate the ''dist_port_tcp'' values.
+
+  9. I do not know.
+
+  10. I am not sure.'

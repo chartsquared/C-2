@@ -1,0 +1,272 @@
+02_initial_prompt: Create a stacked bar chart to visualize food consumption by country.
+  Each bar represents a country with segments for Red Meat, White Meat, Eggs, Milk,
+  Fish, Cereals, Starch, Nuts, and Fruits & Vegetables, stacked to show total food
+  consumption. Use annotations to highlight the countries with the highest and lowest
+  consumption in each food category. This visualization helps compare dietary patterns
+  across different countries. Emphasize the purpose of understanding food trends and
+  nutritional balance globally. Keep the chart colorful and clear with labeled axes
+  for better readability.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a stacked bar chart to visualize food consumption by country. Each bar represents
+  a country with segments for Red Meat, White Meat, Eggs, Milk, Fish, Cereals, Starch,
+  Nuts, and Fruits & Vegetables, stacked to show total food consumption. Use annotations
+  to highlight the countries with the highest and lowest consumption in each food
+  category. This visualization helps compare dietary patterns across different countries.
+  Emphasize the purpose of understanding food trends and nutritional balance globally.
+  Keep the chart colorful and clear with labeled axes for better readability.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/448.csv'': {''summary'': {''Column'': [''Country'', ''Red
+  Meat'', ''White Meat'', ''Eggs'', ''Milk'', ''Fish'', ''Cereals'', ''Starch'', ''Nuts'',
+  ''Fruits & Vegetables''], ''Data Type'': [dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [25, 23, 25, 17, 24, 23, 25,
+  22, 22, 21]}, ''sample_data'': {''Country'': [''Albania'', ''Austria'', ''Belgium''],
+  ''Red Meat'': [10.1, 8.9, 13.5], ''White Meat'': [1.4, 14.0, 9.3], ''Eggs'': [0.5,
+  4.3, 4.1], ''Milk'': [8.9, 19.9, 17.5], ''Fish'': [0.2, 2.1, 4.5], ''Cereals'':
+  [42.3, 28.0, 26.6], ''Starch'': [0.6, 3.6, 5.7], ''Nuts'': [5.5, 1.3, 2.1], ''Fruits
+  & Vegetables'': [1.7, 4.3, 4.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country", "Red Meat", "White Meat", "Eggs", "Milk", "Fish",
+  "Cereals", "Starch", "Nuts", "Fruits & Vegetables"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Compare dietary patterns across different countries to understand food
+  trends and nutritional balance globally",
+
+  "Audience": "Researchers, health professionals, and policymakers"
+
+  }'
+05_audience: Researchers, health professionals, and policymakers
+05_data_attributes:
+- Country
+- Red Meat
+- White Meat
+- Eggs
+- Milk
+- Fish
+- Cereals
+- Starch
+- Nuts
+- Fruits & Vegetables
+05_purpose: Compare dietary patterns across different countries to understand food
+  trends and nutritional balance globally
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/448.csv'': {''summary'': {''Column'': [''Country'', ''Red
+  Meat'', ''White Meat'', ''Eggs'', ''Milk'', ''Fish'', ''Cereals'', ''Starch'', ''Nuts'',
+  ''Fruits & Vegetables''], ''Data Type'': [dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [25, 23, 25, 17, 24, 23, 25,
+  22, 22, 21]}, ''sample_data'': {''Country'': [''Albania'', ''Austria'', ''Belgium''],
+  ''Red Meat'': [10.1, 8.9, 13.5], ''White Meat'': [1.4, 14.0, 9.3], ''Eggs'': [0.5,
+  4.3, 4.1], ''Milk'': [8.9, 19.9, 17.5], ''Fish'': [0.2, 2.1, 4.5], ''Cereals'':
+  [42.3, 28.0, 26.6], ''Starch'': [0.6, 3.6, 5.7], ''Nuts'': [5.5, 1.3, 2.1], ''Fruits
+  & Vegetables'': [1.7, 4.3, 4.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a stacked bar chart to visualize food consumption by country. Each bar represents
+  a country with segments for Red Meat, White Meat, Eggs, Milk, Fish, Cereals, Starch,
+  Nuts, and Fruits & Vegetables, stacked to show total food consumption. Use annotations
+  to highlight the countries with the highest and lowest consumption in each food
+  category. This visualization helps compare dietary patterns across different countries.
+  Emphasize the purpose of understanding food trends and nutritional balance globally.
+  Keep the chart colorful and clear with labeled axes for better readability.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country'', ''Red Meat'', ''White Meat'', ''Eggs'', ''Milk'', ''Fish'', ''Cereals'',
+  ''Starch'', ''Nuts'', ''Fruits & Vegetables'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, health professionals, and policymakers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Compare dietary patterns across different countries to understand food trends and
+  nutritional balance globally
+
+  <end of purpose>'
+07_questions: "1. Do you have a preferred color palette for the stacked bar chart?\n\
+  2. Would you like each food category to have a specific color assigned, and if so,\
+  \ please specify the colors?\n3. How would you prefer the axis labels to be formatted?\
+  \ (e.g., font size, font type)\n4. Should the bar widths and spacing between bars\
+  \ be adjusted in any specific way?\n5. Do you have any preferences for the chart\
+  \ title and subtitle? If so, please provide the desired text.\n6. Are there any\
+  \ specific formatting or styling preferences for the annotations highlighting the\
+  \ highest and lowest consumption? \n7. Would you like gridlines to be included in\
+  \ the chart? If so, do you have any preferences for their style (e.g., solid, dashed)?\n\
+  8. Should the legend be placed in a particular location within the chart (e.g.,\
+  \ top, bottom, left, right)?\n9. Are there any additional labels or data points\
+  \ you would like to be included in the chart for enhanced readability?\n10. Do you\
+  \ have a preference for the chart aspect ratio or dimensions? If so, please specify."
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a stacked bar chart to visualize food consumption\
+  \ by country. Each bar represents a country with segments for Red Meat, White Meat,\
+  \ Eggs, Milk, Fish, Cereals, Starch, Nuts, and Fruits & Vegetables, stacked to show\
+  \ total food consumption. Use annotations to highlight the countries with the highest\
+  \ and lowest consumption in each food category. This visualization helps compare\
+  \ dietary patterns across different countries. Emphasize the purpose of understanding\
+  \ food trends and nutritional balance globally. Keep the chart colorful and clear\
+  \ with labeled axes for better readability.\n<end of user request>\n\nImagine the\
+  \ best result that can be achieved based on the given instructions and is the final\
+  \ output you want from the service provider with your purpose given below.\nBased\
+  \ on your imagination you are to respond to the service provider.\nSince you are\
+  \ an amateur user you should concretely answer 50% of the questions you think are\
+  \ most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nCompare dietary patterns across different\
+  \ countries to understand food trends and nutritional balance globally\n<end of\
+  \ purpose>\n\n<start service provider message>\n1. Do you have a preferred color\
+  \ palette for the stacked bar chart?\n2. Would you like each food category to have\
+  \ a specific color assigned, and if so, please specify the colors?\n3. How would\
+  \ you prefer the axis labels to be formatted? (e.g., font size, font type)\n4. Should\
+  \ the bar widths and spacing between bars be adjusted in any specific way?\n5. Do\
+  \ you have any preferences for the chart title and subtitle? If so, please provide\
+  \ the desired text.\n6. Are there any specific formatting or styling preferences\
+  \ for the annotations highlighting the highest and lowest consumption? \n7. Would\
+  \ you like gridlines to be included in the chart? If so, do you have any preferences\
+  \ for their style (e.g., solid, dashed)?\n8. Should the legend be placed in a particular\
+  \ location within the chart (e.g., top, bottom, left, right)?\n9. Are there any\
+  \ additional labels or data points you would like to be included in the chart for\
+  \ enhanced readability?\n10. Do you have a preference for the chart aspect ratio\
+  \ or dimensions? If so, please specify.\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not have a specific preference for the colors.
+
+  3. I would like the axis labels to be clear and easily readable, perhaps in a medium
+  font size with a sans-serif font type.
+
+  4. I do not know.
+
+  5. For the chart title, please use "Global Food Consumption by Country" and for
+  the subtitle, "Understanding Dietary Patterns and Nutritional Balance".
+
+  6. I am not sure.
+
+  7. Yes, please include gridlines. I do not have a preference for their style.
+
+  8. I am not sure.
+
+  9. No, I do not have any additional labels or data points to be included.
+
+  10. I do not have a specific preference for the chart dimensions.'

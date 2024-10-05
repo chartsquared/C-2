@@ -1,0 +1,96 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Candlestick chart
+
+  * OHLC chart
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Heatmap
+
+  * Violin plot
+
+  * Box chart
+
+  * Histogram
+
+  * Area chart
+
+  * Stacked area chart'
+- 949
+- 902
+- 47
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 744
+- 606
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/62.csv': {'summary': {'Column':\
+  \ ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume'], 'Data Type':\
+  \ [dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0], 'Unique\
+  \ Values': [10449, 5804, 5743, 5721, 5910, 7440, 9886]}, 'sample_data': {'Date':\
+  \ ['1980-12-12', '1980-12-15', '1980-12-16'], 'Open': [0.128348, 0.12221, 0.113281],\
+  \ 'High': [0.128906, 0.12221, 0.113281], 'Low': [0.128348, 0.121652, 0.112723],\
+  \ 'Close': [0.128348, 0.121652, 0.112723], 'Adj Close': [0.100178, 0.094952, 0.087983],\
+  \ 'Volume': [469033600, 175884800, 105728000]}}}\n<end of data example format>\n\
+  \n<start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '2. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nApple Stocks\nbusiness\n<end of data details format>\n\
+  \nGiven a data format, imagine a chart that visualizes this data as the final output\
+  \ you want from the service provider.\nConsider what purpose the data has and the\
+  \ practical purpose of visualization and include it in the instructions.\nYou need\
+  \ to imagine a chart with * Line chart and given annotations that utilizes the data\
+  \ format.\nIf there are multiple given data formats, imagine a chart with * Line\
+  \ chart and given annotations that utilizes all the data formats.\nSince you are\
+  \ an amateur user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\n\
+  Also, refer to the data details to create as practical and realistic instructions\
+  \ as possible.\nInstructions must reflect the context of the data.\nTo emulate a\
+  \ real-world user your instruction should be 100 in size (word count). Do not include\
+  \ data path in the instruction.\nYour response should ONLY contain the user emulated\
+  \ instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Stacked area chart'
+- '* Violin plot'
+- '* OHLC chart'
+- '* Scatter plot'
+- '* Box chart'
+- '* Area chart'
+- '* Bubble chart'
+- '* Heatmap'
+- '* Candlestick chart'
+- '* Histogram'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart showing Apple stock performance over time. Plot 'Date' on the
+  x-axis and 'Close' prices on the y-axis. Use text annotations to highlight key dates
+  and values, such as highest and lowest prices, or significant events affecting stock.
+  Emphasize these points with color highlights. The chart should provide a clear visual
+  historical overview of Apple stock trends, helping viewers understand market behavior
+  and identify pivotal moments. Provide text annotations for notable elements, and
+  make sure highlighted points stand out. Suitable for investors or analysts studying
+  stock performance.
+- 784
+- 675
+- 109

@@ -1,0 +1,202 @@
+02_initial_prompt: 'Create a line chart visualizing the average distance and time
+  overall per edition of the Tour de France from 1903 to 2019. Use ''edition'' on
+  the x-axis and plot two lines: one for ''distance'' and another for ''time_overall''
+  on the y-axis. Ensure to label the axes and include a legend to distinguish between
+  the two lines. Highlight any missing data points or gaps in the series. This chart
+  should help in analyzing the trend of race distances and completion times over the
+  years.'
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a line chart visualizing the average distance and\
+  \ time overall per edition of the Tour de France from 1903 to 2019. Use 'edition'\
+  \ on the x-axis and plot two lines: one for 'distance' and another for 'time_overall'\
+  \ on the y-axis. Ensure to label the axes and include a legend to distinguish between\
+  \ the two lines. Highlight any missing data points or gaps in the series. This chart\
+  \ should help in analyzing the trend of race distances and completion times over\
+  \ the years.\n<end of user request>\n\n<start of data format>\n{'../Extra_datas/data/434.csv':\
+  \ {'summary': {'Column': ['edition', 'start_date', 'winner_name', 'winner_team',\
+  \ 'distance', 'time_overall', 'time_margin', 'stage_wins', 'stages_led', 'height',\
+  \ 'weight', 'age', 'born', 'died', 'full_name', 'nickname', 'birth_town', 'birth_country',\
+  \ 'nationality'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('int64'), dtype('int64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 8, 8, 0, 0, 40, 39, 0, 0, 50, 60, 32, 0, 0, 0], 'Unique Values': [106, 106,\
+  \ 63, 48, 102, 98, 42, 9, 22, 19, 19, 15, 63, 38, 23, 37, 58, 15, 14]}, 'sample_data':\
+  \ {'edition': [1, 2, 3], 'start_date': ['1903-07-01', '1904-07-02', '1905-07-09'],\
+  \ 'winner_name': ['Maurice Garin', 'Henri Cornet', 'Louis Trousselier'], 'winner_team':\
+  \ ['La Fran\xE7aise', 'Conte', 'Peugeot\u2013Wolber'], 'distance': [2428.0, 2428.0,\
+  \ 2994.0], 'time_overall': [94.55388888888888, 96.09861111111113, nan], 'time_margin':\
+  \ [2.9891666666666667, 2.270555555555556, nan], 'stage_wins': [3, 1, 5], 'stages_led':\
+  \ [6, 3, 10], 'height': [1.62, nan, nan], 'weight': [60.0, nan, nan], 'age': [32,\
+  \ 19, 24], 'born': ['1871-03-03', '1884-08-04', '1881-06-29'], 'died': ['1957-02-19',\
+  \ '1941-03-18', '1939-04-24'], 'full_name': [nan, nan, nan], 'nickname': ['The Little\
+  \ Chimney-sweep', 'Le rigolo (The joker)', 'Levaloy / Trou-trou'], 'birth_town':\
+  \ ['Arvier', 'Desvres', 'Paris'], 'birth_country': ['Italy', 'France', 'France'],\
+  \ 'nationality': ['\\xa0France', '\\xa0France', '\\xa0France']}}}\n<end of data\
+  \ format>\n\n<start of various task types>\n{'Show External Context': 'Uncaptured\
+  \ data provided by the self-tracker to understand and explain a phenomenon shown\
+  \ in the data', 'Show Confirmation': 'Collected data confirms existing knowledge',\
+  \ 'Show Contradiction': 'Collected data contradicts existing knowledge', 'Focus\
+  \ on Identifying value': 'Explicitly specify the measured value, its range for one\
+  \ or more clearly identified data points, or the difference between two measured\
+  \ values', 'Focus on Identifying extreme': 'Explicitly state the identities of the\
+  \ data points possessing extreme values of the measure variable', 'Focus on Identifying\
+  \ references': 'Explicitly state the values of categorical variables, labels from\
+  \ the axes, or legends', 'Comparison by Time Segmentation': 'Compare measured values\
+  \ segmented by time', 'Comparison by Multiple services': 'Compare the same data\
+  \ type from two or more services', 'Comparison against external data': 'Bringing\
+  \ in external data for comparison', 'Comparison By Factor': 'Compare measured values\
+  \ by a factor (other than time)', 'Comparison By Instances': 'Compare two specific\
+  \ instances', 'Show Trend': 'Describe changes over time', 'Value judgement': 'Convey\
+  \ positive or negative connotations about the data', 'Distribution with variability':\
+  \ 'Explicitly state the variability of measured values', 'Distribution By Category':\
+  \ 'Explicitly describe the variation of measured values across all or most of the\
+  \ values of a categorical variable', 'Correlation': 'Specify the direct relationship\
+  \ between two variables (but not as comparison)', 'Outlier': 'Explicitly point out\
+  \ outliers or state the effect of outliers', 'Summarization of data': 'Summary of\
+  \ collected data (such as number of data points, duration of tracking, and averages)',\
+  \ 'Prediction/Forecasting': 'Predict the future based on the collected data'}\n\
+  <end of various task types>\n\nFor data attributes needed in data visualization,\
+  \ store them in query['Data Attribute'].\nStore the selected task from the task\
+  \ types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: '{"Data Attribute": ["edition", "distance",
+  "time_overall"], "Task": "Show Trend", "Purpose": "Analyze the trend of race distances
+  and completion times over the years", "Audience": "Sports analysts, historians,
+  cycling enthusiasts"}'
+05_audience: Sports analysts, historians, cycling enthusiasts
+05_data_attributes:
+- edition
+- distance
+- time_overall
+05_purpose: Analyze the trend of race distances and completion times over the years
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/434.csv':\
+  \ {'summary': {'Column': ['edition', 'start_date', 'winner_name', 'winner_team',\
+  \ 'distance', 'time_overall', 'time_margin', 'stage_wins', 'stages_led', 'height',\
+  \ 'weight', 'age', 'born', 'died', 'full_name', 'nickname', 'birth_town', 'birth_country',\
+  \ 'nationality'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('int64'), dtype('int64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 8, 8, 0, 0, 40, 39, 0, 0, 50, 60, 32, 0, 0, 0], 'Unique Values': [106, 106,\
+  \ 63, 48, 102, 98, 42, 9, 22, 19, 19, 15, 63, 38, 23, 37, 58, 15, 14]}, 'sample_data':\
+  \ {'edition': [1, 2, 3], 'start_date': ['1903-07-01', '1904-07-02', '1905-07-09'],\
+  \ 'winner_name': ['Maurice Garin', 'Henri Cornet', 'Louis Trousselier'], 'winner_team':\
+  \ ['La Fran\xE7aise', 'Conte', 'Peugeot\u2013Wolber'], 'distance': [2428.0, 2428.0,\
+  \ 2994.0], 'time_overall': [94.55388888888888, 96.09861111111113, nan], 'time_margin':\
+  \ [2.9891666666666667, 2.270555555555556, nan], 'stage_wins': [3, 1, 5], 'stages_led':\
+  \ [6, 3, 10], 'height': [1.62, nan, nan], 'weight': [60.0, nan, nan], 'age': [32,\
+  \ 19, 24], 'born': ['1871-03-03', '1884-08-04', '1881-06-29'], 'died': ['1957-02-19',\
+  \ '1941-03-18', '1939-04-24'], 'full_name': [nan, nan, nan], 'nickname': ['The Little\
+  \ Chimney-sweep', 'Le rigolo (The joker)', 'Levaloy / Trou-trou'], 'birth_town':\
+  \ ['Arvier', 'Desvres', 'Paris'], 'birth_country': ['Italy', 'France', 'France'],\
+  \ 'nationality': ['\\xa0France', '\\xa0France', '\\xa0France']}}}\n<end of data\
+  \ format>\n\n<start of data visualization instruction>\nCreate a line chart visualizing\
+  \ the average distance and time overall per edition of the Tour de France from 1903\
+  \ to 2019. Use 'edition' on the x-axis and plot two lines: one for 'distance' and\
+  \ another for 'time_overall' on the y-axis. Ensure to label the axes and include\
+  \ a legend to distinguish between the two lines. Highlight any missing data points\
+  \ or gaps in the series. This chart should help in analyzing the trend of race distances\
+  \ and completion times over the years.\n<end of data visualization instruction>\n\
+  \n<start of data attributes>\n['edition', 'distance', 'time_overall']\n<end of data\
+  \ attributes>\n\n<start of prospective audience>\nSports analysts, historians, cycling\
+  \ enthusiasts\n<end of prospective audience>\n\n<start of type of tasks>\nShow Trend\n\
+  <end of type of tasks>\n\n<start of purpose>\nAnalyze the trend of race distances\
+  \ and completion times over the years\n<end of purpose>"
+07_questions: '1. Do you have any specific color preferences for the lines representing
+  ''distance'' and ''time_overall''?
+
+  2. Would you like specific markers or symbols at each data point on the lines?
+
+  3. Are there any particular styles or formats you prefer for the legend?
+
+  4. Do you have a preferred font type or size for the axes labels and title?
+
+  5. Would you like gridlines to be included in the chart? If so, in which style (dotted,
+  dashed, solid)?
+
+  6. Should the chart title be centered or aligned in a specific way?
+
+  7. Do you want the chart to include annotations for significant events or key data
+  points?
+
+  8. How would you prefer missing data points or gaps to be highlighted (e.g., with
+  a specific color or symbol)?
+
+  9. Do you have a preference for the y-axis scale type (e.g., linear, logarithmic)?
+
+  10. Are there any specific time ranges or editions you want to focus on, either
+  by highlighting or zooming into those periods?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a line chart visualizing the average distance\
+  \ and time overall per edition of the Tour de France from 1903 to 2019. Use 'edition'\
+  \ on the x-axis and plot two lines: one for 'distance' and another for 'time_overall'\
+  \ on the y-axis. Ensure to label the axes and include a legend to distinguish between\
+  \ the two lines. Highlight any missing data points or gaps in the series. This chart\
+  \ should help in analyzing the trend of race distances and completion times over\
+  \ the years.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nAnalyze the trend of race distances and completion times over the years\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have any specific\
+  \ color preferences for the lines representing 'distance' and 'time_overall'?\n\
+  2. Would you like specific markers or symbols at each data point on the lines?\n\
+  3. Are there any particular styles or formats you prefer for the legend?\n4. Do\
+  \ you have a preferred font type or size for the axes labels and title?\n5. Would\
+  \ you like gridlines to be included in the chart? If so, in which style (dotted,\
+  \ dashed, solid)?\n6. Should the chart title be centered or aligned in a specific\
+  \ way?\n7. Do you want the chart to include annotations for significant events or\
+  \ key data points?\n8. How would you prefer missing data points or gaps to be highlighted\
+  \ (e.g., with a specific color or symbol)?\n9. Do you have a preference for the\
+  \ y-axis scale type (e.g., linear, logarithmic)?\n10. Are there any specific time\
+  \ ranges or editions you want to focus on, either by highlighting or zooming into\
+  \ those periods?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have a preferred font type or size.
+
+  5. Yes, please include gridlines in a solid style.
+
+  6. The chart title should be centered.
+
+  7. I am not sure.
+
+  8. Please highlight missing data points or gaps with a specific symbol.
+
+  9. The y-axis scale type should be linear.
+
+  10. I do not have specific time ranges or editions to focus on.'

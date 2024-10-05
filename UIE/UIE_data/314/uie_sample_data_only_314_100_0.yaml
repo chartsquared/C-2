@@ -1,0 +1,278 @@
+02_initial_prompt: Create a geographic heatmap visualizing the distribution of possum
+  populations. Highlight specific sites and annotate with data values like 'Pop',
+  'sex', 'age', 'hdlngth', and 'totlngth'. Emphasize differences in these attributes
+  per site. This is for a zoological regression study on possum demographics. Include
+  annotations to highlight important data points and insights. Use color variations
+  to represent different sites and populations, ensuring the most significant variations
+  are visually prominent. The visualization should help in understanding possum distribution
+  patterns and key demographic statistics across different geographical sites.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a geographic heatmap visualizing the distribution of possum populations.
+  Highlight specific sites and annotate with data values like ''Pop'', ''sex'', ''age'',
+  ''hdlngth'', and ''totlngth''. Emphasize differences in these attributes per site.
+  This is for a zoological regression study on possum demographics. Include annotations
+  to highlight important data points and insights. Use color variations to represent
+  different sites and populations, ensuring the most significant variations are visually
+  prominent. The visualization should help in understanding possum distribution patterns
+  and key demographic statistics across different geographical sites.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/314.csv'': {''summary'': {''Column'': [''case'', ''site'',
+  ''Pop'', ''sex'', ''age'', ''hdlngth'', ''skullw'', ''totlngth'', ''taill'', ''footlgth'',
+  ''earconch'', ''eye'', ''chest'', ''belly''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0], ''Unique Values'':
+  [104, 7, 2, 2, 9, 71, 64, 34, 19, 75, 69, 35, 19, 24]}, ''sample_data'': {''case'':
+  [1, 2, 3], ''site'': [1, 1, 1], ''Pop'': [''Vic'', ''Vic'', ''Vic''], ''sex'': [''m'',
+  ''f'', ''f''], ''age'': [8.0, 6.0, 6.0], ''hdlngth'': [94.1, 92.5, 94.0], ''skullw'':
+  [60.4, 57.6, 60.0], ''totlngth'': [89.0, 91.5, 95.5], ''taill'': [36.0, 36.5, 39.0],
+  ''footlgth'': [74.5, 72.5, 75.4], ''earconch'': [54.5, 51.2, 51.9], ''eye'': [15.2,
+  16.0, 15.5], ''chest'': [28.0, 28.5, 30.0], ''belly'': [36.0, 33.0, 34.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Pop", "sex", "age", "hdlngth", "totlngth", "site"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Understand possum distribution patterns and key demographic statistics
+  across different geographical sites for a zoological regression study on possum
+  demographics",
+
+  "Audience": "Zoologists, researchers in animal demographics, and regression analysis
+  experts"
+
+  }'
+05_audience: Zoologists, researchers in animal demographics, and regression analysis
+  experts
+05_data_attributes:
+- Pop
+- sex
+- age
+- hdlngth
+- totlngth
+- site
+05_purpose: Understand possum distribution patterns and key demographic statistics
+  across different geographical sites for a zoological regression study on possum
+  demographics
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/314.csv'': {''summary'': {''Column'': [''case'', ''site'',
+  ''Pop'', ''sex'', ''age'', ''hdlngth'', ''skullw'', ''totlngth'', ''taill'', ''footlgth'',
+  ''earconch'', ''eye'', ''chest'', ''belly''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0], ''Unique Values'':
+  [104, 7, 2, 2, 9, 71, 64, 34, 19, 75, 69, 35, 19, 24]}, ''sample_data'': {''case'':
+  [1, 2, 3], ''site'': [1, 1, 1], ''Pop'': [''Vic'', ''Vic'', ''Vic''], ''sex'': [''m'',
+  ''f'', ''f''], ''age'': [8.0, 6.0, 6.0], ''hdlngth'': [94.1, 92.5, 94.0], ''skullw'':
+  [60.4, 57.6, 60.0], ''totlngth'': [89.0, 91.5, 95.5], ''taill'': [36.0, 36.5, 39.0],
+  ''footlgth'': [74.5, 72.5, 75.4], ''earconch'': [54.5, 51.2, 51.9], ''eye'': [15.2,
+  16.0, 15.5], ''chest'': [28.0, 28.5, 30.0], ''belly'': [36.0, 33.0, 34.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a geographic heatmap visualizing the distribution of possum populations.
+  Highlight specific sites and annotate with data values like ''Pop'', ''sex'', ''age'',
+  ''hdlngth'', and ''totlngth''. Emphasize differences in these attributes per site.
+  This is for a zoological regression study on possum demographics. Include annotations
+  to highlight important data points and insights. Use color variations to represent
+  different sites and populations, ensuring the most significant variations are visually
+  prominent. The visualization should help in understanding possum distribution patterns
+  and key demographic statistics across different geographical sites.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Pop'', ''sex'', ''age'', ''hdlngth'', ''totlngth'', ''site'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Zoologists, researchers in animal demographics, and regression analysis experts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand possum distribution patterns and key demographic statistics across different
+  geographical sites for a zoological regression study on possum demographics
+
+  <end of purpose>'
+07_questions: '1. Do you have specific color preferences for representing different
+  sites and populations?
+
+  2. How would you like the annotations to be displayed (e.g., tooltips, labels, callouts)?
+
+  3. Are there any specific geographical regions or sites you want to be highlighted
+  more prominently?
+
+  4. Do you prefer a particular color palette for the heatmap to emphasize variations
+  effectively?
+
+  5. How detailed do you want the annotations to be? Should they include all the data
+  attributes or only the most significant ones?
+
+  6. Are there any specific data points (outliers or key insights) that you already
+  know should be highlighted?
+
+  7. Do you prefer the heatmap to be overlaid on a specific type of map (e.g., satellite,
+  terrain)?
+
+  8. Are there any other graphical elements you would like included to enhance understanding
+  (e.g., legends, scale bars)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a geographic heatmap visualizing the distribution\
+  \ of possum populations. Highlight specific sites and annotate with data values\
+  \ like 'Pop', 'sex', 'age', 'hdlngth', and 'totlngth'. Emphasize differences in\
+  \ these attributes per site. This is for a zoological regression study on possum\
+  \ demographics. Include annotations to highlight important data points and insights.\
+  \ Use color variations to represent different sites and populations, ensuring the\
+  \ most significant variations are visually prominent. The visualization should help\
+  \ in understanding possum distribution patterns and key demographic statistics across\
+  \ different geographical sites.\n<end of user request>\n\nImagine the best result\
+  \ that can be achieved based on the given instructions and is the final output you\
+  \ want from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nUnderstand possum distribution patterns and key demographic\
+  \ statistics across different geographical sites for a zoological regression study\
+  \ on possum demographics\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have specific color preferences for representing different sites and populations?\n\
+  2. How would you like the annotations to be displayed (e.g., tooltips, labels, callouts)?\n\
+  3. Are there any specific geographical regions or sites you want to be highlighted\
+  \ more prominently?\n4. Do you prefer a particular color palette for the heatmap\
+  \ to emphasize variations effectively?\n5. How detailed do you want the annotations\
+  \ to be? Should they include all the data attributes or only the most significant\
+  \ ones?\n6. Are there any specific data points (outliers or key insights) that you\
+  \ already know should be highlighted?\n7. Do you prefer the heatmap to be overlaid\
+  \ on a specific type of map (e.g., satellite, terrain)?\n8. Are there any other\
+  \ graphical elements you would like included to enhance understanding (e.g., legends,\
+  \ scale bars)?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I have no specific preference.
+
+  3. I am not sure, but highlighting key areas with high possum populations could
+  be useful.
+
+  4. I do not know.
+
+  5. Include only the most significant attributes.
+
+  6. I do not know.
+
+  7. I don''t have a preference for the map type.
+
+  8. Yes, please include legends and scale bars to enhance understanding.'

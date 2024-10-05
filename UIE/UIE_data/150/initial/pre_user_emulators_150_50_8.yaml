@@ -1,0 +1,91 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Donut chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1592
+- 1545
+- 47
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1390
+- 1251
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/150.csv': {'summary': {'Column':\
+  \ ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob',\
+  \ 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup',\
+  \ 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel',\
+  \ 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2', 'G3'],\
+  \ 'Data Type': [dtype('O'), dtype('O'), dtype('int64'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values':\
+  \ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [2, 2, 8, 2, 2, 2, 5, 5, 5, 5, 4, 3, 4,\
+  \ 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 24, 17, 16, 17]}, 'sample_data':\
+  \ {'school': ['GP', 'GP', 'GP'], 'sex': ['F', 'F', 'F'], 'age': [18, 17, 15], 'address':\
+  \ ['U', 'U', 'U'], 'famsize': ['GT3', 'GT3', 'LE3'], 'Pstatus': ['A', 'T', 'T'],\
+  \ 'Medu': [4, 1, 1], 'Fedu': [4, 1, 1], 'Mjob': ['at_home', 'at_home', 'at_home'],\
+  \ 'Fjob': ['teacher', 'other', 'other'], 'reason': ['course', 'course', 'other'],\
+  \ 'guardian': ['mother', 'father', 'mother'], 'traveltime': [2, 1, 1], 'studytime':\
+  \ [2, 2, 2], 'failures': [0, 0, 0], 'schoolsup': ['yes', 'no', 'yes'], 'famsup':\
+  \ ['no', 'yes', 'no'], 'paid': ['no', 'no', 'no'], 'activities': ['no', 'no', 'no'],\
+  \ 'nursery': ['yes', 'no', 'yes'], 'higher': ['yes', 'yes', 'yes'], 'internet':\
+  \ ['no', 'yes', 'yes'], 'romantic': ['no', 'no', 'no'], 'famrel': [4, 5, 4], 'freetime':\
+  \ [3, 3, 3], 'goout': [4, 3, 2], 'Dalc': [1, 1, 2], 'Walc': [1, 1, 3], 'health':\
+  \ [3, 3, 3], 'absences': [4, 2, 6], 'G1': [0, 9, 12], 'G2': [11, 11, 13], 'G3':\
+  \ [11, 11, 12]}}}\n<end of data example format>\n\n<start of data details format>\n\
+  \ Student Performance Data Set\neducation\n<end of data details format>\n\nGiven\
+  \ a data format, imagine a chart that visualizes this data as the final output you\
+  \ want from the service provider.\nYou need to imagine a chart with * Histogram\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Histogram that utilizes all the data formats.\nSince you are an\
+  \ amateur user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\n\
+  Also, refer to the data details to create as practical and realistic instructions\
+  \ as possible.\nInstructions must reflect the context of the data.\nTo emulate a\
+  \ real-world user your instruction should be 50 in size (word count).\nYour response\
+  \ should ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Dot plot'
+- '* Heatmap'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Donut chart'
+- '* Scatter plot'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Create a histogram showcasing the distribution of 'G3' final grades from the student
+  performance dataset. This will help visualize how students' final grades are distributed
+  across different value ranges. Make sure to label the x-axis as 'Final Grades (G3)'
+  and the y-axis as 'Frequency of Students.'
+- 1184
+- 1124
+- 60

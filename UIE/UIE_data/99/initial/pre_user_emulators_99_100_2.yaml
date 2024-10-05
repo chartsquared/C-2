@@ -1,0 +1,89 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 1033
+- 1001
+- 32
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 860
+- 720
+- 140
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/99.csv': {'summary': {'Column':\
+  \ ['Rank', 'Username', 'Categories', 'Suscribers', 'Country', 'Visits', 'Likes',\
+  \ 'Comments', 'Links'], 'Data Type': [dtype('O'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('O'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 324, 0, 0, 0, 0, 0, 0], 'Unique Values': [1000, 997,\
+  \ 47, 282, 30, 717, 654, 395, 997]}, 'sample_data': {'Rank': ['1', '2', '3'], 'Username':\
+  \ ['tseries', 'MrBeast', 'CoComelon'], 'Categories': ['M\xFAsica y baile', 'Videojuegos,\
+  \ Humor', 'Educaci\xF3n'], 'Suscribers': [253500000.0, 210100000.0, 168100000.0],\
+  \ 'Country': ['India', 'Estados Unidos', 'Unknown'], 'Visits': [111300.0, 95400000.0,\
+  \ 4099999.999999999], 'Likes': [3200.0, 5400000.0, 21600.0], 'Comments': [120.0,\
+  \ 16600.0, 0.0], 'Links': ['http://youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA',\
+  \ 'http://youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA', 'http://youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ']}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\n\U0001F4FA Top 1000\
+  \ Youtubers statistics \U0001F4FA\narts-and-entertainment\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nConsider what purpose the data\
+  \ has and the practical purpose of visualization and include it in the instructions.\n\
+  You need to imagine a chart with * Bar chart and given annotations that utilizes\
+  \ the data format.\nIf there are multiple given data formats, imagine a chart with\
+  \ * Bar chart and given annotations that utilizes all the data formats.\nSince you\
+  \ are an amateur user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\n\
+  Also, refer to the data details to create as practical and realistic instructions\
+  \ as possible.\nInstructions must reflect the context of the data.\nTo emulate a\
+  \ real-world user your instruction should be 100 in size (word count). Do not include\
+  \ data path in the instruction.\nYour response should ONLY contain the user emulated\
+  \ instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Choropleth map'
+- '* Line chart'
+- '* Histogram'
+- '* Heatmap'
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart to visualize the top 3 YouTubers based on their subscriber count,
+  highlighting the remarkable differences. Include data-driven text annotations to
+  display exact subscriber numbers on top of each bar. This will help us understand
+  the scale and popularity across different categories and countries. Additionally,
+  use color highlights to distinguish the countries of the YouTubers. This chart can
+  serve to inform about the leading figures in the YouTube community, their content
+  diversity, and geographic origins.
+- 883
+- 789
+- 94

@@ -1,0 +1,247 @@
+02_initial_prompt: Create a line chart to compare the subscription growth of the top
+  3 YouTube channels over time. Use "rank", "Youtuber", "subscribers", and "started"
+  columns from the data provided.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a line chart to compare the subscription growth of the top 3 YouTube channels
+  over time. Use "rank", "Youtuber", "subscribers", and "started" columns from the
+  data provided.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/210.csv'': {''summary'': {''Column'': [''rank'', ''Youtuber'',
+  ''subscribers'', ''video views'', ''video count'', ''category'', ''started''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 27, 0], ''Unique
+  Values'': [1000, 999, 286, 991, 856, 18, 18]}, ''sample_data'': {''rank'': [1, 2,
+  3], ''Youtuber'': [''T-Series'', ''YouTube Movies'', ''Cocomelon - Nursery Rhymes''],
+  ''subscribers'': [''222,000,000'', ''154,000,000'', ''140,000,000''], ''video views'':
+  [''198,459,090,822'', ''0'', ''135,481,339,848''], ''video count'': [''17,317'',
+  ''0'', ''786''], ''category'': [''Music'', ''Film & Animation'', ''Education''],
+  ''started'': [2006, 2015, 2006]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["rank", "Youtuber", "subscribers", "started"],
+
+  "Task": "Comparison by Time Segmentation",
+
+  "Purpose": "To compare the subscription growth of the top 3 YouTube channels over
+  time",
+
+  "Audience": "YouTube analysts, marketing teams, content creators"
+
+  }'
+05_audience: YouTube analysts, marketing teams, content creators
+05_data_attributes:
+- rank
+- Youtuber
+- subscribers
+- started
+05_purpose: To compare the subscription growth of the top 3 YouTube channels over
+  time
+05_task: Comparison by Time Segmentation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/210.csv'': {''summary'': {''Column'': [''rank'', ''Youtuber'',
+  ''subscribers'', ''video views'', ''video count'', ''category'', ''started''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 27, 0], ''Unique
+  Values'': [1000, 999, 286, 991, 856, 18, 18]}, ''sample_data'': {''rank'': [1, 2,
+  3], ''Youtuber'': [''T-Series'', ''YouTube Movies'', ''Cocomelon - Nursery Rhymes''],
+  ''subscribers'': [''222,000,000'', ''154,000,000'', ''140,000,000''], ''video views'':
+  [''198,459,090,822'', ''0'', ''135,481,339,848''], ''video count'': [''17,317'',
+  ''0'', ''786''], ''category'': [''Music'', ''Film & Animation'', ''Education''],
+  ''started'': [2006, 2015, 2006]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a line chart to compare the subscription growth of the top 3 YouTube channels
+  over time. Use "rank", "Youtuber", "subscribers", and "started" columns from the
+  data provided.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''rank'', ''Youtuber'', ''subscribers'', ''started'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  YouTube analysts, marketing teams, content creators
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison by Time Segmentation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To compare the subscription growth of the top 3 YouTube channels over time
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme or brand colors that should
+  be used in the chart?
+
+  2. Should the chart include a legend to identify each YouTube channel?
+
+  3. Do you want grid lines to be displayed for easier trend comparison?
+
+  4. Would you like to include data point markers on the lines to indicate specific
+  values?
+
+  5. Should the x-axis and y-axis have specific titles or labels?
+
+  6. Do you have a preferred font style or size for the chart labels and titles?
+
+  7. Would you like the chart to display tooltips when hovering over data points?
+
+  8. Should the chart include annotations for significant events or milestones for
+  each YouTube channel?
+
+  9. What time intervals would you like to use on the x-axis (e.g., yearly, monthly)?
+
+  10. Do you want to display the total number of subscribers at specific points in
+  time on the chart lines?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a line chart to compare the subscription growth\
+  \ of the top 3 YouTube channels over time. Use \"rank\", \"Youtuber\", \"subscribers\"\
+  , and \"started\" columns from the data provided.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 25% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nTo compare the subscription growth\
+  \ of the top 3 YouTube channels over time\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have a preferred color scheme or brand colors that should\
+  \ be used in the chart?\n2. Should the chart include a legend to identify each YouTube\
+  \ channel?\n3. Do you want grid lines to be displayed for easier trend comparison?\n\
+  4. Would you like to include data point markers on the lines to indicate specific\
+  \ values?\n5. Should the x-axis and y-axis have specific titles or labels?\n6. Do\
+  \ you have a preferred font style or size for the chart labels and titles?\n7. Would\
+  \ you like the chart to display tooltips when hovering over data points?\n8. Should\
+  \ the chart include annotations for significant events or milestones for each YouTube\
+  \ channel?\n9. What time intervals would you like to use on the x-axis (e.g., yearly,\
+  \ monthly)?\n10. Do you want to display the total number of subscribers at specific\
+  \ points in time on the chart lines?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. Yes, the chart should include a legend.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. The x-axis should be labeled as "Time" and the y-axis as "Number of Subscribers".
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yearly intervals would be preferable.
+
+  10. I am not sure.'

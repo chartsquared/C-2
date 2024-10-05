@@ -1,0 +1,87 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Pie chart
+
+  * Heatmap
+
+  * Word cloud
+
+  * Mosaic plot'
+- 818
+- 799
+- 19
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 643
+- 504
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/197.csv'': {''summary'': {''Column'': [''Favorite Color'',
+  ''Favorite Music Genre'', ''Favorite Beverage'', ''Favorite Soft Drink'', ''Gender''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0], ''Unique Values'': [3, 7, 6, 4, 2]}, ''sample_data'':
+  {''Favorite Color'': [''Cool'', ''Neutral'', ''Warm''], ''Favorite Music Genre'':
+  [''Rock'', ''Hip hop'', ''Rock''], ''Favorite Beverage'': [''Vodka'', ''Vodka'',
+  ''Wine''], ''Favorite Soft Drink'': [''7UP/Sprite'', ''Coca Cola/Pepsi'', ''Coca
+  Cola/Pepsi''], ''Gender'': [''F'', ''F'', ''F'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Gender Classification
+
+  psychology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bar chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bar chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Pie chart'
+- '* Mosaic plot'
+- '* Word cloud'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Can you create a bar chart comparing the number of unique values for each column
+  (Favorite Color, Favorite Music Genre, Favorite Beverage, Favorite Soft Drink, Gender)
+  in the provided dataset? This should help analyze the variety in preferences and
+  their distribution. Thanks!
+- 430
+- 379
+- 51

@@ -1,0 +1,107 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Pie chart
+
+  * Line chart
+
+  * Box chart
+
+  * Choropleth map'
+- 1359
+- 1334
+- 25
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1185
+- 1046
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/20.csv': {'summary': {'Column':\
+  \ ['id', 'name', 'years', 'genre', 'nationality', 'bio', 'wikipedia', 'paintings'],\
+  \ 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0,\
+  \ 0, 0], 'Unique Values': [50, 50, 50, 31, 17, 50, 50, 48]}, 'sample_data': {'id':\
+  \ [0, 1, 2], 'name': ['Amedeo Modigliani', 'Vasiliy Kandinskiy', 'Diego Rivera'],\
+  \ 'years': ['1884 - 1920', '1866 - 1944', '1886 - 1957'], 'genre': ['Expressionism',\
+  \ 'Expressionism,Abstractionism', 'Social Realism,Muralism'], 'nationality': ['Italian',\
+  \ 'Russian', 'Mexican'], 'bio': [\"Amedeo Clemente Modigliani (Italian pronunciation:\
+  \ [ame\u02C8d\u025B\u02D0o modi\u028E\u02C8\u028Ea\u02D0ni]; 12 July 1884 \u2013\
+  \ 24 January 1920) was an Italian Jewish painter and sculptor who worked mainly\
+  \ in France. He is known for portraits and nudes in a modern style characterized\
+  \ by elongation of faces, necks, and figures that were not received well during\
+  \ his lifetime but later found acceptance. Modigliani spent his youth in Italy,\
+  \ where he studied the art of antiquity and the Renaissance. In 1906 he moved to\
+  \ Paris, where he came into contact with such artists as Pablo Picasso and Constantin\
+  \ Br\xE2ncu\u0219i. By 1912 Modigliani was exhibiting highly stylized sculptures\
+  \ with Cubists of the Section d'Or group at the Salon d'Automne.\", 'Wassily Wassilyevich\
+  \ Kandinsky (Russian: \u0412\u0430\u0441\u0438\u0301\u043B\u0438\u0439 \u0412\u0430\
+  \u0441\u0438\u0301\u043B\u044C\u0435\u0432\u0438\u0447 \u041A\u0430\u043D\u0434\u0438\
+  \u0301\u043D\u0441\u043A\u0438\u0439, tr. Vas\xEDliy Vas\xEDl\u02B9evich Kand\xED\
+  nskiy) (16 December [O.S. 4 December] 1866 \u2013 13 December 1944) was a Russian\
+  \ painter and art theorist.', 'Diego Mar\xEDa de la Concepci\xF3n Juan Nepomuceno\
+  \ Estanislao de la Rivera y Barrientos Acosta y Rodr\xEDguez, known as Diego Rivera\
+  \ (Spanish pronunciation: [\u02C8dje\u0263o ri\u02C8\u03B2e\u027Ea]; December 8,\
+  \ 1886 \u2013 November 24, 1957) was a prominent Mexican painter. His large frescoes\
+  \ helped establish the Mexican mural movement in Mexican art. Between 1922 and 1953,\
+  \ Rivera painted murals in, among other places, Mexico City, Chapingo, Cuernavaca,\
+  \ San Francisco, Detroit, and New York City. In 1931, a retrospective exhibition\
+  \ of his works was held at the Museum of Modern Art in New York. Rivera had a volatile\
+  \ marriage with fellow Mexican artist Frida Kahlo.'], 'wikipedia': ['http://en.wikipedia.org/wiki/Amedeo_Modigliani',\
+  \ 'http://en.wikipedia.org/wiki/Wassily_Kandinsky', 'http://en.wikipedia.org/wiki/Diego_Rivera'],\
+  \ 'paintings': [193, 88, 70]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '3. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nBest Artworks of All Time\narts-and-entertainment\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Bar chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Bar chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Box chart'
+- '* Pie chart'
+- '* Bar chart'
+- '* Choropleth map'
+- '* Scatter plot'
+- '* Line chart'
+- '* Box chart'
+- '* Pie chart'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart visualizing the number of paintings created by notable artists.
+  Each bar represents an artist, labeled with their names. Include text annotations
+  for the artist's name and the number of paintings at the top of each bar to highlight
+  key figures. Use different colors to distinguish between artists, emphasizing the
+  diversity in their contributions. Also, provide brief highlights on specific artists,
+  such as their genre and nationality. This will emphasize the variety in art styles
+  and backgrounds, making the visualization more engaging and informative. This chart
+  will help in understanding the prolificacy of each artist.
+- 1228
+- 1115
+- 113

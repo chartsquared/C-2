@@ -1,0 +1,81 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Bubble chart
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 974
+- 936
+- 38
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 786
+- 648
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/276.csv': {'summary': {'Column':\
+  \ ['Type', 'Field', 'Genotype', 'Block', 'Length', 'Width', 'Area', 'Weight', 'Unnamed:\
+  \ 8'], 'Data Type': [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64')], 'Missing\
+  \ Values': [0, 0, 0, 0, 0, 0, 0, 0, 8928], 'Unique Values': [1, 1, 2, 3, 323, 282,\
+  \ 1540, 1713, 0]}, 'sample_data': {'Type': ['Triticum aestivum', 'Triticum aestivum',\
+  \ 'Triticum aestivum'], 'Field': ['Field_1', 'Field_1', 'Field_1'], 'Genotype':\
+  \ ['CV_2', 'CV_2', 'CV_2'], 'Block': ['I', 'I', 'I'], 'Length': [5.54, 6.21, 5.62],\
+  \ 'Width': [3.56, 3.93, 2.58], 'Area': [15.08, 19.28, 11.11], 'Weight': [36.12,\
+  \ 50.0, 24.13], 'Unnamed: 8': [nan, nan, nan]}}}\n<end of data example format>\n\
+  \n<start of data details format>\nWheat grain area and weight \nagriculture-and-farming\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nYou need to\
+  \ imagine a chart with * Bubble chart that utilizes the data format.\nIf there are\
+  \ multiple given data formats, imagine a chart with * Bubble chart that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 100 in size (word count).\nYour response should ONLY contain the user emulated\
+  \ instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Histogram'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Box chart'
+- '* Stacked bar/column chart'
+- '* Dot plot'
+- '* Bubble chart'
+- '* Histogram'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Box chart'
+- '* Stacked bar/column chart'
+- '* Dot plot'
+- '* Bubble chart'
+2. initial_prompt: !!python/tuple
+- I have a dataset on wheat grain from different fields detailing types, genotypes,
+  blocks, and measurements like length, width, area, and weight. I need a bubble chart
+  to visualize this data. Each bubble should represent an individual wheat grain,
+  with the x-axis showing the grain length and the y-axis showing the grain width.
+  The bubble size should indicate the grain area, and the color should represent different
+  genotypes. Ensure to exclude any missing or NA values from the chart. Thanks!
+- 621
+- 523
+- 98

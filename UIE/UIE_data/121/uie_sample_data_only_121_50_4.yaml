@@ -1,0 +1,239 @@
+02_initial_prompt: Please create a stacked bar chart showing the contributions of
+  different stages (Land use change, Animal Feed, Farm, Processing, Transport, Packaging,
+  Retail) to the Total emissions for various food products. Highlight the "Total emissions"
+  for each product.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nPlease create a stacked bar chart showing the contributions\
+  \ of different stages (Land use change, Animal Feed, Farm, Processing, Transport,\
+  \ Packaging, Retail) to the Total emissions for various food products. Highlight\
+  \ the \"Total emissions\" for each product.\n<end of user request>\n\n<start of\
+  \ data format>\n{'../Extra_datas/data/121.csv': {'summary': {'Column': ['Food product',\
+  \ 'Land use change', 'Animal Feed', 'Farm', 'Processing', 'Transport', 'Packging',\
+  \ 'Retail', 'Total_emissions', 'Eutrophying emissions per 1000kcal (gPO\u2084eq\
+  \ per 1000kcal)', 'Eutrophying emissions per kilogram (gPO\u2084eq per kilogram)',\
+  \ 'Eutrophying emissions per 100g protein (gPO\u2084eq per 100 grams protein)',\
+  \ 'Freshwater withdrawals per 1000kcal (liters per 1000kcal)', 'Freshwater withdrawals\
+  \ per 100g protein (liters per 100g protein)', 'Freshwater withdrawals per kilogram\
+  \ (liters per kilogram)', 'Greenhouse gas emissions per 1000kcal (kgCO\u2082eq per\
+  \ 1000kcal)', 'Greenhouse gas emissions per 100g protein (kgCO\u2082eq per 100g\
+  \ protein)', 'Land use per 1000kcal (m\xB2 per 1000kcal)', 'Land use per kilogram\
+  \ (m\xB2 per kilogram)', 'Land use per 100g protein (m\xB2 per 100g protein)', 'Scarcity-weighted\
+  \ water use per kilogram (liters per kilogram)', 'Scarcity-weighted water use per\
+  \ 100g protein (liters per 100g protein)', 'Scarcity-weighted water use per 1000kcal\
+  \ (liters per 1000 kilocalories)'], 'Data Type': [dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 16, 13,\
+  \ 17, 5, 10, 16, 10, 5, 16, 5, 17, 13], 'Unique Values': [43, 21, 10, 24, 10, 8,\
+  \ 10, 4, 33, 33, 38, 27, 30, 26, 38, 33, 27, 33, 38, 27, 38, 26, 30]}, 'sample_data':\
+  \ {'Food product': ['Wheat & Rye (Bread)', 'Maize (Meal)', 'Barley (Beer)'], 'Land\
+  \ use change': [0.1, 0.3, 0.0], 'Animal Feed': [0.0, 0.0, 0.0], 'Farm': [0.8, 0.5,\
+  \ 0.2], 'Processing': [0.2, 0.1, 0.1], 'Transport': [0.1, 0.1, 0.0], 'Packging':\
+  \ [0.1, 0.1, 0.5], 'Retail': [0.1, 0.0, 0.3], 'Total_emissions': [1.4000000000000004,\
+  \ 1.1, 1.1], 'Eutrophying emissions per 1000kcal (gPO\u2084eq per 1000kcal)': [nan,\
+  \ nan, nan], 'Eutrophying emissions per kilogram (gPO\u2084eq per kilogram)': [nan,\
+  \ nan, nan], 'Eutrophying emissions per 100g protein (gPO\u2084eq per 100 grams\
+  \ protein)': [nan, nan, nan], 'Freshwater withdrawals per 1000kcal (liters per 1000kcal)':\
+  \ [nan, nan, nan], 'Freshwater withdrawals per 100g protein (liters per 100g protein)':\
+  \ [nan, nan, nan], 'Freshwater withdrawals per kilogram (liters per kilogram)':\
+  \ [nan, nan, nan], 'Greenhouse gas emissions per 1000kcal (kgCO\u2082eq per 1000kcal)':\
+  \ [nan, nan, nan], 'Greenhouse gas emissions per 100g protein (kgCO\u2082eq per\
+  \ 100g protein)': [nan, nan, nan], 'Land use per 1000kcal (m\xB2 per 1000kcal)':\
+  \ [nan, nan, nan], 'Land use per kilogram (m\xB2 per kilogram)': [nan, nan, nan],\
+  \ 'Land use per 100g protein (m\xB2 per 100g protein)': [nan, nan, nan], 'Scarcity-weighted\
+  \ water use per kilogram (liters per kilogram)': [nan, nan, nan], 'Scarcity-weighted\
+  \ water use per 100g protein (liters per 100g protein)': [nan, nan, nan], 'Scarcity-weighted\
+  \ water use per 1000kcal (liters per 1000 kilocalories)': [nan, nan, nan]}}}\n<end\
+  \ of data format>\n\n<start of various task types>\n{'Show External Context': 'Uncaptured\
+  \ data provided by the self-tracker to understand and explain a phenomenon shown\
+  \ in the data', 'Show Confirmation': 'Collected data confirms existing knowledge',\
+  \ 'Show Contradiction': 'Collected data contradicts existing knowledge', 'Focus\
+  \ on Identifying value': 'Explicitly specify the measured value, its range for one\
+  \ or more clearly identified data points, or the difference between two measured\
+  \ values', 'Focus on Identifying extreme': 'Explicitly state the identities of the\
+  \ data points possessing extreme values of the measure variable', 'Focus on Identifying\
+  \ references': 'Explicitly state the values of categorical variables, labels from\
+  \ the axes, or legends', 'Comparison by Time Segmentation': 'Compare measured values\
+  \ segmented by time', 'Comparison by Multiple services': 'Compare the same data\
+  \ type from two or more services', 'Comparison against external data': 'Bringing\
+  \ in external data for comparison', 'Comparison By Factor': 'Compare measured values\
+  \ by a factor (other than time)', 'Comparison By Instances': 'Compare two specific\
+  \ instances', 'Show Trend': 'Describe changes over time', 'Value judgement': 'Convey\
+  \ positive or negative connotations about the data', 'Distribution with variability':\
+  \ 'Explicitly state the variability of measured values', 'Distribution By Category':\
+  \ 'Explicitly describe the variation of measured values across all or most of the\
+  \ values of a categorical variable', 'Correlation': 'Specify the direct relationship\
+  \ between two variables (but not as comparison)', 'Outlier': 'Explicitly point out\
+  \ outliers or state the effect of outliers', 'Summarization of data': 'Summary of\
+  \ collected data (such as number of data points, duration of tracking, and averages)',\
+  \ 'Prediction/Forecasting': 'Predict the future based on the collected data'}\n\
+  <end of various task types>\n\nFor data attributes needed in data visualization,\
+  \ store them in query['Data Attribute'].\nStore the selected task from the task\
+  \ types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"Food product\"\
+  , \"Land use change\", \"Animal Feed\", \"Farm\", \"Processing\", \"Transport\"\
+  , \"Packaging\", \"Retail\", \"Total_emissions\"],\n  \"Task\": \"Distribution By\
+  \ Category\",\n  \"Purpose\": \"Show the contributions of different stages to total\
+  \ emissions for various food products and highlight the total emissions for each\
+  \ product.\",\n  \"Audience\": \"Environmental analysts, policymakers, food industry\
+  \ stakeholders, and the general public interested in the environmental impact of\
+  \ food products.\"\n}"
+05_audience: Environmental analysts, policymakers, food industry stakeholders, and
+  the general public interested in the environmental impact of food products.
+05_data_attributes:
+- Food product
+- Land use change
+- Animal Feed
+- Farm
+- Processing
+- Transport
+- Packaging
+- Retail
+- Total_emissions
+05_purpose: Show the contributions of different stages to total emissions for various
+  food products and highlight the total emissions for each product.
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/121.csv':\
+  \ {'summary': {'Column': ['Food product', 'Land use change', 'Animal Feed', 'Farm',\
+  \ 'Processing', 'Transport', 'Packging', 'Retail', 'Total_emissions', 'Eutrophying\
+  \ emissions per 1000kcal (gPO\u2084eq per 1000kcal)', 'Eutrophying emissions per\
+  \ kilogram (gPO\u2084eq per kilogram)', 'Eutrophying emissions per 100g protein\
+  \ (gPO\u2084eq per 100 grams protein)', 'Freshwater withdrawals per 1000kcal (liters\
+  \ per 1000kcal)', 'Freshwater withdrawals per 100g protein (liters per 100g protein)',\
+  \ 'Freshwater withdrawals per kilogram (liters per kilogram)', 'Greenhouse gas emissions\
+  \ per 1000kcal (kgCO\u2082eq per 1000kcal)', 'Greenhouse gas emissions per 100g\
+  \ protein (kgCO\u2082eq per 100g protein)', 'Land use per 1000kcal (m\xB2 per 1000kcal)',\
+  \ 'Land use per kilogram (m\xB2 per kilogram)', 'Land use per 100g protein (m\xB2\
+  \ per 100g protein)', 'Scarcity-weighted water use per kilogram (liters per kilogram)',\
+  \ 'Scarcity-weighted water use per 100g protein (liters per 100g protein)', 'Scarcity-weighted\
+  \ water use per 1000kcal (liters per 1000 kilocalories)'], 'Data Type': [dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 10, 5, 16, 13, 17, 5, 10, 16, 10, 5, 16, 5, 17, 13], 'Unique Values': [43,\
+  \ 21, 10, 24, 10, 8, 10, 4, 33, 33, 38, 27, 30, 26, 38, 33, 27, 33, 38, 27, 38,\
+  \ 26, 30]}, 'sample_data': {'Food product': ['Wheat & Rye (Bread)', 'Maize (Meal)',\
+  \ 'Barley (Beer)'], 'Land use change': [0.1, 0.3, 0.0], 'Animal Feed': [0.0, 0.0,\
+  \ 0.0], 'Farm': [0.8, 0.5, 0.2], 'Processing': [0.2, 0.1, 0.1], 'Transport': [0.1,\
+  \ 0.1, 0.0], 'Packging': [0.1, 0.1, 0.5], 'Retail': [0.1, 0.0, 0.3], 'Total_emissions':\
+  \ [1.4000000000000004, 1.1, 1.1], 'Eutrophying emissions per 1000kcal (gPO\u2084\
+  eq per 1000kcal)': [nan, nan, nan], 'Eutrophying emissions per kilogram (gPO\u2084\
+  eq per kilogram)': [nan, nan, nan], 'Eutrophying emissions per 100g protein (gPO\u2084\
+  eq per 100 grams protein)': [nan, nan, nan], 'Freshwater withdrawals per 1000kcal\
+  \ (liters per 1000kcal)': [nan, nan, nan], 'Freshwater withdrawals per 100g protein\
+  \ (liters per 100g protein)': [nan, nan, nan], 'Freshwater withdrawals per kilogram\
+  \ (liters per kilogram)': [nan, nan, nan], 'Greenhouse gas emissions per 1000kcal\
+  \ (kgCO\u2082eq per 1000kcal)': [nan, nan, nan], 'Greenhouse gas emissions per 100g\
+  \ protein (kgCO\u2082eq per 100g protein)': [nan, nan, nan], 'Land use per 1000kcal\
+  \ (m\xB2 per 1000kcal)': [nan, nan, nan], 'Land use per kilogram (m\xB2 per kilogram)':\
+  \ [nan, nan, nan], 'Land use per 100g protein (m\xB2 per 100g protein)': [nan, nan,\
+  \ nan], 'Scarcity-weighted water use per kilogram (liters per kilogram)': [nan,\
+  \ nan, nan], 'Scarcity-weighted water use per 100g protein (liters per 100g protein)':\
+  \ [nan, nan, nan], 'Scarcity-weighted water use per 1000kcal (liters per 1000 kilocalories)':\
+  \ [nan, nan, nan]}}}\n<end of data format>\n\n<start of data visualization instruction>\n\
+  Please create a stacked bar chart showing the contributions of different stages\
+  \ (Land use change, Animal Feed, Farm, Processing, Transport, Packaging, Retail)\
+  \ to the Total emissions for various food products. Highlight the \"Total emissions\"\
+  \ for each product.\n<end of data visualization instruction>\n\n<start of data attributes>\n\
+  ['Food product', 'Land use change', 'Animal Feed', 'Farm', 'Processing', 'Transport',\
+  \ 'Packaging', 'Retail', 'Total_emissions']\n<end of data attributes>\n\n<start\
+  \ of prospective audience>\nEnvironmental analysts, policymakers, food industry\
+  \ stakeholders, and the general public interested in the environmental impact of\
+  \ food products.\n<end of prospective audience>\n\n<start of type of tasks>\nDistribution\
+  \ By Category\n<end of type of tasks>\n\n<start of purpose>\nShow the contributions\
+  \ of different stages to total emissions for various food products and highlight\
+  \ the total emissions for each product.\n<end of purpose>"
+07_questions: '1. Do you have any specific color preferences for the different stages
+  in the stacked bar chart?
+
+  2. Would you like the bars to be displayed horizontally or vertically?
+
+  3. How would you like the "Total emissions" to be highlighted? (e.g., different
+  color, bold outline)
+
+  4. Do you prefer to have data labels on the bars showing the value of each stage
+  contribution?
+
+  5. Do you want to include any specific title or subtitle for the chart?
+
+  6. Should there be a legend to distinguish between the different stages? If so,
+  any preferences on its placement?
+
+  7. Do you have any specific font style or size preferences for the text in the chart?
+
+  8. Would you like grid lines to be displayed on the chart?
+
+  9. Are there any specific products or stages you would like to emphasize or de-emphasize
+  in the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a stacked bar chart showing the contributions\
+  \ of different stages (Land use change, Animal Feed, Farm, Processing, Transport,\
+  \ Packaging, Retail) to the Total emissions for various food products. Highlight\
+  \ the \"Total emissions\" for each product.\n<end of user request>\n\nImagine the\
+  \ best result that can be achieved based on the given instructions and is the final\
+  \ output you want from the service provider with your purpose given below.\nBased\
+  \ on your imagination you are to respond to the service provider.\nSince you are\
+  \ an amateur user you should concretely answer 25% of the questions you think are\
+  \ most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nShow the contributions of different\
+  \ stages to total emissions for various food products and highlight the total emissions\
+  \ for each product.\n<end of purpose>\n\n<start service provider message>\n1. Do\
+  \ you have any specific color preferences for the different stages in the stacked\
+  \ bar chart?\n2. Would you like the bars to be displayed horizontally or vertically?\n\
+  3. How would you like the \"Total emissions\" to be highlighted? (e.g., different\
+  \ color, bold outline)\n4. Do you prefer to have data labels on the bars showing\
+  \ the value of each stage contribution?\n5. Do you want to include any specific\
+  \ title or subtitle for the chart?\n6. Should there be a legend to distinguish between\
+  \ the different stages? If so, any preferences on its placement?\n7. Do you have\
+  \ any specific font style or size preferences for the text in the chart?\n8. Would\
+  \ you like grid lines to be displayed on the chart?\n9. Are there any specific products\
+  \ or stages you would like to emphasize or de-emphasize in the chart?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Please use a different color to highlight the "Total emissions."
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend. I have no specific preference on its placement.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not know.'

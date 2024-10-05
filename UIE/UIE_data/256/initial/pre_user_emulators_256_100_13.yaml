@@ -1,0 +1,224 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Lollipop chart
+
+  * Dot plot
+
+  * Dumbbell
+
+  * Parallel coordinates
+
+  * Radar chart
+
+  * Heatmap
+
+  * Bubble chart
+
+  * Scatter plot
+
+  * Connected scatter plot
+
+  * Hexagonal binning
+
+  * Contour plot
+
+  * Stacked bar/column chart
+
+  * Population pyramid
+
+  * Waffle chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Treemap
+
+  * Circular treemap
+
+  * Line chart
+
+  * Spline chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Violin plot
+
+  * Density plot'
+- 3312
+- 3184
+- 128
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 3033
+- 2895
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/256.csv'': {''summary'': {''Column'': [''RECORD'', ''hbpermin'',
+  ''Pseg'', ''PQseg'', ''QRSseg'', ''QRseg'', ''QTseg'', ''RSseg'', ''STseg'', ''Tseg'',
+  ''PTseg'', ''ECGseg'', ''QRtoQSdur'', ''RStoQSdur'', ''RRmean'', ''PPmean'', ''PQdis'',
+  ''PonQdis'', ''PRdis'', ''PonRdis'', ''PSdis'', ''PonSdis'', ''PTdis'', ''PonTdis'',
+  ''PToffdis'', ''QRdis'', ''QSdis'', ''QTdis'', ''QToffdis'', ''RSdis'', ''RTdis'',
+  ''RToffdis'', ''STdis'', ''SToffdis'', ''PonToffdis'', ''PonPQang'', ''PQRang'',
+  ''QRSang'', ''RSTang'', ''STToffang'', ''RRTot'', ''NNTot'', ''SDRR'', ''IBIM'',
+  ''IBISD'', ''SDSD'', ''RMSSD'', ''QRSarea'', ''QRSperi'', ''PQslope'', ''QRslope'',
+  ''RSslope'', ''STslope'', ''NN50'', ''pNN50'', ''ECG_signal''], ''Data Type'': [dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 769, 769,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 557, 768, 769, 769,
+  426, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 768, 769, 0, 0, 0, 0], ''Unique Values'': [1200,
+  405, 1080, 1064, 1036, 1000, 1099, 948, 1039, 1133, 1138, 1173, 417, 417, 1069,
+  1098, 1191, 1191, 1191, 1191, 1191, 1191, 1191, 1191, 1191, 963, 972, 1191, 1191,
+  866, 1191, 1191, 1191, 1191, 1191, 639, 426, 425, 425, 768, 134, 51, 1187, 1170,
+  1196, 1188, 1187, 854, 972, 1191, 426, 425, 1191, 35, 327, 4]}, ''sample_data'':
+  {''RECORD'': [1, 2, 3], ''hbpermin'': [74.9256689791873, 68.5034687809713, 83.4886025768087],
+  ''Pseg'': [0.0765079365079365, 0.0724826388888889, 0.0711538461538462], ''PQseg'':
+  [0.108888888888889, 0.0961805555555556, 0.0866096866096866], ''QRSseg'': [0.0882539682539683,
+  0.0939236111111111, 0.0395299145299145], ''QRseg'': [0.0435714285714286, 0.0462673611111111,
+  0.0185897435897436], ''QTseg'': [0.193015873015873, 0.193489583333333, 0.132478632478632],
+  ''RSseg'': [0.0446825396825397, 0.04765625, 0.0209401709401709], ''STseg'': [0.104761904761905,
+  0.0995659722222222, 0.0929487179487179], ''Tseg'': [0.13047619047619, 0.0891493055555556,
+  0.0944444444444444], ''PTseg'': [0.301904761904762, 0.289670138888889, 0.219088319088319],
+  ''ECGseg'': [0.426111111111111, 0.366666666666667, 0.293233618233618], ''QRtoQSdur'':
+  [0.0013713604943443, 0.0013683800540418, nan], ''RStoQSdur'': [0.0014064172834334,
+  0.0014093977237359, nan], ''RRmean'': [291.794117647059, 318.387096774194, 259.763157894737],
+  ''PPmean'': [291.735294117647, 318.322580645161, 259.526315789474], ''PQdis'': [39.1511506979774,
+  34.5884367978634, 31.2662260285337], ''PonQdis'': [55.14889298958, 46.4870059908102,
+  42.5378226006909], ''PRdis'': [54.8270692788666, 51.2623885563342, 38.1312675818756],
+  ''PonRdis'': [70.8273851823589, 63.1671308169375, 49.4060277020313], ''PSdis'':
+  [70.9137287029911, 68.4225952456808, 45.8673232760615], ''PonSdis'': [86.9127400181215,
+  80.3239679419041, 57.1412099642958], ''PTdis'': [108.647070378104, 104.225842475951,
+  79.238233889807], ''PonTdis'': [124.647077289333, 116.129083471518, 90.5267246111375],
+  ''PToffdis'': [137.911820379588, 119.935662498404, 94.7652392129329], ''QRdis'':
+  [15.7214006162708, 16.7360666529721, 6.89606654286295], ''QSdis'': [31.764732194123,
+  33.8387869542668, 14.6064419388183], ''QTdis'': [69.501919735525, 69.6481826036417,
+  48.0130211591047], ''QToffdis'': [98.7656985714098, 85.3564671831402, 63.5318395615157],
+  ''RSdis'': [16.1291065259356, 17.2129195617323, 7.7513185309449], ''RTdis'': [53.8277114430342,
+  52.9730592300722, 41.1427771656325], ''RToffdis'': [83.0915966937433, 68.6829554372704,
+  56.6642433619343], ''STdis'': [37.7383429598512, 35.8111616311003, 33.4080473168295],
+  ''SToffdis'': [67.0012311094264, 51.5181778592722, 48.9260730509781], ''PonToffdis'':
+  [153.911764909733, 131.838710435248, 106.052868134833], ''PonPQang'': [1.2454553357965,
+  2.1515929638225, nan], ''PQRang'': [-5.12708054197395, -6.00333694942415, nan],
+  ''QRSang'': [8.3563540974331, 9.21743026146488, nan], ''RSTang'': [-4.77444354747295,
+  -5.3556916586856, nan], ''STToffang'': [0.870489841494288, 1.3703197663702, 2.99956527177628],
+  ''RRTot'': [35, 32, 39], ''NNTot'': [34, 31, 38], ''SDRR'': [17.13232138346, 10.612461996907,
+  84.5129806941938], ''IBIM'': [291.794117647059, 318.387096774194, 259.763157894737],
+  ''IBISD'': [17.3899647337275, 10.7878864762128, 85.6474338804072], ''SDSD'': [27.1584812492327,
+  9.66551717303437, 111.816693623864], ''RMSSD'': [292.296636192433, 318.563914688929,
+  273.165411619523], ''QRSarea'': [18.4576177115752, 23.043230074134, 10.7563531016812],
+  ''QRSperi'': [63.6152393363293, 67.7877731689711, 29.2538270126262], ''PQslope'':
+  [-0.0143636322274423, -0.0212074266514511, -0.0425419383229341], ''QRslope'': [0.0752699748189037,
+  0.0837725999172961, nan], ''RSslope'': [-0.0708458973979674, -0.0774581732326055,
+  nan], ''STslope'': [0.0126064214098441, 0.0161751716477693, 0.0271314445123928],
+  ''NN50'': [2, 1, 16], ''pNN50'': [5.88235294117647, 3.2258064516129, 42.1052631578947],
+  ''ECG_signal'': [''ARR'', ''ARR'', ''ARR'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  ECG of Cardiac Ailments Dataset
+
+  biology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Stacked bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Stacked bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Donut chart'
+- '* Pie chart'
+- '* Column chart'
+- '* Hexagonal binning'
+- '* Grouped bar/column chart'
+- '* Area chart'
+- '* Population pyramid'
+- '* Line chart'
+- '* Circular treemap'
+- '* Histogram'
+- '* Parallel coordinates'
+- '* Dumbbell'
+- '* Dot plot'
+- '* Stacked bar/column chart'
+- '* Bubble chart'
+- '* Donut chart'
+- '* Pie chart'
+- '* Column chart'
+- '* Hexagonal binning'
+- '* Grouped bar/column chart'
+- '* Area chart'
+- '* Population pyramid'
+- '* Line chart'
+- '* Circular treemap'
+- '* Histogram'
+- '* Parallel coordinates'
+- '* Dumbbell'
+- '* Dot plot'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a stacked column chart visualizing the mean values of selected ECG measurements
+  like 'hbpermin', 'QRSseg', 'QTseg', and 'RRmean' for the first few records. Separate
+  bars should represent the measurements, and different stacks within each bar should
+  represent different records. Include labels for each segment and a legend. Title
+  it "Mean ECG Segments Comparison". Ensure each bar segment has a distinct color.
+  This visualization will help compare the ECG metrics across different patients.
+  Analyze any visible trends or outliers. Please make the chart concise and easy to
+  interpret.
+- 2893
+- 2778
+- 115

@@ -1,0 +1,306 @@
+02_initial_prompt: 'Create a heatmap using the "Global Data on Sustainable Energy
+  (2000-2020)" dataset. Specifically, visualize the correlation between the following
+  columns over the years: ''Access to electricity (% of population)'', ''Renewable-electricity-generating-capacity-per-capita'',
+  ''Renewable energy share in the total final energy consumption (%)'', ''Electricity
+  from fossil fuels (TWh)'', ''Electricity from renewables (TWh)'', and ''Low-carbon
+  electricity (% electricity)''. The heatmap should help identify patterns and correlations
+  among these energy-related metrics across different countries and years. Make sure
+  to handle missing values appropriately.'
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a heatmap using the "Global Data on Sustainable Energy (2000-2020)" dataset.
+  Specifically, visualize the correlation between the following columns over the years:
+  ''Access to electricity (% of population)'', ''Renewable-electricity-generating-capacity-per-capita'',
+  ''Renewable energy share in the total final energy consumption (%)'', ''Electricity
+  from fossil fuels (TWh)'', ''Electricity from renewables (TWh)'', and ''Low-carbon
+  electricity (% electricity)''. The heatmap should help identify patterns and correlations
+  among these energy-related metrics across different countries and years. Make sure
+  to handle missing values appropriately.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/90.csv'': {''summary'': {''Column'': [''Entity'', ''Year'',
+  ''Access to electricity (% of population)'', ''Access to clean fuels for cooking'',
+  ''Renewable-electricity-generating-capacity-per-capita'', ''Financial flows to developing
+  countries (US $)'', ''Renewable energy share in the total final energy consumption
+  (%)'', ''Electricity from fossil fuels (TWh)'', ''Electricity from nuclear (TWh)'',
+  ''Electricity from renewables (TWh)'', ''Low-carbon electricity (% electricity)'',
+  ''Primary energy consumption per capita (kWh/person)'', ''Energy intensity level
+  of primary energy (MJ/$2017 PPP GDP)'', ''Value_co2_emissions_kt_by_country'', ''Renewables
+  (% equivalent primary energy)'', ''gdp_growth'', ''gdp_per_capita'', ''Density\\n(P/Km2)'',
+  ''Land Area(Km2)'', ''Latitude'', ''Longitude''], ''Data Type'': [dtype(''O''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 10, 169, 931,
+  2089, 194, 21, 126, 21, 42, 0, 207, 428, 2137, 317, 282, 1, 1, 1, 1], ''Unique Values'':
+  [176, 21, 2040, 896, 2110, 1017, 2587, 1859, 547, 1533, 2647, 3628, 1044, 2397,
+  1455, 3320, 3367, 124, 175, 175, 175]}, ''sample_data'': {''Entity'': [''Afghanistan'',
+  ''Afghanistan'', ''Afghanistan''], ''Year'': [2000, 2001, 2002], ''Access to electricity
+  (% of population)'': [1.613591, 4.074574, 9.409158], ''Access to clean fuels for
+  cooking'': [6.2, 7.2, 8.2], ''Renewable-electricity-generating-capacity-per-capita'':
+  [9.22, 8.86, 8.47], ''Financial flows to developing countries (US $)'': [20000.0,
+  130000.0, 3950000.0], ''Renewable energy share in the total final energy consumption
+  (%)'': [44.99, 45.6, 37.83], ''Electricity from fossil fuels (TWh)'': [0.16, 0.09,
+  0.13], ''Electricity from nuclear (TWh)'': [0.0, 0.0, 0.0], ''Electricity from renewables
+  (TWh)'': [0.31, 0.5, 0.56], ''Low-carbon electricity (% electricity)'': [65.95744,
+  84.745766, 81.159424], ''Primary energy consumption per capita (kWh/person)'': [302.59482,
+  236.89185, 210.86215], ''Energy intensity level of primary energy (MJ/$2017 PPP
+  GDP)'': [1.64, 1.74, 1.4], ''Value_co2_emissions_kt_by_country'': [760.0, 730.0,
+  1029.999971], ''Renewables (% equivalent primary energy)'': [nan, nan, nan], ''gdp_growth'':
+  [nan, nan, nan], ''gdp_per_capita'': [nan, nan, 179.4265792], ''Density\\n(P/Km2)'':
+  [''60'', ''60'', ''60''], ''Land Area(Km2)'': [652230.0, 652230.0, 652230.0], ''Latitude'':
+  [33.93911, 33.93911, 33.93911], ''Longitude'': [67.709953, 67.709953, 67.709953]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Access to electricity (% of population)", "Renewable-electricity-generating-capacity-per-capita",
+  "Renewable energy share in the total final energy consumption (%)", "Electricity
+  from fossil fuels (TWh)", "Electricity from renewables (TWh)", "Low-carbon electricity
+  (% electricity)"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify patterns and correlations among energy-related metrics across
+  different countries and years",
+
+  "Audience": "Researchers, policymakers, environmental scientists, and data analysts
+  interested in sustainable energy trends"
+
+  }'
+05_audience: Researchers, policymakers, environmental scientists, and data analysts
+  interested in sustainable energy trends
+05_data_attributes:
+- Access to electricity (% of population)
+- Renewable-electricity-generating-capacity-per-capita
+- Renewable energy share in the total final energy consumption (%)
+- Electricity from fossil fuels (TWh)
+- Electricity from renewables (TWh)
+- Low-carbon electricity (% electricity)
+05_purpose: Identify patterns and correlations among energy-related metrics across
+  different countries and years
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/90.csv'': {''summary'': {''Column'': [''Entity'', ''Year'',
+  ''Access to electricity (% of population)'', ''Access to clean fuels for cooking'',
+  ''Renewable-electricity-generating-capacity-per-capita'', ''Financial flows to developing
+  countries (US $)'', ''Renewable energy share in the total final energy consumption
+  (%)'', ''Electricity from fossil fuels (TWh)'', ''Electricity from nuclear (TWh)'',
+  ''Electricity from renewables (TWh)'', ''Low-carbon electricity (% electricity)'',
+  ''Primary energy consumption per capita (kWh/person)'', ''Energy intensity level
+  of primary energy (MJ/$2017 PPP GDP)'', ''Value_co2_emissions_kt_by_country'', ''Renewables
+  (% equivalent primary energy)'', ''gdp_growth'', ''gdp_per_capita'', ''Density\\n(P/Km2)'',
+  ''Land Area(Km2)'', ''Latitude'', ''Longitude''], ''Data Type'': [dtype(''O''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 10, 169, 931,
+  2089, 194, 21, 126, 21, 42, 0, 207, 428, 2137, 317, 282, 1, 1, 1, 1], ''Unique Values'':
+  [176, 21, 2040, 896, 2110, 1017, 2587, 1859, 547, 1533, 2647, 3628, 1044, 2397,
+  1455, 3320, 3367, 124, 175, 175, 175]}, ''sample_data'': {''Entity'': [''Afghanistan'',
+  ''Afghanistan'', ''Afghanistan''], ''Year'': [2000, 2001, 2002], ''Access to electricity
+  (% of population)'': [1.613591, 4.074574, 9.409158], ''Access to clean fuels for
+  cooking'': [6.2, 7.2, 8.2], ''Renewable-electricity-generating-capacity-per-capita'':
+  [9.22, 8.86, 8.47], ''Financial flows to developing countries (US $)'': [20000.0,
+  130000.0, 3950000.0], ''Renewable energy share in the total final energy consumption
+  (%)'': [44.99, 45.6, 37.83], ''Electricity from fossil fuels (TWh)'': [0.16, 0.09,
+  0.13], ''Electricity from nuclear (TWh)'': [0.0, 0.0, 0.0], ''Electricity from renewables
+  (TWh)'': [0.31, 0.5, 0.56], ''Low-carbon electricity (% electricity)'': [65.95744,
+  84.745766, 81.159424], ''Primary energy consumption per capita (kWh/person)'': [302.59482,
+  236.89185, 210.86215], ''Energy intensity level of primary energy (MJ/$2017 PPP
+  GDP)'': [1.64, 1.74, 1.4], ''Value_co2_emissions_kt_by_country'': [760.0, 730.0,
+  1029.999971], ''Renewables (% equivalent primary energy)'': [nan, nan, nan], ''gdp_growth'':
+  [nan, nan, nan], ''gdp_per_capita'': [nan, nan, 179.4265792], ''Density\\n(P/Km2)'':
+  [''60'', ''60'', ''60''], ''Land Area(Km2)'': [652230.0, 652230.0, 652230.0], ''Latitude'':
+  [33.93911, 33.93911, 33.93911], ''Longitude'': [67.709953, 67.709953, 67.709953]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a heatmap using the "Global Data on Sustainable Energy (2000-2020)" dataset.
+  Specifically, visualize the correlation between the following columns over the years:
+  ''Access to electricity (% of population)'', ''Renewable-electricity-generating-capacity-per-capita'',
+  ''Renewable energy share in the total final energy consumption (%)'', ''Electricity
+  from fossil fuels (TWh)'', ''Electricity from renewables (TWh)'', and ''Low-carbon
+  electricity (% electricity)''. The heatmap should help identify patterns and correlations
+  among these energy-related metrics across different countries and years. Make sure
+  to handle missing values appropriately.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Access to electricity (% of population)'', ''Renewable-electricity-generating-capacity-per-capita'',
+  ''Renewable energy share in the total final energy consumption (%)'', ''Electricity
+  from fossil fuels (TWh)'', ''Electricity from renewables (TWh)'', ''Low-carbon electricity
+  (% electricity)'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, policymakers, environmental scientists, and data analysts interested
+  in sustainable energy trends
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify patterns and correlations among energy-related metrics across different
+  countries and years
+
+  <end of purpose>'
+07_questions: '1. Do you have any preference for the color scheme of the heatmap?
+
+  2. How should we label the countries and years on the axes?
+
+  3. Would you like to include annotations (numerical values) on the heatmap cells?
+
+  4. How would you prefer the missing values to be handled or displayed in the heatmap?
+
+  5. Do you have a specific title or subtitle for the heatmap?
+
+  6. Should the heatmap include a legend explaining the color gradient?
+
+  7. Are there any specific ranges or thresholds you want highlighted in the heatmap?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap using the \"Global Data on Sustainable\
+  \ Energy (2000-2020)\" dataset. Specifically, visualize the correlation between\
+  \ the following columns over the years: 'Access to electricity (% of population)',\
+  \ 'Renewable-electricity-generating-capacity-per-capita', 'Renewable energy share\
+  \ in the total final energy consumption (%)', 'Electricity from fossil fuels (TWh)',\
+  \ 'Electricity from renewables (TWh)', and 'Low-carbon electricity (% electricity)'.\
+  \ The heatmap should help identify patterns and correlations among these energy-related\
+  \ metrics across different countries and years. Make sure to handle missing values\
+  \ appropriately.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nIdentify patterns and correlations among energy-related metrics across\
+  \ different countries and years\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have any preference for the color scheme of the heatmap?\n2. How should\
+  \ we label the countries and years on the axes?\n3. Would you like to include annotations\
+  \ (numerical values) on the heatmap cells?\n4. How would you prefer the missing\
+  \ values to be handled or displayed in the heatmap?\n5. Do you have a specific title\
+  \ or subtitle for the heatmap?\n6. Should the heatmap include a legend explaining\
+  \ the color gradient?\n7. Are there any specific ranges or thresholds you want highlighted\
+  \ in the heatmap?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Label the countries on the y-axis and the years on the x-axis.
+
+  3. Yes, please include annotations (numerical values) on the heatmap cells.
+
+  4. Handle missing values by using mean imputation.
+
+  5. I do not have a specific title or subtitle.
+
+  6. Yes, the heatmap should include a legend explaining the color gradient.
+
+  7. I do not know.'

@@ -1,0 +1,207 @@
+02_initial_prompt: "Create a scatter plot visualizing Indian desserts data. Plot 'prep_time'\
+  \ on the x-axis and 'cook_time' on the y-axis for different dishes. Use data-driven\
+  \ text annotations to display the 'name' of the dish at each data point. Highlight\
+  \ the points using color to indicate 'region'\u2014different colors for East, West,\
+  \ North. This visualization will help compare preparation and cooking times across\
+  \ various regions and dishes, focusing particularly on those with shorter or longer\
+  \ times. Provide a legend explaining which color corresponds to which region and\
+  \ ensure all names are clearly visible for easy identification."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a scatter plot visualizing Indian desserts data.\
+  \ Plot 'prep_time' on the x-axis and 'cook_time' on the y-axis for different dishes.\
+  \ Use data-driven text annotations to display the 'name' of the dish at each data\
+  \ point. Highlight the points using color to indicate 'region'\u2014different colors\
+  \ for East, West, North. This visualization will help compare preparation and cooking\
+  \ times across various regions and dishes, focusing particularly on those with shorter\
+  \ or longer times. Provide a legend explaining which color corresponds to which\
+  \ region and ensure all names are clearly visible for easy identification.\n<end\
+  \ of user request>\n\n<start of data format>\n{'../Extra_datas/data/130.csv': {'summary':\
+  \ {'Column': ['name', 'ingredients', 'diet', 'prep_time', 'cook_time', 'flavor_profile',\
+  \ 'course', 'state', 'region'], 'Data Type': [dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 1], 'Unique Values': [255, 252, 2,\
+  \ 22, 19, 5, 4, 25, 7]}, 'sample_data': {'name': ['Balu shahi', 'Boondi', 'Gajar\
+  \ ka halwa'], 'ingredients': ['Maida flour, yogurt, oil, sugar', 'Gram flour, ghee,\
+  \ sugar', 'Carrots, milk, sugar, ghee, cashews, raisins'], 'diet': ['vegetarian',\
+  \ 'vegetarian', 'vegetarian'], 'prep_time': [45, 80, 15], 'cook_time': [25, 30,\
+  \ 60], 'flavor_profile': ['sweet', 'sweet', 'sweet'], 'course': ['dessert', 'dessert',\
+  \ 'dessert'], 'state': ['West Bengal', 'Rajasthan', 'Punjab'], 'region': ['East',\
+  \ 'West', 'North']}}}\n<end of data format>\n\n<start of various task types>\n{'Show\
+  \ External Context': 'Uncaptured data provided by the self-tracker to understand\
+  \ and explain a phenomenon shown in the data', 'Show Confirmation': 'Collected data\
+  \ confirms existing knowledge', 'Show Contradiction': 'Collected data contradicts\
+  \ existing knowledge', 'Focus on Identifying value': 'Explicitly specify the measured\
+  \ value, its range for one or more clearly identified data points, or the difference\
+  \ between two measured values', 'Focus on Identifying extreme': 'Explicitly state\
+  \ the identities of the data points possessing extreme values of the measure variable',\
+  \ 'Focus on Identifying references': 'Explicitly state the values of categorical\
+  \ variables, labels from the axes, or legends', 'Comparison by Time Segmentation':\
+  \ 'Compare measured values segmented by time', 'Comparison by Multiple services':\
+  \ 'Compare the same data type from two or more services', 'Comparison against external\
+  \ data': 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare\
+  \ measured values by a factor (other than time)', 'Comparison By Instances': 'Compare\
+  \ two specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute'].\nStore the selected\
+  \ task from the task types in query['Task'].\nStore the purpose of visualization\
+  \ in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\n\
+  Please reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["name", "prep_time", "cook_time", "region"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Compare preparation and cooking times of Indian desserts across different
+  regions and identify dishes with shorter or longer times",
+
+  "Audience": "Food enthusiasts, chefs, culinary students, and researchers interested
+  in Indian desserts"
+
+  }'
+05_audience: Food enthusiasts, chefs, culinary students, and researchers interested
+  in Indian desserts
+05_data_attributes:
+- name
+- prep_time
+- cook_time
+- region
+05_purpose: Compare preparation and cooking times of Indian desserts across different
+  regions and identify dishes with shorter or longer times
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/130.csv':\
+  \ {'summary': {'Column': ['name', 'ingredients', 'diet', 'prep_time', 'cook_time',\
+  \ 'flavor_profile', 'course', 'state', 'region'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 1], 'Unique Values': [255,\
+  \ 252, 2, 22, 19, 5, 4, 25, 7]}, 'sample_data': {'name': ['Balu shahi', 'Boondi',\
+  \ 'Gajar ka halwa'], 'ingredients': ['Maida flour, yogurt, oil, sugar', 'Gram flour,\
+  \ ghee, sugar', 'Carrots, milk, sugar, ghee, cashews, raisins'], 'diet': ['vegetarian',\
+  \ 'vegetarian', 'vegetarian'], 'prep_time': [45, 80, 15], 'cook_time': [25, 30,\
+  \ 60], 'flavor_profile': ['sweet', 'sweet', 'sweet'], 'course': ['dessert', 'dessert',\
+  \ 'dessert'], 'state': ['West Bengal', 'Rajasthan', 'Punjab'], 'region': ['East',\
+  \ 'West', 'North']}}}\n<end of data format>\n\n<start of data visualization instruction>\n\
+  Create a scatter plot visualizing Indian desserts data. Plot 'prep_time' on the\
+  \ x-axis and 'cook_time' on the y-axis for different dishes. Use data-driven text\
+  \ annotations to display the 'name' of the dish at each data point. Highlight the\
+  \ points using color to indicate 'region'\u2014different colors for East, West,\
+  \ North. This visualization will help compare preparation and cooking times across\
+  \ various regions and dishes, focusing particularly on those with shorter or longer\
+  \ times. Provide a legend explaining which color corresponds to which region and\
+  \ ensure all names are clearly visible for easy identification.\n<end of data visualization\
+  \ instruction>\n\n<start of data attributes>\n['name', 'prep_time', 'cook_time',\
+  \ 'region']\n<end of data attributes>\n\n<start of prospective audience>\nFood enthusiasts,\
+  \ chefs, culinary students, and researchers interested in Indian desserts\n<end\
+  \ of prospective audience>\n\n<start of type of tasks>\nComparison By Factor\n<end\
+  \ of type of tasks>\n\n<start of purpose>\nCompare preparation and cooking times\
+  \ of Indian desserts across different regions and identify dishes with shorter or\
+  \ longer times\n<end of purpose>"
+07_questions: '1. Do you have a preferred color palette for the regions (East, West,
+  North)?
+
+  2. What size would you like the data points to be on the scatter plot?
+
+  3. Do you have a specific font style or size preference for the text annotations
+  displaying the dish names?
+
+  4. Should the chart have grid lines, and if so, should they be solid or dashed?
+
+  5. Do you prefer the axes labels (for ''prep_time'' and ''cook_time'') to be in
+  a specific format or style?
+
+  6. Would you like the axes to have custom scales (e.g., logarithmic, linear) or
+  ranges?
+
+  7. Should the chart title and legend have any specific formatting or positioning?
+
+  8. Do you have a specific layout preference for the legend (e.g., horizontal or
+  vertical orientation, placement)?
+
+  9. Should the plot background and the axes background be in a specific color?
+
+  10. Are there any specific data points (names of dishes) you want to emphasize or
+  highlight differently?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a scatter plot visualizing Indian desserts data.\
+  \ Plot 'prep_time' on the x-axis and 'cook_time' on the y-axis for different dishes.\
+  \ Use data-driven text annotations to display the 'name' of the dish at each data\
+  \ point. Highlight the points using color to indicate 'region'\u2014different colors\
+  \ for East, West, North. This visualization will help compare preparation and cooking\
+  \ times across various regions and dishes, focusing particularly on those with shorter\
+  \ or longer times. Provide a legend explaining which color corresponds to which\
+  \ region and ensure all names are clearly visible for easy identification.\n<end\
+  \ of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nCompare preparation and cooking times of Indian desserts across different\
+  \ regions and identify dishes with shorter or longer times\n<end of purpose>\n\n\
+  <start service provider message>\n1. Do you have a preferred color palette for the\
+  \ regions (East, West, North)?\n2. What size would you like the data points to be\
+  \ on the scatter plot?\n3. Do you have a specific font style or size preference\
+  \ for the text annotations displaying the dish names?\n4. Should the chart have\
+  \ grid lines, and if so, should they be solid or dashed?\n5. Do you prefer the axes\
+  \ labels (for 'prep_time' and 'cook_time') to be in a specific format or style?\n\
+  6. Would you like the axes to have custom scales (e.g., logarithmic, linear) or\
+  \ ranges?\n7. Should the chart title and legend have any specific formatting or\
+  \ positioning?\n8. Do you have a specific layout preference for the legend (e.g.,\
+  \ horizontal or vertical orientation, placement)?\n9. Should the plot background\
+  \ and the axes background be in a specific color?\n10. Are there any specific data\
+  \ points (names of dishes) you want to emphasize or highlight differently?\n<end\
+  \ service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific color palette preference.
+
+  2. I am not sure about the data point size.
+
+  3. I do not have a specific font style or size preference for the text annotations.
+
+  4. I do not know if I want grid lines, maybe solid if necessary.
+
+  5. I do not have a preference for the axes labels format or style.
+
+  6. I am not sure about custom scales or ranges for the axes.
+
+  7. I do not have a specific formatting or positioning preference for the chart title
+  and legend.
+
+  8. I am not sure about the legend layout preference.
+
+  9. I do not have a specific color preference for the plot or axes background.
+
+  10. No, there are no specific data points that I want to emphasize differently.'

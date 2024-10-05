@@ -1,0 +1,285 @@
+02_initial_prompt: Create a heatmap highlighting pricing changes across different
+  technology companies listed on NASDAQ. Emphasize market cap, share volume, and earnings
+  per share. Annotate significant changes in price percentage. Focus on identifying
+  trends or outliers in the sector and industry.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a heatmap highlighting pricing changes across different technology companies
+  listed on NASDAQ. Emphasize market cap, share volume, and earnings per share. Annotate
+  significant changes in price percentage. Focus on identifying trends or outliers
+  in the sector and industry.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/249.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''symbol'',
+  ''name'', ''price'', ''pricing_changes'', ''pricing_percentage_changes'', ''sector'',
+  ''industry'', ''market_cap'', ''share_volume'', ''earnings_per_share'', ''annualized_dividend'',
+  ''dividend_pay_date'', ''symbol_yield'', ''beta'', ''errors''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''bool'')], ''Missing Values'': [0, 0, 0, 0, 0,
+  2349, 2201, 2183, 1515, 486, 5418, 6141, 6077, 4556, 2241, 0], ''Unique Values'':
+  [8339, 8339, 8296, 4926, 1808, 1613, 12, 141, 6756, 7599, 1041, 671, 483, 1366,
+  793, 2]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''symbol'': [''AAPL'', ''MSFT'',
+  ''GOOG''], ''name'': [''Apple Inc. Common Stock'', ''Microsoft Corporation Common
+  Stock'', ''Alphabet Inc. Class C Capital Stock''], ''price'': [157.51, 289.56, 2639.755],
+  ''pricing_changes'': [''+2.42'', ''+2.41'', ''+46.545''], ''pricing_percentage_changes'':
+  [''(+1.56%)'', ''(+0.84%)'', ''(+1.79%)''], ''sector'': [''Technology'', ''Technology'',
+  ''Technology''], ''industry'': [''Computer Manufacturing'', ''Computer Software:
+  Prepackaged Software'', ''Internet and Information Services''], ''market_cap'':
+  [''2,699,423,838,000'', ''2,143,429,080,429'', ''1,724,718,735,878''], ''share_volume'':
+  [''63,429,579'', ''22,790,662'', ''900,760''], ''earnings_per_share'': [''$6.04'',
+  ''$9.39'', ''$112.23''], ''annualized_dividend'': [''$0.88'', ''$2.48'', nan], ''dividend_pay_date'':
+  [''Feb 10, 2022'', ''Jun 9, 2022'', nan], ''symbol_yield'': [''0.58%'', ''0.9%'',
+  nan], ''beta'': [''1.18'', ''0.91'', ''1.06''], ''errors'': [False, False, False]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["pricing_changes", "pricing_percentage_changes", "sector", "industry",
+  "market_cap", "share_volume", "earnings_per_share"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Identify trends or outliers in pricing changes across different technology
+  companies",
+
+  "Audience": "Investors, Financial Analysts, and Technology Sector Stakeholders"
+
+  }'
+05_audience: Investors, Financial Analysts, and Technology Sector Stakeholders
+05_data_attributes:
+- pricing_changes
+- pricing_percentage_changes
+- sector
+- industry
+- market_cap
+- share_volume
+- earnings_per_share
+05_purpose: Identify trends or outliers in pricing changes across different technology
+  companies
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/249.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''symbol'',
+  ''name'', ''price'', ''pricing_changes'', ''pricing_percentage_changes'', ''sector'',
+  ''industry'', ''market_cap'', ''share_volume'', ''earnings_per_share'', ''annualized_dividend'',
+  ''dividend_pay_date'', ''symbol_yield'', ''beta'', ''errors''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''bool'')], ''Missing Values'': [0, 0, 0, 0, 0,
+  2349, 2201, 2183, 1515, 486, 5418, 6141, 6077, 4556, 2241, 0], ''Unique Values'':
+  [8339, 8339, 8296, 4926, 1808, 1613, 12, 141, 6756, 7599, 1041, 671, 483, 1366,
+  793, 2]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''symbol'': [''AAPL'', ''MSFT'',
+  ''GOOG''], ''name'': [''Apple Inc. Common Stock'', ''Microsoft Corporation Common
+  Stock'', ''Alphabet Inc. Class C Capital Stock''], ''price'': [157.51, 289.56, 2639.755],
+  ''pricing_changes'': [''+2.42'', ''+2.41'', ''+46.545''], ''pricing_percentage_changes'':
+  [''(+1.56%)'', ''(+0.84%)'', ''(+1.79%)''], ''sector'': [''Technology'', ''Technology'',
+  ''Technology''], ''industry'': [''Computer Manufacturing'', ''Computer Software:
+  Prepackaged Software'', ''Internet and Information Services''], ''market_cap'':
+  [''2,699,423,838,000'', ''2,143,429,080,429'', ''1,724,718,735,878''], ''share_volume'':
+  [''63,429,579'', ''22,790,662'', ''900,760''], ''earnings_per_share'': [''$6.04'',
+  ''$9.39'', ''$112.23''], ''annualized_dividend'': [''$0.88'', ''$2.48'', nan], ''dividend_pay_date'':
+  [''Feb 10, 2022'', ''Jun 9, 2022'', nan], ''symbol_yield'': [''0.58%'', ''0.9%'',
+  nan], ''beta'': [''1.18'', ''0.91'', ''1.06''], ''errors'': [False, False, False]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a heatmap highlighting pricing changes across different technology companies
+  listed on NASDAQ. Emphasize market cap, share volume, and earnings per share. Annotate
+  significant changes in price percentage. Focus on identifying trends or outliers
+  in the sector and industry.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''pricing_changes'', ''pricing_percentage_changes'', ''sector'', ''industry'',
+  ''market_cap'', ''share_volume'', ''earnings_per_share'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Investors, Financial Analysts, and Technology Sector Stakeholders
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify trends or outliers in pricing changes across different technology companies
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Would you like the color intensity to represent the magnitude of pricing changes,
+  market cap, share volume, or earnings per share?
+
+  3. Which value do you prefer to be annotated on the heatmap: pricing percentage
+  changes, absolute pricing changes, or another metric?
+
+  4. Do you have any preferences on how significant changes in price percentage should
+  be highlighted or annotated?
+
+  5. Should there be a specific threshold for what constitutes a "significant change"
+  in price percentage?
+
+  6. Do you prefer any specific labels or descriptions for the axes in the heatmap?
+
+  7. Would you like to include any specific filters to narrow down which technology
+  companies are displayed on the heatmap?
+
+  8. Are there any specific sectors or industries within the technology sector that
+  you would like to focus on or exclude from the heatmap?
+
+  9. Do you have a preferred way to encode trends or outliers, such as through color
+  gradients or specific markers?
+
+  10. Is there a specific time frame you are interested in for analyzing pricing changes?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a heatmap highlighting pricing changes across\
+  \ different technology companies listed on NASDAQ. Emphasize market cap, share volume,\
+  \ and earnings per share. Annotate significant changes in price percentage. Focus\
+  \ on identifying trends or outliers in the sector and industry.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 25% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nIdentify trends\
+  \ or outliers in pricing changes across different technology companies\n<end of\
+  \ purpose>\n\n<start service provider message>\n1. Do you have any specific color\
+  \ scheme preferences for the heatmap?\n2. Would you like the color intensity to\
+  \ represent the magnitude of pricing changes, market cap, share volume, or earnings\
+  \ per share?\n3. Which value do you prefer to be annotated on the heatmap: pricing\
+  \ percentage changes, absolute pricing changes, or another metric?\n4. Do you have\
+  \ any preferences on how significant changes in price percentage should be highlighted\
+  \ or annotated?\n5. Should there be a specific threshold for what constitutes a\
+  \ \"significant change\" in price percentage?\n6. Do you prefer any specific labels\
+  \ or descriptions for the axes in the heatmap?\n7. Would you like to include any\
+  \ specific filters to narrow down which technology companies are displayed on the\
+  \ heatmap?\n8. Are there any specific sectors or industries within the technology\
+  \ sector that you would like to focus on or exclude from the heatmap?\n9. Do you\
+  \ have a preferred way to encode trends or outliers, such as through color gradients\
+  \ or specific markers?\n10. Is there a specific time frame you are interested in\
+  \ for analyzing pricing changes?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure
+
+  2. The color intensity should represent the magnitude of pricing changes.
+
+  3. Pricing percentage changes
+
+  4. I do not know
+
+  5. I do not know
+
+  6. I do not know
+
+  7. I do not know
+
+  8. I am not sure
+
+  9. I have no specific preference
+
+  10. I have no specific preference'

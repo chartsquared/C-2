@@ -1,0 +1,88 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Heatmap
+
+  * Bubble chart
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Sunburst chart
+
+  * Line chart
+
+  * Area chart
+
+  * Density plot
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map'
+- 1185
+- 1124
+- 61
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 983
+- 843
+- 140
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/95.csv': {'summary': {'Column':\
+  \ ['CountryID', 'Country and Area', 'Forest Area, 1990', 'Forest Area, 2000', 'Forest\
+  \ Area, 2010', 'Forest Area, 2015', 'Forest Area, 2020', 'Total Land Area, 2020',\
+  \ 'Forest Area as a Proportion of Total Land Area, 2020', 'Deforestation, 2015-2020',\
+  \ 'Total Forest Area Affected by Fire, 2015'], 'Data Type': [dtype('float64'), dtype('O'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('O'), dtype('O')], 'Missing Values':\
+  \ [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], 'Unique Values': [236, 237, 225, 227, 227,\
+  \ 226, 226, 226, 228, 90, 87]}, 'sample_data': {'CountryID': [nan, 4.0, 8.0], 'Country\
+  \ and Area': ['WORLD', 'Afghanistan', 'Albania'], 'Forest Area, 1990': [4236433.42,\
+  \ 1208.44, 788.8], 'Forest Area, 2000': [4158049.52, 1208.44, 769.3], 'Forest Area,\
+  \ 2010': [4106316.94, 1208.44, 782.07], 'Forest Area, 2015': ['\\x85', '1208.44',\
+  \ '789.19'], 'Forest Area, 2020': [4058930.81, 1208.44, 788.9], 'Total Land Area,\
+  \ 2020': [13003000.0, 65286.0, 2740.0], 'Forest Area as a Proportion of Total Land\
+  \ Area, 2020': [31.13, 1.85, 28.79], 'Deforestation, 2015-2020': ['10200', '...',\
+  \ '...'], 'Total Forest Area Affected by Fire, 2015': ['98040', '...', '...']}}}\n\
+  <end of data example format>\n\n<start of data details format>\n\U0001F333 Global\
+  \ Forest Insights 1990-2020 | FAO\nenvironmental-science\n<end of data details format>\n\
+  \nGiven a data format, imagine a chart that visualizes this data as the final output\
+  \ you want from the service provider.\nYou need to imagine a chart with * Density\
+  \ plot that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Density plot that utilizes all the data formats.\nSince\
+  \ you are an amateur user, your instruction will be partially SUBJECTIVE and NOT\
+  \ DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 50 in size (word count).\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Box chart'
+- '* Choropleth map'
+- '* Grouped bar/column chart'
+- '* Treemap'
+- '* Stacked bar/column chart'
+- '* Bar chart'
+- '* Area chart'
+- '* Line chart'
+- '* Heatmap'
+- '* Density plot'
+2. initial_prompt: !!python/tuple
+- Please create a density plot showing the distribution of forest area as a proportion
+  of total land area across different countries/areas for the year 2020.
+- 748
+- 718
+- 30

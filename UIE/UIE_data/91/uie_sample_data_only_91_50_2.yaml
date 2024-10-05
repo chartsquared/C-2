@@ -1,0 +1,244 @@
+02_initial_prompt: Create an area chart comparing the number of views and downloads
+  over time for the top datasets. Highlight peaks for significant differences and
+  use text annotations to show specific values and dates. Focus on featured datasets.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create an area chart comparing the number of views and downloads over time for the
+  top datasets. Highlight peaks for significant differences and use text annotations
+  to show specific values and dates. Focus on featured datasets.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/91.csv'': {''summary'': {''Column'': [''title'', ''description'',
+  ''url'', ''owner'', ''kernels'', ''discussions'', ''views'', ''downloads'', ''last_updated'',
+  ''license'', ''size'', ''featured'', ''super_featured'', ''upvotes''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [2, 4951,
+  0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], ''Unique Values'': [7538, 3050, 8024, 4286,
+  159, 45, 2005, 887, 518, 6, 6542, 2, 2, 158]}, ''sample_data'': {''title'': [''Trending
+  YouTube Video Statistics (UPDATED)'', ''7ecb8f4fe2ece9f4c8ffd23af10c310f'', ''Atom
+  Dataset''], ''description'': [''Daily statistics (views, likes, category, tags+)
+  for trending YouTube videos'', nan, ''Dataset with atom features''], ''url'': [''https://www.kaggle.com/datasnaek/youtube-new'',
+  ''https://www.kaggle.com/veralei/7ecb8f4fe2ece9f4c8ffd23af10c310f'', ''https://www.kaggle.com/chfly2000/nomad2018-atom-dataset''],
+  ''owner'': [''Mitchell J'', ''Vera Lei'', ''chfly2000''], ''kernels'': [3, 0, 0],
+  ''discussions'': [4, 0, 0], ''views'': [9484, 55, 26], ''downloads'': [1668, 2,
+  1], ''last_updated'': [''2018-01-16'', ''2018-01-16'', ''2018-01-16''], ''license'':
+  [''CC0'', ''Other'', ''Other''], ''size'': [35087677.0, 127264365.0, 0.0], ''featured'':
+  [1, 0, 0], ''super_featured'': [0, 0, 0], ''upvotes'': [46, 0, 0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n\"Data Attribute\": [\"title\", \"views\"\
+  , \"downloads\", \"last_updated\", \"featured\"], \n\"Task\": \"Comparison by Time\
+  \ Segmentation\", \n\"Purpose\": \"Compare the number of views and downloads over\
+  \ time for featured datasets, highlighting significant peaks and differences\",\
+  \ \n\"Audience\": \"Researchers, Data Analysts, and Dataset Owners\"\n}"
+05_audience: Researchers, Data Analysts, and Dataset Owners
+05_data_attributes:
+- title
+- views
+- downloads
+- last_updated
+- featured
+05_purpose: Compare the number of views and downloads over time for featured datasets,
+  highlighting significant peaks and differences
+05_task: Comparison by Time Segmentation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/91.csv'': {''summary'': {''Column'': [''title'', ''description'',
+  ''url'', ''owner'', ''kernels'', ''discussions'', ''views'', ''downloads'', ''last_updated'',
+  ''license'', ''size'', ''featured'', ''super_featured'', ''upvotes''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [2, 4951,
+  0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], ''Unique Values'': [7538, 3050, 8024, 4286,
+  159, 45, 2005, 887, 518, 6, 6542, 2, 2, 158]}, ''sample_data'': {''title'': [''Trending
+  YouTube Video Statistics (UPDATED)'', ''7ecb8f4fe2ece9f4c8ffd23af10c310f'', ''Atom
+  Dataset''], ''description'': [''Daily statistics (views, likes, category, tags+)
+  for trending YouTube videos'', nan, ''Dataset with atom features''], ''url'': [''https://www.kaggle.com/datasnaek/youtube-new'',
+  ''https://www.kaggle.com/veralei/7ecb8f4fe2ece9f4c8ffd23af10c310f'', ''https://www.kaggle.com/chfly2000/nomad2018-atom-dataset''],
+  ''owner'': [''Mitchell J'', ''Vera Lei'', ''chfly2000''], ''kernels'': [3, 0, 0],
+  ''discussions'': [4, 0, 0], ''views'': [9484, 55, 26], ''downloads'': [1668, 2,
+  1], ''last_updated'': [''2018-01-16'', ''2018-01-16'', ''2018-01-16''], ''license'':
+  [''CC0'', ''Other'', ''Other''], ''size'': [35087677.0, 127264365.0, 0.0], ''featured'':
+  [1, 0, 0], ''super_featured'': [0, 0, 0], ''upvotes'': [46, 0, 0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create an area chart comparing the number of views and downloads over time for the
+  top datasets. Highlight peaks for significant differences and use text annotations
+  to show specific values and dates. Focus on featured datasets.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''title'', ''views'', ''downloads'', ''last_updated'', ''featured'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, Data Analysts, and Dataset Owners
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison by Time Segmentation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Compare the number of views and downloads over time for featured datasets, highlighting
+  significant peaks and differences
+
+  <end of purpose>'
+07_questions: "1. Do you have a preferred color scheme for the chart?\n2. Would you\
+  \ like to include a legend for the views and downloads?\n3. Should the chart display\
+  \ gridlines for better readability?\n4. Do you have any specific date range to focus\
+  \ on?\n5. How would you like the peaks to be highlighted\u2014using different colors,\
+  \ markers, or both?\n6. Are there any specific datasets you want to be featured\
+  \ more prominently?\n7. How detailed should the text annotations be\u2014only key\
+  \ dates and values or more comprehensive?\n8. Would you like to include tooltips\
+  \ for additional information on hover for each data point?\n9. Do you prefer a specific\
+  \ font type or size for the text annotations and labels?\n10. Should the y-axis\
+  \ have a fixed scale or adapt based on data values?"
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate an area chart comparing the number of views and\
+  \ downloads over time for the top datasets. Highlight peaks for significant differences\
+  \ and use text annotations to show specific values and dates. Focus on featured\
+  \ datasets.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nCompare the number of views and downloads over time for featured datasets,\
+  \ highlighting significant peaks and differences\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color scheme for the chart?\n2.\
+  \ Would you like to include a legend for the views and downloads?\n3. Should the\
+  \ chart display gridlines for better readability?\n4. Do you have any specific date\
+  \ range to focus on?\n5. How would you like the peaks to be highlighted\u2014using\
+  \ different colors, markers, or both?\n6. Are there any specific datasets you want\
+  \ to be featured more prominently?\n7. How detailed should the text annotations\
+  \ be\u2014only key dates and values or more comprehensive?\n8. Would you like to\
+  \ include tooltips for additional information on hover for each data point?\n9.\
+  \ Do you prefer a specific font type or size for the text annotations and labels?\n\
+  10. Should the y-axis have a fixed scale or adapt based on data values?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. Yes, please include a legend for the views and downloads.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Using different colors would be great.
+
+  6. I have no specific preference.
+
+  7. Only key dates and values.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.'

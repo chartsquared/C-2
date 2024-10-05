@@ -1,0 +1,99 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram'
+- 1093
+- 1063
+- 30
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 912
+- 773
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/232.csv'': {''summary'': {''Column'': [''loan_id'', '' no_of_dependents'',
+  '' education'', '' self_employed'', '' income_annum'', '' loan_amount'', '' loan_term'',
+  '' cibil_score'', '' residential_assets_value'', '' commercial_assets_value'', ''
+  luxury_assets_value'', '' bank_asset_value'', '' loan_status''], ''Data Type'':
+  [dtype(''int64''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''O'')], ''Missing Values'': [0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [4269, 6, 2, 2, 98, 378, 10, 601,
+  278, 188, 379, 146, 2]}, ''sample_data'': {''loan_id'': [1, 2, 3], '' no_of_dependents'':
+  [2, 0, 3], '' education'': ['' Graduate'', '' Not Graduate'', '' Graduate''], ''
+  self_employed'': ['' No'', '' Yes'', '' No''], '' income_annum'': [9600000, 4100000,
+  9100000], '' loan_amount'': [29900000, 12200000, 29700000], '' loan_term'': [12,
+  8, 20], '' cibil_score'': [778, 417, 506], '' residential_assets_value'': [2400000,
+  2700000, 7100000], '' commercial_assets_value'': [17600000, 2200000, 4500000], ''
+  luxury_assets_value'': [22700000, 8800000, 33300000], '' bank_asset_value'': [8000000,
+  3300000, 12800000], '' loan_status'': ['' Approved'', '' Rejected'', '' Rejected'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Loan-Approval-Prediction-Dataset
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Stacked bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Stacked bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Bar chart'
+- '* Histogram'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a stacked column chart for Loan-Approval-Prediction-Dataset, comparing "income_annum"
+  and "loan_amount" against "loan_status". Show data for three loan IDs only.
+- 709
+- 670
+- 39

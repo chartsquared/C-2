@@ -1,0 +1,79 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram'
+- 867
+- 849
+- 18
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 706
+- 567
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/437.csv': {'summary': {'Column':\
+  \ ['issue', 'costume', 'character', 'speech', 'thought', 'narrative', 'depicted'],\
+  \ 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0], 'Unique\
+  \ Values': [196, 2, 25, 87, 63, 85, 75]}, 'sample_data': {'issue': [97, 97, 97],\
+  \ 'costume': ['Costume', 'Costume', 'Costume'], 'character': ['Editor narration',\
+  \ 'Omnipresent narration', 'Professor X = Charles Xavier (no costume)*'], 'speech':\
+  \ [0, 0, 0], 'thought': [0, 0, 0], 'narrative': [0, 0, 0], 'depicted': [0, 0, 0]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually.', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nAppearance of the X-men\
+  \ characters in Chris Claremont comics\narts-and-entertainment\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nConsider what purpose the data\
+  \ has and the practical purpose of visualization and include it in the instructions.\n\
+  You need to imagine a chart with * Line chart and given annotations that utilizes\
+  \ the data format.\nIf there are multiple given data formats, imagine a chart with\
+  \ * Line chart and given annotations that utilizes all the data formats.\nSince\
+  \ you are an amateur user, your instruction will be partially SUBJECTIVE and NOT\
+  \ DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Pie chart'
+- '* Heatmap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Create a line chart that visualizes the number of times each X-men character is
+  depicted across different issues of Chris Claremont comics. Use data-driven text
+  annotations to highlight key characters and their appearances. Add highlights to
+  emphasize the characters in costumes versus those without. This will help in analyzing
+  the narrative and character development trends over time. Include a legend to denote
+  'costume' and 'narrative' aspects. The purpose is to provide a visual representation
+  that helps in understanding character prominence and thematic elements across the
+  series.
+- 740
+- 636
+- 104

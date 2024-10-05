@@ -1,0 +1,105 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Radar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Scatter plot
+
+  * Box chart'
+- 1441
+- 1398
+- 43
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1246
+- 1108
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/179.csv': {'summary': {'Column':\
+  \ ['Dance Type', 'Dance style', 'Origin', 'Time Period', 'Cultural Significance',\
+  \ 'Notable Characteristics', 'Instrumental', 'Hardness Ratio', 'Dance Formation',\
+  \ 'Costume', 'Tempo (BPM)', 'Famous Practitioners', 'Events and Festivals', 'Modern\
+  \ Adaptations', 'Associated Music Genre', 'Learning Difficulty', 'Health Benefits',\
+  \ 'Age Group'], 'Data Type': [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique\
+  \ Values': [12, 197, 28, 10, 204, 176, 52, 19, 8, 71, 24, 182, 132, 205, 48, 5,\
+  \ 79, 7]}, 'sample_data': {'Dance Type': ['American', 'American', 'American'], 'Dance\
+  \ style': ['fella shake', 'tap dancing', 'fella fella fella Im 100% fella'], 'Origin':\
+  \ ['United States', 'United States', 'United States'], 'Time Period': ['Contemporary',\
+  \ '20th century', 'Modern'], 'Cultural Significance': ['It is a Popular dance style\
+  \ in the United States, particularly in the Midwest', 'Tap dancing is a style of\
+  \ dance that developed in the United States during the', 'The Mambo is a Popular\
+  \ dance style that originated in Cuba and became'], 'Notable Characteristics': ['Fella\
+  \ shake dance is a rhythmic and lively dance style originating from', 'Intricate\
+  \ footwork, syncopated rhythms, and rhythm', 'The Mambo is a Popular dance style\
+  \ that originated in Cuba and became'], 'Instrumental': ['Electronic instruments',\
+  \ 'Drums, Guitar, Electronic instruments, and Traditional instruments.', 'Drums,\
+  \ Guitar, Electronic instruments, Traditional instruments'], 'Hardness Ratio': [0.7,\
+  \ 0.5, 0.5], 'Dance Formation': ['Circle', 'Partner', 'Line'], 'Costume': ['Street\
+  \ clothes', 'Street clothes', 'Street clothes'], 'Tempo (BPM)': [120, 120, 120],\
+  \ 'Famous Practitioners': ['Richard Rocket', 'Bojangles, Fred Astaire, Gene Kelly',\
+  \ 'Fella Makafui, Medikal, Sarkodie'], 'Events and Festivals': ['Michigan Fella\
+  \ Shake Competition', 'Apollo Theater, Motown, Budapest', 'No major events or festivals.'],\
+  \ 'Modern Adaptations': ['The fella shake dance has seen some evolution in contemporary\
+  \ times. The dance has', 'In the contemporary times, tap dancing has evolved and\
+  \ is still being adapted. Cont', 'Some contemporary Mambo performances are highly\
+  \ choreographed and incorporate acro'], 'Associated Music Genre': ['Hip hop', 'Hip\
+  \ hop', 'Latin'], 'Learning Difficulty': ['Easy', 'Easy', 'Moderate'], 'Health Benefits':\
+  \ ['Improved cardiovascular health, Improved flexibility, Stress relief', 'Improved\
+  \ cardiovascular health, Stress relief, and Improved flexibility', 'Stress relief,\
+  \ Improved flexibility, Improved cardiovascular health'], 'Age Group': ['Teens and\
+  \ young adults', 'All ages', 'Teens and young adults']}}}\n<end of data example\
+  \ format>\n\n<start of annotations format>\n['<start of the annotation list>', '1.\
+  \ Text Annotations:', 'Description: Data-driven text annotations display values\
+  \ linked to chart elements, such as data points in a scatterplot. They draw attention\
+  \ to specific elements by highlighting their values.', 'Purpose: When only some\
+  \ elements are annotated, the intent is to focus the viewer\u2019s attention on\
+  \ those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nDance Styles & Genres\n\
+  arts-and-entertainment\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nConsider what purpose the data has and the practical purpose of visualization\
+  \ and include it in the instructions.\nYou need to imagine a chart with * Grouped\
+  \ bar/column chart and given annotations that utilizes the data format.\nIf there\
+  \ are multiple given data formats, imagine a chart with * Grouped bar/column chart\
+  \ and given annotations that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 50 in size (word count). Do not include data path in\
+  \ the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Grouped bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a grouped bar chart to visualize the tempo (BPM) against dance types, highlighting
+  unique costumes and notable characteristics. Add text annotations to specify the
+  learning difficulty and health benefits for each dance type. This will help in understanding
+  the diversity and attributes of various American dance styles.
+- 1240
+- 1185
+- 55

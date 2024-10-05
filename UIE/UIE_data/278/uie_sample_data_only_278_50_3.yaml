@@ -1,0 +1,281 @@
+02_initial_prompt: '"Create a treemap showing what makes a pizza good, the role it
+  plays in Brooklyn life, and feelings of safety and community with pizzerias in the
+  neighborhood."'
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  "Create a treemap showing what makes a pizza good, the role it plays in Brooklyn
+  life, and feelings of safety and community with pizzerias in the neighborhood."
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/278.csv'': {''summary'': {''Column'': [''Timestamp'', ''What
+  makes a pizza good?'', ''What role does pizza play in Brooklyn life?'', ''More questions:
+  [Does having a pizzeria in your neighborhood make you feel more safe? (for example,
+  if you are walking home late at night and they happen to be open late)]'', ''If
+  you answered "disagree" or "strongly disagree" to the previous question about pizzerias
+  making you feel safe, please explain why.'', ''Does the presence of a pizzeria give
+  you a better feeling about your community'', "If you don''t like having a pizzeria
+  near you (maybe you would prefer a bar, grocery store, Chinese take-out etc) please
+  explain why."], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 6, 0, 18,
+  0, 18], ''Unique Values'': [20, 5, 14, 4, 2, 2, 2]}, ''sample_data'': {''Timestamp'':
+  [''2017/08/08 5:03:51 PM AST'', ''2017/08/08 5:20:26 PM AST'', ''2017/08/08 5:35:04
+  PM AST''], ''What makes a pizza good?'': [''Toppings'', ''A lot of cheese'', ''Soft
+  dough''], ''What role does pizza play in Brooklyn life?'': [nan, ''Pizza is a very
+  important part of Brooklyn life because whenever people get together pizza is one
+  of the foods they always eat together.'', ''It keeps me alive''], ''More questions:
+  [Does having a pizzeria in your neighborhood make you feel more safe? (for example,
+  if you are walking home late at night and they happen to be open late)]'': [''Agree'',
+  ''Strongly agree'', ''Strongly agree''], ''If you answered "disagree" or "strongly
+  disagree" to the previous question about pizzerias making you feel safe, please
+  explain why.'': [nan, nan, nan], ''Does the presence of a pizzeria give you a better
+  feeling about your community'': [''Yes'', ''Yes'', ''Yes''], "If you don''t like
+  having a pizzeria near you (maybe you would prefer a bar, grocery store, Chinese
+  take-out etc) please explain why.": [nan, nan, nan]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["What makes a pizza good?", "What role does pizza play in Brooklyn
+  life?", "More questions: [Does having a pizzeria in your neighborhood make you feel
+  more safe? (for example, if you are walking home late at night and they happen to
+  be open late)]", "Does the presence of a pizzeria give you a better feeling about
+  your community"],
+
+  "Task": "Summarization of data",
+
+  "Purpose": "To provide an overview of various factors that contribute to a good
+  pizza, its significance in Brooklyn lifestyle, and its impact on feelings of safety
+  and community",
+
+  "Audience": "Residents of Brooklyn, Pizzeria owners, Urban planners"
+
+  }'
+05_audience: Residents of Brooklyn, Pizzeria owners, Urban planners
+05_data_attributes:
+- What makes a pizza good?
+- What role does pizza play in Brooklyn life?
+- 'More questions: [Does having a pizzeria in your neighborhood make you feel more
+  safe? (for example, if you are walking home late at night and they happen to be
+  open late)]'
+- Does the presence of a pizzeria give you a better feeling about your community
+05_purpose: To provide an overview of various factors that contribute to a good pizza,
+  its significance in Brooklyn lifestyle, and its impact on feelings of safety and
+  community
+05_task: Summarization of data
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/278.csv'': {''summary'': {''Column'': [''Timestamp'', ''What
+  makes a pizza good?'', ''What role does pizza play in Brooklyn life?'', ''More questions:
+  [Does having a pizzeria in your neighborhood make you feel more safe? (for example,
+  if you are walking home late at night and they happen to be open late)]'', ''If
+  you answered "disagree" or "strongly disagree" to the previous question about pizzerias
+  making you feel safe, please explain why.'', ''Does the presence of a pizzeria give
+  you a better feeling about your community'', "If you don''t like having a pizzeria
+  near you (maybe you would prefer a bar, grocery store, Chinese take-out etc) please
+  explain why."], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 6, 0, 18,
+  0, 18], ''Unique Values'': [20, 5, 14, 4, 2, 2, 2]}, ''sample_data'': {''Timestamp'':
+  [''2017/08/08 5:03:51 PM AST'', ''2017/08/08 5:20:26 PM AST'', ''2017/08/08 5:35:04
+  PM AST''], ''What makes a pizza good?'': [''Toppings'', ''A lot of cheese'', ''Soft
+  dough''], ''What role does pizza play in Brooklyn life?'': [nan, ''Pizza is a very
+  important part of Brooklyn life because whenever people get together pizza is one
+  of the foods they always eat together.'', ''It keeps me alive''], ''More questions:
+  [Does having a pizzeria in your neighborhood make you feel more safe? (for example,
+  if you are walking home late at night and they happen to be open late)]'': [''Agree'',
+  ''Strongly agree'', ''Strongly agree''], ''If you answered "disagree" or "strongly
+  disagree" to the previous question about pizzerias making you feel safe, please
+  explain why.'': [nan, nan, nan], ''Does the presence of a pizzeria give you a better
+  feeling about your community'': [''Yes'', ''Yes'', ''Yes''], "If you don''t like
+  having a pizzeria near you (maybe you would prefer a bar, grocery store, Chinese
+  take-out etc) please explain why.": [nan, nan, nan]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  "Create a treemap showing what makes a pizza good, the role it plays in Brooklyn
+  life, and feelings of safety and community with pizzerias in the neighborhood."
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''What makes a pizza good?'', ''What role does pizza play in Brooklyn life?'',
+  ''More questions: [Does having a pizzeria in your neighborhood make you feel more
+  safe? (for example, if you are walking home late at night and they happen to be
+  open late)]'', ''Does the presence of a pizzeria give you a better feeling about
+  your community'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Residents of Brooklyn, Pizzeria owners, Urban planners
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Summarization of data
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To provide an overview of various factors that contribute to a good pizza, its significance
+  in Brooklyn lifestyle, and its impact on feelings of safety and community
+
+  <end of purpose>'
+07_questions: '1. What color scheme do you prefer for the treemap?
+
+  2. Do you have a specific font style and size preference for the text used in the
+  treemap?
+
+  3. How would you like to handle the labels for categories and subcategories in the
+  treemap?
+
+  4. Would you prefer a specific layout for the treemap, such as a squarified or slice-and-dice
+  layout?
+
+  5. Is there a particular way you want the data to be aggregated or summarized within
+  the treemap?
+
+  6. Are there any specific legends or annotations you would like to include in the
+  treemap to aid in understanding?
+
+  7. Do you have any preferences on how to handle missing values in the dataset for
+  the visualization?
+
+  8. Would you like to incorporate any specific icons or images to represent different
+  categories within the treemap?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\n\"Create a treemap showing what makes a pizza good, the\
+  \ role it plays in Brooklyn life, and feelings of safety and community with pizzerias\
+  \ in the neighborhood.\"\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 25% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nTo provide an overview of various factors that contribute\
+  \ to a good pizza, its significance in Brooklyn lifestyle, and its impact on feelings\
+  \ of safety and community\n<end of purpose>\n\n<start service provider message>\n\
+  1. What color scheme do you prefer for the treemap?\n2. Do you have a specific font\
+  \ style and size preference for the text used in the treemap?\n3. How would you\
+  \ like to handle the labels for categories and subcategories in the treemap?\n4.\
+  \ Would you prefer a specific layout for the treemap, such as a squarified or slice-and-dice\
+  \ layout?\n5. Is there a particular way you want the data to be aggregated or summarized\
+  \ within the treemap?\n6. Are there any specific legends or annotations you would\
+  \ like to include in the treemap to aid in understanding?\n7. Do you have any preferences\
+  \ on how to handle missing values in the dataset for the visualization?\n8. Would\
+  \ you like to incorporate any specific icons or images to represent different categories\
+  \ within the treemap?\n<end service provider message>\n\nAlso, remember that the\
+  \ service provider can not see the image you have access to.\nYour response should\
+  \ ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. I prefer a squarified layout.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I am not sure.'

@@ -1,0 +1,84 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Line chart
+
+  * Box chart
+
+  * Histogram'
+- 939
+- 917
+- 22
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 759
+- 621
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/231.csv': {'summary': {'Column':\
+  \ ['title', 'author', 'date', 'views', 'likes', 'link'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('O')], 'Missing\
+  \ Values': [0, 1, 0, 0, 0, 0], 'Unique Values': [5440, 4443, 200, 973, 753, 5440]},\
+  \ 'sample_data': {'title': ['Climate action needs new frontline leadership', 'The\
+  \ dark history of the overthrow of Hawaii', 'How play can spark new ideas for your\
+  \ business'], 'author': ['Ozawa Bineshi Albert', 'Sydney Iaukea', 'Martin Reeves'],\
+  \ 'date': ['December 2021', 'February 2022', 'September 2021'], 'views': [404000,\
+  \ 214000, 412000], 'likes': [12000, 6400, 12000], 'link': ['https://ted.com/talks/ozawa_bineshi_albert_climate_action_needs_new_frontline_leadership',\
+  \ 'https://ted.com/talks/sydney_iaukea_the_dark_history_of_the_overthrow_of_hawaii',\
+  \ 'https://ted.com/talks/martin_reeves_how_play_can_spark_new_ideas_for_your_business']}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '2. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nTED Talks\neducation\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Bar chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Bar chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Bar chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Box chart'
+- '* Histogram'
+- '* Heatmap'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Create a bar chart to visualize the number of views and likes of TED Talks from
+  the provided data. Use different colors to distinguish between 'views' and 'likes.'
+  Add text annotations for the highest data points in both views and likes to focus
+  attention. Highlight the titles of the top three most-viewed talks to make them
+  stand out. This will help understand audience engagement and popularity trends.
+  The chart should emphasize how play, history, and leadership gain traction within
+  the TED Talks community, providing useful insights for educational purposes. Ensure
+  that it is visually appealing and easy to interpret.
+- 804
+- 690
+- 114

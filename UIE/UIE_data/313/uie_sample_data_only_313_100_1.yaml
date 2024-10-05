@@ -1,0 +1,214 @@
+02_initial_prompt: Create a Treemap chart displaying the world population by country/territory
+  from 1970 to 2022. Highlight countries with the largest and smallest populations
+  in 2022. Include text annotations for notable population growth rates and densities.
+  The purpose of this visualization is to provide an overview of population distribution
+  and growth trends globally. Ensuring the visualization is informative for social
+  science research on global population dynamics would be helpful. Make sure the chart
+  is visually engaging and emphasizes significant data points to facilitate better
+  understanding and analysis.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a Treemap chart displaying the world population\
+  \ by country/territory from 1970 to 2022. Highlight countries with the largest and\
+  \ smallest populations in 2022. Include text annotations for notable population\
+  \ growth rates and densities. The purpose of this visualization is to provide an\
+  \ overview of population distribution and growth trends globally. Ensuring the visualization\
+  \ is informative for social science research on global population dynamics would\
+  \ be helpful. Make sure the chart is visually engaging and emphasizes significant\
+  \ data points to facilitate better understanding and analysis.\n<end of user request>\n\
+  \n<start of data format>\n{'../Extra_datas/data/313.csv': {'summary': {'Column':\
+  \ ['CCA3', 'Continent', 'Country/Territory', '2022 Population', '2020 Population',\
+  \ '2015 Population', '2010 Population', '2000 Population', '1990 Population', '1980\
+  \ Population', '1970 Population', 'Area (km\xB2)', 'Density (per km\xB2)', 'Growth\
+  \ Rate', 'World Population Percentage', 'Unnamed: 15'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 233],\
+  \ 'Unique Values': [234, 6, 233, 234, 234, 234, 234, 234, 234, 234, 234, 233, 171,\
+  \ 9, 70, 1]}, 'sample_data': {'CCA3': ['AFG', 'ALB', 'DZA'], 'Continent': ['Asia',\
+  \ 'Europe', 'Africa'], 'Country/Territory': ['Afghanistan', 'Albania', 'Algeria'],\
+  \ '2022 Population': ['41,128,771', '2,842,321', '44,903,225'], '2020 Population':\
+  \ ['38,972,230', '2,866,849', '43,451,666'], '2015 Population': ['33,753,499', '2,882,481',\
+  \ '39,543,154'], '2010 Population': ['28,189,672', '2,913,399', '35,856,344'], '2000\
+  \ Population': ['19,542,982', '3,182,021', '30,774,621'], '1990 Population': ['10,694,796',\
+  \ '3,295,066', '25,518,074'], '1980 Population': ['12,486,631', '2,941,651', '18,739,378'],\
+  \ '1970 Population': ['10,752,971', '2,324,731', '13,795,915'], 'Area (km\xB2)':\
+  \ ['652,230', '28,748', '2,381,741'], 'Density (per km\xB2)': ['63 km\xB2', '99\
+  \ km\xB2', '19 km\xB2'], 'Growth Rate': ['103%', '100%', '102%'], 'World Population\
+  \ Percentage': ['52.0%', '4.0%', '56.0%'], 'Unnamed: 15': ['1,425,887,337.00', nan,\
+  \ nan]}}}\n<end of data format>\n\n<start of various task types>\n{'Show External\
+  \ Context': 'Uncaptured data provided by the self-tracker to understand and explain\
+  \ a phenomenon shown in the data', 'Show Confirmation': 'Collected data confirms\
+  \ existing knowledge', 'Show Contradiction': 'Collected data contradicts existing\
+  \ knowledge', 'Focus on Identifying value': 'Explicitly specify the measured value,\
+  \ its range for one or more clearly identified data points, or the difference between\
+  \ two measured values', 'Focus on Identifying extreme': 'Explicitly state the identities\
+  \ of the data points possessing extreme values of the measure variable', 'Focus\
+  \ on Identifying references': 'Explicitly state the values of categorical variables,\
+  \ labels from the axes, or legends', 'Comparison by Time Segmentation': 'Compare\
+  \ measured values segmented by time', 'Comparison by Multiple services': 'Compare\
+  \ the same data type from two or more services', 'Comparison against external data':\
+  \ 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare measured\
+  \ values by a factor (other than time)', 'Comparison By Instances': 'Compare two\
+  \ specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute']. Data attributes\
+  \ MUST match exactly the column names of the data.\nStore the selected task from\
+  \ the task types in query['Task'].\nStore the purpose of visualization in query['Purpose'].\n\
+  Store the prospective audience in query['Audience'].\n\nPlease reply in the same\
+  \ format without altering the key value.\n{'Data Attribute': None, 'Task': None,\
+  \ 'Purpose': None, 'Audience': None}\nBut, please make sure there is no ' in each\
+  \ keys and values. Use only \" for the response. But when you write a value sentence\
+  \ or each data attribute's title, you only can use '. Unless you are writing a sentence\
+  \ or each data attribute's title, you should never include ' in response. If there\
+  \ are multiple pieces of data, there is no need to reveal which file each is. Please\
+  \ consider that JSON conversion must be done properly."
+04_response_w_attributes_task_purpose: "{\n\"Data Attribute\": [\"Country/Territory\"\
+  , \"2022 Population\", \"1970 Population\", \"1980 Population\", \"1990 Population\"\
+  , \"2000 Population\", \"2010 Population\", \"2015 Population\", \"2020 Population\"\
+  , \"Area (km\xB2)\", \"Density (per km\xB2)\", \"Growth Rate\"],\n\"Task\": \"Show\
+  \ Trend\",\n\"Purpose\": \"To provide an overview of population distribution and\
+  \ growth trends globally\",\n\"Audience\": \"Researchers in social science studying\
+  \ global population dynamics\"\n}"
+05_audience: Researchers in social science studying global population dynamics
+05_data_attributes:
+- Country/Territory
+- 2022 Population
+- 1970 Population
+- 1980 Population
+- 1990 Population
+- 2000 Population
+- 2010 Population
+- 2015 Population
+- 2020 Population
+- "Area (km\xB2)"
+- "Density (per km\xB2)"
+- Growth Rate
+05_purpose: To provide an overview of population distribution and growth trends globally
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/313.csv':\
+  \ {'summary': {'Column': ['CCA3', 'Continent', 'Country/Territory', '2022 Population',\
+  \ '2020 Population', '2015 Population', '2010 Population', '2000 Population', '1990\
+  \ Population', '1980 Population', '1970 Population', 'Area (km\xB2)', 'Density (per\
+  \ km\xB2)', 'Growth Rate', 'World Population Percentage', 'Unnamed: 15'], 'Data\
+  \ Type': [dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 233], 'Unique Values': [234, 6, 233, 234, 234, 234, 234,\
+  \ 234, 234, 234, 234, 233, 171, 9, 70, 1]}, 'sample_data': {'CCA3': ['AFG', 'ALB',\
+  \ 'DZA'], 'Continent': ['Asia', 'Europe', 'Africa'], 'Country/Territory': ['Afghanistan',\
+  \ 'Albania', 'Algeria'], '2022 Population': ['41,128,771', '2,842,321', '44,903,225'],\
+  \ '2020 Population': ['38,972,230', '2,866,849', '43,451,666'], '2015 Population':\
+  \ ['33,753,499', '2,882,481', '39,543,154'], '2010 Population': ['28,189,672', '2,913,399',\
+  \ '35,856,344'], '2000 Population': ['19,542,982', '3,182,021', '30,774,621'], '1990\
+  \ Population': ['10,694,796', '3,295,066', '25,518,074'], '1980 Population': ['12,486,631',\
+  \ '2,941,651', '18,739,378'], '1970 Population': ['10,752,971', '2,324,731', '13,795,915'],\
+  \ 'Area (km\xB2)': ['652,230', '28,748', '2,381,741'], 'Density (per km\xB2)': ['63\
+  \ km\xB2', '99 km\xB2', '19 km\xB2'], 'Growth Rate': ['103%', '100%', '102%'], 'World\
+  \ Population Percentage': ['52.0%', '4.0%', '56.0%'], 'Unnamed: 15': ['1,425,887,337.00',\
+  \ nan, nan]}}}\n<end of data format>\n\n<start of data visualization instruction>\n\
+  Create a Treemap chart displaying the world population by country/territory from\
+  \ 1970 to 2022. Highlight countries with the largest and smallest populations in\
+  \ 2022. Include text annotations for notable population growth rates and densities.\
+  \ The purpose of this visualization is to provide an overview of population distribution\
+  \ and growth trends globally. Ensuring the visualization is informative for social\
+  \ science research on global population dynamics would be helpful. Make sure the\
+  \ chart is visually engaging and emphasizes significant data points to facilitate\
+  \ better understanding and analysis.\n<end of data visualization instruction>\n\n\
+  <start of data attributes>\n['Country/Territory', '2022 Population', '1970 Population',\
+  \ '1980 Population', '1990 Population', '2000 Population', '2010 Population', '2015\
+  \ Population', '2020 Population', 'Area (km\xB2)', 'Density (per km\xB2)', 'Growth\
+  \ Rate']\n<end of data attributes>\n\n<start of prospective audience>\nResearchers\
+  \ in social science studying global population dynamics\n<end of prospective audience>\n\
+  \n<start of type of tasks>\nShow Trend\n<end of type of tasks>\n\n<start of purpose>\n\
+  To provide an overview of population distribution and growth trends globally\n<end\
+  \ of purpose>"
+07_questions: '1. Do you have a preferred color scheme for highlighting the largest
+  and smallest populations?
+
+  2. Should the chart include a legend to explain the color coding and size representation?
+
+  3. Where would you like the text annotations for notable population growth rates
+  and densities to be placed?
+
+  4. Do you want to use specific fonts or styles for the text annotations?
+
+  5. Would you prefer the treemap to be sorted in any specific order (e.g., by 2022
+  population size)?
+
+  6. How would you like to display changes in population over the years; should there
+  be a gradient or another visual indicator?
+
+  7. Do you want to include any interactive elements like tooltips to show additional
+  details on hover?
+
+  8. Should the countries/territories be grouped by continent or any other specific
+  category?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a Treemap chart displaying the world population\
+  \ by country/territory from 1970 to 2022. Highlight countries with the largest and\
+  \ smallest populations in 2022. Include text annotations for notable population\
+  \ growth rates and densities. The purpose of this visualization is to provide an\
+  \ overview of population distribution and growth trends globally. Ensuring the visualization\
+  \ is informative for social science research on global population dynamics would\
+  \ be helpful. Make sure the chart is visually engaging and emphasizes significant\
+  \ data points to facilitate better understanding and analysis.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nTo provide an overview\
+  \ of population distribution and growth trends globally\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have a preferred color scheme for highlighting\
+  \ the largest and smallest populations?\n2. Should the chart include a legend to\
+  \ explain the color coding and size representation?\n3. Where would you like the\
+  \ text annotations for notable population growth rates and densities to be placed?\n\
+  4. Do you want to use specific fonts or styles for the text annotations?\n5. Would\
+  \ you prefer the treemap to be sorted in any specific order (e.g., by 2022 population\
+  \ size)?\n6. How would you like to display changes in population over the years;\
+  \ should there be a gradient or another visual indicator?\n7. Do you want to include\
+  \ any interactive elements like tooltips to show additional details on hover?\n\
+  8. Should the countries/territories be grouped by continent or any other specific\
+  \ category?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. Yes, the chart should include a legend to explain the color coding and size representation.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, the treemap should be sorted by 2022 population size.
+
+  6. I am not sure.
+
+  7. No, I am looking for an image, not an interactive data visualization.
+
+  8. I am not sure.'

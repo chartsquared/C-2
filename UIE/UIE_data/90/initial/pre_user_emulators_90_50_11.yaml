@@ -1,0 +1,112 @@
+1-1. selected_chart_types: !!python/tuple
+- "Bar chart  \nColumn chart  \nHeatmap  \nBubble chart  \nScatter plot  \nStacked\
+  \ bar/column chart  \nDonut chart  \nArea chart  \nLine chart  \nHistogram  \nBox\
+  \ chart  \nChoropleth map"
+- 1586
+- 1544
+- 42
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n   \n3.\
+  \ Highlights:\nDescription: Highlights modify the appearance of chart elements (e.g.,\
+  \ size, color) to emphasize or reduce their importance.\nPurpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 1397
+- 1257
+- 140
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/90.csv'': {''summary'': {''Column'': [''Entity'', ''Year'',
+  ''Access to electricity (% of population)'', ''Access to clean fuels for cooking'',
+  ''Renewable-electricity-generating-capacity-per-capita'', ''Financial flows to developing
+  countries (US $)'', ''Renewable energy share in the total final energy consumption
+  (%)'', ''Electricity from fossil fuels (TWh)'', ''Electricity from nuclear (TWh)'',
+  ''Electricity from renewables (TWh)'', ''Low-carbon electricity (% electricity)'',
+  ''Primary energy consumption per capita (kWh/person)'', ''Energy intensity level
+  of primary energy (MJ/$2017 PPP GDP)'', ''Value_co2_emissions_kt_by_country'', ''Renewables
+  (% equivalent primary energy)'', ''gdp_growth'', ''gdp_per_capita'', ''Density\\n(P/Km2)'',
+  ''Land Area(Km2)'', ''Latitude'', ''Longitude''], ''Data Type'': [dtype(''O''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 10, 169, 931,
+  2089, 194, 21, 126, 21, 42, 0, 207, 428, 2137, 317, 282, 1, 1, 1, 1], ''Unique Values'':
+  [176, 21, 2040, 896, 2110, 1017, 2587, 1859, 547, 1533, 2647, 3628, 1044, 2397,
+  1455, 3320, 3367, 124, 175, 175, 175]}, ''sample_data'': {''Entity'': [''Afghanistan'',
+  ''Afghanistan'', ''Afghanistan''], ''Year'': [2000, 2001, 2002], ''Access to electricity
+  (% of population)'': [1.613591, 4.074574, 9.409158], ''Access to clean fuels for
+  cooking'': [6.2, 7.2, 8.2], ''Renewable-electricity-generating-capacity-per-capita'':
+  [9.22, 8.86, 8.47], ''Financial flows to developing countries (US $)'': [20000.0,
+  130000.0, 3950000.0], ''Renewable energy share in the total final energy consumption
+  (%)'': [44.99, 45.6, 37.83], ''Electricity from fossil fuels (TWh)'': [0.16, 0.09,
+  0.13], ''Electricity from nuclear (TWh)'': [0.0, 0.0, 0.0], ''Electricity from renewables
+  (TWh)'': [0.31, 0.5, 0.56], ''Low-carbon electricity (% electricity)'': [65.95744,
+  84.745766, 81.159424], ''Primary energy consumption per capita (kWh/person)'': [302.59482,
+  236.89185, 210.86215], ''Energy intensity level of primary energy (MJ/$2017 PPP
+  GDP)'': [1.64, 1.74, 1.4], ''Value_co2_emissions_kt_by_country'': [760.0, 730.0,
+  1029.999971], ''Renewables (% equivalent primary energy)'': [nan, nan, nan], ''gdp_growth'':
+  [nan, nan, nan], ''gdp_per_capita'': [nan, nan, 179.4265792], ''Density\\n(P/Km2)'':
+  [''60'', ''60'', ''60''], ''Land Area(Km2)'': [652230.0, 652230.0, 652230.0], ''Latitude'':
+  [33.93911, 33.93911, 33.93911], ''Longitude'': [67.709953, 67.709953, 67.709953]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Global Data on Sustainable Energy (2000-2020)
+
+  energy
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with Line chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with Line chart that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- Column chart
+- Histogram
+- Scatter plot
+- Bar chart
+- Bubble chart
+- Stacked bar/column chart
+- Area chart
+- Box chart
+- Heatmap
+- Choropleth map
+- Donut chart
+- Line chart
+2. initial_prompt: !!python/tuple
+- Create a line chart to visualize the "Access to electricity (% of population)" over
+  the years for different countries from the Global Data on Sustainable Energy (2000-2020).
+- 1165
+- 1130
+- 35

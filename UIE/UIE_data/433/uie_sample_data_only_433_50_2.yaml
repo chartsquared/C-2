@@ -1,0 +1,246 @@
+02_initial_prompt: Create a histogram visualizing the distribution of total_barrels
+  across different brewer_sizes from 2009 data on craft beer production. Include text
+  annotations for the highest and lowest values to highlight extremes.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a histogram visualizing the distribution of total_barrels across different
+  brewer_sizes from 2009 data on craft beer production. Include text annotations for
+  the highest and lowest values to highlight extremes.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/433.csv'': {''summary'': {''Column'': [''year'', ''brewer_size'',
+  ''n_of_brewers'', ''total_barrels'', ''taxable_removals'', ''total_shipped''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 1, 0, 2], ''Unique Values'':
+  [11, 16, 88, 136, 137, 135]}, ''sample_data'': {''year'': [2009, 2009, 2009], ''brewer_size'':
+  [''6,000,001 Barrels and Over'', ''1,000,001 to 6,000,000 Barrels'', ''500,001 to
+  1,000,000 Barrels''], ''n_of_brewers'': [18, 4, 7], ''total_barrels'': [171232881.59,
+  9970404.28, 4831385.68], ''taxable_removals'': [159643984.23, 9592722.75, 4535659.48],
+  ''total_shipped'': [3639970.0, 14548.0, 21563.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["year", "brewer_size", "total_barrels"],
+
+  "Task": "Focus on Identifying extreme",
+
+  "Purpose": "Highlight the distribution of total_barrels across different brewer_sizes
+  and emphasize the extreme values",
+
+  "Audience": "Craft beer industry analysts, brewery business owners, and beer enthusiasts"
+
+  }'
+05_audience: Craft beer industry analysts, brewery business owners, and beer enthusiasts
+05_data_attributes:
+- year
+- brewer_size
+- total_barrels
+05_purpose: Highlight the distribution of total_barrels across different brewer_sizes
+  and emphasize the extreme values
+05_task: Focus on Identifying extreme
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/433.csv'': {''summary'': {''Column'': [''year'', ''brewer_size'',
+  ''n_of_brewers'', ''total_barrels'', ''taxable_removals'', ''total_shipped''], ''Data
+  Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 1, 0, 2], ''Unique Values'':
+  [11, 16, 88, 136, 137, 135]}, ''sample_data'': {''year'': [2009, 2009, 2009], ''brewer_size'':
+  [''6,000,001 Barrels and Over'', ''1,000,001 to 6,000,000 Barrels'', ''500,001 to
+  1,000,000 Barrels''], ''n_of_brewers'': [18, 4, 7], ''total_barrels'': [171232881.59,
+  9970404.28, 4831385.68], ''taxable_removals'': [159643984.23, 9592722.75, 4535659.48],
+  ''total_shipped'': [3639970.0, 14548.0, 21563.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a histogram visualizing the distribution of total_barrels across different
+  brewer_sizes from 2009 data on craft beer production. Include text annotations for
+  the highest and lowest values to highlight extremes.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''year'', ''brewer_size'', ''total_barrels'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Craft beer industry analysts, brewery business owners, and beer enthusiasts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying extreme
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight the distribution of total_barrels across different brewer_sizes and emphasize
+  the extreme values
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific preferences for the color scheme of the
+  histogram?
+
+  2. What style or format of text annotations would you prefer for highlighting the
+  highest and lowest values (e.g., color, font size, bold)?
+
+  3. Do you have a preferred bin size or number of bins for the histogram?
+
+  4. Would you like gridlines to be included in the histogram?
+
+  5. Should the histogram include any labels or titles for the x-axis and y-axis?
+  If so, what specific labels or titles would you prefer?
+
+  6. Is there a preferred aspect ratio or specific dimensions you would like the chart
+  to adhere to?
+
+  7. Would you like a legend to be included in the histogram, or is it unnecessary?
+
+  8. Are there any specific fonts or font sizes you prefer for the axis labels and
+  title?
+
+  9. Should there be any additional annotations or markers, aside from the highest
+  and lowest values, to highlight other significant points or ranges?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a histogram visualizing the distribution of total_barrels\
+  \ across different brewer_sizes from 2009 data on craft beer production. Include\
+  \ text annotations for the highest and lowest values to highlight extremes.\n<end\
+  \ of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nHighlight the distribution of total_barrels across different brewer_sizes\
+  \ and emphasize the extreme values\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have any specific preferences for the color scheme of the\
+  \ histogram?\n2. What style or format of text annotations would you prefer for highlighting\
+  \ the highest and lowest values (e.g., color, font size, bold)?\n3. Do you have\
+  \ a preferred bin size or number of bins for the histogram?\n4. Would you like gridlines\
+  \ to be included in the histogram?\n5. Should the histogram include any labels or\
+  \ titles for the x-axis and y-axis? If so, what specific labels or titles would\
+  \ you prefer?\n6. Is there a preferred aspect ratio or specific dimensions you would\
+  \ like the chart to adhere to?\n7. Would you like a legend to be included in the\
+  \ histogram, or is it unnecessary?\n8. Are there any specific fonts or font sizes\
+  \ you prefer for the axis labels and title?\n9. Should there be any additional annotations\
+  \ or markers, aside from the highest and lowest values, to highlight other significant\
+  \ points or ranges?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. Yes, include gridlines.
+
+  5. Yes, please include labels. X-axis: "Brewer Sizes", Y-axis: "Total Barrels Produced".
+  Title: "Distribution of Total Barrels Across Brewer Sizes (2009)"
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. No, just highlight the highest and lowest values.'

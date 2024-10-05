@@ -1,0 +1,174 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Line chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Radar chart
+
+  * Stacked area chart
+
+  * Pie chart
+
+  * Box chart'
+- 3872
+- 3835
+- 37
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\nText Annotations:\nDescription: Data-driven text\
+  \ annotations display values linked to chart elements, such as data points in a\
+  \ scatterplot. They draw attention to specific elements by highlighting their values.\n\
+  Purpose: When only some elements are annotated, the intent is to focus the viewer\u2019\
+  s attention on those before examining others.\nOther Uses: Non-data-driven annotations\
+  \ can provide context, orientation, or editorial comments.\n\nHighlights:\nDescription:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.\nPurpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually\n<end of the annotation list>"
+- 3678
+- 3544
+- 134
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/280.csv': {'summary': {'Column':\
+  \ ['index', 'Year', 'Christianity - Protestants (Population)', 'Christianity - Roman\
+  \ Catholics (Population)', 'Christianity - Eastern Orthodox (Population)', 'Christianity\
+  \ - Anglican (Population)', 'Christianity - Others (Population)', 'Christianity\
+  \ - Total (Population)', 'Judaism - Orthodox (Population)', 'Judaism - Conservatives\
+  \ (Population)', 'Judaism - Reform (Population)', 'Judaism - Others (Population)',\
+  \ 'Judaism - Total (Population)', 'Islam - Sunni (Population)', \"Islam - Shi'a\
+  \ (Population)\", 'Islam - Ibadhi (Population)', 'Islam - Nation of Islam (Population)',\
+  \ 'Islam - Alawite (Population)', 'Islam - Ahmadiyya (Population)', 'Islam - Others\
+  \ (Population)', 'Islam - Total (Population)', 'Buddhism - Mahayana (Population)',\
+  \ 'Buddhism - Theravada (Population)', 'Buddhism - Others (Population)', 'Buddhism\
+  \ - Total (Population)', 'Zoroastrian - Total (Population)', 'Hindu - Total (Population)',\
+  \ 'Sike - Total (Population)', 'Shinto - Total (Population)', \"Baha'i - Total (Population)\"\
+  , 'Taoism - Total (Population)', 'Confucianism - Total (Population)', 'Jain - Total\
+  \ (Population)', 'Syncretic Religions - Total (Population)', 'Animist - Total (Population)',\
+  \ 'Non Religious - Total (Population)', 'Other Religions - Total (Population)',\
+  \ 'Total Religious - Total (Population)', 'Population - Total (Population)', 'Christianity\
+  \ - Protestants (Percent)', 'Christianity - Roman Catholics (Percent)', 'Christianity\
+  \ - Eastern Orthodox (Percent)', 'Christianity - Anglican (Percent)', 'Christianity\
+  \ - Others (Percent)', 'Christianity - Total (Percent)', 'Judaism - Orthodox (Percent)',\
+  \ 'Judaism - Conservatives (Percent)', 'Judaism - Reform (Percent)', 'Judaism -\
+  \ Others (Percent)', 'Judaism - Total (Percent)', 'Islam - Sunni (Percent)', \"\
+  Islam - Shi'a (Percent)\", 'Islam - Ibadhi (Percent)', 'Islam - Nation of Islam\
+  \ (Percent)', 'Islam - Alawite (Percent)', 'Islam - Ahmadiyya (Percent)', 'Islam\
+  \ - Others (Percent)', 'Islam - Total (Percent)', 'Buddhism - Mahayana (Percent)',\
+  \ 'Buddhism - Theravada (Percent)', 'Buddhism - Others (Percent)', 'Buddhism - Total\
+  \ (Percent)', 'Zoroastrian - Total (Percent)', 'Hindu - Total (Percent)', 'Sike\
+  \ - Total (Percent)', 'Shinto - Total (Percent)', \"Baha'i - Total (Percent)\",\
+  \ 'Taoism - Total (Percent)', 'Confucianism - Total (Percent)', 'Jain - Total (Percent)',\
+  \ 'Syncretic Religions - Total (Percent)', 'Animist - Total (Percent)', 'Non Religious\
+  \ - Total (Percent)', 'Other Religions - Total (Percent)', 'Total Religious - Total\
+  \ (Percent)', 'StateNme'], 'Data Type': [dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('float64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('float64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('int64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('O')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0,\
+  \ 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values':\
+  \ [2308, 14, 1667, 1812, 978, 884, 1269, 1955, 42, 42, 42, 817, 830, 568, 337, 11,\
+  \ 1, 22, 37, 1015, 1537, 16, 36, 794, 824, 154, 695, 310, 55, 932, 108, 125, 91,\
+  \ 571, 980, 1444, 1851, 1995, 1900, 959, 1170, 404, 375, 645, 1502, 35, 29, 31,\
+  \ 122, 155, 449, 208, 1, 1, 19, 21, 541, 851, 14, 1, 240, 268, 18, 258, 62, 11,\
+  \ 142, 38, 20, 43, 140, 591, 710, 521, 562, 200]}, 'sample_data': {'index': [0,\
+  \ 1, 2], 'Year': [1945, 1950, 1955], 'Christianity - Protestants (Population)':\
+  \ [66069671, 73090083, 79294628], 'Christianity - Roman Catholics (Population)':\
+  \ [38716742, 42635882, 46402368], 'Christianity - Eastern Orthodox (Population)':\
+  \ [1121898, 3045420, 3454916], 'Christianity - Anglican (Population)': [2400000,\
+  \ 3045420, 2572767], 'Christianity - Others (Population)': [1956807, 1177214, 2277091],\
+  \ 'Christianity - Total (Population)': [110265118, 122994019, 134001770], 'Judaism\
+  \ - Orthodox (Population)': [821489, 1078078, 944000], 'Judaism - Conservatives\
+  \ (Population)': [1364508, 1790706, 1568000], 'Judaism - Reform (Population)': [1902885.0,\
+  \ 2497244.0, 2186666.0], 'Judaism - Others (Population)': [552300, 724809, 634666],\
+  \ 'Judaism - Total (Population)': [4641182, 6090837, 5333332], 'Islam - Sunni (Population)':\
+  \ [0, 0, 0], \"Islam - Shi'a (Population)\": [0, 0, 0], 'Islam - Ibadhi (Population)':\
+  \ [0, 0, 0], 'Islam - Nation of Islam (Population)': [0, 0, 0], 'Islam - Alawite\
+  \ (Population)': [0, 0, 0], 'Islam - Ahmadiyya (Population)': [0, 0, 0], 'Islam\
+  \ - Others (Population)': [0.0, 0.0, 0.0], 'Islam - Total (Population)': [0, 0,\
+  \ 0], 'Buddhism - Mahayana (Population)': [0, 0, 0], 'Buddhism - Theravada (Population)':\
+  \ [0, 0, 0], 'Buddhism - Others (Population)': [1601218, 0, 90173], 'Buddhism -\
+  \ Total (Population)': [1601218, 0, 90173], 'Zoroastrian - Total (Population)':\
+  \ [0, 0, 0], 'Hindu - Total (Population)': [0, 0, 0], 'Sike - Total (Population)':\
+  \ [0, 0, 0], 'Shinto - Total (Population)': [0, 0, 0], \"Baha'i - Total (Population)\"\
+  : [0, 0, 0], 'Taoism - Total (Population)': [0, 0, 0], 'Confucianism - Total (Population)':\
+  \ [0, 0, 0], 'Jain - Total (Population)': [0, 0, 0], 'Syncretic Religions - Total\
+  \ (Population)': [0, 0, 0], 'Animist - Total (Population)': [0, 0, 0], 'Non Religious\
+  \ - Total (Population)': [22874544, 22568130, 23303540], 'Other Religions - Total\
+  \ (Population)': [545938, 618022, 3202185], 'Total Religious - Total (Population)':\
+  \ [139382062, 151652986, 162728815], 'Population - Total (Population)': [139928000,\
+  \ 152271008, 165931000], 'Christianity - Protestants (Percent)': [0.4722, 0.48,\
+  \ 0.4779], 'Christianity - Roman Catholics (Percent)': [0.2767, 0.28, 0.2796], 'Christianity\
+  \ - Eastern Orthodox (Percent)': [0.008, 0.02, 0.0208], 'Christianity - Anglican\
+  \ (Percent)': [0.0172, 0.02, 0.0155], 'Christianity - Others (Percent)': [0.014,\
+  \ 0.0077, 0.0137], 'Christianity - Total (Percent)': [0.788, 0.8077, 0.8076], 'Judaism\
+  \ - Orthodox (Percent)': [0.0059, 0.0071, 0.0057], 'Judaism - Conservatives (Percent)':\
+  \ [0.0098, 0.0118, 0.0094], 'Judaism - Reform (Percent)': [0.0136, 0.0164, 0.0132],\
+  \ 'Judaism - Others (Percent)': [0.0039, 0.0048, 0.0038], 'Judaism - Total (Percent)':\
+  \ [0.0332, 0.04, 0.0321], 'Islam - Sunni (Percent)': [0.0, 0.0, 0.0], \"Islam -\
+  \ Shi'a (Percent)\": [0.0, 0.0, 0.0], 'Islam - Ibadhi (Percent)': [0.0, 0.0, 0.0],\
+  \ 'Islam - Nation of Islam (Percent)': [0, 0, 0], 'Islam - Alawite (Percent)': [0.0,\
+  \ 0.0, 0.0], 'Islam - Ahmadiyya (Percent)': [0.0, 0.0, 0.0], 'Islam - Others (Percent)':\
+  \ [0.0, 0.0, 0.0], 'Islam - Total (Percent)': [0.0, 0.0, 0.0], 'Buddhism - Mahayana\
+  \ (Percent)': [0.0, 0.0, 0.0], 'Buddhism - Theravada (Percent)': [0.0, 0.0, 0.0],\
+  \ 'Buddhism - Others (Percent)': [0.0114, 0.0, 0.0005], 'Buddhism - Total (Percent)':\
+  \ [0.0114, 0.0, 0.0005], 'Zoroastrian - Total (Percent)': [0.0, 0.0, 0.0], 'Hindu\
+  \ - Total (Percent)': [0.0, 0.0, 0.0], 'Sike - Total (Percent)': [0.0, 0.0, 0.0],\
+  \ 'Shinto - Total (Percent)': [0.0, 0.0, 0.0], \"Baha'i - Total (Percent)\": [0.0,\
+  \ 0.0, 0.0], 'Taoism - Total (Percent)': [0.0, 0.0, 0.0], 'Confucianism - Total\
+  \ (Percent)': [0.0, 0.0, 0.0], 'Jain - Total (Percent)': [0.0, 0.0, 0.0], 'Syncretic\
+  \ Religions - Total (Percent)': [0.0, 0.0, 0.0], 'Animist - Total (Percent)': [0.0,\
+  \ 0.0, 0.0], 'Non Religious - Total (Percent)': [0.1635, 0.1482, 0.1404], 'Other\
+  \ Religions - Total (Percent)': [0.0039, 0.0041, 0.0193], 'Total Religious - Total\
+  \ (Percent)': [0.9961, 0.9959, 0.9807], 'StateNme': ['United States of America',\
+  \ 'United States of America', 'United States of America']}}}\n<end of data example\
+  \ format>\n\n<start of annotations format>\n['<start of the annotation list>', 'Text\
+  \ Annotations:', 'Description: Data-driven text annotations display values linked\
+  \ to chart elements, such as data points in a scatterplot. They draw attention to\
+  \ specific elements by highlighting their values.', 'Purpose: When only some elements\
+  \ are annotated, the intent is to focus the viewer\u2019s attention on those before\
+  \ examining others.', 'Other Uses: Non-data-driven annotations can provide context,\
+  \ orientation, or editorial comments.', 'Highlights:', 'Description: Highlights\
+  \ modify the appearance of chart elements (e.g., size, color) to emphasize or reduce\
+  \ their importance.', 'Purpose: Used to distinguish certain elements from others,\
+  \ making them stand out visually', '<end of the annotation list>']\n<end of annotations\
+  \ format>\n\n<start of data details format>\nReligious Populations Worldwide\nsocial-science\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Pie chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Pie chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 50 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Grouped bar/column chart'
+- '* Scatter plot'
+- '* Pie chart'
+2. initial_prompt: !!python/tuple
+- "Please create a pie chart visualizing the religious populations in the United States\
+  \ from 1945 to 1955. Highlight the major religions\u2019 share and annotate significant\
+  \ changes over the years. Include Protestant, Roman Catholic, Judaism, Buddhism,\
+  \ and Non-religious categories for easy comparison. The visualization should effectively\
+  \ show the proportion of each religion in relation to the total population."
+- 3683
+- 3609
+- 74

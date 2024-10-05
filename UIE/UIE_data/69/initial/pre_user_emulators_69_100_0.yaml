@@ -1,0 +1,94 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1308
+- 1281
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1133
+- 994
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/69.csv': {'summary': {'Column':\
+  \ ['bytes_in', 'bytes_out', 'creation_time', 'end_time', 'src_ip', 'src_ip_country_code',\
+  \ 'protocol', 'response.code', 'dst_port', 'dst_ip', 'rule_names', 'observation_name',\
+  \ 'source.meta', 'source.name', 'time', 'detection_types'], 'Data Type': [dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\
+  \ 'Unique Values': [260, 239, 30, 30, 28, 7, 1, 1, 1, 1, 1, 1, 1, 1, 30, 1]}, 'sample_data':\
+  \ {'bytes_in': [5602, 30912, 28506], 'bytes_out': [12990, 18186, 13468], 'creation_time':\
+  \ ['2024-04-25T23:00:00Z', '2024-04-25T23:00:00Z', '2024-04-25T23:00:00Z'], 'end_time':\
+  \ ['2024-04-25T23:10:00Z', '2024-04-25T23:10:00Z', '2024-04-25T23:10:00Z'], 'src_ip':\
+  \ ['147.161.161.82', '165.225.33.6', '165.225.212.255'], 'src_ip_country_code':\
+  \ ['AE', 'US', 'CA'], 'protocol': ['HTTPS', 'HTTPS', 'HTTPS'], 'response.code':\
+  \ [200, 200, 200], 'dst_port': [443, 443, 443], 'dst_ip': ['10.138.69.97', '10.138.69.97',\
+  \ '10.138.69.97'], 'rule_names': ['Suspicious Web Traffic', 'Suspicious Web Traffic',\
+  \ 'Suspicious Web Traffic'], 'observation_name': ['Adversary Infrastructure Interaction',\
+  \ 'Adversary Infrastructure Interaction', 'Adversary Infrastructure Interaction'],\
+  \ 'source.meta': ['AWS_VPC_Flow', 'AWS_VPC_Flow', 'AWS_VPC_Flow'], 'source.name':\
+  \ ['prod_webserver', 'prod_webserver', 'prod_webserver'], 'time': ['2024-04-25T23:00:00Z',\
+  \ '2024-04-25T23:00:00Z', '2024-04-25T23:00:00Z'], 'detection_types': ['waf_rule',\
+  \ 'waf_rule', 'waf_rule']}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '2. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nCybersecurity: Suspicious Web Threat Interactions\n\
+  cybersecurity\n<end of data details format>\n\nGiven a data format, imagine a chart\
+  \ that visualizes this data as the final output you want from the service provider.\n\
+  Consider what purpose the data has and the practical purpose of visualization and\
+  \ include it in the instructions.\nYou need to imagine a chart with * Geographic\
+  \ heatmap and given annotations that utilizes the data format.\nIf there are multiple\
+  \ given data formats, imagine a chart with * Geographic heatmap and given annotations\
+  \ that utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data.\nTo emulate a real-world user your instruction\
+  \ should be 100 in size (word count). Do not include data path in the instruction.\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Geographic heatmap'
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Geographic heatmap'
+2. initial_prompt: !!python/tuple
+- "Create a geographic heatmap visualizing the volume of web traffic interactions\
+  \ across different countries based on the provided dataset. Highlight regions with\
+  \ high traffic from countries like AE, US, and CA. Annotate specific IP addresses\
+  \ and bytes transferred to draw attention to unusual activity. Use the \u2018Suspicious\
+  \ Web Traffic\u2019 and \u2018Adversary Infrastructure Interaction\u2019 observations\
+  \ to provide context. The goal is to focus on identifying potential cybersecurity\
+  \ threats and their geographical origins, making it easier to spot and address areas\
+  \ of concern. Include necessary color codes to emphasize traffic intensity."
+- 1173
+- 1065
+- 108

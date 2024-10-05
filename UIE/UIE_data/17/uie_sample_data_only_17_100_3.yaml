@@ -1,0 +1,186 @@
+02_initial_prompt: Create a bar chart to visualize the average ratings of books from
+  the provided data. The x-axis should represent the book titles, and the y-axis should
+  show the average ratings. Include titles like "Harry Potter and the Half-Blood Prince,"
+  "Harry Potter and the Order of the Phoenix," and "Harry Potter and the Chamber of
+  Secrets." Use a different color for each bar to distinguish the books easily. Additionally,
+  make sure the chart has appropriate labels and a title, like "Average Ratings of
+  Given Harry Potter Books."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a bar chart to visualize the average ratings of\
+  \ books from the provided data. The x-axis should represent the book titles, and\
+  \ the y-axis should show the average ratings. Include titles like \"Harry Potter\
+  \ and the Half-Blood Prince,\" \"Harry Potter and the Order of the Phoenix,\" and\
+  \ \"Harry Potter and the Chamber of Secrets.\" Use a different color for each bar\
+  \ to distinguish the books easily. Additionally, make sure the chart has appropriate\
+  \ labels and a title, like \"Average Ratings of Given Harry Potter Books.\"\n<end\
+  \ of user request>\n\n<start of data format>\n{'../Extra_datas/data/17.csv': {'summary':\
+  \ {'Column': ['bookID', 'title', 'authors', 'average_rating', 'isbn', 'isbn13',\
+  \ 'language_code', '  num_pages', 'ratings_count', 'text_reviews_count', 'publication_date',\
+  \ 'publisher'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\
+  \ 'Unique Values': [11123, 10348, 6639, 209, 11123, 11123, 27, 997, 5294, 1822,\
+  \ 3679, 2290]}, 'sample_data': {'bookID': [1, 2, 4], 'title': ['Harry Potter and\
+  \ the Half-Blood Prince (Harry Potter  #6)', 'Harry Potter and the Order of the\
+  \ Phoenix (Harry Potter  #5)', 'Harry Potter and the Chamber of Secrets (Harry Potter\
+  \  #2)'], 'authors': ['J.K. Rowling/Mary GrandPr\xE9', 'J.K. Rowling/Mary GrandPr\xE9\
+  ', 'J.K. Rowling'], 'average_rating': [4.57, 4.49, 4.42], 'isbn': ['0439785960',\
+  \ '0439358078', '0439554896'], 'isbn13': [9780439785969, 9780439358071, 9780439554893],\
+  \ 'language_code': ['eng', 'eng', 'eng'], '  num_pages': [652, 870, 352], 'ratings_count':\
+  \ [2095690, 2153167, 6333], 'text_reviews_count': [27591, 29221, 244], 'publication_date':\
+  \ ['9/16/2006', '9/1/2004', '11/1/2003'], 'publisher': ['Scholastic Inc.', 'Scholastic\
+  \ Inc.', 'Scholastic']}}}\n<end of data format>\n\n<start of various task types>\n\
+  {'Show External Context': 'Uncaptured data provided by the self-tracker to understand\
+  \ and explain a phenomenon shown in the data', 'Show Confirmation': 'Collected data\
+  \ confirms existing knowledge', 'Show Contradiction': 'Collected data contradicts\
+  \ existing knowledge', 'Focus on Identifying value': 'Explicitly specify the measured\
+  \ value, its range for one or more clearly identified data points, or the difference\
+  \ between two measured values', 'Focus on Identifying extreme': 'Explicitly state\
+  \ the identities of the data points possessing extreme values of the measure variable',\
+  \ 'Focus on Identifying references': 'Explicitly state the values of categorical\
+  \ variables, labels from the axes, or legends', 'Comparison by Time Segmentation':\
+  \ 'Compare measured values segmented by time', 'Comparison by Multiple services':\
+  \ 'Compare the same data type from two or more services', 'Comparison against external\
+  \ data': 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare\
+  \ measured values by a factor (other than time)', 'Comparison By Instances': 'Compare\
+  \ two specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute'].\nStore the selected\
+  \ task from the task types in query['Task'].\nStore the purpose of visualization\
+  \ in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\n\
+  Please reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"title\", \"average_rating\"\
+  ],\n  \"Task\": \"Comparison By Instances\",\n  \"Purpose\": \"Summarize and compare\
+  \ the average ratings of specific Harry Potter books\",\n  \"Audience\": \"Book\
+  \ readers, Harry Potter fans, literary analysts, and data enthusiasts\"\n}"
+05_audience: Book readers, Harry Potter fans, literary analysts, and data enthusiasts
+05_data_attributes:
+- title
+- average_rating
+05_purpose: Summarize and compare the average ratings of specific Harry Potter books
+05_task: Comparison By Instances
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/17.csv':\
+  \ {'summary': {'Column': ['bookID', 'title', 'authors', 'average_rating', 'isbn',\
+  \ 'isbn13', 'language_code', '  num_pages', 'ratings_count', 'text_reviews_count',\
+  \ 'publication_date', 'publisher'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'),\
+  \ dtype('float64'), dtype('O'), dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0], 'Unique Values': [11123, 10348, 6639, 209, 11123, 11123, 27,\
+  \ 997, 5294, 1822, 3679, 2290]}, 'sample_data': {'bookID': [1, 2, 4], 'title': ['Harry\
+  \ Potter and the Half-Blood Prince (Harry Potter  #6)', 'Harry Potter and the Order\
+  \ of the Phoenix (Harry Potter  #5)', 'Harry Potter and the Chamber of Secrets (Harry\
+  \ Potter  #2)'], 'authors': ['J.K. Rowling/Mary GrandPr\xE9', 'J.K. Rowling/Mary\
+  \ GrandPr\xE9', 'J.K. Rowling'], 'average_rating': [4.57, 4.49, 4.42], 'isbn': ['0439785960',\
+  \ '0439358078', '0439554896'], 'isbn13': [9780439785969, 9780439358071, 9780439554893],\
+  \ 'language_code': ['eng', 'eng', 'eng'], '  num_pages': [652, 870, 352], 'ratings_count':\
+  \ [2095690, 2153167, 6333], 'text_reviews_count': [27591, 29221, 244], 'publication_date':\
+  \ ['9/16/2006', '9/1/2004', '11/1/2003'], 'publisher': ['Scholastic Inc.', 'Scholastic\
+  \ Inc.', 'Scholastic']}}}\n<end of data format>\n\n<start of data visualization\
+  \ instruction>\nCreate a bar chart to visualize the average ratings of books from\
+  \ the provided data. The x-axis should represent the book titles, and the y-axis\
+  \ should show the average ratings. Include titles like \"Harry Potter and the Half-Blood\
+  \ Prince,\" \"Harry Potter and the Order of the Phoenix,\" and \"Harry Potter and\
+  \ the Chamber of Secrets.\" Use a different color for each bar to distinguish the\
+  \ books easily. Additionally, make sure the chart has appropriate labels and a title,\
+  \ like \"Average Ratings of Given Harry Potter Books.\"\n<end of data visualization\
+  \ instruction>\n\n<start of data attributes>\n['title', 'average_rating']\n<end\
+  \ of data attributes>\n\n<start of prospective audience>\nBook readers, Harry Potter\
+  \ fans, literary analysts, and data enthusiasts\n<end of prospective audience>\n\
+  \n<start of type of tasks>\nComparison By Instances\n<end of type of tasks>\n\n\
+  <start of purpose>\nSummarize and compare the average ratings of specific Harry\
+  \ Potter books\n<end of purpose>"
+07_questions: '1. Do you have a preference for the font style and size for the chart''s
+  title and labels?
+
+  2. Would you like to see the average rating values displayed on top of each bar?
+
+  3. Do you have any specific color preferences or themes for distinguishing each
+  bar?
+
+  4. Are there any specific dimensions (width and height) you would like for the chart?
+
+  5. Do you prefer a horizontal or vertical bar chart?
+
+  6. Should the chart include a legend, even though each bar represents a unique book
+  title?
+
+  7. Would you like gridlines on the chart to aid in reading the values, and if so,
+  should they be major or minor gridlines?
+
+  8. Do you have any specific requirements for the format of the y-axis, such as number
+  formatting or scale?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart to visualize the average ratings of\
+  \ books from the provided data. The x-axis should represent the book titles, and\
+  \ the y-axis should show the average ratings. Include titles like \"Harry Potter\
+  \ and the Half-Blood Prince,\" \"Harry Potter and the Order of the Phoenix,\" and\
+  \ \"Harry Potter and the Chamber of Secrets.\" Use a different color for each bar\
+  \ to distinguish the books easily. Additionally, make sure the chart has appropriate\
+  \ labels and a title, like \"Average Ratings of Given Harry Potter Books.\"\n<end\
+  \ of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nSummarize and compare the average ratings of specific Harry Potter books\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have a preference\
+  \ for the font style and size for the chart's title and labels?\n2. Would you like\
+  \ to see the average rating values displayed on top of each bar?\n3. Do you have\
+  \ any specific color preferences or themes for distinguishing each bar?\n4. Are\
+  \ there any specific dimensions (width and height) you would like for the chart?\n\
+  5. Do you prefer a horizontal or vertical bar chart?\n6. Should the chart include\
+  \ a legend, even though each bar represents a unique book title?\n7. Would you like\
+  \ gridlines on the chart to aid in reading the values, and if so, should they be\
+  \ major or minor gridlines?\n8. Do you have any specific requirements for the format\
+  \ of the y-axis, such as number formatting or scale?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, I would like to see the average rating values displayed on top of each bar.
+
+  3. I do not have any specific color preferences or themes.
+
+  4. I am not sure.
+
+  5. I prefer a vertical bar chart.
+
+  6. No, I don''t think a legend is necessary.
+
+  7. Yes, please include gridlines, and I am not sure which type to choose.
+
+  8. I do not have any specific requirements for the y-axis format.'

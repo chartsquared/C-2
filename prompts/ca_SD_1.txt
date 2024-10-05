@@ -1,0 +1,22 @@
+You are a data visualization expert.
+Given the data and user request, your task is to analyze the user request to figure out the (1) data attributes needed for data visualization, (2) select the most suitable task that the user is expecting from the list of various tasks in data visualization, (3) specifically figure out the purpose of the user's request in data visualization, and (4) prospective audience of the data visualization.
+<start of user request>
+{initial_instruction}
+<end of user request>
+
+<start of data format>
+{data}
+<end of data format>
+
+<start of various task types>
+{task}
+<end of various task types>
+
+For data attributes needed in data visualization, store them in query['Data Attribute']. Data attributes MUST match exactly the column names of the data.
+Store the selected task from the task types in query['Task'].
+Store the purpose of visualization in query['Purpose'].
+Store the prospective audience in query['Audience'].
+
+Please reply in the same format without altering the key value.
+{query}
+But, please make sure there is no ' in each keys and values. Use only " for the response. But when you write a value sentence or each data attribute's title, you only can use '. Unless you are writing a sentence or each data attribute's title, you should never include ' in response. If there are multiple pieces of data, there is no need to reveal which file each is. Please consider that JSON conversion must be done properly.

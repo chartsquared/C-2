@@ -1,0 +1,82 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Scatter plot
+
+  * Line chart
+
+  * Box chart
+
+  * Heatmap
+
+  * Bar chart'
+- 813
+- 794
+- 19
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 638
+- 500
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/452.csv'': {''summary'': {''Column'': [''Temperature(K)'',
+  ''Pressure(Liquid)'', ''Temperature(K).1'', ''Pressure(Gas)''], ''Data Type'': [dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 3, 3], ''Unique Values'': [9, 9, 6, 6]}, ''sample_data'': {''Temperature(K)'':
+  [273.16, 273.15, 270.0], ''Pressure(Liquid)'': [611.657, 101325.0, 10000000.0],
+  ''Temperature(K).1'': [210.0, 250.0, 273.16], ''Pressure(Gas)'': [1.0, 100.0, 611.657]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Dow Jones Industrial Average
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Box chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Box chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Line chart'
+- '* Bar chart'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- Create a box chart visualizing the distribution of 'Temperature(K)' and 'Pressure(Liquid)'
+  from 452.csv. Provide clear labels and highlight any outliers.
+- 408
+- 375
+- 33

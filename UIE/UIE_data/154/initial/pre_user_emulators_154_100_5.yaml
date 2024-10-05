@@ -1,0 +1,119 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Radar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Line chart
+
+  * Box chart
+
+  * Violin plot'
+- 1163
+- 1114
+- 49
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 958
+- 819
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/154.csv'': {''summary'': {''Column'': [''ID'', ''class'',
+  ''gender'', ''race'', ''GPA'', ''Algebra'', ''Calculus1'', ''Calculus2'', ''Statistics'',
+  ''Probability'', ''Measure'', ''Functional_analysis'', ''from1'', ''from2'', ''from3'',
+  ''from4'', ''y''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [105, 2,
+  2, 7, 103, 39, 37, 38, 30, 36, 38, 35, 28, 2, 5, 3, 3]}, ''sample_data'': {''ID'':
+  [1141, 1142, 1143], ''class'': [''A'', ''A'', ''A''], ''gender'': [''male'', ''female'',
+  ''female''], ''race'': [1, 1, 2], ''GPA'': [73.47, 71.22, 74.56], ''Algebra'': [64,
+  57, 47], ''Calculus1'': [81, 50, 48], ''Calculus2'': [87, 51, 71], ''Statistics'':
+  [60, 51, 60], ''Probability'': [74, 55, 61], ''Measure'': [71, 62, 68], ''Functional_analysis'':
+  [60, 61, 64], ''from1'': [''A'', ''B'', ''C''], ''from2'': [''A'', ''A'', ''A''],
+  ''from3'': [''A'', ''A'', ''A''], ''from4'': [3, 2, 0], ''y'': [0, 0, 1]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Students Data Analysis
+
+  education
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Pie chart'
+- '* Box chart'
+- '* Heatmap'
+- '* Radar chart'
+- '* Stacked bar/column chart'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Violin plot'
+- '* Donut chart'
+- '* Line chart'
+- '* Pie chart'
+- '* Box chart'
+- '* Heatmap'
+- '* Radar chart'
+- '* Stacked bar/column chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- 'Please create a scatter plot using the provided student data. Display GPA on the
+  Y-axis and Algebra scores on the X-axis. Use different color markers to represent
+  gender: blue for males and red for females. For further differentiation, shape the
+  markers by class: circle for class A and square for class B. Include a legend to
+  explain the colors and shapes. This visualization will help in understanding the
+  relationship between Algebra scores and GPA, as well as identify any patterns related
+  to gender and class. Make sure to title the chart as "Scatter Plot of GPA vs Algebra
+  Scores."'
+- 807
+- 694
+- 113

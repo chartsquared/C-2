@@ -1,0 +1,250 @@
+02_initial_prompt: Create a bar chart comparing 'lifeExp' and 'gdpPercap' for countries
+  Afghanistan, Albania, and Algeria in 2007. Highlight the bars to emphasize differences
+  visually, and annotate each bar with respective values to provide clarity. This
+  visualization, useful for social science analysis, will help in understanding economic
+  disparities and life expectancy across these countries.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bar chart comparing ''lifeExp'' and ''gdpPercap'' for countries Afghanistan,
+  Albania, and Algeria in 2007. Highlight the bars to emphasize differences visually,
+  and annotate each bar with respective values to provide clarity. This visualization,
+  useful for social science analysis, will help in understanding economic disparities
+  and life expectancy across these countries.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/455.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''country'',
+  ''continent'', ''year'', ''lifeExp'', ''pop'', ''gdpPercap'', ''iso_alpha'', ''iso_num''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [142, 142, 5,
+  1, 142, 142, 142, 141, 141]}, ''sample_data'': {''Unnamed: 0'': [11, 23, 35], ''country'':
+  [''Afghanistan'', ''Albania'', ''Algeria''], ''continent'': [''Asia'', ''Europe'',
+  ''Africa''], ''year'': [2007, 2007, 2007], ''lifeExp'': [43.828, 76.423, 72.301],
+  ''pop'': [31889923, 3600523, 33333216], ''gdpPercap'': [974.5803384, 5937.029525999998,
+  6223.367465], ''iso_alpha'': [''AFG'', ''ALB'', ''DZA''], ''iso_num'': [4, 8, 12]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["country", "year", "lifeExp", "gdpPercap"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Understanding economic disparities and life expectancy across specified
+  countries in 2007",
+
+  "Audience": "Social science researchers and analysts"
+
+  }'
+05_audience: Social science researchers and analysts
+05_data_attributes:
+- country
+- year
+- lifeExp
+- gdpPercap
+05_purpose: Understanding economic disparities and life expectancy across specified
+  countries in 2007
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/455.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''country'',
+  ''continent'', ''year'', ''lifeExp'', ''pop'', ''gdpPercap'', ''iso_alpha'', ''iso_num''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [142, 142, 5,
+  1, 142, 142, 142, 141, 141]}, ''sample_data'': {''Unnamed: 0'': [11, 23, 35], ''country'':
+  [''Afghanistan'', ''Albania'', ''Algeria''], ''continent'': [''Asia'', ''Europe'',
+  ''Africa''], ''year'': [2007, 2007, 2007], ''lifeExp'': [43.828, 76.423, 72.301],
+  ''pop'': [31889923, 3600523, 33333216], ''gdpPercap'': [974.5803384, 5937.029525999998,
+  6223.367465], ''iso_alpha'': [''AFG'', ''ALB'', ''DZA''], ''iso_num'': [4, 8, 12]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bar chart comparing ''lifeExp'' and ''gdpPercap'' for countries Afghanistan,
+  Albania, and Algeria in 2007. Highlight the bars to emphasize differences visually,
+  and annotate each bar with respective values to provide clarity. This visualization,
+  useful for social science analysis, will help in understanding economic disparities
+  and life expectancy across these countries.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''country'', ''year'', ''lifeExp'', ''gdpPercap'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Social science researchers and analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understanding economic disparities and life expectancy across specified countries
+  in 2007
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for highlighting the bars?
+
+  2. Do you want the bars for ''lifeExp'' and ''gdpPercap'' to be side-by-side or
+  stacked?
+
+  3. Are there any specific font styles or sizes you prefer for the annotations?
+
+  4. Would you like gridlines to be included in the chart for better readability?
+
+  5. Do you prefer axis labels to be horizontal or rotated for clarity?
+
+  6. Should the chart title and axis labels include specific wording or details?
+
+  7. Do you want a legend to be included for ''lifeExp'' and ''gdpPercap''?
+
+  8. Are there any specific margins or spacing preferences for the bars and chart
+  elements?
+
+  9. Do you have any preference on the background color of the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart comparing 'lifeExp' and 'gdpPercap'\
+  \ for countries Afghanistan, Albania, and Algeria in 2007. Highlight the bars to\
+  \ emphasize differences visually, and annotate each bar with respective values to\
+  \ provide clarity. This visualization, useful for social science analysis, will\
+  \ help in understanding economic disparities and life expectancy across these countries.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nUnderstanding economic disparities and life expectancy across specified\
+  \ countries in 2007\n<end of purpose>\n\n<start service provider message>\n1. Do\
+  \ you have a preferred color scheme for highlighting the bars?\n2. Do you want the\
+  \ bars for 'lifeExp' and 'gdpPercap' to be side-by-side or stacked?\n3. Are there\
+  \ any specific font styles or sizes you prefer for the annotations?\n4. Would you\
+  \ like gridlines to be included in the chart for better readability?\n5. Do you\
+  \ prefer axis labels to be horizontal or rotated for clarity?\n6. Should the chart\
+  \ title and axis labels include specific wording or details?\n7. Do you want a legend\
+  \ to be included for 'lifeExp' and 'gdpPercap'?\n8. Are there any specific margins\
+  \ or spacing preferences for the bars and chart elements?\n9. Do you have any preference\
+  \ on the background color of the chart?\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like gridlines to be included.
+
+  5. I do not know.
+
+  6. No specific preference.
+
+  7. Yes, including a legend would be helpful.
+
+  8. I am not sure.
+
+  9. No specific preference.'

@@ -1,0 +1,89 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Pie chart
+
+  * Donut chart
+
+  * Histogram
+
+  * Box chart'
+- 818
+- 783
+- 35
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 628
+- 489
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/207.csv': {'summary': {'Column':\
+  \ ['RM', 'LSTAT', 'PTRATIO', 'MEDV'], 'Data Type': [dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64')], 'Missing Values': [0, 0, 0, 0], 'Unique Values':\
+  \ [430, 442, 44, 228]}, 'sample_data': {'RM': [6.575, 6.421, 7.185], 'LSTAT': [4.98,\
+  \ 9.14, 4.03], 'PTRATIO': [15.3, 17.8, 17.8], 'MEDV': [504000.0, 453600.0, 728700.0]}}}\n\
+  <end of data example format>\n\n<start of annotations format>\n['<start of the annotation\
+  \ list>', '1. Text Annotations:', 'Description: Data-driven text annotations display\
+  \ values linked to chart elements, such as data points in a scatterplot. They draw\
+  \ attention to specific elements by highlighting their values.', 'Purpose: When\
+  \ only some elements are annotated, the intent is to focus the viewer\u2019s attention\
+  \ on those before examining others.', 'Other Uses: Non-data-driven annotations can\
+  \ provide context, orientation, or editorial comments.', '3. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually.', '<end of the annotation list>']\n<end\
+  \ of annotations format>\n\n<start of data details format>\nBoston Housing\nreal-estate\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Box chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Box chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Histogram'
+- '* Dot plot'
+- '* Box chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Heatmap'
+- '* Pie chart'
+- '* Column chart'
+- '* Donut chart'
+- '* Histogram'
+- '* Dot plot'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- 'Please create a box chart visualizing the Boston Housing data. Include boxes for
+  each column: RM, LSTAT, PTRATIO, and MEDV to show distribution. Use text annotations
+  to highlight key data points in each box, particularly the median values. Additionally,
+  use highlights to emphasize any outliers in the dataset. This will help in understanding
+  the spread and central tendencies of the housing attributes. The goal is to make
+  it easy to identify patterns and outliers within these real estate features. Ensure
+  the chart is clear and interpretable for a general audience interested in real estate
+  data.'
+- 673
+- 558
+- 115

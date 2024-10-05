@@ -1,0 +1,95 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Box chart'
+- 907
+- 884
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 729
+- 590
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/75.csv'': {''summary'': {''Column'': [''gender'', ''race/ethnicity'',
+  ''parental level of education'', ''lunch'', ''test preparation course'', ''math
+  score'', ''reading score'', ''writing score''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [2, 5, 6, 2, 2,
+  81, 72, 77]}, ''sample_data'': {''gender'': [''female'', ''female'', ''female''],
+  ''race/ethnicity'': [''group B'', ''group C'', ''group B''], ''parental level of
+  education'': ["bachelor''s degree", ''some college'', "master''s degree"], ''lunch'':
+  [''standard'', ''standard'', ''standard''], ''test preparation course'': [''none'',
+  ''completed'', ''none''], ''math score'': [72, 69, 90], ''reading score'': [72,
+  90, 95], ''writing score'': [74, 88, 93]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Students Performance in Exams
+
+  education
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Stacked bar/column chart that utilizes the data
+  format.
+
+  If there are multiple given data formats, imagine a chart with * Stacked bar/column
+  chart that utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Box chart'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Please create a stacked bar chart visualizing the performance of students in exams.
+  Use the 'gender' category to stack the bars, and plot 'math score', 'reading score',
+  and 'writing score' on the x-axis, showing the 'parental level of education' on
+  the y-axis. Ensure each section of the bar is color-coded according to 'gender'.
+  This will help to understand the performance distributions across different educational
+  backgrounds based on gender. Data is from the "Students Performance in Exams" dataset,
+  focusing on education-related analysis.
+- 581
+- 473
+- 108

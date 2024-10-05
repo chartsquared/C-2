@@ -1,0 +1,278 @@
+02_initial_prompt: Create a bubble chart that visualizes the hotels in Munnar, Kerala
+  from MakeMyTrip data. Use the 'Rating' for the x-axis, 'Star Rating' for the y-axis,
+  and 'Reviews' to determine the size of the bubbles. Color-code the bubbles based
+  on the 'Rating Description'. Add text annotations to highlight bubbles with exceptionally
+  high ratings, reviews, or notable locations. The chart should help travelers quickly
+  identify the best-reviewed hotels at a glance, understand their star ratings, and
+  correlate them with user reviews and overall rating descriptions. Ensure prominent
+  bubbles stand out to draw attention instantly.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bubble chart that visualizes the hotels in Munnar, Kerala from MakeMyTrip
+  data. Use the ''Rating'' for the x-axis, ''Star Rating'' for the y-axis, and ''Reviews''
+  to determine the size of the bubbles. Color-code the bubbles based on the ''Rating
+  Description''. Add text annotations to highlight bubbles with exceptionally high
+  ratings, reviews, or notable locations. The chart should help travelers quickly
+  identify the best-reviewed hotels at a glance, understand their star ratings, and
+  correlate them with user reviews and overall rating descriptions. Ensure prominent
+  bubbles stand out to draw attention instantly.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/318.csv'': {''summary'': {''Column'': [''Hotel Name\t\t\t\t\t\t\t\t\t'',
+  ''Rating'', ''Rating Description'', ''Reviews'', ''Star Rating'', ''Location'',
+  ''Nearest Landmark'', ''Distance to Landmark'', ''Price'', ''Tax''], ''Data Type'':
+  [dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 0, 17, 0, 0, 0, 0, 2], ''Unique Values'': [74, 18, 4, 70, 4,
+  22, 2, 57, 72, 70]}, ''sample_data'': {''Hotel Name\t\t\t\t\t\t\t\t\t'': [''Gokulam
+  Park'', ''Sterling Munnar'', ''Issacs Residency''], ''Rating'': [4.1, 3.8, 4.1],
+  ''Rating Description'': [''Very Good'', ''Very Good'', ''Very Good''], ''Reviews'':
+  [1058, 1088, 322], ''Star Rating'': [4.0, 4.0, 3.0], ''Location'': [''Chithirapuram
+  '', ''Chinnakanal '', ''Central Munnar ''], ''Nearest Landmark'': [''city centre'',
+  ''city centre'', ''Attukal Waterfalls''], ''Distance to Landmark'': [''10.2 km '',
+  ''19.2 km '', ''950 m ''], ''Price'': [''2,728'', ''4,451'', ''2,758''], ''Tax'':
+  [''574'', ''969'', ''684'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Rating", "Star Rating", "Reviews", "Rating Description", "Hotel
+  Name\t\t\t\t\t\t\t\t\t"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Help travelers quickly identify the best-reviewed hotels, understand
+  their star ratings, and correlate them with user reviews and overall rating descriptions",
+
+  "Audience": "Travelers looking for hotels in Munnar, Kerala on MakeMyTrip"
+
+  }'
+05_audience: Travelers looking for hotels in Munnar, Kerala on MakeMyTrip
+05_data_attributes:
+- Rating
+- Star Rating
+- Reviews
+- Rating Description
+- "Hotel Name\t\t\t\t\t\t\t\t\t"
+05_purpose: Help travelers quickly identify the best-reviewed hotels, understand their
+  star ratings, and correlate them with user reviews and overall rating descriptions
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/318.csv'': {''summary'': {''Column'': [''Hotel Name\t\t\t\t\t\t\t\t\t'',
+  ''Rating'', ''Rating Description'', ''Reviews'', ''Star Rating'', ''Location'',
+  ''Nearest Landmark'', ''Distance to Landmark'', ''Price'', ''Tax''], ''Data Type'':
+  [dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''int64''), dtype(''float64''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 0, 17, 0, 0, 0, 0, 2], ''Unique Values'': [74, 18, 4, 70, 4,
+  22, 2, 57, 72, 70]}, ''sample_data'': {''Hotel Name\t\t\t\t\t\t\t\t\t'': [''Gokulam
+  Park'', ''Sterling Munnar'', ''Issacs Residency''], ''Rating'': [4.1, 3.8, 4.1],
+  ''Rating Description'': [''Very Good'', ''Very Good'', ''Very Good''], ''Reviews'':
+  [1058, 1088, 322], ''Star Rating'': [4.0, 4.0, 3.0], ''Location'': [''Chithirapuram
+  '', ''Chinnakanal '', ''Central Munnar ''], ''Nearest Landmark'': [''city centre'',
+  ''city centre'', ''Attukal Waterfalls''], ''Distance to Landmark'': [''10.2 km '',
+  ''19.2 km '', ''950 m ''], ''Price'': [''2,728'', ''4,451'', ''2,758''], ''Tax'':
+  [''574'', ''969'', ''684'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bubble chart that visualizes the hotels in Munnar, Kerala from MakeMyTrip
+  data. Use the ''Rating'' for the x-axis, ''Star Rating'' for the y-axis, and ''Reviews''
+  to determine the size of the bubbles. Color-code the bubbles based on the ''Rating
+  Description''. Add text annotations to highlight bubbles with exceptionally high
+  ratings, reviews, or notable locations. The chart should help travelers quickly
+  identify the best-reviewed hotels at a glance, understand their star ratings, and
+  correlate them with user reviews and overall rating descriptions. Ensure prominent
+  bubbles stand out to draw attention instantly.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Rating'', ''Star Rating'', ''Reviews'', ''Rating Description'', ''Hotel Name\t\t\t\t\t\t\t\t\t'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Travelers looking for hotels in Munnar, Kerala on MakeMyTrip
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Help travelers quickly identify the best-reviewed hotels, understand their star
+  ratings, and correlate them with user reviews and overall rating descriptions
+
+  <end of purpose>'
+07_questions: "1. Do you have any preference for the color scheme used to color-code\
+  \ the bubbles based on 'Rating Description'?\n2. Is there a specific scale or range\
+  \ you would like to see on the x-axis (Rating)?\n3. Is there a specific scale or\
+  \ range you would like to see on the y-axis (Star Rating)?\n4. Do you prefer a particular\
+  \ size range for the bubbles representing the 'Reviews'?\n5. How would you like\
+  \ the text annotations for the notable hotels to be formatted (e.g., font size,\
+  \ color, style)?\n6. Should there be a legend to explain the color-coding of 'Rating\
+  \ Description'? If so, any preference on its placement?\n7. Is there a specific\
+  \ way you want the chart title to be formatted or worded?\n8. Do you want the chart\
+  \ to include gridlines or should they be removed for a cleaner look? \n9. Are there\
+  \ any specific fonts or styling preferences for the axis labels and title?\n10.\
+  \ Would you prefer to show the actual numerical values of 'Rating', 'Star Rating',\
+  \ and 'Reviews' on the chart or keep it minimal?\n"
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bubble chart that visualizes the hotels in Munnar,\
+  \ Kerala from MakeMyTrip data. Use the 'Rating' for the x-axis, 'Star Rating' for\
+  \ the y-axis, and 'Reviews' to determine the size of the bubbles. Color-code the\
+  \ bubbles based on the 'Rating Description'. Add text annotations to highlight bubbles\
+  \ with exceptionally high ratings, reviews, or notable locations. The chart should\
+  \ help travelers quickly identify the best-reviewed hotels at a glance, understand\
+  \ their star ratings, and correlate them with user reviews and overall rating descriptions.\
+  \ Ensure prominent bubbles stand out to draw attention instantly.\n<end of user\
+  \ request>\n\nImagine the best result that can be achieved based on the given instructions\
+  \ and is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nHelp travelers quickly\
+  \ identify the best-reviewed hotels, understand their star ratings, and correlate\
+  \ them with user reviews and overall rating descriptions\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have any preference for the color scheme\
+  \ used to color-code the bubbles based on 'Rating Description'?\n2. Is there a specific\
+  \ scale or range you would like to see on the x-axis (Rating)?\n3. Is there a specific\
+  \ scale or range you would like to see on the y-axis (Star Rating)?\n4. Do you prefer\
+  \ a particular size range for the bubbles representing the 'Reviews'?\n5. How would\
+  \ you like the text annotations for the notable hotels to be formatted (e.g., font\
+  \ size, color, style)?\n6. Should there be a legend to explain the color-coding\
+  \ of 'Rating Description'? If so, any preference on its placement?\n7. Is there\
+  \ a specific way you want the chart title to be formatted or worded?\n8. Do you\
+  \ want the chart to include gridlines or should they be removed for a cleaner look?\
+  \ \n9. Are there any specific fonts or styling preferences for the axis labels and\
+  \ title?\n10. Would you prefer to show the actual numerical values of 'Rating',\
+  \ 'Star Rating', and 'Reviews' on the chart or keep it minimal?\n\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I prefer a readable font size and a distinct color for the text annotations.
+
+  6. Yes, please include a legend. I have no specific preference for its placement.
+
+  7. I do not know.
+
+  8. A cleaner look without gridlines would be good.
+
+  9. No specific preference.
+
+  10. I would prefer to show the actual numerical values of ''Rating'', ''Star Rating'',
+  and ''Reviews'' on the chart.
+
+  <end of user emulated response>'

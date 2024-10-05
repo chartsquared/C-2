@@ -1,0 +1,108 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart'
+- 1076
+- 1049
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 894
+- 756
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/14.csv'': {''summary'': {''Column'': [''taxa'', ''full_taxa_name'',
+  ''stressor'', ''source'', ''median'', ''lower_95'', ''upper_95'', ''weight'', ''allocation'',
+  ''production'', ''Unnamed: 10'', ''Unnamed: 11''], ''Data Type'': [dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 262, 250], ''Unique
+  Values'': [23, 23, 5, 2, 247, 235, 247, 2, 2, 2, 0, 6]}, ''sample_data'': {''taxa'':
+  [''bivalves'', ''catfish'', ''hypoph_carp''], ''full_taxa_name'': [''bivalves'',
+  ''catfish'', ''silver/bighead''], ''stressor'': [''GHG'', ''GHG'', ''GHG''], ''source'':
+  [''total on- and off-farm'', ''total on- and off-farm'', ''total on- and off-farm''],
+  ''median'': [1413.76413, 7774.491103, 3510.591001], ''lower_95'': [0.0, 6927.102168,
+  1986.113972], ''upper_95'': [4350.489865, 8763.607417, 5535.962852], ''weight'':
+  [''edible'', ''edible'', ''edible''], ''allocation'': [''mass'', ''mass'', ''mass''],
+  ''production'': [''aquaculture'', ''aquaculture'', ''aquaculture''], ''Unnamed:
+  10'': [nan, nan, nan], ''Unnamed: 11'': [nan, nan, nan]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  fish_env_info
+
+  zoology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Heatmap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Box chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Heatmap'
+- '* Box chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- 'Please create a heatmap using the provided data to visualize the median values
+  of environmental stressors (GHG) across different taxa in aquaculture production.
+  Utilize the ''median'' column for color intensity, and place ''taxa'' on one axis
+  and ''stressor'' on the other. Exclude columns with missing data. Highlight how
+  different taxa contribute to environmental impacts. Title the heatmap: "GHG Emissions
+  by Taxa in Aquaculture". Ensure the color scale represents the range of median values
+  effectively for clear visual comparison.'
+- 752
+- 645
+- 107

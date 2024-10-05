@@ -1,0 +1,102 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Bubble chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Treemap
+
+  * Line chart
+
+  * Table chart'
+- 1092
+- 1036
+- 56
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 881
+- 743
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/215.csv': {'summary': {'Column':\
+  \ ['Episode Number', 'Brand', 'Investment Amount (In Lakhs INR)', 'Debt (In lakhs\
+  \ INR)', 'Equity', 'Anupam', 'Ashneer', 'Namita', 'Aman', 'Peyush', 'Vineeta', 'Ghazal',\
+  \ 'Season'], 'Data Type': [dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0], 'Unique Values': [35, 117, 18, 7, 23, 2, 2, 2, 2, 2, 2, 2, 1]}, 'sample_data':\
+  \ {'Episode Number': [1, 1, 1], 'Brand': ['BluePine Industries', 'Booz scooters',\
+  \ 'Heart up my Sleeves'], 'Investment Amount (In Lakhs INR)': [75, 40, 25], 'Debt\
+  \ (In lakhs INR)': [0, 0, 0], 'Equity': ['18%', '50%', '30%'], 'Anupam': ['N', 'N',\
+  \ 'Y'], 'Ashneer': ['Y', 'Y', 'N'], 'Namita': ['N', 'N', 'N'], 'Aman': ['Y', 'N',\
+  \ 'N'], 'Peyush': ['N', 'N', 'N'], 'Vineeta': ['Y', 'Y', 'Y'], 'Ghazal': ['N', 'N',\
+  \ 'N'], 'Season': [1, 1, 1]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '3. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nShark Tank Indian Companies\nbusiness\n<end of data\
+  \ details format>\n\nGiven a data format, imagine a chart that visualizes this data\
+  \ as the final output you want from the service provider.\nConsider what purpose\
+  \ the data has and the practical purpose of visualization and include it in the\
+  \ instructions.\nYou need to imagine a chart with * Donut chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Donut chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Donut chart'
+- '* Column chart'
+- '* Bubble chart'
+- '* Treemap'
+- '* Heatmap'
+- '* Table chart'
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Pie chart'
+- '* Stacked bar/column chart'
+- '* Donut chart'
+2. initial_prompt: !!python/tuple
+- Create a Donut chart to visualize the investment distribution among brands in Shark
+  Tank India. Highlight the Brands, Investment Amount (In Lakhs INR), and Equity data.
+  Emphasize the investments using color to show higher or lower amounts. Also, add
+  text annotations to showcase specific data points like the highest and lowest investments.
+  This will help in understanding which brands attracted maximum or minimum investments
+  and the corresponding equity offered. Ensure the chart is easy to read and provides
+  insights into the investment trends and preferences of the sharks.
+- 916
+- 814
+- 102

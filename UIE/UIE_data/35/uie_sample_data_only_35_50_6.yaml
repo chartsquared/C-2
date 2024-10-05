@@ -1,0 +1,271 @@
+02_initial_prompt: Please create a grouped bar chart showing the total transaction
+  amount and the average open to buy for different income categories of credit card
+  customers.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a grouped bar chart showing the total transaction amount and the average
+  open to buy for different income categories of credit card customers.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/35.csv'': {''summary'': {''Column'': [''CLIENTNUM'', ''Attrition_Flag'',
+  ''Customer_Age'', ''Gender'', ''Dependent_count'', ''Education_Level'', ''Marital_Status'',
+  ''Income_Category'', ''Card_Category'', ''Months_on_book'', ''Total_Relationship_Count'',
+  ''Months_Inactive_12_mon'', ''Contacts_Count_12_mon'', ''Credit_Limit'', ''Total_Revolving_Bal'',
+  ''Avg_Open_To_Buy'', ''Total_Amt_Chng_Q4_Q1'', ''Total_Trans_Amt'', ''Total_Trans_Ct'',
+  ''Total_Ct_Chng_Q4_Q1'', ''Avg_Utilization_Ratio'', ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1'',
+  ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [10127, 2, 45, 2, 6, 7, 4, 6, 4, 44, 6, 7, 7, 6205, 1974, 6813, 1158,
+  5033, 126, 830, 964, 1704, 640]}, ''sample_data'': {''CLIENTNUM'': [768805383, 818770008,
+  713982108], ''Attrition_Flag'': [''Existing Customer'', ''Existing Customer'', ''Existing
+  Customer''], ''Customer_Age'': [45, 49, 51], ''Gender'': [''M'', ''F'', ''M''],
+  ''Dependent_count'': [3, 5, 3], ''Education_Level'': [''High School'', ''Graduate'',
+  ''Graduate''], ''Marital_Status'': [''Married'', ''Single'', ''Married''], ''Income_Category'':
+  [''$60K - $80K'', ''Less than $40K'', ''$80K - $120K''], ''Card_Category'': [''Blue'',
+  ''Blue'', ''Blue''], ''Months_on_book'': [39, 44, 36], ''Total_Relationship_Count'':
+  [5, 6, 4], ''Months_Inactive_12_mon'': [1, 1, 1], ''Contacts_Count_12_mon'': [3,
+  2, 0], ''Credit_Limit'': [12691.0, 8256.0, 3418.0], ''Total_Revolving_Bal'': [777,
+  864, 0], ''Avg_Open_To_Buy'': [11914.0, 7392.0, 3418.0], ''Total_Amt_Chng_Q4_Q1'':
+  [1.335, 1.541, 2.594], ''Total_Trans_Amt'': [1144, 1291, 1887], ''Total_Trans_Ct'':
+  [42, 33, 20], ''Total_Ct_Chng_Q4_Q1'': [1.625, 3.714, 2.333], ''Avg_Utilization_Ratio'':
+  [0.061, 0.105, 0.0], ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1'':
+  [9.3448e-05, 5.6861e-05, 2.1081e-05], ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2'':
+  [0.99991, 0.99994, 0.99998]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Income_Category", "Total_Trans_Amt", "Avg_Open_To_Buy"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "Compare measured values of total transaction amount and average open
+  to buy across different income categories",
+
+  "Audience": "Credit card company stakeholders such as management team, marketing
+  department, and financial analysts"
+
+  }'
+05_audience: Credit card company stakeholders such as management team, marketing department,
+  and financial analysts
+05_data_attributes:
+- Income_Category
+- Total_Trans_Amt
+- Avg_Open_To_Buy
+05_purpose: Compare measured values of total transaction amount and average open to
+  buy across different income categories
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/35.csv'': {''summary'': {''Column'': [''CLIENTNUM'', ''Attrition_Flag'',
+  ''Customer_Age'', ''Gender'', ''Dependent_count'', ''Education_Level'', ''Marital_Status'',
+  ''Income_Category'', ''Card_Category'', ''Months_on_book'', ''Total_Relationship_Count'',
+  ''Months_Inactive_12_mon'', ''Contacts_Count_12_mon'', ''Credit_Limit'', ''Total_Revolving_Bal'',
+  ''Avg_Open_To_Buy'', ''Total_Amt_Chng_Q4_Q1'', ''Total_Trans_Amt'', ''Total_Trans_Ct'',
+  ''Total_Ct_Chng_Q4_Q1'', ''Avg_Utilization_Ratio'', ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1'',
+  ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [10127, 2, 45, 2, 6, 7, 4, 6, 4, 44, 6, 7, 7, 6205, 1974, 6813, 1158,
+  5033, 126, 830, 964, 1704, 640]}, ''sample_data'': {''CLIENTNUM'': [768805383, 818770008,
+  713982108], ''Attrition_Flag'': [''Existing Customer'', ''Existing Customer'', ''Existing
+  Customer''], ''Customer_Age'': [45, 49, 51], ''Gender'': [''M'', ''F'', ''M''],
+  ''Dependent_count'': [3, 5, 3], ''Education_Level'': [''High School'', ''Graduate'',
+  ''Graduate''], ''Marital_Status'': [''Married'', ''Single'', ''Married''], ''Income_Category'':
+  [''$60K - $80K'', ''Less than $40K'', ''$80K - $120K''], ''Card_Category'': [''Blue'',
+  ''Blue'', ''Blue''], ''Months_on_book'': [39, 44, 36], ''Total_Relationship_Count'':
+  [5, 6, 4], ''Months_Inactive_12_mon'': [1, 1, 1], ''Contacts_Count_12_mon'': [3,
+  2, 0], ''Credit_Limit'': [12691.0, 8256.0, 3418.0], ''Total_Revolving_Bal'': [777,
+  864, 0], ''Avg_Open_To_Buy'': [11914.0, 7392.0, 3418.0], ''Total_Amt_Chng_Q4_Q1'':
+  [1.335, 1.541, 2.594], ''Total_Trans_Amt'': [1144, 1291, 1887], ''Total_Trans_Ct'':
+  [42, 33, 20], ''Total_Ct_Chng_Q4_Q1'': [1.625, 3.714, 2.333], ''Avg_Utilization_Ratio'':
+  [0.061, 0.105, 0.0], ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1'':
+  [9.3448e-05, 5.6861e-05, 2.1081e-05], ''Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2'':
+  [0.99991, 0.99994, 0.99998]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a grouped bar chart showing the total transaction amount and the average
+  open to buy for different income categories of credit card customers.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Income_Category'', ''Total_Trans_Amt'', ''Avg_Open_To_Buy'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Credit card company stakeholders such as management team, marketing department,
+  and financial analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Compare measured values of total transaction amount and average open to buy across
+  different income categories
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color palette for the bars representing
+  ''Total_Trans_Amt'' and ''Avg_Open_To_Buy''?
+
+  2. Would you like the income categories to be displayed in a specific order, such
+  as ascending or descending by amount, or in a custom sequence?
+
+  3. Is there a specific title or subtitle you would like for the chart?
+
+  4. Do you have any preference for the axis labels and their titles?
+
+  5. Would you like labels showing the exact values on top of the bars?
+
+  6. Do you prefer vertical or horizontal bars for the grouped bar chart?
+
+  7. Do you want gridlines on the chart for easier comparison, and if so, do you have
+  a preference for their style?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a grouped bar chart showing the total transaction\
+  \ amount and the average open to buy for different income categories of credit card\
+  \ customers.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nCompare measured values of total transaction amount and average open\
+  \ to buy across different income categories\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color palette for the bars representing\
+  \ 'Total_Trans_Amt' and 'Avg_Open_To_Buy'?\n2. Would you like the income categories\
+  \ to be displayed in a specific order, such as ascending or descending by amount,\
+  \ or in a custom sequence?\n3. Is there a specific title or subtitle you would like\
+  \ for the chart?\n4. Do you have any preference for the axis labels and their titles?\n\
+  5. Would you like labels showing the exact values on top of the bars?\n6. Do you\
+  \ prefer vertical or horizontal bars for the grouped bar chart?\n7. Do you want\
+  \ gridlines on the chart for easier comparison, and if so, do you have a preference\
+  \ for their style?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. Yes, please include labels showing the exact values on top of the bars.
+
+  6. I prefer vertical bars for the grouped bar chart.
+
+  7. I am not sure.'

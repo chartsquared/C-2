@@ -1,0 +1,313 @@
+02_initial_prompt: Create a dot plot to visualize the top 10 YouTubers by subscribers,
+  categorized by channel type. Highlight their country of origin, monthly and yearly
+  earnings, and recent video views.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a dot plot to visualize the top 10 YouTubers by subscribers, categorized
+  by channel type. Highlight their country of origin, monthly and yearly earnings,
+  and recent video views.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/81.csv'': {''summary'': {''Column'': [''rank'', ''Youtuber'',
+  ''subscribers'', ''video views'', ''category'', ''Title'', ''uploads'', ''Country'',
+  ''Abbreviation'', ''channel_type'', ''video_views_rank'', ''country_rank'', ''channel_type_rank'',
+  ''video_views_for_the_last_30_days'', ''lowest_monthly_earnings'', ''highest_monthly_earnings'',
+  ''lowest_yearly_earnings'', ''highest_yearly_earnings'', ''subscribers_for_last_30_days'',
+  ''created_year'', ''created_month'', ''created_date'', ''Gross tertiary education
+  enrollment (%)'', ''Population'', ''Unemployment rate'', ''Urban_population'', ''Latitude'',
+  ''Longitude''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 46, 0,
+  0, 122, 122, 30, 1, 116, 33, 56, 0, 0, 0, 0, 337, 5, 5, 5, 123, 123, 123, 123, 123,
+  123], ''Unique Values'': [995, 995, 289, 988, 18, 992, 777, 49, 49, 14, 953, 246,
+  286, 908, 557, 736, 757, 419, 53, 19, 12, 31, 47, 48, 47, 48, 48, 48]}, ''sample_data'':
+  {''rank'': [1, 2, 3], ''Youtuber'': [''T-Series'', ''YouTube Movies'', ''MrBeast''],
+  ''subscribers'': [245000000, 170000000, 166000000], ''video views'': [228000000000.0,
+  0.0, 28368841870.0], ''category'': [''Music'', ''Film & Animation'', ''Entertainment''],
+  ''Title'': [''T-Series'', ''youtubemovies'', ''MrBeast''], ''uploads'': [20082,
+  1, 741], ''Country'': [''India'', ''United States'', ''United States''], ''Abbreviation'':
+  [''IN'', ''US'', ''US''], ''channel_type'': [''Music'', ''Games'', ''Entertainment''],
+  ''video_views_rank'': [1.0, 4055159.0, 48.0], ''country_rank'': [1.0, 7670.0, 1.0],
+  ''channel_type_rank'': [1.0, 7423.0, 1.0], ''video_views_for_the_last_30_days'':
+  [2258000000.0, 12.0, 1348000000.0], ''lowest_monthly_earnings'': [564600.0, 0.0,
+  337000.0], ''highest_monthly_earnings'': [9000000.0, 0.05, 5400000.0], ''lowest_yearly_earnings'':
+  [6800000.0, 0.04, 4000000.0], ''highest_yearly_earnings'': [108400000.0, 0.58, 64700000.0],
+  ''subscribers_for_last_30_days'': [2000000.0, nan, 8000000.0], ''created_year'':
+  [2006.0, 2006.0, 2012.0], ''created_month'': [''Mar'', ''Mar'', ''Feb''], ''created_date'':
+  [13.0, 5.0, 20.0], ''Gross tertiary education enrollment (%)'': [28.1, 88.2, 88.2],
+  ''Population'': [1366417754.0, 328239523.0, 328239523.0], ''Unemployment rate'':
+  [5.36, 14.7, 14.7], ''Urban_population'': [471031528.0, 270663028.0, 270663028.0],
+  ''Latitude'': [20.593684, 37.09024, 37.09024], ''Longitude'': [78.96288, -95.712891,
+  -95.712891]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Youtuber", "subscribers", "channel_type", "Country", "lowest_monthly_earnings",
+  "highest_monthly_earnings", "lowest_yearly_earnings", "highest_yearly_earnings",
+  "video_views_for_the_last_30_days"],
+
+  "Task": "Focus on Identifying extreme",
+
+  "Purpose": "Visualize the leading YouTubers in terms of subscribers, highlighting
+  key financial metrics and video views.",
+
+  "Audience": "Social media analysts, marketers, YouTube enthusiasts, and data scientists."
+
+  }'
+05_audience: Social media analysts, marketers, YouTube enthusiasts, and data scientists.
+05_data_attributes:
+- Youtuber
+- subscribers
+- channel_type
+- Country
+- lowest_monthly_earnings
+- highest_monthly_earnings
+- lowest_yearly_earnings
+- highest_yearly_earnings
+- video_views_for_the_last_30_days
+05_purpose: Visualize the leading YouTubers in terms of subscribers, highlighting
+  key financial metrics and video views.
+05_task: Focus on Identifying extreme
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/81.csv'': {''summary'': {''Column'': [''rank'', ''Youtuber'',
+  ''subscribers'', ''video views'', ''category'', ''Title'', ''uploads'', ''Country'',
+  ''Abbreviation'', ''channel_type'', ''video_views_rank'', ''country_rank'', ''channel_type_rank'',
+  ''video_views_for_the_last_30_days'', ''lowest_monthly_earnings'', ''highest_monthly_earnings'',
+  ''lowest_yearly_earnings'', ''highest_yearly_earnings'', ''subscribers_for_last_30_days'',
+  ''created_year'', ''created_month'', ''created_date'', ''Gross tertiary education
+  enrollment (%)'', ''Population'', ''Unemployment rate'', ''Urban_population'', ''Latitude'',
+  ''Longitude''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''int64''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 46, 0,
+  0, 122, 122, 30, 1, 116, 33, 56, 0, 0, 0, 0, 337, 5, 5, 5, 123, 123, 123, 123, 123,
+  123], ''Unique Values'': [995, 995, 289, 988, 18, 992, 777, 49, 49, 14, 953, 246,
+  286, 908, 557, 736, 757, 419, 53, 19, 12, 31, 47, 48, 47, 48, 48, 48]}, ''sample_data'':
+  {''rank'': [1, 2, 3], ''Youtuber'': [''T-Series'', ''YouTube Movies'', ''MrBeast''],
+  ''subscribers'': [245000000, 170000000, 166000000], ''video views'': [228000000000.0,
+  0.0, 28368841870.0], ''category'': [''Music'', ''Film & Animation'', ''Entertainment''],
+  ''Title'': [''T-Series'', ''youtubemovies'', ''MrBeast''], ''uploads'': [20082,
+  1, 741], ''Country'': [''India'', ''United States'', ''United States''], ''Abbreviation'':
+  [''IN'', ''US'', ''US''], ''channel_type'': [''Music'', ''Games'', ''Entertainment''],
+  ''video_views_rank'': [1.0, 4055159.0, 48.0], ''country_rank'': [1.0, 7670.0, 1.0],
+  ''channel_type_rank'': [1.0, 7423.0, 1.0], ''video_views_for_the_last_30_days'':
+  [2258000000.0, 12.0, 1348000000.0], ''lowest_monthly_earnings'': [564600.0, 0.0,
+  337000.0], ''highest_monthly_earnings'': [9000000.0, 0.05, 5400000.0], ''lowest_yearly_earnings'':
+  [6800000.0, 0.04, 4000000.0], ''highest_yearly_earnings'': [108400000.0, 0.58, 64700000.0],
+  ''subscribers_for_last_30_days'': [2000000.0, nan, 8000000.0], ''created_year'':
+  [2006.0, 2006.0, 2012.0], ''created_month'': [''Mar'', ''Mar'', ''Feb''], ''created_date'':
+  [13.0, 5.0, 20.0], ''Gross tertiary education enrollment (%)'': [28.1, 88.2, 88.2],
+  ''Population'': [1366417754.0, 328239523.0, 328239523.0], ''Unemployment rate'':
+  [5.36, 14.7, 14.7], ''Urban_population'': [471031528.0, 270663028.0, 270663028.0],
+  ''Latitude'': [20.593684, 37.09024, 37.09024], ''Longitude'': [78.96288, -95.712891,
+  -95.712891]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a dot plot to visualize the top 10 YouTubers by subscribers, categorized
+  by channel type. Highlight their country of origin, monthly and yearly earnings,
+  and recent video views.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Youtuber'', ''subscribers'', ''channel_type'', ''Country'', ''lowest_monthly_earnings'',
+  ''highest_monthly_earnings'', ''lowest_yearly_earnings'', ''highest_yearly_earnings'',
+  ''video_views_for_the_last_30_days'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Social media analysts, marketers, YouTube enthusiasts, and data scientists.
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying extreme
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visualize the leading YouTubers in terms of subscribers, highlighting key financial
+  metrics and video views.
+
+  <end of purpose>'
+07_questions: '1. What color scheme do you prefer for highlighting different channel
+  types?
+
+  2. Are there specific colors you would like to use to denote different countries
+  of origin?
+
+  3. How would you like the monthly and yearly earnings to be displayed? (e.g., using
+  different shapes or colors, tooltips)
+
+  4. Do you prefer an overall vertical or horizontal orientation for the dot plot?
+
+  5. Should there be labels for each YouTuber directly on the plot or a legend?
+
+  6. Is it important for the plot to show exact numeric values for subscribers, earnings,
+  and views, or just relative comparisons?
+
+  7. Do you have any preferences for the size of the dots based on subscribers or
+  another metric?
+
+  8. Are there any specific fonts or styling preferences for the text and labels in
+  the chart?
+
+  9. Do you want the chart to be optimized for print or for digital viewing?
+
+  10. Are there any specific details you would like to be emphasized in the chart
+  (e.g., highest subscriber count, highest earnings)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a dot plot to visualize the top 10 YouTubers by\
+  \ subscribers, categorized by channel type. Highlight their country of origin, monthly\
+  \ and yearly earnings, and recent video views.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 25% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nVisualize the leading YouTubers in\
+  \ terms of subscribers, highlighting key financial metrics and video views.\n<end\
+  \ of purpose>\n\n<start service provider message>\n1. What color scheme do you prefer\
+  \ for highlighting different channel types?\n2. Are there specific colors you would\
+  \ like to use to denote different countries of origin?\n3. How would you like the\
+  \ monthly and yearly earnings to be displayed? (e.g., using different shapes or\
+  \ colors, tooltips)\n4. Do you prefer an overall vertical or horizontal orientation\
+  \ for the dot plot?\n5. Should there be labels for each YouTuber directly on the\
+  \ plot or a legend?\n6. Is it important for the plot to show exact numeric values\
+  \ for subscribers, earnings, and views, or just relative comparisons?\n7. Do you\
+  \ have any preferences for the size of the dots based on subscribers or another\
+  \ metric?\n8. Are there any specific fonts or styling preferences for the text and\
+  \ labels in the chart?\n9. Do you want the chart to be optimized for print or for\
+  \ digital viewing?\n10. Are there any specific details you would like to be emphasized\
+  \ in the chart (e.g., highest subscriber count, highest earnings)?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would prefer using different shapes for monthly and yearly earnings.
+
+  4. I prefer a horizontal orientation for the dot plot.
+
+  5. I am not sure.
+
+  6. I prefer just relative comparisons.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I want the chart to be optimized for digital viewing.
+
+  10. I would like the highest subscriber count to be emphasized.'

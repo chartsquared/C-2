@@ -1,0 +1,92 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Line chart
+
+  * Scatter plot
+
+  * Box chart
+
+  * Histogram
+
+  * Bar chart'
+- 1032
+- 1014
+- 18
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 871
+- 732
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/304.csv'': {''summary'': {''Column'': [''Yr'', ''Mn'', ''DateExcel'',
+  ''Date'', ''CO2[ppm]'', ''seasonallyAdjusted[ppm]'', ''fit[ppm]'', ''seasonallyAdjustedFit[ppm]'',
+  ''CO2Filled[ppm]'', ''seasonallyAdjustedFilled[ppm]''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [64, 12,
+  768, 768, 728, 724, 737, 763, 733, 729]}, ''sample_data'': {''Yr'': [1958, 1958,
+  1958], ''Mn'': [1, 2, 3], ''DateExcel'': [21200, 21231, 21259], ''Date'': [1958.0411,
+  1958.126, 1958.2027], ''CO2[ppm]'': [-99.99, -99.99, 315.71], ''seasonallyAdjusted[ppm]'':
+  [-99.99, -99.99, 314.43], ''fit[ppm]'': [-99.99, -99.99, 316.2], ''seasonallyAdjustedFit[ppm]'':
+  [-99.99, -99.99, 314.91], ''CO2Filled[ppm]'': [-99.99, -99.99, 315.71], ''seasonallyAdjustedFilled[ppm]'':
+  [-99.99, -99.99, 314.43]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Scripps CO2 program 06-12-2021
+
+  environmental-science
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Box chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Box chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Line chart'
+- '* Bar chart'
+- '* Histogram'
+- '* Scatter plot'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- 'Create a box plot for CO2[ppm] vs year using the data from the Scripps CO2 program.
+  Include seasonallyAdjusted[ppm] as a secondary box for comparison. Title: "CO2 Levels
+  Over Time".'
+- 668
+- 621
+- 47

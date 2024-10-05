@@ -1,0 +1,285 @@
+02_initial_prompt: I need a heatmap for our Comprehensive Supply Chain Analysis project.
+  The heatmap should visualize the correlation between different columns in our supply
+  chain data, such as Order Quantity, Discount Applied, Unit Cost, and Unit Price.
+  Additionally, include _SalesTeamID, _CustomerID, _StoreID, and _ProductID for relational
+  insights. Focus on showing how these factors influence each other, identify any
+  trends or anomalies, and help in optimizing the supply chain processes. Use the
+  provided sample data to guide the design and ensure clarity for team presentations.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I need a heatmap for our Comprehensive Supply Chain Analysis project. The heatmap
+  should visualize the correlation between different columns in our supply chain data,
+  such as Order Quantity, Discount Applied, Unit Cost, and Unit Price. Additionally,
+  include _SalesTeamID, _CustomerID, _StoreID, and _ProductID for relational insights.
+  Focus on showing how these factors influence each other, identify any trends or
+  anomalies, and help in optimizing the supply chain processes. Use the provided sample
+  data to guide the design and ensure clarity for team presentations.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/340.csv'': {''summary'': {''Column'': [''OrderNumber'', ''Sales
+  Channel'', ''WarehouseCode'', ''ProcuredDate'', ''OrderDate'', ''ShipDate'', ''DeliveryDate'',
+  ''CurrencyCode'', ''_SalesTeamID'', ''_CustomerID'', ''_StoreID'', ''_ProductID'',
+  ''Order Quantity'', ''Discount Applied'', ''Unit Cost'', ''Unit Price''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [7991, 4, 6, 11, 945, 966, 966, 1, 28, 50, 367, 47, 8, 7, 5252, 664]}, ''sample_data'':
+  {''OrderNumber'': [''SO - 000101'', ''SO - 000102'', ''SO - 000103''], ''Sales Channel'':
+  [''In-Store'', ''Online'', ''Distributor''], ''WarehouseCode'': [''WARE-UHY1004'',
+  ''WARE-NMK1003'', ''WARE-UHY1004''], ''ProcuredDate'': [''31/12/17'', ''31/12/17'',
+  ''31/12/17''], ''OrderDate'': [''31/5/18'', ''31/5/18'', ''31/5/18''], ''ShipDate'':
+  [''14/6/18'', ''22/6/18'', ''21/6/18''], ''DeliveryDate'': [''19/6/18'', ''2/7/2018'',
+  ''1/7/2018''], ''CurrencyCode'': [''USD'', ''USD'', ''USD''], ''_SalesTeamID'':
+  [6, 14, 21], ''_CustomerID'': [15, 20, 16], ''_StoreID'': [259, 196, 213], ''_ProductID'':
+  [12, 27, 16], ''Order Quantity'': [5, 3, 1], ''Discount Applied'': [0.08, 0.08,
+  0.05], ''Unit Cost'': [''$1,001.18'', ''$3,348.66'', ''$781.22''], ''Unit Price'':
+  [''$1,963.10'', ''$3,939.60'', ''$1,775.50'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Order Quantity", "Discount Applied", "Unit Cost", "Unit Price",
+  "_SalesTeamID", "_CustomerID", "_StoreID", "_ProductID"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify how various factors in the supply chain data influence each
+  other and detect trends or anomalies to optimize the supply chain processes. Ensure
+  clarity for team presentations.",
+
+  "Audience": "Team members involved in the Comprehensive Supply Chain Analysis project"
+
+  }'
+05_audience: Team members involved in the Comprehensive Supply Chain Analysis project
+05_data_attributes:
+- Order Quantity
+- Discount Applied
+- Unit Cost
+- Unit Price
+- _SalesTeamID
+- _CustomerID
+- _StoreID
+- _ProductID
+05_purpose: Identify how various factors in the supply chain data influence each other
+  and detect trends or anomalies to optimize the supply chain processes. Ensure clarity
+  for team presentations.
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/340.csv'': {''summary'': {''Column'': [''OrderNumber'', ''Sales
+  Channel'', ''WarehouseCode'', ''ProcuredDate'', ''OrderDate'', ''ShipDate'', ''DeliveryDate'',
+  ''CurrencyCode'', ''_SalesTeamID'', ''_CustomerID'', ''_StoreID'', ''_ProductID'',
+  ''Order Quantity'', ''Discount Applied'', ''Unit Cost'', ''Unit Price''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [7991, 4, 6, 11, 945, 966, 966, 1, 28, 50, 367, 47, 8, 7, 5252, 664]}, ''sample_data'':
+  {''OrderNumber'': [''SO - 000101'', ''SO - 000102'', ''SO - 000103''], ''Sales Channel'':
+  [''In-Store'', ''Online'', ''Distributor''], ''WarehouseCode'': [''WARE-UHY1004'',
+  ''WARE-NMK1003'', ''WARE-UHY1004''], ''ProcuredDate'': [''31/12/17'', ''31/12/17'',
+  ''31/12/17''], ''OrderDate'': [''31/5/18'', ''31/5/18'', ''31/5/18''], ''ShipDate'':
+  [''14/6/18'', ''22/6/18'', ''21/6/18''], ''DeliveryDate'': [''19/6/18'', ''2/7/2018'',
+  ''1/7/2018''], ''CurrencyCode'': [''USD'', ''USD'', ''USD''], ''_SalesTeamID'':
+  [6, 14, 21], ''_CustomerID'': [15, 20, 16], ''_StoreID'': [259, 196, 213], ''_ProductID'':
+  [12, 27, 16], ''Order Quantity'': [5, 3, 1], ''Discount Applied'': [0.08, 0.08,
+  0.05], ''Unit Cost'': [''$1,001.18'', ''$3,348.66'', ''$781.22''], ''Unit Price'':
+  [''$1,963.10'', ''$3,939.60'', ''$1,775.50'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I need a heatmap for our Comprehensive Supply Chain Analysis project. The heatmap
+  should visualize the correlation between different columns in our supply chain data,
+  such as Order Quantity, Discount Applied, Unit Cost, and Unit Price. Additionally,
+  include _SalesTeamID, _CustomerID, _StoreID, and _ProductID for relational insights.
+  Focus on showing how these factors influence each other, identify any trends or
+  anomalies, and help in optimizing the supply chain processes. Use the provided sample
+  data to guide the design and ensure clarity for team presentations.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Order Quantity'', ''Discount Applied'', ''Unit Cost'', ''Unit Price'', ''_SalesTeamID'',
+  ''_CustomerID'', ''_StoreID'', ''_ProductID'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Team members involved in the Comprehensive Supply Chain Analysis project
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify how various factors in the supply chain data influence each other and detect
+  trends or anomalies to optimize the supply chain processes. Ensure clarity for team
+  presentations.
+
+  <end of purpose>'
+07_questions: '1. What color scheme do you prefer for the heatmap?
+
+  2. Should the correlation coefficients be displayed on the heatmap cells?
+
+  3. Do you want a specific range for the correlation values to be highlighted (e.g.,
+  strong correlations in a different color)?
+
+  4. Would you like the heatmap to include a hierarchical clustering to show more
+  relational insights?
+
+  5. Is there a specific order you prefer for the columns in the heatmap?
+
+  6. Do you have preferences for the size and resolution of the heatmap for team presentations?
+
+  7. Should the heatmap include any specific annotations or labels for better clarity?
+
+  8. Do you prefer a specific style for the grid lines in the heatmap?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI need a heatmap for our Comprehensive Supply Chain Analysis\
+  \ project. The heatmap should visualize the correlation between different columns\
+  \ in our supply chain data, such as Order Quantity, Discount Applied, Unit Cost,\
+  \ and Unit Price. Additionally, include _SalesTeamID, _CustomerID, _StoreID, and\
+  \ _ProductID for relational insights. Focus on showing how these factors influence\
+  \ each other, identify any trends or anomalies, and help in optimizing the supply\
+  \ chain processes. Use the provided sample data to guide the design and ensure clarity\
+  \ for team presentations.\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nIdentify how various factors in the supply chain data influence\
+  \ each other and detect trends or anomalies to optimize the supply chain processes.\
+  \ Ensure clarity for team presentations.\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. What color scheme do you prefer for the heatmap?\n2. Should the correlation\
+  \ coefficients be displayed on the heatmap cells?\n3. Do you want a specific range\
+  \ for the correlation values to be highlighted (e.g., strong correlations in a different\
+  \ color)?\n4. Would you like the heatmap to include a hierarchical clustering to\
+  \ show more relational insights?\n5. Is there a specific order you prefer for the\
+  \ columns in the heatmap?\n6. Do you have preferences for the size and resolution\
+  \ of the heatmap for team presentations?\n7. Should the heatmap include any specific\
+  \ annotations or labels for better clarity?\n8. Do you prefer a specific style for\
+  \ the grid lines in the heatmap?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '<start user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, the correlation coefficients should be displayed on the heatmap cells.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not have a specific order in mind for the columns.
+
+  6. I am not sure.
+
+  7. Yes, please include annotations or labels for better clarity.
+
+  8. I have no specific preference for the grid lines style.
+
+  <end user emulated response>'

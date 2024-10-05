@@ -1,0 +1,496 @@
+02_initial_prompt: 'Please create a grouped bar chart visualizing the population and
+  percentage of different religions in the USA over the years. Use the data provided
+  to display Christianity (Protestants, Roman Catholics, Eastern Orthodox, Others),
+  Judaism (Orthodox, Conservatives, Reform, Others), and Non-Religious categories.
+  Add data-driven text annotations to highlight key figures. Emphasize elements with
+  significant changes over the years using highlights. Purpose: To analyze trends
+  and the relative growth or decline of various religious populations from 1945 to
+  1955. Make it clear and intuitive for social-science research.'
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a grouped bar chart visualizing the population and percentage of different
+  religions in the USA over the years. Use the data provided to display Christianity
+  (Protestants, Roman Catholics, Eastern Orthodox, Others), Judaism (Orthodox, Conservatives,
+  Reform, Others), and Non-Religious categories. Add data-driven text annotations
+  to highlight key figures. Emphasize elements with significant changes over the years
+  using highlights. Purpose: To analyze trends and the relative growth or decline
+  of various religious populations from 1945 to 1955. Make it clear and intuitive
+  for social-science research.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/280.csv'': {''summary'': {''Column'': [''index'', ''Year'',
+  ''Christianity - Protestants (Population)'', ''Christianity - Roman Catholics (Population)'',
+  ''Christianity - Eastern Orthodox (Population)'', ''Christianity - Anglican (Population)'',
+  ''Christianity - Others (Population)'', ''Christianity - Total (Population)'', ''Judaism
+  - Orthodox (Population)'', ''Judaism - Conservatives (Population)'', ''Judaism -
+  Reform (Population)'', ''Judaism - Others (Population)'', ''Judaism - Total (Population)'',
+  ''Islam - Sunni (Population)'', "Islam - Shi''a (Population)", ''Islam - Ibadhi
+  (Population)'', ''Islam - Nation of Islam (Population)'', ''Islam - Alawite (Population)'',
+  ''Islam - Ahmadiyya (Population)'', ''Islam - Others (Population)'', ''Islam - Total
+  (Population)'', ''Buddhism - Mahayana (Population)'', ''Buddhism - Theravada (Population)'',
+  ''Buddhism - Others (Population)'', ''Buddhism - Total (Population)'', ''Zoroastrian
+  - Total (Population)'', ''Hindu - Total (Population)'', ''Sike - Total (Population)'',
+  ''Shinto - Total (Population)'', "Baha''i - Total (Population)", ''Taoism - Total
+  (Population)'', ''Confucianism - Total (Population)'', ''Jain - Total (Population)'',
+  ''Syncretic Religions - Total (Population)'', ''Animist - Total (Population)'',
+  ''Non Religious - Total (Population)'', ''Other Religions - Total (Population)'',
+  ''Total Religious - Total (Population)'', ''Population - Total (Population)'', ''Christianity
+  - Protestants (Percent)'', ''Christianity - Roman Catholics (Percent)'', ''Christianity
+  - Eastern Orthodox (Percent)'', ''Christianity - Anglican (Percent)'', ''Christianity
+  - Others (Percent)'', ''Christianity - Total (Percent)'', ''Judaism - Orthodox (Percent)'',
+  ''Judaism - Conservatives (Percent)'', ''Judaism - Reform (Percent)'', ''Judaism
+  - Others (Percent)'', ''Judaism - Total (Percent)'', ''Islam - Sunni (Percent)'',
+  "Islam - Shi''a (Percent)", ''Islam - Ibadhi (Percent)'', ''Islam - Nation of Islam
+  (Percent)'', ''Islam - Alawite (Percent)'', ''Islam - Ahmadiyya (Percent)'', ''Islam
+  - Others (Percent)'', ''Islam - Total (Percent)'', ''Buddhism - Mahayana (Percent)'',
+  ''Buddhism - Theravada (Percent)'', ''Buddhism - Others (Percent)'', ''Buddhism
+  - Total (Percent)'', ''Zoroastrian - Total (Percent)'', ''Hindu - Total (Percent)'',
+  ''Sike - Total (Percent)'', ''Shinto - Total (Percent)'', "Baha''i - Total (Percent)",
+  ''Taoism - Total (Percent)'', ''Confucianism - Total (Percent)'', ''Jain - Total
+  (Percent)'', ''Syncretic Religions - Total (Percent)'', ''Animist - Total (Percent)'',
+  ''Non Religious - Total (Percent)'', ''Other Religions - Total (Percent)'', ''Total
+  Religious - Total (Percent)'', ''StateNme''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 35, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [2308, 14, 1667,
+  1812, 978, 884, 1269, 1955, 42, 42, 42, 817, 830, 568, 337, 11, 1, 22, 37, 1015,
+  1537, 16, 36, 794, 824, 154, 695, 310, 55, 932, 108, 125, 91, 571, 980, 1444, 1851,
+  1995, 1900, 959, 1170, 404, 375, 645, 1502, 35, 29, 31, 122, 155, 449, 208, 1, 1,
+  19, 21, 541, 851, 14, 1, 240, 268, 18, 258, 62, 11, 142, 38, 20, 43, 140, 591, 710,
+  521, 562, 200]}, ''sample_data'': {''index'': [0, 1, 2], ''Year'': [1945, 1950,
+  1955], ''Christianity - Protestants (Population)'': [66069671, 73090083, 79294628],
+  ''Christianity - Roman Catholics (Population)'': [38716742, 42635882, 46402368],
+  ''Christianity - Eastern Orthodox (Population)'': [1121898, 3045420, 3454916], ''Christianity
+  - Anglican (Population)'': [2400000, 3045420, 2572767], ''Christianity - Others
+  (Population)'': [1956807, 1177214, 2277091], ''Christianity - Total (Population)'':
+  [110265118, 122994019, 134001770], ''Judaism - Orthodox (Population)'': [821489,
+  1078078, 944000], ''Judaism - Conservatives (Population)'': [1364508, 1790706, 1568000],
+  ''Judaism - Reform (Population)'': [1902885.0, 2497244.0, 2186666.0], ''Judaism
+  - Others (Population)'': [552300, 724809, 634666], ''Judaism - Total (Population)'':
+  [4641182, 6090837, 5333332], ''Islam - Sunni (Population)'': [0, 0, 0], "Islam -
+  Shi''a (Population)": [0, 0, 0], ''Islam - Ibadhi (Population)'': [0, 0, 0], ''Islam
+  - Nation of Islam (Population)'': [0, 0, 0], ''Islam - Alawite (Population)'': [0,
+  0, 0], ''Islam - Ahmadiyya (Population)'': [0, 0, 0], ''Islam - Others (Population)'':
+  [0.0, 0.0, 0.0], ''Islam - Total (Population)'': [0, 0, 0], ''Buddhism - Mahayana
+  (Population)'': [0, 0, 0], ''Buddhism - Theravada (Population)'': [0, 0, 0], ''Buddhism
+  - Others (Population)'': [1601218, 0, 90173], ''Buddhism - Total (Population)'':
+  [1601218, 0, 90173], ''Zoroastrian - Total (Population)'': [0, 0, 0], ''Hindu -
+  Total (Population)'': [0, 0, 0], ''Sike - Total (Population)'': [0, 0, 0], ''Shinto
+  - Total (Population)'': [0, 0, 0], "Baha''i - Total (Population)": [0, 0, 0], ''Taoism
+  - Total (Population)'': [0, 0, 0], ''Confucianism - Total (Population)'': [0, 0,
+  0], ''Jain - Total (Population)'': [0, 0, 0], ''Syncretic Religions - Total (Population)'':
+  [0, 0, 0], ''Animist - Total (Population)'': [0, 0, 0], ''Non Religious - Total
+  (Population)'': [22874544, 22568130, 23303540], ''Other Religions - Total (Population)'':
+  [545938, 618022, 3202185], ''Total Religious - Total (Population)'': [139382062,
+  151652986, 162728815], ''Population - Total (Population)'': [139928000, 152271008,
+  165931000], ''Christianity - Protestants (Percent)'': [0.4722, 0.48, 0.4779], ''Christianity
+  - Roman Catholics (Percent)'': [0.2767, 0.28, 0.2796], ''Christianity - Eastern
+  Orthodox (Percent)'': [0.008, 0.02, 0.0208], ''Christianity - Anglican (Percent)'':
+  [0.0172, 0.02, 0.0155], ''Christianity - Others (Percent)'': [0.014, 0.0077, 0.0137],
+  ''Christianity - Total (Percent)'': [0.788, 0.8077, 0.8076], ''Judaism - Orthodox
+  (Percent)'': [0.0059, 0.0071, 0.0057], ''Judaism - Conservatives (Percent)'': [0.0098,
+  0.0118, 0.0094], ''Judaism - Reform (Percent)'': [0.0136, 0.0164, 0.0132], ''Judaism
+  - Others (Percent)'': [0.0039, 0.0048, 0.0038], ''Judaism - Total (Percent)'': [0.0332,
+  0.04, 0.0321], ''Islam - Sunni (Percent)'': [0.0, 0.0, 0.0], "Islam - Shi''a (Percent)":
+  [0.0, 0.0, 0.0], ''Islam - Ibadhi (Percent)'': [0.0, 0.0, 0.0], ''Islam - Nation
+  of Islam (Percent)'': [0, 0, 0], ''Islam - Alawite (Percent)'': [0.0, 0.0, 0.0],
+  ''Islam - Ahmadiyya (Percent)'': [0.0, 0.0, 0.0], ''Islam - Others (Percent)'':
+  [0.0, 0.0, 0.0], ''Islam - Total (Percent)'': [0.0, 0.0, 0.0], ''Buddhism - Mahayana
+  (Percent)'': [0.0, 0.0, 0.0], ''Buddhism - Theravada (Percent)'': [0.0, 0.0, 0.0],
+  ''Buddhism - Others (Percent)'': [0.0114, 0.0, 0.0005], ''Buddhism - Total (Percent)'':
+  [0.0114, 0.0, 0.0005], ''Zoroastrian - Total (Percent)'': [0.0, 0.0, 0.0], ''Hindu
+  - Total (Percent)'': [0.0, 0.0, 0.0], ''Sike - Total (Percent)'': [0.0, 0.0, 0.0],
+  ''Shinto - Total (Percent)'': [0.0, 0.0, 0.0], "Baha''i - Total (Percent)": [0.0,
+  0.0, 0.0], ''Taoism - Total (Percent)'': [0.0, 0.0, 0.0], ''Confucianism - Total
+  (Percent)'': [0.0, 0.0, 0.0], ''Jain - Total (Percent)'': [0.0, 0.0, 0.0], ''Syncretic
+  Religions - Total (Percent)'': [0.0, 0.0, 0.0], ''Animist - Total (Percent)'': [0.0,
+  0.0, 0.0], ''Non Religious - Total (Percent)'': [0.1635, 0.1482, 0.1404], ''Other
+  Religions - Total (Percent)'': [0.0039, 0.0041, 0.0193], ''Total Religious - Total
+  (Percent)'': [0.9961, 0.9959, 0.9807], ''StateNme'': [''United States of America'',
+  ''United States of America'', ''United States of America'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Year", "Christianity - Protestants (Population)", "Christianity
+  - Roman Catholics (Population)", "Christianity - Eastern Orthodox (Population)",
+  "Christianity - Others (Population)", "Judaism - Orthodox (Population)", "Judaism
+  - Conservatives (Population)", "Judaism - Reform (Population)", "Judaism - Others
+  (Population)", "Non Religious - Total (Population)", "Christianity - Protestants
+  (Percent)", "Christianity - Roman Catholics (Percent)", "Christianity - Eastern
+  Orthodox (Percent)", "Christianity - Others (Percent)", "Judaism - Orthodox (Percent)",
+  "Judaism - Conservatives (Percent)", "Judaism - Reform (Percent)", "Judaism - Others
+  (Percent)", "Non Religious - Total (Percent)"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "To analyze trends and the relative growth or decline of various religious
+  populations from 1945 to 1955",
+
+  "Audience": "social-science research"
+
+  }'
+05_audience: social-science research
+05_data_attributes:
+- Year
+- Christianity - Protestants (Population)
+- Christianity - Roman Catholics (Population)
+- Christianity - Eastern Orthodox (Population)
+- Christianity - Others (Population)
+- Judaism - Orthodox (Population)
+- Judaism - Conservatives (Population)
+- Judaism - Reform (Population)
+- Judaism - Others (Population)
+- Non Religious - Total (Population)
+- Christianity - Protestants (Percent)
+- Christianity - Roman Catholics (Percent)
+- Christianity - Eastern Orthodox (Percent)
+- Christianity - Others (Percent)
+- Judaism - Orthodox (Percent)
+- Judaism - Conservatives (Percent)
+- Judaism - Reform (Percent)
+- Judaism - Others (Percent)
+- Non Religious - Total (Percent)
+05_purpose: To analyze trends and the relative growth or decline of various religious
+  populations from 1945 to 1955
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/280.csv'': {''summary'': {''Column'': [''index'', ''Year'',
+  ''Christianity - Protestants (Population)'', ''Christianity - Roman Catholics (Population)'',
+  ''Christianity - Eastern Orthodox (Population)'', ''Christianity - Anglican (Population)'',
+  ''Christianity - Others (Population)'', ''Christianity - Total (Population)'', ''Judaism
+  - Orthodox (Population)'', ''Judaism - Conservatives (Population)'', ''Judaism -
+  Reform (Population)'', ''Judaism - Others (Population)'', ''Judaism - Total (Population)'',
+  ''Islam - Sunni (Population)'', "Islam - Shi''a (Population)", ''Islam - Ibadhi
+  (Population)'', ''Islam - Nation of Islam (Population)'', ''Islam - Alawite (Population)'',
+  ''Islam - Ahmadiyya (Population)'', ''Islam - Others (Population)'', ''Islam - Total
+  (Population)'', ''Buddhism - Mahayana (Population)'', ''Buddhism - Theravada (Population)'',
+  ''Buddhism - Others (Population)'', ''Buddhism - Total (Population)'', ''Zoroastrian
+  - Total (Population)'', ''Hindu - Total (Population)'', ''Sike - Total (Population)'',
+  ''Shinto - Total (Population)'', "Baha''i - Total (Population)", ''Taoism - Total
+  (Population)'', ''Confucianism - Total (Population)'', ''Jain - Total (Population)'',
+  ''Syncretic Religions - Total (Population)'', ''Animist - Total (Population)'',
+  ''Non Religious - Total (Population)'', ''Other Religions - Total (Population)'',
+  ''Total Religious - Total (Population)'', ''Population - Total (Population)'', ''Christianity
+  - Protestants (Percent)'', ''Christianity - Roman Catholics (Percent)'', ''Christianity
+  - Eastern Orthodox (Percent)'', ''Christianity - Anglican (Percent)'', ''Christianity
+  - Others (Percent)'', ''Christianity - Total (Percent)'', ''Judaism - Orthodox (Percent)'',
+  ''Judaism - Conservatives (Percent)'', ''Judaism - Reform (Percent)'', ''Judaism
+  - Others (Percent)'', ''Judaism - Total (Percent)'', ''Islam - Sunni (Percent)'',
+  "Islam - Shi''a (Percent)", ''Islam - Ibadhi (Percent)'', ''Islam - Nation of Islam
+  (Percent)'', ''Islam - Alawite (Percent)'', ''Islam - Ahmadiyya (Percent)'', ''Islam
+  - Others (Percent)'', ''Islam - Total (Percent)'', ''Buddhism - Mahayana (Percent)'',
+  ''Buddhism - Theravada (Percent)'', ''Buddhism - Others (Percent)'', ''Buddhism
+  - Total (Percent)'', ''Zoroastrian - Total (Percent)'', ''Hindu - Total (Percent)'',
+  ''Sike - Total (Percent)'', ''Shinto - Total (Percent)'', "Baha''i - Total (Percent)",
+  ''Taoism - Total (Percent)'', ''Confucianism - Total (Percent)'', ''Jain - Total
+  (Percent)'', ''Syncretic Religions - Total (Percent)'', ''Animist - Total (Percent)'',
+  ''Non Religious - Total (Percent)'', ''Other Religions - Total (Percent)'', ''Total
+  Religious - Total (Percent)'', ''StateNme''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 35, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [2308, 14, 1667,
+  1812, 978, 884, 1269, 1955, 42, 42, 42, 817, 830, 568, 337, 11, 1, 22, 37, 1015,
+  1537, 16, 36, 794, 824, 154, 695, 310, 55, 932, 108, 125, 91, 571, 980, 1444, 1851,
+  1995, 1900, 959, 1170, 404, 375, 645, 1502, 35, 29, 31, 122, 155, 449, 208, 1, 1,
+  19, 21, 541, 851, 14, 1, 240, 268, 18, 258, 62, 11, 142, 38, 20, 43, 140, 591, 710,
+  521, 562, 200]}, ''sample_data'': {''index'': [0, 1, 2], ''Year'': [1945, 1950,
+  1955], ''Christianity - Protestants (Population)'': [66069671, 73090083, 79294628],
+  ''Christianity - Roman Catholics (Population)'': [38716742, 42635882, 46402368],
+  ''Christianity - Eastern Orthodox (Population)'': [1121898, 3045420, 3454916], ''Christianity
+  - Anglican (Population)'': [2400000, 3045420, 2572767], ''Christianity - Others
+  (Population)'': [1956807, 1177214, 2277091], ''Christianity - Total (Population)'':
+  [110265118, 122994019, 134001770], ''Judaism - Orthodox (Population)'': [821489,
+  1078078, 944000], ''Judaism - Conservatives (Population)'': [1364508, 1790706, 1568000],
+  ''Judaism - Reform (Population)'': [1902885.0, 2497244.0, 2186666.0], ''Judaism
+  - Others (Population)'': [552300, 724809, 634666], ''Judaism - Total (Population)'':
+  [4641182, 6090837, 5333332], ''Islam - Sunni (Population)'': [0, 0, 0], "Islam -
+  Shi''a (Population)": [0, 0, 0], ''Islam - Ibadhi (Population)'': [0, 0, 0], ''Islam
+  - Nation of Islam (Population)'': [0, 0, 0], ''Islam - Alawite (Population)'': [0,
+  0, 0], ''Islam - Ahmadiyya (Population)'': [0, 0, 0], ''Islam - Others (Population)'':
+  [0.0, 0.0, 0.0], ''Islam - Total (Population)'': [0, 0, 0], ''Buddhism - Mahayana
+  (Population)'': [0, 0, 0], ''Buddhism - Theravada (Population)'': [0, 0, 0], ''Buddhism
+  - Others (Population)'': [1601218, 0, 90173], ''Buddhism - Total (Population)'':
+  [1601218, 0, 90173], ''Zoroastrian - Total (Population)'': [0, 0, 0], ''Hindu -
+  Total (Population)'': [0, 0, 0], ''Sike - Total (Population)'': [0, 0, 0], ''Shinto
+  - Total (Population)'': [0, 0, 0], "Baha''i - Total (Population)": [0, 0, 0], ''Taoism
+  - Total (Population)'': [0, 0, 0], ''Confucianism - Total (Population)'': [0, 0,
+  0], ''Jain - Total (Population)'': [0, 0, 0], ''Syncretic Religions - Total (Population)'':
+  [0, 0, 0], ''Animist - Total (Population)'': [0, 0, 0], ''Non Religious - Total
+  (Population)'': [22874544, 22568130, 23303540], ''Other Religions - Total (Population)'':
+  [545938, 618022, 3202185], ''Total Religious - Total (Population)'': [139382062,
+  151652986, 162728815], ''Population - Total (Population)'': [139928000, 152271008,
+  165931000], ''Christianity - Protestants (Percent)'': [0.4722, 0.48, 0.4779], ''Christianity
+  - Roman Catholics (Percent)'': [0.2767, 0.28, 0.2796], ''Christianity - Eastern
+  Orthodox (Percent)'': [0.008, 0.02, 0.0208], ''Christianity - Anglican (Percent)'':
+  [0.0172, 0.02, 0.0155], ''Christianity - Others (Percent)'': [0.014, 0.0077, 0.0137],
+  ''Christianity - Total (Percent)'': [0.788, 0.8077, 0.8076], ''Judaism - Orthodox
+  (Percent)'': [0.0059, 0.0071, 0.0057], ''Judaism - Conservatives (Percent)'': [0.0098,
+  0.0118, 0.0094], ''Judaism - Reform (Percent)'': [0.0136, 0.0164, 0.0132], ''Judaism
+  - Others (Percent)'': [0.0039, 0.0048, 0.0038], ''Judaism - Total (Percent)'': [0.0332,
+  0.04, 0.0321], ''Islam - Sunni (Percent)'': [0.0, 0.0, 0.0], "Islam - Shi''a (Percent)":
+  [0.0, 0.0, 0.0], ''Islam - Ibadhi (Percent)'': [0.0, 0.0, 0.0], ''Islam - Nation
+  of Islam (Percent)'': [0, 0, 0], ''Islam - Alawite (Percent)'': [0.0, 0.0, 0.0],
+  ''Islam - Ahmadiyya (Percent)'': [0.0, 0.0, 0.0], ''Islam - Others (Percent)'':
+  [0.0, 0.0, 0.0], ''Islam - Total (Percent)'': [0.0, 0.0, 0.0], ''Buddhism - Mahayana
+  (Percent)'': [0.0, 0.0, 0.0], ''Buddhism - Theravada (Percent)'': [0.0, 0.0, 0.0],
+  ''Buddhism - Others (Percent)'': [0.0114, 0.0, 0.0005], ''Buddhism - Total (Percent)'':
+  [0.0114, 0.0, 0.0005], ''Zoroastrian - Total (Percent)'': [0.0, 0.0, 0.0], ''Hindu
+  - Total (Percent)'': [0.0, 0.0, 0.0], ''Sike - Total (Percent)'': [0.0, 0.0, 0.0],
+  ''Shinto - Total (Percent)'': [0.0, 0.0, 0.0], "Baha''i - Total (Percent)": [0.0,
+  0.0, 0.0], ''Taoism - Total (Percent)'': [0.0, 0.0, 0.0], ''Confucianism - Total
+  (Percent)'': [0.0, 0.0, 0.0], ''Jain - Total (Percent)'': [0.0, 0.0, 0.0], ''Syncretic
+  Religions - Total (Percent)'': [0.0, 0.0, 0.0], ''Animist - Total (Percent)'': [0.0,
+  0.0, 0.0], ''Non Religious - Total (Percent)'': [0.1635, 0.1482, 0.1404], ''Other
+  Religions - Total (Percent)'': [0.0039, 0.0041, 0.0193], ''Total Religious - Total
+  (Percent)'': [0.9961, 0.9959, 0.9807], ''StateNme'': [''United States of America'',
+  ''United States of America'', ''United States of America'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a grouped bar chart visualizing the population and percentage of different
+  religions in the USA over the years. Use the data provided to display Christianity
+  (Protestants, Roman Catholics, Eastern Orthodox, Others), Judaism (Orthodox, Conservatives,
+  Reform, Others), and Non-Religious categories. Add data-driven text annotations
+  to highlight key figures. Emphasize elements with significant changes over the years
+  using highlights. Purpose: To analyze trends and the relative growth or decline
+  of various religious populations from 1945 to 1955. Make it clear and intuitive
+  for social-science research.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Year'', ''Christianity - Protestants (Population)'', ''Christianity - Roman Catholics
+  (Population)'', ''Christianity - Eastern Orthodox (Population)'', ''Christianity
+  - Others (Population)'', ''Judaism - Orthodox (Population)'', ''Judaism - Conservatives
+  (Population)'', ''Judaism - Reform (Population)'', ''Judaism - Others (Population)'',
+  ''Non Religious - Total (Population)'', ''Christianity - Protestants (Percent)'',
+  ''Christianity - Roman Catholics (Percent)'', ''Christianity - Eastern Orthodox
+  (Percent)'', ''Christianity - Others (Percent)'', ''Judaism - Orthodox (Percent)'',
+  ''Judaism - Conservatives (Percent)'', ''Judaism - Reform (Percent)'', ''Judaism
+  - Others (Percent)'', ''Non Religious - Total (Percent)'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  social-science research
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To analyze trends and the relative growth or decline of various religious populations
+  from 1945 to 1955
+
+  <end of purpose>'
+07_questions: '1. Do you have a preference for the color scheme used in the grouped
+  bar chart?
+
+  2. Should the bars for different religious categories be displayed in specific colors?
+
+  3. Do you prefer vertical or horizontal bars for the grouped bar chart?
+
+  4. How would you like significant changes over the years to be highlighted (e.g.,
+  different bar color, outline, etc.)?
+
+  5. Do you have any specific design elements in mind for the data-driven text annotations?
+
+  6. Would you like the y-axis to be scaled linearly or logarithmically for better
+  visualization of smaller populations?
+
+  7. Should population and percentage be displayed on the same chart or on separate
+  charts?
+
+  8. Do you have any preferences for the font style and size used in the chart?
+
+  9. Would you like gridlines to be included in the chart for better readability?
+
+  10. Do you have any specific requirements for the axis labels and titles in the
+  chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a grouped bar chart visualizing the population\
+  \ and percentage of different religions in the USA over the years. Use the data\
+  \ provided to display Christianity (Protestants, Roman Catholics, Eastern Orthodox,\
+  \ Others), Judaism (Orthodox, Conservatives, Reform, Others), and Non-Religious\
+  \ categories. Add data-driven text annotations to highlight key figures. Emphasize\
+  \ elements with significant changes over the years using highlights. Purpose: To\
+  \ analyze trends and the relative growth or decline of various religious populations\
+  \ from 1945 to 1955. Make it clear and intuitive for social-science research.\n\
+  <end of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nTo analyze trends and the relative growth or decline of various religious\
+  \ populations from 1945 to 1955\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have a preference for the color scheme used in the grouped bar chart?\n\
+  2. Should the bars for different religious categories be displayed in specific colors?\n\
+  3. Do you prefer vertical or horizontal bars for the grouped bar chart?\n4. How\
+  \ would you like significant changes over the years to be highlighted (e.g., different\
+  \ bar color, outline, etc.)?\n5. Do you have any specific design elements in mind\
+  \ for the data-driven text annotations?\n6. Would you like the y-axis to be scaled\
+  \ linearly or logarithmically for better visualization of smaller populations?\n\
+  7. Should population and percentage be displayed on the same chart or on separate\
+  \ charts?\n8. Do you have any preferences for the font style and size used in the\
+  \ chart?\n9. Would you like gridlines to be included in the chart for better readability?\n\
+  10. Do you have any specific requirements for the axis labels and titles in the\
+  \ chart?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure.
+
+  3. Vertical bars.
+
+  4. I prefer highlighting significant changes with a different bar color.
+
+  5. I do not know.
+
+  6. Linearly scaled y-axis.
+
+  7. Display population and percentage on the same chart.
+
+  8. I have no specific preference.
+
+  9. Yes, include gridlines for better readability.
+
+  10. Axis labels and titles should be clear and descriptive.'

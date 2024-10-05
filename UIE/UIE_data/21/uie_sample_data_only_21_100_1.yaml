@@ -1,0 +1,287 @@
+02_initial_prompt: Create a bar chart to visualize the "Gender Recognition by Voice"
+  dataset. Focus on the average ('mean') values of features such as 'meanfreq', 'sd',
+  'median', 'Q25', 'Q75', and 'meanfun' for male and female speakers. Use different
+  colors to highlight male and female categories to show the comparison clearly. Include
+  text annotations for key data points, such as the highest and lowest 'meanfreq'
+  values, and use highlights for the 'meanfun' feature to emphasize its relevance
+  in gender recognition. The chart should help in understanding gender differentiation
+  based on voice features.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bar chart to visualize the "Gender Recognition by Voice" dataset. Focus
+  on the average (''mean'') values of features such as ''meanfreq'', ''sd'', ''median'',
+  ''Q25'', ''Q75'', and ''meanfun'' for male and female speakers. Use different colors
+  to highlight male and female categories to show the comparison clearly. Include
+  text annotations for key data points, such as the highest and lowest ''meanfreq''
+  values, and use highlights for the ''meanfun'' feature to emphasize its relevance
+  in gender recognition. The chart should help in understanding gender differentiation
+  based on voice features.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/21.csv'': {''summary'': {''Column'': [''meanfreq'', ''sd'',
+  ''median'', ''Q25'', ''Q75'', ''IQR'', ''skew'', ''kurt'', ''sp.ent'', ''sfm'',
+  ''mode'', ''centroid'', ''meanfun'', ''minfun'', ''maxfun'', ''meandom'', ''mindom'',
+  ''maxdom'', ''dfrange'', ''modindx'', ''label''], ''Data Type'': [dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [3166, 3166, 3077, 3103, 3034, 3073, 3166, 3166, 3166, 3166, 2825, 3166,
+  3166, 913, 123, 2999, 77, 1054, 1091, 3079, 2]}, ''sample_data'': {''meanfreq'':
+  [0.0597809849598081, 0.066008740387572, 0.0773155026958227], ''sd'': [0.0642412677031359,
+  0.0673100287952527, 0.0838294209445061], ''median'': [0.032026913372582, 0.040228734810579,
+  0.0367184586699814], ''Q25'': [0.0150714886459209, 0.0194138670478914, 0.0087010565568676],
+  ''Q75'': [0.0901934398654331, 0.0926661901358113, 0.131908017402113], ''IQR'': [0.0751219512195122,
+  0.0732523230879199, 0.123206960845246], ''skew'': [12.8634618371626, 22.4232853628204,
+  30.7571545800584], ''kurt'': [274.402905502067, 634.613854542068, 1024.927704721],
+  ''sp.ent'': [0.893369416700807, 0.892193242265734, 0.846389091878782], ''sfm'':
+  [0.491917766397811, 0.513723842537073, 0.478904979116727], ''mode'': [0.0, 0.0,
+  0.0], ''centroid'': [0.0597809849598081, 0.066008740387572, 0.0773155026958227],
+  ''meanfun'': [0.084279106440321, 0.107936553670454, 0.0987062615673936], ''minfun'':
+  [0.0157016683022571, 0.0158259149357072, 0.0156555772994129], ''maxfun'': [0.275862068965517,
+  0.25, 0.271186440677966], ''meandom'': [0.0078125, 0.009014423076923, 0.0079900568181818],
+  ''mindom'': [0.0078125, 0.0078125, 0.0078125], ''maxdom'': [0.0078125, 0.0546875,
+  0.015625], ''dfrange'': [0.0, 0.046875, 0.0078125], ''modindx'': [0.0, 0.0526315789473684,
+  0.0465116279069767], ''label'': [''male'', ''male'', ''male'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["meanfreq", "sd", "median", "Q25", "Q75", "meanfun", "label"],
+
+  "Task": "Focus on Identifying value",
+
+  "Purpose": "Understanding gender differentiation based on voice features",
+
+  "Audience": "Researchers or professionals in the field of voice recognition and
+  gender studies"
+
+  }'
+05_audience: Researchers or professionals in the field of voice recognition and gender
+  studies
+05_data_attributes:
+- meanfreq
+- sd
+- median
+- Q25
+- Q75
+- meanfun
+- label
+05_purpose: Understanding gender differentiation based on voice features
+05_task: Focus on Identifying value
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/21.csv'': {''summary'': {''Column'': [''meanfreq'', ''sd'',
+  ''median'', ''Q25'', ''Q75'', ''IQR'', ''skew'', ''kurt'', ''sp.ent'', ''sfm'',
+  ''mode'', ''centroid'', ''meanfun'', ''minfun'', ''maxfun'', ''meandom'', ''mindom'',
+  ''maxdom'', ''dfrange'', ''modindx'', ''label''], ''Data Type'': [dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [3166, 3166, 3077, 3103, 3034, 3073, 3166, 3166, 3166, 3166, 2825, 3166,
+  3166, 913, 123, 2999, 77, 1054, 1091, 3079, 2]}, ''sample_data'': {''meanfreq'':
+  [0.0597809849598081, 0.066008740387572, 0.0773155026958227], ''sd'': [0.0642412677031359,
+  0.0673100287952527, 0.0838294209445061], ''median'': [0.032026913372582, 0.040228734810579,
+  0.0367184586699814], ''Q25'': [0.0150714886459209, 0.0194138670478914, 0.0087010565568676],
+  ''Q75'': [0.0901934398654331, 0.0926661901358113, 0.131908017402113], ''IQR'': [0.0751219512195122,
+  0.0732523230879199, 0.123206960845246], ''skew'': [12.8634618371626, 22.4232853628204,
+  30.7571545800584], ''kurt'': [274.402905502067, 634.613854542068, 1024.927704721],
+  ''sp.ent'': [0.893369416700807, 0.892193242265734, 0.846389091878782], ''sfm'':
+  [0.491917766397811, 0.513723842537073, 0.478904979116727], ''mode'': [0.0, 0.0,
+  0.0], ''centroid'': [0.0597809849598081, 0.066008740387572, 0.0773155026958227],
+  ''meanfun'': [0.084279106440321, 0.107936553670454, 0.0987062615673936], ''minfun'':
+  [0.0157016683022571, 0.0158259149357072, 0.0156555772994129], ''maxfun'': [0.275862068965517,
+  0.25, 0.271186440677966], ''meandom'': [0.0078125, 0.009014423076923, 0.0079900568181818],
+  ''mindom'': [0.0078125, 0.0078125, 0.0078125], ''maxdom'': [0.0078125, 0.0546875,
+  0.015625], ''dfrange'': [0.0, 0.046875, 0.0078125], ''modindx'': [0.0, 0.0526315789473684,
+  0.0465116279069767], ''label'': [''male'', ''male'', ''male'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bar chart to visualize the "Gender Recognition by Voice" dataset. Focus
+  on the average (''mean'') values of features such as ''meanfreq'', ''sd'', ''median'',
+  ''Q25'', ''Q75'', and ''meanfun'' for male and female speakers. Use different colors
+  to highlight male and female categories to show the comparison clearly. Include
+  text annotations for key data points, such as the highest and lowest ''meanfreq''
+  values, and use highlights for the ''meanfun'' feature to emphasize its relevance
+  in gender recognition. The chart should help in understanding gender differentiation
+  based on voice features.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''meanfreq'', ''sd'', ''median'', ''Q25'', ''Q75'', ''meanfun'', ''label'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers or professionals in the field of voice recognition and gender studies
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying value
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understanding gender differentiation based on voice features
+
+  <end of purpose>'
+07_questions: '1. Do you have a preference for the specific colors used to differentiate
+  male and female categories?
+
+  2. Would you like a specific title or subtitle for the chart?
+
+  3. Do you have any specific font preferences for text annotations or labels?
+
+  4. How would you prefer the data labels to be formatted for the highest and lowest
+  ''meanfreq'' values?
+
+  5. Are there any specific ranges or scales you prefer for the y-axis?
+
+  6. Do you want gridlines to be displayed in the background of the chart? If yes,
+  do you have any specific preference for their style?
+
+  7. Is there a preference for where you would like the legend to be placed?
+
+  8. Do you want tooltips to appear when hovering over the bars?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart to visualize the \"Gender Recognition\
+  \ by Voice\" dataset. Focus on the average ('mean') values of features such as 'meanfreq',\
+  \ 'sd', 'median', 'Q25', 'Q75', and 'meanfun' for male and female speakers. Use\
+  \ different colors to highlight male and female categories to show the comparison\
+  \ clearly. Include text annotations for key data points, such as the highest and\
+  \ lowest 'meanfreq' values, and use highlights for the 'meanfun' feature to emphasize\
+  \ its relevance in gender recognition. The chart should help in understanding gender\
+  \ differentiation based on voice features.\n<end of user request>\n\nImagine the\
+  \ best result that can be achieved based on the given instructions and is the final\
+  \ output you want from the service provider with your purpose given below.\nBased\
+  \ on your imagination you are to respond to the service provider.\nSince you are\
+  \ an amateur user you should concretely answer 50% of the questions you think are\
+  \ most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nUnderstanding gender differentiation\
+  \ based on voice features\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have a preference for the specific colors used to differentiate male and\
+  \ female categories?\n2. Would you like a specific title or subtitle for the chart?\n\
+  3. Do you have any specific font preferences for text annotations or labels?\n4.\
+  \ How would you prefer the data labels to be formatted for the highest and lowest\
+  \ 'meanfreq' values?\n5. Are there any specific ranges or scales you prefer for\
+  \ the y-axis?\n6. Do you want gridlines to be displayed in the background of the\
+  \ chart? If yes, do you have any specific preference for their style?\n7. Is there\
+  \ a preference for where you would like the legend to be placed?\n8. Do you want\
+  \ tooltips to appear when hovering over the bars?\n<end service provider message>\n\
+  \nAlso, remember that the service provider can not see the image you have access\
+  \ to.\nYour response should ONLY contain the user emulated response.\nDo not include\
+  \ anything else.\n"
+09_answers: "<start of user emulated response>\n1. I am not sure.\n2. I don't have\
+  \ a specific title or subtitle in mind. \n3. I do not know.\n4. I would like data\
+  \ labels to be clearly visible, but I do not have a specific format in mind.\n5.\
+  \ I am not sure about the specific ranges or scales for the y-axis.\n6. Yes, please\
+  \ include gridlines, but I do not have a specific preference for their style.\n\
+  7. No specific preference for the legend placement.\n8. I do not need tooltips since\
+  \ I am looking for an image, not an interactive visualization.\n<end of user emulated\
+  \ response>"

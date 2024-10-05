@@ -1,0 +1,87 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 856
+- 825
+- 31
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 673
+- 535
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/341.csv': {'summary': {'Column':\
+  \ ['Product Name', 'Product Category', 'Product Price', 'Product Price (INR)', 'Quantity'],\
+  \ 'Data Type': [dtype('O'), dtype('O'), dtype('O'), dtype('float64'), dtype('O')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0], 'Unique Values': [5087, 38, 1600, 1468, 510]},\
+  \ 'sample_data': {'Product Name': ['Organic Tattva Cinnamon Stick', '24 Mantra Organic\
+  \ Moong Dal', '24 Mantra Organic Himalaya Pink Salt'], 'Product Category': ['Organic\
+  \ Products', 'Organic Products', 'Organic Products'], 'Product Price': ['$2.84',\
+  \ '$9.45', '$6.28'], 'Product Price (INR)': [154.07, 512.66, 340.69], 'Quantity':\
+  \ ['50g', '1kg', '1kg']}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '2. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nIndian Grocery Prices in Sydney\nfood-and-drink\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Stacked bar/column chart\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Stacked bar/column chart and given annotations\
+  \ that utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data.\nTo emulate a real-world user your instruction\
+  \ should be 100 in size (word count). Do not include data path in the instruction.\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Pie chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Histogram'
+- '* Heatmap'
+- '* Geographic heatmap'
+- '* Bar chart'
+- '* Pie chart'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Please create a stacked bar chart to visualize the prices of different organic products
+  in Sydney groceries. Use the categories "Product Name," "Product Category," "Product
+  Price (INR)" and "Quantity" for the stacks. Highlight variations in prices with
+  color and include text annotations to show specific price values for key products.
+  The chart should help in comparing the prices and appreciating the diversity in
+  the product categories. The main goal is to understand price differences in INR
+  among different organic products available. Annotations should draw focus to significant
+  price differences or unique products.
+- 721
+- 612
+- 109

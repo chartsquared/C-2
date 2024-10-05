@@ -1,0 +1,86 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Line chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Histogram
+
+  * Box chart'
+- 1100
+- 1078
+- 22
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 930
+- 791
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/319.csv': {'summary': {'Column':\
+  \ ['draw', 'drawdate', 'main1', 'main2', 'main3', 'main4', 'main5', 'main6', 'main7',\
+  \ 'bonus1', 'bonus2', 'sum7', 'sum9', 'odd7', 'even7'], 'Data Type': [dtype('int64'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [507, 507, 20, 24, 28, 30,\
+  \ 28, 22, 18, 35, 35, 113, 125, 8, 8]}, 'sample_data': {'draw': [1, 2, 3], 'drawdate':\
+  \ ['2013/4/5', '2013/4/12', '2013/4/19'], 'main1': [7, 20, 2], 'main2': [10, 24,\
+  \ 7], 'main3': [12, 29, 8], 'main4': [17, 31, 11], 'main5': [23, 33, 14], 'main6':\
+  \ [28, 34, 23], 'main7': [34, 35, 31], 'bonus1': [3, 12, 5], 'bonus2': [15, 32,\
+  \ 15], 'sum7': [131, 206, 96], 'sum9': [149, 250, 116], 'odd7': [3, 4, 4], 'even7':\
+  \ [4, 3, 3]}}}\n<end of data example format>\n\n<start of annotations format>\n\
+  ['<start of the annotation list>', '1. Text Annotations:', 'Description: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.', 'Purpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.', 'Other Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.', '3. Highlights:',\
+  \ 'Description: Highlights modify the appearance of chart elements (e.g., size,\
+  \ color) to emphasize or reduce their importance.', 'Purpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually', '<end of the annotation\
+  \ list>']\n<end of annotations format>\n\n<start of data details format>\nJapan\
+  \ LOTO7 raw data\ndata-science-and-analytics\n<end of data details format>\n\nGiven\
+  \ a data format, imagine a chart that visualizes this data as the final output you\
+  \ want from the service provider.\nConsider what purpose the data has and the practical\
+  \ purpose of visualization and include it in the instructions.\nYou need to imagine\
+  \ a chart with * Line chart and given annotations that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Line chart and\
+  \ given annotations that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count). Do not include data path\
+  \ in the instruction.\nYour response should ONLY contain the user emulated instruction.\n\
+  Do not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Box chart'
+- '* Line chart'
+- '* Histogram'
+- '* Bar chart'
+- '* Scatter plot'
+- '* Heatmap'
+- '* Box chart'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Please create a line chart visualizing the Japan LOTO7 draw data over time. Plot
+  the 'sum7' and 'sum9' columns on the Y-axis and 'drawdate' on the X-axis to show
+  trends. Highlight significant draws with above-average 'sum7' values using different
+  colors or markers. Add text annotations for draws with maximum and minimum 'sum7'
+  values to highlight key points. The purpose is to easily identify trends and outliers
+  in the draw data, making it simpler to analyze patterns and peaks over the given
+  time period.
+- 971
+- 860
+- 111

@@ -1,0 +1,75 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1015
+- 985
+- 30
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n  \n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 839
+- 699
+- 140
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/435.csv': {'summary': {'Column':\
+  \ ['ID', 'title', 'artist', 'year', 'gender', 'points', 'n', 'n1', 'n2', 'n3', 'n4',\
+  \ 'n5'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0], 'Unique Values': [311, 309, 207, 40, 3, 29, 12, 8, 6, 4, 5, 4]}, 'sample_data':\
+  \ {'ID': [1, 2, 3], 'title': ['Juicy', 'Fight The Power', 'Shook Ones (Part II)'],\
+  \ 'artist': ['The Notorious B.I.G.', 'Public Enemy', 'Mobb Deep'], 'year': [1994,\
+  \ 1989, 1995], 'gender': ['male', 'male', 'male'], 'points': [140, 100, 94], 'n':\
+  \ [18, 11, 13], 'n1': [9, 7, 4], 'n2': [3, 3, 5], 'n3': [3, 1, 1], 'n4': [1, 0,\
+  \ 1], 'n5': [2, 0, 2]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '3. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nTop Artist in the BBC Greatest Hip-Hop songs of\
+  \ all time\nmusic\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nConsider what purpose the data has and the practical purpose of visualization\
+  \ and include it in the instructions.\nYou need to imagine a chart with * Heatmap\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Heatmap and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 50 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Create a heatmap visualizing points by year and artist from the BBC's Greatest Hip-Hop
+  songs dataset. Highlight top artists and provide annotations for standout songs
+  to illustrate trends.
+- 802
+- 768
+- 34

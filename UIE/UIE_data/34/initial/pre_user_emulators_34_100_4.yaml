@@ -1,0 +1,148 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Dumbbell
+
+  * Radar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Treemap
+
+  * Area chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1618
+- 1552
+- 66
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1395
+- 1257
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/34.csv'': {''summary'': {''Column'': [''ID'', ''Year_Birth'',
+  ''Education'', ''Marital_Status'', ''Income'', ''Kidhome'', ''Teenhome'', ''Dt_Customer'',
+  ''Recency'', ''MntWines'', ''MntFruits'', ''MntMeatProducts'', ''MntFishProducts'',
+  ''MntSweetProducts'', ''MntGoldProds'', ''NumDealsPurchases'', ''NumWebPurchases'',
+  ''NumCatalogPurchases'', ''NumStorePurchases'', ''NumWebVisitsMonth'', ''AcceptedCmp3'',
+  ''AcceptedCmp4'', ''AcceptedCmp5'', ''AcceptedCmp1'', ''AcceptedCmp2'', ''Complain'',
+  ''Z_CostContact'', ''Z_Revenue'', ''Response''], ''Data Type'': [dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing Values'': [0, 0,
+  0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [2240, 59, 5, 8, 1974, 3, 3, 663, 100, 776, 158, 558, 182, 177,
+  213, 15, 15, 14, 14, 16, 2, 2, 2, 2, 2, 2, 1, 1, 2]}, ''sample_data'': {''ID'':
+  [5524, 2174, 4141], ''Year_Birth'': [1957, 1954, 1965], ''Education'': [''Graduation'',
+  ''Graduation'', ''Graduation''], ''Marital_Status'': [''Single'', ''Single'', ''Together''],
+  ''Income'': [58138.0, 46344.0, 71613.0], ''Kidhome'': [0, 1, 0], ''Teenhome'': [0,
+  1, 0], ''Dt_Customer'': [''04-09-2012'', ''08-03-2014'', ''21-08-2013''], ''Recency'':
+  [58, 38, 26], ''MntWines'': [635, 11, 426], ''MntFruits'': [88, 1, 49], ''MntMeatProducts'':
+  [546, 6, 127], ''MntFishProducts'': [172, 2, 111], ''MntSweetProducts'': [88, 1,
+  21], ''MntGoldProds'': [88, 6, 42], ''NumDealsPurchases'': [3, 2, 1], ''NumWebPurchases'':
+  [8, 1, 8], ''NumCatalogPurchases'': [10, 1, 2], ''NumStorePurchases'': [4, 2, 10],
+  ''NumWebVisitsMonth'': [7, 5, 4], ''AcceptedCmp3'': [0, 0, 0], ''AcceptedCmp4'':
+  [0, 0, 0], ''AcceptedCmp5'': [0, 0, 0], ''AcceptedCmp1'': [0, 0, 0], ''AcceptedCmp2'':
+  [0, 0, 0], ''Complain'': [0, 0, 0], ''Z_CostContact'': [3, 3, 3], ''Z_Revenue'':
+  [11, 11, 11], ''Response'': [1, 0, 0]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Customer Personality Analysis
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Dot plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Dot plot that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Histogram'
+- '* Line chart'
+- '* Area chart'
+- '* Dot plot'
+- '* Pie chart'
+- '* Bar chart'
+- '* Treemap'
+- '* Column chart'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+- '* Dumbbell'
+- '* Radar chart'
+- '* Scatter plot'
+- '* Box chart'
+- '* Heatmap'
+- '* Histogram'
+- '* Line chart'
+- '* Area chart'
+- '* Dot plot'
+2. initial_prompt: !!python/tuple
+- Create a dot plot to visualize the relationship between income levels and the amount
+  spent on wines among customers. On the x-axis, plot 'Income', and on the y-axis,
+  plot 'MntWines'. Each dot should represent an individual customer, with color coding
+  based on 'Education' level to provide additional insights into any patterns or clusters.
+  This will help in understanding if education level influences spending on wines
+  relative to income. Data points with missing 'Income' values should be excluded.
+  Ensure the plot clearly labels each axis and includes a legend for educational levels.
+  Thank you!
+- 1261
+- 1146
+- 115

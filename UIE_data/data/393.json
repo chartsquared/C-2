@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    { "id": 1, "name": "Harvard" },
+    { "id": 2, "name": "MIT" },
+    { "id": 3, "name": "Stanford" },
+    { "id": 4, "name": "Oxford" },
+    { "id": 5, "name": "Cambridge" },
+    { "id": 6, "name": "ETH Zurich" },
+    { "id": 7, "name": "Tokyo University" },
+    { "id": 8, "name": "National University of Singapore" },
+    { "id": 9, "name": "University of Melbourne" },
+    { "id": 10, "name": "University of Toronto" },
+    { "id": 11, "name": "Yale" },
+    { "id": 12, "name": "Princeton" }
+  ],
+  "links": [
+    { "source": 1, "target": 2, "type": "national", "value": 12 },
+    { "source": 1, "target": 4, "type": "international", "value": 5 },
+    { "source": 2, "target": 3, "type": "national", "value": 8 },
+    { "source": 2, "target": 5, "type": "international", "value": 15 },
+    { "source": 3, "target": 6, "type": "international", "value": 3 },
+    { "source": 3, "target": 7, "type": "international", "value": 10 },
+    { "source": 4, "target": 5, "type": "national", "value": 8 },
+    { "source": 4, "target": 8, "type": "international", "value": 6 },
+    { "source": 5, "target": 9, "type": "international", "value": 7 },
+    { "source": 6, "target": 10, "type": "international", "value": 6 },
+    { "source": 1, "target": 11, "type": "national", "value": 12 },
+    { "source": 11, "target": 12, "type": "national", "value": 10 },
+    { "source": 12, "target": 3, "type": "national", "value": 10 }
+  ]
+}

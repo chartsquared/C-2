@@ -1,0 +1,82 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Line chart
+
+  * Heatmap
+
+  * Treemap
+
+  * Scatter plot
+
+  * Geographic heatmap
+
+  * Histogram'
+- 791
+- 764
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 614
+- 476
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/72.csv': {'summary': {'Column':\
+  \ ['Entity', 'Code', 'Year', 'Terrorist attacks'], 'Data Type': [dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('int64')], 'Missing Values': [0, 1254, 0, 0], 'Unique Values':\
+  \ [221, 196, 51, 663]}, 'sample_data': {'Entity': ['Afghanistan', 'Afghanistan',\
+  \ 'Afghanistan'], 'Code': ['AFG', 'AFG', 'AFG'], 'Year': [1970, 1971, 1972], 'Terrorist\
+  \ attacks': [0, 0, 0]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '2. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nTerrorism_in_world\ndata-science-and-analytics\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Line chart and given\
+  \ annotations that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Line chart and given annotations that utilizes all the\
+  \ data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 100 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Line chart'
+- '* Scatter plot'
+- '* Treemap'
+- '* Bar chart'
+- '* Geographic heatmap'
+- '* Histogram'
+- '* Heatmap'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Please create a line chart to visualize the trend of terrorist attacks over the
+  years for different entities. Highlight the years with the most significant increases
+  and decreases in attacks. Use text annotations to mark the data points with notable
+  peaks and drops to help interpret the patterns. This chart will help understand
+  the evolution and distribution of terrorist activities globally. Additionally, provide
+  context or commentary for any notable trends or anomalies. The purpose is to offer
+  a clear visual representation of the overall trend in terrorism over time and to
+  facilitate deeper analysis.
+- 646
+- 545
+- 101

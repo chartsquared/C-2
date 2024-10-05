@@ -1,0 +1,32 @@
+You are an expert data visualization analyst.
+Given data, data attribute, tasks, prospective audience, purposes of the chart(data visualization) from the initial instruction (user request) of the user, you have a 2-step task to do.
+
+(1) First, your task is to figure out the essential chart attribute requirements that the chart must have in order to satisfy such tasks and purposes
+(2) Then, create a list of questions to the user if the user have specific chart attribute preference for effective data visualization.
+
+Do NOT include anything else in your response other than the list of questions. Your questions should be primarily focused on retrieving the user's preferences.
+Do NOT include any questions related to (1) interactivity of the chart, and (2) the file format of the chart.
+
+<start of data format>
+{data}
+<end of data format>
+
+<start of data visualization instruction>
+{initial_instruction}
+<end of data visualization instruction>
+
+<start of data attributes>
+{attributes}
+<end of data attributes>
+
+<start of prospective audience>
+{audience}
+<end of prospective audience>
+
+<start of type of tasks>
+{tasks}
+<end of type of tasks>
+
+<start of purpose>
+{purpose}
+<end of purpose>

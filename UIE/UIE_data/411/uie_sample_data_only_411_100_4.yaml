@@ -1,0 +1,444 @@
+02_initial_prompt: Create a box chart to visualize the decline in urban population
+  percentages worldwide from 1960 to 2019. Use the dataset provided, which includes
+  yearly urban population percentages for various countries. The chart should show
+  the distribution and variation in urban population percentages for each year. Highlight
+  trends and any significant outliers over time. The focus should be on comparing
+  these percentages across different years to identify patterns of declining urbanization.
+  Ensure the chart is clearly labeled with axes representing years and urban population
+  percentages. The title should read "Global Urban Population Decline (1960-2019)".
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a box chart to visualize the decline in urban population percentages worldwide
+  from 1960 to 2019. Use the dataset provided, which includes yearly urban population
+  percentages for various countries. The chart should show the distribution and variation
+  in urban population percentages for each year. Highlight trends and any significant
+  outliers over time. The focus should be on comparing these percentages across different
+  years to identify patterns of declining urbanization. Ensure the chart is clearly
+  labeled with axes representing years and urban population percentages. The title
+  should read "Global Urban Population Decline (1960-2019)".
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/411.csv'': {''summary'': {''Column'': [''Country Name'',
+  ''Country Code'', ''Indicator Name'', ''Indicator Code'', ''1960'', ''1961'', ''1962'',
+  ''1963'', ''1964'', ''1965'', ''1966'', ''1967'', ''1968'', ''1969'', ''1970'',
+  ''1971'', ''1972'', ''1973'', ''1974'', ''1975'', ''1976'', ''1977'', ''1978'',
+  ''1979'', ''1980'', ''1981'', ''1982'', ''1983'', ''1984'', ''1985'', ''1986'',
+  ''1987'', ''1988'', ''1989'', ''1990'', ''1991'', ''1992'', ''1993'', ''1994'',
+  ''1995'', ''1996'', ''1997'', ''1998'', ''1999'', ''2000'', ''2001'', ''2002'',
+  ''2003'', ''2004'', ''2005'', ''2006'', ''2007'', ''2008'', ''2009'', ''2010'',
+  ''2011'', ''2012'', ''2013'', ''2014'', ''2015'', ''2016'', ''2017'', ''2018'',
+  ''2019'', ''2020''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+  3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+  3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 264], ''Unique
+  Values'': [264, 264, 1, 1, 252, 252, 250, 251, 251, 252, 252, 252, 252, 252, 252,
+  252, 252, 252, 252, 252, 252, 251, 252, 251, 252, 252, 252, 251, 252, 249, 252,
+  251, 252, 251, 253, 253, 253, 251, 252, 252, 252, 251, 250, 251, 250, 250, 250,
+  250, 250, 250, 250, 250, 250, 250, 249, 250, 248, 249, 249, 249, 249, 249, 249,
+  248, 0]}, ''sample_data'': {''Country Name'': [''Aruba'', ''Afghanistan'', ''Angola''],
+  ''Country Code'': [''ABW'', ''AFG'', ''AGO''], ''Indicator Name'': [''Urban population
+  (% of total population)'', ''Urban population (% of total population)'', ''Urban
+  population (% of total population)''], ''Indicator Code'': [''SP.URB.TOTL.IN.ZS'',
+  ''SP.URB.TOTL.IN.ZS'', ''SP.URB.TOTL.IN.ZS''], ''1960'': [50.776, 8.401, 10.435],
+  ''1961'': [50.761, 8.684, 10.798], ''1962'': [50.746, 8.976, 11.204], ''1963'':
+  [50.73, 9.276, 11.624], ''1964'': [50.715, 9.586, 12.058], ''1965'': [50.7, 9.904,
+  12.504], ''1966'': [50.685, 10.233, 12.965], ''1967'': [50.67, 10.57, 13.441], ''1968'':
+  [50.654, 10.918, 13.932], ''1969'': [50.639, 11.275, 14.436], ''1970'': [50.624,
+  11.643, 14.957], ''1971'': [50.609, 12.021, 15.632], ''1972'': [50.593, 12.41, 16.455],
+  ''1973'': [50.578, 12.809, 17.31], ''1974'': [50.563, 13.219, 18.202], ''1975'':
+  [50.548, 13.641, 19.128], ''1976'': [50.532, 14.074, 20.092], ''1977'': [50.517,
+  14.517, 21.088], ''1978'': [50.502, 14.973, 22.122], ''1979'': [50.487, 15.442,
+  23.192], ''1980'': [50.472, 15.995, 24.298], ''1981'': [50.456, 16.562, 25.437],
+  ''1982'': [50.441, 17.147, 26.612], ''1983'': [50.426, 17.747, 27.821], ''1984'':
+  [50.411, 18.365, 29.065], ''1985'': [50.395, 18.997, 30.338], ''1986'': [50.38,
+  19.647, 31.643], ''1987'': [50.365, 20.314, 32.978], ''1988'': [50.35, 20.998, 34.343],
+  ''1989'': [50.335, 21.088, 35.731], ''1990'': [50.319, 21.177, 37.144], ''1991'':
+  [50.304, 21.266, 38.58], ''1992'': [49.998, 21.355, 40.039], ''1993'': [49.588,
+  21.444, 41.511], ''1994'': [49.177, 21.534, 43.0], ''1995'': [48.767, 21.624, 44.169],
+  ''1996'': [48.356, 21.714, 45.346], ''1997'': [47.946, 21.805, 46.525], ''1998'':
+  [47.536, 21.895, 47.71], ''1999'': [47.127, 21.986, 48.897], ''2000'': [46.717,
+  22.078, 50.087], ''2001'': [46.339, 22.169, 51.274], ''2002'': [45.972, 22.261,
+  52.461], ''2003'': [45.606, 22.353, 53.645], ''2004'': [45.24, 22.5, 54.827], ''2005'':
+  [44.875, 22.703, 56.0], ''2006'': [44.511, 22.907, 56.764], ''2007'': [44.147, 23.113,
+  57.524], ''2008'': [43.783, 23.32, 58.282], ''2009'': [43.421, 23.528, 59.034],
+  ''2010'': [43.059, 23.737, 59.783], ''2011'': [42.94, 23.948, 60.528], ''2012'':
+  [42.957, 24.16, 61.268], ''2013'': [42.99, 24.373, 62.002], ''2014'': [43.041, 24.587,
+  62.731], ''2015'': [43.108, 24.803, 63.446], ''2016'': [43.192, 25.02, 64.149],
+  ''2017'': [43.293, 25.25, 64.839], ''2018'': [43.411, 25.495, 65.514], ''2019'':
+  [43.546, 25.754, 66.177], ''2020'': [nan, nan, nan]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967",
+  "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977",
+  "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987",
+  "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997",
+  "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007",
+  "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017",
+  "2018", "2019"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "Highlight trends and significant outliers in urban population percentages
+  over time and compare these percentages across different years to identify patterns
+  of declining urbanization",
+
+  "Audience": "Researchers, policymakers, demographers, and urban planners"
+
+  }'
+05_audience: Researchers, policymakers, demographers, and urban planners
+05_data_attributes:
+- '1960'
+- '1961'
+- '1962'
+- '1963'
+- '1964'
+- '1965'
+- '1966'
+- '1967'
+- '1968'
+- '1969'
+- '1970'
+- '1971'
+- '1972'
+- '1973'
+- '1974'
+- '1975'
+- '1976'
+- '1977'
+- '1978'
+- '1979'
+- '1980'
+- '1981'
+- '1982'
+- '1983'
+- '1984'
+- '1985'
+- '1986'
+- '1987'
+- '1988'
+- '1989'
+- '1990'
+- '1991'
+- '1992'
+- '1993'
+- '1994'
+- '1995'
+- '1996'
+- '1997'
+- '1998'
+- '1999'
+- '2000'
+- '2001'
+- '2002'
+- '2003'
+- '2004'
+- '2005'
+- '2006'
+- '2007'
+- '2008'
+- '2009'
+- '2010'
+- '2011'
+- '2012'
+- '2013'
+- '2014'
+- '2015'
+- '2016'
+- '2017'
+- '2018'
+- '2019'
+05_purpose: Highlight trends and significant outliers in urban population percentages
+  over time and compare these percentages across different years to identify patterns
+  of declining urbanization
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/411.csv'': {''summary'': {''Column'': [''Country Name'',
+  ''Country Code'', ''Indicator Name'', ''Indicator Code'', ''1960'', ''1961'', ''1962'',
+  ''1963'', ''1964'', ''1965'', ''1966'', ''1967'', ''1968'', ''1969'', ''1970'',
+  ''1971'', ''1972'', ''1973'', ''1974'', ''1975'', ''1976'', ''1977'', ''1978'',
+  ''1979'', ''1980'', ''1981'', ''1982'', ''1983'', ''1984'', ''1985'', ''1986'',
+  ''1987'', ''1988'', ''1989'', ''1990'', ''1991'', ''1992'', ''1993'', ''1994'',
+  ''1995'', ''1996'', ''1997'', ''1998'', ''1999'', ''2000'', ''2001'', ''2002'',
+  ''2003'', ''2004'', ''2005'', ''2006'', ''2007'', ''2008'', ''2009'', ''2010'',
+  ''2011'', ''2012'', ''2013'', ''2014'', ''2015'', ''2016'', ''2017'', ''2018'',
+  ''2019'', ''2020''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+  3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+  3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 264], ''Unique
+  Values'': [264, 264, 1, 1, 252, 252, 250, 251, 251, 252, 252, 252, 252, 252, 252,
+  252, 252, 252, 252, 252, 252, 251, 252, 251, 252, 252, 252, 251, 252, 249, 252,
+  251, 252, 251, 253, 253, 253, 251, 252, 252, 252, 251, 250, 251, 250, 250, 250,
+  250, 250, 250, 250, 250, 250, 250, 249, 250, 248, 249, 249, 249, 249, 249, 249,
+  248, 0]}, ''sample_data'': {''Country Name'': [''Aruba'', ''Afghanistan'', ''Angola''],
+  ''Country Code'': [''ABW'', ''AFG'', ''AGO''], ''Indicator Name'': [''Urban population
+  (% of total population)'', ''Urban population (% of total population)'', ''Urban
+  population (% of total population)''], ''Indicator Code'': [''SP.URB.TOTL.IN.ZS'',
+  ''SP.URB.TOTL.IN.ZS'', ''SP.URB.TOTL.IN.ZS''], ''1960'': [50.776, 8.401, 10.435],
+  ''1961'': [50.761, 8.684, 10.798], ''1962'': [50.746, 8.976, 11.204], ''1963'':
+  [50.73, 9.276, 11.624], ''1964'': [50.715, 9.586, 12.058], ''1965'': [50.7, 9.904,
+  12.504], ''1966'': [50.685, 10.233, 12.965], ''1967'': [50.67, 10.57, 13.441], ''1968'':
+  [50.654, 10.918, 13.932], ''1969'': [50.639, 11.275, 14.436], ''1970'': [50.624,
+  11.643, 14.957], ''1971'': [50.609, 12.021, 15.632], ''1972'': [50.593, 12.41, 16.455],
+  ''1973'': [50.578, 12.809, 17.31], ''1974'': [50.563, 13.219, 18.202], ''1975'':
+  [50.548, 13.641, 19.128], ''1976'': [50.532, 14.074, 20.092], ''1977'': [50.517,
+  14.517, 21.088], ''1978'': [50.502, 14.973, 22.122], ''1979'': [50.487, 15.442,
+  23.192], ''1980'': [50.472, 15.995, 24.298], ''1981'': [50.456, 16.562, 25.437],
+  ''1982'': [50.441, 17.147, 26.612], ''1983'': [50.426, 17.747, 27.821], ''1984'':
+  [50.411, 18.365, 29.065], ''1985'': [50.395, 18.997, 30.338], ''1986'': [50.38,
+  19.647, 31.643], ''1987'': [50.365, 20.314, 32.978], ''1988'': [50.35, 20.998, 34.343],
+  ''1989'': [50.335, 21.088, 35.731], ''1990'': [50.319, 21.177, 37.144], ''1991'':
+  [50.304, 21.266, 38.58], ''1992'': [49.998, 21.355, 40.039], ''1993'': [49.588,
+  21.444, 41.511], ''1994'': [49.177, 21.534, 43.0], ''1995'': [48.767, 21.624, 44.169],
+  ''1996'': [48.356, 21.714, 45.346], ''1997'': [47.946, 21.805, 46.525], ''1998'':
+  [47.536, 21.895, 47.71], ''1999'': [47.127, 21.986, 48.897], ''2000'': [46.717,
+  22.078, 50.087], ''2001'': [46.339, 22.169, 51.274], ''2002'': [45.972, 22.261,
+  52.461], ''2003'': [45.606, 22.353, 53.645], ''2004'': [45.24, 22.5, 54.827], ''2005'':
+  [44.875, 22.703, 56.0], ''2006'': [44.511, 22.907, 56.764], ''2007'': [44.147, 23.113,
+  57.524], ''2008'': [43.783, 23.32, 58.282], ''2009'': [43.421, 23.528, 59.034],
+  ''2010'': [43.059, 23.737, 59.783], ''2011'': [42.94, 23.948, 60.528], ''2012'':
+  [42.957, 24.16, 61.268], ''2013'': [42.99, 24.373, 62.002], ''2014'': [43.041, 24.587,
+  62.731], ''2015'': [43.108, 24.803, 63.446], ''2016'': [43.192, 25.02, 64.149],
+  ''2017'': [43.293, 25.25, 64.839], ''2018'': [43.411, 25.495, 65.514], ''2019'':
+  [43.546, 25.754, 66.177], ''2020'': [nan, nan, nan]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a box chart to visualize the decline in urban population percentages worldwide
+  from 1960 to 2019. Use the dataset provided, which includes yearly urban population
+  percentages for various countries. The chart should show the distribution and variation
+  in urban population percentages for each year. Highlight trends and any significant
+  outliers over time. The focus should be on comparing these percentages across different
+  years to identify patterns of declining urbanization. Ensure the chart is clearly
+  labeled with axes representing years and urban population percentages. The title
+  should read "Global Urban Population Decline (1960-2019)".
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''1960'', ''1961'', ''1962'', ''1963'', ''1964'', ''1965'', ''1966'', ''1967'',
+  ''1968'', ''1969'', ''1970'', ''1971'', ''1972'', ''1973'', ''1974'', ''1975'',
+  ''1976'', ''1977'', ''1978'', ''1979'', ''1980'', ''1981'', ''1982'', ''1983'',
+  ''1984'', ''1985'', ''1986'', ''1987'', ''1988'', ''1989'', ''1990'', ''1991'',
+  ''1992'', ''1993'', ''1994'', ''1995'', ''1996'', ''1997'', ''1998'', ''1999'',
+  ''2000'', ''2001'', ''2002'', ''2003'', ''2004'', ''2005'', ''2006'', ''2007'',
+  ''2008'', ''2009'', ''2010'', ''2011'', ''2012'', ''2013'', ''2014'', ''2015'',
+  ''2016'', ''2017'', ''2018'', ''2019'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, policymakers, demographers, and urban planners
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Highlight trends and significant outliers in urban population percentages over time
+  and compare these percentages across different years to identify patterns of declining
+  urbanization
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should the outliers in the data be labeled or marked in a specific way?
+
+  3. Is there a specific font style or size you would like to use for the labels and
+  title?
+
+  4. Would you prefer grid lines on the chart to enhance readability?
+
+  5. Do you have specific preferences for the box plot elements such as box widths,
+  whisker lengths, and median line styles?
+
+  6. Should the chart include a legend or any additional annotations?
+
+  7. Are there any specific countries or regions you want to highlight separately?
+
+  8. Do you want to include a trend line to emphasize the overall trend of declining
+  urbanization?
+
+  9. Would you prefer the chart to be presented with a particular aspect ratio or
+  dimensions?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a box chart to visualize the decline in urban\
+  \ population percentages worldwide from 1960 to 2019. Use the dataset provided,\
+  \ which includes yearly urban population percentages for various countries. The\
+  \ chart should show the distribution and variation in urban population percentages\
+  \ for each year. Highlight trends and any significant outliers over time. The focus\
+  \ should be on comparing these percentages across different years to identify patterns\
+  \ of declining urbanization. Ensure the chart is clearly labeled with axes representing\
+  \ years and urban population percentages. The title should read \"Global Urban Population\
+  \ Decline (1960-2019)\".\n<end of user request>\n\nImagine the best result that\
+  \ can be achieved based on the given instructions and is the final output you want\
+  \ from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nHighlight trends and significant outliers in urban population\
+  \ percentages over time and compare these percentages across different years to\
+  \ identify patterns of declining urbanization\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color scheme for the chart?\n2.\
+  \ Should the outliers in the data be labeled or marked in a specific way?\n3. Is\
+  \ there a specific font style or size you would like to use for the labels and title?\n\
+  4. Would you prefer grid lines on the chart to enhance readability?\n5. Do you have\
+  \ specific preferences for the box plot elements such as box widths, whisker lengths,\
+  \ and median line styles?\n6. Should the chart include a legend or any additional\
+  \ annotations?\n7. Are there any specific countries or regions you want to highlight\
+  \ separately?\n8. Do you want to include a trend line to emphasize the overall trend\
+  \ of declining urbanization?\n9. Would you prefer the chart to be presented with\
+  \ a particular aspect ratio or dimensions?\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please label or mark the outliers in a noticeable way.
+
+  3. I do not know.
+
+  4. Yes, grid lines would be useful.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. No, all countries should be treated equally.
+
+  8. Yes, a trend line would be helpful to emphasize the overall trend.
+
+  9. I have no specific preference.'

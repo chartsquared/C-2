@@ -1,0 +1,98 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Pie chart
+
+  * Line chart
+
+  * Heatmap
+
+  * Geographic heatmap
+
+  * Box chart'
+- 1288
+- 1260
+- 28
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 1107
+- 969
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/213.csv': {'summary': {'Column':\
+  \ ['State Park', 'Course Name', 'Region', 'County', 'Facility URL', 'Golf URL',\
+  \ 'Longitude', 'Latitude', 'Location', 'NYS Municipal Boundaries', 'New York Zip\
+  \ Codes', 'Counties', 'NYS Group 1b', 'NYS Group 2b'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64')], 'Missing Values': [0, 16, 0, 0, 2, 0, 0,\
+  \ 0, 0, 0, 0, 1, 23, 23], 'Unique Values': [19, 7, 10, 15, 17, 19, 19, 19, 19, 18,\
+  \ 19, 15, 3, 4]}, 'sample_data': {'State Park': ['Alfred E. Smith/Sunken Meadow',\
+  \ 'Alfred E. Smith/Sunken Meadow', 'Alfred E. Smith/Sunken Meadow'], 'Course Name':\
+  \ ['Blue', 'Green', 'Red'], 'Region': [9, 10, 11], 'County': ['Suffolk', 'Suffolk',\
+  \ 'Suffolk'], 'Facility URL': [\"{'url': 'https://parks.ny.gov/parks/37/'}\", \"\
+  {'url': 'https://parks.ny.gov/parks/37/'}\", \"{'url': 'https://parks.ny.gov/parks/37/'}\"\
+  ], 'Golf URL': [\"{'url': 'https://parks.ny.gov/golf/13/details.aspx'}\", \"{'url':\
+  \ 'https://parks.ny.gov/golf/13/details.aspx'}\", \"{'url': 'https://parks.ny.gov/golf/13/details.aspx'}\"\
+  ], 'Longitude': [-73.26320632, -73.26320632, -73.26320632], 'Latitude': [40.90999227,\
+  \ 40.90999227, 40.90999227], 'Location': [\"{'latitude': '40.90999227', 'longitude':\
+  \ '-73.26320632'}\", \"{'latitude': '40.90999227', 'longitude': '-73.26320632'}\"\
+  , \"{'latitude': '40.90999227', 'longitude': '-73.26320632'}\"], 'NYS Municipal\
+  \ Boundaries': [1014, 1014, 1014], 'New York Zip Codes': [1318, 1318, 1318], 'Counties':\
+  \ [2179.0, 2179.0, 2179.0], 'NYS Group 1b': [nan, nan, nan], 'NYS Group 2b': [nan,\
+  \ nan, nan]}}}\n<end of data example format>\n\n<start of annotations format>\n\
+  ['<start of the annotation list>', '1. Text Annotations:', 'Description: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.', 'Purpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.', 'Other Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.', '2. Highlights:',\
+  \ 'Description: Highlights modify the appearance of chart elements (e.g., size,\
+  \ color) to emphasize or reduce their importance.', 'Purpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually.', '<end of the annotation\
+  \ list>']\n<end of annotations format>\n\n<start of data details format>\nNYS Golf\
+  \ Courses\nsports-and-recreation\n<end of data details format>\n\nGiven a data format,\
+  \ imagine a chart that visualizes this data as the final output you want from the\
+  \ service provider.\nConsider what purpose the data has and the practical purpose\
+  \ of visualization and include it in the instructions.\nYou need to imagine a chart\
+  \ with * Heatmap and given annotations that utilizes the data format.\nIf there\
+  \ are multiple given data formats, imagine a chart with * Heatmap and given annotations\
+  \ that utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data.\nTo emulate a real-world user your instruction\
+  \ should be 100 in size (word count). Do not include data path in the instruction.\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Pie chart'
+- '* Box chart'
+- '* Geographic heatmap'
+- '* Line chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Create a heatmap visualizing golf course distributions across different regions
+  and counties in New York State Parks. Highlight regions with higher densities, and
+  use text annotations to display specific values where densities are highest. This
+  will help to quickly identify key areas of interest for golf enthusiasts and park
+  management, focusing especially on Suffolk County as seen in the sample data. Ensure
+  the chart is user-friendly and visually emphasizes critical data points for effective
+  analysis. Provide contextual and orientation annotations to help users understand
+  the golf facility locations in relation to municipal boundaries and zip codes.
+- 1144
+- 1038
+- 106

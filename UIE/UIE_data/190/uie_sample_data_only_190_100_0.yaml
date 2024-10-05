@@ -1,0 +1,245 @@
+02_initial_prompt: Please create a scatter plot for the diabetes dataset showing the
+  relationship between BMI and Glucose levels. Use text annotations to highlight data
+  points with extreme Glucose levels to draw attention to potential outliers. Additionally,
+  change the color of points where the Outcome is 1 to emphasize cases of diabetes.
+  The scatter plot should help identify any trends or patterns in glucose levels concerning
+  BMI, aiding in understanding how these factors contribute to diabetes. Make sure
+  the axes are labeled, and a legend is included to distinguish between diabetic and
+  non-diabetic outcomes.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a scatter plot for the diabetes dataset showing the relationship between
+  BMI and Glucose levels. Use text annotations to highlight data points with extreme
+  Glucose levels to draw attention to potential outliers. Additionally, change the
+  color of points where the Outcome is 1 to emphasize cases of diabetes. The scatter
+  plot should help identify any trends or patterns in glucose levels concerning BMI,
+  aiding in understanding how these factors contribute to diabetes. Make sure the
+  axes are labeled, and a legend is included to distinguish between diabetic and non-diabetic
+  outcomes.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/190.csv'': {''summary'': {''Column'': [''Pregnancies'', ''Glucose'',
+  ''BloodPressure'', ''SkinThickness'', ''Insulin'', ''BMI'', ''DiabetesPedigreeFunction'',
+  ''Age'', ''Outcome''], ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [17, 136, 47, 51, 186, 248, 517, 52, 2]}, ''sample_data'': {''Pregnancies'': [6,
+  1, 8], ''Glucose'': [148, 85, 183], ''BloodPressure'': [72, 66, 64], ''SkinThickness'':
+  [35, 29, 0], ''Insulin'': [0, 0, 0], ''BMI'': [33.6, 26.6, 23.3], ''DiabetesPedigreeFunction'':
+  [0.627, 0.351, 0.672], ''Age'': [50, 31, 32], ''Outcome'': [1, 0, 1]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["BMI", "Glucose", "Outcome"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify trends or patterns in glucose levels concerning BMI, and highlight
+  potential outliers to understand their contribution to diabetes.",
+
+  "Audience": "Medical researchers, healthcare professionals, data analysts"
+
+  }'
+05_audience: Medical researchers, healthcare professionals, data analysts
+05_data_attributes:
+- BMI
+- Glucose
+- Outcome
+05_purpose: Identify trends or patterns in glucose levels concerning BMI, and highlight
+  potential outliers to understand their contribution to diabetes.
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/190.csv'': {''summary'': {''Column'': [''Pregnancies'', ''Glucose'',
+  ''BloodPressure'', ''SkinThickness'', ''Insulin'', ''BMI'', ''DiabetesPedigreeFunction'',
+  ''Age'', ''Outcome''], ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''int64''),
+  dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [17, 136, 47, 51, 186, 248, 517, 52, 2]}, ''sample_data'': {''Pregnancies'': [6,
+  1, 8], ''Glucose'': [148, 85, 183], ''BloodPressure'': [72, 66, 64], ''SkinThickness'':
+  [35, 29, 0], ''Insulin'': [0, 0, 0], ''BMI'': [33.6, 26.6, 23.3], ''DiabetesPedigreeFunction'':
+  [0.627, 0.351, 0.672], ''Age'': [50, 31, 32], ''Outcome'': [1, 0, 1]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a scatter plot for the diabetes dataset showing the relationship between
+  BMI and Glucose levels. Use text annotations to highlight data points with extreme
+  Glucose levels to draw attention to potential outliers. Additionally, change the
+  color of points where the Outcome is 1 to emphasize cases of diabetes. The scatter
+  plot should help identify any trends or patterns in glucose levels concerning BMI,
+  aiding in understanding how these factors contribute to diabetes. Make sure the
+  axes are labeled, and a legend is included to distinguish between diabetic and non-diabetic
+  outcomes.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''BMI'', ''Glucose'', ''Outcome'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Medical researchers, healthcare professionals, data analysts
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify trends or patterns in glucose levels concerning BMI, and highlight potential
+  outliers to understand their contribution to diabetes.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred title for the scatter plot?
+
+  2. Is there a specific color scheme you would like for highlighting the Outcome?
+
+  3. Would you like grid lines to be included in the plot?
+
+  4. Do you prefer specific marker shapes for diabetic and non-diabetic data points?
+
+  5. What font size and style would you like for the text annotations?
+
+  6. Do you have any specific range for the x-axis (BMI) or y-axis (Glucose levels)?
+
+  7. Should the scatter plot include data point sizes based on another attribute?
+
+  8. Do you want to include a regression line or any other trend line in the scatter
+  plot?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a scatter plot for the diabetes dataset\
+  \ showing the relationship between BMI and Glucose levels. Use text annotations\
+  \ to highlight data points with extreme Glucose levels to draw attention to potential\
+  \ outliers. Additionally, change the color of points where the Outcome is 1 to emphasize\
+  \ cases of diabetes. The scatter plot should help identify any trends or patterns\
+  \ in glucose levels concerning BMI, aiding in understanding how these factors contribute\
+  \ to diabetes. Make sure the axes are labeled, and a legend is included to distinguish\
+  \ between diabetic and non-diabetic outcomes.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nIdentify trends or patterns in glucose\
+  \ levels concerning BMI, and highlight potential outliers to understand their contribution\
+  \ to diabetes.\n<end of purpose>\n\n<start service provider message>\n1. Do you\
+  \ have a preferred title for the scatter plot?\n2. Is there a specific color scheme\
+  \ you would like for highlighting the Outcome?\n3. Would you like grid lines to\
+  \ be included in the plot?\n4. Do you prefer specific marker shapes for diabetic\
+  \ and non-diabetic data points?\n5. What font size and style would you like for\
+  \ the text annotations?\n6. Do you have any specific range for the x-axis (BMI)\
+  \ or y-axis (Glucose levels)?\n7. Should the scatter plot include data point sizes\
+  \ based on another attribute?\n8. Do you want to include a regression line or any\
+  \ other trend line in the scatter plot?\n<end service provider message>\n\nAlso,\
+  \ remember that the service provider can not see the image you have access to.\n\
+  Your response should ONLY contain the user emulated response.\nDo not include anything\
+  \ else.\n"
+09_answers: "<start of user emulated response>\n1. I do not have a preferred title.\
+  \ \n2. I am not sure, any distinct colors would work.\n3. Yes, grid lines would\
+  \ be helpful.\n4. I have no specific preference.\n5. I do not know, standard font\
+  \ size and style should be fine.\n6. I do not have any specific range in mind.\n\
+  7. No, I do not need data point sizes based on another attribute.\n8. I am not sure,\
+  \ maybe a simple regression line if it helps in identifying trends.\n<end of user\
+  \ emulated response>"

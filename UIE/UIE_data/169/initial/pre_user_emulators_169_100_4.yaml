@@ -1,0 +1,84 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart
+
+  * Choropleth map'
+- 1275
+- 1246
+- 29
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1093
+- 955
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/169.csv': {'summary': {'Column':\
+  \ ['Unnamed: 0', 'Age', 'Grade', 'Histological type', 'MSKCC type', 'Outcome (recurrence,\
+  \ mets)', 'Patient ID', 'Sex', 'Site of primary STS', 'Status (NED, AWD, D)', 'Study\
+  \ Date', 'Study Time', 'Time \u2013 MRI scan to PET scan (days)', 'Time \u2013 diagnosis\
+  \ to MRI scan (days)', 'Time \u2013 diagnosis to last follow-up (days)', 'Time \u2013\
+  \ diagnosis to outcome (days)', 'Treatment'], 'Data Type': [dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0], 'Unique Values': [18, 15, 2, 13, 5, 5, 18, 2, 7, 3, 18, 18, 16,\
+  \ 14, 18, 9, 3]}, 'sample_data': {'Unnamed: 0': [0, 1, 10], 'Age': [61, 17, 48],\
+  \ 'Grade': ['High', 'Intermediate', 'High'], 'Histological type': ['pleiomorphic\
+  \ leiomyosarcoma', 'epithelioid sarcoma', 'pleiomorphic leiomyosarcoma'], 'MSKCC\
+  \ type': ['Leiomyosarcoma', 'Other', 'Leiomyosarcoma'], 'Outcome (recurrence, mets)':\
+  \ ['--', '--', '--'], 'Patient ID': ['STS_002', 'STS_003', 'STS_024'], 'Sex': ['Male',\
+  \ 'Female', 'Male'], 'Site of primary STS': ['left buttock', 'right buttock', 'left\
+  \ thigh'], 'Status (NED, AWD, D)': ['NED', 'NED', 'NED'], 'Study Date': [20060128,\
+  \ 20050415, 20050101], 'Study Time': [145427, 111853, 150247], 'Time \u2013 MRI\
+  \ scan to PET scan (days)': [25, 15, 8], 'Time \u2013 diagnosis to MRI scan (days)':\
+  \ [-10, -13, -4], 'Time \u2013 diagnosis to last follow-up (days)': [501, 756, 819],\
+  \ 'Time \u2013 diagnosis to outcome (days)': ['--', '--', '--'], 'Treatment': ['Radiotherapy\
+  \ + Surgery', 'Radiotherapy + Surgery', 'Radiotherapy + Surgery']}}}\n<end of data\
+  \ example format>\n\n<start of data details format>\nSegmenting Soft Tissue Sarcomas\n\
+  health\n<end of data details format>\n\nGiven a data format, imagine a chart that\
+  \ visualizes this data as the final output you want from the service provider.\n\
+  You need to imagine a chart with * Choropleth map that utilizes the data format.\n\
+  If there are multiple given data formats, imagine a chart with * Choropleth map\
+  \ that utilizes all the data formats.\nSince you are an amateur user, your instruction\
+  \ will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details\
+  \ to create as practical and realistic instructions as possible.\nInstructions must\
+  \ reflect the context of the data.\nTo emulate a real-world user your instruction\
+  \ should be 100 in size (word count).\nYour response should ONLY contain the user\
+  \ emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Choropleth map'
+- '* Box chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Stacked bar/column chart'
+- '* Line chart'
+- '* Choropleth map'
+2. initial_prompt: !!python/tuple
+- Could you please create a choropleth map to visualize the distribution of soft tissue
+  sarcoma cases based on the "Site of primary STS" data from the dataset? I'd like
+  the map to show the frequency of occurrences in different body regions provided,
+  such as the left buttock, right buttock, left thigh, etc. Use a color gradient to
+  represent the number of cases in each region. This will help visualize which areas
+  are most frequently affected by sarcoma. Include a legend to clarify the color scale.
+- 937
+- 834
+- 103

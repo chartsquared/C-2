@@ -1,0 +1,260 @@
+02_initial_prompt: Please create a stacked bar chart visualizing the reviews count
+  and average stars for each title in Amazon's 500 Bestsellers in Laptop Gear 2024.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a stacked bar chart visualizing the reviews count and average stars
+  for each title in Amazon''s 500 Bestsellers in Laptop Gear 2024.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/58.csv'': {''summary'': {''Column'': [''title'', ''brand'',
+  ''description'', ''price/currency'', ''price/value'', ''stars'', ''reviewsCount''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 245, 30, 30,
+  241, 241], ''Unique Values'': [499, 345, 244, 1, 177, 20, 152]}, ''sample_data'':
+  {''title'': [''65W Universal USB C Chromebook Charger,Replacement Lenovo Yoga Google
+  Asus Acer Dell Laptop Charger,AC Adapter Compatible with Lenovo X1 Thinkpad 45W
+  Type C Charger'', ''EMPSIGN Laptop Tote bag for women 16 Inch, Stylish Computer
+  Shoulder Tote Bag for Work, Large Capacity Quilted Laptop Briefcase, Waterproof
+  Women Business Office Bag, Quilted Black'', ''100Pcs Mario Stickers, Cartoon Game
+  Mario Stickers for Kids, Mario Bros Decal Gifts, Waterproof Vinyl Stickers for Teen
+  Adut Water Bottle, Laptop, Skateboard''], ''brand'': [''NELEBUTO'', ''EMPSIGN'',
+  ''MOQIAN''], ''description'': [nan, nan, ''100Pcs Japanese Cartoon Game Mari Stickers
+  for Adult Girl Boy Notebook, Computer, Luggage, Phone, Scrapbook, Guitar, Bike,
+  Car, Helmet, Snowboard, Bumper, Cup.''], ''price/currency'': [''$'', ''$'', ''$''],
+  ''price/value'': [13.69, 31.99, 5.99], ''stars'': [4.2, 4.9, 4.6], ''reviewsCount'':
+  [55.0, 58.0, 42.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["title", "reviewsCount", "stars"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Visualize the distribution of review counts and average star ratings
+  for each title",
+
+  "Audience": "Consumers interested in Amazon''s 500 Bestsellers in Laptop Gear, data
+  analysts, and marketing professionals"
+
+  }'
+05_audience: Consumers interested in Amazon's 500 Bestsellers in Laptop Gear, data
+  analysts, and marketing professionals
+05_data_attributes:
+- title
+- reviewsCount
+- stars
+05_purpose: Visualize the distribution of review counts and average star ratings for
+  each title
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/58.csv'': {''summary'': {''Column'': [''title'', ''brand'',
+  ''description'', ''price/currency'', ''price/value'', ''stars'', ''reviewsCount''],
+  ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64'')], ''Missing Values'': [0, 0, 245, 30, 30,
+  241, 241], ''Unique Values'': [499, 345, 244, 1, 177, 20, 152]}, ''sample_data'':
+  {''title'': [''65W Universal USB C Chromebook Charger,Replacement Lenovo Yoga Google
+  Asus Acer Dell Laptop Charger,AC Adapter Compatible with Lenovo X1 Thinkpad 45W
+  Type C Charger'', ''EMPSIGN Laptop Tote bag for women 16 Inch, Stylish Computer
+  Shoulder Tote Bag for Work, Large Capacity Quilted Laptop Briefcase, Waterproof
+  Women Business Office Bag, Quilted Black'', ''100Pcs Mario Stickers, Cartoon Game
+  Mario Stickers for Kids, Mario Bros Decal Gifts, Waterproof Vinyl Stickers for Teen
+  Adut Water Bottle, Laptop, Skateboard''], ''brand'': [''NELEBUTO'', ''EMPSIGN'',
+  ''MOQIAN''], ''description'': [nan, nan, ''100Pcs Japanese Cartoon Game Mari Stickers
+  for Adult Girl Boy Notebook, Computer, Luggage, Phone, Scrapbook, Guitar, Bike,
+  Car, Helmet, Snowboard, Bumper, Cup.''], ''price/currency'': [''$'', ''$'', ''$''],
+  ''price/value'': [13.69, 31.99, 5.99], ''stars'': [4.2, 4.9, 4.6], ''reviewsCount'':
+  [55.0, 58.0, 42.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a stacked bar chart visualizing the reviews count and average stars
+  for each title in Amazon''s 500 Bestsellers in Laptop Gear 2024.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''title'', ''reviewsCount'', ''stars'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Consumers interested in Amazon''s 500 Bestsellers in Laptop Gear, data analysts,
+  and marketing professionals
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Visualize the distribution of review counts and average star ratings for each title
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Should the chart include a legend to differentiate between review counts and
+  average stars?
+
+  3. How would you like to handle titles with missing review counts or star ratings?
+
+  4. Would you like to include exact numeric values on the bars?
+
+  5. What axis labels would you prefer for the x-axis and y-axis?
+
+  6. Do you have a specific order for displaying the titles (e.g., by highest reviews
+  count, alphabetically)?
+
+  7. Should the chart include grid lines for better readability?
+
+  8. Do you have a preferred font style and size for the chart labels?
+
+  9. Would you like any annotations or callouts to highlight key data points?
+
+  10. Should the chart display average star ratings as a different type of visualization
+  within the same plot (e.g., line or point)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a stacked bar chart visualizing the reviews\
+  \ count and average stars for each title in Amazon's 500 Bestsellers in Laptop Gear\
+  \ 2024.\n<end of user request>\n\nImagine the best result that can be achieved based\
+  \ on the given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nVisualize the distribution of review counts and average star ratings\
+  \ for each title\n<end of purpose>\n\n<start service provider message>\n1. Do you\
+  \ have a preferred color scheme for the stacked bar chart?\n2. Should the chart\
+  \ include a legend to differentiate between review counts and average stars?\n3.\
+  \ How would you like to handle titles with missing review counts or star ratings?\n\
+  4. Would you like to include exact numeric values on the bars?\n5. What axis labels\
+  \ would you prefer for the x-axis and y-axis?\n6. Do you have a specific order for\
+  \ displaying the titles (e.g., by highest reviews count, alphabetically)?\n7. Should\
+  \ the chart include grid lines for better readability?\n8. Do you have a preferred\
+  \ font style and size for the chart labels?\n9. Would you like any annotations or\
+  \ callouts to highlight key data points?\n10. Should the chart display average star\
+  \ ratings as a different type of visualization within the same plot (e.g., line\
+  \ or point)?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please include a legend to differentiate between review counts and average
+  stars.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I would like the titles to be displayed by highest reviews count.
+
+  7. Yes, please include grid lines for better readability.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'

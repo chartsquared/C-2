@@ -1,0 +1,319 @@
+02_initial_prompt: I need a Choropleth map to visualize global life expectancy and
+  socio-economic factors. Use the provided data to color-code countries based on life
+  expectancy. Overlay with markers that indicate prevalence of undernourishment, CO2
+  emissions, health and education expenditure percentages, and unemployment rates.
+  Focus on showing regional differences and income group variances. Make sure missing
+  values are appropriately handled, and use tooltips to display data details for each
+  country. The map should help identify patterns and correlations between life expectancy
+  and socio-economic factors. Title the map "Global Life Expectancy and Socio-Economic
+  Overview."
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I need a Choropleth map to visualize global life expectancy and socio-economic factors.
+  Use the provided data to color-code countries based on life expectancy. Overlay
+  with markers that indicate prevalence of undernourishment, CO2 emissions, health
+  and education expenditure percentages, and unemployment rates. Focus on showing
+  regional differences and income group variances. Make sure missing values are appropriately
+  handled, and use tooltips to display data details for each country. The map should
+  help identify patterns and correlations between life expectancy and socio-economic
+  factors. Title the map "Global Life Expectancy and Socio-Economic Overview."
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/92.csv'': {''summary'': {''Column'': [''Country Name'', ''Country
+  Code'', ''Region'', ''IncomeGroup'', ''Year'', ''Life Expectancy World Bank'', ''Prevelance
+  of Undernourishment'', ''CO2'', ''Health Expenditure %'', ''Education Expenditure
+  %'', ''Unemployment'', ''Corruption'', ''Sanitation'', ''Injuries'', ''Communicable'',
+  ''NonCommunicable''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 188, 684, 152, 180, 1090, 304, 2331, 1247, 0,
+  0, 0], ''Unique Values'': [174, 174, 7, 4, 19, 2966, 399, 2259, 3126, 2192, 2151,
+  8, 1941, 3306, 3306, 3306]}, ''sample_data'': {''Country Name'': [''Afghanistan'',
+  ''Angola'', ''Albania''], ''Country Code'': [''AFG'', ''AGO'', ''ALB''], ''Region'':
+  [''South Asia'', ''Sub-Saharan Africa'', ''Europe & Central Asia''], ''IncomeGroup'':
+  [''Low income'', ''Lower middle income'', ''Upper middle income''], ''Year'': [2001,
+  2001, 2001], ''Life Expectancy World Bank'': [56.308, 47.059, 74.288], ''Prevelance
+  of Undernourishment'': [47.8, 67.5, 4.9], ''CO2'': [730.0, 15960.0, 3230.0], ''Health
+  Expenditure %'': [nan, 4.48351622, 7.13952398], ''Education Expenditure %'': [nan,
+  nan, 3.45869994163513], ''Unemployment'': [10.8090000152588, 4.00400018692017, 18.5750007629395],
+  ''Corruption'': [nan, nan, nan], ''Sanitation'': [nan, nan, 40.52089533], ''Injuries'':
+  [2179727.1, 1392080.71, 117081.67], ''Communicable'': [9689193.7, 11190210.53, 140894.78],
+  ''NonCommunicable'': [5795426.38, 2663516.34, 532324.75]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Country Name", "Country Code", "Region", "IncomeGroup", "Life
+  Expectancy World Bank", "Prevelance of Undernourishment", "CO2", "Health Expenditure
+  %", "Education Expenditure %", "Unemployment"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify patterns and correlations between life expectancy and socio-economic
+  factors, show regional differences and income group variances",
+
+  "Audience": "Policy makers, researchers, public health analysts, educators"
+
+  }'
+05_audience: Policy makers, researchers, public health analysts, educators
+05_data_attributes:
+- Country Name
+- Country Code
+- Region
+- IncomeGroup
+- Life Expectancy World Bank
+- Prevelance of Undernourishment
+- CO2
+- Health Expenditure %
+- Education Expenditure %
+- Unemployment
+05_purpose: Identify patterns and correlations between life expectancy and socio-economic
+  factors, show regional differences and income group variances
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/92.csv'': {''summary'': {''Column'': [''Country Name'', ''Country
+  Code'', ''Region'', ''IncomeGroup'', ''Year'', ''Life Expectancy World Bank'', ''Prevelance
+  of Undernourishment'', ''CO2'', ''Health Expenditure %'', ''Education Expenditure
+  %'', ''Unemployment'', ''Corruption'', ''Sanitation'', ''Injuries'', ''Communicable'',
+  ''NonCommunicable''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 188, 684, 152, 180, 1090, 304, 2331, 1247, 0,
+  0, 0], ''Unique Values'': [174, 174, 7, 4, 19, 2966, 399, 2259, 3126, 2192, 2151,
+  8, 1941, 3306, 3306, 3306]}, ''sample_data'': {''Country Name'': [''Afghanistan'',
+  ''Angola'', ''Albania''], ''Country Code'': [''AFG'', ''AGO'', ''ALB''], ''Region'':
+  [''South Asia'', ''Sub-Saharan Africa'', ''Europe & Central Asia''], ''IncomeGroup'':
+  [''Low income'', ''Lower middle income'', ''Upper middle income''], ''Year'': [2001,
+  2001, 2001], ''Life Expectancy World Bank'': [56.308, 47.059, 74.288], ''Prevelance
+  of Undernourishment'': [47.8, 67.5, 4.9], ''CO2'': [730.0, 15960.0, 3230.0], ''Health
+  Expenditure %'': [nan, 4.48351622, 7.13952398], ''Education Expenditure %'': [nan,
+  nan, 3.45869994163513], ''Unemployment'': [10.8090000152588, 4.00400018692017, 18.5750007629395],
+  ''Corruption'': [nan, nan, nan], ''Sanitation'': [nan, nan, 40.52089533], ''Injuries'':
+  [2179727.1, 1392080.71, 117081.67], ''Communicable'': [9689193.7, 11190210.53, 140894.78],
+  ''NonCommunicable'': [5795426.38, 2663516.34, 532324.75]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I need a Choropleth map to visualize global life expectancy and socio-economic factors.
+  Use the provided data to color-code countries based on life expectancy. Overlay
+  with markers that indicate prevalence of undernourishment, CO2 emissions, health
+  and education expenditure percentages, and unemployment rates. Focus on showing
+  regional differences and income group variances. Make sure missing values are appropriately
+  handled, and use tooltips to display data details for each country. The map should
+  help identify patterns and correlations between life expectancy and socio-economic
+  factors. Title the map "Global Life Expectancy and Socio-Economic Overview."
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Country Name'', ''Country Code'', ''Region'', ''IncomeGroup'', ''Life Expectancy
+  World Bank'', ''Prevelance of Undernourishment'', ''CO2'', ''Health Expenditure
+  %'', ''Education Expenditure %'', ''Unemployment'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Policy makers, researchers, public health analysts, educators
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify patterns and correlations between life expectancy and socio-economic factors,
+  show regional differences and income group variances
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme or gradient for the choropleth
+  map to represent life expectancy?
+
+  2. Are there specific colors you prefer for the markers representing different socio-economic
+  factors such as undernourishment, CO2 emissions, health expenditure, education expenditure,
+  and unemployment rates?
+
+  3. What range of values should be used to categorize life expectancy for the color-coding?
+  For example, low, medium, high.
+
+  4. How would you like to handle countries with missing data? Should they be color-coded
+  in a specific way or left out?
+
+  5. Do you want the markers indicating socio-economic factors to vary in size or
+  shape based on their values?
+
+  6. Should the map focus on recent data, a specific year, or an average over a range
+  of years?
+
+  7. Is there a specific geographic projection you prefer for the map (e.g., Mercator,
+  Robinson)?
+
+  8. Are there any additional annotations or labels you want to be included on the
+  map besides tooltips?
+
+  9. Do you have preferences for the design or placement of the legend explaining
+  the color-coding and markers?
+
+  10. Should the map include any specific regional boundaries or highlights for better
+  emphasis on regional differences and income group variances?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI need a Choropleth map to visualize global life expectancy\
+  \ and socio-economic factors. Use the provided data to color-code countries based\
+  \ on life expectancy. Overlay with markers that indicate prevalence of undernourishment,\
+  \ CO2 emissions, health and education expenditure percentages, and unemployment\
+  \ rates. Focus on showing regional differences and income group variances. Make\
+  \ sure missing values are appropriately handled, and use tooltips to display data\
+  \ details for each country. The map should help identify patterns and correlations\
+  \ between life expectancy and socio-economic factors. Title the map \"Global Life\
+  \ Expectancy and Socio-Economic Overview.\"\n<end of user request>\n\nImagine the\
+  \ best result that can be achieved based on the given instructions and is the final\
+  \ output you want from the service provider with your purpose given below.\nBased\
+  \ on your imagination you are to respond to the service provider.\nSince you are\
+  \ an amateur user you should concretely answer 50% of the questions you think are\
+  \ most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nIdentify patterns and correlations\
+  \ between life expectancy and socio-economic factors, show regional differences\
+  \ and income group variances\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have a preferred color scheme or gradient for the choropleth map to represent\
+  \ life expectancy?\n2. Are there specific colors you prefer for the markers representing\
+  \ different socio-economic factors such as undernourishment, CO2 emissions, health\
+  \ expenditure, education expenditure, and unemployment rates?\n3. What range of\
+  \ values should be used to categorize life expectancy for the color-coding? For\
+  \ example, low, medium, high.\n4. How would you like to handle countries with missing\
+  \ data? Should they be color-coded in a specific way or left out?\n5. Do you want\
+  \ the markers indicating socio-economic factors to vary in size or shape based on\
+  \ their values?\n6. Should the map focus on recent data, a specific year, or an\
+  \ average over a range of years?\n7. Is there a specific geographic projection you\
+  \ prefer for the map (e.g., Mercator, Robinson)?\n8. Are there any additional annotations\
+  \ or labels you want to be included on the map besides tooltips?\n9. Do you have\
+  \ preferences for the design or placement of the legend explaining the color-coding\
+  \ and markers?\n10. Should the map include any specific regional boundaries or highlights\
+  \ for better emphasis on regional differences and income group variances?\n<end\
+  \ service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '<start user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Medium: 60-70, High: 70-80, Very High: 80+
+
+  4. Color-code them in a specific way, maybe greyed out.
+
+  5. Yes, vary in size based on their values.
+
+  6. Recent data or the most recent year available.
+
+  7. Robinson projection would be nice.
+
+  8. No specific preference.
+
+  9. I am not sure.
+
+  10. Highlight income group variances if possible.
+
+  <end user emulated response>'

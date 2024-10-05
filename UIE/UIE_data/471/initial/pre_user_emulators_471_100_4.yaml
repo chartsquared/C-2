@@ -1,0 +1,94 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Radar chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Table chart'
+- 789
+- 762
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 610
+- 472
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/471.csv'': {''summary'': {''Column'': [''category'', ''Vote
+  for Clinton'', ''Vote for Trump'', ''group''], ''Data Type'': [dtype(''O''), dtype(''int64''),
+  dtype(''int64''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0], ''Unique Values'':
+  [14, 12, 12, 4]}, ''sample_data'': {''category'': [''18-29'', ''30-49'', ''50-64''],
+  ''Vote for Clinton'': [58, 51, 45], ''Vote for Trump'': [28, 40, 51], ''group'':
+  [''Age'', ''Age'', ''Age'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  voter demographics
+
+  data-science-and-analytics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Heatmap that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Heatmap that utilizes
+  all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Table chart'
+- '* Radar chart'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Table chart'
+- '* Radar chart'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- I'd like to visualize voter demographics data using a heatmap. Specifically, I want
+  to see how different age groups (categorized as 18-29, 30-49, and 50-64) voted for
+  Clinton and Trump. The heatmap should clearly display the distribution of votes
+  across these age groups for both Clinton and Trump. Please ensure that the columns
+  'Vote for Clinton', 'Vote for Trump', and 'category' are represented in the heatmap.
+  This will help in easily identifying which age category leaned more towards each
+  candidate. Overall, the heatmap should provide a clear visual comparison of voting
+  patterns.
+- 470
+- 347
+- 123

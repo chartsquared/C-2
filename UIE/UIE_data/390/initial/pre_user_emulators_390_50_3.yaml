@@ -1,0 +1,92 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Bubble chart
+
+  * Network diagram
+
+  * Scatter plot
+
+  * Pie chart
+
+  * Treemap'
+- 860
+- 825
+- 35
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 669
+- 530
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/390.json'': {''summary'': {''Column'': [''Type'', ''id'',
+  ''name'', ''group'', ''source'', ''target'', ''weight''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64'')], ''Missing Values'': [0, 20, 20, 20, 15, 15, 15], ''Unique Values'':
+  [2, 15, 15, 2, 11, 15, 8]}, ''sample_data'': {''Type'': [''nodes'', ''nodes'', ''nodes''],
+  ''id'': [1.0, 2.0, 3.0], ''name'': [''Alice'', ''Bob'', ''Charlie''], ''group'':
+  [''Marketing'', ''Marketing'', ''Marketing''], ''source'': [nan, nan, nan], ''target'':
+  [nan, nan, nan], ''weight'': [nan, nan, nan]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Company Collaboration Network
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bar chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bar chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Pie chart'
+- '* Column chart'
+- '* Treemap'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Please create a bar chart that visualizes the number of unique values in each column.
+  Use the columns from the dataset such as "Type", "id", "name", "group", "source",
+  "target", and "weight". This chart will help us understand the diversity in our
+  company's collaboration network more easily.
+- 468
+- 405
+- 63

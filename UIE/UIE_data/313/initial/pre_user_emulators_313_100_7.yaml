@@ -1,0 +1,110 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Population pyramid
+
+  * Icon array
+
+  * Treemap
+
+  * Line chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Choropleth map
+
+  * Geographic heatmap'
+- 1311
+- 1246
+- 65
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1093
+- 954
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/313.csv': {'summary': {'Column':\
+  \ ['CCA3', 'Continent', 'Country/Territory', '2022 Population', '2020 Population',\
+  \ '2015 Population', '2010 Population', '2000 Population', '1990 Population', '1980\
+  \ Population', '1970 Population', 'Area (km\xB2)', 'Density (per km\xB2)', 'Growth\
+  \ Rate', 'World Population Percentage', 'Unnamed: 15'], 'Data Type': [dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 233],\
+  \ 'Unique Values': [234, 6, 233, 234, 234, 234, 234, 234, 234, 234, 234, 233, 171,\
+  \ 9, 70, 1]}, 'sample_data': {'CCA3': ['AFG', 'ALB', 'DZA'], 'Continent': ['Asia',\
+  \ 'Europe', 'Africa'], 'Country/Territory': ['Afghanistan', 'Albania', 'Algeria'],\
+  \ '2022 Population': ['41,128,771', '2,842,321', '44,903,225'], '2020 Population':\
+  \ ['38,972,230', '2,866,849', '43,451,666'], '2015 Population': ['33,753,499', '2,882,481',\
+  \ '39,543,154'], '2010 Population': ['28,189,672', '2,913,399', '35,856,344'], '2000\
+  \ Population': ['19,542,982', '3,182,021', '30,774,621'], '1990 Population': ['10,694,796',\
+  \ '3,295,066', '25,518,074'], '1980 Population': ['12,486,631', '2,941,651', '18,739,378'],\
+  \ '1970 Population': ['10,752,971', '2,324,731', '13,795,915'], 'Area (km\xB2)':\
+  \ ['652,230', '28,748', '2,381,741'], 'Density (per km\xB2)': ['63 km\xB2', '99\
+  \ km\xB2', '19 km\xB2'], 'Growth Rate': ['103%', '100%', '102%'], 'World Population\
+  \ Percentage': ['52.0%', '4.0%', '56.0%'], 'Unnamed: 15': ['1,425,887,337.00', nan,\
+  \ nan]}}}\n<end of data example format>\n\n<start of data details format>\nWorld-Population\n\
+  social-science\n<end of data details format>\n\nGiven a data format, imagine a chart\
+  \ that visualizes this data as the final output you want from the service provider.\n\
+  You need to imagine a chart with * Stacked bar/column chart that utilizes the data\
+  \ format.\nIf there are multiple given data formats, imagine a chart with * Stacked\
+  \ bar/column chart that utilizes all the data formats.\nSince you are an amateur\
+  \ user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\nAlso, refer\
+  \ to the data details to create as practical and realistic instructions as possible.\n\
+  Instructions must reflect the context of the data.\nTo emulate a real-world user\
+  \ your instruction should be 100 in size (word count).\nYour response should ONLY\
+  \ contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Treemap'
+- '* Bar chart'
+- '* Grouped bar/column chart'
+- '* Box chart'
+- '* Population pyramid'
+- '* Dot plot'
+- '* Stacked bar/column chart'
+- '* Area chart'
+- '* Histogram'
+- '* Icon array'
+- '* Scatter plot'
+- '* Choropleth map'
+- '* Geographic heatmap'
+- '* Line chart'
+- '* Treemap'
+- '* Bar chart'
+- '* Grouped bar/column chart'
+- '* Box chart'
+- '* Population pyramid'
+- '* Dot plot'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Please create a stacked column chart visualizing the population growth of different
+  countries from 1970 to 2022. Use the columns for each decade's population data (1970,
+  1980, 1990, 2000, 2010, 2015, 2020, and 2022) on the y-axis. The x-axis should represent
+  the countries listed under 'Country/Territory.' Each bar should be stacked according
+  to the data for respective decades to show the population distribution over the
+  years. Also, differentiate the population from different decades using distinct
+  colors.
+- 955
+- 837
+- 118

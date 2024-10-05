@@ -1,0 +1,228 @@
+02_initial_prompt: Create a histogram showing profit over time for the popup store
+  business. Use text annotations to highlight the highest and lowest profit days.
+  Highlight weekends differently. Add annotations explaining trends and unusual spikes.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the accurate data and user request, your task is to delve into the user request
+  to figure out the (1) data attributes needed for data visualization, (2) select
+  the most suitable task that the user is willing to do from the list of various tasks
+  in data visualization, (3) specifically figure out the purpose of the user''s request
+  in data visualization, and (4) prospective audience of the data visualization.
+
+
+  <start of user request>
+
+  Create a histogram showing profit over time for the popup store business. Use text
+  annotations to highlight the highest and lowest profit days. Highlight weekends
+  differently. Add annotations explaining trends and unusual spikes.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/404.csv'': {''summary'': {''Column'': [''date'', ''profit''],
+  ''Data Type'': [dtype(''O''), dtype(''float64'')], ''Missing Values'': [0, 0], ''Unique
+  Values'': [1822, 1793]}, ''sample_data'': {''date'': [''2013-04-28'', ''2013-04-29'',
+  ''2013-04-30''], ''profit'': [135.98, 147.49, 146.93]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be possible normally.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"date\", \"profit\"\
+  ],\n  \"Task\": \"Show Trend\",\n  \"Purpose\": \"To illustrate profit fluctuation\
+  \ over time, identify significant profit days, highlight weekends, and explain anomalies.\"\
+  ,\n  \"Audience\": \"Business owners, managers, and stakeholders of the popup store\
+  \ business\"\n}"
+05_audience: Business owners, managers, and stakeholders of the popup store business
+05_data_attributes:
+- date
+- profit
+05_purpose: To illustrate profit fluctuation over time, identify significant profit
+  days, highlight weekends, and explain anomalies.
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/404.csv'': {''summary'': {''Column'': [''date'', ''profit''],
+  ''Data Type'': [dtype(''O''), dtype(''float64'')], ''Missing Values'': [0, 0], ''Unique
+  Values'': [1822, 1793]}, ''sample_data'': {''date'': [''2013-04-28'', ''2013-04-29'',
+  ''2013-04-30''], ''profit'': [135.98, 147.49, 146.93]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a histogram showing profit over time for the popup store business. Use text
+  annotations to highlight the highest and lowest profit days. Highlight weekends
+  differently. Add annotations explaining trends and unusual spikes.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''date'', ''profit'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Business owners, managers, and stakeholders of the popup store business
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To illustrate profit fluctuation over time, identify significant profit days, highlight
+  weekends, and explain anomalies.
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color preferences for highlighting weekends
+  and non-weekend days?
+
+  2. Would you like the highest and lowest profit annotations to include the exact
+  values?
+
+  3. Is there a particular style or format you prefer for text annotations (font size,
+  color, etc.)?
+
+  4. How detailed should the annotations explaining trends and unusual spikes be (e.g.,
+  brief notes or more in-depth explanations)?
+
+  5. Should the x-axis display every date or should it be grouped by weeks/months
+  to avoid clutter?
+
+  6. Do you have any preference for the overall color scheme of the histogram?
+
+  7. Would you like grid lines to be shown in the background for better readability?
+
+  8. Should the y-axis have specific scaling (e.g., logarithmic) to better capture
+  variations in profit?
+
+  9. Is there a specific title or subtitle you would like for this histogram?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a histogram showing profit over time for the popup\
+  \ store business. Use text annotations to highlight the highest and lowest profit\
+  \ days. Highlight weekends differently. Add annotations explaining trends and unusual\
+  \ spikes.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 25% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nTo illustrate profit fluctuation over time, identify significant profit\
+  \ days, highlight weekends, and explain anomalies.\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have any specific color preferences for highlighting\
+  \ weekends and non-weekend days?\n2. Would you like the highest and lowest profit\
+  \ annotations to include the exact values?\n3. Is there a particular style or format\
+  \ you prefer for text annotations (font size, color, etc.)?\n4. How detailed should\
+  \ the annotations explaining trends and unusual spikes be (e.g., brief notes or\
+  \ more in-depth explanations)?\n5. Should the x-axis display every date or should\
+  \ it be grouped by weeks/months to avoid clutter?\n6. Do you have any preference\
+  \ for the overall color scheme of the histogram?\n7. Would you like grid lines to\
+  \ be shown in the background for better readability?\n8. Should the y-axis have\
+  \ specific scaling (e.g., logarithmic) to better capture variations in profit?\n\
+  9. Is there a specific title or subtitle you would like for this histogram?\n<end\
+  \ service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please include the exact values for the highest and lowest profit days.
+
+  3. I do not know.
+
+  4. Brief notes are sufficient.
+
+  5. Group by weeks to avoid clutter.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. I have no specific preference for the title or subtitle.'

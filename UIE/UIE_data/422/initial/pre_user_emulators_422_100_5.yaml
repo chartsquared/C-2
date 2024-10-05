@@ -1,0 +1,89 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Choropleth map'
+- 1275
+- 1251
+- 24
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1101
+- 962
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/422.csv': {'summary': {'Column':\
+  \ ['Unnamed: 0', 'country', 'description', 'designation', 'points', 'price', 'province',\
+  \ 'region_1', 'region_2', 'taster_name', 'taster_twitter_handle', 'title', 'variety',\
+  \ 'winery'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('O'), dtype('int64'),\
+  \ dtype('float64'), dtype('O'), dtype('O'), dtype('O'), dtype('O'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('O')], 'Missing Values': [0, 3, 0, 1701, 0, 401,\
+  \ 3, 930, 3500, 1208, 1404, 0, 0, 0], 'Unique Values': [5780, 28, 5751, 3219, 21,\
+  \ 145, 191, 596, 17, 18, 14, 5745, 281, 3776]}, 'sample_data': {'Unnamed: 0': [0,\
+  \ 1, 2], 'country': ['Italy', 'Portugal', 'US'], 'description': [\"Aromas include\
+  \ tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive,\
+  \ offering unripened apple, citrus and dried sage alongside brisk acidity.\", \"\
+  This is ripe and fruity, a wine that is smooth while still structured. Firm tannins\
+  \ are filled out with juicy red berry fruits and freshened with acidity. It's  already\
+  \ drinkable, although it will certainly be better from 2016.\", 'Tart and snappy,\
+  \ the flavors of lime flesh and rind dominate. Some green pineapple pokes through,\
+  \ with crisp acidity underscoring the flavors. The wine was all stainless-steel\
+  \ fermented.'], 'designation': ['Vulk\xE0 Bianco', 'Avidagos', nan], 'points': [87,\
+  \ 87, 87], 'price': [nan, 15.0, 14.0], 'province': ['Sicily & Sardinia', 'Douro',\
+  \ 'Oregon'], 'region_1': ['Etna', nan, 'Willamette Valley'], 'region_2': [nan, nan,\
+  \ 'Willamette Valley'], 'taster_name': ['Kerin O\u2019Keefe', 'Roger Voss', 'Paul\
+  \ Gregutt'], 'taster_twitter_handle': ['@kerinokeefe', '@vossroger', '@paulgwine\\\
+  xa0'], 'title': ['Nicosia 2013 Vulk\xE0 Bianco  (Etna)', 'Quinta dos Avidagos 2011\
+  \ Avidagos Red (Douro)', 'Rainstorm 2013 Pinot Gris (Willamette Valley)'], 'variety':\
+  \ ['White Blend', 'Portuguese Red', 'Pinot Gris'], 'winery': ['Nicosia', 'Quinta\
+  \ dos Avidagos', 'Rainstorm']}}}\n<end of data example format>\n\n<start of data\
+  \ details format>\nThe best wine you can get\nfood-and-drink\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nYou need to imagine a chart\
+  \ with * Pie chart that utilizes the data format.\nIf there are multiple given data\
+  \ formats, imagine a chart with * Pie chart that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\n\
+  Your response should ONLY contain the user emulated instruction.\nDo not include\
+  \ anything else."
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Line chart'
+- '* Heatmap'
+- '* Choropleth map'
+- '* Histogram'
+- '* Pie chart'
+- '* Bar chart'
+- '* Line chart'
+- '* Heatmap'
+- '* Choropleth map'
+- '* Histogram'
+- '* Pie chart'
+2. initial_prompt: !!python/tuple
+- Create a pie chart visualizing the distribution of wine points from the provided
+  dataset. The data includes wine reviews, and each review has an assigned point score.
+  Focus on the "points" column and categorize the wines into different point ranges
+  (e.g., 80-84, 85-89, 90-94, 95-100). Display the percentage of wines that fall into
+  each point range. The chart should help identify the most common quality range of
+  wines in the dataset. Leverage the data details to label the chart appropriately
+  and make it easy to understand for wine enthusiasts.
+- 955
+- 837
+- 118

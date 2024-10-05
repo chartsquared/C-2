@@ -1,0 +1,81 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Dot plot
+
+  * Table chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1020
+- 974
+- 46
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Highlights:\nDescription: Highlights modify\
+  \ the appearance of chart elements (e.g., size, color) to emphasize or reduce their\
+  \ importance.\nPurpose: Used to distinguish certain elements from others, making\
+  \ them stand out visually\n\n2. Shapes:\nDescription: Shape annotations include\
+  \ lines, arrows, rectangles, and other shapes. They can highlight or enclose specific\
+  \ chart elements to emphasize or compare them.\nData-Driven Use: Some shapes, like\
+  \ trend lines, are calculated from the underlying data.\n<end of the annotation\
+  \ list>"
+- 793
+- 681
+- 112
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/89.csv': {'summary': {'Column':\
+  \ ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]',\
+  \ 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]', 'Target', 'Failure\
+  \ Type'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('int64'), dtype('float64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values':\
+  \ [10000, 10000, 3, 93, 82, 941, 577, 246, 2, 6]}, 'sample_data': {'UDI': [1, 2,\
+  \ 3], 'Product ID': ['M14860', 'L47181', 'L47182'], 'Type': ['M', 'L', 'L'], 'Air\
+  \ temperature [K]': [298.1, 298.2, 298.1], 'Process temperature [K]': [308.6, 308.7,\
+  \ 308.5], 'Rotational speed [rpm]': [1551, 1408, 1498], 'Torque [Nm]': [42.8, 46.3,\
+  \ 49.4], 'Tool wear [min]': [0, 3, 5], 'Target': [0, 0, 0], 'Failure Type': ['No\
+  \ Failure', 'No Failure', 'No Failure']}}}\n<end of data example format>\n\n<start\
+  \ of annotations format>\n['<start of the annotation list>', '1. Highlights:', 'Description:\
+  \ Highlights modify the appearance of chart elements (e.g., size, color) to emphasize\
+  \ or reduce their importance.', 'Purpose: Used to distinguish certain elements from\
+  \ others, making them stand out visually', '2. Shapes:', 'Description: Shape annotations\
+  \ include lines, arrows, rectangles, and other shapes. They can highlight or enclose\
+  \ specific chart elements to emphasize or compare them.', 'Data-Driven Use: Some\
+  \ shapes, like trend lines, are calculated from the underlying data.', '<end of\
+  \ the annotation list>']\n<end of annotations format>\n\n<start of data details\
+  \ format>\nMachine Predictive Maintenance Classification\nphysics\n<end of data\
+  \ details format>\n\nGiven a data format, imagine a chart that visualizes this data\
+  \ as the final output you want from the service provider.\nConsider what purpose\
+  \ the data has and the practical purpose of visualization and include it in the\
+  \ instructions.\nYou need to imagine a chart with * Pie chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Pie chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 50 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Box chart'
+- '* Pie chart'
+2. initial_prompt: !!python/tuple
+- Create a pie chart showing the distribution of different machine failure types from
+  the data. Emphasize the "No Failure" category with a highlight. Label each section
+  with its respective failure type and percentage. Use different colors for each category.
+- 769
+- 722
+- 47

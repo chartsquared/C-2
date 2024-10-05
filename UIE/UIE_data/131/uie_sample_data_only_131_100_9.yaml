@@ -1,0 +1,316 @@
+02_initial_prompt: I have a dataset about mushroom classification with attributes
+  like cap shape, cap surface, cap color, bruises, odor, gill attachment, etc. I want
+  to create a parallel coordinates chart to visualize this data. Each attribute should
+  have its own axis, allowing me to compare the different characteristics across mushroom
+  samples. It's important to clearly differentiate between the two classes of mushrooms
+  (edible and poisonous) using colors, so patterns and correlations can be easily
+  identified. This will help in understanding which features are most significant
+  in determining whether a mushroom is edible or poisonous.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I have a dataset about mushroom classification with attributes like cap shape, cap
+  surface, cap color, bruises, odor, gill attachment, etc. I want to create a parallel
+  coordinates chart to visualize this data. Each attribute should have its own axis,
+  allowing me to compare the different characteristics across mushroom samples. It''s
+  important to clearly differentiate between the two classes of mushrooms (edible
+  and poisonous) using colors, so patterns and correlations can be easily identified.
+  This will help in understanding which features are most significant in determining
+  whether a mushroom is edible or poisonous.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/131.csv'': {''summary'': {''Column'': [''class'', ''cap-shape'',
+  ''cap-surface'', ''cap-color'', ''bruises'', ''odor'', ''gill-attachment'', ''gill-spacing'',
+  ''gill-size'', ''gill-color'', ''stalk-shape'', ''stalk-root'', ''stalk-surface-above-ring'',
+  ''stalk-surface-below-ring'', ''stalk-color-above-ring'', ''stalk-color-below-ring'',
+  ''veil-type'', ''veil-color'', ''ring-number'', ''ring-type'', ''spore-print-color'',
+  ''population'', ''habitat''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [2, 6, 4, 10, 2, 9, 2,
+  2, 2, 12, 2, 5, 4, 4, 9, 9, 1, 4, 3, 5, 9, 6, 7]}, ''sample_data'': {''class'':
+  [''p'', ''e'', ''e''], ''cap-shape'': [''x'', ''x'', ''b''], ''cap-surface'': [''s'',
+  ''s'', ''s''], ''cap-color'': [''n'', ''y'', ''w''], ''bruises'': [''t'', ''t'',
+  ''t''], ''odor'': [''p'', ''a'', ''l''], ''gill-attachment'': [''f'', ''f'', ''f''],
+  ''gill-spacing'': [''c'', ''c'', ''c''], ''gill-size'': [''n'', ''b'', ''b''], ''gill-color'':
+  [''k'', ''k'', ''n''], ''stalk-shape'': [''e'', ''e'', ''e''], ''stalk-root'': [''e'',
+  ''c'', ''c''], ''stalk-surface-above-ring'': [''s'', ''s'', ''s''], ''stalk-surface-below-ring'':
+  [''s'', ''s'', ''s''], ''stalk-color-above-ring'': [''w'', ''w'', ''w''], ''stalk-color-below-ring'':
+  [''w'', ''w'', ''w''], ''veil-type'': [''p'', ''p'', ''p''], ''veil-color'': [''w'',
+  ''w'', ''w''], ''ring-number'': [''o'', ''o'', ''o''], ''ring-type'': [''p'', ''p'',
+  ''p''], ''spore-print-color'': [''k'', ''n'', ''n''], ''population'': [''s'', ''n'',
+  ''n''], ''habitat'': [''u'', ''g'', ''m'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["class", "cap-shape", "cap-surface", "cap-color", "bruises",
+  "odor", "gill-attachment", "gill-spacing", "gill-size", "gill-color", "stalk-shape",
+  "stalk-root", "stalk-surface-above-ring", "stalk-surface-below-ring", "stalk-color-above-ring",
+  "stalk-color-below-ring", "veil-type", "veil-color", "ring-number", "ring-type",
+  "spore-print-color", "population", "habitat"],
+
+  "Task": "Correlation",
+
+  "Purpose": "Identify which features are most significant in determining whether
+  a mushroom is edible or poisonous by visualizing patterns and correlations",
+
+  "Audience": "Mycologists, data scientists, and researchers studying mushroom characteristics
+  or classification"
+
+  }'
+05_audience: Mycologists, data scientists, and researchers studying mushroom characteristics
+  or classification
+05_data_attributes:
+- class
+- cap-shape
+- cap-surface
+- cap-color
+- bruises
+- odor
+- gill-attachment
+- gill-spacing
+- gill-size
+- gill-color
+- stalk-shape
+- stalk-root
+- stalk-surface-above-ring
+- stalk-surface-below-ring
+- stalk-color-above-ring
+- stalk-color-below-ring
+- veil-type
+- veil-color
+- ring-number
+- ring-type
+- spore-print-color
+- population
+- habitat
+05_purpose: Identify which features are most significant in determining whether a
+  mushroom is edible or poisonous by visualizing patterns and correlations
+05_task: Correlation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/131.csv'': {''summary'': {''Column'': [''class'', ''cap-shape'',
+  ''cap-surface'', ''cap-color'', ''bruises'', ''odor'', ''gill-attachment'', ''gill-spacing'',
+  ''gill-size'', ''gill-color'', ''stalk-shape'', ''stalk-root'', ''stalk-surface-above-ring'',
+  ''stalk-surface-below-ring'', ''stalk-color-above-ring'', ''stalk-color-below-ring'',
+  ''veil-type'', ''veil-color'', ''ring-number'', ''ring-type'', ''spore-print-color'',
+  ''population'', ''habitat''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [2, 6, 4, 10, 2, 9, 2,
+  2, 2, 12, 2, 5, 4, 4, 9, 9, 1, 4, 3, 5, 9, 6, 7]}, ''sample_data'': {''class'':
+  [''p'', ''e'', ''e''], ''cap-shape'': [''x'', ''x'', ''b''], ''cap-surface'': [''s'',
+  ''s'', ''s''], ''cap-color'': [''n'', ''y'', ''w''], ''bruises'': [''t'', ''t'',
+  ''t''], ''odor'': [''p'', ''a'', ''l''], ''gill-attachment'': [''f'', ''f'', ''f''],
+  ''gill-spacing'': [''c'', ''c'', ''c''], ''gill-size'': [''n'', ''b'', ''b''], ''gill-color'':
+  [''k'', ''k'', ''n''], ''stalk-shape'': [''e'', ''e'', ''e''], ''stalk-root'': [''e'',
+  ''c'', ''c''], ''stalk-surface-above-ring'': [''s'', ''s'', ''s''], ''stalk-surface-below-ring'':
+  [''s'', ''s'', ''s''], ''stalk-color-above-ring'': [''w'', ''w'', ''w''], ''stalk-color-below-ring'':
+  [''w'', ''w'', ''w''], ''veil-type'': [''p'', ''p'', ''p''], ''veil-color'': [''w'',
+  ''w'', ''w''], ''ring-number'': [''o'', ''o'', ''o''], ''ring-type'': [''p'', ''p'',
+  ''p''], ''spore-print-color'': [''k'', ''n'', ''n''], ''population'': [''s'', ''n'',
+  ''n''], ''habitat'': [''u'', ''g'', ''m'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I have a dataset about mushroom classification with attributes like cap shape, cap
+  surface, cap color, bruises, odor, gill attachment, etc. I want to create a parallel
+  coordinates chart to visualize this data. Each attribute should have its own axis,
+  allowing me to compare the different characteristics across mushroom samples. It''s
+  important to clearly differentiate between the two classes of mushrooms (edible
+  and poisonous) using colors, so patterns and correlations can be easily identified.
+  This will help in understanding which features are most significant in determining
+  whether a mushroom is edible or poisonous.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''class'', ''cap-shape'', ''cap-surface'', ''cap-color'', ''bruises'', ''odor'',
+  ''gill-attachment'', ''gill-spacing'', ''gill-size'', ''gill-color'', ''stalk-shape'',
+  ''stalk-root'', ''stalk-surface-above-ring'', ''stalk-surface-below-ring'', ''stalk-color-above-ring'',
+  ''stalk-color-below-ring'', ''veil-type'', ''veil-color'', ''ring-number'', ''ring-type'',
+  ''spore-print-color'', ''population'', ''habitat'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Mycologists, data scientists, and researchers studying mushroom characteristics
+  or classification
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Correlation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Identify which features are most significant in determining whether a mushroom is
+  edible or poisonous by visualizing patterns and correlations
+
+  <end of purpose>'
+07_questions: '1. Do you have a specific color scheme preference for differentiating
+  between edible and poisonous mushrooms?
+
+  2. How would you prefer the axes to be ordered? By importance, alphabetical order,
+  or any other specific order?
+
+  3. Are there any specific axis scales or normalization requirements for any of the
+  attributes?
+
+  4. Would you prefer the axis labels to be rotated or formatted in a specific way
+  for better readability?
+
+  5. Do you have any preferences for line opacity or thickness to improve the visualization
+  of patterns?
+
+  6. Should we include any additional details such as tooltips or legends for better
+  interpretation of the chart?
+
+  7. Are there any attributes that should be highlighted or emphasized more prominently
+  than others?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI have a dataset about mushroom classification with attributes\
+  \ like cap shape, cap surface, cap color, bruises, odor, gill attachment, etc. I\
+  \ want to create a parallel coordinates chart to visualize this data. Each attribute\
+  \ should have its own axis, allowing me to compare the different characteristics\
+  \ across mushroom samples. It's important to clearly differentiate between the two\
+  \ classes of mushrooms (edible and poisonous) using colors, so patterns and correlations\
+  \ can be easily identified. This will help in understanding which features are most\
+  \ significant in determining whether a mushroom is edible or poisonous.\n<end of\
+  \ user request>\n\nImagine the best result that can be achieved based on the given\
+  \ instructions and is the final output you want from the service provider with your\
+  \ purpose given below.\nBased on your imagination you are to respond to the service\
+  \ provider.\nSince you are an amateur user you should concretely answer 50% of the\
+  \ questions you think are most important, and the remaining questions should be\
+  \ answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D\
+  , \"I have no specific preference\".\nFinally, remember that you are looking for\
+  \ an image, not an interactive data visualization.\n\n<start of purpose>\nIdentify\
+  \ which features are most significant in determining whether a mushroom is edible\
+  \ or poisonous by visualizing patterns and correlations\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have a specific color scheme preference for\
+  \ differentiating between edible and poisonous mushrooms?\n2. How would you prefer\
+  \ the axes to be ordered? By importance, alphabetical order, or any other specific\
+  \ order?\n3. Are there any specific axis scales or normalization requirements for\
+  \ any of the attributes?\n4. Would you prefer the axis labels to be rotated or formatted\
+  \ in a specific way for better readability?\n5. Do you have any preferences for\
+  \ line opacity or thickness to improve the visualization of patterns?\n6. Should\
+  \ we include any additional details such as tooltips or legends for better interpretation\
+  \ of the chart?\n7. Are there any attributes that should be highlighted or emphasized\
+  \ more prominently than others?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I think line opacity should be such that overlapping lines can still be distinguished,
+  but I''m not sure about the exact value.
+
+  6. Yes, please include legends for better interpretation of the chart.
+
+  7. I am not sure.'

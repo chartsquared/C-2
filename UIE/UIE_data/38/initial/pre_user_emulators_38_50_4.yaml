@@ -1,0 +1,93 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Heatmap
+
+  * Pie chart
+
+  * Line chart
+
+  * Histogram
+
+  * Geographic heatmap'
+- 1020
+- 997
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 843
+- 704
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/38.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''work_year'',
+  ''experience_level'', ''employment_type'', ''job_title'', ''salary'', ''salary_currency'',
+  ''salary_in_usd'', ''employee_residence'', ''remote_ratio'', ''company_location'',
+  ''company_size''], ''Data Type'': [dtype(''int64''), dtype(''int64''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [607, 3, 4, 4, 50, 272, 17, 369, 57,
+  3, 50, 3]}, ''sample_data'': {''Unnamed: 0'': [0, 1, 2], ''work_year'': [2020, 2020,
+  2020], ''experience_level'': [''MI'', ''SE'', ''SE''], ''employment_type'': [''FT'',
+  ''FT'', ''FT''], ''job_title'': [''Data Scientist'', ''Machine Learning Scientist'',
+  ''Big Data Engineer''], ''salary'': [70000, 260000, 85000], ''salary_currency'':
+  [''EUR'', ''USD'', ''GBP''], ''salary_in_usd'': [79833, 260000, 109024], ''employee_residence'':
+  [''DE'', ''JP'', ''GB''], ''remote_ratio'': [0, 0, 50], ''company_location'': [''DE'',
+  ''JP'', ''GB''], ''company_size'': [''L'', ''S'', ''M'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Data Science Job Salaries
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bar chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bar chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Line chart'
+- '* Geographic heatmap'
+- '* Pie chart'
+- '* Heatmap'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- Please create a bar chart showing average salary in USD by job title. Include labels
+  for job titles on the x-axis and average salaries on the y-axis. Thanks!
+- 612
+- 579
+- 33

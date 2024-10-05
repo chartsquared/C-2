@@ -1,0 +1,81 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Heatmap
+
+  * Bubble chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Area chart
+
+  * Line chart
+
+  * Histogram
+
+  '
+- 1006
+- 971
+- 35
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually.\n<end of the annotation\
+  \ list>"
+- 826
+- 688
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/238.csv': {'summary': {'Column':\
+  \ ['Comment', 'Anonymized Author', 'Published At', 'Likes', 'Reply Count'], 'Data\
+  \ Type': [dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64')], 'Missing\
+  \ Values': [10, 0, 0, 0, 0], 'Unique Values': [9199, 9096, 10031, 111, 22]}, 'sample_data':\
+  \ {'Comment': ['Today i found this song and i was shocked that this song is 6 years\
+  \ old \xF0\\x9f\\x98\\x82\xF0\\x9f\\x98\\x82\xF0\\x9f\\x98\\x82', 'Coollllll\xF0\
+  \\x9f\\x98\\x82\xF0\\x9f\\x98\\x82', 'I love this song forever \xE2\\x99\xBE\xEF\
+  \xB8\\x8f\xF0\\x9f\\x92\\x97\xF0\\x9f\\x98\\x8a\xF0\\x9f\\x98\\x8a'], 'Anonymized\
+  \ Author': ['000e3aaedc78a4af8b6ace6f2aae6f12', '8cc07135a663e1f7154e970481eaf617',\
+  \ '4af735aed3ccdd778b244470d82b1376'], 'Published At': ['2023-12-07T09:52:50Z',\
+  \ '2023-12-07T09:37:42Z', '2023-12-07T09:31:33Z'], 'Likes': [1, 2, 1], 'Reply Count':\
+  \ [0, 1, 0]}}}\n<end of data example format>\n\n<start of annotations format>\n\
+  ['<start of the annotation list>', '1. Text Annotations:', 'Description: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.', 'Purpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.', 'Other Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.', '3. Highlights:',\
+  \ 'Description: Highlights modify the appearance of chart elements (e.g., size,\
+  \ color) to emphasize or reduce their importance.', 'Purpose: Used to distinguish\
+  \ certain elements from others, making them stand out visually.', '<end of the annotation\
+  \ list>']\n<end of annotations format>\n\n<start of data details format>\nHarmony\
+  \ and Chatter: The 'Shape of You' Buzz\nonline-communities\n<end of data details\
+  \ format>\n\nGiven a data format, imagine a chart that visualizes this data as the\
+  \ final output you want from the service provider.\nConsider what purpose the data\
+  \ has and the practical purpose of visualization and include it in the instructions.\n\
+  You need to imagine a chart with * Heatmap and given annotations that utilizes the\
+  \ data format.\nIf there are multiple given data formats, imagine a chart with *\
+  \ Heatmap and given annotations that utilizes all the data formats.\nSince you are\
+  \ an amateur user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\n\
+  Also, refer to the data details to create as practical and realistic instructions\
+  \ as possible.\nInstructions must reflect the context of the data.\nTo emulate a\
+  \ real-world user your instruction should be 50 in size (word count). Do not include\
+  \ data path in the instruction.\nYour response should ONLY contain the user emulated\
+  \ instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Line chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+2. initial_prompt: !!python/tuple
+- Visualize a heatmap showing comment reply count versus likes over time. Highlight
+  top-commented dates and offer text annotations to emphasize unique engagement patterns.
+- 786
+- 757
+- 29

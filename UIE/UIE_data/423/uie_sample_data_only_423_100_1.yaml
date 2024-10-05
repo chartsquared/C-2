@@ -1,0 +1,272 @@
+02_initial_prompt: Create a bar chart visualizing fallen meteorites by their class.
+  Highlight classes with the highest mass and annotate with their names and masses
+  to show their significance. Use different colors to distinguish classes and ensure
+  the chart emphasizes notable data points. The purpose is to understand which meteorite
+  classes are predominant by mass, assisting in research for space and astronomy studies.
+  The chart should allow viewers to quickly see which meteorite types are most common
+  and significant by their mass contributions without needing further context explanation.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a bar chart visualizing fallen meteorites by their class. Highlight classes
+  with the highest mass and annotate with their names and masses to show their significance.
+  Use different colors to distinguish classes and ensure the chart emphasizes notable
+  data points. The purpose is to understand which meteorite classes are predominant
+  by mass, assisting in research for space and astronomy studies. The chart should
+  allow viewers to quickly see which meteorite types are most common and significant
+  by their mass contributions without needing further context explanation.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/423.csv'': {''summary'': {''Column'': [''name'', ''id'',
+  ''name_type'', ''class'', ''mass'', ''fall'', ''year'', ''lat'', ''long'', ''geolocation''],
+  ''Data Type'': [dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 131, 0, 291, 7315, 7315, 7315], ''Unique Values'':
+  [45716, 45716, 2, 455, 12576, 2, 265, 12738, 14640, 17100]}, ''sample_data'': {''name'':
+  [''Aachen'', ''Aarhus'', ''Abee''], ''id'': [1, 2, 6], ''name_type'': [''Valid'',
+  ''Valid'', ''Valid''], ''class'': [''L5'', ''H6'', ''EH4''], ''mass'': [21.0, 720.0,
+  107000.0], ''fall'': [''Fell'', ''Fell'', ''Fell''], ''year'': [1880.0, 1951.0,
+  1952.0], ''lat'': [50.775, 56.18333, 54.21667], ''long'': [6.08333, 10.23333, -113.0],
+  ''geolocation'': [''(50.775, 6.08333)'', ''(56.18333, 10.23333)'', ''(54.21667,
+  -113.0)'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["name", "class", "mass"],
+
+  "Task": "Focus on Identifying extreme",
+
+  "Purpose": "Understand which meteorite classes are predominant by mass to assist
+  in space and astronomy research",
+
+  "Audience": "Researchers and professionals in space and astronomy studies"
+
+  }'
+05_audience: Researchers and professionals in space and astronomy studies
+05_data_attributes:
+- name
+- class
+- mass
+05_purpose: Understand which meteorite classes are predominant by mass to assist in
+  space and astronomy research
+05_task: Focus on Identifying extreme
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/423.csv'': {''summary'': {''Column'': [''name'', ''id'',
+  ''name_type'', ''class'', ''mass'', ''fall'', ''year'', ''lat'', ''long'', ''geolocation''],
+  ''Data Type'': [dtype(''O''), dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 131, 0, 291, 7315, 7315, 7315], ''Unique Values'':
+  [45716, 45716, 2, 455, 12576, 2, 265, 12738, 14640, 17100]}, ''sample_data'': {''name'':
+  [''Aachen'', ''Aarhus'', ''Abee''], ''id'': [1, 2, 6], ''name_type'': [''Valid'',
+  ''Valid'', ''Valid''], ''class'': [''L5'', ''H6'', ''EH4''], ''mass'': [21.0, 720.0,
+  107000.0], ''fall'': [''Fell'', ''Fell'', ''Fell''], ''year'': [1880.0, 1951.0,
+  1952.0], ''lat'': [50.775, 56.18333, 54.21667], ''long'': [6.08333, 10.23333, -113.0],
+  ''geolocation'': [''(50.775, 6.08333)'', ''(56.18333, 10.23333)'', ''(54.21667,
+  -113.0)'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a bar chart visualizing fallen meteorites by their class. Highlight classes
+  with the highest mass and annotate with their names and masses to show their significance.
+  Use different colors to distinguish classes and ensure the chart emphasizes notable
+  data points. The purpose is to understand which meteorite classes are predominant
+  by mass, assisting in research for space and astronomy studies. The chart should
+  allow viewers to quickly see which meteorite types are most common and significant
+  by their mass contributions without needing further context explanation.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''name'', ''class'', ''mass'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers and professionals in space and astronomy studies
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying extreme
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand which meteorite classes are predominant by mass to assist in space and
+  astronomy research
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color palette for distinguishing different
+  meteorite classes?
+
+  2. Do you prefer the bars to be horizontal or vertical?
+
+  3. Would you like the chart to include a legend for the class colors?
+
+  4. Should there be gridlines in the chart to help with readability?
+
+  5. Do you have a preference for the font style and size for the annotations and
+  labels?
+
+  6. Would you like to display the exact values of the masses on top of the bars or
+  within the bars?
+
+  7. Do you have a preferred order for the bars (e.g., ascending, descending by mass)?
+
+  8. Should we include axis titles and labels, and if so, do you have specific titles
+  in mind?
+
+  9. Do you want to see any additional statistical data or summaries on the chart,
+  such as the total number of meteorites per class?
+
+  10. Would you like to apply any specific formatting to the bar edges or borders
+  for better distinction?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a bar chart visualizing fallen meteorites by their\
+  \ class. Highlight classes with the highest mass and annotate with their names and\
+  \ masses to show their significance. Use different colors to distinguish classes\
+  \ and ensure the chart emphasizes notable data points. The purpose is to understand\
+  \ which meteorite classes are predominant by mass, assisting in research for space\
+  \ and astronomy studies. The chart should allow viewers to quickly see which meteorite\
+  \ types are most common and significant by their mass contributions without needing\
+  \ further context explanation.\n<end of user request>\n\nImagine the best result\
+  \ that can be achieved based on the given instructions and is the final output you\
+  \ want from the service provider with your purpose given below.\nBased on your imagination\
+  \ you are to respond to the service provider.\nSince you are an amateur user you\
+  \ should concretely answer 50% of the questions you think are most important, and\
+  \ the remaining questions should be answer with uncertainty, e.g. \u201CI am not\
+  \ sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\nFinally,\
+  \ remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nUnderstand which meteorite classes are predominant by mass\
+  \ to assist in space and astronomy research\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color palette for distinguishing\
+  \ different meteorite classes?\n2. Do you prefer the bars to be horizontal or vertical?\n\
+  3. Would you like the chart to include a legend for the class colors?\n4. Should\
+  \ there be gridlines in the chart to help with readability?\n5. Do you have a preference\
+  \ for the font style and size for the annotations and labels?\n6. Would you like\
+  \ to display the exact values of the masses on top of the bars or within the bars?\n\
+  7. Do you have a preferred order for the bars (e.g., ascending, descending by mass)?\n\
+  8. Should we include axis titles and labels, and if so, do you have specific titles\
+  \ in mind?\n9. Do you want to see any additional statistical data or summaries on\
+  \ the chart, such as the total number of meteorites per class?\n10. Would you like\
+  \ to apply any specific formatting to the bar edges or borders for better distinction?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Vertical bars, please.
+
+  3. Yes, please include a legend.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Display the exact values on top of the bars.
+
+  7. Descending by mass.
+
+  8. Yes, please include axis titles and labels, but I do not have specific titles
+  in mind.
+
+  9. I am not sure.
+
+  10. I do not know.'

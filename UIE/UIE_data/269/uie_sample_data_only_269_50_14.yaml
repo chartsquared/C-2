@@ -1,0 +1,179 @@
+02_initial_prompt: Create a donut chart displaying the continent-wise distribution
+  of countries using the 'country' and 'continent' columns.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a donut chart displaying the continent-wise distribution\
+  \ of countries using the 'country' and 'continent' columns.\n<end of user request>\n\
+  \n<start of data format>\n{'../Extra_datas/data/269.csv': {'summary': {'Column':\
+  \ ['rank', 'cca3', 'country', 'continent', '2023 population', '2022 population',\
+  \ '2020 population', '2015 population', '2010 population', '2000 population', '1990\
+  \ population', '1980 population', '1970 population', 'area (km\xB2)', 'density (km\xB2\
+  )', 'growth rate', 'world percentage'], 'Data Type': [dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('float64'), dtype('int64'), dtype('O'), dtype('O')], 'Missing Values': [0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [234, 234, 234,\
+  \ 6, 234, 234, 234, 234, 234, 234, 234, 234, 234, 232, 167, 176, 73]}, 'sample_data':\
+  \ {'rank': [1, 2, 3], 'cca3': ['IND', 'CHN', 'USA'], 'country': ['India', 'China',\
+  \ 'United States'], 'continent': ['Asia', 'Asia', 'North America'], '2023 population':\
+  \ [1428627663, 1425671352, 339996563], '2022 population': [1417173173, 1425887337,\
+  \ 338289857], '2020 population': [1396387127, 1424929781, 335942003], '2015 population':\
+  \ [1322866505, 1393715448, 324607776], '2010 population': [1240613620, 1348191368,\
+  \ 311182845], '2000 population': [1059633675, 1264099069, 282398554], '1990 population':\
+  \ [870452165, 1153704252, 248083732], '1980 population': [696828385, 982372466,\
+  \ 223140018], '1970 population': [557501301, 822534450, 200328340], 'area (km\xB2\
+  )': [3287590.0, 9706961.0, 9372610.0], 'density (km\xB2)': [481, 151, 37], 'growth\
+  \ rate': ['0.81%', '-0.02%', '0.50%'], 'world percentage': ['17.85%', '17.81%',\
+  \ '4.25%']}}}\n<end of data format>\n\n<start of various task types>\n{'Show External\
+  \ Context': 'Uncaptured data provided by the self-tracker to understand and explain\
+  \ a phenomenon shown in the data', 'Show Confirmation': 'Collected data confirms\
+  \ existing knowledge', 'Show Contradiction': 'Collected data contradicts existing\
+  \ knowledge', 'Focus on Identifying value': 'Explicitly specify the measured value,\
+  \ its range for one or more clearly identified data points, or the difference between\
+  \ two measured values', 'Focus on Identifying extreme': 'Explicitly state the identities\
+  \ of the data points possessing extreme values of the measure variable', 'Focus\
+  \ on Identifying references': 'Explicitly state the values of categorical variables,\
+  \ labels from the axes, or legends', 'Comparison by Time Segmentation': 'Compare\
+  \ measured values segmented by time', 'Comparison by Multiple services': 'Compare\
+  \ the same data type from two or more services', 'Comparison against external data':\
+  \ 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare measured\
+  \ values by a factor (other than time)', 'Comparison By Instances': 'Compare two\
+  \ specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute'].\nStore the selected\
+  \ task from the task types in query['Task'].\nStore the purpose of visualization\
+  \ in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\n\
+  Please reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["country", "continent"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Explicitly describe the variation of measured values across all or most
+  of the values of a categorical variable",
+
+  "Audience": "General Public"
+
+  }'
+05_audience: General Public
+05_data_attributes:
+- country
+- continent
+05_purpose: Explicitly describe the variation of measured values across all or most
+  of the values of a categorical variable
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/269.csv':\
+  \ {'summary': {'Column': ['rank', 'cca3', 'country', 'continent', '2023 population',\
+  \ '2022 population', '2020 population', '2015 population', '2010 population', '2000\
+  \ population', '1990 population', '1980 population', '1970 population', 'area (km\xB2\
+  )', 'density (km\xB2)', 'growth rate', 'world percentage'], 'Data Type': [dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('float64'), dtype('int64'), dtype('O'), dtype('O')], 'Missing\
+  \ Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values':\
+  \ [234, 234, 234, 6, 234, 234, 234, 234, 234, 234, 234, 234, 234, 232, 167, 176,\
+  \ 73]}, 'sample_data': {'rank': [1, 2, 3], 'cca3': ['IND', 'CHN', 'USA'], 'country':\
+  \ ['India', 'China', 'United States'], 'continent': ['Asia', 'Asia', 'North America'],\
+  \ '2023 population': [1428627663, 1425671352, 339996563], '2022 population': [1417173173,\
+  \ 1425887337, 338289857], '2020 population': [1396387127, 1424929781, 335942003],\
+  \ '2015 population': [1322866505, 1393715448, 324607776], '2010 population': [1240613620,\
+  \ 1348191368, 311182845], '2000 population': [1059633675, 1264099069, 282398554],\
+  \ '1990 population': [870452165, 1153704252, 248083732], '1980 population': [696828385,\
+  \ 982372466, 223140018], '1970 population': [557501301, 822534450, 200328340], 'area\
+  \ (km\xB2)': [3287590.0, 9706961.0, 9372610.0], 'density (km\xB2)': [481, 151, 37],\
+  \ 'growth rate': ['0.81%', '-0.02%', '0.50%'], 'world percentage': ['17.85%', '17.81%',\
+  \ '4.25%']}}}\n<end of data format>\n\n<start of data visualization instruction>\n\
+  Create a donut chart displaying the continent-wise distribution of countries using\
+  \ the 'country' and 'continent' columns.\n<end of data visualization instruction>\n\
+  \n<start of data attributes>\n['country', 'continent']\n<end of data attributes>\n\
+  \n<start of prospective audience>\nGeneral Public\n<end of prospective audience>\n\
+  \n<start of type of tasks>\nDistribution By Category\n<end of type of tasks>\n\n\
+  <start of purpose>\nExplicitly describe the variation of measured values across\
+  \ all or most of the values of a categorical variable\n<end of purpose>"
+07_questions: '1. Do you have a preferred color scheme for the donut chart?
+
+  2. Would you like to display the percentage values inside each segment of the donut
+  chart?
+
+  3. Should the chart include labels for each continent?
+
+  4. Do you prefer a legend to be included in the donut chart?
+
+  5. Would you like the segments to be ordered by size, alphabetically, or in a specific
+  order?
+
+  6. Should there be a title on the chart? If so, what would you like it to be?
+
+  7. Do you have a preference for the thickness of the donut chart?
+
+  8. Would you like to add data labels with the count of countries on each segment
+  of the donut chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a donut chart displaying the continent-wise distribution\
+  \ of countries using the 'country' and 'continent' columns.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 25% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nExplicitly describe\
+  \ the variation of measured values across all or most of the values of a categorical\
+  \ variable\n<end of purpose>\n\n<start service provider message>\n1. Do you have\
+  \ a preferred color scheme for the donut chart?\n2. Would you like to display the\
+  \ percentage values inside each segment of the donut chart?\n3. Should the chart\
+  \ include labels for each continent?\n4. Do you prefer a legend to be included in\
+  \ the donut chart?\n5. Would you like the segments to be ordered by size, alphabetically,\
+  \ or in a specific order?\n6. Should there be a title on the chart? If so, what\
+  \ would you like it to be?\n7. Do you have a preference for the thickness of the\
+  \ donut chart?\n8. Would you like to add data labels with the count of countries\
+  \ on each segment of the donut chart?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. Yes, I would like to display the percentage values inside each segment.
+
+  3. Yes, the chart should include labels for each continent.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, the title should be "Continent-Wise Distribution of Countries."
+
+  7. I am not sure.
+
+  8. Yes, please add data labels with the count of countries on each segment of the
+  donut chart.'

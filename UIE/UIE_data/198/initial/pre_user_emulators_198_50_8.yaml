@@ -1,0 +1,96 @@
+1-1. selected_chart_types: !!python/tuple
+- '- Bar chart
+
+  - Scatter plot
+
+  - Pie chart
+
+  - Word cloud
+
+  - Heatmap
+
+  - Treemap
+
+  - Line chart
+
+  - Histogram
+
+  - Box chart'
+- 781
+- 747
+- 34
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 590
+- 452
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/198.csv'': {''summary'': {''Column'': [''Comment'', ''Emotion''],
+  ''Data Type'': [dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0], ''Unique
+  Values'': [5934, 3]}, ''sample_data'': {''Comment'': [''i seriously hate one subject
+  to death but now i feel reluctant to drop it'', ''im so full of life i feel appalled'',
+  ''i sit here to write i start to dig out my feelings and i think that i am afraid
+  to accept the possibility that he might not make it''], ''Emotion'': [''fear'',
+  ''anger'', ''fear'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Emotion Dataset
+
+  psychology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with - Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with - Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '- Line chart'
+- '- Treemap'
+- '- Heatmap'
+- '- Bar chart'
+- '- Pie chart'
+- '- Box chart'
+- '- Histogram'
+- '- Word cloud'
+- '- Scatter plot'
+2. initial_prompt: !!python/tuple
+- Create a scatter plot visualizing comments based on emotions from the Emotion Dataset
+  in psychology. Use distinct colors for fear, anger, and other emotions to show distribution.
+- 359
+- 327
+- 32

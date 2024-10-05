@@ -1,0 +1,284 @@
+02_initial_prompt: Visualize a choropleth map highlighting countries with public transit
+  projects. Emphasize real costs, tunneling percentage, and station counts. Use annotations
+  to show start and end years.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Visualize a choropleth map highlighting countries with public transit projects.
+  Emphasize real costs, tunneling percentage, and station counts. Use annotations
+  to show start and end years.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/444.csv'': {''summary'': {''Column'': [''e'', ''country'',
+  ''city'', ''line'', ''start_year'', ''end_year'', ''rr'', ''length'', ''tunnel_per'',
+  ''tunnel'', ''stations'', ''source1'', ''cost'', ''currency'', ''year'', ''ppp_rate'',
+  ''real_cost'', ''cost_km_millions'', ''source2'', ''reference''], ''Data Type'':
+  [dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O'')], ''Missing Values'':
+  [7, 7, 7, 7, 53, 71, 8, 5, 32, 32, 15, 12, 7, 7, 7, 9, 0, 2, 10, 19], ''Unique Values'':
+  [535, 56, 140, 366, 40, 36, 2, 360, 134, 301, 53, 17, 508, 39, 34, 115, 534, 534,
+  12, 350]}, ''sample_data'': {''e'': [7136.0, 7137.0, 7138.0], ''country'': [''CA'',
+  ''CA'', ''CA''], ''city'': [''Vancouver'', ''Toronto'', ''Toronto''], ''line'':
+  [''Broadway'', ''Vaughan'', ''Scarborough''], ''start_year'': [''2020'', ''2009'',
+  ''2020''], ''end_year'': [''2025'', ''2017'', ''2030''], ''rr'': [0.0, 0.0, 0.0],
+  ''length'': [5.7, 8.6, 7.8], ''tunnel_per'': [''87.72%'', ''100.00%'', ''100.00%''],
+  ''tunnel'': [5.0, 8.6, 7.8], ''stations'': [6.0, 6.0, 3.0], ''source1'': [''Plan'',
+  ''Media'', ''Wiki''], ''cost'': [2830.0, 3200.0, 5500.0], ''currency'': [''CAD'',
+  ''CAD'', ''CAD''], ''year'': [2018.0, 2013.0, 2018.0], ''ppp_rate'': [0.84, 0.81,
+  0.84], ''real_cost'': [''2377.2'', ''2592'', ''4620''], ''cost_km_millions'': [417.0526316,
+  301.3953488, 592.3076923], ''source2'': [''Media'', ''Media'', ''Media''], ''reference'':
+  [''https://www.translink.ca/Plans-and-Projects/Rapid-Transit-Projects/Broadway-Subway-Project.aspx'',
+  ''https://www.thestar.com/news/gta/transportation/2017/12/15/trudeau-wynne-tory-on-hand-to-cut-ribbon-on-32-billion-subway-extension.html'',
+  ''https://urbantoronto.ca/news/2020/03/metrolinxs-preliminary-business-case-scarborough-subway-extension-raises-questions'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"country\", \"\
+  real_cost\", \"tunnel_per\", \"stations\", \"start_year\", \"end_year\"],\n  \"\
+  Task\": \"Focus on Identifying value\",\n  \"Purpose\": \"To highlight public transit\
+  \ projects by showing project specifics and drawing attention to key metrics such\
+  \ as costs, tunneling percentage, and station counts\",\n  \"Audience\": \"Policy\
+  \ makers, urban planners, transportation departments, and the general public interested\
+  \ in infrastructure developments\"\n}"
+05_audience: Policy makers, urban planners, transportation departments, and the general
+  public interested in infrastructure developments
+05_data_attributes:
+- country
+- real_cost
+- tunnel_per
+- stations
+- start_year
+- end_year
+05_purpose: To highlight public transit projects by showing project specifics and
+  drawing attention to key metrics such as costs, tunneling percentage, and station
+  counts
+05_task: Focus on Identifying value
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/444.csv'': {''summary'': {''Column'': [''e'', ''country'',
+  ''city'', ''line'', ''start_year'', ''end_year'', ''rr'', ''length'', ''tunnel_per'',
+  ''tunnel'', ''stations'', ''source1'', ''cost'', ''currency'', ''year'', ''ppp_rate'',
+  ''real_cost'', ''cost_km_millions'', ''source2'', ''reference''], ''Data Type'':
+  [dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''float64''), dtype(''float64''),
+  dtype(''O''), dtype(''float64''), dtype(''O''), dtype(''O'')], ''Missing Values'':
+  [7, 7, 7, 7, 53, 71, 8, 5, 32, 32, 15, 12, 7, 7, 7, 9, 0, 2, 10, 19], ''Unique Values'':
+  [535, 56, 140, 366, 40, 36, 2, 360, 134, 301, 53, 17, 508, 39, 34, 115, 534, 534,
+  12, 350]}, ''sample_data'': {''e'': [7136.0, 7137.0, 7138.0], ''country'': [''CA'',
+  ''CA'', ''CA''], ''city'': [''Vancouver'', ''Toronto'', ''Toronto''], ''line'':
+  [''Broadway'', ''Vaughan'', ''Scarborough''], ''start_year'': [''2020'', ''2009'',
+  ''2020''], ''end_year'': [''2025'', ''2017'', ''2030''], ''rr'': [0.0, 0.0, 0.0],
+  ''length'': [5.7, 8.6, 7.8], ''tunnel_per'': [''87.72%'', ''100.00%'', ''100.00%''],
+  ''tunnel'': [5.0, 8.6, 7.8], ''stations'': [6.0, 6.0, 3.0], ''source1'': [''Plan'',
+  ''Media'', ''Wiki''], ''cost'': [2830.0, 3200.0, 5500.0], ''currency'': [''CAD'',
+  ''CAD'', ''CAD''], ''year'': [2018.0, 2013.0, 2018.0], ''ppp_rate'': [0.84, 0.81,
+  0.84], ''real_cost'': [''2377.2'', ''2592'', ''4620''], ''cost_km_millions'': [417.0526316,
+  301.3953488, 592.3076923], ''source2'': [''Media'', ''Media'', ''Media''], ''reference'':
+  [''https://www.translink.ca/Plans-and-Projects/Rapid-Transit-Projects/Broadway-Subway-Project.aspx'',
+  ''https://www.thestar.com/news/gta/transportation/2017/12/15/trudeau-wynne-tory-on-hand-to-cut-ribbon-on-32-billion-subway-extension.html'',
+  ''https://urbantoronto.ca/news/2020/03/metrolinxs-preliminary-business-case-scarborough-subway-extension-raises-questions'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Visualize a choropleth map highlighting countries with public transit projects.
+  Emphasize real costs, tunneling percentage, and station counts. Use annotations
+  to show start and end years.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''country'', ''real_cost'', ''tunnel_per'', ''stations'', ''start_year'', ''end_year'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Policy makers, urban planners, transportation departments, and the general public
+  interested in infrastructure developments
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Focus on Identifying value
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To highlight public transit projects by showing project specifics and drawing attention
+  to key metrics such as costs, tunneling percentage, and station counts
+
+  <end of purpose>'
+07_questions: '1. Do you have any color preference for the choropleth map to represent
+  different ranges of ''real costs''?
+
+  2. Should the colors be in a gradient scale, or would you prefer distinct color
+  ranges for ''tunneling percentage''?
+
+  3. How would you like to differentiate between start and end years in the annotations
+  (e.g., different font styles, colors, or icons)?
+
+  4. Would you prefer to see the station counts represented as numerical values or
+  with symbols on the map?
+
+  5. Do you want the annotations for start and end years to appear directly on the
+  map or in a separate legend/key?
+
+  6. Is there a preferred way for you to deal with any missing data in the visualization?
+
+  7. Do you have a preference for the map projection (e.g., Mercator, Robinson) to
+  be used for the choropleth map?
+
+  8. Are there any specific regions or countries you would like to highlight or emphasize
+  more prominently on the map?
+
+  9. Should the map include additional contextual information such as geographical
+  features or city names?
+
+  10. Do you have a preference for the tooltip design or content when a user hovers
+  over a country?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nVisualize a choropleth map highlighting countries with\
+  \ public transit projects. Emphasize real costs, tunneling percentage, and station\
+  \ counts. Use annotations to show start and end years.\n<end of user request>\n\n\
+  Imagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 25% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\nTo highlight public\
+  \ transit projects by showing project specifics and drawing attention to key metrics\
+  \ such as costs, tunneling percentage, and station counts\n<end of purpose>\n\n\
+  <start service provider message>\n1. Do you have any color preference for the choropleth\
+  \ map to represent different ranges of 'real costs'?\n2. Should the colors be in\
+  \ a gradient scale, or would you prefer distinct color ranges for 'tunneling percentage'?\n\
+  3. How would you like to differentiate between start and end years in the annotations\
+  \ (e.g., different font styles, colors, or icons)?\n4. Would you prefer to see the\
+  \ station counts represented as numerical values or with symbols on the map?\n5.\
+  \ Do you want the annotations for start and end years to appear directly on the\
+  \ map or in a separate legend/key?\n6. Is there a preferred way for you to deal\
+  \ with any missing data in the visualization?\n7. Do you have a preference for the\
+  \ map projection (e.g., Mercator, Robinson) to be used for the choropleth map?\n\
+  8. Are there any specific regions or countries you would like to highlight or emphasize\
+  \ more prominently on the map?\n9. Should the map include additional contextual\
+  \ information such as geographical features or city names?\n10. Do you have a preference\
+  \ for the tooltip design or content when a user hovers over a country?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Gradient scale would be fine.
+
+  3. Different colors would be good.
+
+  4. Numerical values, please.
+
+  5. Directly on the map.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No specific preference.
+
+  9. I do not know.
+
+  10. I do not know.'

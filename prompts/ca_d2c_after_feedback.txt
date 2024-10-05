@@ -1,0 +1,51 @@
+You are a data visualization expert.
+
+The Quality Assurance team provided feedback on your generated code.
+Your task is to consider such feedback with the initial instruction of the user and regenerate the chart with the data.
+
+<start of initial instruction>
+{initial_instruction}
+<end of initial instruction>
+
+Below are the well-implemented features. You do not have to change such features.
+Try your best to retain these features even after modifying the code.
+
+<start of well-implemented features>
+{retain}
+<end of well-implemented features>
+
+Below are modifications suggested by the Quality Assurance team.
+
+<start of suggested modifications>
+{modification}
+<end of suggested modifications>
+
+Your code should also automatically download the final visualization in a lower-level directory (contained within the current directory) named “plots_d2c”**.
+Name your final generated visualization ”{file_index}.png”.
+You can freely choose the package(s) of your choice as you see fit.
+Ensure that only valid functions and attributes from the imported packages are used to prevent execution errors.
+
+Ensure you use this code format in order to avoid errors, and only give the executable Python Code.
+
+Programming Language: [Python]
+
+Code:
+```Python
+# CODE FOR IMPORTING PACKAGES
+
+try:
+    # CODE FOR LOADING AND PLOTTING THE DATA
+
+except Exception as e:
+    print("An error occurred")
+
+finally:
+    # Create plots directory if it does not exist
+    plots_dir = 'plots_d2c'
+    if not os.path.exists(plots_dir):
+        os.makedirs(plots_dir)
+
+    # CODE FOR SAVING THE PLOT, THEN SHOWING THE PLOT
+
+    print("Plot saved and then shown")
+```

@@ -1,0 +1,88 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Bubble chart
+
+  * Pie chart
+
+  * Scatter plot
+
+  * Histogram
+
+  * Box chart'
+- 898
+- 872
+- 26
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 716
+- 577
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/465.csv'': {''summary'': {''Column'': [''Unnamed: 0'', ''total_bill'',
+  ''tip'', ''sex'', ''smoker'', ''day'', ''time'', ''size''], ''Data Type'': [dtype(''int64''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0], ''Unique
+  Values'': [244, 229, 123, 2, 2, 4, 2, 6]}, ''sample_data'': {''Unnamed: 0'': [0,
+  1, 2], ''total_bill'': [16.99, 10.34, 21.01], ''tip'': [1.01, 1.66, 3.5], ''sex'':
+  [''Female'', ''Male'', ''Male''], ''smoker'': [''No'', ''No'', ''No''], ''day'':
+  [''Sun'', ''Sun'', ''Sun''], ''time'': [''Dinner'', ''Dinner'', ''Dinner''], ''size'':
+  [2, 3, 3]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  unknown
+
+  social-science
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Bubble chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Bubble chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Box chart'
+- '* Histogram'
+- '* Pie chart'
+- '* Grouped bar/column chart'
+- '* Bubble chart'
+2. initial_prompt: !!python/tuple
+- Create a bubble chart to visualize the relationship between total_bill and tip,
+  sized by the number of diners (size). Use different colors for male and female diners.
+- 484
+- 452
+- 32

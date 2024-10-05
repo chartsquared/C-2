@@ -1,0 +1,262 @@
+02_initial_prompt: Create a histogram showing the distribution of "Order Quantity"
+  across different "Sales Channels." Highlight the "Online" channel in contrasting
+  color. Annotate significant peaks in the histogram to emphasize key data points.
+  Add non-data-driven annotations to provide further context about procurement and
+  sales trends in the supply chain.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a histogram showing the distribution of "Order Quantity" across different
+  "Sales Channels." Highlight the "Online" channel in contrasting color. Annotate
+  significant peaks in the histogram to emphasize key data points. Add non-data-driven
+  annotations to provide further context about procurement and sales trends in the
+  supply chain.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/340.csv'': {''summary'': {''Column'': [''OrderNumber'', ''Sales
+  Channel'', ''WarehouseCode'', ''ProcuredDate'', ''OrderDate'', ''ShipDate'', ''DeliveryDate'',
+  ''CurrencyCode'', ''_SalesTeamID'', ''_CustomerID'', ''_StoreID'', ''_ProductID'',
+  ''Order Quantity'', ''Discount Applied'', ''Unit Cost'', ''Unit Price''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [7991, 4, 6, 11, 945, 966, 966, 1, 28, 50, 367, 47, 8, 7, 5252, 664]}, ''sample_data'':
+  {''OrderNumber'': [''SO - 000101'', ''SO - 000102'', ''SO - 000103''], ''Sales Channel'':
+  [''In-Store'', ''Online'', ''Distributor''], ''WarehouseCode'': [''WARE-UHY1004'',
+  ''WARE-NMK1003'', ''WARE-UHY1004''], ''ProcuredDate'': [''31/12/17'', ''31/12/17'',
+  ''31/12/17''], ''OrderDate'': [''31/5/18'', ''31/5/18'', ''31/5/18''], ''ShipDate'':
+  [''14/6/18'', ''22/6/18'', ''21/6/18''], ''DeliveryDate'': [''19/6/18'', ''2/7/2018'',
+  ''1/7/2018''], ''CurrencyCode'': [''USD'', ''USD'', ''USD''], ''_SalesTeamID'':
+  [6, 14, 21], ''_CustomerID'': [15, 20, 16], ''_StoreID'': [259, 196, 213], ''_ProductID'':
+  [12, 27, 16], ''Order Quantity'': [5, 3, 1], ''Discount Applied'': [0.08, 0.08,
+  0.05], ''Unit Cost'': [''$1,001.18'', ''$3,348.66'', ''$781.22''], ''Unit Price'':
+  [''$1,963.10'', ''$3,939.60'', ''$1,775.50'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Order Quantity", "Sales Channel"],
+
+  "Task": "Distribution By Category",
+
+  "Purpose": "Understand the distribution of order quantities across different sales
+  channels and highlight significant patterns or trends in the supply chain.",
+
+  "Audience": "Supply chain analysts, sales team, and procurement department."
+
+  }'
+05_audience: Supply chain analysts, sales team, and procurement department.
+05_data_attributes:
+- Order Quantity
+- Sales Channel
+05_purpose: Understand the distribution of order quantities across different sales
+  channels and highlight significant patterns or trends in the supply chain.
+05_task: Distribution By Category
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/340.csv'': {''summary'': {''Column'': [''OrderNumber'', ''Sales
+  Channel'', ''WarehouseCode'', ''ProcuredDate'', ''OrderDate'', ''ShipDate'', ''DeliveryDate'',
+  ''CurrencyCode'', ''_SalesTeamID'', ''_CustomerID'', ''_StoreID'', ''_ProductID'',
+  ''Order Quantity'', ''Discount Applied'', ''Unit Cost'', ''Unit Price''], ''Data
+  Type'': [dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''float64''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [7991, 4, 6, 11, 945, 966, 966, 1, 28, 50, 367, 47, 8, 7, 5252, 664]}, ''sample_data'':
+  {''OrderNumber'': [''SO - 000101'', ''SO - 000102'', ''SO - 000103''], ''Sales Channel'':
+  [''In-Store'', ''Online'', ''Distributor''], ''WarehouseCode'': [''WARE-UHY1004'',
+  ''WARE-NMK1003'', ''WARE-UHY1004''], ''ProcuredDate'': [''31/12/17'', ''31/12/17'',
+  ''31/12/17''], ''OrderDate'': [''31/5/18'', ''31/5/18'', ''31/5/18''], ''ShipDate'':
+  [''14/6/18'', ''22/6/18'', ''21/6/18''], ''DeliveryDate'': [''19/6/18'', ''2/7/2018'',
+  ''1/7/2018''], ''CurrencyCode'': [''USD'', ''USD'', ''USD''], ''_SalesTeamID'':
+  [6, 14, 21], ''_CustomerID'': [15, 20, 16], ''_StoreID'': [259, 196, 213], ''_ProductID'':
+  [12, 27, 16], ''Order Quantity'': [5, 3, 1], ''Discount Applied'': [0.08, 0.08,
+  0.05], ''Unit Cost'': [''$1,001.18'', ''$3,348.66'', ''$781.22''], ''Unit Price'':
+  [''$1,963.10'', ''$3,939.60'', ''$1,775.50'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a histogram showing the distribution of "Order Quantity" across different
+  "Sales Channels." Highlight the "Online" channel in contrasting color. Annotate
+  significant peaks in the histogram to emphasize key data points. Add non-data-driven
+  annotations to provide further context about procurement and sales trends in the
+  supply chain.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Order Quantity'', ''Sales Channel'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Supply chain analysts, sales team, and procurement department.
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution By Category
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand the distribution of order quantities across different sales channels
+  and highlight significant patterns or trends in the supply chain.
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color for highlighting the "Online" sales
+  channel?
+
+  2. What color palette would you like for the rest of the sales channels?
+
+  3. Do you want specific labels or titles for the X-axis and Y-axis?
+
+  4. How detailed would you like the annotations for significant peaks to be?
+
+  5. Do you have a preference for the placement of non-data-driven annotations on
+  the chart?
+
+  6. Are there any specific formatting preferences for the annotations (e.g., font
+  size, style)?
+
+  7. Would you like gridlines to be included in the histogram?
+
+  8. Do you have a preference for the bin size or number of bins in the histogram?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a histogram showing the distribution of \"Order\
+  \ Quantity\" across different \"Sales Channels.\" Highlight the \"Online\" channel\
+  \ in contrasting color. Annotate significant peaks in the histogram to emphasize\
+  \ key data points. Add non-data-driven annotations to provide further context about\
+  \ procurement and sales trends in the supply chain.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 25% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nUnderstand the distribution of order\
+  \ quantities across different sales channels and highlight significant patterns\
+  \ or trends in the supply chain.\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have a preferred color for highlighting the \"Online\" sales channel?\n\
+  2. What color palette would you like for the rest of the sales channels?\n3. Do\
+  \ you want specific labels or titles for the X-axis and Y-axis?\n4. How detailed\
+  \ would you like the annotations for significant peaks to be?\n5. Do you have a\
+  \ preference for the placement of non-data-driven annotations on the chart?\n6.\
+  \ Are there any specific formatting preferences for the annotations (e.g., font\
+  \ size, style)?\n7. Would you like gridlines to be included in the histogram?\n\
+  8. Do you have a preference for the bin size or number of bins in the histogram?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, label the X-axis as "Order Quantity" and the Y-axis as "Frequency."
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I am not sure.'

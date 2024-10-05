@@ -1,0 +1,113 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Line chart
+
+  * Candlestick chart
+
+  * Scatter plot
+
+  * Area chart
+
+  * Box chart
+
+  * Density plot
+
+  * Histogram
+
+  * Heatmap'
+- 975
+- 936
+- 39
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 785
+- 647
+- 138
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/104.csv'': {''summary'': {''Column'': [''Date'', ''Open'',
+  ''High'', ''Low'', ''Close'', ''Adj Close'', ''Volume''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [653, 574, 591, 598, 583, 583, 651]}, ''sample_data'': {''Date'':
+  [''2019-04-12'', ''2019-04-15'', ''2019-04-16''], ''Open'': [18.950000762939453,
+  26.940000534057617, 35.33000183105469], ''High'': [25.459999084472656, 39.95000076293945,
+  43.5], ''Low'': [18.260000228881836, 25.6299991607666, 33.099998474121094], ''Close'':
+  [25.459999084472656, 31.90999984741211, 43.040000915527344], ''Adj Close'': [25.459999084472656,
+  31.90999984741211, 43.040000915527344], ''Volume'': [9472300, 12857300, 12939400]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Jumia Stock Data Price (Updated All Time)
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Line chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Line chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Heatmap'
+- '* Bar chart'
+- '* Histogram'
+- '* Area chart'
+- '* Scatter plot'
+- '* Line chart'
+- '* Candlestick chart'
+- '* Box chart'
+- '* Density plot'
+- '* Column chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Histogram'
+- '* Area chart'
+- '* Scatter plot'
+- '* Line chart'
+2. initial_prompt: !!python/tuple
+- Please create a line chart visualizing the Jumia Stock Data Price over time. The
+  x-axis should represent the 'Date', and the y-axis should show the 'Close' prices.
+  Ensure that all the given data points are plotted accurately, and the chart is formatted
+  for easy readability with appropriate labels and a title "Jumia Stock Prices Over
+  Time". Include grid lines for better clarity, and use different colors or markers
+  to distinguish each data point. This will help in tracking the stock price changes
+  from the provided dataset effectively.
+- 626
+- 522
+- 104

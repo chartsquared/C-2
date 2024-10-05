@@ -1,0 +1,253 @@
+02_initial_prompt: Please create a histogram that visualizes the distribution of distances
+  between various destinations in the Russian Cities Distance Dataset. The x-axis
+  should represent distance bins (e.g., 0-10 km, 11-20 km, etc.), and the y-axis should
+  represent the frequency of each distance range. This will help in understanding
+  the most common distances traveled between cities. I want to see how distances are
+  distributed across different routes, and identify which distance ranges are most
+  frequent. Use different colors to represent different ranges or bins for clarity.
+  Thank you!
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a histogram that visualizes the distribution of distances between
+  various destinations in the Russian Cities Distance Dataset. The x-axis should represent
+  distance bins (e.g., 0-10 km, 11-20 km, etc.), and the y-axis should represent the
+  frequency of each distance range. This will help in understanding the most common
+  distances traveled between cities. I want to see how distances are distributed across
+  different routes, and identify which distance ranges are most frequent. Use different
+  colors to represent different ranges or bins for clarity. Thank you!
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/220.csv'': {''summary'': {''Column'': [''Order'', ''Destination'',
+  ''Distance''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0], ''Unique Values'': [14, 17, 27]}, ''sample_data'': {''Order'':
+  [''Blagodarnyy'', ''Blagodarnyy'', ''Budonnovsk''], ''Destination'': [''Budonnovsk'',
+  ''Svetlograd'', ''Zelenokumsk''], ''Distance'': [70, 68, 60]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Order", "Destination", "Distance"],
+
+  "Task": "Distribution with variability",
+
+  "Purpose": "Understand the most common distances travelled between cities",
+
+  "Audience": "Researchers, Urban planners, General public interested in Russian cities''
+  travel distances"
+
+  }'
+05_audience: Researchers, Urban planners, General public interested in Russian cities'
+  travel distances
+05_data_attributes:
+- Order
+- Destination
+- Distance
+05_purpose: Understand the most common distances travelled between cities
+05_task: Distribution with variability
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/220.csv'': {''summary'': {''Column'': [''Order'', ''Destination'',
+  ''Distance''], ''Data Type'': [dtype(''O''), dtype(''O''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0], ''Unique Values'': [14, 17, 27]}, ''sample_data'': {''Order'':
+  [''Blagodarnyy'', ''Blagodarnyy'', ''Budonnovsk''], ''Destination'': [''Budonnovsk'',
+  ''Svetlograd'', ''Zelenokumsk''], ''Distance'': [70, 68, 60]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a histogram that visualizes the distribution of distances between
+  various destinations in the Russian Cities Distance Dataset. The x-axis should represent
+  distance bins (e.g., 0-10 km, 11-20 km, etc.), and the y-axis should represent the
+  frequency of each distance range. This will help in understanding the most common
+  distances traveled between cities. I want to see how distances are distributed across
+  different routes, and identify which distance ranges are most frequent. Use different
+  colors to represent different ranges or bins for clarity. Thank you!
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Order'', ''Destination'', ''Distance'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Researchers, Urban planners, General public interested in Russian cities'' travel
+  distances
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Distribution with variability
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Understand the most common distances travelled between cities
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the different distance
+  ranges?
+
+  2. How many bins would you like on the x-axis (distance ranges)?
+
+  3. What should be the range of values for each bin on the x-axis?
+
+  4. Should the y-axis display the absolute frequency or should it be normalized/percentage?
+
+  5. Would you like labels displayed on the bins or bars to show the exact frequency
+  counts?
+
+  6. Do you prefer any specific fonts or styles for the axis titles and labels?
+
+  7. Is there a specific title you would like for the histogram?
+
+  8. Do you need a legend to indicate what the colors represent?
+
+  9. Would you like any specific annotations or markers to highlight certain distance
+  ranges or frequencies?
+
+  10. Do you want gridlines shown or hidden on the histogram?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a histogram that visualizes the distribution\
+  \ of distances between various destinations in the Russian Cities Distance Dataset.\
+  \ The x-axis should represent distance bins (e.g., 0-10 km, 11-20 km, etc.), and\
+  \ the y-axis should represent the frequency of each distance range. This will help\
+  \ in understanding the most common distances traveled between cities. I want to\
+  \ see how distances are distributed across different routes, and identify which\
+  \ distance ranges are most frequent. Use different colors to represent different\
+  \ ranges or bins for clarity. Thank you!\n<end of user request>\n\nImagine the best\
+  \ result that can be achieved based on the given instructions and is the final output\
+  \ you want from the service provider with your purpose given below.\nBased on your\
+  \ imagination you are to respond to the service provider.\nSince you are an amateur\
+  \ user you should concretely answer 50% of the questions you think are most important,\
+  \ and the remaining questions should be answer with uncertainty, e.g. \u201CI am\
+  \ not sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\n\
+  Finally, remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nUnderstand the most common distances travelled between cities\n\
+  <end of purpose>\n\n<start service provider message>\n1. Do you have a preferred\
+  \ color scheme for the different distance ranges?\n2. How many bins would you like\
+  \ on the x-axis (distance ranges)?\n3. What should be the range of values for each\
+  \ bin on the x-axis?\n4. Should the y-axis display the absolute frequency or should\
+  \ it be normalized/percentage?\n5. Would you like labels displayed on the bins or\
+  \ bars to show the exact frequency counts?\n6. Do you prefer any specific fonts\
+  \ or styles for the axis titles and labels?\n7. Is there a specific title you would\
+  \ like for the histogram?\n8. Do you need a legend to indicate what the colors represent?\n\
+  9. Would you like any specific annotations or markers to highlight certain distance\
+  \ ranges or frequencies?\n10. Do you want gridlines shown or hidden on the histogram?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Absolute frequency.
+
+  5. Yes, please display labels with exact frequency counts.
+
+  6. I do not know.
+
+  7. No specific title.
+
+  8. Yes, a legend would be helpful.
+
+  9. No specific annotations or markers needed.
+
+  10. No preference on gridlines.'

@@ -1,0 +1,86 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Line chart
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Box chart
+
+  * Area chart'
+- 1113
+- 1086
+- 27
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 938
+- 799
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/270.csv': {'summary': {'Column':\
+  \ ['Unnamed: 0', 'Date', 'Day', 'High Temp (\xB0F)', 'Low Temp (\xB0F)', 'Precipitation',\
+  \ 'Brooklyn Bridge', 'Manhattan Bridge', 'Williamsburg Bridge', 'Queensboro Bridge',\
+  \ 'Total'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'), dtype('float64'),\
+  \ dtype('float64'), dtype('O'), dtype('float64'), dtype('int64'), dtype('float64'),\
+  \ dtype('float64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0], 'Unique Values': [210, 30, 30, 21, 21, 10, 30, 30, 30, 30, 30]}, 'sample_data':\
+  \ {'Unnamed: 0': [0, 1, 2], 'Date': ['2016-04-01 00:00:00', '2016-04-02 00:00:00',\
+  \ '2016-04-03 00:00:00'], 'Day': ['2016-04-01 00:00:00', '2016-04-02 00:00:00',\
+  \ '2016-04-03 00:00:00'], 'High Temp (\xB0F)': [78.1, 55.0, 39.9], 'Low Temp (\xB0\
+  F)': [66.0, 48.9, 34.0], 'Precipitation': ['0.01', '0.15', '0.09'], 'Brooklyn Bridge':\
+  \ [1704.0, 827.0, 526.0], 'Manhattan Bridge': [3126, 1646, 1232], 'Williamsburg\
+  \ Bridge': [4115.0, 2565.0, 1695.0], 'Queensboro Bridge': [2552.0, 1884.0, 1306.0],\
+  \ 'Total': [11497, 6922, 4759]}}}\n<end of data example format>\n\n<start of annotations\
+  \ format>\n['<start of the annotation list>', '1. Text Annotations:', 'Description:\
+  \ Data-driven text annotations display values linked to chart elements, such as\
+  \ data points in a scatterplot. They draw attention to specific elements by highlighting\
+  \ their values.', 'Purpose: When only some elements are annotated, the intent is\
+  \ to focus the viewer\u2019s attention on those before examining others.', 'Other\
+  \ Uses: Non-data-driven annotations can provide context, orientation, or editorial\
+  \ comments.', '3. Highlights:', 'Description: Highlights modify the appearance of\
+  \ chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nNew York City - East River Bicycle Crossings\nurban-planning\n\
+  <end of data details format>\n\nGiven a data format, imagine a chart that visualizes\
+  \ this data as the final output you want from the service provider.\nConsider what\
+  \ purpose the data has and the practical purpose of visualization and include it\
+  \ in the instructions.\nYou need to imagine a chart with * Scatter plot and given\
+  \ annotations that utilizes the data format.\nIf there are multiple given data formats,\
+  \ imagine a chart with * Scatter plot and given annotations that utilizes all the\
+  \ data formats.\nSince you are an amateur user, your instruction will be partially\
+  \ SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create as practical\
+  \ and realistic instructions as possible.\nInstructions must reflect the context\
+  \ of the data.\nTo emulate a real-world user your instruction should be 100 in size\
+  \ (word count). Do not include data path in the instruction.\nYour response should\
+  \ ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Scatter plot'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Box chart'
+- '* Area chart'
+- '* Heatmap'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- "Create a scatter plot visualizing the relationship between daily temperatures and\
+  \ total bicycle crossings for New York City's East River bridges. Highlight the\
+  \ days with the highest and lowest total crossings and annotate these points with\
+  \ their temperature values and dates. This will help understand how weather impacts\
+  \ cycling activity. Include a trendline to show the general relationship between\
+  \ temperature and crossings. Make sure to emphasize the bridges\u2019 total crossings\
+  \ rather than individual bridges to keep the chart uncluttered. Provide a legend\
+  \ for clarity."
+- 963
+- 868
+- 95

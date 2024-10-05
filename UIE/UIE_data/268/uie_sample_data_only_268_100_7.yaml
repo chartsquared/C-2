@@ -1,0 +1,209 @@
+02_initial_prompt: Create a scatter plot visualizing the population growth of different
+  districts in Bangladesh over the years. Use the "Population_1991," "Population_2001,"
+  "Population_2011," and "Population_2022" columns for the y-axis, and the "Established"
+  column for the x-axis. Each district should be represented by a distinct color or
+  marker. The plot should highlight how population numbers have changed since each
+  district's establishment until 2022. Ensure the district names are labeled clearly
+  on the plot for easy identification.
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nCreate a scatter plot visualizing the population growth\
+  \ of different districts in Bangladesh over the years. Use the \"Population_1991,\"\
+  \ \"Population_2001,\" \"Population_2011,\" and \"Population_2022\" columns for\
+  \ the y-axis, and the \"Established\" column for the x-axis. Each district should\
+  \ be represented by a distinct color or marker. The plot should highlight how population\
+  \ numbers have changed since each district's establishment until 2022. Ensure the\
+  \ district names are labeled clearly on the plot for easy identification.\n<end\
+  \ of user request>\n\n<start of data format>\n{'../Extra_datas/data/268.csv': {'summary':\
+  \ {'Column': ['Name', 'Abbr.', 'Division', 'Established', 'Native', 'Area (km2)',\
+  \ 'Population_1991', 'Population_2001', 'Population_2011', 'Population_2022'], 'Data\
+  \ Type': [dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values':\
+  \ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [64, 64, 8, 18, 64, 62, 64, 64,\
+  \ 64, 64]}, 'sample_data': {'Name': ['Barguna', 'Barishal', 'Bhola'], 'Abbr.': ['BRG',\
+  \ 'BRS', 'BHO'], 'Division': ['Barisal', 'Barisal', 'Barisal'], 'Established': [1984,\
+  \ 1797, 1984], 'Native': ['\u09AC\u09B0\u0997\u09C1\u09A8\u09BE \u099C\u09C7\u09B2\
+  \u09BE', '\u09AC\u09B0\u09BF\u09B6\u09BE\u09B2 \u099C\u09C7\u09B2\u09BE', '\u09AD\
+  \u09CB\u09B2\u09BE \u099C\u09C7\u09B2\u09BE'], 'Area (km2)': [1831, 2785, 3403],\
+  \ 'Population_1991': [805000, 2299000, 1532000], 'Population_2001': [887376, 2465249,\
+  \ 1781043], 'Population_2011': [927889, 2414729, 1846351], 'Population_2022': [1035596,\
+  \ 2634203, 1980452]}}}\n<end of data format>\n\n<start of various task types>\n\
+  {'Show External Context': 'Uncaptured data provided by the self-tracker to understand\
+  \ and explain a phenomenon shown in the data', 'Show Confirmation': 'Collected data\
+  \ confirms existing knowledge', 'Show Contradiction': 'Collected data contradicts\
+  \ existing knowledge', 'Focus on Identifying value': 'Explicitly specify the measured\
+  \ value, its range for one or more clearly identified data points, or the difference\
+  \ between two measured values', 'Focus on Identifying extreme': 'Explicitly state\
+  \ the identities of the data points possessing extreme values of the measure variable',\
+  \ 'Focus on Identifying references': 'Explicitly state the values of categorical\
+  \ variables, labels from the axes, or legends', 'Comparison by Time Segmentation':\
+  \ 'Compare measured values segmented by time', 'Comparison by Multiple services':\
+  \ 'Compare the same data type from two or more services', 'Comparison against external\
+  \ data': 'Bringing in external data for comparison', 'Comparison By Factor': 'Compare\
+  \ measured values by a factor (other than time)', 'Comparison By Instances': 'Compare\
+  \ two specific instances', 'Show Trend': 'Describe changes over time', 'Value judgement':\
+  \ 'Convey positive or negative connotations about the data', 'Distribution with\
+  \ variability': 'Explicitly state the variability of measured values', 'Distribution\
+  \ By Category': 'Explicitly describe the variation of measured values across all\
+  \ or most of the values of a categorical variable', 'Correlation': 'Specify the\
+  \ direct relationship between two variables (but not as comparison)', 'Outlier':\
+  \ 'Explicitly point out outliers or state the effect of outliers', 'Summarization\
+  \ of data': 'Summary of collected data (such as number of data points, duration\
+  \ of tracking, and averages)', 'Prediction/Forecasting': 'Predict the future based\
+  \ on the collected data'}\n<end of various task types>\n\nFor data attributes needed\
+  \ in data visualization, store them in query['Data Attribute'].\nStore the selected\
+  \ task from the task types in query['Task'].\nStore the purpose of visualization\
+  \ in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\n\
+  Please reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Population_1991", "Population_2001", "Population_2011", "Population_2022",
+  "Established", "Name"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "The purpose is to illustrate the population growth of different districts
+  in Bangladesh from their establishment until 2022.",
+
+  "Audience": "The prospective audience includes policy makers, demographers, urban
+  planners, and researchers interested in population dynamics and development planning
+  in Bangladesh."
+
+  }'
+05_audience: The prospective audience includes policy makers, demographers, urban
+  planners, and researchers interested in population dynamics and development planning
+  in Bangladesh.
+05_data_attributes:
+- Population_1991
+- Population_2001
+- Population_2011
+- Population_2022
+- Established
+- Name
+05_purpose: The purpose is to illustrate the population growth of different districts
+  in Bangladesh from their establishment until 2022.
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/268.csv':\
+  \ {'summary': {'Column': ['Name', 'Abbr.', 'Division', 'Established', 'Native',\
+  \ 'Area (km2)', 'Population_1991', 'Population_2001', 'Population_2011', 'Population_2022'],\
+  \ 'Data Type': [dtype('O'), dtype('O'), dtype('O'), dtype('int64'), dtype('O'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64')],\
+  \ 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [64, 64, 8,\
+  \ 18, 64, 62, 64, 64, 64, 64]}, 'sample_data': {'Name': ['Barguna', 'Barishal',\
+  \ 'Bhola'], 'Abbr.': ['BRG', 'BRS', 'BHO'], 'Division': ['Barisal', 'Barisal', 'Barisal'],\
+  \ 'Established': [1984, 1797, 1984], 'Native': ['\u09AC\u09B0\u0997\u09C1\u09A8\u09BE\
+  \ \u099C\u09C7\u09B2\u09BE', '\u09AC\u09B0\u09BF\u09B6\u09BE\u09B2 \u099C\u09C7\u09B2\
+  \u09BE', '\u09AD\u09CB\u09B2\u09BE \u099C\u09C7\u09B2\u09BE'], 'Area (km2)': [1831,\
+  \ 2785, 3403], 'Population_1991': [805000, 2299000, 1532000], 'Population_2001':\
+  \ [887376, 2465249, 1781043], 'Population_2011': [927889, 2414729, 1846351], 'Population_2022':\
+  \ [1035596, 2634203, 1980452]}}}\n<end of data format>\n\n<start of data visualization\
+  \ instruction>\nCreate a scatter plot visualizing the population growth of different\
+  \ districts in Bangladesh over the years. Use the \"Population_1991,\" \"Population_2001,\"\
+  \ \"Population_2011,\" and \"Population_2022\" columns for the y-axis, and the \"\
+  Established\" column for the x-axis. Each district should be represented by a distinct\
+  \ color or marker. The plot should highlight how population numbers have changed\
+  \ since each district's establishment until 2022. Ensure the district names are\
+  \ labeled clearly on the plot for easy identification.\n<end of data visualization\
+  \ instruction>\n\n<start of data attributes>\n['Population_1991', 'Population_2001',\
+  \ 'Population_2011', 'Population_2022', 'Established', 'Name']\n<end of data attributes>\n\
+  \n<start of prospective audience>\nThe prospective audience includes policy makers,\
+  \ demographers, urban planners, and researchers interested in population dynamics\
+  \ and development planning in Bangladesh.\n<end of prospective audience>\n\n<start\
+  \ of type of tasks>\nShow Trend\n<end of type of tasks>\n\n<start of purpose>\n\
+  The purpose is to illustrate the population growth of different districts in Bangladesh\
+  \ from their establishment until 2022.\n<end of purpose>"
+07_questions: '1. What size should the chart be?
+
+  2. Do you have a specific preference for the chart title?
+
+  3. Would you like to include axis titles, and if so, what should they be?
+
+  4. Do you have any specific preferences for the colors or markers representing different
+  districts?
+
+  5. How would you prefer the district names to be displayed on the plot (e.g., as
+  labels directly on the plot, in a legend, etc.)?
+
+  6. Should the chart include grid lines for better readability?
+
+  7. Do you prefer a specific font style or size for the chart labels and titles?
+
+  8. Would you like to see trend lines or curves fitted to the data points?
+
+  9. Do you require any additional annotations or text on the chart for context?
+
+  10. Should the data points be connected with lines to indicate the chronological
+  trend?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a scatter plot visualizing the population growth\
+  \ of different districts in Bangladesh over the years. Use the \"Population_1991,\"\
+  \ \"Population_2001,\" \"Population_2011,\" and \"Population_2022\" columns for\
+  \ the y-axis, and the \"Established\" column for the x-axis. Each district should\
+  \ be represented by a distinct color or marker. The plot should highlight how population\
+  \ numbers have changed since each district's establishment until 2022. Ensure the\
+  \ district names are labeled clearly on the plot for easy identification.\n<end\
+  \ of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nThe purpose is to illustrate the population growth of different districts\
+  \ in Bangladesh from their establishment until 2022.\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. What size should the chart be?\n2. Do you have a\
+  \ specific preference for the chart title?\n3. Would you like to include axis titles,\
+  \ and if so, what should they be?\n4. Do you have any specific preferences for the\
+  \ colors or markers representing different districts?\n5. How would you prefer the\
+  \ district names to be displayed on the plot (e.g., as labels directly on the plot,\
+  \ in a legend, etc.)?\n6. Should the chart include grid lines for better readability?\n\
+  7. Do you prefer a specific font style or size for the chart labels and titles?\n\
+  8. Would you like to see trend lines or curves fitted to the data points?\n9. Do\
+  \ you require any additional annotations or text on the chart for context?\n10.\
+  \ Should the data points be connected with lines to indicate the chronological trend?\n\
+  <end service provider message>\n\nAlso, remember that the service provider can not\
+  \ see the image you have access to.\nYour response should ONLY contain the user\
+  \ emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, the x-axis should be titled "Year Established" and the y-axis should be
+  titled "Population".
+
+  4. I am not sure.
+
+  5. I prefer the district names to be displayed directly on the plot.
+
+  6. Yes, please include grid lines for better readability.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. No, I do not require any additional annotations.
+
+  10. Yes, please connect the data points with lines to indicate the chronological
+  trend.'

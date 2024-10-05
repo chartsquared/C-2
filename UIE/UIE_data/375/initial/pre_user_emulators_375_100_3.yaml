@@ -1,0 +1,107 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Line chart
+
+  * Area chart
+
+  * Scatter plot
+
+  * Box chart
+
+  * Histogram'
+- 843
+- 800
+- 43
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 646
+- 507
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/375.csv'': {''summary'': {''Column'': [''year'', ''sex'',
+  ''name'', ''n'', ''prop''], ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''),
+  dtype(''int64''), dtype(''float64'')], ''Missing Values'': [0, 0, 0, 0, 0], ''Unique
+  Values'': [136, 1, 9, 970, 1160]}, ''sample_data'': {''year'': [1880, 1880, 1880],
+  ''sex'': [''F'', ''F'', ''F''], ''name'': [''Helen'', ''Amanda'', ''Betty''], ''n'':
+  [636, 241, 117], ''prop'': [0.0065161263882627, 0.0024691610999549, 0.0011987213638785]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Each person''s income over time
+
+  business
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Donut chart'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Bar chart'
+- '* Pie chart'
+- '* Column chart'
+- '* Box chart'
+- '* Histogram'
+- '* Area chart'
+- '* Donut chart'
+- '* Grouped bar/column chart'
+- '* Line chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- I want to create a scatter plot to visualize each person's income over time based
+  on a dataset that includes information such as year, sex, name, n (number), and
+  prop (proportion). The x-axis should represent the years, and the y-axis should
+  represent the income values. Different colors can be used to distinguish between
+  males and females. Additionally, it would be useful to include data points for the
+  most common names, such as Helen, Amanda, and Betty, to see their income distribution
+  over different years. Please ensure the plot is clear and insightful.
+- 494
+- 382
+- 112

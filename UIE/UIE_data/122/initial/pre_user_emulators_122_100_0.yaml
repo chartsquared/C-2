@@ -1,0 +1,98 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Bubble chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Treemap
+
+  * Line chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart'
+- 1048
+- 998
+- 50
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 846
+- 707
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/122.csv': {'summary': {'Column':\
+  \ ['Rank', 'Name', 'Platform', 'Year', 'Genre', 'Publisher', 'NA_Sales', 'EU_Sales',\
+  \ 'JP_Sales', 'Other_Sales', 'Global_Sales'], 'Data Type': [dtype('int64'), dtype('O'),\
+  \ dtype('O'), dtype('float64'), dtype('O'), dtype('O'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64')], 'Missing Values': [0, 0,\
+  \ 0, 271, 0, 58, 0, 0, 0, 0, 0], 'Unique Values': [16598, 11493, 31, 39, 12, 578,\
+  \ 409, 305, 244, 157, 623]}, 'sample_data': {'Rank': [1, 2, 3], 'Name': ['Wii Sports',\
+  \ 'Super Mario Bros.', 'Mario Kart Wii'], 'Platform': ['Wii', 'NES', 'Wii'], 'Year':\
+  \ [2006.0, 1985.0, 2008.0], 'Genre': ['Sports', 'Platform', 'Racing'], 'Publisher':\
+  \ ['Nintendo', 'Nintendo', 'Nintendo'], 'NA_Sales': [41.49, 29.08, 15.85], 'EU_Sales':\
+  \ [29.02, 3.58, 12.88], 'JP_Sales': [3.77, 6.81, 3.79], 'Other_Sales': [8.46, 0.77,\
+  \ 3.31], 'Global_Sales': [82.74, 40.24, 35.82]}}}\n<end of data example format>\n\
+  \n<start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '2. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nVideo Game Sales\narts-and-entertainment\n<end of\
+  \ data details format>\n\nGiven a data format, imagine a chart that visualizes this\
+  \ data as the final output you want from the service provider.\nConsider what purpose\
+  \ the data has and the practical purpose of visualization and include it in the\
+  \ instructions.\nYou need to imagine a chart with * Bar chart and given annotations\
+  \ that utilizes the data format.\nIf there are multiple given data formats, imagine\
+  \ a chart with * Bar chart and given annotations that utilizes all the data formats.\n\
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and\
+  \ NOT DETAILED.\nAlso, refer to the data details to create as practical and realistic\
+  \ instructions as possible.\nInstructions must reflect the context of the data.\n\
+  To emulate a real-world user your instruction should be 100 in size (word count).\
+  \ Do not include data path in the instruction.\nYour response should ONLY contain\
+  \ the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Box chart'
+- '* Scatter plot'
+- '* Line chart'
+- '* Area chart'
+- '* Stacked bar/column chart'
+- '* Bubble chart'
+- '* Treemap'
+- '* Grouped bar/column chart'
+- '* Column chart'
+- '* Histogram'
+- '* Bar chart'
+2. initial_prompt: !!python/tuple
+- I need a bar chart for video game sales data, highlighting the top 3 games by global
+  sales. Each bar should represent a game, with annotations displaying the sales figures
+  for NA, EU, JP, Other, and Global. Use different colors to distinguish between the
+  regions. Highlight the game with the highest global sales to draw attention. The
+  chart aims to compare regional sales across top games while emphasizing the best-seller.
+  Include data-driven and contextual annotations to aid understanding. This will help
+  visualize the distribution of video game sales across different markets.
+- 884
+- 776
+- 108

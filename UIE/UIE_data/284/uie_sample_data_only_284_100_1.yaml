@@ -1,0 +1,244 @@
+02_initial_prompt: "I want a histogram to visualize the Alzheimer\u2019s disease dataset.\
+  \ Highlight the different ages and annotate the average MMSE scores for selected\
+  \ age groups to draw attention to cognitive performance by age. Use color to differentiate\
+  \ between various ages and include an indication of sample size for each age group.\
+  \ The purpose is to see if there's a pattern in MMSE scores as age progresses among\
+  \ Alzheimer's patients. This visualization will be useful for medical researchers\
+  \ to understand the relationship between age and cognitive decline in Alzheimer\u2019\
+  s patients accurately."
+03_asking_chartagent_to_find_data_attribute_task_visualization: "You are a data visualization\
+  \ expert.\nGiven the data and user request, your task is to analyze the user request\
+  \ to figure out the (1) data attributes needed for data visualization, (2) select\
+  \ the most suitable task that the user is expecting from the list of various tasks\
+  \ in data visualization, (3) specifically figure out the purpose of the user's request\
+  \ in data visualization, and (4) prospective audience of the data visualization.\n\
+  <start of user request>\nI want a histogram to visualize the Alzheimer\u2019s disease\
+  \ dataset. Highlight the different ages and annotate the average MMSE scores for\
+  \ selected age groups to draw attention to cognitive performance by age. Use color\
+  \ to differentiate between various ages and include an indication of sample size\
+  \ for each age group. The purpose is to see if there's a pattern in MMSE scores\
+  \ as age progresses among Alzheimer's patients. This visualization will be useful\
+  \ for medical researchers to understand the relationship between age and cognitive\
+  \ decline in Alzheimer\u2019s patients accurately.\n<end of user request>\n\n<start\
+  \ of data format>\n{'../Extra_datas/data/284.csv': {'summary': {'Column': ['PatientID',\
+  \ 'Age', 'Gender', 'Ethnicity', 'EducationLevel', 'BMI', 'Smoking', 'AlcoholConsumption',\
+  \ 'PhysicalActivity', 'DietQuality', 'SleepQuality', 'FamilyHistoryAlzheimers',\
+  \ 'CardiovascularDisease', 'Diabetes', 'Depression', 'HeadInjury', 'Hypertension',\
+  \ 'SystolicBP', 'DiastolicBP', 'CholesterolTotal', 'CholesterolLDL', 'CholesterolHDL',\
+  \ 'CholesterolTriglycerides', 'MMSE', 'FunctionalAssessment', 'MemoryComplaints',\
+  \ 'BehavioralProblems', 'ADL', 'Confusion', 'Disorientation', 'PersonalityChanges',\
+  \ 'DifficultyCompletingTasks', 'Forgetfulness', 'Diagnosis', 'DoctorInCharge'],\
+  \ 'Data Type': [dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('float64'), dtype('int64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('int64'), dtype('int64'), dtype('float64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [2149,\
+  \ 31, 2, 4, 4, 2149, 2, 2149, 2149, 2149, 2149, 2, 2, 2, 2, 2, 2, 90, 60, 2149,\
+  \ 2149, 2149, 2149, 2149, 2149, 2, 2, 2149, 2, 2, 2, 2, 2, 2, 1]}, 'sample_data':\
+  \ {'PatientID': [4751, 4752, 4753], 'Age': [73, 89, 73], 'Gender': [0, 0, 0], 'Ethnicity':\
+  \ [0, 0, 3], 'EducationLevel': [2, 0, 1], 'BMI': [22.927749230993864, 26.82768119159602,\
+  \ 17.795882442817113], 'Smoking': [0, 0, 0], 'AlcoholConsumption': [13.29721772827684,\
+  \ 4.542523817722191, 19.55508452555359], 'PhysicalActivity': [6.327112473553353,\
+  \ 7.619884540163032, 7.844987790974517], 'DietQuality': [1.3472143059081076, 0.5187671386507053,\
+  \ 1.826334664579784], 'SleepQuality': [9.025678665766115, 7.151292743051223, 9.673574157961111],\
+  \ 'FamilyHistoryAlzheimers': [0, 0, 1], 'CardiovascularDisease': [0, 0, 0], 'Diabetes':\
+  \ [1, 0, 0], 'Depression': [1, 0, 0], 'HeadInjury': [0, 0, 0], 'Hypertension': [0,\
+  \ 0, 0], 'SystolicBP': [142, 115, 99], 'DiastolicBP': [72, 64, 116], 'CholesterolTotal':\
+  \ [242.3668396963656, 231.16259501016503, 284.1818577646338], 'CholesterolLDL':\
+  \ [56.15089696091113, 193.4079955157258, 153.3227621844376], 'CholesterolHDL': [33.68256349839592,\
+  \ 79.02847731570753, 69.77229186479597], 'CholesterolTriglycerides': [162.18914307736603,\
+  \ 294.63090921495643, 83.63832413899468], 'MMSE': [21.46353236431666, 20.61326730888292,\
+  \ 7.356248624670334], 'FunctionalAssessment': [6.518876973217633, 7.118695504189474,\
+  \ 5.895077345354194], 'MemoryComplaints': [0, 0, 0], 'BehavioralProblems': [0, 0,\
+  \ 0], 'ADL': [1.7258834599441897, 2.5924241326736475, 7.119547742738579], 'Confusion':\
+  \ [0, 0, 0], 'Disorientation': [0, 0, 1], 'PersonalityChanges': [0, 0, 0], 'DifficultyCompletingTasks':\
+  \ [1, 0, 1], 'Forgetfulness': [0, 1, 0], 'Diagnosis': [0, 0, 0], 'DoctorInCharge':\
+  \ ['XXXConfid', 'XXXConfid', 'XXXConfid']}}}\n<end of data format>\n\n<start of\
+  \ various task types>\n{'Show External Context': 'Uncaptured data provided by the\
+  \ self-tracker to understand and explain a phenomenon shown in the data', 'Show\
+  \ Confirmation': 'Collected data confirms existing knowledge', 'Show Contradiction':\
+  \ 'Collected data contradicts existing knowledge', 'Focus on Identifying value':\
+  \ 'Explicitly specify the measured value, its range for one or more clearly identified\
+  \ data points, or the difference between two measured values', 'Focus on Identifying\
+  \ extreme': 'Explicitly state the identities of the data points possessing extreme\
+  \ values of the measure variable', 'Focus on Identifying references': 'Explicitly\
+  \ state the values of categorical variables, labels from the axes, or legends',\
+  \ 'Comparison by Time Segmentation': 'Compare measured values segmented by time',\
+  \ 'Comparison by Multiple services': 'Compare the same data type from two or more\
+  \ services', 'Comparison against external data': 'Bringing in external data for\
+  \ comparison', 'Comparison By Factor': 'Compare measured values by a factor (other\
+  \ than time)', 'Comparison By Instances': 'Compare two specific instances', 'Show\
+  \ Trend': 'Describe changes over time', 'Value judgement': 'Convey positive or negative\
+  \ connotations about the data', 'Distribution with variability': 'Explicitly state\
+  \ the variability of measured values', 'Distribution By Category': 'Explicitly describe\
+  \ the variation of measured values across all or most of the values of a categorical\
+  \ variable', 'Correlation': 'Specify the direct relationship between two variables\
+  \ (but not as comparison)', 'Outlier': 'Explicitly point out outliers or state the\
+  \ effect of outliers', 'Summarization of data': 'Summary of collected data (such\
+  \ as number of data points, duration of tracking, and averages)', 'Prediction/Forecasting':\
+  \ 'Predict the future based on the collected data'}\n<end of various task types>\n\
+  \nFor data attributes needed in data visualization, store them in query['Data Attribute'].\n\
+  Store the selected task from the task types in query['Task'].\nStore the purpose\
+  \ of visualization in query['Purpose'].\nStore the prospective audience in query['Audience'].\n\
+  \nPlease reply in the same format without altering the key value.\n{'Data Attribute':\
+  \ None, 'Task': None, 'Purpose': None, 'Audience': None}\nBut, please make sure\
+  \ there is no ' in each keys and values. Use only \" for the response. But when\
+  \ you write a value sentence or each data attribute's title, you only can use '.\
+  \ Unless you are writing a sentence or each data attribute's title, you should never\
+  \ include ' in response. If there are multiple pieces of data, there is no need\
+  \ to reveal which file each is. Please consider that JSON conversion must be done\
+  \ properly."
+04_response_w_attributes_task_purpose: "{\n\"Data Attribute\": [\"Age\", \"MMSE\"\
+  ],\n\"Task\": \"Comparison By Factor\",\n\"Purpose\": \"Understand the relationship\
+  \ between age and cognitive decline in Alzheimer\u2019s patients\",\n\"Audience\"\
+  : \"Medical researchers\"\n}"
+05_audience: Medical researchers
+05_data_attributes:
+- Age
+- MMSE
+05_purpose: "Understand the relationship between age and cognitive decline in Alzheimer\u2019\
+  s patients"
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: "You are an expert data visualization\
+  \ analyst.\nGiven data, data attribute, tasks, prospective audience, purposes of\
+  \ the chart(data visualization) from the initial instruction (user request) of the\
+  \ user, you have a 2-step task to do.\n\n(1) First, your task is to figure out the\
+  \ essential chart attribute requirements that the chart must have in order to satisfy\
+  \ such tasks and purposes\n(2) Then, create a list of questions to the user if the\
+  \ user have specific chart attribute preference for effective data visualization.\n\
+  \nDo NOT include anything else in your response other than the list of questions.\
+  \ Your questions should be primarily focused on retrieving the user's preferences.\n\
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)\
+  \ the file format of the chart.\n\n<start of data format>\n{'../Extra_datas/data/284.csv':\
+  \ {'summary': {'Column': ['PatientID', 'Age', 'Gender', 'Ethnicity', 'EducationLevel',\
+  \ 'BMI', 'Smoking', 'AlcoholConsumption', 'PhysicalActivity', 'DietQuality', 'SleepQuality',\
+  \ 'FamilyHistoryAlzheimers', 'CardiovascularDisease', 'Diabetes', 'Depression',\
+  \ 'HeadInjury', 'Hypertension', 'SystolicBP', 'DiastolicBP', 'CholesterolTotal',\
+  \ 'CholesterolLDL', 'CholesterolHDL', 'CholesterolTriglycerides', 'MMSE', 'FunctionalAssessment',\
+  \ 'MemoryComplaints', 'BehavioralProblems', 'ADL', 'Confusion', 'Disorientation',\
+  \ 'PersonalityChanges', 'DifficultyCompletingTasks', 'Forgetfulness', 'Diagnosis',\
+  \ 'DoctorInCharge'], 'Data Type': [dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('float64'), dtype('int64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('float64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('int64'), dtype('float64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('O')], 'Missing Values': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique\
+  \ Values': [2149, 31, 2, 4, 4, 2149, 2, 2149, 2149, 2149, 2149, 2, 2, 2, 2, 2, 2,\
+  \ 90, 60, 2149, 2149, 2149, 2149, 2149, 2149, 2, 2, 2149, 2, 2, 2, 2, 2, 2, 1]},\
+  \ 'sample_data': {'PatientID': [4751, 4752, 4753], 'Age': [73, 89, 73], 'Gender':\
+  \ [0, 0, 0], 'Ethnicity': [0, 0, 3], 'EducationLevel': [2, 0, 1], 'BMI': [22.927749230993864,\
+  \ 26.82768119159602, 17.795882442817113], 'Smoking': [0, 0, 0], 'AlcoholConsumption':\
+  \ [13.29721772827684, 4.542523817722191, 19.55508452555359], 'PhysicalActivity':\
+  \ [6.327112473553353, 7.619884540163032, 7.844987790974517], 'DietQuality': [1.3472143059081076,\
+  \ 0.5187671386507053, 1.826334664579784], 'SleepQuality': [9.025678665766115, 7.151292743051223,\
+  \ 9.673574157961111], 'FamilyHistoryAlzheimers': [0, 0, 1], 'CardiovascularDisease':\
+  \ [0, 0, 0], 'Diabetes': [1, 0, 0], 'Depression': [1, 0, 0], 'HeadInjury': [0, 0,\
+  \ 0], 'Hypertension': [0, 0, 0], 'SystolicBP': [142, 115, 99], 'DiastolicBP': [72,\
+  \ 64, 116], 'CholesterolTotal': [242.3668396963656, 231.16259501016503, 284.1818577646338],\
+  \ 'CholesterolLDL': [56.15089696091113, 193.4079955157258, 153.3227621844376], 'CholesterolHDL':\
+  \ [33.68256349839592, 79.02847731570753, 69.77229186479597], 'CholesterolTriglycerides':\
+  \ [162.18914307736603, 294.63090921495643, 83.63832413899468], 'MMSE': [21.46353236431666,\
+  \ 20.61326730888292, 7.356248624670334], 'FunctionalAssessment': [6.518876973217633,\
+  \ 7.118695504189474, 5.895077345354194], 'MemoryComplaints': [0, 0, 0], 'BehavioralProblems':\
+  \ [0, 0, 0], 'ADL': [1.7258834599441897, 2.5924241326736475, 7.119547742738579],\
+  \ 'Confusion': [0, 0, 0], 'Disorientation': [0, 0, 1], 'PersonalityChanges': [0,\
+  \ 0, 0], 'DifficultyCompletingTasks': [1, 0, 1], 'Forgetfulness': [0, 1, 0], 'Diagnosis':\
+  \ [0, 0, 0], 'DoctorInCharge': ['XXXConfid', 'XXXConfid', 'XXXConfid']}}}\n<end\
+  \ of data format>\n\n<start of data visualization instruction>\nI want a histogram\
+  \ to visualize the Alzheimer\u2019s disease dataset. Highlight the different ages\
+  \ and annotate the average MMSE scores for selected age groups to draw attention\
+  \ to cognitive performance by age. Use color to differentiate between various ages\
+  \ and include an indication of sample size for each age group. The purpose is to\
+  \ see if there's a pattern in MMSE scores as age progresses among Alzheimer's patients.\
+  \ This visualization will be useful for medical researchers to understand the relationship\
+  \ between age and cognitive decline in Alzheimer\u2019s patients accurately.\n<end\
+  \ of data visualization instruction>\n\n<start of data attributes>\n['Age', 'MMSE']\n\
+  <end of data attributes>\n\n<start of prospective audience>\nMedical researchers\n\
+  <end of prospective audience>\n\n<start of type of tasks>\nComparison By Factor\n\
+  <end of type of tasks>\n\n<start of purpose>\nUnderstand the relationship between\
+  \ age and cognitive decline in Alzheimer\u2019s patients\n<end of purpose>"
+07_questions: '1. Do you have a specific age range that you want to highlight in the
+  histogram?
+
+  2. What color scheme would you prefer to differentiate between various ages?
+
+  3. Is there a preferred style for annotating the average MMSE scores (e.g., inline
+  text, labels, markers)?
+
+  4. Would you like the sample size for each age group to be shown as a label on the
+  histogram or as a separate legend?
+
+  5. Do you have a preferred bin width or specific age intervals for the histogram?
+
+  6. Is there a particular font style or size you prefer for the annotations and labels?
+
+  7. Do you have any preferences for the overall appearance, such as background color
+  or gridlines?
+
+  8. Would you like any additional information included in the tooltip when hovering
+  over the histogram bars?
+
+  9. Are there any specific statistical measures or additional data points you want
+  to include in the visualization?
+
+  10. Would you like to include any reference lines or thresholds on the histogram
+  to mark significant MMSE scores?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI want a histogram to visualize the Alzheimer\u2019s\
+  \ disease dataset. Highlight the different ages and annotate the average MMSE scores\
+  \ for selected age groups to draw attention to cognitive performance by age. Use\
+  \ color to differentiate between various ages and include an indication of sample\
+  \ size for each age group. The purpose is to see if there's a pattern in MMSE scores\
+  \ as age progresses among Alzheimer's patients. This visualization will be useful\
+  \ for medical researchers to understand the relationship between age and cognitive\
+  \ decline in Alzheimer\u2019s patients accurately.\n<end of user request>\n\nImagine\
+  \ the best result that can be achieved based on the given instructions and is the\
+  \ final output you want from the service provider with your purpose given below.\n\
+  Based on your imagination you are to respond to the service provider.\nSince you\
+  \ are an amateur user you should concretely answer 50% of the questions you think\
+  \ are most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nUnderstand the relationship between\
+  \ age and cognitive decline in Alzheimer\u2019s patients\n<end of purpose>\n\n<start\
+  \ service provider message>\n1. Do you have a specific age range that you want to\
+  \ highlight in the histogram?\n2. What color scheme would you prefer to differentiate\
+  \ between various ages?\n3. Is there a preferred style for annotating the average\
+  \ MMSE scores (e.g., inline text, labels, markers)?\n4. Would you like the sample\
+  \ size for each age group to be shown as a label on the histogram or as a separate\
+  \ legend?\n5. Do you have a preferred bin width or specific age intervals for the\
+  \ histogram?\n6. Is there a particular font style or size you prefer for the annotations\
+  \ and labels?\n7. Do you have any preferences for the overall appearance, such as\
+  \ background color or gridlines?\n8. Would you like any additional information included\
+  \ in the tooltip when hovering over the histogram bars?\n9. Are there any specific\
+  \ statistical measures or additional data points you want to include in the visualization?\n\
+  10. Would you like to include any reference lines or thresholds on the histogram\
+  \ to mark significant MMSE scores?\n<end service provider message>\n\nAlso, remember\
+  \ that the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I do not have a specific color scheme in mind.
+
+  3. Inline text would be fine for annotating the average MMSE scores.
+
+  4. As a separate legend.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I am not sure.'

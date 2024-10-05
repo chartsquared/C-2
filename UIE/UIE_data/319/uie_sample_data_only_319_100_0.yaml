@@ -1,0 +1,259 @@
+02_initial_prompt: I would like to create a Heatmap to visualize the Japan LOTO7 draw
+  data. The Heatmap should highlight the frequency of each main number drawn (main1
+  to main7) across all draw dates. Use color intensity to indicate how often each
+  number appears. Include text annotations to show the actual counts in the cells
+  for clarity. Additionally, highlight draw dates with the highest and lowest sums
+  (sum7 and sum9) to show trends and anomalies. This visualization aims to help analyze
+  number patterns and potentially predict future draws.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I would like to create a Heatmap to visualize the Japan LOTO7 draw data. The Heatmap
+  should highlight the frequency of each main number drawn (main1 to main7) across
+  all draw dates. Use color intensity to indicate how often each number appears. Include
+  text annotations to show the actual counts in the cells for clarity. Additionally,
+  highlight draw dates with the highest and lowest sums (sum7 and sum9) to show trends
+  and anomalies. This visualization aims to help analyze number patterns and potentially
+  predict future draws.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/319.csv'': {''summary'': {''Column'': [''draw'', ''drawdate'',
+  ''main1'', ''main2'', ''main3'', ''main4'', ''main5'', ''main6'', ''main7'', ''bonus1'',
+  ''bonus2'', ''sum7'', ''sum9'', ''odd7'', ''even7''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [507,
+  507, 20, 24, 28, 30, 28, 22, 18, 35, 35, 113, 125, 8, 8]}, ''sample_data'': {''draw'':
+  [1, 2, 3], ''drawdate'': [''2013/4/5'', ''2013/4/12'', ''2013/4/19''], ''main1'':
+  [7, 20, 2], ''main2'': [10, 24, 7], ''main3'': [12, 29, 8], ''main4'': [17, 31,
+  11], ''main5'': [23, 33, 14], ''main6'': [28, 34, 23], ''main7'': [34, 35, 31],
+  ''bonus1'': [3, 12, 5], ''bonus2'': [15, 32, 15], ''sum7'': [131, 206, 96], ''sum9'':
+  [149, 250, 116], ''odd7'': [3, 4, 4], ''even7'': [4, 3, 3]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: "{\n  \"Data Attribute\": [\"drawdate\", \"\
+  main1\", \"main2\", \"main3\", \"main4\", \"main5\", \"main6\", \"main7\", \"sum7\"\
+  , \"sum9\"],\n  \"Task\": \"Prediction/Forecasting\",\n  \"Purpose\": \"Analyze\
+  \ number patterns and potentially predict future draws\",\n  \"Audience\": \"Lottery\
+  \ players, statisticians, and data analysts interested in lottery draw patterns\"\
+  \n}"
+05_audience: Lottery players, statisticians, and data analysts interested in lottery
+  draw patterns
+05_data_attributes:
+- drawdate
+- main1
+- main2
+- main3
+- main4
+- main5
+- main6
+- main7
+- sum7
+- sum9
+05_purpose: Analyze number patterns and potentially predict future draws
+05_task: Prediction/Forecasting
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/319.csv'': {''summary'': {''Column'': [''draw'', ''drawdate'',
+  ''main1'', ''main2'', ''main3'', ''main4'', ''main5'', ''main6'', ''main7'', ''bonus1'',
+  ''bonus2'', ''sum7'', ''sum9'', ''odd7'', ''even7''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [507,
+  507, 20, 24, 28, 30, 28, 22, 18, 35, 35, 113, 125, 8, 8]}, ''sample_data'': {''draw'':
+  [1, 2, 3], ''drawdate'': [''2013/4/5'', ''2013/4/12'', ''2013/4/19''], ''main1'':
+  [7, 20, 2], ''main2'': [10, 24, 7], ''main3'': [12, 29, 8], ''main4'': [17, 31,
+  11], ''main5'': [23, 33, 14], ''main6'': [28, 34, 23], ''main7'': [34, 35, 31],
+  ''bonus1'': [3, 12, 5], ''bonus2'': [15, 32, 15], ''sum7'': [131, 206, 96], ''sum9'':
+  [149, 250, 116], ''odd7'': [3, 4, 4], ''even7'': [4, 3, 3]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I would like to create a Heatmap to visualize the Japan LOTO7 draw data. The Heatmap
+  should highlight the frequency of each main number drawn (main1 to main7) across
+  all draw dates. Use color intensity to indicate how often each number appears. Include
+  text annotations to show the actual counts in the cells for clarity. Additionally,
+  highlight draw dates with the highest and lowest sums (sum7 and sum9) to show trends
+  and anomalies. This visualization aims to help analyze number patterns and potentially
+  predict future draws.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''drawdate'', ''main1'', ''main2'', ''main3'', ''main4'', ''main5'', ''main6'',
+  ''main7'', ''sum7'', ''sum9'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Lottery players, statisticians, and data analysts interested in lottery draw patterns
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Prediction/Forecasting
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Analyze number patterns and potentially predict future draws
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the heatmap to represent
+  frequency?
+
+  2. How would you like the color intensity scale to be defined (e.g., linear, logarithmic)?
+
+  3. Would you prefer any specific format for the text annotations in the cells (e.g.,
+  font size, font color)?
+
+  4. How would you like the highest and lowest sums (sum7 and sum9) to be highlighted
+  (e.g., specific border color, additional text annotations)?
+
+  5. Are there any specific date formats you would prefer for representing draw dates?
+
+  6. Do you have any preferences for the overall layout or size of the heatmap?
+
+  7. Should the chart include any specific titles, subtitles, or footnotes to aid
+  interpretation?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI would like to create a Heatmap to visualize the Japan\
+  \ LOTO7 draw data. The Heatmap should highlight the frequency of each main number\
+  \ drawn (main1 to main7) across all draw dates. Use color intensity to indicate\
+  \ how often each number appears. Include text annotations to show the actual counts\
+  \ in the cells for clarity. Additionally, highlight draw dates with the highest\
+  \ and lowest sums (sum7 and sum9) to show trends and anomalies. This visualization\
+  \ aims to help analyze number patterns and potentially predict future draws.\n<end\
+  \ of user request>\n\nImagine the best result that can be achieved based on the\
+  \ given instructions and is the final output you want from the service provider\
+  \ with your purpose given below.\nBased on your imagination you are to respond to\
+  \ the service provider.\nSince you are an amateur user you should concretely answer\
+  \ 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nAnalyze number patterns and potentially predict future draws\n<end of\
+  \ purpose>\n\n<start service provider message>\n1. Do you have a preferred color\
+  \ scheme for the heatmap to represent frequency?\n2. How would you like the color\
+  \ intensity scale to be defined (e.g., linear, logarithmic)?\n3. Would you prefer\
+  \ any specific format for the text annotations in the cells (e.g., font size, font\
+  \ color)?\n4. How would you like the highest and lowest sums (sum7 and sum9) to\
+  \ be highlighted (e.g., specific border color, additional text annotations)?\n5.\
+  \ Are there any specific date formats you would prefer for representing draw dates?\n\
+  6. Do you have any preferences for the overall layout or size of the heatmap?\n\
+  7. Should the chart include any specific titles, subtitles, or footnotes to aid\
+  \ interpretation?\n<end service provider message>\n\nAlso, remember that the service\
+  \ provider can not see the image you have access to.\nYour response should ONLY\
+  \ contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure about a specific color scheme.
+
+  2. I do not know how the color intensity scale should be defined.
+
+  3. I do not know about the specific format for the text annotations in the cells.
+
+  4. I would like the highest and lowest sums to be highlighted with a specific border
+  color.
+
+  5. I have no specific preference for the date formats.
+
+  6. I do not know about preferences for the layout or size of the heatmap.
+
+  7. Yes, the chart should include a title, and if possible, a subtitle regarding
+  the data range. No specific preference for footnotes.'

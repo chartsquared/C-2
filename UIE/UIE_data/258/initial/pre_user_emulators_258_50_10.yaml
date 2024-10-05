@@ -1,0 +1,120 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Column chart
+
+  * Grouped bar/column chart
+
+  * Dot plot
+
+  * Scatter plot
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Area chart
+
+  * Histogram
+
+  * Box chart
+
+  * Violin plot'
+- 1593
+- 1538
+- 55
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1385
+- 1246
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/258.csv'': {''summary'': {''Column'': [''id'', ''V1'', ''V2'',
+  ''V3'', ''V4'', ''V5'', ''V6'', ''V7'', ''V8'', ''V9'', ''V10'', ''V11'', ''V12'',
+  ''V13'', ''V14'', ''V15'', ''V16'', ''V17'', ''V18'', ''V19'', ''V20'', ''V21'',
+  ''V22'', ''V23'', ''V24'', ''Class''], ''Data Type'': [dtype(''int64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''int64'')], ''Missing
+  Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0], ''Unique Values'': [5456, 1977, 2034, 1786, 1767, 1822, 1828, 1530, 2068,
+  1870, 2003, 1873, 1797, 1570, 1487, 1465, 1295, 1083, 971, 1042, 1136, 1355, 1736,
+  1758, 1856, 4]}, ''sample_data'': {''id'': [1, 2, 3], ''V1'': [0.438, 0.438, 0.438],
+  ''V2'': [0.498, 0.498, 0.498], ''V3'': [3.625, 3.625, 3.625], ''V4'': [3.645, 3.648,
+  3.629], ''V5'': [5.0, 5.0, 5.0], ''V6'': [2.918, 2.918, 2.918], ''V7'': [5.0, 5.0,
+  5.0], ''V8'': [2.351, 2.637, 2.637], ''V9'': [2.332, 2.332, 2.334], ''V10'': [2.643,
+  2.649, 2.643], ''V11'': [1.698, 1.695, 1.696], ''V12'': [1.687, 1.687, 1.687], ''V13'':
+  [1.698, 1.695, 1.695], ''V14'': [1.717, 1.72, 1.717], ''V15'': [1.744, 1.744, 1.744],
+  ''V16'': [0.593, 0.592, 0.593], ''V17'': [0.502, 0.502, 0.502], ''V18'': [0.493,
+  0.493, 0.493], ''V19'': [0.504, 0.504, 0.504], ''V20'': [0.445, 0.449, 0.449], ''V21'':
+  [0.431, 0.431, 0.431], ''V22'': [0.444, 0.444, 0.444], ''V23'': [0.44, 0.443, 0.446],
+  ''V24'': [0.429, 0.429, 0.429], ''Class'': [4, 4, 4]}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Wall Following Robot Navigation Dataset
+
+  robotics
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  You need to imagine a chart with * Scatter plot that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Scatter plot that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 50 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Grouped bar/column chart'
+- '* Box chart'
+- '* Line chart'
+- '* Dot plot'
+- '* Violin plot'
+- '* Stacked bar/column chart'
+- '* Histogram'
+- '* Column chart'
+- '* Heatmap'
+- '* Bar chart'
+- '* Scatter plot'
+2. initial_prompt: !!python/tuple
+- Create a scatter plot showing the relationship between V1 and V2 from the Wall Following
+  Robot Navigation Dataset to visualize robot navigation patterns and behavior.
+- 1149
+- 1121
+- 28

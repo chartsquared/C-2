@@ -1,0 +1,105 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Grouped bar/column chart
+
+  * Heatmap
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Histogram'
+- 1709
+- 1683
+- 26
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1532
+- 1393
+- 139
+1-3. asking_user_emulator_for_initial_prompt: "\uFEFFYou are an expert user emulator.\n\
+  \n<start of data example format>\n{'../Extra_datas/data/33.csv': {'summary': {'Column':\
+  \ ['Age', 'Attrition', 'BusinessTravel', 'DailyRate', 'Department', 'DistanceFromHome',\
+  \ 'Education', 'EducationField', 'EmployeeCount', 'EmployeeNumber', 'EnvironmentSatisfaction',\
+  \ 'Gender', 'HourlyRate', 'JobInvolvement', 'JobLevel', 'JobRole', 'JobSatisfaction',\
+  \ 'MaritalStatus', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked', 'Over18',\
+  \ 'OverTime', 'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',\
+  \ 'StandardHours', 'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',\
+  \ 'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion',\
+  \ 'YearsWithCurrManager'], 'Data Type': [dtype('int64'), dtype('O'), dtype('O'),\
+  \ dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('O'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('int64'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('O'), dtype('O'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'), dtype('int64'),\
+  \ dtype('int64'), dtype('int64'), dtype('int64')], 'Missing Values': [0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\
+  \ 0, 0, 0, 0, 0], 'Unique Values': [43, 2, 3, 886, 3, 29, 5, 6, 1, 1470, 4, 2, 71,\
+  \ 4, 5, 9, 4, 3, 1349, 1427, 10, 1, 2, 15, 2, 4, 1, 4, 40, 7, 4, 37, 19, 16, 18]},\
+  \ 'sample_data': {'Age': [41, 49, 37], 'Attrition': ['Yes', 'No', 'Yes'], 'BusinessTravel':\
+  \ ['Travel_Rarely', 'Travel_Frequently', 'Travel_Rarely'], 'DailyRate': [1102, 279,\
+  \ 1373], 'Department': ['Sales', 'Research & Development', 'Research & Development'],\
+  \ 'DistanceFromHome': [1, 8, 2], 'Education': [2, 1, 2], 'EducationField': ['Life\
+  \ Sciences', 'Life Sciences', 'Other'], 'EmployeeCount': [1, 1, 1], 'EmployeeNumber':\
+  \ [1, 2, 4], 'EnvironmentSatisfaction': [2, 3, 4], 'Gender': ['Female', 'Male',\
+  \ 'Male'], 'HourlyRate': [94, 61, 92], 'JobInvolvement': [3, 2, 2], 'JobLevel':\
+  \ [2, 2, 1], 'JobRole': ['Sales Executive', 'Research Scientist', 'Laboratory Technician'],\
+  \ 'JobSatisfaction': [4, 2, 3], 'MaritalStatus': ['Single', 'Married', 'Single'],\
+  \ 'MonthlyIncome': [5993, 5130, 2090], 'MonthlyRate': [19479, 24907, 2396], 'NumCompaniesWorked':\
+  \ [8, 1, 6], 'Over18': ['Y', 'Y', 'Y'], 'OverTime': ['Yes', 'No', 'Yes'], 'PercentSalaryHike':\
+  \ [11, 23, 15], 'PerformanceRating': [3, 4, 3], 'RelationshipSatisfaction': [1,\
+  \ 4, 2], 'StandardHours': [80, 80, 80], 'StockOptionLevel': [0, 1, 0], 'TotalWorkingYears':\
+  \ [8, 10, 7], 'TrainingTimesLastYear': [0, 3, 3], 'WorkLifeBalance': [1, 3, 3],\
+  \ 'YearsAtCompany': [6, 10, 0], 'YearsInCurrentRole': [4, 7, 0], 'YearsSinceLastPromotion':\
+  \ [0, 1, 0], 'YearsWithCurrManager': [5, 7, 0]}}}\n<end of data example format>\n\
+  \n<start of annotations format>\n['<start of the annotation list>', '1. Text Annotations:',\
+  \ 'Description: Data-driven text annotations display values linked to chart elements,\
+  \ such as data points in a scatterplot. They draw attention to specific elements\
+  \ by highlighting their values.', 'Purpose: When only some elements are annotated,\
+  \ the intent is to focus the viewer\u2019s attention on those before examining others.',\
+  \ 'Other Uses: Non-data-driven annotations can provide context, orientation, or\
+  \ editorial comments.', '3. Highlights:', 'Description: Highlights modify the appearance\
+  \ of chart elements (e.g., size, color) to emphasize or reduce their importance.',\
+  \ 'Purpose: Used to distinguish certain elements from others, making them stand\
+  \ out visually', '<end of the annotation list>']\n<end of annotations format>\n\n\
+  <start of data details format>\nIBM HR Analytics Employee Attrition & Performance\n\
+  business\n<end of data details format>\n\nGiven a data format, imagine a chart that\
+  \ visualizes this data as the final output you want from the service provider.\n\
+  Consider what purpose the data has and the practical purpose of visualization and\
+  \ include it in the instructions.\nYou need to imagine a chart with * Histogram\
+  \ and given annotations that utilizes the data format.\nIf there are multiple given\
+  \ data formats, imagine a chart with * Histogram and given annotations that utilizes\
+  \ all the data formats.\nSince you are an amateur user, your instruction will be\
+  \ partially SUBJECTIVE and NOT DETAILED.\nAlso, refer to the data details to create\
+  \ as practical and realistic instructions as possible.\nInstructions must reflect\
+  \ the context of the data.\nTo emulate a real-world user your instruction should\
+  \ be 100 in size (word count). Do not include data path in the instruction.\nYour\
+  \ response should ONLY contain the user emulated instruction.\nDo not include anything\
+  \ else."
+1-4. total_chart_types:
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Histogram'
+- '* Line chart'
+- '* Grouped bar/column chart'
+- '* Stacked bar/column chart'
+- '* Heatmap'
+- '* Histogram'
+2. initial_prompt: !!python/tuple
+- Visualize employee attrition data using a histogram to show the distribution of
+  ages. Highlight specific age ranges with high or low attrition rates using different
+  colors. Annotate key data points to indicate significant attrition rates, focusing
+  the viewer's attention on these areas. This will help in understanding the relation
+  between age and attrition within the company. Use business-related context to make
+  the visualization practical and insightful for HR analytics. Consider including
+  additional annotations for average age and attrition rate for easier comparison.
+- 1558
+- 1460
+- 98

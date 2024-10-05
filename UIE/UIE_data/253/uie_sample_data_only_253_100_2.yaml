@@ -1,0 +1,268 @@
+02_initial_prompt: Create a scatter plot to visualize the historical daily price movements
+  of Tether USD between 2018 and 2023. Highlight significant price changes by annotating
+  the highest and lowest points on the chart to draw attention to important data.
+  Use colorful markers to differentiate between 'Open', 'High', 'Low', and 'Close'
+  prices, ensuring that the historical context of the cryptocurrency market is clear.
+  This visualization will help in understanding trends and fluctuations in Tether
+  USD prices over the years, providing insights into the cryptocurrency's stability.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a scatter plot to visualize the historical daily price movements of Tether
+  USD between 2018 and 2023. Highlight significant price changes by annotating the
+  highest and lowest points on the chart to draw attention to important data. Use
+  colorful markers to differentiate between ''Open'', ''High'', ''Low'', and ''Close''
+  prices, ensuring that the historical context of the cryptocurrency market is clear.
+  This visualization will help in understanding trends and fluctuations in Tether
+  USD prices over the years, providing insights into the cryptocurrency''s stability.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/253.csv'': {''summary'': {''Column'': [''Type'', ''Date'',
+  ''Open'', ''High'', ''Low'', ''Close'', ''Adj Close'', ''Volume''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 2, 2, 2, 2, 2, 2], ''Unique Values'': [12, 1826, 19030, 19035, 19057, 19022,
+  19022, 17105]}, ''sample_data'': {''Type'': [''Tether USD'', ''Tether USD'', ''Tether
+  USD''], ''Date'': [''1/1/2018'', ''1/2/2018'', ''1/3/2018''], ''Open'': [1.01255,
+  1.00574, 1.0066], ''High'': [1.01536, 1.00988, 1.02328], ''Low'': [1.00153, 0.99325,
+  1.00264], ''Close'': [1.00728, 1.0049, 1.01344], ''Adj Close'': [1.00728, 1.0049,
+  1.01344], ''Volume'': [1685299968.0, 2635859968.0, 2471689984.0]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Date", "Open", "High", "Low", "Close"],
+
+  "Task": "Show Trend",
+
+  "Purpose": "To provide insights into the trends and fluctuations in Tether USD prices
+  over the years, highlighting significant price changes, and understanding the cryptocurrency''s
+  stability",
+
+  "Audience": "Cryptocurrency traders, financial analysts, and investors"
+
+  }'
+05_audience: Cryptocurrency traders, financial analysts, and investors
+05_data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+05_purpose: To provide insights into the trends and fluctuations in Tether USD prices
+  over the years, highlighting significant price changes, and understanding the cryptocurrency's
+  stability
+05_task: Show Trend
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/253.csv'': {''summary'': {''Column'': [''Type'', ''Date'',
+  ''Open'', ''High'', ''Low'', ''Close'', ''Adj Close'', ''Volume''], ''Data Type'':
+  [dtype(''O''), dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64'')], ''Missing Values'':
+  [0, 0, 2, 2, 2, 2, 2, 2], ''Unique Values'': [12, 1826, 19030, 19035, 19057, 19022,
+  19022, 17105]}, ''sample_data'': {''Type'': [''Tether USD'', ''Tether USD'', ''Tether
+  USD''], ''Date'': [''1/1/2018'', ''1/2/2018'', ''1/3/2018''], ''Open'': [1.01255,
+  1.00574, 1.0066], ''High'': [1.01536, 1.00988, 1.02328], ''Low'': [1.00153, 0.99325,
+  1.00264], ''Close'': [1.00728, 1.0049, 1.01344], ''Adj Close'': [1.00728, 1.0049,
+  1.01344], ''Volume'': [1685299968.0, 2635859968.0, 2471689984.0]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a scatter plot to visualize the historical daily price movements of Tether
+  USD between 2018 and 2023. Highlight significant price changes by annotating the
+  highest and lowest points on the chart to draw attention to important data. Use
+  colorful markers to differentiate between ''Open'', ''High'', ''Low'', and ''Close''
+  prices, ensuring that the historical context of the cryptocurrency market is clear.
+  This visualization will help in understanding trends and fluctuations in Tether
+  USD prices over the years, providing insights into the cryptocurrency''s stability.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Date'', ''Open'', ''High'', ''Low'', ''Close'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Cryptocurrency traders, financial analysts, and investors
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Show Trend
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To provide insights into the trends and fluctuations in Tether USD prices over the
+  years, highlighting significant price changes, and understanding the cryptocurrency''s
+  stability
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color preferences for the markers representing
+  ''Open'', ''High'', ''Low'', and ''Close'' prices?
+
+  2. What type of marker shapes would you prefer for different price attributes?
+
+  3. How would you like the annotations for the highest and lowest points to be displayed
+  (e.g., text size, color, or style)?
+
+  4. Should the chart include grid lines for easier reading of the data points? If
+  so, any specific preferences for their style?
+
+  5. Do you prefer a specific theme or background color for the scatter plot?
+
+  6. Should there be a title for the chart? If yes, do you have a specific title in
+  mind?
+
+  7. What style and size of font would you like for the axis labels and chart title?
+
+  8. Would you like to include a legend to differentiate between ''Open'', ''High'',
+  ''Low'', and ''Close'' markers? If so, any specific preferences for the legend placement
+  and style?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a scatter plot to visualize the historical daily\
+  \ price movements of Tether USD between 2018 and 2023. Highlight significant price\
+  \ changes by annotating the highest and lowest points on the chart to draw attention\
+  \ to important data. Use colorful markers to differentiate between 'Open', 'High',\
+  \ 'Low', and 'Close' prices, ensuring that the historical context of the cryptocurrency\
+  \ market is clear. This visualization will help in understanding trends and fluctuations\
+  \ in Tether USD prices over the years, providing insights into the cryptocurrency's\
+  \ stability.\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nTo provide insights into the trends and fluctuations in Tether USD prices\
+  \ over the years, highlighting significant price changes, and understanding the\
+  \ cryptocurrency's stability\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have any specific color preferences for the markers representing 'Open',\
+  \ 'High', 'Low', and 'Close' prices?\n2. What type of marker shapes would you prefer\
+  \ for different price attributes?\n3. How would you like the annotations for the\
+  \ highest and lowest points to be displayed (e.g., text size, color, or style)?\n\
+  4. Should the chart include grid lines for easier reading of the data points? If\
+  \ so, any specific preferences for their style?\n5. Do you prefer a specific theme\
+  \ or background color for the scatter plot?\n6. Should there be a title for the\
+  \ chart? If yes, do you have a specific title in mind?\n7. What style and size of\
+  \ font would you like for the axis labels and chart title?\n8. Would you like to\
+  \ include a legend to differentiate between 'Open', 'High', 'Low', and 'Close' markers?\
+  \ If so, any specific preferences for the legend placement and style?\n<end service\
+  \ provider message>\n\nAlso, remember that the service provider can not see the\
+  \ image you have access to.\nYour response should ONLY contain the user emulated\
+  \ response.\nDo not include anything else.\n"
+09_answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would prefer the annotations to be in a medium size, bold font, and maybe in
+  red or blue color.
+
+  4. Yes, include grid lines for easier reading. I do not have a specific preference
+  for their style.
+
+  5. I do not have a specific preference for the background color.
+
+  6. Yes, the title should be "Tether USD Daily Price Movements (2018-2023)".
+
+  7. I am not sure.
+
+  8. Yes, please include a legend. I do not have a specific preference for the legend
+  placement and style.'

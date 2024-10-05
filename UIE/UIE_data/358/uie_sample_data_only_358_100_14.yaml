@@ -1,0 +1,315 @@
+02_initial_prompt: I need a spline chart that shows students' adaptability levels
+  in online education. Use data columns like Gender, Age, Education Level, Institution
+  Type, IT Student Status, Location, Load-shedding, Financial Condition, Internet
+  Type, Network Type, Class Duration, Self Lms usage, Device, and Adaptivity Level.
+  The chart should plot the Adaptivity Level on the Y-axis and the Class Duration
+  on the X-axis, with different lines representing different Age groups. Highlight
+  any patterns based on Institution Type and Internet Type. Please make the chart
+  clear and easy to understand.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I need a spline chart that shows students'' adaptability levels in online education.
+  Use data columns like Gender, Age, Education Level, Institution Type, IT Student
+  Status, Location, Load-shedding, Financial Condition, Internet Type, Network Type,
+  Class Duration, Self Lms usage, Device, and Adaptivity Level. The chart should plot
+  the Adaptivity Level on the Y-axis and the Class Duration on the X-axis, with different
+  lines representing different Age groups. Highlight any patterns based on Institution
+  Type and Internet Type. Please make the chart clear and easy to understand.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/358.csv'': {''summary'': {''Column'': [''Gender'', ''Age'',
+  ''Education Level'', ''Institution Type'', ''IT Student'', ''Location'', ''Load-shedding'',
+  ''Financial Condition'', ''Internet Type'', ''Network Type'', ''Class Duration'',
+  ''Self Lms'', ''Device'', ''Adaptivity Level''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [2, 6, 3, 2, 2, 2, 2, 3, 2, 3, 3, 2, 3, 3]}, ''sample_data'': {''Gender'': [''Boy'',
+  ''Girl'', ''Girl''], ''Age'': [''21-25'', ''21-25'', ''16-20''], ''Education Level'':
+  [''University'', ''University'', ''College''], ''Institution Type'': [''Non Government'',
+  ''Non Government'', ''Government''], ''IT Student'': [''No'', ''No'', ''No''], ''Location'':
+  [''Yes'', ''Yes'', ''Yes''], ''Load-shedding'': [''Low'', ''High'', ''Low''], ''Financial
+  Condition'': [''Mid'', ''Mid'', ''Mid''], ''Internet Type'': [''Wifi'', ''Mobile
+  Data'', ''Wifi''], ''Network Type'': [''4G'', ''4G'', ''4G''], ''Class Duration'':
+  [''3-6'', ''1-3'', ''1-3''], ''Self Lms'': [''No'', ''Yes'', ''No''], ''Device'':
+  [''Tab'', ''Mobile'', ''Mobile''], ''Adaptivity Level'': [''Moderate'', ''Moderate'',
+  ''Moderate'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Gender", "Age", "Education Level", "Institution Type", "IT Student",
+  "Location", "Load-shedding", "Financial Condition", "Internet Type", "Network Type",
+  "Class Duration", "Self Lms", "Device", "Adaptivity Level"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "To highlight patterns in students'' adaptability levels based on institution
+  type and internet type across different age groups and class durations",
+
+  "Audience": "Educators, Policy Makers, Researchers, Educational Institution Administrators"
+
+  }'
+05_audience: Educators, Policy Makers, Researchers, Educational Institution Administrators
+05_data_attributes:
+- Gender
+- Age
+- Education Level
+- Institution Type
+- IT Student
+- Location
+- Load-shedding
+- Financial Condition
+- Internet Type
+- Network Type
+- Class Duration
+- Self Lms
+- Device
+- Adaptivity Level
+05_purpose: To highlight patterns in students' adaptability levels based on institution
+  type and internet type across different age groups and class durations
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/358.csv'': {''summary'': {''Column'': [''Gender'', ''Age'',
+  ''Education Level'', ''Institution Type'', ''IT Student'', ''Location'', ''Load-shedding'',
+  ''Financial Condition'', ''Internet Type'', ''Network Type'', ''Class Duration'',
+  ''Self Lms'', ''Device'', ''Adaptivity Level''], ''Data Type'': [dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [2, 6, 3, 2, 2, 2, 2, 3, 2, 3, 3, 2, 3, 3]}, ''sample_data'': {''Gender'': [''Boy'',
+  ''Girl'', ''Girl''], ''Age'': [''21-25'', ''21-25'', ''16-20''], ''Education Level'':
+  [''University'', ''University'', ''College''], ''Institution Type'': [''Non Government'',
+  ''Non Government'', ''Government''], ''IT Student'': [''No'', ''No'', ''No''], ''Location'':
+  [''Yes'', ''Yes'', ''Yes''], ''Load-shedding'': [''Low'', ''High'', ''Low''], ''Financial
+  Condition'': [''Mid'', ''Mid'', ''Mid''], ''Internet Type'': [''Wifi'', ''Mobile
+  Data'', ''Wifi''], ''Network Type'': [''4G'', ''4G'', ''4G''], ''Class Duration'':
+  [''3-6'', ''1-3'', ''1-3''], ''Self Lms'': [''No'', ''Yes'', ''No''], ''Device'':
+  [''Tab'', ''Mobile'', ''Mobile''], ''Adaptivity Level'': [''Moderate'', ''Moderate'',
+  ''Moderate'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I need a spline chart that shows students'' adaptability levels in online education.
+  Use data columns like Gender, Age, Education Level, Institution Type, IT Student
+  Status, Location, Load-shedding, Financial Condition, Internet Type, Network Type,
+  Class Duration, Self Lms usage, Device, and Adaptivity Level. The chart should plot
+  the Adaptivity Level on the Y-axis and the Class Duration on the X-axis, with different
+  lines representing different Age groups. Highlight any patterns based on Institution
+  Type and Internet Type. Please make the chart clear and easy to understand.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Gender'', ''Age'', ''Education Level'', ''Institution Type'', ''IT Student'',
+  ''Location'', ''Load-shedding'', ''Financial Condition'', ''Internet Type'', ''Network
+  Type'', ''Class Duration'', ''Self Lms'', ''Device'', ''Adaptivity Level'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Educators, Policy Makers, Researchers, Educational Institution Administrators
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  To highlight patterns in students'' adaptability levels based on institution type
+  and internet type across different age groups and class durations
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color preferences for the different Age
+  groups represented in the chart?
+
+  2. Should the lines for different Age groups have specific styles such as dashed
+  or dotted, or should they all be solid?
+
+  3. Do you prefer specific markers for data points along the spline chart, such as
+  circles, squares, or none?
+
+  4. How would you like to display Institution Type and Internet Type patterns? For
+  example, through distinct color codes, annotations, or different line styling?
+
+  5. Should the chart include a legend, and if so, where would you like it to be positioned?
+
+  6. Are there any specific fonts or font sizes you prefer for the labels and legends?
+
+  7. Would you like the chart to have gridlines for both X-axis (Class Duration) and
+  Y-axis (Adaptivity Level)?
+
+  8. Do you have any preferences for the limits or range of values displayed on the
+  Y-axis (Adaptivity Level) and X-axis (Class Duration)?
+
+  9. Should the chart include titles and labels for the X-axis and Y-axis? If so,
+  do you have any specific wording in mind?
+
+  10. Do you want the chart to include data point tooltips that display additional
+  information when hovered over?
+
+  11. Are there any particular themes or styles you would like to use for the overall
+  look of the chart (e.g., minimalist, colorful, professional)?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI need a spline chart that shows students' adaptability\
+  \ levels in online education. Use data columns like Gender, Age, Education Level,\
+  \ Institution Type, IT Student Status, Location, Load-shedding, Financial Condition,\
+  \ Internet Type, Network Type, Class Duration, Self Lms usage, Device, and Adaptivity\
+  \ Level. The chart should plot the Adaptivity Level on the Y-axis and the Class\
+  \ Duration on the X-axis, with different lines representing different Age groups.\
+  \ Highlight any patterns based on Institution Type and Internet Type. Please make\
+  \ the chart clear and easy to understand.\n<end of user request>\n\nImagine the\
+  \ best result that can be achieved based on the given instructions and is the final\
+  \ output you want from the service provider with your purpose given below.\nBased\
+  \ on your imagination you are to respond to the service provider.\nSince you are\
+  \ an amateur user you should concretely answer 50% of the questions you think are\
+  \ most important, and the remaining questions should be answer with uncertainty,\
+  \ e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have no specific\
+  \ preference\".\nFinally, remember that you are looking for an image, not an interactive\
+  \ data visualization.\n\n<start of purpose>\nTo highlight patterns in students'\
+  \ adaptability levels based on institution type and internet type across different\
+  \ age groups and class durations\n<end of purpose>\n\n<start service provider message>\n\
+  1. Do you have any specific color preferences for the different Age groups represented\
+  \ in the chart?\n2. Should the lines for different Age groups have specific styles\
+  \ such as dashed or dotted, or should they all be solid?\n3. Do you prefer specific\
+  \ markers for data points along the spline chart, such as circles, squares, or none?\n\
+  4. How would you like to display Institution Type and Internet Type patterns? For\
+  \ example, through distinct color codes, annotations, or different line styling?\n\
+  5. Should the chart include a legend, and if so, where would you like it to be positioned?\n\
+  6. Are there any specific fonts or font sizes you prefer for the labels and legends?\n\
+  7. Would you like the chart to have gridlines for both X-axis (Class Duration) and\
+  \ Y-axis (Adaptivity Level)?\n8. Do you have any preferences for the limits or range\
+  \ of values displayed on the Y-axis (Adaptivity Level) and X-axis (Class Duration)?\n\
+  9. Should the chart include titles and labels for the X-axis and Y-axis? If so,\
+  \ do you have any specific wording in mind?\n10. Do you want the chart to include\
+  \ data point tooltips that display additional information when hovered over?\n11.\
+  \ Are there any particular themes or styles you would like to use for the overall\
+  \ look of the chart (e.g., minimalist, colorful, professional)?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I do not have any specific color preferences for the different Age
+  groups.
+
+  2. I am not sure about the line styles; it can be solid if that''s the default.
+
+  3. No specific preference for markers on the data points.
+
+  4. I am not sure; possibly distinct color codes for Institution Type and Internet
+  Type would be fine.
+
+  5. Yes, the chart should include a legend. The position can be at the bottom.
+
+  6. I have no specific preference for fonts or font sizes.
+
+  7. Yes, please include gridlines for both X-axis and Y-axis.
+
+  8. I have no specific preferences for the limits or range of values displayed on
+  the axes.
+
+  9. Yes, the chart should include titles and labels. You can use "Class Duration"
+  for the X-axis and "Adaptivity Level" for the Y-axis.
+
+  10. I do not need tooltips since this will be an image.
+
+  11. No specific theme or style, any professional-looking style would be great.'

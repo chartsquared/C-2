@@ -1,0 +1,112 @@
+[
+  {
+    "name": "company.CEO.JohnSmith",
+    "size": 150,
+    "imports": [
+      "company.CFO.SarahJohnson",
+      "company.CTO.MichaelBrown",
+      "company.COO.LindaWilliams"
+    ]
+  },
+  {
+    "name": "company.CFO.SarahJohnson",
+    "size": 120,
+    "imports": [
+      "company.financeManager.AliceDavis",
+      "company.financeManager.RobertMiller"
+    ]
+  },
+  {
+    "name": "company.financeManager.AliceDavis",
+    "size": 40,
+    "imports": [
+      "company.financeManager.RobertMiller",
+      "company.HRManager.MaryWilson"
+    ]
+  },
+  {
+    "name": "company.financeManager.RobertMiller",
+    "size": 30,
+    "imports": []
+  },
+  {
+    "name": "company.CTO.MichaelBrown",
+    "size": 130,
+    "imports": [
+      "company.engineerManager.JamesTaylor",
+      "company.engineerManager.EmilyMoore",
+      "company.ITManager.PatriciaAnderson"
+    ]
+  },
+  {
+    "name": "company.engineerManager.JamesTaylor",
+    "size": 100,
+    "imports": [
+      "company.engineerManager.EmilyMoore",
+      "company.ITManager.LindaMartinez"
+    ]
+  },
+  {
+    "name": "company.engineerManager.EmilyMoore",
+    "size": 90,
+    "imports": []
+  },
+  {
+    "name": "company.ITManager.PatriciaAnderson",
+    "size": 60,
+    "imports": []
+  },
+  {
+    "name": "company.ITManager.LindaMartinez",
+    "size": 50,
+    "imports": []
+  },
+  {
+    "name": "company.COO.LindaWilliams",
+    "size": 110,
+    "imports": [
+      "company.operationsManager.PaulThomas",
+      "company.operationsManager.NancyGarcia"
+    ]
+  },
+  {
+    "name": "company.operationsManager.PaulThomas",
+    "size": 70,
+    "imports": []
+  },
+  {
+    "name": "company.operationsManager.NancyGarcia",
+    "size": 80,
+    "imports": ["company.operationsManager.PaulThomas"]
+  },
+  {
+    "name": "company.HRManager.MaryWilson",
+    "size": 55,
+    "imports": ["company.HRManager.BarbaraMartinez"]
+  },
+  {
+    "name": "company.HRManager.BarbaraMartinez",
+    "size": 45,
+    "imports": []
+  },
+  {
+    "name": "company.marketingManager.JenniferHernandez",
+    "size": 75,
+    "imports": ["company.marketingManager.DavidLopez"]
+  },
+  {
+    "name": "company.marketingManager.DavidLopez",
+    "size": 65,
+    "imports": []
+  },
+  {
+    "name": "company.salesManager.CharlesGonzalez",
+    "size": 85,
+    "imports": ["company.salesManager.DanielWilson"]
+  },
+  {
+    "name": "company.salesManager.DanielWilson",
+    "size": 95,
+    "imports": []
+  }
+]

@@ -1,0 +1,308 @@
+02_initial_prompt: Please create a population pyramid chart visualizing the data on
+  the statewise professional profile of suicide victims from the given dataset. Highlight
+  key differences in suicide rates across different age groups, genders, and professions
+  for each state. Use text annotations to emphasize noteworthy data points, such as
+  age groups with highest and lowest suicide rates, differences between male and female
+  victims, and any significant trends over the years. The chart should effectively
+  illustrate the distribution and profile of suicide victims, aiding in social science
+  research and policy-making efforts.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Please create a population pyramid chart visualizing the data on the statewise professional
+  profile of suicide victims from the given dataset. Highlight key differences in
+  suicide rates across different age groups, genders, and professions for each state.
+  Use text annotations to emphasize noteworthy data points, such as age groups with
+  highest and lowest suicide rates, differences between male and female victims, and
+  any significant trends over the years. The chart should effectively illustrate the
+  distribution and profile of suicide victims, aiding in social science research and
+  policy-making efforts.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/5.csv'': {''summary'': {''Column'': [''STATE/UT'', ''Year'',
+  ''CAUSE'', ''Male upto 14 years'', ''Male 15-29 years'', ''Male 30-44 years'', ''Male
+  45-59 years'', ''Male 60 years and above'', ''Total Male'', ''Female upto 14 years'',
+  ''Female 15-29 years'', ''Female 30-44 years'', ''Female 45-59 years'', ''Female
+  60 years and above'', ''Total Female'', ''Grand Total''], ''Data Type'': [dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [38, 12, 14, 245, 1003, 1095, 935, 611, 1615, 246, 808, 688, 521, 341, 1127, 1893]},
+  ''sample_data'': {''STATE/UT'': [''ANDHRA PRADESH'', ''ANDHRA PRADESH'', ''ANDHRA
+  PRADESH''], ''Year'': [2001, 2001, 2001], ''CAUSE'': [''House Wife'', ''Service
+  (Government)'', ''Service (Private)''], ''Male upto 14 years'': [0, 0, 1], ''Male
+  15-29 years'': [0, 34, 250], ''Male 30-44 years'': [0, 57, 275], ''Male 45-59 years'':
+  [0, 44, 138], ''Male 60 years and above'': [0, 0, 10], ''Total Male'': [0, 135,
+  674], ''Female upto 14 years'': [0, 0, 5], ''Female 15-29 years'': [1132, 23, 43],
+  ''Female 30-44 years'': [811, 22, 24], ''Female 45-59 years'': [397, 9, 28], ''Female
+  60 years and above'': [104, 7, 6], ''Total Female'': [2444, 61, 106], ''Grand Total'':
+  [2444, 196, 780]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["STATE/UT", "Year", "CAUSE", "Male upto 14 years", "Male 15-29
+  years", "Male 30-44 years", "Male 45-59 years", "Male 60 years and above", "Total
+  Male", "Female upto 14 years", "Female 15-29 years", "Female 30-44 years", "Female
+  45-59 years", "Female 60 years and above", "Total Female", "Grand Total"],
+
+  "Task": "Comparison By Factor",
+
+  "Purpose": "aid in social science research and policy-making efforts",
+
+  "Audience": "social scientists, policy makers"
+
+  }'
+05_audience: social scientists, policy makers
+05_data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Male upto 14 years
+- Male 15-29 years
+- Male 30-44 years
+- Male 45-59 years
+- Male 60 years and above
+- Total Male
+- Female upto 14 years
+- Female 15-29 years
+- Female 30-44 years
+- Female 45-59 years
+- Female 60 years and above
+- Total Female
+- Grand Total
+05_purpose: aid in social science research and policy-making efforts
+05_task: Comparison By Factor
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/5.csv'': {''summary'': {''Column'': [''STATE/UT'', ''Year'',
+  ''CAUSE'', ''Male upto 14 years'', ''Male 15-29 years'', ''Male 30-44 years'', ''Male
+  45-59 years'', ''Male 60 years and above'', ''Total Male'', ''Female upto 14 years'',
+  ''Female 15-29 years'', ''Female 30-44 years'', ''Female 45-59 years'', ''Female
+  60 years and above'', ''Total Female'', ''Grand Total''], ''Data Type'': [dtype(''O''),
+  dtype(''int64''), dtype(''O''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''),
+  dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64''), dtype(''int64'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'':
+  [38, 12, 14, 245, 1003, 1095, 935, 611, 1615, 246, 808, 688, 521, 341, 1127, 1893]},
+  ''sample_data'': {''STATE/UT'': [''ANDHRA PRADESH'', ''ANDHRA PRADESH'', ''ANDHRA
+  PRADESH''], ''Year'': [2001, 2001, 2001], ''CAUSE'': [''House Wife'', ''Service
+  (Government)'', ''Service (Private)''], ''Male upto 14 years'': [0, 0, 1], ''Male
+  15-29 years'': [0, 34, 250], ''Male 30-44 years'': [0, 57, 275], ''Male 45-59 years'':
+  [0, 44, 138], ''Male 60 years and above'': [0, 0, 10], ''Total Male'': [0, 135,
+  674], ''Female upto 14 years'': [0, 0, 5], ''Female 15-29 years'': [1132, 23, 43],
+  ''Female 30-44 years'': [811, 22, 24], ''Female 45-59 years'': [397, 9, 28], ''Female
+  60 years and above'': [104, 7, 6], ''Total Female'': [2444, 61, 106], ''Grand Total'':
+  [2444, 196, 780]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Please create a population pyramid chart visualizing the data on the statewise professional
+  profile of suicide victims from the given dataset. Highlight key differences in
+  suicide rates across different age groups, genders, and professions for each state.
+  Use text annotations to emphasize noteworthy data points, such as age groups with
+  highest and lowest suicide rates, differences between male and female victims, and
+  any significant trends over the years. The chart should effectively illustrate the
+  distribution and profile of suicide victims, aiding in social science research and
+  policy-making efforts.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''STATE/UT'', ''Year'', ''CAUSE'', ''Male upto 14 years'', ''Male 15-29 years'',
+  ''Male 30-44 years'', ''Male 45-59 years'', ''Male 60 years and above'', ''Total
+  Male'', ''Female upto 14 years'', ''Female 15-29 years'', ''Female 30-44 years'',
+  ''Female 45-59 years'', ''Female 60 years and above'', ''Total Female'', ''Grand
+  Total'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  social scientists, policy makers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison By Factor
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  aid in social science research and policy-making efforts
+
+  <end of purpose>'
+07_questions: '1. Do you have any specific color scheme preferences for differentiating
+  between genders and age groups?
+
+  2. Would you like to use a specific font style or size for text annotations?
+
+  3. Are there any particular states or professional profiles you want to focus on
+  or highlight?
+
+  4. Do you prefer a specific layout or alignment for the population pyramid chart?
+
+  5. Should we include a legend explaining the color and age group mappings?
+
+  6. Is there a preferred method for displaying trends over the years (e.g., line
+  markers, arrows)?
+
+  7. How detailed do you want the text annotations to be? Should they include exact
+  values or just highlight trends?
+
+  8. Do you want any specific titles, subtitles, or labels for the chart to enhance
+  clarity?
+
+  9. Should we include any reference lines or markers to denote average or critical
+  values?
+
+  10. Would you like to see any additional metadata or context, such as the source
+  of the data or the time period considered, included in the chart?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nPlease create a population pyramid chart visualizing\
+  \ the data on the statewise professional profile of suicide victims from the given\
+  \ dataset. Highlight key differences in suicide rates across different age groups,\
+  \ genders, and professions for each state. Use text annotations to emphasize noteworthy\
+  \ data points, such as age groups with highest and lowest suicide rates, differences\
+  \ between male and female victims, and any significant trends over the years. The\
+  \ chart should effectively illustrate the distribution and profile of suicide victims,\
+  \ aiding in social science research and policy-making efforts.\n<end of user request>\n\
+  \nImagine the best result that can be achieved based on the given instructions and\
+  \ is the final output you want from the service provider with your purpose given\
+  \ below.\nBased on your imagination you are to respond to the service provider.\n\
+  Since you are an amateur user you should concretely answer 50% of the questions\
+  \ you think are most important, and the remaining questions should be answer with\
+  \ uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do not know\u201D, \"I have\
+  \ no specific preference\".\nFinally, remember that you are looking for an image,\
+  \ not an interactive data visualization.\n\n<start of purpose>\naid in social science\
+  \ research and policy-making efforts\n<end of purpose>\n\n<start service provider\
+  \ message>\n1. Do you have any specific color scheme preferences for differentiating\
+  \ between genders and age groups?\n2. Would you like to use a specific font style\
+  \ or size for text annotations?\n3. Are there any particular states or professional\
+  \ profiles you want to focus on or highlight?\n4. Do you prefer a specific layout\
+  \ or alignment for the population pyramid chart?\n5. Should we include a legend\
+  \ explaining the color and age group mappings?\n6. Is there a preferred method for\
+  \ displaying trends over the years (e.g., line markers, arrows)?\n7. How detailed\
+  \ do you want the text annotations to be? Should they include exact values or just\
+  \ highlight trends?\n8. Do you want any specific titles, subtitles, or labels for\
+  \ the chart to enhance clarity?\n9. Should we include any reference lines or markers\
+  \ to denote average or critical values?\n10. Would you like to see any additional\
+  \ metadata or context, such as the source of the data or the time period considered,\
+  \ included in the chart?\n<end service provider message>\n\nAlso, remember that\
+  \ the service provider can not see the image you have access to.\nYour response\
+  \ should ONLY contain the user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I would like to focus on states with the highest and lowest suicide rates.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend explaining the color and age group mappings.
+
+  6. I do not know.
+
+  7. Highlight trends, but I do not need exact values.
+
+  8. Yes, please include a descriptive title and any necessary subtitles or labels
+  for clarity.
+
+  9. Yes, include reference lines to denote average values.
+
+  10. Yes, please include the source of the data and the time period considered.'

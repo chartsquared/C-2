@@ -1,0 +1,329 @@
+02_initial_prompt: Create a radial bar chart visualizing the GNI, PPP for Korea, Rep.,
+  Kuwait, Kenya, and Kazakhstan from 2008 to 2010. Each country's GNI, PPP should
+  have separate radial bars for each year, showing the values from the dataset. Different
+  radial segments should represent different years (2008, 2009, 2010). Make sure each
+  country is clearly labeled and distinguishable using different colors or shades.
+  Title the chart appropriately and include legends for clarity. This will help compare
+  the economic growth among these countries over the specified period in a visually
+  intuitive manner.
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  Create a radial bar chart visualizing the GNI, PPP for Korea, Rep., Kuwait, Kenya,
+  and Kazakhstan from 2008 to 2010. Each country''s GNI, PPP should have separate
+  radial bars for each year, showing the values from the dataset. Different radial
+  segments should represent different years (2008, 2009, 2010). Make sure each country
+  is clearly labeled and distinguishable using different colors or shades. Title the
+  chart appropriately and include legends for clarity. This will help compare the
+  economic growth among these countries over the specified period in a visually intuitive
+  manner.
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/504.csv'': {''summary'': {''Column'': [''Time'', ''Time Code'',
+  ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]'',
+  ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kuwait [KWT]'', ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]'', "GNI, PPP (current
+  international $) [NY.GNP.MKTP.PP.CD] - Korea, Dem. People''s Rep. [PRK]", ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kiribati [KIR]'', ''GNI, PPP
+  (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan [KAZ]'', ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Korea, Rep. [KOR]'', ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Kuwait [KWT]'', ''Life expectancy at
+  birth, total (years) [SP.DYN.LE00.IN] - Kenya [KEN]'', "Life expectancy at birth,
+  total (years) [SP.DYN.LE00.IN] - Korea, Dem. People''s Rep. [PRK]", ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Kiribati [KIR]'', ''Life expectancy at
+  birth, total (years) [SP.DYN.LE00.IN] - Kazakhstan [KAZ]'', ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Korea, Rep. [KOR]'', ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Kuwait [KWT]'', ''Fertility rate, total (births
+  per woman) [SP.DYN.TFRT.IN] - Kenya [KEN]'', "Fertility rate, total (births per
+  woman) [SP.DYN.TFRT.IN] - Korea, Dem. People''s Rep. [PRK]", ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Kiribati [KIR]'', ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Kazakhstan [KAZ]''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [16, 16, 16, 16, 16,
+  1, 16, 16, 15, 16, 16, 16, 16, 16, 16, 16, 16, 15, 16, 15]}, ''sample_data'': {''Time'':
+  [2008, 2009, 2010], ''Time Code'': [''YR2008'', ''YR2009'', ''YR2010''], ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]'': [1469369248901.13,
+  1452739634577.62, 1575029690364.29], ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD]
+  - Kuwait [KWT]'': [256982107601.006, 238589454748.885, 239358270938.212], ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]'': [96338850222.8299,
+  87506739515.8357, 96202675495.9382], "GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD]
+  - Korea, Dem. People''s Rep. [PRK]": [''..'', ''..'', ''..''], ''GNI, PPP (current
+  international $) [NY.GNP.MKTP.PP.CD] - Kiribati [KIR]'': [261663482.821886, 250216636.695571,
+  269969437.620304], ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan
+  [KAZ]'': [242614725779.6, 257880263793.01, 272791206933.368], ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Korea, Rep. [KOR]'': [''79.5170731707317'',
+  ''79.9682926829268'', ''80.1170731707317''], ''Life expectancy at birth, total (years)
+  [SP.DYN.LE00.IN] - Kuwait [KWT]'': [''77.145'', ''77.442'', ''77.982''], ''Life
+  expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kenya [KEN]'': [''59.614'',
+  ''60.365'', ''60.649''], "Life expectancy at birth, total (years) [SP.DYN.LE00.IN]
+  - Korea, Dem. People''s Rep. [PRK]": [''68.958'', ''69.732'', ''70.419''], ''Life
+  expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kiribati [KIR]'': [''64.834'',
+  ''64.892'', ''65.016''], ''Life expectancy at birth, total (years) [SP.DYN.LE00.IN]
+  - Kazakhstan [KAZ]'': [''67.11'', ''68.39'', ''68.45''], ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Korea, Rep. [KOR]'': [''1.192'', ''1.149'',
+  ''1.226''], ''Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Kuwait
+  [KWT]'': [''2.422'', ''2.34'', ''2.257''], ''Fertility rate, total (births per woman)
+  [SP.DYN.TFRT.IN] - Kenya [KEN]'': [''4.646'', ''4.514'', ''4.367''], "Fertility
+  rate, total (births per woman) [SP.DYN.TFRT.IN] - Korea, Dem. People''s Rep. [PRK]":
+  [''1.977'', ''1.951'', ''1.809''], ''Fertility rate, total (births per woman) [SP.DYN.TFRT.IN]
+  - Kiribati [KIR]'': [''3.905'', ''3.889'', ''3.876''], ''Fertility rate, total (births
+  per woman) [SP.DYN.TFRT.IN] - Kazakhstan [KAZ]'': [''2.68'', ''2.55'', ''2.59'']}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+  Data attributes MUST match exactly the column names of the data.
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Time", "GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD]
+  - Korea, Rep. [KOR]", "GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] -
+  Kuwait [KWT]", "GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]",
+  "GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan [KAZ]"],
+
+  "Task": "Comparison by Time Segmentation",
+
+  "Purpose": "Compare economic growth over specified period",
+
+  "Audience": "Economists, policymakers, researchers"
+
+  }'
+05_audience: Economists, policymakers, researchers
+05_data_attributes:
+- Time
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kuwait [KWT]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan [KAZ]
+05_purpose: Compare economic growth over specified period
+05_task: Comparison by Time Segmentation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/504.csv'': {''summary'': {''Column'': [''Time'', ''Time Code'',
+  ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]'',
+  ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kuwait [KWT]'', ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]'', "GNI, PPP (current
+  international $) [NY.GNP.MKTP.PP.CD] - Korea, Dem. People''s Rep. [PRK]", ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kiribati [KIR]'', ''GNI, PPP
+  (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan [KAZ]'', ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Korea, Rep. [KOR]'', ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Kuwait [KWT]'', ''Life expectancy at
+  birth, total (years) [SP.DYN.LE00.IN] - Kenya [KEN]'', "Life expectancy at birth,
+  total (years) [SP.DYN.LE00.IN] - Korea, Dem. People''s Rep. [PRK]", ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Kiribati [KIR]'', ''Life expectancy at
+  birth, total (years) [SP.DYN.LE00.IN] - Kazakhstan [KAZ]'', ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Korea, Rep. [KOR]'', ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Kuwait [KWT]'', ''Fertility rate, total (births
+  per woman) [SP.DYN.TFRT.IN] - Kenya [KEN]'', "Fertility rate, total (births per
+  woman) [SP.DYN.TFRT.IN] - Korea, Dem. People''s Rep. [PRK]", ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Kiribati [KIR]'', ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Kazakhstan [KAZ]''], ''Data Type'': [dtype(''int64''),
+  dtype(''O''), dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''O'')], ''Missing Values'': [0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ''Unique Values'': [16, 16, 16, 16, 16,
+  1, 16, 16, 15, 16, 16, 16, 16, 16, 16, 16, 16, 15, 16, 15]}, ''sample_data'': {''Time'':
+  [2008, 2009, 2010], ''Time Code'': [''YR2008'', ''YR2009'', ''YR2010''], ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]'': [1469369248901.13,
+  1452739634577.62, 1575029690364.29], ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD]
+  - Kuwait [KWT]'': [256982107601.006, 238589454748.885, 239358270938.212], ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]'': [96338850222.8299,
+  87506739515.8357, 96202675495.9382], "GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD]
+  - Korea, Dem. People''s Rep. [PRK]": [''..'', ''..'', ''..''], ''GNI, PPP (current
+  international $) [NY.GNP.MKTP.PP.CD] - Kiribati [KIR]'': [261663482.821886, 250216636.695571,
+  269969437.620304], ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan
+  [KAZ]'': [242614725779.6, 257880263793.01, 272791206933.368], ''Life expectancy
+  at birth, total (years) [SP.DYN.LE00.IN] - Korea, Rep. [KOR]'': [''79.5170731707317'',
+  ''79.9682926829268'', ''80.1170731707317''], ''Life expectancy at birth, total (years)
+  [SP.DYN.LE00.IN] - Kuwait [KWT]'': [''77.145'', ''77.442'', ''77.982''], ''Life
+  expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kenya [KEN]'': [''59.614'',
+  ''60.365'', ''60.649''], "Life expectancy at birth, total (years) [SP.DYN.LE00.IN]
+  - Korea, Dem. People''s Rep. [PRK]": [''68.958'', ''69.732'', ''70.419''], ''Life
+  expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kiribati [KIR]'': [''64.834'',
+  ''64.892'', ''65.016''], ''Life expectancy at birth, total (years) [SP.DYN.LE00.IN]
+  - Kazakhstan [KAZ]'': [''67.11'', ''68.39'', ''68.45''], ''Fertility rate, total
+  (births per woman) [SP.DYN.TFRT.IN] - Korea, Rep. [KOR]'': [''1.192'', ''1.149'',
+  ''1.226''], ''Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Kuwait
+  [KWT]'': [''2.422'', ''2.34'', ''2.257''], ''Fertility rate, total (births per woman)
+  [SP.DYN.TFRT.IN] - Kenya [KEN]'': [''4.646'', ''4.514'', ''4.367''], "Fertility
+  rate, total (births per woman) [SP.DYN.TFRT.IN] - Korea, Dem. People''s Rep. [PRK]":
+  [''1.977'', ''1.951'', ''1.809''], ''Fertility rate, total (births per woman) [SP.DYN.TFRT.IN]
+  - Kiribati [KIR]'': [''3.905'', ''3.889'', ''3.876''], ''Fertility rate, total (births
+  per woman) [SP.DYN.TFRT.IN] - Kazakhstan [KAZ]'': [''2.68'', ''2.55'', ''2.59'']}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  Create a radial bar chart visualizing the GNI, PPP for Korea, Rep., Kuwait, Kenya,
+  and Kazakhstan from 2008 to 2010. Each country''s GNI, PPP should have separate
+  radial bars for each year, showing the values from the dataset. Different radial
+  segments should represent different years (2008, 2009, 2010). Make sure each country
+  is clearly labeled and distinguishable using different colors or shades. Title the
+  chart appropriately and include legends for clarity. This will help compare the
+  economic growth among these countries over the specified period in a visually intuitive
+  manner.
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Time'', ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep.
+  [KOR]'', ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kuwait [KWT]'',
+  ''GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]'', ''GNI,
+  PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan [KAZ]'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Economists, policymakers, researchers
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison by Time Segmentation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Compare economic growth over specified period
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the different countries?
+
+  2. How would you like the years (2008, 2009, 2010) to be differentiated in the radial
+  segments (e.g., different shades, patterns)?
+
+  3. What specific labels or annotations do you want to include on the chart?
+
+  4. Do you have a specific title in mind for the chart?
+
+  5. Are there any additional elements you want to be included in the legend for clarity?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nCreate a radial bar chart visualizing the GNI, PPP for\
+  \ Korea, Rep., Kuwait, Kenya, and Kazakhstan from 2008 to 2010. Each country's GNI,\
+  \ PPP should have separate radial bars for each year, showing the values from the\
+  \ dataset. Different radial segments should represent different years (2008, 2009,\
+  \ 2010). Make sure each country is clearly labeled and distinguishable using different\
+  \ colors or shades. Title the chart appropriately and include legends for clarity.\
+  \ This will help compare the economic growth among these countries over the specified\
+  \ period in a visually intuitive manner.\n<end of user request>\n\nImagine the best\
+  \ result that can be achieved based on the given instructions and is the final output\
+  \ you want from the service provider with your purpose given below.\nBased on your\
+  \ imagination you are to respond to the service provider.\nSince you are an amateur\
+  \ user you should concretely answer 50% of the questions you think are most important,\
+  \ and the remaining questions should be answer with uncertainty, e.g. \u201CI am\
+  \ not sure\u201D, \u201CI do not know\u201D, \"I have no specific preference\".\n\
+  Finally, remember that you are looking for an image, not an interactive data visualization.\n\
+  \n<start of purpose>\nCompare economic growth over specified period\n<end of purpose>\n\
+  \n<start service provider message>\n1. Do you have a preferred color scheme for\
+  \ the different countries?\n2. How would you like the years (2008, 2009, 2010) to\
+  \ be differentiated in the radial segments (e.g., different shades, patterns)?\n\
+  3. What specific labels or annotations do you want to include on the chart?\n4.\
+  \ Do you have a specific title in mind for the chart?\n5. Are there any additional\
+  \ elements you want to be included in the legend for clarity?\n<end service provider\
+  \ message>\n\nAlso, remember that the service provider can not see the image you\
+  \ have access to.\nYour response should ONLY contain the user emulated response.\n\
+  Do not include anything else.\n"
+09_answers: '1. I do not have a preferred color scheme for the different countries.
+
+  2. I am not sure, maybe different shades for the years would work.
+
+  3. I do not know, just the country names and GNI, PPP values should be enough.
+
+  4. Title the chart "GNI, PPP Comparison for Selected Countries (2008-2010)".
+
+  5. I do not have any additional elements in mind for the legend.'

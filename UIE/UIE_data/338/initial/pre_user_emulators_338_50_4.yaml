@@ -1,0 +1,75 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Line chart
+
+  * Box chart'
+- 1402
+- 1379
+- 23
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list>\n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n3. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 1230
+- 1092
+- 138
+1-3. asking_user_emulator_for_initial_prompt: "You are an expert user emulator.\n\n\
+  <start of data example format>\n{'../Extra_datas/data/338.csv': {'summary': {'Column':\
+  \ ['ProductionVolume', 'ProductionCost', 'SupplierQuality', 'DeliveryDelay', 'DefectRate',\
+  \ 'QualityScore', 'MaintenanceHours', 'DowntimePercentage', 'InventoryTurnover',\
+  \ 'StockoutRate', 'WorkerProductivity', 'SafetyIncidents', 'EnergyConsumption',\
+  \ 'EnergyEfficiency', 'AdditiveProcessTime', 'AdditiveMaterialCost', 'DefectStatus'],\
+  \ 'Data Type': [dtype('int64'), dtype('float64'), dtype('float64'), dtype('int64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64'), dtype('float64'), dtype('float64'),\
+  \ dtype('float64'), dtype('float64'), dtype('int64')], 'Missing Values': [0, 0,\
+  \ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Unique Values': [862, 3240, 3240,\
+  \ 6, 3240, 3240, 24, 3240, 3240, 3240, 3240, 10, 3240, 3240, 3240, 3240, 2]}, 'sample_data':\
+  \ {'ProductionVolume': [202, 535, 960], 'ProductionCost': [13175.403783454076, 19770.046092867626,\
+  \ 19060.820997456784], 'SupplierQuality': [86.6485338434873, 86.3106636132627, 82.13247237873196],\
+  \ 'DeliveryDelay': [1, 4, 0], 'DefectRate': [3.121492266688973, 0.8195305110016484,\
+  \ 4.514504070609866], 'QualityScore': [63.46349432717401, 83.69781763161657, 90.3505500280751],\
+  \ 'MaintenanceHours': [9, 20, 1], 'DowntimePercentage': [0.0523428665825131, 4.908328249649529,\
+  \ 2.464922789091977], 'InventoryTurnover': [8.630515349694399, 9.296598088201092,\
+  \ 5.097485700889168], 'StockoutRate': [0.081321680689565, 0.0384864696462169, 0.002887365066928],\
+  \ 'WorkerProductivity': [85.0423792820698, 99.65744298305935, 92.81926429207655],\
+  \ 'SafetyIncidents': [0, 7, 2], 'EnergyConsumption': [2419.6167853897314, 3915.566712518908,\
+  \ 3392.385361907013], 'EnergyEfficiency': [0.4689466237325203, 0.1194845582710166,\
+  \ 0.4963915263771467], 'AdditiveProcessTime': [5.551638989779324, 9.080753556517903,\
+  \ 6.562827271335978], 'AdditiveMaterialCost': [236.4393009685121, 353.95763117070123,\
+  \ 396.1894020789741], 'DefectStatus': [1, 1, 1]}}}\n<end of data example format>\n\
+  \n<start of data details format>\n\U0001F3ED Predicting Manufacturing Defects Dataset\n\
+  supply-chain-management\n<end of data details format>\n\nGiven a data format, imagine\
+  \ a chart that visualizes this data as the final output you want from the service\
+  \ provider.\nYou need to imagine a chart with * Stacked bar/column chart that utilizes\
+  \ the data format.\nIf there are multiple given data formats, imagine a chart with\
+  \ * Stacked bar/column chart that utilizes all the data formats.\nSince you are\
+  \ an amateur user, your instruction will be partially SUBJECTIVE and NOT DETAILED.\n\
+  Also, refer to the data details to create as practical and realistic instructions\
+  \ as possible.\nInstructions must reflect the context of the data.\nTo emulate a\
+  \ real-world user your instruction should be 50 in size (word count).\nYour response\
+  \ should ONLY contain the user emulated instruction.\nDo not include anything else."
+1-4. total_chart_types:
+- '* Bar chart'
+- '* Box chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Stacked bar/column chart'
+2. initial_prompt: !!python/tuple
+- Create a stacked bar chart to visualize the sample data, comparing 'ProductionVolume',
+  'ProductionCost', and 'SupplierQuality' for each data point. Make sure to distinguish
+  each category by color.
+- 1014
+- 975
+- 39

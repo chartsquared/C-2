@@ -1,0 +1,122 @@
+1-1. selected_chart_types: !!python/tuple
+- '* Bar chart
+
+  * Grouped bar/column chart
+
+  * Radar chart
+
+  * Heatmap
+
+  * Scatter plot
+
+  * Stacked bar/column chart
+
+  * Pie chart
+
+  * Donut chart
+
+  * Treemap
+
+  * Line chart
+
+  * Histogram
+
+  * Box chart'
+- 1000
+- 945
+- 55
+1-2. selected_annotations: !!python/tuple
+- "<start of the annotation list> \n1. Text Annotations:\nDescription: Data-driven\
+  \ text annotations display values linked to chart elements, such as data points\
+  \ in a scatterplot. They draw attention to specific elements by highlighting their\
+  \ values.\nPurpose: When only some elements are annotated, the intent is to focus\
+  \ the viewer\u2019s attention on those before examining others.\nOther Uses: Non-data-driven\
+  \ annotations can provide context, orientation, or editorial comments.\n2. Highlights:\n\
+  Description: Highlights modify the appearance of chart elements (e.g., size, color)\
+  \ to emphasize or reduce their importance.\nPurpose: Used to distinguish certain\
+  \ elements from others, making them stand out visually\n<end of the annotation list>"
+- 794
+- 655
+- 139
+1-3. asking_user_emulator_for_initial_prompt: 'You are an expert user emulator.
+
+
+  <start of data example format>
+
+  {''../Extra_datas/data/200.csv'': {''summary'': {''Column'': [''Age '', ''Gender'',
+  ''AcademicPerformance'', ''TakingNoteInClass'', ''DepressionStatus'', ''FaceChallangesToCompleteAcademicTask'',
+  ''LikePresentation'', ''SleepPerDayHours'', ''NumberOfFriend'', ''LikeNewThings''],
+  ''Data Type'': [dtype(''int64''), dtype(''O''), dtype(''O''), dtype(''O''), dtype(''O''),
+  dtype(''O''), dtype(''O''), dtype(''int64''), dtype(''float64''), dtype(''O'')],
+  ''Missing Values'': [0, 0, 0, 0, 0, 0, 0, 0, 4, 0], ''Unique Values'': [6, 2, 4,
+  3, 3, 3, 2, 7, 17, 2]}, ''sample_data'': {''Age '': [23, 23, 24], ''Gender'': [''Male'',
+  ''Male'', ''Male''], ''AcademicPerformance'': [''Average'', ''Excellent'', ''Average''],
+  ''TakingNoteInClass'': [''No'', ''Sometimes'', ''No''], ''DepressionStatus'': [''Sometimes'',
+  ''Yes'', ''Sometimes''], ''FaceChallangesToCompleteAcademicTask'': [''Yes'', ''No'',
+  ''Sometimes''], ''LikePresentation'': [''Yes'', ''Yes'', ''No''], ''SleepPerDayHours'':
+  [12, 8, 8], ''NumberOfFriend'': [nan, 80.0, 10.0], ''LikeNewThings'': [''Yes'',
+  ''Yes'', ''Yes'']}}}
+
+  <end of data example format>
+
+
+  <start of data details format>
+
+  Psychosocial Dimensions of Student Life
+
+  psychology
+
+  <end of data details format>
+
+
+  Given a data format, imagine a chart that visualizes this data as the final output
+  you want from the service provider.
+
+  It MUST be a chart that can be created using only data columns.
+
+  You need to imagine a chart with * Box chart that utilizes the data format.
+
+  If there are multiple given data formats, imagine a chart with * Box chart that
+  utilizes all the data formats.
+
+  Since you are an amateur user, your instruction will be partially SUBJECTIVE and
+  NOT DETAILED.
+
+  Also, refer to the data details to create as practical and realistic instructions
+  as possible.
+
+  Instructions must reflect the context of the data.
+
+  To emulate a real-world user your instruction should be 100 in size (word count).
+
+  Your response should ONLY contain the user emulated instruction.
+
+  Do not include anything else.'
+1-4. total_chart_types:
+- '* Radar chart'
+- '* Heatmap'
+- '* Grouped bar/column chart'
+- '* Box chart'
+- '* Stacked bar/column chart'
+- '* Donut chart'
+- '* Bar chart'
+- '* Histogram'
+- '* Treemap'
+- '* Pie chart'
+- '* Line chart'
+- '* Scatter plot'
+- '* Radar chart'
+- '* Heatmap'
+- '* Grouped bar/column chart'
+- '* Box chart'
+2. initial_prompt: !!python/tuple
+- Create a box chart to visualize the distribution of "SleepPerDayHours" for different
+  "Gender" categories. Use "SleepPerDayHours" as the numeric variable and "Gender"
+  as the categorical variable. This will help us understand the range, median, and
+  any potential outliers in the sleep patterns of male and female students within
+  the dataset. Include axis labels and a title that reflects the data's focus on the
+  relationship between gender and sleeping hours among students. The insight will
+  help in understanding how sleep patterns may vary psychosocially based on gender.
+- 655
+- 544
+- 111

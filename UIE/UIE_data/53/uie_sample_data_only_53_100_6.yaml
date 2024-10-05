@@ -1,0 +1,253 @@
+02_initial_prompt: I'd like a bar chart showing the daily trading volume and closing
+  price of META stock over a week in January 2018. Please use the 'Volume' and 'Close'
+  columns for the y-axes and the 'Date' column for the x-axis. Separate bars for each
+  metric and make sure dates are in order. Include labels and a legend. Thank you!
+03_asking_chartagent_to_find_data_attribute_task_visualization: 'You are a data visualization
+  expert.
+
+  Given the data and user request, your task is to analyze the user request to figure
+  out the (1) data attributes needed for data visualization, (2) select the most suitable
+  task that the user is expecting from the list of various tasks in data visualization,
+  (3) specifically figure out the purpose of the user''s request in data visualization,
+  and (4) prospective audience of the data visualization.
+
+  <start of user request>
+
+  I''d like a bar chart showing the daily trading volume and closing price of META
+  stock over a week in January 2018. Please use the ''Volume'' and ''Close'' columns
+  for the y-axes and the ''Date'' column for the x-axis. Separate bars for each metric
+  and make sure dates are in order. Include labels and a legend. Thank you!
+
+  <end of user request>
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/53.csv'': {''summary'': {''Column'': [''Date'', ''Open'',
+  ''High'', ''Low'', ''Close'', ''Adj Close'', ''Volume''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [1509, 1436, 1438, 1453, 1458, 1458, 1508]}, ''sample_data'':
+  {''Date'': [''2018-01-03'', ''2018-01-04'', ''2018-01-05''], ''Open'': [181.880005,
+  184.899994, 185.589996], ''High'': [184.779999, 186.210007, 186.899994], ''Low'':
+  [181.330002, 184.100006, 184.929993], ''Close'': [184.669998, 184.330002, 186.850006],
+  ''Adj Close'': [184.669998, 184.330002, 186.850006], ''Volume'': [16886600, 13880900,
+  13574500]}}}
+
+  <end of data format>
+
+
+  <start of various task types>
+
+  {''Show External Context'': ''Uncaptured data provided by the self-tracker to understand
+  and explain a phenomenon shown in the data'', ''Show Confirmation'': ''Collected
+  data confirms existing knowledge'', ''Show Contradiction'': ''Collected data contradicts
+  existing knowledge'', ''Focus on Identifying value'': ''Explicitly specify the measured
+  value, its range for one or more clearly identified data points, or the difference
+  between two measured values'', ''Focus on Identifying extreme'': ''Explicitly state
+  the identities of the data points possessing extreme values of the measure variable'',
+  ''Focus on Identifying references'': ''Explicitly state the values of categorical
+  variables, labels from the axes, or legends'', ''Comparison by Time Segmentation'':
+  ''Compare measured values segmented by time'', ''Comparison by Multiple services'':
+  ''Compare the same data type from two or more services'', ''Comparison against external
+  data'': ''Bringing in external data for comparison'', ''Comparison By Factor'':
+  ''Compare measured values by a factor (other than time)'', ''Comparison By Instances'':
+  ''Compare two specific instances'', ''Show Trend'': ''Describe changes over time'',
+  ''Value judgement'': ''Convey positive or negative connotations about the data'',
+  ''Distribution with variability'': ''Explicitly state the variability of measured
+  values'', ''Distribution By Category'': ''Explicitly describe the variation of measured
+  values across all or most of the values of a categorical variable'', ''Correlation'':
+  ''Specify the direct relationship between two variables (but not as comparison)'',
+  ''Outlier'': ''Explicitly point out outliers or state the effect of outliers'',
+  ''Summarization of data'': ''Summary of collected data (such as number of data points,
+  duration of tracking, and averages)'', ''Prediction/Forecasting'': ''Predict the
+  future based on the collected data''}
+
+  <end of various task types>
+
+
+  For data attributes needed in data visualization, store them in query[''Data Attribute''].
+
+  Store the selected task from the task types in query[''Task''].
+
+  Store the purpose of visualization in query[''Purpose''].
+
+  Store the prospective audience in query[''Audience''].
+
+
+  Please reply in the same format without altering the key value.
+
+  {''Data Attribute'': None, ''Task'': None, ''Purpose'': None, ''Audience'': None}
+
+  But, please make sure there is no '' in each keys and values. Use only " for the
+  response. But when you write a value sentence or each data attribute''s title, you
+  only can use ''. Unless you are writing a sentence or each data attribute''s title,
+  you should never include '' in response. If there are multiple pieces of data, there
+  is no need to reveal which file each is. Please consider that JSON conversion must
+  be done properly.'
+04_response_w_attributes_task_purpose: '{
+
+  "Data Attribute": ["Date", "Volume", "Close"],
+
+  "Task": "Comparison by Time Segmentation",
+
+  "Purpose": "Provide a visual representation comparing daily trading volume and closing
+  price of META stock over a week in January 2018",
+
+  "Audience": "Investors, financial analysts, and stock traders"
+
+  }'
+05_audience: Investors, financial analysts, and stock traders
+05_data_attributes:
+- Date
+- Volume
+- Close
+05_purpose: Provide a visual representation comparing daily trading volume and closing
+  price of META stock over a week in January 2018
+05_task: Comparison by Time Segmentation
+06_asking_chartagent_for_additional_preference: 'You are an expert data visualization
+  analyst.
+
+  Given data, data attribute, tasks, prospective audience, purposes of the chart(data
+  visualization) from the initial instruction (user request) of the user, you have
+  a 2-step task to do.
+
+
+  (1) First, your task is to figure out the essential chart attribute requirements
+  that the chart must have in order to satisfy such tasks and purposes
+
+  (2) Then, create a list of questions to the user if the user have specific chart
+  attribute preference for effective data visualization.
+
+
+  Do NOT include anything else in your response other than the list of questions.
+  Your questions should be primarily focused on retrieving the user''s preferences.
+
+  Do NOT include any questions related to (1) interactivity of the chart, and (2)
+  the file format of the chart.
+
+
+  <start of data format>
+
+  {''../Extra_datas/data/53.csv'': {''summary'': {''Column'': [''Date'', ''Open'',
+  ''High'', ''Low'', ''Close'', ''Adj Close'', ''Volume''], ''Data Type'': [dtype(''O''),
+  dtype(''float64''), dtype(''float64''), dtype(''float64''), dtype(''float64''),
+  dtype(''float64''), dtype(''int64'')], ''Missing Values'': [0, 0, 0, 0, 0, 0, 0],
+  ''Unique Values'': [1509, 1436, 1438, 1453, 1458, 1458, 1508]}, ''sample_data'':
+  {''Date'': [''2018-01-03'', ''2018-01-04'', ''2018-01-05''], ''Open'': [181.880005,
+  184.899994, 185.589996], ''High'': [184.779999, 186.210007, 186.899994], ''Low'':
+  [181.330002, 184.100006, 184.929993], ''Close'': [184.669998, 184.330002, 186.850006],
+  ''Adj Close'': [184.669998, 184.330002, 186.850006], ''Volume'': [16886600, 13880900,
+  13574500]}}}
+
+  <end of data format>
+
+
+  <start of data visualization instruction>
+
+  I''d like a bar chart showing the daily trading volume and closing price of META
+  stock over a week in January 2018. Please use the ''Volume'' and ''Close'' columns
+  for the y-axes and the ''Date'' column for the x-axis. Separate bars for each metric
+  and make sure dates are in order. Include labels and a legend. Thank you!
+
+  <end of data visualization instruction>
+
+
+  <start of data attributes>
+
+  [''Date'', ''Volume'', ''Close'']
+
+  <end of data attributes>
+
+
+  <start of prospective audience>
+
+  Investors, financial analysts, and stock traders
+
+  <end of prospective audience>
+
+
+  <start of type of tasks>
+
+  Comparison by Time Segmentation
+
+  <end of type of tasks>
+
+
+  <start of purpose>
+
+  Provide a visual representation comparing daily trading volume and closing price
+  of META stock over a week in January 2018
+
+  <end of purpose>'
+07_questions: '1. Do you have a preferred color scheme for the bars representing the
+  volume and the closing price?
+
+  2. Would you like gridlines to be included in the chart for better readability?
+
+  3. Do you have a specific format for the date labels on the x-axis (e.g., ''YYYY-MM-DD'')?
+
+  4. Would you prefer the volume and closing price bars to be displayed side-by-side
+  or layered on the same bar?
+
+  5. Is there a specific font style or size you would like for the labels and legend?
+
+  6. Do you want any specific title for the chart?
+
+  7. Would you like the axis labels to include additional information, such as units
+  (e.g., ''Volume (in millions)'')?
+
+  8. Are there any specific data points you want to highlight within the chart?
+
+  9. Do you have a preferred layout for the legend (e.g., top, bottom, left, right)?
+
+  10. Would you like to include any annotations or notes on the chart for additional
+  context?'
+08_asking_user_emulator_about_the_answers_to_question: "You are an expert user emulator.\n\
+  \n<start of user request>\nI'd like a bar chart showing the daily trading volume\
+  \ and closing price of META stock over a week in January 2018. Please use the 'Volume'\
+  \ and 'Close' columns for the y-axes and the 'Date' column for the x-axis. Separate\
+  \ bars for each metric and make sure dates are in order. Include labels and a legend.\
+  \ Thank you!\n<end of user request>\n\nImagine the best result that can be achieved\
+  \ based on the given instructions and is the final output you want from the service\
+  \ provider with your purpose given below.\nBased on your imagination you are to\
+  \ respond to the service provider.\nSince you are an amateur user you should concretely\
+  \ answer 50% of the questions you think are most important, and the remaining questions\
+  \ should be answer with uncertainty, e.g. \u201CI am not sure\u201D, \u201CI do\
+  \ not know\u201D, \"I have no specific preference\".\nFinally, remember that you\
+  \ are looking for an image, not an interactive data visualization.\n\n<start of\
+  \ purpose>\nProvide a visual representation comparing daily trading volume and closing\
+  \ price of META stock over a week in January 2018\n<end of purpose>\n\n<start service\
+  \ provider message>\n1. Do you have a preferred color scheme for the bars representing\
+  \ the volume and the closing price?\n2. Would you like gridlines to be included\
+  \ in the chart for better readability?\n3. Do you have a specific format for the\
+  \ date labels on the x-axis (e.g., 'YYYY-MM-DD')?\n4. Would you prefer the volume\
+  \ and closing price bars to be displayed side-by-side or layered on the same bar?\n\
+  5. Is there a specific font style or size you would like for the labels and legend?\n\
+  6. Do you want any specific title for the chart?\n7. Would you like the axis labels\
+  \ to include additional information, such as units (e.g., 'Volume (in millions)')?\n\
+  8. Are there any specific data points you want to highlight within the chart?\n\
+  9. Do you have a preferred layout for the legend (e.g., top, bottom, left, right)?\n\
+  10. Would you like to include any annotations or notes on the chart for additional\
+  \ context?\n<end service provider message>\n\nAlso, remember that the service provider\
+  \ can not see the image you have access to.\nYour response should ONLY contain the\
+  \ user emulated response.\nDo not include anything else.\n"
+09_answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I do not know.
+
+  4. I prefer the volume and closing price bars to be displayed side-by-side.
+
+  5. I am not sure.
+
+  6. No specific title.
+
+  7. Yes, please include units for the axis labels.
+
+  8. I do not know.
+
+  9. I have no specific preference for the legend layout.
+
+  10. I do not need any annotations or notes on the chart.'
