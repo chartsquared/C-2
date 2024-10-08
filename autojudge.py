@@ -10,8 +10,8 @@ class AutoJudge:
         self.aj_claude = LLM(model_name='claude', api_key=claude_api_key)
         self.aj_memory_gpt = []
         self.aj_memory_claude = []
-        self.initial_instruction: str = self.memory["02_initial_prompt"]
-        self.data_attributes: str = self.memory["05_data_attributes"]
+        self.initial_instruction: str = self.memory["initial_prompt"]
+        self.data_attributes: str = self.memory["data_attributes"]
         self.run_only_gpt: bool = run_only_gpt
         self.semantic_decompose(data)
         self.gpt_task: str = self.memory['05_task(gpt4o)']
@@ -20,8 +20,8 @@ class AutoJudge:
         self.claude_task: str = self.memory["05_task(claude)"]
         self.claude_purpose: str = self.memory["05_purpose(claude)"]
         self.claude_audience: str = self.memory["05_audience(claude)"]
-        self.questions: str = self.memory['07_questions']
-        self.answers: str = self.memory['09_answers']
+        self.questions: str = self.memory['questions']
+        self.answers: str = self.memory['answers']
         self.code: str = self.memory['result_code']
         self.rendered_img:list = rendered_img
         self.basic_criteria: str = """
@@ -52,9 +52,6 @@ class AutoJudge:
         self.feedback_claude_classified: dict = None
         self.feedback_gpt_code = ""
         self.feedback_claude_code = ""
-
-    # def default_judge(self):
-    #     self.judge()
 
     def judge(self):     
         self.aj_memory_gpt = []

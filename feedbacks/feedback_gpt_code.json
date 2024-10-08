@@ -2,69 +2,43 @@
     "code feedback": [
         {
             "tag": "EDIT",
-            "explanation": "Correct the attribute names in the data and improve text annotation clarity.",
+            "explanation": "Correct the issue where 'wheat' annotations show 'nan'. This occurs because the wheat_data may be empty or contain NaN values, leading to incorrect mean calculations. Apply dropna() function to handle missing data appropriately.",
             "before": [
-                "Line 10: data = pd.read_csv('ChartUIE_8K/data/1.csv')",
-                "Line 13: sectors = ['Agriculture GDP', 'Industry GDP', 'Services GDP']",
-                "Line 14: sector_pairs = [('Agriculture GDP', 'Industry GDP'), ('Agriculture GDP', 'Services GDP'), ('Industry GDP', 'Services GDP')]"
+                "Line 19: rice_avg_N = rice_data['N'].mean()",
+                "Line 20: rice_avg_P = rice_data['P'].mean()",
+                "Line 21: rice_avg_K = rice_data['K'].mean()",
+                "Line 23: wheat_avg_N = wheat_data['N'].mean()",
+                "Line 24: wheat_avg_P = wheat_data['P'].mean()",
+                "Line 25: wheat_avg_K = wheat_data['K'].mean()"
             ],
             "after": [
-                "Line 10: data = pd.read_csv('ChartUIE_8K/data/1.csv')",
-                "Line 13: sectors = ['Agriculture GDP', 'IndustryGDP', 'ServicesGDP']",
-                "Line 14: sector_pairs = [('Agriculture GDP', 'IndustryGDP'), ('Agriculture GDP', 'ServicesGDP'), ('IndustryGDP', 'ServicesGDP')]"
+                "Line 19: rice_avg_N = rice_data['N'].dropna().mean()",
+                "Line 20: rice_avg_P = rice_data['P'].dropna().mean()",
+                "Line 21: rice_avg_K = rice_data['K'].dropna().mean()",
+                "Line 23: wheat_avg_N = wheat_data['N'].dropna().mean()",
+                "Line 24: wheat_avg_P = wheat_data['P'].dropna().mean()",
+                "Line 25: wheat_avg_K = wheat_data['K'].dropna().mean()"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Add specific coloring for different GDP sectors to enhance visual differentiation.",
+            "explanation": "Reposition annotations to avoid overlap with the bars for better clarity.",
             "before": [
-                "Line 20: ax[i].scatter(x, y)"
+                "Line 40: ax.annotate(f'Rice: ({rice_avg_N:.2f}, {rice_avg_P:.2f}, {rice_avg_K:.2f})', xy=(0.1, 0.9), xycoords='axes fraction', horizontalalignment='left', verticalalignment='top')",
+                "Line 44: ax.annotate(f'Wheat: ({wheat_avg_N:.2f}, {wheat_avg_P:.2f}, {wheat_avg_K:.2f})', xy=(0.1, 0.85), xycoords='axes fraction', horizontalalignment='left', verticalalignment='top')"
             ],
             "after": [
-                "Line 20: ax[i].scatter(x, y, label=f'{pair[0]} vs {pair[1]}', color=np.random.rand(3,))"
+                "Line 40: ax.annotate(f'Rice: ({rice_avg_N:.2f}, {rice_avg_P:.2f}, {rice_avg_K:.2f})', xy=(0.7, 0.9), xycoords='axes fraction', horizontalalignment='left', verticalalignment='center')",
+                "Line 44: ax.annotate(f'Wheat: ({wheat_avg_N:.2f}, {wheat_avg_P:.2f}, {wheat_avg_K:.2f})', xy=(0.7, 0.85), xycoords='axes fraction', horizontalalignment='left', verticalalignment='center')"
             ]
         },
         {
             "tag": "ADD",
-            "explanation": "Add larger markers and distinct labels for key countries like the US and China.",
-            "before": [
-                "Line 22: ax[i].scatter(x[key_country_indices], y[key_country_indices], marker='*', color='red', s=200)"
-            ],
+            "explanation": "Add visual cues, like bolding, to enhance emphasis on the 'rice' and 'wheat' data segments.",
+            "before": [],
             "after": [
-                "Line 22: ax[i].scatter(x[key_country_indices], y[key_country_indices], marker='*', edgecolor='k', color='red', s=250, label='Key Countries')"
-            ]
-        },
-        {
-            "tag": "ADD",
-            "explanation": "Include legends and a title to clarify the color and marker schemes.",
-            "before": [
-                "Line 31: ax[i].grid(True)"
-            ],
-            "after": [
-                "Line 31: ax[i].legend(loc='upper right')",
-                "Line 32: ax[i].grid(True)"
-            ]
-        },
-        {
-            "tag": "ADD",
-            "explanation": "Set axis scales and ensure axis labels and a meaningful title are included.",
-            "before": [
-                "Line 40: fig.suptitle('GDP Composition by Sector')"
-            ],
-            "after": [
-                "Line 33: ax[i].set_xlim(left=0)",
-                "Line 34: ax[i].set_ylim(bottom=0)",
-                "Line 40: fig.suptitle('Comparison of GDP Sectors by Country')"
-            ]
-        },
-        {
-            "tag": "EDIT",
-            "explanation": "Ensure that annotations provide clear insights and add necessary elements for comprehensive visualization.",
-            "before": [
-                "Line 26: ax[i].annotate(f'{country}: ({gdp_x:.2f}, {gdp_y:.2f})', (gdp_x, gdp_y), textcoords='offset points', xytext=(0, 10), ha='center')"
-            ],
-            "after": [
-                "Line 26: ax[i].annotate(f'{country}: ({gdp_x:.2f}, {gdp_y:.2f})', (gdp_x, gdp_y), textcoords='offset points', xytext=(0,10), ha='center', fontsize=8, style='italic')"
+                "Line 30: ax.bar(x - width, rice_values, width, label='Rice', color='blue', edgecolor='black', linewidth=1.5)",
+                "Line 31: ax.bar(x, wheat_values, width, label='Wheat', color='green', edgecolor='black', linewidth=1.5)"
             ]
         }
     ]

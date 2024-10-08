@@ -63,8 +63,8 @@ class ChartAgent:
 
         d2c_prompt = d2c_prompt.format(
             data=data, data_path=data_path, file_index=file_index,
-            initial_instruction=memory['02_initial_prompt'],
-            Q=memory['07_questions'], A=memory['09_answers']
+            initial_instruction=memory['initial_prompt'],
+            Q=memory['questions'], A=memory['answers']
         )
         memory['d2c_prompt'] = d2c_prompt
         # Run the D2C model and update memory
@@ -93,7 +93,7 @@ class ChartAgent:
         with open("prompts/ca_d2c_after_feedback.txt", "r", encoding="utf-8") as file:
             d2c_prompt_icl_gpt = file.read()
         d2c_prompt_icl_gpt = d2c_prompt_icl_gpt.format(
-            initial_instruction=memory['02_initial_prompt'],
+            initial_instruction=memory['initial_prompt'],
             retain= feedback_gpt_classified['RETAIN'], modification=feedback_gpt_code,
             file_index=f"autojudge_{file_index}(gpt_feedback)"
             )
@@ -107,7 +107,7 @@ class ChartAgent:
             with open("prompts/ca_d2c_after_feedback.txt", "r", encoding="utf-8") as file:
                 d2c_prompt_icl_claude = file.read()
             d2c_prompt_icl_claude = d2c_prompt_icl_claude.format(
-                initial_instruction=memory['02_initial_prompt'],
+                initial_instruction=memory['initial_prompt'],
                 retain=feedback_claude_classified['RETAIN'], modification=feedback_claude_code,
                 file_index=f"autojudge_{file_index}(claude_feedback)"
                 )

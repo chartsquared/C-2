@@ -1,203 +1,191 @@
 {
     "evaluation": [
         {
-            "Q1": "Does the chart effectively display the relationship between Agriculture, Industry, and Services sectors for GDP composition across countries?",
-            "A1": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Add data points representing countries' GDP compositions for Agriculture, Industry, and Services sectors"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Modify the chart to include three axes representing Agriculture, Industry, and Services sectors"
-                }
-            ]
-        },
-        {
-            "Q2": "Are the United States and China visually distinguished from other countries in the scatter plot?",
-            "A2": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Add data points for the United States and China"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Use larger markers or different colors to highlight the US and China data points"
-                }
-            ]
-        },
-        {
-            "Q3": "Is there a clear and relevant title that accurately describes the chart's content and purpose?",
-            "A3": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Add a clear and relevant title describing the GDP composition comparison across countries"
-                }
-            ]
-        },
-        {
-            "Q4": "Are all three axes (Agriculture, Industry, Services) clearly labeled and easy to understand?",
-            "A4": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Add labels for Agriculture, Industry, and Services axes"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Modify the chart to include three axes instead of two"
-                }
-            ]
-        },
-        {
-            "Q5": "Can viewers easily compare sector contributions across different countries using this visualization?",
-            "A5": "NO",
+            "Q1": "Does the chart effectively compare average N, P, K values across different crops?",
+            "A1": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Add data points representing countries and their sector contributions"
+                    "tag": "RETAIN",
+                    "improvement": "The grouped bar chart structure effectively shows N, P, K values for different crops"
                 },
                 {
                     "tag": "EDIT",
-                    "improvement": "Modify the chart to a 3D scatter plot or use color coding to represent the third dimension"
+                    "improvement": "Consider adding more crop types to provide a more comprehensive comparison"
                 }
             ]
         },
         {
-            "Q6": "Are GDP values for each country clearly annotated on the chart?",
-            "A6": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Add text annotations displaying GDP values for each country"
-                }
-            ]
-        },
-        {
-            "Q7": "Does the chart include grid lines to improve readability of data points?",
-            "A7": "YES",
+            "Q2": "Are the values for rice and wheat visually distinct from other crops?",
+            "A2": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Keep the existing grid lines to aid in reading data point positions"
+                    "improvement": "The color scheme clearly distinguishes rice (blue) and wheat (green) from other crops (red)"
+                },
+                {
+                    "tag": "EDIT",
+                    "improvement": "Adjust the wheat color to be more visually distinct from rice"
                 }
             ]
         },
         {
-            "Q8": "Is there a balanced distribution of data points that avoids overcrowding while maintaining clarity?",
-            "A8": "NO",
+            "Q3": "Is the chart type appropriate for comparing multiple factors (N, P, K) across different crops?",
+            "A3": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Add data points representing countries' GDP compositions"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Ensure balanced distribution of data points to avoid overcrowding"
+                    "tag": "RETAIN",
+                    "improvement": "The grouped bar chart is suitable for comparing multiple factors across categories"
                 }
             ]
         },
         {
-            "Q9": "Does the color scheme effectively differentiate between sectors without causing visual confusion?",
-            "A9": "NO",
+            "Q4": "Are text annotations present for rice and wheat, showing their average N, P, K values?",
+            "A4": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Text annotations are present for rice and wheat"
+                },
+                {
+                    "tag": "EDIT",
+                    "improvement": "Correct the wheat annotation which currently shows 'nan' values"
+                }
+            ]
+        },
+        {
+            "Q5": "Is the chart easily understandable for agricultural researchers, farmers, and policymakers?",
+            "A5": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
+                    "tag": "RETAIN",
+                    "improvement": "The chart layout and labeling are clear and straightforward"
+                },
+                {
                     "tag": "ADD",
-                    "improvement": "Implement a color scheme to differentiate between sectors"
+                    "improvement": "Include a brief explanation of N, P, K for audiences less familiar with these terms"
+                }
+            ]
+        },
+        {
+            "Q6": "Does the chart have clear and accurate axis labels for crops and nutrient values?",
+            "A6": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The x-axis clearly shows N, P, K nutrients and the y-axis shows average values"
+                },
+                {
+                    "tag": "ADD",
+                    "improvement": "Include units for the average values on the y-axis"
+                }
+            ]
+        },
+        {
+            "Q7": "Is there a clear visual hierarchy that emphasizes rice and wheat data without overshadowing other crops?",
+            "A7": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Rice and wheat are emphasized through color and annotations without overwhelming other data"
+                }
+            ]
+        },
+        {
+            "Q8": "Does the color scheme effectively differentiate between crops and enhance readability?",
+            "A8": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The color scheme differentiates between crops effectively"
                 },
                 {
                     "tag": "EDIT",
-                    "improvement": "Choose colors that are visually distinct and do not cause confusion"
+                    "improvement": "Consider using more contrasting colors for wheat and rice for better differentiation"
                 }
             ]
         },
         {
-            "Q10": "Is the font size appropriate and consistent across all text elements (labels, annotations, title)?",
-            "A10": "NO",
+            "Q9": "Is the overall layout well-spaced and not overcrowded?",
+            "A9": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The chart has good spacing and is not overcrowded"
+                }
+            ]
+        },
+        {
+            "Q10": "Does the chart have a clear, concise title that explains its content?",
+            "A10": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Add text elements including labels, annotations, and title"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Ensure consistent and appropriate font size for all text elements"
+                    "tag": "RETAIN",
+                    "improvement": "The title 'Average N, P, K Values for Different Crops' is clear and concise"
                 }
             ]
         },
         {
-            "Q11": "Does the chart provide sufficient contextual information, such as the data year or source?",
-            "A11": "NO",
+            "Q11": "Are the font sizes and styles consistent and appropriate throughout the chart?",
+            "A11": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Include contextual information such as data year and source"
+                    "tag": "RETAIN",
+                    "improvement": "Font sizes and styles are consistent throughout the chart"
                 }
             ]
         },
         {
-            "Q12": "Is there a legend that clearly explains the meaning of different colors, shapes, or sizes used in the plot?",
-            "A12": "NO",
-            "Q_type": "Fact-checking",
+            "Q12": "Is the chart free from unnecessary complexity or extraneous details?",
+            "A12": "YES",
+            "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Create a legend explaining the meaning of colors, shapes, or sizes used"
+                    "tag": "RETAIN",
+                    "improvement": "The chart is simple and focused on the essential information"
                 }
             ]
         },
         {
-            "Q13": "Are the chosen colors distinguishable for individuals with color vision deficiencies?",
+            "Q13": "Would the chart be easily readable for individuals with color vision deficiencies?",
             "A13": "NO",
             "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Implement a color scheme that is distinguishable for individuals with color vision deficiencies"
-                }
-            ]
-        },
-        {
-            "Q14": "Does the overall aesthetic of the chart appear professional and suitable for the intended audience of economists, policymakers, and analysts?",
-            "A14": "NO",
-            "Q_type": "Subjective",
-            "feedback": [
-                {
                     "tag": "EDIT",
-                    "improvement": "Redesign the chart to appear more professional and suitable for the intended audience"
-                },
-                {
-                    "tag": "ADD",
-                    "improvement": "Include all necessary elements such as data points, labels, and title to create a complete and professional chart"
+                    "improvement": "Use more contrasting colors or patterns to differentiate between crops for better accessibility"
                 }
             ]
         },
         {
-            "Q15": "Is the data-to-ink ratio optimized, with minimal non-essential visual elements?",
-            "A15": "YES",
+            "Q14": "Does the chart maintain a professional appearance suitable for presentation to agricultural professionals?",
+            "A14": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Maintain the current minimal design when adding necessary elements"
-                },
+                    "improvement": "The chart has a clean, professional appearance"
+                }
+            ]
+        },
+        {
+            "Q15": "Is there a legend explaining any color coding or symbols used in the chart?",
+            "A15": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Ensure that all added elements contribute to data representation without unnecessary visual clutter"
+                    "tag": "RETAIN",
+                    "improvement": "The legend clearly explains the color coding for different crops"
                 }
             ]
         }

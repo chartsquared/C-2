@@ -1,156 +1,156 @@
 {
     "evaluation": [
         {
-            "Q1": "Does the chart effectively use a scatter plot format with three axes to represent the GDP sectors (Agriculture, Industry, Services)?",
-            "A1": "NO",
+            "Q1": "Does the chart use a bar chart type suitable for comparing nutrient values across different crops?",
+            "A1": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Use a scatter plot with appropriate data points to represent the GDP sectors."
+                    "tag": "RETAIN",
+                    "improvement": "The use of a bar chart is appropriate for comparing nutrient values across different crops."
                 }
             ]
         },
         {
-            "Q2": "Are key countries like the US and China clearly highlighted with larger markers and/or bold text for easy recognition?",
-            "A2": "NO",
+            "Q2": "Is the 'rice' data distinctly highlighted with a color that makes it stand out from other crops?",
+            "A2": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Add larger markers or bold text to highlight key countries like the US and China."
+                    "tag": "RETAIN",
+                    "improvement": "The 'rice' data is highlighted in blue, effectively making it stand out."
                 }
             ]
         },
         {
-            "Q3": "Is the color scheme used in the chart effective in distinguishing between the three GDP sectors and accommodating color vision deficiencies?",
+            "Q3": "Are the nutrient values (N, P, K) for 'rice' and 'wheat' clearly annotated and easy to read?",
             "A3": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "EDIT",
-                    "improvement": "Implement a distinct color scheme for each GDP sector to enhance clarity."
+                    "improvement": "Correct the annotations for 'wheat' to display actual values instead of 'nan'."
                 }
             ]
         },
         {
-            "Q4": "Does the chart include legible and consistent annotations for GDP values, with text clarity suitable for the prospective audience?",
-            "A4": "NO",
+            "Q4": "Is the color palette for other crops harmonious and simple, ensuring it does not overshadow the emphasis on 'rice'?",
+            "A4": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The color palette is simple and does not overshadow 'rice'."
+                }
+            ]
+        },
+        {
+            "Q5": "Are annotations positioned well, maintaining clarity and avoiding overlap with other elements?",
+            "A5": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Add clear annotations for GDP values to improve comprehension."
+                    "tag": "EDIT",
+                    "improvement": "Reposition the annotations to avoid overlap with the bars for better clarity."
                 }
             ]
         },
         {
-            "Q5": "Are grid lines included to aid in the readability and interpretation of data points within the chart?",
-            "A5": "YES",
+            "Q6": "Is there a legend included that clearly explains the color coding used in the chart?",
+            "A6": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Maintain grid lines for better readability of data points."
+                    "improvement": "The legend clearly explains the color coding for different crops."
                 }
             ]
         },
         {
-            "Q6": "Is there a clean and organized layout that facilitates ease of understanding, complementing a professional aesthetic suitable for economists and researchers?",
-            "A6": "NO",
+            "Q7": "Are the axes labeled clearly to assist in understanding the data's nature?",
+            "A7": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Axes are correctly labeled for clarity."
+                }
+            ]
+        },
+        {
+            "Q8": "Are grid lines used effectively to enhance readability without creating visual clutter?",
+            "A8": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Organize the layout to present data more clearly and professionally."
+                    "tag": "RETAIN",
+                    "improvement": "Grid lines are used effectively and do not create clutter."
                 }
             ]
         },
         {
-            "Q7": "Are annotations on the chart strategically placed to emphasize key insights without cluttering the visual space?",
-            "A7": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Place annotations strategically to highlight key insights."
-                }
-            ]
-        },
-        {
-            "Q8": "Does the chart avoid visual clutter, ensuring adequate spacing and avoiding overlap of data points and annotations?",
-            "A8": "NO",
+            "Q9": "Does the chart maintain a clean, cohesive aesthetic that is appropriate for an audience interested in agriculture?",
+            "A9": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Ensure adequate spacing and organization to avoid clutter."
+                    "tag": "RETAIN",
+                    "improvement": "The chart maintains a clean and cohesive aesthetic."
                 }
             ]
         },
         {
-            "Q9": "Does the chart scale the axes appropriately, potentially using linear scales, to accurately represent GDP compositions?",
-            "A9": "NO",
+            "Q10": "Is the Y-axis scale range chosen logically to facilitate accurate comparison of nutrient values, without truncating vital data?",
+            "A10": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Appropriately scale the axes to accurately represent the GDP compositions."
+                    "tag": "RETAIN",
+                    "improvement": "The Y-axis scale is logical and facilitates comparison."
                 }
             ]
         },
         {
-            "Q10": "Are all countries' GDP sector contributions included in the presentation, allowing for a comprehensive global view?",
-            "A10": "NO",
+            "Q11": "Has the chart used minimal visual embellishments, ensuring it does not distract from the core data?",
+            "A11": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Include data points for all countries to provide a comprehensive view."
+                    "tag": "RETAIN",
+                    "improvement": "Minimal visual embellishments are used, keeping focus on core data."
                 }
             ]
         },
         {
-            "Q11": "Does the chart include appropriate axis labels for \u201cAgriculture\u201d, \u201cIndustry\u201d, \u201cServices\u201d and a meaningful title or caption that conveys the scatter plot's intent?",
-            "A11": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "ADD",
-                    "improvement": "Add axis labels and a meaningful title to convey the chart\u2019s intent."
-                }
-            ]
-        },
-        {
-            "Q12": "Is there a clear legend or explanatory note that effectively communicates the color and marker scheme used for sectors and key countries?",
+            "Q12": "Is the critical data, particularly the segments for 'rice' and 'wheat,' emphasized using visual cues like size or bolding?",
             "A12": "NO",
-            "Q_type": "Fact-checking",
+            "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "ADD",
-                    "improvement": "Include a legend or explanatory note to clarify the color and marker scheme."
+                    "improvement": "Consider bolding or using additional visual cues for the 'rice' and 'wheat' segments to enhance emphasis."
                 }
             ]
         },
         {
-            "Q13": "Are there any additional insights such as GDP rankings or percentages annotated to provide further context to the data?",
-            "A13": "NO",
+            "Q13": "Does the chart structure and layout optimize space, avoiding excessive white space or overly complex visuals?",
+            "A13": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "ADD",
-                    "improvement": "Include additional insights such as GDP rankings or percentages for context."
+                    "tag": "RETAIN",
+                    "improvement": "The chart structure optimizes space effectively."
                 }
             ]
         },
         {
-            "Q14": "Are embellishments used subtly and relevantly to enhance chart engagement without obscuring the data?",
+            "Q14": "Does the overall chart effectively fulfill its purpose of comparing 'rice' and 'wheat' nutrient values with other crops for an agronomic audience?",
             "A14": "NO",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "EDIT",
-                    "improvement": "Use subtle and relevant embellishments that enhance engagement without obscuring data."
+                    "improvement": "Ensure that 'wheat' has accurate data displayed to fulfill the comparison purpose."
                 }
             ]
         }
