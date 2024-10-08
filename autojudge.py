@@ -252,7 +252,7 @@ class AutoJudge:
         with open("prompts/AJ_generate_feedback.txt", mode="r", encoding="utf-8") as file:
             feedback_generation_prompt_template = file.read()
         feedback_generation_prompt_gpt = feedback_generation_prompt_template.format(
-            needs=self.initial_instruction, code=self.code, attributes=self.data_attributes,
+            initial_instruction=self.initial_instruction, code=self.code, attributes=self.data_attributes,
             retain=self.feedback_gpt_classified["RETAIN"], discard=self.feedback_gpt_classified["DISCARD"], edit=self.feedback_gpt_classified["EDIT"], add=self.feedback_gpt_classified["ADD"]
             )
 
@@ -264,7 +264,7 @@ class AutoJudge:
         if not self.run_only_gpt:
             #<Claude>
             feedback_generation_prompt_claude = feedback_generation_prompt_template.format(
-                needs=self.initial_instruction, code=self.code, attributes=self.data_attributes,
+                initial_instruction=self.initial_instruction, code=self.code, attributes=self.data_attributes,
                 retain=self.feedback_claude_classified["RETAIN"], discard=self.feedback_claude_classified["DISCARD"], edit=self.feedback_claude_classified["EDIT"], add=self.feedback_claude_classified["ADD"]
                 )
             self.memory['16_asking_autojudge_to_generate_feedback(claude)'] = feedback_generation_prompt_claude
@@ -332,10 +332,10 @@ class AutoJudge:
         else:
             self.feedback_claude_code = ""
         # save memory in AJ.json
-        if additional_tag == "":
-            with open("prompts/AJ.json", "w", encoding="utf-8") as file:
-                json.dump(self.memory, file, indent=4)
-        else:
-            with open(f"prompts/AJ_{additional_tag}.json", "w", encoding="utf-8") as file:
-                json.dump(self.memory, file, indent=4)            
+        # if additional_tag == "":
+        #     with open("prompts/AJ.json", "w", encoding="utf-8") as file:
+        #         json.dump(self.memory, file, indent=4)
+        # else:
+        #     with open(f"prompts/AJ_{additional_tag}.json", "w", encoding="utf-8") as file:
+        #         json.dump(self.memory, file, indent=4)            
         return self.memory, self.feedback_gpt_classified, self.feedback_claude_classified, self.feedback_gpt_code, self.feedback_claude_code

@@ -83,7 +83,7 @@ class ChartAgent:
 
         return memory
     
-    def run_d2c_task_with_feedback(self, feedback_gpt_classified, feedback_claude_classified, feedback_gpt_code, feedback_claude_code, gallery, file_index, memory, use_claude=True, additional_tag:str = ""):
+    def run_d2c_task_with_feedback(self, feedback_gpt_classified, feedback_claude_classified, feedback_gpt_code, feedback_claude_code, file_index, memory, use_claude=True):
         ######################
         # D2C after feedback #
         ######################
@@ -95,7 +95,7 @@ class ChartAgent:
         d2c_prompt_icl_gpt = d2c_prompt_icl_gpt.format(
             initial_instruction=memory['02_initial_prompt'],
             retain= feedback_gpt_classified['RETAIN'], modification=feedback_gpt_code,
-            file_index=f"autojudge_{gallery}-{file_index}_{additional_tag}(gpt)"
+            file_index=f"autojudge_{file_index}(gpt_feedback)"
             )
         memory['16_asking_chartagent_to_improve_visualization(gpt4o)'] = d2c_prompt_icl_gpt
         memory['d2c_icl(gpt4o)'] = self.run_d2c(d2c_prompt_icl_gpt, self.ca_memory)
@@ -109,15 +109,12 @@ class ChartAgent:
             d2c_prompt_icl_claude = d2c_prompt_icl_claude.format(
                 initial_instruction=memory['02_initial_prompt'],
                 retain=feedback_claude_classified['RETAIN'], modification=feedback_claude_code,
-                file_index=f"autojudge_{gallery}-{file_index}(claude)"
+                file_index=f"autojudge_{file_index}(claude_feedback)"
                 )
             memory['16_asking_chartagent_to_improve_visualization(claude)'] = d2c_prompt_icl_claude
             memory['d2c_icl(claude)'] = self.run_d2c(d2c_prompt_icl_claude, self.ca_memory)
             memory['result_code_icl(claude)'] = self.parse_code_blocks(memory['d2c_icl(claude)'])
-            if additional_tag != "":
-                self.write_memory_to_file(memory, file_name=f"{additional_tag}-memory.json")
-            else:
-                self.write_memory_to_file(memory)
+            self.write_memory_to_file(memory)
 
             return memory['result_code_icl(gpt4o)'], memory['result_code_icl(claude)']
         

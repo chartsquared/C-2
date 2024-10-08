@@ -2,91 +2,101 @@
     "code feedback": [
         {
             "tag": "EDIT",
-            "explanation": "Adjust the color gradient to make differences more distinct, especially for mid-range values",
+            "explanation": "The data is not being properly loaded or plotted. We need to check if the data file exists and its content.",
             "before": [
-                "Line 15: sns.heatmap(data, annot=True, cmap='coolwarm', fmt='g', linewidths=0.5)"
+                "Line 9: data = pd.read_csv('ChartUIE_8K/data/1.csv')"
             ],
             "after": [
-                "Line 15: sns.heatmap(data, annot=True, cmap='RdYlBu_r', fmt='g', linewidths=0.5, vmin=50, vmax=95)"
+                "Line 9: import os",
+                "Line 10: csv_path = 'ChartUIE_8K/data/1.csv'",
+                "Line 11: if not os.path.exists(csv_path):",
+                "Line 12:     raise FileNotFoundError(f'The file {csv_path} does not exist.')",
+                "Line 13: data = pd.read_csv(csv_path)",
+                "Line 14: print(data.head())"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Increase font size for better readability",
+            "explanation": "The column names in the code do not match the data attributes provided. We need to update the column names.",
             "before": [
-                "Line 33: ax.text(i, j, f'{value}%', ha='center', va='center', size=8)"
+                "Line 22: sectors = ['Agriculture GDP', 'Industry GDP', 'Services GDP']",
+                "Line 23: sector_pairs = [('Agriculture GDP', 'Industry GDP'), ('Agriculture GDP', 'Services GDP'), ('Industry GDP', 'Services GDP')]"
             ],
             "after": [
-                "Line 33: ax.text(i, j, f'{value}%', ha='center', va='center', size=10, fontweight='bold')"
+                "Line 22: sectors = ['Agriculture GDP', 'IndustryGDP', 'ServicesGDP']",
+                "Line 23: sector_pairs = [('Agriculture GDP', 'IndustryGDP'), ('Agriculture GDP', 'ServicesGDP'), ('IndustryGDP', 'ServicesGDP')]"
             ]
         },
         {
             "tag": "ADD",
-            "explanation": "Add percentage labels to the color key for easier interpretation",
+            "explanation": "We need to add error handling for empty dataframes or columns with all NaN values.",
             "before": [],
             "after": [
-                "Line 16: cbar = ax.collections[0].colorbar",
-                "Line 17: cbar.set_ticks([50, 60, 70, 80, 90])",
-                "Line 18: cbar.set_ticklabels(['50%', '60%', '70%', '80%', '90%'])"
+                "Line 15: if data.empty:",
+                "Line 16:     raise ValueError('The dataframe is empty.')",
+                "Line 17: for sector in sectors:",
+                "Line 18:     if data[sector].isnull().all():",
+                "Line 19:         raise ValueError(f'The {sector} column contains all NaN values.')"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "The scatter plot creation needs to be modified to ensure data is being plotted.",
+            "before": [
+                "Line 28: ax[i].scatter(x, y)",
+                "Line 31: ax[i].scatter(x[key_country_indices], y[key_country_indices], marker='*', color='red', s=200)"
+            ],
+            "after": [
+                "Line 28: scatter = ax[i].scatter(x, y, alpha=0.6)",
+                "Line 29: if scatter.get_offsets().shape[0] == 0:",
+                "Line 30:     print(f'No data points plotted for {pair[0]} vs {pair[1]}')",
+                "Line 31: key_countries = ax[i].scatter(x[key_country_indices], y[key_country_indices], marker='*', color='red', s=200)",
+                "Line 32: if key_countries.get_offsets().shape[0] == 0:",
+                "Line 33:     print('No data points for key countries (US and China)')"
             ]
         },
         {
             "tag": "ADD",
-            "explanation": "Include visual cues to highlight significant patterns or outliers",
+            "explanation": "We need to add a color scheme to differentiate between countries or regions.",
             "before": [],
             "after": [
-                "Line 35: # Highlight countries with highest and lowest penetration rates",
-                "Line 36: ax.add_patch(plt.Rectangle((0, 0), 2, 1, fill=False, edgecolor='black', lw=2))",
-                "Line 37: ax.add_patch(plt.Rectangle((0, len(data.index)-1), 2, 1, fill=False, edgecolor='black', lw=2))"
+                "Line 20: from matplotlib.colors import ListedColormap",
+                "Line 21: n_countries = len(data['Country/Economy'].unique())",
+                "Line 22: colors = plt.cm.jet(np.linspace(0, 1, n_countries))",
+                "Line 23: color_map = dict(zip(data['Country/Economy'].unique(), colors))",
+                "Line 24: country_colors = [color_map[country] for country in data['Country/Economy']]"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Adjust the figure size to improve overall layout",
+            "explanation": "Modify the scatter plot to use the new color scheme.",
             "before": [
-                "Line 11: fig, ax = plt.subplots(figsize=(10, 8))"
+                "Line 28: scatter = ax[i].scatter(x, y, alpha=0.6)"
             ],
             "after": [
-                "Line 11: fig, ax = plt.subplots(figsize=(12, 10))"
+                "Line 28: scatter = ax[i].scatter(x, y, c=country_colors, alpha=0.6)"
             ]
         },
         {
             "tag": "ADD",
-            "explanation": "Add a brief summary of key findings for quicker insights",
+            "explanation": "Add a legend to explain the color scheme.",
             "before": [],
             "after": [
-                "Line 39: # Add summary of key findings",
-                "Line 40: plt.figtext(0.5, 0.01, 'Key Findings: South Korea has the highest penetration rates overall. \\nNigeria has the lowest rates for both categories.', ha='center', fontsize=10, bbox={'facecolor':'white', 'alpha':0.8, 'pad':5})"
+                "Line 40: legend_elements = [plt.Line2D([0], [0], marker='o', color='w', label=country,",
+                "Line 41:                               markerfacecolor=color, markersize=10)",
+                "Line 42:                   for country, color in color_map.items()]",
+                "Line 43: fig.legend(handles=legend_elements, loc='lower center', ncol=5, bbox_to_anchor=(0.5, -0.1))"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Adjust x-axis label for clarity",
+            "explanation": "Modify the title to be more descriptive and add a data source annotation.",
             "before": [
-                "Line 21: ax.set_xlabel('Penetration Rates')"
+                "Line 40: fig.suptitle('GDP Composition by Sector')"
             ],
             "after": [
-                "Line 21: ax.set_xlabel('Penetration Rates (%)', fontsize=12)"
-            ]
-        },
-        {
-            "tag": "EDIT",
-            "explanation": "Adjust y-axis label for consistency",
-            "before": [
-                "Line 24: ax.set_ylabel('Country')"
-            ],
-            "after": [
-                "Line 24: ax.set_ylabel('Country', fontsize=12)"
-            ]
-        },
-        {
-            "tag": "EDIT",
-            "explanation": "Enhance title visibility",
-            "before": [
-                "Line 18: ax.set_title('Internet and Smartphone Penetration Rates by Country')"
-            ],
-            "after": [
-                "Line 18: ax.set_title('Internet and Smartphone Penetration Rates by Country', fontsize=14, fontweight='bold')"
+                "Line 44: fig.suptitle('GDP Composition by Sector Across Countries', fontsize=16)",
+                "Line 45: plt.figtext(0.5, -0.05, 'Data source: ChartUIE_8K/data/1.csv', ha='center', fontsize=8)"
             ]
         }
     ]
