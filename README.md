@@ -1,4 +1,4 @@
-# ChartUIE-8K and ChartAJ: Rich AI Feedback for Chart Generation
+# ChartAJ and ChartUIE-8K: Rich AI Feedback for Chart Generation
 
 ## Contents 
 - [Project Site](#project-site)
