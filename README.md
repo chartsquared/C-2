@@ -1,4 +1,4 @@
-# ChartAJ: Rich AI Feedback for Chart Generation
+# ChartUIE-8K and ChartAJ: Rich AI Feedback for Chart Generation
 
 ## Contents 
 - [Project Site](#project-site)
@@ -7,7 +7,7 @@
 
 ## Project Site
 
-Demonstration of the pre and post feedback of our ChartAJ is provided in our site[our project site](https://chartaj.github.io/).
+Demonstration of the pre and post feedback of our ChartAJ is provided in our site [our project site](https://chartaj.github.io/).
 
 ## ChartUIE
 
