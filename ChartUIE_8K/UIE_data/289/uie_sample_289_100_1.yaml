@@ -1,0 +1,60 @@
+initial_prompt: Create a bar chart to visualize the classification of cases as either
+  benign (0) or malignant (1) using the 'benign_0__mal_1' column data. Annotate specific
+  data points, such as the mean radius, mean texture, and mean perimeter for each
+  class. Highlight the column bars by altering the color based on the classification
+  to make it visually clear. This will help in focusing on cancer diagnostic patterns,
+  aiding in understanding the distribution and characteristics of the mean values
+  for each class and identifying which features are prominent in malignant cases.
+  This chart is essential for health data analysis and cancer research.
+questions: '1. Do you have a specific preference for the color scheme to distinguish
+  between benign and malignant cases?
+
+  2. Would you like the bar chart to be oriented horizontally or vertically?
+
+  3. Do you have any specific requirements for the font size or style for the annotations?
+
+  4. Should the chart include a legend explaining the color scheme for the classifications?
+
+  5. Are there any specific values or thresholds you''d like to highlight within the
+  chart?
+
+  6. Do you prefer a specific labeling style for the axes (e.g., scientific notation,
+  decimal, percentage)?
+
+  7. Is there a preferred title or subtitle you would like to include on the chart?
+
+  8. Do you have any preferences for the background color or gridlines within the
+  chart?
+
+  9. Would you like to include error bars to indicate variability in the data, such
+  as standard deviation?
+
+  10. Should the chart include data labels directly on the bars showing the mean values?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, please include a legend.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. No specific title or subtitle.
+
+  8. I am not sure.
+
+  9. I am not sure.
+
+  10. Yes, please include data labels directly on the bars.
+
+  <end of user emulated response>'
+data_attributes:
+- benign_0__mal_1
+- mean radius
+- mean texture
+- mean perimeter

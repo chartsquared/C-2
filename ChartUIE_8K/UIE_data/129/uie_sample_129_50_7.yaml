@@ -1,0 +1,34 @@
+initial_prompt: Create a choropleth map showing Covid-19 cases in India by state.
+  Use "Total Cases," "Active," "Discharged," and "Deaths" columns for coloring. Include
+  ratios and population data as tooltips for more context.
+questions: '1. What color scheme do you prefer for the choropleth map to represent
+  different data columns (Total Cases, Active, Discharged, Deaths)?
+
+  2. Do you have any preferences for the map projection or style (e.g., simple, detailed,
+  thematic)?
+
+  3. Should the map include state boundaries and labels for clearer identification?
+
+  4. How would you like to visualize the ratios and population data in the tooltips
+  (e.g., simple text, formatted text, additional charts)?
+
+  5. Do you prefer a specific order of columns to be shown in the tooltips?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Yes, the map should include state boundaries and labels for clearer identification.
+
+  4. I am not sure.
+
+  5. I am not sure.'
+data_attributes:
+- State/UTs
+- Total Cases
+- Active
+- Discharged
+- Deaths
+- Active Ratio
+- Discharge Ratio
+- Death Ratio
+- Population

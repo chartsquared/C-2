@@ -1,0 +1,57 @@
+initial_prompt: Create a scatter plot to visualize the production of craft beer from
+  2009 for different brewer sizes. Plot 'total_barrels' on the y-axis and 'year' on
+  the x-axis, separating data points by 'brewer_size'. Use text annotations to display
+  'n_of_brewers' on each data point to highlight key differences. Include highlights
+  to emphasize data points with missing values in 'total_barrels' and 'total_shipped'.
+  This will help in understanding the trends in production volume across various brewer
+  sizes and years, with special attention to potential data irregularities.
+questions: '1. Do you have a preferred color scheme for differentiating between various
+  ''brewer_size'' categories?
+
+  2. Should the text annotations indicating ''n_of_brewers'' be of any specific font
+  size or style?
+
+  3. How would you prefer to highlight the data points with missing values in ''total_barrels''
+  and ''total_shipped''?
+
+  4. Do you prefer any specific marker shapes for the scatter plot data points?
+
+  5. Are there any particular labels, titles, or legends you want included? For example,
+  the title of the chart or axis labels.
+
+  6. Should the axis range be manually set or automatically determined based on data?
+
+  7. Do you have any preference regarding the gridlines on the chart (e.g., visibility,
+  style)?
+
+  8. Would you like a trend line or any form of regression line to be included in
+  the scatter plot?
+
+  9. Are there any specific brewer size categories you would like highlighted or emphasized
+  more than others?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer a different color or marker shape to highlight data points with
+  missing values.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a title "Craft Beer Production from 2009 by Brewer Size",
+  and axis labels "Year" for the x-axis and "Total Barrels" for the y-axis. Also,
+  include a legend for the ''brewer_size'' categories.
+
+  6. Automatically determined based on data.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I do not have a specific preference.'
+data_attributes:
+- year
+- brewer_size
+- n_of_brewers
+- total_barrels
+- total_shipped

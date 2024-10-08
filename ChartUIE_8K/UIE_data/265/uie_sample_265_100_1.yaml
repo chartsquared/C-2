@@ -1,0 +1,65 @@
+initial_prompt: Create a bar chart to visualize the top 10 countries based on Total
+  Cases of COVID-19. Use different colors to highlight the top three countries. Include
+  text annotations for Total Cases, Total Deaths, and Total Recovered for these top
+  three countries to focus attention on them. The x-axis should represent countries,
+  and the y-axis should represent the number of cases. This visualization aims to
+  provide a clear comparison of the COVID-19 impact across these countries, aiding
+  in understanding the spread and severity of the pandemic.
+questions: '1. Do you have any preference for the colors used to highlight the top
+  three countries?
+
+  2. Would you like specific font styles or sizes for the text annotations?
+
+  3. Should the x-axis labels be rotated for better readability? If so, what angle
+  would you prefer?
+
+  4. Do you have a preferred ordering for the countries on the x-axis (e.g., descending
+  order of Total Cases)?
+
+  5. Would you like gridlines on the chart? If yes, should they be major, minor, or
+  both?
+
+  6. Is there any specific title or subtitle you would like to include for the chart?
+
+  7. Do you want legend placement to be in any specific location on the chart?
+
+  8. Should the data values (Total Cases, Total Deaths, Total Recovered) for the top
+  three countries be displayed in a particular format (e.g., comma-separated, abbreviated
+  with ''K'', ''M'')?
+
+  9. Do you have any preferences for the background color or border style of the chart?
+
+  10. Would you require any additional labels or descriptions on the chart to enhance
+  clarity?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please rotate the x-axis labels. 45 degrees should be fine.
+
+  4. Yes, descending order of Total Cases.
+
+  5. Yes, major gridlines should be fine.
+
+  6. Title: "Top 10 Countries by COVID-19 Total Cases"
+
+  7. I have no specific preference.
+
+  8. Comma-separated values would be good.
+
+  9. I have no specific preference.
+
+  10. No, that should be enough.'
+data_attributes:
+- 'Country,
+
+  Other'
+- 'Total
+
+  Cases'
+- 'Total
+
+  Deaths'
+- 'Total
+
+  Recovered'

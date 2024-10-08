@@ -1,0 +1,56 @@
+initial_prompt: Create a grouped bar chart showing the performance of women's college
+  basketball teams. Group by 'year' and 'school', showing bars for 'reg_w', 'reg_l',
+  'tourney_w', and 'tourney_l' for each school. This will help visualize the number
+  of regular season wins and losses compared to tournament wins and losses for each
+  team across different years. Ensure the chart is color-coded by 'school' for clarity,
+  and include a legend and axis labels for better understanding. This will be useful
+  for comparing the regular season and tournament performances of various teams over
+  the years.
+questions: '1. Do you have any specific colors you would like to use for different
+  schools?
+
+  2. What should be the range for the y-axis? Should it be set automatically or fixed?
+
+  3. Do you have a preference for the bar width?
+
+  4. Would you like to add any specific title to the chart?
+
+  5. Should the legend be placed in a specific position on the chart (e.g., top, bottom,
+  left, right)?
+
+  6. Do you prefer any specific font style or size for the axis labels and legend?
+
+  7. Should the axis labels include any additional information or units?
+
+  8. Would you like to display the numerical values at the top of the bars?
+
+  9. Is there any specific order in which the schools should appear on the x-axis?
+
+  10. Are there any years or schools you would like to highlight or emphasize in the
+  chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure, automatic should be fine.
+
+  3. I do not know.
+
+  4. No specific preference.
+
+  5. No specific preference.
+
+  6. No specific preference.
+
+  7. No additional information or units needed.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- year
+- school
+- reg_w
+- reg_l
+- tourney_w
+- tourney_l

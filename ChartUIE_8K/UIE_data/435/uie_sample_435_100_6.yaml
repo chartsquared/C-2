@@ -1,0 +1,51 @@
+initial_prompt: I need a stacked bar chart visualizing the top artists in the BBC
+  Greatest Hip-Hop songs of all time list. The data should display the total points
+  each artist accumulated, broken down by 'n', 'n1', 'n2', 'n3', 'n4', and 'n5' categories.
+  Make sure to label the axes properly with the artist names on the x-axis and the
+  points on the y-axis. Color-code each category segment for better differentiation.
+  The chart should clearly indicate which artists have the highest points overall
+  and show the distribution across the different categories.
+questions: '1. Do you have any specific preferences for the color scheme used to differentiate
+  the category segments?
+
+  2. Would you like gridlines on the chart to enhance readability, and if so, in what
+  style?
+
+  3. Is there a particular order in which you would like the artists to be displayed
+  on the x-axis (e.g., alphabetical, by total points)?
+
+  4. Do you have any specific preferences for fonts or font sizes for the axis labels
+  and chart title?
+
+  5. Would you like to include any additional annotations or labels on the chart to
+  highlight specific data points or artists?
+
+  6. Should the chart include a legend to identify each category segment, and if so,
+  where would you prefer it to be positioned?
+
+  7. Do you have a preferred title for the chart?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. By total points.
+
+  4. I do not know.
+
+  5. I do not have any specific preference.
+
+  6. Yes, a legend should be included, preferably on the right side.
+
+  7. "Top Artists in the BBC Greatest Hip-Hop Songs of All Time"
+
+
+  '
+data_attributes:
+- artist
+- points
+- n
+- n1
+- n2
+- n3
+- n4
+- n5

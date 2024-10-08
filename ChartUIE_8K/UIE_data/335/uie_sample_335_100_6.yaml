@@ -1,0 +1,43 @@
+initial_prompt: Create a column chart to visualize the Superstore Sales data. The
+  x-axis should represent different product categories, and the y-axis should show
+  the total sales for each category. Use different colors to distinguish the sub-categories
+  within each product category. Additionally, include data labels displaying the exact
+  sales figures on top of the columns. This will help in understanding which product
+  categories and sub-categories are generating the most revenue. Following this, we
+  can analyze trends and make better business decisions based on the visual insights
+  from the chart.
+questions: '1. Do you have a preferred layout or aspect ratio for the column chart?
+
+  2. Is there a specific color palette you prefer for distinguishing the sub-categories?
+
+  3. Would you like the columns to be stacked or grouped by sub-category?
+
+  4. Should any specific font or style be used for data labels and axis titles?
+
+  5. Do you have any preference for the title and legend placement on the chart?
+
+  6. Is there a need for any gridlines or background shades in the chart?
+
+  7. Would you like any specific annotations or callouts on certain data points?
+
+  8. Should the y-axis be set to start at zero, or should it adjust dynamically based
+  on the data range?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the columns to be grouped by sub-category.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference for the title and legend placement.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. The y-axis should be set to start at zero.'
+data_attributes:
+- Category
+- Sub-Category
+- Sales

@@ -1,0 +1,57 @@
+initial_prompt: 'I have a dataset with columns ''x'' and ''y'', where both are of
+  float type with no missing values. Create a scatter plot to visualize this data.
+  Highlight specific data points: for ''x'' values of 0.0, 1.0, and 2.0, show their
+  corresponding ''y'' values as text annotations. Use different colors or sizes for
+  these points to make them stand out. The goal is to emphasize these key points for
+  further analysis, ensuring they are visually distinct to draw immediate attention.
+  Provide context and insights on these points to help grasp the overall data trend.'
+questions: '1. Do you have any preference for the color palette to be used in the
+  scatter plot?
+
+  2. Should the scatter plot include grid lines for better readability?
+
+  3. Do you want any specific labels or titles for the axes?
+
+  4. Do you prefer a particular font style or size for the text annotations?
+
+  5. Should the background of the scatter plot be plain or shaded?
+
+  6. Is there a preferred marker shape for the highlighted points (e.g., circle, square,
+  triangle)?
+
+  7. Should there be a legend explaining the highlighted points?
+
+  8. Do you have any specific preferences for the size of the markers for the highlighted
+  and non-highlighted points?
+
+  9. Would you like the overall plot to include a title or a caption summarizing key
+  insights?
+
+  10. Is there a specific range or scale (linear or logarithmic) you prefer for the
+  x and y axes?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. Yes, include grid lines for better readability.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Plain background is fine.
+
+  6. Circle shape for the highlighted points.
+
+  7. Yes, add a legend explaining the highlighted points.
+
+  8. Make the highlighted points slightly larger.
+
+  9. Yes, include a title summarizing key insights.
+
+  10. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- x
+- y

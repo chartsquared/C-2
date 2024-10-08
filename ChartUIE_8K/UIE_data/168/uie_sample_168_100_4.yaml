@@ -1,0 +1,50 @@
+initial_prompt: I want a scatter plot using the UCI Heart Disease dataset. On the
+  x-axis, plot "age," and on the y-axis, plot "chol" (cholesterol levels). Differentiate
+  the points by "sex" using different colors or markers. Additionally, use the "num"
+  column to vary the size of the points, representing the severity of heart disease
+  (0-4). This plot should help in visualizing the relationship between age, cholesterol
+  levels, and heart disease severity across genders. Also, ensure to label the axes
+  and include a legend for clarity.
+questions: '1. Do you have any specific color preferences for differentiating the
+  "sex" variable in the scatter plot?
+
+  2. Do you prefer specific marker shapes for representing different genders?
+
+  3. What title would you like to display on the scatter plot?
+
+  4. Do you want a grid to be displayed in the scatter plot background?
+
+  5. Are there specific font styles or sizes you prefer for the axis labels and legend?
+
+  6. Do you have any preferences for the range of values displayed on the x-axis (age)
+  and y-axis (cholesterol levels)?
+
+  7. Would you like to include specific annotations or highlights for any particular
+  data points or ranges?
+
+  8. Is there a specific order or placement you prefer for the legend on the scatter
+  plot?
+
+  9. Do you prefer a log scale for either the x-axis or y-axis?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I do not know, any standard marker shapes for genders are fine.
+
+  3. "Age vs. Cholesterol Levels with Heart Disease Severity"
+
+  4. Yes, I would like a grid in the scatter plot background.
+
+  5. I am not sure.
+
+  6. I have no specific preference for the range of values on the axes.
+
+  7. I do not know.
+
+  8. I have no specific preference for the legend placement.
+
+  9. No, I do not prefer a log scale for either axis.'
+data_attributes:
+- age
+- chol
+- sex
+- num

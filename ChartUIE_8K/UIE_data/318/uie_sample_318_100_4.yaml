@@ -1,0 +1,47 @@
+initial_prompt: I want a line chart visualizing hotel price trends in Munnar, Kerala.
+  Use "Hotel Name" on the x-axis and "Price" on the y-axis. Represent different star
+  ratings (3-star, 4-star) with distinct lines to compare how prices vary across hotels
+  with different ratings. Make sure to show the price including tax for accuracy.
+  This helps in choosing hotels based on budget and star rating. For missing "Star
+  Rating," do not exclude data but maybe mark as "Unrated" to retain completeness.
+  Ensure the chart is clear and labels are readable for easier decision-making.
+questions: '1. Do you have any specific color preferences for the distinct lines representing
+  different star ratings?
+
+  2. Do you prefer any specific font style or size for the chart labels and axis titles?
+
+  3. Would you like to include gridlines for better readability of the data?
+
+  4. Do you have a specific format for displaying prices (e.g., currency symbols,
+  comma separators)?
+
+  5. Should the "Unrated" category be labeled in a particular way or with a specific
+  color?
+
+  6. Would you like to include data points or markers on the lines for precise values?
+
+  7. Do you have a preference for the chart title text and positioning?
+
+  8. Should there be a legend describing the star ratings, and if so, where should
+  it be placed?'
+answers: '1. I have no specific preference.
+
+  2. I do not know.
+
+  3. Yes, include gridlines for better readability.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, include data points or markers on the lines for precise values.
+
+  7. I do not know.
+
+  8. Yes, include a legend describing the star ratings. I am not sure where it should
+  be placed.'
+data_attributes:
+- Hotel Name\t\t\t\t\t\t\t\t\t
+- Star Rating
+- Price
+- Tax

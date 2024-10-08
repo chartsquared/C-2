@@ -1,0 +1,48 @@
+initial_prompt: I need a Heatmap that visualizes the correlation between the number
+  of comments, scores, and unique values in our data about Reddit vaccine myths discussions.
+  I want to understand how these metrics influence each other. The dataset includes
+  columns like 'title', 'score', 'id', 'url', 'comms_num', 'created', 'body', and
+  'timestamp.’ The timeframe for the data spans February 2021. Emphasize the relationship
+  between these variables to identify trends or insights in the discussion patterns
+  about vaccine myths across Reddit forums. This will help us in analyzing user engagement
+  and post popularity.
+questions: '1. Do you have any color scheme preferences for the heatmap?
+
+  2. Would you like to include annotations to show exact correlation values on the
+  heatmap?
+
+  3. Should the correlation values be standardized or normalized before visualizing?
+
+  4. Do you prefer a specific range or scale for the heatmap (e.g., 0 to 1, -1 to
+  1)?
+
+  5. Would you like to include labels or legends for better interpretability?
+
+  6. Should we categorize the correlation strength (e.g., strong, moderate, weak)
+  on the heatmap?
+
+  7. Do you want to include any specific titles, subtitles, or captions on the chart?
+
+  8. Are there any specific fonts or styles you prefer for the text on the heatmap?
+
+  9. Should the heatmap include any grid lines or borders?'
+answers: '1. I am not sure.
+
+  2. Yes, please include annotations to show exact correlation values on the heatmap.
+
+  3. I am not sure.
+
+  4. -1 to 1 would be preferred.
+
+  5. Yes, include labels or legends for better interpretability.
+
+  6. I do not know.
+
+  7. Yes, please include a title and subtitles that describe the metrics being analyzed.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- score
+- comms_num

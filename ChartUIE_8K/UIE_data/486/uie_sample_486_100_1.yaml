@@ -1,0 +1,48 @@
+initial_prompt: Create a box chart visualizing the given dataset with columns 'x'
+  and 'y'. Highlight outliers to draw attention to anomalies in the data distribution.
+  Apply text annotations to specific data points that deviate significantly from the
+  median, emphasizing these exceptions. Use different colors to distinguish between
+  the two columns, making the chart visually intuitive. The visualization aims to
+  identify data trends and outliers for better data-driven decision-making. This will
+  help in quickly spotting any anomalies and understanding the overall data spread
+  and variance between 'x' and 'y'.
+questions: '1. Do you have any preferred colors for distinguishing between the ''x''
+  and ''y'' columns?
+
+  2. Are there specific thresholds or criteria you''d like to use to define significant
+  deviations from the median for text annotations?
+
+  3. Do you have a preference for the style or formatting of text annotations (e.g.,
+  font size, color, bold)?
+
+  4. Would you like the box chart to include specific statistical measures (e.g.,
+  mean, median, quartiles) displayed on the chart?
+
+  5. Do you have any preferences for the layout or orientation of the box chart (e.g.,
+  vertical or horizontal)?
+
+  6. Are there any specific labels or titles you’d like to include for the axes and
+  the chart itself?
+
+  7. Would you like a legend included to explain the colors and annotations used in
+  the chart?
+
+  8. Do you have any preferred chart size or aspect ratio requirements?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like the mean and median displayed.
+
+  5. I have no specific preference.
+
+  6. Please include labels for the axes and a title for the chart.
+
+  7. Yes, I would like a legend included.
+
+  8. I have no specific preference.'
+data_attributes:
+- x
+- y

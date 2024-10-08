@@ -1,0 +1,61 @@
+initial_prompt: Create a grouped bar chart to compare the mean, standard error, and
+  worst values for radius, texture, perimeter, and area across different diagnosis
+  types (M and B). This will help visualize differences and patterns in breast cancer
+  data.
+questions: '1. Do you have any specific preferences for the color scheme of the grouped
+  bar chart?
+
+  2. Should the bars be arranged in a particular order (e.g., by diagnosis type or
+  by attribute)?
+
+  3. Do you want to include error bars to depict standard error values?
+
+  4. Would you prefer to have axis labels and titles for clarity?
+
+  5. Is there a specific range or scale you would like to use for the y-axis?
+
+  6. Do you have a preference for the bar width or spacing between the bars?
+
+  7. Should the chart include a legend to identify different diagnosis types and value
+  types (mean, SE, worst)?
+
+  8. Are there any specific font styles or sizes you prefer for the text in the chart
+  (e.g., labels, title, legend)?
+
+  9. Would you like to highlight any specific data points or trends within the chart?
+
+  10. Do you want to add annotations or notes to provide additional insights or explanations?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please include error bars to depict standard error values.
+
+  4. Yes, I would prefer to have axis labels and titles for clarity.
+
+  5. I do not have a specific range or scale for the y-axis.
+
+  6. I am not sure.
+
+  7. Yes, the chart should include a legend to identify different diagnosis types
+  and value types (mean, SE, worst).
+
+  8. I do not have any specific preferences for font styles or sizes.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- diagnosis
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- radius_se
+- texture_se
+- perimeter_se
+- area_se
+- radius_worst
+- texture_worst
+- perimeter_worst
+- area_worst

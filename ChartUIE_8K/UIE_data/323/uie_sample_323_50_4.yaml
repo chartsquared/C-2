@@ -1,0 +1,52 @@
+initial_prompt: Please create a stacked bar chart showing the search volume for google
+  trends in different states. Use 'state' as the x-axis and the search volumes from
+  'mlsrc', 'quantumsrc', and 'dlsrc' as different stacks.
+questions: '1. Do you have a preferred color scheme for the different stacks (''mlsrc'',
+  ''quantumsrc'', ''dlsrc'')?
+
+  2. Would you like to customize the font style or size for the chart labels and titles?
+
+  3. Should the x-axis labels (state names) be rotated for better readability?
+
+  4. Do you want to include data labels on each stack showing the precise search volume?
+
+  5. Should there be a legend explaining what each stack represents? If so, do you
+  have a preferred position for it (e.g., top, bottom, side)?
+
+  6. Would you like to see gridlines on the chart for easier comparison of values?
+
+  7. Do you have any preference for the chart title or subtitle?
+
+  8. Should the chart include tooltips that display additional information when hovering
+  over each stack?
+
+  9. Would you prefer a specific order for the stacks (e.g., always ''mlsrc'' on the
+  bottom, ''quantumsrc'' in the middle, and ''dlsrc'' on top)?
+
+  10. Are there any specific states you would like to highlight or mark differently
+  on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please rotate the x-axis labels for better readability.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend. I have no specific preference for its position.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. Yes, please always have ''mlsrc'' on the bottom, ''quantumsrc'' in the middle,
+  and ''dlsrc'' on top.
+
+  10. I do not know.'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

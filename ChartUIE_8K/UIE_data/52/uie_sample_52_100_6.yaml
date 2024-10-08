@@ -1,0 +1,49 @@
+initial_prompt: I need a stacked column chart to visualize the computer data from
+  the dataset. Specifically, I want to compare the "premium" versus "non-premium"
+  computers across multiple factors such as "price", "speed", "hd", "ram", and "screen".
+  Each column should represent one of these factors, and the stacks within each column
+  should differentiate between premium and non-premium computers. Use contrasting
+  colors like blue and orange for clarity. Make sure to include proper labels, legends,
+  and a title so the chart is easy to understand. Thank you!
+questions: '1. Do you have a specific title in mind for the chart?
+
+  2. Do you have preferred labels for the x-axis and y-axis?
+
+  3. Do you want to include value labels within each stack?
+
+  4. How would you like the legend to be positioned (e.g., top, bottom, left, right)?
+
+  5. Are there any specific fonts or font sizes you prefer for the labels and title?
+
+  6. Would you like to include gridlines for better readability?
+
+  7. Do you prefer any data sorting order for the factors (alphabetical, ascending,
+  descending)?
+
+  8. Is there a specific aspect ratio or size for the chart that you would prefer?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. X-axis: Factors, Y-axis: Value
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include gridlines for better readability.
+
+  7. No specific preference for data sorting order.
+
+  8. No specific preference for aspect ratio or size.
+
+  <end of user emulated response>'
+data_attributes:
+- price
+- speed
+- hd
+- ram
+- screen
+- premium

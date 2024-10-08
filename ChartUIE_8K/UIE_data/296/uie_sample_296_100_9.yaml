@@ -1,0 +1,49 @@
+initial_prompt: 'Create a scatter plot showing the rankings of top attractions and
+  restaurants in Colombo based on TripAdvisor reviews. Use the "rankingPosition" for
+  the x-axis and "rating" for the y-axis. Differentiate between ''ATTRACTION'' and
+  ''RESTAURANT'' using different colors. Add data points for "name" and include tooltips
+  for "numberOfReviews" and "rating" when hovering over each point. Make sure to handle
+  missing data gracefully and clearly label the axes and the legend. Title the chart:
+  "Ratings vs. Rankings of Colombo’s Top Attractions and Restaurants".'
+questions: '1. Do you have a preference for the color scheme used to differentiate
+  between attractions and restaurants?
+
+  2. What style of markers (e.g., circles, squares) would you prefer for the data
+  points?
+
+  3. Are there specific font styles or sizes you would like for the axis labels and
+  title?
+
+  4. Should the chart include gridlines, and if so, do you have any preferences for
+  their appearance?
+
+  5. Is there a specific format you prefer for displaying the tooltips?
+
+  6. Do you have any requirements for the legend’s position and format?
+
+  7. Would you like to see any specific annotations or lines (e.g., trend lines) on
+  the scatter plot?
+
+  8. Are there any specific labels or descriptions that need to be emphasized in the
+  chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, the chart should include gridlines, but I am not sure about their appearance.
+
+  5. I do not know.
+
+  6. No specific requirements.
+
+  7. I am not sure.
+
+  8. No specific labels or descriptions need to be emphasized.'
+data_attributes:
+- type
+- name
+- rankingPosition
+- rating
+- numberOfReviews

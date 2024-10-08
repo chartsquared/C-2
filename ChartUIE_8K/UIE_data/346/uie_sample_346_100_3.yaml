@@ -1,0 +1,43 @@
+initial_prompt: Create a dot plot visualizing the relationship between different platforms
+  and their global sales from the video game sales data. Each dot represents a video
+  game, with the x-axis showing the platform type and the y-axis showing global sales
+  in millions. Include a legend to distinguish different genres represented by different
+  dot colors. The plot should help us identify which platforms have the highest and
+  lowest sales, and highlight the distribution of sales across various genres and
+  platforms effectively. This information will help in understanding the market trends
+  in global video game sales.
+questions: '1. Do you have a specific preference for the color palette used to distinguish
+  different genres?
+
+  2. Would you like the dots to have varying sizes based on another attribute (e.g.,
+  year of release), or should they all be the same size?
+
+  3. Should the chart include grid lines for easier readability of the data points?
+
+  4. Do you have a preferred font style and size for the axis labels and legend?
+
+  5. Should platforms be sorted in a particular order on the x-axis (e.g., alphabetically,
+  by number of games, or total sales)?
+
+  6. Is there a specific range or limit you would like to set for the y-axis (global
+  sales in millions)?
+
+  7. Would you like data points to display additional information such as game names
+  on hover or click?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, the chart should include grid lines for easier readability.
+
+  4. I do not have a specific preference.
+
+  5. Platforms should be sorted by total sales.
+
+  6. I do not know.
+
+  7. I am not sure.'
+data_attributes:
+- Platform
+- Global_Sales
+- Genre

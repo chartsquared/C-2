@@ -1,0 +1,51 @@
+initial_prompt: Create a scatter plot visualizing Kepler Telescope Exoplanet Discoveries.
+  Plot 'ra' (Right Ascension) on the x-axis and 'dec' (Declination) on the y-axis
+  to represent the 3 detected exoplanets. Annotate each point with 'pl_hostname' to
+  highlight specific stars hosting planets. Highlight points based on the 'pl_pnum'
+  to distinguish between stars with different numbers of planets. Include 'pl_letter'
+  as text annotations to indicate different planets around the same star, if multiple
+  exist. This visualization aims to illustrate the spatial distribution and discovery
+  methods of Kepler Telescope findings.
+questions: '1. Do you have any preferences for the color scheme used to highlight
+  points based on the ''pl_pnum'' attribute?
+
+  2. Is there a specific shape or marker type you prefer for the scatter plot points?
+
+  3. How would you prefer the annotations for ''pl_hostname'' to be displayed (e.g.,
+  font size, color)?
+
+  4. Do you have a preference for the text annotations for ''pl_letter'' (e.g., font
+  size, positioning relative to the points)?
+
+  5. Is there a specific title or labels you would like for the x-axis and y-axis?
+
+  6. Do you prefer the background of the plot to be a specific color or style (e.g.,
+  grid lines, no grid lines)?
+
+  7. How would you like legends to be displayed (if required to distinguish multiple
+  planets around the same star)?
+
+  8. Do you have any specific requirements for the overall layout or size of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer the font size for ''pl_hostname'' annotations to be readable but
+  not too large; maybe a medium size in a dark color like black or navy blue.
+
+  4. I have no specific preference.
+
+  5. The x-axis label should be ''Right Ascension'' and the y-axis label should be
+  ''Declination''.
+
+  6. I prefer the background to have grid lines for better readability.
+
+  7. I am not sure.
+
+  8. I do not have specific requirements for the overall layout or size of the chart.'
+data_attributes:
+- ra
+- dec
+- pl_hostname
+- pl_pnum
+- pl_letter

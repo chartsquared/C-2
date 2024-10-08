@@ -1,0 +1,36 @@
+initial_prompt: Please create a Choropleth map visualizing global sales data from
+  the provided video game sales dataset. Use the 'Global_Sales' column to color-code
+  countries based on sales figures. Countries with higher sales should have a darker
+  color. Represent sales data in North America, Europe, Japan, and Other regions specifically.
+  Ensure labels are clear and a legend is included to explain the color gradient.
+  Additionally, include tooltips that display specific sales values when hovering
+  over countries. This map will help understand the geographic distribution of video
+  game sales effectively.
+questions: '1. Do you have any specific color schemes or palettes you prefer for the
+  Choropleth map?
+
+  2. How would you like the sales data for North America, Europe, Japan, and Other
+  regions to be visually distinguished on the map?
+
+  3. Are there any specific labels or annotations you would like to include on the
+  map?
+
+  4. Do you have a preferred style or format for the legend explaining the color gradient?
+
+  5. Would you like any specific formatting for the tooltips displaying sales values
+  when hovering over countries?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No specific labels or annotations.
+
+  4. I do not know.
+
+  5. I am not sure.'
+data_attributes:
+- Global_Sales
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales

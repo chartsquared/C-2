@@ -1,0 +1,52 @@
+initial_prompt: I need a Sankey chart to visualize the flow of automobile orders.
+  Use the data to connect key points such as the 'COUNTRY' of the 'CUSTOMERNAME',
+  'PRODUCTLINE', and 'STATUS' of the orders. It should show how many orders in each
+  status (Shipped, On Hold, etc.) are associated with each product line and country.
+  This will help identify which countries and product lines have the most shipped
+  orders and any bottlenecks in processing. Ensure the chart is clear and easy to
+  understand with distinct colors for each 'STATUS'.
+questions: '1. Do you have any preferred color palette for the different ''STATUS''
+  categories?
+
+  2. Would you like to highlight any specific paths or flows in the Sankey chart?
+
+  3. How would you prefer to sequence the nodes (e.g., by order volume, alphabetically)?
+
+  4. Is there a specific font style or size you prefer for the labels and text on
+  the chart?
+
+  5. Do you have any preference for the layout orientation (horizontal or vertical)
+  of the Sankey chart?
+
+  6. Are there any specific dimensions or size constraints that we should consider
+  for the chart?
+
+  7. Do you require any annotations or summary statistics to be displayed on the chart?
+
+  8. Are there any additional data points or attributes you would like to see included
+  in the chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Alphabetically would be fine.
+
+  4. I do not have a specific preference.
+
+  5. Horizontal orientation would be better.
+
+  6. No specific dimensions, but it should be large enough to be readable.
+
+  7. Yes, including summary statistics would be helpful.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- COUNTRY
+- CUSTOMERNAME
+- PRODUCTLINE
+- STATUS
+- ORDERNUMBER

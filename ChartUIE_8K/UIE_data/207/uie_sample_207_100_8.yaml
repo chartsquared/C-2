@@ -1,0 +1,43 @@
+initial_prompt: I have a dataset showing Boston housing metrics, including rooms per
+  dwelling (RM), percent lower status of the population (LSTAT), pupil-teacher ratio
+  (PTRATIO), and median value of homes (MEDV). I need a donut chart to visualize this
+  data clearly. Specifically, I want the chart to illustrate the distribution of these
+  key metrics. Please ensure it reflects the uniqueness and range of each value accurately.
+  Use color coding for each metric, and include a legend for clarity. This visualization
+  will help in understanding the composition of the different features in the dataset.
+  Thanks!
+questions: '1. Do you have a preferred color palette for the color coding of each
+  metric?
+
+  2. Would you like to customize the labels for each segment of the donut chart?
+
+  3. Is there a specific font or font size you prefer for the legend and labels?
+
+  4. Do you have any preferences for the order in which the metrics (RM, LSTAT, PTRATIO,
+  MEDV) are displayed in the chart?
+
+  5. Are there any specific annotations or notes you would like to include on the
+  chart?
+
+  6. Do you prefer a particular style for the donut chart (e.g., 2D, 3D, minimalist)?
+
+  7. What level of detail would you like for the tooltips (e.g., exact values, percentages,
+  additional metrics)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I do not have preferences for the order.
+
+  5. I am not sure.
+
+  6. I prefer a 2D style for the donut chart.
+
+  7. Exact values and percentages would be nice.'
+data_attributes:
+- RM
+- LSTAT
+- PTRATIO
+- MEDV

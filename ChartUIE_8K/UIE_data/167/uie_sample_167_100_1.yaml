@@ -1,0 +1,65 @@
+initial_prompt: Create a column chart to visualize the heart disease dataset. Highlight
+  the importance of variables like 'age', 'cholesterol', and 'max heart rate' by modifying
+  their appearance. Use text annotations to highlight high cholesterol levels and
+  high resting blood pressure. The purpose is to understand risk factors associated
+  with heart disease. The chart should effectively display data comparisons across
+  different categories for better insights into heart health. This visualization will
+  help focus attention on critical health parameters, offering clarity on their impact
+  on heart disease.
+questions: '1. Do you have preferred colors for highlighting the variables ''age'',
+  ''cholesterol'', and ''max heart rate'' on the chart?
+
+  2. How would you prefer the text annotations to be represented or formatted?
+
+  3. Are there specific thresholds for ''high cholesterol levels'' and ''high resting
+  blood pressure'' you would like to use for the annotations?
+
+  4. Do you have a specific order in which you want the categories to be displayed
+  on the x-axis?
+
+  5. Would you like any particular styling for the axes titles and labels (e.g., font
+  size, font color)?
+
+  6. Is there any specific way you want the data comparisons to be grouped or categorized?
+
+  7. Do you have preferences for the overall layout and design of the chart (e.g.,
+  gridlines, background color)?
+
+  8. Are there any other variables or data points that you would like to include or
+  emphasize besides the specified ones?
+
+  9. Would you like a specific title and subtitle for the chart? If so, what should
+  they be?
+
+  10. Are there any other specific visual elements or annotations you would like to
+  include on the chart?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, use 240 mg/dL for high cholesterol and 140 mmHg for high resting blood pressure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. No, just ''age'', ''cholesterol'', and ''max heart rate''.
+
+  9. Title: "Risk Factors for Heart Disease", Subtitle: "Analysis of Age, Cholesterol,
+  and Max Heart Rate"
+
+  10. I do not know.
+
+  <end of user response>'
+data_attributes:
+- age
+- cholesterol
+- max heart rate
+- resting bp s
+- target

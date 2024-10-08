@@ -1,0 +1,56 @@
+initial_prompt: Create a stacked column chart to visualize the top 1000 YouTube channels.
+  The x-axis should represent the Youtubers, and the y-axis should display the number
+  of Subscribers. Each column should be divided by Category. The colors in the stacks
+  should represent different Categories like Entertainment, Music, Film & Animation,
+  etc. Ensure to make the chart interactive, allowing us to see detailed numbers when
+  hovering over the stacks. Use this to compare the popularity of different Categories
+  across the top channels. Include data labels for Subscribers to make the chart more
+  informative.
+questions: '1. Do you have a preferred color palette for the different Categories?
+
+  2. How would you like the Youtubers to be sorted on the x-axis (e.g., by the number
+  of Subscribers, alphabetically)?
+
+  3. Would you prefer to have gridlines on the chart for better readability, or should
+  they be minimal?
+
+  4. Do you have a preference for the font style and size of the data labels and axis
+  labels?
+
+  5. Would you like to include a legend to explain the colors representing each Category?
+
+  6. Do you want to display the exact number of Subscribers on the chart, or would
+  rounded numbers (e.g., in millions) be sufficient?
+
+  7. How much spacing would you prefer between the columns on the x-axis?
+
+  8. Should the chart include any annotations or notes to highlight significant points
+  or trends?
+
+  9. Would you like to set a specific range for the y-axis, or should it be adjusted
+  based on the data?
+
+  10. Is there a preferred background color or theme (e.g., light, dark) for the chart?'
+answers: '1. I do not know.
+
+  2. By the number of Subscribers.
+
+  3. Minimal.
+
+  4. I am not sure.
+
+  5. Yes, include a legend.
+
+  6. Display the exact number of Subscribers.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. It should be adjusted based on the data.
+
+  10. Light theme.'
+data_attributes:
+- Youtuber
+- Subscribers
+- Category

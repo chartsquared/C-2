@@ -1,0 +1,59 @@
+initial_prompt: Create a box chart visualizing the distribution of hotel categories
+  across different cities from the provided Hotels in India dataset (2023). Focus
+  on showcasing the variability and concentration of total rooms within each category.
+  Highlight any outliers and ensure the cities are clearly labeled for better understanding.
+  The chart should also include a comparison between cities with and without listed
+  alcohol availability, and highlight the number of unique hotels. Ensure the start
+  and expiry dates are not included as they are not relevant for this visualization.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like to display the number of unique hotels as an additional label
+  or annotation on the chart?
+
+  3. How would you prefer the categories within the cities to be ordered (e.g., alphabetically,
+  by the number of rooms, etc.)?
+
+  4. Should the outliers be highlighted with a specific shape or color? If yes, do
+  you have any preference?
+
+  5. Do you want any specific font styles or sizes for the city labels and category
+  labels?
+
+  6. Would you like a legend that distinguishes cities with and without alcohol availability
+  through a specific marker or color?
+
+  7. Should the box charts for cities be displayed horizontally or vertically?
+
+  8. Do you have a preference for the scale of the y-axis (e.g., linear, logarithmic)?
+
+  9. Are there any specific annotations or notes you would like to include on the
+  chart to emphasize certain points or findings?
+
+  10. Do you have a preference for the overall layout (e.g., single chart or multiple
+  subplots for each city)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to display the number of unique hotels as an additional label.
+
+  3. Alphabetically.
+
+  4. Yes, please use a different shape for outliers, like a diamond.
+
+  5. I don''t have a specific preference.
+
+  6. Yes, a legend distinguishing cities with and without alcohol availability would
+  be great.
+
+  7. Vertically.
+
+  8. Linear scale for the y-axis.
+
+  9. I don''t have any specific annotations or notes in mind.
+
+  10. A single chart would be preferable.'
+data_attributes:
+- City
+- Category
+- Total Rooms
+- Alcohol
+- Hotel Name

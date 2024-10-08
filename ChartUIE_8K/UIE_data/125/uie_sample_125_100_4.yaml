@@ -1,0 +1,52 @@
+initial_prompt: I'd like to create a bubble chart to visualize the Pima Indians Diabetes
+  Database. Please plot BMI on the x-axis and Glucose on the y-axis. The bubble sizes
+  should represent the Age of the individuals, and the bubble colors should indicate
+  the Outcome (0 for non-diabetic and 1 for diabetic). Make sure to label the axes
+  accordingly and provide a legend for the bubble sizes and colors. Also, please ensure
+  that the chart is clear and easy to interpret for a health-focused audience. Thank
+  you!
+questions: '1. Do you have a preference for the scale of the axes (linear or logarithmic)?
+
+  2. Do you have any specific color preferences for indicating the Outcome categories?
+
+  3. What range of values should the bubble sizes cover for the Age attribute?
+
+  4. Would you like to include gridlines on the chart?
+
+  5. Is there a specific font style or size you prefer for the axis labels and legend?
+
+  6. Do you want to display data point labels directly on the bubbles?
+
+  7. Should the chart have a title? If so, do you have a preferred title?
+
+  8. Are there specific limits you would like to set for the x-axis or y-axis?
+
+  9. Do you prefer a particular format for the legend (horizontal or vertical)?
+
+  10. Do you want to include any reference lines on the chart (e.g., average lines
+  for BMI or Glucose)?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific color preferences.
+
+  3. I am not sure.
+
+  4. Yes, I would like to include gridlines on the chart.
+
+  5. I have no specific preference for font style or size.
+
+  6. No, I do not want data point labels directly on the bubbles.
+
+  7. Yes, the chart should have a title. The preferred title is "BMI vs Glucose Levels
+  with Age and Diabetes Outcome".
+
+  8. I do not know.
+
+  9. I prefer a vertical format for the legend.
+
+  10. No, I do not want to include any reference lines on the chart.'
+data_attributes:
+- BMI
+- Glucose
+- Age
+- Outcome

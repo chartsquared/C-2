@@ -1,0 +1,54 @@
+initial_prompt: 'Please create a bar chart visualizing the Bitcoin data from 9th-Apr-2014
+  to 30th-Dec-2022. I would like the chart to show the monthly average of the key
+  metrics: priceUSD, size, transactions, mining_profitability, marketcap, and transactionvalue.
+  This will help me see trends over the years for these specific metrics. Thank you!'
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be stacked or placed side-by-side?
+
+  3. Should each metric have its own axis, or should they share a common axis?
+
+  4. Do you want gridlines to be shown on the chart?
+
+  5. Are there specific labels or annotations you would like included on the chart?
+
+  6. How would you like the metrics to be ordered in the chart (e.g., in a specific
+  sequence or sorted by value)?
+
+  7. Do you want the date labels to show every month, or should they be spaced out
+  to avoid clutter?
+
+  8. Would you prefer a specific font style or size for the text in the chart?
+
+  9. Should the chart include a title and a legend, and if so, what should they say?
+
+  10. Is there a specific format you prefer for displaying dates on the x-axis (e.g.,
+  ''MMM YYYY'')?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, please include gridlines.
+
+  5. I do not have any specific labels or annotations in mind.
+
+  6. I am not sure.
+
+  7. Please space out the date labels to avoid clutter.
+
+  8. I do not know.
+
+  9. Yes, please include a title and a legend. The title can be "Bitcoin Monthly Averages
+  (Apr 2014 - Dec 2022)" and the legend should identify each metric.
+
+  10. ''MMM YYYY'' format for the dates would be great.'
+data_attributes:
+- Date
+- priceUSD
+- size
+- transactions
+- mining_profitability
+- marketcap
+- transactionvalue

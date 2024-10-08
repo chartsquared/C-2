@@ -1,0 +1,47 @@
+initial_prompt: Please create a violin plot for the Pima Indians Diabetes Database.
+  The plot should visualize the distribution of ‘BMI’ across different ‘Outcome’ values
+  (0 and 1). Include text annotations for significant data points, such as the median
+  and quartiles, to highlight key insights. Use highlights to distinguish between
+  the BMI distributions for those with diabetes (Outcome=1) and those without (Outcome=0).
+  The purpose of this visualization is to examine the variation and spread of BMI
+  values and understand their relationship with diabetes outcomes.
+questions: '1. Do you have any preferred color schemes for distinguishing between
+  BMI distributions of the two outcome groups (diabetes and no diabetes)?
+
+  2. Would you like the plot to include grid lines for easier interpretation of the
+  data?
+
+  3. Do you have any specific preferences for the style or size of the text annotations
+  for significant data points?
+
+  4. Should the plot have a particular title or subtitle? If so, please specify.
+
+  5. Do you have a preference for the font style or size for the axis labels and title?
+
+  6. Would you like additional information, such as the sample size for each group,
+  to be included in the plot?
+
+  7. Is there any preference for the positioning of the legend?
+
+  8. Do you want the plot to follow a specific layout or sizing constraints (e.g.,
+  aspect ratio, width, height)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the plot to include grid lines for easier interpretation of
+  the data.
+
+  3. I do not have any specific preference.
+
+  4. Yes, the title should be "Distribution of BMI Across Diabetes Outcomes" and the
+  subtitle could be "Pima Indians Diabetes Database".
+
+  5. I do not know.
+
+  6. Yes, please include the sample size for each group.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- BMI
+- Outcome

@@ -1,0 +1,47 @@
+initial_prompt: Create a scatter plot to visualize IMDB votes per episode of a TV
+  show, with seasons and episodes on the x-axis and total votes on the y-axis. Highlight
+  episodes with the highest and lowest ratings. Annotate the top five episodes based
+  on user votes.
+questions: '1. Do you have any specific color preferences for highlighting the highest
+  and lowest-rated episodes?
+
+  2. How would you prefer the top five episodes to be annotated (e.g., episode title,
+  rating, or a combination)?
+
+  3. Do you have a preferred style for the scatter plot points (e.g., shape, size)?
+
+  4. Should the x-axis display seasons and episodes as a continuous range or distinct
+  categories?
+
+  5. Do you want a legend included in the chart, and if so, what details should it
+  include?
+
+  6. Do you prefer any specific font styles or sizes for the annotations?
+
+  7. Would you like grid lines on the chart, and if so, should they be more prominent
+  for certain axis intervals?
+
+  8. Do you have specific preferences for axis labels'' format (e.g., "Season 1, Episode
+  1" vs "S1E1")?'
+answers: '1. I am not sure.
+
+  2. I think a combination of episode title and rating would be good.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, a legend would be helpful. It should include details about the highest and
+  lowest-rated episodes.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. "S1E1" format would be good.'
+data_attributes:
+- season
+- episode
+- total_votes
+- imdb_rating
+- title

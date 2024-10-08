@@ -1,0 +1,47 @@
+initial_prompt: 'I need a grouped column chart visualizing the top 3 YouTubers by
+  ''subscribers'' and ''video views''. Highlight ''subscribers'', ''video views'',
+  and ''video_views_for_the_last_30_days'' for each Youtuber. Include data from ''category''
+  and ''Country'' to differentiate groups. Title the chart "Top YouTubers Statistics
+  2023". Use different colors for each Youtuber and respective metrics for clarity.
+  Ensure all labels are clear for easy understanding. Include a legend and axis titles
+  for completeness. Reference: Global YouTube Statistics 2023 and ../Extra_datas/data/81.csv.'
+questions: '1. What color scheme do you prefer for differentiating between YouTubers
+  and metrics?
+
+  2. Do you have any specific font preferences for the labels and titles?
+
+  3. How would you like the Youtubers to be ordered in the grouped column chart?
+
+  4. Are there any particular styles or themes you would like the chart to have?
+
+  5. Do you prefer particular shapes or styles for the data markers/columns?
+
+  6. Would you like the data values to be displayed on top of the columns?
+
+  7. Do you have specific preferences for the axis gridlines (e.g. no gridlines, light
+  gridlines)?
+
+  8. How detailed should the legend be? Should it include individual metrics or just
+  Youtuber names?
+
+  9. Do you prefer to highlight any specific data points differently?
+
+  10. Should we use any annotations or call-out boxes to provide additional context
+  for certain values?
+
+  11. Would you prefer a specific design for the axis labels or titles, such as bold
+  or italic text?'
+answers: "<start of user emulated response>\n1. I am not sure.\n2. I do not have any\
+  \ specific font preferences.\n3. I am not sure. \n4. I do not know.\n5. I do not\
+  \ have any specific preferences.\n6. Yes, please display the data values on top\
+  \ of the columns.\n7. Light gridlines would be great.\n8. The legend should include\
+  \ individual metrics and the YouTuber names.\n9. No, I do not have specific data\
+  \ points to be highlighted differently.\n10. I am not sure.\n11. I do not have a\
+  \ preference for the axis labels or titles design.\n<end of user emulated response>"
+data_attributes:
+- Youtuber
+- subscribers
+- video views
+- video_views_for_the_last_30_days
+- category
+- Country

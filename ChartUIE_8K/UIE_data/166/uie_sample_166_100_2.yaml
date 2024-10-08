@@ -1,0 +1,46 @@
+initial_prompt: Please create a box chart that visualizes the distribution of 'Age'
+  across different diseases in the health data. Highlight outliers and significant
+  trends in age distributions for diseases like 'Influenza' and 'Common Cold.' Use
+  shapes to mark the median and interquartile ranges. Emphasize differences in age
+  distribution between 'Positive' and 'Negative' outcomes, possibly using different
+  colors or sizes. Include annotations to note key differences and interesting patterns
+  in the age data. This will help in understanding age-related trends and outcomes
+  for different diseases. Thank you!
+questions: "1. Do you have a preferred color scheme or specific colors you would like\
+  \ to use for the 'Positive' and 'Negative' outcomes?\n2. Are there any specific\
+  \ shapes you would prefer to use for marking the median and interquartile ranges?\n\
+  3. Would you like any specific style or format for the annotations highlighting\
+  \ key differences and interesting patterns?\n4. Do you have a preference for the\
+  \ chart's orientation (vertical or horizontal box plots)?\n5. Is there a particular\
+  \ font style or size you would prefer for the axis labels and annotations?\n6. Should\
+  \ the chart include a legend for clarity, and if so, how would you like it to be\
+  \ positioned?\n7. Would you like grid lines included in the chart, and if so, at\
+  \ what intervals? \n8. Are there any specific diseases, other than 'Influenza' and\
+  \ 'Common Cold,' that you want to focus on or include in the visualization?\n9.\
+  \ Do you have a preference for the chart's background color or style (plain, gradient,\
+  \ etc.)?\n10. Would you need any specific information included in the tooltip when\
+  \ hovering over the data points?"
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure about the style, but the annotations should clearly highlight key
+  differences and interesting patterns.
+
+  4. Vertical box plots would be preferred.
+
+  5. I have no specific preference for font style or size.
+
+  6. Yes, a legend would be useful. Please position it at the bottom.
+
+  7. I am not sure about the intervals, but grid lines should be included.
+
+  8. I have no specific preference for additional diseases.
+
+  9. A plain background color will be fine.
+
+  10. I do not need specific information in the tooltip.'
+data_attributes:
+- Age
+- Disease
+- Outcome Variable

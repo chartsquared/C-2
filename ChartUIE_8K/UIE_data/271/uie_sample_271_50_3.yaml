@@ -1,0 +1,46 @@
+initial_prompt: Create a stacked bar chart showing the number of flights ('cnt') for
+  each combination of 'airport1' and 'airport2' for the airline 'AA'.
+questions: '1. What color scheme or palette would you prefer for the different combinations
+  of ''airport1'' and ''airport2'' in the stacked bar chart?
+
+  2. Do you have a preferred order for stacking the counts of ''cnt'' in the bar chart?
+
+  3. Would you like to add data labels to show the exact number of flights (''cnt'')
+  on each segment of the stacked bars?
+
+  4. Is there a specific way you would like the axes to be labeled or formatted?
+
+  5. Do you want to set a specific range or scale for the y-axis?
+
+  6. Would you prefer any specific fonts or styles for the text elements in the chart?
+
+  7. Do you need a legend, and if so, do you have a preference for its placement on
+  the chart?
+
+  8. Would you like to include any titles or subtitles on the chart? If so, what should
+  they be?
+
+  9. Do you need grid lines or any reference lines on the chart to aid in comparison?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to add data labels to show the exact number of flights (''cnt'')
+  on each segment of the stacked bars.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, I need a legend, but I have no preference for its placement.
+
+  8. Yes, the title should be "Number of Flights (''cnt'') for Each Combination of
+  ''airport1'' and ''airport2'' for Airline ''AA''".
+
+  9. I am not sure.'
+data_attributes:
+- airport1
+- airport2
+- cnt

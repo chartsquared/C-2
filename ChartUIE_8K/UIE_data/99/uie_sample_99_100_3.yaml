@@ -1,0 +1,39 @@
+initial_prompt: Please create a Choropleth map that visualizes the geographic distribution
+  of the top 1000 YouTubers based on their countries. Use the 'Country' and 'Suscribers'
+  columns to show the total number of subscribers per country. Please make sure to
+  use a color gradient to indicate the varying subscriber counts, with higher counts
+  represented by darker colors. Provide interactive tooltips that display the exact
+  subscriber numbers when hovering over each country. The map should be easy to read
+  with clear legends and labels. Thank you!
+questions: '1. Do you have a preferred color palette for the gradient that represents
+  subscriber counts?
+
+  2. Is there a specific style or format you prefer for the map''s legend and labels?
+
+  3. Should certain countries or regions be highlighted or emphasized in any way?
+
+  4. Do you prefer any particular map projection (e.g., Mercator, Robinson)?
+
+  5. Are there any specific thresholds or ranges you would like to be defined for
+  the color gradients?
+
+  6. Do you have any preferences regarding the geographical boundaries, such as including
+  or excluding certain territories or regions?
+
+  7. Is there any specific font style or size you would like for the text in the map?'
+answers: '1. I am not sure, but a blue gradient might be nice.
+
+  2. I do not know, as long as they are clear and easy to read.
+
+  3. I do not know.
+
+  4. I am not sure, maybe Mercator?
+
+  5. I do not know.
+
+  6. I do not know, standard world map boundaries would be fine.
+
+  7. I do not know, whatever looks good and readable will work.'
+data_attributes:
+- Country
+- Suscribers

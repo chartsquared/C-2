@@ -1,0 +1,49 @@
+initial_prompt: Please create a dot plot visualizing sales amounts by order date,
+  differentiated by product line. Include days since last order as the dot size.
+questions: '1. What color scheme would you prefer for differentiating product lines?
+
+  2. Do you have a preference for the date format on the x-axis?
+
+  3. Would you like grid lines to be included in the plot for easier reading?
+
+  4. Should the dots have any specific style (e.g., filled, outlined)?
+
+  5. Do you prefer any specific labels or annotations on the dots?
+
+  6. Is there a particular order or grouping for the product lines you would like
+  to see?
+
+  7. Do you have any preferences regarding the axis labels and titles?
+
+  8. How would you like to handle overlapping dots, if any occur (e.g., jittering,
+  transparency adjustments)?
+
+  9. Would you prefer to see a legend for the dot sizes, indicating days since the
+  last order?
+
+  10. Should there be any additional filters or segments in the visualization (e.g.,
+  by region or sales status)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, I would like grid lines included.
+
+  4. I have no specific preference.
+
+  5. No, I do not prefer specific labels or annotations on the dots.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I prefer transparency adjustments for handling overlapping dots.
+
+  9. Yes, I would prefer to see a legend for the dot sizes.
+
+  10. I am not sure.'
+data_attributes:
+- SALES
+- ORDERDATE
+- PRODUCTLINE
+- DAYS_SINCE_LASTORDER

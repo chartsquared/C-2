@@ -1,0 +1,49 @@
+initial_prompt: Please create a line chart using the "ECG of Cardiac Ailments Dataset".
+  The chart should plot the 'RECORD' on the x-axis to represent the record number,
+  and 'hbpermin' on the y-axis for the heartbeat per minute. Additionally, plot 'QTseg'
+  and 'STseg' on the second y-axis to show the QT and ST segments over the same 'RECORD'
+  values. Include a legend to differentiate the three lines. This will help in analyzing
+  the heartbeat variations and ECG segment durations together over different records.
+questions: '1. Do you have a preferred color scheme for the three lines representing
+  ''hbpermin'', ''QTseg'', and ''STseg''?
+
+  2. Would you like to set specific ranges for either of the y-axes?
+
+  3. Do you have any preferences for the line styles (e.g., solid, dashed, dotted)
+  for each data attribute?
+
+  4. Is there a particular title you would like for the chart?
+
+  5. Do you prefer any specific font styles and sizes for the title and legends?
+
+  6. Should gridlines be included in the chart, and if so, do you have a preference
+  for their style and color?
+
+  7. Would you like to annotate any specific points or patterns in the data? If so,
+  please specify.
+
+  8. Are there any specific labels or notes you want to include on the axes?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Solid for ''hbpermin'', dashed for ''QTseg'', and dotted for ''STseg''.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, include gridlines. I do not have a preference for the style and color.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- RECORD
+- hbpermin
+- QTseg
+- STseg

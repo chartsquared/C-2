@@ -1,0 +1,64 @@
+initial_prompt: Please create a heatmap to visualize the relationships between different
+  features in the breast cancer dataset. The features include measurements like radius,
+  texture, perimeter, area, smoothness, and more. Use color intensity to indicate
+  the strength of the correlation between these features. The goal is to identify
+  patterns and significant correlations that could help understand the factors associated
+  with breast cancer diagnosis. Ensure the heatmap is clearly labeled and easy to
+  interpret for medical professionals and researchers involved in breast cancer analysis.
+  Thank you!
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. Would you prefer a specific range of colors to represent low and high correlations?
+
+  3. Should negative correlations be highlighted differently from positive correlations?
+
+  4. Do you have a preferred color for the background of the heatmap?
+
+  5. Is there a particular font style or size you prefer for labels and annotations?
+
+  6. Would you like to include annotations that show the exact correlation values
+  on the heatmap?
+
+  7. Is there a preferred layout or aspect ratio for the heatmap that would be most
+  useful for your audience?
+
+  8. Do you have a preference for how the heatmap should handle missing values, if
+  any?
+
+  9. Are there any specific features you want to be emphasized or highlighted in the
+  heatmap?
+
+  10. Would you like to include gridlines or borders within the cells of the heatmap
+  for better separation of values?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Yes, negative correlations should be highlighted differently from positive correlations.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please include annotations that show the exact correlation values on the
+  heatmap.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. No specific features need to be emphasized.
+
+  10. Yes, please include gridlines or borders within the cells of the heatmap for
+  better separation of values.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave points_mean
+- symmetry_mean
+- fractal_dimension_mean

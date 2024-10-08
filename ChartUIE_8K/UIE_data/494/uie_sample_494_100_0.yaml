@@ -1,0 +1,52 @@
+initial_prompt: Please create a scatter plot using the given dataset. The x-axis should
+  represent "time," while the y-axis should display "signal1" and "signal2" on the
+  same plot but distinguished by different colors and markers. Highlight the points
+  where "signal1" exceeds 1.5 with larger, bolder markers to emphasize them. Additionally,
+  include trend lines for both "signal1" and "signal2" to visualize their overall
+  trends. Use shape annotations, such as arrows, to pinpoint significant peaks and
+  troughs in the signals. The purpose is to analyze the time-series data and identify
+  key moments in signal behavior.
+questions: '1. Do you have any specific colors in mind for distinguishing "signal1"
+  and "signal2"?
+
+  2. Are there preferred markers you would like for "signal1" and "signal2" data points?
+
+  3. What color and size do you prefer for the larger, bolder markers for "signal1"
+  points that exceed 1.5?
+
+  4. Do you have any particular style preferences for the trend lines (e.g., dashed,
+  solid)?
+
+  5. Are there specific colors or styles you would like for the trend lines of "signal1"
+  and "signal2"?
+
+  6. What shape annotations (e.g., arrows) and colors do you prefer for pinpointing
+  significant peaks and troughs in the signals?
+
+  7. Do you have any preferences for the chart''s background color or gridline style?
+
+  8. Are there any specific title or axis label fonts and sizes you would prefer for
+  the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. I prefer red color and larger size.
+
+  4. Solid trend lines would be preferred.
+
+  5. I do not have a specific preference.
+
+  6. Arrows in blue color would be great.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- time
+- signal1
+- signal2

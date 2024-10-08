@@ -1,0 +1,58 @@
+initial_prompt: Create a scatter plot using the water quality dataset. On the x-axis,
+  plot the 'Conductivity' values, and on the y-axis, plot the 'ph' values. Use different
+  colors to represent the 'Potability' column, where one color indicates potable water
+  (Potability=1) and another color indicates non-potable water (Potability=0). Ensure
+  missing values are handled appropriately, so they do not appear on the chart. Title
+  the chart "Water Conductivity vs pH Levels by Potability". This will help visualize
+  if there is any correlation between conductivity and pH levels in determining water
+  potability.
+questions: '1. Do you have any specific color preferences for representing potable
+  and non-potable water?
+
+  2. Would you like grid lines on the chart for better readability?
+
+  3. Do you prefer any particular font type and size for the chart title and axis
+  labels?
+
+  4. How would you like to handle missing values? Should they be omitted or filled
+  using a specific method?
+
+  5. Should the axis scales be linear or logarithmic?
+
+  6. Do you want to include data point markers and, if so, any specific marker style
+  or shape preferences?
+
+  7. Do you have any specific preferences for the background color or theme of the
+  chart?
+
+  8. Would you like to include a legend in a specific location or with a particular
+  style?
+
+  9. Is there a need for tooltips or data labels for individual points on the scatter
+  plot?
+
+  10. Are there any specific axis ranges or limits you want to set for the x-axis
+  (Conductivity) and y-axis (ph)?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Omit the missing values.
+
+  5. Linear scale for both axes.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, please include a legend.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- Conductivity
+- ph
+- Potability

@@ -1,0 +1,62 @@
+initial_prompt: Create a heatmap using the Crop Recommendation Dataset. The heatmap
+  should visualize the relationship between the various nutrients (N, P, K), temperature,
+  humidity, pH, and rainfall with the crop labels. This will help identify optimal
+  conditions for each type of crop. Use text annotations to highlight specific data
+  points like maximum, minimum values, or any anomalies. Apply highlights where necessary
+  to distinguish critical values or patterns, ensuring they stand out for easier interpretation.
+  This visualization will aid farmers in understanding the best conditions for different
+  crops, enhancing agricultural decision-making.
+questions: '1. Do you have a preference for the color scheme of the heatmap?
+
+  2. Should the heatmap use a gradient or discrete colors to represent different ranges
+  of values?
+
+  3. Are there specific crops or nutrients you want to focus on?
+
+  4. Would you like the heatmap to display grid lines for better separation of cells?
+
+  5. Should the text annotations for maximum, minimum values, and anomalies be highlighted
+  in a specific color or format?
+
+  6. Do you have a specific preference for the font style or size for annotations
+  and labels?
+
+  7. Should the heatmap have a legend explaining the color gradients or discrete colors
+  used?
+
+  8. Would you like to include axis labels and titles for better understanding?
+
+  9. Do you prefer a particular layout for the heatmap (e.g., vertical or horizontal
+  orientation)?
+
+  10. Are there any specific critical values or patterns you want to ensure are highlighted
+  distinctly?'
+answers: '1. I am not sure.
+
+  2. I prefer a gradient to represent different ranges of values.
+
+  3. I do not have specific crops or nutrients to focus on.
+
+  4. Yes, the heatmap should display grid lines for better separation of cells.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, the heatmap should have a legend explaining the color gradients or discrete
+  colors used.
+
+  8. Yes, please include axis labels and titles for better understanding.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- N
+- P
+- K
+- temperature
+- humidity
+- ph
+- rainfall
+- label

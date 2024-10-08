@@ -1,0 +1,54 @@
+initial_prompt: Please create a geographic heatmap that shows the percentage of votes
+  each political party received across different areas. Use the 'Area' data along
+  with the percentage columns ('CON(%)', 'LAB(%)', 'LIB(%)', 'Brexit(%)', 'Green(%)',
+  'NAT(%)', 'MIN(%)', 'OTH(%)'). Highlight areas by the political party with the highest
+  percentage of votes. Each area should be easily distinguishable on the map, and
+  there should be a legend to indicate which color represents which party. This will
+  help visualize regional voting patterns.
+questions: '1. Do you have any specific color preferences for each political party?
+
+  2. Are there any particular geographic regions you want to emphasize?
+
+  3. What level of granularity would you prefer for the geographic areas (e.g., town,
+  city, district)?
+
+  4. Would you like to include any annotations or labels on the map?
+
+  5. Is there a particular map projection you prefer?
+
+  6. Do you have a preference for the map''s background style (e.g., plain, terrain,
+  satellite)?
+
+  7. Should the legend be placed at a specific part of the map (e.g., top-right, bottom-left)?
+
+  8. Do you want to display the exact percentage values on the map?
+
+  9. Are there any additional layers or contextual information you would like to overlay
+  on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. District level granularity is preferred.
+
+  4. Yes, please include labels with the area names.
+
+  5. I am not sure.
+
+  6. A plain background style is preferred.
+
+  7. I do not have a specific preference for the legend placement.
+
+  8. No, the exact percentage values do not need to be displayed.
+
+  9. No, no additional layers or contextual information are needed.'
+data_attributes:
+- Area
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)

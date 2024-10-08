@@ -1,0 +1,69 @@
+initial_prompt: Please create a table chart that visualizes TV shows available on
+  Netflix, Prime Video, Hulu, and Disney+. Include columns for the show title, year
+  of release, age rating, IMDb rating, and Rotten Tomatoes score. Highlight the streaming
+  platforms where each show is available using binary indicators (1 for available,
+  0 for not available). Ensure the table also shows the count of missing values for
+  each rating category (IMDb and Rotten Tomatoes) as well as the unique values in
+  the age and year columns. This will help in understanding data distribution and
+  platform availability comprehensively.
+questions: '1. Do you have a preferred sorting order for the rows (e.g., by year,
+  IMDb rating)?
+
+  2. Are there any specific colors you would like to use for highlighting the availability
+  on different streaming platforms?
+
+  3. How would you like the binary indicators for availability (1 for available, 0
+  for not available) to be displayed (e.g., checkmarks, colored cells)?
+
+  4. Do you prefer any specific layout for the table, such as alternating row colors
+  for better readability?
+
+  5. Is there a particular font or font size you would prefer for the table content?
+
+  6. Would you like the table to include any summary statistics, such as the total
+  number of shows available on each platform?
+
+  7. Do you prefer to have the count of missing values shown as a separate row or
+  integrated into the column headers?
+
+  8. How would you like the unique values in the age and year columns to be displayed
+  (e.g., in a tooltip, at the bottom of the table)?
+
+  9. Are there any specific column widths or alignment preferences you have for the
+  table chart?
+
+  10. Do you want any additional descriptive information or footnotes included in
+  the table?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer colored cells for the binary indicators.
+
+  4. Yes, alternating row colors for better readability.
+
+  5. I have no specific preference.
+
+  6. Yes, including summary statistics would be helpful.
+
+  7. Separate row for the count of missing values.
+
+  8. At the bottom of the table.
+
+  9. I am not sure.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Title
+- Year
+- Age
+- IMDb
+- Rotten Tomatoes
+- Netflix
+- Hulu
+- Prime Video
+- Disney+

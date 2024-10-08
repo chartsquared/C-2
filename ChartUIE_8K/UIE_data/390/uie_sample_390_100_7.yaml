@@ -1,0 +1,48 @@
+initial_prompt: Create a scatter plot to visualize the Company Collaboration Network.
+  Use 'id' on the x-axis and 'weight' on the y-axis to show the relationships between
+  different nodes based on the provided data. Group each point by the 'group' variable
+  to distinguish between departments, and color-code them accordingly. Include data
+  points for 'Alice,' 'Bob,' and 'Charlie' in the marketing group, ensuring missing
+  values are handled appropriately. Lastly, label each point with the corresponding
+  'name' to easily identify individuals within the scatter plot. Highlight connection
+  sources and targets if pertinent.
+questions: '1. Do you have any specific preference for the color palette used to represent
+  different groups?
+
+  2. How would you like missing values to be represented in the scatter plot?
+
+  3. Do you prefer any specific labeling style for the data points'' names?
+
+  4. Should the axes have specific ranges or scales (e.g., linear, logarithmic)?
+
+  5. Would you like grid lines to be included in the scatter plot?
+
+  6. Do you need a legend to be included, and if so, where should it be positioned?
+
+  7. Would you like any specific markers or shapes for the different groups?
+
+  8. Should the connection sources and targets be highlighted in a particular style?
+
+  9. Do you have a preference for the font style and size for the labels and titles?'
+answers: '1. I do not know.
+
+  2. I am not sure, just handle them appropriately.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. Yes, please include grid lines.
+
+  6. Yes, include a legend. I am not sure where it should be positioned.
+
+  7. I do not know.
+
+  8. I do not have a specific preference.
+
+  9. I do not know.'
+data_attributes:
+- id
+- weight
+- group
+- name

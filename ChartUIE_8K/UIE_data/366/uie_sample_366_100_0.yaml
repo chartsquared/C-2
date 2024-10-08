@@ -1,0 +1,54 @@
+initial_prompt: "Create a grouped bar chart visualizing the number of subscribers\
+  \ and reviews for each course in the Business Finance subject on Udemy. Highlight\
+  \ the courses that have over 2000 subscribers to distinguish their popularity. Add\
+  \ annotations showing the exact number of subscribers and reviews for these highlighted\
+  \ courses. The chart helps visualize the relationship between the number of subscribers\
+  \ and the number of reviews for each course. This will aid in identifying which\
+  \ courses are not only popular but also receive significant feedback, hence indicating\
+  \ quality. \n\n"
+questions: '1. Do you have a specific color preference for highlighting courses with
+  over 2000 subscribers?
+
+  2. Would you prefer vertical or horizontal bars for the grouped bar chart?
+
+  3. Should the annotations be inside or outside the bars?
+
+  4. Do you have any specific font preferences for the annotations?
+
+  5. How would you like to label the axes (specifically the x-axis and y-axis)?
+
+  6. Do you prefer any specific style or theme for the chart? (e.g., modern, classic,
+  minimalist)
+
+  7. Should the chart include gridlines for better readability?
+
+  8. Would you like to add a legend to differentiate between subscribers and reviews?
+
+  9. Do you have any preferences for the background color of the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color preference for highlighting courses with over
+  2000 subscribers.
+
+  2. I would prefer vertical bars for the grouped bar chart.
+
+  3. I am not sure if the annotations should be inside or outside the bars.
+
+  4. I do not have any specific font preferences for the annotations.
+
+  5. Label the x-axis as "Courses" and the y-axis as "Count".
+
+  6. I do not have a specific preference for the style or theme of the chart.
+
+  7. Yes, the chart should include gridlines for better readability.
+
+  8. Yes, please add a legend to differentiate between subscribers and reviews.
+
+  9. I have no specific preference for the background color of the chart.
+
+  <end of user emulated response>'
+data_attributes:
+- course_title
+- num_subscribers
+- num_reviews
+- subject

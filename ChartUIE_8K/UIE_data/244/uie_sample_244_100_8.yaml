@@ -1,0 +1,51 @@
+initial_prompt: I have a dataset about world languages, including language, family,
+  region, speakers, writing system, and ISO code. I want to visualize the global distribution
+  and prevalence of these languages. Please create a geographic heatmap that highlights
+  the regions where these languages are spoken the most. The heatmap should use the
+  "Speakers" data to show intensity, with more speakers resulting in a higher intensity
+  color. Ensure that each region is clearly labeled, and the map indicates the family
+  to which each language belongs. Missing ISO code values should be left blank. Thanks!
+questions: '1. Are there any specific color schemes or palettes you prefer for the
+  heatmap to represent different intensities?
+
+  2. Do you have a preferred map projection or style (e.g., Mercator, Robinson)?
+
+  3. Should the map include country borders, labels, or any geographical landmarks
+  for context?
+
+  4. Would you like a legend or color scale to be included to indicate the intensity
+  levels of speakers?
+
+  5. Is there a preferred font or label style for the region names and language family
+  annotations?
+
+  6. Should the visualization highlight any specific languages or families, or should
+  all data points be treated equally?
+
+  7. Are there any specific regions or languages you want to emphasize or deemphasize
+  in the visualization?
+
+  8. Would you prefer a particular size or aspect ratio for the heatmap to accommodate
+  specific display or publication needs?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include country borders and labels for context.
+
+  4. Yes, a legend or color scale to indicate the intensity levels of speakers would
+  be helpful.
+
+  5. I do not have a specific preference.
+
+  6. All data points should be treated equally.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- Language
+- Family
+- Region
+- Speakers
+- ISO Code

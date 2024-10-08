@@ -1,0 +1,52 @@
+initial_prompt: '<start of user emulated instruction>
+
+  Please create a bar chart visualizing the average ''MEDV'' by ''CHAS'' from the
+  real estate data. Highlight the bars to show the difference between properties that
+  are adjacent to the Charles River and those that are not. Add annotations to emphasize
+  the data points. Thank you!
+
+  <end of user emulated instruction>'
+questions: '1. Do you have specific color preferences for the bars representing properties
+  adjacent to the Charles River and those that are not?
+
+  2. Would you prefer the bars to be horizontal or vertical?
+
+  3. Is there a particular font style or size you’d like for the annotations?
+
+  4. Do you have any preferences for the title and labeling of axes on the chart?
+
+  5. Would you like any specific type of gridlines or background for the chart?
+
+  6. Are there any specific styles or designs you prefer for the annotations? For
+  example, arrows, boxes, or circles?
+
+  7. Do you want the chart to include a legend identifying what the bars represent?
+
+  8. Would you like the average ''MEDV'' values to be displayed on top of the bars?
+
+  9. Do you have any preference for the overall chart theme or style (e.g., minimalistic,
+  colorful, professional)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I would prefer vertical bars.
+
+  3. I do not have a specific preference for font style or size for the annotations.
+
+  4. I''m not sure about the title and labeling of axes.
+
+  5. I am not sure.
+
+  6. I have no specific preference, maybe arrows or boxes.
+
+  7. Yes, include a legend identifying what the bars represent.
+
+  8. Yes, display the average ''MEDV'' values on top of the bars.
+
+  9. I prefer a professional style.
+
+  <end of user emulated response>'
+data_attributes:
+- CHAS
+- MEDV

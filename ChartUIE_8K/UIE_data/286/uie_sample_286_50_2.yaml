@@ -1,0 +1,58 @@
+initial_prompt: 'Create a line chart to visualize mean radius, perimeter, and area
+  over different IDs. Highlight IDs with unique diagnosis categories. Annotate the
+  highest and lowest values on the lines. Purpose: Track the progression and correlation
+  of these metrics in breast cancer diagnosis.'
+questions: '1. Do you have any specific color preferences for the lines representing
+  ''radius_mean'', ''perimeter_mean'', and ''area_mean''?
+
+  2. What format or style do you prefer for the highlighting of IDs with unique diagnosis
+  categories (e.g., different line styles, colors, or markers)?
+
+  3. Do you have a preferred style for annotating the highest and lowest values (e.g.,
+  specific symbols, text labels, or color codes)?
+
+  4. Would you like any specific labels or legends to be included on the chart?
+
+  5. Is there a particular font style or size you would prefer for the annotations
+  and labels?
+
+  6. Do you have any preferences for the background or grid lines of the chart to
+  improve readability?
+
+  7. Are there any specific dimensions or aspect ratios you would prefer for the line
+  chart to fit into your presentation or report?
+
+  8. Would you like to include a title or subtitle on the chart? If so, do you have
+  any specific text in mind?
+
+  9. Should the x-axis (IDs) be evenly spaced, or should the spacing represent actual
+  data intervals?
+
+  10. Do you prefer the y-axis to have a specific range or be automatically adjusted
+  based on the data?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Text labels for sure.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, the title should be "Tracking Progression and Correlation in Breast Cancer
+  Diagnosis".
+
+  9. I am not sure.
+
+  10. Automatically adjusted based on the data.'
+data_attributes:
+- id
+- diagnosis
+- radius_mean
+- perimeter_mean
+- area_mean

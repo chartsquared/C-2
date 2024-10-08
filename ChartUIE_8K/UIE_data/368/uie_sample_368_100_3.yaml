@@ -1,0 +1,61 @@
+initial_prompt: Please create a heatmap visualizing the correlation between different
+  age groups and suicide rates from the dataset "Suicide Rates Overview 1985 to 2016."
+  Focus on countries, years, and sexes to see how these factors influence the suicide
+  numbers across different generations. Highlight the "suicides/100k pop" to emphasize
+  rates normalized by population. Include color gradients where higher suicide rates
+  have warmer colors. Ensure to annotate missing data like 'HDI for year' distinctly.
+  The goal is to uncover patterns and risk factors linked with suicides across various
+  demographics and socio-economic contexts.
+questions: '1. Do you have a preferred color gradient for the heatmap other than the
+  default one?
+
+  2. How would you like the missing data for ''HDI for year'' to be annotated (e.g.,
+  a specific color or pattern)?
+
+  3. Do you want to include axis labels and titles? If yes, any specific text for
+  them?
+
+  4. Should we include a legend that explains the color gradient? If yes, where would
+  you like it positioned?
+
+  5. Would you like the data to be grouped by specific intervals for age or year?
+
+  6. Do you prefer any specific font style or size for annotations and labels?
+
+  7. Are there any specific countries, years, or sex categories you want to highlight
+  or focus on more than others?
+
+  8. Should we standardize the heatmap scale across all countries or allow it to vary
+  by country?
+
+  9. Are there any additional annotations or markings you''d like to include (e.g.,
+  trends, key statistics)?
+
+  10. Do you have any specific preferences for the chart’s layout or dimensions?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please include axis labels and titles. Title: "Correlation Between Age Groups
+  and Suicide Rates (1985 - 2016)", Y-axis: "Age Groups", X-axis: "Suicides/100k Pop".
+
+  4. Yes, please include a legend. I am not sure where to position it.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- country
+- year
+- sex
+- age
+- suicides/100k pop
+- HDI for year

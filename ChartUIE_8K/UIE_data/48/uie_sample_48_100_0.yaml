@@ -1,0 +1,63 @@
+initial_prompt: Create a heatmap visualizing the fluctuation of key indices related
+  to the semiconductor industry over time. Highlight areas with missing data using
+  different shades to draw attention. Include text annotations for crucial dates and
+  data points like significant spikes in import/export price indexes and employment
+  numbers. This visualization aims to understand the trends and issues relevant to
+  the semiconductor shortage, facilitating better insight for stakeholders in the
+  computers and technology sector. Ensure annotations provide context and highlight
+  the importance of each element.
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. How would you like the text annotations to be formatted (font size, color, etc.)?
+
+  3. Do you have specific dates or events that must be annotated?
+
+  4. Should the heatmap highlight only the missing data, or do you want to differentiate
+  between different types of missing data?
+
+  5. How granular should the time axis be (days, months, years)?
+
+  6. Do you have a preferred layout for the heatmap (e.g., vertical or horizontal
+  orientation)?
+
+  7. Is there a specific way you''d like to group or categorize the indices on the
+  heatmap?
+
+  8. Would you like a legend to explain the different shades of missing data?
+
+  9. Are there any specific indices you want to prioritize or highlight more prominently?
+
+  10. Should the heatmap include any gridlines or borders for better readability?'
+answers: '1. I don''t have a specific color palette preference.
+
+  2. I am not sure.
+
+  3. Yes, specific events like significant spikes in import/export price indexes and
+  changes in employment numbers should be annotated.
+
+  4. Highlight all missing data but differentiate between different types if possible.
+
+  5. The time axis should be granular by months.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. Yes, a legend to explain the different shades of missing data would be useful.
+
+  9. Prioritize import/export price indexes and employment numbers.
+
+  10. Yes, please include gridlines or borders for better readability.'
+data_attributes:
+- DATE
+- Producer Price Index(By Industry in $)
+- Export Price Index(End Use of semiconductors)
+- Import Price Index(in $ End Use of semiconductors)
+- No. of employed peoples in semiconductor industry
+- Export Price Index (End use excluding without semiconductors)
+- Relative Importance Weights (Contribution to the Total Industrial Production Index
+  % WISE)
+- 'Import Price Index (End Use): Capital Goods, Excluding Computers, Peripherals,
+  and Semiconductors'
+- 'Industrial Production: Non-Energy Excluding Motor Vehicles & Parts, Computers,
+  Communications Equipment, and Semiconductors'

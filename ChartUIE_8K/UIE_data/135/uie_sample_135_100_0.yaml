@@ -1,0 +1,53 @@
+initial_prompt: Create a box chart to visualize the Breast Cancer Wisconsin (Diagnostic)
+  Data. Focus on key attributes like 'radius_mean', 'texture_mean', and 'perimeter_mean'
+  for both malignant (M) and benign (B) diagnoses. Use text annotations to highlight
+  median values and relevant statistics. The purpose is to compare the central tendency
+  and variability of these attributes between different diagnoses to aid in understanding
+  patterns associated with breast cancer. Highlight outliers to bring attention to
+  anomalies. This chart will serve healthcare professionals in quickly identifying
+  significant features in breast cancer diagnostics.
+questions: '1. Do you have a preferred color scheme for distinguishing between malignant
+  and benign diagnoses?
+
+  2. Would you like gridlines to be included in the box chart for better readability?
+
+  3. Do you prefer vertical or horizontal orientation for the box chart?
+
+  4. Do you have any specific preferences for the positioning of text annotations?
+
+  5. Should the outliers be highlighted using specific symbols or colors?
+
+  6. Do you have any preferences for the scale or range of the y-axis?
+
+  7. Would you like to display the quartile ranges in a particular style or color?
+
+  8. Do you prefer the median values to be highlighted in a distinct manner?
+
+  9. Should the chart include a legend to explain the different elements?
+
+  10. Would you like to include any additional statistical information or notes on
+  the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, gridlines would be helpful.
+
+  3. I prefer vertical orientation.
+
+  4. I do not have any specific preference for the positioning of text annotations.
+
+  5. Yes, outliers should be highlighted using specific symbols or colors.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, please highlight the median values distinctly.
+
+  9. Yes, a legend would be useful.
+
+  10. No, I think the provided statistical information should be enough.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- diagnosis

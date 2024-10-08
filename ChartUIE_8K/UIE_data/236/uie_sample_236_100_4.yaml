@@ -1,0 +1,46 @@
+initial_prompt: I want an area chart visualizing the evolution of pop music popularity
+  over the years. Use data from the `popularity`, `year`, and `genre` columns, specifically
+  focusing on the pop genre from the dataset. Show how pop music has trended in popularity
+  from 1999-2000. The area chart should highlight changes year-over-year. Maybe you
+  could color different regions to represent varying levels of popularity. Finally,
+  make sure the chart is easy to read and understand for those not familiar with data
+  analysis.
+questions: '1. Do you have a preferred color palette for the different regions representing
+  varying levels of popularity?
+
+  2. Would you like to display the exact values of popularity on the chart, or just
+  focus on the trend?
+
+  3. Should the x-axis labels (representing years) be formatted in a specific way?
+
+  4. Do you prefer any specific font styles or sizes for the chart labels and titles
+  to ensure readability?
+
+  5. Would you like to add a legend to explain the color-coded regions of popularity
+  levels?
+
+  6. Is there a particular title or subtitle you would like at the top of the chart?
+
+  7. Should the chart have gridlines to aid in reading the values, or should it be
+  more minimalist in design?
+
+  8. How detailed do you want the y-axis (popularity) to be in terms of numeric intervals?'
+answers: '1. I do not know.
+
+  2. Just focus on the trend.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, please add a legend to explain the color-coded regions of popularity levels.
+
+  6. No specific title in mind.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- popularity
+- year
+- genre

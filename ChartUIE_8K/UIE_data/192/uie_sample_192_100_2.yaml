@@ -1,0 +1,48 @@
+initial_prompt: Create a bar chart visualizing the different star types from the dataset
+  highlighting their average temperature, luminosity, and radius. Include text annotations
+  displaying the average absolute magnitude for each star type to draw attention to
+  this specific metric. Use distinct colors for each star type to make them stand
+  out. This visualization will help compare and contrast the characteristics of different
+  star types, aiding in the prediction of star types based on given parameters. Add
+  a title called "Star Type Characteristics." Ensure the chart is clear and easy to
+  understand for space and astronomy enthusiasts.
+questions: '1. Do you have any preference for the color palette used for different
+  star types?
+
+  2. Would you like the bars to be grouped by star types or stacked?
+
+  3. How would you like the axes to be labeled or customized?
+
+  4. Are there any specific font preferences for the title and annotations?
+
+  5. Do you have any preference for the positioning of the text annotations displaying
+  average absolute magnitude?
+
+  6. Would you like to include any grid lines for better readability? If yes, horizontal,
+  vertical, or both?
+
+  7. Is there a specific format or precision for displaying numerical values (e.g.,
+  number of decimal places)?
+
+  8. Do you have any specific preference for the size or aspect ratio of the chart?'
+answers: '1. I do not have any specific preference.
+
+  2. I would prefer the bars to be grouped by star types.
+
+  3. I am not sure.
+
+  4. I do not have any specific preference.
+
+  5. I do not know.
+
+  6. Horizontal grid lines would be helpful for better readability.
+
+  7. I am not sure.
+
+  8. I do not have any specific preference.'
+data_attributes:
+- Temperature (K)
+- Luminosity(L/Lo)
+- Radius(R/Ro)
+- Absolute magnitude(Mv)
+- Star type

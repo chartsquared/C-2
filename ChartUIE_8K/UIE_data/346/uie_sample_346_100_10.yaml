@@ -1,0 +1,53 @@
+initial_prompt: Create a box chart visualizing the distribution of Global Sales of
+  video games for different genres. Use the data provided on video game sales, focusing
+  on how 'Global_Sales' varies among distinct 'Genre' categories. Ensure the chart
+  effectively showcases the range, median, and any potential outliers within each
+  genre to uncover which genres generally perform better globally. Highlight the 'Sports',
+  'Platform', and 'Racing' genres as samples, but include all other available genres
+  in the dataset for a comprehensive overview. The visualization should help identify
+  trends and variations in sales across game genres.
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Do you want specific genres to be highlighted in distinct colors?
+
+  3. Should we use different shapes or markers for outliers?
+
+  4. Do you have any preference for the axis labels and titles’ font style and size?
+
+  5. Would you like grid lines to be included or omitted in the chart for better readability?
+
+  6. Do you need any specific annotations or labels within the chart to emphasize
+  certain data points or statistics?
+
+  7. Should the chart include a legend explaining the different genres?
+
+  8. Do you prefer the chart to display any particular statistical measures beside
+  median and outliers (e.g., quartiles, minimum, maximum)?
+
+  9. Is there a specific order in which you’d like the genres to be arranged on the
+  chart (e.g., ascending global sales, alphabetical)?
+
+  10. Do you have a specific preference for the background color of the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please highlight the ''Sports'', ''Platform'', and ''Racing'' genres in
+  distinct colors.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please include a legend explaining the different genres.
+
+  8. No, just the median and outliers are fine.
+
+  9. I do not have a specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- Genre
+- Global_Sales

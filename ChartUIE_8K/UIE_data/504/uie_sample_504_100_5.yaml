@@ -1,0 +1,68 @@
+initial_prompt: Create a bubble chart to visualize the GNI (Gross National Income)
+  in PPP (current international $) and life expectancy at birth across different countries
+  (Korea, Rep., Kuwait, Kenya, Kore, Dem. People's Rep., Kiribati, Kazakhstan) over
+  time (2008-2010). Each bubble should represent a country-year data point. The x-axis
+  should show GNI values, the y-axis should show life expectancy, and the size of
+  the bubbles should correspond to the fertility rate. Use different colors for each
+  country to differentiate them clearly. Show data trends in changes over the years.
+questions: '1. Do you have a preferred color scheme for differentiating the countries?
+
+  2. Would you like to include data labels for each bubble to show exact values?
+
+  3. Should grid lines be included on the chart for better readability?
+
+  4. Do you prefer a specific font style or size for titles and labels?
+
+  5. Do you want to add a legend to the chart to explain the color and size encoding?
+
+  6. Is there a specific title or subtitle you would like on the chart?
+
+  7. Do you have any preference on the scale of the axes (linear or logarithmic)?
+
+  8. Should we include markers or lines to indicate yearly changes for each country?
+
+  9. Do you prefer specific axis labels or descriptions?
+
+  10. Would you like to emphasize certain data points or trends in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, grid lines should be included.
+
+  4. I have no specific preference.
+
+  5. Yes, please add a legend to explain the color and size encoding.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include markers or lines to indicate yearly changes for each country.
+
+  9. I do not know.
+
+  10. No, just show the overall data as requested.'
+data_attributes:
+- Time
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kuwait [KWT]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Dem. People's Rep.
+  [PRK]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kiribati [KIR]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kazakhstan [KAZ]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Korea, Rep. [KOR]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kuwait [KWT]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kenya [KEN]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Korea, Dem. People's
+  Rep. [PRK]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kiribati [KIR]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kazakhstan [KAZ]
+- Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Korea, Rep. [KOR]
+- Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Kuwait [KWT]
+- Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Kenya [KEN]
+- Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Korea, Dem. People's
+  Rep. [PRK]
+- Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Kiribati [KIR]
+- Fertility rate, total (births per woman) [SP.DYN.TFRT.IN] - Kazakhstan [KAZ]

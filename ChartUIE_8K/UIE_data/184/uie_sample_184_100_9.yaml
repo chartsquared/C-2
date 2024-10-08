@@ -1,0 +1,40 @@
+initial_prompt: Create a stacked column chart from the Rotten Tomatoes Top Movies
+  Ratings dataset. The x-axis should represent movie titles. Stack the bars based
+  on critic scores and people's scores for each movie. Use different colors for critic
+  scores and people's scores for clear differentiation. The y-axis should range from
+  0 to 100, representing the scores as percentages. Ensure each column is labeled
+  with its respective movie title, and include a legend for critic and people scores.
+  Title the chart "Critic vs. People Scores for Top Movies."
+questions: '1. Do you have a preferred color scheme for the critic and people scores?
+
+  2. Would you like gridlines on the chart for better readability?
+
+  3. Do you have any specific font preferences for the chart title and axis labels?
+
+  4. Would you prefer the movie titles on the x-axis to be displayed vertically or
+  rotated at an angle?
+
+  5. Are there any specific movies you would like to include or exclude in the chart?
+
+  6. Do you want the chart to display data labels showing the exact scores on each
+  bar segment?
+
+  7. Is there a particular order you would like the movies to be arranged in on the
+  x-axis (e.g., alphabetical, by score)?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Yes, I would like gridlines on the chart for better readability.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include data labels showing the exact scores on each bar segment.
+
+  7. I do not have a specific preference for the order.'
+data_attributes:
+- title
+- critic_score
+- people_score

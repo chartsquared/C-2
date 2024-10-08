@@ -1,0 +1,64 @@
+initial_prompt: Create a geographic heatmap visualizing the popularity ('pop') of
+  top Spotify songs from 2010-2019, by artist, genre, and year. Use colors to highlight
+  varying popularity levels in different regions. Annotate specific data points like
+  "Hey, Soul Sister" by Train and "Love The Way You Lie" by Eminem to draw focus.
+  This chart aims to show the geographic distribution and popularity trends in music
+  over the decade. Highlight differences in music preferences across regions by modifying
+  the color intensity in the heatmap. Include annotations for context and key highlights
+  to make the trends easily understandable.
+questions: '1. Do you have a preferred color palette for highlighting varying popularity
+  levels?
+
+  2. Should there be a specific color gradient for different popularity levels? If
+  so, what range of colors would you prefer?
+
+  3. Do you have preferred color intensity levels or thresholds to highlight differences
+  in music preferences across regions?
+
+  4. How would you like the annotations for specific data points like "Hey, Soul Sister"
+  and "Love The Way You Lie" to be formatted? (e.g., font size, color, or any highlight?)
+
+  5. Do you have a preference for the layout and design of the geographic heatmap
+  (e.g., map projection, region boundaries)?
+
+  6. Are there any specific geographic regions or countries that should be emphasized
+  or given special focus?
+
+  7. How detailed should the geographic granularity be (e.g., countries, states, cities)?
+
+  8. Should there be a legend explaining the color intensities and popularity levels?
+  If so, where would you like it to be positioned?
+
+  9. Do you have any preference for the font style and size used in the chart for
+  titles, labels, and annotations?
+
+  10. Are there any additional data attributes or metadata that should be included
+  or excluded from the visualization?'
+answers: '1. I do not have a preferred color palette.
+
+  2. I am not sure about a specific color gradient for different popularity levels.
+
+  3. I am not sure about the color intensity levels or thresholds.
+
+  4. I prefer the annotations to be clear and noticeable, maybe a slightly larger
+  font size and a contrasting color to stand out.
+
+  5. I do not have a specific preference for the layout and design of the geographic
+  heatmap.
+
+  6. I do not know if any specific geographic regions or countries should be emphasized.
+
+  7. I think countries would be a suitable level of granularity.
+
+  8. Yes, I think a legend explaining the color intensities and popularity levels
+  is important. It could be positioned at the bottom or side of the map.
+
+  9. I have no specific preference for font style and size.
+
+  10. I do not know if any additional data attributes or metadata should be included.'
+data_attributes:
+- title
+- artist
+- top genre
+- year
+- pop

@@ -1,0 +1,63 @@
+initial_prompt: 'I want to create a scatter plot to visualize the relationship between
+  `Sales` and `Profit` using the "Superstore Sales" data. Each point should represent
+  an individual order, with `Sales` on the X-axis and `Profit` on the Y-axis. Additionally,
+  use different colors or markers to distinguish between different `Categories` to
+  see how they cluster. Please include the `Customer Segment` as another dimension,
+  possibly by varying the size or shape of the scatter points. Make sure the plot
+  is clear and easy to interpret.
+
+  '
+questions: '1. Do you have a preferred color scheme for distinguishing different categories?
+
+  2. Which shapes or markers would you prefer to use for different customer segments?
+
+  3. What range would you prefer for the size of the scatter points to represent different
+  customer segments?
+
+  4. Are there any specific labels or annotations you want to include on the scatter
+  plot?
+
+  5. Do you have any preference for the background or grid style of the scatter plot?
+
+  6. Would you like to include a legend to explain colors, markers, and sizes used,
+  and where should it be positioned?
+
+  7. Is the aspect ratio of the plot important to you?
+
+  8. Do you have any specific requirements for axis labels or title of the scatter
+  plot?
+
+  9. Would you like to apply any specific data transformations (e.g., log scale) on
+  the axes?
+
+  10. Do you prefer any particular font style or size for the text elements (titles,
+  labels, legend)?'
+answers: '<start of user emulated response>
+
+  1. I do not have a preferred color scheme.
+
+  2. I am not sure about shapes or markers.
+
+  3. I do not know about the size range.
+
+  4. I am not sure about specific labels or annotations.
+
+  5. I have no specific preference for the background or grid style.
+
+  6. Yes, I would like to include a legend, and it can be positioned wherever it fits
+  best.
+
+  7. I do not know about the aspect ratio.
+
+  8. I would like clear axis labels and a descriptive title.
+
+  9. I am not sure about data transformations.
+
+  10. I have no specific preference for the font style or size.
+
+  <end of user emulated response>'
+data_attributes:
+- Sales
+- Profit
+- Category
+- Segment

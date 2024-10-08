@@ -1,0 +1,55 @@
+initial_prompt: 'Create a box chart visualizing Age, BMI, and Glucose levels from
+  the Diabetes Dataset. Use text annotations to highlight median and outlier values
+  for these variables. Purpose: to identify trends and outliers in key health indicators
+  related to diabetes. Highlight any significant outliers in red to emphasize important
+  data points. This will help in understanding the distribution and variability in
+  these crucial health metrics among the dataset''s population. The visualization
+  aims to provide a clear and insightful summary for health professionals to make
+  informed decisions.'
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Should the text annotations for the median and outlier values include specific
+  labels or descriptions?
+
+  3. Are there any specific font sizes or styles you prefer for the annotations and
+  labels?
+
+  4. Would you like a specific layout or orientation for the box chart (e.g., horizontal
+  or vertical)?
+
+  5. Do you need specific ranges or limits for the axes?
+
+  6. Should the chart include a title and subtitles? If so, what text should be used?
+
+  7. Would you like to include grid lines or any other specific background elements?
+
+  8. Are there specific legends or keys that you would like to be included in the
+  chart?
+
+  9. Do you have any preferences for the thickness or style of the box plot lines?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, the text annotations should include labels like "Median" and "Outlier".
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include a title "Box Chart of Key Health Indicators" and subtitles
+  "Age", "BMI", and "Glucose Levels".
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- Age
+- BMI
+- Glucose

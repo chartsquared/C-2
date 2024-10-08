@@ -1,0 +1,61 @@
+initial_prompt: 'Visualize state-level data using a heatmap to highlight differences
+  in mlsrc, quantumsrc, and dlsrc values for better insight into resource distribution.
+  Annotate states with the highest and lowest values to focus attention. Make sure
+  to use distinct colors for easy comparison. Highlight the four key columns: state,
+  mlsrc, quantumsrc, and dlsrc. The purpose is to identify trends and anomalies in
+  resource allocation among different states quickly. This visualization will help
+  in decision-making by clearly showing which states have high or low resource levels,
+  facilitating strategies to address disparities.'
+questions: '1. Do you have a specific color scheme preference for the heatmap to ensure
+  distinct comparisons?
+
+  2. What level of granularity do you prefer for the color scale (e.g., high, medium,
+  low)?
+
+  3. Would you like to include numerical annotations for all states or only for those
+  with the highest and lowest values?
+
+  4. Do you have a preferred method of annotating the highest and lowest values (e.g.,
+  bold text, different color, or special markers)?
+
+  5. Is there a particular format for the labels or fonts that you would like to see
+  used in the heatmap?
+
+  6. Would you like to incorporate any additional contextual elements, such as state
+  boundaries or names?
+
+  7. Do you have a preference for the layout or orientation of the heatmap (horizontal,
+  vertical)?
+
+  8. How many different color intensities or gradients would you like to include in
+  the heatmap for value distinctions?
+
+  9. Are there any specific thresholds for the resource values that you want to be
+  highlighted differently?
+
+  10. Do you wish to see any legends or labels explaining the color scales directly
+  on the visualization?'
+answers: '1. I do not have a specific color scheme preference.
+
+  2. Medium granularity for the color scale should be fine.
+
+  3. Only for those with the highest and lowest values, please.
+
+  4. I am not sure about the method for annotating the highest and lowest values.
+
+  5. I do not have a specific preference for labels or fonts.
+
+  6. Yes, it would be helpful to incorporate state names.
+
+  7. I am not sure about the layout or orientation.
+
+  8. I am not sure about the number of color intensities or gradients.
+
+  9. I am not sure about specific thresholds for the resource values.
+
+  10. Yes, including legends or labels explaining the color scales would be helpful.'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

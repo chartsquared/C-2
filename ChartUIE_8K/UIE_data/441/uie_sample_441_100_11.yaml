@@ -1,0 +1,45 @@
+initial_prompt: I need a stacked bar chart that visualizes the tourney outcomes for
+  different schools over the years. Use the 'school' as the x-axis and show tourney_w
+  and tourney_l as stacked values. Each bar should represent a school, segmented by
+  wins and losses. Use different colors for tourney_w and tourney_l to differentiate
+  them. The chart should help quickly identify the performance of each school in the
+  tournaments. Ensure the data is clearly labeled and includes a legend for easy understanding.
+  The primary audience is sports enthusiasts analyzing women's college basketball
+  performance.
+questions: '1. What color scheme do you prefer for the ''tourney_w'' and ''tourney_l''
+  segments?
+
+  2. Do you have a specific preference for the width of the bars?
+
+  3. Are there any specific fonts or styles you would like for the labels and legend?
+
+  4. Would you like any particular ordering for the schools on the x-axis (e.g., alphabetical,
+  based on wins/losses)?
+
+  5. Do you have a preferred title for the chart?
+
+  6. Is there any specific formatting you want for the y-axis labels (e.g., percentage,
+  count)?
+
+  7. Are there any additional details you would like to include in the chart (e.g.,
+  tooltips, annotations)?'
+answers: '1. I am not sure about the color scheme, maybe use vibrant contrasting colors
+  for clarity.
+
+  2. I do not have a specific preference for the width of the bars.
+
+  3. I have no specific preference for the fonts or styles, just make sure they are
+  readable.
+
+  4. I would like the schools to be ordered based on the total number of wins, from
+  highest to lowest.
+
+  5. A preferred title could be "Tourney Outcomes by School Over the Years."
+
+  6. The y-axis labels should be in count format, showing the number of wins and losses.
+
+  7. I do not need any additional details like tooltips or annotations.'
+data_attributes:
+- school
+- tourney_w
+- tourney_l

@@ -1,0 +1,51 @@
+initial_prompt: Create a Treemap visualizing 200 prime spots in Colombo listed on
+  TripAdvisor based on various attributes including ranking position, price level,
+  category, and rating. Highlight top-rated attractions and restaurants using contrasting
+  colors or larger blocks. Annotate key points, such as highest-rated spots and those
+  with the most reviews, to draw attention to specific places. Emphasize elements
+  with no missing values to ensure data completeness. This will help travelers easily
+  identify must-visit locations based on user ratings and other factors. Provide context
+  on valuable and popular spots for planning a Colombo visit.
+questions: '1. Do you have a preferred color scheme for highlighting top-rated attractions
+  and restaurants?
+
+  2. Would you like specific colors to represent different categories such as ''attraction'',
+  ''restaurant'', etc.?
+
+  3. How would you like the size of the blocks to be determined? Should it be based
+  on ranking position, number of reviews, or another attribute?
+
+  4. Do you have any preferences for the font style and size for annotations?
+
+  5. Are there any specific points of interest or landmarks you want to ensure are
+  emphasized?
+
+  6. Would you like a legend or key to be included in the Treemap to explain the colors
+  and sizes of the blocks?
+
+  7. Do you prefer annotations to be placed inside the blocks or as callouts?
+
+  8. Should the Treemap include any filtering options, such as only showing top 10
+  attractions and top 10 restaurants?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would like the size of the blocks to be based on the number of reviews.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, I would like a legend or key to be included in the Treemap to explain the
+  colors and sizes of the blocks.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- rankingPosition
+- priceLevel
+- category
+- rating
+- numberOfReviews

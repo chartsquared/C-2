@@ -1,0 +1,42 @@
+initial_prompt: Please create a box chart comparing the Winrate, Winrate(B), and Winrate(R)
+  for each Champion from the dataset. The box chart should have the Champions on the
+  x-axis and the Winrates on the y-axis. Separate boxes should represent Winrate,
+  Winrate(B), and Winrate(R) for each Champion to visualize the distribution and spread
+  of these win rates. This will help to easily compare the performance of each champion
+  in general, on the Blue team, and on the Red team.
+questions: '1. Do you have a preferred color palette for the chart?
+
+  2. Should the chart have a title? If so, what should it be?
+
+  3. Do you want grid lines displayed on the chart?
+
+  4. Do you prefer horizontal or vertical orientation for the x-axis labels?
+
+  5. Would you like to include a legend on the chart, and if so, where should it be
+  positioned?
+
+  6. Do you have any specific preferences for the font type and size used in the chart?
+
+  7. Should the y-axis be displayed with percentage symbols since win rates are percentages?
+
+  8. Would you like to add data labels that display the exact win rates on the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, the title should be "Comparative Winrates of Champions by Team Color".
+
+  3. Yes, please display grid lines on the chart.
+
+  4. Vertical orientation for the x-axis labels.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, the y-axis should display percentage symbols.
+
+  8. I do not know.'
+data_attributes:
+- Champion
+- Winrate
+- Winrate(B)
+- Winrate(R)

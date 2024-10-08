@@ -1,0 +1,51 @@
+initial_prompt: Create a stacked bar chart to visualize the placement status ('PlacedOrNot')
+  of students against various streams ('Stream'). Use different colors to distinguish
+  between students placed and not placed. Ensure the chart displays the number of
+  students for each stream, differentiated by their placement status. Additionally,
+  include gender ('Gender') as a secondary stack to show the distribution of male
+  and female students within each placement status for every stream. This will help
+  understand how placement varies across different streams and genders. Make sure
+  to include a legend for clarity and use descriptive axis labels.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  placement statuses?
+
+  2. Is there a preferred color scheme for differentiating between male and female
+  students within each placement status?
+
+  3. How would you like the streams to be ordered on the chart (e.g., alphabetically,
+  by number of students, by placement rate)?
+
+  4. Do you prefer any particular style or format for the axis labels?
+
+  5. Would you like to include any specific title or subtitle for the chart?
+
+  6. Are there any specific font styles or sizes you prefer for the chart text?
+
+  7. Do you have a preference for the overall layout and size of the chart?
+
+  8. Should the legend be placed at a specific position on the chart (e.g., top, bottom,
+  left, right)?
+
+  9. Are there any additional annotations or data points you would like to highlight
+  on the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. By placement rate.
+
+  4. I have no specific preference.
+
+  5. No specific title needed, just a clear description of the chart.
+
+  6. I do not know.
+
+  7. No preference for the overall layout and size.
+
+  8. Bottom.
+
+  9. No.'
+data_attributes:
+- PlacedOrNot
+- Stream
+- Gender

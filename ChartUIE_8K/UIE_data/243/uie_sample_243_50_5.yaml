@@ -1,0 +1,54 @@
+initial_prompt: Please create a heatmap visualizing the temperature, feels like temperature,
+  humidity, wind speed, cloud cover, and UV index for different locations and observation
+  times from the Global Metropolis Weather Dataset.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should we use a specific range for the color gradient (e.g., specific temperature
+  range)?
+
+  3. Would you like the locations to be displayed on the y-axis or x-axis?
+
+  4. Is there a preferred time format for the observation times (e.g., 24-hour format
+  vs. 12-hour format)?
+
+  5. Do you have a preference for the order of the data attributes (e.g., temperature
+  first, humidity second)?
+
+  6. Would you like the data values to be displayed within each cell of the heatmap?
+
+  7. Should the heatmap include any specific labels or titles for the axes?
+
+  8. Do you have a specific font style or size preference for the labels and titles?
+
+  9. Should the heatmap include a legend to explain the color gradient?
+
+  10. Are there any specific annotations or markers you would like to add to highlight
+  certain data points or ranges?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would like the locations on the y-axis.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, I would like the data values to be displayed within each cell.
+
+  7. Yes, please include labels and titles for the axes.
+
+  8. I do not know.
+
+  9. Yes, please include a legend to explain the color gradient.
+
+  10. No, I do not have any specific annotations or markers in mind.'
+data_attributes:
+- Location
+- Observation Time
+- Temperature (°C)
+- Feels Like (°C)
+- Humidity (%)
+- Wind Speed (kph)
+- Cloud Cover (%)
+- UV Index

@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap to visualize the correlation between various metrics
+  (kills, assists, gold, wards placed, etc.) for blue and red teams in League of Legends
+  Diamond Ranked Games.
+questions: '1. Do you have a preferred color scheme or palette for the heatmap?
+
+  2. Should we include labels or annotations for the correlation values on the heatmap?
+
+  3. Do you prefer a specific range for correlation values (e.g., -1 to 1, 0 to 1)
+  to be highlighted with specific colors?
+
+  4. Do you have a preference for the size of the heatmap cells?
+
+  5. Should the heatmap include a legend or color bar to indicate the correlation
+  strength?
+
+  6. Do you want to highlight any specific metrics or pairs of metrics in the heatmap?
+
+  7. Would you like to include axis labels or titles for the metrics in the heatmap?
+
+  8. Is there any specific style or design you prefer for the heatmap (e.g., gridlines,
+  font style)?
+
+  9. Should the heatmap include any additional information, such as tooltips or a
+  summary of the data?'
+answers: '1. I am not sure.
+
+  2. Yes, please include labels or annotations for the correlation values.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend or color bar to indicate the correlation strength.
+
+  6. I do not know.
+
+  7. Yes, please include axis labels or titles for the metrics.
+
+  8. I am not sure.
+
+  9. No, do not include any additional information like tooltips or a summary.'
+data_attributes:
+- blueKills
+- blueAssists
+- blueTotalGold
+- blueWardsPlaced
+- redKills
+- redAssists
+- redTotalGold
+- redWardsPlaced

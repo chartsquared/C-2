@@ -1,0 +1,54 @@
+initial_prompt: Create a bar chart using the Rolling Stone Album Rankings dataset.
+  Plot the 'sort_name' on the x-axis and 'differential' on the y-axis. This visualization
+  will help us see how rankings have changed for different artists over the years.
+  Make sure the bars are color-coded based on the 'genre'. Also, add a legend for
+  the genres and label each bar with the 'clean_name' for clarity. This chart will
+  help us quickly understand which artists' rankings have improved or declined the
+  most over the years.
+questions: '1. Do you have a preferred color palette for the genres?
+
+  2. How would you like the bars to be labeled with the ''clean_name'' (e.g., at the
+  top of the bar, inside the bar, etc.)?
+
+  3. What font type and size would you prefer for the labels and legend?
+
+  4. Should the x-axis labels (artist names) be displayed at a specific angle (e.g.,
+  horizontal, 45 degrees)?
+
+  5. Would you like gridlines on the chart? If so, in what color and style?
+
+  6. Do you have a specific title for the bar chart, and would you prefer any subtitle?
+
+  7. Should the legend be placed in a specific location (e.g., top, bottom, left,
+  right)?
+
+  8. Are there any specific guidelines for the chart background color?
+
+  9. Do you prefer the bars to have any specific width or spacing between them?
+
+  10. Would you like to highlight specific artists or genres in the chart with distinct
+  colors or styles?'
+answers: '1. I am not sure about the color palette; any visually distinct colors work.
+
+  2. Label the bars at the top with the ''clean_name''.
+
+  3. I do not have a specific preference for font type and size.
+
+  4. The x-axis labels can be displayed at a 45-degree angle.
+
+  5. I am not sure about gridlines.
+
+  6. No specific title or subtitle is necessary.
+
+  7. Place the legend at the bottom.
+
+  8. I do not have specific guidelines for the background color.
+
+  9. I do not have a preference for bar width or spacing.
+
+  10. No need to highlight specific artists or genres separately.'
+data_attributes:
+- sort_name
+- clean_name
+- differential
+- genre

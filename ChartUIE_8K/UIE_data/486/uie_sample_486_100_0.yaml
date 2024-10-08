@@ -1,0 +1,58 @@
+initial_prompt: Create a scatter plot using the data with columns 'x' and 'y'. Both
+  columns consist of float64 data types with no missing values. Highlight specific
+  data points and add data-driven text annotations to these points to draw attention
+  to their y-values. The scatter plot should visually emphasize key elements to help
+  the viewer focus on highlighted areas before examining other points. Ensure that
+  the chart is intuitive and aids in data analysis by clearly marking outliers or
+  significant patterns in the data.
+questions: '1. Do you have any specific colors in mind for highlighting the specific
+  data points?
+
+  2. Would you like to customize the text annotations with any particular font or
+  style?
+
+  3. Should the highlighted data points have a different marker style compared to
+  other points?
+
+  4. Do you prefer any specific axis scales (e.g., linear, logarithmic) for the scatter
+  plot?
+
+  5. Would you like grid lines to be included in the scatter plot?
+
+  6. Do you have a preference for the size of the markers in the scatter plot?
+
+  7. Should the chart include a legend to differentiate highlighted points from other
+  points?
+
+  8. Is there a specific title you would like to use for the scatter plot?
+
+  9. Do you have any preference for the layout of the annotations (e.g., data labels
+  placed above, below, or on the sides of the points)?
+
+  10. Should there be axis labels, and if so, what should they be?
+
+  11. Would you like the chart to have any specific background color or theme?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please use a different marker style for the highlighted points.
+
+  4. Linear scale is preferred.
+
+  5. Yes, please include grid lines.
+
+  6. I do not know.
+
+  7. Yes, a legend would be helpful.
+
+  8. "Scatter Plot of x vs. y" would be a fine title.
+
+  9. Above the points would be preferred for annotations.
+
+  10. Yes, label the x-axis as "X Values" and the y-axis as "Y Values".
+
+  11. I am not sure.'
+data_attributes:
+- x
+- y

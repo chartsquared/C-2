@@ -1,0 +1,51 @@
+initial_prompt: Please create a histogram using the yeast.csv data from the genomics
+  domain. I want histograms for the columns 'mcg' and 'gvh'. Annotate significant
+  data points to highlight outliers. Also, use different colors to emphasize the distinction
+  between different histogram bins. Add text annotations to indicate the mean and
+  median of these columns, and provide a general summary of the distribution. The
+  visualization aims to easily communicate the statistical properties and range of
+  these genomics data features for a quick overview.
+questions: '1. Do you have a preferred color palette for the histogram bins?
+
+  2. Should the color scheme be gradient or categorical?
+
+  3. Do you want the outliers to be marked with specific symbols or colors?
+
+  4. Is there a specific format or style you prefer for the text annotations of mean
+  and median?
+
+  5. How detailed should the annotations for significant data points be?
+
+  6. Would you prefer horizontal or vertical histograms?
+
+  7. Do you have a preference for the number of bins in the histograms?
+
+  8. Should the summary of the distribution be included within the chart or in a separate
+  section?
+
+  9. Do you prefer any specific font styles or sizes for the annotations and axis
+  labels?
+
+  10. Should grid lines be displayed in the background of the histogram?'
+answers: '1. I do not have a preferred color palette for the histogram bins.
+
+  2. I am not sure.
+
+  3. I think specific colors would be good for marking outliers.
+
+  4. I am not sure.
+
+  5. I don''t know, maybe just highlight the significant ones clearly.
+
+  6. Vertical histograms would be preferred.
+
+  7. I do not know.
+
+  8. The summary of the distribution should be included within the chart.
+
+  9. I do not have any specific preference for font styles or sizes.
+
+  10. Yes, grid lines should be displayed in the background of the histogram.'
+data_attributes:
+- mcg
+- gvh

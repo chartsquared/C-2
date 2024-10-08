@@ -1,0 +1,30 @@
+initial_prompt: Please create a heatmap displaying the distribution of electronic
+  waste recycling facilities across different counties in New York. Utilize the 'County'
+  data for the x-axis and the 'Facility Name' count for the y-axis. This will help
+  visualize facilities' concentration in each county. Also, indicate missing data
+  points, if any, especially in 'Contact Email' for clear insight into data quality.
+  The heatmap should be color-coded for easy visual interpretation. The aim is to
+  analyze the density and geographical spread of recycling centers. Make sure the
+  chart is labeled clearly and accurately.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like specific labels for each color level in the heatmap?
+
+  3. Should the heatmap display the exact count of facilities within each county?
+
+  4. Do you prefer a specific font type and size for the axis labels and title?
+
+  5. Are there any particular counties or facility names you want highlighted or annotated?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, the heatmap should display the exact count of facilities within each county.
+
+  4. I do not have a specific preference for the font type and size.
+
+  5. I am not sure.'
+data_attributes:
+- County
+- Facility Name
+- Contact Email

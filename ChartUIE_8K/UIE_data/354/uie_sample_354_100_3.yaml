@@ -1,0 +1,62 @@
+initial_prompt: I would like to create a heatmap to visualize the Meta company's stock
+  data over time. The data includes columns such as Date, Open, High, Low, Close,
+  Adj Close, and Volume. Specifically, I want to see how trading volumes fluctuate
+  over different days, and how the stock's price range (highs and lows) vary over
+  time. Use colors to represent different ranges of trading volumes and price variations,
+  so it's easy to spot trends and outliers. Make sure the heatmap is easy to interpret,
+  even for someone with a basic understanding of stock data.
+questions: '1. Do you have a preference for the color scheme used to represent different
+  ranges of trading volumes and price variations?
+
+  2. How would you like the color gradients to be represented? For example, do you
+  prefer darker colors for higher values or lighter colors?
+
+  3. Should the heatmap include annotations for specific values, such as the highest
+  and lowest trading volumes or price ranges?
+
+  4. Do you prefer a specific time interval for the data display, such as daily, weekly,
+  or monthly?
+
+  5. Would you like to include grid lines or separators to distinguish between different
+  days or time intervals?
+
+  6. Do you want labels on the axes to display the specific dates and price/volume
+  ranges, or do you prefer a more minimalist design?
+
+  7. Should the heatmap include a legend that explains the color coding for different
+  ranges of trading volumes and price variations?
+
+  8. Do you have any preference for the orientation of the heatmap (horizontal vs.
+  vertical)?
+
+  9. Would you like any particular highlights, such as marking weekends or significant
+  events on the timeline?
+
+  10. Is there a specific style or theme you would prefer for the overall look and
+  feel of the heatmap (e.g., modern, classic, etc.)?'
+answers: '1. I prefer a color scheme that''s easy to interpret, like a gradient from
+  blue to red.
+
+  2. I would prefer darker colors for higher values.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference for the time interval.
+
+  5. I am not sure.
+
+  6. Yes, I would like labels on the axes to display specific dates and price/volume
+  ranges.
+
+  7. Yes, please include a legend that explains the color coding.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Date
+- High
+- Low
+- Volume

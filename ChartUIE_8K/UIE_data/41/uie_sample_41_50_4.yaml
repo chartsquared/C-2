@@ -1,0 +1,50 @@
+initial_prompt: Create a grouped column chart displaying the protein expression levels
+  for 'BRAF_N', 'CAMKII_N', and 'CREB_N' for the first three mice. Group the bars
+  by MouseID and differentiate the proteins by color. Title the chart "Protein Expression
+  in Control Mice with Memantine Treatment".
+questions: '1. Do you have a specific color scheme preference for differentiating
+  the proteins?
+
+  2. Would you like the y-axis to be set to a specific range?
+
+  3. Do you have any preferences for the axis labels'' font size and style?
+
+  4. Should the chart include a grid for easier comparison of protein levels?
+
+  5. Would you like data values to be displayed directly on the bars?
+
+  6. Do you have a preference for the order in which the proteins are displayed within
+  each group?
+
+  7. Should there be any specific annotations or notes within the chart?
+
+  8. Would you like a legend included, and if so, do you have a preferred position
+  for it?
+
+  9. Do you have any preference for the bars'' width and spacing?
+
+  10. Should the chart include any reference lines or markers for better comparison?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, a grid for easier comparison would be good.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, include a legend. No specific preference for its position.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- MouseID
+- BRAF_N
+- CAMKII_N
+- CREB_N

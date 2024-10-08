@@ -1,0 +1,34 @@
+initial_prompt: Please create a scatter plot for the diabetes dataset showing the
+  relationship between BMI and Glucose levels. Use text annotations to highlight data
+  points with extreme Glucose levels to draw attention to potential outliers. Additionally,
+  change the color of points where the Outcome is 1 to emphasize cases of diabetes.
+  The scatter plot should help identify any trends or patterns in glucose levels concerning
+  BMI, aiding in understanding how these factors contribute to diabetes. Make sure
+  the axes are labeled, and a legend is included to distinguish between diabetic and
+  non-diabetic outcomes.
+questions: '1. Do you have a preferred title for the scatter plot?
+
+  2. Is there a specific color scheme you would like for highlighting the Outcome?
+
+  3. Would you like grid lines to be included in the plot?
+
+  4. Do you prefer specific marker shapes for diabetic and non-diabetic data points?
+
+  5. What font size and style would you like for the text annotations?
+
+  6. Do you have any specific range for the x-axis (BMI) or y-axis (Glucose levels)?
+
+  7. Should the scatter plot include data point sizes based on another attribute?
+
+  8. Do you want to include a regression line or any other trend line in the scatter
+  plot?'
+answers: "<start of user emulated response>\n1. I do not have a preferred title. \n\
+  2. I am not sure, any distinct colors would work.\n3. Yes, grid lines would be helpful.\n\
+  4. I have no specific preference.\n5. I do not know, standard font size and style\
+  \ should be fine.\n6. I do not have any specific range in mind.\n7. No, I do not\
+  \ need data point sizes based on another attribute.\n8. I am not sure, maybe a simple\
+  \ regression line if it helps in identifying trends.\n<end of user emulated response>"
+data_attributes:
+- BMI
+- Glucose
+- Outcome

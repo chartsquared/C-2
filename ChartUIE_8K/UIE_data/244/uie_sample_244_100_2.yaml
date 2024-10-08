@@ -1,0 +1,55 @@
+initial_prompt: '<start of data example format>
+
+  Create a choropleth map visualizing the number of speakers by region using the World
+  Languages Dataset. Highlight regions with the top three languages by speaker count
+  to emphasize major languages. Add text annotations for these regions to provide
+  context and specific data points like language names and speaker numbers. Use distinct
+  colors to make these regions stand out. This visualization will help in understanding
+  the distribution and prevalence of major languages across different regions. Ensure
+  textual annotations provide detailed insights while making it visually appealing
+  for better comprehension.'
+questions: '1. Do you have any specific color preferences or color schemes for the
+  choropleth map?
+
+  2. How would you prefer the top three regions to be highlighted (e.g., border thickness,
+  different shades)?
+
+  3. Do you have any specific font preferences for the textual annotations?
+
+  4. Should the text annotations include any particular formatting (e.g., bold, italic)
+  to emphasize certain data points?
+
+  5. Are there any specific size requirements for the text annotations to ensure readability?
+
+  6. Would you like to include a legend to explain the color coding on the map?
+
+  7. Do you have a preferred layout or placement for the textual annotations on the
+  map?
+
+  8. Is there a specific map projection you would like to be used for the choropleth
+  map?'
+answers: '<start of user response>
+
+  1. I do not have any specific color preferences or color schemes for the choropleth
+  map.
+
+  2. I am not sure how the regions should be highlighted.
+
+  3. I do not have any specific font preferences for the textual annotations.
+
+  4. I am not sure about any particular formatting for the annotations.
+
+  5. I would prefer the text annotations to be clearly readable, but I do not have
+  specific size requirements.
+
+  6. Yes, I would like to include a legend to explain the color coding on the map.
+
+  7. I do not have a specific layout or placement preference for the textual annotations.
+
+  8. I do not know which map projection should be used.
+
+  <end of user response>'
+data_attributes:
+- Language
+- Region
+- Speakers

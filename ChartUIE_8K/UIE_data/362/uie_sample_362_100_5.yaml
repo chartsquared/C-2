@@ -1,0 +1,51 @@
+initial_prompt: 'Create a radial bar chart to visualize the ''Engineering Placements
+  Prediction'' data from the CSV file. Use the following columns as the axes: ''Age'',
+  ''Gender'', ''Stream'', ''Internships'', ''CGPA'', ''Hostel'', ''HistoryOfBacklogs'',
+  and ''PlacedOrNot''. Ensure each bar represents the unique values for these columns,
+  highlighting the distribution and comparison among them. For instance, show the
+  number of internships versus CGPA scores, and compare placement rates by gender,
+  hostel accommodation, and academic streams. This visualization will help us understand
+  key factors influencing placement outcomes in engineering education.'
+questions: '1. Do you have any preference for the color scheme of the radial bar chart?
+
+  2. Would you prefer the chart to display data in a specific order, such as ascending
+  or descending based on a particular attribute?
+
+  3. How detailed would you like the labels and legends to be on the chart?
+
+  4. Should we include axis titles and data point markers for clarity?
+
+  5. Would you like to emphasize any particular data attribute in the visualization,
+  such as using highlighting or larger bars?
+
+  6. Is there a specific font style or size you prefer for the labels and legends?
+
+  7. Do you have a preference for the overall size or aspect ratio of the chart?
+
+  8. Should the chart include a title or subtitle? If yes, do you have any specific
+  text in mind?'
+answers: '1. I do not have any specific preference for the color scheme.
+
+  2. I am not sure, any order that best represents the data would work.
+
+  3. Detailed labels and legends would be helpful.
+
+  4. Yes, please include axis titles and data point markers for clarity.
+
+  5. No, I do not want to emphasize any particular data attribute.
+
+  6. I do not have any specific preference for the font style or size.
+
+  7. I do not know, standard size should be fine.
+
+  8. Yes, please include a title: "Engineering Placements Prediction - Key Factors".
+  No subtitle is needed.'
+data_attributes:
+- Age
+- Gender
+- Stream
+- Internships
+- CGPA
+- Hostel
+- HistoryOfBacklogs
+- PlacedOrNot

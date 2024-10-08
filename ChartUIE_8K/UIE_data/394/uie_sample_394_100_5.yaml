@@ -1,0 +1,51 @@
+initial_prompt: Please create a stacked bar chart that shows the size of each unique
+  company role and their connections (imports) with other roles. The chart should
+  have each unique role on the x-axis, the size of each role on the y-axis, and different
+  colors to indicate the number and types of connections each role has. Ensure to
+  differentiate between direct reports, peer relationships, and higher management
+  links distinctly. This will help in visually understanding the company structure
+  and relationships effectively. Thank you.
+questions: '1. Do you have any preference for the color palette to distinguish different
+  types of connections (direct reports, peer relationships, higher management links)?
+
+  2. What should be the order of roles on the x-axis? Alphabetical or based on size?
+
+  3. Should the chart include labels displaying the exact size and number of connections
+  for each role?
+
+  4. Do you prefer any specific font style and size for the axis labels and chart
+  title?
+
+  5. Would you like to include any annotations or notes in the chart to highlight
+  specific roles or connections?
+
+  6. Is there a need for a legend to explain the colors used for different types of
+  connections, and if so, where should it be placed?
+
+  7. Should the chart include grids or background lines to enhance readability?
+
+  8. Do you prefer the bars to be separated by small gaps or closely stacked together
+  without gaps?
+
+  9. Are there specific dimensions or aspect ratios you prefer for the chart?'
+answers: '1. I am not sure.
+
+  2. Based on size.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, a legend would be helpful. It can be placed at the bottom of the chart.
+
+  7. Yes, grids or background lines would enhance readability.
+
+  8. Closely stacked together without gaps.
+
+  9. I do not have specific dimensions or aspect ratios in mind.'
+data_attributes:
+- name
+- size
+- imports

@@ -1,0 +1,45 @@
+initial_prompt: Create a Treemap to visualize the data summary for the Sales of a
+  Supermarket. Use the 'Product line' for the categories, each proportional to its
+  unique values or sales volume. Within each category, further segment by 'City' to
+  show the distribution of sales across different cities. Utilize 'Total' as the size
+  metric to compare overall sales, and color-code by 'Branch' to distinguish different
+  branches. Ensure the chart highlights variations in product performance across locations,
+  facilitating a clear understanding of where different product lines sell most effectively.
+  This will help identify trends and optimize inventory.
+questions: '1. What color palette do you prefer for differentiating between branches?
+
+  2. How many distinct shades or colors would you prefer to use within each branch
+  category?
+
+  3. Do you have a preference for labeling each segment within the treemap with specific
+  information (e.g., sales figures, percentage share, etc.)?
+
+  4. Do you prefer to display the product lines sorted by their overall sales volume
+  or in alphabetical order?
+
+  5. Is there a specific threshold for sales volume below which product lines should
+  be aggregated or hidden?
+
+  6. Would you like to include any annotations or additional text to highlight specific
+  trends or outliers within the treemap?
+
+  7. Is there a preferred font style or size for any text elements within the treemap
+  (e.g., labels, titles)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like each segment to be labeled with sales figures.
+
+  4. I prefer to display the product lines sorted by their overall sales volume.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.'
+data_attributes:
+- Product line
+- City
+- Total
+- Branch

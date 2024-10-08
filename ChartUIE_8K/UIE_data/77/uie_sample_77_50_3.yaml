@@ -1,0 +1,41 @@
+initial_prompt: Create a bar chart showing the top 10 most streamed songs of 2023
+  with their respective artist names. Include streams count as bar height. Use separate
+  colors for each artist.
+questions: '1. Do you have a preferred color palette for the bar chart?
+
+  2. Would you like the bars to be horizontal or vertical?
+
+  3. Should the artist names be displayed directly on the bars or in a legend?
+
+  4. Do you want to include the exact stream count on top of each bar?
+
+  5. Is there a specific font style or size you prefer for the labels?
+
+  6. Would you like to add a title to the bar chart? If so, what should it be?
+
+  7. Do you want any additional annotations or details, such as the rank of each song?
+
+  8. Should there be gridlines in the chart for easier reading of the values?
+
+  9. Do you prefer a specific layout or spacing between the bars?'
+answers: '1. I am not sure.
+
+  2. Vertical.
+
+  3. I do not know.
+
+  4. Yes, include the exact stream count on top of each bar.
+
+  5. I have no specific preference.
+
+  6. Yes, the title should be "Top 10 Most Streamed Songs of 2023".
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- track_name
+- artist(s)_name
+- streams

@@ -1,0 +1,53 @@
+initial_prompt: Create a violin plot to visualize the distribution of logFC values
+  across different cell lines, highlighting key genes like EDIL3, IGFBP7, and TFPI
+  involved in Taxol drug resistance in breast cancer. Add annotations for significant
+  P-values.
+questions: '1. Do you have any specific color preferences for the different cell lines
+  in the violin plot?
+
+  2. How would you like the key genes (EDIL3, IGFBP7, TFPI) to be highlighted within
+  the plot?
+
+  3. Do you prefer the significant P-values to be displayed as text annotations or
+  in another format?
+
+  4. Do you want the axes to be labeled in any specific way?
+
+  5. Do you have any particular requirements for the title and subtitles of the plot?
+
+  6. Would you like to include a legend, and if so, how would you like it to be formatted?
+
+  7. Are there any specific font styles or sizes you would like to be used within
+  the chart?
+
+  8. Do you prefer the chart to have grid lines, and if so, how would you like them
+  to be styled?
+
+  9. Should the violin plot include any specific statistical summary lines (e.g.,
+  mean, median)?
+
+  10. Do you have preferences on the orientation of the plot (horizontal or vertical)?'
+answers: '1. I am not sure.
+
+  2. Highlighted with a different color or symbol, perhaps dots or larger markers.
+
+  3. As text annotations.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I don’t know.
+
+  10. I am not sure.'
+data_attributes:
+- Gene.symbol
+- P.Value
+- logFC
+- Cell Line

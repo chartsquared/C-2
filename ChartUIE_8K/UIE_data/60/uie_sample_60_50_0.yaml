@@ -1,0 +1,33 @@
+initial_prompt: Create a scatter plot visualizing laptop prices versus their aggregate
+  ratings. Highlight brands Dell and Lenovo. Include text annotations for top-rated
+  models. Use color to differentiate price currency, with emphasis on USD. This visualization
+  will help identify value-for-money options in the Best Buy 2024 Windows Laptops.
+questions: '1. Do you have any specific color preferences for highlighting Dell and
+  Lenovo brands?
+
+  2. How would you prefer to annotate the top-rated models (e.g., using labels, text
+  boxes, tooltip)?
+
+  3. What colors would you like to use to differentiate the price currency, with emphasis
+  on USD?
+
+  4. Do you have a preference for the shape or size of the data points in the scatter
+  plot?
+
+  5. Would you prefer a particular font style or size for the annotations and labels?'
+answers: '1. I am not sure.
+
+  2. Using labels or text boxes would be good.
+
+  3. Emphasize USD with a distinguishable bright color, like green. Other currencies
+  can be different shades.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.'
+data_attributes:
+- brand
+- model
+- aggregateRating/ratingValue
+- offers/price
+- offers/priceCurrency

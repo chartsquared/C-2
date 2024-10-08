@@ -1,0 +1,47 @@
+initial_prompt: Create a bar chart visualizing Tesla stock data from 2010 to 2020.
+  Each bar should represent a year, showing the average closing price. Add text annotations
+  to highlight the highest and lowest average closing prices. Use different colors
+  to emphasize these bars. The purpose is to analyze yearly performance trends and
+  identify significant peaks and troughs. Provide context on Tesla's growth over the
+  decade in the annotations. The chart is for overviewing performance, focusing on
+  annual changes rather than daily volatility, and will help investors understand
+  long-term trends.
+questions: '1. Do you have any preferences for the color scheme used in the chart?
+
+  2. How would you like the text annotations for the highest and lowest average closing
+  prices to be styled (e.g., font size, color, bold)?
+
+  3. Are there any specific fonts you prefer for the labels and annotations?
+
+  4. Do you want gridlines included in the chart? If so, should they be in the background
+  or foreground?
+
+  5. Would you like a title and subtitle for the chart? If yes, what should they be?
+
+  6. Do you want the axis labels to be styled in a particular way (e.g., font size,
+  color)?
+
+  7. Should each bar have its own data label showing the average closing price?
+
+  8. Do you prefer any specific chart dimensions (e.g., width and height)?'
+answers: '1. I am not sure.
+
+  2. I would like the text annotations to be bold and in a noticeable color, perhaps
+  red for the highest and blue for the lowest.
+
+  3. I do not have any specific font preferences.
+
+  4. I am not sure.
+
+  5. Yes, please. The title should be "Tesla Stock Performance (2010-2020)", and the
+  subtitle can be "Average Annual Closing Prices".
+
+  6. I do not know.
+
+  7. I would prefer each bar to have its own data label showing the average closing
+  price.
+
+  8. I have no specific preference.'
+data_attributes:
+- Date
+- Close

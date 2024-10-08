@@ -1,0 +1,41 @@
+initial_prompt: 'I have data on possums from a zoology study, including various measurements
+  like head length, skull width, and total length categorized by different populations
+  and sexes. I want to visualize the distribution of possum measurements to understand
+  variations better. Please create a histogram for each of the following variables:
+  ''hdlngth'' (head length), ''skullw'' (skull width), and ''totlngth'' (total length).
+  Ensure the histograms show the frequency distribution of the measurements and are
+  color-coded by sex. Also, indicate any missing values in the data.'
+questions: '1. Do you have any preferred color scheme for differentiating between
+  sexes?
+
+  2. Would you like the bins for the histograms to be of a specific width or number?
+
+  3. Should missing values be indicated with a specific symbol or color in the chart?
+
+  4. Do you want any additional annotations, such as mean or median lines, on the
+  histograms?
+
+  5. Is there a specific order in which you want the histograms to be displayed?
+
+  6. Do you need specific labels or titles for each histogram?
+
+  7. Would you like gridlines on the histograms for better readability, and if so,
+  to what extent?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, indicate missing values with a specific color in the chart.
+
+  4. I am not sure.
+
+  5. I do not have a specific order in mind.
+
+  6. I am not sure.
+
+  7. Yes, I would like gridlines for better readability.'
+data_attributes:
+- hdlngth
+- skullw
+- totlngth
+- sex

@@ -1,0 +1,47 @@
+initial_prompt: Create a line chart to visualize the supply chain management for car
+  makers by plotting the CarPrice over OrderDate. Use different colored lines for
+  various CarMakers and CarModels to distinguish them. Include annotations such as
+  trend lines for each CarMaker, highlight significant price changes, and use shapes
+  to enclose outlier data points. Make sure to emphasize the CarPrice fluctuation
+  trends for better insights into pricing strategies over time. The chart should help
+  in understanding the market trends and customer preferences based on the supplied
+  data.
+questions: '1. Do you have a preference for the color scheme used to distinguish different
+  CarMakers and CarModels?
+
+  2. What kind of trend lines would you prefer for each CarMaker (e.g., linear, moving
+  average, polynomial)?
+
+  3. How would you like significant price changes to be highlighted (e.g., with specific
+  symbols, different colors, or annotations)?
+
+  4. Do you have any specific symbols or shapes you would like to use to enclose the
+  outlier data points?
+
+  5. Would you like to add any labels or titles to the axes? If so, what should they
+  be?
+
+  6. Is there any specific date range you would like to focus on within the OrderDate
+  data?
+
+  7. Are there any additional annotations or specific data points you would like highlighted
+  for better insights?'
+answers: '1. I am not sure, but something visually distinct for each CarMaker and
+  CarModel would be good.
+
+  2. Linear trend lines for each CarMaker, please.
+
+  3. Different colors for significant price changes.
+
+  4. I do not know.
+
+  5. Yes, "Order Date" for the x-axis and "Car Price" for the y-axis.
+
+  6. I am not sure, maybe the entire date range available.
+
+  7. No, I have no specific preference.'
+data_attributes:
+- CarPrice
+- OrderDate
+- CarMaker
+- CarModel

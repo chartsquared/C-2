@@ -1,0 +1,42 @@
+initial_prompt: Please create a column chart visualizing Spotify users, subscribers,
+  and non-subscribers over different quarters from 2015 to 2020. The x-axis should
+  represent the "step" (e.g., 2015-Q1, 2015-Q2), and the y-axis should show the count
+  in millions. Each quarter should have three columns representing "subscribers,"
+  "users," and "non_subscribers" for comparison. Include a legend to differentiate
+  between these three categories. Make sure the chart is clear, with distinct colors
+  for each column and properly labeled axes. This will help in analyzing user trends
+  over time. Thank you!
+questions: '1. Do you have a preferred color scheme for the columns representing ''subscribers,''
+  ''users,'' and ''non_subscribers''?
+
+  2. Would you like to include data labels on top of each column to show exact values?
+
+  3. Should the y-axis have a specific range, or is an auto-scaling option acceptable?
+
+  4. Are there any specific font preferences or sizes for the axis labels and legend?
+
+  5. Do you prefer grid lines on the chart to enhance readability?
+
+  6. Is there a need for annotations or highlighted sections to mark important trends
+  or events?
+
+  7. Would you like any specific formatting for the ''step'' labels on the x-axis
+  (e.g., rotated, bold)?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Auto-scaling is acceptable.
+
+  4. I do not have a specific preference.
+
+  5. Yes, I prefer grid lines on the chart to enhance readability.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.'
+data_attributes:
+- step
+- subscribers
+- users
+- non_subscribers

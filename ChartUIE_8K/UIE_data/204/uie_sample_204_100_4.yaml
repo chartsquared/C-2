@@ -1,0 +1,46 @@
+initial_prompt: Please create a heatmap that visualizes the correlation between the
+  various features in the real estate dataset. Specifically, I am interested in seeing
+  how the house price per unit area correlates with transaction date, house age, distance
+  to the nearest MRT station, number of convenience stores, latitude, and longitude.
+  Make sure to use color gradients that clearly distinguish the strength of these
+  correlations. Plot the correlation matrix and highlight significant relationships,
+  especially focusing on house price per unit area. This will help us understand which
+  factors most influence property prices. Thank you!
+questions: '1. Do you have any specific color gradient preferences for the heatmap?
+
+  2. Would you like to set specific criteria for highlighting significant relationships
+  in the correlation matrix?
+
+  3. Do you prefer any particular size or aspect ratio for the heatmap?
+
+  4. Are there any specific annotations or labels you would like included in the heatmap?
+
+  5. Do you have any preferences regarding the display of the correlation values (e.g.,
+  showing values within the cells)?
+
+  6. Are there any additional visual elements or styles you would like to include
+  in the heatmap?
+
+  7. Do you prefer the heatmap to focus on a specific color scheme (e.g., cool tones,
+  warm tones)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. Yes, please show the correlation values within the cells.
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- X1 transaction date
+- X2 house age
+- X3 distance to the nearest MRT station
+- X4 number of convenience stores
+- X5 latitude
+- X6 longitude
+- Y house price of unit area

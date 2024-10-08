@@ -1,0 +1,48 @@
+initial_prompt: Please create a line chart visualizing the Japan LOTO7 draw data over
+  time. Plot the 'sum7' and 'sum9' columns on the Y-axis and 'drawdate' on the X-axis
+  to show trends. Highlight significant draws with above-average 'sum7' values using
+  different colors or markers. Add text annotations for draws with maximum and minimum
+  'sum7' values to highlight key points. The purpose is to easily identify trends
+  and outliers in the draw data, making it simpler to analyze patterns and peaks over
+  the given time period.
+questions: '1. Do you have a preferred color scheme for the lines representing ''sum7''
+  and ''sum9''?
+
+  2. Which specific shapes or markers would you prefer to use for highlighting significant
+  draws with above-average ''sum7'' values?
+
+  3. Should the line chart include a grid, and if so, should it be a major grid, minor
+  grid, or both?
+
+  4. Would you like to include a legend on the chart, and if so, where would you prefer
+  it to be positioned?
+
+  5. What font style and size would you prefer for the text annotations on the maximum
+  and minimum ''sum7'' values?
+
+  6. Do you have any preference for the date format on the X-axis labels (e.g., YYYY/MM/DD,
+  MM/DD/YYYY)?
+
+  7. Should the Y-axis have a fixed range or adapt automatically to the data’s range?
+
+  8. Would you like to add data point markers along the lines, or should it be a smooth
+  line without individual point markers?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, include a major grid.
+
+  4. Yes, please include a legend. I do not have a specific preference for its position.
+
+  5. I am not sure.
+
+  6. YYYY/MM/DD format for the date on the X-axis labels would be good.
+
+  7. The Y-axis should adapt automatically to the data’s range.
+
+  8. Add data point markers along the lines.'
+data_attributes:
+- sum7
+- sum9
+- drawdate

@@ -1,0 +1,123 @@
+initial_prompt: Please create a bar chart to visualize the gene expression data from
+  the provided CSV file. Each bar should represent the expression level of a specific
+  gene across different sample types (like 'fetal_lung', '232-97_SCC', etc.). The
+  x-axis should display the gene identifier (e.g., 'IMAGE:196992'), and the y-axis
+  should show the expression levels. The bars should be grouped by sample type and
+  color-coded for clear differentiation. Include a legend to identify each sample
+  type. Thank you!
+questions: '1. Do you have a preferred color palette for the bar chart?
+
+  2. Would you like the bars to be displayed vertically or horizontally?
+
+  3. Do you have any preferences for the font style and size for the labels on the
+  x-axis and y-axis?
+
+  4. Should the x-axis labels (gene identifiers) be rotated for better readability?
+
+  5. Would you like any specific gridlines or background styles in the chart?
+
+  6. Would you prefer the bars to have a specific width or spacing?
+
+  7. Is there a particular style or format you prefer for the legend placement?
+
+  8. Do you want to include any specific annotations or labels on the bars (e.g.,
+  expression level values)?
+
+  9. Do you have any preferences for the chart title and axis titles formatting?
+
+  10. Are there any specific limitations or constraints to consider, such as color-blind
+  friendly palettes or specific corporate branding guides?'
+answers: '1. I am not sure.
+
+  2. Vertically.
+
+  3. I am not sure.
+
+  4. Yes, please rotate the x-axis labels for better readability.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. Yes, please include the expression level values on the bars.
+
+  9. I have no specific preference.
+
+  10. No specific limitations or constraints that I am aware of.'
+data_attributes:
+- gene
+- fetal_lung
+- 232-97_SCC
+- 232-97_node
+- 68-96_Adeno
+- 11-00_Adeno
+- 69-96_Adeno
+- 234-97_Adeno
+- 319-00MT1_Adeno
+- 319-00PT_Adeno
+- 319-00MT2_Adeno
+- 12-00_Adeno
+- 237-97_Adeno
+- 156-96_Adeno
+- 157-96_SCC
+- 320-00_Adeno_p
+- 320-00_Adeno_c
+- 161-96_Adeno
+- 80-96_Adeno
+- 239-97_SCC
+- 75-95_combined
+- 165-96_Adeno
+- 166-96_SCC
+- 42-95_SCC
+- 204-97_Adeno
+- 245-97_SCC
+- 245-97_node
+- 58-95_SCC
+- 132-95_Adeno
+- 313-99PT_Adeno
+- 313-99MT_Adeno
+- 178-96_Adeno
+- 246-97_SCC_p
+- 246-97_SCC_c
+- 180-96_Adeno
+- 181-96_Adeno
+- 184-96_Adeno
+- 184-96_node
+- 248-97_LCLC
+- 185-96_Adeno
+- 187-96_Adeno
+- 191-96_Adeno
+- 314-99_SCLC
+- 314-99_normal
+- 256-97_LCLC
+- 257-97_Adeno
+- 198-96_Adeno
+- 315-99_SCLC
+- 315-99_node
+- 315-99_normal
+- 137-96_Adeno
+- 139-97_LCLC
+- 207-97_SCLC
+- 3-SCC
+- 299-99_Adeno
+- 199-97_Adeno_c
+- 199-97_Adeno_p
+- 6-00_LCLC
+- 218-97_Adeno
+- 219-97_SCC
+- 219-97_normal
+- 265-98_Adeno
+- 220-97_SCC
+- 220-97_node
+- 222-97_Adeno
+- 222-97_normal
+- 306-99_Adeno
+- 306-99_node
+- 306-99_normal
+- 223-97_Adeno
+- 147-96_Adeno
+- 59-96_SCC
+- 226-97_Adeno
+- 230-97_SCLC

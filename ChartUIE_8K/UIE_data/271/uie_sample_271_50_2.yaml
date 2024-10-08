@@ -1,0 +1,52 @@
+initial_prompt: Create a box chart visualizing the distribution of 'cnt' values for
+  each 'airport1'. Highlight outliers and use text annotations to indicate high-traffic
+  airports. Emphasize comparing flight counts from different starting airports to
+  understand travel patterns.
+questions: '1. Do you have a specific color scheme preference for the box chart?
+
+  2. Should the chart include a legend, and if so, where would you like it positioned?
+
+  3. Do you prefer any particular style for the text annotations (e.g., font size,
+  font type, color)?
+
+  4. Is there a specific way you would like the outliers to be highlighted (e.g.,
+  color change, different markers)?
+
+  5. Would you like gridlines to be displayed on the chart?
+
+  6. Should the axis labels have a particular format or style?
+
+  7. Do you want the high-traffic airports'' text annotations to include any specific
+  information besides the airport name?
+
+  8. Do you have a preferred layout or aspect ratio for the box chart?
+
+  9. Would you like to include a title and subtitle for the chart? If so, what should
+  they be?
+
+  10. Do you want any specific data points to be emphasized or highlighted apart from
+  the outliers and high-traffic airports?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I do not have any specific preference for the text annotations.
+
+  4. I am not sure.
+
+  5. Yes, I would like gridlines to be displayed on the chart.
+
+  6. I do not know.
+
+  7. No, just the airport name is fine.
+
+  8. I am not sure.
+
+  9. Yes, please include a title "Flight Counts from Different Starting Airports"
+  and a subtitle "Comparison of Travel Patterns and Identification of High-Traffic
+  Airports".
+
+  10. No, just the outliers and high-traffic airports.'
+data_attributes:
+- airport1
+- cnt

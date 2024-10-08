@@ -1,0 +1,42 @@
+initial_prompt: Could you create a heatmap for me that visualizes Ronaldo's tweet
+  engagements over time? I want to see the pattern of retweets, replies, likes, quotes,
+  and bookmarks from the provided dataset. The columns to be used are 'createdAt'
+  for the x-axis (time), and 'retweetCount', 'replyCount', 'likeCount', 'quoteCount',
+  'bookmarkCount' for the y-axis (engagement metrics). The visual should help me easily
+  identify which tweets had the highest engagement and any trends over the period
+  covered in the dataset.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What time intervals would you like to use on the x-axis (e.g., hourly, daily,
+  monthly)?
+
+  3. Should the heatmap display actual count values, or just color intensities?
+
+  4. Would you like to include any labels or annotations for peak engagement periods?
+
+  5. Do you prefer a specific orientation or aspect ratio for the heatmap?
+
+  6. Are there any specific trends or patterns you are particularly interested in
+  highlighting?
+
+  7. Would you like a legend to explain the color scale used in the heatmap?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure, maybe daily intervals?
+
+  3. Just color intensities would be fine.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not have any specific trends or patterns in mind.
+
+  7. Yes, I would like a legend to explain the color scale used in the heatmap.'
+data_attributes:
+- createdAt
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

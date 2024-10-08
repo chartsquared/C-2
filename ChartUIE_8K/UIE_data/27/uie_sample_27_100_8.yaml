@@ -1,0 +1,53 @@
+initial_prompt: Please create a line chart to visualize the SALES data over time from
+  the Automobile Sales data. The x-axis should represent the ORDERDATE, and the y-axis
+  should show the SALES amount. Use different lines to indicate varying CUSTOMERNAME.
+  Include all data points from the sample data provided, ensuring to maintain the
+  chronological order of ORDERDATE. Display the trend of sales for different customers
+  over the time period covered. The chart should help illustrate how sales volumes
+  fluctuate for each customer. Make sure the chart is clear and easy to interpret.
+questions: '1. Do you have any preference for the colors used for different customers?
+
+  2. Do you prefer a specific title for the chart?
+
+  3. Would you like to include gridlines on the chart for better readability?
+
+  4. Do you have any preference for the format of the dates on the x-axis?
+
+  5. Would you prefer to display data labels for each data point on the lines?
+
+  6. Do you want any specific styling for the lines, such as solid, dashed, or dotted?
+
+  7. Should the legend be placed in a specific location on the chart?
+
+  8. Would you like to add any annotations or notes on specific data points?
+
+  9. Do you have any preferences for the font style or size for the axis labels, title,
+  or legend?
+
+  10. Would you like to include a reference line, such as an average sales line, across
+  the chart?'
+answers: '1. I do not have a specific preference for the colors used for different
+  customers.
+
+  2. I am not sure about a specific title for the chart.
+
+  3. Yes, I would like to include gridlines on the chart for better readability.
+
+  4. I do not have any preference for the format of the dates on the x-axis.
+
+  5. No, I do not prefer to display data labels for each data point on the lines.
+
+  6. I am not sure about specific styling for the lines.
+
+  7. I do not know if the legend should be placed in a specific location.
+
+  8. No, I do not want to add any annotations or notes on specific data points.
+
+  9. I have no specific preference for the font style or size for the axis labels,
+  title, or legend.
+
+  10. I do not want a reference line, such as an average sales line, across the chart.'
+data_attributes:
+- ORDERDATE
+- SALES
+- CUSTOMERNAME

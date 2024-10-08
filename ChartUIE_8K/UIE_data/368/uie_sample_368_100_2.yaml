@@ -1,0 +1,55 @@
+initial_prompt: Create a line chart to visualize suicide rates from 1985 to 2016,
+  broken down by country and gender. Highlight key trends and annotate significant
+  peaks or drops in suicide numbers. Include annotations to emphasize data points
+  for specific age groups and GDP per capita correlations. The chart should draw attention
+  to the varying impact on different generations and allow for comparing countries.
+  This visualization aims to provide a clear, contextual overview for social scientists
+  to analyze demographic and economic factors influencing suicide rates over time.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How should different countries be distinguished (e.g., different line styles
+  or colors)?
+
+  3. Do you have a preferred font style and size for annotations?
+
+  4. Are there any specific age groups or time periods you want to emphasize more?
+
+  5. How should the GDP per capita be represented and correlated in the chart?
+
+  6. How detailed should the annotations be for significant peaks or drops in suicide
+  numbers?
+
+  7. Should the chart include gridlines or background shading to improve readability?
+
+  8. Do you have any specific preferences for the chart title and axis labels?
+
+  9. How do you prefer to handle missing data, if any, in the dataset?
+
+  10. Would you like to include a legend, and if so, where should it be positioned?'
+answers: '1. I do not know.
+
+  2. Different colors for each country would be good.
+
+  3. I am not sure.
+
+  4. Specific age groups like teenagers and senior citizens could be emphasized.
+
+  5. I am not sure.
+
+  6. Annotations should be detailed enough to explain significant changes but not
+  too cluttered.
+
+  7. Yes, include gridlines to improve readability.
+
+  8. No specific preferences.
+
+  9. I do not know.
+
+  10. Yes, include a legend, preferably at the bottom or the side.'
+data_attributes:
+- country
+- year
+- sex
+- suicides_no
+- age
+- gdp_per_capita ($)

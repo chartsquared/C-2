@@ -1,0 +1,49 @@
+initial_prompt: Please create a stacked column chart visualizing the global blood
+  type distribution. The x-axis should represent countries, and the y-axis should
+  show the population. Each column should be stacked to show the percentage of each
+  blood type (O+, A+, B+, AB+, O-, A-, B-, AB-) within the population for each country.
+  Use different colors to represent each blood type. Ensure that the chart is easy
+  to read and provides a clear comparison among the countries. Include a legend to
+  identify the blood types. Thank you!
+questions: '1. Do you have any specific color preferences for each blood type in the
+  chart?
+
+  2. Is there a particular order in which you would like the countries to be displayed
+  on the x-axis (e.g., alphabetical order, by population size)?
+
+  3. Would you like the percentages of each blood type to be displayed as labels on
+  the chart?
+
+  4. Do you prefer a specific orientation for the legend (e.g., top, bottom, left,
+  right of the chart)?
+
+  5. Are there any specific countries you want to highlight or emphasize in the chart?
+
+  6. Is there a particular font style or size you prefer for the axis labels and legend?
+
+  7. Would you like to include gridlines or any other specific background elements
+  to enhance readability?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. Yes, I would like the percentages to be displayed as labels.
+
+  4. I do not know.
+
+  5. I do not have any specific countries to highlight.
+
+  6. I do not know.
+
+  7. I would like to include gridlines to enhance readability.'
+data_attributes:
+- Country
+- Population
+- O+
+- A+
+- B+
+- AB+
+- O-
+- A-
+- B-
+- AB-

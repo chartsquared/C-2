@@ -1,0 +1,57 @@
+initial_prompt: Please create a bar chart using the given data from the Data Science
+  Job Salaries dataset. The chart should display the average salary in USD for different
+  job titles. Make sure to categorize by experience level (e.g., MI, SE) and show
+  the comparison across work years (e.g., 2020). This will help in visualizing which
+  job roles are more lucrative over time and across different experience levels. The
+  chart should be clear and easy to understand for someone in the business domain,
+  possibly hiring managers or job seekers.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like to see gridlines in the background to make comparisons easier?
+
+  3. Do you have a specific order in which you would like the job titles or experience
+  levels to be displayed?
+
+  4. Would you like to include data labels showing the exact salary values on the
+  bars?
+
+  5. Do you prefer horizontal or vertical bars for the chart?
+
+  6. Should the chart include a legend to distinguish between different experience
+  levels?
+
+  7. Do you want to display the average salary for each job title as a separate series
+  within each experience level category?
+
+  8. Would you like to have axis titles and if so, any specific wording for them?
+
+  9. Is there a specific font style or size you prefer for the text in the chart?
+
+  10. Do you want the chart to include a title? If so, what should it be?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to see gridlines in the background.
+
+  3. I do not know.
+
+  4. Yes, please include data labels showing the exact salary values on the bars.
+
+  5. I prefer vertical bars for the chart.
+
+  6. Yes, the chart should include a legend to distinguish between different experience
+  levels.
+
+  7. I am not sure.
+
+  8. Yes, please include axis titles. The x-axis should be labeled "Job Titles" and
+  the y-axis should be labeled "Average Salary (USD)".
+
+  9. I do not know.
+
+  10. Yes, the chart should have a title. It should be "Average Salary by Job Title
+  and Experience Level".'
+data_attributes:
+- job_title
+- experience_level
+- salary_in_usd
+- work_year

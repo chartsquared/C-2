@@ -1,0 +1,49 @@
+initial_prompt: Create a treemap chart visualizing the data to show the distribution
+  of obstacles used in different locations and stages of the Ninja Warrior games across
+  seasons. Annotate the map with obstacle names, highlighting frequently used obstacles
+  and differentiating them by color based on their order within the course. This will
+  help in identifying the diversity and prevalence of obstacles in various game settings,
+  and highlight the prominence or uniqueness of certain obstacles. The annotations
+  should help viewers quickly grasp which obstacles are most significant in different
+  contexts, aiding in strategic analysis and course planning.
+questions: '1. Do you have any specific color preferences for different obstacle orders
+  within the course?
+
+  2. How would you prefer the frequently used obstacles to be highlighted? (e.g.,
+  bold text, larger font size, different color)
+
+  3. Should the annotations for obstacle names include any additional information,
+  such as the frequency of use or the stage of the game?
+
+  4. Do you have any specific font style or size requirements for the annotations?
+
+  5. Are there any particular color schemes or palettes that should be avoided or
+  preferred for the chart?
+
+  6. Should the seasons be represented differently in the chart, and if so, how?
+
+  7. Are there any specific locations or stages that you want to be emphasized more
+  prominently in the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Different color for frequently used obstacles would be good.
+
+  3. Yes, include the frequency of use.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, seasons should be differentiated, maybe by using different shades of a color.
+
+  7. No specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- season
+- location
+- round_stage
+- obstacle_name
+- obstacle_order

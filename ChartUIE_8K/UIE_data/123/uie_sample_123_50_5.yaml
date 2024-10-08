@@ -1,0 +1,50 @@
+initial_prompt: Please create a line chart showing the variation of 'Price' over 'Period'
+  from the data file. Group data by 'Color' to show separate lines for each color.
+questions: '1. Do you have a preferred color scheme for the different lines representing
+  each color category?
+
+  2. What title would you like for the chart?
+
+  3. Are there specific labels or annotations you would like on the axes?
+
+  4. Would you like to highlight any specific time periods on the chart?
+
+  5. Do you prefer a specific type of line style (e.g., dashed, solid) for the different
+  lines?
+
+  6. Should we include data points on the lines themselves, or would you prefer a
+  smooth line without points?
+
+  7. Is there a particular font style and size you prefer for the axes labels and
+  title?
+
+  8. Would you like a legend included, and if so, where should it be placed (e.g.,
+  top-right, bottom-left)?
+
+  9. Do you have a preference for the thickness of the lines?
+
+  10. Should the y-axis be adjusted to a specific range, or should it automatically
+  scale based on the data?'
+answers: '1. I am not sure.
+
+  2. "Price Variation Over Period"
+
+  3. I do not have specific labels or annotations in mind.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I prefer a smooth line without points.
+
+  7. I have no specific preference.
+
+  8. Yes, please include a legend. I am not sure where it should be placed.
+
+  9. I have no specific preference.
+
+  10. The y-axis should automatically scale based on the data.'
+data_attributes:
+- Period
+- Price
+- Color

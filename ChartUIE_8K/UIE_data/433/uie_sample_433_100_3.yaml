@@ -1,0 +1,47 @@
+initial_prompt: Create a stacked column chart to visualize the production of craft
+  beer over the years. Use 'year' on the x-axis and 'total_barrels', 'taxable_removals',
+  and 'total_shipped' as the stacked components. Each column should represent a year,
+  and different colors should indicate the different categories (total_barrels, taxable_removals,
+  total_shipped). Include labels showing the number of brewers for better context.
+  This will help understand the overall production trends and the distribution of
+  different types of beer production activities in the craft beer industry over time.
+questions: '1. Do you have any specific color preferences for the different categories
+  (''total_barrels'', ''taxable_removals'', ''total_shipped'')?
+
+  2. How would you like the labels showing the number of brewers to be positioned
+  on the chart?
+
+  3. Should the chart include a legend explaining each color category?
+
+  4. Do you prefer a specific font style or size for the text and labels in the chart?
+
+  5. Are there any specific chart title and axis labels you would like to include?
+
+  6. Do you have any preferences for grid lines or background colors in the chart?
+
+  7. Should the x-axis and y-axis have particular formatting, such as date formats
+  or specific intervals?
+
+  8. Do you want to highlight any specific years or data points within the chart?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure about the label positioning, whatever looks best.
+
+  3. Yes, the chart should include a legend explaining each color category.
+
+  4. I do not have any specific font style or size preferences.
+
+  5. The chart title could be "Craft Beer Production Over the Years," and the axis
+  labels could be "Year" for the x-axis and "Barrels of Beer" for the y-axis.
+
+  6. I do not know; no specific preferences for grid lines or background colors.
+
+  7. I do not have specific formatting preferences for the x-axis and y-axis.
+
+  8. I am not sure; no specific years or data points need to be highlighted.'
+data_attributes:
+- year
+- total_barrels
+- taxable_removals
+- total_shipped
+- n_of_brewers

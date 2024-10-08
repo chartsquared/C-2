@@ -1,0 +1,40 @@
+initial_prompt: I need a grouped column chart using the Sloan Digital Sky Survey DR14
+  data. Plot 'u', 'g', 'r', 'i', 'z' magnitudes for different 'class' categories ('STAR',
+  'GALAXY') on the x-axis. Each group represents a class, and each column within the
+  group represents the different magnitudes (u, g, r, i, z). Use color coding to differentiate
+  the magnitudes within each class. Don't forget to label the axes, include a legend,
+  and title the chart. Ensure the chart clearly distinguishes between the star and
+  galaxy data points.
+questions: '1. Do you have a preferred color scheme for differentiating the magnitudes
+  (''u'', ''g'', ''r'', ''i'', ''z'') within each class?
+
+  2. Would you like to include specific data labels on each column, such as the exact
+  magnitude values?
+
+  3. Do you have any preference regarding the format or style of the legend?
+
+  4. Is there a particular style or font you would like to use for the chart title
+  and axis labels?
+
+  5. Do you want gridlines on the chart, and if so, do you have a preference on their
+  appearance (e.g., color, line style)?
+
+  6. Would you like to include any additional annotations or markers on the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. Yes, I would like gridlines. I do not have a preference on their appearance.
+
+  6. I am not sure.'
+data_attributes:
+- u
+- g
+- r
+- i
+- z
+- class

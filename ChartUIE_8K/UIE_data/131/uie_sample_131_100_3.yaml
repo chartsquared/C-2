@@ -1,0 +1,41 @@
+initial_prompt: Please create a stacked bar chart to visualize the mushroom classification
+  data. Use the 'class' column to categorize the mushrooms (e for edible, p for poisonous).
+  Stack the bars by 'cap-shape', with different segments representing unique 'odor'
+  values. The x-axis should show 'cap-shape', and the y-axis should represent the
+  count of mushrooms within each 'class'. Different colors in each bar should represent
+  distinct 'odor' values. This visualization will help understand the distribution
+  of odors among various cap shapes and their classification as edible or poisonous.
+  Thank you!
+questions: "1. Do you have a preferred color palette for the different 'odor' segments?\n\
+  2. Should there be specific colors designated for the 'class' categories of edible\
+  \ and poisonous mushrooms?\n3. Do you want to include labels or values on the bars\
+  \ to display the exact counts of mushrooms?\n4. Should the chart include a legend\
+  \ to explain the color coding for 'odor' values?\n5. Would you like any specific\
+  \ font styles or sizes for the axis labels and the legend?\n6. Do you want gridlines\
+  \ on the chart for better readability, and if yes, should they be in a particular\
+  \ style or color?\n7. Should there be any specific title or subtitle for the chart?\
+  \ \n8. Would you like to include any source or footnotes for the data? \n9. Do you\
+  \ have any preference for the formatting of the y-axis (e.g., scale, intervals)?"
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, include labels or values on the bars to display the exact counts of mushrooms.
+
+  4. Yes, the chart should include a legend to explain the color coding for ''odor''
+  values.
+
+  5. I have no specific preference.
+
+  6. Yes, include gridlines for better readability. I do not have a preference for
+  style or color.
+
+  7. No specific title or subtitle.
+
+  8. I have no specific preference.
+
+  9. I do not know.'
+data_attributes:
+- class
+- cap-shape
+- odor

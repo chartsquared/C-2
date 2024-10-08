@@ -1,0 +1,53 @@
+initial_prompt: 'Create a line chart of European Ski Resorts focusing on TotalSlope,
+  BeginnerSlope, IntermediateSlope, and DifficultSlope. Annotate key points like peaks
+  and valleys in slopes. Highlight resorts with the highest and lowest TotalSlope.
+  The visualization should help compare slope difficulties across different resorts,
+  showing how they vary within a country. We aim to understand the distribution of
+  slope types and assist skiers in selecting resorts based on their skill levels.
+  Data categories: Resort, Country, Slope types. Highlighting and annotations will
+  emphasize key differences and guide selections effectively.'
+questions: '1. Do you have any specific color preferences for different slope types?
+
+  2. Would you like the resort names to be displayed directly on the chart or in a
+  legend?
+
+  3. Do you prefer specific styles for highlighting the highest and lowest TotalSlope
+  resorts (e.g., different colors, markers)?
+
+  4. Are there any specific countries you would like to highlight or focus on?
+
+  5. How would you like key points (peaks and valleys) to be annotated (e.g., labels,
+  markers)?
+
+  6. Do you prefer a specific line style or thickness for the chart?
+
+  7. Are there any additional elements you would like included in the chart (e.g.,
+  gridlines, background shading for different countries)?
+
+  8. Would you like the chart to include a title and subtitles, and if so, what should
+  they be?'
+answers: '1. I am not sure.
+
+  2. I would like the resort names to be displayed directly on the chart.
+
+  3. I prefer different colors for highlighting the highest and lowest TotalSlope
+  resorts.
+
+  4. I do not know.
+
+  5. I would like key points (peaks and valleys) to be annotated with labels.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include a title and subtitles. Title: "Comparison of Slope Difficulties
+  Across European Ski Resorts." Subtitles: "Total Slope Lengths" and "Distribution
+  of Beginner, Intermediate, and Difficult Slopes."'
+data_attributes:
+- Resort
+- Country
+- TotalSlope
+- BeginnerSlope
+- IntermediateSlope
+- DifficultSlope

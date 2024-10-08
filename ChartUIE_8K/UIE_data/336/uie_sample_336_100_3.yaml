@@ -1,0 +1,54 @@
+initial_prompt: Create a stacked bar chart visualizing the Wholesale Customers Data.
+  The chart should display the total quantities for each product category (Fresh,
+  Milk, Grocery, Frozen, Detergents_Paper, and Delicassen) across different Channels
+  and Regions. Utilize the provided summary and sample data to structure the chart
+  with proper labels and color coding for each product category, making it easy to
+  differentiate between them. Additionally, ensure clarity by including a legend that
+  explains the colors corresponding to each product. This will help in understanding
+  the distribution and comparison of product categories across different segments
+  in the business data.
+questions: '1. Do you have any specific color preferences for each product category?
+
+  2. Do you prefer any particular order for stacking the product categories?
+
+  3. What titles or labels should be included for the axes?
+
+  4. Do you have a preferred font size or type for the labels and legend?
+
+  5. Should any specific Channel or Region be emphasized in the chart?
+
+  6. Would you like any additional annotations or markers to highlight key insights
+  or data points?
+
+  7. Do you have a preference for the width and spacing of the bars in the chart?
+
+  8. Should there be any grid lines or background shading to enhance readability?
+
+  9. Is there any specific range or scale that you would like to set for the y-axis?'
+answers: '1. I am not sure about the specific color preferences for each product category.
+
+  2. I do not have a specific preference for the order of stacking the product categories.
+
+  3. The x-axis should be labeled "Channels and Regions" and the y-axis should be
+  labeled "Total Quantities".
+
+  4. I do not have a preference for font size or type for the labels and legend.
+
+  5. I am not sure if any specific Channel or Region should be emphasized.
+
+  6. I do not know if additional annotations or markers are needed.
+
+  7. I do not have a preference for the width and spacing of the bars in the chart.
+
+  8. I am not sure about the grid lines or background shading.
+
+  9. I do not know if there should be a specific range or scale for the y-axis.'
+data_attributes:
+- Channel
+- Region
+- Fresh
+- Milk
+- Grocery
+- Frozen
+- Detergents_Paper
+- Delicassen

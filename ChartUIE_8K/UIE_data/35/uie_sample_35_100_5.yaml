@@ -1,0 +1,34 @@
+initial_prompt: Please create a dot plot visualizing the credit card customer data.
+  On the x-axis, display 'Customer_Age' and on the y-axis, display 'Credit_Limit'.
+  Differentiate the dots by 'Gender' using distinct colors. The size of each dot should
+  represent 'Total_Trans_Amt'. Display a legend explaining the colors and sizes used.
+  Ensure the plot is clear and provides insights into age distribution, credit limits,
+  and transaction amounts among different genders.
+questions: '1. What color palette do you prefer for differentiating ''Gender''?
+
+  2. Do you have any specific preferences for the size scale of the dots representing
+  ''Total_Trans_Amt''?
+
+  3. Would you like any specific labels or markers on the axes?
+
+  4. Is there a particular axis range you want for ''Customer_Age'' or ''Credit_Limit''?
+
+  5. Do you prefer any specific font style or size for the chart labels and legend?
+
+  6. Are there any specific insights or trends you want to highlight in the dot plot?
+
+  7. Would you like to include any gridlines or background shading in the chart for
+  better readability?
+
+  8. Do you have a preferred title for the dot plot?
+
+  9. Are there any specific annotations or notes you want to include on the chart?'
+answers: "1. I don't know.  \n2. I am not sure.  \n3. No specific preferences.  \n\
+  4. I do not know.  \n5. No specific preference.  \n6. I am not sure.  \n7. Yes,\
+  \ gridlines for readability.  \n8. \"Credit Card Customer Data by Age and Credit\
+  \ Limit\"  \n9. No specific annotations."
+data_attributes:
+- Customer_Age
+- Credit_Limit
+- Gender
+- Total_Trans_Amt

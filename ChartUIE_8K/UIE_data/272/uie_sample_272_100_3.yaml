@@ -1,0 +1,58 @@
+initial_prompt: Please create a Treemap chart showing the distribution of EV stock
+  share, EV sales share, and EV sales across different regions in 2011. Each rectangle
+  should represent a different parameter, and the size should correspond to its value.
+  The regions should be divided based on the mode (e.g., Cars) and powertrain type
+  (e.g., EV, BEV). Use distinct colors for each category (e.g., Historical). The chart
+  should clearly indicate the units of measurement (e.g., percent, Vehicles). The
+  aim is to compare the adoption and sales of electric vehicles globally. Thank you!
+questions: '1. Do you have a preferred color palette for the distinct categories (e.g.,
+  Historical)?
+
+  2. How would you like the legend to be displayed? Should it be inside or outside
+  the chart?
+
+  3. Do you have any specific font preferences (type, size) for labels and annotations?
+
+  4. Would you like to include any specific titles or subtitles for the Treemap chart?
+
+  5. Should the chart include tooltips or data labels for each rectangle to show precise
+  values?
+
+  6. Do you prefer a specific layout for the Treemap chart (e.g., squarified, slice-and-dice)?
+
+  7. Are there any specific regions or categories that you would like to highlight
+  or emphasize in the chart?
+
+  8. How should the units of measurement (percent, Vehicles) be displayed? Would you
+  prefer them in a legend, directly on the chart, or both?
+
+  9. Is there a specific order in which you would like the regions, modes, or powertrain
+  types to be arranged?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have a specific preference for titles or subtitles.
+
+  5. Yes, the chart should include data labels for each rectangle to show precise
+  values.
+
+  6. I have no specific preference for the layout.
+
+  7. I am not sure.
+
+  8. Units of measurement should be displayed both directly on the chart and in a
+  legend.
+
+  9. I do not have a specific order preference.'
+data_attributes:
+- region
+- parameter
+- category
+- mode
+- powertrain
+- year
+- unit
+- value

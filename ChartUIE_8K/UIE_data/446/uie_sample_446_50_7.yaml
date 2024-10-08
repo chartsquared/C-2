@@ -1,0 +1,40 @@
+initial_prompt: Create a geographic heatmap showing the frequency of animal rescue
+  incidents. Use latitude and longitude data to plot rescue locations over time. Highlight
+  areas with high incident density.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Do you want specific time intervals highlighted (e.g., daily, weekly, monthly)?
+
+  3. Should we include tooltips or labels for specific data points when hovered over?
+
+  4. Is there a specific geographic boundary you would like to focus on (e.g., city
+  limits)?
+
+  5. Do you want the density of incidents to be represented by varying color intensities
+  or another method?
+
+  6. Would you like to see a legend that indicates the density range for the heatmap?
+
+  7. Are there additional data attributes you want to overlay or filter by (e.g.,
+  type of incident)?
+
+  8. Should certain areas or regions be annotated or highlighted for emphasis?'
+answers: '1. I have no specific preference.
+
+  2. I would like specific time intervals highlighted; monthly would be good.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, I want the density of incidents to be represented by varying color intensities.
+
+  6. Yes, I would like to see a legend that indicates the density range for the heatmap.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- latitude
+- longitude
+- date_time_of_call

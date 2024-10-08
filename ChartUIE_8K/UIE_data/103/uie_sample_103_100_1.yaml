@@ -1,0 +1,46 @@
+initial_prompt: I need a stacked column chart to visualize the sales dataset. The
+  chart should display sales by different product lines, grouped by branches. Highlight
+  the total sales and gross income for each branch, using different colors for each
+  product line. Include text annotations to show the total sales figures on top of
+  each stacked column and call out the highest and lowest sales branches with comments.
+  This will help us quickly understand which branches and product lines are performing
+  best within our business.
+questions: '1. Do you have any preference for the color palette to be used for different
+  product lines?
+
+  2. What font style and size do you prefer for the text annotations on the chart?
+
+  3. How would you like the highest and lowest sales branches to be highlighted or
+  annotated?
+
+  4. Do you prefer any specific layout or orientation for the chart (e.g., vertical
+  or horizontal columns)?
+
+  5. Are there any specific labels or titles you wish to include on the chart?
+
+  6. Would you like gridlines on the chart, and if so, should they be displayed in
+  a particular style?
+
+  '
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Highlight the highest and lowest sales branches with bold text and arrows pointing
+  to the columns.
+
+  4. Vertical columns would be fine.
+
+  5. Please include a title: "Branch Performance by Product Line" and labels for the
+  axes: "Branches" for the x-axis and "Sales" for the y-axis.
+
+  6. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Branch
+- Product line
+- Total
+- gross income

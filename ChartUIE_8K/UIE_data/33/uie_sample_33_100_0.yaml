@@ -1,0 +1,50 @@
+initial_prompt: Create a stacked bar chart visualizing the count of employees based
+  on Attrition (Yes/No) segmented by Gender. Highlight the "Yes" values in a distinct
+  color to emphasize attrition cases. Annotate the chart with specific data points
+  for Age and MonthlyIncome to draw attention to any insights on age and income distribution
+  among those who left. This will help understand the demographic and financial profile
+  of employees who are leaving and assist in strategic HR planning. The chart should
+  be clear and easy to interpret for HR analysis.
+questions: '1. Do you have a specific color preference for highlighting "Yes" values
+  in the stacked bar chart?
+
+  2. Would you like to specify particular colors to be used for the different genders
+  in the chart?
+
+  3. Do you prefer any specific fonts or font sizes for the annotations and labels
+  on the chart?
+
+  4. Is there a particular format in which you would like the age and monthly income
+  data points to be annotated (e.g., numerical values, percentages)?
+
+  5. Do you have any preferences for the chart''s layout, such as its aspect ratio
+  or size?
+
+  6. Are there any legends or additional text information you would like to be included
+  in the chart?
+
+  7. Do you have any preferences for the order in which categories (e.g., Gender)
+  should be displayed in the chart?
+
+  8. Would you like any specific data points or ranges to be highlighted in the annotations
+  beyond general trends?'
+answers: '1. I am not sure, maybe something like red for highlighting "Yes".
+
+  2. I do not know.
+
+  3. I do not have a specific preference.
+
+  4. Numerical values for age and monthly income would be great.
+
+  5. I have no specific preference.
+
+  6. Yes, having a legend to explain the colors and categories would be helpful.
+
+  7. I am not sure.
+
+  8. I do not have any specific data points or ranges in mind beyond general trends.'
+data_attributes:
+- Age
+- Attrition
+- Gender
+- MonthlyIncome

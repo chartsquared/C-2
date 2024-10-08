@@ -1,0 +1,49 @@
+initial_prompt: Create a grouped bar chart to compare 'total_pop' and 'mobile_subs'
+  across different years for each continent. Highlight significant trends and note
+  any missing values in the data. Use text annotations to emphasize years with drastic
+  changes in population or mobile subscriptions. This will help understand the growth
+  patterns in population and mobile technology adoption over time, providing valuable
+  insights for demographic and technological studies. Additionally, indicate the count
+  of missing values in 'gdp_per_cap' to address data completeness. This visualization
+  is ideal for analyzing trends and disparities across continents.
+questions: "1. Do you have a preferred color scheme for the bar chart?\n2. Should\
+  \ the bars for 'total_pop' and 'mobile_subs' be differentiated by color or pattern?\n\
+  3. How would you like the missing values to be indicated on the chart?\n4. Do you\
+  \ have a specific style or format for text annotations to emphasize drastic changes?\n\
+  5. Would you prefer the chart to have a title and axis labels? If so, please specify.\n\
+  6. Do you want a legend to differentiate between 'total_pop' and 'mobile_subs'?\n\
+  7. Is there a specific font style or size you prefer for the axis labels and annotations?\n\
+  8. How detailed should the indication of missing 'gdp_per_cap' values be? \n9. Are\
+  \ there any specific trends or years you want us to pay special attention to or\
+  \ highlight?\n10. Would you prefer the bars to be sorted in a specific order (e.g.,\
+  \ chronological by year)?\n11. Are there any specific design guidelines or branding\
+  \ requirements we should follow?"
+answers: '1. I am not sure.
+
+  2. Yes, please differentiate by color.
+
+  3. I am not sure.
+
+  4. I do not have a specific style in mind.
+
+  5. Yes, please include a title and axis labels. Title: "Comparison of Population
+  and Mobile Subscriptions by Continent Over Years". X-Axis: "Year", Y-Axis: "Count".
+
+  6. Yes, please include a legend.
+
+  7. I am not sure.
+
+  8. Just a simple count of missing ''gdp_per_cap'' values would be fine.
+
+  9. I am not sure.
+
+  10. Yes, please sort the bars chronologically by year.
+
+  11. No, I do not have any specific design guidelines or branding requirements.'
+data_attributes:
+- entity
+- year
+- total_pop
+- mobile_subs
+- continent
+- gdp_per_cap

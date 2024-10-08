@@ -1,0 +1,51 @@
+initial_prompt: Please create a stacked column chart visualizing the differences in
+  memory scores before and after drug administration for each individual. The x-axis
+  should represent individuals by their first and last names, and the y-axis should
+  show memory scores. Use different colors to represent memory scores before and after.
+  Additionally, use a third color to indicate the difference in scores (Diff). Include
+  labels for Happy/Sad groups, Dosage, and Drug types for clarity. This will help
+  in understanding how each drug impacts memory across different groups under various
+  dosages.
+questions: '1. Do you have a preferred color scheme for the memory scores before and
+  after drug administration?
+
+  2. What color would you like to use to indicate the difference in scores (Diff)?
+
+  3. How would you like the Happy/Sad groups, Dosage, and Drug types to be labeled
+  on the chart (e.g., legend position, font size)?
+
+  4. Do you want any specific formatting for the x-axis labels (first and last names)
+  such as font type or angle?
+
+  5. Do you prefer gridlines on the y-axis to help with interpreting memory scores?
+
+  6. Is there a specific order in which you would like the individuals to be displayed
+  on the x-axis (e.g., alphabetical, by group)?
+
+  7. Are there any particular chart titles or subtitle preferences you have?
+
+  8. Would you like to include any specific annotations or notes on the chart?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know, but please make them clear and easily readable.
+
+  4. I do not know.
+
+  5. Yes, gridlines on the y-axis would be helpful.
+
+  6. I am not sure.
+
+  7. I have no specific titles or subtitle preferences.
+
+  8. I am not sure.'
+data_attributes:
+- first_name
+- last_name
+- Mem_Score_Before
+- Mem_Score_After
+- Diff
+- Happy_Sad_group
+- Dosage
+- Drug

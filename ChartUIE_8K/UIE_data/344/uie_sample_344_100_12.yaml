@@ -1,0 +1,48 @@
+initial_prompt: Create a dumbbell chart comparing the salary ranges of different blockchain-related
+  job titles in India for 2022 from Glassdoor data. Use the lower and upper salary
+  limits for each job title, with markers indicating whether it's an "Easy Apply"
+  position. This will help visualize the salary distribution and ease of application
+  for roles in companies like Infosys, Synergy Labs, etc. Ensure that each job title,
+  company, and location is displayed clearly to illustrate the differences. Highlight
+  the unique values and ensure missing values are considered in the design.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How would you like the job titles, companies, and locations to be displayed?
+  Vertically or horizontally?
+
+  3. Should the markers for "Easy Apply" positions be in a distinct shape or size?
+
+  4. Would you like the chart to include a legend to explain the markers and color
+  coding?
+
+  5. Is there a particular font or style you prefer for the labels and titles?
+
+  6. Should we include data labels for the salary limits on the dumbbell chart?
+
+  7. How would you like the various companies to be highlighted? Through color, shape,
+  or other means?
+
+  8. Do you have any preferred way to handle missing values visually (e.g., special
+  markers, color coding, etc.)?'
+answers: '1. I have no specific preference.
+
+  2. Horizontally.
+
+  3. Yes, distinct shape.
+
+  4. Yes.
+
+  5. I do not know.
+
+  6. Yes.
+
+  7. Through color.
+
+  8. I am not sure.'
+data_attributes:
+- Title
+- Company
+- Location
+- Easy Apply
+- Salary_Lower_Limit
+- Salary_Upper_Limit

@@ -1,0 +1,50 @@
+initial_prompt: Please create an OHLC chart for Apple Stocks using the given data.
+  Visualize the Open, High, Low, and Close prices for the available dates, ensuring
+  each data point is correctly plotted. Highlight significant trends and notable price
+  changes over time. Make use of the provided Volume data to represent the trading
+  volume with bar charts underneath the OHLC data, allowing for a comprehensive understanding
+  of price movements in correlation with trading volume. The chart should give a clear
+  historical view of price fluctuations, making it easy to analyze performance over
+  the given period.
+questions: '1. Do you have a preferred color scheme for the OHLC and volume bar charts?
+
+  2. Would you like specific date intervals (e.g., monthly, quarterly) to be highlighted
+  on the x-axis?
+
+  3. Should the chart include any moving averages or other technical indicators?
+
+  4. Do you prefer a particular style for highlighting significant trends and notable
+  price changes?
+
+  5. Are there any specific annotations or markers you would like to be included in
+  the chart?
+
+  6. Do you have a preferred layout or positioning for the volume bar chart relative
+  to the OHLC chart?
+
+  7. Would you like to include grid lines for better readability of the chart?
+
+  8. Are there any specific titles, labels, or legends you would like the chart to
+  include?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I prefer the volume bar chart to be underneath the OHLC chart.
+
+  7. Yes, include grid lines for better readability.
+
+  8. Yes, please include titles, labels, and legends for clarity.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

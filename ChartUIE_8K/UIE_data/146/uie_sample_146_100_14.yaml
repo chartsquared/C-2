@@ -1,0 +1,46 @@
+initial_prompt: Please create a bar chart visualizing the leading and trailing candidates'
+  margins from the Lok Sabha Election Results 2024 data. The x-axis should display
+  the constituencies and the y-axis the margin numbers. Highlight candidates with
+  different colors based on their parties. Ensure the chart features clear labels
+  and a legend for party identification. This will help us quickly assess which parties
+  had the largest or smallest margins in specific constituencies across the dataset
+  provided. The goal is to get insights into the competitive landscape of various
+  regions during these elections.
+questions: '1. Do you have a preferred color palette for highlighting different parties?
+
+  2. Should we sort the constituencies on the x-axis alphabetically or by margin size?
+
+  3. Do you prefer vertical or horizontal bars?
+
+  4. Is there a specific font style or size you would like for the labels and legend?
+
+  5. Would you like the margins to be displayed in thousands or in full numbers on
+  the y-axis?
+
+  6. Should the bar chart include grid lines for easier comparison?
+
+  7. Do you prefer any specific styling for the chart title and axis labels?
+
+  8. Are there any specific parties that you would like to be highlighted more prominently?'
+answers: '1. I have no specific preference.
+
+  2. By margin size.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. In thousands.
+
+  6. Yes.
+
+  7. No specific preference.
+
+  8. I am not sure.'
+data_attributes:
+- Constituency
+- Leading Candidate
+- Leading Party
+- Trailing Candidate
+- Trailing Party
+- Margin

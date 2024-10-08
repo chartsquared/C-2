@@ -1,0 +1,55 @@
+initial_prompt: I need a stacked area chart to visualize the sales data over 100 days
+  from multiple sources. Specifically, I want to see how the sale index evolves over
+  time and how the confidence intervals (CI_left and CI_right) vary. The chart should
+  show the average sale index and include separate areas for the CI ranges. Please
+  ensure that it accurately reflects trends and potential uncertainties. Given this
+  data is crucial for business decisions, clarity and readability are essential. If
+  there are any missing values, handle them gracefully to not distort the analysis.
+questions: '1. Do you have any preference for the color scheme or color palette used
+  in the chart?
+
+  2. Should the chart include gridlines to improve readability?
+
+  3. Do you want labels on the data points or just on the axes?
+
+  4. Would you like to include a legend to describe the different areas on the chart?
+
+  5. Are there any specific font styles or sizes you prefer for the text in the chart?
+
+  6. Should the chart have a title and, if so, what should it be?
+
+  7. Do you have any specific preferences for the range or scale on the Y-axis?
+
+  8. How would you like the X-axis (days) to be labeled—daily, weekly, or another
+  interval?
+
+  9. Would you like the confidence interval areas to be shaded or outlined differently
+  to distinguish them more clearly?
+
+  10. Are there any specific annotations or reference lines you want to include on
+  the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include gridlines to improve readability.
+
+  3. Just on the axes.
+
+  4. Yes, including a legend would be helpful.
+
+  5. I do not have a specific preference.
+
+  6. Yes, the title should be "Sales Index Over 100 Days with Confidence Intervals."
+
+  7. I am not sure.
+
+  8. Daily.
+
+  9. Yes, the confidence interval areas should be shaded differently to distinguish
+  them more clearly.
+
+  10. I do not know.'
+data_attributes:
+- days
+- sale_index
+- CI_left
+- CI_right

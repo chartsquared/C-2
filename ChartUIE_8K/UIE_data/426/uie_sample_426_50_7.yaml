@@ -1,0 +1,49 @@
+initial_prompt: Create a box plot visualizing the reign lengths of Roman Emperors.
+  Use the "reign_start" and "reign_end" columns to calculate reign duration in years.
+  Label the dynasties on the x-axis for comparison.
+questions: '1. Do you have a preferred color scheme for the box plot?
+
+  2. Would you like to include a title for the chart? If so, what should it be?
+
+  3. Do you prefer any specific font style or size for the labels and titles?
+
+  4. Should the whiskers in the box plot represent a specific percentile (e.g., 5th
+  and 95th percentiles)?
+
+  5. Would you like to include data points overlaying the box plot (e.g., individual
+  reign lengths as dots)?
+
+  6. How detailed should the labels on the x-axis (dynasties) be? Full names or abbreviated?
+
+  7. Would you like to display outliers, or should they be excluded from the box plot?
+
+  8. Should the y-axis have specific increments or any custom range for better clarity?
+
+  9. Do you want to add any annotations or notes on the chart to highlight specific
+  data points or insights?
+
+  10. Should there be any grid lines for easier reference, if so, horizontal, vertical,
+  or both?'
+answers: '1. I am not sure.
+
+  2. The title could be "Reign Lengths of Roman Emperors by Dynasty".
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. Full names for the dynasties.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- reign_start
+- reign_end
+- dynasty

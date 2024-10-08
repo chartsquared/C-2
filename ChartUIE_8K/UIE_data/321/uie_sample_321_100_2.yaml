@@ -1,0 +1,47 @@
+initial_prompt: Please create a candlestick chart using the provided IBM stock data.
+  The chart should include annotations for key data points, highlighting significant
+  changes in stock prices. Make sure to indicate the volume of trades alongside the
+  candlesticks. Use highlights to differentiate between high and low trading days
+  for better visual emphasis. The purpose of this visualization is to analyze stock
+  performance over time, focusing on trends and volatility. Text annotations should
+  draw attention to notable dates or price movements. Ensure the chart is clear and
+  conveys the business context effectively.
+questions: '1. Do you have any specific color preferences for highlighting high and
+  low trading days?
+
+  2. What style or type of annotations do you prefer for key data points and significant
+  price changes?
+
+  3. Would you like the volume of trades displayed as bars or another form alongside
+  the candlesticks?
+
+  4. Are there particular dates or price thresholds you want to be specifically annotated?
+
+  5. How detailed should the text annotations be for notable dates or price movements?
+
+  6. Do you have a preferred font style or size for the annotations and labels in
+  the chart?
+
+  7. How would you like the business context to be highlighted or conveyed in the
+  chart?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure what style or type of annotations to use.
+
+  3. I would like the volume of trades displayed as bars.
+
+  4. I do not know which dates or price thresholds to specifically annotate.
+
+  5. I would prefer detailed text annotations for notable dates or price movements.
+
+  6. I have no specific preference for font style or size.
+
+  7. I do not know how the business context should be highlighted but it should be
+  clear and effective.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

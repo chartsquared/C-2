@@ -1,0 +1,52 @@
+initial_prompt: I have a dataset that shows Bitcoin USD stock market data from 2021
+  to 2023, including columns for Year, Open, High, Low, and Close prices. I need the
+  data visualized using a Candlestick chart. This chart should illustrate the opening,
+  high, low, and closing prices of Bitcoin for each year in the dataset. Please ensure
+  the x-axis represents the years and the y-axis represents the prices. The chart
+  must clearly distinguish between bullish and bearish candlesticks. This visualization
+  will help me analyze price trends and fluctuations of Bitcoin over these years.
+questions: '1. Do you have a preferred color scheme for the bullish and bearish candlesticks?
+
+  2. Would you like grid lines on the chart to improve readability?
+
+  3. Should there be any specific labels or annotations on the candlesticks to highlight
+  key data points?
+
+  4. Do you prefer specific fonts or font sizes for the axis labels and chart title?
+
+  5. Would you like a title and subtitle on the chart? If so, what should they be?
+
+  6. Do you need any additional legends or explanatory notes on the chart?
+
+  7. Should the chart include data markers or symbols on the candlesticks for better
+  clarity?
+
+  8. Do you want to visualize any moving averages or trend lines in addition to the
+  candlestick data?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, grid lines would be helpful.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, a title and subtitle would be good. The title can be "Bitcoin Price Trends
+  (2021-2023)" and the subtitle can be "Analysis of Annual Opening, High, Low, and
+  Closing Prices".
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. No, just the candlestick data is fine.
+
+  <end of user emulated response>'
+data_attributes:
+- Year
+- Open
+- High
+- Low
+- Close

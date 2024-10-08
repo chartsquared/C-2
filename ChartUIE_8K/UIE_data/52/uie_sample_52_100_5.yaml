@@ -1,0 +1,44 @@
+initial_prompt: I have a data set about basic computer specifications. I would like
+  a scatter plot visualizing this data. Please plot 'price' on the y-axis and 'speed'
+  on the x-axis. Use different colors or markers to distinguish between computers
+  with and without a CD drive ('cd' column). Also, please include a legend to indicate
+  the distinction. I want to see how price correlates with speed and if having a CD
+  drive makes any visible difference. Provide a title like "Price vs. Speed of Computers
+  with CD Drive Distinction". Thank you!
+questions: '1. Do you have a preference for the use of colors or specific markers
+  to distinguish between computers with and without a CD drive?
+
+  2. Do you want any specific font type or style for the title and legend?
+
+  3. What size of markers do you prefer on the scatter plot?
+
+  4. Would you like gridlines to be visible on the plot? If yes, in both X and Y axes
+  or any one specifically?
+
+  5. Do you have a preferred layout for the legend (e.g., top-right, bottom-left)?
+
+  6. Is there a specific range you want to set for the y-axis (''price'') or x-axis
+  (''speed''), or should they be automatically determined based on the data?
+
+  7. Would you like to include any specific annotations or highlights in the chart?
+
+  8. Do you have a preferred size or aspect ratio for the entire chart?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I do not know.
+
+  4. Yes, gridlines in both X and Y axes would be good.
+
+  5. I am not sure, maybe top-right.
+
+  6. Automatically determined based on the data.
+
+  7. I do not know.
+
+  8. No specific preference.'
+data_attributes:
+- price
+- speed
+- cd

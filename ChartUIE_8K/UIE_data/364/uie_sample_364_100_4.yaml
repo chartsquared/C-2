@@ -1,0 +1,56 @@
+initial_prompt: Create a heatmap visualizing the availability of movies across different
+  streaming platforms based on the provided dataset. The x-axis should represent the
+  platforms (Netflix, Hulu, Prime Video, Disney+), and the y-axis should list the
+  movie Titles. The heatmap cells should show whether a movie is available on a specific
+  platform (1) or not (0). This will help to quickly identify the distribution of
+  movies across platforms. Ensure that missing data is handled appropriately, especially
+  for the 'Rotten Tomatoes' column with missing values. Title the chart "Movies Availability
+  on Streaming Platforms".
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What should be the range of colors for indicating availability (1) and non-availability
+  (0)?
+
+  3. How would you like missing data for the ''Rotten Tomatoes'' column to be represented
+  or handled in the heatmap?
+
+  4. Do you have any specific font preferences for the movie titles on the y-axis?
+
+  5. What is your preferred layout for the axis labels and title?
+
+  6. Would you like gridlines to be displayed on the heatmap?
+
+  7. Should the heatmap include any specific annotations or labels within the cells?
+
+  8. Do you have a specific size or aspect ratio in mind for the heatmap?
+
+  9. Do you prefer a certain orientation for the movie titles on the y-axis (horizontal
+  or vertical)?
+
+  10. Would you like a legend indicating what the colors represent on the heatmap?'
+answers: '1. I do not have a preferred color scheme for the heatmap.
+
+  2. I am not sure.
+
+  3. Please handle missing data for the ''Rotten Tomatoes'' column as best as you
+  see fit.
+
+  4. I have no specific preference for the font.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. I have no specific size or aspect ratio in mind.
+
+  9. I prefer the movie titles to be horizontal on the y-axis.
+
+  10. Yes, a legend indicating what the colors represent would be helpful.'
+data_attributes:
+- Title
+- Netflix
+- Hulu
+- Prime Video
+- Disney+

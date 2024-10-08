@@ -1,0 +1,57 @@
+initial_prompt: "Create a detailed line chart for Ethereum showing its historical\
+  \ prices and volumes over time. The chart should have the following features: \n\
+  \n1. X-axis: Date \n2. Left Y-axis: Price (Open, High, Low, Close, Adj Close) \n\
+  3. Right Y-axis: Volume \n4. Annotations: Highlight key trading days with text annotations\
+  \ showing price and volume. \n5. Use different colors and line styles for each price\
+  \ type for clarity.\n\nPurpose: To visually analyze Ethereum’s price trends and\
+  \ trading volumes over a specific period. This is for cryptocurrency market analysis."
+questions: '1. Do you have a preferred date range for the data to be visualized?
+
+  2. Are there specific key trading days you would like to annotate?
+
+  3. What color scheme or specific colors do you prefer for each price type (Open,
+  High, Low, Close, Adj Close)?
+
+  4. Do you have a preferred line style (solid, dashed, dotted) for each price type?
+
+  5. Would you like to include any additional annotations or markers besides key trading
+  days?
+
+  6. How would you prefer to handle missing data points, if any?
+
+  7. Is there a particular format or style you prefer for the text annotations?
+
+  8. Are there any specific formatting preferences for the axes, such as labels or
+  tick marks?
+
+  9. Would you like to include a legend? If so, where would you prefer it to be positioned
+  (top, bottom, left, right)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Solid for Open, dashed for High, dotted for Low, dashed-dotted for Close, solid-thick
+  for Adj Close.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. Yes, please include a legend. I would prefer it to be positioned at the bottom.
+
+
+  '
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

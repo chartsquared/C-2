@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap to visualize the correlations between different game
+  statistics for League of Legends Diamond Ranked Games. Include variables like blueKills,
+  blueDeaths, blueAssists, redKills, redDeaths, redAssists, blueWardsPlaced, and redWardsPlaced.
+  Highlight strong correlations in the heatmap with a distinct color gradient. Ensure
+  to label axis for clarity and add a color bar legend. Display data for both teams
+  in the heatmap to see how their actions correlate throughout the games. Use a cool-to-warm
+  color scheme to make differences in correlation values more distinguishable.
+questions: '1. Do you have a preferred title for the heatmap?
+
+  2. Would you like to include any specific annotations or text within the heatmap?
+
+  3. Are there any specific axis labels or names you prefer for the x-axis and y-axis?
+
+  4. Do you have a preference for the range of correlation values in the color gradient?
+
+  5. Are there any specific color shades or tones you would like included in the cool-to-warm
+  color scheme?
+
+  6. Would you like to display values within the cells of the heatmap (e.g., numerical
+  correlation values)?
+
+  7. How detailed do you want the axis ticks and labels to be?
+
+  8. Is there a preferred positioning for the color bar legend?'
+answers: '1. I do not have a specific preference for the title.
+
+  2. I am not sure.
+
+  3. I prefer simple axis labels like "Game Statistics".
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include the numerical correlation values within the cells of the
+  heatmap.
+
+  7. Detailed enough to distinguish between the different game statistics clearly.
+
+  8. I am not sure.'
+data_attributes:
+- blueKills
+- blueDeaths
+- blueAssists
+- redKills
+- redDeaths
+- redAssists
+- blueWardsPlaced
+- redWardsPlaced

@@ -1,0 +1,50 @@
+initial_prompt: 'I need a histogram to show Google stock prices from 2004 based on
+  the provided data. Specifically, highlight the ''Close'' values. Annotations: mark
+  significant ''Close'' price changes and add text annotations for highest ''High''
+  and lowest ''Low'' prices to draw viewer attention. Emphasize ''Volume'' anomalies
+  to understand market activity. Provide context on historical trends.'
+questions: '1. Do you have any specific color preferences for the histogram bars and
+  annotations?
+
+  2. Should we use particular markers or symbols to highlight significant ''Close''
+  price changes and volume anomalies?
+
+  3. Do you prefer any specific fonts or font sizes for the annotations?
+
+  4. How would you like the context on historical trends to be displayed (e.g., a
+  separate text box, inline annotations, a timeline)?
+
+  5. Would you like any specific time intervals (e.g., year, month) to be highlighted
+  on the x-axis?
+
+  6. Do you have a preference for the scaling of the y-axis (e.g., linear, logarithmic)?
+
+  7. Should the histogram have gridlines for better readability?
+
+  8. Do you need a specific title and subtitle for the histogram?
+
+  9. Would you like to include a legend explaining the highlighted elements and annotations?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. Inline annotations would be good.
+
+  5. Highlighted by year would be helpful.
+
+  6. I do not know.
+
+  7. Yes, gridlines would be useful.
+
+  8. Title: "Google Stock Prices Since 2004", Subtitle: "Highlighting Closing Prices,
+  Significant Changes, and Volume Anomalies".
+
+  9. Yes, a legend explaining the highlighted elements and annotations would be helpful.'
+data_attributes:
+- Date
+- Close
+- High
+- Low
+- Volume

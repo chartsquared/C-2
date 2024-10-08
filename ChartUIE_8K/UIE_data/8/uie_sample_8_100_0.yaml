@@ -1,0 +1,60 @@
+initial_prompt: I would like a choropleth map visualizing crop production distribution
+  across Kenya based on the 2019 census data. Annotate key counties with highest and
+  lowest production values for crops like maize, beans, and potatoes. Use highlights
+  to emphasize these counties. The purpose is to visually identify regional differences
+  in crop production. Also, include text annotations to provide context on significant
+  data points and provide some orientation or editorial comments where necessary.
+  This will help in understanding the agricultural landscape and focus on specific
+  regions for detailed analysis.
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. Would you like specific symbols or markers used for annotations of key counties?
+
+  3. How detailed should the text annotations be? Do you prefer short notes or more
+  detailed explanations?
+
+  4. Are there specific font styles or sizes you prefer for the text annotations and
+  labels?
+
+  5. Should the map include a legend to explain the color gradients?
+
+  6. Do you want labels for all counties or only for those with the highest and lowest
+  production values?
+
+  7. Would you prefer if the highlights were done using borders, different colors,
+  or both?
+
+  8. Are there any specific regions or counties you want to prioritize in the visualization
+  aside from relying on the data extremes?
+
+  9. Do you have any preferences for the orientation or layout of the map (e.g., portrait,
+  landscape)?
+
+  10. Should the map include a title and/or subtitle for additional context? If yes,
+  what should it be?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Short notes.
+
+  4. I do not know.
+
+  5. Yes, include a legend to explain the color gradients.
+
+  6. Only for those with the highest and lowest production values.
+
+  7. Both borders and different colors.
+
+  8. I am not sure.
+
+  9. Landscape.
+
+  10. Yes, include a title and subtitle for additional context. The title should be
+  "Crop Production Distribution Across Kenya (2019)" and the subtitle should be "Regional
+  Differences in Maize, Beans, and Potatoes Production."'
+data_attributes:
+- County/Sub County
+- Maize
+- Beans
+- Potatoes

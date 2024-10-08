@@ -1,0 +1,41 @@
+initial_prompt: '<start of user instructions>
+
+  Create a pie chart to visualize the proportion of total bills categorized by ''sex''.
+  Highlight the segments by sex to show their distribution among male and female patrons.
+  Include text annotations for each segment to display the percentage of total bills
+  attributed to each sex. This visualization aims to provide a clear overview of spending
+  differences between males and females at the restaurant. Avoid using any missing
+  value imputation methods, as there are no missing values in this dataset. Ensure
+  the chart is clear and easy to understand for social science analysis.
+
+  <end of user instructions>'
+questions: '1. Do you have any specific color preferences for the segments representing
+  males and females?
+
+  2. Is there a particular style or font for the text annotations that you would like
+  to use?
+
+  3. Do you prefer the percentages to be displayed inside or outside the pie chart
+  segments?
+
+  4. Should the pie chart include a legend, or would you prefer the segments to be
+  labeled directly?
+
+  5. Do you have any specific size requirements or constraints for the pie chart?
+
+  6. Are there any specific titles or captions that you would like to include on the
+  pie chart?'
+answers: '1. I don''t have a specific color preference.
+
+  2. I am not sure about the font for the text annotations.
+
+  3. I prefer the percentages to be displayed inside the pie chart segments.
+
+  4. I would prefer the segments to be labeled directly.
+
+  5. I do not have any specific size requirements.
+
+  6. No, I don''t have any specific titles or captions in mind.'
+data_attributes:
+- total_bill
+- sex

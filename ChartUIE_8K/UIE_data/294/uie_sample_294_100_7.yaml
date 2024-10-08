@@ -1,0 +1,50 @@
+initial_prompt: Create an area chart to illustrate engagement trends over time for
+  Ronaldo's tweets. Utilize the 'createdAt' field along the x-axis and plot 'retweetCount',
+  'replyCount', 'likeCount', 'quoteCount', and 'bookmarkCount' on the y-axis. Show
+  each metric in a different color to identify patterns and peaks easily. This will
+  help visualize how engagement metrics compare across different tweets and pinpoint
+  any major spikes in activity. The aim is to gain insights into which tweets garnered
+  the most attention and when. Use the latest three tweets from the sample data as
+  examples.
+questions: '1. Do you prefer a specific color scheme for each engagement metric?
+
+  2. Should the x-axis show specific time intervals (e.g., days, weeks, months)?
+
+  3. Would you like grid lines to be displayed on both axes?
+
+  4. Do you prefer a specific font style or size for the chart titles and labels?
+
+  5. Should there be a legend indicating which color corresponds to each engagement
+  metric?
+
+  6. Do you wish to include data markers for specific points on the area chart?
+
+  7. Do you want to add annotations or highlights for any significant spikes or patterns?
+
+  8. Should the chart include tooltips for detailed data on hover for each data point?
+
+  9. Would you like the area chart to have a smooth or stepped fill between points?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, grid lines would be helpful.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a legend.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Smooth fill sounds good.'
+data_attributes:
+- createdAt
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

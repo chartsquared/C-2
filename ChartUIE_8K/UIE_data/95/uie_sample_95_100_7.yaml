@@ -1,0 +1,55 @@
+initial_prompt: 'I want a line chart displaying the forest area changes for different
+  countries from 1990 to 2020. Use the data from the provided file, highlighting three
+  countries as sample points: Afghanistan, Albania, and a global overview (WORLD).
+  Make separate lines for each year (1990, 2000, 2010, 2015, and 2020). Include forest
+  area affected by fire and deforestation percentages when hovered over each point.
+  The overall title should be "Global Forest Insights 1990-2020" with axes for years
+  and forest area.'
+questions: '1. Do you have any specific color preferences for the lines representing
+  each country?
+
+  2. Would you like to have gridlines for better readability on the chart?
+
+  3. Should the legend be displayed in a specific position on the chart (top, bottom,
+  left, right)?
+
+  4. Do you prefer a particular font style or size for the overall title "Global Forest
+  Insights 1990-2020"?
+
+  5. Would you like data labels to be shown on the lines?
+
+  6. Is there a specific format you prefer for the hover tooltips displaying the forest
+  area affected by fire and deforestation percentages?
+
+  7. Do you have a preference for the thickness or style (solid, dashed, etc.) of
+  the lines?
+
+  8. Should the axes have a particular range or scale (e.g., logarithmic scale)?
+
+  9. Do you want additional markers at each data point or just the lines?'
+answers: '1. I have no specific preference.
+
+  2. Yes, I would like gridlines for better readability.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, please show data labels on the lines.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. Yes, please include additional markers at each data point.'
+data_attributes:
+- Country and Area
+- Forest Area, 1990
+- Forest Area, 2000
+- Forest Area, 2010
+- Forest Area, 2015
+- Forest Area, 2020
+- Deforestation, 2015-2020
+- Total Forest Area Affected by Fire, 2015

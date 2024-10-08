@@ -1,0 +1,49 @@
+initial_prompt: Please create a bar chart showing the distribution of names over the
+  years. Use the 'year' column for the x-axis and the sum of the 'n' column for each
+  name per year on the y-axis. Separate the data by 'sex' using different colors.
+  Ensure the chart is easily readable with appropriate labels and a legend to distinguish
+  the sexes. This will help visualize how the popularity of each name changes over
+  time and how it differs between male and female.
+questions: '1. Do you have any specific preferences for the colors representing male
+  and female?
+
+  2. Would you like the x-axis to have specific intervals (e.g., every 5 years, every
+  decade)?
+
+  3. Do you prefer a specific style or font for the labels on the axes?
+
+  4. Should the y-axis be displayed with specific increments or a logarithmic scale?
+
+  5. Is there a specific title you would like for the chart?
+
+  6. Where would you prefer the legend to be placed (e.g., top, bottom, left, right)?
+
+  7. Would you like to include any annotations or callouts on the chart to highlight
+  specific trends or years?
+
+  8. Do you want gridlines on the chart for better readability, and if so, horizontal,
+  vertical, or both?
+
+  9. Should the chart include a background color or pattern?'
+answers: '1. I am not sure.
+
+  2. Every decade would be good.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. "Popularity of Names Over Time by Gender" would be a suitable title.
+
+  6. Right side would be preferred.
+
+  7. I do not know.
+
+  8. Both horizontal and vertical gridlines would be helpful.
+
+  9. I am not sure.'
+data_attributes:
+- year
+- sex
+- name
+- n

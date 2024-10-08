@@ -1,0 +1,62 @@
+initial_prompt: I need a heatmap for the Coffee Taste Test dataset. The heatmap should
+  visualize how different coffee attributes (like bitterness, acidity, and personal
+  preference) vary by age demographics. Include different types of coffee (A, B, C,
+  D) and their respective attributes on one axis. Use age groups on the other axis.
+  Ensure that the color gradient clearly represents the intensity of each attribute,
+  which will help identify preferences and trends. For more thorough analysis, it
+  would be great if the missing values were represented distinctly or noted. This
+  visualization is intended for food-and-drink insights.
+questions: '1. Do you have any preferred color gradients for representing the intensity
+  of attributes?
+
+  2. How would you like the missing values to be represented in the heatmap?
+
+  3. Do you prefer any specific order for the age groups on the axis?
+
+  4. Should there be any special highlighting or annotations for specific age groups
+  or coffee attributes?
+
+  5. Is there any particular labeling or formatting style you prefer for the axes
+  and legends?
+
+  6. Do you have a preferred size or aspect ratio for the heatmap?
+
+  7. Are there any specific font styles or sizes that you prefer for the text within
+  the heatmap?
+
+  8. Do you need any specific threshold indicators or guidelines to identify trends?'
+answers: '<start of user emulated response>
+
+
+  1. I am not sure.
+
+  2. Could you represent missing values with a distinct color or a pattern?
+
+  3. I do not have any specific preference.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+
+  <end of user emulated response>'
+data_attributes:
+- age
+- coffee_a_bitterness
+- coffee_a_acidity
+- coffee_a_personal_preference
+- coffee_b_bitterness
+- coffee_b_acidity
+- coffee_b_personal_preference
+- coffee_c_bitterness
+- coffee_c_acidity
+- coffee_c_personal_preference
+- coffee_d_bitterness
+- coffee_d_acidity
+- coffee_d_personal_preference

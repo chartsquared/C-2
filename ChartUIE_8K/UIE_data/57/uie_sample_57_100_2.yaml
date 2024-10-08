@@ -1,0 +1,53 @@
+initial_prompt: Please create a treemap visualization using the provided data on customer
+  acquisition channels, costs, conversion rates, and revenues. The treemap should
+  use the "channel" data for categorization, with each segment's size representing
+  the "cost" and color intensity representing the "conversion_rate." Use annotations
+  to highlight the top three revenue-generating channels. The purpose is to identify
+  the most cost-effective channels for customer acquisition. Ensure the chart visually
+  distinguishes key channels and includes text annotations for clarity. This will
+  help us in our business decision-making process by focusing on the most efficient
+  channels.
+questions: '1. Do you have any specific color preferences for the treemap, especially
+  for representing the conversion_rate?
+
+  2. Is there a preferred threshold or range of conversion_rate that you would like
+  to see specifically highlighted in the treemap?
+
+  3. How would you like the annotations for the top three revenue-generating channels
+  to appear? Should they be bold, italicized, different colors, etc.?
+
+  4. Are there specific labels or titles you would like to include on the treemap
+  for better readability?
+
+  5. Would you like the chart to include a legend explaining the color intensities
+  and how they relate to conversion_rate, or any other aspect of the data?
+
+  6. Do you have a preferred font style or size for the text annotations to ensure
+  clarity?
+
+  7. Is there a specific layout or orientation for the treemap that you prefer (e.g.,
+  horizontal vs vertical)?
+
+  8. Would you like to include any additional data points or metrics in the treemap
+  that might help in decision-making?'
+answers: '1. I am not sure about specific color preferences for the conversion_rate.
+
+  2. I do not know about a preferred threshold or range of conversion_rate to highlight.
+
+  3. Make the annotations for the top three revenue-generating channels bold.
+
+  4. I do not have specific labels or titles in mind.
+
+  5. Yes, please include a legend explaining the color intensities and how they relate
+  to the conversion_rate.
+
+  6. I am not sure about the font style or size.
+
+  7. I do not have a specific layout or orientation preference.
+
+  8. I do not have additional data points or metrics to include.'
+data_attributes:
+- channel
+- cost
+- conversion_rate
+- revenue

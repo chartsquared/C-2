@@ -1,0 +1,62 @@
+initial_prompt: I want a dumbbell chart that shows the % budget recovered for Marvel
+  superhero movies, comparing their first and second weekends' gross. Use different
+  colors for each movie. The x-axis should be the percentage of budget recovered,
+  and the y-axis should show the movie titles. Include data points for the first and
+  second weekends. Make the chart interactive, so I can hover over the points to see
+  detailed information like domestic and international gross, critics' and audience
+  scores, and the year of release.
+questions: '1. Do you have any preference for the color scheme to represent each movie?
+
+  2. How would you like the axes labeled or formatted?
+
+  3. Are there any specific fonts, font sizes, or styles you prefer for the chart?
+
+  4. Would you prefer the data points to be displayed with any specific markers or
+  shapes?
+
+  5. Is there a particular order in which you would like the movies to be listed on
+  the y-axis (e.g., alphabetically, by release year, by % budget recovered, etc.)?
+
+  6. Do you have a specific title in mind for the chart?
+
+  7. Would you like any legends or annotations to be included on the chart?
+
+  8. Do you have any preferences for the background style or color of the chart?
+
+  9. How would you like the tooltip information to be structured (e.g., order of details,
+  any specific data highlighting)?
+
+  10. Are there any specific styling requirements for grid lines or axis lines on
+  the chart?'
+answers: '1. I am not sure.
+
+  2. I would like the x-axis labeled as "Percentage of Budget Recovered" and the y-axis
+  as "Movie Titles".
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. By % budget recovered would be good.
+
+  6. I don’t have a specific title in mind.
+
+  7. Yes, a legend that explains the first and second weekend data points would be
+  helpful.
+
+  8. I have no specific preference.
+
+  9. Tooltip should show domestic and international gross, critics'' and audience
+  scores, and the year of release, but the order of details I am not sure about.
+
+  10. I have no specific preference.'
+data_attributes:
+- film
+- '% budget recovered'
+- opening weekend ($m)
+- second weekend ($m)
+- domestic gross ($m)
+- international gross ($m)
+- critics % score
+- audience % score
+- year

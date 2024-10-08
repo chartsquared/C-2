@@ -1,0 +1,66 @@
+initial_prompt: Create a Treemap to visualize the summary data of Near-Earth Comets,
+  emphasizing 'Object', 'q', 'e', and 'P'. Highlight objects with unique identifiers.
+  Use annotations to display 'TP' and 'i'. Each rectangle should represent a comet,
+  sized by its 'MOID' value and colored based on 'e'. Annotations should include textual
+  details highlighting specific 'ref'. The purpose is to highlight orbital parameters
+  and relationships visually. This will be helpful for astronomers and enthusiasts
+  to quickly grasp key attributes and differences among the comets.
+questions: '1. Do you have a preferred color scheme for the treemap?
+
+  2. How would you prefer the annotations to be displayed (e.g., tooltips, labels
+  inside the rectangles)?
+
+  3. Should the comet names be displayed inside each rectangle, or should they only
+  appear in annotations?
+
+  4. Do you have any specific preferences for the font size and style of the text
+  used in annotations?
+
+  5. Is there a specific way you would like the data to be ordered or categorized
+  within the treemap?
+
+  6. How detailed should the annotations be in terms of the information provided?
+
+  7. Would you like to include a legend or any additional explanatory text in the
+  visualization?
+
+  8. Do you have a preference for how to handle comets with missing values for some
+  attributes?
+
+  9. Are there any specific color or size thresholds that you would like to use for
+  highlighting particular comets or attributes?
+
+  10. Would you like any additional interactive elements, like hover effects or clickable
+  regions, to reveal more details about each comet?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Labels inside the rectangles.
+
+  3. Comet names should be displayed inside each rectangle.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Detailed enough to include ''TP'' and ''i''.
+
+  7. Yes, include a legend.
+
+  8. I am not sure.
+
+  9. I do not have specific thresholds in mind.
+
+  10. I am looking for an image, not an interactive visualization.
+
+  <end of user emulated response>'
+data_attributes:
+- Object
+- q
+- e
+- P
+- MOID
+- TP
+- i
+- ref

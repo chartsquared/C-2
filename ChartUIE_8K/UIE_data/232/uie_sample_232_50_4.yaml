@@ -1,0 +1,47 @@
+initial_prompt: Create a line chart to compare the 'loan_amount' and 'cibil_score'
+  over 'loan_id'. This will help visualize trends in loan amounts and creditworthiness
+  scores for applicants.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Would you like to use different line styles (e.g., solid, dashed) for ''loan_amount''
+  and ''cibil_score''?
+
+  3. Should markers (e.g., circles, squares) be included at data points on the lines?
+
+  4. Do you have a preference for the chart title and axis labels?
+
+  5. Do you want to include grid lines for better readability, and if so, would you
+  prefer them to be horizontal, vertical, or both?
+
+  6. Would you like to add a legend to distinguish between ''loan_amount'' and ''cibil_score''
+  lines?
+
+  7. Do you have any specific preferences for axis scales (e.g., linear, logarithmic)?
+
+  8. Should the chart include annotation or highlight specific data points (e.g.,
+  outliers, significant changes)?
+
+  9. What range of values do you expect for the ''loan_amount'' and ''cibil_score''
+  (for setting axis limits)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include markers at data points on the lines.
+
+  4. I have no specific preference.
+
+  5. Yes, please include both horizontal and vertical grid lines.
+
+  6. Yes, please add a legend to distinguish between ''loan_amount'' and ''cibil_score''
+  lines.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- loan_id
+- loan_amount
+- cibil_score

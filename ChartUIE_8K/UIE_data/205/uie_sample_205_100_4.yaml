@@ -1,0 +1,67 @@
+initial_prompt: Please create a heatmap for the Real Estate DataSet. The heatmap should
+  show the correlation between different features such as CRIM, ZN, INDUS, CHAS, NOX,
+  RM, AGE, DIS, RAD, TAX, PTRATIO, B, LSTAT, and MEDV. Highlight areas with high correlation
+  to easily identify how these variables interact with each other. Ensure missing
+  values in the RM column are handled appropriately. Use a color gradient to differentiate
+  positive and negative correlations, and include a color bar for reference. The heatmap
+  will help in understanding the relationships between housing features and median
+  values.
+questions: '1. Do you have a preference for a specific color scheme for the heatmap?
+
+  2. Do you want to include any specific annotations on the heatmap (e.g., correlation
+  coefficients)?
+
+  3. How would you like the missing values in the RM column to be handled (e.g., imputation,
+  removal)?
+
+  4. What range of the color gradient would you like to use for positive and negative
+  correlations?
+
+  5. Are there any specific labels or titles you would like to include for the heatmap
+  and its axes?
+
+  6. Is there a specific dimension or size preference for the heatmap?
+
+  7. Would you prefer the heatmap to have grid lines separating the cells?
+
+  8. Do you have a specific format for the correlation coefficient values (e.g., number
+  of decimal places)?
+
+  9. Would you like the diagonal of the heatmap (showing self-correlations) to be
+  highlighted or treated differently?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Yes, please include correlation coefficients.
+
+  3. Imputation for missing values in RM.
+
+  4. I do not know.
+
+  5. No specific labels or titles are needed.
+
+  6. I am not sure.
+
+  7. Yes, include grid lines.
+
+  8. No specific format for correlation coefficient values.
+
+  9. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- CRIM
+- ZN
+- INDUS
+- CHAS
+- NOX
+- RM
+- AGE
+- DIS
+- RAD
+- TAX
+- PTRATIO
+- B
+- LSTAT
+- MEDV

@@ -1,0 +1,48 @@
+initial_prompt: Please create a heatmap visualizing the relationship between game
+  platforms and genres based on their global sales. Use the "Platform," "Genre," and
+  "Global_Sales" columns from the dataset "Global Video Game Sales and Ratings." The
+  heatmap should help identify which gaming platforms are most successful for specific
+  genres in terms of sales. The colors in the heatmap should represent sales values
+  to highlight the intensity of sales performance where platforms and genres intersect.
+  Ensure the visual is clear and provides insights into sales distribution across
+  different combinations of platforms and genres.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like specific labels or annotations on the heatmap for better clarity?
+
+  3. Should the color intensity follow a linear or logarithmic scale?
+
+  4. Do you have any preference for the layout of the heatmap, such as aspect ratio
+  or size?
+
+  5. Would you like to include a legend or color bar to indicate sales values?
+
+  6. Are there any specific platforms or genres you want to highlight or focus on?
+
+  7. Should the heatmap include grid lines to separate different genres and platforms?
+
+  8. Do you prefer any particular font style or size for the labels and annotations
+  on the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, specific labels or annotations would be helpful.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include a legend or color bar to indicate sales values.
+
+  6. I am not sure.
+
+  7. Yes, including grid lines would be good.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Platform
+- Genre
+- Global_Sales

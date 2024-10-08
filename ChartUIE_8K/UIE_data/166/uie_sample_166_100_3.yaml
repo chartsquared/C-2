@@ -1,0 +1,44 @@
+initial_prompt: Please create a dot plot chart to visualize the Disease Symptoms and
+  Patient Profile dataset. For each disease, plot the presence of fever, cough, fatigue,
+  and difficulty breathing as separate categories on the x-axis. Each dot should represent
+  an individual patient's data, with different colors for genders and sizes to show
+  age variations. Include a legend for blood pressure and cholesterol level categories.
+  The dot plot should also show the outcome variable (positive/negative) distinctly.
+  This will help in analyzing patterns and correlations between symptoms and patient
+  profiles effectively. Thank you!
+questions: '1. Do you have a preferred color palette or specific colors you would
+  like to use for representing genders?
+
+  2. How would you prefer to categorize age groups for the dot sizes or would you
+  prefer a continuous scale?
+
+  3. Do you have any specific preferences for the shape of the dots?
+
+  4. Is there a particular order you would like the symptoms (fever, cough, fatigue,
+  difficulty breathing) to be displayed on the x-axis?
+
+  5. How would you like the legend to be displayed for blood pressure and cholesterol
+  level categories?'
+answers: '1. I do not have a specific color palette preference for representing genders.
+
+  2. I would prefer to categorize age groups, but I am not sure how to do it. Maybe
+  you can suggest a common approach?
+
+  3. I do not have any specific preferences for the shape of the dots.
+
+  4. I am not sure about the order of symptoms on the x-axis. You can choose an order
+  that makes sense.
+
+  5. I do not know. You can decide the best way to display the legend for blood pressure
+  and cholesterol level categories.'
+data_attributes:
+- Disease
+- Fever
+- Cough
+- Fatigue
+- Difficulty Breathing
+- Age
+- Gender
+- Blood Pressure
+- Cholesterol Level
+- Outcome Variable

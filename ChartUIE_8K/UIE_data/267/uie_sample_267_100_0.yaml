@@ -1,0 +1,45 @@
+initial_prompt: Visualize a histogram showing the distribution of Pixel Areas for
+  faulty steel plates. Annotate specific points to highlight plates with high pixel
+  areas. Use highlights to differentiate between types of steel (A300 and A400). Also,
+  add text annotations for outliers in the Sum of Luminosity to draw attention to
+  unusual brightness. The goal is to easily identify any correlation between plate
+  thickness and defects like Pastry, Stains, Dirtiness, and Bumps. This will aid urban
+  planning in identifying patterns and problem areas in steel plate production quality.
+questions: '1. Do you have a preferred color scheme for the histogram and highlights?
+
+  2. How would you like the high pixel areas to be annotated (specific symbols or
+  text)?
+
+  3. Would you prefer the highlights for different types of steel to be shown in specific
+  colors or shading patterns?
+
+  4. Is there a particular font you prefer for text annotations on the histogram?
+
+  5. How would you like the outliers in the Sum of Luminosity to be marked (e.g.,
+  with special symbols or specific colors)?
+
+  6. Do you have a preference for the histogram bins'' size or number?
+
+  7. Would you prefer the histogram to be oriented vertically or horizontally?
+
+  8. Should the chart include a legend to explain the highlights and annotations?
+
+  9. Are there any specific labels or titles you''d like on the chart?
+
+  10. Would you like to include grid lines or any background patterns to enhance readability?'
+answers: "1. I am not sure.\n2. Maybe using larger dots or bold text would be good.\n\
+  3. Specific colors for A300 and A400 would be fine.\n4. I do not have a specific\
+  \ preference. \n5. Special symbols like stars or a different color would be nice.\n\
+  6. I am not sure.\n7. I do not know.\n8. Yes, including a legend would be helpful.\n\
+  9. Title: \"Distribution of Pixel Areas for Faulty Steel Plates\" and labels like\
+  \ \"Pixel Area\" and \"Frequency\".\n10. Yes, grid lines could help with readability."
+data_attributes:
+- Pixels_Areas
+- TypeOfSteel_A300
+- TypeOfSteel_A400
+- Sum_of_Luminosity
+- Steel_Plate_Thickness
+- Pastry
+- Stains
+- Dirtiness
+- Bumps

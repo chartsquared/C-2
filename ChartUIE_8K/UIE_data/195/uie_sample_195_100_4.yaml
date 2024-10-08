@@ -1,0 +1,54 @@
+initial_prompt: I have a dataset detailing monthly mean total sunspot numbers spanning
+  from 1749 to 2021. Could you create a line chart showing the trend of sunspot numbers
+  over this period? The x-axis should represent time (Date), and the y-axis the monthly
+  mean total sunspot number. I am interested in visualizing any noticeable changes
+  or patterns in sunspot activity across the years. Since there are a lot of data
+  points, please ensure the graph is appropriately sized for clarity and readability,
+  possibly with interactive elements for detailed exploration. Also, include axis
+  labels and a title. Thank you!
+questions: '1. Do you have a preferred title for the chart?
+
+  2. Would you like to add any specific subtitle to the chart?
+
+  3. Are there any specific colors you would like to use for the line in the chart?
+
+  4. Do you prefer a specific style for the line (e.g., dashed, solid, dotted)?
+
+  5. Would you like to include markers on the data points of the line chart?
+
+  6. Do you have a preference for the font style and size for axis labels and the
+  title?
+
+  7. Would you like any gridlines on the chart for better readability?
+
+  8. How would you prefer to handle the display of dates on the x-axis given the long
+  timeline (e.g., major ticks for specific decades/centuries)?
+
+  9. Do you want to include any annotations for specific events or periods of interest
+  on the chart?
+
+  10. Should the y-axis start at zero, or automatically adjust to the data range for
+  better visualization of changes?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Yes, I would like gridlines for better readability.
+
+  8. I prefer major ticks for specific decades.
+
+  9. I am not sure.
+
+  10. The y-axis should automatically adjust to the data range for better visualization
+  of changes.'
+data_attributes:
+- Date
+- Monthly Mean Total Sunspot Number

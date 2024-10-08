@@ -1,0 +1,34 @@
+initial_prompt: Please create a box chart to visualize the distribution of Total Cases,
+  Total Deaths, Total Recovered, and Active Cases for different countries. We want
+  to see the spread and variation in these metrics globally, highlighting outliers,
+  median values, and quartiles. This will help in understanding variations and trends
+  in Covid-19 impact across countries. Make sure to label the axes clearly and use
+  different colors for each metric. Also, include a legend for easy identification.
+  The population data can be used to normalize the values if necessary.
+questions: '1. Do you have any preferred color schemes for each metric?
+
+  2. Would you like the values to be normalized by population for a fair comparison?
+
+  3. Is there a specific order in which you would like the countries to be displayed
+  (e.g., by total cases, alphabetically)?
+
+  4. Do you have a preference for the typeface or font size used for axis labels and
+  legends?
+
+  5. Should the chart include gridlines or any specific annotations for better readability?'
+answers: '1. I do not have a specific preference for color schemes.
+
+  2. Yes, please normalize the values by population for a fair comparison.
+
+  3. I am not sure.
+
+  4. I have no specific preference for typeface or font size.
+
+  5. I do not know. Adding gridlines might help with readability, though.'
+data_attributes:
+- Country
+- Total Cases
+- Total Deaths
+- Total Recovered
+- Active Cases
+- Population

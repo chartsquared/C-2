@@ -1,0 +1,40 @@
+initial_prompt: Please create a box chart using the data provided in the file '../Extra_datas/data/489.csv'.
+  The chart should visualize the distribution of values for the columns 'x' and 'y',
+  showcasing the range, median, and any potential outliers within the dataset. Ensure
+  to label the axes appropriately for clarity. This will help in understanding the
+  overall spread and variations in the data for both columns. Thank you!
+questions: "1. Do you have any preference for the color scheme of the box chart?\n\
+  2. Would you like to add gridlines to the chart for better readability?\n3. Do you\
+  \ prefer to display any additional summary statistics on the chart, such as mean\
+  \ or standard deviation?\n4. Are there any specific axis labels or titles you would\
+  \ like to use for the chart?\n5. Do you have a preferred style for the whiskers\
+  \ in the box plot (e.g., 1.5 IQR, minimum and maximum)?\n6. Would you like to highlight\
+  \ or annotate any specific outliers or data points in the chart?\n7. Do you want\
+  \ to include notches to represent confidence intervals for the median in the box\
+  \ plots?\n8. Is there a specific aspect ratio or size you prefer for the chart?\n\
+  9. Should we include a legend or additional annotations to provide more information\
+  \ about the data? \n10. Are there any specific fonts or font sizes you prefer for\
+  \ the chart labels and titles?"
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. No specific labels; just clear and descriptive axis labels, such as "Values"
+  for both axes.
+
+  5. I prefer the whiskers to use the 1.5 IQR method.
+
+  6. I am not sure.
+
+  7. I do not have a preference.
+
+  8. I do not know.
+
+  9. No need for a legend.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- x
+- y

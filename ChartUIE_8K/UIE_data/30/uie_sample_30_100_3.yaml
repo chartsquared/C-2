@@ -1,0 +1,65 @@
+initial_prompt: 'I want to create a stacked bar chart to visualize the distribution
+  of car ownership types across different income groups. Specifically, I want to see
+  the counts of ''MAUT0'', ''MAUT1'', and ''MAUT2'' (number of cars: none, one, two
+  or more) stacked for each income group defined by ''MINKM30'', ''MINK3045'', ''MINK4575'',
+  ''MINK7512'', ''MINK123M''. This will help us understand how car ownership varies
+  with income. The x-axis should have the income groups and the y-axis should show
+  the count of car ownership types. Use colors to differentiate between ''MAUT0'',
+  ''MAUT1'', and ''MAUT2''.'
+questions: '1. Do you have any specific preferences for the color scheme to distinguish
+  between ''MAUT0'', ''MAUT1'', and ''MAUT2''?
+
+  2. Would you like to add data labels showing the exact count of each car ownership
+  type on the bars?
+
+  3. Should there be a legend to explain the color coding for ''MAUT0'', ''MAUT1'',
+  and ''MAUT2''?
+
+  4. Do you prefer any particular ordering for the income groups on the x-axis (e.g.,
+  ascending or descending order)?
+
+  5. Would you like gridlines for better readability, and if so, do you have a preference
+  for their style?
+
+  6. Is there a specific title you would like to assign to the stacked bar chart?
+
+  7. Are there any labels you''d like to include for the x-axis and y-axis apart from
+  the income groups and count of car ownership types respectively?
+
+  8. Should the chart display tooltips on hover to show additional details for each
+  section of the stacked bar?
+
+  9. Do you have any specific preferences for the fonts or font sizes used in the
+  chart?
+
+  10. Would you prefer the chart to have a specific width and height, or should it
+  be responsive to the display size?'
+answers: '1. I have no specific preference for the color scheme.
+
+  2. I am not sure.
+
+  3. Yes, there should be a legend to explain the color coding.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. No, just the income groups on the x-axis and the count of car ownership types
+  on the y-axis.
+
+  8. I do not need tooltips.
+
+  9. I have no specific preference for fonts or font sizes.
+
+  10. I have no specific preference for the chart''s width and height.'
+data_attributes:
+- MAUT0
+- MAUT1
+- MAUT2
+- MINKM30
+- MINK3045
+- MINK4575
+- MINK7512
+- MINK123M

@@ -1,0 +1,42 @@
+initial_prompt: I have data on DNA mutations from a CSV file. I want to visualize
+  the mutation types across different positions in the sequence. Please create a heatmap
+  that highlights the frequency or occurrence of each mutation type at each position.
+  The x-axis should represent the Position, and the y-axis should represent the Mutation_Type.
+  Each cell in the heatmap should display how often a particular mutation type occurs
+  at that position, with a color gradient indicating the frequency. Make sure to include
+  a color bar for reference.
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. What should be the range of the color gradient for frequency?
+
+  3. Do you prefer any specific font style or size for the labels on both axes?
+
+  4. Would you like to include any specific annotations or notes on the chart?
+
+  5. Do you have a preference for the orientation or format of the color bar (horizontal
+  or vertical)?
+
+  6. Are there any particular gridline preferences for the heatmap (e.g., visibility,
+  color, or thickness)?
+
+  7. Would you like to add any titles or subtitles to the heatmap for better context?
+
+  8. Do you have specific preferences for the aspect ratio or size of the heatmap?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, please include a title: "Mutation Frequency Across DNA Positions".
+
+  8. I do not have specific preferences.'
+data_attributes:
+- Position
+- Mutation_Type

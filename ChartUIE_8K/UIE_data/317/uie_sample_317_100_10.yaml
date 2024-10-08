@@ -1,0 +1,54 @@
+initial_prompt: Please create a geographic heatmap for the "Hotels in India Dataset
+  (2023)" that indicates the density of hotel locations across various cities. Use
+  the columns "City" for positioning, "Total Rooms" for the density metric, and differentiate
+  by "Category" using color gradients. Ensure major cities and popular tourist destinations
+  are highlighted. If possible, add filters to toggle between different "State" views.
+  The time period from "Start Date" to "Expiry Date" can be included as a timeline
+  slider to see changes over time.
+questions: '1. Do you have a preferred color scheme or color gradients to differentiate
+  hotel categories?
+
+  2. What specific cities or regions do you consider as major cities and popular tourist
+  destinations that need to be highlighted?
+
+  3. Do you prefer the heatmap to show absolute numbers or normalized densities when
+  representing "Total Rooms"?
+
+  4. How granular do you want the timeline slider to be (e.g., monthly, quarterly,
+  yearly)?
+
+  5. Is there a preferred starting and ending point on the timeline slider?
+
+  6. Should there be any specific annotations or labels on the map for key locations
+  or data points?
+
+  7. Do you have a preference for the map''s base style (e.g., satellite view, street
+  map, minimalistic)?
+
+  8. Are there any specific font styles or sizes you would like for labels and annotations?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Delhi, Mumbai, Bangalore, Goa, Jaipur, and Agra should be highlighted.
+
+  3. I do not know.
+
+  4. Yearly would be good.
+
+  5. No specific preference, maybe from 2020 to 2023.
+
+  6. I am not sure.
+
+  7. A minimalistic style would be nice.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- City
+- Total Rooms
+- Category
+- State
+- Start Date
+- Expiry Date

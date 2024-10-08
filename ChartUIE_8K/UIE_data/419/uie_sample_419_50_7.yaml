@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap visualizing the bike and pedestrian counts from the
+  data, focusing on different crossings and times of day. Highlight peak usage periods
+  to inform urban planning decisions for Seattle's cycling and walking infrastructure.
+questions: '1. Do you have specific color preferences for the heatmap?
+
+  2. How would you like the times of day to be segmented (e.g., hourly, in three-hour
+  blocks)?
+
+  3. Should the heatmap display the data for both bike and pedestrian counts together
+  or separately?
+
+  4. Do you prefer the crossings to be displayed on the X-axis or Y-axis?
+
+  5. Are there specific peak usage periods you are particularly interested in highlighting?
+
+  6. Should missing values be handled in any specific way in the visualization?
+
+  7. Do you want to include any specific labels, annotations, or highlights on the
+  heatmap?
+
+  8. Is there a particular range of dates you want to focus on in the heatmap?
+
+  9. Do you prefer a specific scale for the color gradient (e.g., linear, logarithmic)?
+
+  10. Would you like to include a legend to explain the color scale?'
+answers: '1. I do not have specific color preferences.
+
+  2. I am not sure.
+
+  3. Separately, please.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. Yes, please include a legend.'
+data_attributes:
+- date
+- crossing
+- bike_count
+- ped_count

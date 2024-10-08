@@ -1,0 +1,58 @@
+initial_prompt: Create a stacked bar chart to visualize the age distribution of patients
+  grouped by chest pain type. Each bar should represent a different age group (e.g.,
+  30-39, 40-49, etc.), and segments within each bar should show proportions of the
+  four chest pain types (0, 1, 2, 3). Use different colors for each chest pain type
+  to make the distinctions clear. The x-axis should represent the age groups, and
+  the y-axis should represent the count of patients. Title the chart "Age Distribution
+  by Chest Pain Type". This should help identify if certain age groups are more prone
+  to specific chest pain types.
+questions: '1. Do you have any specific preferences for the color scheme to represent
+  the different chest pain types?
+
+  2. Would you like any additional information or annotations on the chart?
+
+  3. Do you have a preferred font style or size for the chart title and labels?
+
+  4. Is there a specific order you would like the age groups to be displayed on the
+  x-axis?
+
+  5. Would you like gridlines on the chart for better readability? If yes, do you
+  have a preference for their style?
+
+  6. Do you require a legend to identify the different chest pain types? If yes, do
+  you have preferences for its placement?
+
+  7. Do you prefer the bars to be displayed horizontally or vertically?
+
+  8. Would you like to add data labels to each segment of the bars?
+
+  9. Do you have a preferred size or aspect ratio for the chart?
+
+  10. Is there any additional text or notes you would like to include within or alongside
+  the chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I''d prefer the age groups to be displayed in ascending order.
+
+  5. Yes, I would like gridlines. I am not sure about the style.
+
+  6. Yes, I require a legend. I have no preference for its placement.
+
+  7. Vertically.
+
+  8. Yes, please add data labels to each segment.
+
+  9. I do not know.
+
+  10. No, there is no additional text or notes needed.
+
+  <end of user emulated response>'
+data_attributes:
+- age
+- chest pain type

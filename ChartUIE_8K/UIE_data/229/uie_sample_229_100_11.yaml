@@ -1,0 +1,38 @@
+initial_prompt: Please create a tile map to visualize the global COVID-19 impact using
+  the provided data. The map should show different countries based on "Country" from
+  the dataset. Each tile should reflect "Total Cases," "Total Deaths," and "Total
+  Recovered." Please differentiate tiles by a color gradient to indicate the severity
+  based on "Total Cases." Also, include a tooltip to display the exact numbers for
+  "Total Cases," "Total Deaths," "Total Recovered," and "Active Cases" when hovering
+  over each country. Ensure the map is clear and easy to interpret, showing missing
+  data appropriately. Thank you!
+questions: '1. Do you have a preferred color scheme for the color gradient indicating
+  the severity based on ''Total Cases''?
+
+  2. Would you like the tiles to have labels showing the country names, or should
+  this information only be available via the tooltip?
+
+  3. Should the map include a legend explaining the color gradient used for ''Total
+  Cases'' severity?
+
+  4. Is there a specific way you would like missing data to be indicated on the map
+  (e.g., a distinct color or pattern)?
+
+  5. Would you prefer a particular layout style for the tile map (e.g., alphabetical
+  order, geographical proximity)?
+
+  6. Are there any specific thresholds for ''Total Cases'' that you want to be distinctly
+  highlighted in the gradient?
+
+  7. Do you want the size of each tile to be uniform, or should it vary based on some
+  data attribute like population?'
+answers: "1. I do not know. \n2. I am not sure, maybe labels showing the country names\
+  \ could be helpful.\n3. Yes, include a legend explaining the color gradient used\
+  \ for 'Total Cases' severity.\n4. I do not know.\n5. I am not sure.\n6. I do not\
+  \ know.\n7. Uniform size for each tile is fine."
+data_attributes:
+- Country
+- Total Cases
+- Total Deaths
+- Total Recovered
+- Active Cases

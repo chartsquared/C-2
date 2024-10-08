@@ -1,0 +1,55 @@
+initial_prompt: I have data on soft tissue sarcomas, with various patient details
+  such as age, grade, histological type, treatment, and outcomes. I’d like a box plot
+  to visualize the distribution of patient ages across different histological types.
+  This chart will help identify age-related trends in sarcoma types. Please ensure
+  the box plot includes distinct colors for each histological type, and the x-axis
+  should represent the histological type while the y-axis shows the patient age. Annotate
+  outliers explicitly and highlight the median age within each box for clarity.
+questions: '1. Do you have any specific colors in mind for each histological type?
+
+  2. Do you prefer any particular style for the annotation of outliers?
+
+  3. How would you like the median age to be highlighted (e.g., a line, a dot, different
+  color)?
+
+  4. Do you want any specific labels or legends for the histological types on the
+  x-axis?
+
+  5. Is there a particular format or style you prefer for the y-axis that represents
+  patient age?
+
+  6. Would you like grid lines on the chart for better readability?
+
+  7. Are there any additional statistical markers you would like to see on the box
+  plot (e.g., quartiles, mean)?
+
+  8. Do you have a preferred font style or size for the annotations and labels in
+  the chart?
+
+  9. Would you like the chart title and axis titles to be customized in a specific
+  way? If yes, please provide details.
+
+  10. Are there any additional elements or highlights you would like to include to
+  make the data visualization more effective for your audience?'
+answers: '1. I do not have any specific colors in mind for each histological type.
+
+  2. I am not sure about the style for the annotation of outliers.
+
+  3. A different color would be good to highlight the median age.
+
+  4. I do not know, standard labels for histological types should be fine.
+
+  5. I have no specific preference for the y-axis format.
+
+  6. Yes, grid lines would be helpful for better readability.
+
+  7. I am not sure about additional statistical markers.
+
+  8. I do not have a preferred font style or size for annotations and labels.
+
+  9. I do not have a specific customization in mind for the chart title and axis titles.
+
+  10. I am not sure about any additional elements or highlights.'
+data_attributes:
+- Age
+- Histological type

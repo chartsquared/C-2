@@ -1,0 +1,55 @@
+initial_prompt: Please create a histogram using the 'Close' prices from the provided
+  META stock historical prices dataset. The histogram should show the distribution
+  of closing prices over the given dates. This will help visualize how often the stock
+  closes at different price ranges, providing insight into price stability and volatility.
+  Use bins that appropriately represent the data range to capture significant price
+  variations without losing detail. Additionally, the histogram should have labeled
+  axes, with the x-axis representing the closing price ranges and the y-axis representing
+  the frequency of those prices.
+questions: '1. What specific color scheme or palette would you prefer for the histogram
+  bars?
+
+  2. Do you have a preferred number of bins for the histogram, or should it be auto-calculated
+  based on the data range?
+
+  3. Should the histogram include a title? If so, please provide the title text.
+
+  4. Do you have a preference for the font style and size for the labels and title?
+
+  5. Would you prefer to have grid lines on the chart for better readability?
+
+  6. Should the x-axis and y-axis labels include additional information such as units
+  or a brief description?
+
+  7. Do you want any specific annotations or markers on the histogram to highlight
+  certain data ranges or values?
+
+  8. Would you like the histogram to display the frequency count at the top of each
+  bar for clarity?
+
+  9. Do you have any preference regarding the aspect ratio or dimensions of the histogram?
+
+  10. Should the chart include a legend, even if there is only one data series?
+
+  '
+answers: '1. I am not sure.
+
+  2. I am not sure, please auto-calculate based on the data range.
+
+  3. Yes, the title should be "Distribution of META Stock Close Prices".
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. No specific preference.
+
+  7. No, I do not need any specific annotations or markers.
+
+  8. Yes, display the frequency count at the top of each bar.
+
+  9. I have no specific preference.
+
+  10. No, the chart does not need a legend.'
+data_attributes:
+- Close

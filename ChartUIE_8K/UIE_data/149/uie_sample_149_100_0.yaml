@@ -1,0 +1,48 @@
+initial_prompt: 'I''d like a histogram for the Colonia Corpus of Historical Portuguese
+  to visualize the distribution of Tokens by Year. Highlight the years with the highest
+  and lowest token counts to show outliers. Annotate specific bars representing unique
+  works such as "Feitos de Mem de Sá," "Auto de Sao Lourenco," and "Gramática" to
+  draw attention to their contributions. Purpose: to understand the textual volume
+  across different years within the corpus, emphasizing key works and periods. This
+  will help in analyzing trends and the prominence of certain authors and their works
+  over time.'
+questions: "1. Do you have a specific color preference for highlighting the bars with\
+  \ the highest and lowest token counts?\n2. Would you like the annotated bars to\
+  \ have different colors or styles to distinguish them from the rest?\n3. How would\
+  \ you prefer the annotations for specific works to be displayed? (e.g., above the\
+  \ bar, inside the bar, tooltip on hover)\n4. Do you have a specific range of years\
+  \ you want to focus on or display in the histogram?\n5. Would you like to include\
+  \ gridlines or a reference line to indicate average token counts or other statistical\
+  \ measures?\n6. Do you prefer any particular font style or size for the labels and\
+  \ annotations? \n7. Should the x-axis and y-axis labels have any specific formatting\
+  \ preferences?\n8. Are there any specific data points or years you wish to exclude\
+  \ from the histogram?\n9. Do you have a preference for the orientation of the histogram\
+  \ bars (vertical or horizontal)? \n10. Would you like to add a legend to the chart\
+  \ to explain the annotations and highlighted bars?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, different colors would be helpful.
+
+  3. Above the bar.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. No, include all data points.
+
+  9. Vertical bars are preferred.
+
+  10. Yes, adding a legend would be useful.
+
+  <end of user emulated response>'
+data_attributes:
+- Tokens
+- Year
+- Title

@@ -1,0 +1,58 @@
+initial_prompt: Please create a scatter plot to visualize the relationship between
+  'Publishing Year' and 'Book_average_rating' from the dataset. Each point on the
+  scatter plot should represent a book, with 'Publishing Year' on the x-axis and 'Book_average_rating'
+  on the y-axis. Additionally, use different colors or shapes to represent unique
+  'genre' categories to show how book genres are distributed over different publishing
+  years and their average ratings. This will help in understanding trends and preferences
+  in book ratings over the years across various genres. Ensure the plot includes labels
+  for both axes and a legend for the genres.
+questions: '1. Do you have any specific preferences for the color palette to represent
+  different genres?
+
+  2. Would you prefer specific shapes for different genres, or should we use default
+  shapes?
+
+  3. Is there a particular title you would like for the scatter plot?
+
+  4. Do you have specific size preferences for the data points on the scatter plot?
+
+  5. Are there any specific annotations or highlight features you would like on the
+  scatter plot?
+
+  6. Would you like to include grid lines on the scatter plot for better readability?
+  If so, in both axes or just one?
+
+  7. Should there be any specific range set for either the ''Publishing Year'' or
+  ''Book_average_rating'' axes, or should it auto-scale to fit the data?
+
+  8. Would you like the legend for genres to be placed in a specific location on the
+  plot (e.g., top-right, bottom-left)?
+
+  9. Are there any additional text labels or customizations you would like to include
+  on the axes (e.g., fonts, sizes)?
+
+  10. Would you like trend lines added to the scatter plot to show the overall trend
+  more clearly?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. No specific title, just something relevant.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, grid lines on both axes.
+
+  7. Auto-scale to fit the data.
+
+  8. No specific location, place the legend where it fits best.
+
+  9. No specific customizations.
+
+  10. Yes, please add trend lines.'
+data_attributes:
+- Publishing Year
+- Book_average_rating
+- genre

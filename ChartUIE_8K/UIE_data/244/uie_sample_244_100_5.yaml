@@ -1,0 +1,49 @@
+initial_prompt: Can you create a heatmap to visualize the distribution of language
+  families across different regions based on the 'World Languages Dataset'? Specifically,
+  represent different language families on one axis and the regions on the other,
+  with the intensity of the heatmap indicating the number of speakers in millions.
+  Make sure to handle the missing ISO codes appropriately and use a color gradient
+  that clearly distinguishes low and high values. This visualization will help identify
+  which regions have the highest concentration of languages within specific families.
+questions: '1. Do you have a preferred color palette or gradient for the heatmap?
+
+  2. Would you like gridlines or separators between the different families and regions?
+
+  3. How would you like the missing ISO codes to be represented or handled in the
+  heatmap?
+
+  4. Do you have any preference for the labels'' font size and style on the axes?
+
+  5. Would you prefer a specific range or scale for the color intensity to represent
+  the number of speakers?
+
+  6. Do you need a legend to explain the color gradient?
+
+  7. Should the values of the number of speakers be displayed on the heatmap cells?
+
+  8. Do you have any preferences for the aspect ratio or dimensions of the heatmap?
+
+  9. Is there any specific order in which you would like the language families or
+  regions to be arranged?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Yes, a legend would be helpful.
+
+  7. Yes, displaying the values would be useful.
+
+  8. I am not sure.
+
+  9. I do not have any specific order in mind.'
+data_attributes:
+- Family
+- Region
+- Speakers
+- ISO Code

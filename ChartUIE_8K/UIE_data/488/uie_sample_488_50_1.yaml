@@ -1,0 +1,52 @@
+initial_prompt: Create a geographic heatmap displaying fish capture data by species
+  and category. Use color gradients to highlight capture volumes, focusing on areas
+  with high capture densities. Annotate specific regions with the highest capture
+  rates for emphasis, and include non-data-driven annotations for context.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Would you like to include a legend to explain the color gradients used for capture
+  volumes?
+
+  3. Are there any specific regions or areas you want to emphasize more than others?
+
+  4. Do you prefer any particular font style or size for annotations?
+
+  5. Should the annotations include additional information apart from the capture
+  rates?
+
+  6. Would you like to display geographic boundaries such as countries or states/regions
+  on the map?
+
+  7. Is there any specific map projection or style you prefer for the geographic visualization?
+
+  8. Do you have preferences for the granularity of the capture data (e.g., by specific
+  coordinates, aggregates by region)?
+
+  9. Should the non-data-driven annotations include specific contextual information
+  such as economic importance, conservation status, or policy notes?
+
+  10. Are there any additional data layers or points of interest that you would like
+  to overlay on the map?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend.
+
+  3. I don''t know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include geographic boundaries such as countries or states/regions.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I don''t know.
+
+  10. I have no specific preference.'
+data_attributes:
+- Species
+- LCA_Category
+- Capture

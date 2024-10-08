@@ -1,0 +1,60 @@
+initial_prompt: I want to create a heatmap visualizing the Carbon Dioxide Emission
+  Rates over the years from the data provided. Specifically, I need the heatmap to
+  display the 'Year' on the y-axis and 'Decimal_Date' on the x-axis to show how CO2
+  levels ('Average') vary over time. Use color intensity to represent the CO2 levels.
+  Ensure the heatmap clearly indicates trends and interpolated data can also be overlayed
+  or shown as a comparison layer. The data spans from 1958, so make the timeline extensive
+  enough to capture long-term trends. Highlight any significant changes or patterns
+  in emission rates.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Would you like to highlight any specific ranges of CO2 levels with distinct colors?
+
+  3. Should the heatmap include grid lines or borders between cells for clearer separation?
+
+  4. Do you have a preference for the legend''s position on the chart?
+
+  5. Would you like to include labels or annotations highlighting significant changes
+  or patterns?
+
+  6. Should the interpolated data be overlaid or shown as a separate layer in the
+  heatmap?
+
+  7. Do you prefer a particular style or format for the axis labels (e.g., font size,
+  rotation, etc.)?
+
+  8. Would you like to add any reference lines or markers for specific dates or CO2
+  levels?
+
+  9. Should tooltips or data labels appear when hovering over specific points in the
+  heatmap?
+
+  10. Do you have a preference for the overall layout or aspect ratio of the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, please highlight ranges with significant changes using distinct colors.
+
+  3. Yes, please include grid lines for clearer separation.
+
+  4. I do not know.
+
+  5. Yes, include labels or annotations for significant changes or patterns.
+
+  6. The interpolated data should be overlaid in the heatmap.
+
+  7. I have no specific preference.
+
+  8. Yes, add reference lines for significant dates or CO2 levels.
+
+  9. I am not sure.
+
+  10. I do not have a preference for the overall layout or aspect ratio.
+
+  <end of user emulated response>'
+data_attributes:
+- Year
+- Decimal_Date
+- Average
+- Interpolated

@@ -1,0 +1,46 @@
+initial_prompt: 'Create a stacked bar chart visualizing the global sales of the top
+  3 video games. The x-axis should represent the names of the games (Wii Sports, Super
+  Mario Bros., Mario Kart Wii), while the y-axis should display the sales figures
+  in millions. Each bar should be stacked to show the contributions from different
+  regions: NA_Sales, EU_Sales, JP_Sales, and Other_Sales. Use different colors to
+  distinguish each region and include a legend. Ensure the total height of each bar
+  corresponds to the Global_Sales value. Title the chart "Global Sales Distribution
+  of Top Video Games."'
+questions: '1. Do you have any preferred color scheme for distinguishing the different
+  regions (NA_Sales, EU_Sales, JP_Sales, Other_Sales)?
+
+  2. Would you like any specific font style or size for the chart title "Global Sales
+  Distribution of Top Video Games"?
+
+  3. What style of legend placement do you prefer (top, bottom, left, right)?
+
+  4. Should the y-axis have a specific range or interval for the sales figures in
+  millions?
+
+  5. Do you want the chart to include data labels on the bars for each region''s sales
+  figure?
+
+  6. Are there any additional annotations or notes you would like to be included in
+  the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. Top would be fine.
+
+  4. I do not know.
+
+  5. Yes, please include data labels on the bars for each region''s sales figure.
+
+  6. No additional annotations are needed.
+
+  <end of user emulated response>'
+data_attributes:
+- Name
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales
+- Global_Sales

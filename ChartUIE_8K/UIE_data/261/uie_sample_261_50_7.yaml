@@ -1,0 +1,43 @@
+initial_prompt: Create a treemap visualization for the NASA Astronauts data. The chart
+  should segment astronauts by their status categories (Active, Retired, Deceased).
+  Within each status category, further divide by their undergraduate majors, showing
+  the distribution of different majors. Display each segment proportional to the count
+  of astronauts in that category.
+questions: '1. Do you have any specific color preferences for representing different
+  status categories (Active, Retired, Deceased)?
+
+  2. Do you prefer any particular shading or gradation within the undergraduate majors?
+
+  3. What specific labels or annotations, if any, would you like to include within
+  the segments of the treemap?
+
+  4. Do you have a preference for the font style or size for the labels and annotations?
+
+  5. Would you like to include any legend for the status categories and undergraduate
+  majors?
+
+  6. Are there any specific dimensions or aspect ratios you prefer for the treemap?
+
+  7. Do you have any preferences for the border style or color between segments in
+  the treemap?
+
+  8. Should we include tooltips that appear on hover to show specific details for
+  each segment? (Note: This question is for static non-interactive tooltips)'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would like to include the count of astronauts within each segment.
+
+  4. I have no specific preference.
+
+  5. Yes, a legend for the status categories and undergraduate majors would be helpful.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- Status
+- Undergraduate Major

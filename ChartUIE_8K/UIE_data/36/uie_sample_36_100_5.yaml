@@ -1,0 +1,58 @@
+initial_prompt: I need a stacked bar chart to visualize the number of houses sold
+  with various bedroom and bathroom combinations in King County. Each bar should represent
+  a different number of bedrooms (e.g., 1, 2, 3, 4+), and within each bar, different
+  segments should stack up to show the count for various bathroom counts (e.g., 1,
+  1.5, 2, 2.5, 3+). This will help analyze the distribution of house configurations
+  sold in the region in a specified timeframe. Use distinct colors for each bathroom
+  count for clarity.
+questions: '1. Do you have any specific color preferences for the distinct bathroom
+  counts?
+
+  2. Would you like a legend to be included in the chart to clarify the color representation?
+
+  3. What time frame should be considered for the house sales data?
+
+  4. Do you have any specific preferences for the vertical and horizontal axis labels?
+
+  5. Would you like to see the counts of houses sold as data labels on the bars?
+
+  6. Is there a particular order you prefer for displaying the bedroom categories
+  (e.g., ascending order)?
+
+  7. Are there any specific bedroom or bathroom categories you wish to exclude from
+  the chart?
+
+  8. Do you have any font size or style preferences for the chart labels and title?
+
+  9. Is there a specific title you would like to use for the chart?
+
+  10. Do you have any preferences regarding the width and height of the bars or the
+  overall size of the chart?'
+answers: '1. I don''t have any specific color preferences for the distinct bathroom
+  counts.
+
+  2. Yes, I would like a legend to be included in the chart to clarify the color representation.
+
+  3. The time frame to consider should be from January 2020 to December 2022.
+
+  4. I am not sure about specific preferences for the vertical and horizontal axis
+  labels.
+
+  5. Yes, I would like to see the counts of houses sold as data labels on the bars.
+
+  6. I prefer the bedroom categories to be displayed in ascending order.
+
+  7. No, I do not wish to exclude any specific bedroom or bathroom categories from
+  the chart.
+
+  8. I do not have any specific font size or style preferences for the chart labels
+  and title.
+
+  9. The title could be "House Sales Distribution by Bedroom and Bathroom Count in
+  King County (2020-2022)".
+
+  10. I do not know, I have no specific preferences regarding the width and height
+  of the bars or the overall size of the chart.'
+data_attributes:
+- bedrooms
+- bathrooms

@@ -1,0 +1,59 @@
+initial_prompt: Create a stacked bar chart visualizing the number of Palestinian structures
+  demolished in the West Bank, categorized by type (Residential, Non-Residential)
+  and district (Hebron, Tulkarm). The x-axis should represent the districts, while
+  the y-axis shows the count of demolished structures. Use different colors for Residential
+  and Non-Residential structures. Incorporate text annotations to highlight the total
+  housing units affected and the reasons for demolition. Use highlights to emphasize
+  districts with the highest demolitions. This visualization helps in understanding
+  the impact of demolition on various districts and types of structures.
+questions: '1. Do you have any specific color preferences for Residential and Non-Residential
+  structures?
+
+  2. Would you like to display the total housing units affected as numerical values
+  on the chart?
+
+  3. Do you have a preferred font style or size for the text annotations?
+
+  4. Is there a particular way you would like the highlighted districts to be emphasized
+  (e.g., brighter colors, bold outlines)?
+
+  5. Do you have a preference for the order in which the districts appear on the x-axis?
+
+  6. Should the y-axis start from zero, or would you prefer an adjusted range to better
+  visualize differences?
+
+  7. Are there any specific reasons for demolition that you want highlighted more
+  prominently on the chart?
+
+  8. Do you want to include any additional contextual information or footnotes on
+  the chart?
+
+  9. Do you have a preferred background color or grid style for the chart?
+
+  10. Would you like the chart legend to be placed at a specific location (e.g., top,
+  bottom, side)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to display the total housing units affected as numerical values
+  on the chart.
+
+  3. I do not know.
+
+  4. Brighter colors for the highlighted districts would be good.
+
+  5. I have no specific preference.
+
+  6. The y-axis should start from zero.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- district
+- type_of_sturcture
+- housing_units
+- reason_for_demolition

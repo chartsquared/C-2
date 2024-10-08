@@ -1,0 +1,58 @@
+initial_prompt: I need an area chart to visualize the price trends of high-tech companies
+  on NASDAQ over time. Plot the 'symbol' on the x-axis and 'price' on the y-axis.
+  Highlight changes in price using different colors for each company. Annotate key
+  price changes and percentages for better understanding. The chart should include
+  areas indicating market caps and share volumes, overlaying them to show relationships.
+  Ensure clear labels for sections and a legend for symbols, with a specific focus
+  on Apple Inc., Microsoft Corp., and Alphabet Inc. This will help visualize the performance
+  and significance of top tech companies.
+questions: '1. Do you have a preferred color scheme for the different companies?
+
+  2. Are there specific time intervals you want to highlight on the x-axis (daily,
+  weekly, monthly, etc.)?
+
+  3. Do you have preferences for the style or position of annotations for key price
+  changes?
+
+  4. Would you like grid lines on the chart for better readability?
+
+  5. How detailed should the legend be (full company names, tickers, or both)?
+
+  6. Are there any specific threshold values for price changes and percentages that
+  should be highlighted differently?
+
+  7. Do you have a preferred method for overlaying market caps and share volumes (separate
+  areas, combined, etc.)?
+
+  8. Are there any particular fonts or sizes you prefer for labels and annotations?
+
+  9. Should the chart include tooltips or labels for each data point, or only for
+  key changes?
+
+  10. Do you have a preference for the background color of the chart?'
+answers: '1. I am not sure.
+
+  2. I would prefer monthly intervals.
+
+  3. I don’t have a specific preference.
+
+  4. Yes, grid lines would be helpful.
+
+  5. Both full company names and tickers would be preferred if possible.
+
+  6. I am not sure; highlight significant changes that are noticeable.
+
+  7. I do not know.
+
+  8. I don’t have a specific preference.
+
+  9. Only for key changes, please.
+
+  10. I have no specific preference for the background color.'
+data_attributes:
+- symbol
+- price
+- pricing_changes
+- pricing_percentage_changes
+- market_cap
+- share_volume

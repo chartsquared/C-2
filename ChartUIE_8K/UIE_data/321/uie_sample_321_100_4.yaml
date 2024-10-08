@@ -1,0 +1,45 @@
+initial_prompt: I have IBM stock data with columns Date, Open, High, Low, Close, and
+  Volume. I want a scatter plot visualizing this data. Please create a scatter plot
+  where the x-axis represents the Date and the y-axis represents the Close prices.
+  Use different colors for each year to distinguish them easily. Also, ensure the
+  plot title is "IBM Stock Close Prices Over Time." Labels for the x-axis as "Date"
+  and y-axis as "Close Price" would be helpful. Additionally, please add a legend
+  to indicate the colors corresponding to each year.
+questions: '1. Do you have any preference for the color palette used to differentiate
+  the years?
+
+  2. Would you like the scatter plot to include any specific markers for the data
+  points?
+
+  3. Should the x-axis be formatted in a particular way, such as including only the
+  start of each month or year?
+
+  4. Are there any specific font preferences for the title, axis labels, and legend?
+
+  5. Do you have a preferred layout or positioning for the legend on the plot?
+
+  6. Would you like grid lines to be included or excluded in the plot?
+
+  7. Is there a specific range for the y-axis (Close Prices) that you''d like to set,
+  or should it be adjusted automatically?
+
+  8. Do you want to include any annotations or callouts for significant dates or events
+  in the scatter plot?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. It should be adjusted automatically.
+
+  8. I do not know.'
+data_attributes:
+- Date
+- Close

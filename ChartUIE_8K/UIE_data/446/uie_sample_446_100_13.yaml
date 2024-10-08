@@ -1,0 +1,58 @@
+initial_prompt: Please create a spline chart visualizing the number of animal rescues
+  over time. Use the 'date_time_of_call' for the x-axis to represent the timeline
+  and 'type_of_incident' and 'animal_group_parent' for categories, to show each type's
+  trend and different animals rescued. Additionally, highlight the total 'incident_notional_cost'
+  as a line over the months to display financial implications, ensuring clarity on
+  the peak periods for animal rescues and associated costs. This will help analyze
+  rescue trends and resource allocation needs through the year. Thank you!
+questions: '1. Do you have a preferred color scheme for differentiating between ''type_of_incident''
+  and ''animal_group_parent'' categories?
+
+  2. Would you like specific labels for peak periods on the ''incident_notional_cost''
+  line?
+
+  3. How would you prefer us to display the financial implications: using lines, shaded
+  areas, or another method?
+
+  4. Do you have a preference for the format of the x-axis (e.g., monthly, quarterly,
+  annually)?
+
+  5. Should we use markers on data points for additional clarity, or would you prefer
+  a smoother spline without markers?
+
+  6. Would you like a legend displayed on the chart, and if so, where would you prefer
+  it to be placed (e.g., bottom, right side)?
+
+  7. Is there a specific font style and size you prefer for the chart titles and labels?
+
+  8. Do you have a preference for displaying grid lines on the chart for better readability?
+
+  9. Would you like to include any specific annotations or notes on the chart?
+
+  10. Should we incorporate a secondary y-axis for ''incident_notional_cost'', or
+  would you prefer it plotted on the same y-axis as the number of rescues?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Yes, specific labels for peak periods on the ''incident_notional_cost'' line
+  would be helpful.
+
+  3. I am not sure, perhaps lines might work best.
+
+  4. Monthly format for the x-axis would be great.
+
+  5. I do not know, either option is fine by me.
+
+  6. Yes, a legend would be helpful. Maybe place it on the right side.
+
+  7. I do not have a specific preference for the font style and size.
+
+  8. Yes, displaying grid lines would improve readability.
+
+  9. I am not sure, so no specific annotations or notes are needed.
+
+  10. I am not sure, you can decide what works best for clarity.'
+data_attributes:
+- date_time_of_call
+- type_of_incident
+- animal_group_parent
+- incident_notional_cost

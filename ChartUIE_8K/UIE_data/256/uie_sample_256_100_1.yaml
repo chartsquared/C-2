@@ -1,0 +1,40 @@
+initial_prompt: Create a pie chart to visualize the proportion of unique 'RECORD'
+  entries in the ECG dataset segmented by 'ECG_signal' types. Highlight the 'ARR'
+  category prominently as it appears frequently in the sample data. Annotate the pie
+  slices with the count and percentage of each 'ECG_signal' type to emphasize occurrence
+  rates. Use distinct colors for different 'ECG_signal' categories like 'ARR' and
+  others. This will illustrate the distribution of cardiac ailment types in the dataset,
+  aiding in easy comparison and analysis of their prevalence.
+questions: '1. Do you have a preferred color scheme for the different ''ECG_signal''
+  categories?
+
+  2. How would you like the ''ARR'' category to be highlighted (e.g., with a specific
+  color, bolder outline, or larger segment)?
+
+  3. Do you prefer the annotations (count and percentage) to be inside or outside
+  the pie slices?
+
+  4. Should there be any additional labels or legends included in the chart?
+
+  5. Are there any specific fonts or font sizes you would like for the annotations
+  and labels?
+
+  6. Would you like the chart to include a title? If yes, please specify the title.
+
+  7. Should the chart display the exact numbers or round the percentages for the annotations?'
+answers: '1. I am not sure.
+
+  2. With a specific color.
+
+  3. Inside the pie slices.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, "Distribution of ECG Signal Types in the Dataset".
+
+  7. Round the percentages for the annotations.'
+data_attributes:
+- RECORD
+- ECG_signal

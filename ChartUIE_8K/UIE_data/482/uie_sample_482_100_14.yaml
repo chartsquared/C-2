@@ -1,0 +1,39 @@
+initial_prompt: I'd like to create a bar chart visualizing the representation of different
+  political parties in the German Bundestag. The chart should show each party's abbreviation
+  (Abbr.) on the x-axis and the number of Members of the Bundestag (MdBs) on the y-axis.
+  Please ensure the data is correctly represented, with each party distinctly color-coded.
+  Also, include appropriate labels and a title for clarity. This will help to better
+  understand the distribution of seats among the parties in the government. Thank
+  you!
+questions: '1. Do you have any specific color preferences for each party?
+
+  2. Do you want the bars to be displayed in a particular order? For example, sorted
+  by the number of Members of the Bundestag or alphabetically?
+
+  3. Would you prefer the bars to be horizontal instead of vertical?
+
+  4. Do you have a specific preference for the font or style of the title and labels?
+
+  5. Do you want to include a legend to explain the color-coding for each party, or
+  is it sufficient to use labels directly on the bars?
+
+  6. Is there a particular format you would like for the numbers on the y-axis (e.g.,
+  plain numbers, comma-separated, etc.)?
+
+  7. Would you like to include grid lines for better readability?'
+answers: '1. I do not have any specific color preferences for each party.
+
+  2. I am not sure.
+
+  3. I would prefer the bars to be vertical.
+
+  4. I do not know.
+
+  5. Yes, please include a legend to explain the color-coding for each party.
+
+  6. Plain numbers would be fine for the y-axis.
+
+  7. Yes, please include grid lines for better readability.'
+data_attributes:
+- Abbr.
+- MdBs

@@ -1,0 +1,47 @@
+initial_prompt: Visualize the Global YouTube Statistics 2023 with a geographic heatmap
+  highlighting YouTube channels' popularity worldwide. Use the country-wise distribution
+  of data such as subscribers, video views, and urban population. Provide text annotations
+  for top-performing channels in each region to highlight key metrics like subscribers
+  and video views. Apply highlights on countries with extreme values to emphasize
+  outliers. This allows for an intuitive geographic comparison of YouTube presence
+  and influencers' impact globally. This chart can aid in understanding YouTube's
+  regional dominance and the correlation with urban population and other socio-economic
+  factors.
+questions: "1. Do you have a preferred color scheme for the heatmap?\n2. Would you\
+  \ like to include a legend to explain the color gradients?\n3. Do you prefer a specific\
+  \ style for text annotations (e.g., font size, color)?\n4. Should the annotations\
+  \ be placed inside or outside the geographic regions on the map?\n5. Is there a\
+  \ preference for how outliers should be highlighted (e.g., outline, different color)?\n\
+  6. Would you like to see any additional metrics or data points displayed on the\
+  \ map?\n7. Is there a specific geographic projection you prefer for the map (e.g.,\
+  \ Mercator, Robinson)?\n8. Do you have any constraints on the size or aspect ratio\
+  \ of the map?\n9. Should the map include country names or abbreviations by default?\
+  \ \n10. Are there any specific regions or countries you would like to focus on or\
+  \ highlight more prominently?"
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend to explain the color gradients.
+
+  3. I do not have a specific preference for text annotations style.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not have any constraints on the size or aspect ratio of the map.
+
+  9. Yes, the map should include country names or abbreviations by default.
+
+  10. I do not have any specific regions or countries to focus on.'
+data_attributes:
+- Country
+- Abbreviation
+- subscribers
+- video views
+- Urban_population
+- Latitude
+- Longitude

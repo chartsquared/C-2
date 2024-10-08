@@ -1,0 +1,54 @@
+initial_prompt: Create a scatter plot to visualize the relationship between income_annum
+  and loan_amount. Use data points to represent loan_id. Highlight points based on
+  loan_status with differing colors for 'Approved' and 'Rejected'. Add text annotations
+  for data points where cibil_score is greater than 750 to draw attention to high
+  creditworthiness. This will help in understanding the influence of annual income
+  on loan amounts approved or rejected, considering the applicant's credit score.
+  The primary purpose is to identify trends and patterns that could inform better
+  business decisions in loan approval processes in a business context.
+questions: '1. Do you have any preferences for the color scheme used to highlight
+  ''Approved'' and ''Rejected'' loans?
+
+  2. How would you like the text annotations for high cibil score data points to appear
+  (e.g., font size, color)?
+
+  3. Do you prefer the data points to have a specific shape or size?
+
+  4. Would you like a legend to be included in the scatter plot?
+
+  5. Is there a specific title or subtitle you want for the scatter plot?
+
+  6. Do you want to include axis labels? If so, do you have a preference for their
+  text or style?
+
+  7. Should there be gridlines on the scatter plot? If yes, do you have a preference
+  for their styling?
+
+  8. Is there a specific range you want for the x-axis and y-axis?
+
+  9. Do you have any preferences for the overall style or theme of the scatter plot
+  (e.g., minimalist, detailed, corporate)?'
+answers: '1. I am not sure.
+
+  2. Font size: Medium, Color: Red.
+
+  3. I do not know.
+
+  4. Yes, please include a legend.
+
+  5. Title: "Influence of Annual Income on Loan Amounts", Subtitle: "Approved vs.
+  Rejected Loans by CIBIL Score".
+
+  6. Axis labels: Yes. X-axis: "Annual Income (in ₹)", Y-axis: "Loan Amount (in ₹)".
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I do not have a specific preference.'
+data_attributes:
+- loan_id
+- income_annum
+- loan_amount
+- loan_status
+- cibil_score

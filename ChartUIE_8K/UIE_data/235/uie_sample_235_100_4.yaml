@@ -1,0 +1,40 @@
+initial_prompt: Create a box chart to visualize the distribution of 'charges' across
+  different 'regions' to understand how medical costs vary by region. Use data from
+  the provided dataset, and include 'smoker' categories to see the effect of smoking
+  on charges in each region. Ensure the box chart shows minimum, first quartile, median,
+  third quartile, and maximum values for each region. This will help in identifying
+  any regional disparities in insurance costs, as well as how smoking status influences
+  these costs. Highlight any outliers that could indicate extreme cases or anomalies
+  in the data.
+questions: '1. Do you have a specific color scheme preference for the box chart?
+
+  2. Should the chart include a legend to differentiate between smoker categories?
+
+  3. Do you have a preference for the ordering of ''regions'' on the x-axis (e.g.,
+  alphabetical, by median ''charges'', etc.)?
+
+  4. Would you prefer the outliers to be labeled or just marked with a symbol?
+
+  5. Do you have a preference for the width of the boxes?
+
+  6. Should the chart include gridlines for easier comparison across regions?
+
+  7. Would you like any additional statistical information to be displayed on the
+  chart (e.g., mean ''charges'')?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include a legend to differentiate between smoker categories.
+
+  3. By median ''charges'', please.
+
+  4. Just marked with a symbol.
+
+  5. I do not know.
+
+  6. Yes, include gridlines for easier comparison across regions.
+
+  7. I am not sure.'
+data_attributes:
+- charges
+- region
+- smoker

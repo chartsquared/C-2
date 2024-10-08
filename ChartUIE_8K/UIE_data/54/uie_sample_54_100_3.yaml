@@ -1,0 +1,57 @@
+initial_prompt: I would like a choropleth map to visualize the percentage of individuals
+  using the Internet by country over time. Please use the data from 54.csv, focusing
+  on the "Individuals using the Internet (% of population)" column. Make sure to highlight
+  each country based on the percentage of its population using the Internet for different
+  years. The map should have a color gradient where countries with higher Internet
+  usage percentages are colored darker. Include a timeline feature to view changes
+  across different years. This map will help understand global Internet adoption trends.
+  Thank you!
+questions: '1. Do you have a preferred color scheme for the color gradient on the
+  choropleth map?
+
+  2. Are there specific years that you want to emphasize or compare in the timeline
+  feature?
+
+  3. What range of percentages would you like to see highlighted (e.g., 0% to 100%)?
+
+  4. Would you like country borders to be prominently displayed on the map?
+
+  5. Do you have any preference regarding the map projection (e.g., Mercator, Robinson,
+  etc.)?
+
+  6. Should the map include labels for each country?
+
+  7. How detailed should the legend be for explaining the color gradient?
+
+  8. Are there any specific visual cues or annotations you''d like to include for
+  certain countries or regions?
+
+  9. Is there a preferred font style or size for text elements such as labels and
+  legends?
+
+  10. Would you like to include any additional information or contextual data (e.g.,
+  population size, GDP) as part of the visualization?'
+answers: '1. I do not know.
+
+  2. I would like to emphasize the years 2000, 2010, and 2020.
+
+  3. I am not sure, but generally 0% to 100% seems reasonable.
+
+  4. Yes, I would like country borders to be prominently displayed on the map.
+
+  5. I do not have any specific preference.
+
+  6. Yes, the map should include labels for each country.
+
+  7. The legend should be detailed enough to explain the color gradient clearly.
+
+  8. I do not have specific cues or annotations in mind.
+
+  9. I do not have any specific preference regarding the font style or size.
+
+  10. I do not know.'
+data_attributes:
+- Entity
+- Code
+- Year
+- Individuals using the Internet (% of population)

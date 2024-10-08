@@ -1,0 +1,45 @@
+initial_prompt: Create a Choropleth map of Bangladesh districts showing population
+  changes over time. Use the provided CSV data on districts with columns like Name,
+  Established, and Population metrics from 1991, 2001, 2011, and 2022. Highlight the
+  changes in population density for each district across these years. Color-code districts
+  based on their population values. Ensure that the map is visually intuitive, with
+  a legend explaining the color coding. Include a tooltip or hover feature to display
+  detailed population figures and district information when hovering over each district.
+questions: '1. What color scheme do you prefer for the Choropleth map to represent
+  different population densities?
+
+  2. Do you have any specific preferences for the base map style (e.g., satellite,
+  street map, minimalist)?
+
+  3. Are there any specific labels or annotations you would like to include?
+
+  4. Do you have a preferred range for the legend scale representing population density?
+
+  5. Should the map highlight specific districts or areas of interest?
+
+  6. Would you like to include any additional information in the tooltips beyond population
+  figures and district information?
+
+  7. Are there any specific font styles or sizes you prefer for the legend and other
+  text elements on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. No specific districts need to be highlighted.
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- Name
+- Established
+- Population_1991
+- Population_2001
+- Population_2011
+- Population_2022
+- Area (km2)

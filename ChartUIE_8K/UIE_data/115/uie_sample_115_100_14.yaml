@@ -1,0 +1,49 @@
+initial_prompt: I need a dot plot to visualize the nutritional values of different
+  Indonesian foods and drinks. Specifically, I want to compare the calories, proteins,
+  fat, and carbohydrate content across various items in your dataset. Each food item
+  should be represented by a dot, with different colors indicating the type of nutritional
+  value. Use the 'name' field for labeling the dots. Ensure the plot is clear and
+  easily distinguishable. Additionally, include image URLs as tooltips when hovering
+  over the dots for more context. This will help in understanding the nutritional
+  distribution of Indonesian foods and drinks comprehensively.
+questions: '1. Do you have a preferred color scheme for the different nutritional
+  values (calories, proteins, fat, carbohydrate)?
+
+  2. What label positioning do you prefer for the dots representing each food item?
+
+  3. Do you want to include a legend to explain the colors representing different
+  nutritional values?
+
+  4. What font size and style would you like for the labels on the dots?
+
+  5. How would you like the axes to be scaled and labeled?
+
+  6. Do you have any specific preferences for the tooltip design when hovering over
+  the dots?
+
+  7. Would you like to add any additional information or annotations on the plot?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like to include a legend to explain the colors representing different
+  nutritional values.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. No, I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- calories
+- proteins
+- fat
+- carbohydrate
+- name
+- image

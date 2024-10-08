@@ -1,0 +1,50 @@
+initial_prompt: I have data about influencers in the Tech and Music groups. I want
+  a network graph where nodes represent influencers and edges represent connections
+  between them. The node size should reflect the number of followers, and different
+  colors for group differentiation. The relationships are via followers count and
+  groups. Make sure missing values are handled properly. This is for visualizing an
+  influencer network in the media and communications field. Example influencers are
+  Alice from Tech with 1M followers and Charlie from Music with 2M followers.
+questions: '1. Do you have a preferred color palette for differentiating the groups
+  (Tech and Music)?
+
+  2. How would you like to handle missing values in the data (e.g., imputation, removal)?
+
+  3. Do you have specific size ranges in mind for the nodes representing the number
+  of followers?
+
+  4. Are there any specific layout algorithms you prefer for the network graph (e.g.,
+  force-directed, circular)?
+
+  5. Do you have any specific label display preferences for the influencer nodes (e.g.,
+  showing names, follower counts)?
+
+  6. Would you like to include a legend to identify group colors and follower size
+  significance?
+
+  7. Should we include any filtering options, such as showing only influencers with
+  a certain minimum number of followers?
+
+  8. Are there specific design styles or themes you prefer for the overall aesthetic
+  of the network graph?'
+answers: '1. I am not sure about the color palette.
+
+  2. I am not sure about handling missing values.
+
+  3. No specific size ranges in mind.
+
+  4. I do not know about layout algorithms.
+
+  5. Please show names and follower counts for the influencer nodes.
+
+  6. Yes, include a legend to identify group colors and follower size significance.
+
+  7. I do not have a specific preference for filtering options.
+
+  8. I do not have a specific preference for design styles or themes.'
+data_attributes:
+- name
+- group
+- followers
+- source
+- target

@@ -1,0 +1,52 @@
+initial_prompt: Please create a scatter plot visualizing social media engagement across
+  different posts. Use the "num_reactions" for the x-axis and "num_comments" for the
+  y-axis. Highlight data points based on "status_type" with different colors. Include
+  text annotations to display values for notable data points with high engagement
+  (either reactions or comments). This chart is intended to help analyze engagement
+  patterns and identify which types of posts generate more interaction within the
+  online community. Thank you.
+questions: '1. Do you have any preferred color schemes for highlighting the data points
+  based on "status_type"?
+
+  2. What specific threshold should be used to determine the notable data points with
+  high engagement for text annotations?
+
+  3. Would you like to include grid lines in the scatter plot?
+
+  4. Should the axes have specific ranges or scales (e.g., linear or logarithmic)?
+
+  5. Do you have a preference for the size or style of the text annotations?
+
+  6. Would you like to include a legend to explain the colors used for different "status_type"?
+
+  7. Do you have a preferred font style or size for axis labels and chart titles?
+
+  8. Should we include additional contextual information or trend lines in the scatter
+  plot?
+
+  9. Is there a specific way you would like the notable data points to be marked on
+  the chart (e.g., different marker shapes or sizes)?'
+answers: '1. I do not have any specific preference.
+
+  2. Not sure, maybe posts with more than 100 reactions or comments.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please include a legend.
+
+  7. I have no specific preference.
+
+  8. No additional contextual information or trend lines are needed.
+
+  9. I am not sure.'
+data_attributes:
+- num_reactions
+- num_comments
+- status_type_link
+- status_type_photo
+- status_type_status
+- status_type_video

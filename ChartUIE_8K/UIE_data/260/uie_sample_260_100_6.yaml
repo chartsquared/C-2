@@ -1,0 +1,53 @@
+initial_prompt: I want a Bubble chart visualizing exoplanet discoveries using Kepler
+  Telescope data. X-axis should be 'ra' (right ascension), and Y-axis should be 'dec'
+  (declination). The bubble size should reflect 'pl_bmassj' (planet mass in Jupiter
+  masses). Additionally, color the bubbles based on 'st_teff' (star effective temperature).
+  Please ensure that the chart also has a legend indicating the temperature scale
+  and axis titles for clarity. This chart should help understand the spatial distribution
+  of exoplanets in relation to their host star's properties. Thank you!
+questions: '1. Do you have a preferred color palette for the temperature scale?
+
+  2. Would you like any specific markers or symbols for the bubbles?
+
+  3. Should the bubble size have a specific range or scale?
+
+  4. Do you prefer a specific font style or size for the axis titles and labels?
+
+  5. Would you like gridlines on the chart for better reference, and if so, should
+  they be styled in any particular way?
+
+  6. Do you want any annotations or data labels on the bubbles themselves?
+
+  7. Is there a specific aspect ratio or size you prefer for the chart?
+
+  8. Would you like to include any specific background or border style for the chart?
+
+  9. Should the chart include titles or subtitles? If so, what should the title/subtitle
+  be?
+
+  10. Do you want any specific zoom level or focus area by default for the chart?'
+answers: '1. I do not know.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Yes, include gridlines for better reference. No specific style.
+
+  6. No, I do not want any annotations or data labels on the bubbles.
+
+  7. I do not know.
+
+  8. No specific background or border style is needed.
+
+  9. Yes, include a title: "Exoplanet Discoveries by Kepler Telescope" and a subtitle:
+  "Spatial Distribution and Host Star Properties".
+
+  10. I do not know.'
+data_attributes:
+- ra
+- dec
+- pl_bmassj
+- st_teff

@@ -1,0 +1,50 @@
+initial_prompt: Create a bar chart showing 'bytes_in' and 'bytes_out' for each 'src_ip'.
+  Include 'protocol' and 'src_ip_country_code' as color-coded categories. Title the
+  chart 'Web Traffic Data'.
+questions: '1. Do you prefer a specific color palette for the color-coding of ''protocol''
+  and ''src_ip_country_code'' categories?
+
+  2. Would you like grid lines to be shown on the chart for better readability?
+
+  3. Should the bars for ''bytes_in'' and ''bytes_out'' be displayed side-by-side
+  or stacked for each ''src_ip''?
+
+  4. Do you have a preference for the axis scale (linear or logarithmic)?
+
+  5. Would you like to include data labels displaying the exact ''bytes_in'' and ''bytes_out''
+  values on the bars?
+
+  6. Should the chart include a legend, and if so, where would you like it positioned
+  (top, bottom, left, or right)?
+
+  7. Do you prefer any specific labels for the x-axis and y-axis beyond the default
+  attribute names?
+
+  8. Would you like to incorporate any additional annotations or markers on the chart
+  for highlighting specific data points or ranges?
+
+  9. Do you have a preference for the size or aspect ratio of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the bars for ''bytes_in'' and ''bytes_out'' to be displayed side-by-side
+  for each ''src_ip''.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, the chart should include a legend. I prefer it positioned at the bottom.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I do not know.'
+data_attributes:
+- bytes_in
+- bytes_out
+- src_ip
+- protocol
+- src_ip_country_code

@@ -1,0 +1,55 @@
+initial_prompt: Create a scatter plot to visualize bytes_in versus bytes_out across
+  multiple suspicious web traffic interactions for different source IPs. Highlight
+  points from specific countries (e.g., AE, US, CA) to distinguish them. Annotate
+  points with creation_time to track temporal trends. This will help us identify patterns
+  and anomalies related to adversary infrastructure interactions flagged by WAF rules,
+  focusing on AWS VPC Flow data from our prod_webserver. Include descriptive text
+  to explain key findings and observations. Use varying colors and sizes to emphasize
+  data points with different response codes and src_ip_country_code.
+questions: "1. Do you have any preference for the specific color palette used for\
+  \ distinguishing different 'src_ip_country_code'?\n2. How would you like the sizes\
+  \ of the data points to be differentiated (e.g., by 'response.code' values)? \n\
+  3. Should the axes have a specific scale (linear or logarithmic)?\n4. Do you prefer\
+  \ any particular font style or size for the annotations and descriptive text?\n\
+  5. Is there a specific format you would like for the 'creation_time' annotations\
+  \ (e.g., full timestamp, just date)?\n6. Should the highlighted points for specific\
+  \ countries (AE, US, CA) have any additional markers or styles beyond color?\n7.\
+  \ Do you have any specific requirements for the legend design and placement?\n8.\
+  \ Would you like gridlines to be displayed on the scatter plot, and if so, should\
+  \ they be in a specific style or color?\n9. Is there a preferred range or limit\
+  \ for the 'bytes_in' and 'bytes_out' axes based on your data analysis needs?\n10.\
+  \ Would you like any specific descriptive texts or labels included besides the key\
+  \ findings and observations?"
+answers: '1. I am not sure about the specific color palette.
+
+  2. I would like the sizes of the data points to be differentiated by ''response.code''
+  values.
+
+  3. I am not sure about the axis scale.
+
+  4. I do not have any specific preference for font style or size.
+
+  5. Full timestamp for the ''creation_time'' annotations would be preferable.
+
+  6. No specific additional markers or styles for highlighted points from specific
+  countries.
+
+  7. I do not have any specific requirements for the legend design and placement.
+
+  8. Yes, I would like gridlines to be displayed; I do not have a preference for style
+  or color.
+
+  9. I am not sure about the preferred range or limit for the ''bytes_in'' and ''bytes_out''
+  axes.
+
+  10. No specific additional descriptive texts or labels; just key findings and observations.
+
+
+  Thank you!'
+data_attributes:
+- bytes_in
+- bytes_out
+- src_ip
+- src_ip_country_code
+- creation_time
+- response.code

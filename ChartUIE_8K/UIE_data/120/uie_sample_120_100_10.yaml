@@ -1,0 +1,70 @@
+initial_prompt: Create a heatmap to visualize the correlation between Sales, Discount,
+  and Profit across various regions and cities using the Supermart Grocery Sales dataset.
+  Include data for all sub-categories and order dates. The heatmap should highlight
+  areas with higher sales and profit, indicating successful product categories and
+  regional preferences. Additionally, ensure that the data labels clearly indicate
+  the values in each cell, making it easy to identify trends and outliers. This will
+  help in understanding which regions and product categories perform better, aiding
+  in strategic decision-making for inventory and marketing.
+questions: '1. What color scheme would you prefer for the heatmap to distinguish different
+  value ranges?
+
+  2. Do you have a specific preference for the color scale (e.g., gradient, discrete)?
+
+  3. Should the heatmap display only the absolute values, or should it also show percentage
+  changes?
+
+  4. How would you like to handle potential outliers in the data?
+
+  5. Do you want to add any reference lines or markers to highlight specific thresholds?
+
+  6. Would you prefer any particular font style or size for the data labels within
+  the heatmap cells?
+
+  7. Do you have any preferences for the aspect ratio of the heatmap?
+
+  8. Should the regions and cities be grouped or sorted in a specific order?
+
+  9. Do you prefer any specific format for the date labels (e.g., month-year, full
+  date)?
+
+  10. Are there any specific sub-categories that should be highlighted or given particular
+  emphasis?
+
+  11. How granular should the data be? Should it be aggregated to a certain level
+  (e.g., monthly, quarterly)?
+
+  12. Do you want any additional annotations or tooltips to provide context when hovering
+  over specific cells?'
+answers: '1. I think a color scheme with warm colors (reds, oranges) and cool colors
+  (blues, greens) would be nice to distinguish different value ranges.
+
+  2. I am not sure.
+
+  3. I think displaying absolute values would be more useful.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I have no specific preference for grouping or sorting.
+
+  9. I am not sure.
+
+  10. I do not have any specific sub-categories to highlight.
+
+  11. Maybe aggregate the data to a monthly level.
+
+  12. I do not know.'
+data_attributes:
+- Sales
+- Discount
+- Profit
+- Region
+- City
+- Sub Category
+- Order Date

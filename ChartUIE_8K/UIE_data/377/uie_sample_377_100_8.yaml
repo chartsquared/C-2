@@ -1,0 +1,33 @@
+initial_prompt: Please create a bubble chart using the provided data showing each
+  constituency's election results. Each bubble should represent a different area and
+  be sized according to the electorate number. The x-axis should display the percentage
+  of votes for the Conservative party (CON%), and the y-axis should show the percentage
+  of votes for the Labour party (LAB%). Different colors should be used to represent
+  the winning party in each area. Thank you!
+questions: "1. Do you have a preferred color scheme for representing the different\
+  \ winning parties?\n2. Is there a specific labeling style you prefer for the x-axis\
+  \ and y-axis?\n3. Would you like to include grid lines on the chart for better readability?\n\
+  4. Should the chart include a legend explaining the colors used for each winning\
+  \ party?\n5. Do you have a preference for the size scale of the bubbles, or should\
+  \ it be automatically determined based on the electorate number? \n6. Are there\
+  \ any specific fonts or font sizes you would like for the chart labels and title?\n\
+  7. Do you have a preferred title for the bubble chart? If yes, please specify."
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, please include grid lines for better readability.
+
+  4. Yes, a legend explaining the colors used for each winning party would be helpful.
+
+  5. Automatically determining the size based on the electorate number is fine.
+
+  6. I do not know.
+
+  7. "Election Results by Constituency: Conservative vs Labour"'
+data_attributes:
+- Area
+- Electorate
+- CON(%)
+- LAB(%)
+- Winner

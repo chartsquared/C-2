@@ -1,0 +1,49 @@
+initial_prompt: Please create a histogram using the "Country" dataset to visualize
+  the distribution of "Life expectancy" across different countries. The X-axis should
+  represent the bins of life expectancy ranges, and the Y-axis should show the count
+  of countries falling within each range. Make sure to handle any missing values appropriately
+  and use clear labels for better understanding. This will help us see how life expectancy
+  varies globally and identify any significant trends or outliers. Thank you!
+questions: '1. What bin sizes would you prefer for life expectancy ranges on the X-axis?
+
+  2. Do you have any specific color preferences for the bars in the histogram?
+
+  3. Would you like to set any specific ranges for the bins (e.g., 0-10, 10-20) for
+  the X-axis?
+
+  4. Do you want the histogram to have gridlines for better readability?
+
+  5. How would you like to label the X-axis and Y-axis?
+
+  6. Should the Y-axis show absolute counts or percentages?
+
+  7. Do you prefer to handle missing values by removing them or imputing them? If
+  imputing, what method would you prefer?
+
+  8. Do you want to highlight any specific regions or countries within the histogram?
+
+  9. Are there any specific fonts or styles you prefer for the labels and titles?
+
+  10. Do you need a legend or additional annotations on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific color preferences.
+
+  3. I do not know.
+
+  4. Yes, I would like gridlines for better readability.
+
+  5. Label the X-axis as "Life Expectancy (Years)" and the Y-axis as "Number of Countries".
+
+  6. Absolute counts would be preferred.
+
+  7. Please remove the missing values.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not need a legend or additional annotations.'
+data_attributes:
+- Country
+- Life expectancy

@@ -1,0 +1,55 @@
+initial_prompt: I have data from the Sloan Digital Sky Survey DR14, specifically celestial
+  object measurements. I want a geographic heatmap focusing on the celestial coordinates
+  (ra, dec) to visualize the distribution and density of these objects in space. The
+  map should highlight areas with high concentrations of objects, differentiated by
+  their class (STAR or GALAXY). Additionally, I want to include a color gradient representing
+  the redshift values to show how they vary across the map. Include labels for runs
+  and camcol to help identify data segments. Ensure the heatmap is interactive, allowing
+  tooltips to show detailed data on hover.
+questions: '1. Do you have any preferred color schemes for the heatmap and the redshift
+  gradient?
+
+  2. How would you like the class differentiation (STAR or GALAXY) to be represented
+  visually? (e.g., different shapes, colors, or icons)
+
+  3. What specific label format do you prefer for the runs and camcol segments?
+
+  4. Do you want any specific titles, subtitles, or axis labels on the heatmap?
+
+  5. Are there any particular grid or scale settings you would like for the celestial
+  coordinates (ra, dec)?
+
+  6. Would you prefer a specific range or scale for the redshift values to be emphasized?
+
+  7. How do you want the density of objects to be represented: through color intensity,
+  dot density, or another method?
+
+  8. Is there a specific layout or size you prefer for the heatmap (e.g., square,
+  rectangular, aspect ratio)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Different colors would be good.
+
+  3. I do not know.
+
+  4. I would like the title to be "Celestial Object Distribution and Density," but
+  I am not sure about the rest.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Color intensity would work well.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- ra
+- dec
+- class
+- redshift
+- run
+- camcol

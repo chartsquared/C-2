@@ -1,0 +1,47 @@
+initial_prompt: "<start of user instructions>\nCreate a heatmap to visualize the correlation\
+  \ between numeric variables. Highlight age and balance correlations. Add text annotations\
+  \ to show distinct value spikes. \n<end of user instructions>"
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the heatmap include a legend for correlation values?
+
+  3. Do you want to set specific correlation thresholds to highlight high or low correlation
+  values?
+
+  4. Is there a particular font style or size you prefer for the text annotations?
+
+  5. Do you want the heatmap to be sorted by a specific variable?
+
+  6. Would you like grid lines to be displayed on the heatmap?
+
+  7. Do you prefer a specific layout for the axis labels such as rotation or size?
+
+  8. Should the annotation texts include numerical values or any additional information?
+
+  9. Do you want the heatmap to focus on specific ranges of Age and Balance values?'
+answers: '1. I am not sure.
+
+  2. Yes, the heatmap should include a legend for correlation values.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, the annotation texts should include numerical values.
+
+  9. I am not sure.'
+data_attributes:
+- CreditScore
+- Age
+- Tenure
+- Balance
+- NumOfProducts
+- HasCrCard
+- IsActiveMember
+- EstimatedSalary

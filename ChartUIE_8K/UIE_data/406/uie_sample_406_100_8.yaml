@@ -1,0 +1,59 @@
+initial_prompt: I have some data about different countries that includes their continent,
+  life expectancy, population, and GDP per capita. It looks like this data is meant
+  to help analyze global economic and social conditions. Could you create a column
+  chart for me that compares the GDP per capita and life expectancy for these countries?
+  I'd like to see how countries from different continents fare in terms of these two
+  aspects. Make sure to clearly indicate the countries and their respective continents
+  on the chart. Thanks!
+questions: '1. Do you have a preference for how the countries should be labeled on
+  the chart (e.g., country names, ISO codes)?
+
+  2. Would you like the continents to be color-coded for easier differentiation?
+
+  3. Should the chart include error bars or confidence intervals for life expectancy
+  and GDP per capita?
+
+  4. Do you want a legend indicating the continents on the chart?
+
+  5. How would you prefer the data to be grouped: by continent or presented in a mixed
+  manner?
+
+  6. Do you have any preferences regarding the chart title or axis labels?
+
+  7. Should the values be shown on the bars for better readability?
+
+  8. Would you like gridlines on the chart to help with value estimation?
+
+  9. Do you have a preference for the orientation of the column chart (vertical or
+  horizontal)?
+
+  10. Would you like to include data source information and timestamp on the chart
+  for credibility?
+
+  11. Are there any specific colors or themes you prefer for the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the continents to be color-coded.
+
+  3. I am not sure.
+
+  4. Yes, please include a legend indicating the continents.
+
+  5. By continent.
+
+  6. I have no specific preference.
+
+  7. Yes, please show the values on the bars.
+
+  8. I have no specific preference.
+
+  9. Vertical.
+
+  10. I am not sure.
+
+  11. I have no specific preference.'
+data_attributes:
+- country
+- continent
+- lifeExp
+- gdpPercap

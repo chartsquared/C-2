@@ -1,0 +1,49 @@
+initial_prompt: I want to create a scatter plot to visualize employee attrition by
+  education level. It should show the relationship between the number of years at
+  the company and monthly income for employees. The x-axis should represent the years
+  at the company, and the y-axis should show the monthly income. Additionally, use
+  different markers or colors to distinguish between employees who have left the company
+  (Attrition=Yes) and those who haven't (Attrition=No). It would be helpful if the
+  data points also reflected the education field, perhaps with different marker shapes
+  or sizes.
+questions: '1. What color scheme do you prefer for distinguishing between employees
+  who have left the company and those who haven''t?
+
+  2. Do you have any preference for marker shapes or sizes to indicate different education
+  fields?
+
+  3. Would you like the chart to include a legend explaining the markers and colors
+  used?
+
+  4. Are there specific titles or labels you would like to use for the x-axis and
+  y-axis?
+
+  5. Do you have any preferences for the overall title of the scatter plot?
+
+  6. Would you like to include grid lines on the scatter plot for better readability?
+
+  7. Would you prefer a specific scale or range for the x-axis (Years at the company)
+  and y-axis (Monthly income)?
+
+  8. Are there any additional annotations or notes you would like to add to the scatter
+  plot?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preference for marker shapes or sizes.
+
+  3. Yes, please include a legend explaining the markers and colors used.
+
+  4. X-axis: Years at the company, Y-axis: Monthly income
+
+  5. Visualizing Employee Attrition by Education Level
+
+  6. Yes, please include grid lines for better readability.
+
+  7. I am not sure.
+
+  8. No additional annotations or notes needed.'
+data_attributes:
+- YearsAtCompany
+- MonthlyIncome
+- Attrition
+- EducationField

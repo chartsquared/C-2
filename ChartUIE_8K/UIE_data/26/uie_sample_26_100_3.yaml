@@ -1,0 +1,41 @@
+initial_prompt: I need a scatter plot for Tesla stock data from 2010 to 2020 that
+  shows the correlation between the daily closing prices and the daily trading volumes.
+  Ensure that the 'Close' prices are on the y-axis and 'Volume' on the x-axis. Use
+  different colors to represent different years so that we can observe trends over
+  time. Include labeled axes and a legend for clarity. Make sure missing values are
+  handled appropriately. This visual should help us understand how trading volume
+  correlates with stock prices over the years.
+questions: '1. Do you have a preferred color scheme for the different years in the
+  scatter plot?
+
+  2. Would you like grid lines to be added to the chart for easier reading?
+
+  3. How would you prefer the missing values to be handled (e.g., removed, interpolated)?
+
+  4. Is there a specific title you would like for the chart?
+
+  5. Do you have any preference for the font style and size of the axis labels and
+  legend?
+
+  6. Should the size of the scatter plot markers vary based on any additional variable,
+  such as price change or another metric?
+
+  7. Would you like to include any annotations or specific data points highlighted
+  within the scatter plot?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like grid lines added to the chart for easier reading.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I have no specific preference.
+
+  7. I do not know.'
+data_attributes:
+- Date
+- Close
+- Volume

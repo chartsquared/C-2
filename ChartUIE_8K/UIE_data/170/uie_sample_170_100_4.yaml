@@ -1,0 +1,51 @@
+initial_prompt: I would like a line chart visualizing the `StudyTimeWeekly` and `GPA`
+  of students from the dataset. The x-axis should represent `StudentID` and the y-axis
+  should have dual scales for `StudyTimeWeekly` and `GPA`. This will help to see if
+  there is a correlation between the amount of time students spend studying each week
+  and their GPA. Make sure to include data points, lines connecting them, and labels
+  for clarity. This chart will be useful for analyzing student performance trends
+  in relation to their study habits.
+questions: '1. Do you have any specific color preferences for the lines representing
+  ''StudyTimeWeekly'' and ''GPA''?
+
+  2. How would you like to format the labels on the x-axis (i.e., ''StudentID'')?
+
+  3. Do you prefer any specific markers for the data points (e.g., circles, squares)?
+
+  4. Would you like gridlines to be included on the chart? If yes, do you have any
+  preferences regarding their style (e.g., dashed, solid)?
+
+  5. Do you want to include a legend to indicate which line represents ''StudyTimeWeekly''
+  and which represents ''GPA''?
+
+  6. Are there any particular fonts or font sizes you prefer for the axis labels and
+  chart title?
+
+  7. Would you like to add any specific titles or subtitles to the chart?
+
+  8. Do you prefer the dual y-axes to have a specific range or scaling method for
+  ''StudyTimeWeekly'' and ''GPA''?
+
+  9. Should the chart include any annotations or highlights for specific data points
+  or trends?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Circles would be fine.
+
+  4. Yes, I would like gridlines, but I do not know about the style.
+
+  5. Yes, please include a legend.
+
+  6. I do not know.
+
+  7. Title: "Study Time vs GPA"; Subtitle: "Analyzing Student Performance Trends".
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- StudentID
+- StudyTimeWeekly
+- GPA

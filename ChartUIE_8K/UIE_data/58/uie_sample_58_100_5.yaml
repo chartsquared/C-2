@@ -1,0 +1,57 @@
+initial_prompt: 'Please create a stacked bar chart using the data from "Amazon''s
+  500 Bestsellers in Laptop Gear 2024". The chart should visualize the count of unique
+  values for each column: title, brand, description, price/currency, price/value,
+  stars, and reviewsCount. Make sure the bars show missing values as one stack and
+  the unique values as another for easy comparison. This will help identify which
+  columns have the most missing data and how varied the entries are.'
+questions: '1. Do you have specific preferences for the color scheme of the chart?
+
+  2. Would you like to include labels for the counts on each stack of the bar chart?
+
+  3. Do you prefer a particular order for the columns to be displayed in the chart?
+
+  4. Should the chart include a legend to distinguish between missing values and unique
+  values?
+
+  5. Are there any specific fonts or styles you would like to use for the text in
+  the chart?
+
+  6. Would you like to include gridlines on the chart for better readability?
+
+  7. Do you have any preferences for the axis labels or titles?
+
+  8. Would you like the chart to display counts as percentages in addition to or instead
+  of raw counts?
+
+  9. Should the chart have any specific dimensions or aspect ratio?
+
+  10. Are there any additional annotations or text descriptions you would like to
+  include in the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please include labels for the counts on each stack of the bar chart.
+
+  3. I do not have a specific preference.
+
+  4. Yes, please include a legend to distinguish between missing values and unique
+  values.
+
+  5. I do not know.
+
+  6. Yes, please include gridlines for better readability.
+
+  7. I have no specific preference.
+
+  8. Raw counts are fine.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- title
+- brand
+- description
+- price/currency
+- price/value
+- stars
+- reviewsCount

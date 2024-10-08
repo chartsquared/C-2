@@ -1,0 +1,56 @@
+initial_prompt: Please create a stacked bar chart visualizing the ratings count and
+  text reviews count for each book. Highlight the highest rated books and use different
+  colors for each count type. Include a trend line if possible.
+questions: '1. Do you have any specific color preferences for the different count
+  types?
+
+  2. How would you like the highest rated books to be highlighted (e.g., different
+  color, pattern, or an annotation)?
+
+  3. Are there any specific titles or authors you would like to focus on or filter
+  out in the visualization?
+
+  4. Would you prefer to display the trend line in a specific style (e.g., dashed,
+  solid, color)?
+
+  5. Is there a particular ordering you would like for the books (e.g., by title,
+  by rating count, by text reviews count)?
+
+  6. Do you have a preference for including any additional information on the chart,
+  such as legends, tooltips, or labels for the counts?
+
+  7. Would you like the average rating to be displayed on the chart, and if so, how
+  would you prefer it to be represented (e.g., color-coded, additional axis, overlay)?
+
+  8. Are there any size or aspect ratio preferences for the chart to best suit your
+  audience''s viewing format?
+
+  9. Would you like any gridlines or axis ticks to be included to enhance readability?
+
+  10. Do you have any preferences for font style and size for the chart labels and
+  titles?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. No specific preference.
+
+  6. I am not sure.
+
+  7. No, I do not need the average rating displayed.
+
+  8. No specific preference.
+
+  9. I am not sure.
+
+  10. No specific preference.'
+data_attributes:
+- bookID
+- title
+- ratings_count
+- text_reviews_count
+- average_rating

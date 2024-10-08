@@ -1,0 +1,55 @@
+initial_prompt: Create a scatter plot to visualize the relationship between sensor
+  readings and the class of wall-following robot navigation. Use 'V3' for the x-axis,
+  'V6' for the y-axis, and color-code the points based on the 'Class' column to differentiate
+  the navigation outcomes. Include appropriate labels and a legend. Ensure the visualization
+  clearly shows the clustering of different classes to help understand how the sensor
+  readings influence robot navigation and identify patterns or outliers among the
+  classes.
+questions: '1. Do you have a preferred color palette for differentiating the classes?
+
+  2. Would you like to include grid lines in the scatter plot?
+
+  3. Should we use specific markers or shapes for the different classes?
+
+  4. Do you have any preference for the font size and style of the labels?
+
+  5. Would you like the legend to be placed in a specific location on the plot?
+
+  6. Do you want to include axis titles, and if so, do you have specific wording for
+  them?
+
+  7. Should the plot include a title, and if so, do you have a preferred title in
+  mind?
+
+  8. Would you like to add any reference lines (such as mean or median) on the scatter
+  plot?
+
+  9. Do you want to adjust the axis limits manually or let them be auto-scaled based
+  on the data?
+
+  10. Are there any specific annotations you would like to add to highlight important
+  points or clusters?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, include axis titles. For the x-axis: ''Sensor V3'', for the y-axis: ''Sensor
+  V6''.
+
+  7. Yes, title it ''Wall-Following Robot Navigation''.
+
+  8. I do not know.
+
+  9. Let them be auto-scaled based on the data.
+
+  10. I am not sure.'
+data_attributes:
+- V3
+- V6
+- Class

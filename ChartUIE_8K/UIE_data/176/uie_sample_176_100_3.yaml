@@ -1,0 +1,56 @@
+initial_prompt: Create a stacked bar chart using the given Online Sales Dataset. The
+  x-axis should display the 'Date', and the y-axis should show the 'Total Revenue'.
+  Each bar should be segmented by 'Product Category' to show the contribution of different
+  categories to the total revenue for each date. Use different colors to distinguish
+  between categories like Electronics, Home Appliances, and Clothing for clear visualization.
+  Please ensure the chart has a legend, and the x-axis labels are rotated for clarity.
+  Additionally, include data labels on each segment of the bar to show the precise
+  revenue values.
+questions: '1. Do you have any specific color preferences for the different product
+  categories?
+
+  2. What font size and style would you prefer for the axis labels and chart title?
+
+  3. Do you want grid lines to be displayed on the chart for better readability?
+
+  4. How detailed should the x-axis labels be? Do you prefer short dates (e.g., "Jan
+  1") or full dates (e.g., "January 1, 2024")?
+
+  5. Would you like any specific title for the chart?
+
+  6. Do you have a preference for the position of the legend (e.g., top, bottom, left,
+  right)?
+
+  7. Should there be any specific margin or padding settings around the chart?
+
+  8. Do you want tooltips to appear when hovering over each segment of the bar?
+
+  9. Do you have any specific data label formats in mind (e.g., currency symbols with
+  revenue values)?
+
+  10. Would you like to add any annotations or reference lines to highlight particular
+  dates or events?'
+answers: '1. I don''t have any specific color preferences for the product categories.
+
+  2. I am not sure about the font size and style.
+
+  3. I do not know about grid lines; you can decide what looks best.
+
+  4. Full dates would be better for clarity, like "January 1, 2024".
+
+  5. I do not have a specific title in mind.
+
+  6. I don''t have a preference for the legend position.
+
+  7. I am not sure about the margin or padding settings.
+
+  8. No, I am looking for an image, not an interactive visualization, so tooltips
+  aren''t necessary.
+
+  9. Including currency symbols with revenue values would be nice.
+
+  10. I do not have any specific annotations or reference lines in mind.'
+data_attributes:
+- Date
+- Total Revenue
+- Product Category

@@ -1,0 +1,54 @@
+initial_prompt: Please create a histogram showing the distribution of 'Total Cases'
+  and 'Total Deaths' by country for the dataset 'Covid Cases and Deaths Worldwide'.
+  The data appears to include total cases, deaths, and other relevant information
+  for various countries. I want to see how the total cases and total deaths vary across
+  different countries. Additionally, please address the missing values accordingly
+  so that they do not distort the histogram. Make sure the histogram reflects accurate
+  counts and provides a clear comparison between countries. Thank you!
+questions: '1. Do you have a preferred color scheme for the histogram?
+
+  2. Would you like to display the histogram as separate plots for ''Total Cases''
+  and ''Total Deaths'' or combined into a single plot?
+
+  3. Should the histogram include labels for individual countries on the x-axis?
+
+  4. Do you have any specific preferences for the range of the y-axis?
+
+  5. Would you like to include a legend to differentiate between ''Total Cases'' and
+  ''Total Deaths''?
+
+  6. Do you prefer any particular style or font for the titles and labels?
+
+  7. Should the histogram include grid lines for better readability?
+
+  8. Do you have preferences for the bin width or number of bins in the histogram?
+
+  9. Would you like to address the missing values by imputing them or excluding the
+  affected countries from the visualization?
+
+  10. Do you prefer any specific layout or orientation for the histogram (e.g., horizontal
+  vs. vertical)?'
+answers: '1. I am not sure.
+
+  2. I would like separate plots for ''Total Cases'' and ''Total Deaths''.
+
+  3. Yes, please include labels for individual countries on the x-axis.
+
+  4. I do not know.
+
+  5. Yes, please include a legend to differentiate between ''Total Cases'' and ''Total
+  Deaths''.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. Please exclude the affected countries with missing values from the visualization.
+
+  10. I have no specific preference.'
+data_attributes:
+- Country
+- Total Cases
+- Total Deaths

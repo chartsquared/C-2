@@ -1,0 +1,42 @@
+initial_prompt: I want to visualize data from the Higher Education Institutions in
+  the USA dataset. Please create a scatter plot showing each institution using the
+  'id' on the x-axis and distinct regions on the y-axis. Mark points differently based
+  on the 'category' of the institution (e.g., Private vs. Public). Ensure that each
+  marker also includes a tooltip or label with the institution's 'name' and 'url'
+  to provide contextual information. Highlight any outliers or unusual data points
+  if present. This will help me understand the geographic distribution and category
+  distinctions.
+questions: '1. Do you have any specific regions or states you want to highlight in
+  the chart?
+
+  2. Are there any preferred colors or color schemes you would like us to use for
+  different categories (e.g., Private vs. Public)?
+
+  3. How would you like the tooltip or label to be formatted? Should it include both
+  ''name'' and ''url'', or any additional information?
+
+  4. Would you prefer markers to be in specific shapes for different categories (e.g.,
+  circles for Private, squares for Public)?
+
+  5. Do you have any specific preferences for highlighting outliers or unusual data
+  points (e.g., different color, larger size)?
+
+  6. Is there a particular style or theme you would like the scatter plot to adhere
+  to (e.g., professional, academic, casual)?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. It should include both ''name'' and ''url''.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Professional.'
+data_attributes:
+- id
+- region
+- name
+- category
+- url

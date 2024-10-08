@@ -1,0 +1,58 @@
+initial_prompt: Create a treemap chart visualizing the distribution of revenue generated
+  by different product types (haircare, skincare) from file 97.csv. Display hierarchical
+  levels indicating SKU, price range, and geographic location (city). This will help
+  in understanding revenue contribution across categories and their subcategories.
+  Highlight regions with high stock levels and low defect rates. Ensure the treemap
+  reflects the scale of lead times and manufacturing costs to illustrate their impact
+  on overall revenue. This will provide insights into optimizing supply chain efficiencies.
+  Include color coding for easy differentiation between categories and key metrics.
+questions: '1. Do you have any specific color preferences for differentiating between
+  product types, SKU, and other key metrics?
+
+  2. Would you like a specific color gradient to represent different revenue levels?
+
+  3. Should the treemap include labels for all hierarchical levels, or only for the
+  main categories?
+
+  4. Do you prefer any specific font style or size for the labels in the treemap?
+
+  5. Should the regions with high stock levels and low defect rates be highlighted
+  in a particular color?
+
+  6. Do you want a legend included in the treemap to explain the color coding and
+  key metrics?
+
+  7. Is there a specific way you would like the price ranges to be categorized for
+  this visualization?
+
+  8. Are there any specific geographic locations (cities) that should be emphasized
+  or highlighted?'
+answers: '1. I do not have any specific color preferences for differentiating between
+  product types, SKU, and other key metrics.
+
+  2. I am not sure.
+
+  3. I would prefer labels for all hierarchical levels to be included.
+
+  4. I have no specific preference for font style or size.
+
+  5. Yes, regions with high stock levels and low defect rates should be highlighted
+  in a particular color.
+
+  6. Yes, I would like a legend included in the treemap to explain the color coding
+  and key metrics.
+
+  7. I am not sure how the price ranges should be categorized.
+
+  8. I do not know if any specific geographic locations (cities) should be emphasized
+  or highlighted.'
+data_attributes:
+- Product type
+- SKU
+- Price
+- Location
+- Revenue generated
+- Stock levels
+- Defect rates
+- Lead times
+- Manufacturing costs

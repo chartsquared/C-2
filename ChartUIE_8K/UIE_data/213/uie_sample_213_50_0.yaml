@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap to visualize the distribution of golf courses in
+  New York State Parks. Use regions on the x-axis and course names on the y-axis,
+  highlighting missing values and unique counts. Add text annotations for location
+  coordinates and URLs.
+questions: '1. Do you have a preferred color scheme for the heatmap, especially for
+  highlighting missing values and unique counts?
+
+  2. How would you like the missing values to be represented on the heatmap (e.g.,
+  a specific color, pattern)?
+
+  3. Do you prefer a specific format for the text annotations for the location coordinates
+  and URLs (e.g., font size, color, style)?
+
+  4. Should the co-ordinates and URLs be displayed inside the cells or as tooltips?
+
+  5. Are there any specific formatting preferences for the axis labels (e.g., font
+  type, size, orientation)?
+
+  6. Would you like gridlines to be visible on the heatmap, and if so, do you have
+  a preference for their appearance?
+
+  7. Do you have any preference for the ordering of regions and course names on the
+  axes (e.g., alphabetical order, based on frequency)?
+
+  8. Should we include a legend to explain the color coding and if so, do you have
+  specific preferences for its placement and style?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I prefer the default format.
+
+  4. Inside the cells.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Alphabetical order.
+
+  8. I do not know.'
+data_attributes:
+- Region
+- Course Name
+- Longitude
+- Latitude
+- Facility URL
+- Golf URL

@@ -1,0 +1,47 @@
+initial_prompt: I'd like to have a heatmap visualization of the Disease Symptoms and
+  Patient Profile Dataset. Specifically, I want to see the correlation between different
+  symptoms like Fever, Cough, Fatigue, and Difficulty Breathing against age and gender.
+  It would be helpful if the heatmap could showcase how these variables interact with
+  the "Outcome Variable" to identify any noticeable patterns about how these factors
+  impact health outcomes. Please include age in bins or ranges for better clarity,
+  and differentiate male and female data points within the heatmap for more detailed
+  analysis. Thank you!
+questions: '1. Do you have a preference for the color scheme of the heatmap?
+
+  2. Do you want a specific range for binning the ages (e.g., 0-10, 11-20, etc.)?
+
+  3. How would you like the differentiation between male and female data points to
+  be represented (e.g., separate heatmaps, different colors within the same heatmap)?
+
+  4. Would you like any specific labels or annotations to be included for better clarity?
+
+  5. Is there a particular way you prefer the "Outcome Variable" to be showcased in
+  the heatmap (e.g., as a separate axis, color gradient)?
+
+  6. Do you have a specific favorite or preferred font style and size for the text
+  in the heatmap?
+
+  '
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Binning the ages in ranges of 0-10, 11-20, 21-30, etc., would be good.
+
+  3. Different colors within the same heatmap would be preferable.
+
+  4. I do not know.
+
+  5. As a color gradient, if possible.
+
+  6. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- Fever
+- Cough
+- Fatigue
+- Difficulty Breathing
+- Age
+- Gender
+- Outcome Variable

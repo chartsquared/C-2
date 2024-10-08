@@ -1,0 +1,47 @@
+initial_prompt: Create a histogram to compare the distribution of 'Age' among the
+  patients categorized by their 'Smoking Status.' Use the 'Age' column for the x-axis,
+  and the frequency of each age group for the y-axis. Separate the data into 'current'
+  and 'non-smoking' groups using the 'Smoking Status' column to show the differences
+  in age distribution. This will allow us to visualize any potential age-related trends
+  or differences between smokers and non-smokers. Make sure to title the chart appropriately
+  and label the axes for clear interpretation. Also, use different colors for each
+  group for better distinction.
+questions: '1. Do you have a specific title in mind for the histogram?
+
+  2. What color preferences do you have for distinguishing ''current'' smokers from
+  ''non-smoking'' patients?
+
+  3. Would you like to specify any particular bin width for the age groups on the
+  x-axis?
+
+  4. Is there any specific font style or size you prefer for the chart title and axis
+  labels?
+
+  5. Do you have a preference for the background color of the chart?
+
+  6. Would you like to include gridlines in the histogram? If so, do you have a preference
+  for their color or style?
+
+  7. Do you want to include a legend to clearly indicate which color corresponds to
+  each ''Smoking Status'' group? If yes, where should the legend be positioned?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not have specific preferences, but different distinct colors would be great.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, I would like to include gridlines, but I do not have a preference for their
+  color or style.
+
+  7. Yes, please include a legend. I am not sure about the positioning.
+
+  <end of user response>'
+data_attributes:
+- Age
+- Smoking Status

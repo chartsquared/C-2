@@ -1,0 +1,55 @@
+initial_prompt: Create a Treemap for Digital TV Station Transmitter Data, focused
+  on 'CALLSIGN', 'CITY', and 'STATE'. Use color to highlight different 'SERVICE' types.
+  Employ text annotations to display 'ERP' and 'HAAT' values for key stations, drawing
+  attention to significant data points. The purpose is to provide a clear visual representation
+  of the distribution and characteristics of TV transmitters in the media and communications
+  sector, making it easy to identify patterns and key information at a glance. Make
+  sure the chart emphasizes differences between stations and their transmission power.
+questions: '1. Do you have a preferred color scheme for highlighting different ''SERVICE''
+  types?
+
+  2. How would you like the key stations to be identified for text annotations displaying
+  ''ERP'' and ''HAAT'' values?
+
+  3. Do you want annotations to be displayed for all data points or only for stations
+  that meet certain criteria?
+
+  4. Is there a specific way you prefer the ''ERP'' and ''HAAT'' values to be formatted
+  or displayed (e.g., units, decimal places)?
+
+  5. Would you like any additional labels or legends included in the treemap for better
+  understanding?
+
+  6. Are there specific patterns or key information you are more interested in highlighting
+  through the visualization?
+
+  7. Do you have any preferences regarding the size and layout of the treemap blocks
+  (e.g., based on ''ERP'', alphabetical by ''CALLSIGN'')?
+
+  8. Would you like to include any interactive features such as hover-over text for
+  more details on each station?
+
+
+  '
+answers: '1. I do not know.
+
+  2. Key stations could be identified by high ''ERP'' or significant ''HAAT'' values.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include a legend for the ''SERVICE'' types.
+
+  6. I am more interested in highlighting differences in transmission power (''ERP'').
+
+  7. Preferably based on ''ERP'' values.
+
+  8. I do not need interactive features.'
+data_attributes:
+- CALLSIGN
+- CITY
+- STATE
+- SERVICE
+- ERP
+- HAAT

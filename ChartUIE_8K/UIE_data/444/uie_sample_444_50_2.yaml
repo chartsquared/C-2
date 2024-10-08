@@ -1,0 +1,57 @@
+initial_prompt: Visualize a choropleth map highlighting countries with public transit
+  projects. Emphasize real costs, tunneling percentage, and station counts. Use annotations
+  to show start and end years.
+questions: '1. Do you have any color preference for the choropleth map to represent
+  different ranges of ''real costs''?
+
+  2. Should the colors be in a gradient scale, or would you prefer distinct color
+  ranges for ''tunneling percentage''?
+
+  3. How would you like to differentiate between start and end years in the annotations
+  (e.g., different font styles, colors, or icons)?
+
+  4. Would you prefer to see the station counts represented as numerical values or
+  with symbols on the map?
+
+  5. Do you want the annotations for start and end years to appear directly on the
+  map or in a separate legend/key?
+
+  6. Is there a preferred way for you to deal with any missing data in the visualization?
+
+  7. Do you have a preference for the map projection (e.g., Mercator, Robinson) to
+  be used for the choropleth map?
+
+  8. Are there any specific regions or countries you would like to highlight or emphasize
+  more prominently on the map?
+
+  9. Should the map include additional contextual information such as geographical
+  features or city names?
+
+  10. Do you have a preference for the tooltip design or content when a user hovers
+  over a country?'
+answers: '1. I am not sure.
+
+  2. Gradient scale would be fine.
+
+  3. Different colors would be good.
+
+  4. Numerical values, please.
+
+  5. Directly on the map.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No specific preference.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- country
+- real_cost
+- tunnel_per
+- stations
+- start_year
+- end_year

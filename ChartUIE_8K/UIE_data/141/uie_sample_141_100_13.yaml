@@ -1,0 +1,66 @@
+initial_prompt: I need a table chart that compares "Economic Freedom" scores for various
+  countries based on the year 2016 data. The chart should list countries in alphabetical
+  order and include columns for their rankings, quartiles, and individual category
+  scores such as government consumption, transfers, government enterprises, and top
+  marginal tax rates. Additionally, include scores for judicial independence, impartial
+  courts, protection of property rights, money growth, inflation control, and regulation
+  measures. Highlight any missing values and ensure that the data is easy to read
+  and interpret for a quick economic analysis.
+questions: '1. Do you have any preferences on the specific layout of the table?
+
+  2. Would you like specific colors for highlighting missing values?
+
+  3. Is there a preferred font size or type for the table text?
+
+  4. Should the quartiles and rankings be color-coded or use any specific visual markers?
+
+  5. Are there specific columns that should have more emphasis or visibility?
+
+  6. How would you like the table to handle countries with missing values in multiple
+  columns?
+
+  7. Do you have any preferences for displaying numeric values, such as number formats
+  or decimal places?
+
+  8. Would you like to include any additional annotations or footnotes in the table?
+
+  9. Do you prefer any particular order for the columns within the table?
+
+  10. Should the table include any borders or separators between rows and columns
+  for better readability?'
+answers: '1. I am not sure.
+
+  2. I would like missing values to be highlighted in red.
+
+  3. I do not know.
+
+  4. Yes, quartiles and rankings should be color-coded.
+
+  5. No specific preference.
+
+  6. Highlight the whole row in a lighter shade if multiple values are missing.
+
+  7. Use two decimal places for the numeric values.
+
+  8. I am not sure.
+
+  9. No specific preference.
+
+  10. Yes, include borders and separators for better readability.'
+data_attributes:
+- countries
+- rank
+- quartile
+- 1a_government_consumption
+- 1b_transfers
+- 1c_gov_enterprises
+- 1d_top_marg_tax_rate
+- 2a_judicial_independence
+- 2b_impartial_courts
+- 2c_protection_property_rights
+- 3a_money_growth
+- 3b_std_inflation
+- 3c_inflation
+- 5a_credit_market_reg
+- 5b_labor_market_reg
+- 5c_business_reg

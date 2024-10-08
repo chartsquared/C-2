@@ -1,0 +1,64 @@
+initial_prompt: I want a line chart visualizing the variance, standard deviation,
+  and contrast of brain tumor images over different samples. The X-axis should represent
+  the image samples, while the Y-axis should reflect the respective values for variance,
+  standard deviation, and contrast. Use different colors or styles to distinguish
+  each parameter on the chart. Ensure the chart clearly highlights differences between
+  Class 0 and Class 1. As the dataset relates to health, the visualization should
+  be clean and easily interpretable for medical professionals.
+questions: '1. Do you have any specific color preferences for distinguishing variance,
+  standard deviation, and contrast?
+
+  2. Would you prefer any particular line styles (e.g., solid, dashed, dotted) for
+  differentiating the parameters on the chart?
+
+  3. Should specific markers be used for each data point? If so, what types of markers
+  would you prefer (e.g., circles, squares, triangles)?
+
+  4. Would you like the chart to include a legend detailing the line styles and colors
+  used for each parameter?
+
+  5. Is there a specific font or font size you prefer for the labels on the X-axis
+  and Y-axis?
+
+  6. Should the chart include gridlines? If so, do you have any preferences for their
+  appearance (e.g., color, line style)?
+
+  7. Do you have any preferences regarding the chart''s background color or theme
+  (e.g., light, dark)?
+
+  8. Is there additional information or annotations you would like to highlight within
+  the chart to aid interpretation?
+
+  9. Would you prefer a specific arrangement or grouping of the data for Class 0 and
+  Class 1 in the visualization?
+
+  10. Are there any other specific design elements or features you wish to include
+  in the visualization for better readability and clarity?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, the chart should include a legend detailing the line styles and colors used
+  for each parameter.
+
+  5. I am not sure.
+
+  6. Yes, the chart should include gridlines, but I have no specific preferences for
+  their appearance.
+
+  7. I do not have any preferences regarding the chart''s background color or theme.
+
+  8. Yes, it would be helpful to have annotations highlighting significant differences
+  or trends between Class 0 and Class 1.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Image
+- Class
+- Variance
+- Standard Deviation
+- Contrast

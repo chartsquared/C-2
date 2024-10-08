@@ -1,0 +1,47 @@
+initial_prompt: Create a heatmap using Tesla stock data from 2010 to 2020, focusing
+  on the daily closing prices. Use text annotations to highlight specific dates with
+  significant price changes. The heatmap should visually emphasize high and low close
+  prices using a gradient, and highlights can modify colors to show the intensity
+  of volumes traded. The purpose is to identify trends and patterns over time, understanding
+  how stock prices fluctuated, which can be crucial for market analysis. Utilize annotations
+  to provide context, such as marking major events or turning points, to enhance the
+  overall interpretability of the data.
+questions: '1. Do you have specific color preferences for the gradient in the heatmap
+  to represent high and low close prices?
+
+  2. Are there particular dates or events you would like to emphasize with annotations
+  on the heatmap?
+
+  3. Do you prefer a specific style or formatting for text annotations (e.g., font
+  size, color)?
+
+  4. Would you like to see a legend explaining the gradient colors and volume intensity
+  on the heatmap?
+
+  5. Do you have preferences on the layout of the heatmap (e.g., overall dimensions,
+  aspect ratio)?
+
+  6. Are there any additional markings or labels you would like to include to enhance
+  the interpretability of the data?'
+answers: '<start of user emulated response>
+
+  1. I am not sure, maybe something standard like blue for low prices and red for
+  high prices.
+
+  2. Yes, please emphasize dates such as June 29, 2010 (IPO), August 7, 2018 ("Funding
+  secured" tweet), and March 18, 2020 (COVID-19 market impact).
+
+  3. I do not know, whatever looks clear and readable.
+
+  4. Yes, I would like to see a legend explaining the gradient colors and volume intensity.
+
+  5. I am not sure, I have no specific preference on this.
+
+  6. I have no specific preference, just anything that makes it easier to understand
+  trends and patterns.
+
+  <end of user emulated response>'
+data_attributes:
+- Date
+- Close
+- Volume

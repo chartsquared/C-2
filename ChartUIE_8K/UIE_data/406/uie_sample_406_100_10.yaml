@@ -1,0 +1,57 @@
+initial_prompt: I'd like a Choropleth map that depicts the GDP per capita of different
+  countries around the world. The map should use varying shades of color to represent
+  the GDP per capita, making it easy to compare economic conditions between countries.
+  Additionally, I want the life expectancy to be indicated as a secondary metric,
+  perhaps as a tooltip when you hover over each country. The map should visually differentiate
+  the continents, such as Asia, Europe, and Africa, to provide a clear global perspective.
+  This will help in a social-science context to analyze the correlation between GDP
+  and life expectancy.
+questions: '1. Do you have a specific color palette preference for representing GDP
+  per capita on the map?
+
+  2. How many different shades would you like the color scale to have for GDP per
+  capita?
+
+  3. Do you want to include a legend for the GDP per capita color scale? If yes, where
+  should it be positioned?
+
+  4. How would you prefer the continents to be visually differentiated? (e.g., borders,
+  background colors)
+
+  5. Would you like the names of the countries to be displayed directly on the map?
+
+  6. Do you prefer a specific format for the tooltip displaying life expectancy? If
+  yes, please specify.
+
+  7. Should the map include any additional demographic or geographical data, such
+  as population or area size?
+
+  8. Do you have any preferences for the map''s projection type (e.g., Mercator, Robinson)?
+
+  9. Is there a specific title or labels you would like to include on the map?'
+answers: '<start of user emulated response>
+
+  1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Yes, please include a legend. I do not know where it should be positioned.
+
+  4. Borders would be fine.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. No, just GDP per capita and life expectancy.
+
+  8. I am not sure.
+
+  9. No specific title or labels.
+
+  <end of user emulated response>'
+data_attributes:
+- country
+- continent
+- gdpPercap
+- lifeExp

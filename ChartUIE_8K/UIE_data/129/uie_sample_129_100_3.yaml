@@ -1,0 +1,40 @@
+initial_prompt: Please create a line chart that visualizes the Covid-19 trends for
+  Indian states and union territories over time. The x-axis should represent the states/UTs,
+  and the y-axis should show the number of cases. Include separate lines for Total
+  Cases, Active Cases, Discharged Cases, and Deaths. Ensure each line is labeled and
+  has a distinct color for clarity. The chart should also include a legend and gridlines
+  for better readability. The goal is to compare how each state/UT has progressed
+  in terms of total cases, recoveries, and fatalities.
+questions: "1. Do you have any specific color preferences for the lines representing\
+  \ Total Cases, Active Cases, Discharged Cases, and Deaths?\n2. What style or theme\
+  \ would you prefer for the chart (e.g., minimalistic, colorful, professional)?\n\
+  3. Are there any specific fonts or font sizes you would like to use for the labels\
+  \ and legend?\n4. Would you like to include any specific titles for the chart and\
+  \ the axes?\n5. Do you have any preferences for the gridlines (e.g., color, thickness)?\
+  \ \n6. Should the chart include data markers at each data point along the lines?\n\
+  7. Would you like to display the exact values of data points as labels on the chart?"
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Professional.
+
+  3. I do not know.
+
+  4. Yes, please include a title: "Covid-19 Trends in Indian States and Union Territories".
+  For the axes, label the x-axis with "States and Union Territories" and the y-axis
+  with "Number of Cases".
+
+  5. I have no specific preference.
+
+  6. Yes, please include data markers.
+
+  7. No, displaying exact values is not necessary.
+
+  <end of user response>'
+data_attributes:
+- State/UTs
+- Total Cases
+- Active
+- Discharged
+- Deaths

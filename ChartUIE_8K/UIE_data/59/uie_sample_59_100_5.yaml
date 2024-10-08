@@ -1,0 +1,57 @@
+initial_prompt: I have a dataset containing historical stock prices for GameStop,
+  with fields such as date, open price, high price, low price, close price, volume,
+  and adjusted close price. I would like to create a Candlestick chart that visualizes
+  the stock performance over time. The x-axis should represent the trading dates,
+  and the y-axis should represent the stock prices. Each candlestick should show the
+  open, high, low, and close prices for each day. This visualization will help in
+  understanding the daily price movements and overall stock trend. Please ensure the
+  chart is clear and easy to interpret.
+questions: '1. Do you have a preferred color scheme for the candlesticks (e.g., green
+  for gains and red for losses)?
+
+  2. Would you like to include grid lines on the chart for better readability?
+
+  3. Do you have a preference for the style and font of axis labels and chart title?
+
+  4. Would you like to add annotations or markers on specific dates to highlight significant
+  events?
+
+  5. Should the chart include volume data as a subplot or integrated into the main
+  chart?
+
+  6. Do you prefer a specific date format for the x-axis labels?
+
+  7. Would you like to set specific date ranges for the x-axis to focus on a particular
+  time period?
+
+  8. Do you have any preference for the line thickness of the wicks and bodies of
+  the candlesticks?
+
+  9. Should the chart include a moving average or other technical indicators?
+
+  10. Are there any specific legends or labels you would like to see on the chart?'
+answers: '1. Green for gains and red for losses.
+
+  2. Yes, I would like to include grid lines.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I would prefer the volume data to be integrated into the main chart.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I have no specific preference for technical indicators.
+
+  10. I do not know.'
+data_attributes:
+- date
+- open_price
+- high_price
+- low_price
+- close_price

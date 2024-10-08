@@ -1,0 +1,65 @@
+initial_prompt: Please create a heatmap using the data from the given CSV file to
+  visualize cybersecurity indexes across different countries and regions. The key
+  indexes are CEI, GCI, NCSI, and DDL. Highlight the intensity of these indexes for
+  each country to easily compare cybersecurity performance across regions such as
+  Asia-Pacific, Europe, and Africa. Ensure that missing values are appropriately handled
+  and clearly indicated in the heatmap. The goal is to provide a visual representation
+  that can quickly show which countries are leading or lagging in cybersecurity measures
+  based on the provided indexes.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. How would you like to indicate missing values on the heatmap?
+
+  3. Should the intensity scale be consistent across all indexes or vary for each
+  one?
+
+  4. Do you prefer a specific arrangement for the countries or regions (e.g., alphabetical
+  order, by region)?
+
+  5. Would you like to include labels for the actual index values within the heatmap
+  cells?
+
+  6. Is there a preferred method for handling missing values (e.g., interpolation,
+  a specific marker)?
+
+  7. Do you need a legend explaining the color intensities?
+
+  8. Should specific regions (e.g., Asia-Pacific, Europe, Africa) be highlighted or
+  separated visually in the heatmap?
+
+  9. Do you have any preferences for the heatmap dimensions or aspect ratio?
+
+  10. Would you like to include additional annotations or markers for extreme values
+  or outliers?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the intensity scale to be consistent across all indexes.
+
+  4. By region would be great.
+
+  5. Yes, please include the labels for the actual index values within the heatmap
+  cells.
+
+  6. I am not sure.
+
+  7. Yes, a legend explaining the color intensities would be helpful.
+
+  8. Yes, please highlight or separate specific regions like Asia-Pacific, Europe,
+  and Africa.
+
+  9. I do not have any specific preferences for the heatmap dimensions or aspect ratio.
+
+  10. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- Country
+- Region
+- CEI
+- GCI
+- NCSI
+- DDL

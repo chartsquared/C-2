@@ -1,0 +1,43 @@
+initial_prompt: I have penguin data with columns like species, island, bill dimensions,
+  flipper length, body mass, sex, and year. Please create a histogram showing the
+  distribution of bill lengths (bill_length_mm). I'd like to see how the bill lengths
+  vary among different species. Use distinct colors for each species to make the chart
+  more informative. Ensure the histogram bins are appropriately sized to capture the
+  range of bill lengths. This will help in understanding the diversity in bill lengths
+  among penguins from different species studied over the years. Thanks!
+questions: '1. Do you have a preferred color palette or specific colors in mind for
+  each species?
+
+  2. What title would you like for the histogram?
+
+  3. Do you have any specific labels for the x-axis and y-axis?
+
+  4. Would you like gridlines to be displayed on the chart?
+
+  5. Do you prefer a specific bin width or number of bins for the histogram?
+
+  6. What legend placement do you prefer (e.g., top, right, bottom, left)?
+
+  7. Is there any specific style or theme you prefer for the histogram (e.g., minimalistic,
+  detailed, professional)?
+
+  8. Would you like to include any annotations or additional information on the chart,
+  such as mean bill length for each species?'
+answers: '1. I do not have a specific preference.
+
+  2. "Distribution of Bill Lengths Among Penguin Species"
+
+  3. X-axis: "Bill Length (mm)", Y-axis: "Frequency"
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Professional
+
+  8. I am not sure.'
+data_attributes:
+- species
+- bill_length_mm

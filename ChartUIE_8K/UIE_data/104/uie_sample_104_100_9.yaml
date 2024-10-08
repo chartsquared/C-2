@@ -1,0 +1,54 @@
+initial_prompt: I have a dataset containing Jumia's stock price data, with information
+  on dates, opening prices, highs, lows, closing prices, adjusted closes, and trading
+  volumes. I want to visualize this data using a column chart. Please create a column
+  chart displaying the closing prices over time, with dates on the x-axis and closing
+  prices on the y-axis. Ensure that each column represents a different date from the
+  dataset. Additionally, include labels for clarity. This will help me to track how
+  the closing prices have changed over the given period. Thank you!
+questions: '1. Do you have a preferred color scheme for the column chart?
+
+  2. Would you like the dates on the x-axis to be displayed in a specific date format
+  (e.g., YYYY-MM-DD, MM/DD/YYYY)?
+
+  3. Should the y-axis have a specific scale (e.g., linear or logarithmic)?
+
+  4. Do you want to include gridlines on the chart to enhance readability?
+
+  5. Is there a particular font style or size you prefer for the labels?
+
+  6. Would you like to add a title to the chart? If yes, what should it be?
+
+  7. Should the columns have any particular width or spacing between them?
+
+  8. Do you prefer any specific positioning for the legend (if needed)?
+
+  9. Would you like to see annotations for significant events or data points on the
+  chart?
+
+  10. Do you want to include any reference lines or markers, such as average closing
+  price or previous closing prices?'
+answers: '1. I am not sure.
+
+  2. YYYY-MM-DD
+
+  3. I am not sure.
+
+  4. Yes, please include gridlines.
+
+  5. I do not know.
+
+  6. Yes, the title should be "Jumia''s Closing Prices Over Time."
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. No, just the closing prices.
+
+
+  Thank you!'
+data_attributes:
+- Date
+- Close

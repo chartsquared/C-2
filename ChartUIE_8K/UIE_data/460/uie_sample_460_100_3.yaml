@@ -1,0 +1,34 @@
+initial_prompt: I want a histogram showcasing the distribution of the total energy
+  (tot energy / Eh) over time (t). This should help me see how the energy levels vary
+  throughout the dataset. Each bar should represent a unique time interval, and the
+  height of each bar should reflect the frequency of total energy values in that interval.
+  Please ensure the x-axis is labeled with time intervals and the y-axis with the
+  count of energy levels within those intervals. Use distinct colors for clarity,
+  and make the chart as clear and easy to interpret as possible. Thank you!
+questions: '1. Do you have any specific preferences for the color palette or color
+  scheme to be used in the histogram?
+
+  2. What size and aspect ratio would you like the histogram to be?
+
+  3. Do you want gridlines to be included in the background of the chart?
+
+  4. Are there any specific labels, annotations, or markers you would like to be included
+  in the chart?
+
+  5. Do you have any preference for the font type and size for the labels on the x-axis
+  and y-axis?
+
+  6. How many time intervals (bins) would you prefer for the x-axis?
+
+  7. Should there be a legend included in the chart, even though it’s a histogram?
+
+  8. Do you want any specific values or points highlighted in the histogram?'
+answers: "1. I don't have a specific preference for the color palette. \n2. I am not\
+  \ sure about the size and aspect ratio. \n3. Yes, please include gridlines in the\
+  \ background.\n4. I am not sure about any specific labels, annotations, or markers.\n\
+  5. I do not have a specific preference for the font type and size for the labels.\n\
+  6. I would prefer around 10-15 time intervals (bins) for the x-axis.\n7. No, a legend\
+  \ is not necessary.\n8. I do not know if I want any specific values or points highlighted."
+data_attributes:
+- t
+- tot energy / Eh

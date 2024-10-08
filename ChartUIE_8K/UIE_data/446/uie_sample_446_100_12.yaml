@@ -1,0 +1,55 @@
+initial_prompt: Create a heatmap to visualize the data on animal rescues by the London
+  Fire Brigade. The x-axis should represent different types of incidents, and the
+  y-axis should show the various boroughs. The color intensity should reflect the
+  number of incidents recorded. Use the column 'borough' for y-axis data and 'type_of_incident'
+  for x-axis data. Ensure to include labels and a legend for clarity. Filter out columns
+  with high missing values such as 'uprn' for better accuracy. Adjust the resolution
+  to clearly display smaller categories. Highlight correlations between locations
+  and incident types.
+questions: '1. Do you have a specific color palette you prefer for the heatmap?
+
+  2. What title would you like for the heatmap?
+
+  3. Do you have any specific preferences for the font style and size for the labels
+  and legend?
+
+  4. Would you like grid lines to be visible on the heatmap?
+
+  5. How would you prefer smaller categories to be displayed for better resolution?
+
+  6. Should there be any specific annotation to highlight key data points or correlations?
+
+  7. Is there a specific range for the color intensity that you would like to set?
+
+  8. Do you want the data values to be displayed within each cell of the heatmap?
+
+  9. Would you like to include any additional information or specific notes on the
+  heatmap for context?
+
+  10. Are there any specific boroughs or incident types you want to emphasize further
+  on the heatmap?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. The title can be "Animal Rescues by the London Fire Brigade".
+
+  3. I am not sure about the font style and size, just make sure they are clear and
+  readable.
+
+  4. I do not know if grid lines are necessary.
+
+  5. I am not sure how smaller categories should be displayed; maybe an expert can
+  decide.
+
+  6. I am not sure about specific annotations; highlight the key data points if necessary.
+
+  7. I do not have a specific range for the color intensity.
+
+  8. Yes, please display the data values within each cell of the heatmap.
+
+  9. I do not have any additional information or specific notes to include.
+
+  10. No, I do not have specific boroughs or incident types to emphasize further.'
+data_attributes:
+- borough
+- type_of_incident
+- incident_number

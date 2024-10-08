@@ -1,0 +1,46 @@
+initial_prompt: I need a dot plot to visualize the machine predictive maintenance
+  classification data. Please plot "Air temperature [K]" on the x-axis and "Rotational
+  speed [rpm]" on the y-axis. Differentiate the points by "Type" (M, L, H) using different
+  colors. Each point should also show "Torque [Nm]" as the size of the dot, and "Tool
+  wear [min]" can be depicted by a secondary color gradient within the dots. Make
+  sure the legend is clear, specifying what each color and size represents. The goal
+  is to easily identify patterns or outliers in machine performance.
+questions: '1. Do you have any specific color preferences for the different "Type"
+  categories (M, L, H)?
+
+  2. Do you prefer any specific color gradient for representing the "Tool wear [min]"
+  within the dots?
+
+  3. Would you like to set specific size ranges for the dots representing "Torque
+  [Nm]"?
+
+  4. Do you have a preferred font style or size for the chart labels and legend?
+
+  5. Do you want the axes to have specific scale types (linear, logarithmic, etc.)?
+
+  6. Are there any specific axis label formats you prefer (e.g., units, precision)?
+
+  7. Would you like any gridlines or reference lines included in the plot?
+
+  8. Do you have any preferences for the background color or style of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- Air temperature [K]
+- Rotational speed [rpm]
+- Type
+- Torque [Nm]
+- Tool wear [min]

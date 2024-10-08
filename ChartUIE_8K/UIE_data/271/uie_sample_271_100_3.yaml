@@ -1,0 +1,55 @@
+initial_prompt: Please create a stacked column chart that shows the number of flights
+  ('cnt') per airline ('airline') along different routes. Group the routes based on
+  the starting airport ('airport1') and ending airport ('airport2'). This will help
+  visualize how many flights each airline operates between various pairs of airports.
+  Make sure each column represents one route, with different segments of the column
+  stacked to show different airlines. This visualization will provide insight into
+  travel patterns and airline operations for different routes. Use the travel data
+  details to guide the design.
+questions: '1. Do you have a preferred color scheme for the stacked column chart to
+  differentiate between airlines?
+
+  2. Would you like the airports to be displayed with their full names or just their
+  IATA codes?
+
+  3. Should the chart include a legend to indicate which color represents each airline?
+
+  4. Do you prefer the columns to be sorted in any specific order (e.g., by airport
+  pairs, by total number of flights)?
+
+  5. Do you want to include data labels on each segment of the columns to show the
+  exact number of flights?
+
+  6. Should the chart include gridlines for better readability or leave them out for
+  a cleaner look?
+
+  7. Would you like to add any specific titles or subtitles to the chart to provide
+  additional context?
+
+  8. Is there a preference for the font style or size for the labels and axis titles?
+
+  9. Should the chart include axis titles, and if so, how would you like them to be
+  labeled?'
+answers: '1. I do not have a specific preference.
+
+  2. The IATA codes are fine.
+
+  3. Yes, please include a legend.
+
+  4. I am not sure.
+
+  5. Yes, please include data labels on each segment.
+
+  6. I do not know.
+
+  7. "Flights per Airline on Various Routes" as the title would be good.
+
+  8. I am not sure.
+
+  9. Yes, please label the y-axis as "Number of Flights" and the x-axis as "Routes
+  (Airport1 - Airport2)".'
+data_attributes:
+- cnt
+- airline
+- airport1
+- airport2

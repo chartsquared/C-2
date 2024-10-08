@@ -1,0 +1,52 @@
+initial_prompt: I need a bar chart to visualize the corn prices over different dates
+  for agricultural analysis. The data file is `../Extra_datas/data/399.csv`, containing
+  columns 'date' and 'price' with no missing values. Please create a chart showing
+  'date' on the x-axis and 'price' on the y-axis, ensuring each bar represents the
+  price of corn on a specific date from the sample data provided. The chart should
+  help in understanding price fluctuations over the specified dates, which is crucial
+  for making farming decisions. Thank you!
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the dates on the x-axis to be formatted in a specific way (e.g.,
+  ''MM-DD-YYYY'' or ''MMM YYYY'')?
+
+  3. Should the chart include gridlines for better readability?
+
+  4. Do you prefer specific labels or titles for the x-axis, y-axis, and the chart
+  itself?
+
+  5. Would you like to see data values displayed on top of each bar?
+
+  6. Is there a specific range or scale you want for the y-axis?
+
+  7. Do you want any annotations or markers for significant price changes or dates?
+
+  8. Are there any particular font styles or sizes you prefer for the text and labels
+  in the chart?
+
+  9. Should the chart include a legend, even though there is only one data series?
+
+  10. Do you wish to include any reference lines, such as average price or thresholds?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, gridlines would be good for better readability.
+
+  4. Yes, please label the x-axis as "Date" and the y-axis as "Price". You can title
+  the chart "Corn Prices Over Time".
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I do not think a legend is necessary.
+
+  10. I am not sure.'
+data_attributes:
+- date
+- price

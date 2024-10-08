@@ -1,0 +1,56 @@
+initial_prompt: Create a box chart for the UCI Heart Disease Data, focusing on the
+  distribution of 'age', 'trestbps', 'chol', 'thalch', and 'oldpeak' columns. Each
+  column should be represented as a separate box in the chart. Ensure that outliers
+  are highlighted to show variability in the dataset. Label the y-axis as "Values"
+  and the x-axis with the respective column names. This will help in visualizing the
+  spread and central tendency of these health indicators across the dataset, with
+  special attention to the differences between patients.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like any specific gridlines or axes styles to be highlighted?
+
+  3. Are there any annotations or titles needed besides "Values" for the y-axis and
+  column names for the x-axis?
+
+  4. Do you prefer a specific orientation or arrangement for the box plots?
+
+  5. Should the chart include a legend or additional labeling for better clarity?
+
+  6. Are there any additional details or tooltips you want to be displayed when interacting
+  with the chart?
+
+  7. Would you like to include any statistical markers such as mean or median values
+  on the box plots?
+
+  8. Do you have a preference for the chart background color or style?
+
+  9. Should the outliers be marked in a specific way, such as with different colors,
+  shapes, or sizes?
+
+  10. Are there any specific font styles or sizes you prefer for the labels and titles
+  on the chart?'
+answers: '1. I do not have a preferred color scheme.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I prefer a vertical orientation for the box plots.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. Yes, please include mean values on the box plots.
+
+  8. I am not sure.
+
+  9. Outliers should be marked with a different color.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- age
+- trestbps
+- chol
+- thalch
+- oldpeak

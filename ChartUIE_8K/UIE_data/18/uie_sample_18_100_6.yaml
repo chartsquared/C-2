@@ -1,0 +1,65 @@
+initial_prompt: Please create a stacked column chart using data from the Complete
+  Pokemon Dataset. The chart should display Pokémon types (type1 and type2) along
+  the x-axis, while the y-axis should represent the average base_total for each type.
+  Stack the values by generation to show how the average base_total changes across
+  different generations for each type. Use different colors to distinguish between
+  generations. This chart will help visualize the progression and distribution of
+  Pokémon strengths across various types and generations. Ensure proper labels and
+  a legend for clarity. Thank you!
+questions: '1. Do you have a specific preference for the color palette used for different
+  generations?
+
+  2. Are there any specific font styles or sizes you prefer for the chart labels and
+  legend?
+
+  3. Do you want the x-axis to display icons or images of Pokémon types along with
+  the type names?
+
+  4. Should the chart include gridlines? If so, do you have a style preference for
+  them?
+
+  5. Would you like to display the exact average values of ''base_total'' on top of
+  each stacked segment?
+
+  6. Is there a specific order in which you would like the Pokémon types to be displayed
+  along the x-axis?
+
+  7. Do you prefer the chart to have a title? If yes, what should the title be?
+
+  8. Are there specific margin or padding requirements for the chart to fit into a
+  presentation or report?
+
+  9. Do you want the y-axis to start from zero, or should it be auto-scaled based
+  on the data values?
+
+  10. Should the legend be placed inside or outside the chart area, and is there a
+  preferred position (e.g., top, right, bottom, left)?'
+answers: '1. I am not sure about the color palette for different generations.
+
+  2. I do not have a specific preference for font styles or sizes for the chart labels
+  and legend.
+
+  3. I do not know; images of Pokémon types along with type names could be nice but
+  are not essential.
+
+  4. I am not sure if the chart should include gridlines.
+
+  5. I don''t think displaying the exact average values on top of each stacked segment
+  is necessary.
+
+  6. I do not have a specific order preference for the Pokémon types along the x-axis.
+
+  7. Yes, please add a title. The title should be "Average Base Total by Pokémon Type
+  and Generation."
+
+  8. I do not have specific margin or padding requirements for the chart.
+
+  9. Yes, the y-axis should start from zero.
+
+  10. The legend should be placed outside the chart area, preferably on the right
+  side.'
+data_attributes:
+- type1
+- type2
+- base_total
+- generation

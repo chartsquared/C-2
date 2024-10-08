@@ -1,0 +1,59 @@
+initial_prompt: Please create an area chart using the provided stock prices data for
+  the META stock. The x-axis should represent the date, and the y-axis should show
+  the closing prices ("Close"). Include data-driven text annotations for key dates
+  where significant changes in stock prices occurred. Additionally, highlight periods
+  of high and low trading volume to emphasize these trends. Ensure the chart is clear
+  and easy to understand for a financial analysis presentation. The chart should provide
+  context and insights into how the stock price has fluctuated over time.
+questions: '1. Do you have a specific color palette preference for the area chart
+  and annotations?
+
+  2. Would you like to include a legend to distinguish between periods of high and
+  low trading volume?
+
+  3. How would you like the periods of high and low trading volume to be highlighted
+  (e.g., different colors, patterns, shaded areas)?
+
+  4. Do you have any specific key dates that you want to make sure are annotated on
+  the chart?
+
+  5. Should the annotations include detailed descriptions or just the date and price
+  information?
+
+  6. Do you have a preference for the font style and size of the annotations?
+
+  7. Would you like gridlines to be included on the chart for better readability?
+
+  8. Do you prefer a specific orientation or format for the date labels on the x-axis
+  (e.g., monthly, quarterly)?
+
+  9. Should the y-axis start from zero, or do you prefer it to be adjusted to the
+  range of closing prices?
+
+  10. Are there any specific titles or labels you would like to be included on the
+  chart (e.g., chart title, axis labels)?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend to distinguish between periods of high and low trading
+  volume.
+
+  3. I am not sure.
+
+  4. I do not have any specific key dates in mind, but significant price changes should
+  be annotated.
+
+  5. Just the date and price information would be sufficient.
+
+  6. I am not sure.
+
+  7. Yes, include gridlines for better readability.
+
+  8. I am not sure.
+
+  9. The y-axis should be adjusted to the range of closing prices.
+
+  10. Please include a chart title and axis labels.'
+data_attributes:
+- Date
+- Close
+- Volume

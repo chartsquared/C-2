@@ -1,0 +1,61 @@
+initial_prompt: Please create a box chart visualization for the APPLE stock data focusing
+  on the 'Open', 'High', 'Low', 'Close', 'Adj Close', and 'Volume' columns. The chart
+  should display the distribution and range of these stock prices over time. Ensure
+  the x-axis represents the date and the y-axis different stock values. The goal is
+  to identify any significant outliers or patterns in the stock prices and trading
+  volumes. This will help in analyzing the fluctuations in stock values over the given
+  time period for better investment decisions. Thank you!
+questions: '1. Do you have a preferred color palette for the box chart?
+
+  2. Should the box chart include gridlines? If so, do you have a preference for the
+  style of these gridlines?
+
+  3. Would you like to include a legend in the chart? If yes, where would you prefer
+  it to be positioned?
+
+  4. Do you want to highlight particular data points such as significant highs or
+  lows?
+
+  5. Should the chart have titles and labels for the axes? If so, do you have specific
+  text for these titles and labels?
+
+  6. Would you like to include annotations for any specific outliers or patterns detected?
+
+  7. Do you have a preference for the date format displayed on the x-axis?
+
+  8. Should the volume be plotted on a secondary y-axis?
+
+  9. Do you want to display all data points, or would you prefer to aggregate the
+  data by specific time periods (e.g., weekly, monthly)?
+
+  10. Are there any specific statistical metrics (e.g., mean, median) you would like
+  to be displayed alongside the box chart?'
+answers: '1. I do not know.
+
+  2. Yes, please include gridlines. I am not sure about the style.
+
+  3. Yes, I would like to include a legend. I have no specific preference for its
+  position.
+
+  4. I am not sure.
+
+  5. Yes, please include titles and labels for the axes. Label the x-axis as "Date"
+  and the y-axis as "Stock Values."
+
+  6. I do not know.
+
+  7. I have no specific preference for the date format.
+
+  8. Yes, please plot the volume on a secondary y-axis.
+
+  9. I am not sure.
+
+  10. Yes, please display the median.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

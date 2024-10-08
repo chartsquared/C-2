@@ -1,0 +1,53 @@
+initial_prompt: I'd like to create a stacked bar chart using the Ecoli Data Set, focusing
+  on the genomics data provided. The x-axis should display different sequences such
+  as 'AAT_ECOLI', 'ACEA_ECOLI', and 'ACEK_ECOLI'. Each bar will be divided into stacked
+  sections showing the values for 'mcg', 'gvh', 'lip', 'chg', 'aac', 'alm1', and 'alm2'.
+  This chart should help visualize the contribution of each attribute to the overall
+  sequence profile. Please ensure that the chart handles any missing data gracefully,
+  possibly by ignoring or interpolating the missing values. Thank you!
+questions: '1. What color palette would you prefer for the stacked sections representing
+  different attributes?
+
+  2. Do you have a preference for the order in which the attributes are stacked in
+  the bars?
+
+  3. How would you like to handle missing data: ignoring, interpolating, or another
+  method?
+
+  4. Should the chart include data labels showing the exact values within each segment
+  of the stacked bars?
+
+  5. Do you have any specific preferences for the chart title and axis labels?
+
+  6. Would you like to include a legend, and if so, where should it be positioned
+  on the chart?
+
+  7. Should the visualization display gridlines for easier comparison of values across
+  sequences?
+
+  8. Do you have any specific font preferences for the chart text (e.g., font type,
+  size, color)?'
+answers: '1. I am not sure about the color palette, you can choose what looks best.
+
+  2. I do not have a specific preference for the order of stacking the attributes.
+
+  3. Interpolating missing data would be fine.
+
+  4. Yes, please include data labels showing the exact values.
+
+  5. I do not have any specific preferences for the chart title and axis labels.
+
+  6. Yes, please include a legend. I am not sure where it should be positioned.
+
+  7. Yes, please include gridlines for easier comparison.
+
+  8. I do not have any specific font preferences, you can choose what is most legible.'
+data_attributes:
+- Sequence Name
+- mcg
+- gvh
+- lip
+- chg
+- aac
+- alm1
+- alm2

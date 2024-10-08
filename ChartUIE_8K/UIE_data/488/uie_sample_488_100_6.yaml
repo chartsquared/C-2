@@ -1,0 +1,66 @@
+initial_prompt: 'I have raw data on different fish species, their categories, capture
+  rates, and weightings from an Excel file. I need a grouped column chart that will
+  visualize the capture rates and weightings for each species categorized by their
+  ''Gephart Category''. Each species should have two bars: one for the ''Capture''
+  column and one for the ''Weighting'' column. Additionally, ensure that fish grouped
+  under the same ''Gephart Category'' are visually clear, so I can easily compare
+  capture rates and weightings across different categories and species. Add legends
+  and labels for clarity.'
+questions: '1. Do you have any specific color preferences for the different bars representing
+  ''Capture'' and ''Weighting'' values?
+
+  2. Would you prefer the bars within each ''Gephart Category'' to be grouped together
+  with distinct colors for each category?
+
+  3. Do you have specific preferences for the font style and size of the labels and
+  legends?
+
+  4. Should the x-axis labels include both the ''Species'' and ''Gephart Category''
+  for clarity, or would you prefer a different labeling approach?
+
+  5. Do you have a preferred order for the ''Gephart Categories'' and ''Species''
+  to appear on the x-axis?
+
+  6. Would you like to display gridlines on the chart for easier comparison of values,
+  or would you prefer a cleaner look without gridlines?
+
+  7. Do you have any specific preferences for the placement of the legend (e.g., top,
+  bottom, left, right of the chart)?
+
+  8. Should the y-axis have a consistent scale across all ''Gephart Categories'' for
+  easier comparison, or should it be auto-scaled to fit the data range for each category?
+
+  9. Would you like to include any reference lines or annotations to highlight specific
+  capture rates or weightings?
+
+  10. Do you have any specific preferences for the chart title and subtitle?'
+answers: '1. I am not sure about the color preferences.
+
+  2. Yes, I would prefer the bars within each ''Gephart Category'' to be grouped together
+  with distinct colors for each category.
+
+  3. I do not have specific preferences for the font style and size of the labels
+  and legends.
+
+  4. I am not sure about the x-axis labels; whatever you think is best for clarity.
+
+  5. I do not have a preferred order for the ''Gephart Categories'' and ''Species''
+  to appear on the x-axis.
+
+  6. I would prefer to display gridlines on the chart for easier comparison of values.
+
+  7. I am not sure about the placement of the legend; please choose what you think
+  works best.
+
+  8. The y-axis should have a consistent scale across all ''Gephart Categories'' for
+  easier comparison.
+
+  9. No, I do not need any reference lines or annotations.
+
+  10. I do not have any specific preferences for the chart title and subtitle; use
+  what you think would be clear and informative.'
+data_attributes:
+- Species
+- Gephart Category
+- Capture
+- Weighting

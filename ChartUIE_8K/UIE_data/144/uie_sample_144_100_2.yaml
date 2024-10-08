@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap visualizing the data on Palestinian structures demolished
+  by Israel. The heatmap should highlight the number of demolitions by district and
+  reason for demolition. Annotations should describe trends or interesting points,
+  such as districts with the highest demolitions or common reasons. Use color gradients
+  to show varying frequencies of demolitions. The chart's purpose is to provide an
+  insightful visual representation of the impact of demolitions across different districts
+  for policy discussions and humanitarian aid planning.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like to include a legend to explain the color gradients?
+
+  3. Should we display the exact number of demolitions within each heatmap cell?
+
+  4. Do you have any specific trends or points that you would like to be highlighted
+  in the annotations?
+
+  5. Is there a particular ordering of districts or reasons for demolition that you
+  prefer?
+
+  6. Would you like to include a title and/or subtitles on the heatmap? If so, do
+  you have specific wording in mind?
+
+  7. Are there any specific fonts or styles you prefer for annotations and labels?
+
+  8. Do you have a preferred range for the color gradient to highlight varying frequencies?
+
+  9. Should we include any additional contextual information, like a description or
+  summary, around the heatmap?'
+answers: '1. I do not have a preferred color scheme.
+
+  2. Yes, I would like to include a legend to explain the color gradients.
+
+  3. Yes, display the exact number within each heatmap cell.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, include a title: "Palestinian Structures Demolished by Israel" and a subtitle:
+  "Demolitions by District and Reason".
+
+  7. I do not have any specific fonts or styles in mind.
+
+  8. I am not sure.
+
+  9. Yes, include additional contextual information like a short summary around the
+  heatmap.'
+data_attributes:
+- district
+- reason_for_demolition
+- housing_units

@@ -1,0 +1,59 @@
+initial_prompt: Please create a box plot to visualize the preparation and cooking
+  time of different Indian desserts. The data file (130.csv) includes details such
+  as name, ingredients, diet, prep time, cook time, flavor profile, course, state,
+  and region. Ensure the box plot shows the distribution of these times for a clear
+  comparison. Include labels for each box representing different desserts. Use different
+  colors to distinguish between prep and cook times. Add titles and labels for clarity.
+  This visualization will help see the variation and central tendencies in cooking
+  and preparation times for different desserts.
+questions: '1. Do you have a preferred title for the box plot?
+
+  2. Would you like any specific font style or size for the labels and title?
+
+  3. Do you have any color preferences for distinguishing between preparation time
+  and cooking time?
+
+  4. Would you like grid lines to be displayed in the background?
+
+  5. Do you have a preference for the orientation of the labels (horizontal or vertical)?
+
+  6. Should the chart include a legend to distinguish between preparation time and
+  cooking time?
+
+  7. Do you have any specific requirements for the scale of the y-axis (e.g., fixed
+  range, auto-scaling)?
+
+  8. Would you like to include annotations or data points on the box plot?
+
+  9. Do you want to display any statistical details (e.g., mean, median) on the box
+  plot?
+
+  10. Is there any specific information you would like in the tooltips when hovering
+  over the data points?'
+answers: '<start of user response>
+
+  1. Indian Desserts: Preparation and Cooking Times
+
+  2. I am not sure
+
+  3. I do not have specific preferences, maybe different shades of blue and red?
+
+  4. Yes
+
+  5. Horizontal
+
+  6. Yes
+
+  7. Auto-scaling is fine
+
+  8. I am not sure
+
+  9. Yes, please include median
+
+  10. I do not know
+
+  <end of user response>'
+data_attributes:
+- name
+- prep_time
+- cook_time

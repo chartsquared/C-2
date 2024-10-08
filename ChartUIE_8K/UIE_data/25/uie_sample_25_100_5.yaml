@@ -1,0 +1,59 @@
+initial_prompt: Please create a dot plot to visualize the "NIFTY-50 Stocks Dataset."
+  Use the 'Symbol' on the x-axis and the '% Chng' on the y-axis. Each dot should represent
+  a stock, showing its percentage change. Use different colors for positive and negative
+  changes. Include legends for clarity. Highlight data for 'ADANIPORTS', 'ASIANPAINT',
+  and 'AXISBANK' to stand out. Include tooltips with details like 'Open', 'High',
+  'Low', and 'LTP' values for interactivity. The title should read "NIFTY-50 Stocks
+  Percentage Change Overview." Make it visually appealing and clear. Thank you!
+questions: '1. Do you have a preferred color scheme for the positive and negative
+  changes?
+
+  2. What font style and size do you prefer for the chart title and axis labels?
+
+  3. How would you like the highlighted stocks (''ADANIPORTS'', ''ASIANPAINT'', ''AXISBANK'')
+  to be distinguished (e.g., larger dots, different color, bold outline)?
+
+  4. What positioning do you prefer for the legend (e.g., top-right, bottom-left)?
+
+  5. Do you have any preferences for the background color of the chart?
+
+  6. Should the axes have grid lines, and if so, what style do you prefer (e.g., dashed,
+  solid)?
+
+  7. What marker style do you prefer for the dots (e.g., circles, squares, triangles)?
+
+  8. Do you have any specific preferences for axis scaling (e.g., logarithmic scale,
+  linear scale)?
+
+  9. Should the axis labels be rotated or angled for better readability? If yes, specify
+  the angle.
+
+  10. Would you like any additional text annotations or labels on specific points
+  for clarity?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Larger dots and different color, please.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Circles.
+
+  8. Linear scale.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- Symbol
+- Open
+- High
+- Low
+- LTP
+- Chng
+- '% Chng'

@@ -1,0 +1,40 @@
+initial_prompt: Create a scatter plot to visualize the fuel efficiency of various
+  car models over the years. Plot the 'year' on the x-axis and 'comb08' (combined
+  MPG) on the y-axis. Use different colors to distinguish between fuel types (e.g.,
+  'fuelType1'). This will help understand trends in fuel efficiency improvements over
+  time and how different fuel types perform. I want to compare the potential money
+  savings when using an electric car versus traditional gasoline cars. Highlight any
+  extreme values or outliers in the dataset. This will aid in understanding the financial
+  benefits of switching to electric cars.
+questions: '1. Do you have a preferred color palette for distinguishing between different
+  fuel types?
+
+  2. Should data points representing electric cars be highlighted in a specific way?
+
+  3. Do you want to include trend lines or regression lines for each fuel type?
+
+  4. How would you like outliers to be highlighted on the scatter plot?
+
+  5. Should the axis labels and title have any specific fonts or styles?
+
+  6. Would you prefer the y-axis to use a logarithmic scale for better visibility
+  of variations?
+
+  7. Do you have any preferences for the marker shapes of the different fuel types?
+
+  8. Should there be annotations or tooltips for data points that provide additional
+  information?
+
+  9. Do you want a legend to be included, and if so, should it be placed in a specific
+  location?'
+answers: "1. I am not sure.\n2. Yes, data points representing electric cars should\
+  \ be highlighted distinctly.\n3. I am not sure.\n4. I am not sure.\n5. I do not\
+  \ have a specific preference.\n6. I do not know.\n7. I do not have a specific preference.\n\
+  8. I am not sure.\n9. Yes, a legend should be included, but I have no specific preference\
+  \ for its location. \n\n"
+data_attributes:
+- year
+- comb08
+- fuelType1
+- fuelCost08
+- youSaveSpend

@@ -1,0 +1,42 @@
+initial_prompt: Please create a geographic heatmap visualizing the distribution of
+  blockchain jobs in India for 2022. The data includes company names, job titles,
+  locations, whether easy apply options are available, and salary ranges. Highlight
+  job density in different locations using intensity levels to show where blockchain
+  job opportunities are concentrated. Include key identifying metrics such as number
+  of job postings per location, unique companies, and salary ranges. Utilize color
+  gradients to represent these variables effectively, ensuring the map is both informative
+  and visually appealing. Also, ensure the labels are clear for easy interpretation.
+questions: "1. Do you have a preference for the color gradient or specific color palette\
+  \ used for indicating job density?\n2. How would you like the map labels to be styled?\
+  \ Any particular font or size preference?\n3. Do you prefer the map to include markers\
+  \ or icons for unique companies in addition to the heatmap?\n4. Should the salary\
+  \ range be represented with a separate color gradient or integrated into the same\
+  \ heatmap?\n5. Would you prefer including a legend explaining the intensity levels\
+  \ and color gradients directly on the map or on the side?\n6. Do you want the locations\
+  \ to display additional information (e.g., number of job postings, company names)\
+  \ on hover or click? \n7. Do you have any specific preference for the geographic\
+  \ projection type (e.g., Mercator, Albers)?\n8. Should the map include a scale bar\
+  \ for reference?"
+answers: '1. I am not sure.
+
+  2. I do not have a particular font or size preference for the map labels.
+
+  3. I am not sure.
+
+  4. Integrated into the same heatmap would be ideal.
+
+  5. I would prefer including a legend explaining the intensity levels and color gradients
+  directly on the map.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference for the geographic projection type.
+
+  8. I have no specific preference for a scale bar.'
+data_attributes:
+- Title
+- Company
+- Location
+- Easy Apply
+- Salary_Lower_Limit
+- Salary_Upper_Limit

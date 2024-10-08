@@ -1,0 +1,61 @@
+initial_prompt: I want a Box chart visualizing the stock data from 18 May'12 to 13
+  Oct'21. Use annotations to highlight key data points like the highest and lowest
+  closing prices. The chart should show Open, High, Low, and Close prices. Emphasize
+  trends that reveal significant stock movements. Include context-relevant non-data-driven
+  annotations like market conditions or major business events influencing the stock.
+  Highlights in the chart should make certain data points stand out, helping viewers
+  quickly grasp significant periods in Reliance's stock performance. Ensure the chart
+  is visually engaging and informative.
+questions: '1. Do you have a preference for the color scheme of the chart?
+
+  2. Are there specific colors you would like to use for highlighting key data points?
+
+  3. Do you prefer a specific style for the annotations (e.g., arrows, callouts, text
+  boxes)?
+
+  4. Should the chart include grid lines for better readability, and if so, what style?
+
+  5. Do you want to highlight different periods with background shading or patterns?
+
+  6. Would you like to include a legend for non-data-driven annotations?
+
+  7. Do you have any specific fonts or font sizes you prefer for text elements in
+  the chart?
+
+  8. Do you want to display the Open, High, Low, and Close prices in different shapes
+  (e.g., circles, squares) or stick to the default box structure?
+
+  9. Should the x-axis labels be at specific intervals (e.g., quarterly, yearly) or
+  automatic?
+
+  10. Do you have a preference for the chart title and axis labels'' placement and
+  formatting?'
+answers: '<start user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. Arrows and text boxes might be good.
+
+  4. Yes, include grid lines, but I am not sure about the style.
+
+  5. I do not know.
+
+  6. Yes, a legend would be helpful.
+
+  7. I do not know.
+
+  8. Stick to the default box structure.
+
+  9. Quarterly intervals would be fine.
+
+  10. I have no specific preference.
+
+  <end user emulated response>'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

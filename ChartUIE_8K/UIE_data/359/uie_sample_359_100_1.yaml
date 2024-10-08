@@ -1,0 +1,49 @@
+initial_prompt: Create a stacked bar chart to visualize the total number of participants,
+  audited, and certified for each course by their Course Title. Use text annotations
+  to show the exact values for each segment of the bar. Highlight the courses with
+  the highest percentage of certifications for emphasis. This visualization will help
+  us quickly compare the engagement and success rates across different courses. The
+  purpose is to evaluate the performance and appeal of online courses from Harvard
+  and MIT over the years.
+questions: '1. Do you have any preferred colors for highlighting the courses with
+  the highest percentage of certifications?
+
+  2. Is there a specific order you want the courses to be displayed in the chart (e.g.,
+  by total number of participants, alphabetically by course title, etc.)?
+
+  3. What font style and size would you prefer for the text annotations showing the
+  exact values for each segment?
+
+  4. Should the text annotations be inside or outside the bars, or do you have another
+  preferred placement?
+
+  5. Do you prefer grid lines or no grid lines on the chart for ease of reading?
+
+  6. Are there any specific labels or titles you would like included for the chart,
+  axes, or legend?
+
+  7. Would you like any tooltips or hover effects to display additional information
+  when hovering over a bar segment?
+
+  8. Is there a preferred width and height for the chart?'
+answers: '1. I am not sure.
+
+  2. Alphabetically by course title.
+
+  3. I do not know.
+
+  4. Outside the bars.
+
+  5. I am not sure.
+
+  6. Course Title for the x-axis and Number of Participants for the y-axis. "Online
+  Course Performance & Appeal" for the chart title.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- Course Title
+- Participants (Course Content Accessed)
+- Audited (> 50% Course Content Accessed)
+- Certified

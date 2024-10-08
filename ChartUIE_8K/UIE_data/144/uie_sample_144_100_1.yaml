@@ -1,0 +1,57 @@
+initial_prompt: Create a Geographic Heatmap to visualize the data on Palestinian structures
+  demolished by Israel. Use locality and district to pinpoint locations across the
+  West Bank. Highlight areas with higher counts of housing units demolished and people
+  left homeless. Annotate significant data points to draw attention to locations with
+  the highest impact. The heatmap should provide clear visual cues for understanding
+  the geographic distribution and reasons for demolitions. This will help in contextualizing
+  the political and social implications behind the demolitions. Keep the visualization
+  concise and focused on displaying the critical issues highlighted by the data.
+questions: '1. Do you have any color preferences for the heatmap to represent different
+  ranges of demolitions?
+
+  2. Would you like to include specific icons or symbols to annotate significant data
+  points?
+
+  3. What level of detail do you want in the annotations for significant data points
+  (e.g., just name and number, or more detailed information)?
+
+  4. Are there any specific regions or locales you want to highlight or focus on in
+  the map?
+
+  5. Do you prefer a specific map style or background (e.g., satellite, terrain, minimalistic)?
+
+  6. Would you like to include a legend to explain the color gradients and symbols
+  used in the heatmap?
+
+  7. Should the heatmap include a time filter to see demolitions over specific periods?
+
+  8. Would you like a summary box with key statistics displayed on the map?
+
+  9. Are there any specific font styles or sizes you prefer for the labels and annotations?
+
+  10. Do you want the heatmap to show borders or markers for different districts clearly?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Just name and number.
+
+  4. I do not know.
+
+  5. Minimalistic.
+
+  6. Yes, include a legend.
+
+  7. I am not sure.
+
+  8. Yes, a summary box with key statistics.
+
+  9. I do not know.
+
+  10. Yes, clearly show borders or markers for different districts.'
+data_attributes:
+- locality
+- district
+- housing_units
+- people_left_homeless
+- reason_for_demolition

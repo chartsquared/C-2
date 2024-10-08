@@ -1,0 +1,49 @@
+initial_prompt: Create a dot plot showing the distribution of Udemy courses based
+  on the number of subscribers. Use different colors to differentiate levels such
+  as 'All Levels', 'Beginner Level', 'Intermediate Level', and 'Expert Level'. Focus
+  on the 'num_subscribers' for the x-axis and 'course_title' for the y-axis. Highlight
+  whether the course is paid or free by using different shapes for the dots. Also,
+  include a legend to clarify the levels and payment status. Please ensure that the
+  dots are well-spaced for better readability and interpretation of the data.
+questions: '1. Do you have a preference for the color palette used to indicate different
+  course levels?
+
+  2. What specific shapes would you like to use to differentiate paid and free courses?
+
+  3. Do you have a preferred order for the ''course_title'' on the y-axis (e.g., alphabetical,
+  by number of subscribers)?
+
+  4. Do you want any specific limits or ranges set on the x-axis for ''num_subscribers''?
+
+  5. Would you prefer the plot to be of a certain size or aspect ratio?
+
+  6. Is there a particular font or text size you prefer for labels and legends?
+
+  7. Should the gridlines on the plot be displayed or hidden?
+
+  8. Do you have a preferred background color for the plot area?
+
+  9. Would you like to add any reference lines or markers, for instance, average number
+  of subscribers?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Alphabetical order for ''course_title'' on the y-axis.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. Display the gridlines on the plot.
+
+  8. I have no specific preference for the background color.
+
+  9. I do not know.'
+data_attributes:
+- num_subscribers
+- course_title
+- level
+- is_paid

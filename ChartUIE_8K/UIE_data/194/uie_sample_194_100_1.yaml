@@ -1,0 +1,48 @@
+initial_prompt: Create an area chart showing the distribution of 'u', 'g', 'r', 'i',
+  and 'z' magnitudes across different 'class' labels ('STAR' and 'GALAXY'). Annotate
+  specific data points, such as the object with the highest and lowest 'u' magnitude,
+  to draw attention to these extremes. Highlight 'GALAXY' data points in a distinct
+  color to differentiate them from 'STAR'. This visualization will help to understand
+  the magnitude variations in different celestial classifications, useful for space
+  and astronomy research. Provide any necessary context or comments to explain the
+  chart.
+questions: '1. Do you have any specific colors in mind for ''STAR'' and ''GALAXY''
+  data points?
+
+  2. How would you like the annotations for the highest and lowest ''u'' magnitude
+  to be displayed (e.g., tooltip, label next to the point, etc.)?
+
+  3. Would you like a legend included in the chart? If so, where should it be positioned?
+
+  4. Is there a preferred layout or style for the axis labels and title (e.g., font
+  size, font type)?
+
+  5. Do you have any specific preferences for the size or dimensions of the chart?
+
+  6. Should there be grid lines in the chart background? If so, should they be light
+  or dark?
+
+  7. Are there any additional data points or thresholds you would like to highlight
+  or annotate in the chart?'
+answers: '1. I am not sure.
+
+  2. Label next to the point.
+
+  3. Yes, I would like a legend included, but I do not know where it should be positioned.
+
+  4. I do not have any specific preference for the layout or style of the axis labels
+  and title.
+
+  5. I am not sure about the size or dimensions of the chart.
+
+  6. Yes, there should be grid lines in the chart background. I prefer them to be
+  light.
+
+  7. I do not know.'
+data_attributes:
+- u
+- g
+- r
+- i
+- z
+- class

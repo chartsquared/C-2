@@ -1,0 +1,40 @@
+initial_prompt: Create a heatmap using the dataset provided, focusing on the change
+  in forest area from 1990 to 2020 by country. Highlight the deforestation rates from
+  2015-2020 and areas affected by fire in 2015. Use color intensity to show higher
+  and lower values. Label each country clearly, and ensure the proportions of forest
+  area relative to total land area for 2020 are well-delineated. The heatmap should
+  provide a visual summary of forest area trends over the decades and visualize the
+  impact of deforestation and fires globally.
+questions: '1. What color scheme would you prefer for showing higher and lower values
+  in the heatmap?
+
+  2. How prominently would you like the labels of each country to be displayed?
+
+  3. Do you have any specific preferences for the color intensity range used to highlight
+  the deforestation rates and areas affected by fire?
+
+  4. Would you prefer the proportions of forest area relative to total land area for
+  2020 to be displayed using a specific color gradient or pattern?
+
+  5. Is there any specific layout arrangement you would like for the countries in
+  the heatmap (e.g., alphabetical order, by continent, etc.)?'
+answers: '1. I am not sure.
+
+  2. I would like the labels of each country to be displayed clearly but not too prominently.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. By continent, please.'
+data_attributes:
+- Country and Area
+- Forest Area, 1990
+- Forest Area, 2000
+- Forest Area, 2010
+- Forest Area, 2015
+- Forest Area, 2020
+- Total Land Area, 2020
+- Forest Area as a Proportion of Total Land Area, 2020
+- Deforestation, 2015-2020
+- Total Forest Area Affected by Fire, 2015

@@ -1,0 +1,41 @@
+initial_prompt: Please create a histogram to visualize the 'Order Quantity' distribution
+  across different 'Order Dates' from the supply-chain-management data. Annotate key
+  order quantities to draw attention to significant data points. Highlight the bins
+  with the highest order quantities for better comparison. Include text annotations
+  for the top 3 maximum order quantities to provide additional insight. Use varying
+  colors to distinguish different ranges of order quantities. This will help in comprehensively
+  analyzing supply chain order trends over time and identifying any anomalies or peaks
+  in the data. Include a legend for clarity.
+questions: '1. Do you have a preferred color scheme for distinguishing different ranges
+  of order quantities?
+
+  2. Should the annotation text for significant data points include just the quantity
+  or additional information such as the date?
+
+  3. Is there a specific way you would like the bins with the highest order quantities
+  to be highlighted (e.g., bold borders, specific colors)?
+
+  4. Do you have a preferred font or style for the text annotations on the chart?
+
+  5. How many bins would you prefer for the histogram to provide the most meaningful
+  distribution?
+
+  6. Are there any specific dates or order quantities you are particularly interested
+  in highlighting or annotating?'
+answers: '1. I am not sure about the color scheme; please choose one that clearly
+  distinguishes the ranges.
+
+  2. I am not sure; including just the quantity is okay.
+
+  3. Bold borders would be a good way to highlight the bins with the highest order
+  quantities.
+
+  4. I do not have a specific preference for the font or style.
+
+  5. I do not know; please choose the optimal number of bins for meaningful distribution.
+
+  6. I am particularly interested in highlighting the top 3 maximum order quantities
+  with annotations.'
+data_attributes:
+- Order Quantity
+- OrderDate

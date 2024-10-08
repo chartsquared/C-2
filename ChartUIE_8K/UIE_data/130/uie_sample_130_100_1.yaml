@@ -1,0 +1,57 @@
+initial_prompt: '<start of user instructions>
+
+  I would like a donut chart visualizing the distribution of dishes by state from
+  the Indian Food 101 dataset. This chart will help highlight regional culinary diversity.
+  Make sure to annotate the chart with values and include highlights for the states
+  with the most and least number of dishes. The purpose here is to showcase the variety
+  of Indian food by region, making it clear which states contribute most and least
+  to the cuisine. Use different colors to distinguish the states effectively.
+
+  <end of user instructions>'
+questions: '1. Do you have any specific color preferences for distinguishing the states?
+
+  2. How would you like the values to be annotated on the chart (inside the donut
+  slices, outside, or both)?
+
+  3. Do you want specific labels or legends for the states with the most and least
+  number of dishes?
+
+  4. Should the size of the donut hole be adjusted, or do you have any preference
+  for its size?
+
+  5. Is there a specific order in which you want the states to be displayed (e.g.,
+  alphabetical, by number of dishes)?
+
+  6. Are there any particular fonts or styling preferences for the text annotations
+  and highlights?
+
+  7. Would you like the chart to include a title or subtitle? If so, do you have any
+  specific wording in mind?
+
+  8. Do you prefer any specific data aggregation method for states with a similar
+  number of dishes?
+
+  9. Should the chart include tooltips or additional information when hovering over
+  the states?'
+answers: '1. I have no specific preference.
+
+  2. Inside the donut slices.
+
+  3. Yes, specific labels for the states with the most and least number of dishes
+  would be great.
+
+  4. I am not sure about the donut hole size.
+
+  5. By number of dishes, please.
+
+  6. I do not know.
+
+  7. Yes, a title would be good. Maybe something like "Distribution of Indian Dishes
+  by State."
+
+  8. I am not sure.
+
+  9. No, I am looking for a static image, not interactive.'
+data_attributes:
+- state
+- name

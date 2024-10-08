@@ -1,0 +1,39 @@
+initial_prompt: I want a histogram visualizing the distribution of streaming counts
+  for the most streamed Spotify songs in 2023. Make sure to use the "streams" column
+  from the data provided. Additionally, color-code the bars by "released_month" to
+  see if there's any trend in streaming counts based on the month the song was released.
+  Ensure each bar represents a range of streaming counts, and the x-axis should show
+  these count ranges. The y-axis should reflect the frequency of songs within those
+  ranges. Please label both axes clearly and include a legend for the colors used.
+questions: '1. Do you have a specific color palette in mind for the bars representing
+  different months?
+
+  2. What is your preferred bin size or range for the streaming counts on the x-axis?
+
+  3. Would you like the y-axis to be in linear or logarithmic scale?
+
+  4. Do you have a specific font style or size preference for the axis labels and
+  legend?
+
+  5. Should the legend be placed in a specific position on the chart (e.g., top-right,
+  bottom-left)?
+
+  6. Do you want gridlines on the chart? If yes, should they be both on x- and y-axes?
+
+  7. Would you like to include any additional titles or annotations on the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Linear scale.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference.
+
+  6. Yes, gridlines on both x- and y-axes.
+
+  7. I do not know.'
+data_attributes:
+- streams
+- released_month

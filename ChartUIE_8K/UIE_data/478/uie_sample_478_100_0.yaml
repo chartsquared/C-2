@@ -1,0 +1,41 @@
+initial_prompt: Visualize the data using a stacked bar chart. The chart should display
+  'Life expectancy in years' and 'Income (GDP per capita)' for each country. Use different
+  colors for each metric to distinguish them. Ensure missing values are handled appropriately
+  by noting them in annotations. Highlight countries with significantly lower life
+  expectancy or income. Include text annotations to emphasize the figures for underrepresented
+  continents and unique countries. The chart should provide insights into the socio-economic
+  conditions across different continents in 1800, helping viewers to quickly grasp
+  disparities and unique characteristics in the data.
+questions: '1. Do you have a preferred color palette for differentiating ''Life expectancy
+  in years'' and ''Income (GDP per capita)''?
+
+  2. Would you like the countries with significantly lower life expectancy or income
+  to be highlighted in a specific way (e.g., bold borders, different colors)?
+
+  3. Are there any specific continents or countries you want to emphasize with text
+  annotations?
+
+  4. How should missing values be annotated on the chart?
+
+  5. Do you have a preference for the arrangement of the bars (e.g., sorted by life
+  expectancy, GDP per capita, or alphabetically)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure about a specific color palette.
+
+  2. I would like countries with significantly lower life expectancy or income to
+  be highlighted with bold borders.
+
+  3. I would like to emphasize countries in Africa and unique countries like Japan
+  and the United States.
+
+  4. I do not know how missing values should be annotated.
+
+  5. I have no specific preference for the arrangement of the bars.
+
+  <end of user emulated response>'
+data_attributes:
+- country
+- Life expectancy in years
+- Income (GDP per capita)
+- continent

@@ -1,0 +1,40 @@
+initial_prompt: I have a dataset about cropland areas across different continents
+  from 10,000 BC to recent years. I would like a geographic heatmap that shows the
+  changes in cropland areas over time. For each continent, I want to visualize how
+  cropland areas have expanded or contracted. Please use color gradients to depict
+  the density of cropland. Missing data should be handled appropriately. The x-axis
+  should be the years, and the y-axis should be the continents. Make sure the heatmap
+  clearly shows trends over the entire time span.
+questions: '1. Do you have a preferred color gradient for depicting the density of
+  cropland areas?
+
+  2. How would you like missing data to be handled or represented in the heatmap?
+
+  3. What level of detail or granularity do you prefer for the year axis (e.g., every
+  century, every millennium)?
+
+  4. Are there specific continents or time periods you want to emphasize?
+
+  5. Do you need labels or annotations for specific data points or trends?
+
+  6. What is the preferred orientation for the heatmap (e.g., horizontal, vertical)?
+
+  7. Is there a specific color palette or theme you would like to use, considering
+  the audience?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Every century would be fine.
+
+  4. No, I don''t have specific preferences for certain continents or time periods.
+
+  5. I do not know.
+
+  6. Horizontal orientation is preferred.
+
+  7. I have no specific preference for a color palette or theme.'
+data_attributes:
+- Entity
+- Year
+- Cropland (HYDE (2017))

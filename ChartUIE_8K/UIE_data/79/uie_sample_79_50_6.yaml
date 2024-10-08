@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap showing student placement status ('Placed' or 'Not
+  Placed') across various education factors (SSC percentage, HSC percentage, Degree
+  percentage, and MBA percentage). Highlight the correlation between these education
+  percentages and their placement status, emphasizing missing salary data.
+questions: '1. Do you have a specific color scheme in mind for the heatmap?
+
+  2. How would you like to handle missing salary data visually? For example, should
+  it be indicated with a specific color or pattern?
+
+  3. Should the heatmap include annotations (numeric values) on each cell?
+
+  4. Would you like to include a legend explaining the color scales and what they
+  represent?
+
+  5. Do you have a preference for the title and axis labels of the heatmap?
+
+  6. Is there a particular arrangement of the education factors that you prefer (e.g.,
+  SSC percentage first, then HSC, etc.)?
+
+  7. Should the heatmap display a gradient color scale for better visualization of
+  correlations?
+
+  8. Do you want to add any descriptive statistics or summary information alongside
+  the heatmap?
+
+  9. Would you prefer the heatmap to be clustered or ordered in any specific way?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include a legend explaining the color scales and what they represent.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Yes, please use a gradient color scale for better visualization of correlations.
+
+  8. I am not sure.
+
+  9. I have no specific preference.'
+data_attributes:
+- ssc_p
+- hsc_p
+- degree_p
+- mba_p
+- status
+- salary

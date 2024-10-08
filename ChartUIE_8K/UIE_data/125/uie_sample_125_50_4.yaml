@@ -1,0 +1,51 @@
+initial_prompt: Create a bubble chart using the Pima Indians Diabetes Database. Map
+  BMI to the x-axis, Glucose to the y-axis, and use Age to determine the size of the
+  bubbles. Color code the bubbles based on the Outcome variable.
+questions: '1. Do you have a preference for the color palette used to differentiate
+  the Outcome variable?
+
+  2. Would you like the chart to include axis titles and labels? If so, do you have
+  specific text in mind for them?
+
+  3. Should a legend be included to explain the color coding and bubble sizes? If
+  yes, do you prefer it positioned in a particular location on the chart?
+
+  4. Do you prefer any specific scaling for the bubble sizes to represent Age, such
+  as linear or logarithmic?
+
+  5. Is there any specific range or limit you would like to apply to the x-axis (BMI)
+  or the y-axis (Glucose)?
+
+  6. Would you like grid lines to be included in the chart for better readability?
+
+  7. Do you have a font style preference for the chart labels and title text?
+
+  8. Would you like to include any reference lines, such as average lines for BMI
+  or Glucose?
+
+  9. Should the chart include tooltips displaying detailed information when hovering
+  over the bubbles?'
+answers: '1. I am not sure.
+
+  2. Yes, please include axis titles and labels. I prefer "BMI" for the x-axis and
+  "Glucose" for the y-axis.
+
+  3. Yes, a legend should be included. I do not have a specific preference for its
+  position.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, please include grid lines.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- BMI
+- Glucose
+- Age
+- Outcome

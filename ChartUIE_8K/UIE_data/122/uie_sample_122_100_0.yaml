@@ -1,0 +1,60 @@
+initial_prompt: I need a bar chart for video game sales data, highlighting the top
+  3 games by global sales. Each bar should represent a game, with annotations displaying
+  the sales figures for NA, EU, JP, Other, and Global. Use different colors to distinguish
+  between the regions. Highlight the game with the highest global sales to draw attention.
+  The chart aims to compare regional sales across top games while emphasizing the
+  best-seller. Include data-driven and contextual annotations to aid understanding.
+  This will help visualize the distribution of video game sales across different markets.
+questions: '1. Do you have a preferred color palette for distinguishing between the
+  regions (NA, EU, JP, Other)?
+
+  2. Would you like to include any specific titles or labels for the x-axis and y-axis?
+
+  3. Do you have a preference for the style or format of the annotations displaying
+  sales figures?
+
+  4. How would you like the game with the highest global sales to be highlighted (e.g.,
+  different color, bold outline, special icon)?
+
+  5. Should the chart include a legend to indicate which color corresponds to which
+  region?
+
+  6. Are there any specific font sizes or styles you prefer for the chart labels and
+  annotations?
+
+  7. Should the chart include grid lines, and if so, what style do you prefer for
+  them?
+
+  8. Do you want the bars to be displayed in a specific order, such as descending
+  order of global sales?
+
+  9. Is there any additional information you would like to display on the chart, such
+  as a title or subtitle?
+
+  10. Do you have any preferences for the chart size or aspect ratio?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Highlight the game with the highest global sales using a different color.
+
+  5. Yes, please include a legend.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, display the bars in descending order of global sales.
+
+  9. Yes, please include a title: "Top 3 Video Games by Global Sales".
+
+  10. I have no specific preference.'
+data_attributes:
+- Name
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales
+- Global_Sales

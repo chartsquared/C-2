@@ -1,0 +1,41 @@
+initial_prompt: Create a line chart showing the number of planets discovered per year.
+  Highlight significant years and add text annotations for notable planets, distances,
+  and discovery methods. This will help visualize trends over time in planetary discovery.
+questions: '1. Do you have a preferred color scheme for the chart, especially for
+  highlighting significant years?
+
+  2. Would you like a particular font style or size for the text annotations?
+
+  3. Should the annotations include additional details like the planet''s type or
+  just focus on the distance and discovery method?
+
+  4. How would you like the significant years to be highlighted — using markers, different
+  line styles, or a different color for those segments?
+
+  5. Do you prefer the chart to have a title and axis labels? If so, do you have specific
+  wording in mind?
+
+  6. Are there any other specific years or events you would like to be highlighted
+  that might not be apparent from the data?
+
+  7. Should the y-axis (number of planets discovered) have a specific range or should
+  it auto-scale based on the data?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Just focus on the distance and discovery method.
+
+  4. Using markers.
+
+  5. Yes, title: "Number of Planets Discovered Per Year"; x-axis: "Year"; y-axis:
+  "Number of Planets Discovered".
+
+  6. I am not sure.
+
+  7. It should auto-scale based on the data.'
+data_attributes:
+- discovery_year
+- name
+- distance
+- detection_method

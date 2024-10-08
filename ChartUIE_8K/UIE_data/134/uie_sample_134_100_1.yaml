@@ -1,0 +1,54 @@
+initial_prompt: Please create a scatter plot to visualize the avocado prices data,
+  emphasizing the correlation between AveragePrice and Total Volume. Highlight the
+  data points for the year 2015 using a different color to make them stand out. Use
+  text annotations to display average prices for the top three regions with the highest
+  total volume. This visualization will help us understand how price trends vary with
+  volume in different regions. Include a title and labels for the axes for clarity.
+  Ensure the plot is suitable for an agriculture and farming audience. Thank you!
+questions: '1. Do you have a specific title in mind for the scatter plot?
+
+  2. What color would you prefer to use for highlighting the data points from the
+  year 2015?
+
+  3. Do you have preferred colors for the data points from other years?
+
+  4. Is there a particular font style or size you would like for the text annotations?
+
+  5. Do you have specific regions in mind that you want to focus on, or should we
+  automatically determine the top three regions with the highest total volume?
+
+  6. Should the axes labels include any specific terms or units?
+
+  7. Do you want the axes to have a specific range or should it be automatically scaled
+  based on the data?
+
+  8. Would you like gridlines to be included in the scatter plot, and if so, in what
+  style?
+
+  9. Are there any specific markers or shapes you would prefer for the data points?
+
+  10. Would you like any additional legends or notes included in the plot?'
+answers: '1. "Avocado Prices vs Total Volume in Different Regions"
+
+  2. Yellow
+
+  3. I am not sure
+
+  4. I am not sure
+
+  5. Automatically determine the top three regions
+
+  6. Average Price (USD), Total Volume (Units)
+
+  7. Automatically scaled based on the data
+
+  8. I do not know
+
+  9. I do not have a specific preference
+
+  10. I do not have a specific preference'
+data_attributes:
+- AveragePrice
+- Total Volume
+- year
+- region

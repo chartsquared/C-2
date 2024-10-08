@@ -1,0 +1,42 @@
+initial_prompt: I have a dataset containing sales data with columns for date, sales
+  volume, inventory level, and price. I want to visualize this information using a
+  line chart to track trends over time. The x-axis should represent the dates, and
+  the y-axis should depict sales volume, inventory level, and price on the same chart
+  with different colored lines. This will help in forecasting and understanding the
+  relationship between sales, inventory, and pricing over time. The intention is to
+  detect patterns, seasonal trends, or any anomalies in the retail sales data. The
+  visualization should be clear and easy to interpret.
+questions: "1. Do you have any preferred colors for the lines representing sales volume,\
+  \ inventory level, and price? \n2. Would you like to include a legend to identify\
+  \ each line, and if so, where should it be positioned?\n3. Should the x-axis (dates)\
+  \ be labeled with every data point, or would you like to include periodic labels\
+  \ (e.g., monthly, quarterly)?\n4. Do you prefer gridlines on the chart for easier\
+  \ tracing and comparison, and if so, should they be on both the x-axis and y-axis?\n\
+  5. Would you like to include any annotations or markers for significant dates or\
+  \ events?\n6. What style of line do you prefer (e.g., solid, dashed, or dotted)?\
+  \ \n7. Are there any specific date ranges you want to zoom in on or highlight? \n\
+  8. Do you need the ability to toggle the visibility of each line (sales volume,\
+  \ inventory level, price)?\n9. Would you like to display the data points on the\
+  \ lines (e.g., dots or markers at each data point)?"
+answers: '1. I do not have any specific preference.
+
+  2. Yes, I would like to include a legend. I am not sure where it should be positioned.
+
+  3. Periodic labels, maybe monthly.
+
+  4. Yes to gridlines, preferably on both the x-axis and y-axis.
+
+  5. I am not sure.
+
+  6. Solid lines would be preferred.
+
+  7. I do not know.
+
+  8. I do not need that.
+
+  9. Yes, displaying the data points with markers would be nice.'
+data_attributes:
+- data
+- venda
+- estoque
+- preco

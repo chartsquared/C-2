@@ -1,0 +1,58 @@
+initial_prompt: Can you please create a bar chart showing the popularity of songs
+  by different artists over the years? Use the 'artist', 'song', 'year', and 'popularity'
+  columns to display this data. For the x-axis, please list the years, and for the
+  y-axis, use the popularity score. Each bar should represent a different artist,
+  and the bars should be grouped by year. This will help visualize which artists and
+  songs were most popular in specific years. I'd appreciate if you also differentiate
+  between the artists using different colors for clarity. Thank you!
+questions: '1. Do you have any preferred color palette for differentiating between
+  the artists?
+
+  2. Would you like the bars to have specific labels or annotations for the popularity
+  scores?
+
+  3. How do you prefer the legend to be displayed: horizontally or vertically aligned?
+
+  4. Is there a specific order you want the artists or years to be sorted in?
+
+  5. Do you have any specific preferences for the font style and size for axis labels
+  and titles?
+
+  6. Do you want grid lines to be displayed on the chart? If yes, should they be for
+  both axes or only one?
+
+  7. Would you prefer any specific style or theme for the chart (e.g., minimalistic,
+  detailed, classic)?
+
+  8. Are there any specific margins or padding around the chart you would like to
+  set?
+
+  9. Should the chart include any tooltips or detailed information on hover for each
+  bar?
+
+  10. Would you like to include a subtitle or additional notes on the chart for context?'
+answers: '1. I do not know.
+
+  2. Yes, I would like the bars to have specific labels or annotations for the popularity
+  scores.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please display grid lines for both axes.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. No, additional notes or a subtitle are not necessary.'
+data_attributes:
+- artist
+- song
+- year
+- popularity

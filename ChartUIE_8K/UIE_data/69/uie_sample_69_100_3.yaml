@@ -1,0 +1,65 @@
+initial_prompt: I need a line chart comparing inbound and outbound data (bytes_in
+  and bytes_out) over time for suspicious web traffic. Use creation_time for the time
+  axis and plot separate lines for each source IP (src_ip). Highlight key points like
+  the src_ip_country_code and detection_types. This will help visualize patterns and
+  identify spikes in traffic related to potential adversary interactions. Use different
+  colors for each src_ip to make the chart clear and understandable. Add markers for
+  significant events and anomalies indicated by the rule_names. Ensure the chart is
+  easy to interpret. Thank you!
+questions: '1. Do you have a preferred title for the line chart?
+
+  2. What specific time intervals would you like to see on the time axis (e.g., hourly,
+  daily)?
+
+  3. Do you prefer a specific color palette for the different src_ip lines?
+
+  4. Should the chart include a legend, and if so, where would you prefer it to be
+  placed?
+
+  5. How would you like significant events and anomalies (indicated by rule_names)
+  to be marked (e.g., specific shapes, labels)?
+
+  6. Do you have any preferences for the line styles (e.g., solid, dashed) for the
+  inbound and outbound data?
+
+  7. Would you like grid lines to be included in the chart background to enhance readability?
+
+  8. What specific information should be included in the tooltips for data points
+  (e.g., exact values, src_ip_country_code, detection_types)?
+
+  9. Do you prefer the x-axis and y-axis labels to be oriented in any specific way
+  (e.g., rotated, horizontal)?
+
+  10. Are there any specific fonts or font sizes you prefer for the chart labels and
+  titles?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. Hourly would be good.
+
+  3. I do not know.
+
+  4. Yes, I prefer the legend to be placed at the bottom.
+
+  5. Specific shapes for significant events and labels for anomalies.
+
+  6. I am not sure.
+
+  7. Yes, grid lines would be helpful.
+
+  8. Exact values, src_ip_country_code, and detection_types.
+
+  9. Horizontal labels are fine.
+
+  10. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- bytes_in
+- bytes_out
+- creation_time
+- src_ip
+- src_ip_country_code
+- detection_types
+- rule_names

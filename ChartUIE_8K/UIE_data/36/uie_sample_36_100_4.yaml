@@ -1,0 +1,66 @@
+initial_prompt: Please create a bar chart using the House Sales in King County data.
+  I am interested in visualizing the average price of houses across different years.
+  Use the 'yr_built' column for the x-axis and the 'price' column for the y-axis.
+  Group the data by the 'yr_built' and calculate the average price for each year.
+  Ensure the chart highlights trends in house prices over time to help understand
+  how prices have evolved in different construction years.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be displayed vertically or horizontally?
+
+  3. Should the chart include data labels showing the average price on each bar?
+
+  4. Do you want to include gridlines in the background for better readability of
+  values?
+
+  5. Are there any specific years you would like to highlight or annotate on the chart?
+
+  6. Would you like to add a title and subtitle to the chart? If so, what should they
+  be?
+
+  7. Do you have a preference for the font style and size of the axis labels and title?
+
+  8. Should the y-axis scale be linear or logarithmic?
+
+  9. Is there a specific range for the y-axis you would like to set, or should it
+  auto-adjust based on the data?
+
+  10. Would you prefer to add tooltips or hover effects to provide more detailed information
+  about each bar?
+
+  11. Do you want to include a legend, even though there is only one data series?
+
+  12. Would you like to apply any specific formatting to the y-axis values, such as
+  currency formatting?
+
+  13. Are there any specific themes or styles that you would like to apply to the
+  overall look of the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure, perhaps vertical.
+
+  3. Yes, please include data labels showing the average price on each bar.
+
+  4. Yes, include gridlines for better readability.
+
+  5. I do not know.
+
+  6. Yes, title: "Average House Prices by Year Built" and subtitle: "King County House
+  Sales Data"
+
+  7. I am not sure.
+
+  8. Linear scale.
+
+  9. Auto-adjust based on the data.
+
+  10. I do not know.
+
+  11. No need for a legend.
+
+  12. Yes, please format the y-axis values as currency.
+
+  13. I do not have a specific theme in mind.'
+data_attributes:
+- yr_built
+- price

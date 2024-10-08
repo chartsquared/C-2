@@ -1,0 +1,44 @@
+initial_prompt: Can you create a geographic heatmap to visualize the salary distribution
+  of engineering graduates? Use the 'CollegeState' for geographic locations and 'Salary'
+  for the heatmap values. Highlight areas with higher and lower salary concentrations
+  distinctly. Ensure you depict the variance in salaries across different states clearly.
+  Include a legend for salary ranges and write brief annotations for top and bottom
+  salary states for better understanding. Also, consider the 'CollegeTier' if possible
+  to differentiate the impact of college tier on salaries across states in the heatmap.
+  Thank you!
+questions: '1. Do you have any specific color preferences for the heatmap to indicate
+  different salary ranges?
+
+  2. How many distinct salary ranges would you like in the heatmap legend?
+
+  3. Would you prefer a certain color scheme to distinguish between different ''CollegeTier''
+  levels?
+
+  4. Are there any specific states you want highlighted or annotated in more detail?
+
+  5. Do you have a preference for the style or format of the annotations for top and
+  bottom salary states?
+
+  6. Would you like to include any additional data layers, such as geographic boundaries
+  or major cities, on the heatmap for better context?
+
+  7. Is there a preferred map projection style (e.g., Mercator, Albers) you would
+  like to use for the geographic heatmap?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I would like to highlight California and New York for top salaries, and maybe
+  Mississippi and West Virginia for lower salaries.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- CollegeState
+- Salary
+- CollegeTier

@@ -1,0 +1,48 @@
+initial_prompt: Create a scatter plot visualizing the Indonesian Food and Drink Nutrition
+  Dataset. Plot 'calories' on the x-axis and 'proteins' on the y-axis. Highlight data
+  points with visually distinguishing markers for high-calorie and high-protein foods.
+  Add annotations to emphasize foods that are both high in calories and proteins.
+  Ensure the chart is easy to understand and interpret, providing a reference for
+  nutritional content. The chart should help users quickly identify which foods are
+  rich in calories and proteins. This visualization serves to enhance nutritional
+  awareness quickly.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Are there specific markers you would like to use for high-calorie and high-protein
+  foods?
+
+  3. What threshold values should be used to classify foods as high-calorie and high-protein?
+
+  4. Where would you like the annotations to be placed on the chart?
+
+  5. Do you want the names of the foods to be displayed directly on the chart or in
+  a legend?
+
+  6. Should any additional information be displayed when hovering over or selecting
+  a data point? (e.g., name of the food)
+
+  7. What specific title and axis labels would you prefer for the chart?
+
+  8. Are there any specific fonts or text styles you would like to be used for annotations
+  and labels?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Foods with calories above 500 and proteins above 20 grams should be classified
+  as high-calorie and high-protein.
+
+  4. I am not sure.
+
+  5. I prefer the names of the foods to be displayed directly on the chart.
+
+  6. I do not know.
+
+  7. Title: "Indonesian Food and Drink Nutrition: Calories vs. Proteins" | X-axis:
+  "Calories" | Y-axis: "Proteins (g)"
+
+  8. I am not sure.'
+data_attributes:
+- calories
+- proteins
+- name

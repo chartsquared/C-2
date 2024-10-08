@@ -1,0 +1,36 @@
+initial_prompt: Create a treemap to visualize the academic collaboration between universities.
+  Use 'name' as labels, and 'source' or 'target' connections to show relationships.
+  Highlight missing or incomplete connections.
+questions: '1. Do you have a preferred color scheme for the treemap?
+
+  2. Would you like different colors or patterns to represent missing or incomplete
+  connections?
+
+  3. Do you need specific labels on the nodes or connections within the treemap?
+
+  4. Is there a specific order or hierarchy you want to maintain among the universities?
+
+  5. Should the size of the nodes reflect the number of connections or any other specific
+  metric?
+
+  6. Do you prefer any particular font style and size for the labels on nodes?
+
+  7. Is there a specific way you would like the missing or incomplete connections
+  to be highlighted (e.g., different colors, dashed lines, etc.)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please use the names of the universities as labels on the nodes.
+
+  4. I am not sure.
+
+  5. Yes, the size of the nodes should reflect the number of connections.
+
+  6. I do not know.
+
+  7. Please use different colors to highlight missing or incomplete connections.'
+data_attributes:
+- name
+- source
+- target

@@ -1,0 +1,62 @@
+initial_prompt: '<start of user emulated instruction>
+
+  Create a histogram visualization showing the distribution of global sales for video
+  games listed in the dataset. Use text annotations to highlight the top three best-selling
+  games. Additionally, use highlights to differentiate sales data by region (e.g.,
+  NA Sales, EU Sales, JP Sales) for better comparative analysis. The purpose is to
+  identify sales trends and regional popularity. Include a legend for clarity. Relevant
+  context from the dataset and detailed annotation guidelines should be followed to
+  emphasize key data insights.
+
+  <end of user emulated instruction>'
+questions: '1. Do you have any specific preferences for the color scheme to be used
+  for the histogram and highlights?
+
+  2. What level of detail would you like for the text annotations of the top three
+  best-selling games?
+
+  3. Do you prefer any particular style or font for the text annotations?
+
+  4. Do you have any specific guidelines for the placement of annotations on the chart?
+
+  5. Should the regional sales data be displayed in separate histograms or as overlays
+  in the same histogram?
+
+  6. How would you prefer the legend to be displayed or formatted?
+
+  7. Do you have any preferences for the bin size or range for the histogram distribution?
+
+  8. Are there any additional labels or descriptions you would like to be included
+  in the visualization to provide more context?
+
+  9. Should the chart include a title and subtitles? If yes, what should they be?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I would like the top three best-selling games to be clearly marked with their
+  names and sales figures.
+
+  3. I do not have a specific preference for the style or font.
+
+  4. I am not sure.
+
+  5. I prefer the regional sales data as overlays in the same histogram for better
+  comparison.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes, include a title. The title should be "Distribution of Global Video Game
+  Sales with Regional Highlights". No specific preferences for subtitles.
+
+  <end of user emulated response>'
+data_attributes:
+- global_sales
+- na_sales
+- eu_sales
+- jp_sales
+- name

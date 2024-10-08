@@ -1,0 +1,68 @@
+initial_prompt: I need a geographic heatmap visualizing the marital and divorce data
+  in Mexico. Use the data format to show where divorces are more frequent, focusing
+  on "Residence_municipality_partner_man" and "Residence_federal_partner_man" for
+  men, and similar data for women. Highlight income levels and occupations of divorced
+  partners, incorporating missing data if relevant. Ensure prominent areas show clearer
+  heat intensities based on the "Divorce_date". Keep it easy to interpret while incorporating
+  zodiac information linked to the "DOB_partner_man" and "DOB_partner_woman". Make
+  it detailed enough to reflect interesting trends by region.
+questions: '1. Do you have any preferred color schemes for the heatmap to represent
+  divorce frequencies?
+
+  2. Would you like specific annotations or labels on the heatmap for easier interpretation?
+
+  3. Do you have any specific preferences for the geographic boundaries (e.g., municipal
+  or federal) to be highlighted more prominently?
+
+  4. How would you like the income levels and occupations to be represented on the
+  heatmap (e.g., via color gradients, symbols)?
+
+  5. Is there a specific way you want the zodiac information to be integrated into
+  the visualization?
+
+  6. Would you prefer the heatmap to be divided into discrete regions or have a continuous
+  gradient?
+
+  7. Do you have any preferences for the hierarchy and arrangement of data attributes
+  on the map (e.g., which layers should be shown on top)?
+
+  8. Are there any specific geographic regions you want to be focused on or highlighted
+  more in the visualization?
+
+  9. Would you like to include any trend lines or markers for specific time periods
+  based on the "Divorce_date"?
+
+  10. How detailed would you like the heatmap to be in terms of the granularity of
+  regions (e.g., detailed down to individual municipalities or broader regions)?'
+answers: '1. I do not have a specific preference.
+
+  2. Yes, I would like specific annotations or labels for easier interpretation.
+
+  3. I am not sure.
+
+  4. Using color gradients to represent income levels and symbols for occupations
+  sounds good.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No specific geographic regions need to be highlighted.
+
+  9. I do not know.
+
+  10. Detailed down to individual municipalities would be preferred.'
+data_attributes:
+- Divorce_date
+- Residence_municipality_partner_man
+- Residence_federal_partner_man
+- Residence_municipality_partner_woman
+- Residence_federal_partner_woman
+- Monthly_income_partner_man_peso
+- Occupation_partner_man
+- Monthly_income_partner_woman_peso
+- Occupation_partner_woman
+- DOB_partner_man
+- DOB_partner_woman

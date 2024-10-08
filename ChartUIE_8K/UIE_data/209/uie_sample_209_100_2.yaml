@@ -1,0 +1,55 @@
+initial_prompt: Create an area chart visualizing the New York Housing Market. Highlight
+  price trends for different property types (condos, houses) over time. Annotate high-priced
+  listings and unique properties like the "Central Park Tower Penthouse." Include
+  property details such as beds, baths, square footage, and location. The chart should
+  emphasize price variations across different neighborhoods and types to inform potential
+  buyers and investors of market dynamics. Use color coding to differentiate property
+  types and add data-driven text annotations for significant data points. This will
+  help users quickly grasp key insights from the real estate data.
+questions: '1. Do you have a preferred color scheme or palette for differentiating
+  property types?
+
+  2. Would you like the chart to have gridlines for easier comparison?
+
+  3. Do you prefer specific shapes or icons for the data-driven text annotations on
+  significant data points?
+
+  4. Is there a particular layout or order in which you would like the property details
+  (beds, baths, square footage, location) to be displayed?
+
+  5. Do you prefer any specific labeling format for the price trends on the y-axis?
+
+  6. Is there a preference for the time intervals (daily, monthly, yearly) over which
+  the price trends should be displayed on the x-axis?
+
+  7. Are there any other high-priced or unique properties, besides the "Central Park
+  Tower Penthouse," that you want to highlight specifically?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. Yes, I would like the chart to have gridlines for easier comparison.
+
+  3. I am not sure.
+
+  4. No specific preference.
+
+  5. I do not know.
+
+  6. Monthly intervals would be best.
+
+  7. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- TYPE
+- PRICE
+- BEDS
+- BATH
+- PROPERTYSQFT
+- ADDRESS
+- LATITUDE
+- LONGITUDE
+- LOCALITY
+- SUBLOCALITY
+- FORMATTED_ADDRESS

@@ -1,0 +1,38 @@
+initial_prompt: Create a bubble chart visualizing bike counts and pedestrian counts
+  at different crossings in Seattle. The x-axis should represent time (dates), and
+  the y-axis should represent bike and pedestrian counts. Use bubbles of different
+  sizes or colors to distinguish between bike and pedestrian counts. Highlight times
+  and crossings with the highest and lowest counts. Add text annotations to note significant
+  data points or trends. The chart should help urban planners identify peak times
+  for bike and pedestrian traffic, assisting in traffic management and infrastructure
+  improvements. Include data from the specified time range for accurate analysis.
+questions: '1. Do you have a preferred color scheme for distinguishing between bike
+  and pedestrian counts?
+
+  2. How would you like the highest and lowest counts to be highlighted (e.g., specific
+  colors, larger bubble sizes)?
+
+  3. Are there specific date formats you prefer for the x-axis?
+
+  4. Do you have any preferred font sizes or styles for text annotations?
+
+  5. Is there a particular range or scale you want the y-axis to adhere to?
+
+  6. Would you like gridlines or background shading for better readability?'
+answers: '1. I do not have a specific preference.
+
+  2. Larger bubble sizes for the highest counts and smaller bubble sizes for the lowest
+  counts would be great.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, gridlines would be helpful for better readability.'
+data_attributes:
+- date
+- crossing
+- bike_count
+- ped_count

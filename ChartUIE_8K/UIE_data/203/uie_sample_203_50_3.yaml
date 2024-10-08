@@ -1,0 +1,44 @@
+initial_prompt: Create a heatmap to visualize the age distribution across different
+  file counts in the dataset, ensuring to distinguish between 'train' and 'test' splits.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should each age range be represented by specific colors?
+
+  3. Do you prefer to display the exact count values within each heatmap cell?
+
+  4. What range of values would you like the color scale to cover, for instance, should
+  it be normalized or use raw counts?
+
+  5. Do you have a preference for the chart title and axis labels?
+
+  6. Should the heatmap include a legend indicating what each color represents?
+
+  7. Is there a specific order in which the age categories should be displayed (e.g.,
+  ascending age order)?
+
+  8. Do you prefer gridlines within the heatmap for better cell separation?
+
+  9. Would you like to include annotations or labels indicating ''train'' and ''test''
+  split counts separately?'
+answers: '1. I have no specific preference.
+
+  2. I have no specific preference.
+
+  3. I''m not sure.
+
+  4. I''m not sure.
+
+  5. I do not have a specific preference.
+
+  6. Yes, a legend would be helpful.
+
+  7. Yes, ascending age order would be good.
+
+  8. I do not know.
+
+  9. Yes, please include annotations indicating ''train'' and ''test'' split counts
+  separately.'
+data_attributes:
+- file
+- age
+- split

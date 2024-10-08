@@ -1,0 +1,54 @@
+initial_prompt: Create a line chart to visualize the Blood Dataset from the health
+  category. Plot 'Time' on the x-axis and 'Monetary' on the y-axis to track spending
+  over time for different persons. Add text annotations to highlight key data points,
+  such as peaks and troughs in the curve. Use highlights to distinguish the 'Class'
+  categories (1 and 0) by changing line colors. This will help in understanding trends
+  in spending patterns and their correlation with different classes. The visualization
+  aims to provide insights into how spending fluctuates over time and its relation
+  to recency, frequency, and class.
+questions: '1. Do you have a preferred color scheme for distinguishing between the
+  ''Class'' categories?
+
+  2. What style of line do you prefer (solid, dashed, dotted) for the chart?
+
+  3. Where would you prefer the text annotations to be placed for highlighted data
+  points (above, below, or beside the points)?
+
+  4. Do you have any preference for the font style and size of the text annotations?
+
+  5. Would you like gridlines to be included in the chart? If so, should they be for
+  both x-axis and y-axis or just one?
+
+  6. Do you have a specific range or scale you want for the y-axis (Monetary values)?
+
+  7. Would you like to include markers on the line chart for each data point? If yes,
+  what style of markers do you prefer (circle, square, triangle)?
+
+  8. How would you like the legend to be displayed (right, bottom, top, etc.)?
+
+  9. Would you like to add a title to the chart? If so, do you have a preferred title?
+
+  10. Are there any specific labels you would like to use for the x-axis and y-axis?'
+answers: '1. I am not sure.
+
+  2. Solid lines are fine.
+
+  3. Above the points would be good.
+
+  4. I do not have any specific preference.
+
+  5. Yes, include gridlines for both x-axis and y-axis.
+
+  6. I do not know.
+
+  7. Yes, add markers. Circle markers are preferred.
+
+  8. I would like the legend to be displayed at the bottom.
+
+  9. Yes, the title could be "Spending Patterns Over Time".
+
+  10. "Time" for the x-axis and "Monetary" for the y-axis.'
+data_attributes:
+- Time
+- Monetary
+- Class

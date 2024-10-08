@@ -1,0 +1,44 @@
+initial_prompt: Create a bar chart displaying the top 10 attractions, restaurants,
+  and hotels in Colombo based on their ranking positions, average ratings, and the
+  number of reviews. Use distinct colors for categories.
+questions: '1. What color palette preference do you have for distinguishing between
+  attractions, restaurants, and hotels?
+
+  2. Do you have a preferred order for displaying bars (e.g., by ranking position,
+  rating, or number of reviews)?
+
+  3. Would you like to include any specific labels or annotations on the bars (e.g.,
+  names, exact values)?
+
+  4. Do you prefer a vertical or horizontal orientation for the bar chart?
+
+  5. Are there any particular font styles or sizes you would like for the chart titles
+  and labels?
+
+  6. Should the chart include a legend to clearly identify each category?
+
+  7. Do you want to display gridlines in the chart? If so, do you have a preference
+  for their style or color?
+
+  8. Is there a specific background color or theme you would like for the chart?'
+answers: '1. I do not know.
+
+  2. By ranking position.
+
+  3. Names and exact values.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- name
+- rankingPosition
+- rating
+- numberOfReviews
+- type

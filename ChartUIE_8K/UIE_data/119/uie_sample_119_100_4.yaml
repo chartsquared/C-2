@@ -1,0 +1,55 @@
+initial_prompt: I'd like a line chart that visualizes weekly sales over time for each
+  store. Each line should represent a different store, showing how sales trends change
+  over the given dates. Please include markers for holiday weeks and annotate with
+  the unemployment rate. The x-axis should represent the date, and the y-axis should
+  be the weekly sales figures. Additionally, consider including a secondary axis for
+  fuel price. This will help us understand if there's a correlation between fuel prices,
+  unemployment, and sales. Thank you!
+questions: '1. Do you have a preferred color scheme for the different stores?
+
+  2. How would you like the holiday markers to be represented (e.g., specific symbols
+  or colors)?
+
+  3. What specific annotation style do you prefer for the unemployment rate (e.g.,
+  text labels, tooltips)?
+
+  4. Do you have a preferred format for the secondary y-axis (e.g., scaling, positioning)?
+
+  5. Would you like gridlines for both y-axes, and if so, how should they be styled?
+
+  6. Do you prefer any specific line styles or markers for the data points?
+
+  7. How should the legend be displayed (e.g., position, format)?
+
+  8. Are there any specific date formats you prefer for the x-axis labels?
+
+  9. Would you like any specific emphasis on certain data points (e.g., peak sales
+  weeks)?
+
+  10. Do you have any specific requirements for the chart title or axis labels?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I have no specific preference.
+
+  8. I have no specific preference.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- Store
+- Date
+- Weekly_Sales
+- Holiday_Flag
+- Fuel_Price
+- Unemployment

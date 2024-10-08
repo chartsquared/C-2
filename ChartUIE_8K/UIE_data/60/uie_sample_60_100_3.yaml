@@ -1,0 +1,32 @@
+initial_prompt: I need a histogram for the "Best Buy 2024 💻 Windows Laptops" data.
+  I want to visualize the distribution of "aggregateRating/ratingValue" and "aggregateRating/reviewCount"
+  for these laptops. The x-axis should show the rating values (e.g., 1 to 5 stars)
+  and review count ranges, while the y-axis should represent the number of models
+  falling into each range. This will help me understand which rating and review count
+  ranges are most common for these laptops. Use different colors for rating and review
+  count in the same chart for clarity.
+questions: '1. Do you have any preference for specific color schemes for the rating
+  and review count histograms?
+
+  2. What bin width or range would you like us to use for the rating values and review
+  counts on the x-axis?
+
+  3. Do you prefer logarithmic or linear scaling for the y-axis?
+
+  4. Would you like any reference lines or labels added to the chart (e.g., average
+  rating or review count)?
+
+  5. Do you have any specific preferences for the layout or positioning of the legend?'
+answers: '1. I do not have any specific preference, but please ensure the colors are
+  distinct and easy to differentiate.
+
+  2. I am not sure about the bin width or range; kindly use a reasonable default.
+
+  3. I prefer linear scaling for the y-axis.
+
+  4. I do not know; you can decide if any reference lines or labels would be helpful.
+
+  5. I have no specific preference for the layout or positioning of the legend.'
+data_attributes:
+- aggregateRating/ratingValue
+- aggregateRating/reviewCount

@@ -1,0 +1,56 @@
+initial_prompt: '<start of user instruction>
+
+  I''d like a scatter plot using the latest Covid-19 India Statewise Data. The x-axis
+  should represent the total population of each State/UT, and the y-axis should represent
+  the total number of Covid-19 cases in each State/UT. Please include data labels
+  for at least three sample states: ''Andaman and Nicobar'', ''Andhra Pradesh'', and
+  ''Arunachal Pradesh''. The scatter plot should help to understand the relationship
+  between population size and the total number of cases.
+
+  <end of user instruction>'
+questions: '1. Do you have any specific preferences for the color of the data points
+  on the scatter plot?
+
+  2. Would you like to include a trend line to visually represent the correlation?
+
+  3. Do you prefer the chart to have gridlines?
+
+  4. Do you have any preference for the font style and size of the axis labels and
+  title?
+
+  5. Are there any specific chart titles or subtitles you would like to include?
+
+  6. Do you have any specific preference for the shape or size of the data points?
+
+  7. Would you like to include any annotations or text boxes for additional context?
+
+  8. Do you prefer to have a legend on the chart, even if there is only one type of
+  data being plotted?
+
+  9. Should the axes have linear or logarithmic scales?
+
+  10. Is there a specific positioning you prefer for the data labels for ''Andaman
+  and Nicobar'', ''Andhra Pradesh'', and ''Arunachal Pradesh''?'
+answers: '1. I do not have any specific preference.
+
+  2. Yes, please include a trend line.
+
+  3. I am not sure.
+
+  4. I do not have any specific preference.
+
+  5. I do not know.
+
+  6. No specific preference.
+
+  7. I am not sure.
+
+  8. No, a legend is not necessary.
+
+  9. Linear scales are fine.
+
+  10. I do not have any specific positioning preference.'
+data_attributes:
+- State/UTs
+- Total Cases
+- Population

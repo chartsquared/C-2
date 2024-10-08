@@ -1,0 +1,55 @@
+initial_prompt: Please create a line chart to visualize sales trends over time, using
+  the provided sales dataset. The x-axis should represent the 'Date' and the y-axis
+  should depict the 'Total' sales amount. Implement text annotations to highlight
+  key data points with exceptionally high or low totals. Use highlights to distinguish
+  between different branches ('Branch' column), changing the line color for each branch.
+  This will help in understanding branch-wise sales performance over time. Ensure
+  the chart is clear and labeled properly to provide insights into sales patterns
+  effectively.
+questions: '1. Do you have any color preferences for distinguishing different branches?
+
+  2. What specific date format would you prefer on the x-axis (e.g., "MM/DD/YYYY"
+  or "Month Year")?
+
+  3. Are there specific sales thresholds that define ''exceptionally high'' or ''low''
+  totals for annotations?
+
+  4. Do you prefer any particular font style or size for the text annotations?
+
+  5. Would you like gridlines in the background to aid in reading the chart? If so,
+  should they be major, minor, or both?
+
+  6. Are there any specific labels or titles you want for the x-axis, y-axis, and
+  the chart itself?
+
+  7. Should the legend be placed in a specific location on the chart?
+
+  8. Do you have a preferred line style (e.g., solid, dashed) for the different branches?
+
+  9. Is there a specific time range that you want the data to be focused on or highlighted?
+
+  10. Do you need any additional reference lines or markers on the chart (e.g., average
+  sales line)?'
+answers: '1. I do not know.
+
+  2. MM/DD/YYYY.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include major gridlines.
+
+  6. X-Axis: Date, Y-Axis: Total Sales, Chart Title: Sales Trends by Branch Over Time.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. No, just the annotations for high and low totals.'
+data_attributes:
+- Date
+- Total
+- Branch

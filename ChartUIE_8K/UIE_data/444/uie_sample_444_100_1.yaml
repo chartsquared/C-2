@@ -1,0 +1,66 @@
+initial_prompt: Create a scatter plot using public transit-infrastructure data. Plot
+  'length' on the x-axis and 'cost_km_millions' on the y-axis. Add text annotations
+  to show the 'city' and 'line' for each data point. Highlight points where 'tunnel_per'
+  is 100%, making them stand out visually. Use colors to differentiate countries.
+  This visualization will help analyze the relationship between project length and
+  cost efficiency, focusing on completely tunneled projects and comparing them across
+  different cities. The purpose is to identify trends and insights in government transit
+  projects.
+questions: '1. Do you have a preferred color palette for differentiating countries?
+
+  2. How would you like the text annotations for ''city'' and ''line'' to be formatted
+  (e.g., font size, style)?
+
+  3. Do you have a preference for the shape or size of the scatter plot points?
+
+  4. What type of highlighting would you prefer for data points where ''tunnel_per''
+  is 100% (e.g., different color, larger size, different shape)?
+
+  5. Would you like gridlines to be displayed on the scatter plot?
+
+  6. Is there a specific title you would like for the scatter plot?
+
+  7. Do you have any preferences for the axis labels or scaling (e.g., log scale,
+  specific range)?
+
+  8. Should there be a legend included, and if so, any preferences on its placement?
+
+  9. Are there any specific interactive elements or tooltips you would like to include
+  for the text annotations? -> This will not include in response
+
+  10. Would you like any additional information or data points to be displayed on
+  the plot (e.g., start year, end year)?
+
+  11. Is there a specific order you would like the data points to be displayed in?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Different color would be great.
+
+  5. Yes, please.
+
+  6. No specific title in mind.
+
+  7. I am not sure.
+
+  8. Yes, a legend would be helpful. I have no preference on placement.
+
+  9. [Not applicable]
+
+  10. No, I do not need additional information displayed.
+
+  11. I have no specific order in mind.
+
+  <end of user emulated response>'
+data_attributes:
+- length
+- cost_km_millions
+- city
+- line
+- tunnel_per
+- country

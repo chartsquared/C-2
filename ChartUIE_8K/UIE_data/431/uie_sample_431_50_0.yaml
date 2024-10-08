@@ -1,0 +1,52 @@
+initial_prompt: 'Create a line chart visualizing password strength over rank, highlighting
+  top 3 passwords. Add annotations to emphasize different categories and cracking
+  times for various strength levels. Purpose: Show password vulnerability trends in
+  cybersecurity.'
+questions: '1. Do you have any specific color preferences for different categories
+  or strength levels?
+
+  2. Would you like the annotations to be displayed as pop-ups or static text on the
+  chart?
+
+  3. Do you prefer any particular style for highlighting the top 3 passwords (e.g.,
+  different colors, bold lines)?
+
+  4. Should the x-axis and y-axis have specific labels or units?
+
+  5. Would you like a legend to be included in the chart?
+
+  6. Are there any specific fonts or font sizes you prefer for annotations and labels?
+
+  7. Do you have a preferred layout or orientation for the chart (e.g., landscape
+  or portrait)?
+
+  8. Should the cracking times be shown in a specific format (e.g., seconds, minutes,
+  hours)?'
+answers: 'I do not know.
+
+
+  I am not sure.
+
+
+  I have no specific preference.
+
+
+  The x-axis could be labeled "Rank" and the y-axis as "Password Strength".
+
+
+  I am not sure.
+
+
+  I do not know.
+
+
+  I am not sure.
+
+
+  I am not sure.'
+data_attributes:
+- rank
+- password
+- strength
+- category
+- offline_crack_sec

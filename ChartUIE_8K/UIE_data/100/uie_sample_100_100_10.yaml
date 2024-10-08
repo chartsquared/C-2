@@ -1,0 +1,42 @@
+initial_prompt: I need a bar chart visualizing the trends in Women Fashion, showcasing
+  the average ratings for different product titles over time. Use the 'title' as the
+  categories on the X-axis and the 'rating' as the values on the Y-axis. Highlight
+  the 'units_sold' for each title using different colors or shades. Make sure to also
+  display the 'merchant_title' in the legend, showing the source of these products.
+  Ensure the chart is clear, concise, and gives a quick insight into which products
+  are highly rated and popular among customers.
+questions: '1. Do you have a preferred color palette for the chart?
+
+  2. Do you prefer any specific ordering for the product titles on the X-axis? (e.g.,
+  alphabetical, by rating, by units sold)
+
+  3. How would you like the ''units_sold'' to be represented in terms of colors or
+  shades? Should higher units sold be darker/more intense or lighter/less intense?
+
+  4. Is there a specific range you want to focus on for the ratings?
+
+  5. Would you like any specific style or format for the legend displaying the ''merchant_title''?
+
+  6. Should the bar chart include grid lines for easier reading, and if so, in which
+  directions (vertical, horizontal, or both)?
+
+  7. Do you need labels or tooltips for the bars to display specific values like rating
+  or units sold?'
+answers: '1. I am not sure.
+
+  2. By rating.
+
+  3. Higher units sold should be darker/more intense.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Both vertical and horizontal grid lines.
+
+  7. Yes, include labels to display rating and units sold.'
+data_attributes:
+- title
+- rating
+- units_sold
+- merchant_title

@@ -1,0 +1,49 @@
+initial_prompt: Create a choropleth map that visualizes the global distribution of
+  blood types using the given data. Highlight each country's proportion of different
+  blood types (O+, A+, B+, AB+, O-, A-, B-, AB-). Ensure population size is represented.
+questions: '1. Do you have a preferred color scheme for representing different blood
+  types on the map?
+
+  2. Should population size be represented using varying shades of a single color,
+  or would you prefer another method?
+
+  3. Do you want labels or tooltips to show exact proportions and population size
+  when hovering over a country?
+
+  4. Would you prefer to highlight any specific countries or regions?
+
+  5. Are there any particular thresholds for blood type proportions that you want
+  to emphasize with distinct colors?
+
+  6. Should the choropleth map include a legend to explain the color coding for blood
+  types and population size?
+
+  7. Do you require separate maps for each blood type, or a single combined map?
+
+  8. Is there a specific map projection that you prefer for this global map visualization?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would prefer labels to show exact proportions and population size.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, the choropleth map should include a legend.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- Country
+- Population
+- O+
+- A+
+- B+
+- AB+
+- O-
+- A-
+- B-
+- AB-

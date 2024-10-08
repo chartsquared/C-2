@@ -1,0 +1,47 @@
+initial_prompt: Create a Treemap to visualize the Mushroom Classification dataset.
+  The treemap should illustrate the distribution of mushrooms based on cap-color,
+  cap-shape, and odor, with color variations representing different values within
+  each category. Use distinct shades for each unique value to ensure clarity. The
+  size of each tile should correspond to the frequency of the values within that category
+  to show their distribution. Ensure the plot is interactive and displays details
+  when hovering over each tile, such as the count of mushrooms with particular features.
+  The goal is to identify common patterns and rare attributes visually.
+questions: '1. Do you have any specific color palette preferences for the treemap?
+
+  2. What background color would you like for the treemap?
+
+  3. Should the distribution of mushroom counts be displayed in specific units or
+  left as raw counts?
+
+  4. Do you have any preferred font styles or sizes for the labels on the treemap?
+
+  5. Would you like any additional annotation or notes on the treemap to highlight
+  certain attributes?
+
+  6. Do you have a specific arrangement preference for the categories within the treemap,
+  such as order of importance or alphabetical order?
+
+  7. Are there any particular categories or values you want to emphasize or de-emphasize
+  in the visualization?'
+answers: '<start of user emulated response>
+
+  1. I don''t have a specific color palette preference.
+
+  2. I am not sure about the background color, maybe something neutral?
+
+  3. Raw counts are fine.
+
+  4. I don''t have any specific preference for font styles or sizes.
+
+  5. No additional annotations or notes are needed.
+
+  6. No specific arrangement preference.
+
+  7. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- cap-color
+- cap-shape
+- odor
+- class

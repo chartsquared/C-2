@@ -1,0 +1,38 @@
+initial_prompt: I have a dataset about the Tour de France from 1903 to 2019. I want
+  to create a geographic heatmap that visualizes the birth towns of the winners. The
+  map should show the density of winners from different towns around the world. It
+  should highlight towns based on the number of winners born there. I am particularly
+  interested in seeing which towns and countries have produced the most winners. Please
+  use the "birth_town" and "birth_country" fields from the dataset to create the heatmap.
+  Make sure to use a color gradient to represent the density.
+questions: '1. Do you have a specific color gradient preference for representing the
+  density on the heatmap?
+
+  2. Would you like to include country borders or other geographical boundaries on
+  the map?
+
+  3. Do you prefer any specific map projection (e.g., Mercator, Robinson, etc.) for
+  the geographic heatmap?
+
+  4. Should the map also display labels for towns and/or countries, or would you prefer
+  a cleaner look without labels?
+
+  5. Are there any particular regions or towns you would like to be highlighted or
+  focused on more prominently?
+
+  6. Do you have a specific preference for the base map style (e.g., satellite view,
+  street view, terrain view, etc.)?'
+answers: '1. I am not sure.
+
+  2. Yes, please include country borders.
+
+  3. I do not know.
+
+  4. I prefer a cleaner look without labels.
+
+  5. I am not sure.
+
+  6. I have no specific preference.'
+data_attributes:
+- birth_town
+- birth_country

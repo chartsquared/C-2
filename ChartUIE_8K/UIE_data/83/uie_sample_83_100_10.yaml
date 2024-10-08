@@ -1,0 +1,49 @@
+initial_prompt: Please create a geographic heatmap using the provided Online Food
+  Dataset related to food and drink. I'd like the heatmap to display the concentration
+  of respondents based on their latitude and longitude data. It should visualize the
+  distribution of participants' monthly income levels across different regions. Additionally,
+  please highlight areas with higher average family sizes with gradient colors. The
+  map should help identify potential hotspots for marketing food-related products
+  and services. Please ensure the map is interactive, allowing for zooming and additional
+  details on hover. Thank you!
+questions: '1. Do you have any specific color scheme preferences for the heatmap and
+  gradient colors?
+
+  2. What level of geographic detail do you prefer? (e.g., city, state, country)
+
+  3. Should the income levels be grouped into specific ranges? If so, please provide
+  the desired brackets.
+
+  4. How many gradient bands would you like for highlighting family sizes?
+
+  5. Would you like to include any specific labels or annotations on the map?
+
+  6. Do you have any preferences for the map''s base layer (e.g., satellite, terrain,
+  or standard map)?
+
+  7. Would you like to display a legend explaining the color gradients and income
+  levels on the map?
+
+  8. Is there a specific title or description you would like to include on the map?'
+answers: '1. I do not have a specific color scheme preference.
+
+  2. I prefer a country-level geographic detail.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not have any specific labels or annotations in mind.
+
+  6. I have no specific preference for the map''s base layer.
+
+  7. Yes, I would like to display a legend explaining the color gradients and income
+  levels.
+
+  8. The title should be "Geographic Distribution of Respondent Concentration, Income
+  Levels, and Family Sizes".'
+data_attributes:
+- latitude
+- longitude
+- Monthly Income
+- Family size

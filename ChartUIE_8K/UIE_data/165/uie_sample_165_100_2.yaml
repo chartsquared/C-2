@@ -1,0 +1,58 @@
+initial_prompt: Create a histogram visualization for predicting lung cancer levels
+  using patient data like Age, Air Pollution, Alcohol use, Dust Allergy, etc. The
+  chart should have annotations highlighting key insights, such as the correlation
+  between high Air Pollution and lung cancer risk level. Also, highlight specific
+  elements where notable patterns are found, for instance, if a high percentage of
+  'High' Level patients have significant Dust Allergy scores. This will help in understanding
+  and focusing on critical risk factors visually. Maintain clarity and ensure each
+  histogram bar is labeled with corresponding data. Keep the design clean and insightful.
+questions: '1. Do you have a preferred color scheme for the histogram?
+
+  2. Would you like to specify a particular font style or size for labels and annotations?
+
+  3. Should the histogram include a legend, or would you prefer the bars to be self-explanatory?
+
+  4. Are there specific intervals or bins you would like for the histogram bars (e.g.,
+  specific age ranges)?
+
+  5. Do you have a preference for the positioning of annotations, such as inside or
+  above the bars?
+
+  6. Would you like to include any additional elements, such as grid lines or reference
+  lines, to enhance clarity?
+
+  7. Are there any specific highlight colors or styles for notable patterns and key
+  insights that you''d prefer?
+
+  8. Should the chart have a title, and if so, do you have a preferred title in mind?
+
+  9. Do you want to display values on the histogram bars (e.g., number of patients)
+  explicitly?
+
+  10. Are there any specific formatting requirements for the chart, such as margins,
+  padding, or border styles?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I think a legend would be helpful.
+
+  4. I do not know.
+
+  5. Above the bars would be preferred.
+
+  6. Yes, grid lines might help with clarity.
+
+  7. I am not sure.
+
+  8. Yes, the title could be "Lung Cancer Risk Factors".
+
+  9. Yes, please display the values on the bars.
+
+  10. I do not know.'
+data_attributes:
+- Age
+- Air Pollution
+- Alcohol use
+- Dust Allergy
+- Level

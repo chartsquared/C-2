@@ -1,0 +1,61 @@
+initial_prompt: Please create a scatter plot using the Mice Protein Expression data.
+  I want to visualize the relationship between the 'BDNF_N' and 'pJNK_N' protein expressions
+  across different MouseID samples. Highlight data points based on 'Genotype' and
+  'Treatment' values to distinguish between Control and Treatment groups. Include
+  data-driven text annotations for outlier points, if any, to draw attention to those
+  specific elements in the chart. This will help to better understand the effects
+  of different treatments on protein expressions in mice. Make sure the annotations
+  stand out clearly.
+questions: '1. Do you have a preferred color scheme for highlighting the ''Control''
+  and ''Treatment'' groups based on ''Genotype'' and ''Treatment'' values?
+
+  2. How would you prefer the outlier data points to be annotated? Would you like
+  specific information included in the annotations?
+
+  3. Where would you like the legend to be positioned on the chart?
+
+  4. Do you have a preference for the size of the data points on the scatter plot?
+
+  5. What font style or size would you like for the annotations to ensure they stand
+  out clearly?
+
+  6. Would you like the axes to be labeled with specific titles or units of measurement?
+
+  7. Should the chart include gridlines for better readability, and if so, what style
+  would you prefer for the gridlines?
+
+  8. Is there a specific range or scaling you would prefer for the x-axis and y-axis?
+
+  9. Do you have any specific preferences for the overall layout and design of the
+  chart (e.g., margin sizes, background color)?
+
+  10. Are there any additional elements or specific details you would like to include
+  in the chart to enhance the visualization?'
+answers: '1. I do not have a preferred color scheme, use your best judgment.
+
+  2. I am not sure, maybe include the MouseID and values of ''BDNF_N'' and ''pJNK_N''.
+
+  3. I do not know, place it where you think it fits best.
+
+  4. I have no specific preference, use a standard size.
+
+  5. I do not have a specific preference, just make sure it is clear and readable.
+
+  6. Yes, please label the axes with appropriate titles.
+
+  7. I am not sure, follow the usual standard for gridlines.
+
+  8. I do not know, use an automatic range that fits the data.
+
+  9. I do not have any specific preferences, go with a professional look.
+
+  10. No additional elements, just focus on making the chart easy to understand.
+
+
+  Thank you!'
+data_attributes:
+- MouseID
+- BDNF_N
+- pJNK_N
+- Genotype
+- Treatment

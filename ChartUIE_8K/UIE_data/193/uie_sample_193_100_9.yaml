@@ -1,0 +1,56 @@
+initial_prompt: I have stellar data from NASA, focusing on star properties like Temperature,
+  Luminosity (L), Radius (R), Apparent Magnitude (A_M), Color, and Spectral Class.
+  Please create a scatter plot with Temperature on the x-axis and Luminosity (L) on
+  the y-axis. Differentiate points by Color and Spectral Class, and mark star Types
+  with varied shapes or colors. This visualization should help categorize stars and
+  understand their distribution and clustering by types and other properties. Ensure
+  to include a legend for clarity. The plot should be easy to interpret for a quick
+  comparative study.
+questions: '1. Do you have a preferred color palette for differentiating star types
+  and other properties?
+
+  2. How would you like the shapes to be used to mark different star types?
+
+  3. Do you prefer any specific font style or size for the axis labels and legend?
+
+  4. Should the chart include grid lines for better readability, and if so, do you
+  prefer them to be light or dark?
+
+  5. Do you have preferences for the size of the scatter plot points?
+
+  6. Would you like to include data point labels for each star, and if so, how should
+  they be formatted?
+
+  7. Do you have a preference for the aspect ratio of the chart (e.g., 16:9, 4:3)?
+
+  8. Should the Temperature axis be displayed in a linear or logarithmic scale?
+
+  9. Are there any specific ranges for the axes you want to focus on?
+
+  10. Do you have a preference for the placement of the legend (e.g., right, top,
+  left, or bottom)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, include grid lines. I am not sure if they should be light or dark.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. Linear scale.
+
+  9. I do not have specific ranges in mind.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- Temperature
+- L
+- Color
+- Spectral_Class
+- Type

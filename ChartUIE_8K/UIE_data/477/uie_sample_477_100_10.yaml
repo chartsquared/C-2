@@ -1,0 +1,47 @@
+initial_prompt: Create a scatter plot to visualize the data from the file '../Extra_datas/data/477.csv'.
+  The plot should display the "percent" on the y-axis and the "question" on the x-axis
+  to show how the percentage of different answers varies for each question about "Pizza
+  Mercato." Different colors or shapes could represent different answers (e.g., Excellent,
+  Good, Average). This will help us understand customer satisfaction levels at Pizza
+  Mercato over time. Ensure to handle missing values appropriately and label the axes
+  for clarity. This data is from the "food-and-drink" survey category by pizza_jared.
+questions: '1. Do you have any specific color preferences for distinguishing different
+  answers (e.g., Excellent, Good, Average)?
+
+  2. Would you prefer specific shapes for the different answers, or is using different
+  colors sufficient?
+
+  3. What title would you like for the scatter plot?
+
+  4. Are there any specific labeling preferences for the axes?
+
+  5. Do you want a legend to explain the colors or shapes used for different answers?
+
+  6. How would you like the missing values to be handled in the visualization?
+
+  7. Should grid lines be included in the scatter plot for better readability?
+
+  8. Do you prefer a specific font style or size for the labels and title?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific color preferences.
+
+  2. Using different colors is sufficient.
+
+  3. "Customer Satisfaction Levels at Pizza Mercato"
+
+  4. No specific labeling preferences.
+
+  5. Yes, I want a legend to explain the colors used for different answers.
+
+  6. Handle missing values by omitting them from the plot.
+
+  7. Yes, include grid lines for better readability.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- question
+- percent
+- answer

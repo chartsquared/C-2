@@ -1,0 +1,49 @@
+initial_prompt: Create a box chart to visualize the distribution of the assumed_office
+  years for U.S. 117th House of Representatives members. This will help us understand
+  the range and central tendency of when members assumed office. Use the 'assumed_office'
+  column to plot the data. Additionally, overlay data points for 'party' to differentiate
+  between Republican and other parties, helping identify any potential patterns or
+  outliers in the tenure start years among different parties. Including median and
+  quartile ranges will provide more insight into the distribution of these starting
+  years.
+questions: '1. Do you have any specific color preferences for differentiating between
+  parties?
+
+  2. Would you like to include a title and axis labels for the chart? If yes, could
+  you specify them?
+
+  3. Do you prefer the data points for ''party'' to be represented as different shapes
+  or some other feature within the box plot?
+
+  4. Should the chart include a legend to explain the different overlays for ''party''
+  data points?
+
+  5. Would you like to see the exact quartile ranges and median values as annotations
+  on the chart?
+
+  6. Is there any specific order you want for the different parties on the chart,
+  such as Republicans first?
+
+  7. Do you want the outliers to be specifically highlighted or just shown normally
+  on the box plot?
+
+  8. Are there any additional metrics or summaries you would like to see included
+  in the visualization, such as mean or standard deviation?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. Different shapes would be nice.
+
+  4. Yes, please include a legend.
+
+  5. Yes, I would like to see the exact quartile ranges and median values annotated.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- assumed_office
+- party

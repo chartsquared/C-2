@@ -1,0 +1,51 @@
+initial_prompt: I have raw counts data for fibrosis and normal conditions from multiple
+  samples. Please create a grouped bar chart to visualize the SMOC2 expression levels
+  for each condition (fibrosis and normal) across all given samples. Use different
+  colors to differentiate between fibrosis and normal for easy comparison. Label the
+  samples on the x-axis and the counts on the y-axis. Title the chart "SMOC2 Expression
+  in Fibrosis vs. Normal Samples." Ensure each bar represents a specific sample count
+  distinctly in grouped format. Thanks!
+questions: '1. Do you have any specific color preferences for differentiating between
+  fibrosis and normal conditions?
+
+  2. Is there a specific font or style you would like for the chart title and axis
+  labels?
+
+  3. Would you like grid lines to be displayed on the chart for better readability
+  of values?
+
+  4. Are there any specific sample groups you would like to highlight or annotate
+  within the chart?
+
+  5. Do you prefer any particular order for the samples on the x-axis (e.g., alphabetical,
+  by expression levels)?
+
+  6. Should we include any specific legend placement (e.g., top-right, bottom-left)
+  or customization?
+
+  7. Is there a particular width for the bars you would prefer for better visualization?
+
+  8. Do you have a preference for the aspect ratio or dimensions of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. No specific preferences for highlighting or annotating sample groups.
+
+  5. I have no specific preference for the order of the samples on the x-axis.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I do not know.'
+data_attributes:
+- smoc2_fibrosis1
+- smoc2_fibrosis2
+- smoc2_fibrosis3
+- smoc2_fibrosis4
+- smoc2_normal1
+- smoc2_normal3
+- smoc2_normal4

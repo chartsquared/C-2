@@ -1,0 +1,33 @@
+initial_prompt: I have a dataset from the Internshala Jobs Dataset focusing on data
+  science and analytics internships. I'd like to create a density plot to visualize
+  the distribution of stipends offered for different internships. The key columns
+  we need are 'Company_Name', 'JobTitles', and 'Stipend'. The plot should show the
+  density of stipends across various internships to understand the common stipend
+  range. Can you generate this density plot?
+questions: '1. Do you have a preferred color scheme for the density plot?
+
+  2. Do you want to differentiate stipends by ''JobTitles'' or ''Company_Name'' using
+  color or shading?
+
+  3. What labels or titles would you like on the axes?
+
+  4. Would you prefer the plot to include a legend?
+
+  5. Should the density plot include grid lines for better readability?
+
+  6. What specific range of stipends are you most interested in?'
+answers: '1. I am not sure.
+
+  2. Differentiate stipends by ''JobTitles'' using color.
+
+  3. X-axis: "Stipend", Y-axis: "Density"
+
+  4. Yes, include a legend.
+
+  5. I do not know.
+
+  6. I am not sure.'
+data_attributes:
+- Company_Name
+- JobTitles
+- Stipend

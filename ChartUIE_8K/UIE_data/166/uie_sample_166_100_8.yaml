@@ -1,0 +1,41 @@
+initial_prompt: I need a stacked bar chart to visualize the Disease Symptoms and Patient
+  Profile Dataset. The chart should display the frequency of different symptoms (Fever,
+  Cough, Fatigue, Difficulty Breathing) across various diseases. Each bar should represent
+  a disease, and the segments within the bars should indicate the presence or absence
+  of each symptom. This will help to easily compare how symptoms vary across different
+  diseases. Additionally, please color code the segments to distinguish between symptoms
+  for better visual clarity. Ensure labels and a legend are included for interpretation.
+  Thank you!
+questions: '1. Do you have any specific color preferences for the segments representing
+  each symptom?
+
+  2. What font size and style would you prefer for the labels and legend?
+
+  3. Do you have a preferred order for the diseases to be displayed in the bar chart?
+
+  4. Would you like any specific titles or annotations included in the chart to enhance
+  clarity?
+
+  5. How would you like to handle cases where symptoms are absent (e.g., specific
+  color or shading)?
+
+  6. Do you want the chart to display exact frequency counts or just the presence/absence
+  of symptoms?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure about the font size and style.
+
+  3. I do not know the preferred order for the diseases.
+
+  4. Please include a title like "Symptom Frequency Across Diseases" and labels for
+  the x-axis and y-axis.
+
+  5. I do not know how to handle the absence of symptoms.
+
+  6. Just show the presence/absence of symptoms rather than frequency counts.'
+data_attributes:
+- Disease
+- Fever
+- Cough
+- Fatigue
+- Difficulty Breathing

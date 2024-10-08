@@ -1,0 +1,62 @@
+initial_prompt: Create a bubble chart that visualizes the Indian Liver Patient Records
+  data. The x-axis should represent Age, and the y-axis should display Total_Bilirubin
+  levels. Use bubble size to indicate the Alkaline_Phosphotase value, and color-code
+  bubbles by Gender. Annotate data points with extremely high Total_Bilirubin levels
+  and low Albumin_and_Globulin_Ratio values to identify outliers in liver health.
+  Highlight bubbles for Dataset 1 to distinguish them from others. This visual will
+  help assess liver conditions across different ages and genders, emphasizing significant
+  anomalies. Make the chart visually appealing and easy to interpret.
+questions: '1. Do you have a preferred color palette for gender differentiation?
+
+  2. How would you like the annotation for outliers to appear (e.g., labels, tooltips)?
+
+  3. What specific range or threshold constitutes an ''extremely high'' Total_Bilirubin
+  level in your view?
+
+  4. What specific range or threshold constitutes a ''low'' Albumin_and_Globulin_Ratio
+  to identify outliers?
+
+  5. Do you have any preferences for the bubble size scaling to represent Alkaline_Phosphotase
+  values?
+
+  6. Are there any specific labels or titles you would like to include on the axes
+  and the chart?
+
+  7. Would you prefer to use a specific shape or style to highlight bubbles for Dataset
+  1?
+
+  8. Do you have a preferred background style or grid style for the chart to enhance
+  visual appeal?
+
+  9. Is there a particular font style or size you would like for the chart annotations
+  to make them easy to interpret?
+
+  10. Should there be any specific margins or padding around the chart to accommodate
+  additional information or annotations?'
+answers: '1. I am not sure.
+
+  2. Labels for outliers would be ideal.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Age for the x-axis and Total_Bilirubin for the y-axis. Title: "Liver Health Assessment
+  by Age and Gender".
+
+  7. I am not sure.
+
+  8. I do not have any specific preference.
+
+  9. I do not have any specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- Age
+- Gender
+- Total_Bilirubin
+- Alkaline_Phosphotase
+- Albumin_and_Globulin_Ratio
+- Dataset

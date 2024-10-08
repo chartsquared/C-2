@@ -1,0 +1,59 @@
+initial_prompt: I need an area chart displaying the trend of engagement over time
+  for 'Shape of You' comments. The chart should use data from the CSV file and include
+  variables like published date, likes, and reply count. Ensure the x-axis represents
+  'Published At' dates, and the y-axis shows engagement metrics (likes and reply counts).
+  Highlight the aggregated likes and reply counts to visualize peaks and troughs in
+  interactions over the given timeframe. This chart will help us understand patterns
+  in user engagement and how it changes over time for the song's comment section.
+questions: '1. Do you have a specific color preference for the area chart?
+
+  2. Would you prefer to display the likes and reply counts as separate areas within
+  the same chart, or should they be stacked?
+
+  3. Should the chart include a legend to distinguish between likes and reply counts?
+
+  4. Is there a specific date range you want to focus on in the chart?
+
+  5. Do you have a preferred format for the date display on the x-axis (e.g., MM/DD/YYYY,
+  Month Year)?
+
+  6. Do you want the peaks and troughs to be highlighted in a specific way (e.g.,
+  different colors or markers)?
+
+  7. Should the chart include gridlines for better readability?
+
+  8. Do you prefer any specific font style or size for the labels and titles on the
+  chart?
+
+  9. Would you like tooltips or data labels to display the exact values when hovering
+  over the chart areas?
+
+  10. Should the chart include a title and, if so, do you have a preferred title for
+  it?'
+answers: '<start user emulated response>
+
+  1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Yes, the chart should include a legend.
+
+  4. I have no specific preference.
+
+  5. MM/DD/YYYY format would be good.
+
+  6. I am not sure.
+
+  7. Yes, include gridlines for better readability.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. Yes, the title should be "Engagement Trends for ''Shape of You'' Comments".
+
+  <end user emulated response>'
+data_attributes:
+- Published At
+- Likes
+- Reply Count

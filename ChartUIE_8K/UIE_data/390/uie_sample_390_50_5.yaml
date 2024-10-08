@@ -1,0 +1,43 @@
+initial_prompt: Create a network diagram illustrating the collaboration within a company's
+  business departments. Nodes represent employees; groups show departments, and links
+  display collaboration intensity. Weights indicate the strength of interactions.
+  Use different colors for departments and variable link thickness based on interaction
+  intensity.
+questions: '1. Do you have any specific color preferences for different departments?
+
+  2. Do you want the names of the employees displayed on the nodes?
+
+  3. Should the nodes have specific shapes or sizes based on any criteria?
+
+  4. Is there a preferred layout for the network diagram (e.g., hierarchical, circular,
+  force-directed)?
+
+  5. Do you have a limit on how many employees can be displayed in the diagram?
+
+  6. Should we include labels or legends for the interaction intensity (link thickness)?
+
+  7. Do you prefer any specific font style or size for the text in the diagram?
+
+  8. Are there specific departments or employees you want to highlight or focus on?'
+answers: '1. I do not have any specific color preferences for different departments.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I prefer a force-directed layout for the network diagram.
+
+  5. I do not know.
+
+  6. Yes, please include labels or legends for the interaction intensity (link thickness).
+
+  7. I do not have any specific preference.
+
+  8. I am not sure.'
+data_attributes:
+- id
+- name
+- group
+- source
+- target
+- weight

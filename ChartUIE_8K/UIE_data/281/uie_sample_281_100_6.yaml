@@ -1,0 +1,61 @@
+initial_prompt: Create a Spline chart to visualize the stock performance from the
+  given dataset. Plot 'Date' on the x-axis and 'Close' on the y-axis. Also, include
+  another spline for 'Perc_Change' to reflect the percentage change in stock price
+  over time. Make sure both lines are clearly distinguishable with proper labels and
+  legends. Use different colors to differentiate between the 'Close' and 'Perc_Change'
+  series. Add data points for better readability. Keep the chart interactive to allow
+  zooming and tooltips for detailed information.
+questions: '1. Do you have any specific preferences for the colors used to differentiate
+  between the ''Close'' and ''Perc_Change'' series?
+
+  2. Would you like to customize the style of the data points? If so, do you have
+  any specific preferences?
+
+  3. Do you have any particular font style or size preferences for the labels and
+  legends?
+
+  4. Would you like to see gridlines in the background of the chart? If yes, should
+  they be in a specific style or color?
+
+  5. Would you prefer a specific thickness for the spline lines to enhance visibility?
+
+  6. Should there be a specific format for displaying dates on the x-axis, like month-year
+  or day-month-year?
+
+  7. Do you have a preference for the position of the legend (e.g., top, bottom, left,
+  right)?
+
+  8. Are there any specific ranges or intervals you would like for the x-axis (Date)
+  or y-axis (''Close'', ''Perc_Change'')?
+
+  9. Would you like to include annotations or markers for any specific events or data
+  points on the chart?
+
+  10. Should the chart include a title? If yes, please specify the title text and
+  if there are any specific styling preferences.'
+answers: '1. I am not sure about the specific colors, so I will leave that to your
+  expertise.
+
+  2. I do not have any specific preferences for the style of the data points.
+
+  3. I have no specific preference for the font style or size for the labels and legends.
+
+  4. Yes, I would like to see gridlines in the background, but I do not have a preference
+  for their specific style or color.
+
+  5. I am not sure about the specific thickness for the spline lines.
+
+  6. I prefer the dates to be displayed in the month-year format.
+
+  7. I am not sure about the specific position for the legend.
+
+  8. I do not have any specific ranges or intervals for the x-axis or y-axis.
+
+  9. I do not have any specific events or data points that need annotations or markers.
+
+  10. Yes, the chart should include a title. Please use "Stock Performance and Percentage
+  Change Over Time," but I do not have any specific styling preferences for the title.'
+data_attributes:
+- Date
+- Close
+- Perc_Change

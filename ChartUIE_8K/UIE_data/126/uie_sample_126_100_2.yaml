@@ -1,0 +1,54 @@
+initial_prompt: Create a heatmap visualizing California housing prices based on geographic
+  data. Show data correlations between ‘longitude’, ‘latitude’, and ‘median_house_value’.
+  Annotate key high-value areas to draw attention. Highlight regions of high property
+  value with distinct colors for better visual clarity. The visualization aims to
+  assist in understanding real estate trends, highlighting price variations based
+  on location, and providing actionable insights for potential investors.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Are there specific geographic boundaries or regions of California you want to
+  focus on?
+
+  3. How would you like the high-value areas to be annotated (e.g., with symbols,
+  labels, or tooltips)?
+
+  4. Do you prefer any particular scaling method for property values (e.g., linear,
+  logarithmic)?
+
+  5. Would you like to include any additional geographic features, such as city names
+  or major highways, for context?
+
+  6. How many distinct color ranges would you prefer for highlighting property values?
+
+  7. Is there a specific color you associate with high-value properties that you would
+  like us to use?
+
+  8. Would you like the median housing values represented with numeric labels on the
+  heatmap?
+
+  9. Should the heatmap show a gradient or distinct blocks of color for different
+  value ranges?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Labels would be best.
+
+  4. I do not know.
+
+  5. Including city names would be helpful.
+
+  6. I would prefer around 5 distinct color ranges.
+
+  7. I do not know.
+
+  8. Yes, please include numeric labels for median housing values.
+
+  9. A gradient would be better for visualizing the variations.
+
+
+  '
+data_attributes:
+- longitude
+- latitude
+- median_house_value

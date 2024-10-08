@@ -1,0 +1,42 @@
+initial_prompt: Please create a geographic heatmap using the Dubois Challenge tweets
+  dataset. Highlight the tweet density based on location data (lat, long). Show areas
+  with higher tweet activity in warmer colors. Include additional layers indicating
+  retweet counts and like counts as gradients or markers. Ensure it's interactive,
+  allowing zooming into specific locations like New York, where there seems to be
+  a concentration of data points. Display data labels like username and tweet content
+  when hovering over any specific point. Make the map easy to understand and visually
+  appealing.
+questions: '1. Do you have any specific color preferences for the heatmap, especially
+  for representing higher tweet densities?
+
+  2. How would you like the retweet and like counts to be visually differentiated
+  on the map (e.g., specific marker shapes, sizes, or gradient colors)?
+
+  3. Are there any particular map themes or styles you prefer (e.g., satellite view,
+  street view, dark mode)?
+
+  4. What level of zoom granularity would you like to be the default when the map
+  is first loaded?
+
+  5. Would you prefer a specific font style or size for data labels such as usernames
+  and tweet contents?'
+answers: '<start of user response>
+
+  1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not have any specific preference for font style or size.
+
+  <end of user response>'
+data_attributes:
+- lat
+- long
+- retweet_count
+- like_count
+- username
+- content

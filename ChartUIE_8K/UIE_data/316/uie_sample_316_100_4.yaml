@@ -1,0 +1,64 @@
+initial_prompt: Create a line chart using the Southeast Asian Bumblebee Specimen Dataset.
+  Plot the 'Year' on the x-axis and 'Species' on the y-axis to visualize the number
+  of different species collected over the years. Ensure missing values are handled
+  appropriately, and include legends for different species, if needed. Also, show
+  data points for each year to observe the trend. Highlight months and locations on
+  hover. This will help in understanding the distribution and variety of species collected
+  over time and their geographic data. Please make the chart interactive for better
+  analysis.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like the line style to be solid, dashed, or dotted?
+
+  3. Should data points be represented by specific markers (e.g., circles, squares,
+  triangles)?
+
+  4. Do you prefer a particular font style or size for the axis labels and legends?
+
+  5. How would you like missing values to be handled (e.g., interpolate, leave gaps)?
+
+  6. Do you want the chart to include grid lines? If yes, should they be horizontal,
+  vertical, or both?
+
+  7. Is there a specific way you would prefer the data for different species to be
+  distinguished (e.g., different colors, different line styles)?
+
+  8. Do you have a preferred position for the legend (e.g., top, bottom, left, right)?
+
+  9. Are there specific years or data ranges you want to highlight on the chart?
+
+  10. Do you require annotations for specific data points? If so, which ones?
+
+  11. Would you like to set a specific range for the x-axis and y-axis, or should
+  it be auto-scaled?
+
+  12. Do you prefer to display the month and location details in a tooltip or as part
+  of the hover functionality?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Specific markers representing the data points, like circles, would be good.
+
+  4. I am not sure.
+
+  5. Interpolate the missing values.
+
+  6. Yes, include grid lines, both horizontal and vertical.
+
+  7. Different colors for different species would be preferred.
+
+  8. I have no specific preference.
+
+  9. I do not have any specific years or data ranges to highlight.
+
+  10. No specific annotations are required.
+
+  11. It should be auto-scaled.
+
+  12. Display month and location details in a tooltip.'
+data_attributes:
+- Year
+- Species
+- Month
+- Location

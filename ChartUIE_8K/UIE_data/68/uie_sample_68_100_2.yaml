@@ -1,0 +1,48 @@
+initial_prompt: Please create a scatter plot visualizing state-sponsored cyber operations
+  from 2005 to the present. Use the data provided to plot each incident based on its
+  Title and Date. Highlight points by modifying their size or color to distinguish
+  different Types and Categories of operations. Annotate specific data points with
+  their Description and Sponsor to draw attention to significant events. The purpose
+  of the chart is to illustrate patterns and trends in cyber operations over time,
+  focusing on the varied types and categories of attacks. Ensure the annotations provide
+  contextual details to aid viewer understanding.
+questions: '1. Do you have a preferred color scheme for distinguishing between different
+  Types and Categories of operations?
+
+  2. How would you like significant events to be highlighted (e.g., larger markers,
+  different colors)?
+
+  3. Do you have a specific preference for the annotation style for Description and
+  Sponsor (e.g., tooltip, labels next to points)?
+
+  4. Would you like to include a legend to explain the different Types and Categories
+  of operations?
+
+  5. Are there any specific dates or ranges that you want to pay particular attention
+  to?
+
+  6. Do you have a preferred layout or positioning for the annotations to ensure they
+  do not overlap too much with the data points?
+
+  7. Would you prefer the Title of each incident to be displayed on the chart or in
+  an accompanying list?'
+answers: '1. I am not sure.
+
+  2. Highlight significant events with different colors.
+
+  3. I do not know.
+
+  4. Yes, please include a legend.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Display the Title of each incident on the chart.'
+data_attributes:
+- Title
+- Date
+- Type
+- Category
+- Description
+- Sponsor

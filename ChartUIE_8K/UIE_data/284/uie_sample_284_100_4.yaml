@@ -1,0 +1,57 @@
+initial_prompt: Create a stacked column chart using the Alzheimer's Disease Dataset
+  to compare patient demographics and health indicators. Use 'Age', 'Gender', 'Ethnicity'
+  as category columns stacked against 'CholesterolTotal', 'CholesterolLDL', 'CholesterolHDL',
+  and 'CholesterolTriglycerides'. In the chart, each category (e.g., different age
+  groups, genders, ethnicities) should have a corresponding stacked column showing
+  the composition of their cholesterol levels. This will help visualize how these
+  factors might be related to cholesterol levels among patients in the dataset. Format
+  labels for clarity.
+questions: '1. Do you have a preferred color palette for the chart?
+
+  2. How would you like the age groups to be categorized (e.g., specific age ranges)?
+
+  3. Should specific colors be assigned to each gender and ethnicity category?
+
+  4. Do you prefer specific sorting order for categories on the x-axis?
+
+  5. How detailed should the labels and titles be (e.g., only primary labels or including
+  annotations)?
+
+  6. Would you like to include a legend to explain the color coding?
+
+  7. Are there any specific fonts or font sizes you prefer for labels and titles?
+
+  8. Do you have any preference on the chart size or aspect ratio?
+
+  9. Should the chart include gridlines for easier comparison?
+
+  10. Do you require any specific pattern (e.g., stripes or dots) for differentiating
+  the stacked segments?'
+answers: '1. I am not sure.
+
+  2. I would like the age groups to be categorized in ranges of 10 years (e.g., 50-59,
+  60-69).
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Only primary labels are fine.
+
+  6. Yes, please include a legend to explain the color coding.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. Yes, include gridlines for easier comparison.
+
+  10. I do not know.'
+data_attributes:
+- Age
+- Gender
+- Ethnicity
+- CholesterolTotal
+- CholesterolLDL
+- CholesterolHDL
+- CholesterolTriglycerides

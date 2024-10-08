@@ -1,0 +1,55 @@
+initial_prompt: 'Please create a heatmap to visualize the correlations between the
+  different variables in the Boston House Prices dataset. Make sure to include all
+  columns: CRIM, ZN, INDUS, CHAS, NOX, RM, AGE, DIS, RAD, TAX, PTRATIO, B, LSTAT,
+  and MEDV. Use a color gradient to indicate the strength of the correlations. Data
+  details indicate it''s related to real estate prices, so the relationship between
+  MEDV (home prices) and other variables is critical. Ensure the heatmap is clear,
+  with labels and a legend for easy interpretation of data strengths and weaknesses
+  in their correlations.'
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Would you like specific correlation thresholds to be highlighted with different
+  colors?
+
+  3. Do you have a specific preference for the ordering of the variables on the x
+  and y axes?
+
+  4. Should the heatmap include numerical correlation values within the cells?
+
+  5. Do you prefer a specific orientation (landscape or portrait) for the heatmap?
+
+  6. Are there any specific axis label formats or font styles/sizes you prefer?
+
+  7. Would you like to add any titles or subtitles to the heatmap?
+
+  8. Do you have any preferences for the legend placement on the heatmap?'
+answers: '1. I do not have a preferred color palette for the heatmap.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include numerical correlation values within the cells.
+
+  5. I do not have a specific orientation preference for the heatmap.
+
+  6. I am not sure.
+
+  7. Yes, please add a title: "Correlation Heatmap of Boston House Prices Dataset".
+
+  8. I have no specific preference for the legend placement.'
+data_attributes:
+- CRIM
+- ZN
+- INDUS
+- CHAS
+- NOX
+- RM
+- AGE
+- DIS
+- RAD
+- TAX
+- PTRATIO
+- B
+- LSTAT
+- MEDV

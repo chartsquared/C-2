@@ -1,0 +1,50 @@
+initial_prompt: I need a geographic heatmap showing the locations of animal rescue
+  incidents from the data provided. The heatmap should display data points using the
+  latitude and longitude values from each incident and highlight areas with higher
+  rescue activity. Please ensure that the map is color-coded to show the density of
+  incidents, with warmer colors indicating higher numbers of rescues. Incorporate
+  details like type of incident, property type, and borough to provide additional
+  context. It's important to visualize hotspots within the boroughs mentioned in the
+  data. Thank you!
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the map focus on specific boroughs or display all boroughs uniformly?
+
+  3. Do you want to emphasize any specific type of incident or property type in the
+  visualization?
+
+  4. Would you prefer to include an interactive legend explaining the different colors
+  representing the density of incidents?
+
+  5. Is there a specific base map style (e.g., satellite view, street view) you would
+  like to use for the background?
+
+  6. Do you want to include tooltips or labels on the map to provide additional information
+  when hovering over points?
+
+  7. Should the heatmap display be normalized per borough, or should it show absolute
+  counts?
+
+  8. Are there any specific time ranges or periods you want to filter or emphasize
+  in the heatmap?'
+answers: '1. I do not know.
+
+  2. Display all boroughs uniformly.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Street view.
+
+  6. I have no specific preference.
+
+  7. Show absolute counts.
+
+  8. I am not sure.'
+data_attributes:
+- latitude
+- longitude
+- type_of_incident
+- property_type
+- borough

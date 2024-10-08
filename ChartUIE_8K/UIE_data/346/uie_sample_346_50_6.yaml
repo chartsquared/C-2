@@ -1,0 +1,51 @@
+initial_prompt: Please create a column chart showing the top three video games by
+  global sales. Use "Name" for the x-axis and "Global_Sales" for the y-axis. Show
+  different colors for "NA_Sales", "EU_Sales", "JP_Sales", and "Other_Sales" within
+  each bar.
+questions: '1. Do you have a preferred color palette for distinguishing between "NA_Sales",
+  "EU_Sales", "JP_Sales", and "Other_Sales"?
+
+  2. Should the chart include labels showing the exact sales figures for each region
+  within the bars?
+
+  3. Would you prefer a specific order for the bars on the x-axis, such as descending
+  by "Global_Sales"?
+
+  4. Do you have a preference for the chart title and axis labels?
+
+  5. Would you like gridlines or reference lines to be included in the chart to enhance
+  readability?
+
+  6. Should tooltips be displayed when hovering over different segments of the bars?
+
+  7. Do you have a specific font style and size preference for the text in the chart?
+
+  8. Would you like to display a legend to describe the colors used for different
+  regions’ sales?
+
+  9. Should the chart have any specific background color or styling?'
+answers: '1. I am not sure.
+
+  2. I don''t know.
+
+  3. I would prefer the bars to be in descending order by "Global_Sales".
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. Yes, please include a legend to describe the colors used for different regions’
+  sales.
+
+  9. I don''t know.'
+data_attributes:
+- Name
+- Global_Sales
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales

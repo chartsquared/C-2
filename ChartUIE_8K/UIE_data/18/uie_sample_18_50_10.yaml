@@ -1,0 +1,51 @@
+initial_prompt: Create a box chart visualizing base_total, attack, defense, sp_attack,
+  sp_defense, speed for each generation from "The Complete Pokemon Dataset". Highlight
+  outliers.
+questions: '1. Do you have a preferred color scheme for the box plot?
+
+  2. Do you want each generation to be represented by different colors?
+
+  3. Should the outliers be highlighted with a specific color or marker type?
+
+  4. Do you have a preferred title for the chart?
+
+  5. Should we include a legend for the different attributes?
+
+  6. Would you like to have grid lines for easier comparison?
+
+  7. Do you prefer the x-axis or y-axis to be log-scaled?
+
+  8. Do you need any specific labels for the axes?
+
+  9. Is there any specific order in which you want the attributes (base_total, attack,
+  etc.) to be displayed?
+
+  10. Are there any specific generations or attributes you want to exclude from the
+  visualization?'
+answers: '1. I am not sure.
+
+  2. Yes, different colors for each generation would be great.
+
+  3. Yes, please highlight the outliers with a specific color or marker.
+
+  4. I do not know.
+
+  5. Yes, including a legend for the different attributes would be helpful.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, please label the axes clearly.
+
+  9. I do not know.
+
+  10. No, please include all generations and attributes.'
+data_attributes:
+- base_total
+- attack
+- defense
+- sp_attack
+- sp_defense
+- speed
+- generation

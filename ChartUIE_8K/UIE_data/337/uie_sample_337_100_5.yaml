@@ -1,0 +1,45 @@
+initial_prompt: Please create a Choropleth map to visualize the distribution of our
+  customers across the United States. Use the "State" and "Sales" columns from the
+  data provided to represent the total sales in each state. This map will help us
+  identify the states with the highest and lowest sales, enabling us to optimize our
+  supply chain management for car sales in different regions. Attach the map to the
+  report, including a color legend to represent sales magnitude accurately. Additionally,
+  ensure the tooltips show state names and corresponding sales figures for user interaction.
+questions: '1. Do you have any color preferences for the color legend depicting sales
+  magnitude?
+
+  2. Would you like specific color ranges such as blue to red, green to yellow, etc.?
+
+  3. Should the color gradient be linear or logarithmic?
+
+  4. Is there a particular style or theme you prefer for the map (e.g., minimalistic,
+  vibrant, professional)?
+
+  5. Should the map include state borders or other geographical details?
+
+  6. Are there any specific labels or additional information you would like to see
+  apart from state names and sales figures in the tooltips?
+
+  7. Do you have any preferences regarding the font type or size for the map and legend
+  labels?
+
+  8. Would you like the sales data to be displayed in absolute numbers or as percentages
+  of total sales?'
+answers: '1. I am not sure about the color preferences for the color legend.
+
+  2. A blue to red color range would be fine.
+
+  3. I do not know if the gradient should be linear or logarithmic.
+
+  4. A professional style for the map is preferred.
+
+  5. I am not sure; whatever you think is best.
+
+  6. No, just the state names and sales figures in the tooltips.
+
+  7. I do not have any specific preferences for the font type or size.
+
+  8. Please display the sales data in absolute numbers.'
+data_attributes:
+- State
+- Sales

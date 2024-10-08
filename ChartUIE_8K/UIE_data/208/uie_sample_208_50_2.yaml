@@ -1,0 +1,46 @@
+initial_prompt: Create a scatter plot chart using the provided Boston House Prices
+  dataset. Highlight data points with high "MEDV" values. Annotate specific points
+  showing "CRIM" versus "MEDV" relationships. Make sure to color-code by "CHAS". This
+  should help in visualizing the impact of crime rate on median housing prices.
+questions: '1. Do you have any specific preferences for the positioning and style
+  of the annotations on the chart?
+
+  2. Do you have a particular color scheme in mind for distinguishing the "CHAS" variable?
+
+  3. What threshold value would you like to use to define "high" for the "MEDV" values
+  that need to be highlighted?
+
+  4. Should the highlighted "MEDV" data points have a specific marker style or size?
+
+  5. Do you prefer any specific fonts or font sizes for the labels and annotations?
+
+  6. Would you like a legend included to explain the color-coding by "CHAS" and highlighted
+  points? If yes, do you have a preference for its location on the chart?
+
+  7. Is there a particular chart title or axis labels you would like to use?
+
+  8. Do you have preferences for the range or scaling of the "CRIM" and "MEDV" axes?
+
+  9. Would you like gridlines on the chart? If so, should they be in a specific style
+  or color?'
+answers: '1. I am not sure.
+
+  2. I do not have a particular color scheme in mind.
+
+  3. I would like to use a threshold of 25 for defining "high" for the "MEDV" values.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. Yes, I would like a legend included. I do not have a preference for its location.
+
+  7. I do not have a specific chart title or axis labels in mind.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- CRIM
+- MEDV
+- CHAS

@@ -1,0 +1,46 @@
+initial_prompt: Create a stacked bar chart to visualize alcohol consumption worldwide.
+  Use countries as categories and stack beer, spirit, and wine servings along with
+  total litres of pure alcohol. Highlight countries with the highest total consumption.
+  Add annotations to show exact values for top five countries and note that Afghanistan
+  has zero consumption as context. The purpose is to compare alcohol consumption patterns
+  across different nations, emphasizing those with extreme values for better understanding
+  of global drinking habits. Make sure the legend distinguishes between beer, spirit,
+  and wine servings effectively.
+questions: '1. Do you have any specific preferences for the color palette used in
+  the chart, especially for distinguishing between beer, spirit, and wine servings?
+
+  2. What type of font would you prefer for the annotations and labels on the chart?
+
+  3. Do you have a preferred format or style for the annotations showing the exact
+  values for the top five countries?
+
+  4. Should the chart include gridlines for better readability, and if so, do you
+  have a specific preference for their style (e.g., dashed, dotted)?
+
+  5. Do you want specific formatting for the legend to ensure clarity between different
+  servings types?
+
+  6. Are there any specific countries, in addition to Afghanistan, you would like
+  to highlight or annotate within the chart?
+
+  7. Do you have a preference for the chart''s orientation (vertical or horizontal
+  stacked bar chart)?
+
+  8. Would you like to include labels for total litres of pure alcohol directly on
+  the bars, or should they be incorporated in a tooltip or separate annotation?
+
+  9. Should the chart include a title and subtitle, and if so, what would you like
+  them to be?'
+answers: "1. I am not sure. \n2. I do not know.\n3. I prefer clear, unobtrusive annotations\
+  \ that do not clutter the chart.\n4. Yes, include gridlines. I am not sure about\
+  \ the style.\n5. I do not have a specific format but ensure it's clear.\n6. No,\
+  \ just the top five countries and Afghanistan.\n7. Vertical stacked bar chart.\n\
+  8. Include labels for total litres of pure alcohol directly on the bars.\n9. Yes,\
+  \ title: \"Global Alcohol Consumption Patterns\". Subtitle: \"Comparing Beer, Spirit,\
+  \ and Wine Servings with Total Pure Alcohol Consumption\"."
+data_attributes:
+- country
+- beer_servings
+- spirit_servings
+- wine_servings
+- total_litres_of_pure_alcohol

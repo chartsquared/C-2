@@ -1,0 +1,51 @@
+initial_prompt: I need a box chart visualizing the Palmer Penguins dataset, focusing
+  on bill length, bill depth, flipper length, and body mass across different species
+  and islands. Highlight outliers and display data-driven text annotations for key
+  elements like median values and notable outliers. Incorporate elements to distinguish
+  sex differences visually. The purpose is to explore species differences and trends
+  while drawing attention to specifics like extreme values. The chart should provide
+  an intuitive overview of penguin species' physical characteristics for environmental-science
+  research. Ensure missing values are handled appropriately for clarity.
+questions: '1. Do you have a preferred color scheme for distinguishing between different
+  species and sex differences?
+
+  2. How would you like the outliers to be highlighted? (e.g., color, shape, size)
+
+  3. What kind of text annotations do you prefer for median values and notable outliers?
+  (e.g., labels, tooltips)
+
+  4. Are there any specific font styles or sizes you would like for text annotations?
+
+  5. How should missing values be handled in the visualization? (e.g., removing them,
+  imputing with mean/median values)
+
+  6. Do you have a preference for the orientation of the box chart (horizontal/vertical)?
+
+  7. What level of detail would you like in the axis labels and legends? (e.g., full
+  names, abbreviations)
+
+  8. Should the plot include any grid lines or background shading for better readability?'
+answers: '1. I am not sure.
+
+  2. I would like outliers to be highlighted using a different color and shape.
+
+  3. Labels would be preferred for text annotations for median values and notable
+  outliers.
+
+  4. I do not have any specific preference for font styles or sizes.
+
+  5. Please remove the missing values for clarity.
+
+  6. I do not know.
+
+  7. Full names for axis labels and legends would be ideal.
+
+  8. I am not sure.'
+data_attributes:
+- species
+- island
+- bill_length_mm
+- bill_depth_mm
+- flipper_length_mm
+- body_mass_g
+- sex

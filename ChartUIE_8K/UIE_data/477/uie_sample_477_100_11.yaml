@@ -1,0 +1,45 @@
+initial_prompt: Please create a stacked column chart that shows the voting results
+  for different questions at Pizza Mercato. Use the columns 'answer', 'votes', and
+  'question' to represent the data. Each column stack should represent a different
+  question, and within each stack, different sections should display the percentage
+  votes for answers like 'Excellent', 'Good', 'Average', etc. The x-axis should have
+  the question categories and the y-axis the number of votes. This will help visualize
+  customer feedback on various questions about Pizza Mercato.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like to display the exact percentage values on each section of the
+  stack?
+
+  3. Do you have any specific preferences for the order of answers within each stack
+  (e.g., Excellent at the top)?
+
+  4. Would you prefer the y-axis to display absolute numbers of votes or normalized
+  percentages?
+
+  5. Is there a particular font or style you would like for the labels and titles?
+
+  6. Do you need any specific title or subtitle for the chart?
+
+  7. Would you like any specific gridlines or background style for the chart area?
+
+  8. Do you prefer any specific width and spacing between the columns in the chart?'
+answers: '1. I don''t have a specific color scheme in mind.
+
+  2. I am not sure about displaying the exact percentage values.
+
+  3. Yes, I would prefer to have ''Excellent'' at the top within each stack.
+
+  4. I prefer the y-axis to display the number of votes.
+
+  5. I do not have a specific preference for the font or style for the labels and
+  titles.
+
+  6. I would like the title to be "Customer Feedback on Pizza Mercato".
+
+  7. I don''t have any specific preference for gridlines or background style.
+
+  8. I am not sure about the width and spacing between the columns.'
+data_attributes:
+- answer
+- votes
+- question

@@ -1,0 +1,47 @@
+initial_prompt: '<start of user emulated instruction>
+
+  Create a bar chart that shows the number of customers by Geography (France, Spain,
+  and Germany) using the data from the provided dataset. Each bar should represent
+  one of the three Geographies and show the count of customers for each. Please include
+  labels for each bar indicating the exact number of customers. Also, add a title
+  "Customer Distribution by Geography" and label the axes appropriately with "Geography"
+  on the x-axis and "Number of Customers" on the y-axis. Ensure the chart is clear
+  and easy to interpret.
+
+  <end of user emulated instruction>'
+questions: '1. Do you have any specific color preferences for the bars representing
+  each geography?
+
+  2. Would you like to include a legend, or is it clear enough with labels?
+
+  3. Do you prefer a horizontal or vertical bar chart?
+
+  4. Are there any specific font styles or sizes you prefer for the title and axis
+  labels?
+
+  5. Do you have any preference for the spacing between bars?
+
+  6. Would you like gridlines on the chart for better readability?
+
+  7. Is there any additional information or annotation you would like to include on
+  the chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Vertical bar chart.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, I would like gridlines.
+
+  7. No, there is no additional information needed.
+
+  <end of user emulated response>'
+data_attributes:
+- Geography
+- CustomerId

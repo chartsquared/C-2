@@ -1,0 +1,57 @@
+initial_prompt: Create a stacked bar chart to compare the total votes (general and
+  postal) received by candidates across different constituencies. Use the NAME for
+  candidate labels and COLORS to differentiate PARTY. Highlight winners.
+questions: '1. Do you have any preferred colors for differentiating the parties in
+  the stacked bar chart?
+
+  2. Would you like to add a specific title to the chart?
+
+  3. Do you want to include axis titles and labels? If so, what should they be?
+
+  4. Should the chart include a legend, and if so, where would you prefer it to be
+  placed (e.g., top, bottom, left, right)?
+
+  5. Are there specific fonts or font sizes you would like to use for the labels and
+  titles?
+
+  6. Would you like to display data values on the bars themselves?
+
+  7. Do you have any preferences for the chart''s background (e.g., color or grid
+  lines)?
+
+  8. Should the winners be highlighted with a specific color or pattern? If so, what
+  is your preference?
+
+  9. How would you like the constituencies to be ordered on the x-axis (e.g., alphabetical,
+  by total votes, etc.)?
+
+  10. Are there any additional annotations or insights you want to include in the
+  chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please label the axes. For the x-axis, "Constituencies," and for the y-axis,
+  "Total Votes."
+
+  4. Yes, include a legend. I am not sure about the placement.
+
+  5. I do not have a specific preference.
+
+  6. Yes, display data values on the bars.
+
+  7. I do not know.
+
+  8. Highlight the winners, but I am unsure about the specific color or pattern.
+
+  9. Order the constituencies alphabetically.
+
+  10. I do not know.'
+data_attributes:
+- CONSTITUENCY
+- NAME
+- PARTY
+- "GENERAL\r\nVOTES"
+- "POSTAL\r\nVOTES"
+- "TOTAL\r\nVOTES"
+- WINNER

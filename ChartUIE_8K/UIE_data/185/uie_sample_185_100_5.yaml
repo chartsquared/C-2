@@ -1,0 +1,44 @@
+initial_prompt: Using the dataset on the percent change in consumer spending, create
+  a choropleth map showing the state-wise variation in spending changes for different
+  categories. Use the 'State FIPS code' as the geographical identifier, and visualize
+  categories like 'Accommodation and food service (ACF) spending', 'Arts, entertainment,
+  and recreation (AER) spending', and 'Grocery and food store (GRF) spending'. Each
+  state should be color-coded based on spending change percentages. Tooltips should
+  provide detailed information for each state, such as exact percent changes for all
+  listed categories. Ensure the map is easy to read with a clear legend.
+questions: '1. Do you have any preference for the color scheme to be used in the choropleth
+  map?
+
+  2. How many color gradients would you like to see in the choropleth map?
+
+  3. Do you prefer a particular style or format for the map legend?
+
+  4. Would you like any specific labeling or annotations on the map?
+
+  5. Is there a particular font style or size you prefer for labels and tooltips?
+
+  6. Do you have any requirements for the map''s background and borders?
+
+  7. Are there specific threshold values for spending changes that you want to highlight?
+
+  8. Do you prefer a particular ordering for the categories in the tooltips?'
+answers: '1. I am not sure.
+
+  2. I would like to see around 5 color gradients.
+
+  3. I do not have a specific preference for the map legend format.
+
+  4. I am not sure.
+
+  5. I do not have a preference for font style or size.
+
+  6. I am not sure about the background and borders.
+
+  7. No, I do not have specific threshold values.
+
+  8. No, I do not prefer a particular ordering for the categories in the tooltips.'
+data_attributes:
+- State FIPS code
+- Accommodation and food service (ACF) spending
+- Arts, entertainment, and recreation (AER) spending
+- Grocery and food store (GRF) spending

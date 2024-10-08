@@ -1,0 +1,61 @@
+initial_prompt: Please create a line chart using the Palmer Penguins Dataset from
+  environmental-science. I want to see the variation of body mass (g) over the years
+  for different species. Plot the years on the x-axis and body mass (g) on the y-axis.
+  Use different lines or colors to represent each species. Ensure the chart clearly
+  displays trends and comparison among the species over the given years.
+questions: '1. Do you have a preferred color scheme for distinguishing between different
+  penguin species?
+
+  2. What level of detail do you prefer for the x-axis labels (e.g., years only or
+  more granular intervals)?
+
+  3. Would you like grid lines to be displayed on the chart for ease of comparison?
+
+  4. Do you want data points to be marked on the lines, or just smooth lines representing
+  the trends?
+
+  5. Are there any specific annotations or labels you would like to include on the
+  chart?
+
+  6. Do you have a preference for the chart title and axis labels'' font size, style,
+  or weight?
+
+  7. Should the chart include a legend to identify which color or line represents
+  which species?
+
+  8. Would you like to see confidence intervals or error bars on the chart to represent
+  variability or uncertainty?
+
+  9. Any specific preferences for the thickness and style of the lines (e.g., solid,
+  dashed, dotted)?
+
+  10. Do you prefer a specific layout or aspect ratio for the chart that suits your
+  presentation format?'
+answers: '<start of user emulated response>
+
+  1. I am not sure about the color scheme. Any distinct colors will work.
+
+  2. Years only on the x-axis labels are fine.
+
+  3. Yes, grid lines would be helpful.
+
+  4. I am not sure. Maybe data points marked on the lines would be good.
+
+  5. I do not have any specific annotations or labels in mind.
+
+  6. I am not sure about the font size, style, or weight for the title and labels.
+
+  7. Yes, please include a legend to identify each species.
+
+  8. I do not know. Maybe it''s best to see the chart without confidence intervals
+  first.
+
+  9. I have no specific preference for the thickness and style of the lines.
+
+  10. I do not have any specific layout or aspect ratio preference.
+
+  <end of user emulated response>'
+data_attributes:
+- species
+- year
+- body_mass_g

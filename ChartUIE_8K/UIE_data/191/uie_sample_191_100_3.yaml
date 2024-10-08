@@ -1,0 +1,61 @@
+initial_prompt: Please create a histogram for brain tumor data visualization. Use
+  the 'Class' column to differentiate between tumor-present and tumor-absent images.
+  For each class, depict histograms of 'Mean', 'Variance', 'Standard Deviation', 'Entropy',
+  'Skewness', 'Kurtosis', 'Contrast', 'Energy', 'ASM', 'Homogeneity', and 'Dissimilarity'.
+  This will help in understanding the distribution of these attributes for each class.
+  Use separate histograms side by side for better comparison. Ensure the x-axis represents
+  the metric values and the y-axis represents the frequency count.
+questions: '1. Do you have a preferred color scheme for distinguishing the tumor-present
+  and tumor-absent classes?
+
+  2. Would you like any specific titles or labels for each histogram?
+
+  3. Do you require any specific formatting for the axes labels or legend?
+
+  4. Is there a preferred font type or size for the text in the chart?
+
+  5. Do you need gridlines to be displayed on the histograms? If so, specify the style.
+
+  6. Would you like to include any annotations or markers on the histograms?
+
+  7. Do you have a preference for the bin size or the number of bins for the histograms?
+
+  8. Should the histograms include normalization (e.g., probability density instead
+  of frequency count)?
+
+  9. Would you like any statistical information (e.g., mean, median) to be displayed
+  on the histograms?
+
+  10. Is there a specific order in which you would like the metrics to be displayed?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer standard formatting for the axes labels and legend.
+
+  4. I do not have a preference for font type or size.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not have a preference for the bin size or number of bins.
+
+  8. No, frequency count is fine.
+
+  9. I do not know.
+
+  10. There is no specific order for displaying the metrics.'
+data_attributes:
+- Class
+- Mean
+- Variance
+- Standard Deviation
+- Entropy
+- Skewness
+- Kurtosis
+- Contrast
+- Energy
+- ASM
+- Homogeneity
+- Dissimilarity

@@ -1,0 +1,41 @@
+initial_prompt: Create a box chart to visualize the distribution of differential rankings
+  for albums between 2003, 2012, and 2020 from the Rolling Stone Album Rankings dataset.
+  The chart should display the range, median, and any outliers of differentials for
+  these years. Label the x-axis with 'Year', using 2003, 2012, and 2020 as categories,
+  and the y-axis with 'Differential in Rankings'. Include a title to indicate the
+  comparison of album rank changes over the years. This will help us understand how
+  album rankings have shifted over time.
+questions: "1. Do you have any preferred color schemes for the box chart?\n2. Would\
+  \ you like specific annotations on any of the data points?\n3. Should the chart\
+  \ include gridlines for better readability?\n4. Do you prefer any specific font\
+  \ style or size for the labels and title?\n5. Do you need a legend to explain any\
+  \ specific elements of the chart?\n6. Is there a specific width or height you prefer\
+  \ for the box chart?\n7. Would you like any additional statistical details displayed\
+  \ on the chart, such as quartiles or mean values? \n8. Is there any specific ordering\
+  \ of the years (2003, 2012, 2020) you prefer on the x-axis?\n9. Are there any specific\
+  \ outliers you want to highlight or annotate?\n10. Do you prefer a particular software\
+  \ or tool for creating the visualization (e.g., Matplotlib, Tableau)?"
+answers: '1. I do not have a preferred color scheme.
+
+  2. I am not sure.
+
+  3. Yes, please include gridlines for better readability.
+
+  4. I do not have a specific preference for font style or size.
+
+  5. No, I do not need a legend.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No specific ordering preference for the years.
+
+  9. I do not need specific outliers highlighted.
+
+  10. I do not have a preference for the software or tool used.'
+data_attributes:
+- rank_2003
+- rank_2012
+- rank_2020
+- differential

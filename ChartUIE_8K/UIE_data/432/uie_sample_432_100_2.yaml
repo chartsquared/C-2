@@ -1,0 +1,47 @@
+initial_prompt: Create a bar chart visualizing the IMDb votes per episode for the
+  TV show. Each bar should represent an episode, with the height indicating the total
+  votes. Use different colors to distinguish between seasons. Add text annotations
+  for episodes with the highest and lowest votes to highlight their ratings. This
+  visualization will help in understanding viewer preferences across different seasons
+  and identify which episodes were most and least popular. The purpose is to provide
+  an insightful look into audience engagement and preferences throughout the series.
+  Include ratings and dates as additional context.
+questions: '1. Do you have any specific color preferences for different seasons?
+
+  2. How would you like the text annotations to be formatted (e.g., font size, color)?
+
+  3. Do you prefer the bars to be arranged by episode air date or by episode number
+  within each season?
+
+  4. Would you like any specific font style or size to be used for axis labels and
+  titles?
+
+  5. Do you prefer a specific orientation for the bar chart (vertical or horizontal)?
+
+  6. Are there any additional context details you want to be included in the visualization,
+  beyond ratings and dates?
+
+  7. Do you have any preferences for the layout or positioning of the legend on the
+  chart?'
+answers: '1. I am not sure.
+
+  2. I would like the text annotations to be clear and easily readable, but I don''t
+  have specific preferences for font size or color.
+
+  3. I prefer the bars to be arranged by episode air date.
+
+  4. I do not have a specific preference for font style or size for axis labels and
+  titles.
+
+  5. I prefer a vertical orientation for the bar chart.
+
+  6. No, ratings and dates are sufficient for additional context.
+
+  7. I do not know.'
+data_attributes:
+- season
+- episode
+- title
+- imdb_rating
+- total_votes
+- air_date

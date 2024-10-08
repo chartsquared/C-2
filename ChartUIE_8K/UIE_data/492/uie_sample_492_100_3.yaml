@@ -1,0 +1,56 @@
+initial_prompt: 'I have a dataset with time-series data, involving two columns: time
+  and signal, both consisting of floating-point numbers. Refer to the summary and
+  sample data provided to plot the chart. I want a line chart that shows how the signal
+  changes over time. The x-axis should represent the time in seconds (time column),
+  and the y-axis should illustrate the corresponding signal values (signal column).
+  Please ensure the line chart accurately reflects the signal''s trend throughout
+  the entire time range, making it easy to analyze any variations or patterns in the
+  signal.'
+questions: '1. Do you have any specific preferences for the color of the line?
+
+  2. Would you like to include gridlines in the chart?
+
+  3. Should the chart have data point markers (e.g., dots) along the line?
+
+  4. Do you need any specific labels or annotations on the chart?
+
+  5. Would you like to include a title for the chart? If so, what should it be?
+
+  6. Do you have a preference for the font style or size for axis labels and titles?
+
+  7. Should the x-axis and y-axis have specific ranges, or should they be automatically
+  determined based on the data?
+
+  8. Do you want a legend, even though there is only one line representing the signal?
+
+  9. Are there any specific formats you prefer for the time axis (e.g., displaying
+  time in milliseconds, seconds, or a custom format)?
+
+  10. Should there be any custom formatting for the y-axis signal values (e.g., decimal
+  places, scientific notation)?
+
+  11. Do you prefer a solid line, dashed line, or another style for the line?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include gridlines in the chart.
+
+  3. I am not sure about the data point markers.
+
+  4. I do not know.
+
+  5. Yes, please title it "Signal Variation Over Time".
+
+  6. I am not sure.
+
+  7. The ranges should be automatically determined based on the data.
+
+  8. No, I do not need a legend.
+
+  9. Display time in seconds.
+
+  10. I do not know.
+
+  11. A solid line is preferred.'
+data_attributes:
+- time
+- signal

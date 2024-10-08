@@ -1,0 +1,40 @@
+initial_prompt: I want a violin plot chart to visualize Google's stock market data
+  in its founding years. The chart should display the distribution of the 'Open',
+  'High', 'Low', and 'Close' prices. Make sure to highlight key points like the highest
+  and lowest prices to emphasize significant trends. Also, add text annotations to
+  specific data points to highlight important values. This will help in understanding
+  the performance over different dates, with focus on notable shifts in stock prices.
+  Use colors to make outliers stand out. The goal is to quickly grasp the stock's
+  volatility and trends from 2004 to 2008.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Are there specific text annotations you want on the highest and lowest prices,
+  or any other key points?
+
+  3. Should the date range be broken down further into months or quarters, or keep
+  it yearly?
+
+  4. Do you prefer any particular style for the violin plot, like a smooth or rigid
+  kernel density estimate?
+
+  5. Would you like grid lines or any other guide marks to be included for better
+  readability?
+
+  6. Do you have a preference for the font or size of text annotations and labels?'
+answers: '1. I am not sure.
+
+  2. Yes, please add text annotations on the highest and lowest prices.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, grid lines would be helpful.
+
+  6. I have no specific preference.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

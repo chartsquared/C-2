@@ -1,0 +1,49 @@
+initial_prompt: Create a scatter plot to visualize sales in the Superstore Sales Dataset.
+  The x-axis should represent 'Order Date', and the y-axis should represent 'Sales'.
+  Use different colors or markers to denote each 'Category' (e.g., Furniture, Office
+  Supplies). Additionally, include a legend to differentiate between the categories.
+  This plot will help to see the trend of sales over time across different categories.
+  Make sure to label the axes, and provide a title for the scatter plot.
+questions: '1. What title would you like for the scatter plot?
+
+  2. Do you have any specific preferences for the color scheme used for different
+  categories?
+
+  3. Would you like to set a specific date format for the x-axis labels?
+
+  4. Are there any specific fonts or font sizes you would prefer for the axes labels
+  and title?
+
+  5. Do you have a preference for the marker style (e.g., circle, square, triangle)
+  to represent different categories?
+
+  6. Would you like to include any gridlines or other background elements in the plot?
+
+  7. Do you want to apply any specific filters or focus on a particular date range
+  within the dataset?
+
+  8. Should the plot include data points for all available sales, or are there particular
+  sales ranges that should be highlighted or omitted?'
+answers: '<start of user response>
+
+  1. "Superstore Sales Over Time by Category"
+
+  2. I do not have a specific preference.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not have a preference.
+
+  6. I am not sure.
+
+  7. No specific date range, include all data.
+
+  8. Include all available sales data.
+
+  <end of user response>'
+data_attributes:
+- Order Date
+- Sales
+- Category

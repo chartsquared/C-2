@@ -1,0 +1,38 @@
+initial_prompt: I need a line chart to visualize the data from the Dubois challenge
+  tweets. Please plot the number of tweets over time, using the 'datetime' column
+  for the x-axis. For the y-axis, plot 'retweet_count', 'like_count', and 'quote_count'
+  to compare engagement trends over the given period. Use distinct colors for each
+  type of count. Include markers on the lines for data points. Add a legend to differentiate
+  the lines. Include axis labels and a title for the chart. Thanks!
+questions: '1. Do you have a preference for the background color of the chart?
+
+  2. Are there specific font types or sizes you would like for the axis labels?
+
+  3. Do you prefer a specific style for the markers on the data points (e.g., circles,
+  squares, or triangles)?
+
+  4. Do you have any preferences for the placement and styling of the legend?
+
+  5. Is there a specific date format you prefer on the x-axis?
+
+  6. Do you want gridlines on the chart? If so, what density and style do you prefer?
+
+  7. Would you like to include annotations or tooltips for any specific data points?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Circles would be fine.
+
+  4. I do not have a specific preference.
+
+  5. No specific preference.
+
+  6. Yes, include gridlines. I am not sure about the density and style.
+
+  7. No annotations or tooltips needed.'
+data_attributes:
+- datetime
+- retweet_count
+- like_count
+- quote_count

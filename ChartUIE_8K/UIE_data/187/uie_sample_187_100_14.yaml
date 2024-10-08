@@ -1,0 +1,40 @@
+initial_prompt: I'd like a Treemap chart that visualizes the "Marvel Superhero Movies"
+  dataset. This chart should display the different categories of films (like "Ant-Man,"
+  "Avengers") as separate sections. Each section should be sized based on the "worldwide
+  gross ($m)" values of the films. Additionally, color-code the sections by the "critics
+  % score" to see the correlation between the critics' scores and the gross earnings.
+  This will help in understanding how well different categories and movies within
+  those categories performed financially and critically.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How should the colors be assigned based on ''critics % score'' (e.g., high to
+  low, specific color grades)?
+
+  3. Should there be a legend explaining the color-coding of ''critics % score''?
+
+  4. Do you have any specific preferences for the labeling of sections (e.g., show
+  gross earnings, critics score, both)?
+
+  5. Would you like to include tooltips with additional information on hover?
+
+  6. Do you have a preference for the font style and size used in the chart labels?
+
+  7. Should the sections be sorted in any particular order (e.g., by gross earnings,
+  alphabetical)?'
+answers: '1. I am not sure.
+
+  2. High to low.
+
+  3. Yes, there should be a legend.
+
+  4. Show both gross earnings and critics score.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. By gross earnings.'
+data_attributes:
+- category
+- worldwide gross ($m)
+- critics % score

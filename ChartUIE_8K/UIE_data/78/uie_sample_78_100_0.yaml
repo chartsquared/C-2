@@ -1,0 +1,51 @@
+initial_prompt: Create a line chart to show the trend of "score" over "created" time
+  for different "title" entries. Use data-driven text annotations to highlight the
+  maximum and minimum scores in the dataset. Utilize highlights to distinguish between
+  different titles by using varying colors. The chart should help analyze the pattern
+  or trend in scores of different posts over time and focus on data concerning COVID-19
+  seen through Reddit posts. Make sure the x-axis represents the timestamp, and the
+  y-axis represents the score. Annotate critical points to draw attention to specific
+  events and trends.
+questions: '1. Do you have a preferred color palette or specific colors you would
+  like to use to differentiate between different "title" entries?
+
+  2. Where would you like the data-driven text annotations for the maximum and minimum
+  scores to be placed?
+
+  3. Would you like the chart to include a legend to identify each "title" by color?
+
+  4. Do you have any preferences for the style and format of the x-axis and y-axis
+  labels?
+
+  5. Are there any specific events or trends that you want to be annotated apart from
+  the maximum and minimum scores?
+
+  6. Do you prefer a specific font style or size for the text annotations and axis
+  labels?
+
+  7. Should grid lines be included in the background of the chart for better readability?
+  If yes, do you have a preference for the style of the grid lines?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference for the color palette.
+
+  2. I''m not sure, maybe place them near the data points where the maximum and minimum
+  scores occur.
+
+  3. Yes, please include a legend to identify each "title" by color.
+
+  4. I have no specific preference for the style and format of the axis labels.
+
+  5. I am not sure, just the maximum and minimum scores should be fine for now.
+
+  6. I do not know, no specific preferences for the font style or size.
+
+  7. Yes, please include grid lines for better readability, but I am not sure about
+  the style.
+
+  <end of user emulated response>'
+data_attributes:
+- title
+- score
+- created
+- timestamp

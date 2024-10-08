@@ -1,0 +1,57 @@
+initial_prompt: I need an area chart that visualizes the changes in cropland over
+  time for different continents. Use the data provided, focusing on the 'Year' and
+  'Cropland (HYDE (2017))' columns for each entity. Make sure to handle missing values
+  appropriately, especially for the 'Code' column. Highlight trends and differences
+  between continents clearly. This visualization will help understand historical agricultural
+  land use patterns across various regions. Ensure the x-axis represents the years
+  and the y-axis shows the cropland area. Add legends and labels for clarity. Thank
+  you!
+questions: '1. Do you have any specific color preferences for the different continents?
+
+  2. Should the chart include gridlines for better readability?
+
+  3. Do you prefer a specific font style or size for labels and legends?
+
+  4. Should we display data points or markers on the area chart?
+
+  5. Do you have any preference for the order in which continents should be displayed
+  in the legend?
+
+  6. Should the chart include annotations or highlight specific historical events
+  related to agricultural land use?
+
+  7. Do you prefer a specific range for the y-axis or should it be automatically scaled
+  based on the data?
+
+  8. Would you like multiple y-axes if other variables need to be represented?
+
+  9. Are there any specific years or time ranges you want to emphasize or zoom in
+  on?
+
+  10. Should the x-axis be in a linear scale or a logarithmic scale given the long
+  historical timeframe?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include gridlines for better readability.
+
+  3. I do not know.
+
+  4. I am not sure about displaying data points or markers.
+
+  5. I have no specific preference for the order in which continents should be displayed
+  in the legend.
+
+  6. I am not sure about including annotations or highlighting specific historical
+  events.
+
+  7. The y-axis should be automatically scaled based on the data.
+
+  8. No, I do not need multiple y-axes.
+
+  9. I do not have any specific years or time ranges to emphasize or zoom in on.
+
+  10. The x-axis should be in a linear scale.'
+data_attributes:
+- Entity
+- Year
+- Cropland (HYDE (2017))

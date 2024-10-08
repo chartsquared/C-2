@@ -1,0 +1,41 @@
+initial_prompt: Create a heatmap visualizing the mineral reserves estimate data. The
+  data includes columns for 'x', 'y', and 'group' with no missing values. The purpose
+  is to illustrate energy distribution and density at various x and y coordinates,
+  categorized by group. Emphasize specific high-value areas with text annotations
+  for clarity. Use shape annotations such as arrows or rectangles to compare significant
+  areas, and add trend lines if applicable. This will help to focus attention on key
+  points before considering the entire dataset, providing valuable context for energy
+  resource analysis.
+questions: '1. Do you have a color preference for the heatmap?
+
+  2. How would you like high-value areas to be annotated? Do you have a specific format
+  or style in mind for the text annotations?
+
+  3. What styles or shapes do you prefer for the comparison annotations, such as arrows
+  or rectangles?
+
+  4. Would you like trend lines to be styled in a specific way (e.g., color, thickness,
+  dashed or solid)?
+
+  5. Do you prefer specific labeling for the x and y axes?
+
+  6. Are there particular legend configurations or placements you prefer?
+
+  7. Should there be any specific grid lines or background settings on the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer to use rectangles for the comparison annotations.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.'
+data_attributes:
+- x
+- y
+- group

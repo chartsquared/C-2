@@ -1,0 +1,42 @@
+initial_prompt: Create a donut chart visualizing ECG signals with different cardiac
+  ailments from the given dataset, focusing on the percentage distribution of signals
+  and the highlights on abnormal segments. Annotations should emphasize key data points,
+  such as mean heartbeats and significant ECG segment values for analysis.
+questions: '1. What color scheme do you prefer for the different segments in the donut
+  chart?
+
+  2. Would you like labels to be displayed on or outside the donut slices?
+
+  3. Do you have a specific font style or size preference for the annotations?
+
+  4. How detailed should the annotations be (e.g., just key data points or more detailed
+  explanations)?
+
+  5. Would you prefer the legend to be displayed within the chart or separately?
+
+  6. Should there be a particular order for the segments (e.g., by frequency, alphabetical)?
+
+  7. Do you have a preference for the overall chart size or aspect ratio?
+
+  8. Should the chart include a title or subtitle, and if so, what should it be?'
+answers: '1. I do not know.
+
+  2. Outside the donut slices.
+
+  3. I am not sure.
+
+  4. Key data points.
+
+  5. Separately.
+
+  6. By frequency.
+
+  7. I do not have a specific preference.
+
+  8. Yes, the title should be "ECG Signal Distribution Across Cardiac Ailments" and
+  the subtitle "Focus on Abnormal Segments and Key Data Points".'
+data_attributes:
+- RECORD
+- hbpermin
+- ECGseg
+- ECG_signal

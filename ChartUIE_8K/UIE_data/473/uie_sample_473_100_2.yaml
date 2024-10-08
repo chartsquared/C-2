@@ -1,0 +1,66 @@
+initial_prompt: Create a bubble chart using the given data. The x-axis should represent
+  the 'date' from 2016/01 to the latest available in the data, and the y-axis should
+  show the 'Value'. Each bubble's size should correspond to the 'Value' magnitude.
+  Add text annotations to highlight significant changes or peaks in the 'Value' over
+  time, aiming to draw attention to these critical points for better analysis. Use
+  highlights to emphasize the most critical data points, making them visually distinct.
+  The overall aim is to observe and analyze trends in the 'Value' over the given period.
+questions: '1. Do you have any specific preferences for the color scheme or color
+  palette used in the chart?
+
+  2. How would you like the significant changes or peaks in the ''Value'' to be annotated?
+  (e.g., specific text, arrows, circles around the bubbles)
+
+  3. Are there any particular styling preferences for the text annotations (font size,
+  color, weight, etc.)?
+
+  4. Do you prefer a specific style or shape for the bubbles other than the default
+  circular shape?
+
+  5. Would you like to include a legend to explain the size of the bubbles corresponding
+  to ''Value'' magnitude?
+
+  6. Is there a preferred range or scale type for the y-axis (linear, logarithmic)?
+
+  7. How would you like the highlights for the most critical data points to be distinguished
+  (different color, border, transparency)?
+
+  8. Do you require grid lines on the chart? If so, do you have preferences for their
+  style and color?
+
+  9. Should the x-axis labels (dates) be displayed at a specific angle or orientation
+  for better readability?
+
+  10. Are there any specific formatting requirements for the x-axis and y-axis labels?
+
+  11. Do you have any preferences for the chart title and labels for the axes (size,
+  font, style, etc.)?
+
+  12. Is there a maximum or minimum bubble size constraint that you would like to
+  apply?'
+answers: '1. I do not know.
+
+  2. Specific text and arrows would be great.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, a legend would be helpful.
+
+  6. I have no specific preference.
+
+  7. Different color would be best.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.
+
+  11. I do not know.
+
+  12. I do not know.'
+data_attributes:
+- date
+- Value

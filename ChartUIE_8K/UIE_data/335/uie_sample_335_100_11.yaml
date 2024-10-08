@@ -1,0 +1,49 @@
+initial_prompt: I have sales data from a superstore. I want to create a treemap chart
+  to visualize sales performance. The treemap should break down sales by Category
+  and further by Sub-Category. Each rectangle represents the total sales amount for
+  that Category, and each nested rectangle represents the Sub-Category sales. The
+  size of each rectangle should be proportional to the sales amount, and different
+  colors could denote different Categories. This chart will help me quickly see which
+  Categories and Sub-Categories are generating the most revenue and compare their
+  performance visually.
+questions: '1. Do you have any specific color preferences for the different Categories?
+
+  2. Would you like to display sales values on the rectangles?
+
+  3. Do you have a preferred font style and size for any text within the chart?
+
+  4. Is there a specific order in which you would like the Categories and Sub-Categories
+  to be displayed, such as by total sales value or alphabetically?
+
+  5. Do you prefer rounded or sharp edges for the rectangles?
+
+  6. Would you like any additional information or tooltips to appear when hovering
+  over the rectangles?
+
+  7. Do you want a legend to denote the Categories by color?
+
+  8. Are there any specific labels or annotations you would like to include on the
+  chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, I would like to display sales values on the rectangles.
+
+  3. I do not know.
+
+  4. By total sales value.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, I want a legend to denote the Categories by color.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Category
+- Sub-Category
+- Sales

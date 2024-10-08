@@ -1,0 +1,49 @@
+initial_prompt: Create a bar chart to visualize the 'Attrition_Flag' against 'Customer_Age'
+  and 'Income_Category'. Use text annotations to highlight the key values, drawing
+  attention to the distribution of different age groups across income categories.
+  Emphasize the attrition status with highlights, modifying the appearance (e.g.,
+  color) of bars to distinguish between 'Existing Customer' and 'Attrited Customer'.
+  This visualization will help analyze the relationship between customer retention,
+  age, and income category, which is crucial for understanding the business dynamics
+  of credit card customers and targeting retention strategies.
+questions: '1. Do you have any specific color preferences for the bars representing
+  ''Existing Customer'' and ''Attrited Customer''?
+
+  2. Do you want to include a legend to explain the colors used for different attrition
+  statuses?
+
+  3. Should the age groups be categorized into specific intervals, such as 10-year
+  increments, or should each unique age be represented individually?
+
+  4. Is there a preferred way you would like the income categories to be ordered (e.g.,
+  ascending, descending, custom-specific order)?
+
+  5. Do you have any specific preferences for the text annotations, such as font size,
+  color, or position?
+
+  6. Would you like gridlines on the chart for better readability, and if so, in what
+  style?
+
+  7. Should there be any specific labels or titles for the axes?
+
+  8. Do you want to include any additional context or descriptions in the chart title
+  or subtitle?'
+answers: '1. I am not sure.
+
+  2. Yes, including a legend would be helpful.
+
+  3. 10-year increments would be suitable.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, gridlines would be useful for better readability.
+
+  7. Yes, labels for the axes would be good.
+
+  8. I have no specific preference.'
+data_attributes:
+- Attrition_Flag
+- Customer_Age
+- Income_Category

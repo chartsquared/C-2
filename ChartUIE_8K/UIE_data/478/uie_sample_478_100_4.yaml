@@ -1,0 +1,53 @@
+initial_prompt: I need a grouped column chart showing the life expectancy and income
+  (GDP per capita) for different countries grouped by continent. The x-axis should
+  have the country names, and the y-axis should represent the values for life expectancy
+  and income. Use different colors for life expectancy and income. Additionally, indicate
+  the continents with labels or color coding in the background to differentiate the
+  countries based on their continents. Make sure to handle the missing population
+  data carefully and mention it if it impacts the visualization.
+questions: '1. Do you have any specific color preferences for the life expectancy
+  and income (GDP per capita) bars?
+
+  2. How would you like the continents to be indicated in the background – through
+  specific color coding or labeled regions?
+
+  3. Should the missing population data be explicitly mentioned in a legend or as
+  a footnote in the chart?
+
+  4. Do you want gridlines to be displayed on the chart for better readability?
+
+  5. Are there any specific font preferences for the axis labels and titles?
+
+  6. Would you like to include data labels on the bars for precise values of life
+  expectancy and income?
+
+  7. Should the chart include a title? If so, do you have a specific title in mind?
+
+  8. Are there any particular dimensions you have in mind for the chart (e.g., width
+  and height)?
+
+  9. Would you like to apply any specific sorting order for the countries on the x-axis
+  (e.g., alphabetical or by continent)?'
+answers: '1. I am not sure.
+
+  2. Through specific color coding.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. Yes, I would like to include data labels on the bars.
+
+  7. Yes, the title could be "Life Expectancy and Income by Country and Continent".
+
+  8. I have no specific preference.
+
+  9. By continent.'
+data_attributes:
+- country
+- Life expectancy in years
+- Income (GDP per capita)
+- continent
+- population

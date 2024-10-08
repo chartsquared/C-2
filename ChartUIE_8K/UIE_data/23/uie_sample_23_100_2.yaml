@@ -1,0 +1,52 @@
+initial_prompt: Create a stacked bar chart to visualize the US Cars Dataset. Focus
+  on the distribution of car conditions against each state. Use text annotations to
+  highlight top states with the most cars available. Highlight the bars with the highest
+  and lowest counts to emphasize differences. The chart will help us quickly understand
+  where most cars are located and in what condition, aiding in regional marketing
+  strategies. Include color differences for clear visibility of conditions like '10
+  days left', '6 days left', and '2 days left'.
+questions: '1. Do you have a preferred color palette for the different car conditions
+  (''10 days left'', ''6 days left'', ''2 days left'')?
+
+  2. Would you like to display the total number of cars per state as well?
+
+  3. How would you prefer the text annotations for the top states to be formatted
+  (font size, color, etc.)?
+
+  4. Is there a specific way you''d like the bars with the highest and lowest counts
+  to be highlighted (e.g., different shades, patterns)?
+
+  5. Are there any specific states that you want to focus on or highlight besides
+  the top states with most cars?
+
+  6. Would you prefer the chart to have any specific title, subtitle, or additional
+  descriptive text?
+
+  7. Do you want the chart legend to be placed in a specific location, or is the default
+  placement acceptable?
+
+  8. Should the axis labels be customized in any particular way?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, displaying the total number of cars per state would be helpful.
+
+  3. I do not know.
+
+  4. Different shades would be good to highlight the bars with the highest and lowest
+  counts.
+
+  5. I have no specific preference.
+
+  6. No specific title or subtitle is necessary.
+
+  7. The default legend placement is acceptable.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- state
+- condition
+- 'Unnamed: 0'

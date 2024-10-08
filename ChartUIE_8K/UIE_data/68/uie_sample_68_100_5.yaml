@@ -1,0 +1,57 @@
+initial_prompt: Create a histogram chart using the provided data about state-sponsored
+  cyber operations from 2005 to present. The histogram should show the frequency of
+  cyber operations over time, categorized by year, to identify trends and peaks in
+  these activities. Use the 'Date' column to extract the year for the x-axis. The
+  y-axis should represent the number of operations recorded each year. This will help
+  visualize the temporal distribution of the cyber operations. Ensure each bar represents
+  one year's worth of data for clear insights on yearly activities.
+questions: '1. Do you have any color preferences for the bars in the histogram?
+
+  2. Would you like to include grid lines in the background for easier reading of
+  the values?
+
+  3. Do you prefer the histogram bars to have spacing between them or to be directly
+  adjacent?
+
+  4. How would you like the x-axis to be labeled (e.g., Year, Year of Operation)?
+
+  5. Would you like to include data labels showing the exact count of operations on
+  top of each bar?
+
+  6. Do you have a specific font style or size preference for the axis labels and
+  title?
+
+  7. Would you like to include a title for the chart? If so, what should it be?
+
+  8. Do you prefer a legend to be included in the histogram, even though it may not
+  be necessary since it''s a single category?
+
+  9. Do you want the y-axis to start from zero or auto-scale based on the data range?
+
+  10. Should the histogram include annotations for significant peaks or notable years?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Yes, I would like to include grid lines in the background.
+
+  3. I do not know.
+
+  4. Year of Operation.
+
+  5. Yes, I would like to include data labels showing the exact count of operations
+  on top of each bar.
+
+  6. I am not sure.
+
+  7. Yes, please title it "Frequency of State-Sponsored Cyber Operations by Year".
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- Date

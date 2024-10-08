@@ -1,0 +1,59 @@
+initial_prompt: Create a line chart to visualize breast cancer data with a focus on
+  early diagnosis. Include text annotations to highlight key metrics like 'radius_mean',
+  'texture_mean', and 'area_mean' for better comparison among samples. Highlight variations
+  in these metrics across different diagnoses ('M' for malignant and 'B' for benign)
+  to make patterns stand out. This will help healthcare professionals to quickly assess
+  and identify potential malignancies. Also, highlight any extreme values or outliers
+  for further analysis. Ensure the chart is clear, contextual, and aids medical decision-making.
+questions: '1. Do you have any specific color preferences for different diagnosis
+  categories (malignant and benign)?
+
+  2. Would you prefer any particular style or format for the text annotations highlighting
+  key metrics?
+
+  3. How would you like extreme values or outliers to be represented on the chart?
+
+  4. Do you have a preferred layout or positioning for the legend on the chart?
+
+  5. Is there a specific font style or size you prefer for the labels and annotations?
+
+  6. Are there any specific gridline preferences (e.g., color, density) you want on
+  the chart?
+
+  7. Do you want to include any additional contextual information or notes on the
+  chart?
+
+  8. Are there any specific axis scale preferences (e.g., logarithmic, linear) you
+  would like to use for the chart?
+
+  9. Would you prefer the line chart to be displayed with markers on each data point?
+
+  10. Is there a specific aspect ratio or size you would like the chart to have?'
+answers: '1. I do not have any specific color preferences for different diagnosis
+  categories.
+
+  2. I am not sure about the style or format for the text annotations.
+
+  3. I would like extreme values or outliers to be clearly highlighted, maybe with
+  a different color or marker style.
+
+  4. I have no specific preference for the layout or positioning of the legend.
+
+  5. I do not know about the font style or size for the labels and annotations.
+
+  6. I am not sure about any specific gridline preferences.
+
+  7. I do not know about including additional contextual information or notes on the
+  chart.
+
+  8. I have no specific preference for axis scale.
+
+  9. Yes, I would prefer the line chart to be displayed with markers on each data
+  point.
+
+  10. I do not have a specific aspect ratio or size requirement for the chart.'
+data_attributes:
+- radius_mean
+- texture_mean
+- area_mean
+- diagnosis

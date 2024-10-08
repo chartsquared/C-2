@@ -1,0 +1,55 @@
+initial_prompt: I want a stacked bar chart comparing the reign lengths of Roman emperors.
+  The data includes 'name', 'reign_start', and 'reign_end'. Each bar should represent
+  an emperor with sections divided based on cause of death (e.g., 'Assassination'
+  vs. 'Natural'). Data should show reign duration and highlight assassinations. Make
+  sure to label the axes for clarity.
+questions: '1. What color scheme do you prefer for highlighting different causes of
+  death?
+
+  2. Do you have a preferred ordering for the emperors in the chart (e.g., chronological,
+  alphabetical)?
+
+  3. Should the chart include gridlines for easier comparison of reign lengths?
+
+  4. Would you like to include additional annotations or labels for specific emperors
+  or causes of death?
+
+  5. Do you prefer specific fonts or font sizes for the labels and titles?
+
+  6. Should there be a legend to explain the color coding of the causes of death?
+
+  7. Would you like any specific styling for the bars or sections within the bars
+  (e.g., borders, shading)?
+
+  8. Are there any specific date formats you prefer for ''reign_start'' and ''reign_end''
+  on the axis labels?
+
+  9. Should the chart focus specifically on highlighting assassinations with a unique
+  visual marker?
+
+  10. Do you have any specific preferences for the chart title and axis titles text?'
+answers: '1. I am not sure.
+
+  2. Chronological ordering would be good.
+
+  3. Yes, gridlines would be helpful for comparison.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, there should be a legend to explain the color coding.
+
+  7. I am not sure.
+
+  8. No specific date formats preferred.
+
+  9. Yes, please use a unique visual marker for assassinations.
+
+  10. "Reign Lengths of Roman Emperors" for the chart title and "Emperors" for the
+  x-axis title and "Reign Length (Years)" for the y-axis title.'
+data_attributes:
+- name
+- reign_start
+- reign_end
+- cause

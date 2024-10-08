@@ -1,0 +1,53 @@
+initial_prompt: Create a heatmap to visualize IBM stock data, showing correlations
+  between Open, High, Low, Close, and Volume. Annotate specific values that stand
+  out, such as unusually high or low prices, to focus attention on key data points.
+  Use highlights to change the color of these annotations for emphasis. This will
+  help in understanding trends and identifying significant events in IBM's stock history.
+  Labels should provide context for the data points, explaining why they are significant.
+  The overall purpose is to make it easy to identify patterns and anomalies in the
+  stock's performance over time.
+questions: '1. Do you have any specific color schemes you prefer for the heatmap?
+
+  2. Would you like the heatmap to use a gradient scale or discrete color bands?
+
+  3. How would you prefer the annotations to be styled (e.g., font type, size, and
+  color)?
+
+  4. Are there specific date ranges or time periods you want to highlight in the heatmap?
+
+  5. Do you have a preference for the layout of the heatmap (e.g., aspect ratio, size)?
+
+  6. Should specific thresholds be set for what constitutes ''unusually high'' or
+  ''unusually low'' prices?
+
+  7. Do you have any preferences for the format of the labels providing context for
+  significant data points?
+
+  8. Would you like to include any additional statistical metrics or summaries in
+  the visualization?
+
+  9. Are there particular patterns or trends you are especially interested in observing?'
+answers: '1. I have no specific preference.
+
+  2. A gradient scale would be good.
+
+  3. I am not sure about the styling; something easily readable would be fine.
+
+  4. I do not know. Maybe a broad range?
+
+  5. I have no specific preference.
+
+  6. Yes, it would be helpful to set specific thresholds for unusually high or low
+  prices.
+
+  7. I am not sure; just make the labels clear and informative.
+
+  8. I do not know.
+
+  9. I am especially interested in observing any sudden spikes or drops in prices.'
+data_attributes:
+- Open
+- High
+- Low
+- Close
+- Volume

@@ -1,0 +1,45 @@
+initial_prompt: Create a bar chart for the Crop Recommendation Dataset showing average
+  N, P, and K levels for different crop labels. Highlight the crops with the highest
+  and lowest average N levels. Annotate the highest and lowest average P and K values
+  for specific crops. This visualization will help identify nutrient needs for various
+  crops, useful for agriculture planning and farming strategies. Use the summary data
+  for reference in creating the averages.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you prefer a specific typeface or font style for the chart annotations?
+
+  3. How would you like the bars to be organized (e.g., alphabetically by crop label,
+  by average N levels, etc.)?
+
+  4. Do you have a preferred way to highlight the highest and lowest average N levels
+  (e.g., different color, bold outline)?
+
+  5. How would you like the annotations for the highest and lowest average P and K
+  values to appear (e.g., with arrows, boxes, text labels)?
+
+  6. Do you prefer a particular title or subtitle for the chart?
+
+  7. Would you like to include axis labels and if so, what should they specifically
+  state?
+
+  8. Is there a preferred format for the legend or would you like to omit it entirely?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. By average N levels.
+
+  4. Different color.
+
+  5. Text labels.
+
+  6. I am not sure.
+
+  7. Yes, "Nutrient Levels (N, P, K)" for the y-axis and "Crop Labels" for the x-axis.
+
+  8. I do not know.'
+data_attributes:
+- N
+- P
+- K
+- label

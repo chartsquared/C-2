@@ -1,0 +1,55 @@
+initial_prompt: Please create a line chart illustrating the trends over time using
+  the data from the semiconductor industry. Specifically, I want to see the trends
+  for the Producer Price Index, Export Price Index (End Use of semiconductors), Import
+  Price Index, and the number of employed people in the semiconductor industry. Make
+  sure the DATE is on the x-axis and the different indices and employment numbers
+  are on the y-axis. This will help visualize the impact of semiconductor shortages
+  on price indices and employment in the industry.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should the axes have a logarithmic or linear scale?
+
+  3. Do you want gridlines on the chart, and if so, should they be major, minor, or
+  both?
+
+  4. Do you prefer a particular line style (solid, dashed, dotted, etc.) for differentiating
+  the data series?
+
+  5. Would you like to include data points markers on the lines?
+
+  6. Should there be labels directly on the lines indicating the values at key points?
+
+  7. How would you like the legend to be positioned (top, bottom, left, right)?
+
+  8. Do you want to add any annotations or text boxes to highlight significant events
+  or trends?
+
+  9. Is there a specific date range you would like to focus on?
+
+  10. Should the y-axis have a shared scale for all indices and employment numbers,
+  or separate scales?'
+answers: '1. I do not know.
+
+  2. Linear scale.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, include data points markers.
+
+  6. I am not sure.
+
+  7. Right.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Shared scale.'
+data_attributes:
+- DATE
+- Producer Price Index(By Industry in $)
+- Export Price Index(End Use of semiconductors)
+- Import Price Index(in $ End Use of semiconductors)
+- No. of employed peoples in semiconductor industry

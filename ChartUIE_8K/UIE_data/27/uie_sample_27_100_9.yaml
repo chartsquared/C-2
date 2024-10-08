@@ -1,0 +1,50 @@
+initial_prompt: Create a dot plot visualizing the SALES versus ORDERDATE for the automobile
+  sales data. Each dot should represent a unique ORDERNUMBER. Use different colors
+  to distinguish STATUS (e.g., Shipped, Cancelled, etc.). Additionally, differentiate
+  the DEALSIZE using dot sizes (e.g., Small, Medium, Large). This visualization should
+  help identify trends and patterns in sales over time, the status of the orders,
+  and the deal sizes for better insights into automobile sales. Make sure to label
+  the axes and include a legend for clarity.
+questions: '1. Do you prefer a specific color palette for distinguishing different
+  statuses?
+
+  2. How would you like the DEALSIZE categories (e.g., Small, Medium, Large) to be
+  represented in terms of dot sizes?
+
+  3. Do you have a preference for the format of the ORDERDATE on the x-axis (e.g.,
+  month/year, day/month/year)?
+
+  4. Would you like grid lines on the chart for better readability?
+
+  5. Is there a particular font style or size you prefer for the axis labels and legend?
+
+  6. Do you have any preferences for the background color or theme of the chart (e.g.,
+  light, dark)?
+
+  7. Should any specific periods or significant dates be highlighted on the chart?
+
+  8. Are there any specific statistical indicators (e.g., moving averages) you would
+  like overlaid on the plot?'
+answers: '1. I am not sure about the specific color palette, surprise me!
+
+  2. I would like the dot sizes to be proportional to the DEALSIZE categories, with
+  Small being smallest, Medium being larger, and Large being the largest.
+
+  3. Month/year format for the ORDERDATE on the x-axis would be good.
+
+  4. Yes, I would like grid lines on the chart for better readability.
+
+  5. I do not have a specific preference for the font style or size.
+
+  6. I do not know, I’m open to any background color or theme.
+
+  7. I do not know of any specific periods or significant dates to be highlighted.
+
+  8. I am not sure about any specific statistical indicators to be overlaid on the
+  plot.'
+data_attributes:
+- ORDERNUMBER
+- SALES
+- ORDERDATE
+- STATUS
+- DEALSIZE

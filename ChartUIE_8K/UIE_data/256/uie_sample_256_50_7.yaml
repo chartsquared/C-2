@@ -1,0 +1,102 @@
+initial_prompt: Create a circular treemap visualization using the "ECG of Cardiac
+  Ailments Dataset" to highlight data on heart rate variability, segment durations,
+  and ECG signals. Emphasize unique values distribution and missing values per column.
+questions: '1. Do you have any specific color palette preferences for the circular
+  treemap?
+
+  2. Should the circular treemap include labels for each segment, or would you prefer
+  a tooltip approach for additional information?
+
+  3. Do you have a preference for the size of the segments to be based on a particular
+  data attribute?
+
+  4. Are there any specific thresholds or ranges you want to highlight for missing
+  values or unique values distribution?
+
+  5. Would you like to incorporate any specific legends or annotations to help interpret
+  the variabilities in the data?
+
+  6. Do you prefer any specific font styles or sizes for the text elements in the
+  visualization?
+
+  7. Is there a particular layout or hierarchical structure you want to maintain within
+  the circular treemap for better clarity?
+
+  8. Are there any specific data attributes you want to emphasize more than others
+  within the visualization?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I do not have any specific preference.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. Heart rate variability.
+
+  <end of user emulated response>'
+data_attributes:
+- RECORD
+- hbpermin
+- Pseg
+- PQseg
+- QRSseg
+- QRseg
+- QTseg
+- RSseg
+- STseg
+- Tseg
+- PTseg
+- ECGseg
+- QRtoQSdur
+- RStoQSdur
+- RRmean
+- PPmean
+- PQdis
+- PonQdis
+- PRdis
+- PonRdis
+- PSdis
+- PonSdis
+- PTdis
+- PonTdis
+- PToffdis
+- QRdis
+- QSdis
+- QTdis
+- QToffdis
+- RSdis
+- RTdis
+- RToffdis
+- STdis
+- SToffdis
+- PonToffdis
+- PonPQang
+- PQRang
+- QRSang
+- RSTang
+- STToffang
+- RRTot
+- NNTot
+- SDRR
+- IBIM
+- IBISD
+- SDSD
+- RMSSD
+- QRSarea
+- QRSperi
+- PQslope
+- QRslope
+- RSslope
+- STslope
+- NN50
+- pNN50
+- ECG_signal

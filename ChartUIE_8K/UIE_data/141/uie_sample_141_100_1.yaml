@@ -1,0 +1,46 @@
+initial_prompt: I need an area chart comparing the Economic Freedom scores of different
+  countries over a span of years. Annotate the years where significant changes occur
+  for specific countries and highlight the top and bottom countries in terms of Economic
+  Freedom. For example, highlight Algeria and Albania for contrast. Utilize the quartile
+  ranks to shade different areas of Economic Freedom. Additionally, mark outliers
+  in transfers and government consumption for further context. Make the chart interactive
+  to explore detailed scores for property rights, sound money, and trade freedom.
+  Keep it intuitive and highly visual.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should specific countries other than Algeria and Albania be highlighted as well?
+
+  3. How would you like the significant changes to be annotated (e.g., arrows, text
+  labels)?
+
+  4. Do you have a preference for the type of shading to represent quartile ranks?
+
+  5. How would you like outliers in transfers and government consumption to be marked
+  (e.g., different color, icon)?
+
+  6. Would you like any specific legends or labels for different sections of the chart?
+
+  7. Do you prefer a particular style or format for the axis labels and titles?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Text labels would be good.
+
+  4. I am not sure.
+
+  5. Different color.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- year
+- countries
+- ECONOMIC FREEDOM
+- quartile
+- 1b_transfers
+- 1a_government_consumption
+- 2_property_rights
+- 3_sound_money
+- 4_trade

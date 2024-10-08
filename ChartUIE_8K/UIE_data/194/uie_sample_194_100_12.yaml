@@ -1,0 +1,41 @@
+initial_prompt: Create a hexbin chart to visualize the density of celestial objects
+  from the Sloan Digital Sky Survey DR14 dataset. Use 'ra' (right ascension) for the
+  x-axis and 'dec' (declination) for the y-axis. Color-code the bins by the number
+  of objects in each bin to show concentration differences in the sky. Make sure to
+  label the axes accurately and provide a color bar legend to illustrate the density
+  values. This will help understand the distribution of celestial objects in specific
+  regions of the sky comprehensively.
+questions: '1. What color scheme would you prefer for the bins?
+
+  2. Do you have a specific preference for the number of hexagonal bins?
+
+  3. How would you like the axes to be labeled? Any specific format?
+
+  4. Would you like the plot to include gridlines for better readability?
+
+  5. Do you have a preferred style or font for the axis labels and legend text?
+
+  6. Would you like to include any specific title or subtitle for the chart?
+
+  7. Is there any specific range for ''ra'' and ''dec'' you would like to focus on?
+
+  8. Do you need any annotations or markers on specific regions of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Please label the x-axis as "Right Ascension (ra)" and the y-axis as "Declination
+  (dec)".
+
+  4. Yes, include gridlines for better readability.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not have a specific range; please cover the full dataset.
+
+  8. I do not need any annotations or markers on specific regions.'
+data_attributes:
+- ra
+- dec

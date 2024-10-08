@@ -1,0 +1,40 @@
+initial_prompt: Create a bar chart comparing the annual fuel cost savings of different
+  car models when switching to electric. Use the data from 427.csv, focusing on the
+  columns 'make', 'model', 'fuelCost08', and 'youSaveSpend'. Display car models on
+  the x-axis, and the fuel costs and savings on the y-axis as two separate bars for
+  each model. Highlight the models with the highest and lowest savings prominently
+  for better visualization of cost-effectiveness in switching to electric cars.
+questions: '1. Do you have any preference for the color scheme of the bars?
+
+  2. How would you like the models with the highest and lowest savings to be highlighted?
+  (e.g., different color, outline, bold labels)
+
+  3. Do you prefer a specific order for the car models on the x-axis? (e.g., alphabetically,
+  by savings amount)
+
+  4. Would you like data labels to be displayed on the bars showing the exact values?
+
+  5. Do you prefer a specific font style or size for the chart titles and labels?
+
+  6. Should the chart include a legend explaining the colors of the bars representing
+  fuel cost and savings?
+
+  7. Do you have a specific title for the chart in mind?'
+answers: '1. I am not sure.
+
+  2. Highlight the models with the highest and lowest savings using a different color.
+
+  3. Alphabetically.
+
+  4. Yes, please display data labels showing the exact values.
+
+  5. I do not have a specific preference.
+
+  6. Yes, please include a legend.
+
+  7. I do not have a specific title in mind.'
+data_attributes:
+- make
+- model
+- fuelCost08
+- youSaveSpend

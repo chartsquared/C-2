@@ -1,0 +1,58 @@
+initial_prompt: Create a geographic heatmap showing average salaries of engineering
+  graduates across different states. Use CollegeState to determine regions and Salary
+  for the heat values. Include data points like CollegeTier, Specialization, and collegeGPA
+  to explain variations in the map.
+questions: '1. Do you have any specific color schemes or palettes you prefer for the
+  heatmap?
+
+  2. Should the map include specific labels for states, and if so, how detailed should
+  they be?
+
+  3. Would you like to see data points or markers for CollegeTier, Specialization,
+  and GPA directly on the map, or as a separate legend?
+
+  4. How would you like the information for CollegeTier, Specialization, and GPA to
+  be represented: through different color hues, gradients, or patterns?
+
+  5. Do you have any preferences for the map projection style (e.g., Mercator, Albers,
+  etc.)?
+
+  6. Would you prefer the map to emphasize certain states or regions more prominently?
+
+  7. Are there any particular data ranges or thresholds for salaries that should be
+  highlighted with specific colors or indicators?
+
+  8. Should the heatmap include any annotation or explanatory notes directly on the
+  map?
+
+  9. Do you prefer the heatmap to have a more minimalist design or a more detailed,
+  information-rich layout?
+
+  10. Is there any preference for how the legend or color bar should be displayed
+  (e.g., position, size, format)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would like to see data points or markers for CollegeTier, Specialization, and
+  GPA directly on the map.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, the heatmap should include explanatory notes directly on the map.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- CollegeState
+- Salary
+- CollegeTier
+- Specialization
+- collegeGPA

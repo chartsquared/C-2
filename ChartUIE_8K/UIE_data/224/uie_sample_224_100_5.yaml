@@ -1,0 +1,48 @@
+initial_prompt: I need a bar chart showing total sales by each sub-category for the
+  Superstore Sales Dataset. Use the categories Furniture, Office Supplies, and any
+  others available in the data. Break down each category into its respective sub-categories
+  and display their sales side by side to compare which sub-category performs the
+  best in terms of sales. Ensure that all data is included without omissions for accurate
+  representation. This will help identify top-selling sub-categories within each main
+  category for better inventory and sales strategy planning.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bar chart to display the sales values on top of each bar?
+
+  3. How would you like to handle categories or sub-categories with very small sales
+  values? Should they be shown or aggregated?
+
+  4. Do you prefer horizontal or vertical bars for the bar chart?
+
+  5. Are there any specific labels or annotations you would like to include on the
+  chart?
+
+  6. Should the chart include a legend, and if so, where would you prefer it to be
+  placed?
+
+  7. Do you have a preference for the font size and style for the labels and titles?
+
+  8. Would you like to include gridlines to make the comparisons easier?
+
+  9. Do you want to highlight the top-selling sub-categories in any special way?'
+answers: '1. I do not know.
+
+  2. Yes, I would like the bar chart to display the sales values on top of each bar.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. Yes, I would like to include gridlines to make the comparisons easier.
+
+  9. I do not know.'
+data_attributes:
+- Category
+- Sub-Category
+- Sales

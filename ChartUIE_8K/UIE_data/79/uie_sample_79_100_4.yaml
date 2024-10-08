@@ -1,0 +1,51 @@
+initial_prompt: I have a dataset related to campus recruitment, focusing on students'
+  educational backgrounds and their placement status. I want to visualize this data
+  using a strip plot to see the distribution of salaries across different specializations
+  (Mkt&HR, Mkt&Fin) and academic performances. Please create a strip plot that shows
+  salary on the y-axis and specialisation on the x-axis, with data points representing
+  individual students. Highlight any patterns or trends regarding how specialization
+  and academic scores (ssc_p, hsc_p, degree_p, mba_p) influence placement salaries.
+  This will help understand the relationship better.
+questions: '1. Do you prefer a particular color palette for the strip plot?
+
+  2. Should the strip plot include a legend explaining the color coding?
+
+  3. Would you like to include a title and axis labels? If so, do you have specific
+  titles in mind?
+
+  4. Do you want to add grid lines to the plot for better readability?
+
+  5. Should the academic scores (ssc_p, hsc_p, degree_p, mba_p) be displayed as annotations
+  on the data points or aggregated in any special way?
+
+  6. Do you prefer any specific point shapes or sizes for the data points in the strip
+  plot?
+
+  7. Would you like to include lines or markers to indicate average or median salaries
+  for each specialization?
+
+  8. Do you want to highlight any specific trends or patterns within the data using
+  special markers or colors?'
+answers: '1. I am not sure.
+
+  2. Yes, the strip plot should include a legend explaining the color coding.
+
+  3. Yes, please include a title and axis labels. Title: "Distribution of Placement
+  Salaries by Specialization", x-axis: "Specialization", y-axis: "Salary (in thousands)".
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please include lines to indicate the average salaries for each specialization.
+
+  8. I do not know.'
+data_attributes:
+- salary
+- specialisation
+- ssc_p
+- hsc_p
+- degree_p
+- mba_p

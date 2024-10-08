@@ -1,0 +1,52 @@
+initial_prompt: Create a tile map visualizing election results across different constituencies.
+  Each tile represents a constituency, color-coded by the winning party (e.g., blue
+  for CON, red for LAB). Include additional data layers showing vote percentages for
+  CON, LAB, and LIB. Tiles should be sized or shaded to reflect electorate size or
+  voter turnout. Integrate dropdown filters to view results by specific areas, counties,
+  and parties. Use hover information to display detailed results for each constituency,
+  such as MP name, electorate, and vote breakdown. This will effectively showcase
+  regional voting patterns and outcomes.
+questions: '1. Do you have any preferred color scheme for the winning parties?
+
+  2. How would you like to represent electorate size or voter turnout with tiles (e.g.,
+  size, shading, or both)?
+
+  3. Do you have any specific preferences for the layout and design of the dropdown
+  filters?
+
+  4. What level of detail would you like to see in the hover information for each
+  constituency?
+
+  5. Are there any specific label or formatting preferences for constituency names
+  and MP names?
+
+  6. Would you prefer any specific map projection or geographic layout?
+
+  7. How many categories, like areas or counties, would you like included in the dropdown
+  filters?'
+answers: '1. For the color scheme, I prefer blue for CON and red for LAB, but I am
+  not sure about the others.
+
+  2. I would like to represent electorate size or voter turnout with both size and
+  shading.
+
+  3. I do not know.
+
+  4. I would like to see MP name, electorate size, and a detailed vote breakdown in
+  the hover information.
+
+  5. I have no specific preference.
+
+  6. I am not sure about any specific map projection or geographic layout.
+
+  7. I am not sure; just include a reasonable number based on standard practices.'
+data_attributes:
+- Name
+- MP
+- Area
+- County
+- Electorate
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Winner

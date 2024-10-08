@@ -1,0 +1,45 @@
+initial_prompt: Create a heatmap to visualize the missing values across different
+  columns for the Jumia Prices and Ratings dataset. The heatmap should have columns
+  labeled 'Product Name,' 'Price,' 'Details,' and 'Rating,' and use color intensity
+  to indicate the number of missing values in each column. This will help us quickly
+  identify which columns have the most missing data and focus our data cleaning efforts
+  accordingly. Use the unique values in the heatmap to show data density across different
+  categories. Ensure the heatmap is intuitive and easy to interpret.
+questions: '1. Do you have a preference for the color scheme of the heatmap?
+
+  2. Should there be any specific labels or legends added to the heatmap for better
+  interpretation?
+
+  3. Do you prefer a sequential color gradient or diverging color gradient to represent
+  the intensity of missing values?
+
+  4. Would you like any annotations on the heatmap to display the exact number of
+  missing values in each cell?
+
+  5. Should the heatmap include a title and/or axis labels?
+
+  6. Are there any specific font styles or sizes you prefer for labels and titles?
+
+  7. Would you like grid lines to be visible on the heatmap?
+
+  8. Is there a particular layout or aspect ratio you prefer for the heatmap?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Yes, a legend explaining the color intensity and missing values would be helpful.
+
+  3. I am not sure.
+
+  4. Yes, annotations showing the exact number of missing values would be useful.
+
+  5. Yes, please include a title and axis labels.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- Product Name
+- Price
+- Details
+- Rating

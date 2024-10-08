@@ -1,0 +1,58 @@
+initial_prompt: I have some data regarding the matching of fish categories, subcategories,
+  and their corresponding matches in Gephart and FAO databases. I want to visualize
+  this data using a donut chart. Each segment should represent the unique values in
+  the 'LCA_Category', 'LCA_Category_sub', 'Gephart Match', and 'FAO Match' columns,
+  with the size of each segment corresponding to the count of entries for each unique
+  value. Additionally, highlight missing values in a distinctive way. Please make
+  sure the chart is labeled clearly and easy to interpret!
+questions: '1. Do you have a preferred color scheme for the donut chart?
+
+  2. How would you prefer missing values to be highlighted (e.g., particular color,
+  pattern)?
+
+  3. Do you want a legend to be included for each category and subcategory?
+
+  4. Should segment labels display the count of entries or the percentage?
+
+  5. Is there a specific font style or size you prefer for the labels and titles?
+
+  6. Should we include a title for each section of the donut chart? If yes, please
+  specify.
+
+  7. Do you want the chart to display in a specific order (e.g., largest to smallest
+  segment)?
+
+  8. Are there any specific annotations or highlights you would like apart from missing
+  values?
+
+  9. Should we include any additional text or descriptive notes along with the chart?
+
+  10. Do you prefer specific segment separation (gap) to distinguish between data
+  categories?'
+answers: '1. I do not know.
+
+  2. Highlight missing values using a distinct color, perhaps red or a pattern.
+
+  3. Yes, include a legend for each category and subcategory.
+
+  4. Segment labels should display the count of entries.
+
+  5. I am not sure.
+
+  6. No specific preferences for titles for each section.
+
+  7. I do not know.
+
+  8. No, just highlight the missing values.
+
+  9. No additional text or descriptive notes are needed.
+
+  10. I am not sure.
+
+
+  '
+data_attributes:
+- LCA_Category
+- LCA_Category_sub
+- Gephart Match
+- FAO Match

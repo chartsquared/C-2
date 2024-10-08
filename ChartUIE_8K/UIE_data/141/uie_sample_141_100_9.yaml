@@ -1,0 +1,50 @@
+initial_prompt: I need a scatter plot for the Economic Freedom of the World dataset.
+  X-axis should be 'year' and Y-axis 'ECONOMIC FREEDOM'. Each point represents a country
+  with ISO_code as labels. Additionally, color-code the points based on the 'quartile'
+  value to illustrate different quartiles. Include a legend for the quartiles and
+  ensure the chart is easy to interpret. Use tooltips to show detailed data (e.g.,
+  'rank', 'country', and 'ECONOMIC FREEDOM') when hovering over a point. This will
+  help visualize the economic freedom trends over the years for different countries
+  and quartiles. Thanks!
+questions: '1. Do you have a preferred color palette for the different quartiles?
+
+  2. Would you like a specific range for the X-axis (''year'') or Y-axis (''ECONOMIC
+  FREEDOM'')?
+
+  3. Are there any specific countries or regions you would like to highlight on the
+  chart?
+
+  4. Do you prefer specific marker shapes for the data points representing each quartile?
+
+  5. Do you require grid lines on the chart, and if so, do you have any preferences
+  for their appearance?
+
+  6. Would you like the chart to have a title or any additional annotations?
+
+  7. Do you have any preferences regarding the font type and size for the labels and
+  legend?
+
+  8. Should the legend be positioned in a specific part of the chart (e.g., top right,
+  bottom left)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Grid lines would be helpful, but I have no specific preference for their appearance.
+
+  6. Yes, a title like "Economic Freedom Trends Over the Years" would be good.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- year
+- ISO_code
+- countries
+- ECONOMIC FREEDOM
+- rank
+- quartile

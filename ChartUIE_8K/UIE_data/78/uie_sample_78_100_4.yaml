@@ -1,0 +1,35 @@
+initial_prompt: Create a geographic heatmap using the dataset from 'Reddit Vaccine
+  Myths'. I want to visualize regions with the highest number of Reddit posts discussing
+  vaccine myths. Include colors to represent varying densities of posts, from low
+  (cool colors) to high (warm colors). Ensure the heatmap highlights countries or
+  areas most engaged in these discussions. Use the 'created' column to filter data
+  by a specific time period, such as the last six months. Also include a legend to
+  explain the color grading and any prominent hotspots. The map should be interactive
+  if possible.
+questions: '1. Do you have any preference for the color palette used for the heatmap?
+
+  2. Would you like to include specific geographic regions or countries in the focus
+  of the heatmap?
+
+  3. Should the legend include a breakdown of specific density ranges and their corresponding
+  colors?
+
+  4. Would you prefer the time period filter to be adjustable or fixed to the last
+  six months?
+
+  5. Do you have a specific style or format preference for the legend?'
+answers: '1. I am not sure about the color palette, but it should clearly show the
+  density from low to high.
+
+  2. I have no specific preference, just highlight regions with the most posts.
+
+  3. Yes, the legend should include a breakdown of specific density ranges and their
+  corresponding colors.
+
+  4. Fixed to the last six months is fine.
+
+  5. I do not know, any clear style will work for the legend.'
+data_attributes:
+- title
+- created
+- timestamp

@@ -1,0 +1,52 @@
+initial_prompt: I need a scatter plot to visualize Bitcoin's price movement over time.
+  Use the "Date" on the x-axis and "Closing Price (USD)" on the y-axis. Please highlight
+  the points where the 24h High (USD) is significantly higher than the 24h Open (USD)
+  and where the 24h Low (USD) is significantly lower than the 24h Open (USD). This
+  will help me see the fluctuations during the Bitcoin bull-run periods. Make sure
+  the plot is easy to read with clear labels for the axes and a legend that differentiates
+  the highlighted points from the rest.
+questions: '1. Do you have any color preferences for the highlighted points and the
+  regular points?
+
+  2. What threshold would you consider for ''significantly higher'' or ''significantly
+  lower'' between the 24h High/24h Low and 24h Open?
+
+  3. Do you prefer a specific style or theme for the scatter plot (e.g., classic,
+  modern, minimalist)?
+
+  4. Would you like the data points to be connected with lines, or should it strictly
+  be a scatter plot?
+
+  5. How detailed do you want the gridlines on the chart to be (e.g., major gridlines
+  only, both major and minor gridlines)?
+
+  6. Do you have a preferred format for date representation on the x-axis (e.g., YYYY-MM-DD,
+  MM/DD/YYYY, Month Year)?
+
+  7. Should the chart title emphasize Bitcoin''s price movement or the significant
+  fluctuations during bull-run periods?
+
+  8. Do you have any specific font preferences for labels and legends?'
+answers: '1. I have no specific color preferences.
+
+  2. For ''significantly higher'' or ''significantly lower,'' let''s use a threshold
+  of 10% change between the 24h High/24h Low and 24h Open.
+
+  3. I am not sure about the style or theme.
+
+  4. It should strictly be a scatter plot, no lines connecting the points.
+
+  5. I prefer having both major and minor gridlines for better readability.
+
+  6. I have no specific preference for date format on the x-axis.
+
+  7. The chart title should emphasize both Bitcoin''s price movement and significant
+  fluctuations during bull-run periods.
+
+  8. I do not know about any specific font preferences for labels and legends.'
+data_attributes:
+- Date
+- Closing Price (USD)
+- 24h Open (USD)
+- 24h High (USD)
+- 24h Low (USD)

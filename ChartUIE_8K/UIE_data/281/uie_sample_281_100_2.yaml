@@ -1,0 +1,65 @@
+initial_prompt: Create a grouped bar chart to visualize the relationship between the
+  dates and the stock market indicators (Open, High, Low, Close, Adj Close). Each
+  group should represent a specific Date and display bars for each indicator value.
+  Highlight significant changes in percentage with different color bars to emphasize
+  where major losses or gains occur. Incorporate text annotations to explain important
+  events or influences like market movements due to astrology predictions or global
+  crisis impacts. Visualization should serve to analyze stock performance over time
+  and correlate with provided stock market predictions and annotated text data.
+questions: '1. Do you have any preferred color palette for highlighting significant
+  changes in percentage?
+
+  2. Would you prefer specific colors to represent gains and losses, and if so, what
+  are your preferences?
+
+  3. What style of text annotations do you prefer (e.g., simple labels, detailed descriptions,
+  or tooltips)?
+
+  4. Should the bars for each stock market indicator have specific colors, or would
+  you prefer the chart to use a default color scheme?
+
+  5. Do you have a preference for the font type and size used in the chart for titles,
+  labels, and annotations?
+
+  6. Would you like to include gridlines or any other specific chart elements to improve
+  readability?
+
+  7. Should we include a legend to differentiate between the stock market indicators
+  and the significant percentage changes?
+
+  8. Are there any specific events or dates that you would like to highlight with
+  more detailed annotations?
+
+  9. Do you prefer the bars to be grouped by month, week, or specific date intervals
+  when displaying the data?
+
+  10. Do you have any specific layout preferences for the chart, such as aspect ratio
+  or orientation (e.g., vertical or horizontal bars)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Simple labels.
+
+  4. Default color scheme is fine.
+
+  5. I do not have a specific preference.
+
+  6. Yes, include gridlines.
+
+  7. Yes, please include a legend.
+
+  8. I do not know.
+
+  9. Specific date intervals.
+
+  10. I have no specific preference.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Perc_Change
+- Text

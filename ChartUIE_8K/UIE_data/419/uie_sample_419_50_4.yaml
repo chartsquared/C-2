@@ -1,0 +1,42 @@
+initial_prompt: Please create a column chart showing bike and pedestrian counts over
+  time for different crossing locations and directions from the provided dataset.
+questions: '1. Do you have a preferred color scheme for the bike and pedestrian counts?
+
+  2. How would you like the crossing locations and directions to be represented on
+  the chart? (e.g., separate columns, grouped columns, use of labels)
+
+  3. Should the chart display data for all crossing locations and directions together
+  or would you like separate charts for different locations and directions?
+
+  4. Is there a specific time granularity you prefer for the date axis (e.g., hourly,
+  daily, weekly, monthly)?
+
+  5. Would you like to include data labels showing the exact counts on the columns?
+
+  6. Do you have any preference for the chart title and axis labels text?
+
+  7. Should missing values be displayed in any specific way (e.g., as gaps, interpolated)?
+
+  8. Do you prefer a specific layout for the legend on the chart? (e.g., position,
+  orientation)'
+answers: '1. I am not sure.
+
+  2. Grouped columns would be fine.
+
+  3. I am not sure.
+
+  4. Monthly would work best.
+
+  5. Yes, please include data labels showing the exact counts.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- date
+- crossing
+- direction
+- bike_count
+- ped_count

@@ -1,0 +1,50 @@
+initial_prompt: I'd like a line chart showing the trend of monthly income over years
+  at the company for IBM employees. Use the sample data provided, and plot "YearsAtCompany"
+  on the X-axis and "MonthlyIncome" on the Y-axis. Highlight different job roles and
+  differentiate gender using different line styles or colors. This will help visualize
+  how monthly income potentially grows with the number of years employees spend at
+  the company and how this trend varies across job roles and between genders.
+questions: '1. Do you have a preferred color scheme for differentiating the genders?
+
+  2. What line styles would you prefer for different job roles (e.g., solid, dashed,
+  dotted)?
+
+  3. Is there a specific title you would like for the chart?
+
+  4. Do you have any preference for the labels on the X-axis and Y-axis?
+
+  5. Would you like to include a legend to denote different genders and job roles?
+
+  6. Do you want any specific annotations or data points highlighted on the chart?
+
+  7. Should the chart include gridlines? If so, in which style (e.g., dashed, solid)?
+
+  8. Do you wish to display data values on the line chart for specific points?
+
+  9. Would you like the chart to have any specific background color or pattern?
+
+  10. Do you prefer the lines to be smoothed or to be plotted as straight segments?'
+answers: '1. I am not sure.
+
+  2. Solid for one job role, dashed for another, and dotted for a third would be fine.
+
+  3. "Income Growth Over Years at IBM" would be a good title.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a legend to denote different genders and job roles.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I don’t have any specific preference for background color or pattern.
+
+  10. I prefer straight segments.'
+data_attributes:
+- YearsAtCompany
+- MonthlyIncome
+- Gender
+- JobRole

@@ -1,0 +1,49 @@
+initial_prompt: Create a bar chart showing Christmas songs' chart performance on Billboard.
+  Highlight notable peaks and annotate song titles for emphasis. Use color to distinguish
+  different performers, and make sure to include information on weeks on the chart.
+questions: '1. Do you have a specific color palette preference for differentiating
+  the performers?
+
+  2. What type of annotations do you prefer for notable peaks (e.g., labels, arrows,
+  highlighted bars)?
+
+  3. Would you like the chart to display a title and subtitles? If so, what should
+  they be?
+
+  4. Should the chart include a legend to explain the colors used for different performers?
+
+  5. How would you like the weeks on the chart information to be displayed (e.g.,
+  tooltip, axis label, separate text)?
+
+  6. Do you have any preferences for the bar width or spacing between bars?
+
+  7. Are there any specific fonts or font sizes you prefer for the text in the chart?
+
+  8. Should the chart include grid lines? If yes, how prominent should they be?
+
+  9. Do you prefer a specific order for displaying the songs (e.g., ascending/descending
+  by peak position or weeks on chart)?'
+answers: '1. I do not know.
+
+  2. Labels would be good.
+
+  3. I am not sure.
+
+  4. Yes, please include a legend.
+
+  5. As an axis label would be fine.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Descending by peak position.'
+data_attributes:
+- weekid
+- week_position
+- song
+- performer
+- peak_position
+- weeks_on_chart

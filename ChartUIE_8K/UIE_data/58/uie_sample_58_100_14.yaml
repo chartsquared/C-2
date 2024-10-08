@@ -1,0 +1,51 @@
+initial_prompt: Please create a donut chart visualizing the distribution of missing
+  values across different columns in the dataset titled "Amazon's 500 Bestsellers
+  in Laptop Gear 2024". The columns include title, brand, description, price/currency,
+  price/value, stars, and reviewsCount. Highlight which columns have the most missing
+  values, specifically focusing on the description, stars, and reviewsCount columns.
+  Make sure the chart is easy to read with a clear legend to identify each column.
+  Provide percentages for each segment to show the proportion of missing values. Thank
+  you!
+questions: '1. Do you have any preferred colors for the segments in the donut chart?
+
+  2. Would you like to set any specific order for the segments (e.g., ascending/descending
+  based on missing values)?
+
+  3. Do you have a preferred font style or size for the legend and labels?
+
+  4. Should the chart include data labels directly on the segments, or only in the
+  legend?
+
+  5. Would you like the chart to have a title? If so, what should the title be?
+
+  6. Are there any specific labels or annotations you would like to include within
+  the chart?
+
+  7. Do you want to display actual numbers along with percentages for each segment?
+
+  8. Is there a specific section of the chart you want to highlight or emphasize further
+  than others?'
+answers: '1. I am not sure.
+
+  2. I prefer ascending order based on missing values.
+
+  3. I do not have a specific preference.
+
+  4. Only in the legend.
+
+  5. Yes, the title should be "Distribution of Missing Values in Amazon''s 500 Bestsellers
+  in Laptop Gear 2024".
+
+  6. I am not sure.
+
+  7. Yes, display both actual numbers and percentages for each segment.
+
+  8. No specific section.'
+data_attributes:
+- description
+- stars
+- reviewsCount
+- title
+- brand
+- price/currency
+- price/value

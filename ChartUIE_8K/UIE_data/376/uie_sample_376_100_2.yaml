@@ -1,0 +1,49 @@
+initial_prompt: '<start of user instruction>
+
+
+  I need a bubble chart visualizing the Internet and Smartphone Penetration Rates
+  by country. Use the data details provided, make sure each country is represented
+  as a bubble. The size of each bubble should reflect the Internet Penetration Rate,
+  while the color represents the Smartphone Penetration Rate. Include text annotations
+  to highlight key countries like India, USA, and Brazil, and use highlights to distinguish
+  countries with the highest rates in both metrics. Make it easy to compare and grasp
+  the penetration rates at a glance.
+
+
+  <end of user instruction>'
+questions: '1. Do you have any specific color preferences for the bubble chart?
+
+  2. Would you prefer any specific shapes for the bubbles, or should they all be circular
+  as usual?
+
+  3. Are there any particular themes or styles you would like the chart to follow?
+
+  4. Do you prefer a light or dark background for the chart?
+
+  5. Should the text annotations for key countries be in a specific font or style?
+
+  6. Do you want any specific labels or titles for the axes?
+
+  7. Is there a preferred position for the legend on the chart?
+
+  8. Would you like any specific highlights or indicators, such as borders or glow
+  effects, for countries with the highest rates?'
+answers: '1. I do not know.
+
+  2. I prefer circular bubbles.
+
+  3. I am not sure.
+
+  4. I prefer a light background.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. Yes, please use highlights or glow effects for countries with the highest rates.'
+data_attributes:
+- Country
+- InternetPenetrationRate
+- SmartphonePenetrationRate

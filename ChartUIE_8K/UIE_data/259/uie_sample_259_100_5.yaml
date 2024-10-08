@@ -1,0 +1,52 @@
+initial_prompt: I want to visualize the exoplanet data from the Open Exoplanet Catalogue
+  using a Treemap chart. The Treemap should represent the distribution of planets
+  discovered by different methods and their discovery years. Each tile in the Treemap
+  should display the planet's name, type, mass, and radius. Size the tiles by planetary
+  mass and color them by discovery method. Also, highlight the planets within the
+  'Confirmed planets' list. This visualization should help in understanding the variety
+  and discovery trends of exoplanets in the catalogue.
+questions: '1. Do you have a preferred color palette for differentiating discovery
+  methods?
+
+  2. How would you like the ''Confirmed planets'' to be highlighted (e.g., specific
+  color, border, etc.)?
+
+  3. Should the size of the tiles be directly proportional to the planetary mass or
+  should a logarithmic scale be used?
+
+  4. Are there any specific fonts or font sizes you prefer for the planet''s name,
+  type, mass, and radius labels within each tile?
+
+  5. Do you want any additional information or tooltips when hovering over each tile?
+
+  6. Do you have a preferred layout orientation for the Treemap (e.g., vertical or
+  horizontal)?
+
+  7. Would you like to include any legends or a key for understanding the color-coding
+  and tile sizes?
+
+  8. Are there any specific years or discovery methods you would like to focus on
+  or emphasize in the Treemap?'
+answers: '1. I do not have a specific preference.
+
+  2. I would prefer the ''Confirmed planets'' to be highlighted with a specific border.
+
+  3. I am not sure.
+
+  4. I do not have a preference for fonts or font sizes.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. Yes, please include legends or a key for understanding the color-coding and tile
+  sizes.
+
+  8. I am not sure about focusing on specific years or discovery methods.'
+data_attributes:
+- PlanetIdentifier
+- DiscoveryMethod
+- DiscoveryYear
+- PlanetaryMassJpt
+- RadiusJpt
+- ListsPlanetIsOn

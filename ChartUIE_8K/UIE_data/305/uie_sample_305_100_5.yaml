@@ -1,0 +1,52 @@
+initial_prompt: Can you create a stacked bar chart that visualizes the top companies
+  by workforce size? I'd like to see the number of employees on one axis and the companies
+  on the other. Use different colors to represent the various company origins (United
+  States, Taiwan, etc.). Include the share price (USD) as another stacked section
+  in each bar. Please ensure the chart is labeled clearly and includes a legend for
+  easy interpretation. This will help us compare workforce sizes and share prices
+  across different company origins more effectively. Thank you!
+questions: '1. Do you have a preferred color palette or specific colors you''d like
+  to use for the company origins?
+
+  2. How many top companies would you like to display in the chart?
+
+  3. Would you prefer the bars to be sorted in any specific way, such as by workforce
+  size or company name?
+
+  4. Are there specific labels or annotations you would like to include on the chart
+  besides the legend and axis labels?
+
+  5. Do you have a preferred font style or size for the chart labels and legend?
+
+  6. Would you like to include specific gridlines or background details to enhance
+  readability?
+
+  7. Do you have any preferences for the title of the chart?
+
+  8. Should the share price be displayed as absolute values or in a normalized form
+  relative to each company?
+
+  9. Would you like any specific axis ranges or limits for the number of employees
+  and share price?'
+answers: '1. I am not sure.
+
+  2. I am not sure, maybe around the top 10 companies.
+
+  3. Sorted by workforce size would be great.
+
+  4. I don''t know.
+
+  5. I am not sure.
+
+  6. I don''t know.
+
+  7. "Comparison of Workforce Sizes and Share Prices by Company Origin"
+
+  8. Absolute values for the share price.
+
+  9. I don''t know.'
+data_attributes:
+- Company
+- number of employees
+- share price (USD)
+- Company origin

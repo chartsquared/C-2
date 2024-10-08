@@ -1,0 +1,48 @@
+initial_prompt: Please create a stacked column chart to visualize the Bundesliga points
+  per match. Use columns such as 'FTHG' and 'FTAG' to represent goals scored by the
+  Home and Away teams respectively. Additionally, incorporate the 'Div', 'Date', 'HomeTeam',
+  and 'AwayTeam' columns to provide context. Display the Home and Away goals in the
+  same column for each match date to compare the performance visually. Make sure the
+  chart has labels for each team and a legend to distinguish between Home and Away
+  goals.
+questions: '1. Do you have a preferred color scheme for the chart, especially for
+  differentiating between Home and Away goals?
+
+  2. Would you like the dates on the x-axis to be displayed in a specific format?
+
+  3. Do you prefer having gridlines for better readability in the chart?
+
+  4. Are there any specific font styles or sizes you would like for the labels and
+  legend?
+
+  5. Would you like to display the exact values of the goals on top of each column?
+
+  6. Is there a specific order in which you want the matches to be displayed, such
+  as chronological order?
+
+  7. Do you have any preferences for the chart title or any additional text annotations?
+
+  8. Would you like to include any particular team logos or icons in the chart?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure about the date format.
+
+  3. Yes, I prefer having gridlines for better readability.
+
+  4. I do not know about font styles or sizes.
+
+  5. Yes, it would be good to display the exact values of the goals on top of each
+  column.
+
+  6. Yes, please display the matches in chronological order.
+
+  7. I have no specific preference for the chart title or additional text annotations.
+
+  8. I do not know about including team logos or icons.'
+data_attributes:
+- Div
+- Date
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTAG

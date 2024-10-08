@@ -1,0 +1,62 @@
+initial_prompt: Create a dot plot showing the length of public transit lines in different
+  Canadian cities, with colors representing the percentage of the lines that are tunneled.
+  Plot the x-axis as city names and the y-axis as the length of the transit lines
+  in kilometers. Use distinct dot colors to indicate the tunnel percentage categories
+  (e.g., 0-25%, 26-50%, 51-75%, 76-100%). Include tooltips that display the line name,
+  start year, end year, and total cost in millions of CAD. This chart is for public
+  transit infrastructure planning for government use.
+questions: '1. Do you have any specific preferences for the color palette used to
+  represent the tunnel percentage categories?
+
+  2. Would you like to have grid lines on the chart for better readability?
+
+  3. Do you prefer the city names on the x-axis to be displayed at an angle for better
+  legibility?
+
+  4. Are there any specific font styles or sizes you would like to use for the axis
+  labels and titles?
+
+  5. Should the dots have any specific shapes or sizes to emphasize certain data points?
+
+  6. Do you prefer the tooltip information to be displayed in a particular format
+  or style?
+
+  7. Would you like the chart to include a legend explaining the colors used for tunnel
+  percentage categories?
+
+  8. Do you have any preference for the background color of the chart?
+
+  9. Should the chart include axis titles explaining the x-axis (City Names) and y-axis
+  (Length of Transit Lines in Kilometers)?
+
+  10. Are there any specific data points or cities you would like to highlight on
+  the chart?'
+answers: '1. I do not know.
+
+  2. Yes, I''d like to have grid lines for better readability.
+
+  3. I am not sure.
+
+  4. I do not have any specific preference for font styles or sizes.
+
+  5. I am not sure.
+
+  6. No specific preference for the tooltip format or style.
+
+  7. Yes, please include a legend explaining the colors used for tunnel percentage
+  categories.
+
+  8. I have no specific preference for the background color.
+
+  9. Yes, the chart should include axis titles for both the x-axis (City Names) and
+  y-axis (Length of Transit Lines in Kilometers).
+
+  10. No, there are no specific data points or cities I would like to highlight.'
+data_attributes:
+- city
+- length
+- tunnel_per
+- line
+- start_year
+- end_year
+- cost

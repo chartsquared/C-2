@@ -1,0 +1,42 @@
+initial_prompt: Please create a bubble chart for Udemy courses showing the relationship
+  between the number of subscribers (y-axis), price (x-axis), and content duration
+  (bubble size). Color the bubbles by subject.
+questions: '1. Do you have a preferred color palette for the bubbles categorized by
+  subject?
+
+  2. Would you like to include axis labels and titles? If so, what should they be?
+
+  3. Should there be a legend explaining the bubble colors by subject?
+
+  4. Would you like grid lines on the chart for better readability?
+
+  5. Do you prefer a specific range for the x-axis (price) and y-axis (number of subscribers)?
+
+  6. Should the bubble sizes be normalized to a specific range for better comparison?
+
+  7. Are there any specific courses or subjects you want to highlight in the chart?
+
+  8. Would you like to include data markers for exact values of specific courses when
+  hovering over the bubbles?'
+answers: '1. I am not sure.
+
+  2. Yes, please. The x-axis label should be "Price", the y-axis label should be "Number
+  of Subscribers", and the title should be "Udemy Courses: Price vs. Subscribers with
+  Content Duration".
+
+  3. Yes, there should be a legend explaining the bubble colors by subject.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- num_subscribers
+- price
+- content_duration
+- subject

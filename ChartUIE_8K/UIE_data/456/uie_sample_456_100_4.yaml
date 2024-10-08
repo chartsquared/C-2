@@ -1,0 +1,37 @@
+initial_prompt: I need a choropleth map visualization for the Global Food Security
+  Index, focusing on Europe. The map should highlight different regions (NEU, WEU)
+  within Europe, showcasing individual countries like Finland, Ireland, and the Netherlands
+  with their respective overall scores. Make sure to color-code each country based
+  on their score, so it's easy to compare food security levels across the regions.
+  Analyze the missing data for regions, and handle them appropriately to ensure the
+  map's accuracy. Additionally, include a legend explaining the color gradient representing
+  the overall scores.
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. Should the color gradient be continuous or categorical?
+
+  3. Do you have any specific preferences for how missing data should be handled or
+  indicated on the map?
+
+  4. Would you like any specific annotations or labels on the map for key countries?
+
+  5. Do you require any specific map projection for the choropleth map?
+
+  6. Would you like additional data points or metrics to be included in the tooltip
+  or on-hover display?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, please include labels for Finland, Ireland, and the Netherlands.
+
+  5. I do not know.
+
+  6. I am not sure.'
+data_attributes:
+- Major Area
+- Regions
+- Country
+- Overall score

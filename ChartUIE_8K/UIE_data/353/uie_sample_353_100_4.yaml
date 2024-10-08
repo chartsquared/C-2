@@ -1,0 +1,49 @@
+initial_prompt: Please create a line chart for the data provided in "../Extra_datas/data/353.csv".
+  The x-axis should represent the "REPORTDATE" values, and the y-axis should depict
+  the "VALUE" figures. Given that the data spans across multiple dates, ensure the
+  dates on the x-axis are formatted correctly to show progression over time. This
+  visualization will help analyze trends and fluctuations in the values over the dates
+  included. Thank you!
+questions: '1. Do you have any preferred color schemes for the line chart?
+
+  2. Would you like to see data points marked on the line?
+
+  3. Should there be a title for the chart? If so, what should it be?
+
+  4. Do you prefer grid lines on the chart to help with readability?
+
+  5. Is there a specific format you prefer for the date labels on the x-axis (e.g.
+  MM/DD/YYYY, YYYY-MM-DD)?
+
+  6. Should the y-axis have a specific range, or should it auto-adjust based on the
+  data?
+
+  7. Would you like any reference lines or markers on specific dates or values?
+
+  8. Do you want to display any tooltips or data labels when hovering over the line?
+
+  9. Is there any specific font style or size you prefer for the labels and title?
+
+  10. Should there be any legends or explanations included in the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to see data points marked on the line.
+
+  3. The title should be "Value Trends Over Time".
+
+  4. Yes, grid lines would be helpful for readability.
+
+  5. YYYY-MM-DD format for the date labels would be preferable.
+
+  6. The y-axis should auto-adjust based on the data.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- REPORTDATE
+- VALUE

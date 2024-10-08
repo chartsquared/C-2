@@ -1,0 +1,38 @@
+initial_prompt: Create a table chart categorizing hotels in India by State, City,
+  and Category. Include columns for Hotel Name, Address, Start Date, Expiry Date,
+  and Total Rooms. Highlight missing Alcohol data by indicating 'N/A'.
+questions: '1. Do you have a preferred sorting order for the table (e.g., by State,
+  City, or Category)?
+
+  2. Which column would you like to use as the primary key when sorting?
+
+  3. Are there any specific font styles or sizes you prefer for the table text?
+
+  4. Do you have any preferences for the color scheme, especially for highlighting
+  missing Alcohol data with ''N/A''?
+
+  5. Do you have a preferred layout for the columns, or is the given order satisfactory?
+
+  6. Would you like any additional formatting, such as bold headers, alternating row
+  colors, or borders?'
+answers: '1. I am not sure.
+
+  2. By State.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. The given order is satisfactory.
+
+  6. I am not sure.'
+data_attributes:
+- State
+- City
+- Category
+- Hotel Name
+- Address
+- Start Date
+- Expiry Date
+- Total Rooms
+- Alcohol

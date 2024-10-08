@@ -1,0 +1,45 @@
+initial_prompt: I want to create a stacked bar chart visualizing the physical and
+  chemical properties of amino acids. Specifically, I need the x-axis to represent
+  the amino acids' names (e.g., Alanine, Cysteine, Aspartic acid), and the y-axis
+  to show the values for multiple properties like SASA, VSC, and P1. Each bar should
+  be divided into segments representing these properties. Additionally, please include
+  legends to differentiate between the segments, making comparisons between the amino
+  acids easier. Use data available in the dataset to fill in the values accordingly.
+questions: '1. Do you have a preferred color scheme for the segments in the stacked
+  bar chart?
+
+  2. Should the bars be displayed in a specific order, such as alphabetically by amino
+  acid name or by the values of one of the properties?
+
+  3. Would you like to include axis titles and if so, what should they be labeled?
+
+  4. Is there a preferred font style or size for the labels and legends?
+
+  5. Do you have any specific preferences for the chart''s background color?
+
+  6. Should the chart include grid lines on the y-axis for easier comparison?
+
+  7. Do you prefer the chart to include data value labels on each segment of the bars?
+
+  8. Are there any specific amino acids you would like to highlight or annotate in
+  the chart?'
+answers: '1. I am not sure.
+
+  2. Alphabetically by amino acid name would be good.
+
+  3. Yes, please label the x-axis as "Amino Acids" and the y-axis as "Property Values."
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, please include grid lines on the y-axis for easier comparison.
+
+  7. I am not sure.
+
+  8. No, there are no specific amino acids to highlight.'
+data_attributes:
+- Name
+- SASA
+- VSC
+- P1

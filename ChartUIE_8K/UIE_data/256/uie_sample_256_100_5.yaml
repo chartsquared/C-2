@@ -1,0 +1,46 @@
+initial_prompt: I want an area chart that visualizes the heartbeats per minute (hbpermin)
+  over time for the ECG of Cardiac Ailments dataset. The x-axis should represent the
+  RECORD number, and the y-axis should represent the hbpermin. It should show the
+  variations in heartbeats over different records. The area under the curve should
+  be shaded to make it visually appealing. Ensure to label the axes and provide a
+  legend if necessary. Use different colors if there are multiple conditions like
+  'ARR' in the ECG_signal. Please make it interactive for detailed analysis.
+questions: '1. Do you have a preferred color palette for the different conditions
+  in the ECG_signal?
+
+  2. Is there a specific style you prefer for the area shading (solid, gradient)?
+
+  3. Do you have preferences for the labels on the axes (font size, style)?
+
+  4. Would you like to see any additional annotations or markers on the chart, such
+  as maximum and minimum values?
+
+  5. Are there any specific gridline preferences (e.g., color, thickness) for the
+  chart?
+
+  6. Would you prefer a specific legend placement (top, bottom, side) on the chart?
+
+  7. Do you have any specific title or subtitle you''d like to include on the chart?
+
+  8. Are there any specific aspects of the data you want emphasized, such as certain
+  ranges or thresholds?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure, maybe a gradient?
+
+  3. I do not have specific preferences.
+
+  4. Yes, I would like to see maximum and minimum values annotated.
+
+  5. I do not know.
+
+  6. I do not have a preference for legend placement.
+
+  7. I have no specific title or subtitle in mind.
+
+  8. Emphasize any significant variations or patterns, such as sharply increasing
+  or decreasing heartbeats.'
+data_attributes:
+- RECORD
+- hbpermin
+- ECG_signal

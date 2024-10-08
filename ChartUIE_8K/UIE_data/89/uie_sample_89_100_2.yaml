@@ -1,0 +1,47 @@
+initial_prompt: I'd like to generate a stacked column chart for our Machine Predictive
+  Maintenance Classification data. Specifically, I want the x-axis to represent the
+  'Product ID' and the y-axis to show 'Torque [Nm]' values. Each column should be
+  stacked by 'Failure Type.' Within each 'Product ID,' I want to visualize the proportion
+  of each 'Failure Type' contributing to the total 'Torque [Nm].' Please ensure the
+  chart is color-coded for each 'Failure Type' so that it's easy to differentiate
+  between them. Title the chart "Torque Distribution by Failure Type and Product ID."
+questions: '1. Do you have a preferred color palette for the different ''Failure Type''
+  categories?
+
+  2. Would you like the chart to include gridlines for better readability?
+
+  3. Should there be any specific labels or annotations on the chart beyond the standard
+  axis labels?
+
+  4. Do you want to display the exact values of ''Torque [Nm]'' on the chart bars
+  or keep it clean without data labels?
+
+  5. Is there any specific order you would like the ''Product ID'' categories to be
+  displayed in on the x-axis?
+
+  6. Do you prefer any particular font style or size for the chart title and labels?
+
+  7. Are there any legends or keys that you would like to customize or position differently
+  on the chart?
+
+  8. Would you like to apply any specific formatting to the y-axis (such as setting
+  a range or using log scale)?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I have no specific preference.
+
+  4. Keep it clean without data labels.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- Product ID
+- Torque [Nm]
+- Failure Type

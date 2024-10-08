@@ -1,0 +1,43 @@
+initial_prompt: I have a dataset that includes information about different countries,
+  their continents, life expectancy, population, and GDP per capita. I would like
+  a scatter plot with GDP per capita on the x-axis and life expectancy on the y-axis,
+  with each point representing a country. Different continents should be represented
+  with different colors. This will help visualize the correlation between a country's
+  wealth and the average lifespan of its citizens. Make sure to label the axes and
+  include a legend for the continents.
+questions: "1. Do you have a preferred title for the scatter plot?\n2. Do you have\
+  \ any color preferences for the continents?\n3. Would you like to include data labels\
+  \ for each country on the scatter plot?\n4. What specific font style and size would\
+  \ you prefer for the axis labels and title?\n5. Should the axes have grid lines\
+  \ to improve readability?\n6. Do you prefer a specific range for the x-axis (GDP\
+  \ per capita) and y-axis (life expectancy)?\n7. Would you like to highlight any\
+  \ specific countries or continents on the chart?\n8. Do you want to include any\
+  \ annotations or text boxes to emphasize particular points or trends in the data?\n\
+  9. Should the legend be placed in a specific location (e.g., top-right, bottom-left)\
+  \ on the chart? \n10. Are there any specific chart elements or styles you particularly\
+  \ dislike and prefer to avoid?"
+answers: '1. I am not sure.
+
+  2. I do not have any specific color preferences for the continents.
+
+  3. No, I do not need data labels for each country on the scatter plot.
+
+  4. I have no specific preference for the font style and size for the axis labels
+  and title.
+
+  5. Yes, grid lines on the axes would be helpful for readability.
+
+  6. I am not sure about the specific range for the x-axis and y-axis.
+
+  7. I do not know which specific countries or continents to highlight.
+
+  8. I do not need any annotations or text boxes.
+
+  9. I have no specific preference for the legend''s location.
+
+  10. I do not have any specific chart elements or styles that I dislike.'
+data_attributes:
+- country
+- continent
+- lifeExp
+- gdpPercap

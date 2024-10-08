@@ -1,0 +1,62 @@
+initial_prompt: Please create a scatter plot to visualize the Best Buy 2024 Windows
+  Laptops dataset under the category of computers-and-technology. On the x-axis, plot
+  the "width" of the laptops, and on the y-axis, plot the "depth." Annotate the scatter
+  plot with laptop "brand" and "model" for select data points to highlight standout
+  features. Ensure that different brands are easily distinguishable through color
+  coding or other markers. Include highlights for models with high review counts or
+  ratings to draw attention to popular options. This visualization will help in identifying
+  optimal laptop sizes and the most well-reviewed models. Thanks!
+questions: '1. Do you have any preference for specific colors to be used for different
+  laptop brands?
+
+  2. How would you like the data points to be labeled or highlighted for models with
+  high review counts or ratings?
+
+  3. Are there any specific brands or models you would like to focus on or highlight?
+
+  4. Do you prefer a particular style for annotating standout features (such as text
+  size, font, or annotation location)?
+
+  5. What threshold should we use to determine "high" review counts or ratings for
+  highlighting purposes?
+
+  6. Would you like to include a legend to explain the color coding and markers used
+  in the chart?
+
+  7. Are there any specific tools or methods you prefer for differentiating between
+  data points (e.g., shapes, sizes, or patterns in addition to colors)?
+
+  8. How detailed should the grid lines and axis ticks be for easier reading of the
+  scatter plot?
+
+  9. Should the plot include any specific titles or subtitles to better describe the
+  data and its purpose?
+
+  10. Do you have a preference for the range or limits for the x-axis (width) and
+  y-axis (depth)?'
+answers: '1. I am not sure.
+
+  2. I am not sure, maybe a different colored border or larger marker?
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. I am not sure; maybe top 10% of review counts or ratings?
+
+  6. Yes, please include a legend.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. No specific preference for titles or subtitles.
+
+  10. I have no specific preference for the range or limits.'
+data_attributes:
+- brand
+- model
+- depth
+- width
+- aggregateRating/ratingValue
+- aggregateRating/reviewCount

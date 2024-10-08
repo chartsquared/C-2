@@ -1,0 +1,49 @@
+initial_prompt: Create a bar chart summarizing the number of unique university courses
+  available in different cities. Use columns for "City Name" and "Course ID." Add
+  highlights to emphasize cities with the highest and lowest course counts. Annotate
+  the chart with specific course counts for selected cities.
+questions: '1. Do you have a preferred color scheme for the highlights?
+
+  2. Are there specific cities you want to annotate with course counts, apart from
+  the highest and lowest?
+
+  3. What level of detail do you prefer in the annotations for selected cities?
+
+  4. Do you have a preference for the order of the cities on the x-axis (e.g., alphabetical,
+  by course count)?
+
+  5. Would you like to include gridlines in the background of the chart?
+
+  6. Do you prefer specific fonts or font sizes for the labels and annotations?
+
+  7. Should the chart include a title and subtitle? If so, what should they be?
+
+  8. Do you want to display the course counts as absolute numbers or percentages?
+
+  9. Would you like a legend included that explains the highlights for the highest
+  and lowest counts?'
+answers: '<start of user response>
+
+  1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Alphabetical order would be nice.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please. Title: "University Courses by City" Subtitle: "Summary of unique
+  courses available in different cities."
+
+  8. Absolute numbers.
+
+  9. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- City Name
+- Course ID

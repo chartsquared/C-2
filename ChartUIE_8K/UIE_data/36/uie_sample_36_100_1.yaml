@@ -1,0 +1,47 @@
+initial_prompt: Create a geographic heatmap of house sales in King County, USA. Show
+  data points for price, bedrooms, and bathrooms using color intensity to reflect
+  price differences. Annotate selected high-price areas to focus attention on them.
+  Include highlights for major variations in sqft_living and sqft_lot sizes. The purpose
+  is to visualize property value distribution and identify high-value clusters. Use
+  data from the provided dataset to inform the visualization, ensuring it is practical
+  for real estate market analysis. Include relevant non-data annotations to give context
+  about the dataset's timeframe and features.
+questions: '1. Do you have a preference for the color scheme to be used for the heatmap?
+
+  2. What level of color intensity granularity would you like for price differences?
+
+  3. Are there specific annotations you would like to include for high-price areas?
+
+  4. How would you prefer the variations in ''sqft_living'' and ''sqft_lot'' to be
+  highlighted?
+
+  5. Do you have a preference for the map style or background (e.g., satellite view,
+  street view)?
+
+  6. What timeframe should the non-data annotations cover?
+
+  7. Are there any particular features or details about the dataset you would like
+  emphasized in the annotations?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure about the level of color intensity granularity for price differences.
+
+  3. I would like annotations for high-price areas to mention the neighborhood names
+  and median prices.
+
+  4. I do not know, maybe just different color shades or intensity?
+
+  5. Street view would be fine.
+
+  6. The timeframe should cover the last 5 years.
+
+  7. Emphasize the total number of houses sold and the average price, bedrooms, and
+  bathrooms in the dataset.'
+data_attributes:
+- price
+- bedrooms
+- bathrooms
+- lat
+- long
+- sqft_living
+- sqft_lot

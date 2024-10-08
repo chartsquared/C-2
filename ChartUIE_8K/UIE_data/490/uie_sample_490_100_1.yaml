@@ -1,0 +1,60 @@
+initial_prompt: Create a Treemap to visualize the distribution of 'LCA_Category' and
+  'LCA_Category_sub' for fish matching. Use different colors for each 'LCA_Category'
+  and varying shades to distinguish each 'LCA_Category_sub'. Highlight the subcategories
+  with unique patterns or border thickness. Annotate notable sections with 'FAO Match'
+  values, particularly focusing on those with missing 'Gephart Match' values. This
+  chart aims to emphasize the diversity within fish categories and subcategories,
+  helping to identify areas with incomplete data. Ensure annotations are clear, drawing
+  attention to any unique patterns or insights revealed by the data distribution.
+questions: '1. Do you have a preferred color palette for differentiating ''LCA_Category''?
+
+  2. How would you like the varying shades for ''LCA_Category_sub'' to be determined—by
+  a gradient or distinct colors?
+
+  3. Are there specific border thickness or pattern styles you prefer for highlighting
+  the subcategories?
+
+  4. Do you want to include legends to explain the color and shading scheme used in
+  the Treemap?
+
+  5. Would you prefer the annotations for ''FAO Match'' values to be inside or outside
+  the Treemap sections?
+
+  6. How detailed should the annotations be for the sections with missing ''Gephart
+  Match'' values?
+
+  7. Is there a specific font type or size you prefer for the annotations to ensure
+  readability?
+
+  8. Are there any additional highlights or markers you would like to use for unique
+  patterns or insights?
+
+  9. Would you like the plot to focus on specific ''LCA_Category'' and their subcategories
+  or provide an overall view?
+
+  10. Do you have any preferences regarding the aspect ratio or sizing of the Treemap
+  to accommodate the annotations and highlights?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I would like a medium thickness border with dashed patterns.
+
+  4. Yes, please include legends.
+
+  5. Inside the Treemap sections.
+
+  6. I would like them to be brief but informative, highlighting key points.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Provide an overall view.
+
+  10. I have no specific preference.'
+data_attributes:
+- LCA_Category
+- LCA_Category_sub
+- FAO Match
+- Gephart Match

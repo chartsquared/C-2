@@ -1,0 +1,52 @@
+initial_prompt: I have a dataset about Marvel superhero movies, focusing on their
+  financial and critical performance. Could you create a box chart for me? I want
+  the chart to show the distribution of the worldwide gross ($m) and budget for the
+  different movie categories, like "Ant-Man" and "Avengers." The box chart should
+  help me easily compare these values across the two categories. Please ensure the
+  categories are clearly labeled and include any outliers and medians in the data.
+  Thank you!
+questions: '1. Do you have any specific color preferences for the box chart categories?
+
+  2. Would you like to see individual data points used to calculate the box plots,
+  or should I keep the focus on summaries such as quartiles, medians, and outliers?
+
+  3. Should the y-axis be scaled to include the full range of data, or would you prefer
+  a zoomed-in view to focus on a specific range?
+
+  4. Do you want gridlines enabled on the chart for better readability?
+
+  5. How much emphasis would you like on the outliers? Should they be prominently
+  highlighted?
+
+  6. Would you like any additional annotations or labels on the chart to highlight
+  key findings or significant data points?
+
+  7. Do you have any preferences for the style of the box plot, such as traditional
+  Tukey boxes, notched boxes, or violin plots for density estimation?
+
+  8. Should the chart include a title and axis labels? If yes, please provide the
+  exact text.
+
+  9. Do you require any specific margins or padding around the chart for any reason?'
+answers: '1. I am not sure.
+
+  2. Please keep the focus on summaries such as quartiles, medians, and outliers.
+
+  3. I am not sure.
+
+  4. Yes, please enable gridlines for better readability.
+
+  5. Yes, prominently highlight the outliers.
+
+  6. I am not sure.
+
+  7. I prefer traditional Tukey boxes.
+
+  8. Yes, please include a title: "Financial Performance of ''Ant-Man'' and ''Avengers''
+  Movies", and axis labels: "Movie Categories" for x-axis and "Amount ($m)" for y-axis.
+
+  9. I do not know.'
+data_attributes:
+- category
+- worldwide gross ($m)
+- budget

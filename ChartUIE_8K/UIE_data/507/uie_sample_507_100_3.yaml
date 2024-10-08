@@ -1,0 +1,64 @@
+initial_prompt: Create a bubble chart illustrating the relationship between the 'Electorate'
+  size and the percentage of votes for 'CON', 'LAB', and 'LIB'. The x-axis should
+  represent 'Electorate', and the y-axis should show vote percentages for 'CON(%)',
+  'LAB(%)', and 'LIB(%)'. Each bubble should represent an electoral area with its
+  size corresponding to the total number of votes in that area. Color code the bubbles
+  based on the winning party ('Winner'). Include a legend for party color coding and
+  a tooltip to display detailed info for each area on hover. This will help visualize
+  voting patterns across different electorates.
+questions: '1. Do you have any color preferences for the party color coding in the
+  chart?
+
+  2. How would you prefer the order of parties to be displayed in the legend?
+
+  3. Do you have a preference for the size scaling of the bubbles corresponding to
+  the number of votes?
+
+  4. Would you like to include any specific labels on the data points (bubbles) on
+  the chart?
+
+  5. Are there any specific ranges or limits you would like to set for the x-axis
+  (''Electorate'') or y-axis (''Vote percentages'')?
+
+  6. Do you prefer a specific font style or size for the chart labels and legend?
+
+  7. Would you like to include axis titles? If so, what titles would you prefer for
+  the x-axis and y-axis?
+
+  8. Do you have preferences for the tooltip content or format when hovering over
+  each bubble?
+
+  9. Is there a specific background color or theme you would like for the chart?
+
+  10. Do you have any specific layout preferences, such as the position of the legend
+  or title?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, please include axis titles. For the x-axis: "Electorate Size" and for the
+  y-axis: "Vote Percentage".
+
+  8. I would like the tooltip to display the electoral area''s name, the number of
+  votes, and the percentage of votes for ''CON'', ''LAB'', and ''LIB''.
+
+  9. I do not have any specific background color preference.
+
+  10. I do not know.'
+data_attributes:
+- Electorate
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Winner
+- CON
+- LAB
+- LIB

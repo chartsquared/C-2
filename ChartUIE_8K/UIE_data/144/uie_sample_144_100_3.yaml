@@ -1,0 +1,55 @@
+initial_prompt: Create a box plot for the dataset "Data on Palestinian Structures
+  Israel Demolished." The plot should visualize the distribution of 'housing_units'
+  demolished across different 'districts'. Additionally, please include a separate
+  box plot for 'people_left_homeless' and 'minors_left_homeless' categorized by 'type_of_structure'.
+  Make sure to handle any missing data appropriately and label the axes clearly. Use
+  distinct colors for each category to enhance readability. This visualization will
+  help in understanding the impact of demolitions across different regions and types
+  of structures.
+questions: '1. Do you have specific preferences for the color palette to be used for
+  different categories in the box plots?
+
+  2. Do you prefer any specific style or format for the axis labels and titles?
+
+  3. Would you like grid lines to be included or excluded for better readability?
+
+  4. Are there any specific regions or types of structures that should be highlighted
+  or emphasized in the visualization?
+
+  5. How would you prefer missing data to be handled in the visualizations?
+
+  6. Do you have any preferences on the scale (e.g., log scale) of the axes?
+
+  7. Should the box plots include data points (e.g., outliers) or just the summary
+  statistics (median, quartiles)?
+
+  8. Do you prefer any specific font for text labels and titles?
+
+  9. Are there any other annotations or specific information that you would like to
+  be added to the plots?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preference.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Please handle missing data appropriately, perhaps by excluding or marking them
+  clearly.
+
+  6. I do not have any specific preference.
+
+  7. The box plots should include both summary statistics and data points (such as
+  outliers).
+
+  8. I do not have any specific preference.
+
+  9. No, there are no additional annotations or specific information that I need added
+  to the plots.'
+data_attributes:
+- housing_units
+- district
+- people_left_homeless
+- minors_left_homeless
+- type_of_sturcture

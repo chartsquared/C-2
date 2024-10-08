@@ -1,0 +1,53 @@
+initial_prompt: Create a geographic heatmap visualizing water potability. Use ph,
+  Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes,
+  and Turbidity data. Include text annotations to highlight regions with high contamination.
+  Utilize varying color intensities to represent data values and highlight critical
+  areas. Use the map to assess potability distribution.
+questions: '1. Do you have a preferred color palette for representing different levels
+  of contamination?
+
+  2. What type of base map do you prefer for the geographic heatmap (e.g., satellite,
+  terrain, street map)?
+
+  3. How would you like the text annotations to be displayed (e.g., data labels, tooltips,
+  pop-ups)?
+
+  4. Should the heatmap just show the overall water potability or also allow highlighting
+  specific variables like ''ph'', ''Hardness'', etc.?
+
+  5. Do you have a specific geographic region or boundary you want the map to focus
+  on?
+
+  6. Are there specific thresholds for contamination levels you want to highlight
+  with specific colors or annotations?
+
+  7. What scale do you prefer for the color intensity representation (e.g., linear,
+  logarithmic)?
+
+  8. Do you need additional legends or explanatory notes to assist the audience in
+  interpreting the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Data labels.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, additional legends or explanatory notes would be helpful.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity

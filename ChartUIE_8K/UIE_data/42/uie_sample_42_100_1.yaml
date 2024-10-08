@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart using the given urine analysis data to visualize
+  trends in 'gravity', 'ph', 'osmo', 'cond', 'urea', and 'calc' values over multiple
+  samples. Highlight critical points, such as max and min values, with text annotations
+  for better visibility. This will help with kidney stone prediction by showcasing
+  variations and significant patterns in the data, aiding health professionals in
+  identifying potential concerns at a glance. Focus the viewer's attention on key
+  outliers and unusual trends. Consider color-coding the lines for clear differentiation
+  between each variable.
+questions: '1. Do you have a preferred color scheme or specific colors you would like
+  to use for each variable line?
+
+  2. How would you like the critical points (max and min values) to be annotated (e.g.,
+  specific text format, arrow indicators)?
+
+  3. Do you have a specific style in mind for the line types (e.g., solid, dashed,
+  dotted)?
+
+  4. Would you prefer a particular type of legend placement or style for better readability?
+
+  5. Are there any specific axis labels or ranges you would like to set up for the
+  chart?
+
+  6. Would you like grid lines to be included in the chart? If so, should they be
+  for both axes or just one?
+
+  7. Is there a specific font or text style you prefer for the annotations and labels?
+
+  8. Do you have any preference for the chart title and subtitle format?
+
+  9. Are there any secondary visual elements you want to include, such as moving averages
+  or trend lines?'
+answers: '1. I am not sure.
+
+  2. I would like the critical points to be annotated with arrows and text indicating
+  "Max" or "Min".
+
+  3. I do not know.
+
+  4. I would prefer a legend placement at the top right for better readability.
+
+  5. No specific axis labels or ranges, just ensure they are clearly labeled.
+
+  6. Yes, include grid lines for both axes.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference for the chart title and subtitle format.
+
+  9. I do not know.'
+data_attributes:
+- gravity
+- ph
+- osmo
+- cond
+- urea
+- calc

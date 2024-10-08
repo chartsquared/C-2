@@ -1,0 +1,56 @@
+initial_prompt: '<start of instructions>
+
+  Visualize the memory test performance of individuals before and after administering
+  a drug using a box chart. Highlight the changes in memory scores (Diff) based on
+  the Happy_Sad_group. Use text annotations to point out significant drops or improvements
+  in memory scores for certain age groups. This will help in understanding the drug''s
+  effectiveness and its impact on different emotional states.
+
+  <end of instructions>'
+questions: '1. Do you have a preferred color scheme for highlighting the Happy_Sad_group?
+
+  2. Would you like to specify any particular age groups for text annotations?
+
+  3. Do you have any preferred styles for text annotations (e.g., font size, color)?
+
+  4. Should the box chart display individual data points as well?
+
+  5. Do you prefer separate box charts for Mem_Score_Before and Mem_Score_After, or
+  should they be combined into a single chart?
+
+  6. Are there any specific ranges or thresholds in memory scores that should be highlighted?
+
+  7. Would you like any additional statistical information or summary to be included
+  in the chart (e.g., mean, median)?
+
+  8. Is there a specific order in which you would like the Happy_Sad_group categories
+  to be displayed?
+
+  9. Are there any specific chart titles or axis labels you prefer?
+
+  10. Should the chart include a legend explaining the Happy_Sad_group categories?'
+answers: '1. I do not have a specific preference.
+
+  2. I would like to annotate changes for the age groups 20-30 and 60-70.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I prefer a single chart for Mem_Score_Before and Mem_Score_After.
+
+  6. I do not have any specific ranges or thresholds in mind.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. Yes, please include a legend explaining the Happy_Sad_group categories.'
+data_attributes:
+- age
+- Happy_Sad_group
+- Mem_Score_Before
+- Mem_Score_After
+- Diff

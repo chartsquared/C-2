@@ -1,0 +1,63 @@
+initial_prompt: Create a grouped bar chart showing the number of incidents by borough
+  and type of incident. Highlight boroughs with the highest and lowest incidents to
+  draw attention. Annotate specific high-impact incidents, especially those involving
+  domestic pets or unique animal rescues. Ensure annotations provide context.
+questions: '1. Do you have any preference for the color scheme of the bar chart?
+
+  2. Should the bars representing different types of incidents have distinct patterns
+  or textures?
+
+  3. Do you want a specific style for highlighting the boroughs with the highest and
+  lowest incidents (e.g., color accents, bold outlines)?
+
+  4. How detailed should the annotations be for high-impact incidents?
+
+  5. Do you prefer the annotations to be presented as text labels directly on the
+  chart or as a legend/key?
+
+  6. Would you like tooltips to provide additional context when hovering over specific
+  bars or annotations?
+
+  7. Are there any specific fonts or font sizes you prefer for the chart labels and
+  annotations?
+
+  8. Should the chart include a title and subtitle? If so, what should they be?
+
+  9. Do you want gridlines in the chart? If yes, should they be major and/or minor
+  gridlines?
+
+  10. Is there a specific order you want the boroughs displayed in the chart (e.g.,
+  alphabetical, by number of incidents)?
+
+  11. Would you prefer the chart to include a legend explaining the colors/patterns
+  used for different types of incidents?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I would like the annotations to be somewhat detailed, providing context about
+  the incident.
+
+  5. I prefer the annotations to be text labels directly on the chart.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, the chart should include a title and subtitle. Title: "Incidents by Borough
+  and Type". Subtitle: "Highlighting High-Impact Events and Animal Rescues".
+
+  9. I have no specific preference.
+
+  10. By number of incidents would be good.
+
+  11. Yes, the chart should include a legend explaining the colors/patterns used for
+  different types of incidents.'
+data_attributes:
+- borough
+- type_of_incident
+- incident_number
+- final_description
+- animal_group_parent

@@ -1,0 +1,62 @@
+initial_prompt: 'Create a stacked column chart to visualize the stroke prediction
+  dataset. Use gender, smoking_status, and stroke as categories. Each bar should represent
+  a gender and be divided into sections for different smoking statuses: ''formerly
+  smoked'', ''never smoked'', ''smokes'', and ''Unknown''. Highlight the sections
+  where strokes occurred to draw attention to these critical factors. Add text annotations
+  for avg_glucose_level and bmi data points to provide context regarding health metrics
+  for each gender. This visualization will help in understanding the relationship
+  between smoking, gender, and the likelihood of strokes.'
+questions: '1. Do you have any preferences for the color scheme of the chart, especially
+  for highlighting the sections where strokes occurred?
+
+  2. Would you like to include a legend, and if so, where would you prefer it to be
+  located (e.g., top, bottom, left, right)?
+
+  3. Do you have any specific font styles or sizes that you would like to use for
+  the text annotations and labels?
+
+  4. How would you like to handle missing ''bmi'' data in the annotations?
+
+  5. Do you have any preferences for the order of the smoking_status categories within
+  each gender bar?
+
+  6. Would you like to include gridlines, and if so, what format should they take
+  (e.g., light, heavy, dashed)?
+
+  7. Are there any specific titles or subtitles you want to appear on the chart?
+
+  8. Do you have a preference for the orientation of the text annotations (e.g., horizontal,
+  angled)?
+
+  9. Should the sections of the bars be labeled with percentages or raw counts?
+
+  10. Would you like to include error bars or confidence intervals for avg_glucose_level
+  and bmi annotations?'
+answers: '1. I am not sure about the color scheme. Please choose a scheme that clearly
+  differentiates the sections and highlights the stroke occurrences.
+
+  2. Yes, include a legend. I am not sure where it should be located.
+
+  3. I do not have any specific preferences for font styles or sizes.
+
+  4. I am not sure how to handle missing ''bmi'' data.
+
+  5. I have no specific preference for the order of the smoking_status categories
+  within each gender bar.
+
+  6. Yes, include gridlines. I am not sure about the format.
+
+  7. Title: "Relationship Between Smoking, Gender, and Stroke Likelihood". Subtitle:
+  "Including avg_glucose_level and bmi Metrics".
+
+  8. I have no specific preference for the orientation of the text annotations.
+
+  9. Label the sections with percentages.
+
+  10. I do not know if error bars or confidence intervals are necessary.'
+data_attributes:
+- gender
+- smoking_status
+- stroke
+- avg_glucose_level
+- bmi

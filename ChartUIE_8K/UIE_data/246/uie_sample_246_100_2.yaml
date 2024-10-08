@@ -1,0 +1,57 @@
+initial_prompt: Create a Spline chart visualizing bacteria data. The x-axis will represent
+  the bacteria names, while the y-axis represents harmfulness to humans (Yes, No).
+  Highlight harmful (Yes) bacteria in red and non-harmful ones (No) in green. Annotate
+  key bacteria like 'Escherichia coli,' 'Staphylococcus aureus,' and 'Lactobacillus
+  acidophilus' to focus attention on where they're commonly found (intestinal tract,
+  skin, nasal passages, human mouth & intestine). Emphasize the different families
+  they belong to with text annotations for better understanding. This helps in biology
+  studies to differentiate and recognize bacteria properties easily.
+questions: '1. Do you have a preferred font style or size for annotations on the chart?
+
+  2. Should the x-axis (bacteria names) be sorted in any particular order?
+
+  3. Do you have a specific color preference for the text annotations indicating the
+  families of the bacteria?
+
+  4. Would you like a legend to be included in the chart? If so, do you have any specific
+  preferences for it?
+
+  5. Do you want gridlines for the x-axis, y-axis, or both?
+
+  6. Would you prefer the spline lines to be smoothed or straight?
+
+  7. Do you have a preferred style or format for the labels (text annotations) of
+  the key bacteria?
+
+  8. Should the annotations for the key bacteria include additional information besides
+  ''Where Found,'' such as the family name?
+
+  9. Do you have any preference on the background color or theme of the chart (light/dark)?
+
+  10. Should the chart include a title and/or subtitle? If yes, do you have any specific
+  text in mind?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. No specific preference.
+
+  4. Yes, please include a legend. I have no specific preferences for it.
+
+  5. Both x-axis and y-axis gridlines, please.
+
+  6. Smoothed spline lines.
+
+  7. I do not know.
+
+  8. Yes, include the family name in the annotations.
+
+  9. No specific preference on the background color.
+
+  10. Yes, please include a title and subtitle. Title: "Harmfulness of Common Bacteria
+  to Humans", Subtitle: "Highlighted differences in harmful and non-harmful bacteria".'
+data_attributes:
+- Name
+- Family
+- Where Found
+- Harmful to Humans

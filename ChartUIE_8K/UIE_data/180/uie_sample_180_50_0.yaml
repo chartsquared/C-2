@@ -1,0 +1,60 @@
+initial_prompt: '<start of user emulated instruction>
+
+  Create a scatter plot to visualize ''Average Rating'' against ''Number of Ratings''
+  for the top 5000 albums, highlighting notable albums and providing data-driven annotations
+  for context.
+
+  <end of user emulated instruction>'
+questions: '1. Do you have any specific color preferences for highlighting notable
+  albums?
+
+  2. Would you prefer to label the notable albums directly on the scatter plot or
+  use a legend?
+
+  3. Are there specific notable albums you want to highlight, or should they be determined
+  by criteria like high ratings or a high number of ratings?
+
+  4. Do you have a preference for the style of annotations (e.g., text boxes, data
+  callouts)?
+
+  5. How detailed should the data-driven annotations be (e.g., include album title,
+  artist name, release date)?
+
+  6. Would you like to set specific axis ranges for ''Average Rating'' and ''Number
+  of Ratings''?
+
+  7. Should the plot include grid lines for easier reference of data points?
+
+  8. Do you prefer a specific size for the markers representing each album on the
+  scatter plot?
+
+  9. Would you like trend lines or any form of regression analysis included in the
+  scatter plot?
+
+  10. Is there a particular font style or size you prefer for labels and annotations?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure, could be based on high ratings or a high number of ratings.
+
+  4. I am not sure.
+
+  5. I think including album title and artist name in the annotations makes sense.
+
+  6. I do not have any specific preference.
+
+  7. Yes, including grid lines would be helpful.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Average Rating
+- Number of Ratings

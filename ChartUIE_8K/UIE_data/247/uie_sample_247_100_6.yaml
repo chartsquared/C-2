@@ -1,0 +1,73 @@
+initial_prompt: Create a heatmap to visualize the CpG values of smoking and non-smoking
+  patients. Use GSM, Smoking Status, Gender, Age, and the CpG sites (cg00050873 to
+  cg03706273) from the provided data. The heatmap should show how CpG values differ
+  across different patients based on their smoking status, gender, and age. Ensure
+  the heatmap is color-coded to distinguish between high and low CpG values. Include
+  a legend explaining the color scheme for better interpretation. The x-axis should
+  represent the different CpG sites, and the y-axis should represent individual patients
+  (GSM).
+questions: '1. Do you have any specific color preferences or schemes for distinguishing
+  between high and low CpG values?
+
+  2. How should we categorize and display the smoking status, gender, and age in the
+  visualization?
+
+  3. Do you prefer a specific ordering of the patients (GSM) on the y-axis, such as
+  by age or another attribute?
+
+  4. Should we include any specific labels or annotations for certain CpG sites or
+  patient groups?
+
+  5. How detailed do you want the legend to be? Should it include all specific value
+  ranges and corresponding colors?
+
+  6. Is there a preferred way to handle missing values in the heatmap? Should they
+  be visualized in a distinct way?
+
+  7. Should we include any statistical summaries or additional data overlays, such
+  as average CpG values by smoking status or gender?
+
+  8. Are there specific aspects of the differences in CpG values that you want to
+  highlight or focus on in the heatmap?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I prefer to see smoking status, gender, and age maybe as annotations or color
+  bars beside the heatmap.
+
+  3. I am not sure about the specific ordering of the patients.
+
+  4. I do not have any specific labels or annotations to include.
+
+  5. Yes, I would like the legend to include all specific value ranges and corresponding
+  colors.
+
+  6. I do not know how to handle missing values.
+
+  7. I do not have a preference for including additional data overlays.
+
+  8. I am not sure which aspects to highlight specifically.'
+data_attributes:
+- GSM
+- Smoking Status
+- Gender
+- Age
+- cg00050873
+- cg00212031
+- cg00213748
+- cg00214611
+- cg00455876
+- cg01707559
+- cg02004872
+- cg02011394
+- cg02050847
+- cg02233190
+- cg02494853
+- cg02839557
+- cg02842889
+- cg03052502
+- cg03155755
+- cg03244189
+- cg03443143
+- cg03683899
+- cg03695421
+- cg03706273

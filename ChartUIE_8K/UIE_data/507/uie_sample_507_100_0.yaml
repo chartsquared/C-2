@@ -1,0 +1,60 @@
+initial_prompt: Create a stacked column chart to visualize the election results by
+  constituency, focusing on the percentage of votes each party received. Each column
+  should represent a constituency and be divided into segments for each party (CON(%),
+  LAB(%), LIB(%), etc.). Use different colors for each party's segment. Additionally,
+  apply text annotations to display exact percentages on top of each segment. Highlight
+  the winning party in each constituency by making its segment more prominent (e.g.,
+  bold or thicker border). This visualization helps quickly compare party performance
+  and identify winners across constituencies.
+questions: '1. Do you have any specific color preferences for the different party
+  segments?
+
+  2. Would you like to use a specific font style or size for the text annotations
+  displaying the percentages?
+
+  3. How would you prefer the winning party''s segment to be highlighted (e.g., bold,
+  thicker border, different color)?
+
+  4. Should the constituencies be ordered in any particular way (e.g., alphabetically,
+  by total votes, etc.)?
+
+  5. Do you want to include a legend to explain the colors used for each party?
+
+  6. Is there a specific title or subtitle you would like to use for the chart?
+
+  7. Are there any additional labels or annotations you would like to include on the
+  chart?
+
+  8. Would you prefer the chart to be displayed with a specific background color or
+  grid lines?
+
+  9. Do you want to include any specific margins or padding around the chart?'
+answers: '1. I do not have any specific color preferences for the different party
+  segments.
+
+  2. I am not sure about the specific font style or size for the text annotations.
+
+  3. I''d prefer the winning party''s segment to be highlighted with a thicker border.
+
+  4. I do not know how the constituencies should be ordered.
+
+  5. Yes, I would like to include a legend to explain the colors used for each party.
+
+  6. I have no specific preference for a title or subtitle for the chart.
+
+  7. I do not have any additional labels or annotations I''d like to include.
+
+  8. I do not know if I prefer a specific background color or grid lines.
+
+  9. I do not have any specific preferences for margins or padding around the chart.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Winner

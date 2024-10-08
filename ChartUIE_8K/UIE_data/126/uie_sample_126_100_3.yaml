@@ -1,0 +1,43 @@
+initial_prompt: I have data on California housing prices, including various attributes
+  like longitude, latitude, and median house value. I want to create a Donut chart
+  to visualize the 'ocean_proximity' distribution across different categories ('NEAR
+  BAY', etc.). This will help understand how many houses fall into these proximity
+  categories, highlighting the frequency of each. Please use the column 'ocean_proximity'
+  for the Donut chart and ensure each segment represents a different category. This
+  visualization will provide insights into the geographic distribution of the housing
+  market. Thank you!
+questions: '1. What color scheme would you prefer for the different segments of the
+  Donut chart?
+
+  2. Do you have a preference for the thickness of the Donut chart rings?
+
+  3. Should the segments of the chart have labels indicating the percentage or the
+  count of houses in each category?
+
+  4. Would you like to include a legend explaining the categories in the Donut chart,
+  and if so, where should it be placed (e.g., beside the chart, below the chart)?
+
+  5. Do you want the chart to display the exact numerical values within each segment?
+
+  6. How would you like the chart title to be worded, and where should it be positioned
+  (e.g., centered, aligned left)?
+
+  7. Is there a specific font style or size preference for the labels and title?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the segments of the chart should have labels indicating the percentage of
+  houses in each category.
+
+  4. Yes, I would like to include a legend explaining the categories. I am not sure
+  where it should be placed.
+
+  5. I do not have a preference.
+
+  6. Please title the chart "Distribution of California Housing by Ocean Proximity"
+  and position it centered.
+
+  7. I do not have a specific font style or size preference.'
+data_attributes:
+- ocean_proximity

@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap to visualize the missing values in the processor
+  dataset. Use different colors to represent the count of missing values for each
+  column, highlighting areas with most missing data.
+questions: '1. Do you have any specific color palette preferences for the heatmap?
+
+  2. Would you like to include gridlines in the heatmap for better readability?
+
+  3. Should the heatmap include a legend to explain the color scale for missing values?
+
+  4. Is there a specific layout you prefer for the heatmap, such as portrait or landscape
+  orientation?
+
+  5. Would you like to annotate the heatmap with the actual count of missing values
+  in each cell?
+
+  6. Do you have any preferences for the font style or size for labels and annotations
+  in the heatmap?
+
+  7. Should the heatmap include titles and axis labels? If so, do you have any specific
+  text you would like to use?
+
+  8. Would you like to cluster columns or rows based on the missing values, or display
+  them in the order they appear in the dataset?
+
+  9. Do you prefer the heatmap to highlight columns with higher missing data more
+  prominently?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend to explain the color scale for missing values.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, please include titles and axis labels. "Missing Values Heatmap" for the
+  title and default labels for the axes is fine.
+
+  8. I am not sure.
+
+  9. Yes, please highlight columns with higher missing data more prominently.'
+data_attributes:
+- transistor_count
+- process
+- area

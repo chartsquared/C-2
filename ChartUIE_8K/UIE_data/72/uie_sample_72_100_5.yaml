@@ -1,0 +1,60 @@
+initial_prompt: I need a geographic heatmap visualizing the number of terrorist attacks
+  worldwide over multiple years. The data file `72.csv` contains columns for Entity
+  (country), Code (country code), Year, and Terrorist attacks. There are some missing
+  values in the Code column. I want the heatmap to show the intensity of attacks across
+  different regions, with a color gradient indicating the number of attacks. The map
+  should allow me to see changes over the years, so an interactive element would be
+  helpful. Please make sure the map is clear and visually appealing.
+questions: '1. Do you have a preferred color gradient for indicating the intensity
+  of terrorist attacks?
+
+  2. What map projection would you prefer for the geographic heatmap (e.g., Mercator,
+  Robinson, etc.)?
+
+  3. Do you want specific labels for countries, regions, or continents to be displayed
+  on the map?
+
+  4. Should the map include tooltips or labels that show the exact number of terrorist
+  attacks when hovering over a region?
+
+  5. Would you like the years to be represented on a timeline slider, buttons, or
+  another specific navigation mechanism?
+
+  6. Do you prefer the map to start at a specific year, or should it default to showing
+  the most recent year''s data?
+
+  7. Are there any specific regions or countries you would like to highlight or focus
+  on in the heatmap?
+
+  8. Should the map include a legend that explains the color gradient and the corresponding
+  number of attacks?
+
+  9. Would you prefer certain basemap styles (e.g., streets, satellite, outdoor, light,
+  dark)?
+
+  10. Do you have any specific preferences for the font style or size for the labels
+  and titles on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like specific labels for countries.
+
+  4. I have no specific preference.
+
+  5. A timeline slider would be great.
+
+  6. It should default to showing the most recent year''s data.
+
+  7. I have no specific preference.
+
+  8. Yes, the map should include a legend.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- Entity
+- Code
+- Year
+- Terrorist attacks

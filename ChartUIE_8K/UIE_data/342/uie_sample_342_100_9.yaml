@@ -1,0 +1,50 @@
+initial_prompt: Please create a line chart to visualize the historical price movements
+  of Cardano. The chart should use the data from the given CSV file and include lines
+  for 'Open', 'High', 'Low', 'Close', and 'Volume' over the date range. Make sure
+  to color-code each line for clarity. Additionally, it would be helpful to include
+  a legend and appropriate labels on the axes to clearly indicate the data being presented.
+  This visualization will help in analyzing the performance trends and volatility
+  of Cardano over time. Thank you!
+questions: '1. Do you have any specific color preferences for the lines representing
+  ''Open'', ''High'', ''Low'', ''Close'', and ''Volume''?
+
+  2. What style would you like the lines to be (e.g., solid, dashed)?
+
+  3. Are there any particular fonts you would prefer for the chart labels and legend?
+
+  4. Do you have a preference for the positioning of the legend (e.g., top, bottom,
+  left, right)?
+
+  5. Would you like to include gridlines in the chart for better readability? If so,
+  should they be in the background or foreground?
+
+  6. Do you have any specific requirements for the axis scales or ranges?
+
+  7. Would you prefer the volume to be displayed on a secondary y-axis for better
+  clarity?
+
+  8. Do you need any additional annotations or markers on the chart for significant
+  events or data points?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. I would prefer the legend to be at the top.
+
+  5. Yes, please include gridlines. I am not sure if they should be in the background
+  or foreground.
+
+  6. I do not know.
+
+  7. Yes, displaying the volume on a secondary y-axis would be great for better clarity.
+
+  8. I do not need any additional annotations or markers.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

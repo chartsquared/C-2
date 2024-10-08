@@ -1,0 +1,44 @@
+initial_prompt: Create a geographic heatmap based on the dataset provided. The heatmap
+  should visualize the average salary distribution across different regions and the
+  smoking status of individuals. Additionally, the map should differentiate between
+  male and female data points to reflect gender-based income disparities. Ensure the
+  heatmap clearly shows the highest and lowest salary areas, the number of children,
+  and the age distribution per region. Highlight trends in BMI and driving test results
+  by region. Use color gradients to represent varying salary levels and incorporate
+  tooltips for detailed information on each data point. Thank you!
+questions: '1. Do you have any specific color gradients you prefer for representing
+  varying salary levels?
+
+  2. Would you like any particular geographic boundaries or map styles (e.g., political
+  regions, natural terrain)?
+
+  3. Are there any specific regions you want to emphasize or focus on more prominently?
+
+  4. Do you have a preference for the type of symbols to use for male and female data
+  points?
+
+  5. What level of detail would you like in the tooltips (e.g., should they include
+  all data attributes like age, BMI, children)?
+
+  6. Is there a specific range or grouping for the age and children data that you
+  prefer to see on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, please include all data attributes like age, BMI, children.
+
+  6. I do not have a specific preference.'
+data_attributes:
+- Gender
+- Driving test result
+- Bmi
+- Childeren
+- Salary
+- region
+- smoker
+- age

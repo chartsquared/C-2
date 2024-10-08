@@ -1,0 +1,62 @@
+initial_prompt: Please create a box chart to visualize different aspects of car attributes
+  from the given data. Focus on key numerical columns such as wheelbase, carlength,
+  carwidth, carheight, curbweight, enginesize, horsepower, citympg, highwaympg, and
+  price. Each numerical column should have its own box plot to show the spread and
+  outliers in the data. This will help identify variations in car prices and attributes
+  for better insights. Make sure each box represents data distribution and highlight
+  any outliers clearly for analysis.
+questions: '1. Do you have any preference for the color scheme of the box plots?
+
+  2. Do you want grid lines to be displayed on the chart for easier readability?
+
+  3. How would you like outliers to be highlighted? (e.g., different color, shape,
+  or size)
+
+  4. Do you prefer the box plots to be oriented vertically or horizontally?
+
+  5. Would you like to add labels or annotations for specific outliers or key points
+  in the data?
+
+  6. Do you want a legend to describe the various elements in the chart, such as outliers
+  and whiskers?
+
+  7. Would you like to display the mean or median values explicitly on the box plots?
+
+  8. Is there a specific font style and size you prefer for the axis titles and labels?
+
+  9. Should the chart have a title or subtitle for better context? If so, what should
+  it be?
+
+  10. Do you require any specific range limits for the axes to better focus on particular
+  data segments?'
+answers: '1. I am not sure.
+
+  2. Yes, grid lines would be helpful for readability.
+
+  3. Outliers can be highlighted with a different color.
+
+  4. I do not know.
+
+  5. Yes, adding labels for specific outliers would be useful.
+
+  6. I am not sure.
+
+  7. Displaying the median values explicitly would be great.
+
+  8. I do not have a specific preference.
+
+  9. Yes, please add a title: "Box Plot of Car Attributes" and a subtitle: "Analysis
+  of Spread and Outliers".
+
+  10. I am not sure.'
+data_attributes:
+- wheelbase
+- carlength
+- carwidth
+- carheight
+- curbweight
+- enginesize
+- horsepower
+- citympg
+- highwaympg
+- price

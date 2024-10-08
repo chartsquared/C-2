@@ -1,0 +1,53 @@
+initial_prompt: I want a bar chart showing the daily trading volume of ARM stock over
+  time. The x-axis should represent the Dates, and the y-axis should show the Volume
+  of stocks traded. Highlight the three highest and three lowest volumes in different
+  colors to make them stand out. Please use the provided dataset from '../Extra_datas/data/13.csv'
+  which includes columns for Date, Open, High, Low, Close, Adj Close, and Volume.
+  Make sure the chart is easy to read and visually appealing, with clear labels and
+  a legend if necessary.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like specific colors for the highest and lowest trading volumes?
+
+  3. Do you have a preference for the font style and size for the labels and legend?
+
+  4. Should gridlines be included in the chart for better readability?
+
+  5. Would you like to include annotations or data labels on the bars to indicate
+  exact volumes?
+
+  6. Is there a specific date format you prefer for the x-axis labels?
+
+  7. How frequently would you like the dates to be displayed on the x-axis (e.g.,
+  every day, weekly, monthly)?
+
+  8. Do you have a preference for the chart''s aspect ratio or overall size?
+
+  9. Would you like to add a title or subtitle to the chart? If so, what should it
+  be?
+
+  10. Should the legend be placed in a specific position (e.g., top, bottom, left,
+  right) on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not have a specific preference.
+
+  4. Yes, include gridlines for better readability.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Weekly intervals would be fine.
+
+  8. I do not know.
+
+  9. Yes, the title should be "ARM Stock Daily Trading Volume" and the subtitle "Highlighting
+  Top 3 Highest and Lowest Volumes".
+
+  10. I don''t have a specific preference for the legend position.'
+data_attributes:
+- Date
+- Volume

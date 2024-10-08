@@ -1,0 +1,55 @@
+initial_prompt: Let's create a stacked bar chart visualizing the High-Tech Companies
+  on NASDAQ. Each bar will represent a company (AAPL, MSFT, GOOG) and be divided into
+  segments showing pricing changes and earnings per share. Use text annotations to
+  highlight market cap, pricing percentage changes, and annualized dividend payout.
+  This configuration emphasizes key financial metrics and growth, drawing attention
+  to important data elements within each bar for better comparison and understanding.
+  Highlight sectors and industries using different colors for contextual clarity.
+  Add editorial comments as needed to explain the significance of these metrics.
+questions: '1. Do you have a preferred color scheme for differentiating sectors and
+  industries?
+
+  2. Would you like to include specific labels or annotations for each bar segment?
+
+  3. Are there any particular font styles or sizes you prefer for text annotations
+  and labels?
+
+  4. How should we position the editorial comments within the chart?
+
+  5. Do you have a preference for the order in which companies (AAPL, MSFT, GOOG)
+  are displayed?
+
+  6. Should the bars be sorted by any specific metric (e.g., market cap, price)?
+
+  7. What level of detail do you want in the text annotations for highlighting financial
+  metrics?
+
+  8. Would you like to incorporate any additional contextual information to provide
+  more clarity on the sectors and industries?'
+answers: '1. I am not sure.
+
+  2. Yes, please include specific labels or annotations for each bar segment.
+
+  3. I am not sure, but a clear and readable font would be preferred.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference for the order.
+
+  6. I am not sure.
+
+  7. I would like a moderate level of detail in the text annotations for highlighting
+  financial metrics.
+
+  8. I do not know.'
+data_attributes:
+- symbol
+- name
+- price
+- pricing_changes
+- pricing_percentage_changes
+- sector
+- industry
+- market_cap
+- earnings_per_share
+- annualized_dividend

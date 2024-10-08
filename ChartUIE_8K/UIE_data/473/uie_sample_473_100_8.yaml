@@ -1,0 +1,43 @@
+initial_prompt: I have a dataset detailing monthly values over multiple years with
+  no missing data. I want a scatter plot to visualize the "Value" on the y-axis against
+  the "date" (formatted as YYYY/MM) on the x-axis. The plot should illustrate any
+  trends or patterns over time. Please ensure the dates are correctly formatted and
+  evenly spaced on the x-axis for clarity. Add a title "Monthly Values Over Time,"
+  label the axes appropriately, and include a legend if necessary. Ensure the points
+  are clearly visible and distinct, preferably using different colors or markers for
+  different years.
+questions: '1. Do you have a specific color palette preference for distinguishing
+  different years?
+
+  2. What size and type of markers do you prefer for the scatter plot points?
+
+  3. Should the legend specify each year or do you prefer another form of distinction?
+
+  4. Do you have a preferred font size and style for the title and axis labels?
+
+  5. Should the x-axis and y-axis have grid lines for better readability of the plot?
+
+  6. Is there a specific format or style you prefer for the date labels on the x-axis?
+
+  7. Are there any specific data points or outliers you would like highlighted in
+  the scatter plot?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the legend should specify each year.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include grid lines on both the x-axis and y-axis.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- date
+- Value

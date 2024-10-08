@@ -1,0 +1,53 @@
+initial_prompt: Create a scatter plot to visualize the relationship between `radius_mean`
+  and `area_mean` for breast cancer diagnosis. Highlight malignant (M) and benign
+  (B) points with different colors. Add annotations to emphasize outliers.
+questions: '1. Do you have a preferred color scheme for highlighting malignant (M)
+  and benign (B) points?
+
+  2. Would you prefer specific marker shapes for the different diagnosis categories
+  (e.g., circles for benign and squares for malignant)?
+
+  3. How would you like the outliers to be annotated? (e.g., with labels, arrows,
+  or specific marker styles)
+
+  4. Do you have a preference for the axis ranges or should they be automatically
+  determined based on the data?
+
+  5. Should the plot include a legend to explain the colors and markers used for malignant
+  and benign categories?
+
+  6. Would you like gridlines to be displayed in the background of the scatter plot?
+
+  7. Is there any specific font style or size you prefer for the axis labels and annotations?
+
+  8. Do you have a preferred title for the scatter plot or should one be generated
+  automatically?
+
+  9. Should the scatter plot include trend lines or regression lines to further illustrate
+  the correlation?
+
+  10. Are there any specific data points you wish to emphasize or keep track of on
+  the scatter plot?'
+answers: '1. I have no specific preference.
+
+  2. I have no specific preference.
+
+  3. I would like the outliers to be annotated with labels.
+
+  4. I have no specific preference.
+
+  5. Yes, the plot should include a legend.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- radius_mean
+- area_mean
+- diagnosis

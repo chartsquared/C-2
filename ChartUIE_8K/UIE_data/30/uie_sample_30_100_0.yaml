@@ -1,0 +1,59 @@
+initial_prompt: I need a line chart to track the average number of automobiles owned
+  (columns MAUT1, MAUT2, MAUT0) against different income ranges (MINKM30, MINK3045,
+  MINK4575, MINK7512, MINK123M). Highlight the key trends, such as any significant
+  increases or decreases. Please include markers at each data point to emphasize specific
+  values. This will help visualize ownership preferences relative to income levels
+  for the Caravan Insurance Challenge dataset. Ensure the chart clearly distinguishes
+  between multiple income brackets and ownership types. Utilize color and size adjustments
+  to highlight differences effectively.
+questions: '1. Do you have any specific color preferences for the different income
+  brackets and ownership types?
+
+  2. Are there any specific line styles (e.g., solid, dashed, dotted) you would prefer
+  for distinguishing between different ownership types?
+
+  3. Do you have any preferences for the shape of the markers at each data point (e.g.,
+  circles, squares, triangles)?
+
+  4. Would you like to include a legend on the chart? If so, where would you prefer
+  it to be placed (e.g., top, bottom, left, right)?
+
+  5. Do you have any specific preferences for the chart title and axis labels?
+
+  6. Are there any specific fonts or font sizes you would like to use for the chart
+  text?
+
+  7. Would you like the chart to include grid lines? If so, should they be displayed
+  on both the x-axis and y-axis?
+
+  8. Do you have any preferences for the size and layout of the overall chart (e.g.,
+  width, height, aspect ratio)?
+
+  9. Would you like to display the exact values of the data points on the chart or
+  just the trend lines with markers?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Circles would be fine for the markers.
+
+  4. I am not sure about the legend placement.
+
+  5. I do not have specific preferences for the chart title and axis labels.
+
+  6. I am not sure about the fonts or font sizes.
+
+  7. Yes, include grid lines on both the x-axis and y-axis.
+
+  8. I do not have specific preferences for the size and layout.
+
+  9. Display the exact values of the data points on the chart.'
+data_attributes:
+- MAUT1
+- MAUT2
+- MAUT0
+- MINKM30
+- MINK3045
+- MINK4575
+- MINK7512
+- MINK123M

@@ -1,0 +1,47 @@
+initial_prompt: Create a line chart showing the trend of atmospheric CO2 concentration
+  over the years using the "Date" and "CO2[ppm]" columns. Additionally, include seasonally
+  adjusted CO2 values from the "seasonallyAdjusted[ppm]" column to highlight seasonal
+  variations. Add annotations to emphasize key data points, especially where there
+  are significant changes or deviations, by highlighting the relevant CO2 values.
+  The purpose of this visualization is to analyze historical CO2 trends and understand
+  seasonal fluctuations within the context of environmental science research. Use
+  a clear legend to differentiate between actual and seasonally adjusted CO2 measurements.
+questions: '1. Do you have any specific preferences for the color scheme of the lines
+  representing actual and seasonally adjusted CO2 measurements?
+
+  2. Are there any particular time intervals you would prefer on the x-axis (e.g.,
+  yearly, quarterly)?
+
+  3. Do you prefer specific styles or designs for the annotations used to emphasize
+  key data points and deviations?
+
+  4. Do you have a preferred format or style for the legend that differentiates between
+  actual and seasonally adjusted CO2 measurements?
+
+  5. Are there any specific font preferences for the chart labels, legend, or annotations?
+
+  6. Do you want gridlines on the chart for better readability of data points?
+
+  7. Would you like to include a title or subtitle for the chart? If so, please specify
+  the text.'
+answers: '1. I am not sure about the specific color scheme.
+
+  2. I do not know which time intervals would be best.
+
+  3. I prefer simple and clear annotations for key data points.
+
+  4. I have no specific preference for the legend format.
+
+  5. I do not have any specific font preferences.
+
+  6. Yes, include gridlines for better readability of data points.
+
+  7. Yes, please include a title. The title could be "Historical Trends and Seasonal
+  Variations in Atmospheric CO2 Concentration".
+
+
+  '
+data_attributes:
+- Date
+- CO2[ppm]
+- seasonallyAdjusted[ppm]

@@ -1,0 +1,56 @@
+initial_prompt: 'Visualize a box chart showcasing rotational speed by product type
+  using the provided maintenance classification data. Highlight outliers to spot anomalies
+  and potential failure patterns. Annotate key statistics like median speed and quartiles
+  for each type. Use shapes to indicate trends or clusters in speed distribution.
+  Purpose: To understand rotational speed variations across different product types
+  and identify potential maintenance needs. Add a brief summary of findings based
+  on highlighted anomalies and trends. Ensure the chart includes clear labels for
+  axes, types, and speed values.'
+questions: '1. Do you have any preferred color schemes for differentiating product
+  types?
+
+  2. Would you like to include gridlines for better readability of the chart?
+
+  3. Are there specific shapes you prefer for indicating trends or clusters in the
+  speed distribution?
+
+  4. Is there a specific font style or size you prefer for the labels and annotations?
+
+  5. Would you like the chart to include a legend explaining the various symbols and
+  colors used?
+
+  6. Should we use a specific range for the y-axis (rotational speed) or should it
+  be auto-scaled based on the data?
+
+  7. Would you prefer the key statistics (median, quartiles) to be displayed on the
+  chart or in a separate legend/note?
+
+  8. Are there any specific outliers or anomalies you are particularly interested
+  in highlighting?
+
+  9. Do you have a preferred orientation for the box plots (vertical or horizontal)?
+
+  10. Should the summary of findings be included directly on the chart or as a separate
+  text section?'
+answers: '1. I have no specific preference.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I am not sure, maybe standard shapes like circles and squares?
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend explaining the various symbols and colors used.
+
+  6. It should be auto-scaled based on the data.
+
+  7. Display the key statistics (median, quartiles) directly on the chart.
+
+  8. I do not know, just highlight any significant outliers.
+
+  9. I have no specific preference.
+
+  10. Include the summary of findings as a separate text section.'
+data_attributes:
+- Type
+- Rotational speed [rpm]

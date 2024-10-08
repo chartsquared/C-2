@@ -1,0 +1,56 @@
+initial_prompt: I have a dataset about bird collisions observed over time, including
+  genus, species, date, locality, family, flight call, habitat, and stratum. I want
+  to create a stacked column chart. The x-axis will be the "date" with yearly intervals,
+  and the y-axis will be the "frequency" of collisions. The stacks will represent
+  different "family" categories, showing the number of collisions per family each
+  year. This will help visualize how bird collisions vary over time and by family
+  group. Please provide a colorful, clear chart that can be interpreted easily for
+  analysis in zoological studies.
+questions: '1. Do you have a preference for specific colors for each "family" in the
+  stack?
+
+  2. Would you like gridlines to be included for better readability?
+
+  3. Should the x-axis labels be rotated for better visibility?
+
+  4. Do you want the chart to include a legend, and if so, where should it be positioned?
+
+  5. Should data labels with collision frequencies be displayed on each stack segment?
+
+  6. Are there any specific fonts or font sizes you prefer for the titles, labels,
+  and legends?
+
+  7. Would you like to include a title and subtitle for the chart? If yes, please
+  provide the text.
+
+  8. Do you want any annotations or highlights for specific years or events?
+
+  9. Should the chart have a border or specific design elements to align with your
+  publication standards?
+
+  10. Is there a preference for the order of "family" categories in the stack (e.g.,
+  alphabetical, size of collisions, etc.)?'
+answers: '1. I have no specific preference for colors.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I am not sure.
+
+  4. Yes, include a legend. I am not sure where it should be positioned.
+
+  5. Yes, display data labels with collision frequencies on each stack segment.
+
+  6. I do not know.
+
+  7. Yes, title: "Annual Bird Collisions by Family," subtitle: "Observed Frequency
+  of Collisions Over Time."
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. No specific preference.'
+data_attributes:
+- date
+- family
+- genus

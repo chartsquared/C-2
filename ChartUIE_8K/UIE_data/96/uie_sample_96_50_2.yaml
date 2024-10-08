@@ -1,0 +1,38 @@
+initial_prompt: Create a scatter plot of the Palmer Penguins dataset, focusing on
+  bill length vs. bill depth. Highlight annotations for missing values. Emphasize
+  different species using colors and distinguish males and females with different
+  shapes. Add labels for island and years.
+questions: '1. Do you have a preferred color palette for the different species?
+
+  2. What shapes would you prefer to use for distinguishing males and females?
+
+  3. Do you have a specific size preference for the data points?
+
+  4. How would you like the annotations for missing values to be displayed (e.g.,
+  specific symbols, color, or text)?
+
+  5. Do you want grid lines on the chart, and if so, in what style?
+
+  6. Where would you prefer the legend to be placed?
+
+  7. Do you have a specific font style or size for the labels of islands and years?
+
+  8. Should the chart have a title, and if so, what should it be?
+
+  9. Would you like axis labels and if so, what text would you prefer for them?
+
+  10. Do you want the axes to be scaled in any particular way (e.g., logarithmic,
+  linear)?'
+answers: "1. I do not have a specific preference.\n2. I am not sure.\n3. I do not\
+  \ know.\n4. Could you use specific symbols to display annotations for missing values?\
+  \ \n5. I am not sure.\n6. I do not have a specific preference.\n7. I do not know.\n\
+  8. Yes, the title should be \"Bill Length vs. Bill Depth by Species and Sex in Palmer\
+  \ Penguins\".\n9. Yes, \"Bill Length (mm)\" for the x-axis and \"Bill Depth (mm)\"\
+  \ for the y-axis.\n10. Linear scaling is preferred."
+data_attributes:
+- bill_length_mm
+- bill_depth_mm
+- species
+- sex
+- island
+- year

@@ -1,0 +1,46 @@
+initial_prompt: I want a bar chart displaying the number of forest fires in Brazil
+  from 1998 to 2000. Use the 'state' as the category axis and the 'number' as the
+  value axis. Each bar should represent the total number of fires per state annually.
+  Additionally, include different colors for each year so I can easily compare the
+  data. Make sure to label the axes clearly and provide a legend to differentiate
+  the years. Also, include a title "Annual Forest Fires in Brazilian States" to give
+  context to the chart. Thank you!
+questions: '1. Do you have any preferred color palette for representing different
+  years in the bar chart?
+
+  2. What font style and size would you like for the chart title and axis labels?
+
+  3. Do you have any preference for the order of states on the category axis (e.g.,
+  alphabetical, by total number of fires)?
+
+  4. Would you like to include grid lines on the chart for better readability?
+
+  5. Do you have a preference for the bar width and spacing between the bars?
+
+  6. Should the legend be placed at a specific position (e.g., top, bottom, left,
+  right) on the chart?
+
+  7. Are there any specific visual elements or annotations you would like to include
+  on the chart to highlight key data points or trends?
+
+  8. Would you like the chart to follow a particular theme or style consistent with
+  other visualizations or reports you use?'
+answers: '1. I am not sure. Any distinct colors for each year will work.
+
+  2. I do not know. Just use a legible font style and size.
+
+  3. Alphabetical order would be fine.
+
+  4. Yes, please include grid lines for better readability.
+
+  5. I have no specific preference for bar width and spacing.
+
+  6. The legend can be placed at the bottom.
+
+  7. I do not have any specific visual elements or annotations in mind.
+
+  8. I do not have a particular theme or style in mind.'
+data_attributes:
+- year
+- state
+- number

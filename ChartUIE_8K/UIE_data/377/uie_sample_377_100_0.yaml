@@ -1,0 +1,54 @@
+initial_prompt: Please create a dot plot visualizing election results data. Plot the
+  percentage votes of each party (CON, LAB, LIB, Green, etc.) on the x-axis and constituencies
+  on the y-axis. Include text annotations highlighting the top three constituencies
+  with the highest votes for each major party. Use different colors to represent each
+  party to ensure visual distinction and emphasis. Adding highlights for the winning
+  party in each constituency will help to emphasize the election outcomes. The visualization
+  should facilitate analyzing voting patterns across different regions.
+questions: '1. Do you have a preferred color palette for representing each party?
+
+  2. Are there any specific colors you want to use for certain parties?
+
+  3. Would you like the dot sizes to vary based on the percentage of votes, or should
+  they remain uniform?
+
+  4. Is there a particular font style or size you prefer for the text annotations
+  highlighting the top constituencies?
+
+  5. How would you like the winning party highlights to be displayed (e.g., bold outline,
+  different shape, larger size)?
+
+  6. Do you have any preference for the ordering of constituencies on the y-axis (e.g.,
+  alphabetical, by percentage of votes for a specific party)?
+
+  7. Are there specific labels or legends you want to include to enhance the readability
+  of the chart?
+
+  8. Would you prefer any additional gridlines or background elements to help interpret
+  the data?'
+answers: '1. I am not sure.
+
+  2. I don’t know.
+
+  3. I would like the dot sizes to remain uniform.
+
+  4. I don’t know.
+
+  5. A bold outline would be good for highlighting the winning party.
+
+  6. No specific preference.
+
+  7. I don''t have any specific labels or legends in mind.
+
+  8. I do not have a preference.'
+data_attributes:
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Green(%)
+- Brexit(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Name
+- Winner

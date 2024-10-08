@@ -1,0 +1,52 @@
+initial_prompt: Create a Choropleth map visualizing the distribution of exoplanet
+  discoveries by their host star's right ascension (ra) and declination (dec) coordinates
+  from the Kepler Telescope exoplanet dataset.
+questions: '1. Do you have a preferred color scheme for the Choropleth map (e.g.,
+  sequential, diverging, or qualitative colors)?
+
+  2. What range of data values would you like the color scale to represent? Should
+  it be based on the number of discoveries or normalized in some way?
+
+  3. Do you have a preferred geographic projection for the map?
+
+  4. Would you like to include any specific labels or annotations on the map?
+
+  5. Should the map include a legend to indicate the color scale and its corresponding
+  data values?
+
+  6. Are there any particular regions or coordinates you want to highlight on the
+  map?
+
+  7. Would you prefer to see the data presented with a certain level of detail (e.g.,
+  aggregated to specific celestial regions)?
+
+  8. Do you want to overlay any additional data points or markers that provide context
+  to the distributions?
+
+  9. Should the map include grid lines for right ascension and declination?
+
+  10. Is there a preferred orientation for the map (e.g., North at the top, South
+  at the top)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Yes.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- pl_hostname
+- ra
+- dec

@@ -1,0 +1,44 @@
+initial_prompt: I want a box chart visualizing the distribution of sales across different
+  product categories. Highlight the median sales for each category to emphasize central
+  tendencies. Use text annotations to show specific sales values for some outliers
+  in each category. This will help in quickly identifying unusual sales activity.
+  The practical purpose of this visualization is to understand the sales performance
+  and variability among different product categories, aiding in better business decisions
+  and identifying areas needing improvement. The annotations and highlights should
+  make key insights stand out for quicker comprehension.
+questions: "1. Do you have a preferred color scheme for the chart?\n2. Should the\
+  \ chart include a title and labels for the axes? If so, what should they be?\n3.\
+  \ How would you like the median sales to be highlighted (e.g., different color,\
+  \ dashed line)?\n4. Are there specific product categories you want to emphasize\
+  \ more within the chart?\n5. Would you like to include a legend to explain the annotations\
+  \ and highlights?\n6. Do you have a preference for the style of text annotations\
+  \ for outliers (e.g., font size, color)?\n7. Should the chart incorporate grid lines\
+  \ or background shading to improve readability?\n8. Is there a specific order in\
+  \ which product categories should be presented on the x-axis? \n9. Would you like\
+  \ the sales values on the y-axis to use a specific scale (e.g., logarithmic, linear)?\n\
+  10. Are there any additional statistics or measures (e.g., mean, quartiles) you\
+  \ want displayed on the chart?"
+answers: '1. I am not sure.
+
+  2. Yes, please include a title and labels for the axes. The title can be "Sales
+  Distribution Across Product Categories" and the axes labels can be "Product Categories"
+  (x-axis) and "Sales" (y-axis).
+
+  3. Different color would be great for highlighting the median sales.
+
+  4. I do not know.
+
+  5. Yes, a legend to explain the annotations and highlights would be helpful.
+
+  6. I am not sure.
+
+  7. Yes, grid lines would be useful to improve readability.
+
+  8. I am not sure.
+
+  9. Linear scale for the y-axis, please.
+
+  10. No additional statistics or measures are needed, just the median and the outliers.'
+data_attributes:
+- Category
+- Sales

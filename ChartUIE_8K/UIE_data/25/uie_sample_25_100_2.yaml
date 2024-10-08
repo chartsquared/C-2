@@ -1,0 +1,56 @@
+initial_prompt: 'Create a stacked bar chart to visualize NIFTY-50 stock data. Display
+  the "Sector-wise Turnover (crs.)" on the X-axis and different "Volume (lacs)" on
+  the Y-axis with individual sectors stacked within each bar. Use highlights to emphasize
+  columns with significant changes. Include text annotations displaying % Chng for
+  specific stocks at the top of the bars to draw attention. Context: Analyzing sector
+  performance and stock activity.'
+questions: '1. Do you have any specific color preferences for the sectors in the
+  stacked bar chart?
+
+  2. Should certain sectors have specific colors?
+
+  3. Do you prefer a particular font style or size for the text annotations displaying
+  ''% Chng''?
+
+  4. Are there any specific threshold values for "significant changes" that you would
+  like us to use for highlights?
+
+  5. Would you like gridlines to be included in the background of the chart?
+
+  6. Do you have any preferences for the orientation of the text annotations (horizontal,
+  vertical, or diagonal)?
+
+  7. Would you like a legend to be included and, if so, where should it be positioned
+  (top, bottom, left, right)?
+
+  8. Do you prefer any specific margins or padding around the chart for better readability?
+
+  9. Should the chart include axis titles and, if so, do you have any specific wording
+  in mind for them?
+
+  10. Are there any particular styles or themes (e.g., minimalist, professional, vibrant)
+  you would like the chart to adhere to?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I would like to use a threshold of a 5% change for highlights.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Yes, include a legend and position it at the bottom.
+
+  8. I do not know.
+
+  9. Yes, please include axis titles. For the X-axis: "Sector-wise Turnover (crs.)",
+  and for the Y-axis: "Volume (lacs)".
+
+  10. A professional theme would be preferred.'
+data_attributes:
+  - Turnover (crs.)
+  - Volume (lacs)
+  - % Chng

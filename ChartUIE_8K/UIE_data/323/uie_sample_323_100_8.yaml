@@ -1,0 +1,31 @@
+initial_prompt: I'd like to create a scatter plot using the data from `../Extra_datas/data/323.csv`.
+  Could you plot 'mlsrc' on the x-axis and 'quantumsrc' on the y-axis for different
+  states? Please make sure to label the points with the state names clearly. Also,
+  differentiate the dots by color based on the 'dlsrc' values if possible. I'm interested
+  in how machine learning research funding correlates with quantum research funding
+  across different states. Could you help visualize this so I can easily analyze their
+  relationship? Thank you!
+questions: '1. Do you have a specific color palette preference for differentiating
+  the dots by ''dlsrc'' values?
+
+  2. What size would you prefer for the labels of state names on the plot?
+
+  3. Should there be a legend to explain the colors used for ''dlsrc'' values?
+
+  4. Do you have a preference for the shape of the dots on the scatter plot?
+
+  5. Would you like to include gridlines for better visualization of the correlation?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference for the size.
+
+  3. Yes, a legend would be helpful.
+
+  4. I do not have a preference for the shape of the dots.
+
+  5. Yes, including gridlines would be good.'
+data_attributes:
+- mlsrc
+- quantumsrc
+- state
+- dlsrc

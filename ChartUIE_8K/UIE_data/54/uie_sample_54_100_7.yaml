@@ -1,0 +1,53 @@
+initial_prompt: I need a stacked column chart visualizing the percentage of individuals
+  using the Internet from 1990 to 2020. Each column should represent a year, and each
+  segment within the column should represent different countries. Please use the provided
+  data from the CSV; make sure to display the trends and highlight any missing data.
+  Additionally, ensure that the chart is easy to read with proper labels for the X-axis
+  (Year), Y-axis (% of Population using the Internet), and a legend for different
+  countries. This visual will help show the adoption rate over time.
+questions: '1. Do you have a specific color palette preference for the different countries
+  in the chart?
+
+  2. Would you like to include gridlines for better readability?
+
+  3. Should we use any particular scale (linear or logarithmic) for the Y-axis?
+
+  4. Do you prefer any specific font style or size for the labels and legend?
+
+  5. How would you like the missing data to be highlighted or indicated?
+
+  6. Is there any specific order in which the countries should be presented in the
+  legend?
+
+  7. Would you prefer to have data labels on each segment of the columns?
+
+  8. Do you have any preference on the sorting order of the columns (by year or by
+  any other attribute)?
+
+  9. Would you like to include any annotations or footnotes to explain the trends
+  or highlight specific years?
+
+  10. Is there a preference for the aspect ratio or size of the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Please highlight missing data with a unique color or pattern.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. By year would be preferable.
+
+  9. Yes, include annotations to explain notable trends or highlight specific years.
+
+  10. I have no specific preference.'
+data_attributes:
+- Year
+- Individuals using the Internet (% of population)
+- Entity

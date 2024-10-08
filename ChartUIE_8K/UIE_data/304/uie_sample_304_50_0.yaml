@@ -1,0 +1,54 @@
+initial_prompt: Create a line chart to visualize CO2 concentration changes from 1958
+  to 2021, highlighting important points like first significant rise. Include annotations
+  on seasonal adjustments, fits, and filled values. Provide context on environmental
+  impact.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Would you like to differentiate the lines for raw data, seasonally adjusted data,
+  and fitted values with distinct colors or styles?
+
+  3. Should the chart have a title? If so, what title would you prefer?
+
+  4. Do you have any specific labels in mind for the x-axis and y-axis?
+
+  5. Are there any particular points or events you want to highlight or annotate beyond
+  the first significant rise?
+
+  6. Do you have a preference for the placement or style of the annotations?
+
+  7. Would you like to include grid lines for better readability?
+
+  8. Should the legend be placed in a specific location on the chart?
+
+  9. Do you want the chart to include a trendline or moving average for better visualization
+  of the trend?
+
+  10. Are there specific intervals or units you prefer for the x-axis (e.g., yearly,
+  monthly)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, the title should be "CO2 Concentration Changes (1958-2021)".
+
+  4. X-axis: "Year", Y-axis: "CO2 Concentration (ppm)".
+
+  5. The first significant rise and maybe a notable peak or dip if available.
+
+  6. I do not know.
+
+  7. Yes, include grid lines for better readability.
+
+  8. I do not have a preference.
+
+  9. Yes, include a trendline for better visualization of the trend.
+
+  10. Yearly intervals.'
+data_attributes:
+- Date
+- CO2[ppm]
+- seasonallyAdjusted[ppm]
+- fit[ppm]
+- seasonallyAdjustedFit[ppm]
+- CO2Filled[ppm]
+- seasonallyAdjustedFilled[ppm]

@@ -1,0 +1,60 @@
+initial_prompt: Create a bar chart visualizing the number of kills, deaths, and assists
+  for both blue and red teams from the provided League of Legends Diamond Ranked Games
+  dataset. Highlight specific data points for notable games using text annotations,
+  focusing on games where there is a significant difference in performance between
+  the two teams. Use shape annotations like arrows to emphasize key differences or
+  trends. Ensure the chart effectively communicates the competitive dynamics and player
+  performance, aiding users in understanding how these metrics contribute to match
+  outcomes.
+questions: '1. Do you have any preferences for the color scheme of the bar chart?
+
+  2. Are there specific games you would like to highlight with text annotations?
+
+  3. How would you like the significant differences in performance to be visually
+  represented?
+
+  4. Do you have a preference for the font style and size for the text annotations?
+
+  5. Is there a particular order in which the data should be displayed (e.g., sorted
+  by number of kills, deaths, or assists)?
+
+  6. Would you like any specific legends or titles included in the chart?
+
+  7. Are there any specific labels or units you would like on the axes?
+
+  8. Do you have a preference for where the shape annotations like arrows should be
+  placed?
+
+  9. Would you prefer the bars to be displayed as grouped or stacked?
+
+  10. Do you want any gridlines or background shading in the chart for better readability?'
+answers: '1. I am not sure.
+
+  2. Yes, I''d like to highlight games where there is at least a 10 kills difference
+  between the blue and red teams.
+
+  3. Using arrows to point out the significant differences and maybe a different color
+  for the bars in those specific games.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include legends to differentiate between kills, deaths, and assists
+  for each team, as well as a title summarizing the chart.
+
+  7. Labels for the x-axis representing games and the y-axis representing the number
+  of kills, deaths, and assists.
+
+  8. I am not sure.
+
+  9. Grouped bars would be preferable.
+
+  10. I do not know.'
+data_attributes:
+- blueKills
+- blueDeaths
+- blueAssists
+- redKills
+- redDeaths
+- redAssists

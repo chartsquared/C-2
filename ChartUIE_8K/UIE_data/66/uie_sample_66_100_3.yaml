@@ -1,0 +1,51 @@
+initial_prompt: I want a heatmap showing the correlation between different features
+  in the consumer electronics sales dataset. Use variables like CustomerSatisfaction,
+  PurchaseFrequency, ProductPrice, and PurchaseIntent to see how they relate to each
+  other. The heatmap should highlight areas with strong correlations, helping identify
+  patterns in customer behavior and sales trends. Use different shades of colors to
+  denote the intensity of the correlations for clear visual insights. Make sure the
+  chart is easy to interpret and includes a legend for reference. This will help us
+  understand the impact of various factors on sales. Thank you!
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Would you like the heatmap to display numerical correlation values on the cells?
+
+  3. Is there a specific color you want to use for strong positive or strong negative
+  correlations?
+
+  4. Do you want axis labels to be displayed horizontally or vertically?
+
+  5. Should the heatmap include grid lines for better readability?
+
+  6. Is there a specific ordering of the variables you prefer on the axes?
+
+  7. How would you like the legend to be positioned (e.g., top, bottom, left, right)
+  on the chart?
+
+  8. Do you want to highlight specific ranges of correlation values with distinct
+  colors or symbols?
+
+  9. Are there any additional annotations or markers you would like to be included
+  on the heatmap?'
+answers: '1. I do not know.
+
+  2. Yes, please.
+
+  3. I am not sure.
+
+  4. Horizontally, please.
+
+  5. Yes.
+
+  6. I do not know.
+
+  7. Bottom.
+
+  8. I am not sure.
+
+  9. No, thank you.'
+data_attributes:
+- CustomerSatisfaction
+- PurchaseFrequency
+- ProductPrice
+- PurchaseIntent

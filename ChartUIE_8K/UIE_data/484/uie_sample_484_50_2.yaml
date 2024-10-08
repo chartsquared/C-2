@@ -1,0 +1,46 @@
+initial_prompt: Create a scatter plot visualizing 'r' vs. 'theta' along with 'area'
+  as bubbles sizes. Use text annotations to highlight values of 'r' and 'theta' at
+  the most prominent points. Highlight any points where 'area' and 'colors' match.
+questions: '1. Do you have a preferred color palette for the scatter plot?
+
+  2. Would you like to specify the size range for the bubbles representing ''area''?
+
+  3. How should prominent points be defined for text annotations? (e.g., top 5 largest
+  bubbles, specific value thresholds)
+
+  4. Do you prefer any particular style for the text annotations? (e.g., font size,
+  color, placement)
+
+  5. Should the plot include a legend to explain the color-coding and bubble size?
+
+  6. Would you prefer grid lines or any specific background for the chart?
+
+  7. Do you have any specific requirements for the axis ranges or scalings? (e.g.,
+  log scale, fixed range)
+
+  8. Should there be any specific labeling for the axes or title for the chart?
+
+  9. How should matches between ''area'' and ''colors'' be highlighted? (e.g., different
+  shape, border color)'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. The top 5 largest bubbles.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. No specific requirements for the axis labels or title.
+
+  9. Different shape would be good.'
+data_attributes:
+- r
+- theta
+- area
+- colors

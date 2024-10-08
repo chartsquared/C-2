@@ -1,0 +1,39 @@
+initial_prompt: Let's create a scatter plot that visualizes bike and pedestrian counts
+  over time for the Broadway Cycle Track. Annotate peak hours and highlight any significant
+  variations in counts. This will help in understanding usage patterns and optimizing
+  traffic flow for cyclists and pedestrians. Use different colors to distinguish between
+  bike and ped counts, and make sure to highlight peak times using sized or colored
+  markers. Since there's a substantial number of missing values, use text annotations
+  to indicate periods with missing data, providing context for urban planning in Seattle.
+questions: '1. Do you have any preferred color scheme for distinguishing between bike
+  counts and pedestrian counts?
+
+  2. What specific time intervals would you like to consider for highlighting peak
+  hours (e.g., morning rush hour, evening rush hour)?
+
+  3. How would you prefer the peak times to be highlighted—by using sized markers,
+  colored markers, or both?
+
+  4. Should the annotations for missing data be placed at specific points or should
+  they cover a range?
+
+  5. Do you have any preference for the size and style of the text annotations indicating
+  periods with missing data?
+
+  6. Would you prefer a specific format for the date on the x-axis (e.g., hourly,
+  daily, weekly)?'
+answers: '1. I am not sure.
+
+  2. Morning rush hour and evening rush hour.
+
+  3. Both sized and colored markers.
+
+  4. The annotations for missing data should cover a range.
+
+  5. I do not know.
+
+  6. Hourly.'
+data_attributes:
+- date
+- bike_count
+- ped_count

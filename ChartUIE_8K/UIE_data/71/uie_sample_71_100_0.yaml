@@ -1,0 +1,43 @@
+initial_prompt: Create a bar chart visualizing the number of higher education institutions
+  across different regions in the USA. Use color highlights to distinguish between
+  the 'Private' and 'Public' categories. Annotate bars representing 'Texas' and 'California'
+  with their respective institution names to emphasize regional distribution. Include
+  total counts and unique URLs for added context. This chart will help quickly understand
+  the concentration and diversity of educational institutions by region, aiding in
+  geographic and institutional comparison.
+questions: '1. Do you have specific color preferences for distinguishing ''Private''
+  and ''Public'' categories?
+
+  2. What color scheme would you prefer for the overall chart background and bar highlights?
+
+  3. How would you prefer the institution names to be annotated on the bars for Texas
+  and California: directly on the bar, nearby the bar, or in a legend?
+
+  4. Do you want the total counts displayed above each bar, within the bar, or in
+  a separate legend?
+
+  5. How would you like the unique URLs presented: as tooltips on hover, or directly
+  on the chart?
+
+  6. Do you prefer a horizontal or vertical orientation for the bar chart?
+
+  7. Are there any specific font styles or sizes you want used for labels, annotations,
+  and titles?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Directly on the bar would be fine.
+
+  4. Above each bar.
+
+  5. Directly on the chart.
+
+  6. Vertical orientation.
+
+  7. I am not sure.'
+data_attributes:
+- region
+- name
+- category
+- url

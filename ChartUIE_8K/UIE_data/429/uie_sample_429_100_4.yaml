@@ -1,0 +1,49 @@
+initial_prompt: Please create a bar chart that visualizes the imports and exports
+  of dogs by state. Use the fields 'location', 'exported', and 'imported' from the
+  provided data. The x-axis should represent the different states (location), and
+  the y-axis should represent the quantities of dogs. Use two different colors or
+  styles to differentiate between 'exported' and 'imported' numbers. Also, make sure
+  to label the axes and provide a legend to distinguish between imported and exported
+  dogs. This will help in understanding the distribution of dog trade across different
+  states.
+questions: '1. Do you have any specific color preferences for the bars representing
+  ''exported'' and ''imported'' dogs?
+
+  2. Do you prefer a specific style for the bars (e.g., solid, striped) to differentiate
+  between ''exported'' and ''imported'' dogs?
+
+  3. Would you like the states to be ordered alphabetically, by the quantity of exported
+  dogs, or by the quantity of imported dogs on the x-axis?
+
+  4. Are there any specific fonts or font sizes you prefer for the axis labels and
+  legend?
+
+  5. Would you like to include data values directly on the bars, or in tooltips when
+  hovered over?
+
+  6. Do you prefer the chart to have a title? If so, what should the title be?
+
+  7. Would you like to include gridlines on the chart? If so, should they be for the
+  x-axis, y-axis, or both?
+
+  8. Are there any specific design elements that should be included to make the chart
+  more accessible or easier to interpret for your audience?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Ordered by the quantity of exported dogs.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, the title should be "Dog Imports and Exports by State".
+
+  7. Yes, include gridlines for both the x-axis and y-axis.
+
+  8. I do not have a preference.'
+data_attributes:
+- location
+- exported
+- imported

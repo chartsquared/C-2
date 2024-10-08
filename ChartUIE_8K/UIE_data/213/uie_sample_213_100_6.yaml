@@ -1,0 +1,57 @@
+initial_prompt: I need a bar chart visualizing the NYS Golf Courses data. The chart
+  should display each "State Park" on the X-axis and the number of unique "Course
+  Names" for each park on the Y-axis. This will help understand which parks offer
+  the most variety in golf courses. Each bar should be labeled with the corresponding
+  "County" for additional context. Also, include a color-coded legend indicating the
+  different "Regions" each park is located in. Make sure all park names are legible
+  and the chart is easy to interpret.
+questions: '1. Do you have any specific color preferences for the color-coded legend
+  representing the regions?
+
+  2. Would you like the chart to include gridlines for easier readability of values?
+
+  3. Do you have any preferences for the font style and size for the labels to ensure
+  all park names are legible?
+
+  4. Should the bars be displayed in a particular order, such as alphabetically or
+  by the number of unique course names?
+
+  5. Do you have any specific preferences for the chart title and axis labels'' wording
+  and style?
+
+  6. Would you prefer to see the exact number of unique course names shown directly
+  on the bars?
+
+  7. Do you have any specific margin or spacing preferences for the bars to make the
+  chart more visually appealing?
+
+  8. Is there a particular background color you would like for the chart for better
+  contrast or visual appeal?
+
+  9. Do you have any preferences regarding the placement of the legend (e.g., top,
+  bottom, left, right)?'
+answers: '1. I do not have any specific color preferences for the color-coded legend
+  representing the regions.
+
+  2. Yes, I would like the chart to include gridlines for easier readability of values.
+
+  3. I do not know; I just want to ensure all park names are legible.
+
+  4. I am not sure; either option works for me.
+
+  5. I have no specific preference for the chart title and axis labels'' wording and
+  style.
+
+  6. Yes, I would prefer to see the exact number of unique course names shown directly
+  on the bars.
+
+  7. I have no specific margin or spacing preferences for the bars.
+
+  8. I do not have any preference for the background color.
+
+  9. I do not know; please choose the placement that looks best.'
+data_attributes:
+- State Park
+- Course Name
+- County
+- Region

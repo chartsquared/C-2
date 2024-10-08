@@ -1,0 +1,33 @@
+initial_prompt: Create a treemap to visualize volcano types by country using the `Type`
+  and `Country` columns from the given data. The size of each rectangle should represent
+  the count of volcanoes of that type within each country. Also, ensure that the colors
+  distinguish between different volcano types. This visualization will help us understand
+  the distribution and prevalence of different volcano types across various countries.
+  Make sure to handle missing values appropriately and label the treemap clearly for
+  easy interpretation. The key focus here is to analyze the diversity and frequency
+  of volcanic activity per country.
+questions: '1. Do you have any specific color palette preference for distinguishing
+  the different volcano types?
+
+  2. Do you prefer any specific labeling style or format for the treemap?
+
+  3. How would you like the missing values to be handled in the visualization? Should
+  they be excluded or treated in a specific manner?
+
+  4. Is there a particular font style or size you prefer for the labels in the treemap?
+
+  5. Do you want the treemap to include legends to make it easier to identify the
+  volcano types by color? If so, where should the legend be placed?'
+answers: '1. I do not have any specific color palette preference.
+
+  2. I am not sure about the labeling style or format for the treemap.
+
+  3. I am not sure how missing values should be handled in the visualization.
+
+  4. I have no specific preference for the font style or size.
+
+  5. Yes, I would like the treemap to include legends to identify the volcano types
+  by color. I am not sure where the legend should be placed.'
+data_attributes:
+- Type
+- Country

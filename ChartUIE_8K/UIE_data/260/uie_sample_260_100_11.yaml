@@ -1,0 +1,47 @@
+initial_prompt: Create a violin plot to visualize the distribution of "pl_orbper"
+  (Orbital Period) and "pl_orbsmax" (Orbital Semi-Major Axis) for different exoplanets
+  discovered by the Kepler Telescope. Use "pl_discmethod" (Discovery Method) to categorize
+  the data. Represent different discovery methods with distinct colors for clarity.
+  Ensure the plot highlights the density of data points across the range for each
+  category. Also, include appropriate axis labels, a title, and a legend for easy
+  interpretation. This will help in comparing different discovery methods based on
+  orbital periods and semi-major axes distributions.
+questions: '1. What color scheme do you prefer for representing different discovery
+  methods?
+
+  2. Do you have a preference for the style of the violin plot (e.g., smooth vs. jagged
+  edges)?
+
+  3. Would you like any specific range limits for the axes?
+
+  4. Do you prefer a particular font or style for the axis labels, title, and legend?
+
+  5. Are there any specific labels or annotations you would like to include on the
+  plot?
+
+  6. Do you have a preferred layout for the legend (e.g., top, bottom, left, right)?
+
+  7. Should the plot display grid lines, or would you prefer a plain background?
+
+  8. Is there a specific title you would like for the chart, or should it be a generic
+  title like ''Distribution of Orbital Periods and Semi-Major Axes by Discovery Method''?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preference.
+
+  3. I am not sure, please use a range that best represents the data.
+
+  4. I do not know.
+
+  5. No specific labels or annotations needed.
+
+  6. I have no specific preference.
+
+  7. A plain background would be fine.
+
+  8. A generic title like ''Distribution of Orbital Periods and Semi-Major Axes by
+  Discovery Method'' is good.'
+data_attributes:
+- pl_orbper
+- pl_orbsmax
+- pl_discmethod

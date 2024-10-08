@@ -1,0 +1,54 @@
+initial_prompt: 'Create a scatter plot visualizing the threats faced by plants across
+  different continents. X-axis: ''continent'', Y-axis: each threat type (''threat_AA'',
+  ''threat_BRU'', etc.). Each point represents a plant species. Color points by ''red_list_category''.
+  Title: "Threats to Plants by Continent".'
+questions: '1. Do you have a preferred color palette for distinguishing the different
+  ''red_list_category''?
+
+  2. What size should the points representing plant species be, or should they vary
+  based on a specific metric?
+
+  3. Do you want gridlines to be visible on the scatter plot?
+
+  4. Is there a specific font style or size you prefer for the axis labels and title?
+
+  5. Should there be any specific markers or shapes used for the points other than
+  simple dots?
+
+  6. Would you like to include a legend, and if so, where should it be placed (e.g.,
+  top-right, bottom-left)?
+
+  7. Are there any specific annotations or text you would like to add to highlight
+  certain data points or clusters?
+
+  8. Do you prefer a specific ordering of continents on the X-axis?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Yes, I would like to include a legend, but I am not sure where it should be placed.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- continent
+- threat_AA
+- threat_BRU
+- threat_RCD
+- threat_ISGD
+- threat_EPM
+- threat_CC
+- threat_HID
+- threat_P
+- threat_TS
+- threat_NSM
+- threat_GE
+- threat_NA
+- red_list_category

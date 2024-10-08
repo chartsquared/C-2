@@ -1,0 +1,59 @@
+initial_prompt: I want a line chart for visualizing the environmental impact of different
+  fish species. Plot `median` values on the Y-axis and `taxa` on the X-axis. Use different
+  colors for each `stressor` category. Include error bars to represent `lower_95`
+  and `upper_95` values on the chart. Title the chart "Environmental Impact of Aquaculture
+  by Species". Ensure the X-axis lists species names while the Y-axis shows the magnitude
+  of the environmental impact. Please create this chart in a clear and easily understandable
+  format for an amateur audience.
+questions: '1. Do you have a preferred color palette for differentiating between stressor
+  categories?
+
+  2. Would you like any specific labels or annotations on the chart to highlight key
+  points or data?
+
+  3. Do you prefer a particular style for the error bars (e.g., capped lines, shadow
+  areas)?
+
+  4. Are there any specific font preferences for the chart title and axis labels?
+
+  5. Do you have a preferred line style (e.g., solid, dashed, dotted) for the different
+  species lines on the chart?
+
+  6. Would you like to include a legend to explain the different stressor categories,
+  and if so, do you have any placement preferences for it?
+
+  7. Do you have any specific preferences for the grid lines on the chart (e.g., color,
+  visibility)?
+
+  8. Are there any specific dimensions or aspect ratios you would like for the chart?
+
+  9. Would you like to include any additional descriptive text or notes on the chart
+  for context?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Yes, please include labels for species names on the X-axis and median values
+  on the Y-axis.
+
+  3. I do not know.
+
+  4. No specific font preferences.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend. No placement preference.
+
+  7. I do not know.
+
+  8. No specific dimensions.
+
+  9. No additional text needed.
+
+  <end of user response>'
+data_attributes:
+- median
+- taxa
+- stressor
+- lower_95
+- upper_95

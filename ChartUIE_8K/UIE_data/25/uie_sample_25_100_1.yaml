@@ -1,0 +1,60 @@
+initial_prompt: Please create a box chart visualizing the NIFTY-50 Stocks Dataset,
+  focusing on columns like 'Open', 'High', 'Low', 'LTP', and '% Chng'. Annotate key
+  statistics such as median, Q1, Q3, and any outliers. Highlight significant changes
+  in '% Chng' and 'Volume (lacs)'. The purpose is to provide a quick comparison of
+  stock performance over the dataset period, emphasizing stocks with the most notable
+  changes. Include text annotations for highest and lowest values and use highlights
+  to mark stocks with significant trading volume or extreme price changes. This will
+  help analyze trends and spot key movers.
+questions: '1. Do you have any specific color preferences for the box chart and highlights?
+
+  2. Do you have a preference for the overall style of the chart (e.g., minimalist,
+  detailed, etc.)?
+
+  3. Should the chart include gridlines or background shading to help with readability?
+
+  4. Do you have any specific format for text annotations (e.g., font type, size,
+  color)?
+
+  5. Do you want the chart to have a particular orientation (e.g., vertical or horizontal
+  box plots)?
+
+  6. Should the legend be included, and if so, do you have a preferred position for
+  it on the chart?
+
+  7. Do you have any specific requirements for the axis labels and titles (e.g., font
+  type, size, color)?
+
+  8. Is there a preferred format for displaying the statistical annotations (e.g.,
+  medians, quartiles)?
+
+  9. Would you like the chart to include a title or subtitle? If so, do you have specific
+  wording for them?
+
+  10. Do you prefer any specific markers for outliers on the box chart?'
+answers: '1. I am not sure.
+
+  2. I prefer a detailed style.
+
+  3. Yes, the chart should include gridlines for readability.
+
+  4. I have no specific preference.
+
+  5. Vertical box plots would be preferred.
+
+  6. Yes, please include a legend. I am not sure about the position.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. Yes, please include a title. The title could be "NIFTY-50 Stock Performance Overview".
+
+  10. I have no specific preference.'
+data_attributes:
+- Open
+- High
+- Low
+- LTP
+- '% Chng'
+- Volume (lacs)

@@ -1,0 +1,49 @@
+initial_prompt: Create a treemap to visualize the Hotels in India dataset. The treemap
+  should categorize hotels by State and further by City. Each block should represent
+  a hotel, and the size of the block should correspond to the number of Total Rooms
+  available in the hotel. Additionally, use different colors to differentiate between
+  the Categories of hotels (1 Star, 2 Star, 3 Star, 4 Star, 5 Star). Ensure to include
+  the Hotel Name within each block when possible and indicate if Alcohol is served.
+  This will help in identifying trends and distributions of hotel categories and room
+  availability across different states and cities in India.
+questions: '1. Do you have a preference for how the colors should be assigned to each
+  hotel category (1 Star, 2 Star, 3 Star, 4 Star, 5 Star)?
+
+  2. Are there any specific color schemes or palettes you would like us to use?
+
+  3. Do you want to include any specific fonts or text styles for hotel names within
+  each block?
+
+  4. Should the information about whether alcohol is served be displayed as text within
+  the block or as an icon/symbol?
+
+  5. How detailed would you like the labeling of each block to be (e.g., full hotel
+  name vs. an abbreviated version)?
+
+  6. Should there be any additional annotations or legends to explain the chart elements?
+
+  7. Are there any size constraints or aspect ratio preferences for the treemap visualization?
+
+  8. Would you like any specific hierarchy levels or groupings beyond State and City?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. As an icon/symbol.
+
+  5. Full hotel name if possible.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. No, just State and City.'
+data_attributes:
+- State
+- City
+- Category
+- Total Rooms
+- Hotel Name
+- Alcohol

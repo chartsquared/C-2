@@ -1,0 +1,51 @@
+initial_prompt: Please create a heatmap using the salary data for different blockchain-related
+  job titles in various companies and locations across India for 2022. Use "Title"
+  on the y-axis and "Location" on the x-axis. The color intensity should represent
+  the range between "Salary_Lower_Limit" and "Salary_Upper_Limit." Make sure to highlight
+  where "Easy Apply" jobs are available. This visualization should help users quickly
+  understand salary trends and readily available positions within the blockchain sector
+  in different regions. Use contrasting colors to distinguish salary ranges effectively.
+  Thanks!
+questions: '1. Do you have any specific color preferences for the heatmap, particularly
+  for distinguishing the salary ranges?
+
+  2. How would you like the "Easy Apply" jobs to be highlighted on the heatmap? Do
+  you prefer specific symbols or color overlays?
+
+  3. What should be the range of the color scale used in the heatmap? Do you want
+  it to be adjusted to specific salary ranges (e.g., 50,000 INR increments)?
+
+  4. Do you have any specific font preferences or size considerations for the axis
+  labels ("Title" and "Location") and the legend?
+
+  5. Would you prefer the heatmap to display exact salary values or just color gradients
+  to represent salary ranges?
+
+  6. Are there any particular companies or job titles you want to be prominently displayed
+  or highlighted in a different way?
+
+  7. Do you want to include any annotations or notes on the heatmap to explain specific
+  trends or highlight particular regions and job titles?'
+answers: '<start of user emulated response>
+
+  1. I don''t have any specific color preferences.
+
+  2. I am not sure, maybe a symbol or a color overlay could work.
+
+  3. I do not know, you can decide on a suitable range.
+
+  4. I have no specific preference.
+
+  5. Just color gradients to represent salary ranges.
+
+  6. No specific companies or job titles to be highlighted.
+
+  7. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Title
+- Location
+- Salary_Lower_Limit
+- Salary_Upper_Limit
+- Easy Apply

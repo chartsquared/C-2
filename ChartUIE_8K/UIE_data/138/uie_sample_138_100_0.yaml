@@ -1,0 +1,59 @@
+initial_prompt: Create a stacked bar chart to predict heart disease visualizing 'Age'
+  vs. 'TenYearCHD'. Use color highlights to differentiate between males and females
+  in the 'male' column. Include annotations to display the 'cigsPerDay' value for
+  each age group. This will help in identifying the relationship between age, gender,
+  smoking habits, and heart disease risk. Maintain practical visualization by focusing
+  on essential data points like age, gender, smoking, and heart disease prediction.
+questions: '1. Do you have any specific preferences for the color palette to differentiate
+  between males and females?
+
+  2. Would you like the age groups to be displayed in specific ranges or bins?
+
+  3. Do you have a preferred font style or size for the annotations displaying the
+  ''cigsPerDay'' value?
+
+  4. Should the annotations for the ''cigsPerDay'' values be positioned in a specific
+  manner (e.g., above the bar, inside the bar)?
+
+  5. Are there any specific data points or ranges that you want to highlight or emphasize
+  within the chart?
+
+  6. Do you prefer a particular orientation for the stacked bar chart (e.g., vertical
+  or horizontal)?
+
+  7. Should the chart include a legend and, if so, do you have any preferences for
+  its placement?
+
+  8. Would you like gridlines to be included in the chart for better readability of
+  data values?
+
+  9. Do you have any requirements for the axis labels and titles (e.g., specific wording,
+  font size, or style)?
+
+  10. Is there a specific chart title you would like to use? If so, please provide
+  the exact title you prefer.'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Above the bar would be fine.
+
+  5. I have no specific preference.
+
+  6. Vertical orientation, please.
+
+  7. Yes, include a legend, I have no preference for its placement.
+
+  8. Yes, please include gridlines.
+
+  9. No specific requirements.
+
+  10. Title: "Age vs. TenYearCHD: Impact of Gender and Smoking Habits on Heart Disease
+  Risk"'
+data_attributes:
+- age
+- TenYearCHD
+- male
+- cigsPerDay

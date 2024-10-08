@@ -1,0 +1,47 @@
+initial_prompt: Create a column chart visualizing the number of press releases by
+  category from the given SAP Press Releases data. The x-axis should represent the
+  categories (label), and the y-axis should show the count of headlines in each category.
+  Annotate the column bars to display the exact count of press releases for each category,
+  highlighting the 'Story' category to emphasize its importance. This visualization
+  aims to quickly convey the distribution of press releases across different categories
+  to understand the company's focus areas in their communications.
+questions: '1. Do you have any specific color preferences for the different categories?
+
+  2. How would you like the ''Story'' category to be highlighted? (e.g., different
+  color, bold outline, larger size)
+
+  3. Are there any specific font styles or sizes you prefer for the annotations?
+
+  4. Do you have a preferred orientation for the text labels on the x-axis?
+
+  5. Would you like any additional labels or legends included in the chart?
+
+  6. Do you prefer the bars to be of a certain width or spacing?
+
+  7. Is there a specific order you would like the categories to be displayed in on
+  the x-axis?
+
+  8. Would you like gridlines to be included on the chart? If so, any specific style
+  for them?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Different color for the ''Story'' category.
+
+  3. No specific preference for font styles or sizes.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. No specific preference for bar width or spacing.
+
+  7. I do not know.
+
+  8. I have no specific preference for gridlines.
+
+  <end of user response>'
+data_attributes:
+- headline
+- label

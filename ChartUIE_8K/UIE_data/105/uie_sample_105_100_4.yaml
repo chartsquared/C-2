@@ -1,0 +1,37 @@
+initial_prompt: Please provide a pie chart visualization using the stock data from
+  105.csv. I want to see the proportions of total volume traded across the given dates.
+  Each segment on the pie chart should represent a day's trading volume. Ensure the
+  chart is clear and labeled. Include a legend for the Date and any significant values
+  to better understand the distribution. The business details are not required on
+  the chart, just a simple yet informative pie chart focusing on Volume over the sample
+  period. Thank you!
+questions: '1. Do you have a specific color scheme preference for the pie chart segments?
+
+  2. Should the chart include percentage labels on each pie segment?
+
+  3. Do you prefer the dates to be displayed in any specific format in the legend?
+
+  4. Would you like any annotations or markers for significant trading volume days?
+
+  5. Is there a preferred font style or size for the labels and legend?
+
+  6. How many decimal places should be displayed for the significant values?
+
+  7. Should the chart include a title, and if so, do you have a preferred title in
+  mind?'
+answers: '1. I do not have any specific color scheme preference.
+
+  2. Yes, please include percentage labels on each pie segment.
+
+  3. I am not sure.
+
+  4. Yes, please add annotations or markers for significant trading volume days.
+
+  5. I do not know.
+
+  6. Two decimal places would be best.
+
+  7. Yes, please include a title. "Trading Volume Distribution Over Selected Dates"'
+data_attributes:
+- Date
+- Volume

@@ -1,0 +1,68 @@
+initial_prompt: Create a heatmap to visualize the correlation between different features
+  in the "Gender Recognition by Voice" dataset. Include all columns such as 'meanfreq',
+  'sd', 'median', etc. Use different colors to represent the intensity of correlations.
+  Highlight features that might indicate gender differences clearly. Make sure the
+  color gradient helps identify strong and weak correlations easily. This will help
+  in understanding which features have a significant relationship with each other
+  and could potentially impact gender classification. Ensure the heatmap is clear
+  and easy to read.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Should the color gradient be diverging (e.g., from blue to red) or sequential
+  (e.g., from light to dark)?
+
+  3. Do you prefer any specific value range for the color gradient to emphasize strong
+  and weak correlations?
+
+  4. Would you like any specific annotations or labels on the heatmap cells?
+
+  5. Do you have a preferred size or aspect ratio for the heatmap?
+
+  6. Should any specific features be highlighted more prominently in the heatmap?
+
+  7. Is there any specific correlation threshold you want to highlight (e.g., correlations
+  greater than 0.8)?
+
+  8. Do you want grid lines to be displayed on the heatmap to distinguish between
+  cells?
+
+  9. Is there a particular order in which you''d like the features to be displayed
+  (e.g., hierarchical clustering)?'
+answers: '1. I am not sure.
+
+  2. Sequential (e.g., from light to dark).
+
+  3. I am not sure.
+
+  4. Yes, labels on the heatmap cells would be helpful.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. Correlations greater than 0.8 would be good to highlight.
+
+  8. I do not know.
+
+  9. I have no specific preference.'
+data_attributes:
+- meanfreq
+- sd
+- median
+- Q25
+- Q75
+- IQR
+- skew
+- kurt
+- sp.ent
+- sfm
+- mode
+- centroid
+- meanfun
+- minfun
+- maxfun
+- meandom
+- mindom
+- maxdom
+- dfrange
+- modindx

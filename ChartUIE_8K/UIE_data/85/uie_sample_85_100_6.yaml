@@ -1,0 +1,47 @@
+initial_prompt: Create a bar chart to visualize the "Top 50 Spotify Songs - 2019"
+  dataset. The x-axis should represent the "Track Name" and the y-axis should represent
+  "Popularity." Each bar should correspond to a different track, showing how popular
+  each song is. The chart should also be color-coded based on the "Genre" of each
+  track to provide a more detailed view. Add a legend to distinguish the genres. Keep
+  the chart easy to read with clearly labeled axes and a title. This will help in
+  quickly understanding which tracks were the most popular in 2019.
+questions: '1. Do you have a preferred color palette for the genres?
+
+  2. Do you want the bars sorted by popularity or any other specific order?
+
+  3. What should be the title of the chart?
+
+  4. Do you prefer labels on the bars indicating the popularity values?
+
+  5. Would you like gridlines on the chart for better readability?
+
+  6. How would you like the track names to be displayed on the x-axis (e.g., angled,
+  rotated, abbreviated)?
+
+  7. Do you have a preferred font style or size for the title, axes, and legend?
+
+  8. Is there a specific height and width you want for the bar chart?
+
+  9. Do you want any annotations or additional information displayed on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. "Top 50 Spotify Songs - 2019: Popularity by Genre"
+
+  4. Yes, I prefer labels on the bars indicating the popularity values.
+
+  5. Yes, I would like gridlines on the chart for better readability.
+
+  6. I prefer the track names to be displayed angled.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.
+
+  9. No, I do not want any annotations or additional information displayed on the
+  chart.'
+data_attributes:
+- Track.Name
+- Popularity
+- Genre

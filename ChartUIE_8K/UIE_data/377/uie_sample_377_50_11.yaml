@@ -1,0 +1,49 @@
+initial_prompt: Create a grouped bar chart visualizing voting percentages. Each group
+  should represent different constituencies, with bars for CON(%), LAB(%), and LIB(%).
+  Label the x-axis with constituency names and the y-axis with percentages. The chart
+  should clearly distinguish between constituencies using color codes.
+questions: '1. Do you have any preference for specific color codes for the different
+  constituencies or the party bars (CON, LAB, LIB)?
+
+  2. Would you like to include any specific title for the chart?
+
+  3. Do you want gridlines to be included in the background of the chart for better
+  readability of the bars'' values?
+
+  4. Should there be data labels directly on or above the bars indicating their percentage
+  values?
+
+  5. Do you have any preference for the font style or size of the chart labels (x-axis,
+  y-axis, and legend)?
+
+  6. Would you like the chart to include a legend indicating what each color represents?
+
+  7. Is there a particular order you would like the constituencies to be displayed
+  on the x-axis (e.g., alphabetically, by percentage value of a specific party)?
+
+  8. Any preference on the width of the bars or the spacing between groups of bars?
+
+  9. Would you like the y-axis to have a fixed range (e.g., from 0% to 100%) or should
+  it auto-adjust based on the data?'
+answers: '1. I am not sure.
+
+  2. Yes, title it "Voting Percentages by Constituency".
+
+  3. I do not know.
+
+  4. Yes, include data labels directly on the bars.
+
+  5. I do not know.
+
+  6. Yes, include a legend.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes, the y-axis should have a fixed range from 0% to 100%.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)

@@ -1,0 +1,46 @@
+initial_prompt: Create a box chart visualizing the distribution of cumulative GPA
+  (CUML_GPA) among students based on their activities (ACTIVITY). Highlight the impact
+  of additional variables like study hours (STUDY_HRS), gender (GENDER), and type
+  of high school (HS_TYPE) on GPA. Ensure clarity.
+questions: '1. What color scheme do you prefer for differentiating categories such
+  as activity, study hours, gender, and type of high school?
+
+  2. Are there any specific labels or annotations you would like to include on the
+  chart?
+
+  3. Do you have a preference for the orientation of the box plots (vertical or horizontal)?
+
+  4. How would you like outliers to be displayed or highlighted on the box chart?
+
+  5. Do you prefer any specific style for the axes or grid lines?
+
+  6. Are there any specific titles or subtitles you would like to include for the
+  chart and axes?
+
+  7. Do you have a preference for the size or aspect ratio of the chart?
+
+  8. Would you like to include any legends or keys to explain the different categories
+  or variables used in the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I prefer vertical orientation for the box plots.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I would like the title to be "Distribution of Cumulative GPA Among Students by
+  Activity" and the y-axis to be labeled "Cumulative GPA".
+
+  7. I have no specific preference.
+
+  8. Yes, please include legends to explain the different categories or variables
+  used in the chart.'
+data_attributes:
+- CUML_GPA
+- ACTIVITY
+- STUDY_HRS
+- GENDER
+- HS_TYPE

@@ -1,0 +1,54 @@
+initial_prompt: 'I have a student performance dataset with several categorical and
+  numerical features including gender, race/ethnicity, parental level of education,
+  lunch type, test preparation course, and scores in math, reading, and writing. I
+  need a Parallel coordinates chart to visualize this data. This should help explore
+  the relationships and patterns between different features and scores among students.
+  Use all the columns provided: gender, race/ethnicity, parental level of education,
+  lunch, test preparation course, math score, reading score, and writing score. Ensure
+  each line represents a student. No missing values.'
+questions: '1. Do you have any specific color preferences for different categories
+  or lines in the chart?
+
+  2. Would you like to highlight certain categories or data points within the chart?
+
+  3. Do you prefer a specific order of the axes for the features in the parallel coordinates
+  chart?
+
+  4. Should the chart include axis labels and legends, and if so, any specific formatting
+  for them?
+
+  5. Would you like to apply any particular scaling methods to the numerical data
+  (e.g., standardization or normalization)?
+
+  6. Are there specific line styles or thickness preferences for better clarity in
+  the chart?
+
+  7. Would you like to include any specific plot annotations or data highlights (e.g.,
+  mean values, outliers)?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, the chart should include axis labels and a legend. I have no specific formatting
+  in mind.
+
+  5. I am not sure.
+
+  6. I do not have any specific preferences for line styles or thickness.
+
+  7. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- gender
+- race/ethnicity
+- parental level of education
+- lunch
+- test preparation course
+- math score
+- reading score
+- writing score

@@ -1,0 +1,52 @@
+initial_prompt: Create a line chart showing 'logFC' vs. 'P.Value' for the different
+  'Gene.symbol' in breast cancer cell lines. Highlight significant genes with annotations
+  for clarity.
+questions: '1. Do you have a specific color scheme preference for highlighting significant
+  genes?
+
+  2. Would you like the chart to display gridlines for easier reading of values?
+
+  3. Do you prefer a specific font style or size for the annotations?
+
+  4. Should the axes be logarithmically scaled, linearly scaled, or follow a different
+  scaling method?
+
+  5. Are there any specific thresholds for significance that you want to be used for
+  highlighting the genes?
+
+  6. Would you like to include a legend to indicate what the highlights and annotations
+  represent?
+
+  7. Do you have a preference for how the annotations should be positioned relative
+  to the highlighted genes?
+
+  8. Should the line chart connect all data points, or only specific gene sets?
+
+  9. Would you like to add any reference lines or markers (e.g., average line, threshold
+  line) on the chart?
+
+  10. Are there any specific details or styles you prefer for the tooltips that may
+  appear when hovering over data points?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to display gridlines.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Significant genes could be those with a P.Value < 0.05.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- Gene.symbol
+- P.Value
+- logFC

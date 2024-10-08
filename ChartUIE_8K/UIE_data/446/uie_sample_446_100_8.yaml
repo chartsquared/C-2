@@ -1,0 +1,52 @@
+initial_prompt: I have a dataset of animal rescue incidents in London, including details
+  like incident number, location coordinates (latitude, longitude), and costs. I'd
+  like a scatter plot visualizing the location of these rescues on a map of London.
+  The x-axis should represent the longitude and the y-axis, the latitude. Each point
+  should represent a rescue incident, possibly color-coded by the type of animal rescued.
+  This visualization will help understand the geographic distribution of animal rescue
+  operations. Please make sure the map is clear, and the points are easily distinguishable.
+  Additionally, show major borough boundaries.
+questions: '1. Do you have a preference for the color scheme used to represent different
+  types of animals in the scatter plot?
+
+  2. What level of detail do you prefer for the map? Should it include topographical
+  features, street names, or landmarks?
+
+  3. How would you prefer the major borough boundaries to be displayed (solid line,
+  dashed line, different colors, etc.)?
+
+  4. Would you like any specific labeling for the boroughs or key locations on the
+  map?
+
+  5. Should there be a legend included to explain the color-coding of different types
+  of animals and other map features?
+
+  6. Do you have a preference for the size of the points representing rescue incidents
+  on the map?
+
+  7. Are there any specific boroughs or areas you would like to highlight or zoom
+  into on the map?
+
+  8. Is there a particular background style you prefer for the map (light, dark, satellite
+  view, etc.)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Solid line for the major borough boundaries would be fine.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend to explain the color-coding of different types of
+  animals and other map features.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. A light background style would be preferred for the map.'
+data_attributes:
+- incident_number
+- latitude
+- longitude
+- animal_group_parent

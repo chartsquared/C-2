@@ -1,0 +1,63 @@
+initial_prompt: Create a Choropleth map using the Global Metropolis Weather Dataset
+  to visualize the current weather conditions in different major cities. The map should
+  use color gradients to represent "Temperature (°C)" and include hover-over info
+  for "Humidity (%)", "Wind Speed (kph)", and "Weather Condition". This visualization
+  will help compare and analyze weather conditions across various global locations
+  at a single glance. Additionally, consider including markers showing "Pressure (mb)"
+  and "UV Index" levels to provide more detailed insights into the atmospheric conditions
+  of each city. Render dynamic changes if possible.
+questions: '1. Do you have a preferred color scheme or gradient for representing "Temperature
+  (°C)"?
+
+  2. Would you like the markers for "Pressure (mb)" and "UV Index" to be distinct
+  shapes or colors?
+
+  3. Should the map include a legend explaining the color gradient for temperature
+  and the symbols for markers?
+
+  4. Do you want the hover-over information to display all additional weather attributes
+  simultaneously or in a specific order?
+
+  5. Is there a specific map style or geographic projection you prefer for the Choropleth
+  map?
+
+  6. Would you like to include any additional geographical features or labels on the
+  map (e.g., country borders, city names)?
+
+  7. Do you prefer the data labels to be shown directly on the map or only upon hovering
+  over the markers?
+
+  8. Is there a particular level of zoom or focus area you would like the map to start
+  with?
+
+  9. Would you like to add any annotations or callouts for particular cities or weather
+  events?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I would prefer distinct shapes for pressure and UV index markers.
+
+  3. Yes, the map should include a legend.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Including country borders and city names would be helpful.
+
+  7. I prefer data labels to be shown upon hovering over the markers.
+
+  8. I do not have a specific focus area in mind.
+
+  9. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Location
+- Temperature (°C)
+- Humidity (%)
+- Wind Speed (kph)
+- Weather Condition
+- Pressure (mb)
+- UV Index

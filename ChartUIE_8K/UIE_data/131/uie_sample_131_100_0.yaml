@@ -1,0 +1,76 @@
+initial_prompt: Create a bar chart to visualize the unique values in each column of
+  the mushroom classification dataset. Highlight columns with more unique values in
+  a different color to show variability. Use text annotations to describe the significance
+  of columns like 'class' (edible/poisonous) and 'odor', as these are crucial for
+  identifying mushroom species. The chart should help users quickly identify which
+  features have significant variation and are important for classification purposes.
+  Adjust bar sizes to distinguish between columns effectively. Add context on how
+  these features aid in biological classification.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. How would you like the bars representing high variability to be highlighted (e.g.,
+  specific color, pattern)?
+
+  3. Do you have a preference for the font style or size for the text annotations?
+
+  4. Would you like to include a legend explaining the color coding and bar sizes?
+
+  5. Is there a specific layout or orientation you prefer for the bar chart (e.g.,
+  horizontal or vertical bars)?
+
+  6. Do you want the chart to include grid lines for better readability?
+
+  7. Should the text annotations include any additional information besides the significance
+  of the features (e.g., number of unique values)?
+
+  8. Are there any particular columns you want to emphasize more prominently in the
+  visualization?
+
+  9. Do you prefer a particular style for the axis labels and titles (e.g., bold,
+  italicized)?
+
+  10. How detailed should the context on biological classification be (e.g., brief
+  notes, comprehensive explanations)?'
+answers: '1. I do not know.
+
+  2. Specific color.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Vertical bars.
+
+  6. Yes.
+
+  7. Number of unique values.
+
+  8. Class and odor.
+
+  9. I do not know.
+
+  10. Brief notes.'
+data_attributes:
+- class
+- cap-shape
+- cap-surface
+- cap-color
+- bruises
+- odor
+- gill-attachment
+- gill-spacing
+- gill-size
+- gill-color
+- stalk-shape
+- stalk-root
+- stalk-surface-above-ring
+- stalk-surface-below-ring
+- stalk-color-above-ring
+- stalk-color-below-ring
+- veil-type
+- veil-color
+- ring-number
+- ring-type
+- spore-print-color
+- population
+- habitat

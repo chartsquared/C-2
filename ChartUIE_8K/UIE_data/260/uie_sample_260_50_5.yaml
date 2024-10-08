@@ -1,0 +1,52 @@
+initial_prompt: Create a stacked bar chart showing the discovery methods of exoplanets
+  with their corresponding orbital periods from the provided data. Group by `pl_discmethod`
+  and use `pl_orbper` for the stacks. Add labels for `pl_hostname`.
+questions: '1. What color scheme do you prefer for the different discovery methods?
+
+  2. Do you want the bars to be displayed in a specific order (e.g., ascending or
+  descending orbital periods)?
+
+  3. Should the stacked bar chart have a legend indicating the meaning of each stack?
+
+  4. Are there any specific fonts or styles you want for the labels of the `pl_hostname`?
+
+  5. Do you prefer the y-axis to display count, sum, or average of `pl_orbper` values?
+
+  6. How many decimal places should be shown for the orbital periods (`pl_orbper`)?
+
+  7. Do you want gridlines enabled or disabled in the chart background?
+
+  8. Should the chart include axis titles, and if so, what should they be?
+
+  9. Are there any specific dimensions or aspect ratios you want for the chart?
+
+  10. Would you like to add any annotations or comments directly on the chart to highlight
+  specific points?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, the chart should have a legend.
+
+  4. I have no specific preference.
+
+  5. I prefer the y-axis to display the average of `pl_orbper` values.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, the x-axis should be titled "Discovery Methods" and the y-axis should be
+  titled "Average Orbital Period (days)".
+
+  9. I do not know.
+
+  10. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- pl_discmethod
+- pl_orbper
+- pl_hostname

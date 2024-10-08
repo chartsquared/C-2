@@ -1,0 +1,47 @@
+initial_prompt: Please create a bar chart visualizing the number of unique obstacles
+  used in different locations across seasons in Ninja Warrior. Each bar should represent
+  a location, and the height should indicate the count of unique obstacles. The chart
+  should use data from the columns 'location' and 'obstacle_name' in the provided
+  dataset. Make sure to label the axes appropriately, with the x-axis representing
+  locations and the y-axis representing the count of unique obstacles. Additionally,
+  use different colors for different seasons to differentiate them within each bar.
+questions: '1. Do you have any specific color preferences for differentiating the
+  seasons within each location bar?
+
+  2. Is there a particular font style or size you would like for the axis labels and
+  titles?
+
+  3. Would you like to include any legends or a particular placement for the legends
+  indicating the seasons?
+
+  4. Are there any specific annotations or data points you would like highlighted
+  on the chart?
+
+  5. Do you have any preferences for the layout or orientation of the chart (e.g.,
+  landscape or portrait)?
+
+  6. Is there a specific chart title you would like to use?
+
+  7. Would you like gridlines to be included in the chart for better readability?
+
+  8. Are there any constraints or particular dimensions for the chart size?'
+answers: '1. I do not have a specific preference for colors.
+
+  2. I am not sure about the font style or size.
+
+  3. Yes, please include legends indicating the seasons. I do not have a preference
+  for the placement.
+
+  4. I do not know.
+
+  5. I do not have a specific preference for the layout or orientation.
+
+  6. Let''s use the title "Unique Obstacles in Ninja Warrior by Location and Season."
+
+  7. Yes, please include gridlines for better readability.
+
+  8. I do not have any constraints or specific dimensions for the chart size.'
+data_attributes:
+- location
+- obstacle_name
+- season

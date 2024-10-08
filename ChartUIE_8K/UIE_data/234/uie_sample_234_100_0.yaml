@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap to visualize customer churn from the dataset. Highlight
+  key demographic factors like CreditScore, Geography, Gender, and Age. Use text annotations
+  to show specific values for notable correlations, such as the relationship between
+  Age and CreditScore with churn (Exited). The practical purpose of this visualization
+  is to understand which demographics are more likely to churn and to strategize customer
+  retention actions. Make highlights using color variations to distinguish between
+  different churn rates across various ages and credit scores for better insights
+  into customer behavior.
+questions: '1. Do you have any preference for the color scheme of the heatmap?
+
+  2. What range of color variations would you like to use to indicate different churn
+  rates?
+
+  3. Is there a specific font style or size preference for the text annotations?
+
+  4. Should the heatmap include a legend to explain the color coding?
+
+  5. Would you like specific labels or titles for the axes or the heatmap itself?
+
+  6. Are there any specific thresholds for churn rates that should be highlighted
+  in the heatmap?
+
+  7. Do you prefer horizontal or vertical orientation for the demographic factors
+  displayed on the heatmap?
+
+  8. Is there a preferred layout or structure you would like for the demographic factors
+  on the heatmap?'
+answers: '1. I am not sure.
+
+  2. I would like a range of color variations from green (low churn) to red (high
+  churn).
+
+  3. I do not know.
+
+  4. Yes, the heatmap should include a legend to explain the color coding.
+
+  5. Yes, please include clear labels for the axes and a title like "Customer Churn
+  Heatmap by Demographic Factors".
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. I do not have a specific preference.
+
+  '
+data_attributes:
+- CreditScore
+- Geography
+- Gender
+- Age
+- Exited

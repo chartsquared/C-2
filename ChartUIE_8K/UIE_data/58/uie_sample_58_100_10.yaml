@@ -1,0 +1,54 @@
+initial_prompt: Create a bar chart displaying the titles of the top 10 best sellers
+  from 'Amazon's 500 Bestsellers in Laptop Gear 2024', using the data from '../Extra_datas/data/58.csv'.
+  Use the 'title' column for the x-axis, 'price/value' for the y-axis, and incorporate
+  'stars' and 'reviewsCount' as color-coded data points or annotations to reflect
+  customer satisfaction and popularity. Make the chart visually engaging and easy
+  to interpret.
+questions: '1. Do you have a preferred color scheme for the bars and annotations?
+
+  2. Would you like the stars and reviewsCount to be represented as specific annotations
+  on the bars, or would you prefer a different method for these attributes?
+
+  3. How would you like the bars to be sorted? By price/value, stars, or reviewsCount?
+
+  4. Do you have a preferred font style or size for the titles on the x-axis?
+
+  5. Would you like any gridlines or background shading to be included in the chart
+  for better readability?
+
+  6. Are there any specific labels or legends you would prefer to include in the chart?
+
+  7. Do you have specific dimensions for the chart?
+
+  8. Would you like to set a specific range for the y-axis values?
+
+  9. Are there any tooltips or hover information you would like to include when a
+  user points to a bar?
+
+  10. Do you have a preference for the overall layout and orientation of the bar chart
+  (horizontal vs. vertical)?'
+answers: '1. I am not sure.
+
+  2. I would like the stars and reviewsCount to be represented as specific annotations
+  on the bars.
+
+  3. I would like the bars to be sorted by price/value.
+
+  4. I do not have a specific preference.
+
+  5. Yes, I would like gridlines to be included for better readability.
+
+  6. I am not sure.
+
+  7. I do not have specific dimensions in mind.
+
+  8. I do not know.
+
+  9. I do not need any tooltips or hover information.
+
+  10. I would prefer a vertical bar chart.'
+data_attributes:
+- title
+- price/value
+- stars
+- reviewsCount

@@ -1,0 +1,53 @@
+initial_prompt: I need a heatmap visualizing the trading volume of oil and coal over
+  the given date range. The x-axis should represent the dates, and the y-axis should
+  represent the trading volumes for both oil and coal. The color intensity will indicate
+  the volume levels, with darker shades representing higher trading volumes. Ensure
+  the dates are appropriately formatted and evenly spaced to accurately reflect the
+  timeline. The heatmap should make it easy to identify patterns or trends in trading
+  volumes over time, highlighting any correlations or fluctuations between the two
+  energy sources. Please include a legend for clarity.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What level of date granularity do you prefer (e.g., daily, weekly, monthly)?
+
+  3. Are there specific date formats you would like to use for the x-axis labels?
+
+  4. Do you want gridlines or tick marks along the x-axis and y-axis?
+
+  5. Should the y-axis display the exact trading volumes or use a logarithmic scale?
+
+  6. Would you like the trading volumes for oil and coal to be shown side by side
+  or overlaid?
+
+  7. Do you have any specific preferences for font styles or sizes for the axis labels
+  and title?
+
+  8. Are there any annotations or markers you would like to include to highlight specific
+  dates or events?
+
+  9. Do you have a preferred positioning for the legend?
+
+  10. Would you like to include any specific title or subtitle for the heatmap?'
+answers: '1. I am not sure.
+
+  2. Daily.
+
+  3. I do not know.
+
+  4. Yes, please include gridlines or tick marks.
+
+  5. The exact trading volumes.
+
+  6. Side by side.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. "Oil and Coal Trading Volumes Over Time"'
+data_attributes:
+- date
+- oil
+- coal

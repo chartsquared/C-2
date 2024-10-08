@@ -1,0 +1,51 @@
+initial_prompt: Please create a choropleth map visualizing women's college basketball
+  performance. Use data for each school's 'reg_percent' (regular season win percentage)
+  across different conferences and years. Highlight the performance variations geographically
+  by plotting schools' locations. Include filters for year and conference to allow
+  dynamic exploration of data trends over time and among different groups. The color
+  gradient should represent 'reg_percent' to easily spot high-performing and low-performing
+  regions. Ensure to provide a legend and a tooltip that shows detailed statistics,
+  such as school name, year, conference, and win percentages when hovering over a
+  region.
+questions: '1. Do you have a preferred color scheme for the gradient representing
+  ''reg_percent''?
+
+  2. Would you like specific thresholds for win percentages to be highlighted in different
+  colors?
+
+  3. Do you have any specific preferences for the map''s geographic boundaries (e.g.,
+  only certain states or regions)?
+
+  4. Do you have any preferences for the map''s base design (e.g., plain, topographic,
+  political boundaries)?
+
+  5. Would you prefer the tooltip to include any additional information not mentioned
+  in the initial request?
+
+  6. Do you have a preferred placement or style for the legend on the map?
+
+  7. Would you like any additional annotations or markers on the map to emphasize
+  certain schools or regions?
+
+  8. Are there any specific font or style preferences for the text in the tooltip
+  and legend?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Plain design would be fine.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. No specific preference.'
+data_attributes:
+- year
+- school
+- reg_percent
+- conference

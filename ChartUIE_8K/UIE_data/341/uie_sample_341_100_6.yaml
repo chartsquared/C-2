@@ -1,0 +1,49 @@
+initial_prompt: Can you create a geographic heatmap indicating the price distribution
+  of various grocery items sold in Sydney, detailed by their product categories from
+  the given data? Please focus on highlighting hotspots where certain categories,
+  such as organic products, are more expensive, and where prices are lower. This heatmap
+  will help visualize and compare the cost variability of these products across different
+  areas in Sydney. Specifically, emphasize the variations in the prices when converted
+  to INR, as it provides a better understanding for our target audience. Thank you!
+questions: '1. Do you have a preferred color scheme for the heatmap to highlight differences
+  in price distribution?
+
+  2. Should the heatmap include legends to indicate price ranges and categories?
+
+  3. Would you like to use specific markers or annotations for high and low price
+  hotspots?
+
+  4. Do you have a preference for the geographical granularity (e.g., neighborhood,
+  district) to be shown on the map?
+
+  5. Should the heatmap display any particular labels (e.g., category names, price
+  indicators) on hover or directly on the map?
+
+  6. Is there a specific map style or basemap (e.g., satellite, terrain, street) you
+  would prefer?
+
+  7. Do you want to include any filters on the heatmap to selectively view certain
+  product categories or price ranges?
+
+  8. Would you like to display any summary statistics or insights alongside the heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, the heatmap should include legends to indicate price ranges and categories.
+
+  3. Yes, specific markers or annotations for high and low price hotspots would be
+  useful.
+
+  4. I prefer the geographical granularity to be shown at the neighborhood level.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, displaying summary statistics or insights alongside the heatmap would be
+  helpful.'
+data_attributes:
+- Product Name
+- Product Category
+- Product Price (INR)

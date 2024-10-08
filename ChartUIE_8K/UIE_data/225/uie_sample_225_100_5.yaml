@@ -1,0 +1,46 @@
+initial_prompt: Create a scatter plot to visualize the weather data. Use the 'date'
+  on the x-axis and 'temp_max' and 'temp_min' on the y-axis. Differentiate points
+  by 'weather' using colors or markers to see how maximum and minimum temperatures
+  vary across different weather conditions like drizzle, rain, etc. Include a legend
+  to explain the weather types represented by different colors or markers. Make sure
+  to label the axes appropriately and add a title "Temperature Variation Across Different
+  Weather Conditions" for clarity.
+questions: '1. Do you have a preference for specific colors to represent different
+  weather conditions?
+
+  2. Do you prefer distinct shapes for markers to differentiate weather types, in
+  addition to colors?
+
+  3. Are there any font styles or sizes you prefer for the axes labels and title?
+
+  4. Would you like grid lines in the background to enhance readability? If yes, should
+  they be minor or major grid lines?
+
+  5. Do you have any preferences for the range or scaling of the axes?
+
+  6. Should the legend be placed in a specific location within the chart (e.g., top-right,
+  bottom-left)?
+
+  7. Do you need any specific annotations or reference lines included in the chart?
+
+  8. Would you like to add any additional information or captions to the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I prefer distinct shapes for markers in addition to colors.
+
+  3. I do not have any specific preference.
+
+  4. Yes, I would like grid lines. I am not sure if they should be minor or major.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. No, I do not need any additional information or captions.'
+data_attributes:
+- date
+- temp_max
+- temp_min
+- weather

@@ -1,0 +1,67 @@
+initial_prompt: Create a heatmap to visualize the Wholesale Customers Data focusing
+  on the columns Channel, Region, Fresh, Milk, Grocery, Frozen, Detergents_Paper,
+  and Delicassen. Use annotations to highlight notable values, especially in the Fresh
+  and Milk categories, to draw attention to high or low figures. The heatmap should
+  help identify patterns or correlations in purchasing behaviors across different
+  regions and channels. Highlight data points with extreme values to make them stand
+  out visually. The aim is to assist business decisions in understanding customer
+  purchasing trends.
+questions: '1. Do you have any preferences for the color scheme of the heatmap?
+
+  2. Would you like a specific color gradient to represent high and low values?
+
+  3. How would you like the annotations to appear (e.g., size, font, color)?
+
+  4. Should extreme values be highlighted with a specific color or visual marker?
+
+  5. Do you prefer any particular layout or aspect ratio for the heatmap?
+
+  6. How would you like the data to be normalized or scaled?
+
+  7. Is there a specific range of values you would like to emphasize more in the Fresh
+  and Milk categories?
+
+  8. Do you have any preferences for the inclusion of labels or legends?
+
+  9. Would you like grid lines to be visible on the heatmap for better cross-referencing?
+
+  10. Should the heatmap include tooltips or hover information for more detailed insights?
+
+  11. Are there any specific regions or channels that you want to prioritize in the
+  visualization?
+
+  12. Would you like the data points to be clustered in any specific way, such as
+  by region or channel?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer a standard readable font and size; use a contrasting color for clarity.
+
+  4. Yes, please use a specific color or marker for extreme values.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Emphasize values above the 75th percentile and below the 25th percentile highly
+  in the Fresh and Milk categories.
+
+  8. Yes, include labels and legends.
+
+  9. Yes, make grid lines visible for better cross-referencing.
+
+  10. I am not sure.
+
+  11. I do not know.
+
+  12. Cluster the data points by region.'
+data_attributes:
+- Channel
+- Region
+- Fresh
+- Milk
+- Grocery
+- Frozen
+- Detergents_Paper
+- Delicassen

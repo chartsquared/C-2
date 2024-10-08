@@ -1,0 +1,62 @@
+initial_prompt: I want to visualize a heatmap using the "Latest Covid-19 India Statewise
+  Data." Specifically, I want the heatmap to display the "Total Cases," "Discharged,"
+  "Deaths," and "Population" for each "State/UTs." Each state's metrics should be
+  clearly differentiated by color intensity levels to represent the values effectively.
+  Ensure the heatmap highlights the variations and trends across different states
+  and UTs. Additionally, add labels for each state and include a colorbar legend for
+  better interpretation. This will help in quickly identifying which states had higher
+  cases, discharges, deaths, and population sizes.
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. Should we use a specific color gradient for higher vs. lower values?
+
+  3. Are there any particular states or Union Territories you would like to emphasize
+  or highlight?
+
+  4. Would you like to include grid lines in the heatmap?
+
+  5. Do you prefer the labels for each state to be displayed inside the heatmap cells
+  or positioned outside?
+
+  6. Do you have any specific fonts or font sizes you prefer for the labels and legends?
+
+  7. How detailed should the colorbar legend be? (e.g., number of divisions or specific
+  intervals)
+
+  8. Is there a specific ordering you prefer for the states or Union Territories (e.g.,
+  alphabetical, by total cases)?
+
+  9. Do you want a title or subtitle included in the heatmap? If yes, please specify
+  the text.
+
+  10. Should there be any tooltips or additional information displayed when hovering
+  over a particular state''s data on the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I do not have specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. I prefer the labels for each state to be displayed inside the heatmap cells.
+
+  6. I do not have specific preferences.
+
+  7. I am not sure, maybe something standard.
+
+  8. Alphabetical ordering would be nice.
+
+  9. Yes, please include a title - "Covid-19 India Statewise Data Heatmap".
+
+  10. I am not sure, but since I am looking for an image, tooltips might not be necessary.
+
+  <end of user emulated response>'
+data_attributes:
+- State/UTs
+- Total Cases
+- Discharged
+- Deaths
+- Population

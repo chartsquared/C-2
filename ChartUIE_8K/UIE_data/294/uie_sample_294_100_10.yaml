@@ -1,0 +1,50 @@
+initial_prompt: 'Please create a dot plot to visualize the engagement metrics of Ronaldo''s
+  tweets. Use ''retweetCount'', ''replyCount'', ''likeCount'', ''quoteCount'', and
+  ''bookmarkCount'' against the ''createdAt'' column to show trends over time. Each
+  dot should represent a tweet with different colors for each metric. Make sure to
+  highlight the dates and significant spikes in engagement. Add a legend to differentiate
+  the metrics. Include a title, "Ronaldo''s Tweets Insight: Engagement & Trends,"
+  and label the axes accordingly. This visualization will help in understanding which
+  tweets garnered more attention and when. Thank you.'
+questions: '1. Do you have any specific color preferences for each tweet engagement
+  metric?
+
+  2. Is there a specific date format you prefer for the time axis?
+
+  3. How detailed do you want the date labels on the time axis (e.g., every day, week,
+  month)?
+
+  4. Do you want any specific annotations or notes on significant engagement spikes?
+
+  5. Is there a particular font style or size you prefer for the title and axis labels?
+
+  6. Should the dots representing tweets be of a specific size or vary by another
+  attribute?
+
+  7. Would you prefer a grid layout or any background colors for better readability?
+
+  8. Do you have a specific order for listing the metrics in the legend?'
+answers: '1. I do not have any specific color preferences for each tweet engagement
+  metric.
+
+  2. I am not sure about the date format for the time axis.
+
+  3. I prefer date labels on the time axis to be detailed at a weekly level.
+
+  4. Yes, I want annotations or notes on significant engagement spikes.
+
+  5. I do not have a specific preference for the font style or size for the title
+  and axis labels.
+
+  6. I do not know if the dots should be of a specific size or vary by another attribute.
+
+  7. I am not sure about the grid layout or background colors.
+
+  8. I do not have a specific order for listing the metrics in the legend.'
+data_attributes:
+- createdAt
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

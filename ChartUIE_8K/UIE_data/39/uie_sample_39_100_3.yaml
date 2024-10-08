@@ -1,0 +1,51 @@
+initial_prompt: I need a line chart to visualize the glass classification data provided
+  in the CSV file. The chart should show the variation of different chemical components
+  (RI, Na, Mg, Al, Si, K, Ca, Ba, Fe) across the samples. Each line in the chart should
+  represent a separate chemical component, with the x-axis representing the sample
+  index (or count) and the y-axis representing the quantity of each component. Label
+  the axes and include a legend to differentiate the components. Ensure the chart
+  is clear and easy to understand.
+questions: '1. Do you have a preference for the color scheme of the chart?
+
+  2. Would you like gridlines to be included in the chart for better readability?
+
+  3. Do you prefer a specific font style or size for the axis labels and legend?
+
+  4. How would you like the legend to be positioned on the chart (e.g., top, bottom,
+  right, left)?
+
+  5. Should the lines representing each chemical component be solid or do you prefer
+  different line styles (e.g., dashed, dotted) for differentiation?
+
+  6. Do you have a specific title in mind for the chart?
+
+  7. Would you like to include data point markers on the lines to highlight each sample''s
+  value?
+
+  8. Is there a specific range you would like to set for the y-axis, or should it
+  be determined automatically based on the data?'
+answers: '1. I do not know.
+
+  2. Yes, I would like gridlines to be included for better readability.
+
+  3. I am not sure.
+
+  4. I prefer the legend to be positioned at the bottom.
+
+  5. I prefer solid lines for each chemical component.
+
+  6. I do not have a specific title in mind.
+
+  7. Yes, I would like to include data point markers on the lines.
+
+  8. It should be determined automatically based on the data.'
+data_attributes:
+- RI
+- Na
+- Mg
+- Al
+- Si
+- K
+- Ca
+- Ba
+- Fe

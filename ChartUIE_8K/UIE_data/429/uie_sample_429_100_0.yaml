@@ -1,0 +1,52 @@
+initial_prompt: '<start of the instruction>
+
+  Create a bubble chart to visualize the imports and exports of dogs by state. Use
+  the size of the bubbles to represent the ''total'' column, while the x and y axes
+  represent ''exported'' and ''imported'' respectively. Highlight the bubbles for
+  states with no missing values in ''imported'' to emphasize complete data. Include
+  text annotations for the top 3 states with the highest ''total'' values to draw
+  attention to significant data points. Ensure the chart distinguishes between states
+  within the US and those outside using color variations.
+
+  <end of the instruction>'
+questions: '1. Do you have a preferred color scheme for the bubble chart?
+
+  2. How would you like the bubbles to be highlighted for states with no missing values
+  in ''imported''?
+
+  3. Would you like specific shapes or symbols for bubbles representing states inside
+  vs outside the US?
+
+  4. Do you prefer a specific font style and size for the text annotations on the
+  top 3 states?
+
+  5. Do you have any specific preferences for the chart''s title and axis labels?
+
+  6. Are there any particular legends or keys you want to include for better clarity?
+
+  7. Would you like the chart to have gridlines or a background design? If so, do
+  you have preferences for their appearance?
+
+  8. Do you have any specific preferences for the margin or spacing around the chart
+  elements?'
+answers: '1. I don''t have a specific preference for the color scheme.
+
+  2. I am not sure how the highlighting should be done.
+
+  3. I do not have any specific shapes or symbols in mind.
+
+  4. I don''t have a preference for the font style and size.
+
+  5. I do not have specific preferences for the chart''s title and axis labels.
+
+  6. I am not sure about the legends or keys.
+
+  7. I am not sure about the gridlines or background design.
+
+  8. I have no specific preferences for the margin or spacing around the chart elements.'
+data_attributes:
+- location
+- exported
+- imported
+- total
+- inUS

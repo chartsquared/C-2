@@ -1,0 +1,48 @@
+initial_prompt: Create a stacked column chart showing the weight of travel between
+  major US cities, categorized by region. Use the 'Type' column to separate nodes
+  and edges, with 'regions' and 'weight' on the x-axis and y-axis respectively. Utilize
+  unique city names to differentiate each stack within the respective region. If available,
+  include the number of passengers in each stack. Ensure missing values are addressed
+  appropriately. Label the cities clearly to highlight each contribution. The chart
+  should provide a clear visual representation of travel loads between these key regions.
+questions: '1. What color scheme would you prefer for differentiating regions?
+
+  2. Do you have a specific preference for the order of regions on the x-axis?
+
+  3. How should missing values be handled or represented in the chart?
+
+  4. Would you like to include grid lines for better readability of the chart?
+
+  5. Do you have a preferred font style or size for the city labels?
+
+  6. Would you like to display data values directly on the stacks?
+
+  7. Do you have any specific preferences for the chart title and axis labels text?
+
+  8. Is there any additional annotation or marker you would like to include on the
+  chart?
+
+  9. Are there any specific dimensions or aspect ratios you prefer for the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference for the order of regions on the x-axis.
+
+  3. I am not sure.
+
+  4. Yes, please include grid lines for better readability.
+
+  5. I have no specific preference for font style or size.
+
+  6. Yes, please display data values directly on the stacks.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not have any specific dimensions or aspect ratios in mind.'
+data_attributes:
+- Type
+- name
+- weight
+- region
+- passengers

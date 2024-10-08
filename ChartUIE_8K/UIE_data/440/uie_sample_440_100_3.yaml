@@ -1,0 +1,40 @@
+initial_prompt: Create a heatmap visualizing the frequency of unique speakers across
+  different scenes and episodes in the TV show "Friends" based on the given dataset.
+  The heatmap should have scenes on the y-axis and episodes on the x-axis, with each
+  cell color representing the count of dialogues by each speaker. Use a color gradient
+  to easily distinguish between low and high frequencies. Ensure that missing speaker
+  values are accounted for appropriately. This will help identify patterns in character
+  appearances and dialogue distribution throughout the seasons.
+questions: '1. Do you have a preferred color gradient for representing low to high
+  frequencies in the heatmap?
+
+  2. Is there a specific color you would like to use for cells with missing speaker
+  values?
+
+  3. Would you prefer to display any labels or annotations on the cells to indicate
+  the frequency counts?
+
+  4. Do you want to include any specific legends or keys to explain the color gradient
+  on the heatmap?
+
+  5. Are there any specific font styles or sizes you would like for the axis labels
+  and titles?
+
+  6. Would you like to highlight certain scenes, episodes, or speakers specifically
+  within the heatmap?'
+answers: '1. I do not have a preferred color gradient.
+
+  2. I am not sure.
+
+  3. Yes, please display labels or annotations on the cells to indicate the frequency
+  counts.
+
+  4. Yes, please include a legend or key to explain the color gradient.
+
+  5. I do not know.
+
+  6. No, I do not have any specific scenes, episodes, or speakers to highlight.'
+data_attributes:
+- speaker
+- scene
+- episode

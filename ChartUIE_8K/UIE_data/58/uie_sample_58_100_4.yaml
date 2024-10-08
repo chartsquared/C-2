@@ -1,0 +1,57 @@
+initial_prompt: Create a lollipop chart visualizing Amazon's 500 Bestsellers in Laptop
+  Gear 2024. Use the '../Extra_datas/data/58.csv' file. Focus on the 'title', 'brand',
+  'price/value', 'stars', and 'reviewsCount' columns. The chart should display each
+  item's brand on the y-axis, with lollipops representing the price/value on the x-axis.
+  Additionally, include color-coded stars and numeral reviewsCount as annotations.
+  Ensure all items are included, even those with missing values. This will help in
+  understanding the distribution and popularity of different brands and products in
+  the dataset.
+questions: '1. Do you have specific colors you prefer for representing the different
+  star ratings?
+
+  2. Would you like the brands on the y-axis to be sorted in a particular order, such
+  as alphabetical or by average price/value?
+
+  3. Do you have a preference for the shape or size of the lollipop shapes (e.g.,
+  circles, squares)?
+
+  4. How would you like missing data to be represented?
+
+  5. Should the numerical reviewsCount be displayed in a specific format or font size?
+
+  6. Is there a particular style or theme you prefer for the chart (e.g., modern,
+  classic)?
+
+  7. How would you like items with similar prices to be differentiated?
+
+  8. Should there be a legend explaining the color-coded stars, or will annotations
+  suffice?
+
+  9. Do you want a specific scale or range for the x-axis (price/value)?
+
+  10. Would you like grid lines or axis labels to be included or excluded in the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. I am not sure.
+
+  10. I am not sure.'
+data_attributes:
+- title
+- brand
+- price/value
+- stars
+- reviewsCount

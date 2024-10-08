@@ -1,0 +1,45 @@
+initial_prompt: 'I need a line chart for a crop recommendation dataset. Please plot
+  the following variables against the label: temperature, humidity, pH, and rainfall.
+  Use different colors for each variable line to distinguish them easily. The x-axis
+  should represent the different types of crops (labels), while the y-axis should
+  display the values of temperature, humidity, pH, and rainfall. This visualization
+  will help in understanding how these environmental factors vary across different
+  crops. Keep the chart clean and well-labeled for easy interpretation. Thank you!'
+questions: '1. Do you have any preferred colors for each variable line (temperature,
+  humidity, pH, rainfall)?
+
+  2. What font size and style do you prefer for the axis labels and chart title?
+
+  3. Do you want grid lines in the background for easier value tracing? If so, should
+  they be dashed or solid?
+
+  4. Should each variable line have specific markers (e.g., circles, squares) at data
+  points, or should it be a simple line?
+
+  5. Do you have a preference for the thickness of the lines representing each variable?
+
+  6. Would you like to see a legend indicating which color corresponds to which variable,
+  and if so, where should it be placed (top, bottom, left, right)?
+
+  7. Do you want any specific annotations or highlights for certain data points or
+  sections of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like grid lines in the background. Solid would be preferable.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, I would like to see a legend indicating which color corresponds to which
+  variable, placed at the bottom.
+
+  7. I am not sure.'
+data_attributes:
+- temperature
+- humidity
+- ph
+- rainfall
+- label

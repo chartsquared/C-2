@@ -1,0 +1,39 @@
+initial_prompt: Create a stacked bar chart showing stroke occurrences by work type,
+  highlighting gender differences. Annotate notable avg glucose levels.
+questions: '1. Do you have any preferred color scheme for gender differentiation?
+
+  2. Would you like the bars to be ordered by work type category or by stroke occurrences?
+
+  3. Do you have a specific threshold for what constitutes a ''notable'' avg glucose
+  level for annotation?
+
+  4. Do you prefer the chart to have gridlines or a plain background?
+
+  5. Should the chart include axis titles and labels for better readability?
+
+  6. Do you have a preference for the placement of the legend (e.g., top, bottom,
+  side)?
+
+  7. Would you like to include any specific title or subtitle for the chart?
+
+  8. Should the values be displayed on the bars themselves for a clearer comparison?'
+answers: '1. I am not sure.
+
+  2. By work type category.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, axis titles and labels for better readability.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, values should be displayed on the bars.'
+data_attributes:
+- work_type
+- gender
+- stroke
+- avg_glucose_level

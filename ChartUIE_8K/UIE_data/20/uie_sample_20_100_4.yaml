@@ -1,0 +1,48 @@
+initial_prompt: 'Create a scatter plot to visualize the top 50 artists in the "Best
+  Artworks of All Time" from the dataset. The x-axis should represent the number of
+  paintings each artist has (column: ''paintings''), while the y-axis should represent
+  the years of activity (column: ''years''). Different colors should indicate the
+  genres (column: ''genre'') to show how different art movements correlate with the
+  number of artworks produced. Additionally, use the artist''s nationality (column:
+  ''nationality'') to add markers or labels for better context. This will help in
+  understanding the relationship between the quantity of artworks and the historical
+  periods across various genres and nationalities.'
+questions: '1. Do you have a preference for a specific color palette for the different
+  genres?
+
+  2. Should the labels for the artist''s nationality be shown for all points or only
+  on hover?
+
+  3. How would you like the years of activity to be represented on the y-axis (e.g.,
+  as a range or average year)?
+
+  4. Would you prefer any specific marker shape or style to distinguish different
+  nationalities?
+
+  5. Is there a particular font or style you prefer for the axis titles and labels?
+
+  6. Do you want grid lines on the plot, and if so, in what style?
+
+  7. Are there any specific legends or notes you would like to include in the chart?
+
+  8. Should the chart have specific dimensions or aspect ratio?'
+answers: '1. I am not sure.
+
+  2. Only on hover.
+
+  3. As a range.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. Yes, I would like grid lines, but I am not sure about the style.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- paintings
+- years
+- genre
+- nationality

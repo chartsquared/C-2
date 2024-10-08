@@ -1,0 +1,54 @@
+initial_prompt: 'I would like a heatmap to visualize the price movements of Quantum
+  Computing Inc. (QUBT) over time. Specifically, the heatmap should show the correlation
+  between the daily ''open'', ''high'', ''low'', ''close'', and ''adjclose'' prices.
+  The x-axis should represent the dates (use ''Unnamed: 0''), and the y-axis should
+  represent the different price types. Color intensity in each cell should reflect
+  the price magnitude on each day. This heatmap will help me understand how these
+  price types relate over the given period. Please ensure every date and price type
+  is accurately represented.'
+questions: '1. Do you have a specific color scheme in mind for the heatmap?
+
+  2. What range of dates would you like the heatmap to cover?
+
+  3. Do you prefer any specific labeling format for the dates on the x-axis?
+
+  4. Should the y-axis labels for different price types include any additional information,
+  such as units or abbreviations?
+
+  5. Would you like any annotations or highlights for specific dates or price types
+  on the heatmap?
+
+  6. Do you have any preference for the heatmap''s aspect ratio or size?
+
+  7. Should the heatmap include a legend to explain the color intensities and their
+  corresponding price magnitudes?
+
+  8. Do you want any gridlines or borders between the cells for better visual separation?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I would like the heatmap to cover the last 1 year.
+
+  3. I do not have a specific preference for the date labeling format.
+
+  4. I am not sure about including additional information on the y-axis labels, but
+  it should be clear that they are price types.
+
+  5. I do not know.
+
+  6. I do not have any specific preference for the aspect ratio or size.
+
+  7. Yes, please include a legend to explain the color intensities and their corresponding
+  price magnitudes.
+
+  8. I do not know.
+
+  <end of user response>'
+data_attributes:
+- 'Unnamed: 0'
+- open
+- high
+- low
+- close
+- adjclose

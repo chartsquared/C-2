@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap displaying the ratings across the 200 locations in
+  Colombo categorized by type (ATTRACTION, RESTAURANT) and ranking positions. Highlight
+  missing values in priceLevel and emails.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the heatmap to show exact rating values, or just color gradients?
+
+  3. Do you prefer the heatmap to be sorted by ranking positions within each category
+  type?
+
+  4. How would you like the missing values in ''priceLevel'' and ''email'' to be highlighted
+  (e.g., specific color, pattern)?
+
+  5. Should the categories ''ATTRACTION'' and ''RESTAURANT'' be combined or separated
+  in the heatmap?
+
+  6. Do you have any preference for the scale or legend of the heatmap?
+
+  7. Would you like to include labels for the rows and columns in the heatmap?
+
+  8. Should the heatmap include a grid or border lines around each cell for clarity?
+
+  9. Is there any additional text or annotations you would like to include in the
+  heatmap?
+
+  10. Do you prefer a specific aspect ratio or size for the heatmap?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Specific color would be good.
+
+  5. Separated in the heatmap.
+
+  6. I do not know.
+
+  7. Yes, include labels for the rows and columns.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- type
+- rankingPosition
+- rating
+- priceLevel
+- email

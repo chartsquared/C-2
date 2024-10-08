@@ -1,0 +1,63 @@
+initial_prompt: Please create a heatmap visualizing the correlation between different
+  features of the steel plate faults data. Highlight key areas, such as 'Steel_Plate_Thickness'
+  vs 'Fault Types' (Pastry, Z_Scratch, K_Scatch, etc.), to understand fault distribution
+  across plate thicknesses. Include annotations to emphasize significant correlations
+  and provide insights on any unique patterns observed. The heatmap should help in
+  urban planning for identifying critical factors affecting steel plate quality, guiding
+  process improvements. Ensure the chart is easy to interpret, focusing on practical
+  applications in identifying and addressing faults.
+questions: '1. Do you have any preference for a specific color scheme for the heatmap?
+
+  2. Would you like a particular range of colors to indicate different correlation
+  strengths?
+
+  3. Do you have a preference for the scale type (linear or logarithmic) for the color
+  mapping?
+
+  4. Are there specific significance thresholds you''d like for annotations (e.g.,
+  correlations above 0.8)?
+
+  5. Would you prefer the annotations to show correlation values or just highlight
+  significant correlations?
+
+  6. Do you have any preference for the font size or style of the annotations?
+
+  7. Should the heatmap include grid lines to separate the cells clearly?
+
+  8. Would you like a specific ordering of the ''Fault Types'' on the heatmap, or
+  should it be automatically determined by the data?
+
+  9. Do you prefer the heatmap to be accompanied by a legend explaining the color
+  scale?
+
+  10. Are there any specific patterns or insights you expect to be highlighted in
+  the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I think significant correlations above 0.8 should be annotated.
+
+  5. Just highlight significant correlations.
+
+  6. I do not have a specific preference.
+
+  7. Yes, the heatmap should include grid lines.
+
+  8. No specific preference for the ordering of ''Fault Types''.
+
+  9. Yes, include a legend explaining the color scale.
+
+  10. I expect correlations between ''Steel_Plate_Thickness'' and different fault
+  types to be highlighted.'
+data_attributes:
+- Steel_Plate_Thickness
+- Pastry
+- Z_Scratch
+- K_Scatch
+- Stains
+- Dirtiness
+- Bumps
+- Other_Faults

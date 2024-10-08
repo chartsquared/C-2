@@ -1,0 +1,52 @@
+initial_prompt: Create a Choropleth map showing European Ski Resorts. Color-code countries
+  based on the average DayPassPriceAdult. Use the provided data to highlight ski resorts
+  in each country, indicating locations with markers or icons. Display tooltip information
+  for each resort including Resort name, TotalSlope, Snowparks, NightSki options,
+  and LiftCapacity. The map should give a quick visual cue of skiing costs across
+  Europe while providing detailed resort-specific data on hover. Adjust map zoom to
+  focus on Europe for better clarity. Include a legend for price ranges. Make the
+  map interactive for user engagement.
+questions: '1. Do you have any specific color preferences for the country color-coding
+  based on the average DayPassPriceAdult?
+
+  2. What style of markers or icons would you prefer for indicating the locations
+  of ski resorts?
+
+  3. How detailed do you want the tooltip information to be for each resort?
+
+  4. Are there any additional attributes that you would like to include in the tooltip
+  information?
+
+  5. Do you have preferred ranges for the legend indicating price ranges?
+
+  6. What map style or background (e.g., satellite, terrain, streets) do you prefer
+  for the Choropleth map?
+
+  7. Would you like to set any specific zoom levels or centers for the initial display
+  of the map?
+
+  8. Do you have a preferred font style for the labels and tooltips?'
+answers: '1. I do not have a specific preference for the colors.
+
+  2. I am not sure, any style that is clear and stands out is fine.
+
+  3. Detailed enough to include Resort name, TotalSlope, Snowparks, NightSki options,
+  and LiftCapacity.
+
+  4. No additional attributes.
+
+  5. I am not sure about the price ranges.
+
+  6. I do not have a preference for the map style or background.
+
+  7. No specific zoom levels or centers, just focus on Europe for clarity.
+
+  8. I do not have a preferred font style for labels and tooltips.'
+data_attributes:
+- Resort
+- Country
+- DayPassPriceAdult
+- TotalSlope
+- Snowparks
+- NightSki
+- LiftCapacity

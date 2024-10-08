@@ -1,0 +1,52 @@
+initial_prompt: Please create a choropleth map visualizing the WHO suicide statistics
+  data. Highlight countries based on the number of suicides per population for different
+  years to show trends over time. Use annotations to indicate countries with the highest
+  and lowest suicide rates and any notable changes. This visualization aims to provide
+  insights into global suicide patterns, highlighting demographic differences like
+  age and sex where data is missing. Ensure colors are used effectively to distinguish
+  varying suicide rates and maintain viewer focus on highlighted areas. The map should
+  be clear, informative, and include contextual annotations for deeper understanding.
+questions: '1. Do you have a specific color scheme in mind for distinguishing varying
+  suicide rates?
+
+  2. How would you prefer the annotations for highest and lowest suicide rates to
+  be displayed (e.g., text labels, icons)?
+
+  3. Should the map include any specific geographical regions or countries as focal
+  points?
+
+  4. Are there particular years that should be emphasized or highlighted in the trend
+  analysis?
+
+  5. Do you have any preferences for the map projection style (e.g., Mercator, Robinson)?
+
+  6. How detailed should the age and sex demographic information be in the contextual
+  annotations?
+
+  7. Would you like a legend or color scale to be included, and if so, where should
+  it be positioned?
+
+  8. Should missing data be represented in a specific way (e.g., different color,
+  pattern)?'
+answers: '1. I do not know.
+
+  2. Text labels would be preferable.
+
+  3. I am not sure.
+
+  4. I do not have specific years in mind to emphasize.
+
+  5. I do not know.
+
+  6. Highlighting broad categories like ''youth'' and ''elderly'' along with ''male''
+  and ''female'' should be sufficient.
+
+  7. Yes, a legend or color scale should be included. I have no specific preference
+  for its position.
+
+  8. I am not sure.'
+data_attributes:
+- country
+- year
+- suicides_no
+- population

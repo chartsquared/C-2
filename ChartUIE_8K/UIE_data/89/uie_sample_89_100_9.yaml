@@ -1,0 +1,45 @@
+initial_prompt: Please create a column chart that visualizes the average air temperature
+  (in Kelvin) and process temperature (in Kelvin) for each product type (L, M, and
+  H). Include separate bars for air temperature and process temperature for each product
+  type. This will help in understanding the temperature variations across different
+  product types. Ensure that the chart is clear, with well-labeled axes and a legend
+  to distinguish between air temperature and process temperature. This will be used
+  for machine predictive maintenance classification analysis. Thank you!
+questions: '1. Do you have a specific color preference for the bars representing air
+  temperature and process temperature?
+
+  2. What title would you like for the chart?
+
+  3. How would you like the x-axis and y-axis to be labeled?
+
+  4. Is there a particular font style or size you prefer for the labels and legend?
+
+  5. Would you like to include data labels on the bars to show the exact values?
+
+  6. Do you have any specific requirements for the chart''s background color or gridlines?
+
+  7. Are there any additional annotations or notes you would like to be included in
+  the chart?
+
+  8. Would you prefer a certain order for displaying the product types on the x-axis
+  (e.g., L, M, H, or any other order)?'
+answers: '1. I do not have a specific color preference.
+
+  2. The title could be "Average Air and Process Temperatures by Product Type".
+
+  3. The x-axis should be labeled "Product Type", and the y-axis should be labeled
+  "Temperature (K)".
+
+  4. I am not sure about the font style or size.
+
+  5. Yes, please include data labels on the bars to show the exact values.
+
+  6. I do not have any specific requirements for the background color or gridlines.
+
+  7. I do not know about any additional annotations or notes.
+
+  8. The order L, M, H would be fine.'
+data_attributes:
+- Type
+- Air temperature [K]
+- Process temperature [K]

@@ -1,0 +1,50 @@
+initial_prompt: I'd like a bar chart showing the daily trading volume and closing
+  price of META stock over a week in January 2018. Please use the 'Volume' and 'Close'
+  columns for the y-axes and the 'Date' column for the x-axis. Separate bars for each
+  metric and make sure dates are in order. Include labels and a legend. Thank you!
+questions: '1. Do you have a preferred color scheme for the bars representing the
+  volume and the closing price?
+
+  2. Would you like gridlines to be included in the chart for better readability?
+
+  3. Do you have a specific format for the date labels on the x-axis (e.g., ''YYYY-MM-DD'')?
+
+  4. Would you prefer the volume and closing price bars to be displayed side-by-side
+  or layered on the same bar?
+
+  5. Is there a specific font style or size you would like for the labels and legend?
+
+  6. Do you want any specific title for the chart?
+
+  7. Would you like the axis labels to include additional information, such as units
+  (e.g., ''Volume (in millions)'')?
+
+  8. Are there any specific data points you want to highlight within the chart?
+
+  9. Do you have a preferred layout for the legend (e.g., top, bottom, left, right)?
+
+  10. Would you like to include any annotations or notes on the chart for additional
+  context?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I do not know.
+
+  4. I prefer the volume and closing price bars to be displayed side-by-side.
+
+  5. I am not sure.
+
+  6. No specific title.
+
+  7. Yes, please include units for the axis labels.
+
+  8. I do not know.
+
+  9. I have no specific preference for the legend layout.
+
+  10. I do not need any annotations or notes on the chart.'
+data_attributes:
+- Date
+- Volume
+- Close

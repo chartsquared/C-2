@@ -1,0 +1,42 @@
+initial_prompt: I have a weather dataset covering various parameters across multiple
+  locations. I want to create a line chart that visually represents temperature changes
+  throughout the observation times for each location. The x-axis should display Observation
+  Time, while the y-axis should show Temperature (°C). Different lines should represent
+  different locations, allowing a clear comparison of temperature trends at each timestamp.
+  Be sure to include labels for the x and y axes, and a legend to differentiate between
+  locations. The chart should be clear and easy to interpret, considering users with
+  minimal technical background.
+questions: '1. Do you have any specific color preferences for the lines representing
+  different locations?
+
+  2. Would you like to include data markers on the lines to highlight individual data
+  points?
+
+  3. Do you have a preferred font style or size for the axis labels and legend text?
+
+  4. Should the gridlines be displayed on the chart to improve readability? If so,
+  any specific preferences for the gridline style?
+
+  5. Do you want the x-axis to display specific date and time formats for better readability?
+  If yes, what format do you prefer?'
+answers: '<start of user emulated response>
+
+  1. I am not sure about specific color preferences, as long as different lines are
+  easily distinguishable.
+
+  2. Yes, I would like to include data markers on the lines to highlight individual
+  data points.
+
+  3. I do not know about font style or size preferences.
+
+  4. Gridlines could be helpful for readability. I have no specific preferences for
+  the gridline style.
+
+  5. I am not sure about the specific date and time format for the x-axis; it just
+  needs to be clear and easy to read.
+
+  <end of user emulated response>'
+data_attributes:
+- Location
+- Observation Time
+- Temperature (°C)

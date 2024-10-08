@@ -1,0 +1,48 @@
+initial_prompt: 'Please create a grouped bar chart based on the provided dataset:
+  "../Extra_datas/data/58.csv". Each group should represent a unique brand, with bars
+  for each data attribute: price/value, stars, and reviewsCount. Display the title
+  as a label for each bar. This chart should reflect the summary of Amazon''s 500
+  Bestsellers in Laptop Gear 2024 within the Computers and Technology category. Ensure
+  clarity by labeling each axis appropriately and including a legend to distinguish
+  the different attributes. This will help visualize and compare key metrics for each
+  brand''s product offerings.'
+questions: '1. Do you have any preferred color scheme for the bars representing different
+  data attributes?
+
+  2. Do you prefer the bars for each attribute (price/value, stars, reviewsCount)
+  to be consistently ordered within each brand group?
+
+  3. Would you like grid lines to be included on the chart for better readability?
+
+  4. Is there a particular font style or size you prefer for the axis labels and legend
+  text?
+
+  5. Do you have any specific preferences for the chart title and its placement?
+
+  6. Do you have a preference for the orientation of the x-axis labels (horizontal
+  or angled)?
+
+  7. Would you like to show data values on top of each bar for quick reference?
+
+  8. Are there any specific brands you want to prioritize or highlight in the chart?'
+answers: '1. I do not know.
+
+  2. Yes, I prefer the bars for each attribute to be consistently ordered within each
+  brand group.
+
+  3. Yes, please include grid lines for better readability.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference for the chart title and its placement.
+
+  6. Horizontal orientation for the x-axis labels would be preferable.
+
+  7. Yes, please show data values on top of each bar for quick reference.
+
+  8. I do not have any specific brands to prioritize or highlight in the chart.'
+data_attributes:
+- brand
+- price/value
+- stars
+- reviewsCount

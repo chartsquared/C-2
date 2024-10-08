@@ -1,0 +1,53 @@
+initial_prompt: Please create an area chart for Google's stock market data from its
+  founding years. The chart should show trends in 'Open', 'Close', 'High', and 'Low'
+  prices over time. Use different colors to differentiate between these price points.
+  Include the x-axis as 'Date' and the y-axis to represent price values. Make sure
+  to also plot the 'Volume' as a secondary y-axis to show trading volume against the
+  stock prices. Highlight significant dates, if any, with annotations. The goal is
+  to visualize the stock performance and its trading volume over the years. Thank
+  you!
+questions: '1. Do you have any specific color preferences for differentiating between
+  ''Open'', ''Close'', ''High'', and ''Low'' prices?
+
+  2. Are there certain significant dates that you would like to be highlighted or
+  should we determine them based on data analysis?
+
+  3. Do you have preferred styles for annotations (e.g., arrows, text boxes) for significant
+  dates?
+
+  4. Would you like to include any specific labels or titles for the axes and chart?
+
+  5. Is there a preferred font style or size for the chart’s text elements (e.g.,
+  axis labels, annotations)?
+
+  6. Do you have any specific preferences for the appearance of the secondary y-axis
+  representing trading volume (e.g., color, line style)?
+
+  7. Should the chart include a legend? If so, where would you prefer it to be placed
+  (e.g., top, bottom, left, right)?
+
+  8. Are there any particular gridline styles or background colors you would like
+  for the chart?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure about the significant dates; you can determine them based on data
+  analysis.
+
+  3. I am not sure about the style for annotations.
+
+  4. I do not know.
+
+  5. I do not have any specific preference for font style or size.
+
+  6. I am not sure about the appearance of the secondary y-axis.
+
+  7. Yes, please include a legend. I am not sure where it should be placed.
+
+  8. I have no specific preference for gridline styles or background colors.'
+data_attributes:
+- Date
+- Open
+- Close
+- High
+- Low
+- Volume

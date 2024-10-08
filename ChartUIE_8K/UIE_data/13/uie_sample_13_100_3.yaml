@@ -1,0 +1,62 @@
+initial_prompt: Please create a line chart to visualize the ARM Stock Data over time.
+  I want the x-axis to show the 'Date' and the y-axis to display the stock prices.
+  Include lines for 'Open', 'High', 'Low', 'Close', and 'Adj Close' prices. Make sure
+  each price type has a distinct color. This will help me identify trends and fluctuations
+  in the stock's performance. Also, indicate the trading 'Volume' on the secondary
+  y-axis to understand the trading activity. Ensure the chart is clear and easy to
+  read. Thank you!
+questions: '1. Do you have any specific color preferences for the lines representing
+  ''Open'', ''High'', ''Low'', ''Close'', and ''Adj Close'' prices?
+
+  2. What style of lines do you prefer (e.g., solid, dashed, dotted) for the stock
+  prices?
+
+  3. Do you have a preferred color for the ''Volume'' line on the secondary y-axis?
+
+  4. Do you have a specific preference for the font and size of the labels on the
+  x-axis and y-axis?
+
+  5. Would you like to include any markers (e.g., dots, squares) on the lines to highlight
+  data points?
+
+  6. Is there a particular format you prefer for the date labels on the x-axis (e.g.,
+  ''YYYY-MM-DD'', ''MM/DD/YYYY'')?
+
+  7. Do you want to include a legend on the chart, and if so, where would you prefer
+  it to be located (e.g., top-right, bottom-left)?
+
+  8. Would you like to add gridlines to the chart for better readability, and if so,
+  should they be on the x-axis, y-axis, or both?
+
+  9. Are there any specific time ranges or date intervals you would like to emphasize
+  or highlight on the chart?
+
+  10. Do you want annotations for any notable events or turning points in the stock
+  data? If yes, please specify the events.'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I would like to include markers.
+
+  6. I prefer the date format ''YYYY-MM-DD''.
+
+  7. Yes, please include a legend. I prefer it to be located at the top-right.
+
+  8. Yes, please add gridlines on both the x-axis and y-axis.
+
+  9. I do not have any specific time ranges in mind.
+
+  10. I do not know.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

@@ -1,0 +1,53 @@
+initial_prompt: Create a line chart showing the trend of 'total_cup_points' over the
+  'harvest_year' for different 'country_of_origin'. This will help in understanding
+  how coffee ratings change over the years in various countries.
+questions: '1. What title would you prefer for the chart?
+
+  2. Do you have a preference for the color scheme of the lines representing different
+  countries?
+
+  3. Would you like to have markers on the data points, and if so, what style would
+  you prefer?
+
+  4. Do you want a legend to identify different countries, and where should it be
+  positioned on the chart?
+
+  5. Should the x-axis and y-axis have specific labels, and if so, what should they
+  be?
+
+  6. Would you like grid lines on the chart, and if so, should they be major, minor,
+  or both?
+
+  7. How would you prefer the data be handled for years with missing values?
+
+  8. Do you have a preference for the line style (e.g., solid, dashed) for each country''s
+  trend line?
+
+  9. Should the chart include a subtitle to provide additional context, and if so,
+  what should it say?
+
+  10. Do you want to specify any particular font style or size for the text elements
+  in the chart?'
+answers: '1. "Trend of Coffee Ratings Over the Years by Country"
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. Yes, please include a legend. I am not sure about the position.
+
+  5. Yes. X-axis: "Harvest Year", Y-axis: "Total Cup Points"
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- total_cup_points
+- harvest_year
+- country_of_origin

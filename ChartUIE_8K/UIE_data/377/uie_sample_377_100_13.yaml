@@ -1,0 +1,60 @@
+initial_prompt: Can you create a bar chart to visualize the election results? Specifically,
+  I want to see the percentage votes for CON, LAB, LIB, Brexit, and Green parties
+  across the provided sample constituencies (Aldershot, Aldridge-Brownhills, Altrincham
+  and Sale West). Each constituency should be a separate group of bars, with different
+  colors representing the different parties. The Y-axis should show the percentage
+  votes, and the X-axis should list the constituencies. Please label each bar with
+  the percentage it represents.
+questions: '1. Do you have a preferred color palette for the parties (e.g., specific
+  shades for CON, LAB, LIB, Brexit, and Green)?
+
+  2. What should be the order of the parties within each constituency group (e.g.,
+  CON first, LAB second)?
+
+  3. Are there any specific font styles or sizes you prefer for labels and axis titles?
+
+  4. Would you like to include grid lines in the background for better readability
+  of percentages?
+
+  5. Do you want to include a legend specifying the parties with their corresponding
+  colors?
+
+  6. How would you like the data labels formatted (e.g., with percentage signs, decimal
+  places)?
+
+  7. Is there a specific title you would like for the chart?
+
+  8. Would you like to include any additional annotations or comments on specific
+  bars or groups of bars?
+
+  9. Are there any constraints on the dimensions or layout of the chart (e.g., width,
+  height, aspect ratio)?
+
+  10. How would you like to handle null or zero values in the data (e.g., exclude
+  them, display as zero)?'
+answers: '1. I do not have a specific preference for the color palette.
+
+  2. CON first, LAB second, LIB third, Brexit fourth, Green fifth.
+
+  3. I am not sure.
+
+  4. Yes, please include grid lines for better readability.
+
+  5. Yes, please include a legend.
+
+  6. With percentage signs, no decimal places.
+
+  7. "Election Results by Constituency"
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Display null or zero values as zero.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)

@@ -1,0 +1,64 @@
+initial_prompt: Please create a heatmap to visualize the correlation between different
+  water quality parameters and potability. Use the dataset provided, which includes
+  columns like pH, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic Carbon,
+  Trihalomethanes, Turbidity, and Potability. The heatmap should highlight how each
+  of these parameters correlates with water potability. This will help in identifying
+  which parameters are most significant in determining water quality and potability.
+  Ensure that the heatmap is color-coded for easy interpretation of positive and negative
+  correlations. Include labels and a legend for clarity.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should we use a specific color gradient to represent positive and negative correlations?
+
+  3. Are you okay with standard correlation values (-1 to 1) or do you have a specific
+  range in mind?
+
+  4. Do you prefer specific labels for each axis, or should we use the standard column
+  names from the dataset?
+
+  5. Should the heatmap include gridlines between each cell for better separation
+  of data points?
+
+  6. Is there a preferred font style or size for the labels and legend to ensure readability?
+
+  7. Would you like the heatmap to be presented with any specific margins or padding?
+
+  8. Should we apply any data normalization techniques before calculating correlations,
+  considering the missing values in some columns?
+
+  9. Are there any specific data points or ranges that you want to highlight on the
+  heatmap?
+
+  10. Do you prefer a singular heatmap or multiple smaller heatmaps for different
+  subsets of data?'
+answers: '1. I am not sure.
+
+  2. Yes, please use a specific color gradient to represent positive and negative
+  correlations.
+
+  3. Standard correlation values (-1 to 1) are fine.
+
+  4. Please use the standard column names from the dataset.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I prefer a singular heatmap.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+- Potability

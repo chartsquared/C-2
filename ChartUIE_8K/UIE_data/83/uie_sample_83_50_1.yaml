@@ -1,0 +1,57 @@
+initial_prompt: '<start of user instructions>
+
+  Create a line chart depicting Monthly Income trends by Age for different Occupations.
+  Highlight data points where Feedback is "Positive". Add text annotations for unique
+  Pin code regions to provide geographic context. Use color to differentiate between
+  Occupations.
+
+  <end of user instructions>'
+questions: '1. Do you have a preferred color palette for differentiating between occupations?
+
+  2. How would you like positive feedback data points to be highlighted (e.g., shape,
+  size)?
+
+  3. Would you like the text annotations for unique Pin code regions to include additional
+  information such as location names?
+
+  4. Do you have a preference for the position of the legend on the chart?
+
+  5. Would you like gridlines to be included for better readability of the trends?
+
+  6. Is there a specific font style or size you prefer for the text annotations and
+  labels?
+
+  7. Do you want to include any trend lines or smoothing lines to represent the overall
+  trends for each occupation?
+
+  8. Would you prefer the x-axis (Age) to be categorized in specific intervals?
+
+  9. Are there any specific title or subtitle requirements for the chart?
+
+  10. How would you like Missing Values to be handled in the dataset (e.g., interpolation,
+  ignoring)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please include location names.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- Age
+- Occupation
+- Monthly Income
+- Feedback
+- Pin code

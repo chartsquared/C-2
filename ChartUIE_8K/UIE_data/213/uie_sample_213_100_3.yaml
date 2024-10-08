@@ -1,0 +1,45 @@
+initial_prompt: Create a geographic heatmap visualizing the distribution of NYS Golf
+  Courses. The chart should plot each golf course with their respective longitude
+  and latitude, using color intensity to represent the density of golf courses in
+  various counties. Ensure the map includes markers for "State Park," "Course Name,"
+  and highlights the regions and counties. Use the 'Facility URL' and 'Golf URL' for
+  interactive elements, allowing users to click and get more information about each
+  golf course. The heatmap should help understand the geographic spread and accessibility
+  of golf courses across New York State.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the map have a specific style (e.g., street view, terrain view, dark mode)?
+
+  3. Do you want to label regions and counties directly on the map?
+
+  4. How detailed should the county boundaries be displayed?
+
+  5. Should the markers for golf courses have different shapes or colors for easier
+  differentiation?
+
+  6. Is there a specific zoom level or area focus you would prefer for the map?
+
+  7. Would you like tooltips to display additional information when hovering over
+  markers?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, labeling regions and counties directly on the map would be good.
+
+  4. I am not sure.
+
+  5. Yes, different shapes or colors for the markers would be helpful.
+
+  6. I do not know.
+
+  7. Yes, tooltips displaying additional information when hovering over markers would
+  be great.'
+data_attributes:
+- State Park
+- Course Name
+- County
+- Facility URL
+- Golf URL
+- Longitude
+- Latitude

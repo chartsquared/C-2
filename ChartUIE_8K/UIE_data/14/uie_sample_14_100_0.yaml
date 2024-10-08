@@ -1,0 +1,55 @@
+initial_prompt: 'Create a box plot to visualize the distribution of ''median'' GHG
+  emissions (median, lower_95, upper_95) for different ''taxa'' in aquaculture, grouped
+  by ''full_taxa_name''. Highlight outliers and annotate medians for clarity. This
+  will help us understand the impact of different fish types on greenhouse gas emissions
+  in aquaculture production, which is relevant for sustainability assessments in zoology
+  and environmental studies. Exclude ''Unnamed: 10'' and ''Unnamed: 11'' as they contain
+  too many missing values. Use different colors for each ''taxa'' to improve visual
+  distinction.'
+questions: '1. Do you have a preferred color palette for different ''taxa'' to improve
+  visual distinction?
+
+  2. Would you like specific annotations for median values, and if so, how would you
+  prefer them to be displayed (e.g., numeric labels, lines, etc.)?
+
+  3. Are there specific outlier markers or symbols you prefer when highlighting outliers?
+
+  4. Do you want to include gridlines, and if so, should they be major, minor, or
+  both?
+
+  5. Would you like a title and axis labels for the chart? If yes, please provide
+  the preferred text.
+
+  6. Should there be any specific legend placement or format for easy identification
+  of the ''taxa''?
+
+  7. Do you have a preferred format for data labels (e.g., decimal places, units)?
+
+  8. Are there any specific font styles or sizes you prefer for annotations and labels?
+
+  9. Would you like to include a confidence interval visualization (using ''lower_95''
+  and ''upper_95'') on the box plot? If so, in which format?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. Major gridlines would be helpful.
+
+  5. Title: "Distribution of GHG Emissions by Taxa in Aquaculture"; X-axis: "Full
+  Taxa Name"; Y-axis: "GHG Emissions (Median)"
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes, please include a confidence interval visualization.'
+data_attributes:
+- taxa
+- full_taxa_name
+- median
+- lower_95
+- upper_95

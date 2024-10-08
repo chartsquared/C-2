@@ -1,0 +1,46 @@
+initial_prompt: Please create a line chart for me using the NYS Golf Courses data.
+  Track the Latitude and Longitude points across different Courses in each State Park.
+  The x-axis should show the 'Course Name' and the y-axis should show 'Latitude' and
+  'Longitude'. This will help visualize the geographic distribution of golf courses
+  within different state parks across New York. Color-code the lines based on the
+  'State Park' to differentiate them easily. This will give insights into how golf
+  courses are spread out in various regions and counties. Thank you!
+questions: '1. Do you have a specific color palette preference for the lines representing
+  different State Parks?
+
+  2. Would you like to include grid lines on the chart for better readability?
+
+  3. Should the chart include data labels for ''Latitude'' and ''Longitude'' values
+  on each point?
+
+  4. Do you prefer a particular style or format for the x-axis and y-axis labels?
+
+  5. Are there any specific legends or annotations you would like to add to the chart?
+
+  6. What font style and size do you prefer for the chart''s title and labels?
+
+  7. Do you have a preferred ordering for the ''Course Name'' on the x-axis (e.g.,
+  alphabetical, by region)?
+
+  8. Would you like any additional reference lines or markers for specific ''Latitude''
+  and ''Longitude'' ranges?'
+answers: '1. I am not sure.
+
+  2. Yes, please include grid lines.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. No specific legends or annotations needed.
+
+  6. I do not have a specific preference.
+
+  7. By region would be preferable.
+
+  8. I do not know.'
+data_attributes:
+- State Park
+- Course Name
+- Latitude
+- Longitude

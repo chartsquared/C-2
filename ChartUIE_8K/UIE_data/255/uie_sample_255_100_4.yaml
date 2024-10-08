@@ -1,0 +1,50 @@
+initial_prompt: I have Bitcoin data ranging from April 9, 2014, to December 30, 2022,
+  and I'd like a scatter plot. Can you create a scatter plot showing the relationship
+  between "priceUSD" and "transactions" over time? Use the "Date" attribute for the
+  x-axis, and plot "priceUSD" and "transactions" on two y-axes. Please make sure to
+  differentiate the two y-axes clearly and include a legend for clarity. Thank you!
+questions: '1. Do you have any color preferences for the scatter plot points or lines
+  for each y-axis?
+
+  2. Would you like specific markers or shapes for the data points on the scatter
+  plot?
+
+  3. Do you prefer any particular font style or size for the labels and legend?
+
+  4. Is there a specific title you would like for the scatter plot?
+
+  5. Do you wish to include gridlines on the chart? If so, any specific style or color
+  for them?
+
+  6. Would you like to annotate any particular data points or trends on the chart?
+
+  7. Are there any specific date intervals you would like highlighted (e.g., monthly,
+  quarterly, yearly)?
+
+  8. Do you have a preferred layout for the legend placement on the chart (e.g., top,
+  bottom, left, right)?
+
+  9. Should we include tick marks and labels for both y-axes, and do you have a preference
+  for their frequency?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, please include gridlines. I am not sure about the style or color.
+
+  6. No, you do not need to annotate any particular data points or trends.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference for the legend placement.
+
+  9. Yes, please include tick marks and labels for both y-axes. I do not have a preference
+  for their frequency.'
+data_attributes:
+- Date
+- priceUSD
+- transactions

@@ -1,0 +1,67 @@
+initial_prompt: I have some data about the New York housing market, specifically real
+  estate properties including their prices, locations, and sizes. I'd like to create
+  a geographic heatmap that displays property prices across different areas in New
+  York. This map should show variations in property values, with high-priced areas
+  highlighted distinctly from lower-priced ones. Use latitude and longitude for precise
+  plotting, and incorporate other data like property types (e.g., condo, house) and
+  sizes to add more context. Highlight areas like Manhattan, Staten Island, and any
+  notable differences in the boroughs.
+questions: '1. Do you have a preferred color scheme for highlighting high-priced and
+  low-priced areas?
+
+  2. Are there specific price ranges or thresholds that you want to highlight distinctly
+  on the heatmap?
+
+  3. Do you want the map to focus on only certain boroughs or cover all of New York
+  City?
+
+  4. Would you like to include any specific markers or symbols to denote different
+  property types?
+
+  5. How detailed do you want the map to be in terms of zoom level or granularity?
+  Should it show individual properties clearly or just the general trend in each area?
+
+  6. Would you prefer the map to show average prices, median prices, or another statistical
+  measure for each area?
+
+  7. Should the map include labels for notable areas and boroughs like Manhattan and
+  Staten Island?
+
+  8. Do you have a preference for the type of base map (e.g., satellite, street map,
+  minimalistic) used in the visualization?
+
+  9. Is there specific additional context or annotations you want to include with
+  the map (e.g., legends, side notes)?
+
+  10. Would you like to include any filters or layers to allow the audience to toggle
+  between different property types or sizes?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Cover all of New York City, but highlight Manhattan and Staten Island specifically.
+
+  4. I am not sure.
+
+  5. Show the general trend in each area rather than individual properties.
+
+  6. Median prices would be preferable.
+
+  7. Yes, include labels for notable areas and boroughs.
+
+  8. I do not have a specific preference.
+
+  9. A legend would be helpful.
+
+  10. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- PRICE
+- LATITUDE
+- LONGITUDE
+- TYPE
+- PROPERTYSQFT
+- SUBLOCALITY

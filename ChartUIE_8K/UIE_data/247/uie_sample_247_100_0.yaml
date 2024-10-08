@@ -1,0 +1,58 @@
+initial_prompt: Create a stacked column chart to visualize the CpG values of smoking
+  and non-smoking patients. The x-axis should represent different CpG sites like cg00050873,
+  cg00212031, etc., and the y-axis should show the corresponding CpG values. Each
+  column should be divided into segments based on "Smoking Status" (current, former,
+  never, etc.). Use annotations to highlight the highest and lowest CpG values for
+  each site, emphasizing smoking status differences. The chart should make it easier
+  to compare CpG methylation levels between smokers and non-smokers. Highlight key
+  differences using different colors for each smoking status.
+questions: '1. Do you have any specific color preferences for each smoking status
+  (e.g., current, former, never)?
+
+  2. Are there specific font styles or sizes you prefer for the axis labels and annotations?
+
+  3. Do you want the highest and lowest CpG values to be annotated with a particular
+  format or style?
+
+  4. Would you like to include a legend explaining the colors for each smoking status?
+  If so, where should it be placed?
+
+  5. Are there any specific ranges or values you would like to highlight on the y-axis?
+
+  6. Do you have a preference for the order in which the smoking statuses are stacked
+  in each column?
+
+  7. Is there a specific orientation (horizontal or vertical) you prefer for the x-axis
+  labels?
+
+  8. Would you like gridlines on the chart to enhance readability? If so, which axis
+  should include them?
+
+  9. Should there be any margin or spacing between the stacked segments in each column?
+
+  10. Do you have any specific title or subtitle you would like to add to the chart?
+  If so, please specify.'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please use bold font and a contrasting color for the annotations of the
+  highest and lowest CpG values.
+
+  4. Yes, please include a legend. I am not sure where it should be placed.
+
+  5. No specific ranges or values to highlight.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. Yes, please include gridlines on both axes.
+
+  9. I do not know.
+
+  10. Title: "Comparison of CpG Methylation Levels Between Smokers and Non-Smokers"'
+data_attributes:
+- cg00050873
+- cg00212031
+- Smoking Status

@@ -1,0 +1,58 @@
+initial_prompt: Create a line chart visualizing the trends of the last year the plants
+  were seen (year_last_seen) for different binomial names. Use the column 'year_last_seen'
+  for the x-axis and the 'binomial_name' for the y-axis. The chart should highlight
+  the different continents to provide geographical context. Ensure each data point
+  specifies the 'red_list_category' to indicate the conservation status of each plant.
+  Color-code the lines based on the group of the plants ('Flowering Plant', etc.).
+  This visualization will help understand the timelines of extinction across various
+  regions and categories.
+questions: '1. Do you have a preferred layout for the chart (e.g., landscape, portrait)?
+
+  2. What specific color palette would you like used for the different plant groups?
+
+  3. Would you like to include gridlines for better readability? If so, should they
+  be on both axes?
+
+  4. Do you prefer any specific font style or size for the axis labels and titles?
+
+  5. Should the data points be shown as markers on the line chart? If so, what shape
+  and size do you prefer for the markers?
+
+  6. Do you want legends inside or outside the chart?
+
+  7. Is there a specific order you would like for the binomial names on the y-axis?
+
+  8. Would you like to add any specific annotations or highlights on the chart for
+  particular years or events?
+
+  9. How would you like the continents highlighted (e.g., different line styles, background
+  shades)?
+
+  10. Is there a need for any additional data labels or tooltips to show extra information
+  on hover?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, please include gridlines on both axes.
+
+  4. I have no specific preference.
+
+  5. Yes, please show the data points as markers. I am not sure about the shape and
+  size.
+
+  6. I am not sure.
+
+  7. No specific order preferred for the binomial names.
+
+  8. I do not know.
+
+  9. Different line styles would be good for highlighting continents.
+
+  10. No additional data labels or tooltips are needed.'
+data_attributes:
+- year_last_seen
+- binomial_name
+- continent
+- red_list_category
+- group

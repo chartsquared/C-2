@@ -1,0 +1,59 @@
+initial_prompt: I'd like to create a bubble chart using the provided dataset. Each
+  bubble should represent a different gene from the "gene" column. The X-axis should
+  display "fetal_lung" values, while the Y-axis shows "232-97_SCC" values. The size
+  of the bubbles should correspond to the "232-97_node" values. This chart will help
+  visualize the relationships and variations across different genes and conditions,
+  making it easier to spot outliers and trends in the data. Please ensure the chart
+  is clear and each bubble is distinguishable with proper labeling. Thanks!
+questions: '1. Do you have a preference for specific colors for the bubbles?
+
+  2. How would you like the bubbles to be labeled? For example, showing the gene name
+  or value?
+
+  3. Would you prefer a specific color palette for different ranges of values?
+
+  4. Do you have any preference for the axis scales (linear or logarithmic)?
+
+  5. Do you prefer gridlines in the background to make it easier to identify specific
+  values?
+
+  6. Is there a specific font style or size you would like for the axis labels and
+  titles?
+
+  7. Do you want to add a legend that explains the size of the bubbles and what they
+  represent?
+
+  8. Would you prefer any specific margins or padding around the chart?
+
+  9. Should there be any specific title or subtitle for the chart?
+
+  10. Do you prefer a specific style or format for displaying the outliers, such as
+  highlighting or different colors for outlier bubbles?
+
+  11. Do you have a preferred aspect ratio for the chart?'
+answers: '1. I am not sure.
+
+  2. I would like the bubbles to be labeled with the gene name.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, I prefer gridlines in the background.
+
+  6. I do not have any specific preference.
+
+  7. Yes, please include a legend that explains the size of the bubbles.
+
+  8. No specific preferences for margins or padding.
+
+  9. The title could be "Gene Expression Comparison in Different Conditions".
+
+  10. I do not know.
+
+  11. I do not have a preferred aspect ratio.'
+data_attributes:
+- gene
+- fetal_lung
+- 232-97_SCC
+- 232-97_node

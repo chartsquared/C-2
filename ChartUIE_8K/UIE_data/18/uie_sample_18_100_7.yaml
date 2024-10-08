@@ -1,0 +1,45 @@
+initial_prompt: I want a bubble chart that visualizes the relationship between Pokémon
+  base_total and weight_kg, with bubbles sized by hp and colored by type1. Label the
+  axes accordingly and make sure to highlight legendaries differently.
+questions: '1. Do you have any preference for the color palette to represent the different
+  Pokémon types (type1)?
+
+  2. How would you like to differentiate the legendary Pokémon (e.g., different bubble
+  shape, border, color outline)?
+
+  3. Do you have a specific range that you want the axes (base_total and weight_kg)
+  to cover?
+
+  4. Would you like grid lines to be present on the chart?
+
+  5. What font and size would you prefer for the axis labels and title?
+
+  6. Do you want a legend to describe the bubble sizes for hp and different colors
+  for type1?
+
+  7. Are there any specific Pokémon or ranges of values you would like to focus on
+  more prominently?
+
+  8. Should the chart include any trend lines or lines to indicate correlation?'
+answers: '1. I am not sure.
+
+  2. Different bubble shape for legendary Pokémon, please.
+
+  3. I do not know.
+
+  4. Yes, I would like grid lines to be present.
+
+  5. I am not sure about the font, but a medium size would be fine.
+
+  6. Yes, I want a legend to describe the bubble sizes for hp and different colors
+  for type1.
+
+  7. I do not have any specific Pokémon or ranges of values in mind.
+
+  8. I do not know.'
+data_attributes:
+- base_total
+- weight_kg
+- hp
+- type1
+- is_legendary

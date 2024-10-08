@@ -1,0 +1,41 @@
+initial_prompt: '<start of the instruction>
+
+  Visualize the probability of rain for different states using a choropleth map. Highlight
+  states with the highest and lowest probabilities with distinct colors. Annotate
+  selected states like ME, RI, and VT with their probabilities to draw attention and
+  help viewers quickly identify key information. Ensure no data points are missing
+  and double-check unique codes for accuracy. Aim to make the map easy to understand
+  while clearly showing variability in rain probability across regions.
+
+  <end of the instruction>'
+questions: '1. Do you have a preferred color scheme for highlighting the states with
+  the highest and lowest probabilities?
+
+  2. Would you like to include a legend to explain the color coding on the choropleth
+  map?
+
+  3. How would you prefer the annotation of selected states (ME, RI, VT) to appear?
+  (for example, font size, color, placement)
+
+  4. Is there a specific map projection you prefer for the choropleth map, such as
+  Mercator or Albers?
+
+  5. Would you like to include any additional information or labels on the map to
+  enhance clarity and understanding?
+
+  6. Are there any specific visual elements or styles you want to be avoided in the
+  map design?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I have no specific preference.'
+data_attributes:
+- code
+- prob

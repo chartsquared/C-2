@@ -1,0 +1,55 @@
+initial_prompt: Create a scatter plot to visualize customer purchase behavior. Plot
+  'AnnualIncome' on the x-axis and 'NumberOfPurchases' on the y-axis. Use 'ProductCategory'
+  as the color dimension to distinguish between different product categories. Additionally,
+  use different marker sizes for 'TimeSpentOnWebsite' to represent how much time customers
+  spend on the website. This chart should help us identify any patterns or trends
+  in customer income and purchase behavior across different product categories and
+  website engagement times for predicting future purchase behavior.
+questions: '1. Do you have a preferred color palette or specific colors you would
+  like to use for different product categories?
+
+  2. Would you like to set specific sizes for the markers representing ''TimeSpentOnWebsite'',
+  or should they be scaled proportionally?
+
+  3. Is there a particular range or set of values you would like to highlight on the
+  ''AnnualIncome'' or ''NumberOfPurchases'' axes?
+
+  4. Do you prefer any specific font style or size for the axis labels and title?
+
+  5. Should the chart include a legend to explain the marker sizes and colors used?
+
+  6. Is there a need to include grid lines for better readability of the plot?
+
+  7. Would you like to add trend lines or any other statistical annotations to the
+  scatter plot?
+
+  8. Do you have any specific preferences for the title or subtitles of the chart?
+
+  9. Are there any specific data points you wish to highlight or annotate in the scatter
+  plot?'
+answers: '<start of user response>
+
+  1. I do not have a specific preference for the color palette.
+
+  2. They should be scaled proportionally.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include a legend.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not have a specific preference for the title.
+
+  9. No, there are no specific data points to highlight.
+
+  <end of user response>'
+data_attributes:
+- AnnualIncome
+- NumberOfPurchases
+- ProductCategory
+- TimeSpentOnWebsite

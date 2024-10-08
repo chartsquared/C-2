@@ -1,0 +1,56 @@
+initial_prompt: 'Create a scatter plot to visualize Indian Liver Patient Records data.
+  Plot ''Age'' on the x-axis and ''Total_Bilirubin'' on the y-axis. Use different
+  colors for ''Gender''. Include text annotations for outlier points of ''Total_Bilirubin''.
+  Highlight points with ''Direct_Bilirubin'' values above the median. Purpose: Identify
+  correlations between age and bilirubin levels, emphasizing gender differences and
+  outliers. The chart should help healthcare professionals quickly assess anomalies
+  and patterns in liver health across different ages and genders.'
+questions: '1. Do you have a specific color palette preference for distinguishing
+  genders in the scatter plot?
+
+  2. What font size and style would you prefer for the text annotations on the outlier
+  points?
+
+  3. Do you want the text annotations to include any specific information besides
+  highlighting the outliers?
+
+  4. How would you like the highlighted points with ''Direct_Bilirubin'' values above
+  the median to be visually distinguished (e.g., different shapes, outlines)?
+
+  5. Do you have any specific preferences for marker size or style for the data points
+  in the scatter plot?
+
+  6. Is there a preferred title or specific labels you would like for the axes (x-axis
+  ''Age'' and y-axis ''Total_Bilirubin'')?
+
+  7. Would you prefer a legend to be included, and if so, where would you like it
+  positioned on the chart?
+
+  8. Are there any specific gridlines or background styles you would prefer for better
+  readability?
+
+  9. Do you have a preferred way for the data to be displayed/ordered on the chart
+  for better pattern recognition?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No, just highlighting the outliers is fine.
+
+  4. I am not sure, maybe different shapes could work.
+
+  5. I have no specific preference.
+
+  6. No specific preference for the title, but please label the x-axis as ''Age''
+  and the y-axis as ''Total_Bilirubin''.
+
+  7. Yes, a legend would be helpful. Please position it in the top right corner.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- Age
+- Gender
+- Total_Bilirubin
+- Direct_Bilirubin

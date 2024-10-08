@@ -1,0 +1,42 @@
+initial_prompt: I need a line chart showing the average lap time trends for different
+  races in Marbula 1 Season 1. Use "date" on the x-axis and "avg_time_lap" on the
+  y-axis. Different lines should represent various "marble_name". Also, include "team_name"
+  in the tooltip.
+questions: '1. Do you have a preferred color scheme for the different marble lines?
+
+  2. Would you like gridlines on the chart? If so, both major and minor gridlines
+  or just major ones?
+
+  3. Should the x-axis and y-axis have specific labels or units defined?
+
+  4. Do you prefer a particular line style (e.g., solid, dashed) for different marbles?
+
+  5. Would you like markers on data points to be displayed along the lines? If yes,
+  any specific marker style?
+
+  6. Should the legend be positioned in a specific location on the chart (e.g., top,
+  bottom, left, or right)?
+
+  7. Do you have any preference for font style or size for axis labels and titles?
+
+  8. Would you like to include a title for the chart? If so, what should it be?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, the title should be "Average Lap Time Trends in Marbula 1 Season 1".'
+data_attributes:
+- date
+- avg_time_lap
+- marble_name
+- team_name

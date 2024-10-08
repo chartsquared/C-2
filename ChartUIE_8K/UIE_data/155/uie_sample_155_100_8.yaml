@@ -1,0 +1,40 @@
+initial_prompt: I'd like to see a histogram visualizing the salaries of engineering
+  graduates based on their college GPA. This chart should show the frequency distribution
+  of salaries categorized by ranges of GPA scores. Each bar in the histogram should
+  represent a specific GPA range (e.g., 60-65, 65-70, etc.) and the height of the
+  bar should indicate the number of graduates earning salaries within that GPA range.
+  This will help in understanding how college GPA impacts the salary outcomes of engineering
+  graduates. It should also include labeled axes for GPA ranges and salary frequencies.
+questions: '1. What GPA range increments (e.g., 5-point ranges, 10-point ranges) do
+  you prefer for the histogram bars?
+
+  2. Do you have a preference for the color of the bars in the histogram?
+
+  3. Would you like to include any specific labels or titles for the axes?
+
+  4. Should the y-axis represent absolute frequencies or relative frequencies (e.g.,
+  percentages)?
+
+  5. Is there any specific ordering of GPA ranges you prefer (e.g., ascending or descending
+  order)?
+
+  6. Would you like to highlight any particular GPA ranges or salary bins?
+
+  7. Do you prefer a specific font style or size for text labels and titles?'
+answers: '1. I prefer 5-point ranges for the GPA increments.
+
+  2. I am not sure about the color of the bars.
+
+  3. Yes, the x-axis should be labeled "GPA Range" and the y-axis should be labeled
+  "Number of Graduates."
+
+  4. The y-axis should represent absolute frequencies.
+
+  5. Ascending order will be fine.
+
+  6. I do not have any specific preference for highlighting particular ranges.
+
+  7. I do not know.'
+data_attributes:
+- collegeGPA
+- Salary

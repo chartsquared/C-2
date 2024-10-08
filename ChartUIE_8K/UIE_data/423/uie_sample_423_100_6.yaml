@@ -1,0 +1,45 @@
+initial_prompt: Create a heatmap visualizing the distribution of meteorite falls by
+  geographical location (latitude and longitude). Use the 'lat' and 'long' columns
+  to plot the coordinates on the map. Color intensity should represent the density
+  of meteorite falls, with darker colors indicating higher density. Additionally,
+  include a time dimension using the 'year' column to show how the density of meteorite
+  falls has changed over different periods. This way, we can observe any patterns
+  or trends in meteorite falls over time and their geographical clustering around
+  the world.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How many time periods do you want to segment the data into (e.g., by decade,
+  century, etc.)?
+
+  3. Should the map include geographical labels such as country borders or cities?
+
+  4. Do you have any preference for the map projection type (e.g., Mercator, Robinson)?
+
+  5. Would you like to include a legend to explain the color intensity?
+
+  6. Should the heatmap include any specific annotations or markers for significant
+  meteorite falls?
+
+  7. Are there any specific regions or time periods you would like to highlight?
+
+  8. Do you prefer a static heatmap or one with an option to animate the changes over
+  time?'
+answers: '1. I do not know.
+
+  2. I am not sure, maybe by decade or century.
+
+  3. Yes, the map should include geographical labels such as country borders.
+
+  4. I am not sure.
+
+  5. Yes, a legend to explain the color intensity would be helpful.
+
+  6. I do not know.
+
+  7. I am not sure, no specific regions or time periods come to mind.
+
+  8. I am looking for a static heatmap.'
+data_attributes:
+- lat
+- long
+- year

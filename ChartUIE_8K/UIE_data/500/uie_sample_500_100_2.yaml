@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart using the NYC squirrel data to visualize the daily
+  sightings. The x-axis should represent the dates, formatted as MM/DD/YYYY, and the
+  y-axis should show the number of squirrels sighted per day. Highlight key dates
+  with significantly higher sightings using text annotations to indicate the exact
+  count. Use different line colors to distinguish shifts (AM/PM). This visualization
+  will help zoologists understand activity patterns and behaviors. Add highlights
+  on specific dates where unusual activity was observed and provide brief contextual
+  annotations. Keep it clear and focused on trends over time.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. How would you like key dates with significantly higher sightings to be highlighted?
+  (e.g., specific color, bold text, larger annotations)
+
+  3. Do you have a specific style or font preference for the annotations?
+
+  4. Would you like the AM/PM shifts to be represented by specific line styles in
+  addition to different colors? (e.g., dashed for AM, solid for PM)
+
+  5. Are there any specific dates that you already know should be highlighted?
+
+  6. Do you prefer any specific format for the title and axes labels?
+
+  7. How much contextual information should the annotations include for unusual activities?
+  (e.g., brief notes, detailed descriptions)
+
+  8. Are there any additional elements you want to include in the visualization, such
+  as a legend or a grid?
+
+  9. Do you have any size or aspect ratio preferences for the chart?
+
+  10. Would you like to include markers (e.g., dots, squares) on the lines to represent
+  individual data points?'
+answers: '1. I have no specific preference.
+
+  2. Specific color and larger annotations would be great.
+
+  3. I am not sure.
+
+  4. I don''t know.
+
+  5. No, I don''t have any specific dates in mind.
+
+  6. I have no specific preference.
+
+  7. Brief notes should be fine.
+
+  8. Yes, a legend would be helpful.
+
+  9. I am not sure.
+
+  10. Yes, I would like to include markers on the lines to represent individual data
+  points.'
+data_attributes:
+- date
+- shift
+- unique_squirrel_id

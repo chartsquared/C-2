@@ -1,0 +1,39 @@
+initial_prompt: 'I''d like a line chart to visualize Parkinson''s Disease trends.
+  Use the dataset with patient data and medical history. Plot UPDRS scores on the
+  y-axis and Age on the x-axis to observe how Parkinson''s severity correlates with
+  age. Please ensure to differentiate the lines by Diagnosis (0 or 1) for clearer
+  understanding. Utilize color coding: one color for patients diagnosed with Parkinson''s
+  and another for non-diagnosed. Add markers to indicate individual data points. Make
+  sure both axes are clearly labeled and include a legend for the diagnosis differentiation.
+  Thank you!'
+questions: '1. Do you have any specific title in mind for the chart?
+
+  2. What specific colors would you prefer for the lines representing diagnosed and
+  non-diagnosed patients?
+
+  3. Do you have any preference for the style or shape of the markers on the data
+  points?
+
+  4. Would you like grid lines on the chart to aid with readability? If yes, should
+  they be both horizontal and vertical?
+
+  5. Is there any specific font style or size you would prefer for the axis labels
+  and legend?
+
+  6. Do you have any preference for the overall background color of the chart?'
+answers: '1. I am not sure about the title.
+
+  2. I do not have a specific preference for colors.
+
+  3. I am not sure about the markers.
+
+  4. Yes, grid lines on the chart would be helpful. Both horizontal and vertical would
+  be good.
+
+  5. I do not have any specific preference for the font style or size.
+
+  6. I do not have any specific preference for the background color.'
+data_attributes:
+- Age
+- UPDRS
+- Diagnosis

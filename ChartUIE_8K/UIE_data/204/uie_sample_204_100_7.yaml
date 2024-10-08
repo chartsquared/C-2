@@ -1,0 +1,41 @@
+initial_prompt: Create a choropleth map of the real estate data to visualize the house
+  prices per unit area geographically. Use 'X5 latitude' and 'X6 longitude' for determining
+  the locations and 'Y house price of unit area' for the color gradient. Ensure the
+  map clearly differentiates between varying price levels.
+questions: '1. Do you have any specific color preferences or a predefined color palette
+  for the choropleth map?
+
+  2. Are there any particular ranges or thresholds of house prices that you would
+  like to highlight with distinct colors?
+
+  3. What specific geographic boundaries or regions should the map cover (e.g., specific
+  cities, states, countries)?
+
+  4. Should the map include geographic labels for regions, such as city or district
+  names?
+
+  5. Do you prefer a specific projection type for the map (e.g., Mercator, Albers,
+  etc.)?
+
+  6. Would you like to include a legend to explain the color gradient? If so, any
+  preferences on its placement?
+
+  7. Do you want to add any additional data layers (e.g., locations of MRT stations
+  or convenience stores)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure, but perhaps covering the entire dataset''s range would be good.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. Yes, please include a legend. I don''t have a preference for its placement.
+
+  7. I am not sure.'
+data_attributes:
+- X5 latitude
+- X6 longitude
+- Y house price of unit area

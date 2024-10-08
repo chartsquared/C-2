@@ -1,0 +1,52 @@
+initial_prompt: Please create a heatmap using the provided Glass Classification data
+  from the CSV file. I want the heatmap to visualize the correlation between the different
+  chemical components (RI, Na, Mg, Al, Si, K, Ca, Ba, Fe) and the glass type (Type).
+  The heatmap should highlight any strong positive or negative correlations between
+  these variables. Use a color gradient that clearly distinguishes between high and
+  low correlation values. Also, please ensure that each axis is labeled with the corresponding
+  chemical component and glass type. This will help in understanding the relationships
+  between the variables in the dataset. Thank you!
+questions: '1. Do you have a preferred color gradient for the heatmap (e.g., red-blue,
+  green-yellow, etc.)?
+
+  2. Would you like the correlation values to be displayed on the heatmap cells?
+
+  3. What level of granularity would you prefer for the color gradient (e.g., more
+  distinct steps or a smooth gradient)?
+
+  4. Do you have any specific preferences for the heatmap''s size and dimensions?
+
+  5. Would you like to include any particular annotations or notes on the heatmap?
+
+  6. Do you want a specific title or subtitle for the heatmap?
+
+  7. Should the color scale legend be placed in a specific position (e.g., right,
+  bottom)?
+
+  8. Are there any preferred axis label sizes or font styles you would like?'
+answers: '1. I do not know.
+
+  2. Yes, I would like the correlation values to be displayed on the heatmap cells.
+
+  3. I am not sure.
+
+  4. I do not have any specific preferences for the heatmap''s size and dimensions.
+
+  5. No, I do not want to include any particular annotations or notes.
+
+  6. I am not sure.
+
+  7. I do not have a preference for the color scale legend position.
+
+  8. I do not know.'
+data_attributes:
+- RI
+- Na
+- Mg
+- Al
+- Si
+- K
+- Ca
+- Ba
+- Fe
+- Type

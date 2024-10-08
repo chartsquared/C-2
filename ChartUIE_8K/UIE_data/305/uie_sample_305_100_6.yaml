@@ -1,0 +1,55 @@
+initial_prompt: Please create a grouped bar chart visualizing the top 3 global organizations
+  ranked by workforce size, showing the number of employees and share price (USD).
+  Use the columns Rank, Company, number of employees, and share price (USD). Each
+  bar group should represent a company, with individual bars showing the number of
+  employees on one axis and the share price on the other. Label the axes appropriately
+  and use different colors to distinguish between the two metrics. Title the chart
+  "Top 3 Global Organizations by Workforce Size and Share Price."
+questions: '1. Do you have a preferred color scheme for the bars representing ''number
+  of employees'' and ''share price (USD)''?
+
+  2. Should the y-axis scales for ''number of employees'' and ''share price (USD)''
+  be different or unified?
+
+  3. Do you prefer any specific font style or size for the chart labels and title?
+
+  4. Would you like to include data labels on each bar to show the exact values?
+
+  5. Should the bars be presented in a specific order, such as descending by the number
+  of employees or any other criteria?
+
+  6. Do you want to include gridlines to make it easier to read the values from the
+  chart?
+
+  7. Is there any specific orientation (vertical or horizontal) you prefer for the
+  grouped bar chart?
+
+  8. Would you like to add any annotations or additional information on the chart?
+
+  9. Do you prefer a legend to be placed in a specific location on the chart?'
+answers: '<start of user response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include data labels on each bar.
+
+  5. I am not sure.
+
+  6. Yes, please include gridlines.
+
+  7. Vertical orientation.
+
+  8. No additional annotations are needed.
+
+  9. I do not know.
+
+  <end of user response>'
+data_attributes:
+- Rank
+- Company
+- number of employees
+- share price (USD)

@@ -1,0 +1,48 @@
+initial_prompt: Create a bar chart showing logFC values of top 3 Gene.symbols (EDIL3,
+  IGFBP7, TFPI) in BAS cell line to visualize their expression levels in Taxol Drug
+  Resistance breast cancer cells.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be labeled with their exact values?
+
+  3. Do you have a preference for the orientation of the bars (horizontal or vertical)?
+
+  4. Should there be grid lines to help in visual comparison of the values?
+
+  5. Would you prefer the chart to include a legend, even though there are only three
+  Gene.symbols?
+
+  6. Do you want a specific title for the chart?
+
+  7. Is there a specific format for the axes labels or tick marks that you prefer?
+
+  8. Would you like annotations or text boxes highlighting key findings or values?
+
+  9. Do you prefer a specific font style or size for the chart text elements (titles,
+  labels, etc.)?
+
+  10. Should we include error bars or confidence intervals if the data supports it?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the bars to be labeled with their exact values.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. The title could be "Expression Levels of Top Genes in Taxol Drug Resistance (BAS
+  Cell Line)".
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I am not sure.'
+data_attributes:
+- Gene.symbol
+- logFC
+- Cell Line

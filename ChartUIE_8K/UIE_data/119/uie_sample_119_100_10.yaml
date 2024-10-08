@@ -1,0 +1,53 @@
+initial_prompt: I need a dot plot for a Walmart sales analysis. The x-axis should
+  represent the Date and the y-axis should represent the Weekly Sales. Each dot on
+  the plot should represent a specific date and its corresponding weekly sales. Use
+  different colors or shapes to indicate whether the week had a holiday (Holiday_Flag).
+  Include Temperature and Fuel Price as additional dimensions in the plot, perhaps
+  through color intensity or size of the dots. The overall aim is to visualize sales
+  trends over time, especially distinguishing holidays and non-holidays.
+questions: '1. Do you have any preferred color scheme for the plot, especially for
+  distinguishing holiday and non-holiday weeks?
+
+  2. Would you like to customize the dot shapes beyond the default circle, perhaps
+  using different shapes for holidays and non-holidays?
+
+  3. How should the temperature and fuel price be represented on the dots? Would you
+  prefer color intensity, size, or both?
+
+  4. Is there a specific date format you would like to be displayed on the x-axis
+  labels?
+
+  5. Are there any specific holidays or notable dates that you want to highlight on
+  the plot?
+
+  6. Do you prefer additional grid lines or reference lines on the chart for better
+  readability of trends?
+
+  7. Would you like to add any annotations or labels for specific data points on the
+  chart? If so, what information should be included in these labels?
+
+  8. Should the y-axis have a specific scale or range, or should it be automatically
+  determined based on the data?'
+answers: '1. I do not have a specific preference for the color scheme, as long as
+  holidays and non-holidays are distinguishable.
+
+  2. I am not sure about customizing dot shapes; circles should be fine.
+
+  3. I would prefer both color intensity and size to represent temperature and fuel
+  price, respectively.
+
+  4. I don''t have a specific date format in mind.
+
+  5. I do not know of any specific holidays or notable dates to highlight.
+
+  6. I am not sure about this.
+
+  7. I do not have a preference for annotations or labels for specific data points.
+
+  8. The y-axis scale should be automatically determined based on the data.'
+data_attributes:
+- Date
+- Weekly_Sales
+- Holiday_Flag
+- Temperature
+- Fuel_Price

@@ -1,0 +1,49 @@
+initial_prompt: Create a stacked bar chart showing the count of each 'label' (e.g.,
+  'artifact') in the dataset, grouped by 'fname'. Highlight missing 'sublabel' data
+  prominently.
+questions: '1. Do you have any specific color preferences for the different ''label''
+  categories?
+
+  2. How would you like the missing ''sublabel'' data to be highlighted (e.g., a specific
+  color, pattern, or annotation)?
+
+  3. Do you have a preferred order for sorting the ''fname'' values on the x-axis?
+
+  4. Would you like to include a legend for the ''label'' categories?
+
+  5. Do you want any specific axis titles or labels for the x-axis and y-axis?
+
+  6. Are there any particular font styles or sizes you prefer for the chart labels
+  and titles?
+
+  7. Do you need gridlines on the chart, and if so, in what style (e.g., dashed, solid)?
+
+  8. Should the chart include data values on the bars themselves?
+
+  9. Would you like to set a specific range for the y-axis?
+
+  10. Are there any specific dimensions (height and width) you would prefer for the
+  chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like to include a legend for the ''label'' categories.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Yes, the chart should include data values on the bars themselves.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- fname
+- label
+- sublabel

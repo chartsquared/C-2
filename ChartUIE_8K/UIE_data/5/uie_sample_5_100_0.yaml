@@ -1,0 +1,68 @@
+initial_prompt: Create a stacked bar chart visualizing the state-wise professional
+  profiles of suicide victims, using data from 2001. Each bar should be divided by
+  gender and age group, with the x-axis representing states/UTs and the y-axis showing
+  the total number of suicides. Highlight the age groups where the numbers are significantly
+  higher. Add text annotations to display the exact figures for up to three prominent
+  professions per state. This will help in understanding the social and professional
+  backgrounds most impacted by suicides, assisting in targeted interventions. Highlight
+  trends and outliers using annotations for clarity.
+questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Should certain age groups be highlighted with specific colors?
+
+  3. Do you want to include a legend distinguishing different genders and age groups?
+
+  4. How would you like the text annotations to appear (e.g., font size, color)?
+
+  5. Is there a specific format you prefer for the exact figures in the text annotations?
+
+  6. Should the bars have specific spacing or width?
+
+  7. Do you have a particular font style or size preference for the axis labels and
+  chart title?
+
+  8. Would you like any gridlines or background shading in the chart for better readability?
+
+  9. Should the chart include a title and subtitle? If so, what should they be?
+
+  10. Do you have a preferred method for indicating trends and outliers (e.g., colored
+  arrows, circles)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to include a legend distinguishing different genders and age
+  groups.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, some gridlines would be helpful for better readability.
+
+  9. Yes, the chart should include a title and subtitle. The title could be "State-wise
+  Professional Profiles of Suicide Victims in 2001" and the subtitle "Analysis by
+  Gender and Age Group".
+
+  10. I am not sure.'
+data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Male upto 14 years
+- Male 15-29 years
+- Male 30-44 years
+- Male 45-59 years
+- Male 60 years and above
+- Total Male
+- Female upto 14 years
+- Female 15-29 years
+- Female 30-44 years
+- Female 45-59 years
+- Female 60 years and above
+- Total Female
+- Grand Total

@@ -1,0 +1,56 @@
+initial_prompt: I'd like to visualize the impact of age, BMI, and smoking status on
+  medical insurance charges. Can you create a bubble chart where the x-axis represents
+  age, the y-axis represents BMI, and the size of the bubbles represents the insurance
+  charges? Additionally, could you color-code the bubbles by smoking status (e.g.,
+  'yes' for smoker and 'no' for non-smoker)? This will help in understanding the correlation
+  between these factors and the cost. Ensure the chart is clear and easy to interpret,
+  highlighting any significant trends. Thank you!
+questions: '1. Do you have a preference for the color scheme to represent the smoking
+  status?
+
+  2. Would you like any specific age or BMI ranges to be highlighted?
+
+  3. Do you prefer a particular style or theme for the chart (e.g., minimalistic,
+  detailed, vibrant)?
+
+  4. Should the chart include grid lines for better readability?
+
+  5. Are there any specific labels or annotations you would like to be added to the
+  chart?
+
+  6. Would you like to see trend lines or regression lines to better illustrate the
+  correlation?
+
+  7. Do you have a preferred font style and size for the axis titles and labels?
+
+  8. Should the chart include a legend to explain the color-coding and bubble size?
+
+  9. Is there a particular format for the axis scales (e.g., logarithmic, linear)
+  that you prefer?
+
+  10. Would you like to include data points'' details in tooltips when hovering over
+  the bubbles?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Minimalistic style.
+
+  4. Yes, please include grid lines.
+
+  5. No specific labels or annotations needed.
+
+  6. I am not sure.
+
+  7. No specific preference.
+
+  8. Yes, please include a legend.
+
+  9. Linear scale is fine.
+
+  10. I do not know.'
+data_attributes:
+- age
+- bmi
+- smoker
+- charges

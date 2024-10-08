@@ -1,0 +1,34 @@
+initial_prompt: Please create a stacked column chart to visualize the probability
+  of rain by state. The data includes columns for 'code' (representing state codes)
+  and 'prob' (indicating the probability of rain). Use the state codes (e.g., ME,
+  RI, VT) on the x-axis and the probability values on the y-axis. Each state should
+  have a unique color for its column. Label the x-axis with 'State Code' and the y-axis
+  with 'Probability of Rain'. Include a legend to distinguish between the different
+  probabilities. Ensure the chart is clear and easy to interpret.
+questions: "1. Do you have any preference for the color palette to be used for the\
+  \ states?\n2. Would you like the chart to include grid lines for better readability?\n\
+  3. Should the x-axis and y-axis titles have any specific font size or style?\n4.\
+  \ Do you prefer the columns to have a specific width or spacing between them?\n\
+  5. Would you like to include any specific annotations or data labels on the columns?\n\
+  6. Is there a specific order in which you want the states to be displayed (e.g.,\
+  \ alphabetical, by probability value)?\n7. Do you want to add any specific title\
+  \ to the chart itself? \n8. Would you prefer the legend to be placed at a specific\
+  \ position (e.g., top, bottom, side)?"
+answers: '1. I do not know.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Alphabetical order by state code would be great.
+
+  7. Please title the chart "Probability of Rain by State".
+
+  8. I have no specific preference.'
+data_attributes:
+- code
+- prob

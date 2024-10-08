@@ -1,0 +1,57 @@
+initial_prompt: 'Create a bar chart to visualize alcohol consumption around the world.
+  The chart should include the following columns: ''country'', ''beer_servings'',
+  ''spirit_servings'', ''wine_servings'', and ''total_litres_of_pure_alcohol''. Highlight
+  top consumer countries and annotate them with specific values to draw attention.
+  Purpose: Compare alcohol consumption across countries, emphasizing primary consumers
+  and identifying patterns in beer, spirit, wine servings, and total alcohol consumption.
+  Ensure data types and missing values are correctly managed.'
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the countries to be sorted by total alcohol consumption or by
+  alphabetical order?
+
+  3. Do you prefer the bars for ''beer_servings'', ''spirit_servings'', and ''wine_servings''
+  to be stacked or grouped?
+
+  4. What specific colors would you like to use to highlight the top consumer countries?
+
+  5. Do you have a preference for the font style and size for the annotations on the
+  top consumer countries?
+
+  6. Should the chart include grid lines for easier comparison, and if so, in which
+  style (dashed, solid, etc.)?
+
+  7. Would you like a legend explaining the color coding, and if so, where should
+  it be placed on the chart?
+
+  8. Do you prefer horizontal or vertical bars for this chart?
+
+  9. Would you like to include any specific title or subtitle for the chart?
+
+  10. Should the axis labels be rotated for better readability? If yes, what angle
+  do you prefer?'
+answers: '1. I am not sure.
+
+  2. Sorted by total alcohol consumption.
+
+  3. Grouped bars.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, include grid lines in a dashed style.
+
+  7. Yes, a legend should be included. I am not sure where it should be placed.
+
+  8. Vertical bars.
+
+  9. Title: "Global Alcohol Consumption Comparison"
+
+  10. Yes, rotate the axis labels by 45 degrees.'
+data_attributes:
+- country
+- beer_servings
+- spirit_servings
+- wine_servings
+- total_litres_of_pure_alcohol

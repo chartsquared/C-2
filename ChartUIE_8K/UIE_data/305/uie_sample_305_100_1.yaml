@@ -1,0 +1,48 @@
+initial_prompt: 'Create a scatter plot visualizing global organizations ranked by
+  workforce size with a focus on the number of employees and share price (USD). Use
+  data annotations to highlight companies like Walmart, Amazon, and Foxconn, showing
+  their employee count and share price. Purpose: Identify the relationship between
+  the size of the workforce and stock share price. Ensure company origins are distinguishable
+  by color coding. This visualization aims to help investors and analysts quickly
+  spot high-impact companies based on workforce size and stock performance. Include
+  highlights for better interpretability.'
+questions: '1. Do you have any preference for the colors used to distinguish company
+  origins?
+
+  2. Would you like to specify the format or appearance of data annotations for highlighted
+  companies?
+
+  3. Do you have a preferred way to highlight significant companies like Walmart,
+  Amazon, and Foxconn (e.g., different shapes, larger markers)?
+
+  4. Should the chart include titles and labels for the axes? If yes, do you have
+  specific text in mind for these labels?
+
+  5. Are there any additional key companies or data points you want to be highlighted
+  or annotated beyond Walmart, Amazon, and Foxconn?
+
+  6. Would you like a legend to explain the color coding of the company origins?
+
+  7. Do you have a preferred style for data points (e.g., circular, square, etc.)?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preference.
+
+  3. Yes, please use larger markers for Walmart, Amazon, and Foxconn.
+
+  4. Yes, please include titles and labels for the axes. The titles can be "Workforce
+  Size vs. Share Price" and the labels can be "Number of Employees" for the x-axis
+  and "Share Price (USD)" for the y-axis.
+
+  5. I do not know.
+
+  6. Yes, I would like a legend to explain the color coding of the company origins.
+
+  7. I have no specific preference.'
+data_attributes:
+- Rank
+- Company
+- stock Symbol
+- number of employees
+- share price (USD)
+- Company origin

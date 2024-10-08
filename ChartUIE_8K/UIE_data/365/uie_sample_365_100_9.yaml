@@ -1,0 +1,60 @@
+initial_prompt: Create a bubble chart visualizing TV shows available on different
+  streaming platforms (Netflix, Hulu, Prime Video, Disney+). Use IMDb ratings and
+  Rotten Tomatoes scores for show quality metrics. Plot IMDb ratings on the X-axis,
+  Rotten Tomatoes scores on the Y-axis, and encoded platform availability on the bubble
+  size (bigger bubbles indicate shows available on more platforms). Add a categorical
+  color dimension to distinguish between shows available on one versus multiple platforms.
+  Label the bubbles with show titles for better identification. This will help viewers
+  quickly understand the distribution and quality of TV shows across streaming platforms.
+questions: '1. Do you have a preferred color scheme for distinguishing between shows
+  available on one versus multiple platforms?
+
+  2. How do you prefer the show titles to be displayed on the bubbles (e.g., font
+  size, font type)?
+
+  3. Do you want the axis titles to be included, and if so, any specific preferences
+  for their labels?
+
+  4. Would you like any specific annotations or notes on the chart to highlight key
+  data points?
+
+  5. Do you have a preference for the size scale of the bubbles to represent platform
+  availability?
+
+  6. Should there be a legend to decode the bubble sizes and colors, and if so, do
+  you have any preferences for its placement?
+
+  7. Do you want any gridlines or background styling on the chart?
+
+  8. Is there a specific format or way you want the IMDb ratings and Rotten Tomatoes
+  scores to be displayed (e.g., percentage, out of 10, etc.)?
+
+  9. Would you like to include a title for the chart? If yes, what should it be?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure about the font size and type for show titles.
+
+  3. Yes, please include axis titles labeled as "IMDb Ratings" for the X-axis and
+  "Rotten Tomatoes Scores" for the Y-axis.
+
+  4. I do not know if any specific annotations or notes are needed.
+
+  5. I do not have a preference for the size scale of the bubbles.
+
+  6. Yes, please include a legend to decode the bubble sizes and colors. I do not
+  have a preference for its placement.
+
+  7. I am not sure about gridlines or background styling on the chart.
+
+  8. IMDb ratings out of 10 and Rotten Tomatoes scores as percentages would be good.
+
+  9. Yes, please include a title for the chart: "TV Show Quality and Availability
+  Across Streaming Platforms".'
+data_attributes:
+- Title
+- IMDb
+- Rotten Tomatoes
+- Netflix
+- Hulu
+- Prime Video
+- Disney+

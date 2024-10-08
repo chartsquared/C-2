@@ -1,0 +1,55 @@
+initial_prompt: I have a dataset detailing job roles, categories, and salaries within
+  the data science field for the year 2023. I want a stacked bar chart that visualizes
+  the distribution of job categories across different experience levels, with the
+  bars representing salary ranges in USD. Each bar segment should show the proportion
+  of job categories within each experience level, helping me compare the salary distribution
+  across different job categories and experience levels. This will illustrate salary
+  progression and category density at various experience stages.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should the chart include a legend to indicate the job categories?
+
+  3. Do you want to include data labels on the chart segments?
+
+  4. How would you like the experience levels to be ordered on the x-axis? (e.g.,
+  ascending, descending)
+
+  5. Is there a specific way you want the salary ranges divided within each bar?
+
+  6. Do you want the chart to include a title and axis labels? If so, what should
+  they be?
+
+  7. Should the y-axis represent the salary in USD or another metric?
+
+  8. Are there specific ranges of experience levels or salary ranges you want to highlight?
+
+  9. Do you have any preferences for font styles or sizes for the chart text?
+
+  10. Should the bars be displayed vertically or horizontally?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include a legend to indicate the job categories.
+
+  3. I do not know.
+
+  4. Order the experience levels in ascending order on the x-axis.
+
+  5. I am not sure.
+
+  6. Yes, please include a title and axis labels. The title should be "Distribution
+  of Job Categories and Salary Ranges Across Experience Levels in Data Science - 2023".
+  The x-axis label should be "Experience Levels" and the y-axis label should be "Salary
+  Range (USD)".
+
+  7. Yes, the y-axis should represent the salary in USD.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. The bars should be displayed vertically.'
+data_attributes:
+- job_title
+- job_category
+- salary_in_usd
+- experience_level

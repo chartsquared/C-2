@@ -1,0 +1,43 @@
+initial_prompt: Create a box chart visualizing the distribution of 'radius_mean',
+  'texture_mean', and 'area_mean' for the Breast Cancer Dataset [Wisconsin Diagnostic
+  UCI]. Include text annotations to highlight the outliers and key statistics such
+  as median and quartiles. Use shape annotations like arrows to point out the median
+  values. This visualization aims to help understand the central tendency and dispersion
+  of these features in relation to breast cancer diagnosis. Add a brief description
+  explaining the significance of these features in the context of diagnosing breast
+  cancer.
+questions: '1. Do you have a preference for the colors used in the box chart?
+
+  2. Would you like the chart to include grid lines? If so, should they be light or
+  bold?
+
+  3. Do you have a specific preference for the chart title and axis labels?
+
+  4. Is there a particular font style or size you prefer for text annotations and
+  axis labels?
+
+  5. How detailed would you like the text annotations to be when highlighting outliers
+  and key statistics?
+
+  6. Would you like the quartiles to be color-coded differently for better distinction?
+
+  7. Do you have a preferred position for the legend (if needed) on the chart?
+
+  8. Should we highlight the median values using a specific shape or style for the
+  arrows?
+
+  9. Would you prefer the box plot to be displayed horizontally or vertically?
+
+  10. Is there any background information or context that you would like to be included
+  in the brief description section of the chart?'
+answers: "1. I do not know.\n2. Yes, include grid lines. Light grid lines would be\
+  \ fine.\n3. I am not sure.\n4. I don't have a specific preference.\n5. Highlight\
+  \ key statistics such as median and quartiles, and mention a few notable outliers.\n\
+  6. Yes, color-coding the quartiles differently would be useful.\n7. I have no specific\
+  \ preference.\n8. You can use arrows or any distinct shape to point out the median\
+  \ values.\n9. Vertically would be fine.\n10. Include information about how these\
+  \ features help in diagnosing breast cancer. \n\n"
+data_attributes:
+- radius_mean
+- texture_mean
+- area_mean

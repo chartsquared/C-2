@@ -1,0 +1,47 @@
+initial_prompt: 'I have data comprising state-wise values for three sources: mlsrc,
+  quantumsrc, and dlsrc, with no missing values. Visualize this as histograms showing
+  the distribution of mlsrc, quantumsrc, and dlsrc values. Since these are different
+  sources, use separate histograms for each category to illustrate the data. Make
+  sure the X-axis represents the states, and the Y-axis shows the values. Include
+  a legend for clarity. The chart should help in analyzing which states have the highest
+  or lowest contributions from each source.'
+questions: '1. Do you have any preferred color schemes for the histograms?
+
+  2. What title would you like for each histogram?
+
+  3. Is there a specific font style or size you prefer for the labels and legend?
+
+  4. Would you like grid lines to be visible in the histograms?
+
+  5. Do you prefer any specific order for the states on the X-axis (e.g., alphabetical,
+  by value)?
+
+  6. Should the Y-axis be scaled linearly or logarithmically?
+
+  7. Are there any particular annotations or data markers you want included?
+
+  8. Do you have a preference for the aspect ratio or dimensions of the charts?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include grid lines.
+
+  5. Alphabetical order would be good.
+
+  6. Linearly scaled is fine.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

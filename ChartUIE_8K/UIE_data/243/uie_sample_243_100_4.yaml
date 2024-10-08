@@ -1,0 +1,50 @@
+initial_prompt: Please create a box chart using the dataset from the Global Metropolis
+  Weather Dataset. The chart should visualize data distribution for "Temperature (°C)",
+  "Feels Like (°C)", "Humidity (%)", and "Wind Speed (kph)" across different locations.
+  Each box plot should represent these values per location to observe variability
+  and outliers. Ensure the labels are clear and legible, with Location on the x-axis
+  and the corresponding metric on the y-axis. This visualization will help understand
+  the range and consistency of weather conditions in various cities. Thank you!
+questions: '1. What color scheme do you prefer for the box plots?
+
+  2. Do you have a specific font style or size in mind for the labels and titles?
+
+  3. Should we include grid lines in the background for better readability?
+
+  4. Do you want the chart to display descriptive statistics (like mean, median) on
+  the box plots?
+
+  5. Are there any specific cities you want to highlight or focus on?
+
+  6. Is there a specific ordering of the cities you would prefer on the x-axis?
+
+  7. Would you like to include a title and/or subtitle for the chart? If so, what
+  should they be?
+
+  8. Do you prefer any specific aspect ratio or dimensions for the chart?
+
+  9. Are there any additional annotations or markers you''d like to see on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific font style or size in mind.
+
+  3. Yes, please include grid lines for better readability.
+
+  4. Yes, please display descriptive statistics like mean and median.
+
+  5. I do not know.
+
+  6. I have no specific preference for the ordering of the cities.
+
+  7. Yes, please include a title: "Weather Data Distribution Across Global Metropolises"
+  and a subtitle: "Temperature, Feels Like, Humidity, and Wind Speed".
+
+  8. I do not have a specific preference for the aspect ratio or dimensions.
+
+  9. I do not have any additional annotations or markers in mind.'
+data_attributes:
+- Temperature (°C)
+- Feels Like (°C)
+- Humidity (%)
+- Wind Speed (kph)
+- Location

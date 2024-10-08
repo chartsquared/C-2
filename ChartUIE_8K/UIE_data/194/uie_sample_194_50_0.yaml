@@ -1,0 +1,51 @@
+initial_prompt: Visualize a network diagram connecting celestial objects (stars, galaxies)
+  using coordinates (ra, dec) as nodes. Highlight significant redshift values and
+  object classes with different colors. Annotate unusual redshift values for clarity.
+  Use data from Sloan Digital Sky Survey DR14.
+questions: '1. What color scheme do you prefer for distinguishing different object
+  classes (e.g., stars vs. galaxies)?
+
+  2. Do you have a specific threshold or range for what you consider significant redshift
+  values?
+
+  3. How would you like the unusual redshift values to be annotated (e.g., with labels,
+  markers, or tooltips)?
+
+  4. Do you want to include any additional details about the celestial objects in
+  the annotations, such as object ID or magnitude?
+
+  5. Is there a particular layout or style you prefer for the network diagram (e.g.,
+  force-directed, hierarchical)?
+
+  6. What is your preferred method for displaying connections between celestial objects
+  (e.g., straight lines, curved lines)?
+
+  7. Are there any specific regions of the sky (defined by ra and dec) that you want
+  to focus on or highlight in the visualization?
+
+  8. Would you like to include a legend to explain the colors and annotations in the
+  network diagram?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I''m not sure, maybe you can suggest a common threshold used in astronomy?
+
+  3. I would like unusual redshift values to be annotated with labels.
+
+  4. I am not sure, maybe just the redshift value?
+
+  5. I don''t know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, a legend would be useful.
+
+  <end of user emulated response>'
+data_attributes:
+- ra
+- dec
+- class
+- redshift

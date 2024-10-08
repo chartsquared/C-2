@@ -1,0 +1,53 @@
+initial_prompt: I need a stacked bar chart visualizing Pokemon stats. Use 'type1'
+  and 'type2' as stacked categories with stats like 'total,' 'attack,' 'defense,'
+  'sp_attack,' 'sp_defense,' and 'speed' as values on the Y-axis. Highlight legendary
+  Pokemon to differentiate them. Annotate key Pokemon with their names and total stats
+  to focus on specific examples. Visualize missing type2 data distinctly. The goal
+  is to compare Pokemon types and highlight standout stats. This will help in identifying
+  strengths and weaknesses across different types for better gaming strategies and
+  team building.
+questions: '1. What color scheme would you prefer for the different Pokemon types
+  and categories?
+
+  2. Do you have any specific preferences for the layout of the chart, such as the
+  order of the stacked categories?
+
+  3. Are there specific key Pokemon you would like to annotate, or should we select
+  based on standout stats?
+
+  4. How would you like the missing ''type2'' data to be visualized distinctly?
+
+  5. Do you have a preferred font style or size for the annotations of key Pokemon
+  names and total stats?
+
+  6. Would you prefer any specific highlighting style for legendary Pokemon, such
+  as specific colors or markers?'
+answers: '<start of user response>
+
+  1. I am not sure about the color scheme. Please choose something that makes it easy
+  to differentiate between types and categories.
+
+  2. I do not have a specific preference for the layout order of the stacked categories.
+
+  3. I do not know which key Pokemon to annotate. Please select based on standout
+  stats.
+
+  4. I am not sure. Please find an effective way to visualize the missing ''type2''
+  data distinctly.
+
+  5. I do not have a preferred font style or size for the annotations.
+
+  6. Highlight legendary Pokemon with a specific color or marker that stands out clearly.
+
+  <end of user response>'
+data_attributes:
+- type1
+- type2
+- total
+- attack
+- defense
+- sp_attack
+- sp_defense
+- speed
+- name
+- legendary

@@ -1,0 +1,54 @@
+initial_prompt: I want a dot plot that visualizes the relationship between regions
+  and overall food security scores based on the Global Food Security Index. Each dot
+  should represent a country within its region, colored by the major area. The x-axis
+  should list regions (like NEU and WEU), and the y-axis should display overall scores.
+  Ensure to highlight regions with missing values distinctly. It should allow easy
+  comparison of food security across different regions and countries within Europe,
+  showing trends and outliers clearly. Include appropriate labels and legends for
+  clarity.
+questions: '1. Do you have a preferred color palette for the different major areas?
+
+  2. How would you like the regions with missing values to be highlighted (e.g., different
+  color, pattern, icon)?
+
+  3. Do you have any specific requirements for the labels on the x-axis and y-axis?
+
+  4. Should outliers be marked in any particular way (e.g., different shape or size)?
+
+  5. Are there any specific font styles or sizes you prefer for the labels and legends?
+
+  6. Do you require grid lines on the chart? If so, in which direction(s)?
+
+  7. Would you like to include a title on the chart? If yes, please specify the title.
+
+  8. Is there a specific format you prefer for the tooltips (information displayed
+  when hovering over a dot)?
+
+  9. Do you have any preferences for the legend placement on the chart?
+
+  10. Are there any specific annotations or additional information you would like
+  to include on the chart?'
+answers: '1. I do not have a specific preference.
+
+  2. A different color would be fine to highlight regions with missing values.
+
+  3. I do not have any specific requirements for the labels on the x-axis and y-axis.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. Yes, grid lines could be helpful; in both directions.
+
+  7. Yes, the title can be "Food Security Scores Across European Regions."
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- Major Area
+- Regions
+- Country
+- Overall score

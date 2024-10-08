@@ -1,0 +1,50 @@
+initial_prompt: I need a heatmap visualizing the correlation between different health
+  factors and the occurrence of Alzheimer's disease according to the data given. The
+  dataset includes columns like Age, BMI, Smoking, AlcoholConsumption, PhysicalActivity,
+  DietQuality, SleepQuality, etc. Please represent the correlations between these
+  factors and the presence of Alzheimer's (Diagnosis). Use color gradients to show
+  the strength and direction of the correlations, with labels for each variable so
+  it's clear and easy to interpret. Also, include a legend explaining the color coding.
+  Thank you.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What color gradients would you like for positive and negative correlations?
+
+  3. Would you prefer specific label formats for the variables?
+
+  4. Is there a specific font type or size you would like for the labels?
+
+  5. How would you like the correlation values to be represented? (e.g., numerical
+  values within the cells)
+
+  6. Do you have a preferred order for displaying the variables on the axes?
+
+  7. Would you like any specific annotations or notes included on the heatmap?
+
+  8. Is there a specific title or subtitle you would prefer for the heatmap?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure, maybe something standard like red for negative and blue for positive
+  correlations.
+
+  3. No specific label format preference.
+
+  4. I do not know. Whatever is clear and easy to read.
+
+  5. Yes, please include numerical values within the cells.
+
+  6. No preferred order for displaying the variables.
+
+  7. No specific annotations needed.
+
+  8. Just a simple title like "Correlation Heatmap of Health Factors and Alzheimer''s
+  Disease".'
+data_attributes:
+- Age
+- BMI
+- Smoking
+- AlcoholConsumption
+- PhysicalActivity
+- DietQuality
+- SleepQuality
+- Diagnosis

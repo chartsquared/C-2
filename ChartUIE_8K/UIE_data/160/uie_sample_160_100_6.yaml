@@ -1,0 +1,59 @@
+initial_prompt: I want to visualize the performance outcomes of different teams across
+  various years in a WWC tournament. Could you create a box plot that shows the distribution
+  of scores for each team? Make sure to group the scores by team and denote different
+  rounds, like 'Group' or other stages. The x-axis should represent different teams,
+  and the y-axis should represent the scores. Including the round as a color or shape
+  factor within the boxes would be great for distinguishing performance per stage.
+  This way, we can see how team performance varies and identify any outliers or trends.
+questions: '1. Do you have any specific preferences for the color palette used to
+  differentiate between rounds?
+
+  2. Would you like the box plots to include additional statistical markers such as
+  median, quartiles, or mean?
+
+  3. Do you prefer a specific ordering of the teams on the x-axis, such as alphabetical
+  or by performance?
+
+  4. Should the chart include gridlines or background shading to improve readability?
+
+  5. Do you have any preferences for the labeling of the axes, for instance, how detailed
+  or large the font should be?
+
+  6. Would you like to include any specific annotations or labels directly on the
+  plot for better context?
+
+  7. Do you prefer any specific dimensions or aspect ratio for the chart to fit the
+  intended display medium?
+
+  8. Would you like to include a legend explaining the color or shape factors used
+  to denote different rounds?
+
+  9. Are there any specific teams or rounds you want to highlight more prominently
+  in the visualization?
+
+  10. Do you need the chart to have a title or subtitle for additional context or
+  clarity?'
+answers: '1. I am not sure.
+
+  2. Yes, please include median and quartiles.
+
+  3. Alphabetical ordering of the teams on the x-axis would be fine.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. Yes, please include a legend explaining the color or shape factors used to denote
+  different rounds.
+
+  9. I do not know.
+
+  10. Yes, a title and subtitle for additional context and clarity would be helpful.'
+data_attributes:
+- team
+- score
+- round

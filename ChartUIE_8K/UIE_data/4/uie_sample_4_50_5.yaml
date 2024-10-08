@@ -1,0 +1,51 @@
+initial_prompt: Please create a treemap visualization using the data from "../Extra_datas/data/4.csv".
+  The treemap should display the hierarchy of 'isic_section', 'isic_division', 'industry_name',
+  and 'Industry_group_name'. Each rectangle's size should represent the number of
+  industries within each group. This will help in understanding the distribution and
+  concentration of different industry sections and divisions.
+questions: '1. Do you have any specific color preferences for different sections or
+  divisions?
+
+  2. Would you prefer the labels to be displayed inside the rectangles or outside?
+
+  3. Should the rectangles be sized strictly proportional to the number of industries,
+  or should there be a minimum size for readability?
+
+  4. Do you want to include the exact count of industries within each rectangle as
+  a label?
+
+  5. Do you have a preferred font style or size for the labels?
+
+  6. Are there any particular sections or divisions you want to highlight using a
+  different color or border?
+
+  7. Would you like to include a legend explaining the color codes for the sections
+  and divisions?
+
+  8. Do you have a preferred layout style for the treemap (e.g., squarified, slice-and-dice)?
+
+  9. Should the treemap include tooltips for additional information on hover?'
+answers: '1. I am not sure.
+
+  2. I would prefer the labels to be displayed inside the rectangles.
+
+  3. I do not know.
+
+  4. Yes, I would like to include the exact count of industries within each rectangle
+  as a label.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, I would like to include a legend explaining the color codes for the sections
+  and divisions.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- isic_section
+- isic_division
+- industry_name
+- Industry_group_name

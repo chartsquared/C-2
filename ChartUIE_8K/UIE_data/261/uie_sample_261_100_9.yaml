@@ -1,0 +1,46 @@
+initial_prompt: Please create a grouped bar chart to visualize the number of space
+  flights and space walks for each astronaut. Use the 'Name' column for the x-axis
+  with 'Space Flights' and 'Space Walks' as grouped bars for comparison. Highlight
+  contrasting activities among astronauts spanning from 1959 to the present. Make
+  sure to label axes clearly and assign distinct colors to each bar group to distinguish
+  between space flights and space walks. This should help in understanding the experience
+  and extra-vehicular activity participation of different astronauts over the years.
+questions: '1. Do you have a preferred color scheme for the bar groups representing
+  ''Space Flights'' and ''Space Walks''?
+
+  2. What title would you like to give to the chart?
+
+  3. Are there specific font types or sizes you prefer for the axis labels and chart
+  title?
+
+  4. Should the y-axis be set to a specific range or can it auto-scale based on the
+  data values?
+
+  5. Would you like the data values to be displayed on top of each bar for easier
+  reference?
+
+  6. Do you prefer any specific gridline styling or background color for the chart?
+
+  7. Would you like a legend included, and if so, where should it be positioned (e.g.,
+  top, bottom, left, right)?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Number of Space Flights and Space Walks by Astronauts (1959-Present)
+
+  3. I have no specific preference.
+
+  4. It can auto-scale based on the data values.
+
+  5. Yes, I would like the data values to be displayed on top of each bar.
+
+  6. I do not know.
+
+  7. Yes, please include a legend, and position it at the top.
+
+  <end of user response>'
+data_attributes:
+- Name
+- Space Flights
+- Space Walks

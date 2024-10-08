@@ -1,0 +1,50 @@
+initial_prompt: 'I''d like to create a heatmap that visualizes the stock data from
+  "Reliance Latest Stock Data: 18 May''12 to 13 Oct''21". The heatmap should display
+  the correlation between different columns like ''Open'', ''High'', ''Low'', ''Close'',
+  and ''Volume'' over the given date range. Ensure the heatmap highlights areas of
+  high correlation to show how these variables relate to each other. This will help
+  in identifying significant patterns and trends in Reliance''s stock performance.
+  Use an appropriate color gradient for clear differentiation. Please generate this
+  heatmap using the given data format and make it as insightful as possible.'
+questions: '1. Do you have a specific color scheme or color gradient preference for
+  the heatmap?
+
+  2. Would you like the color gradient to highlight only high correlations or to provide
+  differentiation across all correlation levels?
+
+  3. Do you prefer to have the correlation values displayed within the heatmap cells?
+
+  4. Should the heatmap include axis labels or annotations for better understanding?
+
+  5. Is there a particular font style or size you would like to use for labels and
+  annotations?
+
+  6. Do you want gridlines to be displayed on the heatmap for better cell differentiation?
+
+  7. Would you like the heatmap to include a color legend or key for interpreting
+  the correlation values?
+
+  8. Are there any specific thresholds for correlation that you consider significant
+  and would like to be highlighted more prominently?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Yes, I would like the correlation values displayed within the heatmap cells.
+
+  4. Yes, the heatmap should include axis labels or annotations for better understanding.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Yes, I would like the heatmap to include a color legend or key for interpreting
+  the correlation values.
+
+  8. I am not sure.'
+data_attributes:
+- Open
+- High
+- Low
+- Close
+- Volume

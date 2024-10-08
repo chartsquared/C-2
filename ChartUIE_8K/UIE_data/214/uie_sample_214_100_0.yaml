@@ -1,0 +1,50 @@
+initial_prompt: '<start of user instruction>
+
+  Create a small multiples visualization to compare suicide statistics across different
+  countries, years, sexes, and age groups. Highlight significant data points and annotate
+  them with suicide numbers and population to show trends and differences. Ensure
+  missing values are accounted for and context is provided for better understanding.
+
+  <end of user instruction>'
+questions: '1. Do you have a preferred color palette for the chart?
+
+  2. Should specific countries, years, sexes, or age groups be highlighted or focused
+  on?
+
+  3. How would you like the missing values to be represented or handled in the visualization?
+
+  4. Do you have a preferred layout for the small multiples (e.g., grid, columns,
+  rows)?
+
+  5. Would you like any specific annotations or labels on the significant data points
+  beyond the suicide numbers and population?
+
+  6. Are there any specific trends or differences you are particularly interested
+  in highlighting?
+
+  7. How detailed should the contextual information be for better understanding (e.g.,
+  brief summaries, detailed explanations)?
+
+  8. Are there any specific fonts or styles you prefer for text annotations and labels?'
+answers: '1. I am not sure.
+
+  2. Yes, it would be good to highlight different countries and sexes.
+
+  3. I do not know.
+
+  4. Grid layout sounds good to me.
+
+  5. No, I don''t need more than suicide numbers and population.
+
+  6. I am particularly interested in seeing trends over different years.
+
+  7. Brief summaries should be fine.
+
+  8. I am not sure.'
+data_attributes:
+- country
+- year
+- sex
+- age
+- suicides_no
+- population

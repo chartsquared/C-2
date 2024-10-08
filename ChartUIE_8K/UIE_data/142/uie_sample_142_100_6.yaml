@@ -1,0 +1,55 @@
+initial_prompt: Create a stacked bar chart visualizing the total votes received by
+  each candidate in the ADILABAD constituency in the 2019 Indian General Elections.
+  Use `NAME` for the x-axis and stack the `GENERAL VOTES` and `POSTAL VOTES` for each
+  candidate on the y-axis. Ensure the chart distinguishes between `GENERAL VOTES`
+  and `POSTAL VOTES` using different colors. Include a legend to identify these. Use
+  labels on the bars to show exact vote counts. Ensure the chart is clearly titled,
+  and axes are labeled appropriately for clarity. This will help compare the vote
+  contribution from different voting methods for each candidate.
+questions: '1. Do you have any specific color preferences for the `GENERAL VOTES`
+  and `POSTAL VOTES`?
+
+  2. Would you like the chart title to include any particular information?
+
+  3. Do you prefer specific font styles or sizes for the title, axis labels, and bar
+  labels?
+
+  4. How would you like the axes labeled?
+
+  5. Is there a particular way you want the legend to be positioned on the chart?
+
+  6. Would you like to include grid lines on the chart for better readability? If
+  so, do you have preferences on their style (e.g., dashed, solid)?
+
+  7. Do you have any preferences on the alignment of the vote count labels on the
+  bars (e.g., inside the bar, outside the bar)?
+
+  8. Are there any specific width or aspect ratio preferences for the chart?
+
+  9. Would you like additional annotations or highlights for specific candidates or
+  data points?'
+answers: '1. I am not sure about specific color preferences.
+
+  2. I do not know.
+
+  3. I am not sure about specific font styles or sizes.
+
+  4. Label the x-axis as "Candidate Name" and the y-axis as "Total Votes".
+
+  5. I do not have a specific preference for the legend position.
+
+  6. I do not know.
+
+  7. I would prefer the vote count labels to be inside the bar.
+
+  8. I do not have any specific width or aspect ratio preferences.
+
+  9. I do not know.'
+data_attributes:
+- NAME
+- 'GENERAL
+
+  VOTES'
+- 'POSTAL
+
+  VOTES'

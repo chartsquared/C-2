@@ -1,0 +1,59 @@
+initial_prompt: 'Create a line chart visualizing annual animal rescues. Highlight
+  trends in rescue count, focusing on notable spikes or declines. Annotate key points
+  related to types of incidents and high-cost rescues. Context: zoology and animal
+  rescue operations.'
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like to see specific types of incidents color-coded or represented
+  differently in the chart?
+
+  3. Do you have a preference for the style of annotations (e.g., text boxes, symbols,
+  arrows) for key points related to types of incidents and high-cost rescues?
+
+  4. How would you like the y-axis to be scaled — starting from zero or from the minimum
+  value of rescue counts?
+
+  5. Should the line chart include markers for each data point, or would you prefer
+  a smooth line?
+
+  6. Do you need a legend explaining the different types of incidents and cost ranges?
+
+  7. Is there a specific date format you prefer for the x-axis labels (e.g., YYYY,
+  ''Year YYYY'')?
+
+  8. Are there any specific symbols or notation you prefer for identifying high-cost
+  rescues on the chart?
+
+  9. Do you prefer a grid background to help identify the trends and points more easily?
+
+  10. Should the chart include a title and subtitle, and if so, do you have specific
+  wording in mind?
+
+  11. Would you like to see any additional statistical information (e.g., average,
+  median) overlaid on the chart?'
+answers: '1. I do not know.
+
+  2. Yes, specific types of incidents should be color-coded.
+
+  3. Text boxes for annotations would be fine.
+
+  4. Starting from zero on the y-axis is preferred.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. YYYY format is preferred.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Yes, include a title "Annual Animal Rescues" and subtitle "Trends and High-Cost
+  Rescues".
+
+  11. I do not have a specific preference.'
+data_attributes:
+- cal_year
+- incident_notional_cost
+- type_of_incident

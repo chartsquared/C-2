@@ -1,0 +1,58 @@
+initial_prompt: I want a grouped bar chart that compares the average credit limit,
+  total revolving balance, and average open-to-buy among different income categories
+  for credit card customers. Please group the bars by income category and use different
+  colors for each measured value. Also, include a legend to clarify which color represents
+  each value (credit limit, revolving balance, open-to-buy). Make sure the X-axis
+  represents different income categories and the Y-axis shows the monetary values.
+  This will help visualize financial behavior differences across various income levels.
+questions: '1. Do you have any color preferences for the bars representing ''credit
+  limit'', ''total revolving balance'', and ''average open-to-buy''?
+
+  2. What title would you like to display on the chart?
+
+  3. Do you prefer any specific font types or sizes for the labels and legend?
+
+  4. Should the income categories on the X-axis be sorted in any specific order (e.g.,
+  ascending, descending)?
+
+  5. Would you like to display data labels on the bars indicating the exact values?
+
+  6. Do you have any specific preferences for the style and thickness of the bar borders?
+
+  7. Should the Y-axis be formatted in a particular way, such as including currency
+  symbols?
+
+  8. Do you want gridlines in the background of the chart, and if so, should they
+  follow a specific style or color?
+
+  9. Is there a specific range you would like to set for the Y-axis?
+
+  10. Would you like to include any annotations or additional text on the chart?
+
+  11. Do you have a preference for the chart size or aspect ratio?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, I would like to display data labels on the bars indicating the exact values.
+
+  6. I do not know.
+
+  7. Yes, please include currency symbols on the Y-axis.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. No, I do not want any annotations or additional text on the chart.
+
+  11. I do not have a preference for the chart size or aspect ratio.'
+data_attributes:
+- Income_Category
+- Credit_Limit
+- Total_Revolving_Bal
+- Avg_Open_To_Buy

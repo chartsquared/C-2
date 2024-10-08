@@ -1,0 +1,58 @@
+initial_prompt: I need a box plot to visualize the distribution of admission grades
+  across different courses. The x-axis should represent the courses, and the y-axis
+  should represent the admission grades. Include all available courses and show the
+  median, quartiles, and any outliers. Additionally, color-code the boxes based on
+  whether the students are scholarship holders or not. This will help to identify
+  if there's any notable difference in admission grades between scholarship and non-scholarship
+  students. Make sure to include labels and a legend for clarity. Use data from the
+  provided dataset.
+questions: '1. Do you have a preference for specific colors to distinguish between
+  scholarship and non-scholarship students?
+
+  2. Would you like the median, quartiles, and outliers to have specific colors or
+  styles for better distinction?
+
+  3. Are there any particular course groups or categories that you would like to highlight
+  in the box plot?
+
+  4. Do you have a specified format or style for the labels on the x-axis and y-axis?
+
+  5. Would you prefer the legend to be positioned in a specific location on the chart?
+
+  6. Is there a preferred font style or size for the labels and legend to ensure readability?
+
+  7. Should the box plots be ordered in a particular way on the x-axis (e.g., alphabetically,
+  by median grade)?
+
+  8. Are there any additional statistics or annotations you would like included in
+  the box plot?
+
+  9. Would you prefer any specific width or spacing for the boxes in the plot?
+
+  10. Do you want gridlines included in the background for easier reading of the plot?
+  If so, do you have a preference for their appearance?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I would prefer the box plots to be ordered alphabetically by course name on the
+  x-axis.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. Yes, I would like gridlines included in the background for easier reading of
+  the plot. I do not have a preference for their appearance.'
+data_attributes:
+- Course
+- Admission grade
+- Scholarship holder

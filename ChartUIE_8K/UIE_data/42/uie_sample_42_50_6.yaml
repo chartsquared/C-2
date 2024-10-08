@@ -1,0 +1,53 @@
+initial_prompt: Please create a heatmap using the kidney stone prediction data. Show
+  correlations between urine properties (gravity, pH, osmo, cond, urea, calc) and
+  the target variable.
+questions: '1. Do you have any color preferences for the heatmap?
+
+  2. Would you like to include labels for each grid cell to show the correlation values?
+
+  3. Should we use a specific color gradient (e.g., blue to red) to indicate correlation
+  strength?
+
+  4. Do you require a title and/or subtitle for the heatmap? If so, what should they
+  be?
+
+  5. Would you like to include axis labels? If yes, do you have specific labels in
+  mind?
+
+  6. Should we include a color bar/legend to interpret the correlation values?
+
+  7. How would you like the data to be scaled or normalized, if at all?
+
+  8. Is there a particular range of correlation values you would like to highlight
+  or focus on?
+
+  9. Would you prefer any specific font styles or sizes for the text in the heatmap?
+
+  10. Do you have any preferences regarding the aspect ratio or size of the heatmap?'
+answers: '1. I do not have any specific preference.
+
+  2. Yes, please include labels for each grid cell to show the correlation values.
+
+  3. I do not know.
+
+  4. Yes, title: "Correlation Heatmap of Urine Properties in Kidney Stone Prediction".
+
+  5. Yes, X-axis: "Urine Properties", Y-axis: "Target Variable".
+
+  6. Yes, please include a color bar/legend.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not have any specific preference.'
+data_attributes:
+- gravity
+- ph
+- osmo
+- cond
+- urea
+- calc
+- target

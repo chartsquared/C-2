@@ -1,0 +1,61 @@
+initial_prompt: I want to visualize the housing prices in California using a Choropleth
+  map. The map should highlight different regions based on the median house value.
+  Use latitude and longitude to plot the locations, and use the color gradient to
+  represent the range of median house values across different areas. The map should
+  also consider ocean proximity as a factor. This way, I can see how housing prices
+  vary geographically and in relation to the coast. Let’s make sure that the missing
+  data for total bedrooms is handled properly in the visualization.
+questions: '1. Do you have a preferred color gradient for representing the range of
+  median house values?
+
+  2. What range of colors would you like to use for highlighting different regions
+  based on housing prices?
+
+  3. Do you have a specific map style or theme preference (e.g., satellite, terrain,
+  streets)?
+
+  4. Would you like to include any specific labels or annotations on the map (e.g.,
+  city names, coastal areas)?
+
+  5. How would you prefer the missing data for ''total bedrooms'' to be handled (e.g.,
+  fill with median value, remove those points, etc.)?
+
+  6. Are there any additional factors or layers you would like to include on the map
+  (e.g., points of interest, transportation lines)?
+
+  7. Do you have a specific threshold or benchmark value for median house values to
+  highlight on the map?
+
+  8. Would you like to include a legend explaining the color gradient and its correlation
+  to the median house values?
+
+  9. Is there a specific geographical scale you want to focus on (e.g., county level,
+  city level)?
+
+  10. Do you have a preferred layout for displaying the map and legend (e.g., side
+  by side, legend below the map)?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure about the range of colors.
+
+  3. I do not know.
+
+  4. Yes, I would like to include city names.
+
+  5. Fill with median value would be fine.
+
+  6. I am not sure.
+
+  7. I do not have a specific threshold in mind.
+
+  8. Yes, please include a legend.
+
+  9. County level would be ideal.
+
+  10. I have no specific preference.'
+data_attributes:
+- longitude
+- latitude
+- median_house_value
+- ocean_proximity
+- total_bedrooms

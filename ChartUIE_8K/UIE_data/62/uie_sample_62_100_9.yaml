@@ -1,0 +1,46 @@
+initial_prompt: Create a candlestick chart for Apple stocks using the provided dataset.
+  Focus on visualizing the 'Date', 'Open', 'High', 'Low', 'Close' columns. This will
+  help in analyzing the stock prices over time. Ensure that each candlestick represents
+  a single trading day. The chart should highlight trends and price movements. Please
+  make the x-axis represent the 'Date' and the y-axis represent the stock prices.
+  Highlight the opening and closing prices clearly and use different colors for bullish
+  and bearish candlesticks. Additionally, plot the 'Volume' data as a separate bar
+  chart below the candlestick chart.
+questions: '1. Do you have a preference for specific colors to represent bullish and
+  bearish candlesticks?
+
+  2. Would you like to include any gridlines or markers on the chart?
+
+  3. Are there any specific date ranges you would like to highlight or focus on within
+  the chart?
+
+  4. Do you prefer any particular type of labeling or formatting for the x-axis and
+  y-axis?
+
+  5. Should the volume bar chart have a particular color, or is the default color
+  acceptable?
+
+  6. Would you like to include any annotations or notes on the chart to highlight
+  specific events or trends?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. The default color is acceptable.
+
+  6. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

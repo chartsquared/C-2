@@ -1,0 +1,50 @@
+initial_prompt: Please create a box chart to visualize the distribution of 'csMPa'
+  values, representing the concrete compressive strength data. Use text annotations
+  to highlight key data points, such as the maximum and minimum strength values. Additionally,
+  apply highlights to distinguish data points from different ages to show the variation
+  in concrete strength over time. This visualization is intended to support urban
+  planning decisions by illustrating the variability and reliability of concrete strength
+  for different compositions and curing periods. Add text annotations to provide context
+  about the different materials used, like cement and slag, in the samples.
+questions: '1. Do you have a preferred color scheme for highlighting the different
+  ages of the concrete samples?
+
+  2. Would you like to include a legend to explain the different age group highlights?
+
+  3. Do you have any specific preferences for how the text annotations should look
+  (e.g., font size, color, background)?
+
+  4. Would you like the maximum and minimum strength values to be highlighted in a
+  specific color?
+
+  5. Is there a particular format in which you would like the context about the different
+  materials (like cement, slag) to be displayed?
+
+  6. Are there any specific age ranges or groupings you want to focus on for highlighting
+  the data points?
+
+  7. Do you have any preference for the ordering of the box plots (e.g., by age, by
+  strength values)?'
+answers: '1. I am not sure.
+
+  2. Yes, a legend would be helpful.
+
+  3. I do not have a specific preference.
+
+  4. Yes, please highlight the maximum and minimum strength values in red.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- csMPa
+- age
+- cement
+- slag
+- flyash
+- water
+- superplasticizer
+- coarseaggregate
+- fineaggregate

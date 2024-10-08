@@ -1,0 +1,55 @@
+initial_prompt: I would like to create a scatter plot using the "Global Country Information
+  Dataset 2023". The scatter plot should visualize the relationship between GDP and
+  Birth Rate for the given countries. Let's use the x-axis for the GDP and the y-axis
+  for the Birth Rate. Each point should represent a country, and it would be great
+  if the points could be colored based on the Life Expectancy to add another layer
+  of insight. Please ensure that the country names are labeled on the plot for clarity.
+questions: '1. Do you have any preference for the color scheme used to represent Life
+  Expectancy?
+
+  2. Would you like the size of the points to vary based on another attribute, such
+  as Population?
+
+  3. Do you have a specific range or scale for the GDP and Birth Rate axes?
+
+  4. Would you prefer a log scale for the GDP axis due to potentially wide variations
+  in GDP values?
+
+  5. Is there any specific font style or size you would like for the country name
+  labels?
+
+  6. Do you want gridlines on the chart for better readability?
+
+  7. Should we include a legend to explain the color coding for Life Expectancy?
+
+  8. Are there any specific countries you want to highlight or annotate differently?
+
+  9. Would you like to add regression lines or trend lines to show the correlation
+  more clearly?
+
+  10. Is there a particular format for displaying the GDP and Birth Rate values (e.g.,
+  scientific notation for large values)?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. Yes, a log scale for the GDP axis would be helpful.
+
+  5. I have no specific preference.
+
+  6. Yes, gridlines would be helpful for better readability.
+
+  7. Yes, please include a legend to explain the color coding for Life Expectancy.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- GDP
+- Birth Rate
+- Country
+- Life expectancy

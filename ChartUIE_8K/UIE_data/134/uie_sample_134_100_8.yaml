@@ -1,0 +1,69 @@
+initial_prompt: Visualize a heatmap using the avocado price data to show the correlation
+  between the different variables like AveragePrice, Total Volume, and the various
+  bag sizes across different years and regions. Highlight which types of bags contribute
+  most to the Total Volume and how these variables change over time across different
+  regions. The heatmap should help identify patterns or anomalies in the data, like
+  regions or years with unusually high or low prices or volumes. Use color gradients
+  to indicate the strength of correlations between these variables to make it easy
+  to spot trends.
+questions: '1. Do you have a preferred color scheme for the heatmap to indicate the
+  strength of correlations?
+
+  2. Would you like the heatmap to display numerical correlation values on the cells?
+
+  3. Should the heatmap include labels for years and regions on the axes for easier
+  reference?
+
+  4. Are there specific years or regions you would like to emphasize or isolate within
+  the heatmap?
+
+  5. Do you prefer the heatmap to use a specific range of values for color gradients
+  (for example, from -1 to 1 for correlations)?
+
+  6. Do you need annotations or markers to explicitly highlight regions or years with
+  unusually high or low prices or volumes?
+
+  7. Is there a specific layout you favor for the heatmap (e.g., clustermap, standard
+  rectangular grid)?
+
+  8. Would you prefer additional visual elements, such as trend lines, to illustrate
+  changes over time?
+
+  9. Should the heatmap emphasize a particular variable more than others, for instance,
+  should ''Total Volume'' be more prominently displayed in the correlations?
+
+  10. Do you have any requirements for the overall size or aspect ratio of the heatmap
+  to fit within a specific presentation format?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Yes, please display numerical correlation values on the cells.
+
+  3. Yes, include labels for years and regions on the axes for easier reference.
+
+  4. I am not sure.
+
+  5. I do not have a specific range of values for color gradients in mind.
+
+  6. Yes, please add annotations or markers to highlight regions or years with unusually
+  high or low prices or volumes.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. No, I don''t have a preference for emphasizing a particular variable more than
+  others.
+
+  10. I do not have any requirements for the overall size or aspect ratio of the heatmap.
+
+  <end of user emulated response>'
+data_attributes:
+- AveragePrice
+- Total Volume
+- Small Bags
+- Large Bags
+- XLarge Bags
+- year
+- region

@@ -1,0 +1,55 @@
+initial_prompt: 'Please create a heatmap to visualize the Top 100 Cities Weather Dataset.
+  For the heatmap, each row should represent a city, and each column should represent
+  one of the following attributes: Temperature (Celsius), Wind Speed (m/s), Latitude,
+  Longitude, and Description frequency (e.g., the count of ''clear sky''). The cells
+  should be color-coded based on the values, with different intensities indicating
+  different ranges. This will help in comparing the weather conditions across different
+  cities visually. Kindly include labels and a color legend for clarity. Thank you!'
+questions: '1. What color scheme do you prefer for the heatmap?
+
+  2. Do you have a preference for the color intensity range (e.g., light to dark)?
+
+  3. Should we include a specific label or title for the heatmap?
+
+  4. Do you prefer any particular font style or size for the labels and legend?
+
+  5. Should the cities (rows) be sorted in any specific order (e.g., alphabetically,
+  by temperature)?
+
+  6. Do you want a specific range or scale for any of the attributes (e.g., temperature
+  range from -10 to 40 degrees Celsius)?
+
+  7. Would you like to highlight any specific cities or weather conditions in the
+  heatmap?
+
+  8. Do you have preferences for the size and aspect ratio of the heatmap?
+
+  9. Should we include any additional annotations or markers on the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Light to dark would be good.
+
+  3. Yes, please label it "Top 100 Cities Weather Dataset Heatmap".
+
+  4. I do not have a specific preference.
+
+  5. Can we sort the cities alphabetically?
+
+  6. I don''t have a specific range in mind.
+
+  7. I do not know.
+
+  8. I do not have a specific preference.
+
+  9. No additional annotations or markers are needed.
+
+  <end of user emulated response>'
+data_attributes:
+- City
+- Temperature (Celsius)
+- Wind Speed (m/s)
+- Latitude
+- Longitude
+- Description

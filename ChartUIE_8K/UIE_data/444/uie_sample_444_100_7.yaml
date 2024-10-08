@@ -1,0 +1,53 @@
+initial_prompt: Please create a grouped column chart to compare the costs and real
+  costs of different public transit infrastructure projects by city and line. Use
+  "city" for the x-axis, "cost" and "real_cost" for the y-axis, and group the bars
+  by "line" for each city. Ensure each bar is distinctly colored for clarity. Include
+  a legend for "cost" and "real_cost" and label all axes appropriately. Use the provided
+  data attributes from the datasets for accurate representation. Include tooltip details
+  for each bar to show additional information like "start_year", "end_year", and "currency".
+questions: '1. Do you have a preference for the color scheme of the bars?
+
+  2. How would you like the data values to be displayed on the bars (e.g., inside
+  the bars, on top of the bars)?
+
+  3. Do you have a specific format in mind for the tooltips?
+
+  4. Should the x-axis and y-axis labels include units or any specific formatting?
+
+  5. Would you like any specific grid lines or background patterns to be included
+  for better readability?
+
+  6. Is there a particular font style or size you prefer for the labels and legend?
+
+  7. Do you require any specific order for the cities and lines to be displayed?
+
+  8. How detailed should the legend be? Should it include descriptions or just simple
+  labels?
+
+  9. Would highlighting specific data points (e.g., highest cost, lowest cost) be
+  useful for your analysis?'
+answers: '1. I do not have a specific preference for the color scheme of the bars.
+
+  2. I am not sure.
+
+  3. I am not sure about the specific format for the tooltips.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference for the font style or size.
+
+  7. I do not know.
+
+  8. Just simple labels for the legend would be fine.
+
+  9. I am not sure.'
+data_attributes:
+- city
+- line
+- cost
+- real_cost
+- start_year
+- end_year
+- currency

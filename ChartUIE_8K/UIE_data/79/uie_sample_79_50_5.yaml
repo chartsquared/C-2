@@ -1,0 +1,44 @@
+initial_prompt: Create a Sunburst chart showcasing the distribution of placements
+  based on gender, education background (ssc_b, hsc_b), and specialization. Each layer
+  should represent gender, then ssc_b, followed by hsc_b, and finally specialisation.
+  Visualize the salary for "Placed" students in the inner ring.
+questions: '1. Do you have a specific color scheme preference for each gender, education
+  background, and specialization?
+
+  2. Would you like to display the exact salary values on the chart, or would you
+  prefer an aggregated representation like average or median salary?
+
+  3. How would you like the salary to be represented in the inner ring? Should it
+  be a proportional segment based on the salary amount?
+
+  4. Do you want to include labels and tooltips for each segment to provide more detailed
+  information?
+
+  5. Is there any particular ordering preference for the segments within each layer
+  (e.g., alphabetically for education backgrounds and specializations)?
+
+  6. Would you like the chart to highlight any specific segments or values, such as
+  extreme salaries or a particular combination of attributes?
+
+  7. Do you prefer to display additional metrics or context, such as the total number
+  of placements or proportion of placements by category?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I would prefer to include labels and tooltips for more detailed information.
+
+  5. I am not sure.
+
+  6. I do not have any specific segments or values to highlight.
+
+  7. I do not know.'
+data_attributes:
+- gender
+- ssc_b
+- hsc_b
+- specialisation
+- status
+- salary

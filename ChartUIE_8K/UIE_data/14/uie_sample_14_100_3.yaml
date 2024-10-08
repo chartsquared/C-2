@@ -1,0 +1,50 @@
+initial_prompt: 'I need a stacked bar chart that shows the median values of different
+  taxa for each stressor and source category. The x-axis should represent the different
+  taxa (bivalves, catfish, hypoph_carp), and the y-axis should show the median values.
+  Each bar should be color-coded to represent different stressors (GHG) and should
+  be divided into sections representing different sources (total on- and off-farm).
+  Add appropriate labels, legends, and a title to make the chart clear. Data source:
+  fish_env_info, zoology.'
+questions: '1. Do you have any specific color preferences for the different stressors?
+
+  2. Do you prefer a specific color palette for differentiating the sources within
+  each bar?
+
+  3. What title would you like for the chart?
+
+  4. Are there any specific labels you would like on the x-axis and y-axis?
+
+  5. Do you have a preference for the positioning of the legend (e.g., top, bottom,
+  left, right)?
+
+  6. Would you prefer the bars to be sorted in any particular order (e.g., alphabetically
+  by taxa, by median values)?
+
+  7. Is there any specific font style or size you would like for the labels and title?
+
+  8. Do you want to include gridlines on the chart for better readability?
+
+  9. Would you like any specific annotations or data values displayed directly on
+  the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. "Median Values of Different Taxa by Stressor and Source"
+
+  4. X-axis: "Taxa", Y-axis: "Median Values"
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, gridlines would be helpful.
+
+  9. I am not sure.'
+data_attributes:
+- taxa
+- stressor
+- source
+- median

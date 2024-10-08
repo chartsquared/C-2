@@ -1,0 +1,60 @@
+initial_prompt: Create a bar chart to visualize Netflix Movies and TV Shows data,
+  highlighting distributions of unique titles by country. Use text annotations to
+  display values of missing directors and cast data. Highlight the two most common
+  countries and their unique titles. The chart should help compare content availability
+  across different nations and understand the impact of missing values on dataset
+  completeness. Please ensure practical insights about country-based content diversity
+  are highlighted for users.
+questions: '1. Do you have specific preferences for the colors used to highlight the
+  two most common countries?
+
+  2. Would you like the chart to have a specific title and subtitle? If so, what should
+  they be?
+
+  3. Do you prefer the bar chart to be horizontal or vertical?
+
+  4. How would you like the text annotations for missing values to be formatted (e.g.,
+  font size, color)?
+
+  5. Should the chart include a legend to distinguish between movies and TV shows,
+  or would you prefer a different categorization?
+
+  6. Are there any specific countries you want to make sure are included or excluded
+  in the visualization?
+
+  7. Do you have a preference for the scale of the x-axis and y-axis (e.g., linear,
+  logarithmic)?
+
+  8. Would you like to include any additional annotations or labels besides the missing
+  values for directors and cast?
+
+  9. Is there a specific sorting preference for the countries (e.g., alphabetical,
+  by the number of unique titles)?
+
+  10. Do you want gridlines to be displayed on the chart for better readability? If
+  so, would you prefer them to be light or bold?'
+answers: '1. I am not sure.
+
+  2. Yes, please title it "Distribution of Unique Netflix Titles by Country" and subtitle
+  "Impact of Missing Directors and Cast Data".
+
+  3. Horizontal.
+
+  4. I am not sure.
+
+  5. Include a legend to distinguish between movies and TV shows.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. No, just the missing values annotations.
+
+  9. Sort by the number of unique titles.
+
+  10. Light gridlines.'
+data_attributes:
+- title
+- country
+- director
+- cast

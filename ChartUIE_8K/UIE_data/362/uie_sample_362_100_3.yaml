@@ -1,0 +1,53 @@
+initial_prompt: I need a heatmap for visualizing the correlation between different
+  attributes in the given engineering placements dataset. Specifically, the heatmap
+  should highlight how factors like Age, Gender, Stream, Internships, CGPA, Hostel,
+  and History of Backlogs affect the PlacedOrNot outcome. This will help in understanding
+  the key features that influence placement outcomes among engineering students. Please
+  ensure the heatmap clearly distinguishes between positive and negative correlations,
+  making it easy to interpret which variables most significantly impact the placement
+  chances. This visualization will be used for a quick, intuitive analysis.
+questions: '1. Do you have any specific color scheme preferences for distinguishing
+  positive and negative correlations in the heatmap?
+
+  2. What range of correlation values would you like to emphasize (e.g., only strong
+  correlations greater than 0.5 or less than -0.5)?
+
+  3. How detailed would you like the annotations on the heatmap to be (e.g., show
+  correlation coefficients in each cell)?
+
+  4. Would you like the heatmap to include labels for both rows and columns for ease
+  of interpretation?
+
+  5. Do you prefer any particular order for the attributes on the heatmap (e.g., alphabetical,
+  based on the strength of correlation)?
+
+  6. Are there any specific titles, subtitles, or axis labels you would like to include
+  on the heatmap?
+
+  7. Would you like gridlines to be shown or hidden on the heatmap for visual clarity?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific color scheme preferences.
+
+  2. I am not sure.
+
+  3. Yes, please show the correlation coefficients in each cell.
+
+  4. Yes, include labels for both rows and columns.
+
+  5. I do not have any specific preference.
+
+  6. No specific titles, subtitles, or axis labels required.
+
+  7. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Age
+- Gender
+- Stream
+- Internships
+- CGPA
+- Hostel
+- HistoryOfBacklogs
+- PlacedOrNot

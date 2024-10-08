@@ -1,0 +1,49 @@
+initial_prompt: I need a heatmap to visualize the occurrence of different products
+  bought together in the online retail dataset. Each cell of the heatmap should represent
+  the number of transactions where a combination of two products was purchased. Use
+  all the product columns (0-6) provided in the dataset to show this relationship.
+  Ignore missing values and focus on helping me understand which product pairs are
+  frequently bought together. Use clear labels for products on both axes of the heatmap
+  for easy interpretation. Include a color legend to indicate the frequency of purchases.
+questions: '1. Do you have any color preferences for the heatmap?
+
+  2. Is there a specific color palette you would like for indicating different frequencies?
+
+  3. What range of values should the color gradient cover for indicating frequency?
+
+  4. Do you prefer a specific font size or style for the labels?
+
+  5. Would you like any gridlines to be visible on the heatmap?
+
+  6. Is there a specific way you would like the products to be ordered on the axes
+  (e.g., alphabetically, by frequency)?
+
+  7. Do you prefer the heatmap to be displayed with or without borders around the
+  cells?
+
+  8. Should we include numerical values within the cells to indicate the exact frequency,
+  in addition to the color legend?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, I would like gridlines to be visible on the heatmap.
+
+  6. I am not sure.
+
+  7. I prefer the heatmap to be displayed with borders around the cells.
+
+  8. Yes, please include numerical values within the cells to indicate the exact frequency,
+  in addition to the color legend.'
+data_attributes:
+- '0'
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'

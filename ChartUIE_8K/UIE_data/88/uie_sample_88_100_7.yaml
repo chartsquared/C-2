@@ -1,0 +1,42 @@
+initial_prompt: Using the provided data, create a choropleth map visualizing the average
+  salary_in_usd for different employee_residence locations. This should highlight
+  where data science and analytics jobs pay the most, reflecting insights into regional
+  salary differences. Countries with higher salaries should be colored darker, while
+  those with lower salaries should be lighter. Use a color gradient that is easy to
+  interpret, include a legend, and ensure the map is readable. The goal is to help
+  visualize salary disparities in the data science field across various countries
+  or regions. Thank you!
+questions: '1. Do you have a preferred color gradient for the choropleth map?
+
+  2. Are there specific regions or countries you want to highlight or focus on?
+
+  3. Do you have a preferred style or format for the legend?
+
+  4. Is there a particular map projection you prefer for the choropleth map?
+
+  5. How detailed do you want the country or region boundaries to be on the map?
+
+  6. Should the map include labels for countries or regions directly on the visualization?
+
+  7. Are there specific font styles or sizes you prefer for the map labels and legend?
+
+  8. Do you have any specific preferences for the map''s background or surrounding
+  elements?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. Detailed enough to understand the different regions clearly.
+
+  6. Yes, the map should include labels for countries or regions.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- salary_in_usd
+- employee_residence

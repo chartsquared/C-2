@@ -1,0 +1,42 @@
+initial_prompt: Create a column chart comparing 'Book_average_rating' and 'Book_ratings_count'
+  for different 'Book Name'. Highlight the 'Author' for each book. Ensure 'Book Name'
+  is on the x-axis, 'Book_average_rating' and 'Book_ratings_count' on the y-axis,
+  with 'Author' as the color legend.
+questions: '1. Do you have specific preferences for the color palette used to highlight
+  different ''Authors''?
+
+  2. What should be the order of the books on the x-axis? Alphabetically, by rating,
+  or by rating count?
+
+  3. Would you like to display the exact values of ''Book_average_rating'' and ''Book_ratings_count''
+  on the chart bars?
+
+  4. Do you have a preference for the orientation of the chart labels (e.g., horizontal
+  or vertical)?
+
+  5. Should there be any particular focus on certain books or authors in the chart?
+
+  6. Do you want to include axis titles and chart title? If yes, please specify the
+  preferred titles.
+
+  7. Would you like to incorporate any specific font styles or sizes for the text
+  elements in the chart?'
+answers: '1. I am not sure.
+
+  2. I don’t know.
+
+  3. I don’t know.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference.
+
+  6. Yes, please. Axis titles as ''Book Name'' for x-axis, ''Values'' for y-axis and
+  the chart title as ''Comparison of Book Average Rating and Ratings Count by Author''.
+
+  7. I have no specific preference.'
+data_attributes:
+- Book Name
+- Book_average_rating
+- Book_ratings_count
+- Author

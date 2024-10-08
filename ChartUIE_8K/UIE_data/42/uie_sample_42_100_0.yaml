@@ -1,0 +1,49 @@
+initial_prompt: Create a bar chart to visualize the urine analysis data for kidney
+  stone prediction. Highlight key metrics like gravity, pH, osmo, cond, urea, and
+  calc across samples. Include annotations to emphasize specific data values, making
+  it easier to identify patterns or abnormalities. Use a color scheme to differentiate
+  between the metrics, and ensure the target column is represented distinctly to show
+  the prediction outcomes—whether a sample is predicted to lead to kidney stones or
+  not. This visualization aims to easily spot critical variations in urine properties
+  related to kidney stone formation.
+questions: '1. Do you have any specific preferences for the color scheme to differentiate
+  between the metrics?
+
+  2. Is there a particular layout or ordering for the bars that you prefer (e.g.,
+  by sample number, by metric type)?
+
+  3. What type of annotations would you prefer to emphasize specific data values (e.g.,
+  text labels, arrows, highlights)?
+
+  4. Do you want to include any specific thresholds or reference lines for certain
+  metrics?
+
+  5. Should the target column be represented in a specific way (e.g., different color
+  bars, separate section)?
+
+  6. Is there a preference for how you want patterns or abnormalities to be displayed
+  (e.g., color encodings, symbols)?
+
+  7. Would you like to include a legend to help interpret the different color encodings
+  and annotations?'
+answers: '1. I am not sure.
+
+  2. Ordered by sample number would be fine.
+
+  3. Text labels would be good.
+
+  4. I do not know.
+
+  5. Different color bars for the target column would be great.
+
+  6. I am not sure.
+
+  7. Yes, including a legend would be helpful.'
+data_attributes:
+- gravity
+- ph
+- osmo
+- cond
+- urea
+- calc
+- target

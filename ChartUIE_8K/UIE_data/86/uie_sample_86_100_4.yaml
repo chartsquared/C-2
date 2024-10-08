@@ -1,0 +1,45 @@
+initial_prompt: I have a Spotify song attributes dataset. I'd like to visualize the
+  average danceability, energy, and valence scores of songs grouped by artist. Create
+  a grouped bar chart comparing these attributes for each artist. Ensure that the
+  chart has a clear legend, axis labels, and a title. Highlight key differences in
+  these attributes between artists. Use different colors for each attribute in the
+  grouped bars to differentiate them easily. This will help me understand how different
+  artists' songs compare regarding these key musical features.
+questions: '1. Do you have any preferred colors for each attribute (danceability,
+  energy, valence)?
+
+  2. What specific title would you like for the chart?
+
+  3. Do you have any preference for the style or font of the axis labels and legend?
+
+  4. How would you prefer the artists to be ordered on the x-axis (e.g., alphabetically,
+  by average danceability, custom order)?
+
+  5. Would you like the y-axis to start at zero or adjust to the minimum value of
+  the data range for better visibility?
+
+  6. Are there any specific artists you would like to highlight in the chart?
+
+  7. Do you want gridlines on the chart for better readability?
+
+  8. Any specific dimensions or aspect ratio for the chart?'
+answers: '1. I don''t have a specific preference for colors.
+
+  2. The title could be "Average Danceability, Energy, and Valence Scores by Artist".
+
+  3. I am not sure about the style or font.
+
+  4. Artists can be ordered alphabetically.
+
+  5. The y-axis can start at zero.
+
+  6. I do not know.
+
+  7. Yes, I would like gridlines for better readability.
+
+  8. I have no specific preference for the dimensions or aspect ratio.'
+data_attributes:
+- artist
+- danceability
+- energy
+- valence

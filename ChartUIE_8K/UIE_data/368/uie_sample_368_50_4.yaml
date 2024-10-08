@@ -1,0 +1,52 @@
+initial_prompt: Create a grouped bar chart comparing suicide rates by sex and age
+  groups across different years for Albania. Include GDP per capita and population
+  as additional dimensions to provide context.
+questions: '1. Do you have a preferred color scheme for the grouped bar chart?
+
+  2. How would you like the age groups to be categorized or displayed?
+
+  3. What level of detail would you like for the GDP per capita and population data
+  (e.g., specific labels or annotations)?
+
+  4. Should we include grid lines and axis labels for better readability?
+
+  5. Do you prefer any specific order for the years displayed on the x-axis?
+
+  6. Would you like to include data labels showing exact values on the bars?
+
+  7. How should the data for male and female be differentiated (e.g., different colors,
+  patterns)?
+
+  8. Do you have a preferred font style or size for the titles and labels?
+
+  9. Should we include legends, and if so, where would you like them to be positioned?
+
+  10. Are there any specific annotations or highlights you want to add to emphasize
+  particular data points?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Specific labels for GDP per capita and population would be good.
+
+  4. Yes, please include grid lines and axis labels.
+
+  5. I do not know.
+
+  6. Yes, include data labels showing exact values on the bars.
+
+  7. Different colors would be preferred to differentiate male and female.
+
+  8. I do not know.
+
+  9. Yes, include legends. I am not sure where to position them.
+
+  10. I do not know.'
+data_attributes:
+- country
+- year
+- sex
+- age
+- suicides_no
+- population
+- gdp_per_capita ($)

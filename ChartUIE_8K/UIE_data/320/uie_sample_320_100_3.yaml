@@ -1,0 +1,57 @@
+initial_prompt: Create a line chart to visualize the RSA variant performance. Use
+  'spawnTime', 'encrTime', and 'decrTime' as Y-axis values on three different lines.
+  Plot 'nbits' on the X-axis to observe how processing times vary with different bit
+  sizes. Since this is relevant to cryptocurrency and blockchain applications, ensure
+  clarity in time metrics. Use distinct colors for each line and a legend for easy
+  interpretation. The chart should help understand the efficiency of the RSA variant
+  in terms of encryption and decryption times as the bit length increases. Avoid clutter;
+  focus on trends.
+questions: '1. Do you have any preference for the style of line (e.g., solid, dashed,
+  dotted) for each metric?
+
+  2. What colors would you prefer for each line representing ''spawnTime'', ''encrTime'',
+  and ''decrTime''?
+
+  3. How would you like the legend to be positioned (e.g., top, bottom, left, right)?
+
+  4. Do you have any specific font style or size preference for the chart labels and
+  title?
+
+  5. Would you like to include data point markers on the lines; if so, what style
+  (e.g., circle, square, triangle) do you prefer?
+
+  6. How would you like the X-axis and Y-axis labels to be formatted?
+
+  7. Do you have any specific preferences for the grid lines (e.g., color, line style,
+  presence)?
+
+  8. Should the chart include a title? If yes, what should it be?
+
+  9. Do you prefer any specific margin settings around the chart?
+
+  10. Would you like to highlight or annotate any particular data points or trends
+  on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Top.
+
+  4. I do not have a specific preference.
+
+  5. Circle markers would be nice.
+
+  6. Clear and concise labels, please.
+
+  7. I am not sure.
+
+  8. Yes, "RSA Variant Performance Analysis."
+
+  9. I am not sure.
+
+  10. No specific highlights or annotations needed.'
+data_attributes:
+- nbits
+- spawnTime
+- encrTime
+- decrTime

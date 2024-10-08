@@ -1,0 +1,52 @@
+initial_prompt: Create a grouped column chart to compare the housing market data in
+  New York. The chart should show different property types (e.g., Condo, House) on
+  the x-axis, with bars grouped by the number of Beds. The y-axis should represent
+  the average Prices. Use different colors for different numbers of Beds. Include
+  labels for PRICE, TYPE, and BEDS. Make sure it highlights variations in housing
+  prices based on the type of property and the number of bedrooms. This will help
+  visualize how property prices vary with these two factors.
+questions: '1. Do you have a preferred color palette for differentiating the number
+  of bedrooms?
+
+  2. Do you want gridlines on the chart for improved readability?
+
+  3. Should the y-axis start at zero or adjust based on data range?
+
+  4. Do you have a preferred font for labels and titles?
+
+  5. Should the chart include a title and subtitle? If so, what should they be?
+
+  6. Would you like to display data values on top of the bars?
+
+  7. Do you prefer a specific style for the bars (e.g., solid, striped)?
+
+  8. Should the legend be placed in a specific location (e.g., bottom, right, top)?
+
+  9. Are there specific labels or annotations you would like to add to the chart (e.g.,
+  average price tags, total number of properties)?
+
+  10. Would you like to apply any specific data sorting for the x-axis categories?'
+answers: '1. I am not sure.
+
+  2. Yes, gridlines would be helpful.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, the title should be "Average Housing Prices in New York" and the subtitle
+  should be "Comparison by Property Type and Number of Bedrooms".
+
+  6. Yes, displaying data values on top of the bars would be useful.
+
+  7. I do not know.
+
+  8. I am not sure, maybe bottom or right.
+
+  9. No, no specific labels or annotations.
+
+  10. No, no specific data sorting preference.'
+data_attributes:
+- TYPE
+- PRICE
+- BEDS

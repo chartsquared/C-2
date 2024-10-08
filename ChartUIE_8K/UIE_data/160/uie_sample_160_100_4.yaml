@@ -1,0 +1,55 @@
+initial_prompt: I want a column chart to visualize the wwc_outcomes data. Could you
+  show the average scores of each team in different rounds over the years? We want
+  separate columns for each round, and each team's score should be represented next
+  to each other for comparison. Additionally, highlight any teams that consistently
+  win or lose by a significant margin (perhaps by different colors). This is for a
+  sports-and-recreation context to analyze performance trends.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How would you like the teams that consistently win or lose by a significant margin
+  to be highlighted (e.g., specific colors, patterns)?
+
+  3. Would you prefer a specific ordering of the teams within each round?
+
+  4. Is there a particular arrangement of the rounds (e.g., chronological, significance)
+  you''d like to see?
+
+  5. Do you want gridlines in the background to facilitate comparison?
+
+  6. Are there specific labels or annotations you need to be included on the chart
+  (e.g., average scores, team names, years)?
+
+  7. Would you like to include a legend explaining the color coding for teams with
+  significant performance margins?
+
+  8. Is there a preferred font style or size for the chart labels and axes?
+
+  9. Should we display data values on top of each column for clarity?
+
+  10. Do you want to include titles for the chart and axes? If so, any specific titles?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Chronological would be fine.
+
+  5. I do not know.
+
+  6. Yes, please include average scores and team names.
+
+  7. Yes, a legend explaining the color coding for teams with significant performance
+  margins would be great.
+
+  8. I do not know.
+
+  9. Yes, displaying data values on top of each column would be helpful.
+
+  10. Yes, please include a title that says "Average Scores of Teams in Different
+  Rounds Over the Years" and label the axes accordingly.'
+data_attributes:
+- year
+- team
+- score
+- round

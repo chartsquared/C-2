@@ -1,0 +1,58 @@
+initial_prompt: 'I want a box chart that visualizes employee attrition in relation
+  to their education levels. Please use the data provided for attributes such as ''Age'',
+  ''Attrition'', ''Education'', ''JobLevel'', and ''MonthlyIncome''. The x-axis should
+  represent different education levels, and the y-axis should show monthly income,
+  with separate boxes for employees who left (''Attrition'': ''Yes'') and those who
+  stayed (''Attrition'': ''No''). The chart should help us understand how education
+  levels correlate with monthly income and whether there''s a pattern in attrition
+  across different education groups. Thank you!'
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like to include gridlines on the chart for better readability?
+
+  3. Do you have any preference for the ordering of education levels on the x-axis
+  (e.g., ascending, descending)?
+
+  4. Should the chart include data labels for better clarity of values?
+
+  5. Do you want any specific title or description for the chart?
+
+  6. Would you like to add any annotations or markers to highlight specific data points
+  or patterns?
+
+  7. Is there a particular font style or size you prefer for the text on the chart?
+
+  8. Do you want to include a legend to differentiate between employees who left and
+  those who stayed?
+
+  9. Should the chart include axis labels and, if yes, what text should be used for
+  them?
+
+  10. Do you want to display any other statistics (e.g., median, mean) within the
+  box plots?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. Ascending order would be preferred.
+
+  4. I do not know.
+
+  5. "Employee Attrition vs. Education Level and Monthly Income"
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. Yes, include a legend to differentiate between employees who left and those who
+  stayed.
+
+  9. Yes. X-axis label: "Education Level", Y-axis label: "Monthly Income"
+
+  10. I am not sure.'
+data_attributes:
+- Age
+- Attrition
+- Education
+- JobLevel
+- MonthlyIncome

@@ -1,0 +1,48 @@
+initial_prompt: Create a geographic heatmap showing flight traffic between airports.
+  Plot points based on latitude and longitude, with lines connecting the 'airport1'
+  and 'airport2' locations. Color-code the lines by the 'cnt' values to indicate frequency.
+questions: '1. Do you have any specific color palette or range preferences for indicating
+  the ''cnt'' values on the map?
+
+  2. Do you prefer specific map projections or styles (e.g., Mercator, satellite view)?
+
+  3. Would you like to include labels for ''airport1'' and ''airport2'' on the map?
+
+  4. Is there a specific geographical region or zoom level you would like to focus
+  on?
+
+  5. Do you have a preferred size or resolution for the chart?
+
+  6. Would you like to include any additional contextual information or annotations
+  on the map?
+
+  7. Do you prefer the lines connecting airports to have specific styles (e.g., dashed,
+  solid)?
+
+  8. Would you like to include a legend explaining the color-coding of the ''cnt''
+  values?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to include labels for ''airport1'' and ''airport2'' on the
+  map.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. Yes, I would like to include a legend explaining the color-coding of the ''cnt''
+  values.'
+data_attributes:
+- start_lat
+- start_lon
+- end_lat
+- end_lon
+- airport1
+- airport2
+- cnt

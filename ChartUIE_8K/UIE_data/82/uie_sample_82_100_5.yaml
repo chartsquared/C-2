@@ -1,0 +1,46 @@
+initial_prompt: Create a heatmap visualizing the Birth Rate, Fertility Rate, Infant
+  mortality, and Life expectancy for all countries in the 'Global Country Information
+  Dataset 2023'. Normalize each column to allow comparison across different scales,
+  and encode the heatmap colors to highlight higher and lower values distinctly. Use
+  the 'Country' column as the categorical axis, and plot the relevant data columns
+  as the continuous axis to show the relationship between these population health
+  indicators across different countries.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Should the heatmap include specific labels or annotations for critical values?
+
+  3. Do you have a preference for the range of colors used to represent normalized
+  data values?
+
+  4. Would you like to include a legend or color bar to explain the color encoding?
+
+  5. Is there a specific font or style you prefer for the axis labels and titles?
+
+  6. Should the data normalization follow a specific method (e.g., min-max scaling,
+  z-score standardization)?
+
+  7. How would you like the countries to be sorted on the categorical axis (alphabetically,
+  by a specific indicator, etc.)?
+
+  8. Do you have any preference for the resolution or granularity of the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, please include a legend or color bar to explain the color encoding.
+
+  5. I do not know.
+
+  6. Please use min-max scaling for the data normalization.
+
+  7. Sort the countries alphabetically.
+
+  8. I do not have any preference for the resolution or granularity.'
+data_attributes:
+- Country
+- Birth Rate
+- Fertility Rate
+- Infant mortality
+- Life expectancy

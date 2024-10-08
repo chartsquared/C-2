@@ -1,0 +1,52 @@
+initial_prompt: Create a stacked bar chart showing the distribution of missing values
+  for each water quality parameter. Label x-axis with 'Parameters' and y-axis with
+  'Count of Missing Values'. Each bar should represent a different parameter, divided
+  into segments based on observed missing values. Use different colors for each segment.
+questions: '1. Do you have any specific color preferences for the different segments
+  representing missing values in each parameter?
+
+  2. Would you like to include a legend to explain the colors used for each segment,
+  or do you prefer labels directly on the segments?
+
+  3. Are there any specific font styles or sizes you would like to use for the axis
+  labels and chart title?
+
+  4. Do you want gridlines on the chart for easier readability, or do you prefer a
+  cleaner look without gridlines?
+
+  5. Is there a specific order in which you want the parameters to be displayed on
+  the x-axis, such as alphabetically or by the number of missing values?
+
+  6. Would you like to include exact counts of missing values on each segment of the
+  bars?
+
+  7. Is there a preferred way for handling bar width and spacing between bars?
+
+  8. Do you want the chart to have a specific title or any supplementary text to provide
+  context?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+- Potability

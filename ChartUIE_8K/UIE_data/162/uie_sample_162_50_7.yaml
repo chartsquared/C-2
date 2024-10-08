@@ -1,0 +1,46 @@
+initial_prompt: Please create a density plot for the Living Planet Index data. Show
+  the distribution of the Living Planet Index values across the years. Highlight the
+  range using the Upper and Lower Confidence Intervals (95% CI). Include data labels
+  for better readability.
+questions: '1. Do you have a preferred color scheme for the density plot?
+
+  2. Would you like to include grid lines in the background for better readability?
+
+  3. How would you like the confidence interval range to be highlighted (e.g., shaded
+  area, dashed lines)?
+
+  4. Where would you prefer the data labels to be placed (e.g., top of each point,
+  side)?
+
+  5. Do you want to include a legend in the plot? If yes, where should it be positioned?
+
+  6. Should the x-axis labels be rotated for better readability?
+
+  7. Would you like to add titles and axis labels? If so, please specify the text.
+
+  8. Do you want any specific font style or size for the text in the chart?
+
+  9. Is there a specific range or focus for the y-axis you would like to set?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Shaded area would be good.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend. I am not sure about the positioning.
+
+  6. I am not sure.
+
+  7. Yes, please add titles and axis labels. Title: "Distribution of Living Planet
+  Index Values", X-axis: "Year", Y-axis: "Living Planet Index"
+
+  8. I do not know.
+
+  9. I do not know.'
+data_attributes:
+- Year
+- Living Planet Index
+- Upper CI, Living Planet Index (95% CI)
+- Lower CI, Living Planet Index (95% CI)

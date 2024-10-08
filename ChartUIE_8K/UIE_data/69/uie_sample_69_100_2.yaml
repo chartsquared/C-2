@@ -1,0 +1,52 @@
+initial_prompt: I want a stacked column chart that shows the 'bytes_in' and 'bytes_out'
+  for various 'src_ip' addresses over time. This should help in identifying patterns
+  and potential anomalies in data traffic. Use text annotations to display the exact
+  'bytes_in' and 'bytes_out' values for notable 'src_ip' entries, drawing attention
+  to unusually high or low traffic. Highlight the 'src_ip' from different countries
+  with different colors to distinguish their geographical origins. This would help
+  in understanding and monitoring suspicious web threats efficiently. The chart is
+  for analyzing cybersecurity threats.
+questions: '1. Do you have any specific preferences for the color scheme to highlight
+  ''src_ip'' from different countries?
+
+  2. Would you prefer a specific time interval (e.g., hourly, daily) for aggregating
+  the data over time?
+
+  3. Are there any particular ''src_ip'' addresses or country codes you consider particularly
+  notable and want to always display their text annotations?
+
+  4. Do you have any specific font style or size preferences for the text annotations?
+
+  5. Would you like the chart to include a legend explaining the color codes for different
+  countries?
+
+  6. Should the chart have a grid to improve readability or any other specific background
+  style?
+
+  7. Do you want to include any additional contextual information or titles on the
+  axes?
+
+  8. Are there any specific ranges for ''bytes_in'' and ''bytes_out'' that you consider
+  unusually high or low and would like to highlight?'
+answers: '1. I do not know.
+
+  2. I would prefer daily aggregation over time.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, I would like the chart to include a legend explaining the color codes for
+  different countries.
+
+  6. Yes, a grid would be good to improve readability.
+
+  7. I have no specific preference.
+
+  8. I am not sure.'
+data_attributes:
+- bytes_in
+- bytes_out
+- src_ip
+- src_ip_country_code
+- creation_time

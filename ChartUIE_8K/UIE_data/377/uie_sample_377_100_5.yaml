@@ -1,0 +1,73 @@
+initial_prompt: Please create a table chart visualizing the election data for different
+  constituencies. Include columns for Constituency Name, MP, Area, County, Electorate,
+  Votes for each party (CON, LAB, LIB, Brexit, Green, NAT, MIN, OTH), percentage of
+  votes for each party, and the winning party. Ensure the chart is clear and easy
+  to read, with each row representing a different constituency. Highlight the winning
+  party for each row. This will help in understanding the election results and the
+  distribution of votes among different parties.
+questions: '1. Do you have any specific preferences for the color scheme used in the
+  chart?
+
+  2. Would you prefer the winning party to be highlighted with a specific color or
+  style?
+
+  3. Should we include any additional visual indicators (such as icons) for the winning
+  party?
+
+  4. Do you have a preference for the font style and size used in the table?
+
+  5. Should the columns be arranged in a specific order, or is the default order acceptable?
+
+  6. Do you wish to include any additional information or annotations in the chart?
+
+  7. Is there a specific format you would like for the percentages (e.g., one decimal
+  place, two decimal places)?
+
+  8. Would you like to include sorting options for any of the columns (e.g., sorting
+  by electorate size, votes for a specific party)?
+
+  9. Do you have any preferences for the width or spacing of columns to ensure readability?
+
+  10. Should any specific columns be fixed or frozen for easier navigation?'
+answers: '1. I do not have a specific preference.
+
+  2. Yes, please highlight the winning party with a specific color.
+
+  3. I am not sure.
+
+  4. I do not have any specific preference.
+
+  5. The default order is acceptable.
+
+  6. I do not know.
+
+  7. One decimal place would be fine.
+
+  8. I am not sure.
+
+  9. Ensure readability, but I don''t have specific preferences.
+
+  10. I do not know.'
+data_attributes:
+- Name
+- MP
+- Area
+- County
+- Electorate
+- CON
+- LAB
+- LIB
+- Brexit
+- Green
+- NAT
+- MIN
+- OTH
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Winner

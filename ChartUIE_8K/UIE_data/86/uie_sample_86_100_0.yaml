@@ -1,0 +1,53 @@
+initial_prompt: I want a bar chart visualizing the energy levels of popular songs.
+  The x-axis should represent song titles and the y-axis should depict energy values.
+  Highlight songs with energy above 0.4. Include data-driven text annotations displaying
+  the exact energy values above the respective bars for clarity. This visualization
+  will help understand which songs are more energetic. The chart is intended to offer
+  a clear comparison of the energy attribute across different songs in a visually
+  engaging manner. Please make sure the chart is colorful and easy to read.
+questions: '1. Do you have a preferred color palette for the bar chart?
+
+  2. How would you like the high-energy songs (energy above 0.4) to be highlighted
+  - different color, pattern, or any other way?
+
+  3. Would you like the bars to be displayed in a particular order (e.g., alphabetically
+  by song title, descending by energy level)?
+
+  4. Do you have any specific font preferences for the text annotations?
+
+  5. Would you prefer the chart to be in a specific size or aspect ratio?
+
+  6. Do you want to include a legend in the chart?
+
+  7. Should the x-axis and y-axis have specific labels or titles?
+
+  8. Do you have any preference for the style of the axis lines and grid lines (e.g.,
+  dashed, solid)?
+
+  9. Any preferences for the number formatting of the energy values (e.g., decimal
+  points, percentage format)?
+
+  10. Would you like any additional information or elements included in the chart,
+  such as the artist''s name?'
+answers: '1. I am not sure.
+
+  2. Different color.
+
+  3. Order by descending energy level.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, include a legend.
+
+  7. Yes, label the x-axis as "Song Titles" and the y-axis as "Energy Levels".
+
+  8. I do not know.
+
+  9. Decimal points.
+
+  10. I am not sure.'
+data_attributes:
+- song_title
+- energy

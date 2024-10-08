@@ -1,0 +1,48 @@
+initial_prompt: Create a bar chart to visualize the weather data, focusing on precipitation,
+  temperature, and wind attributes from 2012. Annotate specific bars representing
+  significant values, like the highest and lowest points of precipitation and temperature.
+  Use color highlights to distinguish between different weather conditions (e.g.,
+  drizzle, rain). Provide data-driven text annotations for these highlighted points
+  to illustrate key observations. This will help to understand trends and anomalies
+  in weather patterns over time. Make sure annotations draw attention to noteworthy
+  elements without cluttering the chart, aiding both clarity and insight.
+questions: '1. Do you have a preferred color palette for the chart, especially for
+  highlighting different weather conditions?
+
+  2. Are there specific months or periods within 2012 that you want to emphasize?
+
+  3. How would you like the bars to be grouped or segmented by time (e.g., daily,
+  weekly, monthly)?
+
+  4. Do you prefer specific fonts or text styles for the annotations?
+
+  5. Should the chart include gridlines for easier reading of values?
+
+  6. Is there a particular size or aspect ratio you prefer for the chart?
+
+  7. How do you prefer to display the temperature values: stacked together or separately
+  for maximum and minimum?
+
+  8. Would you like to include a legend to differentiate between the weather conditions?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Monthly would be good.
+
+  4. I do not know.
+
+  5. Yes, gridlines would be helpful.
+
+  6. I am not sure.
+
+  7. Separately for maximum and minimum would be better.
+
+  8. Yes, a legend would be helpful.'
+data_attributes:
+- date
+- precipitation
+- temp_max
+- temp_min
+- wind
+- weather

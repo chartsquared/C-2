@@ -1,0 +1,50 @@
+initial_prompt: Please create a scatter plot visualizing GameStop's historical stock
+  prices over time. The x-axis should represent the date, and the y-axis should show
+  the closing prices. Highlight significant events where the stock had unusual spikes
+  or drops in volume. Add data-driven text annotations to highlight dates with extreme
+  high or low prices to direct attention to these points. This visualization will
+  help in analyzing the price movement patterns and understand how specific events
+  impacted stock performance over a period of time. Thank you!
+questions: '1. Do you have a preferred color scheme for the scatter plot?
+
+  2. Would you like to include grid lines on the plot for better readability?
+
+  3. Do you prefer the significant events to be highlighted with specific shapes or
+  colors?
+
+  4. Is there a specific font style or size you would like for the text annotations?
+
+  5. Would you like the x-axis (date) to have a specific date format?
+
+  6. How should the y-axis be scaled? (linear or logarithmic)
+
+  7. Do you have a preference for the size of the data points on the scatter plot?
+
+  8. Would you like a legend to be included in the visualization?
+
+  9. Should the text annotations provide additional details about the events?
+
+  10. Do you have any preferences for the overall size or aspect ratio of the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Linear scaling for the y-axis, please.
+
+  7. I do not know.
+
+  8. Yes, please include a legend.
+
+  9. No, just highlight the dates and provide the price on those dates.
+
+  10. I have no specific preference.'
+data_attributes:
+- date
+- close_price
+- volume

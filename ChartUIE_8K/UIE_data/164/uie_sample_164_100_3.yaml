@@ -1,0 +1,44 @@
+initial_prompt: Please create a grouped bar chart visualizing the total amount spent
+  to influence by each lobbyist over the different filing periods. For each lobbyist,
+  display the expenditures as bars grouped by period start date. Make sure the lobbyist
+  names are properly consolidated where there are variations (e.g., "Airbnb Inc,"
+  "Airbnb Inc.," and "Airbnb, Inc." should be treated as one). Additionally, include
+  tooltips to show detailed information for each bar, such as the exact amount, report
+  type, and period end date.
+questions: '1. Do you have any specific color preferences for the bars representing
+  different filing periods?
+
+  2. Would you prefer a specific order for displaying the lobbyists on the axis (e.g.,
+  alphabetical, by total amount spent, etc.)?
+
+  3. How would you like the axis labels to be formatted for better readability (e.g.,
+  date formats, number formats)?
+
+  4. Do you have a preferred font style or size for the chart labels and titles?
+
+  5. Should the chart include a legend that specifies the filing periods by color?
+
+  6. Is there a specific way you would like the tooltips to be formatted (e.g., order
+  of information, additional details)?
+
+  7. Do you have any preference for the overall design theme of the chart (e.g., modern,
+  classic, minimalistic)?'
+answers: '1. I do not know.
+
+  2. I''d prefer the lobbyists to be displayed by the total amount spent.
+
+  3. I’d like the date formats to be in "MM/YYYY" for readability.
+
+  4. I do not have a specific preference for the font style or size.
+
+  5. Yes, the chart should include a legend specifying the filing periods by color.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference for the overall design theme.'
+data_attributes:
+- Lobbyist Name
+- Total Amount Spent to Influence
+- Period Start Date
+- Period End Date
+- Report Type

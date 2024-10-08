@@ -1,0 +1,54 @@
+initial_prompt: Create a column chart that visualizes Ronaldo's tweet engagement metrics
+  (retweetCount, replyCount, likeCount, quoteCount, bookmarkCount) over time. Highlight
+  the tweet with the highest engagement in each category to draw attention to key
+  tweets. Add text annotations to these highlighted columns to display their exact
+  counts for better understanding. This visualization will help recognize patterns
+  and trends in Ronaldo's social media interactions.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like the chart to have a legend or rely solely on axis labels and annotations?
+
+  3. Should the chart include grid lines for better readability?
+
+  4. Do you have a preference for the font style and size for the text annotations?
+
+  5. Would you like to see any specific date range highlighted in the chart?
+
+  6. Should there be a title for the chart and if so, what would you like it to be?
+
+  7. Would you prefer each engagement metric to be displayed in different colors?
+
+  8. Do you want the chart to have axis labels, and if so, what should they be?
+
+  9. How would you like the tweet dates to be formatted on the x-axis (e.g., MMM-YYYY,
+  DD-MM-YYYY)?
+
+  10. Would you like to include a brief description or footnote in the chart to explain
+  the context?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, the chart should include grid lines for better readability.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, the title should be "Ronaldo''s Tweet Engagement Metrics Over Time".
+
+  7. Yes, I would prefer each engagement metric to be displayed in different colors.
+
+  8. Yes, the axis labels should be "Tweet Dates" for the x-axis and "Engagement Count"
+  for the y-axis.
+
+  9. MMM-YYYY format for the x-axis would be good.
+
+  10. I am not sure.'
+data_attributes:
+- createdAt
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

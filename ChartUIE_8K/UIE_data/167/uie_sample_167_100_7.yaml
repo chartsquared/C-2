@@ -1,0 +1,72 @@
+initial_prompt: Please create a heatmap for the Heart Disease Dataset to visualize
+  the correlation between different attributes such as 'age', 'sex', 'chest pain type',
+  'resting bp s', 'cholesterol', 'fasting blood sugar', 'resting ecg', 'max heart
+  rate', 'exercise angina', 'oldpeak', 'ST slope', and 'target'. This will help us
+  understand how these variables interact with each other and identify potential indicators
+  of heart disease.
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. Would you like to include color gradients to indicate different levels of correlation
+  strength?
+
+  3. Should the heatmap display correlation values (numbers) within each cell?
+
+  4. Do you prefer any specific range for the correlation values (e.g., -1 to 1)?
+
+  5. Would you like to have labels on the axes to include full or abbreviated attribute
+  names?
+
+  6. Should the heatmap include a legend explaining the color scale?
+
+  7. Do you have any font size preferences for labels and titles on the heatmap?
+
+  8. Would you like to cluster similar attributes together in the heatmap for better
+  visualization?
+
+  9. Do you have any specific layout preferences for the heatmap (e.g., aspect ratio,
+  size of the chart)?
+
+  10. Would you like to include grid lines or borders between the cells for better
+  readability?
+
+  11. Are there any specific attributes among the given list that you want to highlight
+  more prominently?
+
+  12. Do you need a specific title or annotation to be added to the heatmap?'
+answers: '1. I do not know.
+
+  2. Yes, I would like to include color gradients to indicate different levels of
+  correlation strength.
+
+  3. Yes, the heatmap should display correlation values (numbers) within each cell.
+
+  4. I am not sure.
+
+  5. I prefer abbreviated attribute names.
+
+  6. Yes, the heatmap should include a legend explaining the color scale.
+
+  7. I do not know.
+
+  8. Yes, please cluster similar attributes together in the heatmap for better visualization.
+
+  9. I have no specific preference.
+
+  10. Yes, include grid lines or borders between the cells for better readability.
+
+  11. No, I do not have any specific attributes to highlight more prominently.
+
+  12. I do not know.'
+data_attributes:
+- age
+- sex
+- chest pain type
+- resting bp s
+- cholesterol
+- fasting blood sugar
+- resting ecg
+- max heart rate
+- exercise angina
+- oldpeak
+- ST slope
+- target

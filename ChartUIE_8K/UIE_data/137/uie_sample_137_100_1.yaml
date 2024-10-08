@@ -1,0 +1,60 @@
+initial_prompt: Create a stacked bar chart to visualize the Heart Failure Prediction
+  Dataset. The x-axis should represent the 'Age' groups, and different bar segments
+  should differentiate 'Sex' (M/F). Annotate each segment with values to highlight
+  the distribution of 'ChestPainType' within each age group. Use color highlights
+  to distinguish between 'HeartDisease' (0/1). This chart will help identify correlations
+  between age, sex, chest pain type, and heart disease prevalence. Emphasize data-driven
+  and purposeful annotations to draw attention to significant differences or patterns
+  in the data. This is for health research analysis.
+questions: '1. Do you have a preferred color scheme for the different segments based
+  on ''Sex'' and ''HeartDisease''?
+
+  2. How would you like the age groups to be segmented on the x-axis (e.g., in 5-year
+  intervals, 10-year intervals)?
+
+  3. Do you have a specific preference for the font size or style of the annotations?
+
+  4. Would you like the bars to be sorted in any particular order, such as ascending
+  or descending order of age groups?
+
+  5. Is there a specific way you would like the legend to be displayed or positioned
+  on the chart?
+
+  6. How detailed should the annotations be for each segment (e.g., only percentages,
+  raw counts, or both)?
+
+  7. Do you prefer any specific type of border or separation between the different
+  segments within the stacked bars?
+
+  8. Are there any additional statistical indicators or benchmarks you would like
+  to include on the chart (e.g., mean age, median age, etc.)?
+
+  9. Would you like gridlines to be included in the background of the chart for better
+  readability?
+
+  10. Is there any specific title or subtitle you would like to include on the chart?'
+answers: '1. I am not sure.
+
+  2. In 10-year intervals, please.
+
+  3. I do not have a specific preference.
+
+  4. No specific preference.
+
+  5. I am not sure.
+
+  6. Both percentages and raw counts, please.
+
+  7. I do not know.
+
+  8. No, no additional statistical indicators needed.
+
+  9. Yes, include gridlines for better readability.
+
+  10. Title: "Heart Failure Prediction: Age, Sex, Chest Pain Type, and Heart Disease
+  Prevalence"'
+data_attributes:
+- Age
+- Sex
+- ChestPainType
+- HeartDisease

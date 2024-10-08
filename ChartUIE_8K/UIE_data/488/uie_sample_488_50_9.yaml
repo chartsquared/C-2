@@ -1,0 +1,40 @@
+initial_prompt: 'Create a stacked bar chart showing capture amounts by species and
+  type. Categorize bars by ''Type'' (Finfish, etc.) and stack by ''Species'' (Anchovy,
+  Pollock, Tuna, etc.). x-axis: Type, y-axis: Capture.'
+questions: '1. Do you have a preferred color palette for the different species in
+  the stacked bar chart?
+
+  2. Would you like data labels to be shown on the bars themselves?
+
+  3. Should the y-axis have a specific range or allow it to auto-scale?
+
+  4. Are there specific fonts or styles that you prefer for the chart title and axis
+  labels?
+
+  5. Would you like gridlines to be shown on the chart?
+
+  6. Do you need any reference lines or markers to be added to the chart (e.g., average
+  capture)?
+
+  7. Should the chart include a legend, and if so, where would you like it positioned?
+
+  8. Do you prefer a horizontal or vertical stacked bar chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Auto-scale is fine.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, the chart should include a legend.
+
+  8. Vertical stacked bar chart.'
+data_attributes:
+- Type
+- Species
+- Capture

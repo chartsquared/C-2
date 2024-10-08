@@ -1,0 +1,41 @@
+initial_prompt: Create a bubble chart visualizing various ECG segment durations (Pseg,
+  PQseg, QRSseg, etc.) against the number of heartbeats per minute (hbpermin). Use
+  the size of the bubbles to represent the QT segment duration.
+questions: "1. Do you have any preferred color scheme for the bubbles?\n2. Do you\
+  \ want the chart to have labeled axes, and if so, what specific labels should be\
+  \ used?\n3. Would you like grid lines to be included in the chart background?\n\
+  4. Do you have a preference for the bubble sizes, such as a specific range or scale?\n\
+  5. Should the chart include a legend to explain the bubble sizes?\n6. Are there\
+  \ any specific data points or segments that you want to highlight on the chart?\
+  \ \n7. Do you have a preferred layout or ordering for the ECG segments on the x-axis?\n\
+  8. Would you like to include any reference lines (e.g., average values, thresholds)\
+  \ in the chart?\n9. Should the chart title include specific information, and if\
+  \ so, what should it be?\n10. Do you have any preferences regarding the font type\
+  \ or size for the chart labels and title?"
+answers: '1. I am not sure.
+
+  2. Yes, please label the x-axis as "ECG Segment Durations (ms)" and the y-axis as
+  "Heartbeats per Minute (hbpermin)".
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include a legend to explain the bubble sizes.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. Yes, the chart title should be "Correlation between ECG Segment Durations and
+  Heartbeats per Minute".
+
+  10. I am not sure.'
+data_attributes:
+- Pseg
+- PQseg
+- QRSseg
+- hbpermin
+- QTseg

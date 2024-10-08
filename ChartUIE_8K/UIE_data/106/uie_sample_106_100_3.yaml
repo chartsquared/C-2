@@ -1,0 +1,50 @@
+initial_prompt: 'Please create a donut chart visualizing the distribution of missing
+  values across the different columns in the dataset. This will help identify areas
+  with the most incomplete data. Use the CSV file ''../Extra_datas/data/106.csv''
+  provided, and ensure to include segments for each column: ''Product Name'', ''Price'',
+  ''Details'', and ''Rating'', with the size of each segment representing the count
+  of missing values for that column. The chart should give a clear visual summary
+  of data completeness. Thank you!'
+questions: '1. Do you have a preferred color palette for the donut chart?
+
+  2. Should the chart include labels showing the count of missing values for each
+  segment?
+
+  3. Do you want the percentages of missing values to be shown within the segments?
+
+  4. Would you like a legend to be displayed alongside the chart?
+
+  5. Is there a specific font style or size you prefer for the text in the chart?
+
+  6. Should the chart have a title? If yes, please specify the preferred title.
+
+  7. Do you prefer any specific ordering for the segments, such as descending order
+  of missing values or alphabetical order of column names?
+
+  8. Would you like the segments to be separated (i.e., with gaps) or touching each
+  other?
+
+  9. Do you require any additional annotations or highlights for certain segments?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include labels showing the count of missing values for
+  each segment.
+
+  3. I do not know.
+
+  4. Yes, I would like a legend to be displayed alongside the chart.
+
+  5. I am not sure.
+
+  6. Yes, the chart should have a title: "Distribution of Missing Values per Column".
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- Product Name
+- Price
+- Details
+- Rating

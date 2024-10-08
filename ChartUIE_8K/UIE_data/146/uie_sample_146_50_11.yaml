@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap showing the margin of victory for the leading parties
+  in each constituency from the 2024 Lok Sabha Election Results. Highlight constituencies
+  with missing trailing candidate/party data.
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. What color would you like to use to highlight constituencies with missing trailing
+  candidate/party data?
+
+  3. Should the heatmap use a sequential or diverging color scale for representing
+  the margin of victory?
+
+  4. Do you want to display the exact margin values on the heatmap cells?
+
+  5. Should the constituencies be grouped by any specific category, like region or
+  state, on the heatmap?
+
+  6. Do you prefer any specific ordering of the constituencies on the heatmap?
+
+  7. Would you like to include a legend or key explaining the colors used in the heatmap?
+
+  8. Are there any additional labels or annotations you would like on the heatmap,
+  such as leading party names?
+
+  9. Do you want to use a specific font style or size for the text in the heatmap?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. Highlight missing data with red.
+
+  3. I am not sure.
+
+  4. No, do not display exact margin values.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, include a legend or key.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- Constituency
+- Leading Party
+- Margin
+- Trailing Candidate
+- Trailing Party

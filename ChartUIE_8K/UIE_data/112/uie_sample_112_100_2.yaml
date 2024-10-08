@@ -1,0 +1,50 @@
+initial_prompt: 'Create a pie chart to visualize the types of drinks along with their
+  caffeine content. Use data-driven text annotations to highlight the drink types,
+  volumes (ml), calories, and caffeine amounts. Additionally, use highlights to emphasize
+  the drinks with the highest caffeine content. Purpose: Helping viewers quickly identify
+  caffeine-rich beverages from the dataset. Ensure the annotations and highlights
+  draw attention to key elements in the pie chart, aiding in better understanding
+  and comparison. The practical purpose is to offer a clear visual representation
+  of caffeine content across various types of drinks for informed decision-making.'
+questions: '1. Do you have a preferred color scheme for the pie chart sections?
+
+  2. Would you like a specific font style or size for the text annotations?
+
+  3. Should the text annotations be displayed inside or outside of the pie chart sections?
+
+  4. Do you wish to use specific symbols or icons to represent different types of
+  drinks in the annotations?
+
+  5. Are there any specific thresholds for highlighting beverages with high caffeine
+  content, or should we automatically highlight the top three?
+
+  6. Should the calories and volume be displayed in a specific format (e.g., "ml"
+  for volume, "kcal" for calories)?
+
+  7. Do you prefer any specific ordering for the slices in the pie chart (e.g., descending
+  order of caffeine content)?
+
+  8. Are there any specific layout preferences for how the data-driven annotations
+  and highlights should be presented?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Inside the pie chart sections would be fine.
+
+  4. I am not sure.
+
+  5. Please automatically highlight the top three beverages with the highest caffeine
+  content.
+
+  6. Yes, please display volume as "ml" and calories as "kcal".
+
+  7. Yes, I prefer descending order of caffeine content.
+
+  8. I have no specific preference.'
+data_attributes:
+- drink
+- Volume (ml)
+- Calories
+- Caffeine (mg)
+- type

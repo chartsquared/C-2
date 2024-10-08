@@ -1,0 +1,47 @@
+initial_prompt: Create a histogram visualizing the age distribution of individuals
+  in the Heart Failure Prediction Dataset. Highlight the age range where heart disease
+  is prevalent using a different color. Use text annotations to display the exact
+  count of individuals within specific age intervals, emphasizing the significance
+  of those values. Make sure to include labels for the x-axis (Age) and y-axis (Count).
+  Since the context is health-related, this chart helps in identifying the age groups
+  most at risk for heart disease, guiding preventive measures and resource allocation.
+questions: '1. Do you have a preferred color scheme for the histogram?
+
+  2. How would you like the prevalent age range for heart disease to be highlighted
+  (e.g., specific color, shading)?
+
+  3. What specific age intervals would you like for text annotations?
+
+  4. Do you prefer a certain font style or size for the text annotations?
+
+  5. Do you want to include a legend to explain the different colors used in the histogram?
+
+  6. Should the chart include gridlines for easier interpretation?
+
+  7. Are there any specific axis label formats or units you prefer?
+
+  8. Would you prefer the bar widths to be of a certain size or automatically adjusted
+  based on the data?
+
+  9. Do you want to display any additional statistical information (e.g., mean age,
+  median age) on the histogram?'
+answers: '1. I am not sure.
+
+  2. Specific color would be good.
+
+  3. I do not know, maybe standard age intervals like 10 years.
+
+  4. I do not know.
+
+  5. Yes, a legend would be helpful.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. Automatically adjusted based on the data.
+
+  9. I am not sure.'
+data_attributes:
+- Age
+- HeartDisease

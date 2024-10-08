@@ -1,0 +1,39 @@
+initial_prompt: Please create a stacked bar chart visualizing the distribution of
+  password categories against their ranks and strength. Each bar should represent
+  a password category, split into segments showing different ranks with the strength
+  indicated by color intensity. This will help us understand the strength and commonality
+  of various password categories. Use data from the file provided, and ensure the
+  chart is easy to interpret, emphasizing the various weaknesses and strengths of
+  popular passwords. Include labels and a legend to clarify the rank, strength, and
+  category distribution.
+questions: '1. Do you have a preferred color scheme for the strength intensity?
+
+  2. What specific labels would you like for the axes?
+
+  3. Would you like to display values on the stacked bar segments?
+
+  4. Do you prefer a specific font type or size for the labels and legend?
+
+  5. How would you like the legend to be positioned on the chart?
+
+  6. Are there any specific rank ranges or categories you want to highlight?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Axes labels: "Password Categories" for the x-axis, and "Frequency of Use" for
+  the y-axis.
+
+  3. Yes, please display values on the stacked bar segments.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- rank
+- category
+- strength

@@ -1,0 +1,62 @@
+initial_prompt: Create a bullet chart using the Sloan Digital Sky Survey DR14 data
+  to visualize the distribution of redshift values for different celestial objects
+  categorized as 'STAR' and 'GALAXY'. Use the 'redshift' column for the primary measure,
+  while utilizing the 'class' column for categorization. Reference the range of 'ra'
+  (right ascension) values to depict variation across different sky coordinates. This
+  chart should highlight how redshift varies for stars and galaxies and include benchmarks
+  for 'ra' values to show if there are any significant shifts correlated with specific
+  regions of sky coordinates.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  ''STAR'' and ''GALAXY'' categories?
+
+  2. What benchmark values for ''ra'' (right ascension) would you like to include
+  in the chart?
+
+  3. Do you prefer a specific layout for the bullet chart, such as horizontal or vertical?
+
+  4. Is there a particular way you would like the primary measure ''redshift'' to
+  be displayed (e.g., specific range or scaling)?
+
+  5. Should any specific labels or legends be included to aid interpretation of the
+  chart?
+
+  6. How detailed should the axis tick marks and gridlines be?
+
+  7. Is there a particular font style or size you prefer for the chart annotations
+  and labels?
+
+  8. Would you like to include error bars or any other indicators of variability for
+  the ''redshift'' values?
+
+  9. Are there any specific annotations or notes you would like to include in the
+  chart to highlight significant findings?
+
+  10. Do you have a preference for the chart''s title and subtitle format?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific color preferences.
+
+  2. I am not sure about the specific benchmark values for ''ra''.
+
+  3. I have no specific preference for the layout, either horizontal or vertical is
+  fine.
+
+  4. I am not sure about the specific range or scaling for the ''redshift'' display.
+
+  5. Yes, including labels or legends to aid interpretation would be helpful.
+
+  6. I do not know how detailed the axis tick marks and gridlines should be.
+
+  7. I have no specific preference for font style or size.
+
+  8. I am not sure about including error bars or other indicators of variability.
+
+  9. I do not have any specific annotations or notes to include.
+
+  10. I have no preference for the chart''s title and subtitle format.
+
+  <end of user emulated response>'
+data_attributes:
+- class
+- redshift
+- ra

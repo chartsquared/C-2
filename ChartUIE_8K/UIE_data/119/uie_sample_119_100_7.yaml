@@ -1,0 +1,48 @@
+initial_prompt: '<start of user instruction>
+
+  I want to visualize the monthly trends in Weekly Sales from the Walmart Sales data.
+  Can you create a bar chart that shows the total Weekly Sales for each month? I''d
+  like to see the months on the x-axis and the total Weekly Sales on the y-axis. Maybe
+  use different colors or patterns for bars representing holiday weeks. Thanks!
+
+  <end of user instruction>'
+questions: '1. Do you have a specific color scheme in mind for the bars representing
+  holiday and non-holiday weeks?
+
+  2. Would you prefer any specific patterns or textures for the bars representing
+  holiday weeks?
+
+  3. Should the chart include labels for each bar showing the total Weekly Sales values?
+
+  4. Do you have a preference for the typeface and size of the labels and axis titles?
+
+  5. Would you like to include a legend to distinguish holiday weeks from non-holiday
+  weeks?
+
+  6. Is there a specific way you would like the months to be displayed on the x-axis
+  (e.g., full month names or abbreviations)?
+
+  7. Should the y-axis display units in a particular format (e.g., in thousands, millions,
+  with currency symbols)?
+
+  8. Are there any additional annotations or markers you would like to include in
+  the chart (e.g., specific high-sales periods, notable events)?'
+answers: '1. I do not know, I am not sure.
+
+  2. I do not know, I am not sure.
+
+  3. Yes, please include labels for each bar showing the total Weekly Sales values.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend to distinguish holiday weeks from non-holiday weeks.
+
+  6. Abbreviations for the months would be fine.
+
+  7. I am not sure.
+
+  8. I do not know, I am not sure.'
+data_attributes:
+- Date
+- Weekly_Sales
+- Holiday_Flag

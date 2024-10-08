@@ -1,0 +1,46 @@
+initial_prompt: Please create a stacked bar chart visualizing the performance of students
+  in exams. Use the 'gender' category to stack the bars, and plot 'math score', 'reading
+  score', and 'writing score' on the x-axis, showing the 'parental level of education'
+  on the y-axis. Ensure each section of the bar is color-coded according to 'gender'.
+  This will help to understand the performance distributions across different educational
+  backgrounds based on gender. Data is from the "Students Performance in Exams" dataset,
+  focusing on education-related analysis.
+questions: "1. Do you have any specific color preferences for the genders in the stacked\
+  \ bar chart?\n2. Would you like to add labels or annotations to each section of\
+  \ the bar for better clarity?\n3. Do you prefer to display the actual score values\
+  \ on the bars, or just the graphical representation?\n4. How would you like the\
+  \ axes to be labeled? Do you have any specific preferences for their titles or font\
+  \ sizes?\n5. Do you have a preferred order for the categories under 'parental level\
+  \ of education' on the y-axis?\n6. Would you like to include any legends or keys\
+  \ for clarity, and if so, where should they be positioned?\n7. Are there any specific\
+  \ formatting preferences for the grid lines or background of the chart? \n8. Would\
+  \ you like to include a title for the chart? If yes, please provide the text for\
+  \ the title."
+answers: '<start of user response>
+
+  1. I do not have a specific color preference.
+
+  2. Yes, I would like to add labels or annotations to each section of the bar.
+
+  3. I prefer to display the actual score values on the bars.
+
+  4. I am not sure about specific preferences for the axes labels'' titles or font
+  sizes.
+
+  5. I have no specific preference for the order of categories under ''parental level
+  of education''.
+
+  6. Yes, please include legends. Position them wherever they best fit for clarity.
+
+  7. I am not sure about the formatting preferences for the grid lines or background.
+
+  8. Yes, please include a title: "Student Performance Across Different Parental Education
+  Levels by Gender".
+
+  <end of user response>'
+data_attributes:
+- gender
+- math score
+- reading score
+- writing score
+- parental level of education

@@ -1,0 +1,75 @@
+initial_prompt: Create a heatmap to visualize the weaknesses against various types
+  for different Pokemon. Highlight sections where the Pokemon has increased or decreased
+  resistance (values above 1 or below 0.5). Add text annotations to emphasize notable
+  resistances or vulnerabilities for specific types like "against_dragon" or "against_fairy."
+  Ensure the heatmap clearly differentiates the "Seed Pokémon" by its name (Bulbasaur,
+  Ivysaur, Venusaur) and uses color contrasts to emphasize weaknesses. Include Japanese
+  names for context. This should help in identifying patterns in type weaknesses and
+  assist in strategic gameplay planning.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should there be a specific color used to highlight increased resistance and another
+  for decreased resistance?
+
+  3. How would you like the seed Pokémon (Bulbasaur, Ivysaur, Venusaur) to be differentiated
+  in the heatmap—by color, border, or any other means?
+
+  4. Do you have a preferred font style or size for text annotations?
+
+  5. Should the text annotations for notable resistances or vulnerabilities be placed
+  inside the cells, or would you prefer them outside with arrows pointing to the cells?
+
+  6. Would you like to include a legend explaining the resistance values and corresponding
+  colors?
+
+  7. Do you have any preference for the layout of the heatmap (e.g., vertical orientation
+  of Pokémon names vs. horizontal orientation of types)?
+
+  8. Should the heatmap include grid lines to clearly separate each cell?
+
+  9. Are there any specific Pokémon or types (other than "against_dragon" and "against_fairy")
+  that you would like to emphasize in the heatmap?
+
+  10. Would you like to add any additional visual elements, such as tooltips on hover
+  to show exact resistance values?'
+answers: '1. I am not sure.
+
+  2. Yes, please use specific colors for increased resistance and decreased resistance.
+
+  3. By color.
+
+  4. I do not know.
+
+  5. Inside the cells would be fine.
+
+  6. Yes, include a legend.
+
+  7. I am not sure.
+
+  8. Yes, include grid lines.
+
+  9. I am not sure.
+
+  10. No, I am looking for an image, not interactive elements.'
+data_attributes:
+- name
+- japanese_name
+- classfication
+- against_bug
+- against_dark
+- against_dragon
+- against_electric
+- against_fairy
+- against_fight
+- against_fire
+- against_flying
+- against_ghost
+- against_grass
+- against_ground
+- against_ice
+- against_normal
+- against_poison
+- against_psychic
+- against_rock
+- against_steel
+- against_water

@@ -1,0 +1,50 @@
+initial_prompt: Create a geographic heatmap based on the data provided. Use the 'summary'
+  and 'sample_data' columns to visualize the distribution and intensity of values
+  at various locations, corresponding to each data point in the dataset. The heatmap
+  should help identify hotspots and patterns effectively. Utilize text annotations
+  for key data points to draw attention to significant values, while highlighting
+  specific areas with distinctive colors to emphasize their importance. This visualization
+  will aid in understanding the geographical spread and intensity of the data for
+  insightful analysis and decision-making.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Are there specific geographical regions you want to focus on or emphasize?
+
+  3. How would you like the intensity of the values to be represented (e.g., gradient,
+  specific color ranges)?
+
+  4. What level of granularity do you prefer for the text annotations (e.g., city
+  level, state level)?
+
+  5. Are there any particular data points or regions you want highlighted with distinctive
+  colors?
+
+  6. Do you have preferences for the style and size of the text annotations?
+
+  7. Should the heatmap include any additional features like a legend or a title?
+
+  8. Are there any specific hotspots or patterns you anticipate and want to ensure
+  are visible?
+
+  9. Would you like to include any additional geographic layers (e.g., political boundaries,
+  main roads)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Gradient.
+
+  4. City level.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, a legend and a title would be helpful.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- summary
+- sample_data

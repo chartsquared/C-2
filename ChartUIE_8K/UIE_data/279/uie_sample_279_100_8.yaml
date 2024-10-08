@@ -1,0 +1,52 @@
+initial_prompt: I have data on primate milk composition and brain size measurements
+  from different species. Could you please create a line chart for me that shows the
+  relationship between the percentage of neocortex and various milk composition parameters
+  such as kcal per gram, percentage of fat, protein, and lactose? Make sure to plot
+  each milk composition parameter on a separate line on the same graph to observe
+  any trends or correlations over different species. Use the clade information to
+  differentiate between species groups. Thank you!
+questions: '1. Do you have a specific color palette preference for differentiating
+  the clades?
+
+  2. What line styles would you prefer for each milk composition parameter (e.g.,
+  solid, dashed, dotted)?
+
+  3. Do you have a preferred style for the chart background (e.g., grid lines, plain)?
+
+  4. Should the chart include data labels for each data point or just for specific
+  points?
+
+  5. Are there any specific axis titles or labels you would like to use, or should
+  default titles be applied?
+
+  6. Do you want to include any annotations or reference lines for specific data points
+  or thresholds?
+
+  7. What level of detail do you prefer for the legend (e.g., simple vs. detailed)?
+
+  8. Is there a specific font style or size you would like for the chart labels and
+  titles?'
+answers: '1. I do not have a specific color palette preference for differentiating
+  the clades.
+
+  2. I am not sure.
+
+  3. I prefer grid lines for the chart background.
+
+  4. Data labels for specific points would be fine.
+
+  5. Default titles can be applied.
+
+  6. I am not sure.
+
+  7. A simple legend would be sufficient.
+
+  8. I do not have a specific preference for font style or size.'
+data_attributes:
+- clade
+- species
+- kcal.per.g
+- perc.fat
+- perc.protein
+- perc.lactose
+- neocortex.perc

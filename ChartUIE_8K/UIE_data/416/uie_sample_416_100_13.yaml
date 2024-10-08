@@ -1,0 +1,48 @@
+initial_prompt: Create a Dumbbell chart to visualize Bundesliga teams' performance
+  based on their betting odds and match outcomes. Use 'HomeTeam', 'AwayTeam', 'FTHG',
+  'FTAG', 'B365H', 'B365A', 'MaxH', 'MaxA', 'AvgH', 'AvgA' for plotting. The chart
+  should show Home and Away teams along the y-axis and goals scored (Home vs Away)
+  on the x-axis. Use separate markers for bet odds and match results, connecting lines
+  between home and away data points to see discrepancies between expected and actual
+  performance. Highlight data points with different colors for home and away teams
+  for clarity.
+questions: "1. What color scheme would you prefer for home and away teams to ensure\
+  \ clarity in the chart?\n2. Do you have any specific preferences for marker shapes\
+  \ or sizes for representing betting odds and match results?\n3. Would you like to\
+  \ include any specific annotations or labels on the chart to highlight key points?\n\
+  4. Are there any specific teams or matches you would like to highlight or focus\
+  \ on?\n5. Do you have a preference for the scale type of the x-axis (linear, logarithmic,\
+  \ etc.)?\n6. Would you like to add a legend to differentiate between home and away\
+  \ markers and lines for betting odds and match outcomes?\n7. How would you prefer\
+  \ the discrepancies between expected and actual performances to be displayed? \n\
+  8. Do you want to display the exact values of goals scored and betting odds on the\
+  \ chart?\n9. Are there any other specific visual elements or features you want to\
+  \ include in the chart?"
+answers: '1. I prefer blue for home teams and red for away teams.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I think a linear scale would be fine.
+
+  6. Yes, please include a legend.
+
+  7. I am not sure.
+
+  8. Yes, displaying exact values would be helpful.
+
+  9. I have no other specific preferences.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTAG
+- B365H
+- B365A
+- MaxH
+- MaxA
+- AvgH
+- AvgA

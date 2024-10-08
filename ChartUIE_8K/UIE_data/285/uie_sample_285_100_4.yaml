@@ -1,0 +1,56 @@
+initial_prompt: 'Please create a radar chart to visualize key attributes of Parkinson''s
+  disease. Use the data from `285.csv`. Plot these variables: `MDVP:Fo(Hz)`, `MDVP:Fhi(Hz)`,
+  `MDVP:Jitter(%)`, `MDVP:Shimmer`, `NHR`, and `HNR`. The chart should compare three
+  sample records: `phon_R01_S01_1`, `phon_R01_S01_2`, and `phon_R01_S01_3`. Each sample
+  should be represented as a separate line in the radar chart to highlight differences.
+  This is for a health project on Parkinson''s disease detection.'
+questions: '1. Do you have any specific preferences for the color scheme for the chart
+  lines?
+
+  2. Would you like the radar chart to include markers at each data point for better
+  visibility?
+
+  3. Do you prefer any specific line styles (e.g., solid, dashed) for the chart lines?
+
+  4. Should the radar chart include a legend to identify the three sample records?
+
+  5. Would you like the chart to have axis labels for each of the variables?
+
+  6. Should there be a title for the radar chart? If yes, what title would you prefer?
+
+  7. Do you want grid lines to be displayed for better readability of the chart?
+
+  8. Do you have any preference for the font style and size for labels and legend
+  text?
+
+  9. Should the chart include tooltips or labels displaying the exact values at each
+  data point?
+
+  10. Are there any specific aspects of the chart you would like to emphasize or highlight?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Yes, including markers at each data point would be helpful.
+
+  3. I am not sure about the line styles.
+
+  4. Yes, a legend to identify the three sample records would be useful.
+
+  5. Yes, including axis labels for each of the variables would be great.
+
+  6. A title would be nice. How about "Comparison of Key Attributes in Parkinson''s
+  Disease Samples"?
+
+  7. Yes, grid lines would help with readability.
+
+  8. I do not have a specific preference for font style and size.
+
+  9. I do not know if tooltips or labels are needed.
+
+  10. I am not sure what specific aspects to emphasize.'
+data_attributes:
+- MDVP:Fo(Hz)
+- MDVP:Fhi(Hz)
+- MDVP:Jitter(%)
+- MDVP:Shimmer
+- NHR
+- HNR

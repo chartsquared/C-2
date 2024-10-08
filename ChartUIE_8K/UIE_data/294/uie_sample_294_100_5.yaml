@@ -1,0 +1,65 @@
+initial_prompt: I need a Sunburst chart for Ronaldo's tweet data. The chart should
+  visualize engagement metrics (retweets, replies, likes, quotes, bookmarks) by tweet.
+  Use 'createdAt' as the outer ring, splitting by months and weeks. Inside, categorize
+  by 'text' and then show each engagement type as inner rings. This will help to easily
+  identify the engagement trends and compare different tweets' popularity and interaction
+  levels over time. Please use color coding for different engagement metrics for better
+  visualization and clarity. The summary and sample data provided should guide the
+  chart structure.
+questions: '1. Do you have a specific color palette in mind for the different engagement
+  metrics?
+
+  2. Are there any specific fonts you prefer for the labels and text on the chart?
+
+  3. Would you like to display the exact engagement numbers or percentages in the
+  chart?
+
+  4. Is there a particular ordering you would like for the engagement metrics in the
+  inner rings?
+
+  5. Do you want to include any annotations or notes on the chart for specific tweets
+  or time periods?
+
+  6. Are there any specific size constraints for the chart?
+
+  7. Should the chart include a legend explaining the color codes and engagement metrics?
+
+  8. Do you want the chart to include tooltips that provide additional details when
+  hovering over specific sections?
+
+  9. Is there a preferred date format for the ''createdAt'' labels on the chart?
+
+  10. Do you have any preference for the thickness of the rings in the sunburst chart?
+
+  11. Would you like to highlight any specific tweets or time periods in the chart
+  for emphasis?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would like to display the exact engagement numbers.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, the chart should include a legend explaining the color codes and engagement
+  metrics.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.
+
+  11. I have no specific preference.'
+data_attributes:
+- createdAt
+- text
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

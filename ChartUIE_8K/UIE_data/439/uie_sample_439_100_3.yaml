@@ -1,0 +1,52 @@
+initial_prompt: I need a dot plot visualizing the "Plants in danger" data. Plot the
+  x-axis as "year_last_seen" (grouped like '2000-2020', '1980-1999', etc.) and the
+  y-axis as the number of plant species. Differentiate the dots by "continent" and
+  color-code them accordingly. Also, indicate the "red_list_category" by using different
+  shapes for the dots (e.g., circle for 'Extinct' and square for 'Extinct in the Wild').
+  This way, we can quickly identify which continents have the most extinct plants
+  and in what years. Make sure everything is clear and well-labeled.
+questions: '1. Do you have a preferred color scheme for differentiating continents?
+
+  2. Are there specific shapes you would like for different ''red_list_category''
+  values aside from circles and squares?
+
+  3. How would you like the labels for the axes to be formatted?
+
+  4. Do you have any preferences for the title of the chart?
+
+  5. Should the legend be positioned in a specific location on the chart?
+
+  6. Are there specific font styles or sizes you prefer for the labels and titles?
+
+  7. Would you prefer gridlines on the chart for easier readability?
+
+  8. Do you want any specific annotations or highlights on the chart for certain data
+  points or ranges?
+
+  9. How detailed would you like the axis ticks and grid intervals to be?
+
+  10. Would you like a specific background color for the chart to enhance readability?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. Yes, I would prefer gridlines for easier readability.
+
+  8. I do not know.
+
+  9. I do not have a specific preference.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- year_last_seen
+- continent
+- red_list_category
+- binomial_name

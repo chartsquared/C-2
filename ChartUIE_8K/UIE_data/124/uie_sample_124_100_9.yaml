@@ -1,0 +1,52 @@
+initial_prompt: I'd like to create a scatter plot for NBA players' data. On the x-axis,
+  plot the 'age' of the players, and on the y-axis, plot 'pts' (points). Each point
+  on the scatter plot should represent a player. Differentiate the points by 'team_abbreviation'
+  using different colors or symbols. Ensure the plot is easy to understand and includes
+  a legend to indicate each team. Show trends or clusters in the data based on age
+  and points scored to analyze player performance across different ages and teams.
+questions: '1. Do you have a preference for a specific color palette or color scheme
+  to differentiate teams?
+
+  2. Would you like the points to be represented by different symbols for each team,
+  or is using different colors sufficient?
+
+  3. Do you have a specific size preference for the points in the scatter plot?
+
+  4. How would you prefer the trend lines to be displayed, if any (e.g., linear, polynomial)?
+
+  5. Should the plot include any specific annotations or labels beyond the team abbreviations?
+
+  6. Would you like gridlines to be included in the plot for better readability?
+
+  7. Do you prefer the axis labels and title to be in a specific font style or size?
+
+  8. Would you like any specific markers or highlights for outliers or important data
+  points?
+
+  9. Is there any specific formatting you prefer for the legend (e.g., position, font
+  size)?
+
+  10. Should the axes have specific limits or scales (e.g., logarithmic scale)?'
+answers: '1. I do not know.
+
+  2. Using different colors is sufficient.
+
+  3. I am not sure.
+
+  4. Linear trend lines would be preferred.
+
+  5. I do not know.
+
+  6. Yes, please include gridlines for better readability.
+
+  7. I do not have a specific preference.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- age
+- pts
+- team_abbreviation

@@ -1,0 +1,48 @@
+initial_prompt: Please create a line chart showing the average scores of different
+  teams over the years from the wwc_outcomes dataset. Use separate lines for each
+  team and differentiate them by color. Make sure to include labels for the years
+  and scores to clearly indicate the trends over time.
+questions: '1. Do you have a preferred color palette or specific colors for the teams?
+
+  2. Do you want data points marked on the lines, for example, with markers or dots?
+
+  3. Do you need gridlines on the chart for better readability?
+
+  4. Is there a specific format for the labels of years and scores you prefer?
+
+  5. Would you like to include a legend to identify each team''s line?
+
+  6. Is there a particular font style or size you prefer for titles and labels?
+
+  7. Should the X-axis start at a specific year or be scaled in a particular way?
+
+  8. Do you prefer any specific line style, such as solid, dashed, or dotted lines?
+
+  9. Do you have any specific requirements for the chart title and axis titles?
+
+  10. Should the chart include annotations or highlights for any particular years
+  or scores?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like gridlines for better readability.
+
+  4. I do not know.
+
+  5. Yes, please include a legend to identify each team''s line.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I would like the chart title to be "Average Team Scores Over Time" and the axis
+  titles to be "Years" for the X-axis and "Scores" for the Y-axis.
+
+  10. I am not sure.'
+data_attributes:
+- year
+- team
+- score

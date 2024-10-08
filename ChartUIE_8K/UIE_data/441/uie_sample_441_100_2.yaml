@@ -1,0 +1,51 @@
+initial_prompt: Please create a circular treemap that visualizes the performance of
+  women's college basketball teams over various years. The treemap should utilize
+  data such as 'year', 'school', 'seed', 'conference', and performance metrics like
+  'reg_w', 'reg_l', 'tourney_w', 'tourney_l', and 'full_percent'. Highlight the top-performing
+  schools and important metrics to draw attention. Include annotations to showcase
+  standout teams or particular achievements. This visualization will help understand
+  the performance trends and key players in women's college basketball.
+questions: '1. Do you have a preferred color scheme for highlighting top-performing
+  schools and important metrics?
+
+  2. Are there specific years or ranges of years you would like to prioritize in the
+  visualization?
+
+  3. Should any particular performance metrics (e.g., ''reg_w'', ''tourney_w'', ''full_percent'')
+  be emphasized more than others?
+
+  4. What kind of annotations would you like to see for standout teams or achievements
+  (e.g., labels, callouts)?
+
+  5. Do you have a preference for how schools from different conferences should be
+  distinguished (e.g., different shapes, colors, or sections)?
+
+  6. How detailed should the hierarchical structure be in the circular treemap (e.g.,
+  should we group by conference first, then by school)?
+
+  7. Would you like to include any additional background information or context in
+  the visualization (e.g., historical performance data)?'
+answers: '1. I am not sure.
+
+  2. I''m not sure about specific years, but it might be good to cover the last decade
+  or two.
+
+  3. Emphasize ''full_percent'' and ''tourney_w'' more than others.
+
+  4. Labels and callouts for standout teams and achievements would be great.
+
+  5. I do not know.
+
+  6. Group by conference first, then by school.
+
+  7. I do not have a specific preference for additional background information.'
+data_attributes:
+- year
+- school
+- seed
+- conference
+- reg_w
+- reg_l
+- tourney_w
+- tourney_l
+- full_percent

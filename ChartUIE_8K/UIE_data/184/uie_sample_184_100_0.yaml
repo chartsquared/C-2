@@ -1,0 +1,57 @@
+initial_prompt: 'Create a column chart using the provided movie data. Highlight and
+  annotate the titles, critic scores, and people scores to focus on top-rated films.
+  Emphasize movies like "Black Panther," "Avengers: Endgame," and "Mission: Impossible
+  -- Fallout." This will help showcase how critic and audience ratings correlate.
+  Use text annotations to display values for critic and people scores on each bar.
+  Ensure the genres and release years are also visible for context. The chart should
+  make it easy to compare and understand the popularity and reception of movies across
+  different categories.'
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like the bars to be sorted by critic scores or people scores?
+
+  3. How would you like the genres to be displayed for each movie? As a legend or
+  as text annotations on the chart?
+
+  4. Do you prefer annotations to be placed inside or outside the bars?
+
+  5. Is there a specific font style or size you would like for the text annotations
+  and labels?
+
+  6. Would you like to include any trend lines or reference lines to highlight correlations?
+
+  7. Should the release years be displayed as part of the x-axis labels or as separate
+  annotations?
+
+  8. Do you have preference for the chart background color?
+
+  9. Would you like to include a title and subtitle for the chart? If so, what should
+  they be?
+
+  10. Is there a need for any additional context or footnotes within the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. As text annotations on the chart.
+
+  4. Inside the bars.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. As separate annotations.
+
+  8. I do not know.
+
+  9. Yes, title: "Critic vs. Audience Scores for Top-Rated Films" Subtitle: "Comparison
+  of Ratings for Popular Movies"
+
+  10. I do not know.'
+data_attributes:
+- title
+- critic_score
+- people_score
+- genre
+- year

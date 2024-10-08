@@ -1,0 +1,44 @@
+initial_prompt: 'I need a column chart to visualize the Superstore sales data. The
+  x-axis should represent the different regions: South, West, East, and Central. The
+  y-axis should show the total sales figures for each region. Color-code the bars
+  according to the various categories: Furniture, Office Supplies, and Technology.
+  This will help in understanding the distribution of sales across regions and categories.
+  Please ensure the chart is clearly labeled and easy to interpret with a legend distinguishing
+  the categories. I want to analyze the performance of each product category in the
+  different regions.'
+questions: "1. Do you have a preferred color scheme for the categories?\n2. What font\
+  \ style and size would you like for the labels?\n3. Should the y-axis values be\
+  \ displayed in regular notation or a specific format (e.g., in thousands or millions)?\n\
+  4. Would you like gridlines to be included in the chart? If yes, what style of gridlines\
+  \ do you prefer?\n5. Do you want any specific sorting order for the regions on the\
+  \ x-axis?\n6. Are there any additional data labels you would like to display on\
+  \ the chart (e.g., percentages, sales figures on bars)?\n7. How should the legend\
+  \ be positioned (e.g., top, bottom, left, right) on the chart? \n8. Would you prefer\
+  \ if the chart includes any specific title or subtitle? If yes, what should it be?\n\
+  9. Should the bars be displayed with any special effects such as gradients or borders?\n\
+  10. Do you have any specific preferences for the bar width or spacing between bars?"
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Regular notation is fine.
+
+  4. Yes, I would like gridlines, but I do not have a specific preference for the
+  style.
+
+  5. I do not know.
+
+  6. Yes, please include the sales figures on the bars.
+
+  7. The legend should be positioned at the bottom.
+
+  8. Yes, the title should be "Superstore Sales by Region and Category" but I am not
+  sure about the subtitle.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Region
+- Sales
+- Category

@@ -1,0 +1,54 @@
+initial_prompt: Create a treemap visualization for the "Video Game Sales Dataset Updated
+  - Extra Feat." The treemap should illustrate the distribution of global sales across
+  different genres. Each genre should be divided into subcategories representing different
+  publishers, and the size of each block should correspond to the global sales figures.
+  Additionally, color-code the blocks based on the platform. Make sure to include
+  tooltips that display the game name, year of release, and sales data for each segment
+  when hovered over, for more detailed insights.
+questions: '1. Do you have any preference for the color scheme to represent different
+  platforms?
+
+  2. What is your preferred order of genres and publishers within the treemap?
+
+  3. Would you like labels to be displayed within each block, and if so, what information
+  should they include?
+
+  4. Do you prefer any specific font style or size for the labels?
+
+  5. Should any particular genre or publisher be highlighted more prominently?
+
+  6. Are there any specific size constraints or aspect ratios for the treemap?
+
+  7. Would you prefer a particular hierarchy starting point (genre or platform)?
+
+  8. Is there a preference for the tooltip format and styling?
+
+  9. Should games be grouped or separated by specific criteria within each publisher
+  block?'
+answers: '1. I am not sure about the color scheme for different platforms.
+
+  2. I do not know the preferred order of genres and publishers.
+
+  3. Yes, labels should be displayed within each block, but I am not sure what information
+  they should include.
+
+  4. I have no specific preference for the font style or size for the labels.
+
+  5. I do not know if any particular genre or publisher should be highlighted more
+  prominently.
+
+  6. I am not sure about specific size constraints or aspect ratios for the treemap.
+
+  7. I have no specific preference for a particular hierarchy starting point.
+
+  8. I do not have a preference for the tooltip format and styling.
+
+  9. I have no specific criteria for grouping or separating games within each publisher
+  block.'
+data_attributes:
+- Genre
+- Publisher
+- Global_Sales
+- Platform
+- Name
+- Year_of_Release

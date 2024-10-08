@@ -1,0 +1,55 @@
+initial_prompt: Create a network diagram to visualize business relationships within
+  the company. Use nodes to represent individuals (e.g., company.CEO.JohnSmith) and
+  connections to show their imports (e.g., company.CFO.SarahJohnson). Add data-driven
+  text annotations to highlight key relationships, such as the CEO’s direct imports.
+  Use highlights to emphasize higher-level roles, making them more visually distinct.
+  This will help focus on key personnel and their influence within the network. The
+  purpose is to easily identify communication patterns and hierarchical structures
+  within the company. Ensure all annotations and highlights serve to clarify these
+  relationships.
+questions: '1. Do you have any specific color preferences for highlighting higher-level
+  roles?
+
+  2. Are there specific shapes or sizes you''d prefer for the nodes representing different
+  roles?
+
+  3. Do you prefer any particular layout style for the network diagram (e.g., circle
+  layout, hierarchical layout, force-directed layout)?
+
+  4. Should the text annotations for key relationships be in a specific font style
+  or size?
+
+  5. Do you have any preferences for the thickness or style of the connections between
+  nodes to represent different types of relationships?
+
+  6. Would you like to include any legends or keys to explain the highlights and annotations
+  used in the diagram?
+
+  7. Are there any specific labels or titles you want to include in the chart to provide
+  additional context?
+
+  8. Is there a preferred background color or style for the network diagram?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. The nodes for higher-level roles can be larger and stand out more, while other
+  roles can be smaller.
+
+  3. I don''t know.
+
+  4. I have no specific preference.
+
+  5. The connections showing direct reports should be thicker to emphasize those relationships.
+
+  6. Yes, please include legends or keys to explain the highlights and annotations.
+
+  7. Include the title "Company Hierarchical Structure and Communication Patterns."
+
+  8. I don’t know.
+
+  <end of user emulated response>'
+data_attributes:
+- name
+- imports
+- size

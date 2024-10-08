@@ -1,0 +1,69 @@
+initial_prompt: I have a dataset related to champions in a game, including columns
+  like Games, Win, Loss, Winrate, Bans, and Picks and Bans. I need a comprehensive
+  table chart that displays the performance metrics of each champion. It should highlight
+  the number of games played, wins, losses, win rate, games on the blue side, games
+  on the red side, and the percentage of bans and picks. Please ensure each column
+  of data is clearly labeled and include the percentage values where applicable to
+  give a better understanding of each champion's performance.
+questions: '1. Do you have a preferred order for the columns in the table?
+
+  2. Should the Winrate, Winrate(B), and Winrate(R) percentages be visually highlighted
+  or formatted in a specific way (e.g., colored text, bold)?
+
+  3. Would you like to include any additional columns or metrics besides those mentioned?
+
+  4. Is there a preferred alignment for the data within the table (left, center, right)?
+
+  5. Should the table include any special formatting for easier readability, such
+  as alternating row colors or borders?
+
+  6. Do you prefer any specific font style or size for the table text?
+
+  7. Is there a need for sorting functionality in the table, for example, sorting
+  by Winrate or Bans(%)?
+
+  8. Do you want to include any summary statistics or footnotes at the bottom of the
+  table?
+
+  9. Should the table be displayed in landscape or portrait orientation?
+
+  10. Would you like to include any additional context or annotations to explain certain
+  columns or figures in the table?'
+answers: '1. I don''t have a specific preference for the order of the columns.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. The alignment of data in the table doesn''t matter to me.
+
+  5. Yes, I would like special formatting such as alternating row colors for easier
+  readability.
+
+  6. I don''t have a specific preference for the font style or size.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Landscape orientation would be preferred.
+
+  10. I have no specific preference.'
+data_attributes:
+- Champion
+- Games
+- Win
+- Loss
+- Winrate
+- Games(B)
+- Win(B)
+- Loss(B)
+- Winrate(B)
+- Games(R)
+- Win(R)
+- Loss(R)
+- Winrate(R)
+- Bans
+- Bans(%)
+- Picks and Bans
+- Picks and Bans(%)

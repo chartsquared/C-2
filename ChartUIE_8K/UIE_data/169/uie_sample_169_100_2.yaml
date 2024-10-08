@@ -1,0 +1,47 @@
+initial_prompt: Create a stacked bar chart to categorize the patients by 'Site of
+  primary STS' and show the distribution of 'Status (NED, AWD, D)'. Each bar should
+  represent a different site, with segments for each status. Use text annotations
+  to highlight key segments, particularly cases with 'D' status. Apply color highlights
+  to distinguish between 'NED', 'AWD', and 'D'. This will help visualize the status
+  and outcomes of patients with Soft Tissue Sarcomas. Add context annotations about
+  treatment types, focusing on those receiving 'Radiotherapy + Surgery'. Ensure the
+  chart is clear and informative for health data analysis.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  ''NED'', ''AWD'', and ''D'' statuses?
+
+  2. Is there a preferred orientation for the text annotations (e.g., horizontal,
+  vertical, or angled)?
+
+  3. Do you have a preference for the font style and size of the text annotations?
+
+  4. Should the annotations for treatment types be placed within the bars or outside?
+
+  5. Are there any specific details or footnotes you would like to be included with
+  the contextual annotations?
+
+  6. Would you like to use any specific margin or padding around the chart for better
+  readability?
+
+  7. Would you prefer the bars to have spacing between them, or should they be completely
+  adjacent?
+
+  8. Do you have any preference for the overall color scheme or theme of the chart?'
+answers: '1. I am not sure.
+
+  2. Horizontal would be good.
+
+  3. I am not sure.
+
+  4. Outside the bars, please.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Completely adjacent bars.
+
+  8. I have no specific preference.'
+data_attributes:
+- Site of primary STS
+- Status (NED, AWD, D)
+- Treatment

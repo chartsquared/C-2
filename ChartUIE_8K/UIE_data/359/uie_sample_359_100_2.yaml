@@ -1,0 +1,50 @@
+initial_prompt: Please create a scatter plot visualizing the participants who accessed
+  course content against those who audited more than 50% of the content. Highlight
+  courses with a certification rate above 10% using a different color. Include text
+  annotations for the courses "Circuits and Electronics," "Introduction to Computer
+  Science and Programming," and "Introduction to Solid State Chemistry" showing the
+  exact number of participants and the percentage certified. This visualization should
+  help analyze participation and certification patterns in online courses offered
+  by Harvard and MIT.
+questions: '1. Do you have a preferred color scheme or specific colors you would like
+  to use for highlighting courses with a certification rate above 10%?
+
+  2. Would you prefer a specific shape for the scatter plot markers?
+
+  3. How would you like the axes to be labeled?
+
+  4. Do you want gridlines in the scatter plot? If yes, in which style (e.g., dashed,
+  solid)?
+
+  5. Should the chart include a legend? If yes, how would you prefer it to be positioned?
+
+  6. What font style and size would you prefer for the text annotations?
+
+  7. Do you have any specific preferences for the chart title and subtitle? If yes,
+  please specify.
+
+  8. Are there any particular dimensions or aspect ratios you would like the chart
+  to follow?'
+answers: '1. I do not have a specific preference for colors.
+
+  2. I am not sure.
+
+  3. I would like the axes labeled as "Participants Accessed" and "Participants Audited
+  >50%."
+
+  4. I am not sure.
+
+  5. Yes, please include a legend. I have no specific preference for its position.
+
+  6. I do not know.
+
+  7. I do not have any specific preferences for the chart title and subtitle.
+
+  8. I am not sure.'
+data_attributes:
+- Institution
+- Course Title
+- Participants (Course Content Accessed)
+- Audited (> 50% Course Content Accessed)
+- Certified
+- '% Certified'

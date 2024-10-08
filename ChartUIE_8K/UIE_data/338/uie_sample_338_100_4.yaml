@@ -1,0 +1,54 @@
+initial_prompt: I'd like a stacked bar chart visualization of the "Predicting Manufacturing
+  Defects" dataset, specifically focusing on comparing the "DefectRate" across different
+  "ProductionVolume" categories. Could you stack the bar chart by "SupplierQuality"
+  and "DeliveryDelay" so I can easily see how these factors contribute to defect rates?
+  Make sure the chart has labels and a legend to differentiate the supplier quality
+  and delivery delay contributions. This will help us understand the relationship
+  between production volume and defect rates better, considering supplier quality
+  and delivery delays. Thank you!
+questions: '1. Do you have specific colors that you prefer for the different categories
+  in the stacked bar chart?
+
+  2. Would you like the x-axis to represent specific intervals of production volume,
+  such as ranges or individual values?
+
+  3. How would you like the y-axis to be scaled? Should it be a percentage or an absolute
+  value?
+
+  4. Do you have a preference for the order in which the "SupplierQuality" and "DeliveryDelay"
+  are stacked within each bar?
+
+  5. Are there any specific labels or descriptions you want to include alongside the
+  axes, or are default labels sufficient?
+
+  6. Would you prefer grid lines to be included in the chart for better readability?
+
+  7. Is there a specific font style or size you would like for the labels and legend?
+
+  8. Do you need any data points or values to be highlighted or emphasized in the
+  chart?
+
+  9. Would you like to include any annotations or notes on the chart for additional
+  context?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Default order is fine.
+
+  5. Default labels are sufficient.
+
+  6. Yes, please include grid lines for better readability.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. I have no specific preference.'
+data_attributes:
+- ProductionVolume
+- DefectRate
+- SupplierQuality
+- DeliveryDelay

@@ -1,0 +1,39 @@
+initial_prompt: Create a scatter plot to visualize the TED Talks data. For the x-axis,
+  use the "views" column, and for the y-axis, use the "likes" column. Each point on
+  the scatter plot should represent a TED Talk. Use different colors or markers to
+  distinguish between different authors. Please ensure that the axes are labeled properly
+  to reflect the context of the data, with titles "Number of Views" and "Number of
+  Likes". Additionally, include a legend that details which color or marker corresponds
+  to which author. Include a link back to the relevant talk in the tooltip or data
+  point.
+questions: "1. Do you have a preferred color palette or specific colors for distinguishing\
+  \ between different authors?\n2. Is there a particular style or design you prefer\
+  \ for the markers representing data points?\n3. Would you like the data points to\
+  \ have specific shapes based on certain criteria, such as author?\n4. Should the\
+  \ tooltips displaying the links be always visible or only upon hovering over a data\
+  \ point?\n5. Do you want any specific format or additional information included\
+  \ in the axis labels?\n6. Do you have any preferences for the layout or position\
+  \ of the legend on the scatter plot?\n7. Are there any specific font styles or sizes\
+  \ you prefer for the labels, titles, and legend? \n8. Would you like to highlight\
+  \ or annotate certain data points based on specific criteria?"
+answers: '1. I am not sure, any color palette that makes it easy to distinguish between
+  different authors works.
+
+  2. I do not have a specific preference for the marker style.
+
+  3. I am not sure, using different shapes based on the author might be interesting.
+
+  4. Only upon hovering over a data point.
+
+  5. No specific format, just ensure clarity.
+
+  6. I have no specific preference for the legend position.
+
+  7. I do not know, whatever makes it readable and clear.
+
+  8. I am not sure. Highlighting notable talks could be useful, but it''s not a necessity.'
+data_attributes:
+- views
+- likes
+- author
+- link

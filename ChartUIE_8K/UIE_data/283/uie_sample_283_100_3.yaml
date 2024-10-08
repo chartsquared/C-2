@@ -1,0 +1,60 @@
+initial_prompt: I need a line chart to visualize trends based on the dataset provided,
+  especially considering elements like the "Date_of_marriage" and the "Divorce_date".
+  I'd like to see trends across the age of the partners ("Age_partner_man" and "Age_partner_woman"),
+  and their "Monthly_income". Could you also include the number of "Num_Children"
+  as another line on the chart? This visualization should help in understanding any
+  correlation between these variables over time. Please focus on the changes before
+  and after marriage, residency details, and income variations. Include zodiac signs
+  for additional insights.
+questions: '1. Do you have a preference for the color scheme to be used in the chart?
+
+  2. Would you prefer the line styles (solid, dashed, dotted) for different variables
+  to distinguish them better?
+
+  3. Do you want to include markers (e.g., dots or squares) on data points along the
+  lines?
+
+  4. Is there a specific date format you prefer (e.g., DD/MM/YYYY, YYYY/MM/DD)?
+
+  5. Do you require a separate legend for each line or a combined one?
+
+  6. Should the x-axis be continuous, or would you prefer segmented time periods (e.g.,
+  monthly, yearly)?
+
+  7. Would you like to highlight specific dates or events on the chart (e.g., marriage
+  date, divorce date)?
+
+  8. Do you prefer a specific layout for the chart (e.g., portrait, landscape)?
+
+  9. Are there any annotations or notes you would like to add to the chart for important
+  observations?
+
+  10. Would you prefer the chart to have gridlines for better readability, and if
+  so, in which directions (horizontal, vertical, both)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like different line styles to distinguish the variables better.
+
+  3. Yes, I would like markers on data points along the lines.
+
+  4. DD/MM/YYYY would be preferred.
+
+  5. I do not know.
+
+  6. Continuous x-axis would be good.
+
+  7. Yes, please highlight the marriage and divorce dates.
+
+  8. Landscape layout would be preferred.
+
+  9. I am not sure.
+
+  10. Yes, please include gridlines in both directions for better readability.'
+data_attributes:
+- Date_of_marriage
+- Divorce_date
+- Age_partner_man
+- Age_partner_woman
+- Monthly_income_partner_man_peso
+- Monthly_income_partner_woman_peso
+- Num_Children

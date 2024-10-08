@@ -1,0 +1,55 @@
+initial_prompt: Create a choropleth map to visualize the potential savings in fuel
+  costs when switching from regular gasoline vehicles to electric cars. Use the 'fuelCost08'
+  data from the dataset to show the cost of fueling conventional cars across different
+  regions. Highlight the regions where new electric cars offer the most significant
+  savings. Additionally, indicate the fuel type with 'fuelType1' to compare different
+  gasolines as well, and denote 'year' to see trends over time. This map will help
+  users identify areas with the highest financial benefits from using electric vehicles.
+questions: '1. Do you have a preferred color scheme or color palette for the choropleth
+  map?
+
+  2. Should we use a specific range or number of bins for the cost savings categories?
+
+  3. Do you prefer any particular map projection (e.g., Mercator, Albers, Robinson)?
+
+  4. How would you like to handle regions with missing data or insufficient information?
+
+  5. Would you like to display the data for all years collectively or split by each
+  year?
+
+  6. Do you want labels or annotations for specific regions with highest/lowest savings?
+
+  7. Should the map include a legend or key for interpreting the fuel types and cost
+  savings?
+
+  8. Is there a preferred geographic region or set of regions you would like to focus
+  on (e.g., country, state, city-level)?
+
+  9. Would you like to include tooltips with additional information when hovering
+  over regions?
+
+  10. How would you like to represent different fuel types visually on the map (e.g.,
+  different color hues, patterns)?'
+answers: '1. I am not sure.
+
+  2. I don''t know.
+
+  3. I prefer Mercator projection.
+
+  4. I don''t know.
+
+  5. Display the data for all years collectively.
+
+  6. Yes, I would like to have labels for regions with the highest and lowest savings.
+
+  7. Yes, include a legend or key.
+
+  8. Focus on country-level data.
+
+  9. I am not sure.
+
+  10. Use different color hues to represent different fuel types.'
+data_attributes:
+- fuelCost08
+- fuelType1
+- year

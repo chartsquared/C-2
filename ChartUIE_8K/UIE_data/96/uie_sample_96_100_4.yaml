@@ -1,0 +1,46 @@
+initial_prompt: Create a treemap visualizing the Palmer Penguins dataset. Use species
+  as the parent category, and island as a subcategory. Size each rectangle by body_mass_g
+  and color them by sex to show the distribution of penguin mass and sex within each
+  species and island. Make sure to account for the missing values in body_mass_g and
+  sex columns.
+questions: '1. Do you have any specific color preferences or palette for different
+  sexes?
+
+  2. How would you like missing values to be represented or handled in the visualization?
+
+  3. Do you prefer any particular layout style for the treemap (e.g., squarified,
+  slice-and-dice)?
+
+  4. Would you like labels to be displayed within the rectangles, and if so, what
+  information should be included (e.g., species name, island name, body mass)?
+
+  5. Do you have any specific font preferences for the labels?
+
+  6. Would you like a legend included in the visualization, and where would you prefer
+  its placement (e.g., top, bottom, left, right)?
+
+  7. Are there any specific tooltips or hover-over information you''d like to display
+  when a user mouseovers a rectangle?
+
+  8. Do you have any size preferences for the overall treemap or its individual elements?'
+answers: '1. I do not have a specific preference for colors.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like labels to be displayed within the rectangles including species
+  name, island name, and body mass.
+
+  5. I do not have a specific font preference.
+
+  6. Yes, I would like a legend included. I have no specific preference for its placement.
+
+  7. I do not know.
+
+  8. I do not have any size preferences.'
+data_attributes:
+- species
+- island
+- body_mass_g
+- sex

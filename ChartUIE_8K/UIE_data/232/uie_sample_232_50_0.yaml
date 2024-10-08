@@ -1,0 +1,43 @@
+initial_prompt: Create a scatter plot to visualize the relationship between 'income_annum'
+  and 'loan_amount', color-coded by 'loan_status'. Include text annotations for the
+  highest and lowest 'loan_amount' and highlight data points based on 'cibil_score'.
+questions: '1. Do you have any specific preferences for the color scheme to be used
+  for different ''loan_status'' categories?
+
+  2. What style or format would you prefer for the text annotations for the highest
+  and lowest ''loan_amount'' points (e.g., font size, color, or background)?
+
+  3. How would you like the highlighted data points based on ''cibil_score'' to be
+  distinguished (e.g., different shapes, border highlights)?
+
+  4. Would you like the axis scales to be linear or logarithmic?
+
+  5. Do you prefer any particular arrangement for grid lines or tick marks on the
+  axes?
+
+  6. Are there any specific labels or titles you would like to include for the axes
+  and the chart itself?
+
+  7. Would you like to see a legend explaining the color-coding and highlighting?
+  If so, where should it be positioned on the chart?'
+answers: '1. I am not sure.
+
+  2. I prefer the text annotations to be clear and legible, but I do not have specific
+  preferences for font size, color, or background.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Please label the axes as "Annual Income" for the x-axis and "Loan Amount" for
+  the y-axis. Title the chart "Relation between Annual Income and Loan Amount".
+
+  7. Yes, a legend would be helpful. Please position it at the bottom right of the
+  chart.'
+data_attributes:
+- income_annum
+- loan_amount
+- loan_status
+- cibil_score

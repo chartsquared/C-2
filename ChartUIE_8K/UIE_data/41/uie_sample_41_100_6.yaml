@@ -1,0 +1,134 @@
+initial_prompt: Please create a table chart showing the summarized statistics of the
+  Mice Protein Expression dataset. Columns should include protein names like DYRK1A_N,
+  ITSN1_N, BDNF_N, etc., and statistical measures such as mean, median, standard deviation,
+  and the number of missing values for each protein. Additionally, include the count
+  of unique values for each protein and the data types. Lastly, display a sample of
+  three rows of data for better context.
+questions: '1. Do you have a preferred layout for the table, such as vertical or horizontal
+  orientation for the attributes?
+
+  2. Would you like each statistical measure (mean, median, standard deviation, missing
+  values, unique values, data types) to have its own column, or should they be grouped
+  within each protein name?
+
+  3. Do you prefer a specific ordering of the statistical measures (e.g., mean first,
+  then median)?
+
+  4. Should the sample data rows be displayed at the top or bottom of the table?
+
+  5. How would you like to handle the formatting of the numerical values (e.g., number
+  of decimal places)?
+
+  6. Are there any specific colors or font styles you prefer for highlighting certain
+  parts of the table?
+
+  7. Would you like to include any additional annotations or notes within the table
+  to clarify the data?
+
+  8. Do you prefer the background to be plain or shaded for better readability?
+
+  9. Would you like borders to be included around each cell in the table?
+
+  10. How should missing values be represented in the table (e.g., ''NA'', ''null'',
+  blank)?'
+answers: '1. I am not sure.
+
+  2. I’d like the statistical measures to be grouped within each protein name.
+
+  3. I do not know.
+
+  4. The sample data rows should be displayed at the top of the table.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I prefer a shaded background for better readability.
+
+  9. Yes, I would like borders around each cell in the table.
+
+  10. Missing values should be represented as ''NA''.'
+data_attributes:
+- DYRK1A_N
+- ITSN1_N
+- BDNF_N
+- NR1_N
+- NR2A_N
+- pAKT_N
+- pBRAF_N
+- pCAMKII_N
+- pCREB_N
+- pELK_N
+- pERK_N
+- pJNK_N
+- PKCA_N
+- pMEK_N
+- pNR1_N
+- pNR2A_N
+- pNR2B_N
+- pPKCAB_N
+- pRSK_N
+- AKT_N
+- BRAF_N
+- CAMKII_N
+- CREB_N
+- ELK_N
+- ERK_N
+- GSK3B_N
+- JNK_N
+- MEK_N
+- TRKA_N
+- RSK_N
+- APP_N
+- Bcatenin_N
+- SOD1_N
+- MTOR_N
+- P38_N
+- pMTOR_N
+- DSCR1_N
+- AMPKA_N
+- NR2B_N
+- pNUMB_N
+- RAPTOR_N
+- TIAM1_N
+- pP70S6_N
+- NUMB_N
+- P70S6_N
+- pGSK3B_N
+- pPKCG_N
+- CDK5_N
+- S6_N
+- ADARB1_N
+- AcetylH3K9_N
+- RRP1_N
+- BAX_N
+- ARC_N
+- ERBB4_N
+- nNOS_N
+- Tau_N
+- GFAP_N
+- GluR3_N
+- GluR4_N
+- IL1B_N
+- P3525_N
+- pCASP9_N
+- PSD95_N
+- SNCA_N
+- Ubiquitin_N
+- pGSK3B_Tyr216_N
+- SHH_N
+- BAD_N
+- BCL2_N
+- pS6_N
+- pCFOS_N
+- SYP_N
+- H3AcK18_N
+- EGR1_N
+- H3MeK4_N
+- CaNA_N
+- Genotype
+- Treatment
+- Behavior
+- class

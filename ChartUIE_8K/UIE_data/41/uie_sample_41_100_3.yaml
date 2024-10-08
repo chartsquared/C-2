@@ -1,0 +1,56 @@
+initial_prompt: Please create a radar chart to visualize the protein expression levels
+  in mice from the provided CSV data. Specifically, I want to see the comparison of
+  expression levels for a subset of proteins (DYRK1A_N, ITSN1_N, BDNF_N, NR1_N, NR2A_N)
+  across different MouseIDs. Highlight the differences between the Control and Treated
+  groups. Ensure each axis represents one protein, and the values are normalized for
+  easier comparison. The chart should also differentiate between the Genotype and
+  Treatment categories for clear analysis. Thank you!
+questions: '1. Do you have a preferred color scheme for highlighting the differences
+  between Control and Treated groups?
+
+  2. Is there a specific way you would like the Genotype and Treatment categories
+  to be visually differentiated? (e.g., different line styles, markers)
+
+  3. Do you prefer any specific normalization method for the protein expression levels?
+
+  4. Would you like to include legends or labels for clarity? If so, where should
+  they be positioned?
+
+  5. Do you have a preferred title or subtitle for the radar chart?
+
+  6. Are there any specific annotations or data point labels you want to include on
+  the chart?
+
+  7. Is there a specific order in which you would like the proteins to appear on the
+  axes?
+
+  8. Would you like to set specific axis limits for consistency across all axes?
+
+  9. Are there any specific design elements or styles you would like to avoid?'
+answers: '1. I do not have a preferred color scheme.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference for the normalization method.
+
+  4. Yes, please include legends or labels for clarity, but I am not sure about their
+  position.
+
+  5. No specific title or subtitle preference.
+
+  6. I do not know.
+
+  7. No specific order for the proteins.
+
+  8. I am not sure about setting specific axis limits.
+
+  9. No specific design elements or styles to avoid.'
+data_attributes:
+- MouseID
+- DYRK1A_N
+- ITSN1_N
+- BDNF_N
+- NR1_N
+- NR2A_N
+- Genotype
+- Treatment

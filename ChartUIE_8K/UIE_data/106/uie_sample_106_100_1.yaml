@@ -1,0 +1,55 @@
+initial_prompt: Create a bubble chart visualizing Jumia's 2024 product prices and
+  ratings. The x-axis should represent product prices, while the y-axis depicts the
+  product ratings. Each bubble will correspond to a product, with the bubble size
+  representing the number of unique values in product details. Highlight products
+  with the highest and lowest ratings. Annotate those bubbles to display their product
+  names, prices, and ratings. Highlight elements with missing rating values in a different
+  color. This chart will help users quickly identify the best and worst products based
+  on price and ratings.
+questions: '1. Do you have any specific color preferences for the bubbles representing
+  the products?
+
+  2. Is there a preferred color you want to use for highlighting products with missing
+  rating values?
+
+  3. Do you have any particular font style or size preferences for the annotations
+  displaying product names, prices, and ratings?
+
+  4. Do you want a title for the chart? If so, do you have a particular title in mind?
+
+  5. Should there be labels for the x-axis and y-axis? If so, what would you like
+  them to be labeled as?
+
+  6. Would you like gridlines to be shown on the chart? If yes, do you have a preference
+  for their style or color?
+
+  7. Do you have a preferred theme or style for the overall appearance of the chart
+  (e.g., minimalist, vibrant)?
+
+  8. Do you want a legend displayed on the chart to help explain the bubble sizes
+  and colors?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, "Jumia 2024 Product Prices and Ratings".
+
+  5. Yes, the x-axis should be labeled "Product Prices" and the y-axis should be labeled
+  "Product Ratings".
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, I would like a legend to be displayed.
+
+  <end of user response>'
+data_attributes:
+- Price
+- Rating
+- Product Name
+- Details

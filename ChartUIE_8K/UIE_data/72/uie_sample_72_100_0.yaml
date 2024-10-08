@@ -1,0 +1,56 @@
+initial_prompt: '<start of user instruction>
+
+  Create a heatmap visualizing the number of terrorist attacks over the years across
+  different countries. Highlight countries with no missing ''Code'' values. Annotate
+  the cells with the highest and lowest attack numbers to focus attention on outliers.
+  This will help in understanding global and temporal patterns in terrorist activities.
+  The chart will be useful for data-driven analysis in the context of terrorism worldwide.
+
+  <end of user instruction>'
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like specific colors to highlight the highest and lowest attack numbers?
+
+  3. How would you like us to handle countries with missing ''Code'' values visually?
+
+  4. Do you want a specific annotation format for cells with the highest and lowest
+  attack numbers?
+
+  5. Is there a particular year range or subset of years you are most interested in?
+
+  6. Are there any specific countries you want to be emphasized or de-emphasized?
+
+  7. Do you have a preference for the orientation of the heatmap (horizontal vs vertical)?
+
+  8. Would you like a legend or color bar included in the heatmap for reference?
+
+  9. Do you have a particular font style or size preference for the annotations and
+  labels?
+
+  10. Should the heatmap include gridlines to separate the cells more clearly?'
+answers: '1. I do not know.
+
+  2. Yes, use a distinct color for the highest like red and another for the lowest
+  like blue.
+
+  3. Highlight countries with no missing ''Code'' values with a specific color/bold
+  outline.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, include a legend or color bar.
+
+  9. I do not know.
+
+  10. Yes, include gridlines.'
+data_attributes:
+- Entity
+- Code
+- Year
+- Terrorist attacks

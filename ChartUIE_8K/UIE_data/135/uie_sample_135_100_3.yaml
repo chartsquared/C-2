@@ -1,0 +1,70 @@
+initial_prompt: Please create a heatmap to visualize the correlation between all variables
+  in the Breast Cancer Wisconsin (Diagnostic) dataset. Use color gradients to indicate
+  the strength of correlations, with strong positive correlations in one color and
+  strong negative correlations in another. Ensure the heatmap includes all numerical
+  variables from the dataset, such as radius_mean, texture_mean, perimeter_mean, and
+  area_mean. Label the axes appropriately and include a color bar to indicate correlation
+  values. This will help in understanding the relationships between different features
+  in diagnosing breast cancer.
+questions: '1. Do you have any preference for the color scheme used in the heatmap?
+
+  2. How would you like positive and negative correlations to be represented in terms
+  of color gradients?
+
+  3. What range of values should the color bar cover?
+
+  4. Should exact correlation values be displayed within the cells of the heatmap?
+
+  5. Is there a specific layout or orientation you prefer for the axis labels?
+
+  6. Would you like any annotations or additional text to be included in the heatmap?
+
+  7. How much emphasis should be placed on grid lines within the heatmap?
+
+  8. Would you like the heatmap to be clustered or not?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, exact correlation values should be displayed within the cells of the heatmap.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave points_mean
+- symmetry_mean
+- fractal_dimension_mean
+- radius_se
+- texture_se
+- perimeter_se
+- area_se
+- smoothness_se
+- compactness_se
+- concavity_se
+- concave points_se
+- symmetry_se
+- fractal_dimension_se
+- radius_worst
+- texture_worst
+- perimeter_worst
+- area_worst
+- smoothness_worst
+- compactness_worst
+- concavity_worst
+- concave points_worst
+- symmetry_worst
+- fractal_dimension_worst

@@ -1,0 +1,55 @@
+initial_prompt: 'Create a geographic heatmap illustrating water quality levels across
+  regions, highlighting pollution indices. Use text annotations to display detailed
+  metrics like Dissolved Oxygen(mg/L) and Ammonia Nitrogen(mg/L) for specific points,
+  especially where they exceed standard limits. The map should accentuate regions
+  with heightened pollution using distinct color gradations. Purpose: Identify and
+  monitor pollution hotspots for effective environmental management. Include data
+  points for Water Temp, Hosphorus(mg/L), and other relevant metrics. Aim to visually
+  synthesize water quality trends over time to support environmental analysis and
+  policy-making efforts.'
+questions: '1. Do you have a specific color scheme preference for the heatmap to highlight
+  pollution indices?
+
+  2. How would you prefer to categorize the color gradations to represent different
+  levels of pollution?
+
+  3. Do you have any preferences for the style or format of text annotations on the
+  map?
+
+  4. Should any thresholds for Dissolved Oxygen, Ammonia Nitrogen, and other metrics
+  be explicitly labeled on the map?
+
+  5. Is there a particular time range or segmentation (e.g., monthly, quarterly) you
+  prefer for visualizing trends over time?
+
+  6. Are there specific geographic boundaries or regions that need to be given special
+  emphasis on the heatmap?
+
+  7. Would you like to include any specific legends, labels, or descriptive text to
+  assist the audience in interpreting the map?
+
+  8. Is there a preferred map projection or geographic layout for displaying the regions?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would prefer clear and concise text annotations that are easily readable.
+
+  4. Yes, please explicitly label thresholds for Dissolved Oxygen, Ammonia Nitrogen,
+  and other critical metrics on the map.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Yes, include legends and labels to help interpret the map.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- Region
+- Pollution Index
+- Dissolved Oxygen(mg/L)
+- Ammonia Nitrogen(mg/L)
+- Water Temp
+- Hosphorus(mg/L)
+- Time

@@ -1,0 +1,36 @@
+initial_prompt: Create a box chart of ARM stock data by Date (x-axis) showing the
+  distribution of High, Low, and Close prices (y-axis) from the data file "../Extra_datas/data/13.csv".
+  The chart should help visualize the price range variations over time. Include all-time
+  data points to ensure trends and outliers are noticeable for business analysis.
+  Make sure to use different colors for High, Low, and Close prices to clearly distinguish
+  each category on the chart. Include volume as a secondary plot if feasible. Title
+  the chart appropriately and include axis labels. Thank you!
+questions: '1. Do you have any color preferences for the High, Low, and Close prices
+  categories?
+
+  2. How would you like the volume data to be represented as a secondary plot (e.g.,
+  bar chart, line chart)?
+
+  3. Do you have a specific format or style preference for the chart title and axis
+  labels?
+
+  4. Would you like to include any additional labels or annotations on the chart to
+  highlight particular trends or outliers?
+
+  5. Are there any specific date ranges or periods that you would like to focus on
+  or emphasize in the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure, maybe a bar chart?
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. I do not know, just include all-time data points.'
+data_attributes:
+- Date
+- High
+- Low
+- Close
+- Volume

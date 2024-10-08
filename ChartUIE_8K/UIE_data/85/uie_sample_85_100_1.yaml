@@ -1,0 +1,52 @@
+initial_prompt: Please create a scatter plot using the Top 50 Spotify Songs data from
+  2019. Plot "Beats.Per.Minute" on the x-axis and "Popularity" on the y-axis. Highlight
+  the most popular songs by increasing the point size and use annotations to call
+  out the highest and lowest popularity values with their respective song names. Ensure
+  that the genres are differently colored to distinguish them. The purpose is to visualize
+  trends between song tempo and popularity, and to easily identify standout tracks
+  in terms of popularity. Keep the chart visually engaging and informative.
+questions: '1. Do you have a preferred color palette for distinguishing different
+  genres?
+
+  2. What size of annotations (font size, style) do you prefer for the highest and
+  lowest popularity values?
+
+  3. Would you like the chart to include a legend explaining the color coding for
+  genres?
+
+  4. Should the background of the plot be plain or have grid lines for better readability?
+
+  5. Do you prefer a specific shape for the plotted points, or is the default circle
+  acceptable?
+
+  6. Would you like the axes to have specific labels or descriptions beyond the attribute
+  names (e.g., ''Beats Per Minute (BPM)'' instead of just ''Beats.Per.Minute'')?
+
+  7. Is there a specific size or aspect ratio you prefer for the overall chart?
+
+  8. Would you like any additional statistical information displayed, such as a trend
+  line or correlation coefficient?
+
+  9. Do you have any preferences for the title or subtitle of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend explaining the color coding for genres.
+
+  4. Grid lines for better readability would be good.
+
+  5. The default circle is fine.
+
+  6. ''Beats Per Minute (BPM)'' and ''Popularity'' would be better for axes labels.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. No specific preference for the title or subtitle.'
+data_attributes:
+- Beats.Per.Minute
+- Popularity
+- Track.Name
+- Genre

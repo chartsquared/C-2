@@ -1,0 +1,54 @@
+initial_prompt: Please create a bubble chart to visualize the brain tumor dataset.
+  The chart should plot Mean on the x-axis and Standard Deviation on the y-axis. Each
+  bubble should represent an image, with its size indicating the Energy value. Use
+  different colors to distinguish between the two classes (0 and 1). Add text annotations
+  to highlight the images with the highest and lowest Contrast values. The purpose
+  of this visualization is to analyze the distribution and relationship of these features,
+  emphasizing variations and patterns crucial for health evaluations.
+questions: '1. Do you have any preferred colors for distinguishing between the two
+  classes (0 and 1)?
+
+  2. Would you like a title for the chart? If yes, please provide the desired title.
+
+  3. Do you prefer any specific axis labels for the x-axis (Mean) and y-axis (Standard
+  Deviation)?
+
+  4. Is there any particular font style or size you would like for text annotations
+  and labels?
+
+  5. Should the size of the bubbles representing the Energy value be scaled in a specific
+  way?
+
+  6. Would you like to add a legend to explain the different classes and bubble sizes?
+
+  7. Is there any specific format you prefer for displaying the values of Mean, Standard
+  Deviation, and Energy (e.g., number of decimal places)?
+
+  8. Do you have any preferences for the gridlines or background of the chart?
+
+  9. Should the chart include axis ticks and if so, do you have preferences for their
+  intervals?'
+answers: '1. I do not know.
+
+  2. Yes, please title it "Brain Tumor Dataset Analysis".
+
+  3. No specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please add a legend.
+
+  7. I am not sure.
+
+  8. No specific preference.
+
+  9. I am not sure.'
+data_attributes:
+- Mean
+- Standard Deviation
+- Energy
+- Class
+- Contrast
+- Image

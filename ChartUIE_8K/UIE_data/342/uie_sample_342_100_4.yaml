@@ -1,0 +1,60 @@
+initial_prompt: I have cryptocurrency data including Date, Open, High, Low, Close,
+  Adj Close, and Volume for Cardano. I want to visualize this data with a dynamic
+  candlestick chart to track the price movements over time. The chart should display
+  the daily performance, highlighting the Open, High, Low, and Close prices. Additionally,
+  I need a volume overlay to correlate trading volume with price changes. Ensure the
+  chart is interactive, allowing me to zoom in on specific date ranges and hover over
+  data points to view details. The visualization needs to be clear and insightful
+  for market analysis.
+questions: '1. Do you have a preferred color scheme for the candlestick chart?
+
+  2. Would you like the volume overlay to be represented as bars, lines, or another
+  format?
+
+  3. Should the chart include any specific markers or annotations for significant
+  events or dates?
+
+  4. Do you prefer the axes to be labeled in a specific way (e.g., specific date format,
+  logarithmic scale for volume)?
+
+  5. Is there a preferred time interval for the chart''s default view (e.g., one month,
+  six months, one year)?
+
+  6. Would you like grid lines to be displayed on the chart? If so, in which style?
+
+  7. Do you have any preferences for the chart''s title and subtitles?
+
+  8. Should the candlestick bodies be filled in a particular style (e.g., hollow for
+  rising prices, solid for falling prices)?
+
+  9. Are there any specific legends or keys you would like to be included in the chart
+  for clarity?
+
+  10. Do you prefer the chart background to be a particular color or texture?'
+answers: '1. I am not sure.
+
+  2. Bars would be fine.
+
+  3. I do not know.
+
+  4. A simple date format (like YYYY-MM-DD) would be good for the axes.
+
+  5. One year.
+
+  6. I am not sure.
+
+  7. I do not have any specific preference.
+
+  8. I do not know.
+
+  9. No specific legends or keys needed.
+
+  10. I have no specific preference.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

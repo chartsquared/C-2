@@ -1,0 +1,41 @@
+initial_prompt: Please create a geographic heatmap showcasing the distribution of
+  Netflix movies and TV shows by country. Highlight countries with a higher concentration
+  of titles, differentiating between movies and TV shows. I'd like the map to use
+  color gradients to represent the number of titles available in each country. Additionally,
+  include interactive features to display more details about the count and type of
+  shows available per country when hovering over each region. This visualization should
+  help in understanding global content distribution on Netflix.
+questions: '1. Do you have any specific color gradients in mind for representing the
+  number of titles?
+
+  2. Would you prefer any particular map projection (e.g., Mercator, Robinson)?
+
+  3. Should the map include labels for each country or region?
+
+  4. Do you have any preferences for the color scheme to differentiate between movies
+  and TV shows?
+
+  5. Are there any specific countries or regions you want to prioritize or highlight
+  on the map?
+
+  6. Would you like to include any legends or keys on the map to explain the color
+  gradients?
+
+  7. Do you have any preferences for the size or resolution of the map?'
+answers: '1. I do not have any specific color gradients in mind.
+
+  2. I am not sure.
+
+  3. Yes, the map should include labels for each country.
+
+  4. I do not have any specific preference.
+
+  5. I am not sure.
+
+  6. Yes, include legends or keys to explain the color gradients.
+
+  7. I do not have any specific preference.'
+data_attributes:
+- country
+- type
+- show_id

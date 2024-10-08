@@ -1,0 +1,47 @@
+initial_prompt: I need a heatmap for the Global Metropolis Weather Dataset showing
+  the relationship between different weather parameters in various locations. Utilize
+  data such as temperature, feels like temperature, humidity, wind speed, and cloud
+  cover. The heatmap should indicate where these parameters are more intense or correlated.
+  Include labels for the observations and metrics on the axes, and use a color gradient
+  to represent the intensity levels. Make sure the data is clearly distinguishable
+  for easy interpretation, especially focusing on seasonal weather variations among
+  different locations.
+questions: '1. Do you have a preferred color gradient for the heatmap?
+
+  2. Would you like to use specific labels or abbreviations for the weather parameters
+  on the axes?
+
+  3. Should the data points be aggregated by a specific timeframe (e.g., hourly, daily,
+  monthly) to highlight seasonal variations?
+
+  4. Do you prefer a specific range for the color scale to highlight intensity levels
+  (e.g., 0-100%, custom thresholds)?
+
+  5. Are there any specific cities or locations you want to be prominently displayed
+  or focused on in the heatmap?
+
+  6. Do you prefer to display any statistical correlation values directly on the heatmap?
+
+  7. Is there a specific layout or format you prefer (e.g., square grid, rectangular
+  grid) for the heatmap cells?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preference for labels or abbreviations.
+
+  3. Yes, please aggregate the data monthly to highlight seasonal variations.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please display statistical correlation values directly on the heatmap.
+
+  7. I have no specific preference for the layout or format.'
+data_attributes:
+- Location
+- Observation Time
+- Temperature (°C)
+- Feels Like (°C)
+- Humidity (%)
+- Wind Speed (kph)
+- Cloud Cover (%)

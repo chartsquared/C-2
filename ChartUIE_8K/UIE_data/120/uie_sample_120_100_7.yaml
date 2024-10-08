@@ -1,0 +1,48 @@
+initial_prompt: I need a Treemap visualization for the 'Supermart Grocery Sales -
+  Retail Analytics Dataset'. The Treemap should represent sales data breakdown by
+  'Region', 'Category', 'Sub Category', and 'City'. Each segment should display the
+  total 'Sales', and the size should reflect the proportion of sales contributed by
+  each segment. Include color coding to distinguish between different 'Categories'
+  within each region. Highlight the cities with the highest and lowest sales within
+  each subcategory. Make sure to provide a legend for easy interpretation of colors
+  and categories. Display this visual as interactive to explore different segments.
+questions: '1. Do you have a preference for the color palette used to distinguish
+  between different ''Categories''?
+
+  2. How would you like the cities with the highest and lowest sales within each subcategory
+  to be highlighted (e.g., specific colors, borders, or annotations)?
+
+  3. Should the legend display only categories, or would you like it to include additional
+  information such as sales values or other details?
+
+  4. Would you prefer specific font styles or sizes for the text displayed within
+  each segment of the Treemap?
+
+  5. Do you have any preferences regarding the ordering of ''Categories'' and ''Regions''
+  within the Treemap visualization?
+
+  6. Is there a specific layout or aspect ratio you prefer for the Treemap to ensure
+  it fits well within your intended display space?'
+answers: '<start user emulated response>
+
+  1. I am not sure about the color palette, anything that clearly differentiates the
+  categories is fine.
+
+  2. Highlight the cities with the highest and lowest sales using different borders,
+  like a thick border for the highest and a dashed border for the lowest.
+
+  3. I am not sure, maybe just keep it simple with categories.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure, just make sure it fits well in a standard screen layout.
+
+  <end user emulated response>'
+data_attributes:
+- Region
+- Category
+- Sub Category
+- City
+- Sales

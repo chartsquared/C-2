@@ -1,0 +1,41 @@
+initial_prompt: Create a network graph that visualizes air travel between major US
+  cities. Use nodes to represent cities, with IDs, names, weights, and regions from
+  the data. Edges should represent the connections between these cities, utilizing
+  the source, target, and passengers columns. For missing source, target, and passenger
+  values, ensure they do not affect the visualization. Make sure the graph clearly
+  distinguishes different regions, and the size of the nodes should represent the
+  weight. This is for a travel analysis, so interactive features like hover details
+  would be awesome.
+questions: '1. Do you have any color preferences for different regions?
+
+  2. Should the nodes have specific shapes for different regions or any other distinguishing
+  features?
+
+  3. How would you like the edges to be styled (e.g., solid, dashed, color-coded by
+  passenger volume)?
+
+  4. Do you have a preferred layout for the network graph (e.g., circular, force-directed,
+  geographic)?
+
+  5. Should the node size scaling be linear or logarithmic in relation to the weight?
+
+  6. Is there a specific font style or size you’d prefer for node labels?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. A geographic layout sounds ideal to me.
+
+  5. I think linear scaling for node size in relation to the weight would be good.
+
+  6. I am not sure.'
+data_attributes:
+- id
+- name
+- weight
+- region
+- source
+- target
+- passengers

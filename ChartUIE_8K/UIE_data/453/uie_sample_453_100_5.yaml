@@ -1,0 +1,49 @@
+initial_prompt: Please create a violin plot to visualize the gene expression data
+  across different samples detailed in the provided dataset. Focus on comparing the
+  distribution of values for specific genes, such as 'IMAGE:196992', 'IMAGE:587847',
+  and 'IMAGE:1049185', across various conditions like 'fetal_lung', '232-97_SCC',
+  '232-97_node', etc. Ensure the x-axis represents the sample categories, and the
+  y-axis shows the expression levels. Highlight any significant differences in expression
+  patterns among the samples. Use color coding to differentiate between different
+  genes. This will help in understanding the variability and distribution of gene
+  expression.
+questions: '1. Do you have any specific color preferences for the color coding of
+  different genes?
+
+  2. Is there a particular style or theme you prefer for the plot (e.g., minimalist,
+  detailed)?
+
+  3. Would you like specific markers or annotations for significant differences in
+  expression levels?
+
+  4. Do you prefer any particular order for the sample categories on the x-axis?
+
+  5. Are there any additional visual elements you would like to include, such as grid
+  lines or legend positioning?
+
+  6. Do you have a preference for the width or smoothing parameters of the violin
+  plots?
+
+  7. Would you like to include any titles or labels for the axes or overall chart?
+  If so, please specify.'
+answers: '1. I am not sure.
+
+  2. Minimalist style would be preferable.
+
+  3. Yes, specific markers or annotations for significant differences in expression
+  levels would be helpful.
+
+  4. I do not have a specific preference.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. Yes, please include titles and labels for the axes. "Sample Categories" for the
+  x-axis, "Expression Levels" for the y-axis, and "Gene Expression Violin Plot" as
+  the overall chart title.'
+data_attributes:
+- gene
+- fetal_lung
+- 232-97_SCC
+- 232-97_node

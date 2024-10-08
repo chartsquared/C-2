@@ -1,0 +1,49 @@
+initial_prompt: Create a geographic heatmap showing the performance of women college
+  basketball teams by their conference regions. Use regular season and tournament
+  winning percentages to highlight stronger areas. Include school names and years
+  for each datapoint.
+questions: '1. Do you have a preferred color scheme for the heatmap to distinguish
+  stronger and weaker performance areas?
+
+  2. Would you like to include labels for each school name and year directly on the
+  map or in a separate legend?
+
+  3. Is there a specific geographic region or map projection you prefer for the geographic
+  heatmap?
+
+  4. How many intervals or bins would you like for the winning percentages (e.g.,
+  quintiles, deciles)?
+
+  5. Do you want a specific threshold to highlight top-performing teams, such as those
+  with winning percentages above a certain value?
+
+  6. Should the regular season and tournament winning percentages be combined into
+  a single metric or shown separately?
+
+  7. Is there a particular way you prefer to represent the year data (e.g., as a range,
+  individual years)?
+
+  8. Would you like any specific annotations or notes on the map to highlight key
+  findings or areas of interest?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Combine into a single metric.
+
+  7. I have no specific preference.
+
+  8. I have no specific preference.'
+data_attributes:
+- year
+- school
+- conference
+- reg_percent
+- tourney_w
+- tourney_l

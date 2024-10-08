@@ -1,0 +1,58 @@
+initial_prompt: Please create a bar chart illustrating the impact of specific genes
+  on Taxol drug resistance in breast cancer cell lines. Plot the Gene.symbols on the
+  x-axis and the corresponding logFC (log-fold change) values on the y-axis. Differentiate
+  the data by Cell Line using distinct colors. Ensure that the chart is clear and
+  interpretable. Highlight the genes with the highest and lowest logFC values prominently.
+  Add a legend to explain the colors corresponding to different cell lines. Title
+  the chart appropriately to reflect the focus on Taxol drug resistance. Thank you!
+questions: '1. Do you have any preferences for the specific colors to use for differentiating
+  the cell lines?
+
+  2. Is there a specific format or style you would like for the title of the chart?
+
+  3. Would you like to include axis labels and, if so, do you have preferred wording
+  for them?
+
+  4. How would you prefer to highlight the genes with the highest and lowest logFC
+  values (e.g., different colors, larger bars, annotations)?
+
+  5. Do you have any specific font preferences or sizes for the axis labels, legend,
+  or title?
+
+  6. Would you like the bars to be grouped or stacked by cell line?
+
+  7. Is there a specific order you would like the Gene.symbols to be displayed on
+  the x-axis (e.g., alphabetical, by logFC value)?
+
+  8. Do you have a preference on the aspect ratio or orientation of the chart (e.g.,
+  vertical or horizontal bars)?
+
+  9. Would you like gridlines on the chart, and if so, in which style or color?
+
+  10. Is there any additional text or annotation you would like to include in the
+  chart for context or explanation?'
+answers: '1. I am not sure about the specific colors, perhaps you can choose.
+
+  2. I do not have a specific preference for the title style.
+
+  3. Yes, please include axis labels. "Gene Symbols" for the x-axis and "log-Fold
+  Change (logFC)" for the y-axis.
+
+  4. Highlight the genes with the highest and lowest logFC values using different
+  colors.
+
+  5. I do not have any specific font preferences or sizes.
+
+  6. I am not sure if the bars should be grouped or stacked.
+
+  7. I do not know; maybe arrange them by logFC value.
+
+  8. I prefer vertical bars.
+
+  9. Gridlines would be helpful; I don''t have a preference for the style or color.
+
+  10. I do not need additional text or annotations at this time.'
+data_attributes:
+- Gene.symbol
+- logFC
+- Cell Line

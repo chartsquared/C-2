@@ -1,0 +1,53 @@
+initial_prompt: Create a heatmap visualization of exoplanet discoveries by the Kepler
+  Telescope. Use the columns 'pl_hostname' and 'pl_discmethod' to differentiate the
+  exoplanets and their discovery methods. Highlight discoveries with rare methods
+  to draw user attention. Add text annotations for notable discoveries to give context.
+  Aim to show patterns in discovery methods and correlate with planet hostnames. This
+  will help identify any common traits or unique findings among the exoplanets detected.
+  Also, include color coding to represent the number of planets discovered by each
+  method to emphasize trends and outliers.
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. Should the heatmap use a gradient scale or discrete colors for different discovery
+  methods?
+
+  3. How would you like the rare methods to be highlighted (e.g., bold colors, borders)?
+
+  4. Do you prefer a specific font style or size for the text annotations?
+
+  5. Should the annotations include detailed information or just notable discovery
+  names?
+
+  6. Do you have a preference for the ordering of hostnames and discovery methods
+  on the axes?
+
+  7. Would you like the heatmap to include gridlines or be gridline-free?
+
+  8. Would you like to customize the title and axis labels for clarity?
+
+  9. Should the chart include a legend to explain the color coding?
+
+  10. Do you have a preferred layout for the heatmap (e.g., square, rectangular, aspect
+  ratio)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Bold colors would be good.
+
+  4. I do not know.
+
+  5. Just notable discovery names.
+
+  6. I am not sure.
+
+  7. Yes, include gridlines.
+
+  8. Yes, customize the title and axis labels for clarity.
+
+  9. Yes, include a legend to explain the color coding.
+
+  10. I have no specific preference.'
+data_attributes:
+- pl_hostname
+- pl_discmethod

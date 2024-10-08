@@ -1,0 +1,56 @@
+initial_prompt: Create a geographic heatmap to visualize coffee ratings by country
+  of origin. Highlight countries with highest total cup points and annotate with average
+  scores of aroma, flavor, and acidity. Use color gradients to distinguish regions,
+  emphasizing top-rated areas. Include contextual annotations for outliers and notable
+  entries. This will help identify the best coffee-producing regions globally, making
+  it easier to understand quality distribution. Include specific regions and producers
+  where available to add depth to the map. Also, highlight any significant variances
+  within countries to provide a comprehensive view of the data.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the country boundaries be emphasized with borders?
+
+  3. Are there specific regions or producers that you want to be highlighted prominently?
+
+  4. Do you want the annotations for outliers and notable entries to appear as tooltips
+  or fixed labels?
+
+  5. What level of opacity would you like for the color gradients?
+
+  6. Should the map include labels for countries, regions, or both?
+
+  7. Do you prefer a specific projection type for the geographic map?
+
+  8. How detailed do you want the contextual annotations for significant variances
+  within countries to be?
+
+  9. Would you like to include a legend or color bar to explain the color gradients?
+
+  10. Are there any specific fonts or styles you prefer for text annotations and labels?'
+answers: '1. I am not sure.
+
+  2. Yes, emphasize country boundaries with borders.
+
+  3. I do not have specific regions or producers in mind.
+
+  4. Fixed labels.
+
+  5. I do not know.
+
+  6. Include labels for both countries and regions.
+
+  7. I am not sure.
+
+  8. Highly detailed.
+
+  9. Yes, include a legend or color bar.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- country_of_origin
+- total_cup_points
+- aroma
+- flavor
+- acidity
+- region
+- producer

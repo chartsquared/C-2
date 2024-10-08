@@ -1,0 +1,59 @@
+initial_prompt: Plot a line chart that visualizes the Google (GOOG) stock performance
+  over time using the provided data. Display the 'Date' on the x-axis and 'Close'
+  prices on the y-axis. Include lines for 'Open', 'High', 'Low', and 'Adj Close' prices
+  for comparison. Show volume as a secondary y-axis to provide additional context.
+  Make sure to include appropriate labels and a legend for clarity. Use different
+  colors for each line to distinguish between them easily. Keeping it in mind, the
+  chart should help analyze stock trends over the time period provided in the dataset.
+questions: '1. Do you have any specific color preferences for the lines representing
+  ''Open'', ''High'', ''Low'', ''Close'', and ''Adj Close'' prices?
+
+  2. Do you have a preferred style for the grid lines on the chart (e.g., solid, dashed)?
+
+  3. What thickness would you prefer for the lines representing stock prices?
+
+  4. Do you prefer a particular font style or size for the axis labels and legend?
+
+  5. Would you like to display data markers (e.g., circles, squares) on the lines
+  for each data point?
+
+  6. Do you have a preferred order for displaying the different lines (''Open'', ''High'',
+  ''Low'', ''Close'', ''Adj Close'') in the legend?
+
+  7. Is there a specific range of dates you would like to focus on within the dataset?
+
+  8. Do you have any preferences for the format of the date labels on the x-axis (e.g.,
+  ''MM-DD-YYYY'', ''YYYY-MM-DD'')?
+
+  9. Would you like to add any annotations or additional information to the chart
+  to highlight specific events or trends?
+
+  10. Do you prefer a particular position for the legend on the chart (e.g., top,
+  bottom, left, right)?'
+answers: '1. I do not have specific color preferences.
+
+  2. I am not sure about the grid line style.
+
+  3. I have no specific preference for line thickness.
+
+  4. I do not have a preferred font style or size for the labels and legend.
+
+  5. I am not sure about displaying data markers.
+
+  6. I have no specific preference for the order of the lines in the legend.
+
+  7. I do not have a specific date range to focus on.
+
+  8. I am not sure about the date label format.
+
+  9. I do not know if I need additional annotations or information.
+
+  10. I do not have a preference for the position of the legend.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

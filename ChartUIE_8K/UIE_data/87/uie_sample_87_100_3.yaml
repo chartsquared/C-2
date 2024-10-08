@@ -1,0 +1,63 @@
+initial_prompt: Please create a stacked bar chart to visualize the comparison between
+  blue and red teams in League of Legends Diamond Ranked Games (10 min). Use variables
+  like kills, deaths, assists, total gold, and towers destroyed. Separate each variable
+  into blue and red segments for easy comparison. The x-axis should represent the
+  different variables, and the y-axis should show the counts or amounts. Ensure each
+  bar clearly distinguishes the performance of blue and red teams across the multiple
+  game IDs present in the data.
+questions: '1. Do you have a specific color preference for the blue team and red team
+  segments?
+
+  2. Would you like to include data labels on each segment of the stacked bar for
+  precise values?
+
+  3. Do you prefer any specific font style or size for the chart labels and title?
+
+  4. Should the bars be ordered in a specific way, such as by the sum of the blue
+  and red values, or alphabetically by variable?
+
+  5. Would you like to add grid lines to the chart for better readability?
+
+  6. Is there a specific title or subtitle you would like to have on the chart?
+
+  7. Do you want to include a legend, and if so, any preference on its position (e.g.,
+  top, bottom, left, right)?
+
+  8. Should the x-axis and y-axis include specific labels or units of measurement?
+
+  9. Do you have any preference for the bar width or spacing between bars?
+
+  10. Would you like to highlight any specific variables or data points in the chart?'
+answers: '1. I do not have a specific color preference for the blue team and red team
+  segments.
+
+  2. I am not sure about including data labels on each segment of the stacked bar.
+
+  3. I do not have a specific preference for the font style or size for the chart
+  labels and title.
+
+  4. I am not sure about the ordering of the bars.
+
+  5. Yes, please add grid lines to the chart for better readability.
+
+  6. I do not have a specific title or subtitle in mind for the chart.
+
+  7. Yes, please include a legend. I do not have a preference on its position.
+
+  8. I do not have any specific labels or units of measurement for the x-axis and
+  y-axis.
+
+  9. I am not sure about the bar width or spacing between bars.
+
+  10. I do not want to highlight any specific variables or data points in the chart.'
+data_attributes:
+- blueKills
+- blueDeaths
+- blueAssists
+- blueTotalGold
+- blueTowersDestroyed
+- redKills
+- redDeaths
+- redAssists
+- redTotalGold
+- redTowersDestroyed

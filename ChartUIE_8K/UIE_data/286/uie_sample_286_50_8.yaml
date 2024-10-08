@@ -1,0 +1,49 @@
+initial_prompt: Create a box chart to visualize the distribution of 'radius_mean',
+  'texture_mean', 'perimeter_mean', and 'area_mean' for both 'M' and 'B' diagnoses
+  from the breast cancer dataset.
+questions: '1. What color scheme would you prefer for differentiating between the
+  ''M'' and ''B'' diagnoses?
+
+  2. Do you want to include individual data points on top of the box plots (e.g.,
+  using jitter)?
+
+  3. Should outliers be displayed distinctly, or would you prefer them to be hidden?
+
+  4. Is there a preference for the orientation of the chart (vertical or horizontal
+  box plots)?
+
+  5. Would you like to display statistical annotations (median, quartiles) on the
+  box plots?
+
+  6. Do you need any specific labels or titles for axes and the chart itself?
+
+  7. Should there be any grid lines or background enhancements to improve readability?
+
+  8. Do you want to include a legend to indicate the meaning of the color codes for
+  ''M'' and ''B''?
+
+  9. Are there specific font styles or sizes you prefer for text elements (axis labels,
+  titles, etc.)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, I would like to display statistical annotations.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. Yes, I would like to include a legend.
+
+  9. I am not sure.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- diagnosis

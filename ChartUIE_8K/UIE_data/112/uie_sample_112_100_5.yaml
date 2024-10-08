@@ -1,0 +1,47 @@
+initial_prompt: Please create a box chart visualizing the caffeine content (mg) of
+  various drink types from the given dataset. Ensure the x-axis represents the different
+  types of drinks (e.g., Coffee, Tea, Energy Drinks) and the y-axis shows the caffeine
+  content in milligrams. This will help compare the caffeine distribution across different
+  types. Use the sample data to identify unique drink types and their caffeine levels.
+  Make sure the chart clearly shows the range, median, quartiles, and any outliers
+  for each drink type. This will be useful for a quick visual comparison. Thank you!
+questions: '1. Do you have specific colors you prefer for each drink type?
+
+  2. Would you like labels showing the median values on each box?
+
+  3. Do you have a preferred style for the outliers (e.g., red dots, different shapes)?
+
+  4. How would you like the quartiles to be displayed (e.g., solid lines, different
+  shades)?
+
+  5. Would you prefer the x-axis labels (drink types) to be rotated for better visibility?
+
+  6. Should there be grid lines on the chart? If so, both major and minor or only
+  major?
+
+  7. Do you have a preferred font style or size for the axis titles and labels?
+
+  8. Is there any specific range for the y-axis you would like to set, or should it
+  be auto-scaled?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Yes, please include labels showing the median values on each box.
+
+  3. I do not know.
+
+  4. Different shades would be nice to differentiate the quartiles.
+
+  5. Yes, please rotate the x-axis labels for better visibility.
+
+  6. Only major grid lines, please.
+
+  7. I am not sure.
+
+  8. Auto-scaled would be best.
+
+  <end of user response>'
+data_attributes:
+- type
+- Caffeine (mg)

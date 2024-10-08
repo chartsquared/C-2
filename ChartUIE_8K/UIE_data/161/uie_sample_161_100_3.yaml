@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap of Digital TV Station Transmitter Data showing ERP
+  (Effective Radiated Power) values across different cities and states. Use 'CITY'
+  for the y-axis and 'STATE' for the x-axis. The heatmap color intensity should represent
+  the ERP values converted to numeric units (kW) across the various locations. Highlight
+  data points with missing or zero ERP values prominently. Include a gradient color
+  bar to represent the ERP value range on the side. The goal is to visualize how ERP
+  distribution varies geographically, helping to identify areas with higher or lower
+  transmitter power.
+questions: '1. Do you have a preferred color palette for representing the ERP values
+  on the heatmap?
+
+  2. How would you like the data points with missing or zero ERP values to be highlighted
+  (e.g., specific color, pattern)?
+
+  3. What range of ERP values should the gradient color bar cover?
+
+  4. Do you have a specific layout or orientation preference for the gradient color
+  bar (e.g., vertical or horizontal)?
+
+  5. Are there any specific cities or states you want to highlight or focus on in
+  the heatmap?
+
+  6. Do you have a preferred size for the heatmap (e.g., dimensions in pixels or inches)?
+
+  7. Should the labels for ''CITY'' and ''STATE'' be styled in a particular way (e.g.,
+  font size, color, orientation)?
+
+  8. Would you like to include any additional annotations or markers on the heatmap
+  to provide more context?'
+answers: '1. I am not sure.
+
+  2. Highlight data points with missing or zero ERP values in red.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- CITY
+- STATE
+- ERP

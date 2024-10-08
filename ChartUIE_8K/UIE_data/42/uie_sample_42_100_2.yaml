@@ -1,0 +1,52 @@
+initial_prompt: Create a treemap to visualize the distribution and relationships between
+  different urine analysis metrics such as gravity, pH, osmo, cond, urea, and calc
+  for kidney stone prediction. Highlight elements with unique values to emphasize
+  their variance. Use text annotations to display key values like gravity or pH next
+  to the larger sections. Ensure the color intensity varies with the osmo and urea
+  levels to indicate concentration and health risks. The practical purpose is to provide
+  a visual tool for quick assessment of urine sample properties in predicting kidney
+  stone risk.
+questions: '1. Do you have a preferred color palette for indicating different levels
+  of osmo and urea concentration?
+
+  2. Are there specific color codes you would like us to use for highlighting unique
+  values?
+
+  3. Do you prefer specific font styles or sizes for text annotations displaying key
+  values like gravity or pH?
+
+  4. Would you like any specific hierarchical structure for the treemap sections,
+  such as grouping by certain urine metrics?
+
+  5. Do you have preferences regarding the layout, such as the aspect ratio or padding
+  between sections of the treemap?
+
+  6. Are there any additional labels or legends you would like to be included to enhance
+  readability and interpretation?
+
+  7. Should certain metrics be prioritized or emphasized in the visualization?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. I think gravity and pH should be prioritized or emphasized since they are key
+  values.
+
+  <end of user emulated response>'
+data_attributes:
+- gravity
+- ph
+- osmo
+- cond
+- urea
+- calc

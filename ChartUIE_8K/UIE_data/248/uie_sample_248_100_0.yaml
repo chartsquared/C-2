@@ -1,0 +1,54 @@
+initial_prompt: Please create a line chart to visualize the gene expression data related
+  to Taxol drug resistance in breast cancer cell lines. The x-axis should represent
+  the gene symbols, and the y-axis should represent the log fold change (logFC) values.
+  Highlight specific genes with the lowest P values to focus on significant changes.
+  Include text annotations for these highlighted genes to emphasize their logFC and
+  P values. The chart aims to help understand how different genes are expressed in
+  various cell lines and how they might contribute to drug resistance.
+questions: '1. Do you have a preferred color scheme for highlighting the genes with
+  the lowest P values?
+
+  2. Would you like the chart to include a title and axis labels? If so, could you
+  provide the desired text for them?
+
+  3. Do you prefer a specific font style or size for the text annotations?
+
+  4. How many of the genes with the lowest P values would you like to be highlighted
+  in the chart?
+
+  5. Should the highlighted genes be marked with a specific symbol or shape on the
+  chart?
+
+  6. Do you want grid lines to be displayed on the chart? If yes, should they be for
+  the x-axis, y-axis, or both?
+
+  7. Would you like to include a legend to explain the highlights and annotations?
+
+  8. Is there a specific order in which the gene symbols should be displayed on the
+  x-axis? For example, sorted by P values or alphabetically?
+
+  9. Should the log fold change (logFC) values be represented using a specific scale,
+  such as a logarithmic scale?'
+answers: '1. I do not have a preferred color scheme.
+
+  2. Yes, please include a title and axis labels. Title: "Gene Expression Related
+  to Taxol Resistance in Breast Cancer Cell Lines". X-axis label: "Gene Symbols".
+  Y-axis label: "Log Fold Change (logFC)".
+
+  3. I am not sure.
+
+  4. Highlight the top 5 genes with the lowest P values.
+
+  5. Yes, please use a star shape to mark the highlighted genes.
+
+  6. I do not know.
+
+  7. Yes, include a legend to explain the highlights and annotations.
+
+  8. Display the gene symbols sorted by P values.
+
+  9. I do not know.'
+data_attributes:
+- Gene.symbol
+- P.Value
+- logFC

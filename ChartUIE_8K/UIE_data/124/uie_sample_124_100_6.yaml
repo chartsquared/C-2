@@ -1,0 +1,55 @@
+initial_prompt: Please create a dot plot for NBA Players data. Plot player height
+  on the x-axis and player weight on the y-axis for each player. Use different colors
+  to represent different teams based on team_abbreviation. Additionally, size the
+  dots based on the points per game (pts) to show how scoring correlates with player
+  height and weight. Ensure that the chart is clear and labeled appropriately for
+  easy interpretation.
+questions: '1. Do you have a preferred color palette for representing the different
+  NBA teams?
+
+  2. What is your preference for the color intensity or style (e.g., solid, gradient)
+  for the dots?
+
+  3. How would you like the dots to be scaled based on the points per game (pts)?
+
+  4. Should there be a legend explaining the different dot sizes for points per game
+  and colors for teams?
+
+  5. Do you have any specifications for the axis labels and title of the plot?
+
+  6. Would you prefer grid lines on the plot to make interpretation easier?
+
+  7. Are there any specific font styles or sizes you prefer for the labels and title?
+
+  8. Should we include tooltips or annotations for specific data points?
+
+  9. Are there any particular ranges or limits you want to set for the x-axis (player
+  height) and y-axis (player weight)?
+
+  10. Do you have a preference for the overall chart size and aspect ratio?'
+answers: '1. I do not know, any standard color palette for sports would be fine.
+
+  2. I am not sure, maybe solid colors would work.
+
+  3. I am not sure, as long as the differences are noticeable.
+
+  4. Yes, please include a legend explaining the different dot sizes for points per
+  game and colors for teams.
+
+  5. Please label the x-axis as "Player Height (inches)" and the y-axis as "Player
+  Weight (lbs)" and title the plot "NBA Players: Height, Weight, and Points Per Game".
+
+  6. Yes, grid lines would be helpful.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. No specific ranges, just a sensible range that includes all players.
+
+  10. I have no specific preference.'
+data_attributes:
+- player_height
+- player_weight
+- team_abbreviation
+- pts

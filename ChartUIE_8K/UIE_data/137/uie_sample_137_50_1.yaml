@@ -1,0 +1,52 @@
+initial_prompt: Create a stacked bar chart visualizing the distribution of heart disease
+  (HeartDisease column) across different chest pain types (ChestPainType column).
+  Highlight age groups. Annotate with unique cholesterol levels for each chest pain
+  type to understand the correlation.
+questions: '1. Do you have any specific color preferences for different chest pain
+  types?
+
+  2. How would you like the age groups to be highlighted or stratified in the stacked
+  bar chart (e.g., specific age ranges)?
+
+  3. Do you have a preferred style for annotating the unique cholesterol levels for
+  each chest pain type (e.g., text labels, data tips)?
+
+  4. Would you like the chart to include a legend? If so, what details should it contain?
+
+  5. Do you have any preferences for the axis scales (e.g., linear or logarithmic)?
+
+  6. Are there any specific font styles or sizes you prefer for labels and annotations?
+
+  7. Do you want any specific gridlines or background styles in the chart for better
+  readability?
+
+  8. Do you have any requirements for the chart''s title and subtitles? If so, please
+  provide the text.
+
+  9. Are there any other specific details that should be included or emphasized in
+  the chart for better understanding?'
+answers: '1. I am not sure.
+
+  2. I would like the age groups to be highlighted in ranges like <30, 30-40, 40-50,
+  50-60, and >60.
+
+  3. I prefer text labels for annotating the unique cholesterol levels for each chest
+  pain type.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Title: Distribution of Heart Disease Across Chest Pain Types; Subtitle: Highlighting
+  Age Groups and Annotating Cholesterol Levels.
+
+  9. I am not sure.'
+data_attributes:
+- HeartDisease
+- ChestPainType
+- Age
+- Cholesterol

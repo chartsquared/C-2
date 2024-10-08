@@ -1,0 +1,59 @@
+initial_prompt: Could you create a grouped bar chart to visualize the performance
+  of students in different subjects? I want the X-axis to represent different subjects
+  (Algebra, Calculus1, Calculus2, Statistics, Probability, Measure, Functional_analysis)
+  and the Y-axis to show the scores. Each group of bars should represent a different
+  class ('A', 'A', 'A'). Also, differentiate the bars by gender ('male', 'female',
+  'female') within each class. Use different colors for each gender. This way, we
+  can compare male and female performance across subjects within their respective
+  classes. The chart should be easy to interpret and visually appealing.
+questions: '1. Do you have a preferred color scheme for differentiating between male
+  and female students?
+
+  2. What title would you like for the chart?
+
+  3. Do you want to include any specific labels for the X-axis and Y-axis?
+
+  4. Would you like to show the exact scores at the top of each bar?
+
+  5. Do you have any preference for the font style or size used in the chart?
+
+  6. Is there any specific order you would like the subjects to be displayed on the
+  X-axis?
+
+  7. Do you want to include a legend to identify the colors representing male and
+  female students?
+
+  8. Should the bars be displayed with any specific width or spacing between them?
+
+  9. Would you like to add any grid lines to the chart for better readability?
+
+  10. Should the chart include any specific annotations or additional information?'
+answers: '1. I am not sure.
+
+  2. "Student Performance by Subject and Gender"
+
+  3. X-axis: "Subjects", Y-axis: "Scores"
+
+  4. Yes, please show the exact scores at the top of each bar.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, please include a legend.
+
+  8. I am not sure.
+
+  9. Yes, please add grid lines for better readability.
+
+  10. I have no specific preference.'
+data_attributes:
+- class
+- gender
+- Algebra
+- Calculus1
+- Calculus2
+- Statistics
+- Probability
+- Measure
+- Functional_analysis

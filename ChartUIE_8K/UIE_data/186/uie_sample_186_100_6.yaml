@@ -1,0 +1,54 @@
+initial_prompt: Create a violin plot for the JoJo Stands Stats dataset. Show the distribution
+  of 'PWR', 'SPD', 'RNG', 'PER', 'PRC', and 'DEV' values across different stands.
+  Each category should be a separate violin plot, allowing us to compare the bandwidth
+  of ratings for each attribute. Highlight any outliers and add a color legend to
+  distinguish between different stands. This will help in analyzing which attributes
+  have more variation or concentration in their ratings. Ensure the violin plots are
+  labeled clearly and are visually appealing for better interpretation.
+questions: '1. Do you have a preferred color palette for the violin plots?
+
+  2. Would you like the plots to be arranged in a specific layout (e.g., horizontal,
+  vertical grid)?
+
+  3. Are there any specific stands you would like to highlight or compare explicitly?
+
+  4. Do you prefer a particular style for highlighting outliers (e.g., different color,
+  special markers)?
+
+  5. Should the violin plots include all existing stands or only a subset of them?
+
+  6. Do you have any preferences for the scale (e.g., linear, logarithmic) of the
+  axes?
+
+  7. Is there any additional annotation or labeling style you prefer for clarity?
+
+  8. How detailed should the color legend be (e.g., each stand with a unique color,
+  grouping similar stands)?
+
+  9. Should the distribution bandwidth be estimated using a specific method (e.g.,
+  default, Scott’s Rule, Silverman’s Rule)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No specific stands to highlight, just compare all of them generally.
+
+  4. Different color for outliers would be good.
+
+  5. Please include all existing stands.
+
+  6. I am not sure.
+
+  7. Clear labeling for each attribute and stand would be helpful.
+
+  8. I have no specific preference.
+
+  9. I do not know.'
+data_attributes:
+- PWR
+- SPD
+- RNG
+- PER
+- PRC
+- DEV
+- Stand

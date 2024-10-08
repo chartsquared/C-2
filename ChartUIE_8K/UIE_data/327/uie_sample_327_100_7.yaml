@@ -1,0 +1,44 @@
+initial_prompt: Please create a line chart for the Ecoli Data Set, focusing on genomics.
+  Use the 'mcg,' 'gvh,' 'lip,' 'chg,' 'aac,' 'alm1,' and 'alm2' columns for the y-axes,
+  and 'Sequence Name' for the x-axis. Make sure the x-axis represents the sequence
+  names like 'AAT_ECOLI', 'ACEA_ECOLI', 'ACEK_ECOLI,' etc. Show all these measurements
+  across the different sequences to observe and compare trends in the genomic data.
+  Ensure that each line represents one of the feature columns. Kindly use different
+  colors for each feature to clearly distinguish them. Thanks!
+questions: "1. Do you have any preferences for the title or any specific labels on\
+  \ the x-axis and y-axis?\n2. Are there any specific colors you prefer for each of\
+  \ the feature columns (mcg, gvh, lip, chg, aac, alm1, alm2)?\n3. Would you like\
+  \ to include grid lines in the chart to aid in visualization? If so, horizontal,\
+  \ vertical, or both?\n4. Do you want to display data labels for each data point\
+  \ on the lines? \n5. Should the legend be placed at a specific position on the chart\
+  \ (e.g., top, bottom, left, right)?\n6. Are there any specific styling preferences\
+  \ for the lines (e.g., solid, dashed, dotted)?\n7. Do you prefer a specific font\
+  \ style or size for the labels and title in the chart?\n8. Should the chart include\
+  \ any annotations or markers to highlight significant data points or trends?\n9.\
+  \ Would you like to include a background color or specific theme for the chart?"
+answers: '1. I do not have any specific preference for the title or labels.
+
+  2. I am not sure about specific colors, just use different colors for each feature.
+
+  3. Yes, please include both horizontal and vertical grid lines.
+
+  4. I do not know.
+
+  5. I have no specific preference for the legend position.
+
+  6. I do not have a specific preference for line styles.
+
+  7. I am not sure about the font style or size.
+
+  8. I am not sure if annotations or markers are needed.
+
+  9. I have no specific preference for background color or theme.'
+data_attributes:
+- Sequence Name
+- mcg
+- gvh
+- lip
+- chg
+- aac
+- alm1
+- alm2

@@ -1,0 +1,41 @@
+initial_prompt: Create a bubble chart for predicting medical insurance costs. Use
+  'age' on the x-axis, 'charges' on the y-axis, and use 'bmi' for bubble size. Differentiate
+  bubbles by 'smoker' status.
+questions: '1. Do you have a preferred color scheme for differentiating ''smoker''
+  statuses?
+
+  2. Would you like to include gridlines on the chart for better readability?
+
+  3. Do you prefer any specific labels or titles for the x-axis and y-axis?
+
+  4. Should the bubble sizes be scaled linearly or logarithmically based on ''bmi''?
+
+  5. Would you like to add any specific annotations or data labels to the bubbles
+  for better clarity?
+
+  6. Is there a particular font style or size you would like to use for the chart
+  labels and legends?
+
+  7. Should the chart include a legend explaining the bubble colors and sizes?
+
+  8. Do you have any preference for the overall layout or orientation of the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, include gridlines for better readability.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Yes, please include a legend explaining the bubble colors and sizes.
+
+  8. I have no specific preference.'
+data_attributes:
+- age
+- charges
+- bmi
+- smoker

@@ -1,0 +1,64 @@
+initial_prompt: Create a violin plot to visualize student performance based on cumulative
+  GPA (CUML_GPA) and expected GPA (EXP_GPA). Highlight the distribution of grades
+  across different education levels of parents (MOTHER_EDU, FATHER_EDU) and type of
+  high school (HS_TYPE). Use text annotations to mark average study hours (STUDY_HRS)
+  and reading frequency (READ_FREQ) for each distribution to provide context. The
+  aim is to help educators understand the impact of parental education and high school
+  type on student performance, facilitating better academic support strategies. Highlights
+  should distinguish notable trends in GPA distributions.
+questions: '1. Do you have any specific color preferences for differentiating the
+  distributions based on parental education levels and high school types?
+
+  2. What kind of text annotations style do you prefer for marking average study hours
+  and reading frequency (e.g., font size, color, format)?
+
+  3. Do you want to include any specific legends or labels for the different categories
+  of parental education and high school types?
+
+  4. Would you prefer the violin plots to be displayed horizontally or vertically?
+
+  5. Are there any specific trends or patterns you would like to highlight within
+  the GPA distributions? If so, how would you prefer them to be distinguished (e.g.,
+  specific colors, markers)?
+
+  6. Do you have any preferences for the scale or range of the GPA on the axes?
+
+  7. Would you like to include any specific titles or subtitles for the overall chart
+  and individual sections?
+
+  8. Are there any specific data points or outliers you want to be emphasized within
+  the violin plot?
+
+  9. What level of granularity do you prefer for the distribution (e.g., bin width
+  for the density plot within the violin)?
+
+  10. Do you have any specific preferences for the overall layout or design of the
+  chart (e.g., background color, grid lines, margins)?'
+answers: '1. I am not sure.
+
+  2. I prefer a clear and readable font size, in black color.
+
+  3. Yes, please include specific legends or labels for the different categories.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Yes, please include a title like "Impact of Parental Education and High School
+  Type on Student Performance" and subtitles for individual sections.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- CUML_GPA
+- EXP_GPA
+- MOTHER_EDU
+- FATHER_EDU
+- HS_TYPE
+- STUDY_HRS
+- READ_FREQ

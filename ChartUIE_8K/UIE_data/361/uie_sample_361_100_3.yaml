@@ -1,0 +1,43 @@
+initial_prompt: Please create a line chart using the Cardiovascular_Disease_Dataset.
+  The X-axis should represent patient ages, while the Y-axis will show the max heart
+  rates. Ensure to differentiate between male and female patients using different
+  colored lines. This will help us understand the trend in maximum heart rate across
+  different ages and observe if there's a distinction between genders. Additionally,
+  include a legend to easily identify the lines. The chart should provide a clear
+  visualization of how max heart rate varies with age among different genders in our
+  dataset.
+questions: '1. Do you have a preferred color scheme for differentiating male and female
+  patients?
+
+  2. What title would you like for the chart?
+
+  3. Do you have any preferences for the X-axis (age) and Y-axis (max heart rate)
+  labels or their font sizes?
+
+  4. Should the axis labels include units (e.g., ''Age (years)'', ''Max Heart Rate
+  (bpm)'')?
+
+  5. Would you like grid lines to be included in the chart for better readability?
+
+  6. Are there specific age ranges you would like to focus on or highlight within
+  the chart?
+
+  7. Do you prefer any specific styles or themes for the chart to match your presentation
+  format?'
+answers: '1. I am not sure.
+
+  2. The title could be "Max Heart Rate by Age and Gender".
+
+  3. I do not have any specific preference.
+
+  4. Yes, the axis labels should include units.
+
+  5. Yes, please include grid lines for better readability.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- age
+- gender
+- maxheartrate

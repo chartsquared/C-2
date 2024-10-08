@@ -1,0 +1,58 @@
+initial_prompt: Please create a column chart visualizing the yearly income of individuals
+  from the business sector. Specifically, I want to see a comparison of incomes over
+  the years, segmented by sex and name. The columns should represent income amounts,
+  and the years should be on the x-axis. Ensure that the chart shows the proportion
+  of income by name for each year, highlighting any disparities or trends. Include
+  a legend to differentiate between sexes and use different colors for each name for
+  better clarity. The chart should help us understand income variations over time.
+  Thank you!
+questions: '1. Do you have a specific color palette preference for differentiating
+  the names in the chart?
+
+  2. Would you like to include data labels on the columns to display the exact income
+  values?
+
+  3. Should the legend be placed in a specific position on the chart (e.g., top, bottom,
+  left, right)?
+
+  4. Are there any particular font styles or sizes you prefer for the chart titles,
+  axis labels, or legends?
+
+  5. Do you want gridlines to be shown on the chart? If so, do you prefer them to
+  be major, minor, or both?
+
+  6. Would you like to see any trend lines or other statistical markers included on
+  the chart to emphasize certain patterns?
+
+  7. Is there a specific title you would like to use for the chart?
+
+  8. Do you have any preference for the axis intervals (e.g., yearly, biennially)?
+
+  9. Should the axis labels be rotated for better readability?
+
+  10. Do you prefer a certain layout for the chart, such as a grouped column chart
+  or a stacked column chart?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. Yes, please include data labels on the columns to display the exact income values.
+
+  3. I am not sure about the legend position.
+
+  4. I have no specific preference for font styles or sizes.
+
+  5. I do not know whether I want gridlines or not.
+
+  6. Yes, please include trend lines to emphasize certain patterns.
+
+  7. I have no specific title in mind.
+
+  8. Yearly intervals would be preferred.
+
+  9. I am not sure about rotating axis labels.
+
+  10. I prefer a grouped column chart layout.'
+data_attributes:
+- year
+- sex
+- name
+- n

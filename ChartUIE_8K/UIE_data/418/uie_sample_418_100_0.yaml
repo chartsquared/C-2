@@ -1,0 +1,43 @@
+initial_prompt: Create a stacked bar chart visualizing Malaria death rates from 1990
+  to 2016 globally. Highlight changes over time for each country and use color codes
+  for different years. Annotate key years with the highest and lowest death rates.
+  The purpose is to understand trends and identify critical periods for targeted interventions.
+  The chart should focus on overall changes and specific anomalies in the data. Include
+  a legend for clarity. Use text annotations and highlights to emphasize significant
+  data points.
+questions: "1. Do you have any preference for specific color codes to represent different\
+  \ years?\n2. Would you like a specific color scheme for highlighting key years with\
+  \ the highest and lowest death rates?\n3. Do you prefer horizontal or vertical stacked\
+  \ bar charts?\n4. Do you have any preferences for the font style and size for text\
+  \ annotations?\n5. Should the legend be placed in a specific position on the chart\
+  \ (e.g., top, right, bottom)?\n6. Are there specific countries you want to focus\
+  \ on or highlight in the chart?\n7. How detailed should the annotations be for the\
+  \ key years with significant changes? \n8. Do you prefer any specific chart title\
+  \ or axis labels?"
+answers: '<start of user emulated response>
+
+  1. I do not have any specific preference for color codes to represent different
+  years.
+
+  2. I am not sure about the color scheme for highlighting key years with the highest
+  and lowest death rates.
+
+  3. I prefer vertical stacked bar charts.
+
+  4. I do not have any specific preference for the font style and size for text annotations.
+
+  5. The legend can be placed at the bottom of the chart.
+
+  6. I do not know if there are specific countries to focus on or highlight in the
+  chart.
+
+  7. The annotations for key years should be detailed enough to show significant changes
+  but not overly complex.
+
+  8. I have no specific preferences for the chart title or axis labels.
+
+  <end of user emulated response>'
+data_attributes:
+- Entity
+- Year
+- 'Deaths - Malaria - Sex: Both - Age: Age-standardized (Rate) (per 100,000 people)'

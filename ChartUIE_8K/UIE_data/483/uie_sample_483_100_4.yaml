@@ -1,0 +1,54 @@
+initial_prompt: Please create a scatter plot to visualize the relationship between
+  GHG Emissions (kg CO2eq) and Land Use (m2*year) for different milk substitutes.
+  Use 'Data S2 Name' to distinguish between types (Almond milk, Oat milk, Rice milk)
+  in the plot. Highlight each one with different colors or markers. Annotate with
+  original food sources (Nuts, Oatmeal, Rice) for added context. Ensure axes are labeled
+  clearly. This will help compare the environmental impact of each milk alternative.
+questions: '1. Do you have any specific preferences for the color scheme to distinguish
+  between the different milk substitutes?
+
+  2. What type of markers would you prefer to use for each milk substitute (e.g.,
+  circles, squares, triangles)?
+
+  3. Do you have any preferences for the font style and size used for the annotations
+  and labels?
+
+  4. Would you like to include a legend to explain the colors or markers used for
+  each milk substitute?
+
+  5. Is there a specific way you would like the grid lines to be displayed (e.g.,
+  dotted, solid, none)?
+
+  6. Do you have any preference for the range or scale of the axes (e.g., start and
+  end values, logarithmic scale)?
+
+  7. Would you prefer any specific layout or position for the annotations in the scatter
+  plot?
+
+  8. Are there any additional elements or styling preferences you would like to include
+  (e.g., title, subtitle, background color)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I would prefer circles for Almond milk, squares for Oat milk, and triangles for
+  Rice milk.
+
+  3. I do not know.
+
+  4. Yes, please include a legend.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. A title comparing the environmental impact of milk substitutes would be nice.
+
+  <end of user emulated response>'
+data_attributes:
+- Data S2 Name
+- GHG Emissions (kg CO2eq, IPCC2013 incl CC feedbacks)
+- Land Use (m2*year)
+- Original_Food

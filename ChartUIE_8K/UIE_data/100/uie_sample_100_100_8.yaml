@@ -1,0 +1,47 @@
+initial_prompt: Create a stacked bar chart that shows the distribution of units sold
+  per product color for different shipping options. The x-axis should represent the
+  product colors, and the y-axis should represent the number of units sold. Each bar
+  will be divided into segments representing different shipping options such as 'Livraison
+  standard'. Use different colors to differentiate between shipping options. Title
+  the chart "Units Sold by Product Color and Shipping Option" and include a legend
+  to indicate the shipping options. This will help visualize the relationship between
+  product color popularity and preferred shipping methods.
+questions: '1. Do you have any specific colors you prefer for the different shipping
+  options?
+
+  2. What font style and size would you like for the chart title and legends?
+
+  3. Do you prefer the chart to display values on the y-axis in a specific format
+  or scale?
+
+  4. Should the x-axis display product color names in a specific orientation (e.g.,
+  vertical, diagonal)?
+
+  5. Would you like to include gridlines on the chart for better readability?
+
+  6. Do you have a specific order preference for how the shipping options should be
+  stacked in the bars?
+
+  7. Are there any additional annotations or labels you would like on the chart besides
+  the legend?
+
+  8. Do you have a preferred style or appearance for the chart''s overall design?'
+answers: '1. I don''t know.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. Vertical orientation for product color names would be fine.
+
+  5. I am not sure.
+
+  6. I don''t know.
+
+  7. I have no specific preference.
+
+  8. I don''t know.'
+data_attributes:
+- product_color
+- units_sold
+- shipping_option_name

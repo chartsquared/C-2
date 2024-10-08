@@ -1,0 +1,58 @@
+initial_prompt: Create a heatmap to visualize the weather data, focusing on temperature
+  variations and precipitation. Use text annotations to highlight extreme temperature
+  and high precipitation days. Add highlights to emphasize patterns over time, especially
+  in weather changes and wind speeds, aiding predictive analysis.
+questions: '1. Do you have a specific color scheme preference for the heatmap (e.g.,
+  cool to warm colors, monochromatic)?
+
+  2. How would you like the extreme values to be annotated (e.g., specific icons,
+  bold text, color-coded)?
+
+  3. Should the text annotations include just the value or any additional information
+  (e.g., date, percentile)?
+
+  4. Do you have a preferred layout for the heatmap (e.g., monthly view, weekly view,
+  continuous timeline)?
+
+  5. Do you prefer the heatmap to be clustered by any specific variable (e.g., date,
+  temperature range)?
+
+  6. How detailed should the highlights showing patterns over time be (e.g., trend
+  lines, moving averages)?
+
+  7. What level of granularity do you want for the time patterns (e.g., daily, weekly,
+  monthly)?
+
+  8. Should wind speeds be visualized on a separate axis or integrated within the
+  heatmap?
+
+  9. Would you like any additional context or labels on the axes (e.g., unit measurements,
+  categorical indicators)?
+
+  10. Do you require a legend or key to explain the color mappings and highlights
+  on the heatmap?'
+answers: '1. I am not sure.
+
+  2. Bold text would be good.
+
+  3. Just the value.
+
+  4. I prefer a monthly view.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. Weekly granularity.
+
+  8. Integrated within the heatmap.
+
+  9. I have no specific preference.
+
+  10. Yes, a legend or key would be helpful.'
+data_attributes:
+- date
+- precipitation
+- temp_max
+- temp_min
+- wind

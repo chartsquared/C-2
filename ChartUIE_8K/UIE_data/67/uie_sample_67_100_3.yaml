@@ -1,0 +1,56 @@
+initial_prompt: Please create a line chart representing the Samsung stock prices over
+  time using the dataset provided. The x-axis should show the 'Date' and the y-axis
+  should represent the stock prices, displaying the 'Open', 'High', 'Low', 'Close',
+  and 'Adj Close' columns. This will help us visualize the stock price movements and
+  trends. Ensure each price type is distinguished with different colors or line styles
+  to clearly compare their fluctuations over the given period. Label the axes and
+  include a legend to make the chart readable. Thank you!
+questions: '1. Do you have any specific preferences for the color scheme of the lines
+  representing different stock prices?
+
+  2. Would you prefer solid, dashed, or dotted line styles for distinguishing between
+  different stock price types?
+
+  3. Are there any specific date formats or intervals you would like the x-axis to
+  display (e.g., daily, weekly, monthly)?
+
+  4. Do you require any specific annotations or markers for significant events on
+  the chart?
+
+  5. Do you prefer a particular font style or size for the axis labels and the legend?
+
+  6. Should the y-axis display any specific range or scale (e.g., start from zero,
+  logarithmic scale)?
+
+  7. Do you have any preference for the chart background (e.g., white, gridlines,
+  light shading)?
+
+  8. Would you like to include a title or any additional text descriptions on the
+  chart? If so, what should it be?
+
+  9. Are there any additional elements you would like to see on the chart (e.g., moving
+  averages, trend lines)?'
+answers: '1. I am not sure.
+
+  2. Solid lines would be great.
+
+  3. Monthly intervals would work for me.
+
+  4. I do not know.
+
+  5. No specific preference.
+
+  6. Start from zero would be fine.
+
+  7. White background with gridlines sounds good.
+
+  8. Yes, please include the title: "Samsung Stock Price Over Time".
+
+  9. I am not sure.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close

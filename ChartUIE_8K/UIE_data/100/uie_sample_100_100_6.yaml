@@ -1,0 +1,50 @@
+initial_prompt: 'Please create a heatmap from the Women Fashion Trend Dataset. Visualize
+  the relationship between product ratings and units sold across different product
+  colors. Each axis should represent one of these parameters: ratings, units sold,
+  and product colors. Color intensity in the heatmap should indicate the frequency
+  or density of ratings and units sold combinations per color. This will help in identifying
+  which product colors tend to have higher sales and better ratings, aiding in product
+  and marketing decisions. Ensure the chart is clear, labeled, and easy to interpret.
+  Use data from the latest available crawl month. Thank you!'
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the color intensity to be represented (e.g., specific gradient,
+  color palette)?
+
+  3. Do you have a preferred layout for the axis (e.g., which axis should represent
+  ratings, units sold, and product colors)?
+
+  4. Are there any specific ranges or bins for product ratings or units sold that
+  you want to be highlighted?
+
+  5. Would you like to include any specific labels or annotations on the heatmap?
+
+  6. Is there a particular way you would like to handle missing or zero values in
+  the data?
+
+  7. Are there specific product colors you want highlighted or given prominence in
+  the visualization?
+
+  8. Do you have any preferences for the overall chart aesthetics, such as font styles
+  or sizes for labels and titles?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Ratings on the x-axis, units sold on the y-axis, and product colors represented
+  by different segments within the heatmap.
+
+  4. I do not know.
+
+  5. No specific labels or annotations needed.
+
+  6. I am not sure.
+
+  7. No, please use the data as is.
+
+  8. I have no specific preference.'
+data_attributes:
+- rating
+- units_sold
+- product_color
+- crawl_month

@@ -1,0 +1,43 @@
+initial_prompt: I need a bar chart that visualizes the student performance data. Specifically,
+  I'd like to see the relationship between students' study time and their final grades
+  (G3). Separate the data by school. Use different colors for each school to compare
+  them easily. Make sure the x-axis represents the study time (with unique values
+  like 1, 2, 3, 4) and the y-axis represents the average final grade (G3). Title the
+  chart "Impact of Study Time on Final Grades by School". This will help in understanding
+  how study habits affect performance in different schools.
+questions: '1. Do you have a specific preference for the color palette for each school?
+
+  2. What font style and size would you prefer for the chart title and axis labels?
+
+  3. Do you prefer the bars to be displayed horizontally or vertically?
+
+  4. Should the legend be placed in a specific position on the chart?
+
+  5. Would you like to add data labels on the bars to show the exact average final
+  grades (G3)?
+
+  6. Do you have any preference for the chart''s background color or gridlines?
+
+  7. Should we include any specific axis titles apart from the standard ones (''Study
+  Time'' for x-axis and ''Average Final Grade'' for y-axis)?
+
+  8. Are there any specific margins or padding requirements for the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Vertically.
+
+  4. I am not sure.
+
+  5. Yes, please add data labels on the bars.
+
+  6. I have no specific preference.
+
+  7. No, the standard axis titles are fine.
+
+  8. I do not know.'
+data_attributes:
+- school
+- studytime
+- G3

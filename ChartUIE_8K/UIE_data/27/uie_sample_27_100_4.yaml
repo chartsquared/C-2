@@ -1,0 +1,46 @@
+initial_prompt: Please create a scatter plot using the Automobile Sales data. I'm
+  interested in visualizing the relationship between SALES and QUANTITYORDERED. Plot
+  the SALES on the Y-axis and QUANTITYORDERED on the X-axis. Use different colors
+  or markers for different STATUS categories (like 'Shipped,' 'Pending,' etc.). Also,
+  it would be helpful to add a trendline to see any patterns or correlations between
+  these variables. Adding labels for different DEALSIZE categories will also help
+  in understanding the distribution and sales performance across different order sizes.
+  Thanks!
+questions: '1. Do you have any color preferences for different STATUS categories?
+
+  2. Do you prefer specific marker shapes for each STATUS category?
+
+  3. Would you like the trendline to be linear or polynomial?
+
+  4. Do you have any preferences for the font style or size for the DEALSIZE labels?
+
+  5. Would you like gridlines to be displayed on the chart? If yes, should they be
+  major, minor, or both?
+
+  6. Do you have any specific title or subtitle for the scatter plot?
+
+  7. Would you like the axes to be labeled in a particular way or with any specific
+  formatting?
+
+  8. Do you prefer any particular style or theme for the scatter plot (e.g., classic,
+  modern, minimalistic)?'
+answers: '1. I have no specific preference for colors.
+
+  2. I am not sure about specific marker shapes.
+
+  3. A linear trendline would be fine.
+
+  4. I do not have any preferences for the font style or size for the DEALSIZE labels.
+
+  5. I would like both major and minor gridlines to be displayed.
+
+  6. I do not know about the specific title or subtitle, any relevant one is okay.
+
+  7. I am not sure about specific formatting for the axes labels.
+
+  8. I have no specific preference for the style or theme of the scatter plot.'
+data_attributes:
+- SALES
+- QUANTITYORDERED
+- STATUS
+- DEALSIZE

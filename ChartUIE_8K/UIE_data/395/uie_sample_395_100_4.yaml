@@ -1,0 +1,53 @@
+initial_prompt: I need a bar chart that shows the various software packages along
+  with their respective sizes. The x-axis should list the 'name' of each software
+  package, and the y-axis should represent their 'size'. Make sure each bar is labeled
+  with the corresponding package name. Also, include the number of imports for each
+  package at the top of the bars for additional details. Provide a legend that categorizes
+  the imports to enhance understanding. The chart should give a clear visual representation
+  of the dependencies and size of each software package in an easy-to-understand manner.
+questions: '1. Do you have a preferred color scheme or palette for the bars and legend
+  categories?
+
+  2. Do you want the bars to be displayed in any specific order (e.g., ascending or
+  descending by size)?
+
+  3. Is there a specific font style or size you prefer for the labels and numbers
+  on the chart?
+
+  4. Would you like any gridlines or background colors to be included in the chart
+  for better readability?
+
+  5. Do you have any preference for the positioning of the legend (e.g., top, bottom,
+  left, right)?
+
+  6. Should the chart have any borders or specific line styles around the bars?
+
+  7. Do you want to include any annotations or notes within the chart to highlight
+  specific data points or observations?
+
+  8. Are there any specific dimensions or aspect ratio you would prefer for the chart?
+
+  9. Would you like to add any titles or subtitles to the chart for better context?
+  If so, what should they be?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include gridlines for better readability.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. No, I do not want any annotations or notes.
+
+  8. I am not sure.
+
+  9. Yes, please add a title "Software Packages and Their Sizes" and a subtitle "Including
+  Number of Imports".'
+data_attributes:
+- name
+- size
+- imports

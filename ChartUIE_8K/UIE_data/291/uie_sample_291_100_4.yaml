@@ -1,0 +1,61 @@
+initial_prompt: 'I''d like a bar chart that visualizes the engagement metrics from
+  ''291.csv''. The x-axis should represent different engagement types like reactions,
+  comments, shares, likes, loves, etc., while the y-axis should show their respective
+  counts. Highlight unique values in varying colors. Separately, include another set
+  of bars that represents the different status types (link, photo, status, video)
+  with their counts. This chart should provide a clear comparative view of how each
+  engagement metric and status type performs. Title it: "Social Media Engagement:
+  A Comprehensive Analysis".'
+questions: '1. Do you have any preference for the color palette to be used for highlighting
+  unique values?
+
+  2. Should each set of bars (engagement metrics and status types) be in different
+  colors or shades?
+
+  3. Do you want the bars to be grouped or stacked for better comparison?
+
+  4. What order would you like the engagement types and status types to be displayed
+  on the x-axis (alphabetical, count descending, etc.)?
+
+  5. Would you like to include data labels on the bars to show exact counts?
+
+  6. Do you have any specific preferences for the font type or size for the chart
+  title and axis labels?
+
+  7. Do you prefer any specific background color or gridline style for the chart?
+
+  8. Should the chart include a legend to indicate which colors correspond to which
+  engagement types and status types?
+
+  9. Do you have any specific requirements for the size or aspect ratio of the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, each set of bars should be in different colors or shades.
+
+  3. Grouped bars for better comparison.
+
+  4. Count descending.
+
+  5. Yes, please include data labels to show exact counts.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, the chart should include a legend.
+
+  9. I do not know.'
+data_attributes:
+- num_reactions
+- num_comments
+- num_shares
+- num_likes
+- num_loves
+- num_wows
+- num_hahas
+- num_sads
+- num_angrys
+- status_type_link
+- status_type_photo
+- status_type_status
+- status_type_video

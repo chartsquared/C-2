@@ -1,0 +1,63 @@
+initial_prompt: 'I''d like to visualize the distribution of liver enzymes in the Hepatitis
+  C Prediction Dataset. Specifically, create histograms for the following columns:
+  ALB (Albumin), ALP (Alkaline Phosphatase), ALT (Alanine Aminotransferase), AST (Aspartate
+  Aminotransferase), BIL (Bilirubin), CHE (Cholinesterase), CHOL (Cholesterol), CREA
+  (Creatinine), and GGT (Gamma-Glutamyl Transferase). The histograms should show the
+  frequency of values for each enzyme, enabling me to see the spread and central tendencies.
+  Use different colors for each histogram for clarity.'
+questions: '1. Do you have any specific preferences for the color palette used for
+  the histograms?
+
+  2. How many bins would you prefer for each histogram, or should the number of bins
+  be automatically determined?
+
+  3. Would you like to include gridlines in the histograms for better readability?
+
+  4. Should the histograms include annotations for mean or median values to highlight
+  central tendencies?
+
+  5. Do you prefer a particular style for the histograms (e.g., bar width, border
+  color)?
+
+  6. Would you like the histograms to be displayed in a single combined figure or
+  as separate figures for each enzyme?
+
+  7. Do you have preferences for the labeling style for the axes and titles?
+
+  8. Should we include any reference lines or markers to indicate specific thresholds
+  or clinical norms in the histograms?
+
+  9. Are there any specific formatting requirements for the legends and axis labels
+  (e.g., font size, font type)?
+
+  10. Would you like to display any additional statistical information (such as standard
+  deviation or interquartile range) on the histograms?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure, please choose an appropriate number of bins automatically.
+
+  3. Yes, I would like to include gridlines for better readability.
+
+  4. Yes, including annotations for mean values would be helpful.
+
+  5. I do not have a specific preference.
+
+  6. A single combined figure would be fine.
+
+  7. I do not have any specific preference.
+
+  8. I am not sure.
+
+  9. I do not have any specific formatting requirements.
+
+  10. I do not need additional statistical information displayed on the histograms.'
+data_attributes:
+- ALB
+- ALP
+- ALT
+- AST
+- BIL
+- CHE
+- CHOL
+- CREA
+- GGT

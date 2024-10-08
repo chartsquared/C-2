@@ -1,0 +1,49 @@
+initial_prompt: I have data on near-Earth comets with various parameters like Epoch,
+  TP, e, i, w, Node, q, Q, P, MOID, A1, A2, A3, DT, and object names. Can you create
+  a box chart to visualize the distributions of "e", "i", "w", "Node", "q", "Q", "P",
+  and "MOID"? I want to see the spread and identify any potential outliers for these
+  orbital elements and parameters for the different comets in my dataset. Thank you!
+questions: '1. Do you have any preference for the color scheme of the box chart?
+
+  2. Should the chart include labels for outliers?
+
+  3. Would you like to add titles and axis labels to the chart?
+
+  4. How would you prefer to deal with missing values, if there are any?
+
+  5. Do you have a preference for the orientation of the box plots (vertical or horizontal)?
+
+  6. Should the chart include legends to distinguish different comet parameters?
+
+  7. Do you want any specific statistical information to be displayed on the chart,
+  such as median or quartiles?
+
+  8. Should the chart highlight any specific comets or groups of comets?
+
+  9. How detailed should the axis ticks and grid lines be on the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include labels for outliers.
+
+  3. Yes, please add titles and axis labels to the chart.
+
+  4. I do not know.
+
+  5. Vertical orientation is preferred.
+
+  6. I am not sure.
+
+  7. Yes, display the median and quartiles.
+
+  8. I have no specific preference.
+
+  9. Detailed enough to clearly distinguish the data points.'
+data_attributes:
+- e
+- i
+- w
+- Node
+- q
+- Q
+- P
+- MOID

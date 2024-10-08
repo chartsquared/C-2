@@ -1,0 +1,53 @@
+initial_prompt: I have data showing various Christmas songs charting on the Billboard
+  Hot 100, including song titles, performer names, their chart positions, peak positions,
+  and weeks on the chart. I'd like to see a stacked bar chart that visualizes the
+  chart performance over the weeks on the Billboard Hot 100. Specifically, I want
+  to compare different songs by their peak positions over time. Include all provided
+  data points like week position, performer, and other relevant metrics. Please ensure
+  the chart is visually appealing and easy to interpret for a general audience.
+questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Should we include a legend in the chart to distinguish between different songs
+  and performers?
+
+  3. Do you prefer a specific arrangement for the bars (e.g., sorted by song title,
+  peak position, or another attribute)?
+
+  4. Would you like to see data labels on the bars, such as week position or peak
+  position values?
+
+  5. Should the chart include grid lines to enhance readability?
+
+  6. Do you want to include any additional annotations or comments on the chart?
+
+  7. Do you have a preferred font style and size for the axis labels and titles?
+
+  8. Would you like to include a title and subtitle for the chart? If so, do you have
+  specific wording in mind?
+
+  9. Should there be specific focus or highlight on certain songs or time periods
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend to distinguish between different songs and performers.
+
+  3. I do not know.
+
+  4. Yes, I would like to see data labels on the bars.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not have a specific preference.
+
+  8. Yes, please include a title and subtitle. Title: "Christmas Songs on the Billboard
+  Hot 100". Subtitle: "Comparing Chart Performance Over Time by Peak Positions".
+
+  9. I am not sure.'
+data_attributes:
+- song
+- performer
+- week_position
+- peak_position
+- weeks_on_chart

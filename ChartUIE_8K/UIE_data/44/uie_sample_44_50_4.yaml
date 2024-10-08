@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap to visualize the correlation between the amino acid
+  properties (e.g., Molecular Weight, Residue Weight, pKa1, pKb2, pKx3, pl4) in the
+  provided data.
+questions: '1. Do you have a preferred color scheme for the heatmap (e.g., single
+  hue, diverging, sequential)?
+
+  2. Would you like the color intensity to represent the strength of correlation,
+  with specific colors for positive/negative correlations?
+
+  3. Do you prefer displaying correlation values within the heatmap cells?
+
+  4. Are there any specific correlation thresholds that should be highlighted or annotated
+  in the heatmap?
+
+  5. Would you prefer the axes to be labeled with the full property names or abbreviations?
+
+  6. Do you desire hierarchical clustering to group similar properties together within
+  the heatmap?
+
+  7. Should the heatmap include a legend to explain the color scale used for correlations?
+
+  8. Do you wish to have gridlines between the cells for better clarity?
+
+  9. Would you like to include any specific contextual information or annotations
+  outside of the correlation data itself?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the color intensity to represent the strength of correlation,
+  with specific colors for positive/negative correlations.
+
+  3. Yes, I prefer displaying correlation values within the heatmap cells.
+
+  4. I do not know.
+
+  5. Full property names, please.
+
+  6. I am not sure.
+
+  7. Yes, the heatmap should include a legend to explain the color scale used for
+  correlations.
+
+  8. I do not know.
+
+  9. I have no specific preference.'
+data_attributes:
+- Molecular Weight
+- Residue Weight
+- pKa1
+- pKb2
+- pKx3
+- pl4

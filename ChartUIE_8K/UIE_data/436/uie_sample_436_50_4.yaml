@@ -1,0 +1,37 @@
+initial_prompt: Create a stacked bar chart showing marbles' average lap times for
+  each race at different sites. Use data from marbula 1 season 1 championship to analyze
+  team performance over time. Include labels for dates and track lengths.
+questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Would you like to highlight specific teams or races in the chart?
+
+  3. How detailed should the axis labels be (e.g., date format, race names)?
+
+  4. Do you prefer labels for each bar segment or only for the total average lap times?
+
+  5. Should the chart include a legend to identify teams by color?
+
+  6. Would you like any additional annotations or markers for significant events or
+  performances?
+
+  7. Are there any specific teams or sites that should be emphasized or compared directly?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. The axis labels should include both the date and the race names.
+
+  4. I am not sure.
+
+  5. Yes, the chart should include a legend to identify teams by color.
+
+  6. I do not know.
+
+  7. I do not know.'
+data_attributes:
+- date
+- race
+- site
+- team_name
+- avg_time_lap
+- track_length_m

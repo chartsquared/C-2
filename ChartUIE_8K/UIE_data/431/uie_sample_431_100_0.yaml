@@ -1,0 +1,52 @@
+initial_prompt: 'Visualize a line chart showing how long it takes to crack various
+  passwords. Highlight the top 3 weakest passwords: "password," "123456," and "12345678."
+  Annotate each point on the line with the password and its offline cracking time
+  in seconds. Use different colors for categories like "simple-alphanumeric" and "password-related."
+  The purpose is to emphasize the ease of cracking these common passwords and raise
+  awareness about cybersecurity. Highlight the cracking times in a tooltip when hovering
+  over each data point, making the chart interactive and engaging to understand.'
+questions: '1. Do you have a preferred color scheme for the different categories like
+  "simple-alphanumeric" and "password-related"?
+
+  2. What specific line styles would you like to use for the chart (e.g., solid, dashed)?
+
+  3. Do you have a preference for the font style and size used for annotations on
+  the chart?
+
+  4. Should the y-axis be in linear or logarithmic scale for better visualization
+  of cracking times?
+
+  5. Would you like specific labels or legends to be added to help differentiate between
+  categories?
+
+  6. Do you have a preference for the overall style of the chart (e.g., minimalistic,
+  detailed)?
+
+  7. Are there any specific data points that you would like to emphasize apart from
+  the top 3 weakest passwords?
+
+  8. Would you prefer the chart to have grid lines for better readability of data
+  points?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Linear scale should be fine.
+
+  5. Yes, specific labels or legends would be helpful.
+
+  6. A minimalistic style would be preferred.
+
+  7. No, just the top 3 weakest passwords.
+
+  8. Yes, grid lines would be helpful for readability.
+
+  <end of user emulated response>'
+data_attributes:
+- password
+- offline_crack_sec
+- category

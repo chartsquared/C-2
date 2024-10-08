@@ -1,0 +1,52 @@
+initial_prompt: I want to create an area chart that visualizes the historical stock
+  prices for Jumia. The x-axis should represent the dates, and the y-axis should represent
+  the close prices over time. Use different colors to fill the areas between the date
+  and close prices. This will help in analyzing the trends and fluctuations in the
+  stock's performance over the specified period. Make sure it clearly shows the increasing
+  and decreasing trends visually. Additionally, highlight any significant volume spikes
+  by plotting the volume data onto the same chart or a secondary y-axis.
+questions: '1. Do you have a preferred color scheme for the different areas representing
+  the stock prices?
+
+  2. How would you like the volume spikes to be highlighted (e.g., specific colors,
+  markers, dashed lines)?
+
+  3. Would you prefer a specific line style (solid, dashed, dotted) for the trend
+  lines?
+
+  4. Is there a particular font or style you would like for the axis labels and titles?
+
+  5. Do you need grid lines on the chart, and if so, should they be styled in a specific
+  way?
+
+  6. Would you like to include any annotations or markers for significant dates or
+  events on the chart?
+
+  7. Should the secondary y-axis for volume be on the left or right side of the chart?
+
+  8. Do you have a specific date range to focus on, or should the entire dataset be
+  used?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference.
+
+  6. I would like to include annotations or markers for significant dates or events
+  on the chart.
+
+  7. The secondary y-axis for volume should be on the right side of the chart.
+
+  8. The entire dataset should be used.
+
+  <end of user response>'
+data_attributes:
+- Date
+- Close
+- Volume

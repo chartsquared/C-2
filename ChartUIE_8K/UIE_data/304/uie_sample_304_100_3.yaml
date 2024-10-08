@@ -1,0 +1,55 @@
+initial_prompt: Please create a scatter plot to visualize the CO2 levels over time
+  using the data from the Scripps CO2 program. Plot 'Date' on the x-axis and 'CO2[ppm]'
+  on the y-axis. Highlight different years using different colors. Include trend lines
+  for the 'fit[ppm]' data to indicate long-term trends. Add a legend, labels, and
+  a title to give context to the data. Ensure that missing values (-99.99) are appropriately
+  handled to maintain the integrity of the visual. The chart should help illustrate
+  the changes in atmospheric CO2 concentrations from 1958 onwards.
+questions: '1. Do you have a specific title in mind for the chart?
+
+  2. Do you have any preferences for the color palette to distinguish different years?
+
+  3. Should the trend lines be linear or would you prefer a different type (e.g.,
+  polynomial)?
+
+  4. Are there specific labels you would like for the x-axis (Date) and y-axis (CO2[ppm])?
+
+  5. Would you like gridlines to be displayed on the chart? If so, in which format
+  (e.g., solid, dashed)?
+
+  6. Do you prefer the legend to be positioned in a specific location (e.g., top-right,
+  bottom-left)?
+
+  7. Should the scatter plot include markers for data points? If yes, do you have
+  a preference for marker style (e.g., circles, squares)?
+
+  8. Would you like to use a logarithmic scale for either axis?
+
+  9. How would you like to handle missing values (-99.99)? Should they be removed,
+  or would you prefer an alternative method (e.g., interpolation)?
+
+  10. Do you have any preferred font style or size for the labels and title?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Linear trend lines would be fine.
+
+  4. X-axis: Date, Y-axis: CO2[ppm]
+
+  5. Yes, gridlines in solid format.
+
+  6. I am not sure.
+
+  7. Yes, include markers for data points. I have no specific preference for marker
+  style.
+
+  8. No, a logarithmic scale is not needed.
+
+  9. Remove the missing values (-99.99).
+
+  10. I am not sure.'
+data_attributes:
+- Date
+- CO2[ppm]
+- fit[ppm]

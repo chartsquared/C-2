@@ -1,0 +1,46 @@
+initial_prompt: Given the Bacteria Dataset, I need a Choropleth map that will visualize
+  the "Where Found" data. The map should display different regions (such as different
+  parts of the body or environments) where specific bacteria are commonly found. The
+  regions on the map should be color-coded to represent the density or frequency of
+  different bacteria types found in each location. The map should also allow me to
+  hover over each region to get more detailed information about the specific bacteria,
+  including their name, family, and whether they are harmful to humans. Thank you!
+questions: '1. Do you have a preference for a specific color scheme for the map?
+
+  2. Would you like the colors to indicate frequency categories (e.g., low, medium,
+  high) or a gradient scale for density?
+
+  3. Do you prefer a legend on the side or at the bottom of the map?
+
+  4. Are there any specific regions or environments that you want to be highlighted
+  or made more prominent on the map?
+
+  5. Should the hover information be displayed as a tooltip or a side panel?
+
+  6. Do you want the bacteria names to be displayed by default on the map, or only
+  when hovering?
+
+  7. Is there a specific font style or size you prefer for the text on the map?
+
+  8. Would you like to include any additional annotations or markers on the map (e.g.,
+  indicating particularly harmful bacteria)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I prefer the legend on the side.
+
+  4. I do not know.
+
+  5. Tooltip is fine.
+
+  6. Only when hovering.
+
+  7. I do not know.
+
+  8. I would like to include markers indicating particularly harmful bacteria.'
+data_attributes:
+- Name
+- Family
+- Where Found
+- Harmful to Humans

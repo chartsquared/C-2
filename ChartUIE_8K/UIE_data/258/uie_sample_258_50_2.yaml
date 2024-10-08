@@ -1,0 +1,62 @@
+initial_prompt: Create a line chart showing the variation of features V1 to V24 for
+  different samples from the Wall Following Robot Navigation Dataset. Highlight key
+  deviations and annotate points where Class differs, focusing on V4 and V9.
+questions: "1. What color scheme do you prefer for highlighting key deviations?\n\
+  2. Do you have a specific preference for line styles or markers to distinguish different\
+  \ features (solid, dashed, dotted, etc.)?\n3. Should the x-axis represent the 'id'\
+  \ of the samples? \n4. How would you like to see the y-axis scaled (linear, logarithmic)?\n\
+  5. Do you have any specific preferences for annotations on points where Class differs\
+  \ (text labels, arrows, etc.)?\n6. Are there any additional features you would like\
+  \ to be focused on, besides V4 and V9?\n7. What level of grid detail do you prefer\
+  \ (none, minor only, major only, both)?\n8. Would you like a legend to differentiate\
+  \ features V1 to V24? \n9. Should we include titles and labels for the axes? If\
+  \ so, do you have any specific wording preferences?\n10. Is there any specific format\
+  \ or style you'd like for the data point labels or tooltips?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the x-axis should represent the ''id'' of the samples.
+
+  4. Linear scale would be fine.
+
+  5. Text labels would be good for annotations on points where Class differs.
+
+  6. I am not sure.
+
+  7. Both minor and major grid details would be preferable.
+
+  8. Yes, please include a legend to differentiate features V1 to V24.
+
+  9. Yes, include titles and labels for the axes. For the title, something like "Variation
+  of Features V1 to V24 in Wall Following Robot Navigation". For the x-axis, "Sample
+  ID" and for the y-axis, "Feature Values".
+
+  10. I have no specific preference.'
+data_attributes:
+- id
+- V1
+- V2
+- V3
+- V4
+- V5
+- V6
+- V7
+- V8
+- V9
+- V10
+- V11
+- V12
+- V13
+- V14
+- V15
+- V16
+- V17
+- V18
+- V19
+- V20
+- V21
+- V22
+- V23
+- V24
+- Class

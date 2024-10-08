@@ -1,0 +1,65 @@
+initial_prompt: Create a treemap to visualize the physical and chemical properties
+  of amino acids from the provided data. Each rectangle should represent an amino
+  acid, subdivided to show detailed attributes like Molecular Weight, Residue Weight,
+  and counts of carbon, hydrogen, nitrogen, oxygen, and sulfur atoms. Highlight variations
+  in pKa1, pKb2, pKx3, and pl4 values. Use color coding to differentiate the unique
+  properties like VSC, P1, P2, SASA, and NCISC. The goal is to visually compare the
+  diverse attributes and identify patterns or anomalies. Ensure the chart clearly
+  distinguishes between amino acids using the 'Name' as the primary label.
+questions: '1. What color scheme would you prefer for differentiating the unique properties
+  like ''VSC'', ''P1'', ''P2'', ''SASA'', and ''NCISC''?
+
+  2. Do you have a preferred font style or size for the labels, particularly the ''Name''
+  of the amino acids?
+
+  3. Are there any specific color preferences for different ranges or variations in
+  ''pKa1'', ''pKb2'', ''pKx3'', and ''pl4'' values?
+
+  4. Do you want a specific order for listing the amino acids, such as alphabetical
+  order or sorted by a particular attribute?
+
+  5. Should the treemap include tooltips or annotations to provide more detailed information
+  when hovering over each rectangle?
+
+  6. Do you have any preferences for the aspect ratio or layout of the treemap to
+  emphasize certain data attributes?
+
+  7. Would you like to include a legend or key that explains the color coding and
+  subdivisions?
+
+  8. Do you prefer any borders or outlines around each rectangle to improve visual
+  clarity?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not have any specific preferences for different ranges or variations in
+  ''pKa1'', ''pKb2'', ''pKx3'', and ''pl4'' values.
+
+  4. Alphabetical order would be good.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Yes, including a legend or key would be helpful.
+
+  8. I have no specific preference.'
+data_attributes:
+- Name
+- Molecular Weight
+- Residue Weight
+- carbon
+- hydrogen
+- nitrogen
+- oxygen
+- sulfur
+- pKa1
+- pKb2
+- pKx3
+- pl4
+- VSC
+- P1
+- P2
+- SASA
+- NCISC

@@ -1,0 +1,43 @@
+initial_prompt: Please create a donut chart visualizing the distribution of coffee
+  varieties and their corresponding cup points from the provided coffee ratings dataset.
+  Highlight the proportion of each variety in the dataset and use a color gradient
+  to represent the total cup points scored by each variety. For missing values, please
+  exclude them to ensure accurate representation. Additionally, please include labels
+  on the segments to indicate both the coffee variety and the percentage of the total
+  they represent.
+questions: '1. Do you have any specific color preferences for the color gradient representing
+  the total cup points?
+
+  2. Do you prefer a specific font type or size for the labels on the segments?
+
+  3. Would you like the donut chart to have a specific degree of hole size (inner
+  radius relative to the outer radius)?
+
+  4. Do you want any specific order for arranging the coffee varieties, such as alphabetically
+  or by their proportion?
+
+  5. Should the chart include a legend or tooltip to provide additional information
+  about the coffee varieties and their total cup points?
+
+  6. Do you have a preferred background color for the chart?
+
+  7. Would you like to show exact numerical values for percentages and total cup points
+  on the labels, or just the percentages?'
+answers: '1. I do not have any specific color preferences for the color gradient representing
+  the total cup points.
+
+  2. I am not sure about the font type or size for the labels on the segments.
+
+  3. I do not have a preference for the hole size in the donut chart.
+
+  4. I am not sure about the order for arranging the coffee varieties.
+
+  5. Yes, please include a legend to provide additional information about the coffee
+  varieties and their total cup points.
+
+  6. I have no specific preference for the background color of the chart.
+
+  7. Just the percentages on the labels would be fine.'
+data_attributes:
+- variety
+- total_cup_points

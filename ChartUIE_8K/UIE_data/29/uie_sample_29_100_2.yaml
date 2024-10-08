@@ -1,0 +1,49 @@
+initial_prompt: Visualize the traffic prediction dataset using a heatmap. The x-axis
+  should represent different DateTime values, and the y-axis should represent the
+  Junction numbers. The intensity of the heatmap cells should reflect the number of
+  Vehicles. Use text annotations to highlight specific DateTime and Junction combinations
+  with unusually high or low vehicle counts. Modify the color scale to emphasize peak
+  traffic times for better visual contrast. The objective is to allow quick identification
+  of traffic patterns and anomalies across various junctions in the dataset. This
+  will be useful for understanding and managing traffic flow effectively.
+questions: '1. Do you have any specific preferences on the color palette for the heatmap?
+
+  2. Do you prefer a specific font style and size for text annotations?
+
+  3. Are there any specific DateTime intervals you want to highlight more prominently?
+
+  4. Do you have any preferences on the range or limits for the color scale?
+
+  5. Should the heatmap include grid lines or borders around each cell?
+
+  6. Do you want to include a legend or color bar to explain the intensity scale?
+
+  7. Is there a specific size or aspect ratio you prefer for the heatmap?
+
+  8. Do you want to add any titles or labels for the x-axis and y-axis, or the heatmap
+  as a whole?
+
+  9. Do you need any additional markers or indicators for peak traffic times beyond
+  just the color scale?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. I prefer highlighting rush hours in the morning and evening.
+
+  4. I am not sure.
+
+  5. Yes, please include grid lines around each cell.
+
+  6. Yes, I would like a legend or color bar to explain the intensity scale.
+
+  7. I do not have a specific size or aspect ratio preference.
+
+  8. Yes, please include titles and labels for the x-axis, y-axis, and the heatmap
+  as a whole.
+
+  9. I am not sure.'
+data_attributes:
+- DateTime
+- Junction
+- Vehicles

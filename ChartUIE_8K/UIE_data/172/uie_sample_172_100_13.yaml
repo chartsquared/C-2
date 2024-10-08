@@ -1,0 +1,58 @@
+initial_prompt: Create a dot plot to visualize the "Most Streamed Spotify Songs 2024"
+  data. Each dot should represent a song. The x-axis should display the track names,
+  while the y-axis represents Spotify Streams. Color-code the dots based on the Artist.
+  Ensure to include a legend for understanding the color-coding. Also, add data labels
+  for the top 5 streamed songs. Adjust the plot to accommodate long track names and
+  large stream values. Please consider the missing values and provide a clear plot
+  with visible data points for better insights. Use a dark theme background for the
+  plot.
+questions: '1. Do you have a specific color palette preference for the artists?
+
+  2. What font size and style do you prefer for the track names on the x-axis to handle
+  long track names effectively?
+
+  3. How would you like the y-axis to be formatted to accommodate large stream values
+  (e.g., commas, units)?
+
+  4. Where would you prefer the legend to be placed on the graph for optimal readability?
+
+  5. What level of detail do you want for the data labels of the top 5 streamed songs
+  (e.g., just the number of streams, streams, and rank)?
+
+  6. Do you have a preference for the positioning of the data labels for the top 5
+  streamed songs (e.g., above the dot, beside the dot)?
+
+  7. How would you like the missing values to be indicated on the plot, if at all?
+
+  8. Is there a specific style or thickness you prefer for the dots representing the
+  songs?
+
+  9. Would you prefer any additional annotations on the graph for a better understanding
+  or just the data points and labels?
+
+  10. Are there any specific requirements for the overall layout or aspect ratio of
+  the chart to fit a particular display space?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Please use commas to format the large stream values.
+
+  4. I prefer the legend to be placed on the right side of the graph.
+
+  5. The data labels for the top 5 streamed songs should include both the number of
+  streams and the rank.
+
+  6. The data labels should be positioned above the dot.
+
+  7. Please indicate missing values with a different color or symbol, like an "X".
+
+  8. I do not know.
+
+  9. I do not have any specific preference for additional annotations.
+
+  10. I do not have any specific requirements for the overall layout or aspect ratio.'
+data_attributes:
+- Track
+- Spotify Streams
+- Artist

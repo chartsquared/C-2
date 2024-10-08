@@ -1,0 +1,59 @@
+initial_prompt: 'Please create a stacked bar chart to visualize the data in ''../Extra_datas/data/42.csv''.
+  This dataset contains information on "Kidney Stone Prediction based on Urine Analysis"
+  with columns: gravity, pH, osmo, cond, urea, calc, and target. I want the chart
+  to show the distribution of the target variable (0 or 1) across these parameters.
+  Use different colors to represent each target category, and stack the bars accordingly
+  for each parameter to display the comparisons effectively. Make sure all data points
+  are represented. Thank you!'
+questions: '1. Do you have any specific color preferences for representing each category
+  of the ''target'' variable?
+
+  2. Would you prefer any particular order for the parameters on the x-axis?
+
+  3. Do you want to include labels for each bar segment to represent the actual counts
+  or percentages?
+
+  4. Should the chart include a legend to explain the colors used for each ''target''
+  category?
+
+  5. Do you have a preference for the font style and size for the axis labels and
+  title?
+
+  6. Should the chart include gridlines to help in comparing values across parameters?
+
+  7. Do you want to see the values on the y-axis represented in raw counts or percentages?
+
+  8. Would you like to add any specific title or subtitle to the chart?
+
+  9. Should we include any annotations or additional text to highlight key insights
+  from the data?
+
+  10. Do you prefer the bars to be displayed horizontally or vertically?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to include labels for each bar segment to represent the actual
+  counts.
+
+  4. Yes, the chart should include a legend.
+
+  5. I have no specific preference.
+
+  6. Yes, the chart should include gridlines.
+
+  7. Raw counts.
+
+  8. Title: "Distribution of Target Variable Across Parameters in Kidney Stone Prediction"
+
+  9. I am not sure.
+
+  10. Vertically.'
+data_attributes:
+- gravity
+- ph
+- osmo
+- cond
+- urea
+- calc
+- target

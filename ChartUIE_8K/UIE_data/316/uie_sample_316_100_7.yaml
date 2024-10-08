@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap to visualize the distribution of Southeast Asian
+  Bumblebee specimens. The heatmap should use the 'Country' and 'Species' columns,
+  with the 'Year' column represented on the x-axis and the 'Species' on the y-axis.
+  Each cell should show the count of specimens collected per species each year in
+  different countries. Utilize color intensity to indicate higher counts. This will
+  help to understand species diversity and survey frequency across various countries
+  and time periods. The latitude and longitude data can be aggregated to understand
+  geographical hotspots. Displaying collection data over time will highlight trends
+  and collection efforts.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Would you like to include labels or annotations on the heatmap cells for specimen
+  counts?
+
+  3. Should the heatmap include a legend to indicate the color intensity scale?
+
+  4. Do you prefer a specific layout or aspect ratio for the heatmap?
+
+  5. Would you like to display aggregate geographical hotspot information directly
+  on the heatmap or as a separate map visualization?
+
+  6. Are there any specific countries or species you would like to emphasize or highlight
+  on the heatmap?
+
+  7. Should the heatmap include gridlines for better readability and separation of
+  years and species?'
+answers: '1. I am not sure; I have no specific preference.
+
+  2. Yes, I would like to include labels or annotations on the heatmap cells for specimen
+  counts.
+
+  3. Yes, the heatmap should definitely include a legend to indicate the color intensity
+  scale.
+
+  4. I am not sure; I have no specific preference.
+
+  5. I am not sure; I have no specific preference.
+
+  6. No, there are no specific countries or species I would like to emphasize or highlight
+  on the heatmap.
+
+  7. Yes, the heatmap should include gridlines for better readability and separation
+  of years and species.'
+data_attributes:
+- Country
+- Species
+- Year
+- Latitude
+- Longitude

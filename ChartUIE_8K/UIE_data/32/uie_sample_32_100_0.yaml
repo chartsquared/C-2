@@ -1,0 +1,44 @@
+initial_prompt: Create a histogram to visualize the distribution of ages in the medical
+  cost personal dataset. Highlight different age groups and add text annotations displaying
+  the average charges for each group. Annotate any outliers in the age distribution.
+  This visualization will help in identifying the age demographics that incur higher
+  medical expenses, providing valuable insights for business analysis. Focus on making
+  the histogram visually engaging and informative, leveraging highlights to emphasize
+  key data points and trends within the age groups. Additionally, ensure the chart
+  is easy to understand for stakeholders without a statistical background.
+questions: '1. Do you have a preferred color scheme for the histogram?
+
+  2. Do you have specific age groups or bins you would like to highlight?
+
+  3. Would you like the average charges annotations to be displayed inside or outside
+  the bars of the histogram?
+
+  4. Do you have a preferred font style or size for the text annotations?
+
+  5. Should the outliers be annotated with a specific symbol or text description,
+  and if so, what should it be?
+
+  6. Would you like gridlines to be included in the histogram?
+
+  7. Is there a particular title or labels for the axes you would like to use?
+
+  8. Do you prefer a specific layout or size for the chart to ensure it is easy to
+  understand?'
+answers: '1. I am not sure.
+
+  2. Yes, highlight the following age groups: 18-25, 26-35, 36-45, 46-55, 56-65.
+
+  3. Inside the bars.
+
+  4. I do not have a preference.
+
+  5. Specific symbol, perhaps an asterisk (*).
+
+  6. I do not know.
+
+  7. Title: "Medical Expenses by Age Group"; X-axis: "Age"; Y-axis: "Frequency".
+
+  8. I do not have a specific preference.'
+data_attributes:
+- age
+- charges

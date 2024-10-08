@@ -1,0 +1,43 @@
+initial_prompt: I need a pie chart for "Amazon's 500 Bestsellers in Laptop Gear 2024".
+  Visualize the percentage of products that have missing values in the 'description',
+  'stars', and 'reviewsCount' columns from the provided data. The chart should clearly
+  indicate what proportion of these products lack these specific details, helping
+  to understand the completeness of the dataset. Please label each section of the
+  pie chart accordingly. Make sure the chart is easy to read and interprets the missing
+  values effectively.
+questions: '1. Do you have any specific color preferences for the sections of the
+  pie chart?
+
+  2. How would you like the labels to be displayed on the pie chart (e.g., inside
+  the slices, outside with lines, or use a legend)?
+
+  3. Are there any specific fonts or font sizes you would like to be used for the
+  labels and titles?
+
+  4. Would you like to include the actual percentage values on the chart slices or
+  only labels?
+
+  5. Do you prefer a 3D pie chart or a flat 2D pie chart?
+
+  6. Should there be any specific title or subtitle for the chart? If so, please provide
+  the text.
+
+  7. Do you have any preference for the chart''s background color or theme?'
+answers: '1. I am not sure.
+
+  2. I prefer the labels to be displayed outside with lines.
+
+  3. I do not know.
+
+  4. Yes, please include the actual percentage values on the chart slices.
+
+  5. I prefer a flat 2D pie chart.
+
+  6. The title should be "Missing Values in Amazon''s 500 Bestsellers in Laptop Gear
+  2024".
+
+  7. I have no specific preference.'
+data_attributes:
+- description
+- stars
+- reviewsCount

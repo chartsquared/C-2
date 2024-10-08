@@ -1,0 +1,60 @@
+initial_prompt: Create a small multiples chart to visualize the Mice Protein Expression
+  data. Each multiple represents a specific protein (e.g., DYRK1A_N, ITSN1_N) with
+  its expression levels across different MouseIDs. Use line plots or bar charts for
+  each protein, and group them by unique combinations of Genotype, Treatment, and
+  Behavior. Add axis labels, legends, and titles to clarify the protein names and
+  conditions. Make sure the missing values are handled appropriately by either marking
+  them or interpolating. This visualization will help compare protein expressions
+  across different experimental conditions.
+questions: '1. Do you have a preferred title format for each small multiple/chart?
+
+  2. Would you prefer line plots or bar charts for visualizing the protein expressions?
+
+  3. How would you like the proteins to be grouped within the chart layout?
+
+  4. Are there any specific colors you would like to use for different proteins or
+  experimental conditions?
+
+  5. Do you have any preferences for handling missing values (e.g., marking them,
+  interpolating them)?
+
+  6. Would you like a specific font style or size for the axis labels, legends, and
+  titles?
+
+  7. Is there a preferred width and height for each individual chart in the small
+  multiples?
+
+  8. How would you like the legend to be displayed (e.g., at the bottom, side, with
+  each chart)?
+
+  9. Are there specific units or scaling desired for the protein expression levels
+  on the axis labels?
+
+  10. Do you have any specific preferences for the grid layout of the small multiples
+  (e.g., number of columns, rows)?'
+answers: '1. I am not sure.
+
+  2. Line plots.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Interpolating them.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. With each chart.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- MouseID
+- DYRK1A_N
+- ITSN1_N
+- Genotype
+- Treatment
+- Behavior

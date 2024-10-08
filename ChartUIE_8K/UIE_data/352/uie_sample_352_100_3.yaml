@@ -1,0 +1,35 @@
+initial_prompt: I need a heatmap showing the relationship between different factors
+  in VR experiences. Specifically, I want to see how Age, Gender, and VRHeadset types
+  correlate with Duration, MotionSickness, and ImmersionLevel. Use color gradients
+  to indicate the intensity of these relationships. Make sure to include labels for
+  all the axes and a legend explaining the colors used. The data comes from a study
+  on virtual reality, so accuracy in representing these relationships is crucial for
+  understanding user experiences and potential areas for improvement in VR headsets
+  and applications.
+questions: '1. Do you have any specific color gradients in mind for indicating the
+  intensity of relationships?
+
+  2. What font style and size do you prefer for the axis labels and legend?
+
+  3. Do you want any specific ordering for the categories, such as Age groups or VRHeadset
+  types?
+
+  4. Should the heatmap include gridlines or any specific styling for better readability?
+
+  5. Do you have a preference for the overall size or aspect ratio of the heatmap?
+
+  6. Would you like to include any specific annotations or highlights on the heatmap?'
+answers: "<start of user emulated response>\n1. I am not sure about the specific color\
+  \ gradients. \n2. I do not know the preferred font style and size.\n3. Age groups\
+  \ should be ordered chronologically from youngest to oldest, and VRHeadset types\
+  \ should be categorized based on their model or release date where possible.\n4.\
+  \ I think gridlines would help with readability.\n5. I do not know the preferred\
+  \ overall size or aspect ratio.\n6. I am not sure about specific annotations or\
+  \ highlights.\n<end of user emulated response>"
+data_attributes:
+- Age
+- Gender
+- VRHeadset
+- Duration
+- MotionSickness
+- ImmersionLevel

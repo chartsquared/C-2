@@ -1,0 +1,55 @@
+initial_prompt: I would like to create an area chart visualizing the global EV sales
+  from 2010 to 2024, separated by region, powertrain, and mode. The x-axis should
+  represent the years from 2010 to 2024, while the y-axis will show the number of
+  EV sales in vehicles. Each region should have a different color with opacity, and
+  the chart should be stacked to illustrate the cumulative growth of EV sales over
+  the years. Include data labels for the values in the last year (2024) for better
+  clarity.
+questions: '1. Do you have a preference for specific colors to represent different
+  regions?
+
+  2. What level of opacity would you prefer for the regions to ensure clarity without
+  cluttering the chart?
+
+  3. How would you like the powertrain and mode categories to be represented within
+  each region: different shades, patterns, or a different approach?
+
+  4. Do you have any specific preferences for the font style or size of the data labels
+  for the values in 2024?
+
+  5. Would you like grid lines included on the chart for better readability, and if
+  so, in what style?
+
+  6. Do you prefer a specific order for stacking the regions, powertrains, and modes
+  on the chart?
+
+  7. Are there any additional annotations or markings you would like to include to
+  highlight specific trends or milestones?
+
+  8. Would you like the chart to include a legend, and if so, where should it be positioned?
+
+  9. Do you have a preferred format for the number of EV sales (e.g., with commas,
+  precise decimals)?'
+answers: '1. I do not have a specific preference for colors.
+
+  2. I am not sure about the level of opacity.
+
+  3. I am not sure about how to represent powertrain and mode categories.
+
+  4. I do not have any specific preference for the font style or size.
+
+  5. I do not know about grid lines.
+
+  6. I do not have a preference for the stacking order.
+
+  7. I do not know about additional annotations or markings.
+
+  8. Yes, I would like a legend included, but I am not sure where it should be positioned.
+
+  9. With commas, please.'
+data_attributes:
+- region
+- year
+- value
+- powertrain
+- mode

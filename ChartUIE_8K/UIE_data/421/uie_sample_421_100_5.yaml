@@ -1,0 +1,52 @@
+initial_prompt: Please create a line chart that visualizes the trends in the number
+  of Nobel Prize laureates broken down by gender across different years. Use the 'prize_year'
+  on the x-axis and the count of 'laureate_id' grouped by 'gender' on the y-axis.
+  This will help us observe any changes in gender representation over time. Ensure
+  the line chart clearly distinguishes between male and female laureates with different
+  colors for each gender line. Add appropriate labels for the axes and provide a legend
+  for clarity.
+questions: '1. Do you have a specific color preference for the lines representing
+  male and female laureates?
+
+  2. Is there a specific font style or size you would prefer for the axis labels?
+
+  3. Would you like gridlines to be included on the chart? If so, do you have any
+  specific preferences for their appearance?
+
+  4. Do you have a specific title in mind for the chart?
+
+  5. Would you like to see data points marked on the lines? If so, do you have a preference
+  for the style of these markers?
+
+  6. Is there a particular style or format you prefer for the legend?
+
+  7. Do you prefer a specific date range to be emphasized on the x-axis (e.g., a certain
+  start and end year)?
+
+  8. Is there a specific arrangement or ordering you prefer for the gender lines in
+  the legend?
+
+  9. Do you have any preferences for the background color or overall theme of the
+  chart?'
+answers: '1. I do not have a specific color preference for the lines.
+
+  2. I do not have a specific preference for the font style or size for the axis labels.
+
+  3. I am not sure about the gridlines.
+
+  4. I do not have a specific title in mind.
+
+  5. I am not sure about marking data points on the lines.
+
+  6. I do not have a specific preference for the legend format.
+
+  7. I do not have a preferred date range for the x-axis.
+
+  8. I do not have a specific arrangement for the gender lines in the legend.
+
+  9. I do not have any preferences for the background color or overall theme of the
+  chart.'
+data_attributes:
+- prize_year
+- laureate_id
+- gender

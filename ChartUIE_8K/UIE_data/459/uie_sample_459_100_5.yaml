@@ -1,0 +1,48 @@
+initial_prompt: Please create a box chart using the provided data to visualize the
+  distribution of the Pollution Index, Water Temp, Ammonia Nitrogen, and Dissolved
+  Oxygen levels. Display each metric on separate box charts for clear comparison.
+  Highlight any potential outliers and ensure the x-axis shows the different time
+  intervals. Use different colors for each parameter to differentiate them easily.
+  These insights will help analyze water quality over time in Region LV-SW-012 and
+  determine any significant deviations or patterns in the recorded measurements. Thank
+  you.
+questions: '1. Do you have a preferred color palette for the different parameters
+  (Pollution Index, Water Temp, Ammonia Nitrogen, Dissolved Oxygen)?
+
+  2. Is there a specific time interval format you would like for the x-axis labels
+  (e.g., hourly, daily, monthly)?
+
+  3. Do you have any preferences for the style or size of the box charts (e.g., width
+  of boxes, spacing between them)?
+
+  4. Would you like to include grid lines to make the comparison of values across
+  time intervals easier?
+
+  5. Are there any specific statistical measures (e.g., mean, median) that you would
+  like to highlight on the box charts?
+
+  6. Do you have preferences for the font style or size of the labels and titles on
+  the charts?
+
+  7. Should the outliers be marked with a specific symbol or color to make them easily
+  identifiable?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include grid lines.
+
+  5. Could you highlight the median?
+
+  6. I do not have a specific preference.
+
+  7. Yes, please mark the outliers with a specific symbol or color to make them easily
+  identifiable.'
+data_attributes:
+- Time
+- Pollution Index
+- Water Temp
+- Ammonia Nitrogen(mg/L)
+- Dissolved Oxygen(mg/L)

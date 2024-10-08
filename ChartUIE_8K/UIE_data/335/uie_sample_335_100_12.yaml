@@ -1,0 +1,57 @@
+initial_prompt: I want to create a dot plot using the Superstore Sales data. The plot
+  should visualize the sales and profit for different states. Each dot represents
+  a state, plotted with sales on the x-axis and profit on the y-axis. The size of
+  the dot should correspond to the quantity of items sold in each state, and the color
+  should differentiate the various ship modes.
+questions: '1. Do you have any specific preferences for the color palette used to
+  differentiate the various ship modes?
+
+  2. Would you like to include labels for each state on the dots, or would you prefer
+  a legend?
+
+  3. Do you prefer a particular theme for the chart background (e.g., light, dark,
+  gridlines)?
+
+  4. Should the size of the dots be proportional to a specific range or follow a particular
+  scale?
+
+  5. Do you have preferences for the axis labels and title formatting (e.g., font
+  size, font type)?
+
+  6. Is there any specific ordering you would like for the ship modes in the legend?
+
+  7. Do you want any specific annotations or markers for key data points?
+
+  8. Should the axes be set with a fixed range, or should they adjust dynamically
+  based on the data?
+
+  9. Would you like to display a trend line or any form of regression analysis on
+  the plot?
+
+  10. Do you have preferences for how to handle overlapping dots? For instance, using
+  transparency or jittering?'
+answers: '1. I am not sure.
+
+  2. I would prefer a legend.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I do not have a specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- State
+- Sales
+- Profit
+- Quantity
+- Ship Mode

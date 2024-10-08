@@ -1,0 +1,53 @@
+initial_prompt: Create a heatmap to visualize the correlation between customer demographics,
+  behavior, and churn status. Highlight key metrics like Age, Balance, and CreditScore.
+  Include text annotations for high correlation spots to draw attention to critical
+  factors influencing churn. This will help identify patterns and areas for improvement
+  in customer retention strategies. Keep the chart clear and focused on visual distinctions
+  for easy interpretation. Highlight important elements like Geography and Gender
+  for better insights. The purpose is to aid business decisions in customer management
+  and marketing strategies effectively.
+questions: '1. Do you have any color preferences for the heatmap?
+
+  2. Are there any specific ranges of "Age", "Balance", or "CreditScore" you would
+  like to focus on in the heatmap?
+
+  3. How would you like the text annotations for high correlation spots to be formatted?
+  Any specific font style or size?
+
+  4. Do you prefer a specific layout or ordering for the axes in the heatmap?
+
+  5. Would you like to include a legend in the heatmap? If yes, do you have preferences
+  for its placement?
+
+  6. Are there any specific labels or titles you would like to include in the heatmap
+  for clarity?
+
+  7. Should the heatmap include gridlines for better readability?
+
+  8. How would you like to differentiate or highlight important elements like "Geography"
+  and "Gender"?'
+answers: '1. I am not sure.
+
+  2. No, I don''t have any specific ranges in mind.
+
+  3. I would like the text annotations for high correlation spots to be clear and
+  legible, maybe in bold and slightly larger font.
+
+  4. I do not have a specific preference for the layout or ordering for the axes.
+
+  5. Yes, a legend would be helpful. I don''t have a preference for its placement.
+
+  6. Please include a title like "Correlation Heatmap: Customer Demographics, Behavior,
+  and Churn" and label the axes clearly.
+
+  7. Yes, including gridlines would improve readability.
+
+  8. I am not sure how to differentiate or highlight "Geography" and "Gender", but
+  they should stand out clearly.'
+data_attributes:
+- Age
+- Balance
+- CreditScore
+- Geography
+- Gender
+- Exited

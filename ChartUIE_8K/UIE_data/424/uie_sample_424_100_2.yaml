@@ -1,0 +1,60 @@
+initial_prompt: Create a bar chart showcasing bird counts during Christmas time in
+  the Hamilton area of Ontario, focusing on species observed and their count totals.
+  Highlight American Bittern, American Black Duck, and American Coot by changing their
+  bar colors to distinguish them from other species. Add annotations for these species
+  to display their exact counts, scientific names, and the year 1921. The chart should
+  provide visual clarity on which species were most or least observed, emphasizing
+  the zoological aspect, and provide context for conservation studies.
+questions: '1. Do you have any specific preferences for the color scheme of the chart?
+
+  2. What type of font and font size would you prefer for the annotations?
+
+  3. Would you like the chart to include grid lines for better readability?
+
+  4. Do you have a preference for the location and style of the legend?
+
+  5. Should the Y-axis include labels for every species, or just for those highlighted?
+
+  6. Would you like to include axis titles or labels, and if so, what should they
+  be?
+
+  7. Do you want any particular title or subtitle on the chart?
+
+  8. Would you prefer a specific layout or orientation for the bar chart (e.g., horizontal
+  or vertical bars)?
+
+  9. Are there specific data point markers or highlights you wish to include besides
+  the mentioned species?
+
+  10. Should the bars have a specific width or spacing between them?'
+answers: '<start of user request>
+
+  1. I have no specific preference.
+
+  2. I am not sure, maybe a legible font like Arial or Helvetica, and a medium font
+  size.
+
+  3. I don''t know.
+
+  4. I have no specific preference.
+
+  5. The Y-axis should include labels for every species.
+
+  6. Yes, please include axis titles: "Species" for the X-axis and "Count" for the
+  Y-axis.
+
+  7. Yes, a title: "Christmas Bird Counts in Hamilton, Ontario (1921)" and a subtitle:
+  "Focusing on American Bittern, American Black Duck, and American Coot".
+
+  8. Vertical bars would be great.
+
+  9. No, just the mentioned species.
+
+  10. I don''t know.
+
+  <end of user request>'
+data_attributes:
+- year
+- species
+- species_latin
+- how_many_counted

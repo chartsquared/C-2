@@ -1,0 +1,62 @@
+initial_prompt: Please create a stacked bar chart visualizing the number of people
+  who redeem in-vehicle coupons based on their destinations, categorized by gender.
+  Use annotations to highlight key data points such as the most popular destination
+  for coupon redemption. The chart should also indicate how factors like age and marital
+  status influence redemption rates. This will help in understanding the behavioral
+  patterns of automobile passengers regarding in-vehicle coupon usage. Highlight elements
+  such as 'CoffeeHouse' and 'RestaurantLessThan20' to show variation in preferences.
+  Include text annotations for any outliers or noteworthy trends.
+questions: '1. Do you have any preference for the color scheme or palette used in
+  the chart?
+
+  2. What specific age groups or ranges would you like to use for categorizing the
+  ''age'' attribute?
+
+  3. Should the annotations for key data points such as the most popular destination
+  and outliers be positioned in a specific way?
+
+  4. Do you have a preferred font style or size for text annotations and labels?
+
+  5. Would you like the bars to be labeled with actual numbers or percentages?
+
+  6. Should the x-axis display all categories of destinations even if they have zero
+  values?
+
+  7. Do you have a specific order in which the destinations should be displayed on
+  the x-axis?
+
+  8. Is there a preferred format for displaying the influenced factors like age and
+  marital status (e.g., grouped, side-by-side)?
+
+  9. How would you like the legend to be displayed (e.g., position, style)?
+
+  10. Are there any specific elements or categories within ''CoffeeHouse'' and ''RestaurantLessThan20''
+  that you want to emphasize more?'
+answers: '1. I am not sure.
+
+  2. Ages 18-25, 26-35, 36-45, 46-60, and 60+.
+
+  3. I don''t know.
+
+  4. I have no specific preference.
+
+  5. Percentages.
+
+  6. Yes, please display all categories even if they have zero values.
+
+  7. I do not know.
+
+  8. Grouped would be fine.
+
+  9. I am not sure.
+
+  10. Highlight ''CoffeeHouse'' and ''RestaurantLessThan20'' to show variation in
+  preferences, but no other specific elements need emphasis.'
+data_attributes:
+- destination
+- gender
+- age
+- maritalStatus
+- CoffeeHouse
+- RestaurantLessThan20
+- Y

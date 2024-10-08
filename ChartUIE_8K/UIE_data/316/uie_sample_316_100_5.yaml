@@ -1,0 +1,53 @@
+initial_prompt: I have a dataset of Southeast Asian Bumblebee specimens. I need a
+  scatter plot to visualize the geographical distribution of these specimens. The
+  x-axis should represent the 'Longitude' and the y-axis should represent the 'Latitude'.
+  Use different colors or markers for each 'Species' to show their distribution patterns.
+  Add labels for 'Country' to indicate the country each specimen was collected from.
+  The goal is to understand how the locations of collected specimens vary by species
+  and country within Southeast Asia. Use any missing value handling techniques if
+  necessary.
+questions: '1. Do you have any preferences for the color scheme used to represent
+  different species?
+
+  2. Would you prefer specific marker shapes for different species, or is differentiating
+  by color sufficient?
+
+  3. How detailed should the country labels be? Do you want them to appear for every
+  specimen or just at certain intervals?
+
+  4. Do you have a preferred font style and size for the labels?
+
+  5. Should the scatter plot include grid lines for better readability, or do you
+  prefer a cleaner look?
+
+  6. Do you want additional annotations or legends to provide more context about the
+  data?
+
+  7. Should the chart have a title? If so, do you have a specific title in mind?
+
+  8. Are there any specific requirements for axis labels or axis scaling?
+
+  9. Do you want any specific background styling, such as a map or a plain background?'
+answers: '1. I do not know.
+
+  2. Differentiating by color is sufficient.
+
+  3. I am not sure, maybe just at certain intervals would be fine.
+
+  4. I have no specific preference.
+
+  5. A cleaner look without grid lines is preferred.
+
+  6. Yes, additional annotations or legends would be helpful.
+
+  7. Yes, the chart should have a title. "Geographical Distribution of Southeast Asian
+  Bumblebee Species"
+
+  8. I have no specific preference for axis labels or scaling.
+
+  9. A plain background is fine.'
+data_attributes:
+- Longitude
+- Latitude
+- Species
+- Country

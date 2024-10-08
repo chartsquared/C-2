@@ -1,0 +1,46 @@
+initial_prompt: I need a bar chart displaying the prices of different organic products
+  available in Sydney. The chart should compare prices in USD and INR. Highlight the
+  highest and lowest-priced items. Include annotations specifying the product categories
+  and quantities for better understanding. This will help illustrate the cost variations
+  of organic grocery items for customers looking to make informed purchasing decisions.
+  Make sure to label all categories clearly for easy comparison. Use data from the
+  "Indian Grocery Prices in Sydney" dataset and highlight significant data points
+  to draw viewer attention.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be grouped or stacked for the USD and INR price comparisons?
+
+  3. How would you like the highest and lowest-priced items to be highlighted (e.g.,
+  different color, bold border)?
+
+  4. Are there specific fonts or font sizes you prefer for the labels and annotations?
+
+  5. Do you have a preference for the orientation of the bar chart (vertical or horizontal)?
+
+  6. Should the annotations for product categories and quantities be inside or outside
+  the bars?
+
+  7. Do you prefer a specific style for the grid lines (e.g., dotted, solid, none)?
+
+  8. Would you like to include a legend, and if so, where should it be placed on the
+  chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Different color would be good.
+
+  4. I do not have a specific preference.
+
+  5. Vertical orientation, please.
+
+  6. Inside the bars.
+
+  7. I am not sure.
+
+  8. Yes, a legend would be helpful. Please place it at the bottom of the chart.'
+data_attributes:
+- Product Name
+- Product Category
+- Product Price (INR)
+- Quantity

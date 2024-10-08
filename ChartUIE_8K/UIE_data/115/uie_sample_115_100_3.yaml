@@ -1,0 +1,64 @@
+initial_prompt: I need a column chart visualizing the nutritional content (calories,
+  proteins, fat, and carbohydrate) of various Indonesian foods and drinks. The x-axis
+  should have the names of the items, and there should be separate columns for each
+  nutritional element on the y-axis. Please ensure that each food item is clearly
+  labeled with its name and image provided as tooltips. This will help me compare
+  the nutritional values of the foods easily. The dataset includes multiple types
+  of foods and drinks, so please make sure all items are included in the chart.
+questions: '1. Do you have a preferred color scheme for the columns representing different
+  nutritional elements?
+
+  2. What font style and size do you prefer for the labels on the x-axis?
+
+  3. Would you like to include a legend to differentiate the nutritional elements?
+  If yes, where should it be placed?
+
+  4. Should the chart include gridlines on the y-axis for better readability? If so,
+  do you prefer horizontal, vertical, or both types of gridlines?
+
+  5. How would you like the tooltip displaying the images to be formatted? Do you
+  have any specific size or style preferences for the images in the tooltips?
+
+  6. Do you have a preference for sorting the items on the x-axis (e.g., alphabetically,
+  by calorie content)?
+
+  7. Should the y-axis have a fixed range, or should it be automatically adjusted
+  based on the data?
+
+  8. Do you want to display data values on top of each column? If yes, do you prefer
+  any specific style or formatting for these values?
+
+  9. Do you have any specific preferences for the overall size or aspect ratio of
+  the chart?
+
+  10. Are there any specific Indonesian foods or drinks that you would like to emphasize
+  or highlight in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend. I am not sure where it should be placed.
+
+  4. Both horizontal and vertical gridlines would be helpful.
+
+  5. I am not sure about the specifics; just make sure the images are clear and of
+  a reasonable size.
+
+  6. I do not know.
+
+  7. The y-axis can be automatically adjusted based on the data.
+
+  8. Yes, please display data values on top of each column. I do not have a specific
+  style or formatting preference.
+
+  9. I have no specific preference for the overall size or aspect ratio of the chart.
+
+  10. No, I do not have any specific foods or drinks to highlight. Just include all
+  items from the dataset.'
+data_attributes:
+- calories
+- proteins
+- fat
+- carbohydrate
+- name
+- image

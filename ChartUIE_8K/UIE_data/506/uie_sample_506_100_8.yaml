@@ -1,0 +1,48 @@
+initial_prompt: Create a dot plot to visualize each champion's Winrate across different
+  games in the dataset provided. The x-axis should represent the different champions,
+  and the y-axis should show the Winrate percentages. Each dot will represent a specific
+  game's Winrate (%), categorized by "Games(B)" (Games as Blue side) and "Games(R)"
+  (Games as Red side). Additionally, use different colors to distinguish between the
+  Winrates(B) and Winrates(R). This will help in comparing the performance of champions
+  on both sides of the game. Make sure to include a legend for clarity.
+questions: '1. Do you have a preference for the color scheme used to distinguish between
+  Winrate(B) and Winrate(R)?
+
+  2. Would you like the x-axis labels to be rotated for better readability?
+
+  3. How would you like the dots to be sized? Should they be uniform or should they
+  vary based on another metric?
+
+  4. Do you have any specific font preferences for the labels and legend?
+
+  5. Would you like grid lines in the background to enhance readability?
+
+  6. Do you prefer a particular position for the legend (top, bottom, left, right)?
+
+  7. Should any specific champions or data points be highlighted or annotated for
+  emphasis?
+
+  8. Do you prefer a specific style for the dots (e.g., filled circles, hollow circles)?
+
+  9. Is there a preferred background color for the plot area?'
+answers: '1. I have no specific preference.
+
+  2. Yes, please rotate the x-axis labels for better readability.
+
+  3. I am not sure.
+
+  4. I have no specific font preferences.
+
+  5. Yes, please include grid lines in the background to enhance readability.
+
+  6. I prefer the legend to be on the right.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I have no specific preference.'
+data_attributes:
+- Champion
+- Winrate(B)
+- Winrate(R)

@@ -1,0 +1,60 @@
+initial_prompt: I need a line chart to visualize data trends for Parkinson's disease
+  detection. The chart should showcase three sample data points for different individuals
+  identified by their 'name'. The x-axis will represent the sample names such as 'phon_R01_S01_1',
+  'phon_R01_S01_2', and 'phon_R01_S01_3'. The y-axis will feature key metrics like
+  'MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)', 'MDVP:Flo(Hz)', 'HNR', and 'RPDE'. Please ensure
+  each metric is represented by a different colored line for clarity. This will help
+  in comparing these parameters across the samples for better understanding.
+questions: '1. What title would you prefer for the line chart?
+
+  2. Do you have a preferred style for the legend placement?
+
+  3. Would you like gridlines to be displayed on the chart?
+
+  4. Do you have preferences for specific line styles (e.g., solid, dashed) for each
+  metric?
+
+  5. Would you like data points to be marked with specific markers (e.g., circles,
+  squares) on the lines?
+
+  6. Do you have specific preferences for the color scheme of the lines?
+
+  7. Should the axis labels have specific fonts or sizes for better readability?
+
+  8. Is there any annotation or highlight that you would like to add for specific
+  data points?
+
+  9. Would you prefer the y-axis to be on a linear or logarithmic scale?
+
+  10. Are there any specific intervals or ranges you''d like to be highlighted on
+  the x-axis or y-axis?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, I would like gridlines to be displayed on the chart.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. No, I do not need any annotations or highlights.
+
+  9. Linear scale for the y-axis.
+
+  10. I do not have any specific intervals or ranges in mind.
+
+  <end of user response>'
+data_attributes:
+- name
+- MDVP:Fo(Hz)
+- MDVP:Fhi(Hz)
+- MDVP:Flo(Hz)
+- HNR
+- RPDE

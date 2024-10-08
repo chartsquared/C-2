@@ -1,0 +1,48 @@
+initial_prompt: Create a stacked column chart visualizing the mean values of selected
+  ECG measurements like 'hbpermin', 'QRSseg', 'QTseg', and 'RRmean' for the first
+  few records. Separate bars should represent the measurements, and different stacks
+  within each bar should represent different records. Include labels for each segment
+  and a legend. Title it "Mean ECG Segments Comparison". Ensure each bar segment has
+  a distinct color. This visualization will help compare the ECG metrics across different
+  patients. Analyze any visible trends or outliers. Please make the chart concise
+  and easy to interpret.
+questions: '1. Do you have a specific color scheme preference for the distinct segments
+  in the stacked column chart?
+
+  2. Would you like the chart to have gridlines for better readability?
+
+  3. Do you prefer a specific font style or size for the labels and legend?
+
+  4. Should the chart include data labels for each segment showing the mean values?
+
+  5. How many records do you want to include in the visualization (e.g., first 5,
+  first 10)?
+
+  6. Do you have a preference on the order of the records displayed in the stacks
+  (e.g., ascending or descending)?
+
+  7. Would you like to customize the y-axis range or leave it to be determined automatically
+  based on the data?
+
+  8. Is there a specific aspect ratio or size you prefer for the chart?'
+answers: '1. I do not have a specific color scheme preference.
+
+  2. Yes, I would like the chart to have gridlines for better readability.
+
+  3. I am not sure about the font style or size.
+
+  4. Yes, the chart should include data labels for each segment showing the mean values.
+
+  5. Please include the first 5 records in the visualization.
+
+  6. I do not have a preference on the order of the records displayed in the stacks.
+
+  7. Leave the y-axis range to be determined automatically based on the data.
+
+  8. I do not have a specific aspect ratio or size preference for the chart.'
+data_attributes:
+- RECORD
+- hbpermin
+- QRSseg
+- QTseg
+- RRmean

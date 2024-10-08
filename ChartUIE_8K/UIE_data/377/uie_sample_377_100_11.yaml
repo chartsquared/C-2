@@ -1,0 +1,50 @@
+initial_prompt: Please create a grouped bar chart visualizing the percentage of votes
+  each political party received in different constituencies. Include categories for
+  Constituency Name, Conservative, Labour, Liberal, Brexit, Green, and Others. Plot
+  the percentage votes against each constituency and color-code each party for clarity.
+  Use the sample data provided (Aldershot, Aldridge-Brownhills, Altrincham and Sale
+  West) and include additional constituencies if possible. Ensure the chart is easy
+  to read and accurately represents the voting percentages for each party. This will
+  help in analyzing voting patterns across different areas.
+questions: '1. Do you have a preferred color palette for the political parties?
+
+  2. Should the constituencies be sorted in a particular order, such as alphabetically
+  or by the percentage of a specific party''s votes?
+
+  3. Would you prefer to include data labels showing the exact percentages on the
+  bars?
+
+  4. How many constituencies should be displayed on the chart at most?
+
+  5. Do you want grid lines on the chart for easier readability?
+
+  6. Would you like to include legends, and if so, where should they be positioned?
+
+  7. Should there be a title and subtitle for the chart? If yes, what should they
+  be?
+
+  8. Is there a specific font style or size you prefer for the chart''s text elements?'
+answers: '1. I do not have a preferred color palette.
+
+  2. I am not sure.
+
+  3. Yes, I would prefer to include data labels showing the exact percentages.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include legends. I am not sure where they should be positioned.
+
+  7. Yes, the title should be "Percentage of Votes by Political Party in Various Constituencies".
+  No specific subtitle is needed.
+
+  8. I do not have a specific font style or size preference.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- OTH(%)

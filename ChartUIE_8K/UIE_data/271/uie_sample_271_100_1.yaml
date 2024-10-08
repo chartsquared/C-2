@@ -1,0 +1,64 @@
+initial_prompt: Create a scatter plot visualizing travel data between airports. Use
+  start_lat and start_lon for the starting point, and end_lat and end_lon for the
+  destination. Plot data points for each flight route, with color highlighting distinguishing
+  different destination airports. Annotate the airline code and number of flights
+  (cnt) on the scatter points to focus on high-traffic routes. This visualization
+  serves to identify key routes and airline activities clearly, focusing on travel
+  patterns.
+questions: '1. Do you have any specific preferences for the color palette used to
+  distinguish different destination airports?
+
+  2. Would you prefer any specific annotation style or font for the airline code and
+  the number of flights (cnt)?
+
+  3. Should the scatter plot include any specific markers or shapes for the data points?
+
+  4. Do you prefer the plot to have gridlines or a specific background color?
+
+  5. Is there a particular size or aspect ratio you would like for the scatter plot?
+
+  6. Do you want to specify the range or limits for the x-axis (start_lon) and y-axis
+  (start_lat, end_lat, end_lon)?
+
+  7. Should the scatter plot include a legend to explain the colors used for different
+  destination airports?
+
+  8. Would you like to include any specific title or labels for the axes?
+
+  9. Do you have a preference for the format of annotations (for example, airline
+  code and number of flights)?
+
+  10. Are there any specific destination airports or flight routes you want to emphasize
+  or highlight further?'
+answers: '1. I do not have a specific preference for the color palette used to distinguish
+  different destination airports.
+
+  2. I am not sure about the annotation style or font for the airline code and the
+  number of flights (cnt).
+
+  3. I do not know about specific markers or shapes for the data points.
+
+  4. I have no specific preference for the plot to have gridlines or a specific background
+  color.
+
+  5. I do not have a particular size or aspect ratio in mind for the scatter plot.
+
+  6. I am not sure about specifying the range or limits for the x-axis (start_lon)
+  and y-axis (start_lat, end_lat, end_lon).
+
+  7. Yes, the scatter plot should include a legend to explain the colors used for
+  different destination airports.
+
+  8. I do not know about a specific title or labels for the axes.
+
+  9. I have no specific preference for the format of annotations.
+
+  10. I am not sure about any specific destination airports or flight routes to emphasize
+  or highlight further.'
+data_attributes:
+- start_lat
+- start_lon
+- end_lat
+- end_lon
+- airline
+- cnt

@@ -1,0 +1,53 @@
+initial_prompt: Create a column chart showing the average values of 'radius_mean',
+  'texture_mean', 'perimeter_mean', and 'area_mean' for malignant (M) and benign (B)
+  diagnoses in the provided breast cancer dataset. Include appropriate labels.
+questions: '1. Do you have a preference for the color scheme of the chart?
+
+  2. Would you like the bars for malignant and benign diagnoses to be grouped or stacked?
+
+  3. Is there a particular font or style you would like for the chart labels and titles?
+
+  4. Should the y-axis be set to a specific range, or should it auto-adjust based
+  on the data?
+
+  5. Do you want gridlines to be displayed on the chart?
+
+  6. Is there a preference for the spacing between the bars in the chart?
+
+  7. Would you like to include a legend in the chart? If so, do you have a specific
+  preference for its placement?
+
+  8. Are there any specific notations or annotations you want to include on the chart
+  to highlight particular points?
+
+  9. Do you have a preference for the overall dimensions or aspect ratio of the chart?
+
+  10. Should the chart include data labels on each bar to show the exact average values?
+
+  '
+answers: '1. I am not sure.
+
+  2. Grouped.
+
+  3. I do not know.
+
+  4. Auto-adjust based on the data.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, I would like to include a legend. I have no specific preference for its
+  placement.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Yes, please include data labels on each bar to show the exact average values.'
+data_attributes:
+- diagnosis
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean

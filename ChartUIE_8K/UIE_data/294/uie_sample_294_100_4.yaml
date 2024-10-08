@@ -1,0 +1,44 @@
+initial_prompt: 'Please create a scatter plot using the data provided on Ronaldo''s
+  tweets. Plot `likeCount` on the x-axis and `retweetCount` on the y-axis to visualize
+  the correlation between likes and retweets. Highlight each tweet with a different
+  color and include tooltips showing the `text` and `createdAt` for each point. The
+  chart should help identify which tweets gained the most engagement. Title the chart
+  "Ronaldo''s Twitter Engagement: Likes vs. Retweets." Ensure the plot is clear and
+  easy to interpret. Thank you!'
+questions: '1. Do you have a preferred color palette for highlighting each tweet?
+
+  2. What font style and size would you like for the title "Ronaldo''s Twitter Engagement:
+  Likes vs. Retweets"?
+
+  3. Do you want grid lines on the scatter plot? If so, should they be both horizontal
+  and vertical, or just one of them?
+
+  4. Should the tooltips display any additional information besides ''text'' and ''createdAt''?
+
+  5. Would you like specific axis labels or formatting for ''likeCount'' and ''retweetCount''
+  (e.g., thousands separator, specific units)?
+
+  6. Are there any specific data points or tweets you want to emphasize or annotate
+  on the plot?
+
+  7. What is your preferred layout for the legend that identifies different tweets
+  by color?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like grid lines on the scatter plot. Both horizontal and vertical
+  would be good.
+
+  4. No, just ''text'' and ''createdAt'' are fine.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- likeCount
+- retweetCount
+- text
+- createdAt

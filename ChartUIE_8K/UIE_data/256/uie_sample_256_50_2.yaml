@@ -1,0 +1,51 @@
+initial_prompt: Create a column chart highlighting key ECG metrics like 'hbpermin',
+  'QTseg', and 'ECG_signal'. Use text annotations to emphasize any extreme values
+  or notable ECG segments. The chart should clearly show comparisons between these
+  elements, using colors to enhance the differences. Add context to make the data
+  insights clear.
+questions: '1. Do you have a preference for the specific colors to be used in the
+  chart to distinguish between ''hbpermin'', ''QTseg'', and ''ECG_signal''?
+
+  2. Would you like the chart to display values on top of each bar for better clarity?
+
+  3. How would you prefer the text annotations to be styled (e.g., font size, color,
+  position)?
+
+  4. Do you have a specific format for labeling the axes (e.g., titles, units, etc.)?
+
+  5. Are there any specific thresholds or criteria for determining what constitutes
+  an "extreme value" or "notable segment" in the data?
+
+  6. Would you like grid lines to be included in the chart for easier reading of values?
+
+  7. Should the chart include a legend to clarify what each color represents?
+
+  8. Are there any specific contextual information or commentary you want to be included
+  directly within the chart?
+
+  9. Do you prefer a specific chart size or aspect ratio for optimal viewing?
+
+  10. Should the chart include error bars or other indicators of variability, if applicable?'
+answers: '1. I am not sure.
+
+  2. Yes, displaying values on top of each bar would be great.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, a legend would be helpful.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- hbpermin
+- QTseg
+- ECG_signal

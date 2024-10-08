@@ -1,0 +1,46 @@
+initial_prompt: I need a scatter plot to visualize job salaries in the data science
+  field. Use the 'salary_in_usd' on the y-axis and 'work_year' on the x-axis. Differentiate
+  the points by 'job_category' using different colors. Additionally, use different
+  shapes to represent 'experience_level'. This will allow me to see how salaries change
+  over time across various data science job categories and experience levels. Please
+  ensure to label the axes and include a legend for both job categories and experience
+  levels for better understanding.
+questions: '1. Do you have a specific color palette preference for the ''job_category''
+  differentiation?
+
+  2. Do you prefer any specific shapes for different ''experience_level'' representations?
+
+  3. What title would you like to give to the scatter plot?
+
+  4. Do you have any particular font preferences or sizes for the axis labels and
+  legend?
+
+  5. Would you like to include any annotations or data point labels on the scatter
+  plot?
+
+  6. Are there any specific axis ranges you would like to set for the x-axis (''work_year'')
+  and y-axis (''salary_in_usd'')?
+
+  7. Do you prefer gridlines on the chart, and if so, should they be light or bold?'
+answers: '<start of user emulated response>
+
+  1. I am not sure about the color palette preference.
+
+  2. I do not know which specific shapes to use.
+
+  3. "Data Science Job Salaries Over Time"
+
+  4. I have no specific preference for font or size.
+
+  5. I am not sure about annotations or data point labels.
+
+  6. I do not have specific axis ranges in mind.
+
+  7. I prefer gridlines, but I am not sure if they should be light or bold.
+
+  <end of user emulated response>'
+data_attributes:
+- work_year
+- salary_in_usd
+- job_category
+- experience_level

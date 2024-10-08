@@ -1,0 +1,44 @@
+initial_prompt: Create a bar chart to visualize the average volume of bytes across
+  different external IPs. Include annotations to highlight the highest and lowest
+  average volumes. This helps illustrate potential anomalies or significant variances
+  in network traffic, which could be crucial for cybersecurity analysis.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the chart to have grid lines for easier readability?
+
+  3. Do you want the external IPs to be sorted in a specific order (e.g., ascending
+  or descending based on volume)?
+
+  4. Is there a specific font type and size you prefer for the annotations?
+
+  5. Would you like to include labels on the bars to show the exact average volume
+  of bytes?
+
+  6. Should the y-axis be labeled with a specific scale (e.g., linear or logarithmic)?
+
+  7. Do you have a preference for the placement of the legend (if applicable)?
+
+  8. Are there any specific chart titles or axis labels you would like to include?
+
+  9. Do you prefer any particular style for the annotations (e.g., arrows, highlighting,
+  different color)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to have grid lines for easier readability.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include labels on the bars to show the exact average volume of bytes.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- external_ips
+- vulume_bytes

@@ -1,0 +1,64 @@
+initial_prompt: Create a choropleth map to visualize the statewise professional profile
+  of suicide victims in India for the year 2001. The map should show individual states/UTs
+  color-coded based on the total number of suicides. Differentiate the data by profession
+  categories like "House Wife", "Service (Government)", and "Service (Private)". Use
+  varying shades to represent the density of cases in each state. Include an interactive
+  legend to filter by professional category and a tooltip feature that displays detailed
+  statistics (gender and age distribution) when hovering over a state. Ensure the
+  map is easy to interpret and visually impactful.
+questions: '1. Do you have a specific color palette preference for the choropleth
+  map?
+
+  2. Should there be any particular color shades to represent different density levels
+  of suicide cases?
+
+  3. What map projection would you prefer for the choropleth map (e.g., Mercator,
+  Albers, etc.)?
+
+  4. Do you want state/UT borders to be highlighted in any specific manner (e.g.,
+  thicker lines, different colors)?
+
+  5. Would you prefer any particular font style or size for the state/UT labels on
+  the map?
+
+  6. Is there a specific layout/style you envision for the tooltips containing detailed
+  statistics?
+
+  7. Do you have a preferred default view for the choropleth map (e.g., zoom level,
+  centered on a specific region)?
+
+  8. Should the map include additional geographical features like rivers or major
+  cities?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I am not sure about particular color shades for different density levels.
+
+  3. I do not know which map projection to prefer.
+
+  4. I am not sure about highlighting state/UT borders in a specific manner.
+
+  5. I have no specific preference for font style or size for state/UT labels.
+
+  6. I am not sure about the layout/style for the tooltips with detailed statistics.
+
+  7. I do not have a preferred default view for the map.
+
+  8. I do not think additional geographical features like rivers or major cities are
+  necessary for this map.'
+data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Grand Total
+- Total Male
+- Total Female
+- Male upto 14 years
+- Male 15-29 years
+- Male 30-44 years
+- Male 45-59 years
+- Male 60 years and above
+- Female upto 14 years
+- Female 15-29 years
+- Female 30-44 years
+- Female 45-59 years
+- Female 60 years and above

@@ -1,0 +1,56 @@
+initial_prompt: Create a geographic heatmap showcasing fallen meteorites globally.
+  Use the `lat` and `long` columns for geolocation data to plot the meteorite falls
+  on a world map. The 'mass' column should control the intensity of each point, indicating
+  the range and size of meteorite falls. Ensure the `fall`, `year`, and `class` columns
+  are also represented in some form such as color-coding or filtering options for
+  deeper insight into the data trends related to fallen meteorites over time and their
+  classification.
+questions: '1. Do you have any specific preferences for the color scheme of the heatmap?
+
+  2. Would you like a specific type of map projection (e.g., Mercator, Robinson)?
+
+  3. How would you prefer ''fall'' types to be color-coded on the map?
+
+  4. Should the size of the data points vary with the ''mass'' of the meteorites?
+
+  5. Do you have a preference on how the ''year'' data should be represented (e.g.,
+  color gradient, time slider)?
+
+  6. Would you like to be able to filter data by specific ''class'' of meteorites?
+
+  7. Should the map include labels or tooltips showing additional information when
+  hovering over a point?
+
+  8. Do you have a preference for the background style of the map (e.g., satellite,
+  streets, terrain)?
+
+  9. Would you like to include a legend explaining the color and size scales?
+
+  10. Is there any additional contextual information you would like to be displayed
+  on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer different ''fall'' types to be represented with distinct colors.
+
+  4. Yes, the size of the data points should vary with the ''mass'' of the meteorites.
+
+  5. I am not sure.
+
+  6. Yes, I would like to be able to filter data by specific ''class'' of meteorites.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. Yes, please include a legend explaining the color and size scales.
+
+  10. I am not sure.'
+data_attributes:
+- lat
+- long
+- mass
+- fall
+- year
+- class

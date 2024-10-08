@@ -1,0 +1,57 @@
+initial_prompt: I need a stacked column chart that visualizes the Top 5000 Albums
+  of All Time dataset. The chart should break down the genres of the top 10 albums
+  and their average ratings. Annotate the chart to highlight the top 3 rated albums
+  and mention their average ratings. Use different colors for each genre to make it
+  visually attractive and clear. The purpose is to quickly understand the genre distribution
+  among highly-rated albums. Include textual annotations to provide insights about
+  the top-rated albums and their distinctive genres.
+questions: '1. Do you have a specific color palette preference for the genres?
+
+  2. How do you want the top 3 rated albums to be annotated (e.g., circles, arrows)?
+
+  3. Would you prefer the average ratings to be shown as data labels on the columns
+  or in a separate legend?
+
+  4. Do you have any preference for the order of genres in the stacked columns?
+
+  5. Is there a specific style or font you prefer for the textual annotations?
+
+  6. Should the chart include a title and axis labels? If so, do you have any specific
+  text in mind for these elements?
+
+  7. Do you want the chart to include gridlines or any specific background color?
+
+  8. How detailed do you want the legends to be? Should they include both genre and
+  average rating information?
+
+  9. Do you have preferences for the spacing between columns and the width of columns
+  in the chart?
+
+  10. Should the genres be categorized in any specific way (e.g., primary and secondary
+  genres) in the chart?'
+answers: '1. I do not have a specific color palette preference for the genres.
+
+  2. I am not sure, maybe arrows or circles could work?
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not have a specific preference.
+
+  6. Yes, please include a title and axis labels. The title could be "Top 10 Albums
+  Genre Distribution with Average Ratings," and the axis labels could be "Albums"
+  and "Average Ratings."
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not have a preference.'
+data_attributes:
+- Ranking
+- Album
+- Genres
+- Average Rating

@@ -1,0 +1,69 @@
+initial_prompt: Please create a box chart to visualize the dataset of Parkinson Disease
+  Detection. Include all the numerical columns like 'MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)',
+  'MDVP:Flo(Hz)', 'MDVP:Jitter(%)', 'MDVP:Jitter(Abs)', 'MDVP:RAP', 'MDVP:PPQ', 'Jitter:DDP',
+  'MDVP:Shimmer', 'MDVP:Shimmer(dB)', 'Shimmer:APQ3', 'Shimmer:APQ5', 'MDVP:APQ',
+  'Shimmer:DDA', 'NHR', 'HNR', 'RPDE', 'DFA', 'spread1', 'spread2', 'D2', and 'PPE'.
+  Compare distributions and identify any outliers or variances among the values.
+questions: '1. Do you have a specific color scheme preference for the box chart?
+
+  2. Should the outliers be highlighted with a specific color or symbol?
+
+  3. Do you prefer a horizontal or vertical layout for the box chart?
+
+  4. Would you like grid lines to be included in the chart for better clarity?
+
+  5. Should the chart include a legend explaining the color coding or symbols used?
+
+  6. Do you prefer any specific style for the whiskers (e.g., lines, caps) of the
+  box chart?
+
+  7. Should each box plot be labeled with the corresponding data attribute name?
+
+  8. Would you like to have mean or median lines/points shown within the boxes?
+
+  9. Is there a specific order you want the data attributes arranged in the chart?
+
+  10. Would you like the chart to include any specific annotations or callouts for
+  significant data points?'
+answers: '1. I am not sure.
+
+  2. Yes, please highlight the outliers with a specific color or symbol.
+
+  3. I do not know.
+
+  4. Yes, please include grid lines for better clarity.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Yes, each box plot should be labeled with the corresponding data attribute name.
+
+  8. Please include median lines within the boxes.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- MDVP:Fo(Hz)
+- MDVP:Fhi(Hz)
+- MDVP:Flo(Hz)
+- MDVP:Jitter(%)
+- MDVP:Jitter(Abs)
+- MDVP:RAP
+- MDVP:PPQ
+- Jitter:DDP
+- MDVP:Shimmer
+- MDVP:Shimmer(dB)
+- Shimmer:APQ3
+- Shimmer:APQ5
+- MDVP:APQ
+- Shimmer:DDA
+- NHR
+- HNR
+- RPDE
+- DFA
+- spread1
+- spread2
+- D2
+- PPE

@@ -1,0 +1,52 @@
+initial_prompt: Please create a Choropleth map visualizing bird collision data, focusing
+  on specific attributes. Highlight different bird species' collision frequency across
+  various localities. Utilize the 'date' column to distinguish trends over time and
+  the 'habitat' to show concentration points. Use distinct colors to represent values
+  and patterns. Include interactive elements to explore 'family' and 'stratum' impacts.
+  Ensure the map is detailed, with appropriate legends and tooltips. Integrate the
+  unique and missing values information for better data accuracy. Provide an informative
+  title and relevant labels for clarity.
+questions: '1. Do you have a preferred color palette for representing different bird
+  species and habitats?
+
+  2. Is there a specific timeframe you are most interested in for visualizing trends
+  over time?
+
+  3. Do you prefer a particular map projection or geographical boundary focus?
+
+  4. Would you like any specific annotations or markers to highlight key data points
+  or outliers?
+
+  5. Do you have preferences for the placement or style of legends and labels?
+
+  6. Are there any specific metrics or summary statistics you would like included
+  in tooltips?
+
+  7. Should we incorporate any specific icons or shapes to represent family or stratum
+  impacts on the map?
+
+  8. Do you have a preferred layout for the title and other textual elements?'
+answers: '1. I am not sure; please use a color palette that best represents the data.
+
+  2. I am most interested in visualizing trends over the last five years.
+
+  3. I have no specific preference; use what best fits the data.
+
+  4. Yes, please highlight key data points or outliers with annotations or markers.
+
+  5. I do not know; please use a conventional style that ensures clarity.
+
+  6. Please include metrics like the total number of collisions, percentage change
+  over time, and unique species count in the tooltips.
+
+  7. I am not sure; use icons or shapes if they enhance data clarity and interpretation.
+
+  8. I have no specific preference for layout; ensure the title and textual elements
+  are clear and informative.'
+data_attributes:
+- species
+- date
+- locality
+- family
+- habitat
+- stratum

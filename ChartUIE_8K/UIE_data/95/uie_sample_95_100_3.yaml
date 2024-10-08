@@ -1,0 +1,58 @@
+initial_prompt: I want a treemap using the data on global forests from 1990 to 2020.
+  Each country should be a block sized by its total land area in 2020. The blocks
+  should be color-coded by the proportion of forest area to total land area in 2020.
+  Include historical forest area data (1990, 2000, 2010, 2015) as labels or tooltips.
+  Highlight deforestation rates and forest area affected by fire for 2015-2020. Keep
+  missing values in mind; display areas like WORLD distinctly. This will offer a visual
+  representation of deforestation impact and forest distribution.
+questions: '1. Would you prefer any specific color scheme for the proportion of forest
+  area to total land area?
+
+  2. How would you like missing values to be represented visually?
+
+  3. Do you have a preference for how the "WORLD" area should be distinctly displayed?
+
+  4. Are there any specific design elements you would like to include for highlighting
+  deforestation rates and forest area affected by fire?
+
+  5. Do you have any preference on how historical forest area data (1990, 2000, 2010,
+  2015) should be displayed in labels or tooltips?
+
+  6. Is there a specific font style or size you would like to use for text in the
+  treemap?
+
+  7. Would you like to include any legends or annotations in the treemap?
+
+  8. Are there any particular countries or regions you would like to emphasize in
+  the treemap?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I would like specific markers or symbols for highlighting deforestation rates
+  and fire-affected areas.
+
+  5. Historical data should be displayed in tooltips when hovering over each country.
+
+  6. I do not have a specific preference.
+
+  7. Yes, a legend explaining the color coding and symbols would be helpful.
+
+  8. No specific countries or regions to emphasize.
+
+  <end of user emulated response>'
+data_attributes:
+- Country and Area
+- Forest Area, 1990
+- Forest Area, 2000
+- Forest Area, 2010
+- Forest Area, 2015
+- Forest Area, 2020
+- Total Land Area, 2020
+- Forest Area as a Proportion of Total Land Area, 2020
+- Deforestation, 2015-2020
+- Total Forest Area Affected by Fire, 2015

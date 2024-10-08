@@ -1,0 +1,48 @@
+initial_prompt: 'I have a dataset named "The BeeImage Dataset: Annotated Honey Bee
+  Images" that includes columns like file name, date, time, location, zip code, subspecies,
+  health status, pollen carrying status, and caste. I want to create a geographic
+  heatmap that showcases the distribution of honey bee health status across different
+  locations. The heatmap should highlight areas with high incidences of certain health
+  conditions. Please make sure the map is interactive, allowing me to zoom in and
+  click on specific regions to see details such as the exact number of occurrences
+  and other relevant data points.'
+questions: '1. What color scheme do you prefer for representing different health statuses
+  on the heatmap?
+
+  2. Do you have a preference for the base map style (e.g., satellite, street map,
+  terrain)?
+
+  3. Should the heatmap use a gradient or discrete color steps to indicate different
+  levels of incidence?
+
+  4. Do you want any specific annotations or labels on the map (e.g., city names,
+  infection rates)?
+
+  5. How would you like the data points to be aggregated (e.g., by city, zip code,
+  or another geographic unit)?
+
+  6. Do you have any preferences for the tooltips that appear when clicking on specific
+  regions?
+
+  7. Would you like any additional layers or markers on the map (e.g., bee population
+  density, presence of beekeeping facilities)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. A gradient might be good.
+
+  4. I am not sure.
+
+  5. By zip code.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- location
+- health

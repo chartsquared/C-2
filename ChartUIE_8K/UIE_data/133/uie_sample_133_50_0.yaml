@@ -1,0 +1,54 @@
+initial_prompt: Create a heatmap to visualize bike sharing counts (cnt) over time
+  (timestamp) by weather_code. Annotate outliers in bike counts. Highlight significant
+  differences across seasons to understand patterns influencing bike usage.
+questions: '1. What color palette do you prefer for the heatmap?
+
+  2. How would you like the outliers in bike counts to be annotated (e.g., different
+  color, specific symbols)?
+
+  3. Do you have a preference for how seasons should be highlighted on the heatmap
+  (e.g., different background colors, borders)?
+
+  4. How would you like the time intervals to be segmented on the heatmap (e.g., hourly,
+  daily, monthly)?
+
+  5. Do you have any specific preferences for the chart title and axis labels?
+
+  6. Would you like to include tooltips or labels that show precise values when hovered
+  over specific areas?
+
+  7. Should the heatmap display count values directly, or would you prefer using a
+  color gradient to represent these values?
+
+  8. Do you have any specific legends or keys you would like included to aid in interpreting
+  the heatmap?
+
+  9. Are there specific weather codes you would like highlighted or differentiated
+  in a particular way?
+
+  10. Is there any additional contextual or explanatory text you would like to include
+  with the heatmap?'
+answers: '1. I am not sure.
+
+  2. Different color for the outliers.
+
+  3. I do not know.
+
+  4. Daily.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Using a color gradient to represent these values.
+
+  8. I am not sure.
+
+  9. I do not have any specific preferences.
+
+  10. I do not know.'
+data_attributes:
+- timestamp
+- cnt
+- weather_code
+- season

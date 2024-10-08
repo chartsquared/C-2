@@ -1,0 +1,128 @@
+initial_prompt: I need a line chart visualizing the gene expression data across different
+  conditions. Use the 'gene' column as the x-axis representing individual genes. The
+  y-axis should show the level of expression. Plot separate lines for each condition
+  ('fetal_lung', '232-97_SCC', '232-97_node', etc.) to compare gene expression levels
+  across varying conditions detailed in the dataset. Ensure that missing values or
+  zero values are handled smoothly, not causing breaks in the lines. The chart should
+  help us identify trends and anomalies in gene expression profiles.
+questions: '1. Do you have a preferred color palette for the lines representing different
+  conditions?
+
+  2. Would you like the x-axis to have specific labels or tick mark intervals?
+
+  3. Are there any specific conditions you would like to highlight or distinguish
+  more prominently?
+
+  4. How would you like missing values to be handled in the line chart (e.g., interpolate,
+  show gap)?
+
+  5. Do you have a preference for line styles (solid, dashed, dotted) for different
+  conditions?
+
+  6. Should there be markers on the lines to indicate individual data points?
+
+  7. Would you like grid lines for better readability? If so, for both axes or specific
+  ones?
+
+  8. Do you prefer a legend inside or outside the plot area?
+
+  9. Should the chart have a specific title or labels for the x-axis and y-axis?
+
+  10. Would you like to see specific annotations or callouts for anomalies or trends
+  within the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Please interpolate the missing values.
+
+  5. I do not have a preference for line styles.
+
+  6. Yes, having markers on the lines to indicate individual data points would be
+  helpful.
+
+  7. Could we have grid lines for both axes for better readability?
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Yes, specific annotations or callouts for anomalies or trends within the chart
+  would be great.'
+data_attributes:
+- gene
+- fetal_lung
+- 232-97_SCC
+- 232-97_node
+- 68-96_Adeno
+- 11-00_Adeno
+- 69-96_Adeno
+- 234-97_Adeno
+- 319-00MT1_Adeno
+- 319-00PT_Adeno
+- 319-00MT2_Adeno
+- 12-00_Adeno
+- 237-97_Adeno
+- 156-96_Adeno
+- 157-96_SCC
+- 320-00_Adeno_p
+- 320-00_Adeno_c
+- 161-96_Adeno
+- 80-96_Adeno
+- 239-97_SCC
+- 75-95_combined
+- 165-96_Adeno
+- 166-96_SCC
+- 42-95_SCC
+- 204-97_Adeno
+- 245-97_SCC
+- 245-97_node
+- 58-95_SCC
+- 132-95_Adeno
+- 313-99PT_Adeno
+- 313-99MT_Adeno
+- 178-96_Adeno
+- 246-97_SCC_p
+- 246-97_SCC_c
+- 180-96_Adeno
+- 181-96_Adeno
+- 184-96_Adeno
+- 184-96_node
+- 248-97_LCLC
+- 185-96_Adeno
+- 187-96_Adeno
+- 191-96_Adeno
+- 314-99_SCLC
+- 314-99_normal
+- 256-97_LCLC
+- 257-97_Adeno
+- 198-96_Adeno
+- 315-99_SCLC
+- 315-99_node
+- 315-99_normal
+- 137-96_Adeno
+- 139-97_LCLC
+- 207-97_SCLC
+- 3-SCC
+- 299-99_Adeno
+- 199-97_Adeno_c
+- 199-97_Adeno_p
+- 6-00_LCLC
+- 218-97_Adeno
+- 219-97_SCC
+- 219-97_normal
+- 265-98_Adeno
+- 220-97_SCC
+- 220-97_node
+- 222-97_Adeno
+- 222-97_normal
+- 306-99_Adeno
+- 306-99_node
+- 306-99_normal
+- 223-97_Adeno
+- 147-96_Adeno
+- 59-96_SCC
+- 226-97_Adeno
+- 230-97_SCLC

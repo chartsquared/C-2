@@ -1,0 +1,42 @@
+initial_prompt: I'd like a pie chart visualizing the genres of the top 50 Spotify
+  songs of 2019. Each slice should represent a different genre, and the size of each
+  slice should correspond to the number of songs in that genre. Include labels for
+  the genres and the percentage they represent of the total. This should help in understanding
+  the most popular genres of 2019 at a glance. Make sure it's colorful and easy to
+  read.
+questions: '1. Do you have any specific color preferences for the pie chart slices?
+
+  2. Are there any particular fonts you would like used for the labels?
+
+  3. Would you prefer the genre labels to be inside or outside the pie chart slices?
+
+  4. Do you have a preferred order for displaying the genres (e.g., alphabetical,
+  by percentage)?
+
+  5. Would you like to include a legend alongside the pie chart, or should all information
+  be within the chart itself?
+
+  6. Do you prefer a 2D or 3D pie chart?
+
+  7. How important is the readability of smaller slices to you, and would you like
+  to emphasize any particular genres?
+
+  8. Is there a specific chart title you would like to use?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Inside the pie chart slices.
+
+  4. By percentage.
+
+  5. All information should be within the chart itself.
+
+  6. 2D pie chart.
+
+  7. I do not know.
+
+  8. "Top Spotify Song Genres of 2019"'
+data_attributes:
+- Track.Name
+- Genre

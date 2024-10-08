@@ -1,0 +1,39 @@
+initial_prompt: I need a column chart for "Pizza Mercato" reviews to help visualize
+  customer satisfaction. Use the 'question,' 'answer,' 'votes,' and 'percent' columns
+  primarily. The x-axis should represent the different answers (Excellent, Good, Average),
+  while the y-axis should display the number of votes. Include the percent of total
+  votes as labels on each column for better insight. This will help us understand
+  how well customers rate the pizza from "Pizza Mercato." The chart should be clear
+  and easy to interpret for quick decision-making in improving services.
+questions: '1. What color scheme do you prefer for the columns representing different
+  answers (Excellent, Good, Average)?
+
+  2. Do you have a preferred font style and size for the chart labels and titles?
+
+  3. Would you like gridlines on the chart to enhance readability?
+
+  4. Should the y-axis have a specific range or should it auto-adjust based on the
+  data?
+
+  5. Do you prefer any specific positioning for the percent labels on each column
+  (e.g., inside, outside, at the top)?
+
+  6. Is there any additional information you would like to include in the chart title
+  or subtitle?'
+answers: '1. I prefer a color scheme with green for Excellent, yellow for Good, and
+  red for Average.
+
+  2. I am not sure.
+
+  3. Yes, I would like gridlines on the chart to enhance readability.
+
+  4. The y-axis should auto-adjust based on the data.
+
+  5. I have no specific preference.
+
+  6. I do not know.'
+data_attributes:
+- question
+- answer
+- votes
+- percent

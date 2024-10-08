@@ -1,0 +1,56 @@
+initial_prompt: I have a dataset that contains the country, codes, year, and agriculture,
+  forestry, and fishing value added per worker in constant 2015 US dollars. I want
+  to create a grouped bar chart to visualize this data. Please plot the value added
+  per worker for different countries (e.g., Argentina, Armenia, Australia) across
+  different years. Each bar group should represent a specific year, and within each
+  group, there should be bars for the different countries. Ensure that the data points
+  are correctly formatted, especially the numerical values, for accurate representation.
+  Provide clear axis labels and a legend for easy interpretation.
+questions: '1. Do you have any specific color preferences for the different countries?
+
+  2. What size and orientation do you prefer for the chart (e.g., landscape or portrait)?
+
+  3. Do you have a preferred font style and size for the axis labels and legend?
+
+  4. Should the y-axis be formatted with commas for thousands or any other specific
+  format?
+
+  5. Do you want gridlines in the chart for easier comparison, and if so, should they
+  be major, minor, or both?
+
+  6. Do you have a preference for the spacing between the grouped bars?
+
+  7. Is there a specific order in which you would like the countries to be displayed
+  within each group?
+
+  8. Would you like to highlight any specific years or countries with different colors
+  or annotations?
+
+  9. Should the chart include a title or subtitle, and if so, what should it be?
+
+  10. Do you prefer the legend to be placed inside the plot area or outside, and on
+  which side (top, bottom, left, right)?'
+answers: '1. I am not sure.
+
+  2. Landscape would be preferred.
+
+  3. I do not know.
+
+  4. Yes, include commas for thousands on the y-axis.
+
+  5. Yes, please add major gridlines for easier comparison.
+
+  6. I do not know.
+
+  7. No specific order.
+
+  8. I am not sure.
+
+  9. Yes, include a title: "Value Added per Worker in Agriculture, Forestry, and Fishing
+  (Constant 2015 USD)".
+
+  10. Outside, on the right side.'
+data_attributes:
+- country
+- Year
+- Agriculture, forestry, and fishing, value added per worker (constant 2015 US$)

@@ -1,0 +1,61 @@
+initial_prompt: I want to visualize the candidate data from the Indian General Election
+  2019 using a heatmap. Please create a heatmap that shows the correlation between
+  candidates' age, the number of criminal cases they have, and the total votes received
+  (both general and postal votes). The heatmap should clearly demonstrate the relationship
+  between these variables across different states and constituencies. Ensure that
+  categories like PARTY, GENDER, and EDUCATION are also included in the heatmap to
+  show how these factors might influence the other variables. Use color gradients
+  to highlight higher and lower values.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the heatmap display specific numerical values within the cells?
+
+  3. Do you want to include any specific labels or annotations in the heatmap?
+
+  4. Is there a particular order in which you want the variables to be arranged or
+  grouped?
+
+  5. Would you like the gradients to be represented in a specific color scale (e.g.,
+  blue to red, green to yellow)?
+
+  6. How many levels of color intensity do you prefer for highlighting different values
+  in the heatmap?
+
+  7. Should the heatmap include a legend to explain the color gradients?
+
+  8. Is there a specific theme or style you would like the heatmap to follow (e.g.,
+  minimalistic, detailed, colorful)?'
+answers: '1. I do not have a preferred color scheme for the heatmap.
+
+  2. Yes, the heatmap should display specific numerical values within the cells.
+
+  3. I am not sure.
+
+  4. I have no specific preference for the arrangement or grouping of the variables.
+
+  5. I do not know.
+
+  6. I am not sure about the number of levels of color intensity.
+
+  7. Yes, the heatmap should include a legend to explain the color gradients.
+
+  8. I do not have a specific theme or style in mind for the heatmap.'
+data_attributes:
+- AGE
+- 'CRIMINAL
+
+  CASES'
+- 'TOTAL
+
+  VOTES'
+- 'GENERAL
+
+  VOTES'
+- 'POSTAL
+
+  VOTES'
+- STATE
+- CONSTITUENCY
+- PARTY
+- GENDER
+- EDUCATION

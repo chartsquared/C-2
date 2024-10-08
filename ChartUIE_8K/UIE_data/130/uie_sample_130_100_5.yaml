@@ -1,0 +1,46 @@
+initial_prompt: Create a heatmap visualizing the distribution of Indian food based
+  on prep_time and cook_time across different states and regions. Plot prep_time on
+  the x-axis and cook_time on the y-axis. Each cell should represent the frequency
+  of recipes with specific prep_time and cook_time combinations, differentiated by
+  states and regions. Use different color gradients to indicate varying frequencies.
+  This will help in understanding which regions have foods with longer or shorter
+  cooking and preparation times. This is useful for food enthusiasts and researchers
+  interested in regional cooking patterns in Indian cuisine.
+questions: '1. Do you have any specific color gradients in mind for indicating frequencies?
+
+  2. What range of values for ''prep_time'' and ''cook_time'' would you like to focus
+  on?
+
+  3. Do you prefer any specific labeling or annotation on the x-axis (prep_time) and
+  y-axis (cook_time)?
+
+  4. Are there any specific states or regions you would like to highlight in the heatmap?
+
+  5. How detailed do you want the frequency differentiation to be?
+
+  6. Would you like any additional information (such as tooltips) to appear when hovering
+  over specific cells?
+
+  7. Do you have any layout preferences for the chart (e.g., aspect ratio, size)?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color gradient in mind.
+
+  2. I am not sure about the range of values for ''prep_time'' and ''cook_time''.
+
+  3. I do not have any specific preference for labeling the x-axis and y-axis.
+
+  4. I do not know if there are specific states or regions I want to highlight.
+
+  5. I would like the frequency differentiation to be detailed enough to notice patterns.
+
+  6. I am not sure about additional information like tooltips.
+
+  7. I have no specific preference for the layout of the chart.
+
+  <end of user emulated response>'
+data_attributes:
+- prep_time
+- cook_time
+- state
+- region

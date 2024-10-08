@@ -1,0 +1,44 @@
+initial_prompt: I need a line chart of life expectancy over the years for each country
+  from the data. The x-axis should represent the year (use 'year' and 'year_a' data)
+  and the y-axis should represent the life expectancy in years. Different countries
+  should be represented with different colored lines. This is for a social science
+  project, so the visualization needs to be clear and emphasize changes over time.
+  Make sure missing population data is handled appropriately. Labels and a legend
+  are necessary to identify each country clearly.
+questions: '1. Do you have any preferences for the color scheme used for different
+  countries?
+
+  2. Should the labels for each axis be in a specific format or style?
+
+  3. Do you want grid lines on the chart for better readability?
+
+  4. Are there any specific countries you want to highlight prominently?
+
+  5. How should missing population data be indicated or handled on the chart?
+
+  6. Do you have a preferred font style and size for the labels and legend?
+
+  7. Would you like any annotations or markers on significant data points?
+
+  8. Should the line style (e.g., solid, dashed) differ across countries or data segments?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. Yes, grid lines on the chart for better readability would be helpful.
+
+  4. I do not know.
+
+  5. Missing population data should be interpolated or handled in a way that doesn’t
+  disrupt the line trends.
+
+  6. I do not have any specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- year
+- year_a
+- Life expectancy in years
+- country

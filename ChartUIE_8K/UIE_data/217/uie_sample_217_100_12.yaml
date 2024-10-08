@@ -1,0 +1,59 @@
+initial_prompt: Please create a dot plot chart for the "Indian Cities Distance Dataset".
+  The chart should visualize the distances between different city pairs listed in
+  the dataset. Use the "Origin" on the x-axis and plot individual dots for each "Destination"
+  on the y-axis, with the "Distance" determining the position of each dot. This will
+  help in quickly identifying the relative distances between cities. Ensure all unique
+  city pairs are represented, and make the chart easy to interpret for transportation
+  and logistics analysis. Thanks!
+questions: '1. Do you have any specific color preferences for the dots or background
+  of the chart?
+
+  2. Would you prefer the chart to include grid lines for better readability? If yes,
+  should they be both horizontal and vertical, or just one of the two?
+
+  3. Should the chart include labels for each dot indicating the exact distance values,
+  or should it only display dots?
+
+  4. Do you want any specific markers or shapes for the dots, or are default circular
+  dots acceptable?
+
+  5. Would you like the chart to include a legend or additional annotations for better
+  understanding?
+
+  6. Do you have a preferred font style or size for the axis labels and titles?
+
+  7. Should the distances be represented in km or miles, or should it be indicated
+  in both units?
+
+  8. Is there a specific order you want the cities (Origins) to be displayed on the
+  x-axis (e.g., alphabetical or by some other criteria)?
+
+  9. Are there any specific city pairs or distances that you want to highlight or
+  emphasize in the chart?
+
+  10. Would you like to set a limit on the range of distances displayed on the y-axis,
+  or should it auto-adjust to the data?'
+answers: '1. I do not have any specific color preferences.
+
+  2. Yes, I would prefer the chart to include grid lines. Both horizontal and vertical
+  grid lines would be helpful.
+
+  3. I am not sure.
+
+  4. Default circular dots are acceptable.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Kilometers (km) are fine.
+
+  8. Alphabetical order for the cities (Origins) on the x-axis would be good.
+
+  9. No, I do not have any specific city pairs or distances to highlight.
+
+  10. It should auto-adjust to the data.'
+data_attributes:
+- Origin
+- Destination
+- Distance

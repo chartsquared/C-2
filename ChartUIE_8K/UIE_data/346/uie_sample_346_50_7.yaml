@@ -1,0 +1,54 @@
+initial_prompt: Create a heatmap to visualize global video game sales, focusing on
+  different years, platforms, and genres. Highlight missing data and unique publishers.
+  Utilize sales categories (NA, EU, JP, Other, Global) for comparison.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the years to be displayed in a specific order (chronologically
+  or otherwise)?
+
+  3. Do you want distinct markers or colors for highlighting missing data points?
+
+  4. Should unique publishers be highlighted using specific colors or symbols?
+
+  5. Do you have a preference for the axis labels (e.g., font size, font style, orientation)?
+
+  6. How would you like the sales categories (NA, EU, JP, Other, Global) to be represented
+  (e.g., color intensity, gradient)?
+
+  7. Are there specific genres or platforms that you would like to emphasize?
+
+  8. Do you prefer the heatmap to be normalized based on the sales categories?
+
+  9. Do you have any specific requirements for the legends (e.g., placement, size,
+  style)?
+
+  10. Would you like to include data values within the heatmap cells for precise comparison?'
+answers: '1. I have no specific preference.
+
+  2. Yes, chronologically.
+
+  3. Yes, distinct markers for missing data points.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Color intensity sounds good.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- Year
+- Platform
+- Genre
+- Publisher
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales
+- Global_Sales

@@ -1,0 +1,55 @@
+initial_prompt: Create a stacked bar chart visualizing Blue and Red team kills, assists,
+  and deaths for the top 10 ranked games. Include labels for each team, and use different
+  colors for kills, assists, and deaths to differentiate them.
+questions: '1. Do you have any preferences for specific colors to use for kills, assists,
+  and deaths?
+
+  2. Do you prefer the bars to be displayed horizontally or vertically?
+
+  3. Should the game IDs be displayed on the x-axis or y-axis?
+
+  4. Would you like the chart to include a legend indicating which colors correspond
+  to kills, assists, and deaths?
+
+  5. Do you have any specific font preferences for the labels and titles?
+
+  6. Are there any specific dimensions or aspect ratio you''d prefer for the chart?
+
+  7. Would you like gridlines to be visible in the background of the chart?
+
+  8. Should the chart include data values on top of each bar segment for better readability?
+
+  9. Would you like to include a title for the chart? If so, what should it be?
+
+  10. Do you have any specific style preferences for the bars, such as border color
+  or width?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, I would like the chart to include a legend indicating which colors correspond
+  to kills, assists, and deaths.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, the chart should include data values on top of each bar segment for better
+  readability.
+
+  9. Yes, the title should be "Performance Metrics of Blue and Red Teams in Top 10
+  Ranked Games".
+
+  10. I do not know.'
+data_attributes:
+- gameId
+- blueKills
+- blueAssists
+- blueDeaths
+- redKills
+- redAssists
+- redDeaths

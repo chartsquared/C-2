@@ -1,0 +1,41 @@
+initial_prompt: I have a dataset related to ECG of Cardiac Ailments. Could you please
+  create a grouped bar chart showcasing the average values of `hbpermin`, `QTseg`,
+  `RRmean`, `PPmean`, `PQdis`, and `PTdis` for the first 10 records? Use different
+  colors for each category to distinguish them clearly. This will help us visualize
+  the distribution and comparison of these critical ECG measurements across a small
+  sample. Thank you!
+questions: '1. Do you have any specific color preferences for the different categories?
+
+  2. Would you prefer to have gridlines in the background for better readability?
+
+  3. Do you need axis labels to be rotated for better visibility, especially if they
+  are long?
+
+  4. Should the chart include a title and subtitle for better context?
+
+  5. Would you like to include a legend to clarify the different categories?
+
+  6. Is there a particular font style or size that you prefer for the chart labels
+  and title?
+
+  7. Do you prefer any specific ordering for the categories or the data points?'
+answers: '1. I do not have any specific color preferences.
+
+  2. Yes, gridlines in the background would be helpful for better readability.
+
+  3. I am not sure about rotating the axis labels.
+
+  4. Yes, the chart should include a title and subtitle for better context.
+
+  5. Yes, please include a legend to clarify the different categories.
+
+  6. I do not have any specific preference for font style or size.
+
+  7. I do not have any specific preference for ordering the categories or data points.'
+data_attributes:
+- hbpermin
+- QTseg
+- RRmean
+- PPmean
+- PQdis
+- PTdis

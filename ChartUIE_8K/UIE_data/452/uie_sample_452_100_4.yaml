@@ -1,0 +1,57 @@
+initial_prompt: I have a dataset containing temperature and pressure measurements
+  for both liquids and gases at various conditions. I need a heatmap to visualize
+  the relationships between these variables. Specifically, I want to compare the liquefied
+  and gaseous states under different temperatures and pressures. The x-axis should
+  be Temperature(K) and Temperature(K).1, while the y-axis should be Pressure(Liquid)
+  and Pressure(Gas). Use a color gradient to indicate the density or concentration
+  of data points. This will help me understand how pressure varies with temperature
+  in both states. Please provide a clear and interpretative heatmap.
+questions: '1. Do you have a preference for a specific color gradient or color palette
+  for the heatmap?
+
+  2. Would you like the color gradient to be continuous or segmented into specific
+  intervals?
+
+  3. Do you want axis labels and titles to be formatted in a certain way, such as
+  specific fonts or sizes?
+
+  4. Should the heatmap include a legend indicating the scale of the color gradient?
+
+  5. Do you prefer grid lines or any other specific styling on the axes?
+
+  6. Are there any specific ranges of temperature or pressure you want to zoom in
+  on or highlight?
+
+  7. Would you like any annotations or markers for specific data points, such as maximum
+  or minimum values?
+
+  8. Should the heatmap be displayed in a specific orientation or layout?
+
+  9. Would you like to include any additional context or metadata, such as units of
+  measurement, in the chart title or legend?
+
+  10. Do you have preferences for the overall size or aspect ratio of the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, the heatmap should include a legend indicating the scale of the color gradient.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, I would like annotations for maximum or minimum values.
+
+  8. I have no specific preference.
+
+  9. Yes, please include units of measurement in the chart title or legend.
+
+  10. I have no specific preference.'
+data_attributes:
+- Temperature(K)
+- Pressure(Liquid)
+- Temperature(K).1
+- Pressure(Gas)

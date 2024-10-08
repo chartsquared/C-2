@@ -1,0 +1,51 @@
+initial_prompt: Create a bar chart to visualize the average product rating by product
+  category from the provided Jumia Prices and Ratings 2024 data. Ensure the x-axis
+  represents different product categories and the y-axis shows the average ratings.
+  Use the 'Product Name' to infer the category and 'Rating' to calculate the average
+  rating for each category. Please make sure to handle any missing values appropriately
+  in your calculations and provide a clear, labeled chart. This will help to compare
+  the overall customer satisfaction across different product categories. Thank you!
+questions: '1. Do you have any specific color preferences for the bar chart?
+
+  2. Should the chart include grid lines for better readability?
+
+  3. Would you like the product categories on the x-axis to be displayed in any particular
+  order (e.g., alphabetical, by average rating)?
+
+  4. Do you have a preferred font style and size for the axis labels and titles?
+
+  5. Should the average ratings be displayed as data labels on top of the bars?
+
+  6. Do you prefer vertical or horizontal bars for this chart?
+
+  7. Is there any specific title you would like to be used for the chart?
+
+  8. Do you want to include a legend on the chart, even if there is only one category
+  type visualized?
+
+  9. How would you like missing values to be handled? (e.g., ignore products with
+  missing ratings or treat missing ratings as zero)
+
+  10. Do you have any preferences for the width or spacing of the bars?'
+answers: '1. I am not sure.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. By average rating would be great.
+
+  4. I do not know.
+
+  5. Yes, display the average ratings as data labels on top of the bars.
+
+  6. I prefer vertical bars for this chart.
+
+  7. "Average Product Rating by Category (Jumia 2024)"
+
+  8. I do not know.
+
+  9. Ignore products with missing ratings.
+
+  10. I have no specific preference.'
+data_attributes:
+- Product Name
+- Rating

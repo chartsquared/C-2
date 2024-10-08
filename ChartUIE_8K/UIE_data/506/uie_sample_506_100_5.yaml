@@ -1,0 +1,42 @@
+initial_prompt: 'I need a diverging bar chart to visualize the winrate difference
+  between games played from the blue side and the red side for each champion in the
+  dataset. For each champion, show two bars: one for Winrate(B) and one for Winrate(R),
+  diverging from a central axis. Include the champion names on the y-axis and the
+  winrate percentages on the x-axis. This will help identify which side each champion
+  performs better on.'
+questions: '1. What color scheme do you prefer for the bars representing Winrate(B)
+  and Winrate(R)?
+
+  2. Do you have any specific fonts or font sizes you would like for the champion
+  names and winrate percentages?
+
+  3. Should the bars have data labels displaying the exact winrate percentages?
+
+  4. Do you prefer any specific ordering for the champions on the y-axis, such as
+  alphabetical order or descending winrate difference?
+
+  5. Is there a particular width or spacing you desire between the bars for better
+  visual distinction?
+
+  6. Would you like a legend included to distinguish between Winrate(B) and Winrate(R)?
+
+  7. Are there any specific gridline preferences or background colors you want for
+  the chart?'
+answers: '1. I am not sure about the color scheme, use something that distinguishes
+  the sides clearly.
+
+  2. I do not know, use default settings for the fonts and sizes.
+
+  3. Yes, the bars should have data labels displaying the exact winrate percentages.
+
+  4. I prefer the champions to be ordered by descending winrate difference.
+
+  5. I do not have any specific preference for the width or spacing between the bars.
+
+  6. Yes, include a legend to distinguish between Winrate(B) and Winrate(R).
+
+  7. I have no specific preferences for the gridlines or background colors.'
+data_attributes:
+- Champion
+- Winrate(B)
+- Winrate(R)

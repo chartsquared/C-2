@@ -1,0 +1,61 @@
+initial_prompt: Create a choropleth map visualizing global alcohol consumption using
+  the dataset. Focus on distinguishing countries based on their total litres of pure
+  alcohol consumed per year. Annotate specific countries with high and low alcohol
+  consumption to highlight differences. Emphasize regions with color gradients to
+  make comparisons easier. Include data-driven annotations for countries like Afghanistan
+  (0.0) and Albania (4.9) to draw attention. The visualization should reflect the
+  overall global drinking patterns and provide clear insights into regional trends
+  for better understanding of alcohol consumption worldwide. Keep in mind the food-and-drink
+  context for practical uses.
+questions: '1. Do you have any specific color gradients you would prefer to use for
+  the map?
+
+  2. Should we use a particular color scheme for distinguishing high and low alcohol
+  consumption?
+
+  3. How would you like the annotations to appear—text labels, icons, or another format?
+
+  4. Are there any other specific countries you want to be highlighted besides Afghanistan
+  and Albania?
+
+  5. Do you prefer any particular styling for the country borders on the map?
+
+  6. Should the map include any additional geographic markers or labels (e.g., major
+  cities, regions)?
+
+  7. Do you have a preference for the map''s projection type (e.g., Mercator, Robinson)?
+
+  8. Would you like to add any legends or explanatory text to help interpret the color
+  gradients?
+
+  9. Are there any specific font styles or sizes you wish to use for annotations and
+  labels?
+
+  10. Do you want the visualization to include any additional data insights or contextual
+  information (e.g., historical trends, comparisons with other datasets)?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure, but maybe a gradient from blue (low) to red (high) could be effective?
+
+  3. Text labels would be best for the annotations.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. No, just focus on the countries and alcohol consumption.
+
+  7. I have no specific preference.
+
+  8. Yes, please include a legend to help interpret the color gradients.
+
+  9. I do not know.
+
+  10. No additional data insights are needed.
+
+  <end of user emulated response>'
+data_attributes:
+- country
+- total_litres_of_pure_alcohol

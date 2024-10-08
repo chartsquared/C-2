@@ -1,0 +1,51 @@
+initial_prompt: Create a box chart visualizing the Effective Radiated Power (ERP)
+  distribution across different TV channels. Highlight the outliers and add text annotations
+  for channels with significantly higher ERP values. The purpose is to easily compare
+  power levels across channels and identify any anomalies or outliers. This will help
+  in understanding transmission power variations among different channels and ensuring
+  they meet regulatory requirements. Provide context on the X-axis for channel numbers
+  and Y-axis for ERP in kilowatts. The chart should also differentiate between the
+  service types to offer more detailed insights.
+questions: '1. Do you have a preferred color scheme for differentiating between service
+  types?
+
+  2. What style of text annotations do you prefer for channels with significantly
+  higher ERP values? (e.g., bold, italic, different color)
+
+  3. Would you like a grid background in the chart?
+
+  4. Should the outliers be marked with specific symbols? If yes, which symbols do
+  you prefer?
+
+  5. Do you have a preference for the orientation of text labels on the X-axis?
+
+  6. Are there any specific font styles or sizes you prefer for labels and annotations?
+
+  7. Would you like to include a legend for the service types? If yes, where should
+  it be positioned?
+
+  8. Is there a specific title that you would like to give to the chart?
+
+  9. Do you prefer horizontal or vertical display of box charts?'
+answers: '1. I am not sure.
+
+  2. I prefer bold text annotations for channels with significantly higher ERP values.
+
+  3. Yes, I would like a grid background in the chart.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, I would like to include a legend for the service types, preferably positioned
+  on the right side.
+
+  8. Yes, the title should be "ERP Distribution Across TV Channels with Outliers Highlighted."
+
+  9. I prefer a vertical display of box charts.'
+data_attributes:
+- CHANNEL
+- ERP
+- SERVICE

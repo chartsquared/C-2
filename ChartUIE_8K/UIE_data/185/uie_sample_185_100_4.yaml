@@ -1,0 +1,65 @@
+initial_prompt: Create a heatmap to visualize the percent change in consumer spending
+  across various categories over different dates. Use the "State FIPS code" as the
+  row axis and the "Date" as the column axis. Each cell should represent the percent
+  change for one of the spending categories like 'All merchant category codes spending',
+  'Accommodation and food service spending', etc. Include a color gradient to distinguish
+  between increases and decreases in spending. Ensure the heatmap clearly shows areas
+  with significant spending changes, using varying shades to indicate the magnitude
+  of changes.
+questions: '1. Do you have any preference for the color gradient to represent increases
+  and decreases in spending?
+
+  2. What range of percent changes are you most interested in highlighting (e.g.,
+  -50% to +50%)?
+
+  3. Do you have a preferred layout for the heatmap (e.g., specific ordering of state
+  codes or dates)?
+
+  4. Would you like to include annotations or labels on the heatmap cells to show
+  the exact percent change values?
+
+  5. Do you prefer any specific categories of spending to be emphasized or highlighted
+  in the visualization?
+
+  6. Are there any specific dates or time ranges that you want to focus on in the
+  heatmap?
+
+  7. Would you like to include a legend explaining the color gradient and the percent
+  change ranges?
+
+  8. Do you want to aggregate the data in any way (e.g., weekly, monthly) rather than
+  displaying daily changes?
+
+  9. Should the heatmap support the comparison of multiple spending categories side
+  by side?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, I would like to include annotations or labels on the heatmap cells to show
+  the exact percent change values.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, please include a legend explaining the color gradient and the percent change
+  ranges.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- State FIPS code
+- Date
+- All merchant category codes spending
+- Accommodation and food service (ACF) spending
+- Arts, entertainment, and recreation (AER) spending
+- General merchandise stores (GEN) and apparel and accessories (AAP) spending
+- Grocery and food store (GRF) spending
+- 'Health care and social assistance (HCS) spending '
+- Transportation and warehousing (TWS) spending
+- 'Retail spending, including grocery (AAP, CEC, GEN, GRF, HIC, ETC, SGH) '
+- 'Retail spending, excluding grocery ((AAP, CEC, GEN, HIC, ETC, SGH) '

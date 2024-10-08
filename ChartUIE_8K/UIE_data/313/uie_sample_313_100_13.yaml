@@ -1,0 +1,52 @@
+initial_prompt: Create a geographic heatmap showing the distribution of the 2022 population
+  across countries. Highlight countries with higher population densities in darker
+  colors. The map should show continents distinctly and include labels for country
+  names and their respective 2022 populations. Please use the area (km²) and density
+  information to create a clear visual representation of population density distribution.
+  Also, indicate growth rates using gradient colors for each country to highlight
+  regions with significant population changes. Ensure the heatmap is interactive,
+  allowing for detailed data on hover.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should there be specific color gradients for different ranges of population density?
+
+  3. Would you like the map to include a legend explaining the color gradients and
+  their meanings?
+
+  4. How would you like the country names and their respective 2022 populations to
+  be displayed on the map (e.g., tooltips, labels directly on the map)?
+
+  5. Is there a specific format or style you prefer for the labels of countries and
+  population data?
+
+  6. Would you prefer the map to show additional contextual information, such as country
+  borders or major landmarks?
+
+  7. How prominently should growth rates be displayed in comparison to population
+  density?
+
+  8. Do you have a preference for the geographic projection (e.g., Mercator, Robinson)
+  used in the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend explaining the color gradients and their meanings.
+
+  4. I would prefer the country names and their respective 2022 populations to be
+  displayed on hover (tooltips).
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. The growth rates should be less prominent than population density.
+
+  8. I do not know.'
+data_attributes:
+- Country/Territory
+- Continent
+- 2022 Population
+- Area (km²)
+- Density (per km²)
+- Growth Rate

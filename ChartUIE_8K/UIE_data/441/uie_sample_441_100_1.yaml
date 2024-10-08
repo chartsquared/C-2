@@ -1,0 +1,59 @@
+initial_prompt: Create a dot plot visualizing women's college basketball performance.
+  Plot 'school' on the y-axis and 'reg_percent' on the x-axis. Annotate key data points
+  to highlight top and bottom performing teams by 'reg_percent'. Use different colors
+  to represent 'conference' to show diversity. Include highlights for schools with
+  'reg_percent' above 90. Add textual annotations for specific schools that performed
+  exceptionally well or poorly in 'tourney_finish'. This visualization will help compare
+  team performances across different conferences and identify standout teams in regular
+  and tournament play.
+questions: '1. Do you have any specific color preferences for representing different
+  conferences?
+
+  2. What style of annotations would you prefer for highlighting key data points (e.g.,
+  arrows, labels, callouts)?
+
+  3. Do you have any preferred threshold for highlighting ''reg_percent'' above 90,
+  such as using a specific color or shape?
+
+  4. Is there a specific way you would like the schools to be sorted on the y-axis
+  (e.g., alphabetically, by ''reg_percent'')?
+
+  5. Do you have a preference for the font style or size for textual annotations?
+
+  6. Would you like to include a legend explaining the color codes for different conferences?
+
+  7. Is there a specific way you want to handle overlapping data points in the dot
+  plot?
+
+  8. Do you have any specific preferences for the chart''s background color or grid
+  lines?
+
+  9. Would you like any additional categorical variables to be indicated in the chart,
+  such as ''seed'' or ''how_qual''?
+
+  10. Do you have any preferences for the layout or orientation of the chart (e.g.,
+  plotting horizontally or vertically)?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure, labels might be fine.
+
+  3. I do not know, maybe a specific color.
+
+  4. By ''reg_percent'' would be good.
+
+  5. I do not have a preference.
+
+  6. Yes, include a legend for the color codes.
+
+  7. I am not sure.
+
+  8. I do not have any specific preferences.
+
+  9. I do not know.
+
+  10. I do not have a preference.'
+data_attributes:
+- school
+- reg_percent
+- conference
+- tourney_finish

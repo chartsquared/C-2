@@ -1,0 +1,41 @@
+initial_prompt: Create a geographic heatmap visualizing the capture distribution of
+  different fish species. Highlight regions with higher capture values using varying
+  colors. Annotate key points showing species names and capture numbers to focus on
+  significant data. Use the weighting column to adjust the intensity of the colors,
+  reflecting the species' relative importance. This chart will provide an overview
+  of fish capture geographically, making it easier to identify regions of high activity
+  and key species contributing to those figures. Incorporate descriptive text annotations
+  for context and highlights for distinct data points.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the intensity of colors to be adjusted based on the weighting?
+
+  3. Are there specific species or regions you want to emphasize with distinct annotations?
+
+  4. What level of granularity do you prefer for the geographic regions displayed?
+
+  5. Should the chart include a legend explaining the color intensities and their
+  corresponding values?
+
+  6. Do you have a preferred font size and style for the text annotations?
+
+  7. Would you like the chart to include any additional contextual information or
+  notes?'
+answers: '1. I am not sure.
+
+  2. I don''t know.
+
+  3. Yes, could you emphasize the species like Tuna in the Pacific region and Salmon
+  in the North Atlantic region?
+
+  4. I prefer moderate granularity, showing prominent regions clearly.
+
+  5. Yes, please include a legend.
+
+  6. I am not sure.
+
+  7. I do not have any specific preference.'
+data_attributes:
+- Species
+- Capture
+- Weighting

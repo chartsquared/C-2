@@ -1,0 +1,42 @@
+initial_prompt: Please create a box chart visualizing the price distribution of Udemy
+  courses across different levels. I want to see the range and median price for each
+  course level (All Levels, Intermediate Level, etc.) in the Business Finance subject.
+  The data should be taken from the provided dataset. This will help identify pricing
+  trends at various course levels. Thank you!
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Would you like the chart to include outliers explicitly?
+
+  3. Should the y-axis (price) be adjusted to a specific range or left to automatically
+  scale based on the data?
+
+  4. Do you have any preference for the ordering of the course levels on the x-axis
+  (e.g., alphabetical, by median price)?
+
+  5. Would you like to include the exact median price values as labels on the chart?
+
+  6. Do you prefer grid lines on the chart for better readability?
+
+  7. Should we include any annotations or textual descriptions to highlight specific
+  trends or findings?
+
+  8. Do you have a preferred title or subtitle for the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to include outliers explicitly.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, please include the exact median price values as labels on the chart.
+
+  6. Yes, please include grid lines for better readability.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- price
+- level
+- subject

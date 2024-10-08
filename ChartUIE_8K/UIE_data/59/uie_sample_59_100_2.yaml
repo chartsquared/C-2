@@ -1,0 +1,62 @@
+initial_prompt: Please create a column chart visualizing GameStop's historical stock
+  prices, focusing on daily open, high, low, and close prices along with trading volume.
+  Highlight significant dates based on high volume or dramatic price changes using
+  text annotations to indicate values and provide context. Emphasize these dates by
+  modifying the appearance of the corresponding bars. This visualization will help
+  analyze GameStop's stock performance and trading activity, making patterns and trends
+  easily identifiable. Provide annotations for context and to draw attention to key
+  events, aiding in a detailed historical understanding of the stock's movement.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How would you like the significant dates to be highlighted (e.g., different color,
+  thicker border)?
+
+  3. What type of text annotations would you prefer for indicating significant dates
+  (e.g., tooltip, callout box, inline text)?
+
+  4. Is there a specific time range you want to focus on for this visualization?
+
+  5. Do you have any preferences for the chart title and axis labels?
+
+  6. Would you like a legend included in the chart, and if so, any specific preferences
+  for its placement?
+
+  7. Are there any specific date formats you prefer for displaying dates on the x-axis?
+
+  8. Do you have preferences on the style of the bars (e.g., solid, gradient, pattern)?
+
+  9. How much detail do you want in the annotations (e.g., event description, price
+  change percentage)?
+
+  10. Do you have a preference for how to display volume (e.g., separate chart, secondary
+  y-axis, or integrated with price bars)?
+
+  11. Would you like gridlines to be displayed, and if so, any specific styles?'
+answers: '1. I am not sure.
+
+  2. Different color.
+
+  3. Callout box.
+
+  4. The time range from January 2020 to December 2021.
+
+  5. I have no specific preference.
+
+  6. Yes, include a legend. I am not sure about the placement.
+
+  7. I have no specific preference.
+
+  8. Solid bars.
+
+  9. Event description and price change percentage.
+
+  10. Secondary y-axis.
+
+  11. Yes, display gridlines. I am not sure about the specific styles.'
+data_attributes:
+- date
+- open_price
+- high_price
+- low_price
+- close_price
+- volume

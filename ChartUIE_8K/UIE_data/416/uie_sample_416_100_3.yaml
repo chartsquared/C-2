@@ -1,0 +1,52 @@
+initial_prompt: Create a slope chart to visualize the changes in Bundesliga points
+  per match over time for different teams. Use the provided dataset which includes
+  columns for the team names, dates of matches, and full-time scores. The slope chart
+  should have the Y-axis representing the points per match and the X-axis representing
+  the dates. Each line in the slope chart should represent a different team, showing
+  their progression in points per match throughout the season. Highlight any significant
+  changes or trends for specific teams. This will help in understanding the performance
+  dynamics of the teams.
+questions: '1. Do you have a specific color palette preference for the lines representing
+  different teams?
+
+  2. Would you like the significant changes or trends for specific teams to be highlighted
+  in a particular way (e.g., using different colors, annotations, or markers)?
+
+  3. Do you prefer a specific style for the axis labels (e.g., font type, size, or
+  color)?
+
+  4. Should the chart include a legend, and if so, do you have a preference for its
+  placement?
+
+  5. Would you like to add a title or a subtitle to the chart? If yes, please specify
+  the text.
+
+  6. Do you want grid lines to be displayed on the chart for easier reference? If
+  yes, specify if you prefer them for the X-axis, Y-axis, or both.
+
+  7. Should the dates on the X-axis follow a specific date format?
+
+  8. Are there any specific teams or match dates you''d like to focus on or annotate?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I would like significant changes or trends for specific teams to be highlighted
+  using annotations.
+
+  3. I am not sure about a specific style for the axis labels.
+
+  4. The chart should include a legend, but I do not have a preference for its placement.
+
+  5. Yes, please add a title: "Bundesliga Points Per Match Over Time" and a subtitle:
+  "Performance Dynamics of Teams Throughout the Season".
+
+  6. Yes, please display grid lines on both the X-axis and Y-axis.
+
+  7. I do not have a specific preference for the date format on the X-axis.
+
+  8. I do not have specific teams or match dates to focus on or annotate.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- Date
+- FTHG
+- FTAG

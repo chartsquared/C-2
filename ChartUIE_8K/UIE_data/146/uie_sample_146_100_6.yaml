@@ -1,0 +1,49 @@
+initial_prompt: Create a stacked bar chart visualizing the 2024 Lok Sabha election
+  results in India by constituency. Each bar should represent a constituency, with
+  segments indicating the vote margins between the leading and trailing candidates.
+  Differentiating colors should represent the leading and trailing parties, allowing
+  a clear comparison of party performance across constituencies. Ensure the chart
+  highlights whether results are declared. Also, add labels for constituencies and
+  candidates to make the chart informative. This chart will help analyze party dominance
+  and voter preferences in various regions.
+questions: '1. Do you have any preferred color scheme for differentiating between
+  the leading and trailing parties?
+
+  2. How would you prefer the constituencies to be labeled: abbreviated names or full
+  names?
+
+  3. Should the candidate names be displayed alongside the constituency labels, or
+  would you like them as tooltips?
+
+  4. Do you prefer to see the exact vote margins as labels on the bars or just the
+  visual comparison?
+
+  5. How would you like the "Status" of results (e.g., "Result Declared") to be highlighted
+  on the chart?
+
+  6. Would you like to see any specific legend or key included to explain the colors
+  and segments?
+
+  7. Do you prefer the bars to be sorted in any specific order, e.g., by margin size,
+  alphabetically by constituency, or by leading party?'
+answers: '1. I am not sure.
+
+  2. Full names.
+
+  3. I do not have a specific preference.
+
+  4. Exact vote margins as labels.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. By leading party.'
+data_attributes:
+- Constituency
+- Leading Candidate
+- Leading Party
+- Trailing Candidate
+- Trailing Party
+- Margin
+- Status

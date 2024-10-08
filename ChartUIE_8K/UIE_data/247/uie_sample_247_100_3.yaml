@@ -1,0 +1,63 @@
+initial_prompt: I would like to see a line chart comparing the CpG values for smoking
+  and non-smoking patients over different age groups. The x-axis should represent
+  the different CpG sites (like cg00050873, cg00212031, etc.), and the y-axis should
+  represent the average CpG value. Use different lines to distinguish between smoking
+  status (current, former, never) and genders (male, female). This will help highlight
+  any potential differences in DNA methylation patterns between smokers and non-smokers
+  and between different genders and ages.
+questions: "1. What color scheme would you prefer for distinguishing the different\
+  \ smoking statuses and genders? \n2. Do you have a preference for the line styles\
+  \ (e.g., solid, dashed) for different smoking statuses and genders? \n3. Would you\
+  \ like to see markers on the lines to indicate the data points for each CpG site?\
+  \ \n4. How many age groups would you like to categorize, and what ranges should\
+  \ they cover? \n5. Should the chart include gridlines, and if so, for which axes\
+  \ (x, y, or both)?\n6. Do you want to add annotations or data labels to any specific\
+  \ parts of the chart?\n7. Would you like to incorporate a legend, and where should\
+  \ it be positioned on the chart? \n8. Do you prefer specific font styles or sizes\
+  \ for the axis labels and title?\n9. Should the chart include any reference lines\
+  \ or bands to highlight specific ranges or values? \n10. Is there a specific way\
+  \ you prefer the lines to be ordered or layered on the chart?"
+answers: '1. I am not sure.
+
+  2. Solid lines for current smokers, dashed for former smokers, and dotted for never
+  smokers.
+
+  3. Yes, I would like to see markers on the lines.
+
+  4. I am not sure, maybe three groups: 20-30, 31-50, and 51+.
+
+  5. Yes, include gridlines for both axes.
+
+  6. I do not know.
+
+  7. Yes, please include a legend positioned at the bottom.
+
+  8. I am not sure.
+
+  9. No, I don''t think reference lines or bands are necessary.
+
+  10. I do not know.'
+data_attributes:
+- Smoking Status
+- Gender
+- Age
+- cg00050873
+- cg00212031
+- cg00213748
+- cg00214611
+- cg00455876
+- cg01707559
+- cg02004872
+- cg02011394
+- cg02050847
+- cg02233190
+- cg02494853
+- cg02839557
+- cg02842889
+- cg03052502
+- cg03155755
+- cg03244189
+- cg03443143
+- cg03683899
+- cg03695421
+- cg03706273

@@ -1,0 +1,61 @@
+initial_prompt: '<start of user instructions>
+
+  Create a bar chart showing the total number of electric vehicles (EVs) versus non-electric
+  vehicles by county in Washington as of February 29, 2020. Highlight counties with
+  a high percentage of electric vehicles to emphasize prevalence. Add text annotations
+  displaying the exact number of electric vehicles for these highlighted counties.
+  The goal is to understand the distribution of electric vehicles and identify areas
+  with higher adoption rates.
+
+  <end of user instructions>'
+questions: '1. Do you have any specific color preferences for the bars representing
+  electric vehicles versus non-electric vehicles?
+
+  2. How would you prefer the counties with a high percentage of electric vehicles
+  to be highlighted (e.g., color, border, pattern)?
+
+  3. Do you want the bar chart to include a legend to explain the colors or patterns
+  used?
+
+  4. Is there a specific way you would like the text annotations styled for the exact
+  number of electric vehicles (e.g., font size, color, position)?
+
+  5. Do you prefer the bar chart to be displayed vertically or horizontally?
+
+  6. Would you like the chart to include gridlines for better readability?
+
+  7. Are there any specific font styles or sizes you prefer for the axis labels and
+  title?
+
+  8. Do you want to include error bars or data labels for non-electric vehicles as
+  well?
+
+  9. Should the chart include a percentage representation on a secondary axis for
+  better context?
+
+  10. Is there a specific chart title or subtitle you would like to have displayed?'
+answers: '1. I am not sure.
+
+  2. Color would be good.
+
+  3. Yes.
+
+  4. I do not have a specific preference.
+
+  5. Vertically.
+
+  6. Yes.
+
+  7. I do not have a specific preference.
+
+  8. No.
+
+  9. I am not sure.
+
+  10. "Electric vs Non-Electric Vehicle Distribution by County in Washington (Feb
+  2020)"'
+data_attributes:
+- County
+- Electric Vehicle (EV) Total
+- Non-Electric Vehicle Total
+- Percent Electric Vehicles

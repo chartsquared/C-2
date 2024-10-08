@@ -1,0 +1,66 @@
+initial_prompt: Create a box chart to visualize the distribution of key blood count
+  metrics among COVID-19 patients. Use the columns "Red blood cell distribution width,"
+  "Monocytes(%)," "White blood cell count," "Platelet Count," "Lymphocyte Count,"
+  and "Neutrophils Count." Highlight differences across gender and recovery outcomes
+  ("Outcome"). Ensure the chart effectively compares these metrics for "Male" vs.
+  "Female" and "Recovered" vs. "Not Recovered." Title the chart "CBC Metrics Distribution
+  in COVID-19 Patients." Labels should be clear and colors distinct. This will help
+  in understanding variations in blood counts related to patient demographics and
+  recovery outcomes.
+questions: '1. Do you have a preferred ordering for the categories ("Male", "Female",
+  "Recovered", "Not Recovered") on the x-axis?
+
+  2. Are there specific colors you would like to use for each category?
+
+  3. Would you prefer the box plots to be side-by-side for each metric or stacked
+  vertically?
+
+  4. Do you have a preference for the style and size of the chart''s title?
+
+  5. Are there any specific font styles or sizes you would prefer for the labels and
+  axis titles?
+
+  6. Should the outliers be marked distinctly in the box plots? If yes, do you want
+  a specific marker style?
+
+  7. Would you prefer grid lines on the chart for better readability? If yes, should
+  they be horizontal, vertical, or both?
+
+  8. Do you want to include a legend to distinguish between different categories?
+  If yes, where should it be positioned on the chart?
+
+  9. Are there any specific statistical measures (like mean or median) you want to
+  include as annotations on the box plots?
+
+  10. Should the chart have a specific background color or be transparent?'
+answers: '1. I am not sure about the ordering for the categories.
+
+  2. I have no specific preference for colors.
+
+  3. I would prefer the box plots to be side-by-side for each metric.
+
+  4. I have no specific preference for the style and size of the chart''s title.
+
+  5. I am not sure about the font styles or sizes for the labels and axis titles.
+
+  6. Yes, please mark the outliers distinctly in the box plots, but I do not have
+  a specific marker style in mind.
+
+  7. Yes, I would prefer grid lines on the chart for better readability, both horizontal
+  and vertical.
+
+  8. Yes, please include a legend to distinguish between different categories. I do
+  not have a preferred position for it.
+
+  9. Yes, please include the median as annotations on the box plots.
+
+  10. I have no specific preference for the background color.'
+data_attributes:
+- Red blood cell distribution width
+- Monocytes(%)
+- White blood cell count
+- Platelet Count
+- Lymphocyte Count
+- Neutrophils Count
+- Gender
+- Outcome

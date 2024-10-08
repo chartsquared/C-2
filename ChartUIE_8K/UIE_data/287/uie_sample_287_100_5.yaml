@@ -1,0 +1,68 @@
+initial_prompt: I need a heatmap visualization for the Parkinson's Disease Dataset
+  Analysis. It should display correlations between multiple health variables such
+  as Age, Gender, Ethnicity, BMI, Smoking, AlcoholConsumption, PhysicalActivity, DietQuality,
+  SleepQuality, and medical conditions (Hypertension, Diabetes, Depression). Include
+  family history and brain injury data too. Highlight strong correlations that might
+  indicate risk factors. This will help in understanding the interplay between lifestyle,
+  demographics, and health risks associated with Parkinson's. The color gradient should
+  clearly show the strength of correlations, making it easy to identify significant
+  relationships. Labels and color bar are important.
+questions: '1. What color gradient do you prefer for displaying the strength of correlations
+  on the heatmap?
+
+  2. Do you have a preferred color scheme for highlighting strong correlations?
+
+  3. What style of labels do you prefer for the axes (font size, type, angle)?
+
+  4. Do you have a preference for the inclusion of value annotations within the heatmap
+  cells?
+
+  5. Is there a specific order in which you would like the variables to be displayed
+  on the axes?
+
+  6. Do you want to include any specific title or subtitle for the heatmap?
+
+  7. Do you have any preference for the range of the color bar?
+
+  8. Should the heatmap display only significant correlations or all correlations
+  regardless of their strength?
+
+  9. Do you want to include any specific grid lines or separators between the cells?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I prefer a color scheme that uses strong colors like red and green to highlight
+  strong correlations.
+
+  3. I do not know.
+
+  4. Yes, inclusion of value annotations within the heatmap cells would be helpful.
+
+  5. I am not sure.
+
+  6. Yes, please include the title "Correlation Heatmap of Health Variables and Parkinson''s
+  Disease Risk Factors".
+
+  7. I have no specific preference.
+
+  8. Please display all correlations regardless of their strength.
+
+  9. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Age
+- Gender
+- Ethnicity
+- BMI
+- Smoking
+- AlcoholConsumption
+- PhysicalActivity
+- DietQuality
+- SleepQuality
+- FamilyHistoryParkinsons
+- TraumaticBrainInjury
+- Hypertension
+- Diabetes
+- Depression

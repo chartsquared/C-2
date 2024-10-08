@@ -1,0 +1,57 @@
+initial_prompt: Create a geographic heatmap to visualize the Global Metropolis Weather
+  Dataset, highlighting temperature variations across different locations, observed
+  at specific times. Annotate key points to show temperature, feels like temperature,
+  weather conditions, and wind speeds. This will help identify weather patterns and
+  anomalies visually. Use color intensity to represent temperature differences and
+  add markers for weather conditions. Ensure the map is clear and interactive for
+  better user experience, focusing on distinguishing weather impacts across cities.
+  This will aid in quick visual analysis of weather data and support informed decision-making.
+questions: '1. Do you have a preferred color scheme for representing temperature variations
+  on the heatmap?
+
+  2. How would you like the key points (annotations) to be displayed in terms of size
+  and style?
+
+  3. Do you prefer specific symbols or icons for representing different weather conditions
+  on the map?
+
+  4. Would you like any particular labeling or legend placement on the heatmap?
+
+  5. Are there any specific geographic regions or cities you want to prioritize or
+  highlight more distinctly?
+
+  6. Would you like to include a specific degree of opacity for the color intensity
+  representing temperature differences?
+
+  7. Do you have a preference for the base map style (e.g., satellite, terrain, street)?
+
+  8. How would you like the wind speed to be represented—through color gradients,
+  vector fields, or another method?'
+answers: '1. I am not sure about the exact color scheme, but please use something
+  that clearly distinguishes different temperature ranges.
+
+  2. I do not have a specific preference for the size and style of the key points;
+  just ensure they are readable and not too cluttered.
+
+  3. I am not sure, but using common weather symbols (like sun, clouds, rain) would
+  be fine.
+
+  4. I do not know about specific labeling or legend placement; please place them
+  where they can be easily seen.
+
+  5. I would like to highlight major cities such as New York, London, Tokyo, and Sydney
+  more distinctly.
+
+  6. I am not sure about the degree of opacity; use your best judgment.
+
+  7. I have no specific preference for the base map style.
+
+  8. I am not sure, but representing wind speed with vector fields sounds good to
+  me.'
+data_attributes:
+- Location
+- Observation Time
+- Temperature (°C)
+- Feels Like (°C)
+- Weather Condition
+- Wind Speed (kph)

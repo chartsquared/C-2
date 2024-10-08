@@ -1,0 +1,49 @@
+initial_prompt: I need a choropleth map visualizing the migration data over the years
+  for various countries. Please use the "International immigrants (% population)"
+  and "Asylum seekers by origin (per capita)" columns to depict migration trends.
+  Show the percentage of international immigrants and asylum seekers per capita on
+  the map using different shades to represent the values. Ensure that it is easy to
+  distinguish between countries with high and low values. The time frame should be
+  from 1955 to 1965. Label countries clearly, and include a legend for the data values.
+questions: '1. Do you have a preference for specific color scales or color schemes
+  for the choropleth map?
+
+  2. Would you like to use distinct color shades for "International immigrants (%
+  population)" and "Asylum seekers by origin (per capita)" or prefer gradients?
+
+  3. Do you have a preferred style for labeling the countries on the map (e.g., font
+  size, type, or color)?
+
+  4. Are there any specific thresholds or value ranges you would like highlighted
+  in the legend?
+
+  5. Would you like to add any additional annotations on the map to emphasize particular
+  trends or data points?
+
+  6. Do you prefer the map to display data in yearly increments or as an aggregated
+  summary for the entire time frame from 1955 to 1965?
+
+  7. Is there a specific way you would like the legend to be styled or positioned
+  on the map?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. No specific preference.
+
+  4. I do not know.
+
+  5. No, I have no specific preferences for additional annotations.
+
+  6. I prefer the map to display data in yearly increments.
+
+  7. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- Year
+- Country
+- International immigrants (% population)
+- Asylum seekers by origin (per capita)

@@ -1,0 +1,43 @@
+initial_prompt: Create an area chart to visualize the US Minimum Wage by State from
+  1968 to 2020. Use different colors to represent each state. The x-axis should display
+  the years from 1968 to 2020, and the y-axis should show the minimum wage in 2020
+  dollars. Please include both the State Minimum Wage and the Federal Minimum Wage
+  as lines within the chart for comparison. Highlight key states and label significant
+  changes in minimum wage values. This chart will help us understand trends and variations
+  in minimum wages over time across different states.
+questions: '1. Do you have a preference for the color palette used to represent different
+  states?
+
+  2. Are there specific key states you would like to highlight?
+
+  3. What type of labels do you prefer for significant changes in minimum wage values
+  (e.g., annotations, tooltips)?
+
+  4. How many years'' intervals would you like displayed on the x-axis (e.g., every
+  5 years, every 10 years)?
+
+  5. Do you have a preference for the line style (e.g., solid, dashed) for the Federal
+  Minimum Wage and State Minimum Wage lines?
+
+  6. Should the chart include a legend, and if so, do you have a preference for its
+  position (e.g., top, bottom, left, right)?
+
+  7. Are there any specific fonts or font sizes you prefer for the chart’s text elements?'
+answers: '1. I am not sure.
+
+  2. Yes, please highlight California, New York, Texas, and Florida.
+
+  3. I prefer annotations.
+
+  4. Every 5 years.
+
+  5. Solid lines for both.
+
+  6. Yes, include a legend. I am not sure where it should be positioned.
+
+  7. I do not know.'
+data_attributes:
+- Year
+- State
+- State.Minimum.Wage.2020.Dollars
+- Federal.Minimum.Wage.2020.Dollars

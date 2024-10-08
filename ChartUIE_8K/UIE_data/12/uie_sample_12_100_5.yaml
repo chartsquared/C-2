@@ -1,0 +1,58 @@
+initial_prompt: Create a bar chart to visualize the average scores of the different
+  aptitudes (Numerical, Spatial, Perceptual, Abstract, Verbal) and personality traits
+  (Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) across various
+  careers. Each bar represents the average score for a particular aptitude or trait
+  per career. This will help in comparing how different careers align with specific
+  aptitudes and personality traits. Use different colors for each category (aptitude
+  vs. trait) and ensure the chart is clear and easy to interpret. This visualization
+  will aid in career counseling and psychological analysis.
+questions: '1. Do you have a preferred order for displaying the careers on the x-axis?
+
+  2. Would you like the bars representing aptitudes and personality traits to be grouped
+  or stacked?
+
+  3. Do you have any specific colors in mind for the categories of ''aptitude'' and
+  ''trait''?
+
+  4. Should the chart include data labels on each bar for easier interpretation?
+
+  5. Do you prefer a specific font style or size for the chart''s title, labels, and
+  legends?
+
+  6. Is there a particular aspect ratio (width to height) you prefer for the chart?
+
+  7. Would you like the chart to include a grid for better readability of the bars?
+
+  8. Do you want the chart to include a legend explaining the colors used for different
+  categories?
+
+  9. Should the chart have any particular background color or design theme?'
+answers: '1. I do not know.
+
+  2. I prefer the bars to be grouped.
+
+  3. I have no specific preference for colors.
+
+  4. Yes, the chart should include data labels on each bar for easier interpretation.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, include a grid for better readability of the bars.
+
+  8. Yes, please include a legend explaining the colors used for different categories.
+
+  9. I have no specific preference for the background color or design theme.'
+data_attributes:
+- O_score
+- C_score
+- E_score
+- A_score
+- N_score
+- Numerical Aptitude
+- Spatial Aptitude
+- Perceptual Aptitude
+- Abstract Reasoning
+- Verbal Reasoning
+- Career

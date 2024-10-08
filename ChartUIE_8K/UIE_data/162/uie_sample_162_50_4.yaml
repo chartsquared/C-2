@@ -1,0 +1,55 @@
+initial_prompt: Please create a heatmap of the Living Planet Index over the years
+  for Africa. Utilize the 'Year' for the x-axis and 'Living Planet Index' values for
+  the color intensity. Include upper and lower confidence intervals as overlays.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the years on the x-axis to be displayed with a specific rotation
+  or format?
+
+  3. Should the color intensity for the ''Living Planet Index'' use a gradient scale,
+  and if so, do you have any specific preferences for the gradient colors?
+
+  4. How would you like the confidence intervals to be displayed as overlays (e.g.,
+  error bars, shaded regions)?
+
+  5. Do you prefer a specific font style or size for the labels and titles?
+
+  6. Should gridlines be included in the heatmap, and if so, do you have any preferences
+  for their appearance?
+
+  7. Would you like to include a legend to explain the color intensity and confidence
+  intervals? If so, any preferences for its placement?
+
+  8. Do you have specific preferences for the overall layout and dimensions of the
+  chart?
+
+  9. Is there any additional text or annotations you would like to include in the
+  visualization for further context?
+
+  10. How detailed should the labels on the color intensity scale be (e.g., more granularity
+  or a broader range)?'
+answers: '1. I do not have a preferred color scheme for the heatmap.
+
+  2. I am not sure about the rotation or format for the years on the x-axis.
+
+  3. I am not sure, but a gradient scale would be fine.
+
+  4. Error bars for the confidence intervals might be good.
+
+  5. I do not know about specific font styles or sizes.
+
+  6. I do not have a specific preference for gridlines.
+
+  7. Yes, include a legend for the color intensity and confidence intervals, but I
+  am not sure about the placement.
+
+  8. I am not sure about the layout and dimensions.
+
+  9. I do not have any additional text or annotations to include.
+
+  10. I am not sure about the detail level for the labels on the color intensity scale.'
+data_attributes:
+- Year
+- Living Planet Index
+- Upper CI, Living Planet Index (95% CI)
+- Lower CI, Living Planet Index (95% CI)

@@ -1,0 +1,44 @@
+initial_prompt: Create a bubble chart to visualize the distribution and status of
+  languages spoken in New York City. The x-axis should represent the "Country," and
+  the y-axis should denote the "Language Family." The size of the bubbles should correlate
+  with "Global Speakers," and different colors should signify the "Status" of the
+  languages (e.g., Residential, Historical). For missing "Global Speakers" data, use
+  a default small size. Include a legend to differentiate the bubble colors based
+  on "Status." Exclude languages with missing "Country" data. This chart will help
+  understand the linguistic diversity and living situations of various languages in
+  NYC.
+questions: '1. Do you have any preferred color scheme for representing the different
+  language statuses?
+
+  2. What default bubble size would you prefer for languages with missing "Global
+  Speakers" data?
+
+  3. Would you like any specific countries or language families to be highlighted
+  in the chart?
+
+  4. Should the chart include any specific labels or annotations for better clarity?
+
+  5. Do you prefer a specific order or grouping of countries on the x-axis?
+
+  6. Would you like to see grid lines on the chart for better readability?
+
+  7. Are there any particular font styles or sizes you would like for the chart labels
+  and legend?'
+answers: '1. I am not sure.
+
+  2. A default small size of 5 would be good.
+
+  3. I do not know.
+
+  4. Yes, include labels for better clarity.
+
+  5. I do not have a specific preference.
+
+  6. Yes, include grid lines for better readability.
+
+  7. I do not have a specific preference.'
+data_attributes:
+- Country
+- Language Family
+- Global Speakers
+- Status

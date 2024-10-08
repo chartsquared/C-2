@@ -1,0 +1,54 @@
+initial_prompt: I have data from the Women's World Cup outcomes detailing years, teams,
+  scores, rounds, yearly game IDs, team numbers, and win statuses. Please create a
+  donut chart to visualize the win status distribution (Won, Lost, Draw) across all
+  teams. This chart should help in understanding the overall performance trends of
+  different teams in the tournament spanning multiple years. The dataset contains
+  no missing values and has unique win statuses for comparison. Make sure the chart
+  highlights the proportion of each win status in a visually appealing manner suitable
+  for sports analysis. Thank you!
+questions: '1. Do you have any color preferences for the different win statuses ("Won",
+  "Lost", "Draw")?
+
+  2. Would you like the chart to display percentage values on each segment?
+
+  3. Do you prefer any specific font style or size for the labels in the chart?
+
+  4. Is there a specific order in which you would like the win statuses to be presented
+  in the chart?
+
+  5. Should the chart include a legend, and if so, where would you like it positioned?
+
+  6. Do you have any preferences for the thickness of the donut chart''s segments?
+
+  7. Would you like to include any specific title or subtitle for the chart?
+
+  8. Do you want the chart to show the total number of games in the center of the
+  donut?
+
+  9. Are there any specific team names or years you would like to highlight in the
+  chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to display percentage values on each segment.
+
+  3. I do not have any specific preference.
+
+  4. I do not know.
+
+  5. Yes, please include a legend. I am not sure about the position.
+
+  6. I do not know.
+
+  7. Yes, please title it "Win Status Distribution in Women''s World Cup."
+
+  8. Yes, include the total number of games in the center of the donut.
+
+  9. I am not sure.'
+data_attributes:
+- year
+- team
+- score
+- round
+- yearly_game_id
+- team_num
+- win_status

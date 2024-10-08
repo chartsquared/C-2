@@ -1,0 +1,60 @@
+initial_prompt: Visualize the Most Streamed Spotify Songs of 2023 using a line chart.
+  Plot streams over time (released_year, released_month, released_day). Highlight
+  significant dips or spikes in streams. Add text annotations to key data points for
+  top songs like "Seven (feat. Latto) (Explicit Ver.)", "LALA," and "vampire" to showcase
+  their streaming trajectory. Use different line colors for each song. Ensure data
+  context—focus on how song releases and playlist inclusions impact streams, highlighting
+  elements like energy or danceability to provide insights into their streaming success.
+  This helps visualize trends and patterns in 2023's music streaming landscape.
+questions: '1. Do you have a preferred color scheme for the different lines representing
+  each song?
+
+  2. Do you want the dates on the x-axis to be displayed in a specific format (e.g.,
+  MM/DD/YYYY)?
+
+  3. Would you like to specify particular colors for text annotations for better visibility?
+
+  4. Do you prefer a specific font style or size for text annotations?
+
+  5. Should the chart include a legend, and if so, where would you prefer it to be
+  positioned (e.g., top, bottom, side)?
+
+  6. How would you like significant dips or spikes in streams to be highlighted (e.g.,
+  circle markers, star markers)?
+
+  7. Should the line chart include gridlines for easier interpretation of data points?
+
+  8. Are there specific annotations or notes you want to include in a title or subtitle
+  for the chart to provide context?
+
+  9. Do you have a preferred layout or orientation for the axis labels?
+
+  10. Do you want to include any logos or branding elements on the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. Yes, please include a legend. I am not sure where to position it.
+
+  6. Circle markers would be fine.
+
+  7. Yes, please include gridlines.
+
+  8. No specific annotations or notes.
+
+  9. I do not know.
+
+  10. No logos or branding elements needed.'
+data_attributes:
+- track_name
+- released_year
+- released_month
+- released_day
+- streams
+- danceability_%
+- energy_%
+- in_spotify_playlists

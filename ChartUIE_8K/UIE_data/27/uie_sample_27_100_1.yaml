@@ -1,0 +1,59 @@
+initial_prompt: Please create a histogram to visualize the distribution of 'SALES'
+  from the automobile sales data. Use text annotations to highlight the average, median,
+  and any outliers in sales. Utilize highlights to differentiate between various sales
+  ranges, emphasizing large deal sizes with a distinct color. The chart should serve
+  to quickly understand sales performance, showing how often specific sales amounts
+  occur and spotlighting extraordinary sales figures. Include annotations to provide
+  context, such as the number of orders resulting in large deals. The diagram should
+  be clear and informative, aiding in making data-driven decisions.
+questions: '1. Do you have a preferred color palette for the histogram, especially
+  for highlighting the large deal sizes?
+
+  2. What specific sales range thresholds would you like to use for the highlights?
+
+  3. How would you like the outliers to be distinguished in the histogram?
+
+  4. Do you prefer any specific font or style for the text annotations?
+
+  5. Should we include gridlines in the histogram for better readability, or do you
+  prefer a clean look?
+
+  6. Is there a specific way you would like the x-axis (sales amounts) and y-axis
+  (frequency) to be labeled?
+
+  7. Would you like a legend to specify what each color and annotation represents?
+
+  8. Do you have a preference for the bin size or number of bins in the histogram?
+
+  9. Are there any particular arrangements or placements you prefer for the text annotations
+  and highlights on the chart?
+
+  10. Would you like the average, median, and outliers to be displayed as specific
+  icons or markers on the histogram? If so, do you have a preference for the type
+  of marker used?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would like outliers to be marked with a distinct symbol, perhaps a star or
+  asterisk.
+
+  4. I am not sure.
+
+  5. Please include gridlines for better readability.
+
+  6. Sales amounts on the x-axis and frequency on the y-axis should be clearly labeled.
+
+  7. Yes, please include a legend.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Yes, display the average and median with specific markers; maybe a dashed line
+  for the average and a solid line for the median, and use a distinctive symbol for
+  outliers.'
+data_attributes:
+- SALES
+- ORDERNUMBER
+- DEALSIZE

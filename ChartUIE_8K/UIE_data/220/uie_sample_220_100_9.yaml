@@ -1,0 +1,53 @@
+initial_prompt: I need a donut chart that visualizes the distances between different
+  Russian cities mentioned in the dataset. Specifically, show the proportion of total
+  distances for each pair of starting city (Order) and destination city (Destination).
+  The chart should reflect how spread out the distances are between these locations.
+  Make sure to label the segments with the cities and their corresponding distances.
+  This will help in understanding the transportation and logistics between these cities.
+  Use the data provided in the 220.csv file and take into account that there are no
+  missing values.
+questions: '1. Do you have a color scheme preference for the segments of the donut
+  chart?
+
+  2. Would you like a legend to accompany the chart, or should all labels be placed
+  directly on the segments?
+
+  3. How detailed should the labels be? Do you prefer just city names and distances,
+  or any additional information?
+
+  4. Should the chart include a title or any additional annotations for context?
+
+  5. Do you have any specific font preferences or size requirements for the chart
+  labels and title?
+
+  6. Is there a preferred order for the segments, such as by distance, alphabetical
+  order, or any other specific criterion?
+
+  7. Should the chart display percentage values alongside the distances for each segment?
+
+  8. Would you like any additional design elements, such as borders around segments
+  or shadows?
+
+  9. Do you intend for this chart to be presented in a report, a presentation, or
+  another medium?'
+answers: '1. I do not know.
+
+  2. I prefer all labels to be placed directly on the segments.
+
+  3. Just city names and distances.
+
+  4. Yes, include a title: "Distances Between Russian Cities".
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, show percentage values alongside the distances.
+
+  8. I am not sure.
+
+  9. I intend to use it for a presentation.'
+data_attributes:
+- Order
+- Destination
+- Distance

@@ -1,0 +1,54 @@
+initial_prompt: Create a scatter plot using the Higher Education Students Performance
+  Evaluation data. Plot AGE on the x-axis and CUML_GPA on the y-axis, colored by GENDER,
+  to visualize the relationship between age and cumulative GPA, considering gender
+  differentiation.
+questions: '1. Do you have specific preferences for the color scheme to differentiate
+  genders in the scatter plot?
+
+  2. Do you prefer specific markers or shapes to represent different genders in the
+  scatter plot?
+
+  3. Do you want to include a regression line or trend line to better illustrate the
+  correlation?
+
+  4. Would you like to display labels for the data points? If so, which data attributes
+  should be used for the labels?
+
+  5. Do you have any specific preferences for the axis scales or axis labels?
+
+  6. Do you want to set a specific size or style for the scatter plot markers?
+
+  7. Is there a need for a legend to distinguish different genders? If so, do you
+  have any specific preferences for its placement?
+
+  8. Are there any particular gridlines, borders, or background styles you prefer
+  for the scatter plot?
+
+  9. Should the plot include a title and subtitles? If so, do you have specific text
+  in mind?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, including a regression line would be helpful.
+
+  4. I do not know.
+
+  5. No specific preferences for the axis scales or labels.
+
+  6. I am not sure.
+
+  7. Yes, a legend to distinguish different genders would be useful, but I have no
+  specific preferences for its placement.
+
+  8. I do not know.
+
+  9. Yes, the plot should include a title. I do not have specific text in mind.
+
+  <end of user emulated response>'
+data_attributes:
+- AGE
+- CUML_GPA
+- GENDER

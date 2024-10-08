@@ -1,0 +1,55 @@
+initial_prompt: I have a dataset about avocado prices across different regions and
+  dates. I want to create a choropleth map to visualize this data. The map should
+  display the average price of avocados across various regions over time. Each region
+  should be color-coded based on the average price, with a gradient that helps quickly
+  identify areas with higher or lower prices. This map will help in understanding
+  regional price variations. Please use the 'region' for the geographic data and 'AveragePrice'
+  for the color scale. Also, ensure that the map is interactive, allowing the selection
+  of different years.
+questions: '1. Do you have a preferred color palette for the gradient to represent
+  prices?
+
+  2. Would you like to include labels for regions directly on the map?
+
+  3. How would you like the date or year selection to be presented (e.g., slider,
+  dropdown)?
+
+  4. Do you want to display the exact average price when hovering over a region?
+
+  5. Would you prefer boundaries of regions to be highlighted or left plain?
+
+  6. Is there any specific background or base map style you prefer (e.g., light, dark,
+  satellite)?
+
+  7. Do you want any additional data layers or annotations added to the map (e.g.,
+  city names, major landmarks)?
+
+  8. Would you like to include a legend or color bar to explain the gradient scale?
+
+  9. Are there specific regions or areas you want to focus on or highlight?
+
+  10. Do you have any specific requirements for the map''s title or subtitles?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include labels for regions directly on the map.
+
+  3. I prefer a slider for the date or year selection.
+
+  4. Yes, I want to display the exact average price when hovering over a region.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not have any specific preference.
+
+  8. Yes, please include a legend or color bar to explain the gradient scale.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- region
+- AveragePrice
+- Date
+- year

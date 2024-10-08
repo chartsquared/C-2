@@ -1,0 +1,40 @@
+initial_prompt: 'Please create a heatmap that visualizes a correlation matrix for
+  the Cardano cryptocurrency dataset. The heatmap should show the relationships between
+  the different numerical columns: Open, High, Low, Close, Adj Close, and Volume.
+  Highlight areas of strong positive or negative correlation in contrasting colors
+  to make it easier to identify these relationships at a glance. This visualization
+  will help in analyzing how different variables of Cardano''s trading data are interrelated.
+  Ensure that the color gradient is visually appealing and the axis labels are clearly
+  readable.'
+questions: '1. Do you have any specific preferences for the color gradient to be used
+  in the heatmap?
+
+  2. Are there any specific color schemes you would like to use for highlighting strong
+  positive and negative correlations?
+
+  3. What is your preferred range of correlation values for highlighting (e.g., >0.7
+  and <-0.7)?
+
+  4. How would you like the axis labels to be formatted (e.g., font size, font type)?
+
+  5. Do you require any additional labels or annotations on the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Strong positive >0.7 and strong negative <-0.7 would be good.
+
+  4. I am not sure.
+
+  5. No, I do not require any additional labels or annotations.
+
+  <end of user emulated response>'
+data_attributes:
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

@@ -1,0 +1,48 @@
+initial_prompt: I have a dataset with distances between various Indian cities from
+  the transportation and logistics sector. The data includes 'Origin', 'Destination',
+  and 'Distance'. I want to visualize this using a Treemap chart. Each section in
+  the Treemap should represent a unique origin city, and within each section, there
+  should be further divisions for each destination city showing the distance traveled.
+  This way, I can easily see the distribution and distance relationships between cities.
+  Please make sure that the sizes of the blocks in the Treemap correspond to the distances.
+questions: '1. Do you have any specific color schemes or palettes you''d like the
+  Treemap to use?
+
+  2. Should the distances be represented using a specific unit of measurement or format?
+
+  3. Would you like to include labels for the distance values within each block, or
+  should these be displayed on hover?
+
+  4. Do you prefer a particular layout style for the Treemap (e.g., squarified, slice-and-dice)?
+
+  5. Should the blocks for origin cities have a specific order (e.g., alphabetical,
+  size-based)?
+
+  6. Would you like a legend to differentiate the origin cities?
+
+  7. Do you want to highlight any specific origin or destination cities?
+
+  8. Should the chart include a title, subtitle, or any descriptive text?
+
+  9. Is there a specific size or aspect ratio you prefer for the Treemap?'
+answers: '1. I am not sure about specific color schemes or palettes.
+
+  2. I do not know; any standard unit of measurement is fine.
+
+  3. I would like to include labels for the distance values within each block.
+
+  4. I prefer a squarified layout style.
+
+  5. I am not sure; maybe alphabetical order is fine.
+
+  6. Yes, a legend to differentiate the origin cities would be helpful.
+
+  7. I do not know if specific cities should be highlighted.
+
+  8. Yes, please include a title and any necessary descriptive text.
+
+  9. I have no specific preference for the size or aspect ratio.'
+data_attributes:
+- Origin
+- Destination
+- Distance

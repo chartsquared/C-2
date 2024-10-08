@@ -1,0 +1,42 @@
+initial_prompt: I'd like a box chart to visualize the distribution of 'MEDV' (median
+  value of owner-occupied homes) in the Real Estate DataSet. Please use the '../Extra_datas/data/205.csv'
+  data format provided. Make sure the chart shows the minimum, first quartile (25th
+  percentile), median (50th percentile), third quartile (75th percentile), and maximum
+  values. Highlight any outliers in the dataset. This will help me understand the
+  spread and central tendency of home values within the dataset. Ensure the chart
+  is properly labeled and easy to interpret. Thank you!
+questions: '1. Do you have a specific color preference for the box and whiskers?
+
+  2. Would you like the outliers to be marked with a specific symbol or color?
+
+  3. Should the chart include a title, and if so, what should it be?
+
+  4. Do you want to include gridlines in the chart for easier interpretation?
+
+  5. Would you prefer any annotations or comments on the chart to explain key points?
+
+  6. Is there a specific font type or size you would like for the labels and title?
+
+  7. Do you want to add any additional statistical measures, such as mean or standard
+  deviation, on the chart?
+
+  8. Do you have a preferred format for the axis labels (e.g., scientific notation,
+  currency, plain numbers)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please include the title "Distribution of MEDV (Median Value of Owner-Occupied
+  Homes)"
+
+  4. Yes, please include gridlines.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. No, just the basic box plot statistics.
+
+  8. Plain numbers will be fine.'
+data_attributes:
+- MEDV

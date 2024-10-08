@@ -1,0 +1,53 @@
+initial_prompt: Please create a heatmap visualizing the distribution of higher education
+  institutions across different regions in the USA. The data should utilize the `region`
+  and `category` columns to show how many public and private institutions exist in
+  each region. Ensure the color gradient reflects the density of institutions in each
+  category and region. Include appropriate labels and a legend to make the heatmap
+  easily interpretable. Use the data provided in the 71.csv file, which includes columns
+  like `id`, `region`, `name`, `category`, and `url`. Thank you!
+questions: '1. Do you have a preferred color gradient or color scheme for the heatmap?
+
+  2. Would you like specific regions or categories to be highlighted or emphasized?
+
+  3. Do you prefer any particular font style or size for the labels and legend?
+
+  4. Should the heatmap include any specific title or subtitle?
+
+  5. Do you want the heatmap to display the actual count of institutions within each
+  cell, or is the color gradient sufficient?
+
+  6. Are there any particular regions or categories that you want to appear in a specific
+  order?
+
+  7. Would you like any additional annotations or descriptive text to be included
+  in the heatmap?
+
+  8. Is there any preference for the aspect ratio or size of the heatmap?
+
+  9. Should the legend be placed in a specific location on the chart?
+
+  10. Are there any other specific visual elements you want to include or avoid in
+  the heatmap?'
+answers: '1. I do not have a preferred color gradient or color scheme.
+
+  2. I am not sure.
+
+  3. I do not know, any readable font style and size are fine.
+
+  4. The heatmap should include the title "Distribution of Higher Education Institutions
+  in the USA" and a subtitle "By Region and Category of Institution".
+
+  5. The color gradient is sufficient.
+
+  6. I do not know, no specific order is required.
+
+  7. I do not know, nothing additional is needed.
+
+  8. I am not sure.
+
+  9. I do not have a preference for the legend location.
+
+  10. I do not have any specific elements to include or avoid.'
+data_attributes:
+- region
+- category

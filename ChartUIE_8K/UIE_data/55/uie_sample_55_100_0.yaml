@@ -1,0 +1,66 @@
+initial_prompt: Create a box chart to visualize the distribution of 'sr', 'rr', 't',
+  'lm', 'bo', 'rem', 'sr.1', and 'hr' across different sleep levels ('sl'). Annotate
+  specific data points that stand out, for example, the minimum and maximum values
+  in each category. Use highlights to make the boxes for 'sr' and 'hr' more prominent,
+  as these may be vital indicators of stress. The chart should help identify how these
+  metrics vary with different sleep levels to better understand stress detection through
+  sleep. Add non-data-driven annotations to provide context on how these metrics are
+  relevant for stress analysis.
+questions: '1. Do you have any specific color preferences for the highlights on the
+  ''sr'' and ''hr'' boxes?
+
+  2. Are there any specific outlier points that you want to make sure are annotated
+  in the chart?
+
+  3. Do you have any preferred style or format for the non-data-driven annotations
+  providing context on stress analysis?
+
+  4. Are there specific visual elements you want to use for annotating minimum and
+  maximum values (e.g., special markers, labels)?
+
+  5. Would you prefer a particular orientation for the box chart (vertical or horizontal)?
+
+  6. Do you want to include a legend explaining the highlighted boxes and annotations?
+
+  7. Is there a specific font style or size you prefer for text annotations and labels?
+
+  8. Are there any additional metrics or data points you want to be included in the
+  box chart for comparison?
+
+  9. Do you have a preference for the layout of the chart (e.g., size, aspect ratio)?
+
+  10. Would you like the chart to include grid lines or any other specific background
+  elements to enhance readability?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Annotate the most extreme outlier points for clarity.
+
+  3. I do not know.
+
+  4. Special markers would be nice for minimum and maximum values.
+
+  5. Vertical orientation is preferred.
+
+  6. Yes, please include a legend.
+
+  7. I do not have a specific preference.
+
+  8. No, just the metrics mentioned are fine.
+
+  9. I have no specific preference.
+
+  10. Yes, include grid lines for better readability.
+
+  <end of user emulated response>'
+data_attributes:
+- sr
+- rr
+- t
+- lm
+- bo
+- rem
+- sr.1
+- hr
+- sl

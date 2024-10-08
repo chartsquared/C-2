@@ -1,0 +1,57 @@
+initial_prompt: Create an area chart displaying the stock price trends of Meta from
+  the given dataset, focusing on the "Close" values over time. Add text annotations
+  to highlight key points where the stock experienced significant changes or milestones,
+  making sure to draw attention to peaks and troughs in the data. Use highlights to
+  differentiate periods with high trading volumes prominently by modifying their color.
+  This visualization is meant to provide a clear historical overview of Meta's stock
+  performance, helping viewers quickly identify major trends and important fluctuations
+  in the stock price.
+questions: '1. Do you have a specific color scheme preference for the chart?
+
+  2. Would you like the text annotations to include specific details such as dates
+  or percentage changes?
+
+  3. Do you have a preferred style or font for the text annotations?
+
+  4. How would you like significant changes or milestones to be visually represented
+  (e.g., markers, icons, labels)?
+
+  5. What threshold defines high trading volume for you, to differentiate periods
+  prominently?
+
+  6. Is there a specific date range you are particularly interested in focusing on?
+
+  7. Do you prefer to see gridlines or a background color for better visual interpretation?
+
+  8. Would you like to include a legend to differentiate the highlighted periods of
+  high trading volume?
+
+  9. Are there specific milestones or events that you would like to be highlighted
+  in the chart?
+
+  10. Should the peaks and troughs be annotated automatically based on the data, or
+  would you like to specify them manually?'
+answers: '1. I do not know.
+
+  2. Yes, please include specific details such as dates and percentage changes.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Yes, please include a legend to differentiate the highlighted periods of high
+  trading volume.
+
+  9. I am not sure.
+
+  10. Annotate the peaks and troughs automatically based on the data.'
+data_attributes:
+- Date
+- Close
+- Volume

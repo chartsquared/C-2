@@ -1,0 +1,58 @@
+initial_prompt: Create a heatmap showing the distribution of 'tcp_packets', 'udp_packets',
+  'dist_port_tcp', and 'external_ips' across different apps ('name') to analyze network
+  traffic patterns in Android malware and benign traffic.
+questions: '1. Do you have a preference on the color scheme for the heatmap (e.g.,
+  sequential, diverging, specific colorblind-friendly palette)?
+
+  2. Would you like to include gridlines on the heatmap to distinguish between different
+  apps and packet counts?
+
+  3. Should there be a legend explaining the color gradients used in the heatmap?
+
+  4. Do you prefer any specific labeling for the axes, such as ''App Names'' for the
+  y-axis and ''Traffic Metrics'' for the x-axis?
+
+  5. Would you like to include any data labels showing the exact values of ''tcp_packets'',
+  ''udp_packets'', ''dist_port_tcp'', and ''external_ips'' within each cell?
+
+  6. Do you have a preferred layout or orientation for the heatmap (e.g., vertical,
+  horizontal, square)?
+
+  7. Would you like to highlight any specific ranges of values within the heatmap
+  for quick visual identification?
+
+  8. Do you prefer a specific order for displaying the apps (e.g., alphabetical, based
+  on total traffic)?
+
+  9. Should the heatmap include any annotations or additional information for context,
+  like separating malware and benign apps?
+
+  10. Do you want to set any thresholds for color intensity to emphasize higher traffic
+  patterns more prominently?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, please label the axes as ''App Names'' for the y-axis and ''Traffic Metrics''
+  for the x-axis.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. Yes, please include annotations or additional information for context, like separating
+  malware and benign apps.
+
+  10. I am not sure.'
+data_attributes:
+- name
+- tcp_packets
+- udp_packets
+- dist_port_tcp
+- external_ips

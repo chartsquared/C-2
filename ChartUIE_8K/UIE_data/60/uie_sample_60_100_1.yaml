@@ -1,0 +1,52 @@
+initial_prompt: Visualize a line chart showing average ratings over time for various
+  laptop brands and models from Best Buy 2024. Use different lines for each brand
+  to highlight trends in user satisfaction. Annotate key data points with text annotations
+  for better insight. Additionally, highlight significant drops or peaks in ratings
+  to draw attention. The chart will help identify popular brands and models based
+  on their aggregate ratings and review counts, focusing on providing a clear, comparative
+  view of consumer preferences and performance over time within the computers-and-technology
+  category.
+questions: "1. Do you have a specific color palette or brand colors you would like\
+  \ to use for the lines representing each brand?\n2. Do you prefer a particular style\
+  \ for the text annotations on key data points (e.g., font size, color, or text placement)?\n\
+  3. Should the y-axis be limited to a specific range of ratings, or should it automatically\
+  \ adjust based on the data?\n4. Do you want any gridlines or specific axis labels\
+  \ to be included or emphasized on the chart? \n5. Would you like to include a title\
+  \ and subtitle for the chart? If so, please provide the preferred text.\n6. Are\
+  \ there specific time intervals (e.g., monthly, quarterly) that you would like the\
+  \ x-axis to represent?\n7. Do you have a preferred style for highlighting significant\
+  \ drops or peaks (e.g., bold lines, different colors, markers)?\n8. Is there a specific\
+  \ format for the legend that you prefer (e.g., location, orientation, or style)?\n\
+  9. Do you want to include any tooltips or hover effects to display additional information\
+  \ when a user interacts with the chart?\n10. Do you have any specific requirements\
+  \ for the display of the aggregate review counts (e.g., inclusion as a secondary\
+  \ y-axis, in-chart labels)?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. It should automatically adjust based on the data.
+
+  4. I do not know.
+
+  5. Yes, please title it "Average Ratings Over Time for Laptop Brands" and subtitle
+  "Best Buy 2024".
+
+  6. Quarterly intervals would be preferred.
+
+  7. I prefer different colors for significant drops or peaks.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- brand
+- model
+- aggregateRating/ratingValue
+- aggregateRating/reviewCount

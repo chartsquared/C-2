@@ -1,0 +1,56 @@
+initial_prompt: I want a line chart displaying COVID-19 patient outcomes over time.
+  Use the 'Admission_DATE', 'Discharge_DATE or date of Death', and 'Outcome' fields.
+  Highlight the different treatment types on the chart using colors and annotations
+  to show the 'Recovered' vs 'Not Recovered' outcomes. Emphasize age and gender differences
+  with separate lines or markers. Include text annotations for significant data points,
+  like highest or lowest values of 'Red blood cell distribution width', 'Monocytes(%)',
+  and other CBC parameters. This is for a medical report on patient treatment efficacy.
+questions: '1. Do you have a preferred color scheme for highlighting different treatment
+  types and outcomes?
+
+  2. Do you want separate charts for ''Recovered'' and ''Not Recovered'' outcomes
+  or combined in one chart with color differentiation?
+
+  3. How would you like genders to be represented: with different line styles, colors,
+  or markers?
+
+  4. Do you have any specific preferences for annotating significant data points (e.g.,
+  font size, color, or style)?
+
+  5. Should age groups be segmented in a specific way (e.g., by decade)?
+
+  6. Do you have any preferences for the overall style of the line chart (e.g., classic,
+  modern, minimalistic)?
+
+  7. Would you like any specific summary statistics or trend lines included on the
+  chart?
+
+  8. Is there a specific way you would like the axes to be labeled or scaled?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color scheme in mind.
+
+  2. I am not sure, maybe combined in one chart with color differentiation?
+
+  3. Different markers would be good.
+
+  4. I do not know, just make it clear and readable.
+
+  5. I am not sure, perhaps by decade is a good idea.
+
+  6. I have no specific preference, but make it clear and professional.
+
+  7. Yes, summary statistics would be useful.
+
+  8. I do not have specific preferences.
+
+  <end of user emulated response>'
+data_attributes:
+- 'Admission_DATE '
+- Discharge_DATE or date of Death
+- Outcome
+- Patient Age
+- Gender
+- 'What kind of Treatment provided '
+- Red blood cell distribution width
+- Monocytes(%)

@@ -1,0 +1,52 @@
+initial_prompt: Create a grouped bar chart comparing the average MonthlyIncome and
+  YearsAtCompany for each JobRole in the IBM HR dataset. Group bars by JobRole, and
+  the bars should represent both metrics (MonthlyIncome and YearsAtCompany) side by
+  side for easy comparison. This should help visualize how these two factors vary
+  across different roles.
+questions: '1. Do you have a preference for the color scheme of the bars representing
+  ''MonthlyIncome'' and ''YearsAtCompany''?
+
+  2. Would you prefer the bars to be displayed with specific patterns (e.g., stripes,
+  dots) for easier differentiation?
+
+  3. How would you like the JobRoles to be ordered on the x-axis (e.g., alphabetically,
+  by average MonthlyIncome, by YearsAtCompany)?
+
+  4. Should the chart include data labels on the bars to indicate the exact values
+  of the averages?
+
+  5. Do you prefer any specific font style or size for the chart labels and legend?
+
+  6. Would you like to include a grid or reference lines to enhance readability?
+
+  7. Is there a specific title you would like for the chart?
+
+  8. Do you want to include subtitles or annotations to provide additional context
+  or insights?
+
+  9. Should there be any specific margins or padding around the chart for better aesthetics?
+
+  10. Would you like any specific values highlighted or emphasized on the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Alphabetically.
+
+  4. Yes.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. Average Monthly Income and Years at Company by Job Role.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not have any specific values to highlight.'
+data_attributes:
+- JobRole
+- MonthlyIncome
+- YearsAtCompany

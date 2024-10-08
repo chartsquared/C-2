@@ -1,0 +1,35 @@
+initial_prompt: Visualize the California Housing Prices using a bubble chart. Plot
+  latitude vs. longitude, with bubble sizes representing population and colors indicating
+  ocean proximity. Highlight median house values through text annotations for select
+  regions to draw attention.
+questions: '1. Do you have a preferred color scheme for indicating ''ocean proximity''?
+
+  2. Would you like specific regions to be highlighted for median house values, or
+  should we use a range-based method?
+
+  3. Do you have a specific format or style for text annotations that you prefer?
+
+  4. How detailed should the text annotations be for median house values (e.g., exact
+  values, ranges, etc.)?
+
+  5. Do you have any preference for the size range of the bubbles representing population?
+
+  6. Should the map include additional geographical markers or labels (e.g., major
+  cities, landmarks)?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. Exact values, please.
+
+  5. I do not know.
+
+  6. I am not sure.'
+data_attributes:
+- longitude
+- latitude
+- population
+- median_house_value
+- ocean_proximity

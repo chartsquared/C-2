@@ -1,0 +1,46 @@
+initial_prompt: Visualize the manufacturing dataset using a box chart to show variations
+  in ProductionVolume, ProductionCost, and WorkerProductivity. Annotate key outliers
+  and highlight minimum and maximum values for clarity. This will help identify trends
+  and anomalies in production efficiency.
+questions: '1. Do you have a preferred color scheme for highlighting minimum and maximum
+  values?
+
+  2. Should we use specific symbols or shapes to annotate the key outliers?
+
+  3. Would you like the box chart to include a title and axis labels? If so, please
+  provide the text for these labels.
+
+  4. Do you prefer the data points for outliers to be labeled with their specific
+  values?
+
+  5. How detailed should the annotations for key outliers be (e.g., numerical value,
+  additional context)?
+
+  6. Do you have a preference for the order in which the attributes (ProductionVolume,
+  ProductionCost, WorkerProductivity) are displayed on the chart?
+
+  7. Should the whiskers of the box chart represent the full range of data, or would
+  you prefer a specific percentile (e.g., 1.5 times the interquartile range)?
+
+  8. Would you like to display any additional statistical information such as mean
+  or median values directly on the chart?'
+answers: '1. I don''t have a specific preference for a color scheme.
+
+  2. I am not sure.
+
+  3. Yes, please include a title "Manufacturing Data Analysis" and axis labels "ProductionVolume",
+  "ProductionCost", and "WorkerProductivity".
+
+  4. Yes, please label the data points for outliers with their specific values.
+
+  5. Just the numerical value should be fine.
+
+  6. I am not sure.
+
+  7. I would prefer the whiskers to represent 1.5 times the interquartile range.
+
+  8. Yes, please display the median values directly on the chart.'
+data_attributes:
+- ProductionVolume
+- ProductionCost
+- WorkerProductivity

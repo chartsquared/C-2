@@ -1,0 +1,49 @@
+initial_prompt: Please create a line chart visualizing the relationship between 'Time(sec)'
+  and 'Amplitude(a.u.)'. Ensure you also plot the other unnamed columns (2 to 5) against
+  'Time(sec)'. Highlight key data points by changing their color or size and add text
+  annotations to display their specific values. This will help us focus on significant
+  trends or anomalies in the data. The visualization should be clear, concise, and
+  ideal for understanding the physical behaviors over time. The data does not have
+  any missing values, so please use the entire dataset for the chart.
+questions: '1. Do you have any specific color preferences for the lines representing
+  different columns?
+
+  2. Would you like to set specific thresholds for highlighting key data points?
+
+  3. How would you prefer the text annotations to be displayed (e.g., font size, positioning)?
+
+  4. Are there any particular ranges of data that you want to emphasize more than
+  others?
+
+  5. Do you have a preferred style for the line (e.g., solid, dashed, dotted)?
+
+  6. Would you like to include grid lines for better readability, and if so, vertical,
+  horizontal, or both?
+
+  7. Is there any specific legend placement you prefer?
+
+  8. Do you want any specific titles or labels for the axes and chart?'
+answers: '1. I am not sure.
+
+  2. I do not have specific thresholds in mind, but significant peaks or dips would
+  be good.
+
+  3. I would prefer the text annotations to be clearly readable with a medium font
+  size and positioned close to the highlighted data points.
+
+  4. I do not know.
+
+  5. I would prefer solid lines for clarity.
+
+  6. Both vertical and horizontal grid lines would be helpful for better readability.
+
+  7. I have no specific preference for the legend placement.
+
+  8. A clear title for the chart and labels for the axes would be great.'
+data_attributes:
+- Time(sec)
+- Ampltiude(a.u.)
+- 'Unnamed: 2'
+- 'Unnamed: 3'
+- 'Unnamed: 4'
+- 'Unnamed: 5'

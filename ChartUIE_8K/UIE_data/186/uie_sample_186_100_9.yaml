@@ -1,0 +1,52 @@
+initial_prompt: I would like to visualize the summary of JoJo Stands Stats using a
+  Treemap. The Treemap should display the unique values for each attribute (PWR, SPD,
+  RNG, PER, PRC, DEV) from the dataset. Each unique value should be a rectangle, and
+  its size should represent the count of that unique value across the dataset. Additionally,
+  missing values should be highlighted distinctly. This visualization will help in
+  understanding the distribution and missing data points in the JoJo Stands Stats
+  more intuitively. Ensure the labels and legends are clear to differentiate among
+  the attributes and their unique values.
+questions: '1. Do you have a preferred color scheme for the Treemap?
+
+  2. How would you like missing values to be highlighted? (e.g., specific color, pattern,
+  etc.)
+
+  3. Do you want the rectangles representing unique values to have any specific borders
+  or outlines for better differentiation?
+
+  4. Should the Treemap display any specific tooltips or labels when hovering over
+  different sections?
+
+  5. Is there a particular font style or size you prefer for the labels and legends?
+
+  6. Would you like the Treemap to have a title and subtitle? If yes, what should
+  they be?
+
+  7. Do you have a preference for the layout or arrangement of the Treemap (e.g.,
+  squarified, slice-and-dice, etc.)?
+
+  8. Should the count of each unique value be shown within the rectangles or only
+  in the legend?'
+answers: '1. I am not sure.
+
+  2. A specific color for missing values would be ideal.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, the title should be "JoJo Stands Stats Treemap" and the subtitle should
+  be "Distribution and Missing Values Highlighted".
+
+  7. I have no specific preference.
+
+  8. The count of each unique value should be shown within the rectangles.'
+data_attributes:
+- PWR
+- SPD
+- RNG
+- PER
+- PRC
+- DEV

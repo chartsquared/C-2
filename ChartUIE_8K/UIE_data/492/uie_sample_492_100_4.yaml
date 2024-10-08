@@ -1,0 +1,43 @@
+initial_prompt: Please create a scatter plot visualizing the data from the provided
+  CSV file. Use the 'time' column for the x-axis and the 'signal' column for the y-axis.
+  Since this dataset appears to contain time-series data without any missing values,
+  the scatter plot should help in visualizing any patterns or trends over time. Ensure
+  that the plot has proper labels for the axes and a title. Additionally, highlight
+  any significant peaks or troughs in the signal for better clarity and analysis.
+  Keep the visualization clean and easy to interpret. Thank you!
+questions: '1. Do you prefer specific colors for highlighting significant peaks or
+  troughs in the scatter plot?
+
+  2. What title would you like to have for the scatter plot?
+
+  3. Are there any specific labels you prefer for the x-axis and y-axis?
+
+  4. Would you like to add grid lines to the scatter plot for better readability?
+
+  5. Do you have a preference for the marker style or size used in the scatter plot?
+
+  6. Is there a specific font style or size you prefer for the labels and title?
+
+  7. Should we include a legend in the scatter plot? If so, do you have specific preferences
+  for it?
+
+  8. Do you have a preferred layout or positioning for the annotations (highlighting
+  peaks or troughs)?'
+answers: '1. I am not sure.
+
+  2. Trends in Signal Over Time
+
+  3. No specific preferences for the labels.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- time
+- signal

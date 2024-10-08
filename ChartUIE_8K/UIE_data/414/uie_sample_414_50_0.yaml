@@ -1,0 +1,35 @@
+initial_prompt: '<start of the instruction>
+
+  Create a line chart showing the change in cropland over time for each continent.
+  Annotate significant changes and trends. Highlight Africa''s data. Use colors to
+  differentiate continents.
+
+  <end of the instruction>'
+questions: "1. Do you have any specific time intervals or range you would like to\
+  \ focus on?\n2. Is there a preferred color scheme you would like for differentiating\
+  \ the continents?\n3. How would you like significant changes or trends to be annotated\
+  \ on the chart (e.g., arrows, text labels)?\n4. Would you prefer a specific line\
+  \ style or marker for highlighting Africa's data?\n5. Do you have any specific font\
+  \ preferences for the labels and annotations?\n6. Is there a requirement for a legend\
+  \ or title on the chart? If so, do you have any preferences for their placement?\
+  \ \n7. Are there any specific axis labels or scales you would like to use? \n8.\
+  \ Do you have any preference for the chart background color or gridline style?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Text labels for significant changes would be good.
+
+  4. A thicker or bold line for Africa''s data.
+
+  5. I am not sure.
+
+  6. Yes, a legend and title would be useful. Placement can be standard.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- Entity
+- Year
+- Cropland (HYDE (2017))

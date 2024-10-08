@@ -1,0 +1,39 @@
+initial_prompt: Create a histogram visualizing the total number of dogs imported and
+  exported per state with highlights on states with the highest values. Use text annotations
+  to show exact numbers for key states.
+questions: '1. Do you have any preferred color scheme for the histogram, especially
+  for highlighting the states with the highest values?
+
+  2. Are there specific states you want to highlight or should only the top states
+  by total numbers be highlighted?
+
+  3. How many top states would you like to highlight in the histogram?
+
+  4. Do you have a preferred font style or size for the text annotations displaying
+  the exact numbers?
+
+  5. Should the histogram display separate bars for ''exported'', ''imported'', and
+  ''total'', or a single bar representing the ''total'' for each state?
+
+  6. Would you like the chart to include a legend explaining the different highlights
+  and text annotations?
+
+  7. Do you have any preferences regarding the chart''s title or axis labels?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would like to highlight the top 5 states.
+
+  4. I have no specific preference.
+
+  5. A single bar representing the ''total'' for each state would be good.
+
+  6. I have no specific preference.
+
+  7. I am not sure.'
+data_attributes:
+- location
+- exported
+- imported
+- total

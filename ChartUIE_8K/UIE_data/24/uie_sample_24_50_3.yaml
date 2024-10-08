@@ -1,0 +1,65 @@
+initial_prompt: Create a heatmap to visualize correlations among different variables
+  affecting student grades from the provided dataset. Include all the numerical columns
+  (age, Medu, Fedu, traveltime, studytime, etc.) and grades (G1, G2, G3). Highlight
+  stronger correlations.
+questions: '1. Do you have a specific preference for the color scheme of the heatmap
+  (e.g., warm colors, cool colors, divergent colors)?
+
+  2. How would you like to represent stronger correlations (e.g., use of bold colors,
+  annotations)?
+
+  3. Should the heatmap include any labels or annotations for specific correlation
+  values?
+
+  4. What is the preferred range of correlation coefficients to be highlighted (e.g.,
+  above 0.7, below -0.7)?
+
+  5. Do you require a legend to explain the color intensity representing the correlation
+  strength?
+
+  6. Would you prefer to have gridlines or separators between the cells in the heatmap?
+
+  7. Are there any specific variable pairs you want to emphasize or analyze more closely?
+
+  8. Is the orientation of the labels important to you (e.g., horizontal, vertical,
+  or angled)?
+
+  9. Would you like to include any specific title or subtitle for the heatmap?
+
+  10. Do you have any preference for the size or dimensions of the heatmap?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Above 0.7 and below -0.7.
+
+  5. Yes.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- age
+- Medu
+- Fedu
+- traveltime
+- studytime
+- failures
+- famrel
+- freetime
+- goout
+- Dalc
+- Walc
+- health
+- absences
+- G1
+- G2
+- G3

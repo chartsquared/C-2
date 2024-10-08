@@ -1,0 +1,49 @@
+initial_prompt: I need a stacked bar chart visualizing the best-selling video games
+  of all time. The x-axis should represent game titles, and the y-axis will show sales
+  figures in millions. Each bar should be stacked by platform, differentiating sales
+  per platform for each game. Use different colors to represent each platform. Make
+  sure the legend identifies each platform distinctly. The chart should clearly show
+  which game has the highest sales and how those sales are distributed across different
+  platforms. Include all relevant columns like Rank, Title, Sales, and Platform(s).
+  Ensure it is easy to interpret.
+questions: '1. Do you have any specific color preferences for the platforms in the
+  stacked bar chart?
+
+  2. Should the chart include gridlines for better readability, or do you prefer a
+  cleaner look without them?
+
+  3. Do you prefer a specific order for the game titles on the x-axis (e.g., alphabetical,
+  by sales rank)?
+
+  4. Would you like data labels to be displayed on the bars to show exact sales figures?
+
+  5. Do you prefer a specific font style or size for the game titles and other text
+  elements in the chart?
+
+  6. Should the chart include a title and axis labels? If so, do you have any specific
+  wording or formatting preferences for them?
+
+  7. Do you want additional annotations or callouts to highlight key points, such
+  as the highest-selling game or specific platform contributions?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. I prefer a cleaner look without gridlines.
+
+  3. By sales rank, please.
+
+  4. Yes, please include data labels to show exact sales figures.
+
+  5. I am not sure.
+
+  6. Yes, include a title and axis labels. No specific wording preferences.
+
+  7. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- Rank
+- Title
+- Sales
+- Platform(s)

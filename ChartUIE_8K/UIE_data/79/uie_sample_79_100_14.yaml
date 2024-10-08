@@ -1,0 +1,57 @@
+initial_prompt: Please create a grouped bar chart using the "Campus Recruitment" dataset.
+  The chart should compare the average "degree_p" (undergraduate percentage) and "mba_p"
+  (postgraduate percentage) scores for male and female students. Additionally, group
+  the data by "status" (Placed/Not Placed) to show any trends or differences in scores.
+  It's important to visualize how education percentages may correlate with placement
+  status while differentiating by gender. This will help in analyzing the performance
+  and placement trends among students across different education levels. Please ensure
+  the chart is clear and labeled accurately.
+questions: '1. Do you have a preferred color scheme or palette for differentiating
+  between male and female students?
+
+  2. Are there specific colors you would like to use for the "Placed" and "Not Placed"
+  categories?
+
+  3. Should the x-axis represent gender categories, status categories, or another
+  grouping?
+
+  4. Do you prefer specific labels or titles for the x-axis, y-axis, and the chart
+  itself?
+
+  5. Would you like to display numerical values on top of the bars for clarity?
+
+  6. Should there be any specific annotations or explanatory text within the chart
+  to highlight key insights?
+
+  7. Is there a preferred order for displaying the categories (e.g., Placed before
+  Not Placed)?
+
+  8. Do you have any preferences for the font style and size of the text within the
+  chart?
+
+  9. Should the chart include a legend, and if so, do you have a preference for its
+  placement?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Gender categories.
+
+  4. I want clear labels like "Gender" for the x-axis, "Percentage Scores" for the
+  y-axis, and "Average Degree and MBA Scores by Gender and Placement Status" as the
+  chart title.
+
+  5. Yes, please display numerical values on top of the bars.
+
+  6. I am not sure.
+
+  7. Placed before Not Placed.
+
+  8. I do not have any specific preference.
+
+  9. Yes, please include a legend. I am not sure where it should be placed.'
+data_attributes:
+- gender
+- degree_p
+- mba_p
+- status

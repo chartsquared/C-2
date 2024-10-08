@@ -1,0 +1,52 @@
+initial_prompt: I want a range chart to visualize the performance of Marvel Superhero
+  Movies. This chart should showcase 'worldwide gross ($m)' on a vertical axis and
+  'year' on the horizontal axis. Each movie's range should show the opening weekend
+  and final worldwide gross. Include markers for the 'budget' to compare with the
+  worldwide gross. I also want different colors for each 'category' to differentiate
+  movies like Ant-Man and Avengers. Make sure the drop-off percentages and budget
+  recovery percentages are shown as tooltips when hovering over the data points. Use
+  clear labels and a legend.
+questions: '1. Do you have any preference for the color palette to represent different
+  categories?
+
+  2. Do you want the budget markers to be represented as a specific shape or size?
+
+  3. How detailed should the tooltips be? Should they include other additional data
+  points like ''domestic gross ($m)'' and ''international gross ($m)''?
+
+  4. Would you prefer the range chart to be a specific type such as a bar range, line
+  range, or area range?
+
+  5. Do you have a preference for the font style and size for the labels and legend?
+
+  6. Should the chart include grid lines or specific background styles to enhance
+  readability?
+
+  7. Is there a preferred order for the categories to appear in the legend?
+
+  8. Do you want any specific annotations or highlights for key movies or specific
+  years?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- film
+- category
+- worldwide gross ($m)
+- budget
+- opening weekend ($m)
+- year
+- '% budget recovered'
+- 1st vs 2nd weekend drop off

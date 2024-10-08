@@ -1,0 +1,57 @@
+initial_prompt: '<start of instructions>
+
+  Create a line chart to visualize the tenure of customers over time, highlighting
+  specific trends in MonthlyCharges and TotalCharges. Use annotations to point out
+  significant drops or spikes in charges, and emphasize the Churn status. This will
+  help identify patterns in customer behavior related to their subscriptions and billing.
+  Add contextual notes to explain any observed trends, focusing particularly on long-term
+  customers and those more likely to churn. This will support business decisions in
+  retaining customers by understanding tenure and billing impacts on churn.
+
+  <end of instructions>'
+questions: '1. What color scheme do you prefer for the line chart?
+
+  2. Do you have any specific preference for line styles (e.g., solid, dashed) for
+  different attributes?
+
+  3. How would you like the Churn status to be emphasized (e.g., different line colors,
+  markers)?
+
+  4. Do you prefer any specific format for annotations (e.g., text boxes, callouts)?
+
+  5. Are there any particular points in the data where you would like annotations
+  to be added?
+
+  6. Is there any specific information you want to include in the contextual notes?
+
+  7. Do you have a preference for the range of the y-axis?
+
+  8. Would you like a legend to be included in the chart?
+
+  9. Is there a particular font style or size you would like for the labels and annotations?
+
+  10. Do you have any specific requirements for the chart title or axis titles?'
+answers: '1. I do not know.
+
+  2. I do not know.
+
+  3. Different line colors would be good.
+
+  4. Text boxes.
+
+  5. I am not sure.
+
+  6. No specific preference.
+
+  7. I am not sure.
+
+  8. Yes, please.
+
+  9. I do not know.
+
+  10. No specific requirements.'
+data_attributes:
+- tenure
+- MonthlyCharges
+- TotalCharges
+- Churn

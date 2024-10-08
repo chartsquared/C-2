@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap visualizing the Top 50 Spotify Songs' attributes
+  in 2019. Annotate key data points like popularity, energy, and danceability to highlight
+  trends.
+questions: '1. Do you have any specific color schemes in mind for the heatmap?
+
+  2. Would you prefer the heatmap to display numerical values within the cells?
+
+  3. Is there a specific order you would like the songs to be sorted in (e.g., by
+  popularity, alphabetical by track name)?
+
+  4. Do you have a preferred range of values to focus on for highlighting (e.g., high
+  popularity, high energy)?
+
+  5. Are there any additional attributes besides popularity, energy, and danceability
+  that you want annotated or highlighted?
+
+  6. Would you prefer the annotations to be displayed inside the heatmap cells or
+  on a separate legend?
+
+  7. Should the annotations be for all data points or only for those above or below
+  a certain threshold?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. By popularity would be good.
+
+  4. High popularity, high energy.
+
+  5. I am not sure.
+
+  6. Inside the heatmap cells.
+
+  7. Only for those above a certain threshold.'
+data_attributes:
+- Track.Name
+- Artist.Name
+- Genre
+- Beats.Per.Minute
+- Energy
+- Danceability
+- Loudness..dB..
+- Liveness
+- Valence.
+- Length.
+- Acousticness..
+- Speechiness.
+- Popularity

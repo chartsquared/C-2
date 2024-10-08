@@ -1,0 +1,55 @@
+initial_prompt: 'Create a scatter plot using the provided dataset "Africa Economic,
+  Banking and Systemic Crisis Data." The x-axis should represent years and the y-axis
+  should represent the inflation_annual_cpi. Differentiate systemic_crisis using colors:
+  one color for 1 (crisis) and another color for 0 (no crisis). Include data points
+  for each country and use labels for clarity.'
+questions: '1. Do you have a preferred color scheme for differentiating between systemic
+  crisis (1) and no crisis (0)?
+
+  2. Would you like any specific markers to represent the data points for each country?
+
+  3. Do you have any specific font preferences for the labels?
+
+  4. How would you like to handle overlapping data points? Should a jitter effect
+  be applied, or should transparency be adjusted?
+
+  5. Do you want to include a legend to explain the colors and markers used in the
+  scatter plot? If yes, where should it be positioned?
+
+  6. Are there any specific countries you would like to highlight or focus on in the
+  scatter plot?
+
+  7. Would you like trend lines or regression lines added to the scatter plot to highlight
+  correlations?
+
+  8. Should axis labels include units or any additional descriptive information?
+
+  9. Do you prefer a specific layout or orientation for the scatter plot (e.g., vertical
+  or horizontal)?
+
+  10. Are there any specific title or subtitle preferences you have for this scatter
+  plot?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I think using transparency for overlapping data points would be good.
+
+  5. Yes, please include a legend. I don''t have a specific preference for its position.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include units or additional descriptive information in the axis labels.
+
+  9. I do not have a specific preference.
+
+  10. No specific preferences for the title or subtitle.'
+data_attributes:
+- year
+- inflation_annual_cpi
+- systemic_crisis
+- country

@@ -1,0 +1,49 @@
+initial_prompt: Create a histogram showing the number of animal rescue incidents per
+  year. Use the 'cal_year' column for years and the 'animal_group_parent' column to
+  differentiate between categories like 'Dog', 'Fox', etc.
+questions: '1. Do you have a preferred color scheme for the different animal categories?
+
+  2. Should the histogram bins represent each year individually, or would you like
+  to group years into ranges (e.g., every 5 years)?
+
+  3. How would you like the data to be displayed if an animal category has very few
+  incidents? Would you prefer to group such categories together under ''Other''?
+
+  4. Do you have a specific order preference for the animal categories in the legend?
+
+  5. Would you like to include any specific labels or annotations on the chart?
+
+  6. Should the histogram display the count or percentage of incidents per animal
+  category?
+
+  7. Do you have a preference for the orientation of the histogram (vertical or horizontal)?
+
+  8. Would you like to display grid lines on the chart for better readability?
+
+  9. Do you have any specific preferences for the appearance of the axes (e.g., labeled
+  years, tick marks, etc.)?
+
+  10. Should there be a title for the histogram, and if so, what would you like it
+  to be?'
+answers: '1. I am not sure.
+
+  2. Each year individually.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Count of incidents.
+
+  7. Vertical orientation.
+
+  8. I do not know.
+
+  9. I do not know.
+
+  10. Yes, the title should be "Animal Rescue Incidents per Year by Category".'
+data_attributes:
+- cal_year
+- animal_group_parent

@@ -1,0 +1,47 @@
+initial_prompt: I need a Treemap chart for Udemy courses from the provided data. It
+  should show subjects and break them down by course levels. Each rectangle should
+  represent a course. The size of each rectangle should correspond to the number of
+  subscribers, and the color should reflect the price range. This way, we can easily
+  understand which subjects are popular and how course levels differ within subjects.
+  Additionally, include course titles as labels if possible for better clarity. Thank
+  you!
+questions: '1. Do you have any specific preferences for the color scheme representing
+  different price ranges?
+
+  2. Is there a particular way you would like the course levels to be visually distinguished
+  within each subject?
+
+  3. How would you like the course titles to be displayed within the rectangles? Should
+  they appear only on hover, or always be visible?
+
+  4. Do you have any preferred font size or style for the course titles and labels?
+
+  5. Are there any specific subjects or course levels you would like to emphasize
+  or highlight?
+
+  6. Is there a minimum or maximum value for the price or number of subscribers that
+  you would like to filter or exclude?
+
+  7. Is it important to include a legend or key for interpreting the size and color
+  of rectangles? If so, do you have any preferences for its placement?'
+answers: '1. I do not have a specific color scheme preference.
+
+  2. I am not sure how to visually distinguish the course levels; I trust your expertise.
+
+  3. I would like the course titles to be always visible.
+
+  4. I do not know about any preferred font size or style for the course titles and
+  labels.
+
+  5. I don''t have any specific subjects or course levels to emphasize.
+
+  6. I have no specific values for filtering based on price or number of subscribers.
+
+  7. Yes, it is important to include a legend or key. I have no specific preference
+  for its placement.'
+data_attributes:
+- subject
+- level
+- course_title
+- num_subscribers
+- price

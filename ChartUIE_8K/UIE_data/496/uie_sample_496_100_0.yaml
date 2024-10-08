@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap using the provided dataset columns (y, x1, and x2).
+  Ensure to highlight key data points to draw attention to significant values. Annotate
+  specific data points within the heatmap that are of particular interest, indicating
+  their precise values to the viewer. The purpose is to visualize and identify patterns
+  or trends in the data, making it easier to analyze relationships between variables.
+  This visualization will be a useful tool for data science and analytics tasks, emphasizing
+  important elements through visual differentiations such as color and size modifications.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the color gradient focus on specific value ranges or anomalies?
+
+  3. Are there particular data points or ranges that you want to emphasize with annotations?
+
+  4. How would you like the annotations to be formatted or styled?
+
+  5. Do you prefer any specific size or resolution for the heatmap?
+
+  6. Would you like to add any labels or titles for the axes and the heatmap itself?
+
+  7. Is there a specific way you would like significant values to be highlighted (e.g.,
+  bold, italics, larger size)?
+
+  8. Are there any gridlines or borders preferences for the heatmap cells?
+
+  9. Would you like a legend to explain the color gradients or any other elements?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, it would be good if the color gradient can focus on specific value ranges
+  or anomalies.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I don''t have a specific size or resolution in mind.
+
+  6. Yes, please add labels for the y-axis, x1-axis, and x2-axis, and a title for
+  the heatmap.
+
+  7. I am not sure.
+
+  8. I do not have any preference.
+
+  9. Yes, a legend would be helpful to explain the color gradients.
+
+  <end of user emulated response>'
+data_attributes:
+- y
+- x1
+- x2

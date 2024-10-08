@@ -1,0 +1,61 @@
+initial_prompt: Create a heatmap to visualize the correlation between different variables
+  in the "Predict Customer Purchase Behavior Dataset." Focus on examining how age,
+  gender, annual income, number of purchases, product category, time spent on the
+  website, loyalty program participation, and discounts availed are related to the
+  purchase status. This chart will help identify which factors most strongly influence
+  whether a customer makes a purchase. Make sure the heatmap clearly shows correlations,
+  making it easy to identify positive and negative relationships within the data.
+  Use distinct color gradients to denote varying levels of correlation.
+questions: '1. Do you have any specific color gradients in mind for denoting varying
+  levels of correlation?
+
+  2. Would you like to include labels on the heatmap cells to show the exact correlation
+  values?
+
+  3. How would you prefer to handle any potential issues with overlapping text or
+  crowded labels?
+
+  4. Do you have a preferred color palette for the heatmap?
+
+  5. Is there a preferred layout or orientation for the heatmap (e.g., square, rectangular)?
+
+  6. Should the heatmap include a legend explaining the color gradient and corresponding
+  correlation values?
+
+  7. Do you have any specific preferences for the font type and size for the labels
+  and title?
+
+  8. How would you like to arrange the variables on the axes (e.g., any specific order
+  or based on the strength of correlation)?
+
+  9. Are there any additional text or annotations you would like to include on the
+  heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include labels on the heatmap cells to show the exact correlation
+  values.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. Yes, the heatmap should include a legend explaining the color gradient and corresponding
+  correlation values.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.
+
+  9. I do not have any additional text or annotations to include.'
+data_attributes:
+- Age
+- Gender
+- AnnualIncome
+- NumberOfPurchases
+- ProductCategory
+- TimeSpentOnWebsite
+- LoyaltyProgram
+- DiscountsAvailed
+- PurchaseStatus

@@ -1,0 +1,50 @@
+initial_prompt: Please create a heatmap visualizing the distribution of volcano types
+  across different countries. For the heatmap, use the 'Country' column on the y-axis
+  and the 'Type' column on the x-axis. Each cell in the heatmap should represent the
+  count of each volcano type per country. This visualization should help identify
+  patterns in the geographical distribution of different types of volcanoes around
+  the world. Also, ensure that missing values in the 'Type' column are handled appropriately
+  by excluding them from the calculation. Thank you!
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. Would you like to include a color legend to indicate the count ranges?
+
+  3. What font style and size do you prefer for the axis labels?
+
+  4. Do you want grid lines to be displayed on the heatmap?
+
+  5. Should the heatmap cells include the count value as text within each cell?
+
+  6. Are there any specific countries or volcano types you want to highlight?
+
+  7. Would you prefer the heatmap to have a specific size or aspect ratio?
+
+  8. Do you have any preference for the ordering of countries or volcano types (e.g.,
+  alphabetical, count-based)?
+
+  9. Should we include any specific labels or annotations on the heatmap to highlight
+  key observations?
+
+  10. Do you want any particular title or subtitle for the heatmap?'
+answers: '1. I do not know.
+
+  2. Yes, I would like a color legend to indicate the count ranges.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, include the count value as text within each cell.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Alphabetical order would be preferred.
+
+  9. I do not know.
+
+  10. The title should be "Distribution of Volcano Types Across Countries".'
+data_attributes:
+- Country
+- Type

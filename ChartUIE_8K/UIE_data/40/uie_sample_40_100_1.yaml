@@ -1,0 +1,55 @@
+initial_prompt: Create a bubble chart to visualize the Hepatitis C Prediction Dataset.
+  Use 'Age' on the X-axis and 'ALB' on the Y-axis. The size of bubbles should represent
+  'CHOL' levels. Include text annotations for key data points to highlight unusual
+  'CHOL' levels, and add highlights to emphasize trends or anomalies in 'ALB' values.
+  This will help to identify patterns related to age, albumin, and cholesterol levels
+  among the different categories like 'Blood Donor'. Utilize color coding to distinguish
+  between 'Sex' (male/female) for better clarity.
+questions: '1. Do you prefer any specific color palette for distinguishing between
+  ''Sex'' categories?
+
+  2. How would you like the key data points with unusual ''CHOL'' levels to be annotated
+  (e.g., specific labels, symbols)?
+
+  3. Do you have any preferences for the size scale of the bubbles representing ''CHOL''
+  levels?
+
+  4. Should the highlights for trends or anomalies in ''ALB'' values be in a specific
+  color or style?
+
+  5. Do you have any preferences for the font size or style of the text annotations?
+
+  6. Would you like a legend to be included, and if so, where should it be positioned
+  on the chart?
+
+  7. Do you prefer a specific layout or aspect ratio for the chart?
+
+  8. Is there a specific range or format you prefer for the ''Age'' and ''ALB'' axes?
+
+  9. Do you want gridlines to be included in the chart, and if so, any specific styling?
+
+  10. Should there be any specific titles or labels for the axes and chart?'
+answers: '1. I am not sure.
+
+  2. Specific labels for unusual ''CHOL'' levels.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, include a legend. I am not sure about the position.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. Yes, include gridlines. I do not know the styling.
+
+  10. Yes, include titles and labels for the axes and chart.'
+data_attributes:
+- Age
+- ALB
+- CHOL
+- Sex

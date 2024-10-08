@@ -1,0 +1,58 @@
+initial_prompt: Create a heatmap to visualize Telco Customer Churn data, focusing
+  on features influencing customer churn rates. Highlight relationships between 'MonthlyCharges',
+  'TotalCharges', and 'Churn' status. Annotate specific values to bring attention
+  to key data points, e.g., high monthly charges leading to higher churn rates. Utilize
+  color variations to emphasize different churn percentages. Keep the heatmap straightforward,
+  providing a clear visual cue on how charge amounts impact customer retention. Include
+  annotations to guide insights, such as trends or noteworthy anomalies. This helps
+  comprehend the business impact swiftly.
+questions: '1. What color scheme do you prefer for the heatmap?
+
+  2. Would you like the color variations to represent specific percentage ranges for
+  churn rates? If so, please specify the ranges.
+
+  3. Do you have a preference for the style of annotations for key data points? (e.g.,
+  exact values, labels, arrows)
+
+  4. Should the heatmap include a legend to explain the color variations? If yes,
+  any specific format?
+
+  5. Do you want gridlines to be displayed on the heatmap for easier reading of the
+  data points?
+
+  6. Is there a specific font style or size you prefer for the annotations and labels?
+
+  7. Would you like to include any segmentation or grouping for better clarity (e.g.,
+  separating high, medium, and low charges)?
+
+  8. Do you have a preference for the layout of the heatmap (e.g., square or rectangular
+  cells)?
+
+  9. Should there be any highlighting or emphasis on specific ranges of ''MonthlyCharges''
+  or ''TotalCharges''?
+
+  10. Is there any additional information or context you would like to include in
+  the heatmap, such as customer demographics or service types?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Exact values would be preferred.
+
+  4. Yes, please include a legend, but I have no specific format in mind.
+
+  5. Yes, include gridlines for easier reading.
+
+  6. I am not sure about the font style or size.
+
+  7. Yes, segmenting high, medium, and low charges would be helpful.
+
+  8. I do not know.
+
+  9. Yes, please highlight higher ranges of ''MonthlyCharges'' and ''TotalCharges''.
+
+  10. I have no specific preference.'
+data_attributes:
+- MonthlyCharges
+- TotalCharges
+- Churn

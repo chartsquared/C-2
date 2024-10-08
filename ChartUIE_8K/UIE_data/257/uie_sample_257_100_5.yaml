@@ -1,0 +1,57 @@
+initial_prompt: I need a stacked column chart that visualizes the COVID-19 Complete
+  Blood Count (CBC) Database. Please include the 'Patient Age' on the x-axis and stack
+  the bars by 'Outcome' (Recovered, Not Recovered). Use different colors for each
+  'Outcome'. For each patient, display the 'Platelet Count', 'Lymphocyte Count', and
+  'Neutrophils Count' as the segments within the bars, with a legend to differentiate
+  them. This will help in comparing the blood count parameters among patients with
+  different outcomes across varying age groups.
+questions: '1. What title would you like for the chart?
+
+  2. Do you have any specific preferences for the colors used to represent the different
+  ''Outcomes'' (Recovered, Not Recovered)?
+
+  3. Would you like to define specific age group bins on the x-axis or use individual
+  ages as the x-axis categories?
+
+  4. Do you prefer any specific ordering for the segments within the bars (e.g., ''Platelet
+  Count'' at the bottom)?
+
+  5. Is there a specific font style or size you prefer for the labels and legends?
+
+  6. Do you want gridlines on the chart, and if so, in which orientation (vertical,
+  horizontal, or both)?
+
+  7. Would you like to annotate any specific data points or segments within the bars?
+
+  8. Is there a specific style or placement you prefer for the legend?
+
+  9. Do you have any preferences for the axis titles and labels formatting (e.g.,
+  orientation, style)?
+
+  10. Would you like to include any reference lines or markers to indicate specific
+  thresholds or ranges?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Individual ages as the x-axis categories.
+
+  4. Platelet Count at the bottom.
+
+  5. I do not know.
+
+  6. Both vertical and horizontal gridlines.
+
+  7. No, I do not want to annotate specific data points.
+
+  8. I am not sure.
+
+  9. I am not sure.
+
+  10. No, I do not want to include reference lines or markers.'
+data_attributes:
+- Patient Age
+- Outcome
+- Platelet Count
+- Lymphocyte Count
+- Neutrophils Count

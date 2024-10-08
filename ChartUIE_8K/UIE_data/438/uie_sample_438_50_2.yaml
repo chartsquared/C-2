@@ -1,0 +1,57 @@
+initial_prompt: Visualize coffee quality across different origins using a geographic
+  heatmap. Highlight key metrics like aroma, flavor, and overall ratings. Include
+  text annotations for top-performing regions. This will help identify regions producing
+  the highest quality coffee.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Should the heatmap display gradients or discrete colors for different ranges
+  of quality metrics?
+
+  3. Would you prefer a particular map projection or geographic boundary style for
+  visual accuracy?
+
+  4. Is there a specific way you would like the annotations for top-performing regions
+  to be styled or positioned?
+
+  5. How would you like to handle regions with missing data? Should they be left blank
+  or marked with a special indicator?
+
+  6. Would you prefer any specific font style or size for the text annotations?
+
+  7. Are there any specific legends or scales that you would like to be included on
+  the map?
+
+  8. Would you prefer the data points to be grouped by regions, countries, or any
+  other geographic boundaries?
+
+  9. Is there a preferred order or grouping for the metrics displayed (e.g., aroma,
+  flavor, overall ratings)?
+
+  10. Do you have any preference for the base map style (e.g., terrain, satellite,
+  or plain)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Text annotations for top-performing regions should be clear and easily readable,
+  preferably near the corresponding regions on the map.
+
+  5. Mark regions with missing data with a special indicator.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. Grouped by countries would be preferred.
+
+  9. No specific preference for the order; key metrics like aroma, flavor, and overall
+  ratings should be included.
+
+  10. I have no specific preference for the base map style.'
+data_attributes:
+- country_of_origin
+- aroma
+- flavor
+- total_cup_points

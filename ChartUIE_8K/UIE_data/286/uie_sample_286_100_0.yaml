@@ -1,0 +1,49 @@
+initial_prompt: '<start of instruction>
+
+  Create a bubble chart to visualize key features from the breast cancer dataset.
+  Use ''radius_mean'' and ''texture_mean'' for the X and Y axes. The bubble size should
+  represent ''area_mean'', and the color should differentiate between ''M'' (Malignant)
+  and ''B'' (Benign) diagnoses. Add text annotations to highlight the largest and
+  smallest bubbles. This will help emphasize variations in tumor characteristics and
+  diagnose focus areas. Add highlights to the ''radius_mean'' for easy distinction.
+  Ensure the chart is clear for healthcare professionals to analyze tumor data effectively.
+
+  <end of instruction>'
+questions: '1. Do you have any specific preferences for the color palette to differentiate
+  between ''M'' (Malignant) and ''B'' (Benign) diagnoses?
+
+  2. What size range would you prefer for the bubbles to ensure they are visually
+  distinct?
+
+  3. Do you have any specific fonts or styles for the text annotations highlighting
+  the largest and smallest bubbles?
+
+  4. How would you like the highlights on ''radius_mean'' to be represented? (e.g.,
+  specific markers, additional color coding)
+
+  5. Are there any specific labels or titles you would like added to the axes or the
+  chart overall?
+
+  6. Do you have preferences for the layout of the legend explaining the color coding
+  for diagnoses?'
+answers: '<start of user emulated response>
+
+  1. I am not sure about the color palette; something that makes the difference clear
+  would be great.
+
+  2. I do not know the size range, but they should be distinct enough to see variations.
+
+  3. I do not have any specific fonts or styles for the text annotations.
+
+  4. Specific markers to highlight ''radius_mean'' would be helpful.
+
+  5. Yes, please add informative labels for the axes and a clear title for the chart.
+
+  6. I have no specific preference for the layout of the legend.
+
+  <end of user emulated response>'
+data_attributes:
+- radius_mean
+- texture_mean
+- area_mean
+- diagnosis

@@ -1,0 +1,53 @@
+initial_prompt: Create a stacked bar chart to visualize the protein expression levels
+  (e.g., DYRK1A_N, ITSN1_N, BDNF_N) across different MouseIDs grouped by Genotype
+  and Treatment.
+questions: '1. Do you have a preferred color scheme for different protein expression
+  levels?
+
+  2. Would you like the bars to be sorted by any specific criteria, such as MouseID
+  or protein levels?
+
+  3. Should the y-axis display the actual values of protein expression levels or percentages?
+
+  4. Do you prefer specific labels or annotations on the chart for clarity?
+
+  5. Are there any specific data points you want to highlight or emphasize in the
+  chart?
+
+  6. Do you have a preferred orientation for displaying the chart (vertical or horizontal
+  bars)?
+
+  7. Would you like gridlines to be included in the chart for better readability?
+
+  8. Should we include a legend to differentiate between the protein expression levels?
+
+  9. Is there any particular font or style you prefer for the axis labels and title?
+
+  10. Would you like to display error bars or variability markers for protein expression
+  levels?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Actual values of protein expression levels.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Vertical bars.
+
+  7. I have no specific preference.
+
+  8. Yes, please include a legend.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- MouseID
+- DYRK1A_N
+- ITSN1_N
+- BDNF_N
+- Genotype
+- Treatment

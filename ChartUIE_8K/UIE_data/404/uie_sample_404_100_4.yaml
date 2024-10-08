@@ -1,0 +1,47 @@
+initial_prompt: I'm planning a column chart to visualize our popup store's profits
+  over time for internal business analysis. Please create a vertical column chart
+  using the 'date' as the x-axis and 'profit' as the y-axis from the provided data.
+  Each column should represent the profit for each corresponding date. Ensure the
+  dates are in chronological order and clearly readable. Label the axes appropriately
+  and use distinct colors for the columns to make the chart visually appealing and
+  easy to understand. This will help us identify trends and make informed business
+  decisions. Thank you!
+questions: '1. Do you have a preferred color palette for the columns?
+
+  2. Would you like the chart to include gridlines for better readability?
+
+  3. Should the chart include data labels displaying the profit values on top of each
+  column?
+
+  4. Is there a specific format you would like for the date labels on the x-axis (e.g.,
+  ''MM/DD/YYYY'', ''Month YYYY'')?
+
+  5. Do you want any specific titles for the chart and the axes?
+
+  6. Should we include any annotations or markers to highlight specific dates or profit
+  values?
+
+  7. Would you prefer the columns to have a standard width or to adjust dynamically
+  based on the number of data points?
+
+  8. Do you have any preferences for the font style or size for the axis labels and
+  titles?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. Yes, I would like data labels displaying the profit values on top of each column.
+
+  4. I am not sure.
+
+  5. Yes, title the chart "Popup Store Profits Over Time" and label the axes as "Date"
+  for the x-axis and "Profit" for the y-axis.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I have no specific preference.'
+data_attributes:
+- date
+- profit

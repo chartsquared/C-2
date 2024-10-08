@@ -1,0 +1,58 @@
+initial_prompt: Create a network diagram to visualize employee attrition data with
+  nodes representing employees and edges showing relationships, such as same job role
+  or department. Highlight nodes with specific colors for different attrition statuses
+  to emphasize trends. Include text annotations to display notable attributes like
+  YearsAtCompany and JobSatisfaction near relevant nodes. The purpose is to identify
+  patterns and relationships in employee attrition, focusing on education and tenure.
+  This will help to uncover trends and insights into workforce dynamics based on the
+  dataset.
+questions: '1. Do you have any preference for specific colors to represent different
+  attrition statuses?
+
+  2. How would you like the nodes to be organized or grouped in the network diagram
+  (e.g., by department, job role)?
+
+  3. Do you have a preferred layout style for the network diagram (e.g., circular,
+  hierarchical)?
+
+  4. Should the text annotations for YearsAtCompany and JobSatisfaction be always
+  visible, or should they appear only on hover?
+
+  5. Do you have any specific font size or style preferences for the text annotations?
+
+  6. Would you like any additional attributes displayed on the nodes other than YearsAtCompany
+  and JobSatisfaction?
+
+  7. Is there a maximum number of relationships (edges) you would prefer to display
+  to avoid clutter?
+
+  8. Do you have any preference on the size of the nodes (e.g., should it be proportional
+  to YearsAtCompany or another metric)?
+
+  9. Should any specific departments or job roles be emphasized or highlighted differently
+  in the network diagram?'
+answers: '1. I am not sure.
+
+  2. By department.
+
+  3. I am not sure.
+
+  4. Always visible.
+
+  5. I do not know.
+
+  6. No, just YearsAtCompany and JobSatisfaction.
+
+  7. I do not know.
+
+  8. No preference.
+
+  9. No, treat all departments and job roles equally.'
+data_attributes:
+- EmployeeNumber
+- Attrition
+- JobRole
+- Department
+- YearsAtCompany
+- JobSatisfaction
+- Education

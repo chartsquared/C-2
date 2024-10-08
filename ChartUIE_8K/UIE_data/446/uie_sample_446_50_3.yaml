@@ -1,0 +1,34 @@
+initial_prompt: Create a choropleth map showing the distribution of animal rescue
+  incidents across different wards and boroughs. Use the `ward`, `borough`, and `incident_number`
+  as the key fields. Highlight areas with higher incidents to identify hotspots.
+questions: '1. Do you have a preferred color scheme for highlighting the areas with
+  higher incidents?
+
+  2. Would you like specific labels or annotations for wards and boroughs with the
+  highest incidents?
+
+  3. Do you prefer the map to be displayed at a specific geographic scale, such as
+  local wards or entire boroughs?
+
+  4. Should the map include a legend to indicate the scale of incident numbers?
+
+  5. Would you like to display the incident numbers directly on the map?
+
+  6. Are there specific types of animal rescue incidents that should be highlighted
+  or filtered?'
+answers: '1. I do not know.
+
+  2. Yes, I would like specific labels or annotations for wards and boroughs with
+  the highest incidents.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- ward
+- borough
+- incident_number

@@ -1,0 +1,57 @@
+initial_prompt: Please create a scatter plot visualizing the baby names data. Focus
+  on the 'n' (number of occurrences) on the y-axis and the 'year' on the x-axis. Highlight
+  points representing specific names such as 'Helen', 'Amanda', and 'Betty'. Include
+  text annotations for these highlighted points to show the 'prop' (proportion) value.
+  The purpose of this visualization is to see how the popularity of these names changes
+  over time. This helps in understanding naming trends over years and identifying
+  peaks in name popularity. Highlighting and annotating key names will make these
+  trends more evident.
+questions: '1. Do you have a preferred color scheme for the scatter plot?
+
+  2. Should the highlighted names (''Helen'', ''Amanda'', ''Betty'') have specific
+  colors or markers?
+
+  3. Do you want gridlines on the chart to enhance readability?
+
+  4. Is there a preferred font style or size for the text annotations of the ''prop''
+  values?
+
+  5. Would you like to include a legend in the scatter plot?
+
+  6. Do you have a specific title or subtitle for the scatter plot in mind?
+
+  7. How would you like the axis labels to be formatted (e.g., any particular wording
+  or units)?
+
+  8. Are there any specific requirements for the axis ranges or scaling (e.g., logarithmic
+  scale)?
+
+  9. Do you want any background patterns or images on the chart?
+
+  10. Should the plot include additional data points beyond ''Helen'', ''Amanda'',
+  and ''Betty'', or focus solely on these names?'
+answers: '1. I am not sure.
+
+  2. Yes, please use specific colors or markers for each highlighted name.
+
+  3. Yes, I would like gridlines to enhance readability.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend.
+
+  6. I do not have a specific title or subtitle in mind.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. No, I do not want any background patterns or images.
+
+  10. The plot can include additional data points beyond ''Helen'', ''Amanda'', and
+  ''Betty'', but these three should be highlighted.'
+data_attributes:
+- year
+- name
+- n
+- prop

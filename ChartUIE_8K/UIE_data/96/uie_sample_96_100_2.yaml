@@ -1,0 +1,54 @@
+initial_prompt: '<start of instructions>
+
+  Create a scatter plot visualizing the Palmer Penguins dataset focusing on ''bill_length_mm''
+  vs ''bill_depth_mm''. Color the points based on species and differentiate by sex
+  using different shapes. Highlight missing values to emphasize data gaps. Annotate
+  specific outliers and key points to draw attention to interesting data insights.
+  This visualization will help in understanding the relationship between bill dimensions
+  among different species and genders of penguins. Ensure to provide contextual annotations
+  and highlights for better interpretability.
+
+  <end of instructions>'
+questions: '1. Do you have any specific color palette preferences for differentiating
+  between the species?
+
+  2. What shapes do you prefer to use for differentiating between the sexes?
+
+  3. How would you like the missing values to be highlighted (e.g., different color,
+  shape, or outline)?
+
+  4. Do you have any specific requirements for annotating outliers and key points
+  (e.g., text size, font, color)?
+
+  5. Are there any specific points or ranges you would like to emphasize with additional
+  annotations or highlights?
+
+  6. Do you prefer a particular style for the chart title and axis labels (e.g., font
+  type, size, color)?
+
+  7. Do you want a legend for species, sex, and missing values displayed? If yes,
+  do you have any preferences for its placement?
+
+  8. Are there any additional contextual annotations or labels that you would like
+  to include in the chart?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I am not sure about the shapes for differentiating between the sexes.
+
+  3. Highlight missing values with a different color.
+
+  4. I do not have any specific requirements for annotating outliers and key points.
+
+  5. I do not have specific points or ranges in mind to emphasize.
+
+  6. I have no specific preference for the chart title and axis labels style.
+
+  7. Yes, please include a legend for species, sex, and missing values, but I have
+  no specific preference for its placement.
+
+  8. No additional contextual annotations or labels are needed.'
+data_attributes:
+- species
+- bill_length_mm
+- bill_depth_mm
+- sex

@@ -1,0 +1,46 @@
+initial_prompt: Create a choropleth map to visualize the distribution of near-Earth
+  comets. Use the 'i' (inclination) values to color-code regions. Ensure the map shows
+  each comet's orbital properties, such as 'w' (argument of perihelion) and 'Node'
+  (longitude of ascending node).
+questions: '1. Do you have a specific geographical region focus for the choropleth
+  map, or should it be global?
+
+  2. Is there a preference for the color scheme used to represent the ''i'' (inclination)
+  values?
+
+  3. Would you like to include a legend that explains the color coding for the inclination
+  values?
+
+  4. Do you want the size or shape of markers to represent any additional data attributes,
+  such as ''w'' or ''Node''?
+
+  5. Should the map include labels or markers for each comet to display its name,
+  or just the color-coding is sufficient?
+
+  6. Do you have any preference for the map''s projection type (e.g., Mercator, Robinson)?
+
+  7. Are there specific ranges or thresholds for the inclination values that you would
+  like highlighted or categorized differently?
+
+  8. Would you like to see any additional orbital properties or details in tooltips
+  when hovering over regions or markers?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please include a legend.
+
+  4. I am not sure.
+
+  5. Just the color-coding is sufficient.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- i
+- w
+- Node
+- Object

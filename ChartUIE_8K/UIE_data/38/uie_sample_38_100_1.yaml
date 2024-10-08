@@ -1,0 +1,47 @@
+initial_prompt: Please create a geographic heatmap visualizing data science job salaries
+  across different countries. Highlight high-salary regions and annotate key data
+  points like job titles and experience levels. Emphasize the remote ratio and company
+  sizes for better context. Use the provided data details for context.
+questions: '1. Do you have a preference for the color scheme used in the heatmap?
+
+  2. How would you like the high-salary regions to be highlighted (e.g., specific
+  color, intensity)?
+
+  3. Should the key data points like job titles and experience levels be annotated
+  directly on the map or in a separate legend?
+
+  4. Do you want the remote ratio and company sizes to be shown as separate overlays
+  on the map, or integrated into the tooltip information?
+
+  5. Are there specific annotations or labels you would like to see for different
+  job titles and experience levels?
+
+  6. How would you like the company sizes to be visualized (e.g., different shapes,
+  sizes, or colors)?
+
+  7. Do you prefer any specific regions or countries to be focused on or zoomed in
+  within the geographic heatmap?
+
+  8. Is there a specific type of map projection you prefer for the geographic heatmap?'
+answers: '1. I do not know.
+
+  2. Intensity.
+
+  3. Annotated directly on the map.
+
+  4. Integrated into the tooltip information.
+
+  5. I am not sure.
+
+  6. Different shapes.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- company_location
+- salary_in_usd
+- job_title
+- experience_level
+- remote_ratio
+- company_size

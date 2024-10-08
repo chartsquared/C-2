@@ -1,0 +1,56 @@
+initial_prompt: Create a choropleth map visualizing the number of paintings by the
+  nationality of artists. Use the dataset '20.csv' containing information on 50 famous
+  artists, their nationalities, and the number of paintings attributed to each. The
+  map should highlight countries based on the total number of paintings produced by
+  artists from each country, allowing us to see which nationalities contributed most
+  to the "Best Artworks of All Time." The color gradient should represent the painting
+  count, with darker shades indicating higher numbers. Include a legend for clarity.
+  Use data from the 'nationality' and 'paintings' columns.
+questions: '1. Do you have any specific color preferences for the gradient used in
+  the choropleth map?
+
+  2. Would you like any specific countries to be highlighted or distinguished in any
+  special way?
+
+  3. Do you prefer a particular style or theme for the map (e.g., classic, modern,
+  artistic)?
+
+  4. Are there any additional labels or annotations you would like to include on the
+  map?
+
+  5. Do you have a preferred geographical projection for the map?
+
+  6. Would you like to include any specific titles or subtitles on the map?
+
+  7. Is there a specific font style or size you would like for the legends and labels?
+
+  8. Do you want any specific information to be displayed when a user hovers over
+  a country on the map?
+
+  9. Should the legend have a particular position or layout on the map?
+
+  10. Are there any specific thresholds or ranges for the color gradient that you
+  want to set?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I would prefer a title like "Total Number of Paintings by Nationality" and maybe
+  a subtitle indicating the dataset source.
+
+  7. I am not sure.
+
+  8. I do not need that since I want an image, not an interactive map.
+
+  9. I have no specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- nationality
+- paintings

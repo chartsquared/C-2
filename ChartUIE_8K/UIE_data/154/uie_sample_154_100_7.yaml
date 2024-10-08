@@ -1,0 +1,54 @@
+initial_prompt: I need a violin plot to visualize students' GPA distribution categorized
+  by gender and race. Specifically, I want to see how male and female students' GPAs
+  compare across different races. The plot should display the density of GPA values
+  for each subgroup to understand variations within genders and races. This will help
+  in analyzing performance trends in mathematics courses more effectively. Please
+  make sure each violin segment is properly labeled so it's easy to distinguish between
+  gender and race categories. Use data from the provided format for accurate representation.
+  Thank you!
+questions: '1. Do you have any specific color preferences for the different gender
+  and race categories?
+
+  2. Would you like to include summary statistics (e.g., median, quartiles) within
+  the violin plot?
+
+  3. Do you prefer vertical or horizontal violin plots?
+
+  4. How should the different categories (gender and race) be arranged within the
+  plot (e.g., grouped by gender first or race first)?
+
+  5. Do you have a preferred title for the chart?
+
+  6. Is there any specific font type or size you would like for the labels and title?
+
+  7. Should the axes be labeled in any particular way?
+
+  8. Would you like grid lines to be displayed on the plot, and if so, in what style?
+
+  9. Are there any additional annotations or markers you wish to include in the plot?
+
+  10. Do you have any specific requirements for the plot''s overall dimensions or
+  aspect ratio?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Vertical violin plots are preferred.
+
+  4. Grouped by gender first would be good.
+
+  5. I do not have a specific title in mind.
+
+  6. I am not sure.
+
+  7. Label the axes with "GPA" for the y-axis and "Gender and Race" for the x-axis.
+
+  8. I do not know.
+
+  9. I do not have any additional annotations or markers in mind.
+
+  10. I am not sure.'
+data_attributes:
+- gender
+- race
+- GPA

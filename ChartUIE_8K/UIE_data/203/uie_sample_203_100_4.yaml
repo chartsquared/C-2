@@ -1,0 +1,56 @@
+initial_prompt: Create a bar chart that visualizes the distribution of images by age
+  group from the "Age Detection - Face Recognition Dataset". The x-axis should represent
+  the unique age groups (e.g., '18-20', '21-25'), while the y-axis should show the
+  count of images in each age group. Each bar should represent one age group, with
+  the height corresponding to the number of images. Additionally, use different colors
+  to differentiate between 'train' and 'test' splits within each age group to show
+  the distribution across these categories as well.
+questions: '1. Do you have a preferred color scheme for differentiating between ''train''
+  and ''test'' splits?
+
+  2. Should the chart include labels for the counts on top of each bar?
+
+  3. Do you prefer the bars to be grouped or stacked to represent the ''train'' and
+  ''test'' splits?
+
+  4. Would you like to include a legend to explain the colors representing ''train''
+  and ''test'' splits?
+
+  5. Is there a specific order you would like the age groups to be displayed on the
+  x-axis (e.g., ascending, descending, or custom order)?
+
+  6. Are there any specific font styles or sizes you prefer for the chart titles,
+  axis labels, and legends?
+
+  7. Should the axis labels include specific units or descriptions?
+
+  8. Would you like to display grid lines on the chart to enhance readability?
+
+  9. Should any annotations or additional information be included on the chart?
+
+  10. Do you have a preference for the overall dimensions or aspect ratio of the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include labels for the counts on top of each bar.
+
+  3. I prefer the bars to be grouped to represent the ''train'' and ''test'' splits.
+
+  4. Yes, include a legend to explain the colors representing ''train'' and ''test''
+  splits.
+
+  5. Ascending order for the age groups would be preferred on the x-axis.
+
+  6. I do not know.
+
+  7. No specific units or descriptions needed for the axis labels.
+
+  8. Yes, display grid lines on the chart to enhance readability.
+
+  9. I do not know.
+
+  10. I have no specific preference for the overall dimensions or aspect ratio of
+  the chart.'
+data_attributes:
+- age
+- split
+- file

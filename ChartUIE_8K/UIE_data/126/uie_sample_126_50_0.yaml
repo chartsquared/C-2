@@ -1,0 +1,45 @@
+initial_prompt: Create a geographic heatmap showing housing prices across California.
+  Highlight areas with missing bedroom data. Use text annotations for cities with
+  highest and lowest median house values.
+questions: '1. Do you have a preferred color scheme for the heatmap representing housing
+  prices?
+
+  2. How would you like the areas with missing bedroom data to be highlighted (e.g.,
+  specific color, pattern)?
+
+  3. What kind of text annotations would you prefer for the cities with the highest
+  and lowest median house values (e.g., font size, color)?
+
+  4. Do you prefer any specific map background style (e.g., terrain, satellite, plain)?
+
+  5. Should the heatmap include a legend explaining the color scale for median house
+  values?
+
+  6. Is there a specific geographic projection you prefer for the map (e.g., Mercator,
+  Albers)?
+
+  7. Would you like to include markers or pins for each data point location (e.g.,
+  dots, icons)?
+
+  8. Are there any additional geographical features you would like to include in the
+  map (e.g., boundaries, main roads, landmarks)?'
+answers: '1. I am not sure.
+
+  2. Specific color, maybe red.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, include a legend.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No, just the main features for the purpose needed.'
+data_attributes:
+- longitude
+- latitude
+- total_bedrooms
+- median_house_value

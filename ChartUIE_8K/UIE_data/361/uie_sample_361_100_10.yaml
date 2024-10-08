@@ -1,0 +1,54 @@
+initial_prompt: I have a dataset about cardiovascular disease and I need a bar chart
+  visualizing the data. Specifically, I want to see the frequency of different chest
+  pain types among patients, categorized by gender. The x-axis should represent the
+  chest pain types (from 0 to 3), and the y-axis should show the number of patients.
+  We should have separate bars for male and female patients within each chest pain
+  type category to compare the prevalence between genders. Please ensure the chart
+  is easy to understand and accurately reflects the data.
+questions: '1. Do you have a preferred color scheme for distinguishing between male
+  and female patients?
+
+  2. Would you like to include a legend to specify which colors represent male and
+  female patients?
+
+  3. Do you prefer the bars for male and female patients to be grouped or stacked
+  within each chest pain type category?
+
+  4. Would you like to add data labels on the bars showing the exact number of patients?
+
+  5. Should there be any specific title for the chart?
+
+  6. Do you want to include labels for the x-axis and y-axis? If so, what should they
+  be?
+
+  7. Is there a specific font style or size you prefer for the text in the chart (titles,
+  labels, annotations)?
+
+  8. Would you like gridlines to be displayed on the chart for better readability?
+
+  9. Do you need any annotations or additional notes on the chart to highlight key
+  findings?'
+answers: '1. I do not have a specific preference.
+
+  2. Yes, I would like to include a legend to specify which colors represent male
+  and female patients.
+
+  3. I prefer the bars for male and female patients to be grouped within each chest
+  pain type category.
+
+  4. Yes, I would like to add data labels on the bars showing the exact number of
+  patients.
+
+  5. The title should be "Frequency of Chest Pain Types by Gender"
+
+  6. Yes, the x-axis label should be "Chest Pain Types" and the y-axis label should
+  be "Number of Patients".
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. I am not sure.'
+data_attributes:
+- gender
+- chestpain

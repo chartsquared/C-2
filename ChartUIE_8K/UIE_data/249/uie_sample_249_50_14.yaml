@@ -1,0 +1,37 @@
+initial_prompt: Please create a column chart that visualizes the price, market cap,
+  and earnings per share of High-Tech Companies on NASDAQ. Use the data provided in
+  the CSV file to illustrate the differences clearly. Thank you!
+questions: "1. Do you have any specific color preferences for different data attributes\
+  \ (e.g., price, market cap, earnings per share)?\n2. Would you prefer to display\
+  \ the chart with a specific style or theme (e.g., classic, modern)?\n3. Do you want\
+  \ the company names to be displayed along the X-axis, or do you have another preference?\n\
+  4. Should the data values be displayed directly on the columns, or do you prefer\
+  \ a tooltip approach when hovering over them?\n5. Is there a particular order in\
+  \ which you want the companies to be listed (e.g., ascending/descending by market\
+  \ cap)?\n6. Do you prefer any specific title or subtitles for the chart to provide\
+  \ more context?\n7. Do you want to include gridlines or backgrounds that help in\
+  \ comparing the data more accurately?\n8. Is there a specific font style and size\
+  \ you would like to use for labels and titles? \n9. Do you need any annotation or\
+  \ comments on the chart to highlight specific points?"
+answers: '1. I am not sure.
+
+  2. Modern would be good.
+
+  3. Yes, include the company names along the X-axis.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Yes, include gridlines.
+
+  8. I do not know.
+
+  9. No, I do not think annotations are needed.'
+data_attributes:
+- price
+- market_cap
+- earnings_per_share
+- name

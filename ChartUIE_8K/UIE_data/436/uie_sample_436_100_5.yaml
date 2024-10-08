@@ -1,0 +1,45 @@
+initial_prompt: I want to create a scatter plot to visualize the performance of different
+  marbles in the Marbula 1 Season 1 races. Specifically, plot 'number_laps' against
+  'avg_time_lap' for each marble to see their lap times across different races. Color
+  each marble by 'team_name' and use different shapes for different 'race'. Ensure
+  the plot shows the spread and clustering of lap times, highlighting which teams/marbles
+  consistently perform better or worse. Include a legend for teams and races. Scatter
+  plot should also display 'track_length_m' as a variable size of the points to add
+  another dimension to the analysis.
+questions: '1. Do you have any preferences for the color scheme used to represent
+  different ''team_name''?
+
+  2. Is there a specific set of shapes you prefer to use for different ''race'' categories?
+
+  3. Do you want any specific type of legend placement or layout in the chart?
+
+  4. What title or specific labels would you like for the x-axis and y-axis?
+
+  5. Are there any specific annotations or highlights you want to include to emphasize
+  certain data points or trends?
+
+  6. Do you prefer a particular font style or size for the labels and legend?
+
+  7. Would you like to add gridlines or any background elements to the scatter plot?'
+answers: '1. I do not have any specific preferences for the color scheme used to represent
+  different ''team_name''.
+
+  2. I am not sure about the specific set of shapes for different ''race'' categories.
+
+  3. I do not know about any specific legend placement or layout in the chart.
+
+  4. Please use ''Number of Laps'' for the x-axis and ''Average Time per Lap (s)''
+  for the y-axis.
+
+  5. I do not have any specific annotations or highlights in mind.
+
+  6. I have no specific preference for the font style or size for the labels and legend.
+
+  7. I do not have a preference; use your best judgment for gridlines or background
+  elements.'
+data_attributes:
+- number_laps
+- avg_time_lap
+- team_name
+- race
+- track_length_m

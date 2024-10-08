@@ -1,0 +1,39 @@
+initial_prompt: Create a box chart to visualize the distribution of the number of
+  individuals (n) each year from the sample data, segmented by names. This chart should
+  help identify the spread and outliers of the most common names in each year.
+questions: "1. Do you have a specific color palette preference for the box chart?\n\
+  2. Would you like to include a title for the chart? If yes, what should it be?\n\
+  3. Do you want to display grid lines on the chart?\n4. Should the chart include\
+  \ axis labels? If yes, please specify the labels for both the x-axis and y-axis.\n\
+  5. Would you like the outliers to be highlighted in a specific way? If yes, please\
+  \ specify.\n6. Do you prefer any particular ordering for the names in the box chart\
+  \ (e.g., alphabetical, by frequency)?\n7. Should we include a legend to differentiate\
+  \ between the names?\n8. Is there a specific format or style you prefer for the\
+  \ tooltip (hover details)?\n9. Do you have a preference for the size or aspect ratio\
+  \ of the chart? \n10. Should the chart include summary statistics like median or\
+  \ quartiles visibly on the plot?"
+answers: '1. I do not know.
+
+  2. Yes, the title should be "Distribution of the Number of Individuals by Year and
+  Name".
+
+  3. I am not sure.
+
+  4. Yes, the x-axis label should be "Year" and the y-axis label should be "Number
+  of Individuals (n)".
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Yes.
+
+  8. I do not know.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- year
+- name
+- n

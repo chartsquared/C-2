@@ -1,0 +1,44 @@
+initial_prompt: Please create a line chart to visualize the relationship between age
+  and systolic blood pressure (sysBP) in predicting heart disease over ten years.
+  The x-axis should represent age, while the y-axis should show systolic blood pressure.
+  Separate lines should show data for males and females. Missing values should be
+  handled appropriately and a legend to distinguish between gender. Include titles
+  and labels to make the chart informative. This visualization should help in understanding
+  how age and blood pressure contribute to heart disease risk in both genders.
+questions: '1. Do you have any preferred color schemes for the lines representing
+  males and females?
+
+  2. Is there a specific title you would like for the chart?
+
+  3. Do you have any preferences for the labels on the x-axis and y-axis?
+
+  4. Should the legend be placed in a specific location on the chart?
+
+  5. Are there any specific instructions on how you would like the missing values
+  to be handled?
+
+  6. Would you like gridlines to be included on the chart for better readability?
+
+  7. Is there a particular font style or size you prefer for the titles and labels?
+
+  8. Would you like to include annotations or additional information on the chart
+  for key data points?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. X-axis label: "Age", Y-axis label: "Systolic Blood Pressure (mmHg)"
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Yes, include gridlines for better readability.
+
+  7. I have no specific preference.
+
+  8. No additional annotations or information needed.'
+data_attributes:
+- age
+- sysBP
+- male

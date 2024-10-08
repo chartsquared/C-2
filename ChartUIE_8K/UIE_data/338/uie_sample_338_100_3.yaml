@@ -1,0 +1,51 @@
+initial_prompt: I need a scatter plot to visualize the relationship between ProductionVolume
+  and DefectRate from the manufacturing defects dataset. Each point should represent
+  an observation, with the x-axis showing ProductionVolume and the y-axis showing
+  DefectRate. Additionally, color-code the points based on the DefectStatus to differentiate
+  between defective and non-defective items. Add trend lines if possible to show correlation.
+  Make sure axes are labeled clearly and the chart has a legend. This will help in
+  understanding how production volume might affect defect rates in the supply chain.
+questions: '1. Do you have any preference for the color scheme used for points representing
+  defective and non-defective items?
+
+  2. Should the trend lines be linear or would you prefer a different type of fit
+  (e.g., polynomial)?
+
+  3. Do you prefer any specific markers or shapes for the data points?
+
+  4. How would you like the trend lines to be distinguished (e.g., color, dashed lines)?
+
+  5. Is there a specific title you would like to add to the scatter plot?
+
+  6. Do you have any specific font preferences or sizes for the axis labels and legend?
+
+  7. Would you like to include gridlines on the scatter plot for better readability?
+
+  8. Should the chart include annotations for any significant points or outliers?
+
+  9. Do you have any preferences for the legend placement on the chart?
+
+  10. Is there a specific background color you would like for the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not have any specific preference.
+
+  4. I do not know.
+
+  5. No specific title.
+
+  6. I am not sure.
+
+  7. Yes, include gridlines.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- ProductionVolume
+- DefectRate
+- DefectStatus

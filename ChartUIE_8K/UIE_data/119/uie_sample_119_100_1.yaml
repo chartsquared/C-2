@@ -1,0 +1,31 @@
+initial_prompt: Create a histogram that visualizes the Weekly_Sales from the Walmart
+  Sales data. The purpose is to understand the distribution of weekly sales across
+  different stores and dates. Include text annotations for peaks in sales to highlight
+  important values. Utilize highlights to differentiate between normal and holiday
+  weeks by changing the bar colors based on the Holiday_Flag. This will help in identifying
+  any patterns or anomalies in sales, which is crucial for business insights and decision-making.
+  Aim for a clear, informative chart that emphasizes key data points and trends.
+questions: '1. Do you have a preferred color scheme for the bars representing normal
+  weeks and holiday weeks?
+
+  2. Would you like specific text annotations format or style for highlighting the
+  peaks in sales?
+
+  3. Do you have any preferences regarding the number of bins for the histogram?
+
+  4. Would you like to include any additional labels or legends on the chart?
+
+  5. Do you have a preference for the chart title or axis labels?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure, any clear and legible format would be fine.
+
+  3. I do not know, whatever best represents the data.
+
+  4. Yes, including a legend to differentiate between normal and holiday weeks would
+  be helpful.
+
+  5. I do not have any specific preferences for the chart title or axis labels.'
+data_attributes:
+- Weekly_Sales
+- Holiday_Flag

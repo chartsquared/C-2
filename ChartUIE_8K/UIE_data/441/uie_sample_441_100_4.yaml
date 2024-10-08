@@ -1,0 +1,42 @@
+initial_prompt: 'I''d like a column chart visualizing women''s college basketball
+  data. Specifically, the chart should compare the total wins ("full_w") and losses
+  ("full_l") of several schools from different conferences. Each school should be
+  represented by a separate column, with two stacked segments representing wins and
+  losses. Ensure labels are clear and color-coded for easy comparison. Data points
+  for each school should include their conference for added context. This will help
+  visualize the performance of different teams across various conferences effectively.
+  Use the sample data provided for schools like Arizona St., Auburn, and Cheyney.
+
+  '
+questions: '1. Do you have specific color preferences for the wins and losses segments?
+
+  2. Would you like the schools to be grouped by conference on the x-axis?
+
+  3. Do you have a preferred font style or size for the labels?
+
+  4. Should the chart include grid lines for easier comparison of values?
+
+  5. Would you like to include a legend for the color codes representing wins and
+  losses?
+
+  6. Do you want to display the exact values of wins and losses on the chart?
+
+  7. How would you prefer the x-axis and y-axis to be labeled?'
+answers: '1. I do not know.
+
+  2. Yes, please group the schools by conference on the x-axis.
+
+  3. I am not sure.
+
+  4. Yes, include grid lines for easier comparison.
+
+  5. Yes, I would like a legend for the color codes.
+
+  6. Yes, please display the exact values of wins and losses on the chart.
+
+  7. I do not have a specific preference for the axis labels.'
+data_attributes:
+- school
+- conference
+- full_w
+- full_l

@@ -1,0 +1,48 @@
+initial_prompt: Please create a scatter plot showing the historical shares of EV stock,
+  EV sales, and BEV sales in Australia for Cars from 2011. Use different markers or
+  colors for 'EV stock share', 'EV sales share', and 'EV sales' on the scatter plot.
+  The x-axis should represent the 'year' while the y-axis should represent the 'value'
+  with appropriate labels for the 'unit' (percent for shares and Vehicles for sales).
+  Include a legend to distinguish between the different parameters and ensure the
+  chart is well-labeled with a title reflecting the trend analysis of EV adoption
+  in Australia. Thank you!
+questions: '1. Do you have a specific color preference for each parameter (''EV stock
+  share'', ''EV sales share'', ''EV sales'')?
+
+  2. Do you prefer specific markers for each parameter (''EV stock share'', ''EV sales
+  share'', ''EV sales'')? If yes, please specify.
+
+  3. What title would you like for the chart?
+
+  4. Do you have a preferred font style or size for the labels and title?
+
+  5. Should the x-axis and y-axis labels be in a specific format or style?
+
+  6. Do you want gridlines on the chart? If yes, do you have a preference for their
+  style or color?
+
+  7. Is there a particular style or theme you prefer for the overall appearance of
+  the chart?'
+answers: '1. I do not have a specific color preference.
+
+  2. I am not sure.
+
+  3. "Trend Analysis of EV Adoption in Australia (2011-Present)"
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, I would like gridlines, but I do not have a preference for their style or
+  color.
+
+  7. I do not know.'
+data_attributes:
+- region
+- category
+- parameter
+- mode
+- powertrain
+- year
+- unit
+- value

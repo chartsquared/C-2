@@ -1,0 +1,53 @@
+initial_prompt: Create a bar chart using the Breast Cancer Wisconsin (Diagnostic)
+  Data Set. The chart should compare the mean values of different features such as
+  radius, texture, perimeter, and area for the 'diagnosis' categories ('M' for malignant
+  and 'B' for benign). Use separate bars for 'M' and 'B' to easily visualize the differences.
+  Ensure the x-axis represents the feature types and the y-axis represents their mean
+  values. Include a legend to differentiate between 'M' and 'B'. This will help in
+  understanding which features are more indicative of malignant vs. benign diagnoses.
+questions: '1. Do you have any specific color preferences for the bars representing
+  ''M'' and ''B'' categories?
+
+  2. What title would you like the chart to have?
+
+  3. Are there any specific font preferences for the axis labels and title?
+
+  4. Would you like to include data labels on the bars?
+
+  5. Do you prefer a particular order for the features on the x-axis?
+
+  6. Should the y-axis have a specific range or scaling?
+
+  7. Would you like gridlines in the background of the chart?
+
+  8. Do you have any preferences for the style or placement of the legend?
+
+  9. Are there any specific annotations or notes you want to add to the chart?
+
+  10. Should there be any particular formatting for the mean values on the y-axis
+  (e.g., decimal places, units)?'
+answers: '1. I am not sure.
+
+  2. "Comparison of Mean Feature Values for Malignant and Benign Diagnoses"
+
+  3. I am not sure.
+
+  4. Yes.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes.
+
+  8. I have no specific preference.
+
+  9. No.
+
+  10. I do not know.'
+data_attributes:
+- diagnosis
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean

@@ -1,0 +1,61 @@
+initial_prompt: Create a grouped bar chart comparing the number of unique values in
+  each column of the dataset titled "Internshala Jobs Dataset" from the data-science-and-analytics
+  category. The x-axis should represent the column names (Company_Name, JobTitles,
+  Skills, Description, Stipend, Links), and the y-axis should depict the count of
+  unique values. Each bar group will distinguish the different columns, highlighting
+  the diversity within each data field. Please ensure the chart is color-coded for
+  clarity and includes labels for both axes and a legend to make understanding easier.
+questions: '1. Do you have a preferred color palette or specific colors that should
+  be used for the bars?
+
+  2. Do you have a preferred style for the bar edges (e.g., solid, dashed, no border)?
+
+  3. Should the y-axis use a specific scale (e.g., linear, logarithmic), or should
+  it be automatically scaled based on the data?
+
+  4. Is there a particular font style and size you prefer for the axis labels, legend,
+  and title?
+
+  5. Would you like to include gridlines on the chart for better readability, and
+  if so, should they be styled in a particular way?
+
+  6. Do you have a specific preference for the spacing or width of the bars within
+  each group?
+
+  7. Should the legend be positioned in a particular location on the chart (e.g.,
+  top, bottom, left, right)?
+
+  8. Do you want any specific annotations or data labels directly on the bars to show
+  the exact count of unique values?
+
+  9. Is there a preferred background color or texture for the chart overall?
+
+  10. Would you like to see any additional information or notes included on the chart
+  (e.g., source of data, date of dataset)?'
+answers: '1. I do not have a preferred color palette or specific colors.
+
+  2. I have no specific preference for the bar edges.
+
+  3. The y-axis can be automatically scaled based on the data.
+
+  4. I am not sure about the font style and size; default settings should be fine.
+
+  5. Including gridlines would be helpful for readability, but I have no preference
+  for their style.
+
+  6. I do not have a specific preference for the spacing or width of the bars.
+
+  7. The legend can be positioned where it fits best.
+
+  8. Including data labels directly on the bars to show the exact count would be useful.
+
+  9. I have no specific preference for the background color or texture.
+
+  10. I do not know if additional information or notes are necessary.'
+data_attributes:
+- Company_Name
+- JobTitles
+- Skills
+- Description
+- Stipend
+- Links

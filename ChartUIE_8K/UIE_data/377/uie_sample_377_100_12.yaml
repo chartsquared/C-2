@@ -1,0 +1,57 @@
+initial_prompt: 'Create a donut chart to visualize the election results from the given
+  dataset (`../Extra_datas/data/377.csv`). The chart should depict the percentage
+  share of votes for each party (CON, LAB, LIB, Brexit, Green, NAT, MIN, OTH) across
+  the three sample constituencies provided: Aldershot, Aldridge-Brownhills, and Altrincham
+  and Sale West. Ensure each segment is clearly marked with the party abbreviation
+  and percentage. Additionally, center label should show the winning party for each
+  constituency. The outer ring can represent the vote percentages, while the inner
+  ring can highlight constituency names.'
+questions: '1. Do you have any specific color preferences for each party segment in
+  the chart?
+
+  2. Are there any specific font styles or sizes you prefer for the labels and percentages?
+
+  3. Would you like to include a legend alongside the donut chart?
+
+  4. Do you prefer the chart to have a title? If so, please specify.
+
+  5. Do you have any preferences for the inner ring''s appearance or style?
+
+  6. Are there any additional annotations or markings you would like to include in
+  the chart?
+
+  7. Do you prefer the segments to be sorted in a particular order, such as by vote
+  percentage or party name?
+
+  8. Would you like to include grid lines or background patterns in the chart?
+
+  9. Are there any specific size dimensions you prefer for the chart?'
+answers: '1. I am not sure about specific color preferences.
+
+  2. I don''t have any specific font styles or sizes in mind.
+
+  3. Yes, I would like to include a legend alongside the donut chart.
+
+  4. Yes, the title could be "Election Results - Percentage Share of Votes".
+
+  5. I am not sure about preferences for the inner ring''s appearance.
+
+  6. I don''t have any additional annotations or markings in mind.
+
+  7. I am not sure about the order of the segments; maybe sorting by vote percentage
+  could work.
+
+  8. I do not know if grid lines or background patterns are necessary.
+
+  9. I do not have any specific size dimensions in mind.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Winner

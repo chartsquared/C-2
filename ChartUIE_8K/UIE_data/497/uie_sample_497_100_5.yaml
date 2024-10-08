@@ -1,0 +1,42 @@
+initial_prompt: 'Create a heatmap visualizing the correlation between ''transistor_count'',
+  ''date_of_introduction'', ''process'', and ''area'' for different processors. Use
+  ''designer'' as a categorical axis to distinguish designs by Intel and other designers.
+  Highlight missing data points and display them in a contrasting color. Title: "Processor
+  Features Comparison Heatmap". Include axis labels, a color bar indicating correlation
+  strength, and a legend for missing values. Additionally, it''s essential to clearly
+  mark the time progression on the heatmap. The goal is to reveal trends and correlations
+  over time and between different processor designs.'
+questions: '1. Do you have any specific color palette preference for the heatmap?
+
+  2. How would you like missing data to be represented (e.g., specific color or pattern)?
+
+  3. Should the correlation strength be displayed as numerical values directly on
+  the heatmap?
+
+  4. Is there a preferred format or style for the axis labels and title?
+
+  5. Would you like to customize the granularity or interval of the time progression
+  marks on the heatmap?
+
+  6. Is there a specific range or limit for correlation values you want to highlight?
+
+  7. Do you have any preference for the positioning of the color bar and legend?'
+answers: '1. I do not know.
+
+  2. I am not sure, maybe a specific color?
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- transistor_count
+- date_of_introduction
+- process
+- area
+- designer

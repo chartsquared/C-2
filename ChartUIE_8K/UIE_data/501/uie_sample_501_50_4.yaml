@@ -1,0 +1,51 @@
+initial_prompt: Create a geographic heatmap of penguin species distribution across
+  islands. Use species and island columns for location data. Highlight density using
+  bill_length_mm and body_mass_g values.
+questions: '1. Do you have a preference for the color scheme to represent different
+  species?
+
+  2. Should there be a specific range of colors to indicate varying densities?
+
+  3. Would you like the map to include labels for each island?
+
+  4. Do you prefer a legend that shows the bill length and body mass as separate density
+  measures or combined?
+
+  5. Should the heatmap be displayed with geographic boundaries such as the coastline
+  of islands?
+
+  6. Would you like markers or annotations for specific data points with extreme values?
+
+  7. Do you have a specific map projection preference (e.g., Mercator, Albers)?
+
+  8. Should the size of the heatmap markers vary based on the density?
+
+  9. Is there a specific background style for the map you prefer (e.g., satellite,
+  terrain)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like the map to include labels for each island.
+
+  4. I prefer a legend that shows the bill length and body mass as separate density
+  measures.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, I would like the size of the heatmap markers to vary based on the density.
+
+  9. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- species
+- island
+- bill_length_mm
+- body_mass_g

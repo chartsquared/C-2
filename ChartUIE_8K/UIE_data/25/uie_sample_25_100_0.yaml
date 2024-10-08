@@ -1,0 +1,66 @@
+initial_prompt: Create a line chart visualizing the NIFTY-50 stocks data over a given
+  period. Highlight key stocks such as ADANIPORTS, ASIANPAINT, and AXISBANK with annotations
+  showing their LTP, % Chng, and 52w H/L values. Emphasize volume and turnover for
+  these stocks in particular to show trading activity. Ensure trends over 30 days
+  and one year are visible to connect short-term and long-term performance. Highlight
+  significant changes with color-coded lines to distinguish between gains and losses.
+  Keep the chart clean and professional, suitable for business analysis.
+questions: '1. Do you have a preferred color scheme for the chart, especially for
+  differentiating between gains and losses?
+
+  2. How would you like the key stocks to be highlighted? Should they have specific
+  colors or markers?
+
+  3. Is there a specific way you would like the annotations to be displayed (e.g.,
+  tooltip, data labels)?
+
+  4. Would you prefer the volume and turnover to be shown as separate lines, or integrated
+  into the main line chart?
+
+  5. Do you have any preferences for the line styles (e.g., dashed lines for losses
+  and solid lines for gains)?
+
+  6. How would you prefer the axes to be scaled (e.g., logarithmic for volume and
+  turnover)?
+
+  7. Should significant changes be marked with specific symbols (e.g., arrows) in
+  addition to color coding?
+
+  8. Is there a particular font style or size you would like to use for annotations
+  and labels to ensure readability?
+
+  9. Would you like a legend to be included? If so, are there specific details you
+  want in the legend?
+
+  10. Are there any specific preferences for the chart title and axis labels?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure about the specific colors or markers for highlighting key stocks.
+
+  3. Data labels would be preferred for annotations.
+
+  4. I would prefer the volume and turnover to be shown as separate lines.
+
+  5. Dashed lines for losses and solid lines for gains would be nice.
+
+  6. I do not know how the axes should be scaled.
+
+  7. Significant changes can be marked with specific symbols, but I am not sure which
+  ones.
+
+  8. I do not have a specific preference for font style or size.
+
+  9. Yes, please include a legend. Key details like LTP, % Chng, and 52w H/L for annotated
+  stocks would be good.
+
+  10. No specific preferences for the chart title and axis labels.'
+data_attributes:
+- Symbol
+- LTP
+- '% Chng'
+- Volume (lacs)
+- Turnover (crs.)
+- 52w H
+- 52w L
+- 365 d % chng
+- 30 d % chng

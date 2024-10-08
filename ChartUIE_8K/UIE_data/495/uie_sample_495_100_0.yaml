@@ -1,0 +1,34 @@
+initial_prompt: Create a bar chart to visualize the ingredients and their corresponding
+  grams from the dataset. Use text annotations to show the exact gram values above
+  each bar to highlight specific ingredients. Additionally, use highlights to differentiate
+  the ingredients by color to emphasize the varying amounts used. The purpose of this
+  chart is to provide a clear and immediate understanding of the quantity of each
+  ingredient used in the recipe, especially useful for food and drink preparations.
+  Add context on the x-axis for the ingredient names and the y-axis for the gram measurements.
+questions: '1. Do you have any specific preferences for the color scheme of the bars
+  to differentiate the ingredients?
+
+  2. What font size and style would you prefer for the text annotations showing the
+  gram values?
+
+  3. Would you like the bars to have any specific width or spacing between them?
+
+  4. Do you prefer any particular orientation for the bar chart (horizontal or vertical)?
+
+  5. Is there a specific order in which you would like the ingredients to be displayed
+  on the x-axis (e.g., alphabetical, by gram value)?
+
+  6. Are there any specific labels or titles you would like to have for the x-axis
+  and y-axis?
+
+  7. Do you have any preferred style or format for highlights to emphasize the varying
+  amounts used?'
+answers: "1. I am not sure about the color scheme. \n2. I do not know about the font\
+  \ size and style.\n3. I have no specific preference for the width or spacing of\
+  \ the bars.\n4. I prefer a vertical orientation for the bar chart.\n5. I would like\
+  \ the ingredients to be displayed by gram value, from highest to lowest.\n6. For\
+  \ the x-axis label, \"Ingredients\" and for the y-axis label, \"Grams.\"\n7. I am\
+  \ not sure about the highlights style or format."
+data_attributes:
+- ingredient
+- grams

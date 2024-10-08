@@ -1,0 +1,51 @@
+initial_prompt: 'I need a scatter plot for retail sales forecasting. Use the data
+  in ''334.csv''. Plot ''data'' on the x-axis to represent the dates. On the y-axis,
+  create two sets of points: one for ''venda'' to show sales volume and another for
+  ''estoque'' to display stock levels. Use different colors or markers to distinguish
+  between sales and stock data points. Add a legend for clarity. Make sure the plot
+  shows trends over time and is easy to interpret for business decisions. Please ensure
+  all data points are plotted accurately.'
+questions: '1. Do you have any specific color preferences for the sales volume and
+  stock levels data points?
+
+  2. Would you prefer specific marker shapes to distinguish the sales and stock data
+  points?
+
+  3. Should the x-axis and y-axis have specific labels or titles?
+
+  4. Would you like gridlines on the plot, and if so, in which direction (horizontal,
+  vertical, or both)?
+
+  5. Is there a specific date format you would like for the x-axis labels?
+
+  6. Do you have a preferred font style or size for the axis labels and legend?
+
+  7. Should any specific trendlines be added to the scatter plot, such as a moving
+  average or linear regression line?
+
+  8. Are there any particular annotations or data point highlights you would like
+  included in the plot?
+
+  9. Would you prefer the data points to be connected by lines to better show trends
+  over time?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please label the x-axis as "Date" and the y-axis as "Volume".
+
+  4. Yes, both horizontal and vertical gridlines would be helpful.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. Yes, please connect the data points to better show trends over time.'
+data_attributes:
+- data
+- venda
+- estoque

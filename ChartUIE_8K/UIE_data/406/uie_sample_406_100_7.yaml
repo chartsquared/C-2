@@ -1,0 +1,54 @@
+initial_prompt: Create a bar chart to visualize the GDP per capita of different countries,
+  grouped by continent. Data should be sourced from the provided csv file. Each bar
+  should represent a different country, categorized into their respective continents.
+  Include a title "GDP Per Capita by Country and Continent" and label the axes appropriately.
+  Additionally, use different colors for each continent to clearly distinguish the
+  groups. Ensure the y-axis represents GDP per capita and the x-axis lists the countries.
+  This will help in understanding the economic performance across various regions.
+questions: '1. Do you have a specific color palette preference for representing different
+  continents?
+
+  2. What font style and size would you prefer for the title and axis labels?
+
+  3. How would you like the bar groups (continents) to be ordered? Alphabetically
+  or by another criterion?
+
+  4. Would you like gridlines to be included on the chart? If so, should they be major,
+  minor, or both?
+
+  5. Do you have a preference for the orientation of the x-axis labels (e.g., horizontal,
+  rotated, vertical)?
+
+  6. Do you want data labels (e.g., GDP per capita value) to be displayed on the bars?
+
+  7. Would you like any specific annotations or highlights for particular countries
+  or continents?
+
+  8. Is there a specific format or style for the legend that you''d prefer?
+
+  9. Should there be any specific margins or padding around the chart?
+
+  10. Do you have any preference for the aspect ratio or size of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Alphabetically.
+
+  4. Yes, major gridlines.
+
+  5. Horizontal.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- country
+- continent
+- gdpPercap

@@ -1,0 +1,43 @@
+initial_prompt: Create a heatmap for the Ecoli dataset focusing on the columns 'mcg',
+  'gvh', 'lip', 'chg', 'aac', 'alm1', and 'alm2'. Visualize missing data density across
+  these features.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the missing data to be represented with a specific color?
+
+  3. Do you prefer to have a color bar legend to indicate the density levels?
+
+  4. Should the heatmap include axis labels for each data attribute?
+
+  5. Would you like a title for the heatmap? If so, what should it be?
+
+  6. Do you prefer grid lines to be visible between the cells of the heatmap?
+
+  7. Would you like annotations within the heatmap cells to indicate the exact amount
+  of missing data?
+
+  8. Should the heatmap have a specified range for the density values or should it
+  be automatically adjusted?'
+answers: '1. I do not know.
+
+  2. Yes, please use a specific color for missing data.
+
+  3. I am not sure.
+
+  4. Yes, please include axis labels for each data attribute.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.'
+data_attributes:
+- mcg
+- gvh
+- lip
+- chg
+- aac
+- alm1
+- alm2

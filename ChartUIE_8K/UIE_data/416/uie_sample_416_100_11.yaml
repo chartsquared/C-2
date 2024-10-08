@@ -1,0 +1,62 @@
+initial_prompt: I have a dataset related to Bundesliga points per match, including
+  game details like dates, teams, scores, and betting odds. I'd like to create a heatmap.
+  The y-axis should list all the teams, and the x-axis should represent different
+  match dates. The heatmap should display the points each team earned for those matches
+  in vibrant color gradients. Zero points should be in lighter shades, while higher
+  points in darker shades to easily see which teams performed well over the season.
+  Use the 'HomeTeam', 'AwayTeam', 'Date', 'FTHG', 'FTAG', 'FTR' columns for this.
+questions: '1. Do you have any specific color palette preferences for the heatmap?
+
+  2. Do you prefer the heatmap to be in a horizontal or vertical layout?
+
+  3. What font styles and sizes do you prefer for the labels on the x-axis and y-axis?
+
+  4. Would you like grid lines to be present on the heatmap for better readability?
+
+  5. Do you have any specific preferences for the margins, paddings, and overall spacing
+  of the heatmap?
+
+  6. Should we use any specific annotations or labels for important dates or matches?
+
+  7. Do you have a preferred aspect ratio or size for the heatmap?
+
+  8. Are there any particular highlights or markers you would like to include for
+  exceptional performances or key matches?
+
+  9. Do you have a preferred method for calculating and displaying the points (e.g.,
+  exact points or normalized values)?
+
+  10. Would you like any additional statistical summaries or legends to be included
+  on the heatmap?
+
+  '
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, grid lines for better readability.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Exact points would be preferable.
+
+  10. Yes, a legend to explain the color gradient would be useful.
+
+  <end of user emulated response>'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- Date
+- FTHG
+- FTAG
+- FTR

@@ -1,0 +1,39 @@
+initial_prompt: Create a Choropleth map showing the distribution of election winners
+  by region. Differentiate colors for each party (CON, LAB, LIB). Ensure your map
+  includes constituencies, electorates, and the percentage of votes for clarity.
+questions: '1. Do you have any specific color preferences for each party (CON, LAB,
+  LIB)?
+
+  2. How would you like the constituencies to be labeled or highlighted on the map?
+
+  3. Do you have a preferred way to display electorates and percent of votes (e.g.,
+  tooltip, side panel)?
+
+  4. Would you like the map to include legends or specific annotations?
+
+  5. Do you prefer a particular map projection or layout for the Choropleth map?
+
+  6. Is there any specific range or scale you would like for the values (e.g., percent
+  of votes)?
+
+  7. Do you have any preferences for the title and descriptive text on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Tooltip would be fine.
+
+  4. Yes, please include legends and specific annotations.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- Area
+- County
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Winner

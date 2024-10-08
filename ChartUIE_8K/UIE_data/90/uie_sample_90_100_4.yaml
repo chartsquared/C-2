@@ -1,0 +1,39 @@
+initial_prompt: I want a Bubble chart to visualize the GDP per capita, CO2 emissions,
+  and Access to electricity (% of population) over various years for different countries.
+  Use bubble size to represent Access to electricity, the x-axis for Year, and the
+  y-axis for GDP per capita. The chart should highlight trends in sustainable energy
+  and economic indicators globally from 2000 to 2020. Include data labels for countries
+  to differentiate them. Also, add a color gradient to represent CO2 emissions levels
+  in the bubbles. This will help understand the relationship between energy access,
+  economic growth, and CO2 emissions.
+questions: '1. Do you have any specific preferences for the color gradient used to
+  represent CO2 emissions levels?
+
+  2. Would you like to see any specific countries highlighted in particular?
+
+  3. How would you like missing data points to be handled in the visualization?
+
+  4. Are there any specific fonts or styles you prefer for the data labels for countries?
+
+  5. Do you have preferences regarding the chart''s title and axis labels?
+
+  6. Would you like to include any particular markers or annotations to highlight
+  significant trends or events?
+
+  7. How detailed should the grid lines be on the chart, or do you prefer a clean
+  look without them?
+
+  8. Do you require any legends or explanatory notes within the chart to help interpret
+  the color gradient and bubble sizes?'
+answers: "1. I am not sure.\n2. I do not know.\n3. Handle missing data points with\
+  \ interpolation or gaps as appropriate.\n4. I have no specific preference.\n5. Title:\
+  \ \"Global Trends in GDP per Capita, CO2 Emissions, and Access to Electricity (2000-2020)\"\
+  \n   X-axis: \"Year\"\n   Y-axis: \"GDP per Capita\"\n6. I am not sure.\n7. A clean\
+  \ look without detailed grid lines.\n8. Yes, include legends or explanatory notes\
+  \ to help interpret the color gradient and bubble sizes."
+data_attributes:
+- Entity
+- Year
+- Access to electricity (% of population)
+- gdp_per_capita
+- Value_co2_emissions_kt_by_country

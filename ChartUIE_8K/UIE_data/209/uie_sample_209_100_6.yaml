@@ -1,0 +1,50 @@
+initial_prompt: Please create a scatter plot to visualize the New York Housing Market
+  data. Plot the 'PRICE' on the y-axis and 'PROPERTYSQFT' on the x-axis. Use different
+  colors to represent the 'TYPE' of property (e.g., Condo, House). Include data points'
+  'BEDS' and 'BATH' as annotations or tooltips for better understanding. Ensure that
+  the chart is clear and easy to interpret. This will help in analyzing the relationship
+  between property prices and their sizes across different types of homes. Also, make
+  sure to label the axes and provide a legend.
+questions: '1. Do you have any specific preferences for the color palette used to
+  differentiate the ''TYPE'' of properties?
+
+  2. Do you prefer the annotations for ''BEDS'' and ''BATH'' to appear directly on
+  the chart or as tooltips when hovering over the data points?
+
+  3. Would you like the size of the data points to represent any specific attribute,
+  such as the number of ''BEDS'' or ''BATH''?
+
+  4. Is there a specific format or style you prefer for the axis labels and legend?
+
+  5. Do you prefer a specific font type or size for the labels and annotations on
+  the chart?
+
+  6. Should the grid lines on the chart be displayed or hidden?
+
+  7. Do you have any preferred background color or theme for the chart (e.g., light,
+  dark, etc.)?
+
+  8. Would you like to include any additional context or reference lines, such as
+  average price or size markers, on the chart?'
+answers: '1. I have no specific preference.
+
+  2. I prefer the annotations for ''BEDS'' and ''BATH'' to appear directly on the
+  chart.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. No specific preference.
+
+  8. I do not know.'
+data_attributes:
+- PRICE
+- PROPERTYSQFT
+- TYPE
+- BEDS
+- BATH

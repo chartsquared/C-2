@@ -1,0 +1,47 @@
+initial_prompt: I want to visualize bike and pedestrian traffic on Broadway Cycle
+  Track over time. Create a column chart showing bike_count and ped_count data across
+  different hours of the day for various dates. Include date on the x-axis, bike_count
+  and ped_count on the y-axis, and different colors for each category. The data should
+  be grouped hourly. The focus should be on seeing trends in bike and pedestrian traffic.
+  Ensure the chart is clear and easy to understand. Title the chart "Bike and Pedestrian
+  Traffic on Broadway Cycle Track" and label all relevant axes.
+questions: '1. Do you have any preference for the color scheme to differentiate between
+  bike_count and ped_count?
+
+  2. Do you have a preferred font style or size for the chart title and axis labels?
+
+  3. Should we display data labels on each column to show the exact count values?
+
+  4. Would you like any gridlines on the chart, and if so, on which axis (x, y, or
+  both)?
+
+  5. Do you have a specific date range you’d like to focus on within the data?
+
+  6. Are there any specific formatting preferences for the date labels on the x-axis?
+
+  7. Would you like to include a legend on the chart, and if so, where should it be
+  positioned?
+
+  8. Is there any particular aspect of the chart you would like to emphasize, such
+  as peak hours or significant changes in traffic?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Yes, displaying data labels on each column to show the exact count values would
+  be helpful.
+
+  4. I do not know.
+
+  5. I am not sure, any relevant date range with varied traffic will be fine.
+
+  6. I do not have any specific formatting preferences for the date labels on the
+  x-axis.
+
+  7. Yes, please include a legend on the chart. I am not sure where it should be positioned.
+
+  8. I want to emphasize the peak hours or significant changes in traffic.'
+data_attributes:
+- date
+- bike_count
+- ped_count

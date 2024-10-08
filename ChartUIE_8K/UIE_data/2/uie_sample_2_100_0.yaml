@@ -1,0 +1,61 @@
+initial_prompt: I need a grouped column chart visualizing methane emissions (CH4)
+  from 1990 to 2018 for both China and Russia. Each bar should represent a year, grouped
+  by country. The chart should highlight the emissions for several selected years
+  (e.g., 1990, 2000, 2010, and 2018) to show critical changes over time. Annotations
+  should include the actual emission values for these highlighted years. This will
+  help to compare the trends of methane emissions between the two countries, focusing
+  particularly on the selected years for quick insight into the data.
+questions: '1. Do you have any preferred colors for the bars representing China and
+  Russia?
+
+  2. Would you like to include a legend to distinguish between the two countries?
+
+  3. Do you prefer a specific font type or size for the annotations of the actual
+  emission values?
+
+  4. Should the highlighted years’ bars be in a different color or have any special
+  markings to indicate their importance?
+
+  5. Do you want grid lines on the chart for easier comparison of values?
+
+  6. Is there a particular title or headline you would like for the chart?
+
+  7. Do you prefer the y-axis scale to be linear or logarithmic?
+
+  8. Do you want the y-axis to display the values with a specific unit (e.g., MTCO2e)?
+
+  9. Would you like the x-axis labels to display each year sequentially, or only the
+  highlighted years?
+
+  10. Is there any specific placement or style you prefer for the annotations?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Yes, I would like to include a legend.
+
+  3. I am not sure.
+
+  4. Yes, the highlighted years should have special markings.
+
+  5. I do not know.
+
+  6. No specific title, just something relevant.
+
+  7. I do not know.
+
+  8. Yes, display the values with MTCO2e.
+
+  9. Display each year sequentially.
+
+  10. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Country
+- Gas
+- Unit
+- '2018'
+- '2010'
+- '2000'
+- '1990'

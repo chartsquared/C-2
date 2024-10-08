@@ -1,0 +1,60 @@
+initial_prompt: I have a company collaboration network dataset from a business context,
+  showing the relationships between different individuals within various groups. The
+  data includes types (nodes), IDs, names, groups, sources, targets, and weights with
+  some missing values. Please create a network diagram that visualizes the structure
+  and connections within this network. Highlight the relationships between individuals
+  and their groups, and use node size or color to represent weights where applicable.
+  Ensure the diagram is clear and easy to interpret, showcasing the collaboration
+  dynamics effectively. Thank you!
+questions: '1. Do you have a preferred layout for the network diagram (e.g., force-directed,
+  circular, hierarchical)?
+
+  2. What color scheme would you like to use for the nodes and edges?
+
+  3. How would you prefer to represent the different groups (e.g., different node
+  shapes, border colors)?
+
+  4. Do you have a specific way you want to represent the weight of the connections
+  (e.g., node size, edge thickness, edge color)?
+
+  5. Would you like to include labels for the nodes, such as the names of the individuals?
+
+  6. Do you want to display any specific group or individual prominently in the diagram?
+
+  7. Are there any specific relationships or connections you would like to highlight
+  within the network?
+
+  8. Do you prefer the chart to be monochromatic or multicolored for better differentiation
+  of elements?
+
+  9. Is there a specific legend format you would like to use to explain the colors
+  and sizes used in the diagram?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Different node shapes would be fine.
+
+  4. Node size for representing weights would be good.
+
+  5. Yes, I would like to include labels for the nodes, such as the names of the individuals.
+
+  6. I do not have any specific group or individual in mind.
+
+  7. I am not sure.
+
+  8. Multicolored for better differentiation of elements.
+
+  9. I have no specific preference for the legend format.
+
+  <end of user emulated response>'
+data_attributes:
+- type
+- id
+- name
+- group
+- source
+- target
+- weight

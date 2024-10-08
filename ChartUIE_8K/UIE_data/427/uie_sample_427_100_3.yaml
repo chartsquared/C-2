@@ -1,0 +1,48 @@
+initial_prompt: Create a box chart to compare city and highway mileage for different
+  car makes and models from the 1985 dataset. Include medians, quartiles, and outliers
+  for both "city08" (city mileage) and "highway08" (highway mileage) columns. Use
+  different colors for city and highway data points. The chart should help visualize
+  the fuel efficiency distribution across various automobiles from that year. Highlight
+  the make and model of cars with the highest and lowest mileages. The goal is to
+  identify which cars were most fuel-efficient in the city and on the highway.
+questions: '1. Do you have any preference for the type of color palette used for differentiating
+  city and highway mileage data points?
+
+  2. Would you like specific annotations or labels on the chart for makes and models
+  with the highest and lowest mileages?
+
+  3. Are there any particular fonts or font sizes you''d prefer for the chart titles,
+  axis labels, or data labels?
+
+  4. Do you prefer a specific orientation for the box chart (vertical or horizontal)?
+
+  5. Would you like to include a legend to distinguish between city and highway mileage
+  colors?
+
+  6. Are there any specific plot gridlines you prefer (none, major, minor, both)?
+
+  7. Do you have any preference for the aspect ratio of the chart?
+
+  8. Would you like to include tooltips or hover text for additional data insights
+  when viewing the chart?'
+answers: '1. I do not know.
+
+  2. Yes, please include specific annotations or labels for the makes and models with
+  the highest and lowest mileages.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, include a legend to distinguish between city and highway mileage colors.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- make
+- model
+- city08
+- highway08

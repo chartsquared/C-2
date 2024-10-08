@@ -1,0 +1,57 @@
+initial_prompt: Create a grouped column chart visualizing the pricing changes and
+  pricing percentage changes for top tech companies (AAPL, MSFT, GOOG) on NASDAQ.
+  Group by company symbol to compare 'pricing_changes' and 'pricing_percentage_changes'
+  columns. The chart should have the company symbols on the x-axis and dual y-axes,
+  where one axis represents pricing changes and the other represents percentage changes.
+  Ensure data accuracy and clarity in representing the pricing dynamics in the tech
+  sector. Highlight the market cap, share volume, and earnings per share in tooltips
+  for deeper insight.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like the chart to display grid lines? If so, what style do you prefer?
+
+  3. How would you like the data labels to be displayed on the bars?
+
+  4. Do you prefer any specific font style or size for the axis labels and titles?
+
+  5. Would you like the dual y-axes to have specific ranges or scales?
+
+  6. Do you have any preferences for the shape or design of the tooltips?
+
+  7. Is there a particular arrangement you prefer for the order of the company symbols
+  on the x-axis?
+
+  8. Do you have a preferred format for the representation of large numbers like market
+  cap and share volume in the tooltips?
+
+  9. Should there be any specific annotations or markers on the chart to highlight
+  key insights?
+
+  10. How detailed would you like the legends to be in describing the chart elements?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I’d like the data labels to be displayed at the top of the bars.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I prefer the representation of large numbers, like market cap and share volume,
+  in millions or billions in the tooltips.
+
+  9. I do not know.
+
+  10. I prefer the legends to be clear and concise in describing the chart elements.'
+data_attributes:
+- symbol
+- pricing_changes
+- pricing_percentage_changes
+- market_cap
+- share_volume
+- earnings_per_share

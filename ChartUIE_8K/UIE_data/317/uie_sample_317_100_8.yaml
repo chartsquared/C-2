@@ -1,0 +1,56 @@
+initial_prompt: Create a heatmap that visualizes the distribution of hotels in India
+  by state and city. Use color intensity to represent the number of hotels in each
+  city within a given state. Include categories, but emphasize states and cities.
+  Exclude the Alcohol column, but ensure key details like Hotel Name, Address, and
+  Room Counts are accounted for. Use unique colors for different states to make it
+  visually appealing. Ensure the heatmap helps identify hotspots for hotels across
+  India. Including start and expiry dates in tooltips would add value by showing the
+  license validity period. Please ensure it's intuitive and comprehensive.
+questions: '1. Do you have any specific preferences for the color palette used in
+  the heatmap?
+
+  2. Do you prefer a specific layout for the heatmap (e.g., grid size)?
+
+  3. Are there any particular font styles or sizes you would like for the labels and
+  tooltips?
+
+  4. Would you like the cities and states to be sorted in a specific order?
+
+  5. Do you have any preference for the threshold of color intensity representing
+  different ranges of hotel counts?
+
+  6. Would you like to include a legend to explain the color intensities?
+
+  7. Are there any specific label formats you prefer for the start and expiry dates
+  in the tooltips?
+
+  8. Do you have any preference for how detailed the tooltips should be (e.g., how
+  much information to display)?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, I would like to include a legend to explain the color intensities.
+
+  7. I have no specific preference.
+
+  8. I would like the tooltips to include key details like Hotel Name, Address, Room
+  Counts, and the start and expiry dates of the license.
+
+  <end of user emulated response>'
+data_attributes:
+- State
+- City
+- Hotel Name
+- Address
+- Start Date
+- Expiry Date
+- Total Rooms

@@ -1,0 +1,63 @@
+initial_prompt: Create a heatmap visualizing the correlation between the various features
+  of the cancer classification dataset, specifically focusing on the mean, error,
+  and worst values across all measurements. Please include the benign/malignant classification
+  for context.
+questions: '1. Do you have a preferred color scheme for the heatmap (e.g., specific
+  colors for high and low correlations)?
+
+  2. Would you like to include the actual correlation values as annotations on the
+  heatmap cells?
+
+  3. Do you prefer a specific layout or order for the features in the heatmap, or
+  should they be organized based on correlation strength?
+
+  4. Should we include any labels or legends to explain the color coding in the heatmap?
+
+  5. Do you have any specific title or description you want to appear above the heatmap?
+
+  6. Would you like to highlight any specific features or correlations within the
+  heatmap for clearer emphasis?'
+answers: '1. I am not sure.
+
+  2. Yes, please include the actual correlation values as annotations on the heatmap
+  cells.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. No specific title or description.
+
+  6. I do not know.'
+data_attributes:
+- mean radius
+- mean texture
+- mean perimeter
+- mean area
+- mean smoothness
+- mean compactness
+- mean concavity
+- mean concave points
+- mean symmetry
+- mean fractal dimension
+- radius error
+- texture error
+- perimeter error
+- area error
+- smoothness error
+- compactness error
+- concavity error
+- concave points error
+- symmetry error
+- fractal dimension error
+- worst radius
+- worst texture
+- worst perimeter
+- worst area
+- worst smoothness
+- worst compactness
+- worst concavity
+- worst concave points
+- worst symmetry
+- worst fractal dimension
+- benign_0__mal_1

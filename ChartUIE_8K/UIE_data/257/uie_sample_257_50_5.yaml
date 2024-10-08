@@ -1,0 +1,43 @@
+initial_prompt: Please create a stacked bar chart to show the patient outcomes (Recovered
+  vs. Not Recovered) based on the different treatments provided. Include gender differentiation
+  in the bars. Thank you.
+questions: '1. What title would you like for the chart?
+
+  2. Do you have any specific color preferences for the different patient outcomes
+  (''Recovered'' and ''Not Recovered'')?
+
+  3. Would you like to use different colors/patterns for the gender differentiation
+  within each bar?
+
+  4. Do you prefer a specific order for the treatments on the x-axis?
+
+  5. Should the chart include data labels for the counts or percentages within the
+  bars?
+
+  6. Would you like to add any specific labels or annotations to the chart?
+
+  7. Do you have a preference for the font style and size for the titles, labels,
+  and legends on the chart?
+
+  8. Do you want to display a legend for differentiating ''Recovered'' and ''Not Recovered''
+  outcomes, as well as gender?'
+answers: '1. "Patient Outcomes by Treatment and Gender"
+
+  2. I do not have any specific preference.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include data labels for the counts within the bars.
+
+  6. No specific labels or annotations requested.
+
+  7. I do not have a preference for font style and size.
+
+  8. Yes, please display a legend for differentiating ''Recovered'' and ''Not Recovered''
+  outcomes, as well as gender.'
+data_attributes:
+- Outcome
+- 'What kind of Treatment provided '
+- Gender

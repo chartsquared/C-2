@@ -1,0 +1,39 @@
+initial_prompt: I need a box chart visualizing engine displacement and gas mileage
+  data for various automobiles. The chart should display the distribution and variance
+  of these two attributes across different vehicles. This will help to easily compare
+  the spread and identify any outliers. Use 'Engine Displacement(cc)' on one axis
+  and 'Gas Mileage(mpg)' on the other axis. Ensure the chart is clear and easy to
+  interpret for someone assessing the performance and efficiency of the cars. No missing
+  values should impact the visualization. Thanks!
+questions: "1. Do you have any specific color preferences for the box chart?\n2. Would\
+  \ you like to include gridlines for better visual reference? \n3. Do you prefer\
+  \ any particular scale (logarithmic or linear) for the axes?\n4. Are there any specific\
+  \ labels or annotations you would like to add to the chart?\n5. Do you want the\
+  \ chart to include a legend or key?\n6. Is there a specific font style or size you\
+  \ prefer for the axis labels and title?\n7. Would you like to highlight or emphasize\
+  \ outliers in a particular way?\n8. Do you have any preferences for the orientation\
+  \ of the box plot (vertical or horizontal)?\n9. Should the whiskers of the box plot\
+  \ extend to specific percentiles (e.g., 1.5 IQR)?\n10. Are there any particular\
+  \ styling preferences for the boxes themselves (e.g., colors, line thickness)?"
+answers: '1. I do not have any specific color preferences.
+
+  2. Yes, please include gridlines for better visual reference.
+
+  3. I am not sure about the scale, whatever you think best works.
+
+  4. No specific labels or annotations needed.
+
+  5. I don''t think a legend or key is necessary.
+
+  6. No preference for font style or size.
+
+  7. Yes, please highlight or emphasize outliers.
+
+  8. I am not sure about the orientation, whatever looks best.
+
+  9. I do not know about specific percentiles for the whiskers.
+
+  10. I don''t have particular styling preferences for the boxes.'
+data_attributes:
+- Engine Displacement(cc)
+- Gas Mileage(mpg)

@@ -1,0 +1,53 @@
+initial_prompt: I'd like to visualize voter demographics data using a heatmap. Specifically,
+  I want to see how different age groups (categorized as 18-29, 30-49, and 50-64)
+  voted for Clinton and Trump. The heatmap should clearly display the distribution
+  of votes across these age groups for both Clinton and Trump. Please ensure that
+  the columns 'Vote for Clinton', 'Vote for Trump', and 'category' are represented
+  in the heatmap. This will help in easily identifying which age category leaned more
+  towards each candidate. Overall, the heatmap should provide a clear visual comparison
+  of voting patterns.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the data values to be represented on the heatmap (e.g., actual
+  numbers, percentages)?
+
+  3. Should the heatmap show a legend or color scale to indicate vote distribution
+  intensity?
+
+  4. Do you want any specific labels or titles on the chart?
+
+  5. Would you like grid lines to be visible on the heatmap for clearer distinction
+  between categories?
+
+  6. Should there be a tooltip or annotation option when hovering over the heatmap
+  cells for additional information?
+
+  7. Do you prefer a specific font type or size for the text labels and titles?
+
+  8. Are there any specific margins or spacing preferences for the heatmap layout?
+
+  '
+answers: '<start user emulated response>
+
+  1. I am not sure.
+
+  2. Percentages.
+
+  3. Yes, a legend or color scale would be helpful.
+
+  4. Yes, labels and titles would be nice, like "Voter Distribution by Age Group for
+  Clinton and Trump".
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  <end user emulated response>'
+data_attributes:
+- category
+- Vote for Clinton
+- Vote for Trump

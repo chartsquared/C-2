@@ -1,0 +1,52 @@
+initial_prompt: I want a scatter plot showing the relationship between Cumulative
+  GPA (CUML_GPA) and Expected GPA (EXP_GPA) for students in higher education. On the
+  x-axis, we should have CUML_GPA and on the y-axis, EXP_GPA. Additionally, the points
+  should be color-coded based on the 'SCHOLARSHIP' status to observe if there's any
+  correlation between these variables. Please make sure the chart is clear and the
+  axes are labeled properly. Thank you!
+questions: '1. Do you have a preferred color scheme for the points based on the ''SCHOLARSHIP''
+  status?
+
+  2. Would you like grid lines on the chart for better readability?
+
+  3. Do you want to include a legend to explain the color-coding of ''SCHOLARSHIP''
+  status?
+
+  4. Should the chart include a title? If so, what should it be?
+
+  5. Do you have any specific font style or size preferences for the axis labels and
+  title?
+
+  6. Would you like to add data labels to the points on the scatter plot?
+
+  7. Are there any specific markers you prefer for the points on the scatter plot?
+
+  8. Do you have a specific range in mind for the axes?
+
+  9. Would you like to add trend lines to the scatter plot to highlight the correlation?
+
+  10. Should the chart include any annotations or notes to provide additional context?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like grid lines for better readability.
+
+  3. Yes, please include a legend to explain the color-coding of ''SCHOLARSHIP'' status.
+
+  4. Yes, the title should be "Relationship Between Cumulative GPA and Expected GPA
+  by Scholarship Status".
+
+  5. I do not have any specific preference.
+
+  6. No, I do not want data labels on the points.
+
+  7. I am not sure.
+
+  8. I do not have a specific range in mind for the axes.
+
+  9. Yes, please add trend lines to the scatter plot to highlight the correlation.
+
+  10. I am not sure.'
+data_attributes:
+- CUML_GPA
+- EXP_GPA
+- SCHOLARSHIP

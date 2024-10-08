@@ -1,0 +1,47 @@
+initial_prompt: I need a box plot to compare the distribution of Molecular Weights
+  and Residue Weights of amino acids. It should show the range, median, and any outliers
+  for both Molecular Weight and Residue Weight. Each box in the box plot should represent
+  an amino acid's weights. The x-axis should have the amino acid names (Abbr), and
+  the y-axis should represent the weights. Additionally, different colors should be
+  used for Molecular Weight and Residue Weight to distinguish between them. Please
+  use the data provided in the CSV file.
+questions: '1. Do you have a specific preference for the colors to represent Molecular
+  Weight and Residue Weight?
+
+  2. Do you prefer a specific order for the amino acids (Abbr) on the x-axis, such
+  as alphabetical order or based on a specific property?
+
+  3. Would you like to include any additional statistical information, such as quartiles,
+  on the plot?
+
+  4. Do you have a preferred style or theme for the box plot (e.g., minimalist, detailed,
+  scientific)?
+
+  5. Is there a particular font style or size you prefer for the labels and titles?
+
+  6. Are there any specific outlier representation preferences you have, such as specific
+  marker shapes or sizes?
+
+  7. Would you like to include grid lines on the plot for better readability?
+
+  8. Do you have any specific size requirements for the chart (e.g., aspect ratio
+  or dimensions)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. Yes, I would like to include grid lines for better readability.
+
+  8. I am not sure.'
+data_attributes:
+- Abbr
+- Molecular Weight
+- Residue Weight

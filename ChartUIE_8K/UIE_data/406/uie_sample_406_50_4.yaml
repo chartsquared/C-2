@@ -1,0 +1,43 @@
+initial_prompt: Create a heatmap showing the correlation between life expectancy,
+  population, and GDP per capita across different countries, grouped by continent.
+  Highlight which continents have the highest and lowest values in each category.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Should the heatmap include labels for each continent directly on the chart?
+
+  3. Do you want to display numeric values directly within the heatmap cells?
+
+  4. Should the heatmap include a legend to explain the color gradients?
+
+  5. Do you prefer a particular layout for the heatmap, such as specific ordering
+  of continents or countries?
+
+  6. Would you like to include any specific annotations or highlights for the highest
+  and lowest values in each category?
+
+  7. Do you have a preference for the scale of data representation, such as logarithmic
+  or linear?
+
+  8. Should we include borders around the heatmap cells for better visual separation?'
+answers: '1. I do not know.
+
+  2. Yes, please include labels for each continent directly on the chart.
+
+  3. I am not sure.
+
+  4. Yes, please include a legend to explain the color gradients.
+
+  5. I do not know.
+
+  6. Yes, please include annotations or highlights for the highest and lowest values
+  in each category.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- country
+- continent
+- lifeExp
+- pop
+- gdpPercap

@@ -1,0 +1,50 @@
+initial_prompt: I have a dataset on salary based on years of experience. Please create
+  a histogram that shows the distribution of salaries. I want to see how salaries
+  are spread across different ranges and also identify if there are common salary
+  bands. This will help in understanding the most frequent salary ranges in the dataset.
+  Make sure the bins are appropriately sized for clarity. Display the salary on the
+  x-axis and the frequency on the y-axis. Also, include any necessary labels for better
+  readability and understanding. Thank you!
+questions: '1. What is the preferred number of bins for the histogram, or should we
+  use an optimal bin size algorithm?
+
+  2. Do you have specific ranges for the salary bands that you would like to use for
+  the bins?
+
+  3. What color palette would you prefer for the histogram bars?
+
+  4. Would you like to include a title for the histogram? If so, what should it be?
+
+  5. Are there any specific labels or annotations you would like to be included on
+  the axes or within the chart?
+
+  6. Do you have a preference for the font style and size for the labels and titles?
+
+  7. Should grid lines be included in the histogram for better readability?
+
+  8. Do you want to display any additional statistical information such as mean or
+  median salary on the chart?
+
+  9. Is there a specific format or style guide that we should follow to align with
+  your organization’s branding?'
+answers: '1. I am not sure, please use an optimal bin size algorithm.
+
+  2. I do not have specific ranges for the salary bands.
+
+  3. I do not know, please use a standard color palette.
+
+  4. I would like a title for the histogram. It should be "Salary Distribution by
+  Years of Experience".
+
+  5. Include labels on the x-axis as "Salary" and on the y-axis as "Frequency".
+
+  6. I do not have a preference for the font style and size.
+
+  7. Yes, include grid lines for better readability.
+
+  8. I am not sure.
+
+  9. No specific format or style guide needed.'
+data_attributes:
+- YearsExperience
+- Salary

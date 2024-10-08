@@ -1,0 +1,51 @@
+initial_prompt: 'Visualize champion performance with a line chart: X-axis for ''Champion,''
+  Y-axis for ''Winrate,'' showing ''Winrate,'' ''Winrate(B),'' and ''Winrate(R).''
+  Highlight champions with overall high win rates. Annotate specific data points to
+  emphasize champions with significant differences between ''Winrate,'' ''Winrate(B),''
+  and ''Winrate(R).'' Purpose: understanding variation in performance across different
+  scenarios. Practical for identifying strong champions and their consistency. Ensure
+  clear legends and color differentiation for each win rate line, making it easy to
+  compare across champions.'
+questions: "1. Do you have any preferred color scheme for the win rate lines? \n2.\
+  \ Would you like to customize the style of the lines (e.g., solid, dashed, dotted)\
+  \ to differentiate between 'Winrate,' 'Winrate(B),' and 'Winrate(R)'?\n3. Do you\
+  \ have any preferences for the type of markers used for specific data points (e.g.,\
+  \ circles, squares, triangles)?\n4. Is there a particular font style or size you\
+  \ prefer for annotations and labels?\n5. Would you like to add a specific title\
+  \ and subtitles to the chart? If so, what should they be?\n6. Do you prefer the\
+  \ champions to be sorted in a particular order on the X-axis (e.g., alphabetically,\
+  \ by overall win rate)?\n7. Would you like a grid to be included in the chart for\
+  \ better readability? If so, should it be a major grid, minor grid, or both?\n8.\
+  \ Do you have any preferences for the thickness of the lines representing the win\
+  \ rates?\n9. Would you like to include tooltips for additional data points on hover,\
+  \ such as number of games played?\n10. Do you have any specific requirements for\
+  \ the legend placement on the chart?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Circles would be nice for the markers.
+
+  4. I don’t have any specific preference for font style or size.
+
+  5. Title: "Champion Win Rates Comparison" Subtitles: "Winrate," "Winrate(B)," and
+  "Winrate(R)"
+
+  6. Sort by overall win rate, please.
+
+  7. A major grid would be helpful for readability.
+
+  8. I don''t have a specific preference for line thickness.
+
+  9. I am not sure.
+
+  10. Place the legend at the bottom of the chart.
+
+  <end of user emulated response>'
+data_attributes:
+- Champion
+- Winrate
+- Winrate(B)
+- Winrate(R)

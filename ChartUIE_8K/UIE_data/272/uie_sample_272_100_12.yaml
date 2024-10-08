@@ -1,0 +1,57 @@
+initial_prompt: 'Please create a grouped bar chart to visualize the "Global EV Sales:
+  2010-2024" dataset. The chart should display "region" on the x-axis, grouped by
+  "year", and "value" on the y-axis, representing the total EV sales (in ''Vehicles'')
+  and EV stock/sales share (in ''percent''). Different colors should be used for each
+  "parameter" (''EV stock share'', ''EV sales share'', ''EV sales''). This will help
+  compare the growth and share of electric vehicles across different regions and years.
+  Ensure the chart is easy to read and interpret.'
+questions: '1. Do you have any specific color preferences for the different parameters
+  (''EV stock share'', ''EV sales share'', ''EV sales'')?
+
+  2. What level of granularity do you prefer for the x-axis labels (e.g., all regions
+  displayed, grouped, or filtered by certain criteria)?
+
+  3. Would you like to include data labels on the bars for easier reading of the values?
+
+  4. Are there any specific regions you would like to highlight or focus on in the
+  chart?
+
+  5. Do you have any preferences for the ordering of the regions along the x-axis?
+
+  6. Would you like to include a legend to distinguish between the different parameters?
+  If so, where would you prefer the legend to be placed (e.g., top, bottom, left,
+  right)?
+
+  7. Do you have any preferences for the scale of the y-axis (e.g., linear, logarithmic)?
+
+  8. Are there any specific years or a range of years you want to focus on within
+  the dataset?
+
+  9. Would you like to include any reference lines or markers to indicate important
+  thresholds or average values on the chart?
+
+  10. Do you have any preferences for the chart title or axis labels?'
+answers: '1. I am not sure about specific color preferences.
+
+  2. I do not know.
+
+  3. Yes, please include data labels on the bars.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, please include a legend. I prefer it to be placed on the right.
+
+  7. I am not sure about the scale preference.
+
+  8. I do not know.
+
+  9. No, I don''t want any reference lines or markers.
+
+  10. I have no specific preference for the chart title or axis labels.'
+data_attributes:
+- region
+- year
+- value
+- parameter

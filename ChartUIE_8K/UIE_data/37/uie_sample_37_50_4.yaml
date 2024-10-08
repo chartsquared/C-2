@@ -1,0 +1,40 @@
+initial_prompt: Generate a heatmap for segmenting mall customers. Use CustomerID,
+  Gender, Age, Annual Income (k$), and Spending Score (1-100). Highlight spending
+  patterns by age and income groups.
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. Would you like the heatmap to include grid lines or a particular border style?
+
+  3. Should the heatmap display numerical values within each cell?
+
+  4. Are there any specific age or income ranges you want to focus on?
+
+  5. Do you prefer any specific color scale for the heatmap (e.g., sequential, diverging)?
+
+  6. How many age and income group intervals would you like?
+
+  7. Is there a preferred format for the axis labels and titles?
+
+  8. Do you want any specific annotations or labels to highlight certain areas of
+  the heatmap?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I would like the heatmap to display numerical values within each cell.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- CustomerID
+- Gender
+- Age
+- Annual Income (k$)
+- Spending Score (1-100)

@@ -1,0 +1,46 @@
+initial_prompt: Please create a bar chart that shows the count of missing values for
+  each column in the water quality data. I want to visualize how data completeness
+  varies across different water quality parameters.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be labeled with the exact count of missing values?
+
+  3. Do you prefer the bars to be displayed vertically or horizontally?
+
+  4. Should the chart include grid lines for easier interpretation of the values?
+
+  5. Do you want a title for the chart? If so, what should it be?
+
+  6. Do you require axis labels? If so, what should the labels for the X and Y axes
+  be?
+
+  7. Is there a specific font style or size you prefer for the text in the chart?
+
+  8. Would you like any specific annotations or markers on the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the bars to be labeled with the exact count of missing values.
+
+  3. I prefer the bars to be displayed vertically.
+
+  4. I do not know.
+
+  5. Yes, the title should be "Count of Missing Values for Each Water Quality Parameter".
+
+  6. Yes, the X-axis label should be "Water Quality Parameters" and the Y-axis label
+  should be "Count of Missing Values".
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+- Potability

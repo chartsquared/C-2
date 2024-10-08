@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart showing the Capture values over different Species.
+  Include a line for each Type, using differing colors. Highlight Weighting for additional
+  insights.
+questions: '1. Do you have a preferred color palette for differentiating the lines
+  by Type?
+
+  2. What style of lines would you prefer (e.g., solid, dashed) to differentiate between
+  different Types?
+
+  3. How would you like the Weighting to be highlighted (e.g., as an additional axis,
+  color gradient, size of markers)?
+
+  4. Would you like data markers on the line chart to indicate individual Capture
+  values at each Species?
+
+  5. Do you have specific labeling preferences for the axes and legend?
+
+  6. Are there any specific annotations or reference lines you would like to include?
+
+  7. Do you prefer a certain style or format for the grid lines on the chart?
+
+  8. Would you like to display a title or subtitle on the chart, and if so, what should
+  it be?
+
+  9. Are there any specific fonts or font sizes you prefer for the text elements in
+  the chart?
+
+  10. Do you have any preferences regarding the orientation or placement of the legend?'
+answers: '<start of user response>
+
+  1. I do not have a preferred color palette.
+
+  2. I am not sure.
+
+  3. I think maybe using a color gradient might be good.
+
+  4. I do not know.
+
+  5. No specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, please title it "Capture Values by Species and Type".
+
+  9. No specific preference for fonts or font sizes.
+
+  10. I have no specific preference for the legend placement.
+
+  <end of user response>'
+data_attributes:
+- Type
+- Species
+- Capture
+- Weighting

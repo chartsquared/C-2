@@ -1,0 +1,45 @@
+initial_prompt: Create a scatter plot to visualize bike and pedestrian counts over
+  time at various crossings. Highlight specific data points where bike or pedestrian
+  counts are particularly high to draw attention to peak usage times. Use text annotations
+  to display exact counts for these highlighted points. Ensure the plot visually distinguishes
+  between different crossings and directions to provide clear insights. The visualization
+  will help identify patterns in bike and pedestrian traffic and inform decisions
+  on infrastructure improvements and safety measures. Use distinct colors and sizes
+  for clarity. Include a legend and axis labels for context.
+questions: '1. Do you have any specific color scheme preferences for distinguishing
+  between different crossings and directions?
+
+  2. Are there particular symbols or markers you prefer for the highlighted data points?
+
+  3. How would you like the text annotations to be formatted for the highlighted peak
+  usage points?
+
+  4. Is there a preferred size range for the data points on the scatter plot to aid
+  in clarity?
+
+  5. Do you have any specific preferences for the style or positioning of the legend?
+
+  6. Do you have any preferred fonts or styles for the axis labels and annotations?
+
+  7. Would you like to include any additional contextual information or reference
+  lines on the scatter plot?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. The text annotations should display exact counts clearly next to the highlighted
+  points.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- date
+- crossing
+- direction
+- bike_count
+- ped_count

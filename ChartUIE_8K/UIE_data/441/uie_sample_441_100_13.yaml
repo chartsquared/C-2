@@ -1,0 +1,51 @@
+initial_prompt: I want a geographic heatmap visualizing the performance of women's
+  college basketball teams. Use the school's location and plot data points for each
+  year, representing the schools using different colors or shades. Include metrics
+  like regular season wins, losses, and percentages, as well as tournament outcomes.
+  Highlight top-performing conferences and note if their first tournament game was
+  at home. This will help in understanding geographic trends and dominant regions
+  over the years. Geographic accuracy and clear legend are crucial. Ensure the map
+  is interactive for detailed inspection of specific schools or regions.
+questions: '1. Do you have a preferred color scheme for representing different schools
+  or conferences?
+
+  2. How would you like top-performing conferences to be highlighted?
+
+  3. Should the map display categories of performance metrics (such as wins and losses)
+  differently?
+
+  4. Do you want any specific information to be included in tooltips when hovering
+  over data points?
+
+  5. Would you prefer a certain style or format for the legend?
+
+  6. Are there any specific regions or schools that should be emphasized or treated
+  differently in the visualization?
+
+  7. Would you like any annotations or markers on the map for significant events or
+  milestones?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, the map should display categories of performance metrics (such as wins and
+  losses) differently.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I do not know.'
+data_attributes:
+- year
+- school
+- conference
+- reg_w
+- reg_l
+- reg_percent
+- tourney_w
+- tourney_l
+- tourney_finish
+- x1st_game_at_home

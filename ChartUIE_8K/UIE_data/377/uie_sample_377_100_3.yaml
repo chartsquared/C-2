@@ -1,0 +1,60 @@
+initial_prompt: 'I need a Choropleth map displaying the election results by constituency
+  from the given data. The map should color-code each area based on the winning party:
+  Conservative (CON), Labour (LAB), Liberal (LIB), etc. Additionally, provide a legend
+  that indicates the winning party''s percentage of the total vote in each constituency.
+  Include interactive elements so I can hover over each area to see details such as
+  MP name, county, electorate, and vote percentages for each party. This will help
+  in understanding the political landscape across different regions.'
+questions: '1. Do you have any preferred color scheme for the winning parties on the
+  Choropleth map?
+
+  2. How would you like the legend to be displayed? Should it include percentage ranges
+  or specific values?
+
+  3. Would you like to include labels for each constituency on the map, or keep them
+  hidden to reduce clutter?
+
+  4. Are there any specific geographical boundaries or regions you would like to emphasize
+  or highlight on the map?
+
+  5. Do you prefer a specific map projection (e.g., Mercator, Albers) for the Choropleth
+  map?
+
+  6. Should the tooltip display additional information in a specific format when hovering
+  over the areas?
+
+  7. Would you like to include a title and subtitle for the map? If so, please provide
+  the preferred wording.
+
+  8. Do you have preferences for font styles and sizes for the map labels and legend?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Keep the labels hidden to reduce clutter.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Yes, include a title: "Election Results by Constituency" and a subtitle: "Political
+  landscape across regions".
+
+  8. I do not know.'
+data_attributes:
+- Area
+- Winner
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Name
+- MP
+- County
+- Electorate

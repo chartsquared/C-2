@@ -1,0 +1,60 @@
+initial_prompt: 'Create a radar chart visualizing the property types in the New York
+  housing market. Use PRICE, BEDS, BATH, and PROPERTYSQFT as axes to compare different
+  property types. Highlight luxury properties with unique formatting to emphasize
+  high-value listings. Annotate extreme values to draw attention, such as the highest
+  and lowest prices. Purpose: This visualization aims to provide insight into how
+  property characteristics differ by type, aiding in market analysis and decision-making.
+  Use the provided data to ensure accuracy in comparisons and highlights.'
+questions: '1. What color scheme would you prefer for differentiating between property
+  types?
+
+  2. Are there specific criteria for defining luxury properties that we should use
+  to apply unique formatting?
+
+  3. Do you have any preferred format for annotations of extreme values, such as specific
+  labels or tooltips?
+
+  4. How should extreme values like the highest and lowest prices be highlighted?
+  (e.g., color, size, boldness)
+
+  5. Do you have a specific preference for the arrangement of the axes on the radar
+  chart?
+
+  6. Would you like us to include any legends or keys to help interpret the chart''s
+  data?
+
+  7. Should there be any particular font style or size used for labels and annotations?
+
+  8. Is there a specific title or subtitle you would like us to include in the chart?
+
+  9. Do you have any preferences regarding the overall style or theme of the chart
+  (e.g., modern, classic, minimalist)?
+
+  10. Are there any specific data ranges or outliers that you would like us to highlight
+  in addition to the highest and lowest prices?'
+answers: '1. I am not sure.
+
+  2. Luxury properties could be defined as those with prices in the top 10% of the
+  dataset.
+
+  3. I have no specific preference.
+
+  4. Use bold color and size differences to highlight the highest and lowest prices.
+
+  5. I do not know.
+
+  6. Yes, please include legends or keys.
+
+  7. I am not sure.
+
+  8. "New York Housing Market Comparison by Property Type"
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- TYPE
+- PRICE
+- BEDS
+- BATH
+- PROPERTYSQFT

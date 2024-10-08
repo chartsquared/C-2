@@ -1,0 +1,54 @@
+initial_prompt: Create a line chart showing "tcp_packets" over time for different
+  "types" of network traffic (e.g., benign). Use text annotations to highlight key
+  points in network traffic.
+questions: '1. Do you have a preferred color scheme for different types of network
+  traffic?
+
+  2. How would you like the time axis to be formatted (e.g., specific date/time format)?
+
+  3. Would you like the text annotations to include specific details, and if so, what
+  kind of information should they contain?
+
+  4. Do you have any specific points in time or events that you want to ensure are
+  highlighted with annotations?
+
+  5. Would you prefer the line chart to have markers on data points, or should it
+  be just lines?
+
+  6. Is there a particular font style or size that you prefer for the text annotations?
+
+  7. Do you want the chart to have a background grid for easier reading of values?
+
+  8. Should the chart include a legend to differentiate between the types of network
+  traffic?
+
+  9. Are there any specific labels or titles you want for the axes and the chart overall?
+
+  10. Would you like to include any additional contextual information in the chart,
+  such as average TCP packets over a specific period?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would like the text annotations to highlight any sudden spikes or drops and
+  potentially significant events in the network traffic.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Yes, a background grid would be helpful.
+
+  8. Yes, please include a legend to differentiate between the types of network traffic.
+
+  9. The x-axis can be labeled "Time," the y-axis labeled "Number of TCP Packets,"
+  and the chart title can be "TCP Packets Over Time for Different Types of Network
+  Traffic."
+
+  10. I am not sure.'
+data_attributes:
+- tcp_packets
+- type
+- duracion

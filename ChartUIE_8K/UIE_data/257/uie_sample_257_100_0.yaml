@@ -1,0 +1,57 @@
+initial_prompt: Create a heatmap to visualize the complete blood count (CBC) data
+  for COVID-19 patients. Highlight important columns such as 'Red blood cell distribution
+  width', 'Monocytes(%)', 'White blood cell count', 'Platelet Count', 'Lymphocyte
+  Count', and 'Neutrophils Count'. Use annotations to display key statistics and provide
+  context about patient outcomes (Recovered/Not Recovered) and treatments received.
+  Aim to show relationships between different blood counts and patient outcomes. Make
+  sure to emphasize any significant correlations. The goal is to provide a clear visual
+  representation of the CBC variations among patients and their health outcomes.
+questions: '1. What color palette do you prefer for distinguishing different ranges
+  of blood counts and outcomes?
+
+  2. Would you like the heatmap to display a gradient scale bar for representing the
+  values?
+
+  3. Do you prefer any specific annotation style or format for displaying key statistics
+  and patient outcomes?
+
+  4. Should the heatmap include labels for the individual data points?
+
+  5. Do you have any preferences for the layout or orientation (horizontal/vertical)
+  of the heatmap?
+
+  6. Would you like to include a legend to explain the correlation or significance
+  levels?
+
+  7. Are there any specific thresholds or ranges for the CBC values that you would
+  like to emphasize?
+
+  8. Should the heatmap include gridlines between the cells for better readability?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Yes, please include a gradient scale bar.
+
+  3. I am not sure.
+
+  4. Yes, please include labels for the individual data points.
+
+  5. I do not have any specific preference.
+
+  6. Yes, please include a legend to explain the correlation or significance levels.
+
+  7. I am not sure.
+
+  8. I do not have any specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- Red blood cell distribution width
+- Monocytes(%)
+- White blood cell count
+- Platelet Count
+- Lymphocyte Count
+- Neutrophils Count
+- Outcome
+- 'What kind of Treatment provided '

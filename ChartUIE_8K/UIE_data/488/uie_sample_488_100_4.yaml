@@ -1,0 +1,37 @@
+initial_prompt: Please create a donut chart using the provided data from '488.csv'.
+  The chart should visualize the 'Gephart Category' distribution among the captured
+  species. The inner part of the donut should show the 'LCA_Category' breakdown, which
+  will give a more detailed view of the fish categories. Use different colors to distinguish
+  between the categories clearly. Make sure that the percentage of each section is
+  visible for better interpretation. Title the chart as "Distribution of Fish Capture
+  by Gephart Category and LCA Category." This visualization will help in understanding
+  the fish weighting across different categories.
+questions: '1. Do you have a preferred color palette for the categories?
+
+  2. What font style and size would you prefer for the chart title and percentage
+  labels?
+
+  3. How would you like the legend to be positioned?
+
+  4. Should the chart include labels for each category inside the donut sections,
+  or only percentages?
+
+  5. Do you have a preference for the thickness of the donut sections?
+
+  6. Would you like to include any additional annotations or descriptions outside
+  the general title and labels?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Only percentages.
+
+  5. I do not have a specific preference.
+
+  6. No, just the general title and labels are fine.'
+data_attributes:
+- Gephart Category
+- LCA_Category
+- Weighting

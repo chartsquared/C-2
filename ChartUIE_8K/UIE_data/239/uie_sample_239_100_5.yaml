@@ -1,0 +1,65 @@
+initial_prompt: Please create a line chart to visualize the global distribution of
+  blood types from the given dataset. The x-axis should represent the different countries,
+  and the y-axis should show the percentage of each blood type (O+, A+, B+, AB+, O-,
+  A-, B-, AB-). Use different colored lines for each blood type and label them clearly.
+  Include the population as a secondary line for context. Make sure to handle any
+  missing values appropriately. The chart should help understand the variation in
+  blood type distribution across countries. Thank you!
+questions: '1. Do you have a preferred color palette for the blood type lines?
+
+  2. How would you like the population line to be styled (e.g., dashed, dotted, different
+  color)?
+
+  3. Would you like any specific markers on the lines to distinguish data points (e.g.,
+  circles, squares)?
+
+  4. Should the chart have a title? If so, do you have a preference for the title
+  text?
+
+  5. Do you want to include a legend? If yes, where should it be placed (e.g., top,
+  bottom, left, right)?
+
+  6. Are there any specific countries you would like to highlight?
+
+  7. What method would you prefer for handling missing values (e.g., interpolation,
+  omission)?
+
+  8. Would you like grid lines on the chart? If so, should they be for both x and
+  y axes?
+
+  9. Do you have a preference for the font style and size for labels and titles?
+
+  10. Should there be any annotations or notes added to the chart for context?'
+answers: '1. I do not have a preferred color palette.
+
+  2. I am not sure, maybe a dashed line.
+
+  3. I do not have a specific preference.
+
+  4. Yes, the title could be "Global Distribution of Blood Types".
+
+  5. Yes, please include a legend. I do not know where it should be placed.
+
+  6. I do not know.
+
+  7. I am not sure, maybe interpolation.
+
+  8. Yes, grid lines on both x and y axes would be great.
+
+  9. I do not know.
+
+  10. I am not sure.
+
+
+  Thank you!'
+data_attributes:
+- Country
+- Population
+- O+
+- A+
+- B+
+- AB+
+- O-
+- A-
+- B-
+- AB-

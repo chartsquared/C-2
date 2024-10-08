@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap to visualize bike and pedestrian counts at different
+  crossings and times. Highlight specific time slots with highest counts to emphasize
+  peak traffic periods. Include text annotations for unique crossings and directions
+  to provide context. Use color variations in the heatmap to distinguish between low
+  and high counts effectively, thus drawing attention to key traffic patterns. This
+  visualization aims to help urban planners and traffic managers identify critical
+  periods and locations for optimizing pedestrian and bike infrastructure.
+questions: '1. Do you have a specific time range you want to highlight in the heatmap?
+
+  2. Do you have a preferred color scheme for distinguishing between low and high
+  counts effectively?
+
+  3. Would you like to customize the text annotations for unique crossings and directions?
+  If so, how?
+
+  4. Do you have a preference for the layout or organization of the heatmap?
+
+  5. Are there any specific labels or titles you want to include in the chart?
+
+  6. How detailed would you like the time segmentation to be (e.g., hourly, daily,
+  weekly)?
+
+  7. Do you prefer a particular ordering or grouping for the crossings and directions
+  in the heatmap?
+
+  8. Are there any additional contextual elements you would like to include in the
+  chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Hourly would be good.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- date
+- crossing
+- direction
+- bike_count
+- ped_count

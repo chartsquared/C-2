@@ -1,0 +1,54 @@
+initial_prompt: Create a scatter plot to visualize the NASA Exoplanets data. Plot
+  the 'orbital_radius' on the x-axis and 'mass_multiplier' on the y-axis. Different
+  colors should represent different 'planet_type'. Each point should be sized according
+  to the 'stellar_magnitude'. Please ensure that the plot highlights the 'discovery_year'
+  using a gradient color scale. Lastly, add appropriate labels and a legend to clarify
+  the data points and their corresponding variables.
+questions: '1. Do you have any preferred color palette for differentiating the ''planet_type''?
+
+  2. What type of gradient color scale would you like for representing the ''discovery_year''
+  (e.g., sequential, diverging)?
+
+  3. Do you have a specific preference for the size range of the data points based
+  on ''stellar_magnitude''?
+
+  4. Would you like grid lines to be displayed on the scatter plot?
+
+  5. Do you prefer the scatter plot to have a specific theme (e.g., dark, light, classic)?
+
+  6. Are there any specific titles or axis labels you would like to use for the plot?
+
+  7. Do you have a preferred font style or size for the labels and legend?
+
+  8. Should the legend be placed at a specific position on the chart (e.g., top-right,
+  bottom-left)?
+
+  9. Do you want to include any annotations or markers for specific data points?
+
+  10. Is there a specific format for the axis scales (e.g., logarithmic, linear)?'
+answers: '1. I am not sure.
+
+  2. Sequential.
+
+  3. I am not sure.
+
+  4. Yes, please.
+
+  5. Light theme.
+
+  6. Title: "NASA Exoplanets Scatter Plot"; X-axis: "Orbital Radius (AU)"; Y-axis:
+  "Mass Multiplier (Jupiter Masses)".
+
+  7. I have no specific preference.
+
+  8. Top-right.
+
+  9. I do not know.
+
+  10. Linear.'
+data_attributes:
+- orbital_radius
+- mass_multiplier
+- planet_type
+- stellar_magnitude
+- discovery_year

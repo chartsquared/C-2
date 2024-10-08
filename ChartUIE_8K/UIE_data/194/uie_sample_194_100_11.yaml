@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart using the Sloan Digital Sky Survey DR14 data.
+  Visualize changes in the 'u', 'g', 'r', 'i', and 'z' magnitudes across different
+  'ra' values. Plot 'ra' on the x-axis and the magnitudes on the y-axis. Differentiate
+  each magnitude (u, g, r, i, z) with separate lines in the chart. Ensure each line
+  is uniquely colored for clarity. This will help in analyzing how these magnitudes
+  vary with the change in 'ra'.
+questions: '1. Do you have a preference for the color scheme for each magnitude line
+  (u, g, r, i, z)?
+
+  2. Would you like grid lines to be displayed on the chart for better readability?
+
+  3. Should the chart have a title? If so, what would you like it to be?
+
+  4. Do you want labels for the x-axis and y-axis? If so, what should they be?
+
+  5. Would you like to include a legend to differentiate each magnitude line?
+
+  6. Do you prefer data points to be marked on the lines, or should the lines be smooth
+  without markers?
+
+  7. Should the axis ranges be fixed or auto-scaled based on the data?
+
+  8. Do you have any preference for the line style (solid, dashed, dotted) for each
+  magnitude line?
+
+  9. Is there a specific font style or size you prefer for the labels and titles?
+
+  10. Would you like to include any annotations or specific markers for key points
+  of interest on the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like grid lines for better readability.
+
+  3. I do not know.
+
+  4. Yes, labels for the x-axis as ''RA'' and the y-axis as ''Magnitude'' would be
+  good.
+
+  5. Yes, a legend is necessary to differentiate each magnitude line.
+
+  6. I am not sure.
+
+  7. Auto-scaled based on the data.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I am not sure.'
+data_attributes:
+- ra
+- u
+- g
+- r
+- i
+- z

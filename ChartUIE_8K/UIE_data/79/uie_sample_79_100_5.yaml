@@ -1,0 +1,60 @@
+initial_prompt: 'Create a Sunburst chart to visualize the Campus Recruitment data.
+  Use the hierarchy: gender > ssc_b > hsc_s > degree_t > specialisation > status.
+  For each level, show the number of students. The outermost ring should represent
+  the ''status'' (Placed/Not Placed). Highlight proportions in each category, and
+  ensure it''s clear how many students fall under each combination of categories to
+  see trends in placement based on education background and specialization. This should
+  help to understand how different factors influence campus recruitment outcomes.'
+questions: '1. Do you have a preferred color scheme for the Sunburst chart?
+
+  2. Would you like specific labels or tooltips to display additional information
+  on hover?
+
+  3. Do you want the chart to show absolute numbers, percentages, or both for each
+  category?
+
+  4. Is there a specific ordering within each category that you prefer (e.g., alphabetical,
+  by number of students)?
+
+  5. Do you have specific preferences for the font style and size used in the chart?
+
+  6. Should any specific categories be highlighted or emphasized more than others?
+
+  7. Would you like a legend included, and if so, where on the chart should it be
+  placed?
+
+  8. Are there any specific titles or annotations you would like to add to the chart?
+
+  9. Do you prefer a specific layout for the hierarchical levels, such as a radial
+  layout or another style?
+
+  10. Should the chart include separate sections or separators for different hierarchical
+  levels for better visual distinction?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like specific labels or tooltips to display additional information
+  on hover.
+
+  3. Both absolute numbers and percentages for each category.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. No specific categories need to be highlighted more than others.
+
+  7. Yes, I would like a legend included, placed at the bottom of the chart.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Yes, the chart should include separate sections or separators for different
+  hierarchical levels for better visual distinction.'
+data_attributes:
+- gender
+- ssc_b
+- hsc_s
+- degree_t
+- specialisation
+- status

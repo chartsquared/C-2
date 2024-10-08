@@ -1,0 +1,50 @@
+initial_prompt: Generate a violin plot to visualize the resistance of breast cancer
+  cell lines to Taxol. Plot logFC on the y-axis to show the distribution of fold change
+  in gene expression across the four cell lines. Annotate significant genes, particularly
+  those with extreme logFC values, to highlight their P.Value. Use color to distinguish
+  between the cell lines and add text annotations for top genes like EDIL3, IGFBP7,
+  and TFPI. This will help understand which genes are most affected in each cell line
+  and their potential role in drug resistance.
+questions: '1. Do you have a specific color palette preference for distinguishing
+  between the cell lines?
+
+  2. Would you like a particular style or size for the text annotations for the top
+  genes?
+
+  3. Do you have preferred scaling for the y-axis (logFC) values?
+
+  4. Should the violin plot include additional statistical markers, such as the median
+  or quartiles, within each distribution?
+
+  5. Do you prefer a specific font or font size for axis labels and titles?
+
+  6. Do you want the plot to include grid lines or a background color for better readability?
+
+  7. How would you like the significant genes and their P.Value to be annotated (e.g.,
+  tooltip, labels, color-coded)?
+
+  8. Do you have any preferences for the aspect ratio or size of the overall plot?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color palette preference.
+
+  2. I am not sure about the style or size for the text annotations.
+
+  3. I am not sure about the preferred scaling for the y-axis values.
+
+  4. Yes, please include additional statistical markers, such as the median or quartiles.
+
+  5. I do not know about the font or font size for axis labels and titles.
+
+  6. Yes, I would prefer the plot to include grid lines for better readability.
+
+  7. I would like the significant genes and their P.Value to be annotated with labels.
+
+  8. I have no specific preference for the aspect ratio or size of the overall plot.
+
+  <end of user emulated response>'
+data_attributes:
+- Gene.symbol
+- P.Value
+- logFC
+- Cell Line

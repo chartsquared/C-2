@@ -1,0 +1,59 @@
+initial_prompt: I want to create a heatmap for my supermarket sales dataset. Specifically,
+  I want to visualize the relationship between the Branch and City. The heatmap should
+  show the count of transactions based on different branches (A, B, C) in various
+  cities (Yangon, Naypyitaw, Mandalay). This will help in understanding which branches
+  are recording more sales in which cities. Please use a color gradient that is easy
+  to interpret, ranging from light (few transactions) to dark (many transactions).
+  Ensure the heatmap is clear and labels for both axes are readable.
+questions: '1. Do you have specific preferences for the color gradient used in the
+  heatmap?
+
+  2. What font size do you prefer for the axis labels to ensure readability?
+
+  3. Do you want to include any specific title or subtitle for the heatmap?
+
+  4. Should the heatmap include annotations for the counts of transactions within
+  each cell?
+
+  5. Do you have a preferred color palette for the heatmap?
+
+  6. Do you prefer the heatmap to have gridlines for better separation of cells?
+
+  7. Would you like to have a legend or key explaining the color gradient used in
+  the heatmap?
+
+  8. Do you want the heatmap to be displayed in a specific orientation (horizontal
+  or vertical)?
+
+  9. Are there any specific aesthetic enhancements you prefer for the heatmap, such
+  as borders, specific axis formats, or background color?
+
+  10. Do you prefer to include any additional context or notes directly on the heatmap
+  for the understanding of the prospective audience?'
+answers: '<start of user emulated response>
+
+  1. I am not sure, but it should be easy to interpret.
+
+  2. I do not know, just ensure they are readable.
+
+  3. I have no specific preference for a title or subtitle.
+
+  4. Yes, including annotations for the counts within each cell would be helpful.
+
+  5. I do not have a preferred color palette.
+
+  6. I am not sure about gridlines, whatever you think is best.
+
+  7. Yes, please include a legend explaining the color gradient.
+
+  8. I do not have a preference for orientation.
+
+  9. I am not sure, just keep it simple and clear.
+
+  10. I do not want any additional context or notes directly on the heatmap.
+
+  <end of user emulated response>'
+data_attributes:
+- Branch
+- City
+- Invoice ID

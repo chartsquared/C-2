@@ -1,0 +1,60 @@
+initial_prompt: Create a line chart visualizing key metrics from the League of Legends
+  Diamond Ranked Games (10 min). Plot the time series of blue and red teams' total
+  gold and average level over time. Annotate significant events such as first blood
+  and the number of elite monsters captured. Highlight gold and experience differences
+  with annotations to compare team performance. Use shape annotations like arrows
+  to emphasize important events or patterns in the data. This visualization will help
+  analyze team dynamics and strategic advantages during the early game phase.
+questions: '1. Do you have a preferred color scheme for differentiating between the
+  blue and red teams?
+
+  2. Would you like specific line styles (e.g., solid, dashed) to differentiate between
+  the total gold and average level metrics?
+
+  3. Are there any specific formats or styles for annotations (e.g., font size, color)
+  that you prefer?
+
+  4. How would you like significant events (e.g., first blood, elite monsters) to
+  be annotated on the chart (e.g., text labels, icons)?
+
+  5. Do you have a preference for the placement and style of shape annotations like
+  arrows to emphasize important events?
+
+  6. Would you like grid lines or background shading to be included in the chart to
+  enhance readability?
+
+  7. How would you prefer to highlight the gold and experience differences (e.g.,
+  shaded areas between lines, distinct markers)?
+
+  8. Are there any specific time intervals (e.g., every minute) you would like on
+  the x-axis for the time series plot?
+
+  9. Do you want to include a legend on the chart? If yes, where would you like it
+  to be positioned?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like solid lines for total gold and dashed lines for average level.
+
+  3. I am not sure.
+
+  4. Text labels would be good for significant events like first blood and elite monsters.
+
+  5. I do not know.
+
+  6. Yes, include grid lines to enhance readability.
+
+  7. Shaded areas between lines to highlight gold and experience differences would
+  be great.
+
+  8. Every minute would be fine for the time intervals on the x-axis.
+
+  9. Yes, please include a legend. I am not sure where it should be positioned.'
+data_attributes:
+- blueTotalGold
+- blueAvgLevel
+- redTotalGold
+- redAvgLevel
+- blueGoldDiff
+- blueExperienceDiff
+- blueFirstBlood
+- blueEliteMonsters

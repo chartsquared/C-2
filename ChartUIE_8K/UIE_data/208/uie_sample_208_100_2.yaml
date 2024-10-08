@@ -1,0 +1,47 @@
+initial_prompt: Please create a scatter plot to visualize the Boston House Prices
+  data, focusing on the relationship between 'RM' (average number of rooms per dwelling)
+  and 'MEDV' (median value of owner-occupied homes). Include data-driven text annotations
+  to highlight key data points, especially those with extreme 'MEDV' values (both
+  high and low). Use highlights to distinguish different values of 'RAD' (index of
+  accessibility to radial highways) by color. The purpose is to understand how room
+  numbers and radial highway accessibility affect house prices. This will help in
+  real-estate analysis and decision-making.
+questions: '1. Do you have any preferences for the color palette used to distinguish
+  different values of ''RAD''?
+
+  2. Would you like to specify particular shapes or sizes for data points based on
+  any criteria?
+
+  3. How would you prefer the text annotations for key data points to be formatted
+  (e.g., font size, color, background)?
+
+  4. Do you have a specific layout preference for the chart (e.g., axis titles, gridlines)?
+
+  5. Would you like any specific labels or titles included in the chart (e.g., chart
+  title, axis labels)?
+
+  6. Do you prefer the chart to include a legend, and if so, where should it be placed?
+
+  7. Is there any particular aspect ratio or size you prefer for the scatter plot?
+
+  8. Are there any specific formatting preferences for the highlight of extremes ''MEDV''
+  values?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I don''t know.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a chart title, axis labels for ''RM'' and ''MEDV''.
+
+  6. Yes, please include a legend, but I am not sure about the placement.
+
+  7. I do not have a specific preference for the aspect ratio or size.
+
+  8. I am not sure.'
+data_attributes:
+- RM
+- MEDV
+- RAD

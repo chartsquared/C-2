@@ -1,0 +1,70 @@
+initial_prompt: I have customer feedback data for a business, represented by different
+  phrases like "Almost Certainly," "Highly Likely," etc. Each phrase has corresponding
+  numerical ratings. I want a grouped bar chart comparing these phrases across multiple
+  instances of feedback. Each bar group will represent a specific phrase, and each
+  bar within the group will denote different instances of feedback. The y-axis should
+  display the numerical ratings, while the x-axis lists all the phrases. Colors should
+  differentiate the instances. This chart will help visualize customer perception
+  over different feedback instances.
+questions: '1. Do you have a preferred color palette for differentiating the feedback
+  instances?
+
+  2. Should the chart include a legend to explain the colors of different instances?
+
+  3. Would you like gridlines on the chart for easier reading of the values?
+
+  4. Do you prefer the chart to have labels on each bar indicating the numerical rating?
+
+  5. Should the chart have a title? If so, what should it be?
+
+  6. Do you want to include axis titles? If yes, do you have specific names for the
+  x-axis and y-axis?
+
+  7. Would you like tooltips to appear when hovering over each bar to show more detailed
+  information?
+
+  8. Should the chart include a background color, or should it be transparent?
+
+  9. Do you have a specific order for the phrases on the x-axis or should they be
+  automatically sorted?
+
+  10. Would you like to add any custom annotations or markers to highlight specific
+  data points?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include a legend to explain the colors of different instances.
+
+  3. Yes, I would like gridlines on the chart for easier reading of the values.
+
+  4. I do not have a specific preference.
+
+  5. Yes, the chart should have a title. It should be "Customer Feedback Comparison."
+
+  6. Yes, please include axis titles. The x-axis should be titled "Phrases" and the
+  y-axis "Numerical Ratings."
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Almost Certainly
+- Highly Likely
+- Very Good Chance
+- Probable
+- Likely
+- Probably
+- We Believe
+- Better Than Even
+- About Even
+- We Doubt
+- Improbable
+- Unlikely
+- Probably Not
+- Little Chance
+- Almost No Chance
+- Highly Unlikely
+- Chances Are Slight

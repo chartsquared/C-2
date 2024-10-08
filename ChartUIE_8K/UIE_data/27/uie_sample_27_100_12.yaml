@@ -1,0 +1,59 @@
+initial_prompt: Create a choropleth map to visualize the sales data from the provided
+  automobile sales dataset. Use the "COUNTRY" field to highlight different regions,
+  and the "SALES" field to determine the color intensity, representing the total sales
+  amount for each country. Ensure the countries with higher sales amounts are shaded
+  more darkly. Differentiate between small, medium, and large deal sizes by using
+  patterns or textures overlaid on the color shading. Include a legend to explain
+  the color and pattern coding. The map should also display city markers for additional
+  context.
+questions: '1. Do you have a specific color scheme in mind for representing different
+  sales amounts?
+
+  2. What patterns or textures would you prefer to differentiate small, medium, and
+  large deal sizes?
+
+  3. How would you like the city markers to be represented (e.g., size, color, shape)?
+
+  4. Is there any specific range or threshold for sales amounts that you want highlighted
+  in the legend?
+
+  5. Do you prefer to see the country names annotated on the map?
+
+  6. Should the map have any specific geographical boundaries or focus on certain
+  continents or regions?
+
+  7. Will the map be used for print or digital presentations, and if digital, on what
+  kind of screen or resolution?
+
+  8. Are there any branding guidelines or color restrictions we need to follow?
+
+  9. Should any additional information be included in tooltips when hovering over
+  countries or cities?
+
+  10. Do you prefer a specific orientation or projection for the map (e.g., Mercator,
+  Robinson)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would prefer different sizes and maybe distinct colors for the city markers,
+  but I am not sure about the specifics.
+
+  4. I am not certain.
+
+  5. Yes, I would like the country names annotated on the map.
+
+  6. I do not know.
+
+  7. The map will primarily be used for digital presentations.
+
+  8. No specific branding guidelines or color restrictions.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- COUNTRY
+- SALES
+- CITY
+- DEALSIZE

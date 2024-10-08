@@ -1,0 +1,63 @@
+initial_prompt: I'd like a Spline chart to visualize the performance trends of different
+  women's college basketball teams over the years. The chart should plot 'year' on
+  the X-axis and 'full_percent' on the Y-axis for each team ('school'). Include data
+  points for 'reg_percent' as well. This will illustrate how their regular and full
+  season win percentages have changed over time. Differentiate the teams with distinct
+  colors and styles for easier comparison. Provide a legend for clarity. This should
+  help in understanding the overall performance and progression of the teams in the
+  college basketball scene.
+questions: '1. Do you have any specific color preferences for different teams?
+
+  2. Would you prefer solid or dashed lines to differentiate between ''reg_percent''
+  and ''full_percent''?
+
+  3. What style (e.g., line thickness or type) would you like for the different teams?
+
+  4. What level of granularity (e.g., yearly, quarterly) would you prefer for the
+  X-axis?
+
+  5. Should the chart include grid lines for better readability? If so, any preference
+  for their style?
+
+  6. Do you want specific markers for data points on the spline chart?
+
+  7. Would you like specific titles and labels for the X-axis and Y-axis?
+
+  8. Do you have any preference for the font style and size for the legend and axis
+  labels?
+
+  9. Should there be any annotations or highlights for specific events or milestones?
+
+  10. Do you want to include any additional information or notes on the chart?'
+answers: '1. I do not have any specific color preferences for different teams.
+
+  2. Solid lines for ''full_percent'' and dashed lines for ''reg_percent'' should
+  work well.
+
+  3. I am not sure about the style for the different teams; you can choose what looks
+  best for distinction.
+
+  4. Yearly granularity for the X-axis would be ideal.
+
+  5. Yes, including grid lines for better readability would be good. I don''t have
+  a specific preference for their style.
+
+  6. Specific markers for data points on the spline chart would be helpful.
+
+  7. Yes, please include titles and labels for the X-axis and Y-axis. X-axis: "Year",
+  Y-axis: "Win Percentage".
+
+  8. I do not have a specific preference for the font style and size for the legend
+  and axis labels.
+
+  9. I am not sure about annotations or highlights for specific events or milestones.
+
+  10. No additional information or notes needed.
+
+
+  Thank you!'
+data_attributes:
+- year
+- school
+- reg_percent
+- full_percent

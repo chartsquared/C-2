@@ -1,0 +1,45 @@
+initial_prompt: Create a grouped bar chart visualizing points per player across multiple
+  games from "My Settlers of Catan Games." Highlight key players and annotate their
+  totalAvailable values. Include tradeGain and tradeLoss for each player to show trading
+  performance.
+questions: "1. What color scheme do you prefer for differentiating players in the\
+  \ grouped bar chart?\n2. Do you have any specific players you would like to highlight?\n\
+  3. Should the bars representing tradeGain and tradeLoss have distinct colors or\
+  \ patterns?\n4. Do you prefer to have the totalAvailable values annotated directly\
+  \ on the bars or displayed in a tooltip?\n5. Is there a specific order you would\
+  \ like to follow for grouping the bars (e.g., by player, by game number)?\n6. Would\
+  \ you like to include any gridlines or background to improve readability?\n7. Should\
+  \ the chart include a legend to clarify the different data attributes (e.g., points,\
+  \ tradeGain, tradeLoss)?\n8. Do you have any preference for the font style or size\
+  \ used in the annotations and labels?\n9. Are there any specific axis titles or\
+  \ labels you would like to include? \n10. Would you like to see data points or lines\
+  \ connecting the bars to convey trends or comparisons?\n11. Do you prefer a vertical\
+  \ or horizontal orientation for the grouped bar chart?"
+answers: '1. I am not sure.
+
+  2. Yes, I would like to highlight key players John, Alice, and Bob.
+
+  3. Distinct colors would be fine for tradeGain and tradeLoss.
+
+  4. I prefer to have the totalAvailable values annotated directly on the bars.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Yes, please include a legend to clarify the different data attributes.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.
+
+  11. Vertical orientation would be nice.'
+data_attributes:
+- gameNum
+- player
+- points
+- totalAvailable
+- tradeGain
+- tradeLoss

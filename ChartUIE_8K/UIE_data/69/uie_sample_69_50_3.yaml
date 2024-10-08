@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart of bytes_in and bytes_out over creation_time and
+  end_time, highlighting src_ip interactions by country code.
+questions: '1. Do you have a preferred color scheme for highlighting different country
+  codes?
+
+  2. Would you prefer the line chart to display data at specific time intervals (e.g.,
+  hourly, daily)?
+
+  3. Do you want the creation_time or end_time to be the primary time axis for the
+  line chart?
+
+  4. Should the chart include tooltips or labels that show specific values for bytes_in
+  and bytes_out?
+
+  5. Do you have a preference for the style of the lines (e.g., solid, dashed)?
+
+  6. Would you like grid lines to be included in the chart for better readability?
+
+  7. Should the chart include a legend to identify the data lines for bytes_in and
+  bytes_out?
+
+  8. Do you have a preferred layout for displaying multiple lines (stacked, overlapping)?
+
+  9. Would you like markers on the data points to emphasize specific values or events?
+
+  10. Should the chart display average values or trend lines aside from the raw data
+  lines?
+
+  11. Do you want annotations on the chart to highlight specific events or anomalies?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Creation_time.
+
+  4. Yes, include tooltips or labels.
+
+  5. I do not know.
+
+  6. Yes, include grid lines.
+
+  7. Yes, include a legend.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I have no specific preference.
+
+  11. I am not sure.'
+data_attributes:
+- bytes_in
+- bytes_out
+- creation_time
+- end_time
+- src_ip_country_code

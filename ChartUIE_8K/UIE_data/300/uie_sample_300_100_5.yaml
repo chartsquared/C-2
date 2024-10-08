@@ -1,0 +1,53 @@
+initial_prompt: I have a dataset related to organic carbon and dissolved organic carbon
+  measurements in water samples. I need a scatter plot to visualize the relationship
+  between 'Raw TOC (mg/l)' on the x-axis and 'Finish TOC (mg/l)' on the y-axis. Ensure
+  to label the axes appropriately and indicate the unit of measurement. Include a
+  title that reflects the data context. Also, highlight points where TOC ReductionPCT
+  (%) is above the IDEM Requirement (%), maybe using a different color or marker.
+  This will help to easily identify compliant instances.
+questions: '1. Do you have any preferred color scheme for the chart?
+
+  2. Would you like to include gridlines in the scatter plot?
+
+  3. How would you prefer to highlight the points where ''TOC ReductionPCT (%)'' is
+  above ''IDEM Requirement (%)''? Would you prefer a different color or a different
+  marker shape?
+
+  4. Are there any specific font styles or sizes you prefer for the axes labels, title,
+  or legend?
+
+  5. Do you have a preferred format for the title of the chart? For example, including
+  specific keywords or structure.
+
+  6. Would you like to add data labels directly on the points, especially the highlighted
+  ones indicating compliance?
+
+  7. Is there any specific information or annotations you would like to appear within
+  the chart area or on the axes?
+
+  8. Do you require a legend to explain the different markers or colors used in the
+  plot?
+
+  9. Is there a particular size or aspect ratio that you prefer for the scatter plot?'
+answers: '1. I do not know.
+
+  2. Yes, I would like to include gridlines.
+
+  3. I prefer a different color.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, I require a legend.
+
+  9. I do not know.'
+data_attributes:
+- Raw TOC (mg/l)
+- Finish TOC (mg/l)
+- TOC ReductionPCT (%)
+- IDEM Requirement (%)

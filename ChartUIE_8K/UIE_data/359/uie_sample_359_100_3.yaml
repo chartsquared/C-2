@@ -1,0 +1,65 @@
+initial_prompt: Could you create a table chart summarizing the online courses offered
+  by Harvard and MIT? Please highlight key details such as Institution, Course Number,
+  Launch Date, Course Title, Instructors, Course Subject, Year, Participants, and
+  Certification rates. Additionally, focus on the gender distribution and educational
+  background of the participants. This will help us compare course engagement and
+  demographics across different subjects. Thank you!
+questions: '1. Do you prefer the table to be sorted by any specific attribute(s)?
+  If so, which one(s)?
+
+  2. Would you like conditional formatting or color coding to distinguish key metrics
+  like certification rates or gender distribution?
+
+  3. How would you like the gender distribution and educational background to be displayed?
+  As separate columns or combined in some way?
+
+  4. Are there any specific colors or styles you prefer for the table?
+
+  5. How detailed should the instructors'' names be displayed (full names versus last
+  names)?
+
+  6. Should the launch dates be formatted in a particular way (e.g., "DD/MM/YYYY"
+  or "MM/DD/YYYY")?
+
+  7. Would you like to include any aggregated values or summaries (e.g., averages,
+  totals) at the end of the table?
+
+  8. Is there any specific font or size you prefer for the text within the chart?
+
+  9. Do you want the table to include any visual indicators (e.g., icons or bars)
+  to represent the number of participants or certification rates?
+
+  10. Do you have any preferences for the table''s orientation (e.g., vertical versus
+  horizontal alignment of columns)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Separate columns.
+
+  4. I have no specific preference.
+
+  5. Full names.
+
+  6. MM/DD/YYYY.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- Institution
+- Course Number
+- Launch Date
+- Course Title
+- Instructors
+- Course Subject
+- Year
+- Participants (Course Content Accessed)
+- Certified
+- '% Male'
+- '% Female'
+- '% Bachelor''s Degree or Higher'

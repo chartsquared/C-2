@@ -1,0 +1,44 @@
+initial_prompt: 'Please create a heatmap using the provided automobile data to visualize
+  the relationship between fuel costs (fuelCost08) and city fuel efficiency (city08)
+  for different car makes and models. Highlight areas where electric cars have significant
+  savings compared to regular gasoline vehicles. Use year as an additional layer to
+  show change over time. Focus on columns: make, model, fuelCost08, city08, and year.
+  Ensure the heatmap clearly shows which cars are the most cost-effective in city
+  driving while highlighting the benefit of electric cars in terms of fuel-cost savings.'
+questions: '1. Do you have any preference for the color scheme of the heatmap?
+
+  2. Would you like to include annotations or labels on the heatmap indicating the
+  exact values of fuel cost and city fuel efficiency?
+
+  3. How would you prefer to differentiate electric cars from regular gasoline vehicles
+  on the heatmap (e.g., using different colors, patterns, or symbols)?
+
+  4. Should the heatmap display the data for all years at once, or would you prefer
+  to have an option to filter by specific years?
+
+  5. Do you have any preference for the grid size or resolution of the heatmap (e.g.,
+  finer or coarser grid)?
+
+  6. Would you like to include a legend explaining the color intensities and any distinct
+  markers used for different types of cars?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Different colors would be good.
+
+  4. I would prefer the option to filter by specific years.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend.
+
+  <end of user emulated response>'
+data_attributes:
+- make
+- model
+- fuelCost08
+- city08
+- year

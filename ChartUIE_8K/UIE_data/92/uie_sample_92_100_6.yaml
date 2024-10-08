@@ -1,0 +1,72 @@
+initial_prompt: I need a Choropleth map to visualize global life expectancy and socio-economic
+  factors. Use the provided data to color-code countries based on life expectancy.
+  Overlay with markers that indicate prevalence of undernourishment, CO2 emissions,
+  health and education expenditure percentages, and unemployment rates. Focus on showing
+  regional differences and income group variances. Make sure missing values are appropriately
+  handled, and use tooltips to display data details for each country. The map should
+  help identify patterns and correlations between life expectancy and socio-economic
+  factors. Title the map "Global Life Expectancy and Socio-Economic Overview."
+questions: '1. Do you have a preferred color scheme or gradient for the choropleth
+  map to represent life expectancy?
+
+  2. Are there specific colors you prefer for the markers representing different socio-economic
+  factors such as undernourishment, CO2 emissions, health expenditure, education expenditure,
+  and unemployment rates?
+
+  3. What range of values should be used to categorize life expectancy for the color-coding?
+  For example, low, medium, high.
+
+  4. How would you like to handle countries with missing data? Should they be color-coded
+  in a specific way or left out?
+
+  5. Do you want the markers indicating socio-economic factors to vary in size or
+  shape based on their values?
+
+  6. Should the map focus on recent data, a specific year, or an average over a range
+  of years?
+
+  7. Is there a specific geographic projection you prefer for the map (e.g., Mercator,
+  Robinson)?
+
+  8. Are there any additional annotations or labels you want to be included on the
+  map besides tooltips?
+
+  9. Do you have preferences for the design or placement of the legend explaining
+  the color-coding and markers?
+
+  10. Should the map include any specific regional boundaries or highlights for better
+  emphasis on regional differences and income group variances?'
+answers: '<start user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Medium: 60-70, High: 70-80, Very High: 80+
+
+  4. Color-code them in a specific way, maybe greyed out.
+
+  5. Yes, vary in size based on their values.
+
+  6. Recent data or the most recent year available.
+
+  7. Robinson projection would be nice.
+
+  8. No specific preference.
+
+  9. I am not sure.
+
+  10. Highlight income group variances if possible.
+
+  <end user emulated response>'
+data_attributes:
+- Country Name
+- Country Code
+- Region
+- IncomeGroup
+- Life Expectancy World Bank
+- Prevelance of Undernourishment
+- CO2
+- Health Expenditure %
+- Education Expenditure %
+- Unemployment

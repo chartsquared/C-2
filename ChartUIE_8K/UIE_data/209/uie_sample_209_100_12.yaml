@@ -1,0 +1,57 @@
+initial_prompt: Create a bubble chart visualizing the New York Housing Market data.
+  Use property prices (PRICE) on the x-axis and property square footage (PROPERTYSQFT)
+  on the y-axis. The size of the bubbles should represent the number of beds (BEDS),
+  and the color of the bubbles should differentiate the property type (TYPE). Include
+  the legend to distinguish types of properties and make sure the chart title reflects
+  that it's for the New York Housing Market. Make it interactive to hover over bubbles
+  to see details like broker title, address, and formatted address.
+questions: '1. Do you have any specific preferences for the color palette to differentiate
+  property types?
+
+  2. Would you prefer a specific size range for the bubbles to represent the number
+  of beds?
+
+  3. Is there a preferred font style or size for the chart title and legend?
+
+  4. Do you have a preference for the background color of the chart?
+
+  5. Are there any specific labels or annotations you would like to include on the
+  chart axes?
+
+  6. Do you want grid lines to be displayed on the chart? If so, do you have a preference
+  for their appearance?
+
+  7. Should the legend be placed in a specific location on the chart (e.g., top, bottom,
+  left, right)?
+
+  8. Do you have any preferences for the format or layout of the details seen when
+  hovering over the bubbles?
+
+  9. Would you like to include any custom branding elements, such as logos or specific
+  color themes?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Yes, I would like grid lines, but I do not have a specific preference for their
+  appearance.
+
+  7. Right side of the chart would be good.
+
+  8. I do not know.
+
+  9. No custom branding elements needed.'
+data_attributes:
+- PRICE
+- PROPERTYSQFT
+- BEDS
+- TYPE
+- BROKERTITLE
+- ADDRESS
+- FORMATTED_ADDRESS

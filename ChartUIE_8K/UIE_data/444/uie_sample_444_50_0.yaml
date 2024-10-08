@@ -1,0 +1,55 @@
+initial_prompt: Create a heatmap to visualize the cost per km of different public
+  transit lines in Canada. Annotate significant deviations and trends. Highlight start
+  and end years, tunnel percentages, and station counts for context. This will help
+  compare the efficiency and investment in various city projects.
+questions: '1. Do you have any preferred color schemes for the heatmap?
+
+  2. Would you like any specific color gradient for highlighting the cost per km?
+
+  3. How would you prefer significant deviations to be annotated (e.g., symbols, text
+  annotations)?
+
+  4. Do you want the start and end years displayed prominently on the chart?
+
+  5. How would you like the tunnel percentages to be represented (e.g., as a separate
+  legend, integrated into the heatmap cells)?
+
+  6. Should the station counts be displayed on the heatmap itself or as a tooltip
+  on hover?
+
+  7. Do you have a preference for the shape and size of the heatmap cells?
+
+  8. Would you prefer the axis labels (e.g., city names, line names) to be displayed
+  horizontally or vertically?
+
+  9. How much detail would you like in the chart''s legend?
+
+  10. Are there any specific trends or deviations you want to be highlighted in a
+  particular way?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Text annotations would be good.
+
+  4. Yes, I would like the start and end years displayed prominently on the chart.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I am not sure.'
+data_attributes:
+- city
+- line
+- start_year
+- end_year
+- tunnel_per
+- stations
+- cost_km_millions

@@ -1,0 +1,59 @@
+initial_prompt: I want a density plot to visualize the 'Living Planet Index' over
+  different years from the provided data. Ensure the x-axis represents the 'Year'
+  and the y-axis represents the 'Living Planet Index'. Also, include the Upper and
+  Lower Confidence Intervals (CI) as shaded regions around the density plot line to
+  show the variations. Make the plot informative, displaying how the index changes
+  over time while taking into account the confidence intervals. This visualization
+  should help in understanding biodiversity trends and uncertainties effectively.
+  Please color the lines and shaded regions distinctively for better clarity and distinction.
+questions: '1. Do you have any specific color preferences for the lines and shaded
+  regions?
+
+  2. What level of granularity do you prefer for the x-axis labels?
+
+  3. Would you like gridlines on the chart for better reference, and if so, at what
+  intervals?
+
+  4. Do you prefer a specific font style or size for the chart labels and titles?
+
+  5. Should the chart include a legend to indicate what each element represents?
+
+  6. Are there any specific annotations or highlights you would like added to the
+  chart?
+
+  7. Would you prefer a specific style for the confidence interval shading (e.g.,
+  transparency levels)?
+
+  8. Do you want the chart to include markers at data points, or should it be a continuous
+  line?
+
+  9. Should the y-axis be set to a specific range, or should it adjust automatically
+  based on the data?
+
+  10. Is there a specific title you would like for the chart, or any subtitles and
+  axis titles?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes.
+
+  6. No specific annotations or highlights.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. It should adjust automatically based on the data.
+
+  10. "Living Planet Index Over Years" for the title; "Year" for the x-axis and "Living
+  Planet Index" for the y-axis.'
+data_attributes:
+- Year
+- Living Planet Index
+- Upper CI, Living Planet Index (95% CI)
+- Lower CI, Living Planet Index (95% CI)

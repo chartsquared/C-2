@@ -1,0 +1,54 @@
+initial_prompt: 'I have a dataset here referencing three columns: x, y1, and y2, all
+  containing float64 values with no missing data. I''d like to visualize this information
+  as an area chart to see the trends and relationships between y1 and y2 over the
+  values of x. Particularly, I am interested in identifying any patterns or differences
+  between y1 and y2 as x changes. Please create an area chart that overlays y1 and
+  y2, using x for the horizontal axis and differentiating y1 and y2 with distinct
+  colors.'
+questions: '1. Do you have any specific color preferences for differentiating y1 and
+  y2?
+
+  2. Would you like to include gridlines on the chart for easier comparison?
+
+  3. Do you prefer any specific font or font size for the labels and title?
+
+  4. How would you like the legend to be placed? (e.g., top, bottom, left, right)
+
+  5. Is there a specific title you would like to use for the chart?
+
+  6. Should the axes be labeled with specific names other than ''x'', ''y1'', and
+  ''y2''?
+
+  7. Do you prefer a particular style or theme for the chart? (e.g., minimalist, colorful,
+  professional, etc.)
+
+  8. Are there any particular tooltips or annotations you would like to include in
+  the chart for better clarity?
+
+  9. Do you have a preferred axis range for the x, y1, and y2 axes?
+
+  10. Would you like the chart to include a trend line or any other statistical representation
+  for better trend identification?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure about the gridlines.
+
+  3. I have no specific preference for the font or font size.
+
+  4. I do not have a preference for the legend placement.
+
+  5. I am not sure about the title.
+
+  6. I do not have specific names for the axes.
+
+  7. I do not know about the style or theme.
+
+  8. I am not sure about tooltips or annotations.
+
+  9. I do not have a preferred axis range.
+
+  10. I am not sure about including a trend line.'
+data_attributes:
+- x
+- y1
+- y2

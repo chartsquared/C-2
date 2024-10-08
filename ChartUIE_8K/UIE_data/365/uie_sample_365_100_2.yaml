@@ -1,0 +1,48 @@
+initial_prompt: Create a scatter plot visualizing TV shows on Netflix, Prime Video,
+  Hulu, and Disney+. The x-axis will represent the IMDb ratings, while the y-axis
+  will show Rotten Tomatoes scores. Include text annotations for shows with the highest
+  IMDb and Rotten Tomatoes scores to highlight standout content. Use color to differentiate
+  between streaming platforms, enhancing the contrast between different services.
+  The purpose is to help viewers quickly identify top-rated shows and see which platform
+  offers them. This visualization will be useful for audience members deciding on
+  streaming services based on top-rated TV content.
+questions: '1. Do you have a preferred color scheme or specific colors you would like
+  to use to differentiate between streaming platforms?
+
+  2. How would you like the text annotations for the highest-rated shows to be displayed
+  (e.g., font size, color, positioning)?
+
+  3. Do you prefer any specific size or layout for the scatter plot?
+
+  4. Would you like to include grid lines on the scatter plot for better readability?
+
+  5. Are there any specific labels or titles you would like for the axes and the chart
+  as a whole?
+
+  6. Do you have any preferred style for the markers (e.g., shape, size) representing
+  the TV shows on the scatter plot?'
+answers: '<start of user emulated response>
+
+  1. I have no specific preference.
+
+  2. I would like the text annotations to be in a medium font size, with a contrasting
+  color to the background, and positioned close to the respective data points.
+
+  3. I am not sure.
+
+  4. Yes, including grid lines would be helpful for readability.
+
+  5. The x-axis could be labeled "IMDb Ratings" and the y-axis "Rotten Tomatoes Scores".
+  The title could be "Top-Rated TV Shows by Streaming Platform".
+
+  6. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Title
+- IMDb
+- Rotten Tomatoes
+- Netflix
+- Hulu
+- Prime Video
+- Disney+

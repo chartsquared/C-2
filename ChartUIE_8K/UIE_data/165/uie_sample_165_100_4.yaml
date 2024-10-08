@@ -1,0 +1,53 @@
+initial_prompt: I need a box chart to visualize the data from the lung cancer prediction
+  dataset. The chart should display the distribution of different features like Age,
+  Air Pollution, Alcohol use, Dust Allergy, etc., across the three levels (Low, Medium,
+  High). Highlight outliers and show median values for each variable in the boxplot.
+  Make sure the axes are labeled clearly, and each box plot is distinguished by color
+  according to the 'Level' of lung cancer risk. This way, we can easily compare the
+  spread and central tendency of data for each feature.
+questions: '1. Do you have a preferred color palette for distinguishing the ''Level''
+  of lung cancer risk?
+
+  2. Would you like the box plots to have specific styles or patterns to emphasize
+  the different features?
+
+  3. Do you prefer the outliers to be highlighted with specific symbols or colors?
+
+  4. Are there any specific font styles or sizes you would like for the labels and
+  titles?
+
+  5. Should the chart include a legend to explain the colors or styles used for the
+  ''Level'' of lung cancer risk?
+
+  6. Do you prefer vertical or horizontal orientation for the box plots?
+
+  7. Would you like to include grid lines for better readability of the axes?
+
+  8. Is there any particular order you would like the features to be displayed on
+  the chart?
+
+  9. Do you want to display any additional statistics on the box plots such as mean
+  values, quartiles, or whiskers'' length?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please highlight outliers with specific symbols or colors.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend.
+
+  6. I prefer vertical orientation for the box plots.
+
+  7. Yes, include grid lines for better readability of the axes.
+
+  8. I am not sure.
+
+  9. No additional statistics are needed, just the median values.'
+data_attributes:
+- Age
+- Air Pollution
+- Alcohol use
+- Dust Allergy
+- Level

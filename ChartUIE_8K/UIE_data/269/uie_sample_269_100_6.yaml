@@ -1,0 +1,37 @@
+initial_prompt: I need a bar chart visualizing the populations of the top 10 countries
+  in 2023 from the provided data. Each bar should represent one country, with the
+  height corresponding to its 2023 population. The x-axis should list the countries
+  (India, China, USA, etc.), and the y-axis should show the population numbers. Additionally,
+  color-code the bars by continent to differentiate them easily. Include a legend
+  indicating which color corresponds to which continent (Asia, North America, etc.).
+  Title the chart "Top 10 Most Populated Countries in 2023."
+questions: '1. Do you have any preferred font style or size for the chart title and
+  axis labels?
+
+  2. Would you like gridlines on the y-axis to improve readability?
+
+  3. Do you prefer any specific color scheme for the continents?
+
+  4. Should the bars have any particular thickness or spacing between them?
+
+  5. Do you have any preference for the orientation of the x-axis labels (e.g., horizontal,
+  vertical, angled)?
+
+  6. Would you like to include data labels showing the population numbers on top of
+  the bars?'
+answers: '1. I am not sure.
+
+  2. Yes, gridlines on the y-axis would be helpful.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Horizontal orientation for x-axis labels would be good.
+
+  6. Yes, please include data labels showing the population numbers on top of the
+  bars.'
+data_attributes:
+- country
+- continent
+- 2023 population

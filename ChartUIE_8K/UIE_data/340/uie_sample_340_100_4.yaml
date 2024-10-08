@@ -1,0 +1,42 @@
+initial_prompt: I want to create a line chart to visualize the time taken for order
+  delivery in our supply chain process. Use data from the OrderDate, ShipDate, and
+  DeliveryDate columns to plot the timeline of orders. The x-axis should show the
+  different order stages (OrderDate, ShipDate, DeliveryDate), and the y-axis should
+  represent the dates. Different lines for each Sales Channel will also help in comparing
+  delivery times across channels like In-Store, Online, and Distributor. This visualization
+  will help identify inefficiencies in the supply chain management process.
+questions: '1. Do you have a preferred color scheme for differentiating the sales
+  channels?
+
+  2. Would you like to include data labels on the line chart for specific points,
+  such as exact dates for OrderDate, ShipDate, and DeliveryDate?
+
+  3. Should we include a legend to identify the different sales channels?
+
+  4. Do you prefer a specific line style (e.g., solid, dashed) for the different sales
+  channels?
+
+  5. Would you like gridlines on the chart to make it easier to read the dates?
+
+  6. Do you have any specific preferences for the chart title and axis labels?
+
+  7. Are there any specific annotations or highlights you would like to add to emphasize
+  certain data points or trends?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend to identify the different sales channels.
+
+  4. I have no specific preference.
+
+  5. Yes, gridlines would be helpful to make it easier to read the dates.
+
+  6. I am not sure about specific preferences for the chart title and axis labels.
+
+  7. I do not know.'
+data_attributes:
+- OrderDate
+- ShipDate
+- DeliveryDate
+- Sales Channel

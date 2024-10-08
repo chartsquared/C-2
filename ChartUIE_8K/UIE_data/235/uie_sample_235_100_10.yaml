@@ -1,0 +1,46 @@
+initial_prompt: Please create a stacked bar chart to visualize the medical insurance
+  costs based on different regions. Use 'region' as the categorical axis with bars
+  representing the average insurance charges. Stack the bars by 'smoker' status (yes
+  and no) to show how smoking affects insurance costs. Different colors should distinguish
+  smokers from non-smokers within each region. Ensure the chart includes proper labels,
+  a legend, and appropriate axis titles. The data should come from the given dataset
+  on medical insurance costs, focusing on the influence of smoking status across different
+  regions.
+questions: '1. Do you have any specific preference for the colors used to distinguish
+  smokers from non-smokers?
+
+  2. Would you like the chart to have a specific title?
+
+  3. Are there any specific font styles or sizes you prefer for the labels and axis
+  titles?
+
+  4. Do you want any additional annotations or data labels within the bars to show
+  exact values?
+
+  5. Do you have a preferred layout or orientation for the legend?
+
+  6. Is there a specific order you prefer for the regions on the categorical axis?
+
+  7. Would you like any gridlines or reference lines on the chart for better readability?
+
+  8. Are there any specific branding elements (such as logo or specific colors) you
+  want to include in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific title in mind.
+
+  3. I am not sure, no specific preference.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No, there are no specific branding elements needed.'
+data_attributes:
+- region
+- charges
+- smoker

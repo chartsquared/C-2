@@ -1,0 +1,49 @@
+initial_prompt: Please create a line chart to visualize the distribution of IMDb ratings
+  over the years for TV shows listed in the dataset. The x-axis should be the range
+  of years, and the y-axis should display IMDb ratings. Each point on the chart should
+  represent an average IMDb rating for all TV shows released in that year. Additionally,
+  incorporate a line for Rotten Tomatoes ratings to compare trends between IMDb and
+  Rotten Tomatoes scores across different years. This comparison will help identify
+  any significant fluctuations in TV show ratings over time.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Would you like the chart to include data point markers on the lines?
+
+  3. Do you prefer a specific line style (e.g., solid, dashed) for either the IMDb
+  or Rotten Tomatoes ratings?
+
+  4. Should there be grid lines in the background to help with readability?
+
+  5. Would you like to include annotations for significant peaks or troughs in the
+  data?
+
+  6. Do you have a specific title and labels for the axes in mind?
+
+  7. Should the legend be displayed in a particular location on the chart?
+
+  8. Are there any specific highlights or emphasis you would like on certain years
+  or ratings?
+
+  9. Would you like the chart to indicate the overall trend line for each rating source?'
+answers: '1. I am not sure.
+
+  2. Yes, please include data point markers on the lines.
+
+  3. I do not have a specific preference for line style.
+
+  4. Yes, please include grid lines in the background.
+
+  5. I am not sure.
+
+  6. The title can be "Average TV Show Ratings Over the Years" and the axes can be
+  labeled "Year" for the x-axis and "Average Rating" for the y-axis.
+
+  7. I do not have a specific preference for the legend location.
+
+  8. I do not know.
+
+  9. Yes, please indicate the overall trend line for each rating source.'
+data_attributes:
+- Year
+- IMDb
+- Rotten Tomatoes

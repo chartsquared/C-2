@@ -1,0 +1,56 @@
+initial_prompt: I need a bar chart showing the daily opening and closing stock prices
+  for Google from the provided CSV data. Specifically, display the 'Open' and 'Close'
+  prices on the y-axis against the date on the x-axis. Highlight significant changes.
+  Include a key to differentiate between the 'Open' and 'Close' data points. Also,
+  explain any visible trends or patterns in the stock prices over time. Make sure
+  the data for the founding years of Google is clearly represented to provide historical
+  insight. The chart should be easy to interpret even for someone without a finance
+  background. Thank you.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like the bars to be stacked or grouped?
+
+  3. Is there a specific date range you want to emphasize for the founding years of
+  Google?
+
+  4. Do you prefer gridlines on the chart for better readability?
+
+  5. Would you like annotations on significant changes in stock prices?
+
+  6. Do you have a preference for the font style and size for labels and titles?
+
+  7. How detailed do you want the x-axis date labels to be (daily, weekly, monthly)?
+
+  8. Do you want the chart to include a title and subtitle? If so, what should they
+  be?
+
+  9. Are there any specific patterns or trends you are particularly interested in
+  highlighting?
+
+  10. Should the y-axis represent the stock prices in any specific format (e.g., currency
+  format)?'
+answers: '1. I am not sure.
+
+  2. Grouped.
+
+  3. I do not know.
+
+  4. Yes, gridlines would be helpful.
+
+  5. Yes, please include annotations on significant changes.
+
+  6. I do not know.
+
+  7. Weekly.
+
+  8. Yes, Title: "Google Daily Stock Prices", Subtitle: "Tracking Opening and Closing
+  Prices Over Time"
+
+  9. I am particularly interested in highlighting any sharp increases or decreases
+  in stock prices.
+
+  10. Yes, please use a currency format for the y-axis.'
+data_attributes:
+- Date
+- Open
+- Close

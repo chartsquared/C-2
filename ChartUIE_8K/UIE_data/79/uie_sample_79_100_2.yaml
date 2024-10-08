@@ -1,0 +1,51 @@
+initial_prompt: Create a bar chart displaying the average salaries based on different
+  degrees (degree_t) for placed students. Highlight the highest and lowest average
+  salaries with different colors. Add text annotations indicating the exact average
+  salary values on top of the bars for these highest and lowest points. The purpose
+  is to compare salary outcomes across different degrees and provide insight into
+  which degrees lead to higher placements. This visualization will be useful for students
+  planning their education and careers and institutions aiming to optimize their programs.
+questions: '1. Do you have any specific color preferences for the bars representing
+  different degrees?
+
+  2. How would you like the highest and lowest average salaries to be highlighted
+  (specific colors or patterns)?
+
+  3. Do you prefer the chart to be in a specific orientation (vertical or horizontal
+  bars)?
+
+  4. Is there a particular font and size for the text annotations indicating the exact
+  average salary values?
+
+  5. Would you like any specific labels or titles for the X-axis, Y-axis, and the
+  chart itself?
+
+  6. Do you have a preferred layout for the chart legend, if needed (e.g., at the
+  top, bottom, to the side)?
+
+  7. Should the chart follow any specific color schemes or guidelines, such as an
+  institutional color palette?
+
+  8. Would you like any additional information or context included in any part of
+  the chart for better understanding?'
+answers: '1. I do not have any specific color preferences for the bars representing
+  different degrees.
+
+  2. The highest average salary could be highlighted in green, and the lowest in red.
+
+  3. I am not sure, either vertical or horizontal bars would be fine.
+
+  4. I do not know, any readable font and size for the text annotations will work.
+
+  5. The X-axis could be labeled as "Degree Type" and the Y-axis as "Average Salary".
+  The chart title could be "Average Salaries by Degree Type for Placed Students".
+
+  6. I am not sure, place the chart legend where it looks best.
+
+  7. No specific color schemes or guidelines need to be followed.
+
+  8. I do not have any additional information or context to include.'
+data_attributes:
+- degree_t
+- salary
+- status

@@ -1,0 +1,40 @@
+initial_prompt: 'Create a column chart to visualize Tour de France winners from 1903
+  to 2019. The x-axis should display the ''edition'' years, while the y-axis should
+  show ''distance''. Each column represents the winner''s distance covered in that
+  edition. Color code columns by ''winner_team'' for easy comparison. Highlight missing
+  values with a different pattern or color. Include data labels for ''winner_name''
+  on each column for better context. Add a legend for teams and include a title "Tour
+  de France Winners: Distance Over Years". Ensure the chart is easy to read and interpret.'
+questions: '1. Do you have any preferences for the color palette used for the ''winner_team''?
+
+  2. Is there a specific font style or size you prefer for the chart title and data
+  labels?
+
+  3. How would you like missing values to be highlighted (e.g., specific pattern,
+  color)?
+
+  4. Should the x-axis labels (edition years) be rotated or formatted in a particular
+  way?
+
+  5. Do you have any preferences for the positioning and style of the legend?
+
+  6. Would you like grid lines on the chart? If yes, should they be displayed for
+  both axes or only one?
+
+  7. Are there any specific chart dimensions (width, height) you prefer?
+
+  8. Should the y-axis (distance) display any specific units or formatting preferences
+  (e.g., comma separators, decimal places)?
+
+  9. Do you prefer any particular arrangement or spacing between the columns?
+
+  10. Would you like to include any annotations or comments on specific data points?'
+answers: "1. I am not sure.\n2. I do not know. \n3. Please use a different color for\
+  \ highlighting missing values.\n4. I am not sure.\n5. I have no specific preference.\n\
+  6. Yes, display grid lines for both axes.\n7. I do not know.\n8. Display in kilometers\
+  \ with comma separators.\n9. I have no specific preference.\n10. I am not sure."
+data_attributes:
+- edition
+- distance
+- winner_team
+- winner_name

@@ -1,0 +1,36 @@
+initial_prompt: I need a scatter plot visualizing the gender wage gap over time for
+  various countries. Each point in the scatter plot should represent a unique year
+  of data, with the x-axis portraying the year and the y-axis showing the gender wage
+  gap percentage. Different countries should be distinguishable via different colors
+  or markers. This is to analyze trends and disparities in economic inequality over
+  several decades to understand how the wage gap has evolved spatially and temporally.
+  Please ensure the chart is labeled clearly with axes titles and a legend for different
+  countries. Thanks!
+questions: "1. Do you have a preference for the color palette used to distinguish\
+  \ different countries?\n2. Would you like to set a specific range for the x-axis\
+  \ (years) and y-axis (gender wage gap percentage)?\n3. Are there specific countries\
+  \ you would like to highlight or focus on?\n4. Do you have a preferred font style\
+  \ or size for the axis labels and legend?\n5. Would you like to include gridlines\
+  \ on the chart for better readability?\n6. Should the legend be placed in a specific\
+  \ position on the chart?\n7. Do you require markers to have a specific shape or\
+  \ style for different countries? \n8. Do you want to include data point labels for\
+  \ each data point on the chart?"
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like to highlight the United States, Germany, Japan, and Sweden.
+
+  4. I do not have a specific preference.
+
+  5. Yes, including gridlines would be helpful.
+
+  6. I do not know.
+
+  7. I do not have a specific preference.
+
+  8. No need to include data point labels for each data point.'
+data_attributes:
+- country
+- Year
+- Gender wage gap %

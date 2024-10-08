@@ -1,0 +1,59 @@
+initial_prompt: '<start of user instruction>
+
+  Create a Pie chart visualizing the distribution of book genres. Highlight the genres
+  with the highest and lowest gross sales to emphasize their significance. Add data-driven
+  text annotations to show the actual gross sales values for these highlighted genres.
+  The purpose is to understand the financial impact of different genres in the book
+  market. This visualization should help identify which genres are the most and least
+  profitable based on gross sales. Use the dataset''s genre and gross sales columns
+  to generate this chart. Make sure the annotations are clear and stand out.
+
+  <end of user instruction>'
+questions: '1. Do you have any specific color preferences for the different book genres
+  in the Pie chart?
+
+  2. Is there a particular color you would like to use to highlight the genres with
+  the highest and lowest gross sales?
+
+  3. Do you prefer the chart to have a legend, or should the genre labels be displayed
+  directly on the Pie chart?
+
+  4. Do you have a preference for the font style or size for the text annotations
+  displaying gross sales values?
+
+  5. Should there be any additional data-driven text annotations or labels apart from
+  the gross sales values?
+
+  6. Would you like the percentage distribution of each genre to be displayed alongside
+  the gross sales values in the Pie chart?
+
+  7. Do you have a preference for the position of the annotations (e.g., inside or
+  outside the pie slices)?
+
+  8. Is there a specific title or subtitle you would like to include for the Pie chart?
+
+  9. Would you like the Pie chart slices to be exploded (separated) for better visibility
+  of the highlighted genres?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I prefer the genre labels to be displayed directly on the Pie chart.
+
+  4. I do not have a specific preference for the font style, but the size should be
+  clear and readable.
+
+  5. I do not know.
+
+  6. Yes, I would like the percentage distribution to be displayed alongside the gross
+  sales values.
+
+  7. I am not sure.
+
+  8. No specific title, but it should reflect the financial impact of book genres.
+
+  9. Yes, I would like the Pie chart slices to be exploded for better visibility of
+  the highlighted genres.'
+data_attributes:
+- genre
+- gross sales

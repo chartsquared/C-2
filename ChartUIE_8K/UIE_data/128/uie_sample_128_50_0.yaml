@@ -1,0 +1,58 @@
+initial_prompt: Create a geographic heatmap visualizing global literacy rates from
+  the dataset. Annotate regions with extreme literacy values to highlight disparities.
+  Utilize color gradients for population density and add tooltips for population,
+  GDP, and phone lines per 1000. This will emphasize socioeconomic contrasts and help
+  interpret the data more comprehensively.
+questions: '1. Do you have any specific color preferences for the heatmap and population
+  density gradients?
+
+  2. Would you prefer a specific map projection (e.g., Mercator, Robinson)?
+
+  3. How would you like the extreme literacy values to be annotated (e.g., highlighted
+  regions, labels, different icons)?
+
+  4. Are there any specific ranges or thresholds for literacy rates that you consider
+  "extreme" and should be highlighted?
+
+  5. Do you have a preferred font style or size for the annotations and tooltips?
+
+  6. Would you like to include any legends or scales to explain the color gradients?
+
+  7. Are there any additional data attributes or details you would like to include
+  in the tooltips besides population, GDP, and phone lines per 1000?
+
+  8. Is there a specific layout or arrangement you prefer for the map elements (e.g.,
+  legend position, tooltip placement)?
+
+  9. Would you like to include borders or markers for countries/regions to enhance
+  geographic context?
+
+  10. Do you have any preferences for the overall size or aspect ratio of the geographic
+  heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Highlighted regions with labels would be good.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. No specific preference.
+
+  8. I do not know.
+
+  9. Yes, including borders for countries/regions would be helpful.
+
+  10. I do not know.'
+data_attributes:
+- Country
+- Region
+- Literacy (%)
+- Population
+- Pop. Density (per sq. mi.)
+- GDP ($ per capita)
+- Phones (per 1000)

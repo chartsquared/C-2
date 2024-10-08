@@ -1,0 +1,28 @@
+initial_prompt: Create a choropleth map to visualize the age-standardized suicide
+  rates (per 100,000 population) from 2000 to 2019 across different countries. Use
+  the 'Location' column for country names and 'FactValueNumeric' for the suicide rates.
+  The color intensity should correspond to the suicide rate value, with higher rates
+  showing darker shades. Add a legend to indicate the value ranges.
+questions: '1. Do you have a preferred color palette for the choropleth map?
+
+  2. How would you like the legend to be displayed (e.g., vertical or horizontal,
+  specific number of bins)?
+
+  3. Should the map display country labels or tooltips for additional information?
+
+  4. Are there specific regions or countries you want to highlight?
+
+  5. Do you prefer a specific map projection?
+
+  6. How would you like to handle missing data in the visualization (e.g., use a specific
+  color or exclude)?
+
+  7. Do you want to include any additional annotations or markers on the map?'
+answers: "1. I am not sure.\n2. I have no specific preference for the legend display.\n\
+  3. I do not know. \n4. No, I do not have specific regions or countries to highlight.\n\
+  5. I do not have a specific map projection preference.\n6. Use a specific color\
+  \ to represent missing data.\n7. I am not sure."
+data_attributes:
+- Location
+- FactValueNumeric
+- Period

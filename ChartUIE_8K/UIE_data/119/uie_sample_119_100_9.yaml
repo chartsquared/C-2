@@ -1,0 +1,51 @@
+initial_prompt: Create a grouped column chart using the provided Walmart sales data
+  to compare Weekly Sales across different Stores over time. Each group should represent
+  a different Store, and within each group, columns should display Weekly Sales for
+  various Dates. Ensure the x-axis represents Dates, the y-axis shows Weekly Sales,
+  and use separate colors for each Store to differentiate them. Highlight the Holiday_Flag
+  to see the impact of holidays on sales by using a distinct pattern or color change
+  for holiday weeks. Include a legend for clarity.
+questions: '1. Do you have specific colors in mind for differentiating stores?
+
+  2. Do you prefer a particular pattern or color change to highlight holiday weeks?
+
+  3. Is there a specific date format you would like to use on the x-axis?
+
+  4. Would you like any specific range or intervals on the y-axis for Weekly Sales?
+
+  5. Are there any specific titles or labels you would prefer for the x-axis, y-axis,
+  and the chart itself?
+
+  6. Do you have preferences for the positioning of the legend on the chart (e.g.,
+  top, bottom, side)?
+
+  7. Is there a specific font style or size you would prefer for the chart labels
+  and legend?
+
+  8. Do you want gridlines displayed on the chart? If so, any preferences on their
+  style and color?
+
+  9. Would you like any specific annotations or markers on certain dates or sales
+  values?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Weekly Sales for Walmart Stores; Dates; Weekly Sales.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, I do not know the style and color.
+
+  9. I do not know.'
+data_attributes:
+- Store
+- Date
+- Weekly_Sales
+- Holiday_Flag

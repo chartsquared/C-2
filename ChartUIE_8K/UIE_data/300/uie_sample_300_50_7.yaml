@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap to visualize the "Raw TOC" and "Finish TOC" data
+  over time, highlighting TOC reduction percentages. Use dates on the x-axis and TOC
+  values on the y-axis.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like to include grid lines or borders between the cells for clarity?
+
+  3. Do you need axis labels and titles for the x-axis and y-axis?
+
+  4. Should the TOC reduction percentages be displayed as annotations directly on
+  the map?
+
+  5. Do you have a preference for the heatmap color gradient (e.g., from blue to red,
+  green to yellow)?
+
+  6. Would you like to add a legend to indicate the color range and corresponding
+  TOC values?
+
+  7. Should the heatmap include a title or any additional descriptive text?
+
+  8. Do you need any specific formatting for the dates on the x-axis (e.g., monthly,
+  quarterly)?
+
+  9. Would you like to include any reference lines or markers to denote significant
+  thresholds or dates?
+
+  10. Do you have a specific size preference for the heatmap (e.g., dimensions or
+  aspect ratio)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes.
+
+  4. Yes.
+
+  5. I do not know.
+
+  6. Yes.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I am not sure.'
+data_attributes:
+- DATE
+- Raw TOC (mg/l)
+- Finish TOC (mg/l)
+- TOC ReductionPCT (%)

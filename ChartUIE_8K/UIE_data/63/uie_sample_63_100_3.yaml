@@ -1,0 +1,51 @@
+initial_prompt: I'd like a bar chart that illustrates the average annual income grouped
+  by the number of purchases. Each bar should represent a different number of purchases,
+  and the height of the bar should indicate the average annual income for customers
+  with that specific number of purchases. This chart will help us understand whether
+  there's a correlation between the number of purchases a customer makes and their
+  annual income. Please use the "NumberOfPurchases" for the x-axis and "AnnualIncome"
+  for the y-axis. Make sure to include labels for clarity.
+questions: '1. Do you have any specific preferences for the color scheme of the bars?
+
+  2. Would you like the y-axis to display values in a specific format (e.g., currency)?
+
+  3. Should the chart include a title? If so, what should it be?
+
+  4. Would you prefer a particular font style or size for the labels and title?
+
+  5. Do you need gridlines or background shading in the chart for better readability?
+
+  6. Should the average values be displayed as data labels on top of each bar?
+
+  7. Do you have a preference for the order in which the bars are displayed (e.g.,
+  ascending or descending by the number of purchases)?
+
+  8. Would you like to include any annotations or callouts to highlight specific insights?
+
+  9. Do you prefer the x-axis labels to be oriented horizontally or vertically for
+  better readability?
+
+  10. Is there any additional information or context you would like to include in
+  the chart, such as a legend or caption?'
+answers: '1. I do not have any specific preference.
+
+  2. Yes, please display the y-axis values in currency format.
+
+  3. Yes, the title should be "Average Annual Income by Number of Purchases".
+
+  4. I am not sure about the font style or size.
+
+  5. I do not know if gridlines or background shading is necessary.
+
+  6. Yes, please display the average values as data labels on top of each bar.
+
+  7. I do not have a specific preference for the order of the bars.
+
+  8. I am not sure about annotations or callouts.
+
+  9. I do not know about the orientation of x-axis labels.
+
+  10. I do not have any additional information to include.'
+data_attributes:
+- NumberOfPurchases
+- AnnualIncome

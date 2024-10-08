@@ -1,0 +1,42 @@
+initial_prompt: Create a heatmap based on the Dubois challenge tweets data, focusing
+  on the interaction metrics (retweet_count, like_count, and quote_count) across various
+  usernames. This should help highlight which users are generating more engagement.
+  Ensure the heatmap shows an easily interpretable gradient and includes appropriate
+  axis labels and a color legend. Include New York location data points if possible.
+  Use consistent color coding to represent the intensity of engagement. Additionally,
+  label data points with Twitter usernames for better insights.
+questions: '1. What color scheme would you prefer for the heatmap gradient?
+
+  2. Do you have a preference for the specific color labeling of the data points (Twitter
+  usernames)?
+
+  3. Should certain usernames or interaction metrics be highlighted more than others?
+
+  4. Do you have specific preferences for the axis labels (e.g., font size, font style)?
+
+  5. Do you have a preference for the positioning of the color legend on the heatmap?
+
+  6. Do you want to include any additional descriptive text or annotations within
+  the heatmap?
+
+  7. Is there a specific format or layout you prefer for showing New York location
+  data points within the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- username
+- retweet_count
+- like_count
+- quote_count
+- location

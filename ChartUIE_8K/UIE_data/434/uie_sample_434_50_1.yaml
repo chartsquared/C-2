@@ -1,0 +1,38 @@
+initial_prompt: Create a stacked bar chart visualizing Tour de France winners' stage
+  wins and stages led by edition. Highlight notable winners and their teams using
+  different colors, and add annotations showing their winning margins. Include a summary
+  highlighting trends over the years.
+questions: '1. Do you have any specific color preferences for highlighting notable
+  winners and their teams?
+
+  2. How would you like the annotations for winning margins to be displayed (e.g.,
+  above the bar, within the bar)?
+
+  3. Is there a specific way you prefer the summary highlighting trends over the years
+  to be formatted?
+
+  4. Do you want specific labels or legends for the different teams and winners?
+
+  5. Would you like to include any additional information in the chart, such as the
+  total number of stage wins per edition?
+
+  6. Do you have a preferred order for displaying the editions (chronological, reverse
+  chronological, etc.)?'
+answers: '1. I am not sure.
+
+  2. I would like the annotations for winning margins to be displayed above the bar.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Chronological order would be preferred.'
+data_attributes:
+- edition
+- winner_name
+- winner_team
+- stage_wins
+- stages_led
+- time_margin

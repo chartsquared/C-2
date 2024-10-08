@@ -1,0 +1,44 @@
+initial_prompt: Create a choropleth map that shows the total number of dogs imported
+  and exported by each US state. Use different color gradients to indicate the range
+  of values for both imports and exports. Highlight states with missing data. Include
+  a legend for clarity.
+questions: '1. Do you have a preferred color palette for the gradients representing
+  imports and exports?
+
+  2. Would you like the states with missing data to be highlighted with a specific
+  color or pattern?
+
+  3. Should the color gradients for imports and exports be based on a specific range
+  or automatically calculated from the data?
+
+  4. Do you have any preferred labeling format for the legend (e.g., specific intervals
+  or descriptive labels)?
+
+  5. Would you like to include any particular annotations or notes on the map?
+
+  6. Should states with zero imports or exports be visually distinguished from states
+  with missing data?
+
+  7. Do you prefer a specific map projection for the choropleth map?
+
+  8. Is there a specific size or aspect ratio for the map that you prefer?'
+answers: '1. I am not sure.
+
+  2. Yes, please highlight states with missing data using a specific pattern.
+
+  3. Automatically calculated from the data.
+
+  4. I do not know.
+
+  5. No, I do not need any particular annotations or notes.
+
+  6. Yes, visually distinguish states with zero imports or exports from states with
+  missing data.
+
+  7. I am not sure.
+
+  8. I do not have a specific size or aspect ratio preference.'
+data_attributes:
+- location
+- exported
+- imported

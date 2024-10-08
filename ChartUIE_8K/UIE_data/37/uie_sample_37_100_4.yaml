@@ -1,0 +1,41 @@
+initial_prompt: Create a heatmap to visualize the spending behavior of customers in
+  the mall dataset. The x-axis should represent Age groups, while the y-axis should
+  represent Annual Income groups (in $k). The color intensity will represent the average
+  Spending Score within each segment. This visualization will help understand which
+  age and income groups have the highest and lowest spending scores, making it easier
+  to target marketing strategies effectively. Use different color gradients to make
+  the differences in spending scores visible and ensure the labels are clear for easy
+  interpretation.
+questions: '1. Do you have a preferred color gradient for the heatmap?
+
+  2. What specific age group intervals would you like to use on the x-axis?
+
+  3. What specific income group intervals would you like to use on the y-axis?
+
+  4. Do you prefer any particular font style or size for the axis labels and titles?
+
+  5. Would you like grid lines to be included in the heatmap?
+
+  6. Do you want to include a legend explaining the color intensity levels?
+
+  7. Should there be any annotations inside the heatmap cells to show exact spending
+  scores?'
+answers: '1. I am not sure about the color gradient, maybe something that clearly
+  shows differences.
+
+  2. Age group intervals could be in increments of 10 years.
+
+  3. Income group intervals could be in increments of $10k.
+
+  4. I do not know, no specific preference for font style or size.
+
+  5. I am not sure about grid lines, you can decide what works best.
+
+  6. Yes, please include a legend explaining the color intensity levels.
+
+  7. I am not sure about annotations inside the heatmap cells, you can decide if it
+  enhances the visualization.'
+data_attributes:
+- Age
+- Annual Income (k$)
+- Spending Score (1-100)

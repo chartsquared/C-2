@@ -1,0 +1,48 @@
+initial_prompt: I'd like a grouped bar chart visualizing the SAT scores from the provided
+  dataset. The chart should have the 'School Name' on the x-axis grouped by 'Critical
+  Reading Mean,' 'Mathematics Mean,' and 'Writing Mean' for each school. Each bar
+  group represents a school with different colored bars for each SAT category (Reading,
+  Mathematics, Writing). This will help compare the average SAT scores across multiple
+  schools at once. Please ensure the y-axis represents the scores, and label the schools
+  clearly for understanding. Including sample schools like 'Henry Street School for
+  International Studies,' 'University Neighborhood High School,' and 'East Side Community
+  High School' would be great.
+questions: '1. Do you have specific color preferences for the bars representing ''Critical
+  Reading Mean'', ''Mathematics Mean'', and ''Writing Mean''?
+
+  2. What title would you like for the chart?
+
+  3. Do you have any specific font preferences for the labels and title?
+
+  4. Should the sample schools be highlighted or differentiated in any way?
+
+  5. Do you prefer a legend to identify each SAT category, and if so, where would
+  you like it positioned?
+
+  6. Is there a specific order you want the schools to be displayed on the x-axis
+  (e.g., alphabetical, by score)?
+
+  7. Would you like to include error bars or data labels on top of each bar to show
+  exact values?'
+answers: '<start of user emulated response>
+
+  1. I do not have specific color preferences.
+
+  2. The title could be "Comparison of Average SAT Scores by School".
+
+  3. I am not sure about the font preferences.
+
+  4. I do not know if the sample schools should be highlighted.
+
+  5. Yes, a legend would be helpful. Position it at the bottom right.
+
+  6. Display the schools in alphabetical order.
+
+  7. Including data labels on top of each bar to show exact values would be great.
+
+  <end of user emulated response>'
+data_attributes:
+- School Name
+- Critical Reading Mean
+- Mathematics Mean
+- Writing Mean

@@ -1,0 +1,50 @@
+initial_prompt: Create a bar chart representing the collaboration network within the
+  company. Utilize the 'group' column to showcase different departmental groups and
+  their size. For each department, plot the number of unique IDs ('id' column) or
+  names ('name' column). This will help visualize which departments have the most
+  nodes in the collaborative network. Ensure that each bar in the chart has a distinct
+  color to differentiate between departments. The chart should be labeled clearly,
+  with the x-axis representing the departments and the y-axis representing the number
+  of nodes.
+questions: '1. Do you have a specific color palette preference for the bars representing
+  different departments?
+
+  2. Is there a preferred order in which departments should be displayed on the x-axis?
+
+  3. Are there specific departments or groups that you want to highlight or emphasize?
+
+  4. Would you like to include a legend to explain the colors representing different
+  departments?
+
+  5. Do you have a preferred font style or size for the labels and title on the chart?
+
+  6. Should the bars have any specific width or spacing between them?
+
+  7. Do you prefer the chart to have horizontal or vertical bars?
+
+  8. Are there any particular grid lines or axis ticks you would like to include or
+  exclude on the chart?
+
+  9. Would you like to display the exact numbers on top of each bar for additional
+  clarity?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, a legend to explain the colors would be useful.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I prefer vertical bars.
+
+  8. I am not sure.
+
+  9. Yes, displaying the exact numbers on top of each bar would be helpful.'
+data_attributes:
+- group
+- id
+- name

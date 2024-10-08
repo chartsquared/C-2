@@ -1,0 +1,46 @@
+initial_prompt: I need a candlestick chart for analyzing Google's stock price movements
+  during its founding years. Use data from the CSV file, including columns like Date,
+  Open, High, Low, Close, Adj Close, and Volume. I want to visualize daily stock performance
+  from 2004 onward. Ensure the candlestick chart plots the opening, closing, high,
+  and low prices. Highlight any significant volume changes, especially during the
+  early years. This will help me understand the initial market reaction and trends
+  for Google's stock. Please make the chart interactive, if possible, for a more detailed
+  analysis.
+questions: '1. Do you have a preferred color scheme for the candlestick chart?
+
+  2. Would you like to include grid lines for better readability of the chart?
+
+  3. Do you prefer any specific labels or annotations for significant volume changes?
+
+  4. Should the chart include background shading for weekends or any specific events?
+
+  5. Do you have a preference for the font style and size for the date and price labels?
+
+  6. Should the axis scale be linear or logarithmic?
+
+  7. Would you like to add a moving average line to highlight trends more clearly?
+
+  8. Do you prefer any specific layout for the chart, such as title placement or legend
+  positioning?'
+answers: '1. I am not sure.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. I have no specific preference.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, please add a moving average line to highlight trends more clearly.
+
+  8. I have no specific preference.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

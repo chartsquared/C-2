@@ -1,0 +1,79 @@
+initial_prompt: 'Create a heatmap to visualize the threats and actions for different
+  plant species across continents. Focus on the threats columns (threat_AA to threat_GE)
+  and actions (action_LWP to action_NA). Use color gradients to show the intensity
+  of threats and actions. Add text annotations for key species that have high or low
+  threat levels and actions taken. Highlight endangered or extinct categories. This
+  will help understand the distribution and severity of threats, as well as the effectiveness
+  of conservation actions for plants in danger. Title: "Global Plant Threats and Conservation
+  Actions."'
+questions: '1. What specific color gradients would you prefer to represent the intensity
+  of threats and conservation actions?
+
+  2. Do you have preferred color schemes for highlighting endangered or extinct categories?
+
+  3. How would you like the text annotations for key species to be formatted (e.g.,
+  font size, color, background)?
+
+  4. Should the heatmap be sorted by any specific criteria (e.g., continent, threat
+  level, or action taken)?
+
+  5. Is there a particular way you would like the legend to be displayed or formatted?
+
+  6. Are there any specific labeling preferences for the axes?
+
+  7. Would you prefer any specific title or subtitle formatting for the heatmap?
+
+  8. How would you like the different continents to be visually distinguished in the
+  heatmap (e.g., through borders or different shades)?
+
+  9. Should the intensity values be labeled directly on the heatmap cells, or would
+  you prefer to have a hover option to see the exact values?
+
+  10. Do you have any preferences regarding the overall layout and aspect ratio of
+  the heatmap?'
+answers: '1. I am not sure about the specific color gradients to use.
+
+  2. I do not have any preferred color schemes for highlighting endangered or extinct
+  categories.
+
+  3. The text annotations for key species should be in a readable font size and maybe
+  in a contrasting color against the heatmap for clarity, but I am not sure about
+  the specifics.
+
+  4. I do not know how the heatmap should be sorted.
+
+  5. I am not sure about the legend formatting.
+
+  6. I have no specific labeling preferences for the axes.
+
+  7. A clear and bold title format would be good, but I have no specific preferences
+  for the subtitle.
+
+  8. I do not know how the different continents should be visually distinguished in
+  the heatmap.
+
+  9. The intensity values should be labeled directly on the heatmap cells.
+
+  10. I do not have any preferences regarding the overall layout and aspect ratio.'
+data_attributes:
+- binomial_name
+- continent
+- threat_AA
+- threat_BRU
+- threat_RCD
+- threat_ISGD
+- threat_EPM
+- threat_CC
+- threat_HID
+- threat_P
+- threat_TS
+- threat_NSM
+- threat_GE
+- threat_NA
+- action_LWP
+- action_SM
+- action_LP
+- action_RM
+- action_EA
+- action_NA
+- red_list_category

@@ -1,0 +1,52 @@
+initial_prompt: Please create a scatter plot visualizing the relationship between
+  temperature and humidity across different crops in the Crop Recommendation Dataset.
+  Each point should represent a specific measurement, colored by crop type. This will
+  help in understanding how these two variables vary together for different crops,
+  aiding in better crop recommendations. Use distinct colors for each crop label to
+  clearly differentiate them on the scatter plot. Add axis labels and a legend for
+  clarity. Thank you!
+questions: '1. Do you have a preferred color scheme for the different crop types?
+
+  2. Is there a specific size you prefer for the data points in the scatter plot?
+
+  3. Would you like to include grid lines in the background for better readability?
+
+  4. Are there any specific font styles or sizes you prefer for the axis labels and
+  legend?
+
+  5. Do you have a preference for the positioning of the legend (e.g., top-right,
+  bottom-left)?
+
+  6. Should the axis labels include specific units of measurement (e.g., ''°C'' for
+  temperature and ''%'' for humidity)?
+
+  7. Do you want trend lines or regression lines included in the scatter plot?
+
+  8. Are there any specific markers you prefer for data points (e.g., circles, squares)?
+
+  9. Would you like to include a title for the scatter plot?
+
+  10. Is there a preferred range for the axes that you want to be set?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include grid lines.
+
+  4. I have no specific preference.
+
+  5. Top-right, please.
+
+  6. Yes, please include the units of measurement.
+
+  7. No, I do not need trend lines or regression lines.
+
+  8. I am not sure.
+
+  9. Yes, please include a title: "Temperature vs. Humidity Across Different Crops".
+
+  10. I do not have a preferred range for the axes.'
+data_attributes:
+- temperature
+- humidity
+- label

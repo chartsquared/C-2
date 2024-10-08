@@ -1,0 +1,57 @@
+initial_prompt: 'Create an area chart to visualize Bundesliga points per match. Use
+  data from ''416.csv'', focusing on columns: Date, HomeTeam, AwayTeam, FTHG, FTAG.
+  The x-axis should represent match dates, while the y-axis shows cumulative points.
+  HomeTeam and AwayTeam should be differentiated by colors. For home teams, add 3
+  points for a win, 1 for a draw. For away teams, do the same. Stack the areas for
+  visual comparison. Ensure the chart includes a legend for clarity. This will help
+  compare team performances over time.'
+questions: '1. Do you have any specific preferences for the color scheme to differentiate
+  home and away teams?
+
+  2. What date format would you prefer on the x-axis (e.g., day/month/year, month/day/year)?
+
+  3. Would you like the chart to have grid lines or a specific style of grid lines?
+
+  4. Do you have a specific font style or size preference for the axis labels and
+  legends?
+
+  5. How would you like the cumulative points to be displayed (e.g., with markers,
+  data labels)?
+
+  6. Should the chart include any specific title or subtitle? If so, please provide
+  the text.
+
+  7. Would you like to emphasize any particular team or match in the visualization?
+
+  8. Do you have a preferred layout or orientation for the legend?
+
+  9. Is there a specific width and height you would like for the chart?
+
+  10. Are there any branding requirements, such as including a logo or watermark on
+  the chart?'
+answers: '1. I do not have any specific preference.
+
+  2. Day/month/year format would be good.
+
+  3. I am not sure.
+
+  4. I do not know, no specific preference.
+
+  5. I do not know, no specific preference.
+
+  6. Yes, title: "Bundesliga Cumulative Points Per Match", subtitle: "Home and Away
+  Team Comparison".
+
+  7. I am not sure.
+
+  8. No specific preference.
+
+  9. I do not know, no specific preference.
+
+  10. No branding requirements.'
+data_attributes:
+- Date
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTAG

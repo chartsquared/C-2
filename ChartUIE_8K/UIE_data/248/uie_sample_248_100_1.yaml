@@ -1,0 +1,47 @@
+initial_prompt: Create a heatmap to visualize the gene expression levels (logFC) of
+  different genes in Taxol drug-resistant breast cancer cell lines. Use Gene.symbol
+  for rows and Cell Line for columns, with cell colors representing the logFC values.
+  Include text annotations for gene symbols with the lowest P.Value and highlights
+  to emphasize key cell lines.
+questions: '1. Do you have specific colors you prefer for representing different ranges
+  of logFC values?
+
+  2. What threshold would you like to set for highlighting key cell lines?
+
+  3. Do you prefer a particular font size or style for the text annotations of gene
+  symbols?
+
+  4. How would you like the heatmap to handle the range of logFC values (e.g., should
+  it be standardized or normalized)?
+
+  5. Are there specific color schemes you prefer for annotations, especially for the
+  genes with the lowest P.Value?
+
+  6. Do you want gridlines to be visible or hidden on the heatmap?
+
+  7. Should the color legend for logFC values be displayed on a specific side of the
+  heatmap (top, bottom, left, right)?
+
+  8. Would you like the axis labels (Gene.symbol and Cell Line) to be rotated at a
+  specific angle for better readability?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I would like the heatmap to handle the range of logFC values by standardizing
+  them.
+
+  5. I do not have a specific preference for color schemes for annotations.
+
+  6. I do not know.
+
+  7. I do not have a specific preference.
+
+  8. I do not know.'
+data_attributes:
+- Gene.symbol
+- logFC
+- Cell Line
+- P.Value

@@ -1,0 +1,59 @@
+initial_prompt: I need a Choropleth map visualizing global blood type distribution
+  by country. Use data points such as O+, A+, B+, AB+, O-, A-, B-, AB- from the provided
+  dataset. Each country should be colored based on the percentage prevalence of a
+  particular blood type. Ensure it is easy to distinguish regions with different blood
+  type distributions. Include a legend to interpret the color scale. Missing data
+  points should be handled, showing them as a different color or pattern. The map
+  should provide a clear visual comparison of blood types across countries globally.
+questions: '1. Do you have any preference for the color palette used to distinguish
+  different blood types?
+
+  2. How would you like the map to handle missing data? Should it use a specific color
+  or pattern?
+
+  3. Would you like the legend to include specific information or annotations beyond
+  just interpreting the color scale?
+
+  4. Is there a preferred layout or style for the labels on the map (e.g., country
+  names, percentage values)?
+
+  5. Do you have a specific projection type in mind for the map (e.g., Mercator, Robinson)?
+
+  6. What level of granularity are you expecting for the data representation (e.g.,
+  country level)?
+
+  7. Should the map include any boundary lines, such as country borders, for enhanced
+  clarity?
+
+  8. Are there any additional visual elements or markers you would like to include
+  (e.g., major cities, regions with high population density)?
+
+  9. Do you have a preference for the chart''s background color or style to ensure
+  it aligns with any specific themes or branding?'
+answers: '1. I am not sure.
+
+  2. Missing data should use a specific color or pattern.
+
+  3. I do not know.
+
+  4. I would like the percentage values included if possible.
+
+  5. I have no specific preference.
+
+  6. Country level representation is expected.
+
+  7. Yes, please include country borders for enhanced clarity.
+
+  8. I am not sure.
+
+  9. I do not have a preference for the background color or style.'
+data_attributes:
+- Country
+- O+
+- A+
+- B+
+- AB+
+- O-
+- A-
+- B-
+- AB-

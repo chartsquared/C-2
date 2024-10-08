@@ -1,0 +1,45 @@
+initial_prompt: I need a scatter plot visualizing planetary mass (y-axis) against
+  the orbital period in days (x-axis) from the Open Exoplanet Catalogue. Highlight
+  planets discovered using the RV method and annotate points like 'HD 143761 b' and
+  'KOI-1843.03' with their mass and period values. Make sure to use different colors
+  for planets listed as 'Confirmed' and 'Controversial.' This chart will help focus
+  on the relationship between mass and orbital period while identifying discovery
+  methods and categorization.
+questions: '1. Do you have any specific size or dimensions in mind for the scatter
+  plot?
+
+  2. Do you have a preferred color scheme for distinguishing between ''Confirmed''
+  and ''Controversial'' planets?
+
+  3. How would you like the highlighted planets (discovered using the RV method) to
+  be marked on the plot?
+
+  4. Would you prefer annotations for the specific points to be in a particular format
+  or style?
+
+  5. Do you have any preferences for axis labels or title fonts and styles?
+
+  6. Should the plot include a legend explaining the different colors and markers
+  used?
+
+  7. Do you prefer data points to be clustered in a certain way or spaced out evenly?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I''m not sure how exactly, maybe change their colors or use a different marker
+  shape.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please include a legend explaining the different colors and markers used.
+
+  7. I do not have a preference for how data points should be clustered or spaced.'
+data_attributes:
+- PlanetaryMassJpt
+- PeriodDays
+- DiscoveryMethod
+- ListsPlanetIsOn
+- PlanetIdentifier

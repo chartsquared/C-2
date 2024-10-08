@@ -1,0 +1,47 @@
+initial_prompt: I am working on a data project about global terrorism incidents. Specifically,
+  I want to visualize the number of terrorist attacks per year for different countries.
+  I've provided a data sample showing columns for Entity, Code, Year, and Terrorist
+  attacks. Could you please create a bar chart that displays the total number of terrorist
+  attacks for each year, combining all countries? Make sure the x-axis represents
+  the years, and the y-axis represents the total number of terrorist attacks. This
+  will help me understand the trends in terrorist activity over time. Thank you!
+questions: '1. Do you have any preference for the color scheme of the bar chart?
+
+  2. Would you like gridlines to be included for better readability?
+
+  3. Do you prefer the bars to be of a certain width or spacing?
+
+  4. Should the chart include a title and axis labels, if so, do you have specific
+  text in mind?
+
+  5. Do you want to display data labels on the bars to show exact numbers of attacks?
+
+  6. Would you like to include a legend even if the data consists of a single category?
+
+  7. Is there a specific font style or size you prefer for the text in the chart?
+
+  8. Should we include annotations or highlight specific years that are significant?
+
+  9. Do you prefer a vertical bar chart or a horizontal bar chart?'
+answers: '1. I do not know.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. I am not sure.
+
+  4. Yes, include a title “Global Terrorist Attacks Over Time” and axis labels “Year”
+  for the x-axis and “Number of Terrorist Attacks” for the y-axis.
+
+  5. No, I do not want data labels on the bars.
+
+  6. No, a legend is not necessary.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I prefer a vertical bar chart.'
+data_attributes:
+- Entity
+- Year
+- Terrorist attacks

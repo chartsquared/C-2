@@ -1,0 +1,54 @@
+initial_prompt: Create a line chart to visualize the number of Global Speakers against
+  the Size of the languages. The x-axis should represent the 'Size' categories (e.g.,
+  Smallest, Small, Medium, Large, Largest), and the y-axis should show the 'Global
+  Speakers' count. Each language should be a separate line on the chart, with its
+  respective data points connected. Ensure to handle the missing values appropriately,
+  possibly through interpolation or noting gaps in the line. Title the chart "Global
+  Speakers by Language Size" and include legends for clarity.
+questions: '1. Do you have a preferred color scheme for the lines representing different
+  languages?
+
+  2. How would you like the missing values to be handled? (e.g., interpolation, noted
+  as gaps)
+
+  3. Would you prefer any specific line styles or markers for the different languages?
+
+  4. Should the x-axis and y-axis have specific labels or descriptions apart from
+  the standard ones?
+
+  5. Do you require any specific annotations or highlights on the chart?
+
+  6. What font style and size would you prefer for the chart title and legends?
+
+  7. Would you like to include grid lines in the chart background for better readability?
+
+  8. Should the legends be placed in a specific location on the chart? (e.g., top,
+  bottom, left, right)
+
+  9. Are there any specific languages or size categories that you want to emphasize?
+
+  10. Do you have a preference for the chart''s overall aspect ratio or dimensions
+  (e.g., width and height)?'
+answers: '1. I do not have a specific preference.
+
+  2. Interpolation would be good.
+
+  3. I am not sure.
+
+  4. Standard labels are fine.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, please include grid lines.
+
+  8. Right side is preferable.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Size
+- Global Speakers
+- Language

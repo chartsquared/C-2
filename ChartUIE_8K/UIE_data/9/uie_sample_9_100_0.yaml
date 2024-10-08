@@ -1,0 +1,41 @@
+initial_prompt: Create a choropleth map displaying the value added per worker in agriculture,
+  forestry, and fishing across different countries from 1991. Highlight the countries
+  with the highest and lowest values to emphasize disparities. Use text annotations
+  to display the top 5 and bottom 5 performing countries' values. This visualization
+  aims to provide a clear overview of agricultural productivity by country, helping
+  identify regions with high and low efficiency. It's practical for analysts needing
+  to quickly assess global agricultural productivity trends and disparities in crop
+  yields and related economic activities.
+questions: "1. Do you have a preferred color scheme for the choropleth map?\n2. Should\
+  \ the color scale be sequential or diverging?\n3. Do you want to include a legend\
+  \ to explain the color scale?\n4. How would you like the highlighted countries (top\
+  \ 5 and bottom 5) to be indicated? \n5. Do you have any preference for the placement\
+  \ of text annotations?\n6. Are there any specific font styles or sizes you prefer\
+  \ for the text annotations?\n7. Should the map include country names or codes for\
+  \ reference?\n8. Would you like to display any additional contextual information\
+  \ on the map?\n9. Are there any specific geographic projections you prefer for the\
+  \ map?\n10. Should the title and labels be styled in a particular way?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to include a legend to explain the color scale.
+
+  4. Highlight the top 5 and bottom 5 countries with distinct borders and use text
+  annotations for their values.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Yes, please include country names for reference.
+
+  8. No additional contextual information is needed.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- country
+- Year
+- Agriculture, forestry, and fishing, value added per worker (constant 2015 US$)

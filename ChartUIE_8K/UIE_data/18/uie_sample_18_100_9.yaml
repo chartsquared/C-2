@@ -1,0 +1,62 @@
+initial_prompt: Create an area chart for the Complete Pokemon Dataset showing the
+  base stats (hp, attack, defense, sp_attack, sp_defense, speed) across different
+  Pokemon generations. Each generation should be separately plotted. The x-axis will
+  represent the generations (1 through 7), and the y-axis will show the average base
+  stats values per generation. This visual will help in understanding how the base
+  stats of Pokemon have evolved over each generation. Use different colors for each
+  stat to make the chart clear and easy to interpret.
+questions: '1. Do you have a preferred color scheme for the different base stats (hp,
+  attack, defense, sp_attack, sp_defense, speed)?
+
+  2. Would you like to add gridlines to the chart for better readability?
+
+  3. Do you prefer a specific style or theme for the chart (e.g., modern, classic,
+  minimalist)?
+
+  4. Should the chart include data point markers for each generation?
+
+  5. Would you like to display the exact average values of the base stats for each
+  generation on the chart?
+
+  6. Do you have any preference for the font type and size for axis labels and legend?
+
+  7. Would you like the chart to include a title and, if so, what should the title
+  be?
+
+  8. Should there be any annotations or additional information provided in the chart
+  to explain key trends or changes?
+
+  9. Do you have any specific preferences for the axis ranges or should they be automatically
+  determined based on the data?
+
+  10. Would you like to include a legend, and if so, where should it be positioned
+  (e.g., top, right, bottom, left)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to add gridlines for better readability.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, please display the exact average values of the base stats for each generation
+  on the chart.
+
+  6. I do not have a specific preference.
+
+  7. Yes, the chart should include a title. The title should be "Average Base Stats
+  Evolution Across Pokemon Generations".
+
+  8. I am not sure.
+
+  9. The axis ranges should be automatically determined based on the data.
+
+  10. Yes, please include a legend. It should be positioned on the right.'
+data_attributes:
+- generation
+- hp
+- attack
+- defense
+- sp_attack
+- sp_defense
+- speed

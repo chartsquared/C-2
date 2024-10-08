@@ -1,0 +1,62 @@
+initial_prompt: Visualize a dot plot comparing the worldwide gross ($m) of Marvel
+  superhero movies categorized by year and film. Include data points for critics and
+  audience % scores, highlighting the % budget recovered. This will help illustrate
+  the financial success and reception of different films over the years. Additionally,
+  show a correlation between the budget and box office performance, as well as the
+  deviation between audience and critics' scores. Use contrasting colors or shapes
+  to represent different categories for clear differentiation.
+questions: '1. Do you have a preferred layout for the dot plot (e.g., vertical or
+  horizontal orientation)?
+
+  2. Would you like a specific color palette or theme for the contrasting colors and
+  shapes?
+
+  3. Are there any specific shapes you prefer for representing different categories
+  (e.g., circles for one category, squares for another)?
+
+  4. Should the dot sizes represent any specific attribute, such as the budget or
+  worldwide gross?
+
+  5. Do you want a legend included to clearly differentiate the different categories
+  and data points?
+
+  6. Is there any particular way you''d like the axes to be scaled (e.g., logarithmic,
+  linear)?
+
+  7. Would you like gridlines or reference lines to be included for better readability?
+
+  8. Do you have a preference for font styles or sizes for the chart labels and titles?
+
+  9. Should any specific films or years be highlighted or annotated in the chart for
+  emphasis?
+
+  10. Would you like to include a trend line or best-fit line to show the correlation
+  between budget and box office performance?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Circles for one category and squares for another.
+
+  4. Yes, the dot sizes should represent the worldwide gross.
+
+  5. Yes, please include a legend.
+
+  6. I am not sure.
+
+  7. Gridlines would be helpful for readability.
+
+  8. I do not have a specific preference.
+
+  9. No specific films or years need to be highlighted.
+
+  10. A trend line to show the correlation between budget and box office performance
+  would be great.'
+data_attributes:
+- film
+- worldwide gross ($m)
+- '% budget recovered'
+- critics % score
+- audience % score
+- budget
+- year

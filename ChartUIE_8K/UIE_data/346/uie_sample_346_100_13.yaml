@@ -1,0 +1,55 @@
+initial_prompt: I want to visualize the global video game sales to see the top-selling
+  games across different platforms and years. Please create a Bar chart showing the
+  top 10 best-selling video games globally. The chart should include the games' names
+  on the x-axis and the global sales on the y-axis. Highlight which platforms and
+  genres they belong to using different colors or labels. Can you provide insights
+  about the publishers and how sales compare between regions like North America, Europe,
+  and Japan?
+questions: '1. Do you have a preferred color scheme for differentiating platforms
+  and genres?
+
+  2. Should the bars be grouped or stacked based on platforms, or would you prefer
+  separate colors or labels for each platform?
+
+  3. How would you like the publishers'' information to be displayed? As a label next
+  to each bar, or as a separate legend?
+
+  4. How would you like regional sales comparisons to be visualized? Separate bar
+  segments within the same bar, adjacent bars, or through a different visualization
+  method?
+
+  5. Do you have any preferences for the ordering of the games on the x-axis, besides
+  being sorted by global sales?
+
+  6. Would you like any specific annotations or data labels on the bars, such as exact
+  sales figures?
+
+  7. Do you prefer a horizontal or vertical orientation for the bar chart?
+
+  8. Are there any specific fonts or styles you would like to use for text elements
+  like axis titles, labels, and legends?'
+answers: '1. I am not sure.
+
+  2. I prefer separate colors or labels for each platform.
+
+  3. I am not sure.
+
+  4. Adjacent bars for regional sales comparisons would be great.
+
+  5. Sorted by global sales is fine.
+
+  6. Yes, please include exact sales figures on the bars.
+
+  7. Vertical orientation is preferred.
+
+  8. I do not know.'
+data_attributes:
+- Name
+- Platform
+- Year
+- Genre
+- Global_Sales
+- Publisher
+- NA_Sales
+- EU_Sales
+- JP_Sales

@@ -1,0 +1,53 @@
+initial_prompt: I'd like to create a heatmap visualizing correlations between various
+  health indicators in the Diabetes Dataset. Please use the summary data for columns
+  such as Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction,
+  Age, and Outcome. The heatmap should highlight relationships between these factors,
+  offering insights into how they might impact the likelihood of diabetes. Ensure
+  to include the unique values and data types to support the correlations comprehensively.
+  This will help in understanding the interplay between these health metrics better.
+  Thank you!
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. Should we annotate the heatmap cells with correlation coefficient values?
+
+  3. Should the heatmap include a color bar legend to explain the correlation strength?
+
+  4. Do you have a preferred range (e.g., -1 to 1) for the correlation values represented
+  in the heatmap?
+
+  5. Would you like to cluster the variables to show groups with similar correlation
+  patterns?
+
+  6. Do you prefer a particular orientation for the labels (e.g., horizontal or vertical)
+  on the axes?
+
+  7. Should there be any specific emphasis (e.g., bolding, different color) on particular
+  correlations or health indicators?
+
+  8. Would you like to include any additional descriptive text or labels within the
+  heatmap to provide context?'
+answers: '1. I do not know.
+
+  2. Yes, please annotate the heatmap cells with correlation coefficient values.
+
+  3. Yes, include a color bar legend to explain the correlation strength.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- Pregnancies
+- Glucose
+- BloodPressure
+- SkinThickness
+- Insulin
+- BMI
+- DiabetesPedigreeFunction
+- Age
+- Outcome

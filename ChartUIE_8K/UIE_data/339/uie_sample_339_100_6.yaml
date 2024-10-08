@@ -1,0 +1,45 @@
+initial_prompt: Please create a heatmap from the given data showing the average price
+  of food items in different countries from 2018 to 2022. The x-axis should represent
+  the months, the y-axis should represent the countries, and each cell should represent
+  the average price in USD of the food items for that month and country. Use different
+  colors to indicate the prices, with a scale from low to high prices. Please ensure
+  the heatmap covers all five countries mentioned in the dataset and includes a legend
+  explaining the color scale. Thanks!
+questions: '1. Do you have any specific color palette preferences for the heatmap?
+
+  2. Do you prefer any particular style or format for the legend?
+
+  3. Should the months on the x-axis be labeled as numbers (1-12) or by their abbreviated
+  names (Jan, Feb, etc.)?
+
+  4. For the countries on the y-axis, would you prefer full names or any specific
+  abbreviations?
+
+  5. Is there a particular font style or size you would like for the text labels?
+
+  6. Do you want grid lines to be visible on the heatmap?
+
+  7. Should the heatmap include any specific annotations or labels on certain data
+  points?
+
+  8. Are there any specific ranges of prices you want to highlight in the color scale?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Jan, Feb, etc.
+
+  4. Full names.
+
+  5. I am not sure.
+
+  6. No.
+
+  7. No.
+
+  8. I do not know.'
+data_attributes:
+- 'Country '
+- 'Year '
+- 'Month '
+- Price in USD

@@ -1,0 +1,46 @@
+initial_prompt: Create a grouped bar chart to compare the average points (pts), rebounds
+  (reb), and assists (ast) per game for players from different teams over multiple
+  seasons. Group the bars based on the team abbreviations, and within each group,
+  display bars for points, rebounds, and assists side-by-side. Label the x-axis with
+  team abbreviations and the y-axis with the average values. This will help visualize
+  team performance across various metrics. Ensure the chart is colorful and adds a
+  legend for clarity. Highlight any significant differences between teams in these
+  key performance indicators.
+questions: '1. Do you have any preferences for the color scheme of the chart?
+
+  2. What font style and size would you like for the axis labels and title?
+
+  3. Are there any specific seasons or teams you want to be highlighted or emphasized?
+
+  4. What title would you like for the chart?
+
+  5. Do you require data labels to be shown on the bars?
+
+  6. What format would you prefer for the legend placement (e.g., top, bottom, side)?
+
+  7. Is there a specific data range you want to focus on for the y-axis?
+
+  8. Would you prefer gridlines to be present on the chart? If yes, should they be
+  major, minor, or both?'
+answers: '1. I have no specific preference for the color scheme.
+
+  2. I am not sure about the font style and size; use what you think looks best.
+
+  3. I have no specific seasons or teams to be highlighted.
+
+  4. The title of the chart should be "Average Points, Rebounds, and Assists per Game
+  by Team".
+
+  5. Yes, please show data labels on the bars.
+
+  6. I am not sure about the legend placement; use what you think looks best.
+
+  7. I do not have a specific data range for the y-axis in mind.
+
+  8. Yes, please include gridlines, both major and minor.'
+data_attributes:
+- team_abbreviation
+- pts
+- reb
+- ast
+- season

@@ -1,0 +1,62 @@
+initial_prompt: Please create a box chart visualizing the dataset from "12.csv". Focus
+  on the distribution of psychological scores (O_score, C_score, E_score, A_score,
+  N_score) and aptitudes (Numerical Aptitude, Spatial Aptitude, Perceptual Aptitude,
+  Abstract Reasoning, Verbal Reasoning). Each box should represent one of these columns
+  to show medians, quartiles, and potential outliers. This chart should help us understand
+  the variability and central tendency in scores and aptitudes for predicting career
+  paths effectively.
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Would you like the chart to include data labels on the boxes (e.g., min, max,
+  median)?
+
+  3. Should the chart include grid lines for better readability?
+
+  4. Do you have a preference for the ordering of the boxes (e.g., by score type or
+  by aptitude)?
+
+  5. Would you like to include any annotations or highlighted areas to draw attention
+  to specific parts of the chart?
+
+  6. Do you have specific dimensions or aspect ratios in mind for the chart?
+
+  7. Is there a specific title or subtitle you would like to use for the chart?
+
+  8. Do you want legends or a brief description of each score and aptitude included
+  in the chart?
+
+  9. Should we use a particular font style or size for the chart''s text elements
+  (axes labels, title, etc.)?
+
+  10. Are there any particular statistical measures you''d like to highlight in addition
+  to medians, quartiles, and outliers (e.g., mean, standard deviation)?'
+answers: '1. I am not sure.
+
+  2. Yes, please include data labels on the boxes.
+
+  3. I have no specific preference.
+
+  4. By score type, please.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Title: "Distribution of Psychological Scores and Aptitudes"
+
+  8. Yes, please include legends or a brief description of each score and aptitude.
+
+  9. I do not know.
+
+  10. No, just the medians, quartiles, and outliers.'
+data_attributes:
+- O_score
+- C_score
+- E_score
+- A_score
+- N_score
+- Numerical Aptitude
+- Spatial Aptitude
+- Perceptual Aptitude
+- Abstract Reasoning
+- Verbal Reasoning

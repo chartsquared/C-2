@@ -1,0 +1,56 @@
+initial_prompt: Please create a line chart visualizing the price trends for Jumia
+  products over time. Use the 'Price' column to plot the prices, and the 'Rating'
+  column to annotate key points of interest where products have particularly high
+  or low ratings. Highlight products with unique pricing structures (e.g., ranges)
+  and their corresponding ratings to emphasize distinctions. Ensure the chart vividly
+  represents the relationship between price and customer ratings, focusing on long-term
+  trends and anomalies. Include context about natural cotton feel or product features
+  from the ‘Details’ column as annotations to provide more insights for the viewer.
+questions: '1. Do you have a preferred color scheme for the line chart and annotations?
+
+  2. Would you like the chart to display a legend? If so, are there specific labels
+  you prefer?
+
+  3. Should the time axis be in specific intervals (e.g., daily, weekly, monthly)?
+
+  4. Is there a specific format for the price (e.g., currency) that you would like
+  displayed?
+
+  5. How would you like outliers to be highlighted (e.g., different color, shape,
+  size)?
+
+  6. Do you prefer the product features from the ''Details'' column to be shown as
+  tooltips, callouts, or in a separate legend?
+
+  7. Should the annotations for high or low ratings be displayed directly on the chart
+  or as a pop-up when hovered over?
+
+  8. Are there any specific fonts or styles you would like to be used for the text
+  annotations?
+
+  9. Do you want grid lines to be shown on the chart for easier readability?
+
+  10. Is there a specific title or subtitle you would like for the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I think monthly intervals would work best.
+
+  4. Display the price in currency format, preferably in USD.
+
+  5. Highlight outliers with a different color and shape.
+
+  6. Show the product features from the ''Details'' column as callouts.
+
+  7. Annotations for high or low ratings should be displayed directly on the chart.
+
+  8. I do not have any specific preference.
+
+  9. Yes, grid lines would be helpful.
+
+  10. Title: "Jumia Product Price Trends and Customer Ratings Over Time"'
+data_attributes:
+- Price
+- Rating
+- Details

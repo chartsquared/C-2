@@ -1,0 +1,42 @@
+initial_prompt: Create a bar chart for the Reddit Vaccine Myths data with annotations
+  on the 'score' axis to highlight specific scores for each title. Include elements
+  like the title of the post, score, ID, and created date. Use different colors to
+  distinguish varying scores and visually emphasize posts with higher scores. This
+  visualization should help us quickly identify which posts garnered significant attention
+  and had the most engagement regarding vaccine myths. Ensure that the chart is easy
+  to interpret and effectively draws attention to the most important data points.
+questions: '1. Do you have a preferred color palette or specific colors you would
+  like to use to distinguish varying scores?
+
+  2. How would you like the annotations to be displayed on the ''score'' axis?
+
+  3. Do you have a preference for how the bars should be ordered (e.g., by score,
+  by created date)?
+
+  4. Is there a specific format in which you would like the created date to be displayed?
+
+  5. Should the titles be displayed in full on the chart, or would you prefer truncated
+  titles with tooltips for full display?
+
+  6. Do you want any specific fonts or styles for the text elements in the chart?
+
+  7. Would you prefer a horizontal or vertical layout for the bar chart?'
+answers: '1. I am not sure.
+
+  2. I would like the annotations to show the exact score values for each title on
+  the ''score'' axis.
+
+  3. By score, please.
+
+  4. I do not know.
+
+  5. Truncated titles with tooltips for full display would be best.
+
+  6. I do not know.
+
+  7. I would prefer a vertical layout for the bar chart.'
+data_attributes:
+- title
+- score
+- id
+- created

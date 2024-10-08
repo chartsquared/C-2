@@ -1,0 +1,44 @@
+initial_prompt: Create a heatmap using the dataset to visualize the percentage values
+  of different political parties across constituencies for the given elections. Highlight
+  the highest CON(%) values in each row with a different color to emphasize areas
+  of strong Conservative support. Add annotations to show the exact percentage values
+  for CON(%), LAB(%), and LIB(%) for selected constituencies with significant variations.
+  This will help in quickly identifying strongholds and competitive regions. Keep
+  the constituency names as labels on the y-axis and percentage types on the x-axis
+  to enhance data interpretation.
+questions: '1. Do you have any specific color preferences for the heatmap, especially
+  for highlighting the highest CON(%) values?
+
+  2. Would you like to specify which constituencies to annotate, or should they be
+  selected based on significant variations automatically?
+
+  3. Are there any particular font sizes or styles you prefer for the annotations
+  and labels?
+
+  4. Do you prefer a particular ordering for the constituencies on the y-axis (e.g.,
+  alphabetical, by percentage values)?
+
+  5. Should the heatmap include a legend to explain the colors used?
+
+  6. Are there any specific grid lines or borders you would like to include or exclude
+  in the heatmap for better clarity?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Selected automatically based on significant variations.
+
+  3. I do not know.
+
+  4. By percentage values.
+
+  5. Yes, include a legend.
+
+  6. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Name

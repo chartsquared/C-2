@@ -1,0 +1,62 @@
+initial_prompt: Create a column chart to visualize the fuel costs and CO2 emissions
+  of cars from the sample data. Highlight the "ghgScore" column, and annotate the
+  "fuelCost08" and "city08" columns to compare gas consumption and its impact on yearly
+  fuel expenses. The purpose is to showcase the money-saving benefits of using electric
+  or more fuel-efficient cars. Include text annotations for specific cars that stand
+  out with the highest and lowest fuel costs and CO2 emissions to guide the user's
+  attention. Use the year 1985 for context.
+questions: '1. Do you have any specific color preferences for highlighting the "ghgScore"
+  column?
+
+  2. Would you like a specific color scheme for the columns representing "fuelCost08"
+  and "city08"?
+
+  3. How would you like the text annotations to be styled (font, size, color)?
+
+  4. Would you prefer the highest and lowest values to be highlighted with specific
+  markers or colors?
+
+  5. Do you have a preference for the title and labels of the X and Y axes?
+
+  6. Should the chart have a specific title? If yes, what should it be?
+
+  7. Would you like to include a legend in the chart? If yes, where should it be placed?
+
+  8. Do you prefer a particular layout for the data labels, such as inside the columns
+  or outside?
+
+  9. Should there be gridlines on the chart? If yes, do you have any preferences for
+  their style or color?
+
+  10. Would you like to see any additional data points or details in the chart beyond
+  the specified attributes?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer a readable font, medium size, and a color that contrasts well
+  with the background.
+
+  4. Yes, it would be great to highlight the highest and lowest values with specific
+  markers or colors.
+
+  5. I have no specific preference.
+
+  6. Yes, the chart should have a title: "Fuel Costs and CO2 Emissions of Cars in
+  1985".
+
+  7. Yes, a legend should be included, preferably at the bottom.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. No, the specified attributes are sufficient.'
+data_attributes:
+- ghgScore
+- fuelCost08
+- city08
+- co2TailpipeGpm
+- make
+- model
+- year

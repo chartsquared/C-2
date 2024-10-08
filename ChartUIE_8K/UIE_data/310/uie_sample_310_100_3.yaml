@@ -1,0 +1,49 @@
+initial_prompt: Please create a heatmap that visualizes the number of languages spoken
+  in different world regions within New York City. Use the 'World Region' and 'Country'
+  columns to categorize the languages, and the 'Global Speakers' column to indicate
+  the intensity of language use. The heatmap should highlight regions and countries
+  with the highest number of speakers. This will help understand linguistic diversity
+  in various parts of NYC. Make sure to handle missing values appropriately to ensure
+  accurate representation. The primary focus should be on the geographical spread
+  and magnitude of language speakers.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like us to handle missing values: Imputation, removal, or another
+  method?
+
+  3. Do you prefer a specific color gradient to indicate the intensity of language
+  use?
+
+  4. Should the heatmap include annotations for values within the cells?
+
+  5. Would you like the heatmap to include a legend explaining the color intensity?
+
+  6. Should the heatmap display grid lines to separate each category visibly?
+
+  7. Are there any specific labels or titles you want to see on the axes?
+
+  8. Do you prefer the countries to be clustered by world region in the heatmap?
+
+  9. Should the size of the cells in the heatmap be adjusted based on the number of
+  speakers?'
+answers: '1. I am not sure.
+
+  2. Remove the missing values.
+
+  3. I do not know.
+
+  4. Yes, include annotations for values within the cells.
+
+  5. Yes, include a legend explaining the color intensity.
+
+  6. I am not sure.
+
+  7. I do not have specific preferences for labels or titles on the axes.
+
+  8. Yes, cluster the countries by world region in the heatmap.
+
+  9. I do not know.'
+data_attributes:
+- World Region
+- Country
+- Global Speakers

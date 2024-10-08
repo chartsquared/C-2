@@ -1,0 +1,52 @@
+initial_prompt: '<start of my instruction>`
+
+  I need a bar chart to visualize the occurrence of different levels of ''target''
+  based on ''urea'' values from the kidney stone prediction urine analysis dataset.
+  Highlight abnormal targets.
+
+  <end of my instruction>`'
+questions: '1. Do you have a preferred color scheme for highlighting abnormal ''target''
+  levels?
+
+  2. Would you like the y-axis to represent counts or percentages?
+
+  3. Should the ''urea'' values be grouped into specific ranges or displayed as individual
+  values?
+
+  4. Do you prefer horizontal or vertical bars for the chart?
+
+  5. Are there specific labels or annotations you would like to include on the bars?
+
+  6. Would you like to include a legend to differentiate normal and abnormal ''target''
+  levels?
+
+  7. Should the chart include gridlines or be without them?
+
+  8. Do you have a specific font style or size preference for the labels and title?
+
+  9. Would you like the chart to display data values on each bar?
+
+  10. Do you prefer a specific order for the ''urea'' values on the x-axis (e.g.,
+  ascending, descending, custom)?'
+answers: '1. I am not sure.
+
+  2. Counts.
+
+  3. I am not sure.
+
+  4. Vertical bars.
+
+  5. I do not know.
+
+  6. Yes, include a legend.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- urea
+- target

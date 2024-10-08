@@ -1,0 +1,55 @@
+initial_prompt: I would like to create a bar chart visualizing Reliance's stock data
+  from 18 May'12 to 13 Oct'21. Each bar will represent the opening stock prices with
+  separate annotations marking the opening, highest, lowest, and closing values. Highlights
+  should indicate significant spikes or drops. This chart will help in understanding
+  the stock performance trends over the specified period. Use text annotations to
+  label significant dates. The purpose is to show trends and anomalies in stock prices
+  over time, focusing on key points, making it easier to analyze the performance visually.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like to have grid lines to help with reading the values?
+
+  3. Should the y-axis be automatically scaled or do you have specific limits in mind?
+
+  4. What style of text annotations do you prefer for labeling significant dates and
+  values?
+
+  5. Are there specific dates or events you already know that you want to highlight?
+
+  6. Do you prefer horizontal or vertical bars for the bar chart?
+
+  7. Is there a specific font style or size you prefer for the text annotations?
+
+  8. How would you like the significant spikes or drops to be highlighted (e.g., different
+  color, bold outlines)?
+
+  9. Would you like to show data labels along with the bars or only on highlights
+  and significant dates?
+
+  10. Should the chart include a legend to describe the annotations for the highest,
+  lowest, opening, and closing values?'
+answers: '1. I do not know.
+
+  2. Yes, please include grid lines.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I prefer vertical bars.
+
+  7. I do not know.
+
+  8. Different color for significant spikes or drops.
+
+  9. Only on highlights and significant dates.
+
+  10. Yes, please include a legend.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

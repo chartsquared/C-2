@@ -1,0 +1,50 @@
+initial_prompt: 'Please create a geographic heatmap visualizing global video game
+  sales from the provided dataset. The heatmap should highlight sales data across
+  different regions: North America, Europe, Japan, and others. Each region''s sales
+  should be represented by different color intensities based on the sales volume.
+  Ensure the map is clear and interactive, allowing for a detailed view of sales distribution.
+  Additionally, include tooltips to display specific sales numbers when hovering over
+  each region. This visualization will help in understanding the global market performance
+  of various video games. Thank you!'
+questions: '1. Do you have a preferred color palette for representing different sales
+  volumes?
+
+  2. Should the regions be labeled directly on the map, or do you prefer a legend?
+
+  3. How detailed should the geographic boundaries be—for example, should they include
+  country-level details within a continent?
+
+  4. What level of granularity do you expect for the sales data representation (e.g.,
+  ranges like low, medium, high)?
+
+  5. Are there any specific regions or countries that you want to emphasize more than
+  others?
+
+  6. Would you like the sales data to be aggregated or disaggregated by specific time
+  periods or years?
+
+  7. Do you prefer the tooltips to include additional information besides sales numbers,
+  such as game titles or genres?
+
+  8. Should there be any specific visual indicators for highlighting extreme sales
+  values or outliers within the regions?'
+answers: '1. I am not sure.
+
+  2. I prefer a legend.
+
+  3. I am not sure.
+
+  4. Low, medium, high.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Just the sales numbers.
+
+  8. I have no specific preference.'
+data_attributes:
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales

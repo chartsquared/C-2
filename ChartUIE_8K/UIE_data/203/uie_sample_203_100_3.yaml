@@ -1,0 +1,50 @@
+initial_prompt: I need a heatmap showing the distribution of image files based on
+  age groups and their respective data splits (train/test). Each cell in the heatmap
+  should represent the count of image files for a specific age group (e.g., 18-20)
+  in a certain split (e.g., train). The x-axis should display age groups, and the
+  y-axis should display data splits. Use a color gradient to indicate higher or lower
+  counts. This visualization will help understand how data is distributed across different
+  age categories and splits in the Age Detection - Face Recognition Dataset.
+questions: '1. Do you have a preferred color gradient for the heatmap (e.g., from
+  blue to red, green to yellow)?
+
+  2. Would you like specific labels or annotations on each cell indicating the count
+  of images, or should this be reflected solely by color?
+
+  3. Is there a particular order you would prefer the age groups to be listed on the
+  x-axis?
+
+  4. Do you have any specific preferences for the title or labels for the x-axis and
+  y-axis?
+
+  5. Should the heatmap include a legend explaining the color gradient and corresponding
+  counts?
+
+  6. Are there any specific font sizes or styles you prefer for axis labels and data
+  annotations?
+
+  7. Would you like to include grid lines to separate the cells more distinctly within
+  the heatmap?
+
+  8. Is there a preferred aspect ratio or size for the heatmap to better fit your
+  presentation or report format?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No, I have no specific preference.
+
+  4. I do not know.
+
+  5. Yes, the heatmap should include a legend explaining the color gradient and corresponding
+  counts.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. No, I have no specific preference.'
+data_attributes:
+- file
+- age
+- split

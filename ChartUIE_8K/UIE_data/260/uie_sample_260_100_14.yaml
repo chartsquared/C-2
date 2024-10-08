@@ -1,0 +1,61 @@
+initial_prompt: Create a connected scatter plot using the exoplanet data from the
+  Kepler Telescope, specifically focusing on "pl_orbper" (orbital period) and "pl_orbsmax"
+  (orbital semi-major axis). The x-axis should be the "pl_orbper" and the y-axis "pl_orbsmax".
+  Connect data points belonging to the same "pl_hostname" to visualize the relationship
+  between these two variables for each star system. Highlight data points where "pl_discmethod"
+  is "Radial Velocity". Color-code based on "pl_letter" to differentiate between multiple
+  planets in the same system. Include error bars based on the available error columns.
+questions: '1. Do you have any preferences for the background color of the chart?
+
+  2. Do you prefer a specific color palette for highlighting different planets ("pl_letter")?
+
+  3. Should the error bars have a specific style or color?
+
+  4. How would you like the lines connecting the data points (by "pl_hostname") to
+  be styled? (e.g., solid, dashed, etc.)
+
+  5. Is there a specific font style or size you prefer for the axis labels and title?
+
+  6. Would you like to include gridlines on the chart? If so, should they be in a
+  specific style or color?
+
+  7. Do you prefer any specific markers or symbols for the data points, especially
+  for those discovered by "Radial Velocity"?
+
+  8. Would you like to display a legend on the chart? If yes, do you have any preferences
+  for its positioning? (e.g., top-right, bottom-left, etc.)
+
+  9. Do you want to include annotations or tooltips for specific data points? If so,
+  how should they be styled?
+
+  10. Should the axes have a specific range or scale type (e.g., logarithmic, linear)?'
+answers: '1. I am not sure.
+
+  2. I don''t know.
+
+  3. No specific preference.
+
+  4. Solid lines would be fine.
+
+  5. I prefer a clean and readable font, but no specific preference.
+
+  6. Yes, include gridlines. No specific style preference.
+
+  7. I prefer the markers for "Radial Velocity" to be distinct, maybe a different
+  shape.
+
+  8. Yes, include a legend. Top-right positioning would be good.
+
+  9. I am not sure.
+
+  10. Linear scale for the axes would be preferred.'
+data_attributes:
+- pl_orbper
+- pl_orbsmax
+- pl_hostname
+- pl_discmethod
+- pl_letter
+- pl_orbpererr1
+- pl_orbpererr2
+- pl_orbsmaxerr1
+- pl_orbsmaxerr2

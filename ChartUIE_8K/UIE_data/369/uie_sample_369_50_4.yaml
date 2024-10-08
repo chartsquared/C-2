@@ -1,0 +1,42 @@
+initial_prompt: Create a geographic network graph showing air travel connections between
+  major US cities. Highlight regions like East, West, and Midwest based on the weight
+  and number of passengers.
+questions: '1. Do you have a specific color scheme preference for highlighting different
+  regions like East, West, and Midwest?
+
+  2. How would you prefer to represent the weight and number of passengers on the
+  map (e.g., line thickness, color intensity)?
+
+  3. Is there a specific map style or basemap you would like to use (e.g., satellite,
+  terrain, street)?
+
+  4. Do you prefer city names to be displayed directly on the map, or would you like
+  tooltips to show the names upon hover?
+
+  5. Should the map include a legend explaining the meaning of colors and line thicknesses?
+
+  6. Do you have a preference for the map''s orientation or zoom level to focus on
+  particular regions?
+
+  7. Would you like to include any additional information or annotations on the map,
+  such as airports or state borders?'
+answers: '1. I do not know.
+
+  2. Line thickness would work well.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. Yes, the map should include a legend.
+
+  6. I do not know.
+
+  7. I am not sure.'
+data_attributes:
+- name
+- weight
+- region
+- source
+- target
+- passengers

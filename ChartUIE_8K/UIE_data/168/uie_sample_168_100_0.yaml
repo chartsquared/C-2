@@ -1,0 +1,52 @@
+initial_prompt: Let's create a stacked column chart to visualize the UCI Heart Disease
+  Data. The chart should break down the 'cp' (chest pain type) across different 'sex'
+  categories. Use annotations to highlight the total counts for each chest pain type
+  and any significant differences between sexes. The purpose is to easily compare
+  the prevalence of chest pain types between males and females, providing insights
+  into heart disease symptoms distribution. Highlight segments where the data is particularly
+  skewed, such as where one sex has a significantly higher occurrence of a specific
+  chest pain type.
+questions: '1. Do you have a preferred color scheme for different chest pain types?
+
+  2. Would you like specific labels for each section of the stacked columns?
+
+  3. Do you have a preferred font style and size for annotations?
+
+  4. How detailed should the annotations be (e.g., percentage, count, or both)?
+
+  5. Are there any specific segments or chest pain types you want to prioritize in
+  highlighting?
+
+  6. Would you prefer gridlines in the chart for better readability?
+
+  7. Do you want to include a legend explaining the colors used for different chest
+  pain types?
+
+  8. Would you like to include axis titles and, if so, what should they be?
+
+  9. Do you have any specific preferences for the chart title and subtitles?
+
+  10. Do you want to use any particular formatting for highlighting significant differences?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Percentage would be good.
+
+  5. I am not sure.
+
+  6. Yes, gridlines would help with readability.
+
+  7. Yes, please include a legend.
+
+  8. Yes, axis titles would be good. The x-axis should be "Sex" and the y-axis should
+  be "Count of Chest Pain Types."
+
+  9. I do not have specific preferences for the chart title and subtitles.
+
+  10. I do not know.'
+data_attributes:
+- cp
+- sex

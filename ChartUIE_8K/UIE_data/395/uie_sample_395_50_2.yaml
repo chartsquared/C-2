@@ -1,0 +1,38 @@
+initial_prompt: Create a treemap visualizing the software package's dependencies.
+  Use shapes to enclose related elements and highlights to emphasize major dependencies.
+questions: '1. Do you have a color preference for the highlights used to emphasize
+  major dependencies?
+
+  2. Are there specific shapes you prefer to enclose related elements?
+
+  3. Should the size of each element correspond to the ''size'' data attribute or
+  would you prefer a different emphasis?
+
+  4. Do you have a preferred color scheme for the overall treemap?
+
+  5. Would you like any specific labels or annotations on the treemap?
+
+  6. Is there a specific layout or hierarchy you want to follow for the dependencies?
+
+  7. Are there particular fonts or styles you prefer for the text within the treemap?
+
+  8. Should we include any legends or keys to explain the visualization elements?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the size of each element to correspond to the ''size'' data attribute.
+
+  4. I do not know.
+
+  5. Yes, please include labels for each element.
+
+  6. I do not have a specific layout or hierarchy in mind.
+
+  7. I am not sure.
+
+  8. Yes, please include a legend or key to explain the visualization elements.'
+data_attributes:
+- name
+- size
+- imports

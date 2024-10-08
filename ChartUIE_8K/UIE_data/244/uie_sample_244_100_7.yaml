@@ -1,0 +1,32 @@
+initial_prompt: Please create a histogram visualizing the number of speakers for each
+  language listed in the dataset. Display the languages on the x-axis and the number
+  of speakers on the y-axis. Ensure that the chart captures all entries, and color-code
+  the bars for better clarity. Annotations for the highest and lowest speaker counts
+  would be helpful. Additionally, include a legend to distinguish between different
+  language families. The histogram should provide an insightful overview of language
+  prevalence by speaker count in the specified regions.
+questions: '1. Do you have any preferred colors for the color-coding of the bars?
+
+  2. How would you like the annotations for the highest and lowest speaker counts
+  to be displayed?
+
+  3. Do you prefer a specific style or format for the legend?
+
+  4. Would you like any specific font style or size for the labels and annotations?
+
+  5. Are there any specific language families or regions you would like to highlight
+  or differentiate more prominently?'
+answers: '1. I am not sure.
+
+  2. I would like the annotations for the highest and lowest speaker counts to be
+  displayed with arrows pointing to the respective bars and text indicating the counts.
+
+  3. I do not have a specific preference for the legend style or format.
+
+  4. I do not know, no specific preference.
+
+  5. I am not sure.'
+data_attributes:
+- Language
+- Speakers
+- Family

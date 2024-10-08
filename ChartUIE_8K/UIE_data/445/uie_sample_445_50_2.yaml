@@ -1,0 +1,48 @@
+initial_prompt: Create a dot plot for the Dubois challenge tweets, highlighting tweets
+  with high like and retweet counts. Use text annotations for specific usernames and
+  tweet times. Include location data points.
+questions: '1. What color scheme do you prefer for highlighting tweets with high like
+  and retweet counts?
+
+  2. Do you have a preference for the size of the dots to represent different counts
+  of likes and retweets?
+
+  3. Is there a specific format you would like for the text annotations (e.g., font
+  size, font style)?
+
+  4. Should the location data be represented using latitude and longitude coordinates
+  on a map or as textual annotations?
+
+  5. Are there any specific color choices you would like for the background or gridlines
+  of the plot?
+
+  6. How detailed do you want the annotations for usernames and tweet times to be
+  (e.g., exact timestamp vs. date only)?
+
+  7. Do you want any specific labels or legends for the dot plot?
+
+  8. Are there any particular limits or ranges of retweet and like counts that you
+  consider to be "high" and should be highlighted?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I would prefer latitude and longitude coordinates on a map.
+
+  5. I have no specific preference.
+
+  6. Exact timestamp.
+
+  7. I have no specific preference.
+
+  8. Tweets with more than 100 likes and 50 retweets should be considered "high".'
+data_attributes:
+- datetime
+- retweet_count
+- like_count
+- username
+- location
+- lat
+- long

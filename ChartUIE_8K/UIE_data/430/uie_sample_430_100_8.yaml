@@ -1,0 +1,49 @@
+initial_prompt: Please create a spline chart that visualizes the performance of Christmas
+  songs on the Billboard charts over time. The x-axis should represent the dates (weekid),
+  and the y-axis should indicate the week_position of the songs. Use different colors
+  to represent different songs so that we can easily compare their chart performance.
+  Include a legend for clarity. Focus on highlighting how long each song stays on
+  the chart (weeks_on_chart) and their peak positions. The chart should cover the
+  full time span provided in the data.
+questions: '1. Do you have a specific color palette preference for the chart?
+
+  2. Would you like any specific annotations or markers for peak positions on the
+  chart?
+
+  3. How would you prefer the weeks on chart to be highlighted or indicated?
+
+  4. Do you have a preferred date format for the x-axis labels (e.g., MM/DD/YYYY)?
+
+  5. Is there a particular font style or size you want to use for the chart labels
+  and legend?
+
+  6. Would you like the y-axis (week_position) to be inverted to show the top positions
+  at the top of the chart?
+
+  7. Are there any specific titles or labels you want for the chart axes and overall
+  chart?
+
+  8. Should the chart include grid lines, and if so, do you have a preference for
+  their style or color?'
+answers: '1. I am not sure.
+
+  2. Yes, please include specific annotations or markers for peak positions on the
+  chart.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please invert the y-axis to show the top positions at the top of the chart.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- weekid
+- week_position
+- song
+- weeks_on_chart
+- peak_position

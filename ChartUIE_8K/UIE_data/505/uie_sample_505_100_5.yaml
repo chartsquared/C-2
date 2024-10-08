@@ -1,0 +1,39 @@
+initial_prompt: Please provide a geographic heatmap visualizing the distribution of
+  volcanoes around the world. Use the 'Latitude' and 'Longitude' columns to plot the
+  locations, color-coded by the 'Volcano Type'. Different colors should represent
+  different types of volcanoes such as 'Shield volcano', 'Stratovolcano', etc. Additionally,
+  use the 'Elev' column to indicate the elevation of each volcano with varying intensity
+  or size on the map. I am interested in both active and historical volcanoes as indicated
+  in the 'Status' column. Thank you!
+questions: '1. Do you have a preferred color scheme for different volcano types?
+
+  2. How would you like the elevation to be represented? By varying the size of the
+  markers or by intensity of color?
+
+  3. Do you want the map to include specific geographical boundaries or labels such
+  as country names or regions?
+
+  4. Should active and historical volcanoes be differentiated in any particular way,
+  such as by different shapes or opacities of markers?
+
+  5. Would you like to include a legend on the map to explain the color coding and
+  size/intensity representation?
+
+  6. Do you prefer a specific map projection or style (e.g., satellite, terrain)?'
+answers: '1. I am not sure.
+
+  2. By varying the size of the markers.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. Yes, I would like to include a legend on the map.
+
+  6. I do not know.'
+data_attributes:
+- Latitude
+- Longitude
+- Type
+- Elev
+- Status

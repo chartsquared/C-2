@@ -1,0 +1,44 @@
+initial_prompt: Create histograms for the Pima Indians Diabetes Database. Display
+  individual histograms for 'Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
+  'Insulin', 'BMI', 'DiabetesPedigreeFunction', and 'Age'. Include a separate histogram
+  for the 'Outcome' column to highlight diabetes prevalence.
+questions: '1. Do you have a preferred color scheme for the histograms?
+
+  2. What bin size or range would you prefer for each histogram?
+
+  3. Are there specific labels or titles you want on each histogram?
+
+  4. Do you have any preferences for axis scales (linear, logarithmic) on the histograms?
+
+  5. Would you like gridlines to be displayed on the histograms?
+
+  6. Are there any specific annotations or markers you want to include?
+
+  7. Do you prefer the histograms to be displayed individually or in a grid layout?
+
+  8. Should each histogram include descriptive statistics (mean, median, etc.)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please include titles indicating the attribute name on each histogram.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I prefer a grid layout for easier comparison.
+
+  8. I am not sure.'
+data_attributes:
+- Pregnancies
+- Glucose
+- BloodPressure
+- SkinThickness
+- Insulin
+- BMI
+- DiabetesPedigreeFunction
+- Age
+- Outcome

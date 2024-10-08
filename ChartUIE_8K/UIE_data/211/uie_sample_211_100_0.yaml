@@ -1,0 +1,52 @@
+initial_prompt: Create a geographic heatmap to visualize San Francisco Park Scores.
+  The map should highlight parks with various facility types by their scores. Use
+  color gradients to represent different score levels, focusing on parks with extreme
+  scores for emphasis. Incorporate text annotations to display park names and scores
+  for selected parks. Highlight parks with the highest and lowest scores to draw attention.
+  Include the ability to filter by facility type and state. Ensure the map includes
+  context such as zip codes, perimeter lengths, and acres for better understanding.
+  The goal is to present real-estate data effectively for analysis.
+questions: '1. What color scheme would you prefer for the heatmap gradients to represent
+  different score levels?
+
+  2. Do you have a preferred font or style for the text annotations displaying park
+  names and scores?
+
+  3. Would you like to specify any particular parks that should always be annotated,
+  regardless of their scores?
+
+  4. Is there a specific range of scores you are most interested in, aside from the
+  highest and lowest?
+
+  5. How would you like the park names and scores to be highlighted for parks with
+  the highest and lowest scores (e.g., bold, larger font, different color)?
+
+  6. Are there any specific zip codes or regions within San Francisco that you want
+  to emphasize or be clearly marked on the map?
+
+  7. Would you prefer any particular map style or background (e.g., satellite view,
+  street map)?
+
+  8. Do you have a preference for how the filter options for facility type and state
+  should be presented on the map (e.g., dropdown menu, checkboxes)?
+
+  9. Do you want additional contextual information, such as perimeter lengths and
+  acres, displayed in a tooltip or as part of the park annotations?'
+answers: "1. I am not sure about the color scheme.\n2. I do not have a specific preference\
+  \ for the font or style.\n3. I do not know which particular parks to always annotate.\
+  \ \n4. I am not sure about a specific range of scores.\n5. Please use a larger font\
+  \ and bold for the park names and scores of parks with the highest and lowest scores.\n\
+  6. I do not have any specific zip codes or regions in San Francisco to emphasize.\n\
+  7. I prefer a street map style background.\n8. I am not sure about the presentation\
+  \ of filter options.\n9. Display additional contextual information, such as perimeter\
+  \ lengths and acres, in a tooltip."
+data_attributes:
+- Park
+- Score
+- Facility Type
+- State
+- Zipcode
+- Perimeter Length
+- Acres
+- Longitude
+- Latitude

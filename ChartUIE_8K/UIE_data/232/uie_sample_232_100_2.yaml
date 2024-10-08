@@ -1,0 +1,38 @@
+initial_prompt: Please create a histogram using the "loan_amount" data from the Loan-Approval-Prediction-Dataset.
+  Annotate specific data points such as the highest and lowest loan amounts to draw
+  attention to these elements. Additionally, highlight the bins that correspond to
+  approved and rejected loans differently to emphasize their distribution. This will
+  help in visualizing the spread and approval status of loans for business insights.
+questions: "1. Do you have a preference for the number of bins in the histogram?\n\
+  2. What color would you like to use for the bins representing approved loans?\n\
+  3. What color would you like to use for the bins representing rejected loans?\n\
+  4. What specific annotations would you prefer for the highest and lowest loan amounts?\
+  \ (e.g., labels, arrows)\n5. Do you have a preference for the overall color scheme\
+  \ of the chart?\n6. Would you like grid lines to be included in the histogram? If\
+  \ so, at what intervals?\n7. Do you want a legend to indicate what the different\
+  \ colored bins represent?\n8. Are there any specific font preferences for the annotations\
+  \ and labels on the chart?\n9. Do you have a preferred title or subtitle for the\
+  \ histogram? \n10. Where would you like the annotated data points (highest and lowest\
+  \ loan amounts) to be positioned?"
+answers: '1. I am not sure.
+
+  2. Blue.
+
+  3. Red.
+
+  4. Labels and arrows would be great.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, a legend would be helpful.
+
+  8. I have no specific preference.
+
+  9. "Distribution of Loan Amounts with Approval Status"
+
+  10. Place them near the corresponding bars in the histogram.'
+data_attributes:
+- loan_amount
+- loan_status

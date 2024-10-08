@@ -1,0 +1,47 @@
+initial_prompt: Please create a heatmap to visualize the Global Food Security Index
+  data. The heatmap should display 'Major Area' on one axis and 'Country' on the other,
+  with color intensity representing the 'Overall score'. Annotate the data points
+  with text annotations to highlight the top five scores and add contextual notes
+  where applicable. Use highlights to differentiate regions with missing values in
+  the 'Regions' column. This will help us to focus on areas that may need attention.
+  The purpose is to analyze the food security levels across different regions and
+  countries effectively.
+questions: '1. Do you have a color scheme preference for the heatmap?
+
+  2. How would you like the annotation text to be formatted (e.g., font size, color)?
+
+  3. Do you prefer any specific highlights or color coding for regions with missing
+  values in the ''Regions'' column?
+
+  4. Would you like a specific title for the heatmap?
+
+  5. Should there be specific labels or legends for the ''Major Area'' and ''Country''
+  axes?
+
+  6. Are there any specific contextual notes you would like to include in the annotations?
+
+  7. Do you have a preference for the ordering of ''Major Area'' or ''Country'' on
+  the axes (e.g., alphabetical, by score)?
+
+  8. Would you like any additional visual elements such as grid lines or borders to
+  differentiate the cells in the heatmap?'
+answers: '1. I do not have a color scheme preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. No specific title is necessary.
+
+  5. No specific labels or legends needed.
+
+  6. I am not sure.
+
+  7. By score would be preferable.
+
+  8. I do not know.'
+data_attributes:
+- Major Area
+- Country
+- Overall score
+- Regions

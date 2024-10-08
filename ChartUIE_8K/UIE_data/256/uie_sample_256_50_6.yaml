@@ -1,0 +1,35 @@
+initial_prompt: Using the given ECG dataset, create a line chart showing changes in
+  QTseg and RRmean across different RECORD entries. Include labels for axes and a
+  legend to differentiate between QTseg and RRmean.
+questions: '1. Do you prefer any specific title for the chart?
+
+  2. Do you have a preference for the colors used for each line representing ''QTseg''
+  and ''RRmean''?
+
+  3. Would you like gridlines on the chart?
+
+  4. Are there any specific font styles or sizes you prefer for the labels and legend?
+
+  5. Do you want data points to be marked on the lines?
+
+  6. Do you prefer a specific range for the y-axis, or should it be automatically
+  adjusted based on the data?
+
+  7. Would you like the chart to have a subtitle or additional annotations?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, I would like gridlines on the chart.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. It should be automatically adjusted based on the data.
+
+  7. I do not know.'
+data_attributes:
+- RECORD
+- QTseg
+- RRmean

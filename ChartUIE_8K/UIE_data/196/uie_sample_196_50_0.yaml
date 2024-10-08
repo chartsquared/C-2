@@ -1,0 +1,49 @@
+initial_prompt: Create a histogram showcasing the difference in memory scores before
+  and after taking the drug for each Happy/Sad group. Annotate the histogram with
+  specific values to highlight significant changes. This helps assess the drug's impact
+  on memory among different emotional states.
+questions: '1. Do you have a specific color theme or palette preference for the histogram?
+
+  2. Would you like the histogram bars to be grouped or stacked by Happy/Sad group?
+
+  3. Do you have a preference for the bar width or spacing between the bars?
+
+  4. Should the x-axis be labeled with specific ranges of the ''Diff'' values or specific
+  memory score values?
+
+  5. Do you prefer the y-axis to represent counts or percentages of occurrences?
+
+  6. How would you like the significant changes to be annotated (e.g., with arrows,
+  text labels, or different colors)?
+
+  7. Should we include error bars or confidence intervals if available?
+
+  8. Are there any specific font styles or sizes you prefer for labels and annotations?
+
+  9. Would you like a legend to differentiate between the Happy and Sad groups?
+
+  10. Do you have any specific titles or subtitles in mind for the histogram?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I would like the y-axis to represent counts.
+
+  6. With text labels to highlight significant changes.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. Yes, include a legend to differentiate between the Happy and Sad groups.
+
+  10. I do not know.'
+data_attributes:
+- Happy_Sad_group
+- Mem_Score_Before
+- Mem_Score_After
+- Diff

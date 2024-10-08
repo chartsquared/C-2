@@ -1,0 +1,45 @@
+initial_prompt: I need a pie chart visualizing the proportion of unique values for
+  each column in the dataset. Highlight the columns 'CRIM', 'ZN', and 'INDUS' because
+  they seem to have varying data that might provide interesting insights. Include
+  text annotations for these highlights to show how many unique values each has. This
+  visualization should help identify which aspects of Boston housing data have the
+  most variability, aiding in understanding real estate trends and making data-driven
+  decisions. Ensure the chart is colorful and visually appealing for easier interpretation
+  of the data variations.
+questions: '1. Do you have a preferred color palette or color scheme for the pie chart?
+
+  2. What font style and size do you prefer for the text annotations?
+
+  3. Would you like a legend included in the chart? If so, where should it be positioned?
+
+  4. Do you have any specific preferences for the layout and placement of the text
+  annotations?
+
+  5. Should the chart have a title and/or caption? If yes, please provide the details.
+
+  '
+answers: '<I am not sure>
+
+  I do not know
+
+  Yes, I would like a legend included. I am not sure where it should be positioned.
+
+  I am not sure
+
+  Yes, the chart should have a title. The title can be "Proportion of Unique Values
+  in Boston Housing Data columns".'
+data_attributes:
+- CRIM
+- ZN
+- INDUS
+- CHAS
+- NOX
+- RM
+- AGE
+- DIS
+- RAD
+- TAX
+- PTRATIO
+- B
+- LSTAT
+- MEDV

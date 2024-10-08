@@ -1,0 +1,49 @@
+initial_prompt: Create a line chart showing vehicle counts over time for each junction.
+  Highlight peak times with color changes. Add text annotations for specific high
+  traffic points to draw attention. The practical purpose is to analyze traffic patterns
+  and predict congestion.
+questions: '1. Do you have a preferred color scheme for highlighting peak times?
+
+  2. What specific text annotations would you like for the high traffic points?
+
+  3. Do you prefer a specific line style (e.g., solid, dashed) for different junctions?
+
+  4. Should there be a legend to distinguish different junctions?
+
+  5. Is there a preferred time interval for the x-axis (e.g., hourly, daily, weekly)?
+
+  6. Do you want gridlines on the chart for better readability?
+
+  7. Should the chart include a title and axis labels? If yes, please provide the
+  preferred titles and labels.
+
+  8. Would you like to see a trend line or moving average added to the data?
+
+  9. Is there a specific font or size preference for the annotations and labels?
+
+  10. Should the chart display data points along with the line for each junction?'
+answers: '1. I do not know.
+
+  2. I am not sure, but maybe indicate the time and vehicle count for high traffic
+  points.
+
+  3. I do not have a specific preference.
+
+  4. Yes, a legend to distinguish different junctions would be helpful.
+
+  5. I do not know, maybe hourly for more detail.
+
+  6. Yes, gridlines would be good for better readability.
+
+  7. Title: "Vehicle Counts Over Time for Each Junction", x-axis: "Time", y-axis:
+  "Vehicle Count".
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I am not sure, but if it helps with clarity, then yes.'
+data_attributes:
+- DateTime
+- Junction
+- Vehicles

@@ -1,0 +1,49 @@
+initial_prompt: '
+
+  I''d like a Choropleth map visualizing the data from 323.csv. The map should display
+  Indian states, using different shades to represent the values of ''mlsrc'', ''quantumsrc'',
+  and ''dlsrc''. Each state should be color-coded according to its respective data,
+  letting observers easily compare the data points visually. Include a legend to denote
+  the value ranges for mlsrc, quantumsrc, and dlsrc. This will be used to analyze
+  trends in machine learning, quantum computing, and deep learning sources across
+  states. Ensure the map is clear and informative for online communities exploring
+  these trends.'
+questions: '1. Do you have a preferred color scheme for the different shades representing
+  ''mlsrc'', ''quantumsrc'', and ''dlsrc''?
+
+  2. Would you like the legend to be positioned in a specific location on the map?
+
+  3. Should the map include state boundaries for better clarity?
+
+  4. Do you want to display data values on the map itself?
+
+  5. Is there a specific font style or size you prefer for the state labels and legend?
+
+  6. Would you like the data values to be normalized across the states for a more
+  comparative view?
+
+  7. Do you prefer any specific range intervals for the legend?
+
+  8. Should the map include any geographic landmarks or additional context for better
+  orientation?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, the map should include state boundaries for better clarity.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please normalize the data values across the states for a more comparative
+  view.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

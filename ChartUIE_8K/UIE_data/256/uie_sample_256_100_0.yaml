@@ -1,0 +1,58 @@
+initial_prompt: Create a donut chart to visualize the distribution of unique ECG signals
+  ('ARR') in the dataset. Use text annotations to display the count of each signal
+  type in the chart segments. Highlight the segment with the highest frequency to
+  emphasize its predominance. The chart should help in understanding the prevalence
+  of specific cardiac ailments within the dataset. Annotate any significant differences
+  or outliers in the distribution to draw attention to potential areas of interest
+  for further analysis in cardiac research. Ensure the chart is visually appealing
+  and informative.
+questions: '1. Do you have a preferred color scheme for the donut chart?
+
+  2. How would you like the segment with the highest frequency to be highlighted (different
+  color, pattern, etc.)?
+
+  3. Where would you prefer the text annotations to be placed (inside the segments,
+  outside the segments, with lines pointing to segments)?
+
+  4. What font size and style do you prefer for the text annotations?
+
+  5. Do you want a legend to accompany the donut chart?
+
+  6. Would you like the chart to include a title and/or subtitle? If yes, what should
+  they be?
+
+  7. Do you have any specific preferences for labeling the axes or chart segments?
+
+  8. Are there any additional data points or information you would like to include
+  in the annotations?
+
+  9. Do you have a specific preference for the chart''s background color or grid lines?
+
+  10. Would you like to include any introductory or explanatory text on the chart
+  to provide context for the audience?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. Please use a different color to highlight the segment with the highest frequency.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, I would like a legend to accompany the donut chart.
+
+  6. Yes, please include a title. The title should be "Distribution of Unique ECG
+  Signals."
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. I do not have a specific preference.
+
+  10. Yes, please include a brief explanatory text to provide context for the audience.
+
+  <end of user emulated response>'
+data_attributes:
+- ECG_signal

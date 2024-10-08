@@ -1,0 +1,35 @@
+initial_prompt: I want a bar chart to visualize the number of children versus the
+  average medical charges. Please annotate the highest and lowest average charges.
+  Highlight bars representing smokers versus non-smokers to see the cost impact. This
+  chart is for analyzing personal medical costs and should focus on differentiating
+  between smokers and non-smokers across different regions aged 18 to 28. Use distinct
+  colors for each region to make comparisons easier. This visualization helps in understanding
+  how smoking status and region influence medical expenses for families with varying
+  numbers of children.
+questions: '1. Do you have a preferred color palette for the distinct regions?
+
+  2. What style or design preferences do you have for the annotations of the highest
+  and lowest average charges?
+
+  3. Are there specific labels or legends you would like to include for the smoker
+  versus non-smoker bars?
+
+  4. Would you prefer the chart to display values directly on the bars or hover-over
+  tooltips for the average charges?
+
+  5. Do you have any font preferences for the titles, axis labels, or legends?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please include labels for "Smoker" and "Non-Smoker".
+
+  4. I do not know.
+
+  5. I do not have any font preferences.'
+data_attributes:
+- children
+- charges
+- smoker
+- region
+- age

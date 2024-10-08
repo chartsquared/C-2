@@ -1,0 +1,58 @@
+initial_prompt: I need a stacked column chart to visualize this data. The chart should
+  show each Champion and compare their 'Win' and 'Loss' counts side by side for both
+  'Games(B)' (Blue side) and 'Games(R)' (Red side). Use different colored segments
+  for 'Win(B)', 'Loss(B)', 'Win(R)', and 'Loss(R)'. This will help in analyzing the
+  performance of each champion across different game sides. Label each segment and
+  include the Winrate percentage on top of each column for clarity. The x-axis should
+  list the Champions, and the y-axis should represent the number of Games.
+questions: '1. Do you have a preferred color scheme for the segments representing
+  ''Win(B)'', ''Loss(B)'', ''Win(R)'', and ''Loss(R)''?
+
+  2. What should be the font size and style for the labels of each segment?
+
+  3. Do you want a legend included in the chart? If so, where should it be positioned?
+
+  4. How should the Winrate percentage labels on top of each column be formatted (e.g.,
+  font size, color, format)?
+
+  5. Should the y-axis have a specific range or scale (e.g., linear, logarithmic)?
+
+  6. Do you want gridlines included on the chart? If so, should they be shown for
+  both x and y axes?
+
+  7. Are there any specific margins or padding preferences for the chart layout?
+
+  8. Should there be any additional annotations or text boxes to highlight specific
+  data points or trends?
+
+  9. Would you like to include any tooltips or data labels for additional information
+  upon hovering over the chart?
+
+  10. Should there be any specific title or subtitle added to the chart for better
+  context? If so, what should they be?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, I would like a legend included, and it should be positioned at the bottom.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include gridlines for both x and y axes.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. No, I am looking for an image, not interactive data visualization.
+
+  10. Yes, please include the title "Champion Performance Across Game Sides" and the
+  subtitle "Comparison of Wins and Losses for Each Champion on Blue and Red Sides".'
+data_attributes:
+- Champion
+- Win(B)
+- Loss(B)
+- Win(R)
+- Loss(R)

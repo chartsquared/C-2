@@ -1,0 +1,63 @@
+initial_prompt: Please create a line chart visualizing the Sum_of_Luminosity against
+  the Y_Minimum for the detected faults in the steel plates. Ensure each fault type
+  (e.g., Pastry, Z_Scratch) is represented with a different color line to differentiate
+  between them. Additionally, include the Steel_Plate_Thickness as a secondary line
+  to show its variation corresponding to the Y_Minimum. The X-axis should represent
+  the Y_Minimum values, and the Y-axis should represent the Sum_of_Luminosity and
+  Steel_Plate_Thickness. This will help analyze luminosity changes and thickness across
+  different Y-coordinate placements.
+questions: '1. Do you have any specific preferences for the colors representing different
+  fault types?
+
+  2. Do you prefer a particular style for the lines, such as solid, dashed, or dotted?
+
+  3. Would you like to include any specific gridlines or markers on the chart?
+
+  4. Should the secondary line for Steel_Plate_Thickness be plotted on a dual-axis
+  (secondary Y-axis)?
+
+  5. Is there a specific title or label format you would prefer for the axes and legend?
+
+  6. Do you have any preferences for the font type or size used in the chart?
+
+  7. Would you like to include any annotations or data labels on specific points in
+  the chart?
+
+  8. Should the chart include a legend, and if so, where would you prefer it to be
+  positioned (e.g., top-right, bottom-left)?
+
+  9. Is there a preferred range or scale for the Y-axis (e.g., logarithmic, linear)?
+
+  10. Do you want any specific interaction or tooltip information to be included when
+  hovering over data points?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, the secondary line for Steel_Plate_Thickness should be plotted on a dual-axis
+  (secondary Y-axis).
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. Yes, the chart should include a legend. I prefer it to be positioned at the top-right.
+
+  9. Linear scale is preferred.
+
+  10. I do not need any specific interaction or tooltip information.'
+data_attributes:
+- Sum_of_Luminosity
+- Y_Minimum
+- Steel_Plate_Thickness
+- Pastry
+- Z_Scratch
+- K_Scatch
+- Stains
+- Dirtiness
+- Bumps
+- Other_Faults

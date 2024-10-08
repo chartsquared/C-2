@@ -1,0 +1,56 @@
+initial_prompt: Create a box chart to visualize key statistics of the Iris Flower
+  Dataset, focusing on sepal length, sepal width, petal length, and petal width for
+  different species. Use text annotations to highlight the median values of these
+  attributes for each species to draw attention to central tendencies. Apply highlights
+  to indicate the range of values and outliers that differ significantly from the
+  majority of the data. This visualization aims to provide insights into the distribution
+  and variability of the measurements in a biological context, aiding in the understanding
+  of species differences.
+questions: '1. Do you have any specific preferences for the color palette used in
+  the box chart?
+
+  2. Should the species be differentiated using specific colors or patterns?
+
+  3. What font style and size would you prefer for the text annotations highlighting
+  median values?
+
+  4. Do you prefer a specific type of highlight for indicating the range of values
+  and outliers (e.g., different color, bold outlines)?
+
+  5. Do you require additional information on the chart, such as legend position or
+  title placement?
+
+  6. Are there any other statistical measures you would like to see annotated besides
+  the median (e.g., quartiles, mean)?
+
+  7. Do you prefer the box plots to be vertical or horizontal?
+
+  8. Would you like gridlines to be included in the background of the box chart for
+  better readability?
+
+  9. Is there a particular layout or arrangement you prefer for displaying the different
+  attributes (e.g., all in one chart or separate charts for each attribute)?'
+answers: '1. I am not sure.
+
+  2. Yes, please differentiate species using specific colors.
+
+  3. I am not sure.
+
+  4. Different color for indicating the range of values and outliers would be good.
+
+  5. Yes, please include a legend and place it at the bottom. The title should be
+  at the top center.
+
+  6. I do not know.
+
+  7. Vertical box plots would be preferred.
+
+  8. Yes, please include gridlines for better readability.
+
+  9. All in one chart for a comprehensive comparison.'
+data_attributes:
+- sepal_length
+- sepal_width
+- petal_length
+- petal_width
+- species

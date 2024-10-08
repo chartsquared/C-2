@@ -1,0 +1,61 @@
+initial_prompt: Please create a heatmap visualizing the average daily bicycle crossings
+  for each bridge in New York City, segmented by days and temperature ranges. Use
+  the data from the provided CSV file, focusing on the Brooklyn Bridge, Manhattan
+  Bridge, Williamsburg Bridge, and Queensboro Bridge columns. Highlight variations
+  based on High Temperature (°F) and Precipitation levels. This should help in urban
+  planning by showing how weather affects bicycle traffic across these bridges. Make
+  it easy to compare traffic patterns across different conditions and time periods.
+  Thank you!
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Should the temperature ranges be divided into specific intervals? If so, please
+  specify the preferred intervals.
+
+  3. How would you like the precipitation levels to be categorized in the heatmap
+  (e.g., low, medium, high)?
+
+  4. Do you have any preferred labeling styles for the axes and legends?
+
+  5. Would you like to include tooltips to display exact values when hovering over
+  the heatmap cells?
+
+  6. Should the heatmap include gridlines for better readability?
+
+  7. Do you have any preferences for the font style or size for the text in the heatmap?
+
+  8. Is there a specific date range or subset of data you want to focus on for the
+  heatmap?
+
+  9. Would you prefer to normalize the bicycle crossing data (e.g., by using average
+  or total for each day)?
+
+  10. Are there any additional annotations or markers you would like to include to
+  highlight specific events or days?'
+answers: '1. I do not have any specific color scheme preferences.
+
+  2. I am not sure, but maybe every 10°F increment would be good.
+
+  3. I am not sure, perhaps categorized into low, medium, and high.
+
+  4. I do not have a specific preference for labeling styles.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. I do not have any preferences for the font style or size.
+
+  8. I am not sure, please use the full dataset.
+
+  9. Yes, using the average for each day would be good.
+
+  10. I have no specific preference.'
+data_attributes:
+- Date
+- Day
+- High Temp (°F)
+- Precipitation
+- Brooklyn Bridge
+- Manhattan Bridge
+- Williamsburg Bridge
+- Queensboro Bridge

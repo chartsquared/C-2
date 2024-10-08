@@ -1,0 +1,57 @@
+initial_prompt: Please create a heatmap visualization for the given dataset of top
+  Spotify songs from 2010-2019. The dataset includes various attributes like title,
+  artist, genre, bpm, energy, danceability, and popularity for each song. I'm particularly
+  interested in visualizing the relationships between these attributes, especially
+  how different genres correlate with features like bpm, energy, danceability, and
+  popularity over the years. Each cell in the heatmap should represent the correlation
+  between two attributes, with color intensity indicating the strength of the correlation.
+  Thank you!
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How many color gradients would you like for indicating the strength of correlations?
+
+  3. Should the heatmap include labels for correlation values within each cell?
+
+  4. Do you want a specific range of correlation values to be highlighted?
+
+  5. Would you prefer the heatmap to show data for each year individually or aggregate
+  data across all years?
+
+  6. Are there any specific genres or features you would like to emphasize in the
+  heatmap?
+
+  7. Is there a preferred order for displaying the attributes in the heatmap?
+
+  8. Should the heatmap include a legend or a key to explain the color intensity?
+
+  9. Do you want any annotations or additional details for high or low correlation
+  areas?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I don''t know.
+
+  3. Yes, please include labels for correlation values within each cell.
+
+  4. I am not sure.
+
+  5. Aggregate data across all years would be preferred.
+
+  6. I don''t have any specific genres or features to emphasize.
+
+  7. I am not sure.
+
+  8. Yes, please include a legend or a key to explain the color intensity.
+
+  9. I don''t know.
+
+  <end of user response>'
+data_attributes:
+- title
+- artist
+- top genre
+- bpm
+- nrgy
+- dnce
+- pop

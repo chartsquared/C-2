@@ -1,0 +1,43 @@
+initial_prompt: I'd like to visualize the Traffic Prediction Dataset you have. Please
+  create a bar chart. The x-axis should represent different 'Junctions' while the
+  y-axis should show the 'Vehicles'. The chart should indicate the total number of
+  vehicles for each junction and should highlight distinct colors for each junction.
+  Make sure to include labels for the axes and a title for the chart, something like
+  "Number of Vehicles Per Junction". I need this visualization to understand the traffic
+  flow at different junctions over time. Thank you!
+questions: '1. Do you prefer specific colors for each junction, or should they be
+  randomly assigned?
+
+  2. Would you like to see data labels displaying the exact counts of vehicles on
+  each bar?
+
+  3. Is there a preferred order for the junctions on the x-axis (e.g., numerical,
+  alphabetical, or other criteria)?
+
+  4. Do you have a preference for the style and size of the axis labels and title
+  font?
+
+  5. Would you like a legend to be included, even if the colors for each junction
+  are distinct and labeled on the x-axis?
+
+  6. Should there be gridlines in the background of the chart to help with reading
+  values, or would you prefer a cleaner look without them?
+
+  7. Is there a specific width or aspect ratio for the chart that you have in mind?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to see data labels displaying the exact counts of vehicles
+  on each bar.
+
+  3. I do not have a specific preference for the order of the junctions.
+
+  4. I am not sure.
+
+  5. No, I do not need a legend to be included.
+
+  6. I would prefer gridlines in the background to help with reading values.
+
+  7. I have no specific preference for the width or aspect ratio.'
+data_attributes:
+- Junction
+- Vehicles

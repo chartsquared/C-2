@@ -1,0 +1,52 @@
+initial_prompt: Create a grouped bar chart to visualize the total sales per category
+  segmented by region. Use data from the Superstore Sales Dataset. Each bar group
+  should represent a category (e.g., Furniture, Office Supplies) and within each group,
+  bars should represent different regions (e.g., South, West). Ensure the y-axis reflects
+  sales amount.
+questions: '1. Do you have a preferred color scheme for the different regions in the
+  bar chart?
+
+  2. Would you like to see gridlines in the background of the chart?
+
+  3. How would you like the legend to be displayed, if at all (e.g., to the right
+  of the chart, below the chart)?
+
+  4. Is there a specific label format or font style you would prefer for the axes
+  and legend?
+
+  5. Do you want the bars to have specific spacing or width?
+
+  6. Should the chart display the exact sales amounts on top of each bar?
+
+  7. Do you want any specific category ordering within the groups?
+
+  8. Do you prefer the chart to have a title? If so, please specify the title text.
+
+  9. Would you like to include any annotations or additional information within the
+  chart?
+
+  10. Is there a specific layout for the bar groups you have in mind (e.g., horizontal
+  or vertical grouping)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to see gridlines in the background of the chart.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please display the exact sales amounts on top of each bar.
+
+  7. I am not sure.
+
+  8. Yes, please title it "Total Sales per Category by Region".
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- Category
+- Region
+- Sales

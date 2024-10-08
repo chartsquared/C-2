@@ -1,0 +1,47 @@
+initial_prompt: Please create a stacked bar chart to visualize Gene.symbol differences
+  in Taxol Drug Resistance cell lines in breast cancer based on logFC and P.Value
+  data. Label axes accordingly.
+questions: '1. Do you have any specific color preferences for different cell lines?
+
+  2. Would you like to include a legend to explain the colors or patterns used?
+
+  3. Do you want the gene symbols to be labeled on the bars directly or on the x-axis?
+
+  4. Are there particular ranges or thresholds for logFC or P.Value that you want
+  highlighted?
+
+  5. What title would you prefer for the chart?
+
+  6. How detailed should the axis labels be (e.g., scientific notation for P.Value)?
+
+  7. Should the chart include grid lines for better readability?
+
+  8. Do you have a preference for the order of cell lines or gene symbols on the x-axis?
+
+  9. Would you like any additional annotations or notes on the chart?
+
+  10. How large do you want the font size for labels and titles to be?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend.
+
+  3. On the x-axis.
+
+  4. I do not know.
+
+  5. "Gene Expression Profiles in Taxol Drug Resistance Breast Cancer Cell Lines"
+
+  6. I am not sure.
+
+  7. Yes, include grid lines.
+
+  8. I do not know.
+
+  9. No additional annotations.
+
+  10. I am not sure.'
+data_attributes:
+- Gene.symbol
+- P.Value
+- logFC
+- Cell Line

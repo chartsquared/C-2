@@ -1,0 +1,53 @@
+initial_prompt: Create a line chart that displays the progression of average salaries
+  over different graduation years for engineering graduates. Include separate lines
+  for male and female graduates to visualize gender differences. Use "GraduationYear"
+  on the x-axis and "Salary" on the y-axis. Highlight key academic metrics like college
+  GPA, English scores, and Quant scores alongside salary trends for a comprehensive
+  comparison. Ensure the chart is clear in showing differences across various specializations
+  like computer science, electronics, and instrumentation engineering. This will help
+  understand how academic background influences salary outcomes in the engineering
+  sector.
+questions: "1. Do you have a preferred color scheme for the different lines (male\
+  \ and female graduates)?\n2. Would you like to include markers or points on the\
+  \ lines to indicate specific data points?\n3. How would you prefer to display the\
+  \ key academic metrics (college GPA, English scores, and Quant scores) on the chart?\
+  \ \n4. Do you have any preferences for the chart title and axis labels?\n5. Would\
+  \ you like to include a legend to differentiate the different specializations (computer\
+  \ science, electronics, instrumentation engineering)?\n6. Should we use different\
+  \ line styles (solid, dashed) for different specializations or for gender differentiation?\n\
+  7. Are there any specific ranges or scales you prefer for the y-axis (Salary) and\
+  \ x-axis (GraduationYear)?\n8. Do you have any preferences regarding the font sizes\
+  \ or types for the labels and titles?\n9. Would you prefer the chart to be grid-lined\
+  \ for better readability or keep it clean?\n10. Are there any specific annotations\
+  \ or highlights you want to be included for key data points or trends?"
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include markers or points on the lines to indicate specific
+  data points.
+
+  3. I prefer to display the key academic metrics (college GPA, English scores, and
+  Quant scores) as sidebars or a secondary y-axis for comparison.
+
+  4. For the chart title, you can use "Average Salaries of Engineering Graduates Over
+  Years by Gender and Specialization". Axis labels can be "Graduation Year" for the
+  x-axis and "Average Salary (in USD)" for the y-axis.
+
+  5. Yes, please include a legend to differentiate the different specializations.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I prefer the chart to be grid-lined for better readability.
+
+  10. I am not sure.'
+data_attributes:
+- GraduationYear
+- Salary
+- Gender
+- Specialization
+- collegeGPA
+- English
+- Quant

@@ -1,0 +1,39 @@
+initial_prompt: Create a Treemap visualization using the Women Fashion Trend Dataset.
+  The main categories should be the merchant_name, and within each merchant, break
+  down the units_sold by product_color. The size of each rectangle should represent
+  the units_sold, and the color should represent the average rating. This will help
+  understand which merchants have higher sales and how different colors perform in
+  terms of sales and ratings within each merchant. Make sure to include clear labels
+  for each section and a legend for the color scale based on rating.
+questions: '1. Do you have a preferred color palette for the color scale representing
+  the average rating?
+
+  2. Would you like the Treemap to be sorted in any particular order, such as by units
+  sold or by merchant rating?
+
+  3. How would you like the labels to be displayed on each section of the Treemap
+  (e.g., showing both merchant name and product color)?
+
+  4. Do you have any specific font preferences or sizes for the labels and legend?
+
+  5. Should the legend for the color scale be positioned at a specific location in
+  the chart?
+
+  6. Would you prefer to highlight any particular merchants or product colors within
+  the Treemap?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would like the labels to show both merchant name and product color.
+
+  4. I do not have any specific font preferences or sizes.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- merchant_name
+- product_color
+- units_sold
+- rating

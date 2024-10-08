@@ -1,0 +1,44 @@
+initial_prompt: Create a stacked column chart to visualize the Real Estate DataSet.
+  Display the 'MEDV' column as the primary variable, and use a different color for
+  different 'CHAS' values (0 and 1). Each column should represent a unique combination
+  of 'ZN' and 'RAD' values. The height of each segment within a column should correspond
+  to the average 'MEDV' for that 'CHAS' value. Label the x-axis with combinations
+  of 'ZN' and 'RAD', and the y-axis with 'MEDV'. This will help compare median home
+  values across different zones and accessibility ratings, highlighting the impact
+  of the Charles River adjacency.
+questions: '1. Do you have any specific color preferences for the different ''CHAS''
+  values (0 and 1)?
+
+  2. Do you want to include any specific annotations or labels on the chart for emphasizing
+  critical data points?
+
+  3. Should the chart have grid lines for easier readability of the y-axis values?
+
+  4. Do you have a preferred font style or size for the axis labels and title?
+
+  5. Would you like to include a legend to identify the different ''CHAS'' values,
+  and if so, where would you prefer it to be placed (e.g., right, top, bottom)?
+
+  6. Are there any specific thresholds or reference lines you would like to be added
+  to the chart for comparison purposes?
+
+  7. Do you have any preference for the aspect ratio or dimensions of the chart?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure about specific annotations or labels.
+
+  3. Yes, please include grid lines for easier readability of the y-axis values.
+
+  4. I do not have any specific preference for the font style or size.
+
+  5. Yes, please include a legend to identify the different ''CHAS'' values, preferably
+  placed at the top.
+
+  6. I am not sure about thresholds or reference lines.
+
+  7. I have no specific preference for the aspect ratio or dimensions of the chart.'
+data_attributes:
+- MEDV
+- CHAS
+- ZN
+- RAD

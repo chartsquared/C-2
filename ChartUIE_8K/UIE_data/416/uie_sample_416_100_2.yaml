@@ -1,0 +1,56 @@
+initial_prompt: I need a scatter plot visualizing the Bundesliga points per match.
+  Use data points for different games with features like 'HomeTeam', 'AwayTeam', and
+  'FTR' to show results such as victories, draws, and losses. Include text annotations
+  to highlight specific outlier matches or significant games. Use different colors
+  or sizes to highlight the match outcomes (e.g., home win, away win, draw) to make
+  them stand out. This will help in visually analyzing performance trends and patterns
+  in the Bundesliga season. Include labels for better context and easy interpretation.
+questions: '1. Do you have a preferred color scheme for highlighting match outcomes?
+
+  2. Would you like specific annotations or labels for any particular matches?
+
+  3. Should the size of data points vary based on the match outcome or any other variable?
+
+  4. Do you want the X and Y axes to represent specific variables, and if so, which
+  ones?
+
+  5. Is there a specific range for the axes that you want to focus on?
+
+  6. Would you like any grid lines or reference lines (such as an average line) to
+  be included?
+
+  7. Do you have a preferred font style and size for the labels and annotations?
+
+  8. Should the data points be interactive with hover-over information, or should
+  all relevant data be displayed directly on the chart?
+
+  9. Are there any specific titles or legends you would like to include?
+
+  10. Are there other specific games or teams you want to highlight apart from the
+  significant outlier matches?'
+answers: '1. I am not sure.
+
+  2. Yes, please annotate matches involving significant victories or losses.
+
+  3. Yes, the size of data points should vary based on the match outcome.
+
+  4. I am not sure.
+
+  5. I do not have a specific range in mind.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I would like all relevant data to be displayed directly on the chart.
+
+  9. Yes, please include a title and legends to explain the color and size differences
+  in outcomes.
+
+  10. No, I do not have any other specific games or teams to highlight.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTR
+- FTHG
+- FTAG

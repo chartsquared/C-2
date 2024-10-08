@@ -1,0 +1,44 @@
+initial_prompt: Create a heatmap using the given dataset to visualize the average
+  mobile subscriptions across different continents over various years. The x-axis
+  should represent the years from 1990 to 1992, and the y-axis should represent the
+  different continents such as Asia, Europe, etc. The color intensity should reflect
+  the average number of mobile subscriptions for each continent-year combination,
+  providing a clear picture of the growth or decline in mobile subscriptions across
+  continents over time. This will help understand regional trends in mobile technology
+  adoption.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the color intensity scale be linear, logarithmic, or any other specific
+  scale?
+
+  3. Do you want grid lines to separate the cells in the heatmap?
+
+  4. Do you prefer any specific font style or size for the axis labels and title?
+
+  5. Would you like to include annotations (numeric values) within the heatmap cells?
+
+  6. Do you have any preferences for the title of the heatmap?
+
+  7. Should the heatmap include a legend explaining the color intensities?
+
+  8. Would you like to see any specific highlights or emphasis on certain years or
+  continents?'
+answers: '1. I am not sure.
+
+  2. Linear scale, please.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, please include annotations.
+
+  6. No specific preference for the title.
+
+  7. Yes, please include a legend.
+
+  8. I am not sure.'
+data_attributes:
+- year
+- continent
+- mobile_subs

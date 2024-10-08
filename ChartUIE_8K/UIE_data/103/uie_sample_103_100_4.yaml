@@ -1,0 +1,59 @@
+initial_prompt: I'd like to visualize the sales data using a dot plot. Specifically,
+  I want to see how the ratings vary by product line across different cities - Yangon,
+  Naypyitaw, and Mandalay. Each dot should represent an individual rating, with the
+  x-axis showing the product lines and the y-axis representing the rating scores.
+  Additionally, it would be helpful to differentiate the dots by color based on the
+  customer's gender to observe any trends or patterns. Could you create a dot plot
+  incorporating these elements for the business sales dataset? Thank you!
+questions: '1. What size would you prefer for the dots on the plot?
+
+  2. Do you have any specific color preferences for differentiating male and female
+  customers?
+
+  3. Is there a particular order you would like the product lines to be displayed
+  on the x-axis?
+
+  4. Would you prefer any specific data point annotations, such as city labels, to
+  be visible on the plot?
+
+  5. What range of rating scores do you want to be displayed on the y-axis? Should
+  it be from 0 to 10, or something different?
+
+  6. Do you have any specific preferences for the chart title and axis labels? If
+  so, what should they be?
+
+  7. Would you like a legend to be included in the plot to explain the color coding
+  of genders?
+
+  8. Do you have any preferences for the overall layout or background of the plot
+  (e.g., gridlines, background color)?
+
+  9. Should outlier data points be highlighted or treated in a special way? If yes,
+  how?
+
+  10. Do you want to display the exact numerical rating values when hovering over
+  the dots on the plot?'
+answers: '1. I am not sure.
+
+  2. No specific color preferences.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. The range should be from 0 to 10.
+
+  6. No specific preferences, go with the standard labels and titles.
+
+  7. Yes, include a legend for the gender color coding.
+
+  8. I do not have any specific preferences.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- City
+- Product line
+- Rating
+- Gender

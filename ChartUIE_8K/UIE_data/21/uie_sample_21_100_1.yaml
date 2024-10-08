@@ -1,0 +1,42 @@
+initial_prompt: Create a bar chart to visualize the "Gender Recognition by Voice"
+  dataset. Focus on the average ('mean') values of features such as 'meanfreq', 'sd',
+  'median', 'Q25', 'Q75', and 'meanfun' for male and female speakers. Use different
+  colors to highlight male and female categories to show the comparison clearly. Include
+  text annotations for key data points, such as the highest and lowest 'meanfreq'
+  values, and use highlights for the 'meanfun' feature to emphasize its relevance
+  in gender recognition. The chart should help in understanding gender differentiation
+  based on voice features.
+questions: '1. Do you have a preference for the specific colors used to differentiate
+  male and female categories?
+
+  2. Would you like a specific title or subtitle for the chart?
+
+  3. Do you have any specific font preferences for text annotations or labels?
+
+  4. How would you prefer the data labels to be formatted for the highest and lowest
+  ''meanfreq'' values?
+
+  5. Are there any specific ranges or scales you prefer for the y-axis?
+
+  6. Do you want gridlines to be displayed in the background of the chart? If yes,
+  do you have any specific preference for their style?
+
+  7. Is there a preference for where you would like the legend to be placed?
+
+  8. Do you want tooltips to appear when hovering over the bars?'
+answers: "<start of user emulated response>\n1. I am not sure.\n2. I don't have a\
+  \ specific title or subtitle in mind. \n3. I do not know.\n4. I would like data\
+  \ labels to be clearly visible, but I do not have a specific format in mind.\n5.\
+  \ I am not sure about the specific ranges or scales for the y-axis.\n6. Yes, please\
+  \ include gridlines, but I do not have a specific preference for their style.\n\
+  7. No specific preference for the legend placement.\n8. I do not need tooltips since\
+  \ I am looking for an image, not an interactive visualization.\n<end of user emulated\
+  \ response>"
+data_attributes:
+- meanfreq
+- sd
+- median
+- Q25
+- Q75
+- meanfun
+- label

@@ -1,0 +1,43 @@
+initial_prompt: Create a scatter plot to visualize the distribution of crop production
+  in different counties/sub-counties of Kenya from the 2019 census. Use 'County/Sub
+  County' on the X-axis and crop quantities (e.g., Maize, Beans, Cassava, Bananas)
+  on the Y-axis. Each crop type should be represented by different colored markers.
+  Also, include missing data handling to ensure accuracy. Show variations and concentrations
+  in crop production. Add labels for clarity. Highlight counties with exceptionally
+  high or low production values to identify outliers and trends in the agricultural
+  landscape of Kenya. This will help in understanding the regional distribution of
+  crop production.
+questions: "1. Do you prefer a specific color scheme for representing different crops\
+  \ on the scatter plot?\n2. Do you have a preference for the shape or size of the\
+  \ markers for different crops?\n3. Would you like trend lines to be included for\
+  \ better visualization of the data trends?\n4. Should the outliers be highlighted\
+  \ with specific annotations or different marker styles?\n5. Do you prefer any specific\
+  \ method for handling missing data?\n6. Do you have a preference for the orientation\
+  \ or style of the labels for better clarity?\n7. Would you like additional grid\
+  \ lines or background elements to enhance readability? \n8. Are there any specific\
+  \ counties or sub-counties you would like to highlight or emphasize in the visualization?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not have a preference for the shape or size of markers.
+
+  3. I am not sure.
+
+  4. Yes, highlight the outliers with specific annotations.
+
+  5. Please use interpolation for handling missing data.
+
+  6. I do not have a preference for label orientation or style.
+
+  7. I do not know.
+
+  8. I don''t have specific counties or sub-counties in mind to highlight.
+
+  <end of user emulated response>'
+data_attributes:
+- County/Sub County
+- Maize
+- Beans
+- Cassava
+- Bananas

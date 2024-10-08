@@ -1,0 +1,59 @@
+initial_prompt: Create a choropleth map visualizing the geographical distribution
+  of top-rated attractions and restaurants in Colombo. Use the address data to pinpoint
+  each location on the map. Highlight areas based on their ranking position and average
+  rating. Additionally, include pop-up details showing the name, category, rating,
+  and number of reviews when hovering over each point. Ensure the map distinguishes
+  clearly between attractions and restaurants, possibly through different color coding
+  or icons. This will help in identifying the prime spots in Colombo with high tourist
+  interest.
+questions: '1. Do you have preferred color schemes or specific colors you''d like
+  to use for the map?
+
+  2. How would you like the different categories (attractions and restaurants) to
+  be represented? Do you prefer different colors, icons, or both?
+
+  3. Is there a specific map style or background (e.g., satellite view, terrain, simple,
+  etc.) that you prefer for the choropleth map?
+
+  4. Would you like to set any particular thresholds or intervals for the ranking
+  positions and ratings when highlighting areas on the map?
+
+  5. Do you have a preference for the size and style of the pop-up details (e.g.,
+  font size, font style) when hovering over each point?
+
+  6. Are there any specific geographic boundaries or areas within Colombo that you
+  want to emphasize or focus on?
+
+  7. Do you have a preferred layout or aspect ratio for the map to better fit your
+  audience''s viewing platforms (e.g., widescreen, portrait)?
+
+  8. Should there be a legend or key included on the map to explain the color coding
+  and icons used? If so, do you have a preferred design for it?
+
+  9. Do you need to include any additional contextual information or annotations on
+  the map?'
+answers: '1. I do not know.
+
+  2. Different colors, please.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, please include a legend or key.
+
+  9. I have no specific preference.'
+data_attributes:
+- type
+- name
+- rankingPosition
+- category
+- rating
+- address
+- numberOfReviews

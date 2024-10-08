@@ -1,0 +1,53 @@
+initial_prompt: Please create a Treemap chart for my "Settlers of Catan" games data.
+  The chart should illustrate the distribution of points scored by players across
+  different games. Use the "player," "points," and "gameNum" columns to create this
+  visualization. Make sure to include all players and games in the dataset to provide
+  a comprehensive overview. Additionally, include tooltips that display detailed information
+  like the settlements and total gain/loss for each player when hovered over. This
+  will help in understanding the player's performance and strategy across different
+  games.
+questions: '1. Do you have a preferred color scheme for the Treemap chart?
+
+  2. Would you like the chart to have a legend indicating player names and their assigned
+  colors?
+
+  3. Do you prefer a specific font style or size for the labels and tooltips in the
+  chart?
+
+  4. Should the Treemap highlight any specific player or game for emphasis?
+
+  5. Is there a particular way you would like the data to be grouped or ordered in
+  the Treemap?
+
+  6. Do you want to include any additional contextual information or annotations on
+  the chart?
+
+  7. Are there any specific chart titles or axis labels you would like to include?
+
+  8. Would you prefer to display the totals of gain/loss and other details as absolute
+  values or percentages in the tooltips?'
+answers: '1. I do not know.
+
+  2. Yes, I would like the chart to have a legend indicating player names and their
+  assigned colors.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I would prefer to display the totals of gain/loss and other details as absolute
+  values in the tooltips.'
+data_attributes:
+- player
+- points
+- gameNum
+- settlement1
+- settlement2
+- totalGain
+- totalLoss

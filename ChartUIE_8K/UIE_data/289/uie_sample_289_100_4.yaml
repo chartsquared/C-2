@@ -1,0 +1,50 @@
+initial_prompt: 'Please create a line chart for cancer classification using the data
+  provided in the format. I want lines representing the mean values of the following
+  attributes over the sample data: mean radius, mean texture, mean perimeter, mean
+  area, mean smoothness, and mean compactness. This will help visualize how each of
+  these features varies across different samples. Make sure to clearly label the axes
+  and provide a legend for each line to distinguish them. This chart will be used
+  for a health-related analysis. Thank you!'
+questions: '1. Do you have a preferred color scheme for the lines?
+
+  2. Would you like grid lines on the chart for better readability?
+
+  3. Do you have a specific title you would like to use for the chart?
+
+  4. How would you prefer the legend to be positioned (e.g., right, bottom, top, left)?
+
+  5. Is there a specific font style or size you would like to use for the labels and
+  legend?
+
+  6. Would you like data markers to indicate each data point on the lines?
+
+  7. Should the lines be smooth or should they connect each data point with straight
+  segments?
+
+  8. Do you have a preferred style for the axes (e.g., color, thickness)?
+
+  9. Is there any specific information you would like to include in the chart''s subtitle?'
+answers: '1. I do not know.
+
+  2. Yes, I would like grid lines on the chart for better readability.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Yes, I would like data markers to indicate each data point on the lines.
+
+  7. Smooth lines would be better.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- mean radius
+- mean texture
+- mean perimeter
+- mean area
+- mean smoothness
+- mean compactness

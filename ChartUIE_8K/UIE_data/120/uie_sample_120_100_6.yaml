@@ -1,0 +1,41 @@
+initial_prompt: I want a geographic heatmap to visualize sales data from the Supermart
+  Grocery Sales - Retail Analytics Dataset. The map should show the distribution of
+  sales across different cities in Tamil Nadu, highlighting areas with higher sales
+  in darker colors. Include details like Order Date to see if there’s any temporal
+  trend. Also, use various sizes or shades to represent the profit and discount levels
+  in different regions, making it easy to understand which areas are driving the most
+  revenue and offering the highest discounts.
+questions: '1. Do you have a preferred color scheme for representing different sales
+  levels on the heatmap?
+
+  2. How would you like the data for profit and discount levels to be represented,
+  through varying circle sizes or color shades?
+
+  3. Should the heatmap include any geographical markers such as city names or landmarks?
+
+  4. What time granularity would you prefer for the Order Date attribute (e.g., daily,
+  weekly, monthly)?
+
+  5. Do you want any filtering options on the heatmap to look at specific time periods
+  or ranges of sales, profit, and discount?
+
+  6. Is there a specific base map style you prefer (e.g., satellite view, street view,
+  plain map)?'
+answers: '1. I am not sure.
+
+  2. I think varying circle sizes would be good.
+
+  3. Yes, I would like city names included.
+
+  4. Monthly granularity would be preferable.
+
+  5. I do not know.
+
+  6. I have no specific preference.'
+data_attributes:
+- City
+- Order Date
+- Sales
+- Discount
+- Profit
+- State

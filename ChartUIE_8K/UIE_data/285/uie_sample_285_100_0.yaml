@@ -1,0 +1,61 @@
+initial_prompt: Create a table chart to detect Parkinson's Disease showing key metrics
+  like 'MDVP:Fo(Hz)', 'MDVP:Jitter(%)', and 'HNR' for each patient (name). Highlight
+  those cells where 'status' is 1. Add text annotations to explain that 'status' 1
+  indicates Parkinson's. Summarize unique values and missing data counts for each
+  column. This visualization will help health professionals quickly identify abnormal
+  voice measurements indicative of Parkinson's.
+questions: '1. Do you have a specific color preference for highlighting cells where
+  ''status'' is 1?
+
+  2. Should there be specific symbols or markers used alongside color to highlight
+  cells where ''status'' is 1?
+
+  3. Do you prefer any particular font style or size for the table text?
+
+  4. Would you like the table to include grid lines? If so, any specific styling for
+  the grid lines?
+
+  5. Should the key metrics (''MDVP:Fo(Hz)'', ''MDVP:Jitter(%)'', and ''HNR'') be
+  located in a specific order within the table?
+
+  6. Do you have a preference for the alignment of numerical data within the cells
+  (e.g., left-aligned, right-aligned, centered)?
+
+  7. Would you like to see any specific data sorting order in the table, such as alphabetical
+  order by ''name'' or numerical order by one of the key metrics?
+
+  8. Is there a preferred location or style for the text annotations that explain
+  ''status'' 1 indicates Parkinson''s?
+
+  9. Do you want the summary of unique values and missing data counts to be included
+  within the table, or presented in a separate area?
+
+  10. Do you prefer any additional labels or titles for the table or specific columns
+  to enhance clarity?'
+answers: '1. I do not have a specific color preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include grid lines. I do not have a specific styling preference for
+  them.
+
+  5. I do not know.
+
+  6. Right-aligned for numerical data would be good.
+
+  7. I do not have a preference for data sorting order.
+
+  8. I am not sure.
+
+  9. The summary of unique values and missing data counts can be presented in a separate
+  area.
+
+  10. I have no specific preference for additional labels or titles.'
+data_attributes:
+- name
+- MDVP:Fo(Hz)
+- MDVP:Jitter(%)
+- HNR
+- status

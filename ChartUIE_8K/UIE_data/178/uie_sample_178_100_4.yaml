@@ -1,0 +1,39 @@
+initial_prompt: Create a choropleth map showing the distribution of top 1000 highest-grossing
+  movies worldwide. Use the `Distributor` column to represent different regions, with
+  colors indicating the total `World Wide Sales (in $)` per distributor. Ensure the
+  map has appropriate legends and color gradients to distinguish high and low sales
+  areas. Include tooltips to display details like `Title`, `Year`, and `Sales` when
+  hovering over each region. This visualization will help identify which distributors
+  dominate the global box office market. Make sure the map is interactive for better
+  user engagement and insight exploration.
+questions: '1. Do you have any preferred color schemes for the choropleth map?
+
+  2. How should the color gradients be defined to differentiate high and low sales
+  areas?
+
+  3. What details would you like to see in the tooltip other than ''Title'', ''Year'',
+  and ''Sales'' (if any)?
+
+  4. Do you have any specific requirements for the map''s legend, such as its position
+  or format?
+
+  5. Are there specific regions or distributors you want to highlight on the map?
+
+  6. How would you prefer the distributors to be represented on the map?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I prefer the legend to be at the bottom right of the map, but I am not certain
+  about the format.
+
+  5. I do not have any specific regions or distributors in mind to highlight.
+
+  6. I am not sure.'
+data_attributes:
+- Distributor
+- World Wide Sales (in $)
+- Title
+- Year

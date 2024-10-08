@@ -1,0 +1,64 @@
+initial_prompt: Create a Choropleth map to visualize the distribution of Southeast
+  Asian bumblebee specimens from the dataset. Highlight countries like Thailand and
+  Laos based on the quantity of specimens collected. Use colors to indicate the number
+  of specimens per country. Annotate important data points such as specific locations
+  (e.g., Doi Suthep-Pui NP, Luang Prabang) with collection details like year and collector
+  names. The goal is to emphasize areas with high specimen collection and provide
+  context for bumblebee biodiversity in these regions. This map will aid in understanding
+  species distribution patterns across Southeast Asia.
+questions: '1. Do you have a specific color scheme preference for indicating the number
+  of specimens per country?
+
+  2. How would you like the important data points (e.g., specific locations, collection
+  details) to be annotated? Should they be displayed as tooltips, labels, or another
+  format?
+
+  3. Are there any specific thresholds for the number of specimens that should trigger
+  different color intensity levels on the map?
+
+  4. Do you prefer a particular map projection for the Choropleth map?
+
+  5. Should the map include additional geographic features (e.g., rivers, mountains)
+  for context?
+
+  6. Is there a specific label or title you would like for the map?
+
+  7. Should the legend use continuous or discrete color bars to represent the number
+  of specimens?
+
+  8. How would you like to handle overlapping annotations for locations with many
+  specimen collections?
+
+  9. Would you prefer the annotations to include all the collection details, or just
+  the most relevant ones (e.g., year and collector names)?
+
+  10. Are there any other specific data points or metrics that you would like to see
+  highlighted on the map?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. Labels would be great.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. "Distribution of Southeast Asian Bumblebee Specimens"
+
+  7. Discrete color bars.
+
+  8. I am not sure.
+
+  9. Just the most relevant ones like year and collector names.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Country
+- Location
+- Year
+- Collector

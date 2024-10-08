@@ -1,0 +1,51 @@
+initial_prompt: Create a choropleth map that visualizes the average medical insurance
+  charges across different regions. Highlight the regions with the highest and lowest
+  average charges to emphasize the disparity. Annotate the map with average age, BMI,
+  and smoker data for each region. This visualization aims to provide a clear overview
+  of how insurance costs vary geographically and the potential impacts of demographic
+  factors on these costs. Use contrasting colors to differentiate the regions effectively.
+  The purpose is to assist in understanding regional differences, possibly aiding
+  in policy-making or targeted health interventions.
+questions: '1. Do you have any preference for the color scheme to be used for the
+  choropleth map?
+
+  2. Would you like specific colors to highlight the regions with the highest and
+  lowest average charges?
+
+  3. How would you prefer the demographic data (average age, BMI, and smoker percentage)
+  to be annotated on the map?
+
+  4. Do you have a preferred font style or size for the annotations?
+
+  5. Is it important to include a legend explaining the colors and demographic data
+  annotations?
+
+  6. Should the map include any geographic markers (e.g., state or country borders)?
+
+  7. Do you want labels for each region to be displayed directly on the map or in
+  a tooltip format?
+
+  8. Are there any additional data points or demographics you''d like to visualize
+  on the map?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I would prefer the demographic data to be annotated directly on the map.
+
+  4. I do not know.
+
+  5. Yes, it is important to include a legend explaining the colors and demographic
+  data annotations.
+
+  6. I am not sure.
+
+  7. I would like the labels for each region to be displayed directly on the map.
+
+  8. I do not know.'
+data_attributes:
+- age
+- bmi
+- smoker
+- region
+- charges

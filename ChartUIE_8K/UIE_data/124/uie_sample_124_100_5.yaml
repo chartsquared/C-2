@@ -1,0 +1,43 @@
+initial_prompt: Create a stacked bar chart that visualizes the average points (pts),
+  rebounds (reb), and assists (ast) per player for each season. Separate the bars
+  by season and use different colors for points, rebounds, and assists. This will
+  help compare the performance metrics across different seasons and highlight players'
+  contributions in these areas. The x-axis should represent the seasons, and the y-axis
+  should depict the average values of the metrics. Title the chart appropriately and
+  include a legend to differentiate between points, rebounds, and assists.
+questions: '1. Do you have any preferences for the colors representing points, rebounds,
+  and assists?
+
+  2. What title would you prefer for the chart?
+
+  3. Do you have specific requirements for the font style or size for the title, axis
+  labels, or legend?
+
+  4. Is there any particular order in which you would like the seasons to be displayed
+  on the x-axis?
+
+  5. Would you like to include any specific annotations or data labels on the bars?
+
+  6. Do you prefer any specific style for the gridlines or background of the chart?
+
+  7. Are there any other specific features or design elements you would like to include
+  in the chart?'
+answers: '1. I do not have specific preferences for the colors.
+
+  2. "Average Points, Rebounds, and Assists Per Player by Season"
+
+  3. I am not sure about specific requirements for the font style or size.
+
+  4. I do not have a particular order for the seasons on the x-axis.
+
+  5. I do not know if specific annotations or data labels are needed.
+
+  6. I do not have a preference for the style of the gridlines or background.
+
+  7. I do not know if there are other specific features or design elements needed.'
+data_attributes:
+- season
+- pts
+- reb
+- ast
+- player_name

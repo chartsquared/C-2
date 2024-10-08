@@ -1,0 +1,43 @@
+initial_prompt: I want a visualization that highlights key aspects of the online courses
+  provided by Harvard and MIT. Specifically, create a box plot chart comparing the
+  percentage of participants who audited (>50% course content accessed), got certified,
+  and played video across different courses. Include data annotations for median values
+  and highlight courses with high certification rates. This will help understand the
+  engagement and success rates of various courses. Use color to distinguish between
+  auditing, certification, and video-playing percentages. The goal is to visually
+  assess which courses have higher engagement and certification rates.
+questions: "1. Do you have any specific color preferences for distinguishing between\
+  \ auditing, certification, and video-playing percentages?\n2. Would you like the\
+  \ courses with high certification rates to be highlighted using a specific color\
+  \ or pattern?\n3. How would you prefer the median values to be annotated on the\
+  \ box plot (e.g., with labels, lines, or markers)?\n4. Is there a particular font\
+  \ style or size you would prefer for the annotations and labels on the chart?\n\
+  5. Do you have any preferences for the chart title and axis titles?\n6. Would you\
+  \ like grid lines to be included or excluded in the background of the box plot?\
+  \ \n7. Is there a specific way you would like the legend to be displayed (e.g.,\
+  \ position, style)?\n8. Do you have any preferences for the overall layout or size\
+  \ of the chart?\n9. Are there any additional details or elements you would like\
+  \ to be included in the chart for better understanding?"
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. With labels.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. No, there are no additional details needed.'
+data_attributes:
+- Institution
+- Course Title
+- '% Audited'
+- '% Certified'
+- '% Played Video'

@@ -1,0 +1,58 @@
+initial_prompt: Visualize the change in fatal police encounters over time using a
+  line chart. Plot the "date" on the x-axis and count of incidents on the y-axis.
+  Differentiate lines by "race" to highlight trends in various demographic groups.
+  Utilize annotations to emphasize key peaks or declines, mentioning potential contextual
+  factors like policy changes or significant events. Highlight any noticeable patterns.
+  Purpose is to understand temporal trends and disparities in police shootings, which
+  can inform law and policy considerations. Use the "US Police Shootings" dataset
+  and ensure clarity in highlighting changes over periods.
+questions: '1. Do you have a preference for the color scheme used to differentiate
+  lines by race?
+
+  2. Are there specific time intervals you would like to be represented on the x-axis
+  (e.g., months, years)?
+
+  3. Do you have any specific fonts or styles in mind for the annotations?
+
+  4. Would you prefer a legend to be included inside or outside the chart?
+
+  5. Are there any particular policy changes or significant events that you want to
+  be highlighted in the annotations?
+
+  6. Do you have a preferred style for key peaks or declines (e.g., arrows, highlights,
+  specific symbols)?
+
+  7. Should the y-axis have a specific range or scaling method (e.g., linear, logarithmic)?
+
+  8. How would you like missing data to be represented, if at all (e.g., gaps, interpolations)?
+
+  9. Do you need grid lines on the plot? If so, do you prefer them to be major, minor,
+  or both?
+
+  10. Is there any supplementary information or context you want displayed alongside
+  the chart (e.g., titles, subtitles, source information)?'
+answers: '1. I am not sure.
+
+  2. Years would be best.
+
+  3. I do not know.
+
+  4. I prefer the legend to be included inside the chart.
+
+  5. Yes, the Black Lives Matter movement and certain high-profile cases like George
+  Floyd should be highlighted in the annotations.
+
+  6. Arrows would be good for key peaks or declines.
+
+  7. Linear scaling is fine.
+
+  8. I do not know.
+
+  9. Major grid lines would be helpful.
+
+  10. Titles, subtitles, and source information should be displayed along with the
+  chart.'
+data_attributes:
+- date
+- race
+- id

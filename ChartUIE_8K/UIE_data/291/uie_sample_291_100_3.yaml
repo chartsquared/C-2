@@ -1,0 +1,51 @@
+initial_prompt: I need a line chart visualizing the social media engagement data from
+  the CSV file. The chart should display the trends over time for various metrics,
+  including the number of reactions, comments, shares, likes, loves, wows, hahas,
+  sads, and angrys. Additionally, differentiate the status types (link, photo, status,
+  video) using a legend or different lines. This will help understand how different
+  types of posts perform in terms of user engagement. Use the sample data provided
+  for this visualization. Ensure the chart is clear and easy to interpret. Thanks!
+questions: "1. Do you have a preferred color scheme for the lines representing different\
+  \ status types?\n2. How do you prefer the time axis to be formatted (e.g., daily,\
+  \ weekly, monthly)?\n3. Would you like grid lines on the chart for better readability?\n\
+  4. Should the chart include data labels for each data point, or only at significant\
+  \ intervals?\n5. Do you prefer a particular line style (e.g., solid, dashed) for\
+  \ different metrics?\n6. Is there a specific font style or size you prefer for the\
+  \ axes labels and title?\n7. Would you like to see a legend, and if so, where should\
+  \ it be placed (e.g., top, bottom, side)?\n8. Should there be any annotations or\
+  \ markers for key events/dates on the chart? \n9. Do you have a preference for the\
+  \ overall aspect ratio or dimensions of the chart?\n10. Is displaying aggregate\
+  \ values (like sums or averages) at the end of each line important for your analysis?"
+answers: '1. I am not sure.
+
+  2. Weekly would be fine.
+
+  3. Yes, grid lines would be helpful.
+
+  4. Only at significant intervals, please.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, a legend would be helpful. Place it at the bottom.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. Yes, displaying aggregate values at the end of each line would be helpful.'
+data_attributes:
+- num_reactions
+- num_comments
+- num_shares
+- num_likes
+- num_loves
+- num_wows
+- num_hahas
+- num_sads
+- num_angrys
+- status_type_link
+- status_type_photo
+- status_type_status
+- status_type_video

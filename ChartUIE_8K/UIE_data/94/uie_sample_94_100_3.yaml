@@ -1,0 +1,36 @@
+initial_prompt: Please create a column chart that visualizes the global population
+  data from 1955 to 2024 as provided in the dataset. I want the x-axis to represent
+  the years and the y-axis to show the population in billions. Make sure to display
+  the yearly population changes and the yearly percentage change. Include the number
+  of people in millions on the y-axis, and present the trend clearly to visualize
+  the population growth over these years. Please color-code the yearly changes and
+  percentage changes for better clarity. Thanks!
+questions: '1. Do you have a preferred color scheme for the chart, especially for
+  distinguishing ''yearly changes'' and ''percentage changes''?
+
+  2. Should the years on the x-axis be displayed at specific intervals (e.g., every
+  5 years, 10 years) or display every single year?
+
+  3. Would you like any specific annotations or labels on the chart (e.g., highlighting
+  important years or milestones)?
+
+  4. What level of detail would you prefer for the y-axis labels? Do you want them
+  rounded to specific decimal places or in another format?
+
+  5. Are there any specific patterns or trends you want to be highlighted or emphasized
+  in the visualization?'
+answers: '1. I have no specific preference for the color scheme.
+
+  2. I am not sure, maybe every 5 years would be good.
+
+  3. I do not know if specific annotations are necessary.
+
+  4. I think it would be best to have the number of people in round millions for better
+  understanding.
+
+  5. I am not sure about specific patterns or trends to highlight.'
+data_attributes:
+- Year
+- Population
+- Yearly % Change
+- Yearly Change

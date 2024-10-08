@@ -1,0 +1,49 @@
+initial_prompt: Compare the number of unique values across columns, highlighting the
+  differences between them. Use a bar chart with columns (e.g., UDI, Product ID, Type,
+  etc.) on the x-axis and the number of unique values on the y-axis. This visualization
+  will help us understand the distribution of unique values in the dataset, which
+  is crucial for predictive maintenance classification in the context of machine performance
+  and failure analysis. The bar chart should demonstrate if certain variables have
+  significantly more or fewer unique values than others, aiding in feature selection
+  for predictive modeling.
+questions: "1. Do you have a specific color scheme preference for the bar chart?\n\
+  2. Would you prefer the bars to be displayed vertically or horizontally?\n3. Should\
+  \ the chart include gridlines for easier comparison of values?\n4. Do you prefer\
+  \ any specific font style or size for the axis labels and titles?\n5. Should there\
+  \ be any specific annotations or labels on each bar to indicate the number of unique\
+  \ values?\n6. Would you like a legend included, even if the chart has a single data\
+  \ series?\n7. Do you have a preferred range or scaling for the y-axis?\n8. Should\
+  \ the chart title include any specific text or description? \n9. Are there any additional\
+  \ details or descriptions you would like to be included in the chart (e.g., data\
+  \ source, date)?\n10. Would you prefer any additional visual elements, such as reference\
+  \ lines or markers, to highlight certain values?"
+answers: '1. I am not sure.
+
+  2. Vertically, please.
+
+  3. Yes, include gridlines.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please add labels indicating the number of unique values.
+
+  6. No legend is needed.
+
+  7. I am not sure.
+
+  8. "Comparison of Unique Values Across Dataset Columns"
+
+  9. No, I don''t need additional details.
+
+  10. I am not sure.'
+data_attributes:
+- UDI
+- Product ID
+- Type
+- Air temperature [K]
+- Process temperature [K]
+- Rotational speed [rpm]
+- Torque [Nm]
+- Tool wear [min]
+- Target
+- Failure Type

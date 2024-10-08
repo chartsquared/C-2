@@ -1,0 +1,47 @@
+initial_prompt: I want to create a choropleth map visualizing forest fires in Brazil
+  by year and state. The dataset includes columns for year, state, month, number of
+  fires, and date. I want the map to show which states have had the most and least
+  fires over the years, with various color intensities representing different numbers
+  of fires. Can you also show this data month by month for more insights on seasonal
+  patterns? The map should be interactive, allowing for filtering by year and month.
+questions: '1. Do you have a specific color scheme preference for representing the
+  intensity of fires?
+
+  2. Is there a particular map projection you would like to use for Brazil?
+
+  3. Do you prefer to include state boundaries and labels on the map?
+
+  4. Would you like to display the actual numbers of fires when hovering over a state
+  or region?
+
+  5. Are there any specific legends or annotations you want to include on the map?
+
+  6. Do you prefer displaying data for all years and months by default, or should
+  there be a specific initial default view?
+
+  7. How do you want to handle the representation of months—should they be represented
+  as individual maps for each month or as an aggregated view?
+
+  8. Are there any specific fonts or styles you prefer for the labels and titles on
+  the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I prefer to include state boundaries and labels on the map.
+
+  4. Yes, I would like to display the actual numbers of fires when hovering over a
+  state or region.
+
+  5. I do not know.
+
+  6. Should display data for all years and months by default.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- year
+- state
+- month
+- number

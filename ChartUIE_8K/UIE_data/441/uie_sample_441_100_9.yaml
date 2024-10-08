@@ -1,0 +1,61 @@
+initial_prompt: I need a step line chart to visualize the performance trends of different
+  women's college basketball teams over the years. The x-axis should represent the
+  'year' and the y-axis should show 'full_percent'. Different lines should correspond
+  to different 'school' teams. Please use colors to distinguish between the teams
+  and include a legend. Utilize the data columns like 'reg_w', 'reg_l', 'how_qual',
+  and 'tourney_finish' to provide additional insights when hovering over the data
+  points. Ensure the chart is interactive and provides a clear representation of how
+  each team has progressed over time in terms of winning percentage.
+questions: '1. Do you have a preferred color palette for distinguishing between the
+  teams?
+
+  2. How would you like the x-axis to be labeled in terms of font size and style?
+
+  3. What specific styling preferences do you have for the y-axis representing ''full_percent''?
+
+  4. Do you prefer any particular style for the legend (e.g., position, font size)?
+
+  5. How would you like the data points to be represented on the step line (e.g.,
+  circles, squares)?
+
+  6. Are there any specific fonts or font sizes you prefer for the axis labels and
+  chart title?
+
+  7. Would you like gridlines to be included, and if so, how prominent should they
+  be?
+
+  8. Do you have any preferences for the overall chart background color?
+
+  9. How should the additional insights like ''reg_w'', ''reg_l'', ''how_qual'', and
+  ''tourney_finish'' be displayed when hovering over the data points (e.g., tooltip
+  style)?
+
+  10. Do you have preferences for how the step lines themselves should be styled (e.g.,
+  line width, dash style)?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I have no specific preference.
+
+  4. I prefer the legend to be placed at the bottom with a moderate font size.
+
+  5. Circles would be fine to represent the data points.
+
+  6. I do not know.
+
+  7. Yes, include gridlines but not too prominent.
+
+  8. I am not sure.
+
+  9. Display the additional insights in a tooltip style.
+
+  10. I prefer the step lines to have a medium line width, no specific dash style.'
+data_attributes:
+- year
+- school
+- full_percent
+- reg_w
+- reg_l
+- how_qual
+- tourney_finish

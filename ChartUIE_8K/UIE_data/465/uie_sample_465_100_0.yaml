@@ -1,0 +1,52 @@
+initial_prompt: Create a box chart using the provided data format to visualize the
+  distribution of total bill amounts segmented by the day of the week. Highlight key
+  statistics such as median, quartiles, and any potential outliers. Include data-driven
+  text annotations for the highest and lowest total bill amounts to draw attention
+  to these points. The chart should help in understanding spending patterns on different
+  days. Additionally, ensure the boxplot differentiates data points by color to reflect
+  the smoker status, adding a layer of context for social-science research purposes.
+questions: '1. Do you have any preferred color scheme for differentiating smoker status?
+
+  2. Would you like the box chart to include grid lines for better readability?
+
+  3. Do you have a preferred style or format for the text annotations (e.g., font
+  size, color)?
+
+  4. Should the outliers be marked with specific symbols (e.g., dots, stars)?
+
+  5. Do you want each box to be labeled with its corresponding day of the week?
+
+  6. Are there any particular dimensions or aspect ratio you prefer for the box chart?
+
+  7. Would you prefer the box chart to have a legend explaining the color scheme for
+  smoker status?
+
+  8. Should the chart include any additional statistical lines (e.g., mean line) other
+  than those mentioned?
+
+  9. Is there a specific way you want the whiskers to be calculated or displayed?
+
+  10. Would you prefer the median line in each box to be highlighted or styled differently?'
+answers: '1. I do not know.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. I am not sure.
+
+  4. Yes, please mark the outliers with dots.
+
+  5. Yes, I want each box to be labeled with its corresponding day of the week.
+
+  6. I do not know.
+
+  7. Yes, a legend explaining the color scheme for smoker status would be helpful.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Yes, please highlight the median line in each box.'
+data_attributes:
+- total_bill
+- day
+- smoker

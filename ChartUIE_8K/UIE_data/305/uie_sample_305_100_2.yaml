@@ -1,0 +1,59 @@
+initial_prompt: Create a line chart visualizing the top 3 global organizations by
+  workforce size. The x-axis should show the company names, and the y-axis should
+  represent the number of employees. Add data-driven text annotations to highlight
+  each company’s share price in USD at the corresponding points. Additionally, use
+  different colors to highlight companies from different origins to emphasize geographical
+  diversity. This visualization will help understand the distribution of workforce
+  sizes across these major global companies and their respective stock prices.
+questions: '1. Do you have any preferences for the colors used to represent companies
+  from different origins?
+
+  2. Would you like a specific style for the line chart (e.g., dashed lines, solid
+  lines)?
+
+  3. Should the chart include a legend specifying the color-code for different origins?
+
+  4. Do you prefer any particular font style or size for the text annotations?
+
+  5. How would you like the share price annotations to be positioned (e.g., above,
+  below, or beside the points)?
+
+  6. Do you have any preferences for the overall layout, such as chart size or background
+  color?
+
+  7. Should there be any specific formatting for the numbers, such as using commas
+  for thousands in the number of employees or specific decimal places for the share
+  price?
+
+  8. Would you like to add any additional chart elements, such as grid lines or a
+  title?
+
+  9. Is there a specific order in which you would like the companies to appear on
+  the x-axis?
+
+  10. Do you have any preferences for the axis labels, such as font size or orientation?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, a legend specifying the color-code for different origins would be helpful.
+
+  4. I do not have a specific preference.
+
+  5. The share price annotations should be positioned above the points.
+
+  6. I do not know.
+
+  7. Please use commas for thousands in the number of employees and one decimal place
+  for the share price.
+
+  8. Yes, please include grid lines and a title.
+
+  9. I do not have a specific order in mind.
+
+  10. I have no specific preference.'
+data_attributes:
+- Company
+- number of employees
+- share price (USD)
+- Company origin

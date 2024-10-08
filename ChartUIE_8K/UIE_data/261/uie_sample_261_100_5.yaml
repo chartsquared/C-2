@@ -1,0 +1,44 @@
+initial_prompt: Create a line chart that visualizes the number of space flights over
+  the years for NASA astronauts. Use data from the 'Year' and 'Space Flights' columns.
+  Plot 'Year' on the x-axis and 'Space Flights' on the y-axis. Multiple astronauts
+  may have the same year, so aggregate the total number of space flights per year.
+  Keep in mind some years may have missing values. The chart should clearly show trends
+  over time. Title the chart "NASA Space Flights Over the Years". Use a distinct color
+  for the line to ensure clarity. Provide appropriate labels for axes.
+questions: '1. Do you have a preferred color for the line in the chart?
+
+  2. Do you prefer any specific font style or size for the chart title and axis labels?
+
+  3. Would you like grid lines to be displayed on the chart? If yes, should they be
+  for both x-axis and y-axis?
+
+  4. Are there specific markers or data points you would like highlighted on the line
+  chart?
+
+  5. Should the x-axis be displayed with every year labeled or at specific intervals
+  (e.g., every 5 years)?
+
+  6. Do you want the chart legend to show any specific information?
+
+  7. Do you have a preference for the chart background color or chart theme (light/dark)?
+
+  8. Do you want any annotations or explanatory notes on the chart to highlight important
+  trends or data points?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Yes, please include grid lines for both the x-axis and y-axis.
+
+  4. I do not know.
+
+  5. Every 5 years would be fine.
+
+  6. I have no specific preference.
+
+  7. I prefer a light theme.
+
+  8. I am not sure.'
+data_attributes:
+- Year
+- Space Flights

@@ -1,0 +1,55 @@
+initial_prompt: Create a table chart visualizing the dataset to detect Parkinson's
+  Disease. Highlight key columns like 'name', 'MDVP:Fo(Hz)', 'status', and 'HNR'.
+  Utilize text annotations to emphasize significant values in 'MDVP:Jitter(%)' and
+  'MDVP:Shimmer(dB)'. This will help focus on important predictors.
+questions: '1. Do you have any specific color preferences for highlighting the key
+  columns?
+
+  2. How would you like significant values in ''MDVP:Jitter(%)'' and ''MDVP:Shimmer(dB)''
+  to be annotated?
+
+  3. Are there any specific thresholds for the significant values in ''MDVP:Jitter(%)''
+  and ''MDVP:Shimmer(dB)'' that should be highlighted?
+
+  4. Do you prefer any particular font style or size for the text annotations?
+
+  5. Would you like the table chart to include gridlines for easier readability?
+
+  6. Should the key columns be placed in a specific order or arrangement?
+
+  7. Do you need any additional summary statistics or calculations included in the
+  chart?
+
+  8. Are there any other columns besides the listed ones that you would like to highlight
+  or annotate?
+
+  9. Would you prefer the table chart to be oriented horizontally or vertically?
+
+  10. Should the columns have specific widths or be auto-sized to fit the content?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. For ''MDVP:Jitter(%)'', highlight values above 0.7%, and for ''MDVP:Shimmer(dB)'',
+  highlight values above 0.35 dB.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- name
+- MDVP:Fo(Hz)
+- status
+- HNR
+- MDVP:Jitter(%)
+- MDVP:Shimmer(dB)

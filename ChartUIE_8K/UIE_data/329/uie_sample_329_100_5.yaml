@@ -1,0 +1,57 @@
+initial_prompt: Please create a heatmap for the dataset detailing SMOC2 expression
+  across different conditions (fibrosis and normal). Each axis should represent the
+  sample type (e.g., smoc2_fibrosis1, smoc2_normal1, etc.), and the data points should
+  indicate the raw counts provided. The heatmap should clearly distinguish between
+  high and low expression levels using a color gradient. The goal is to visually compare
+  the SMOC2 expression across different samples and identify any significant patterns
+  or differences. Ensure the heatmap is labeled appropriately for easy interpretation.
+  Thank you!
+questions: '1. Do you have a preferred color scheme or gradient for distinguishing
+  between high and low expression levels on the heatmap?
+
+  2. Would you like specific labels or annotations on the heatmap for certain data
+  points or ranges?
+
+  3. Is there a preferred way you would like the axes to be labeled (e.g., full sample
+  names, abbreviated names)?
+
+  4. Do you need a legend to explain the color gradient, and if so, do you have a
+  preferred placement for it?
+
+  5. Would you like the heatmap to show any specific statistical information or values
+  (e.g., mean expression level, standard deviation)?
+
+  6. Is there a preferred orientation for the heatmap (e.g., samples on the x-axis
+  and conditions on the y-axis)?
+
+  7. Are there any specific patterns or differences you are particularly interested
+  in highlighting within the heatmap?
+
+  8. Do you have any specific requirements for the size or resolution of the heatmap
+  for presentation or publication purposes?'
+answers: '1. I am not sure about the color scheme; please use a common gradient for
+  heatmaps that clearly shows high and low expression levels.
+
+  2. I do not know.
+
+  3. Full sample names would be preferred.
+
+  4. Yes, a legend would be helpful. I have no specific preference for its placement.
+
+  5. I am not sure.
+
+  6. Yes, samples on the x-axis and conditions (fibrosis, normal) on the y-axis would
+  be preferred.
+
+  7. I am specifically interested in highlighting any significant differences in expression
+  levels between fibrosis and normal conditions.
+
+  8. I have no specific requirements for size or resolution.'
+data_attributes:
+- smoc2_fibrosis1
+- smoc2_fibrosis4
+- smoc2_normal1
+- smoc2_normal3
+- smoc2_fibrosis3
+- smoc2_normal4
+- smoc2_fibrosis2

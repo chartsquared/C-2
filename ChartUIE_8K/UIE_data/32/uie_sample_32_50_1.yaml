@@ -1,0 +1,55 @@
+initial_prompt: Create a geographic heatmap showcasing medical costs from different
+  regions. Highlight regions with the highest charges, especially for smokers. Annotate
+  specific data points for age, sex, and smoker status. Use color intensity to depict
+  charge variations across regions, making it easier to identify high-cost areas.
+questions: '1. Do you have a preferred color scheme for the geographic heatmap?
+
+  2. How would you like the highest charges to be highlighted (e.g., specific colors,
+  labels)?
+
+  3. Should regions with the highest charges for smokers be differentiated from non-smokers
+  in any special way?
+
+  4. Do you have preferences for annotating specific data points for age, sex, and
+  smoker status (e.g., format, position)?
+
+  5. Are there any specific regions you are particularly interested in focusing on
+  or comparing?
+
+  6. How detailed would you like the regional breakdown to be (e.g., state, city,
+  zip code)?
+
+  7. Do you prefer the chart to include legends or additional explanatory notes?
+
+  8. Would you like any specific statistical information or calculations included
+  (e.g., average charges per region, percentage of smokers)?
+
+  9. Any preferences for the map projection type or geographic layout?
+
+  10. Are there any additional filters or criteria you would like to apply to the
+  data (e.g., age range, gender)?'
+answers: '1. I am not sure.
+
+  2. I am not sure, maybe specific colors would be nice.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. State-level detail would be sufficient.
+
+  7. Yes, please include legends.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- age
+- sex
+- smoker
+- region
+- charges

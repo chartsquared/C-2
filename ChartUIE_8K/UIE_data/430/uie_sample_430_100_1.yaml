@@ -1,0 +1,61 @@
+initial_prompt: I want a line chart that shows the weekly positions of Christmas songs
+  on the Billboard chart over time. Use the data to plot the week positions for each
+  song, making it easy to see trends. Highlight important songs like "RUN RUDOLPH
+  RUN" and "JINGLE BELL ROCK" by using distinct colors or larger points. Annotate
+  the peak positions to emphasize the highest rank each song achieved. The chart should
+  visually narrate the journey of these songs during the holiday season, making it
+  clear and engaging for the viewer at a glance.
+questions: '1. Do you have any specific color preferences for the distinct colors
+  used to highlight the important songs?
+
+  2. Do you prefer a specific type of annotation for the peak positions (e.g., text
+  labels, arrows, stars)?
+
+  3. Are there any additional songs apart from "RUN RUDOLPH RUN" and "JINGLE BELL
+  ROCK" that you would like to highlight?
+
+  4. Do you have a preferred background color or theme for the chart (e.g., dark,
+  light, festive colors)?
+
+  5. Should the y-axis be inverted so that the highest positions are at the top, reflecting
+  the best chart positions more intuitively?
+
+  6. Would you like to include a legend to help identify the highlighted songs and
+  their colors?
+
+  7. Are there any specific fonts or styles you would like to use for the labels and
+  annotations on the chart?
+
+  8. Should we include any gridlines for better readability of the chart, and if so,
+  any specific style preferences?
+
+  9. Do you prefer the chart to display data from a specific time period or cover
+  all available data?
+
+  10. Would you like the line chart to have markers at each data point, or should
+  the lines themselves be sufficient?'
+answers: '1. I do not know.
+
+  2. I prefer text labels for the peak positions.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, the y-axis should be inverted so the highest positions are at the top.
+
+  6. Yes, please include a legend.
+
+  7. I do not have a specific preference.
+
+  8. Yes, include gridlines for better readability; I do not have any specific style
+  preferences.
+
+  9. I do not know.
+
+  10. Yes, include markers at each data point.'
+data_attributes:
+- weekid
+- week_position
+- song
+- peak_position

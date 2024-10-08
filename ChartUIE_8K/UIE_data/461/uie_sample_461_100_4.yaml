@@ -1,0 +1,59 @@
+initial_prompt: I have a dataset that contains columns for Year, Date, and Temperature
+  with no missing values. The data represents the highest monthly temperatures recorded
+  in Amherst. I need a line chart to visualize this data. The X-axis should represent
+  the Date, and the Y-axis should represent the Temperature. Each line on the chart
+  should correspond to a different Year, allowing for a comparison of temperature
+  trends over different years. Please ensure the chart clearly highlights the temperature
+  fluctuations across the given months for the available years in the dataset.
+questions: '1. Do you have any preference for the color scheme used for different
+  years in the line chart?
+
+  2. Should the lines representing different years have different styles (e.g., solid,
+  dashed, dotted)?
+
+  3. Would you like data points to be marked on the lines, and if so, what style of
+  markers do you prefer?
+
+  4. Is there a specific date format you prefer for the X-axis labels?
+
+  5. Do you want grid lines on the chart for better readability, and if so, should
+  they be shown for both axes or just one?
+
+  6. How should the legend be positioned on the chart (e.g., top, bottom, left, right)?
+
+  7. Do you need any annotations or specific labels to highlight key temperature points
+  or trends?
+
+  8. Are there any specific titles or labels you would like for the X-axis, Y-axis,
+  or the chart itself?
+
+  9. Would you prefer the chart to display month names on the X-axis, or would numerical
+  representation suffice?
+
+  10. Do you require any tooltips or hover text to display specific data values when
+  the user hovers over a data point?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I prefer the date format to be in "MMM" (e.g., Jan, Feb).
+
+  5. Yes, grid lines on the chart would be helpful for better readability, shown for
+  both axes.
+
+  6. I do not have a specific preference for the legend position.
+
+  7. I do not know.
+
+  8. The X-axis should be labeled "Date," the Y-axis should be labeled "Temperature,"
+  and the chart title should be "Highest Monthly Temperatures Recorded in Amherst."
+
+  9. Month names on the X-axis would be preferred.
+
+  10. I do not need tooltips or hover text.'
+data_attributes:
+- Year
+- Date
+- Temperature

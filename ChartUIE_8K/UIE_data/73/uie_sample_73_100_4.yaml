@@ -1,0 +1,49 @@
+initial_prompt: I want to create a stacked column chart to visualize this dataset.
+  The x-axis should represent the different applications (values from the "name" column),
+  and the y-axis should show the total count of packets (sum of "tcp_packets" and
+  "udp_packets"). Stack the bars to differentiate the count of TCP packets versus
+  UDP packets for each application. This will help in understanding the distribution
+  of packet types across various applications. Label each section of the stack appropriately
+  and ensure the chart is clear and easily interpretable.
+questions: '1. Do you have any preferences for the color scheme of the TCP and UDP
+  packet sections in the stacked column chart?
+
+  2. Would you like specific labels or titles for the x-axis and y-axis, besides the
+  default ''Application'' and ''Total Packet Count''?
+
+  3. Do you have a preferred font style and size for the labels and titles in the
+  chart?
+
+  4. Should the chart include a legend, and if so, do you have specific preferences
+  for its placement (e.g., top, bottom, left, right)?
+
+  5. How would you like the data values to be displayed on the chart (e.g., data labels
+  on each section, tooltips, etc.)?
+
+  6. Do you prefer any specific styles or formats for the grid lines and axes (e.g.,
+  solid, dashed)?
+
+  7. Would you like to include a title for the chart, and if so, what would you like
+  it to be?
+
+  8. Are there any specific applications from the dataset that you want to highlight
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preference.
+
+  3. I do not know.
+
+  4. Yes, include a legend. The placement could be on the right.
+
+  5. Data labels on each section would be great.
+
+  6. I am not sure.
+
+  7. Yes, the title could be "Distribution of TCP and UDP Packets Across Applications."
+
+  8. I do not have any specific applications to highlight.'
+data_attributes:
+- name
+- tcp_packets
+- udp_packets

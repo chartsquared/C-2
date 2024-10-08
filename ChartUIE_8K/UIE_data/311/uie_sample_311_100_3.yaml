@@ -1,0 +1,44 @@
+initial_prompt: I have a dataset on driving test results categorized by gender, as
+  well as BMI, children, salary, region, smoker status, and age. Could you create
+  a stacked bar chart that displays the driving test results (y-axis) segmented by
+  gender for each date? This will highlight any performance differences in the driving
+  test between males and females over the specified dates. Ensure the x-axis shows
+  the dates, with stacked bars representing male and female results for each date.
+  The chart should help us easily compare test outcomes between genders over time.
+  Thank you!
+questions: '1. Do you have specific preferences for the color scheme used in the chart?
+
+  2. Would you like the chart to include data labels for each bar segment?
+
+  3. Do you prefer a specific format or style for the date labels on the x-axis?
+
+  4. Should the chart have a legend to clarify which color represents which gender?
+
+  5. Is there a particular font style or size you would like for the axis labels and
+  title?
+
+  6. Would you like any gridlines in the background to aid in reading the chart values?
+
+  7. Do you want the chart to include any annotations or highlights for specific dates
+  or results?'
+answers: '1. I do not have any specific preference for the color scheme used in the
+  chart.
+
+  2. Yes, I would like the chart to include data labels for each bar segment.
+
+  3. I am not sure about the date labels on the x-axis.
+
+  4. Yes, the chart should have a legend to clarify which color represents which gender.
+
+  5. I do not have a specific preference for the font style or size for the axis labels
+  and title.
+
+  6. Yes, I would like some gridlines in the background to aid in reading the chart
+  values.
+
+  7. I do not know if annotations or highlights for specific dates or results are
+  needed.'
+data_attributes:
+- 'Date '
+- Gender
+- Driving test result

@@ -1,0 +1,53 @@
+initial_prompt: Create a bubble chart to visualize the collaboration network within
+  the company, focusing on nodes representing individuals and their connections. Use
+  its attributes like type, id, name, group, source, target, and weight to show the
+  relationships.
+questions: '1. Do you prefer the bubbles to be colored based on the ''group'' attribute?
+
+  2. Should the size of the bubbles represent the ''weight'' attribute?
+
+  3. Would you like to include labels for the ''name'' attribute on the bubbles?
+
+  4. Is there a specific color palette you prefer for the chart?
+
+  5. Should the chart be displayed with a legend to explain the different groups?
+
+  6. Do you want any specific layout for the bubbles in the chart (e.g., force-directed,
+  circular)?
+
+  7. Would you prefer a specific background color for the chart?
+
+  8. Are there any specific fonts or styles you would like to use for text elements
+  in the chart?
+
+  9. Is there a preferred way of showing the connections between nodes (e.g., thicker
+  lines for stronger connections based on ''weight'')?
+
+  10. Should the chart include a title or any annotations/explanations?'
+answers: '1. Yes, I prefer the bubbles to be colored based on the ''group'' attribute.
+
+  2. I am not sure.
+
+  3. Yes, I would like to include labels for the ''name'' attribute on the bubbles.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Yes, the chart should include a title.'
+data_attributes:
+- type
+- id
+- name
+- group
+- source
+- target
+- weight

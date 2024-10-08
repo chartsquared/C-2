@@ -1,0 +1,54 @@
+initial_prompt: '<start of the instruction>
+
+  Create a heatmap to visualize international migration data. Highlight countries
+  with high asylum seekers and refugees per capita. Add text annotations to emphasize
+  drastic changes over the years.
+
+  <end of the instruction>'
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the countries be grouped or sorted in a specific way?
+
+  3. Do you have a specific font style or size preference for the text annotations?
+
+  4. Would you prefer any specific ranges or thresholds to define what counts as ''high''
+  in terms of asylum seekers and refugees per capita?
+
+  5. Is there any particular year or range of years you would like to emphasize in
+  the annotations?
+
+  6. How detailed should the annotations be (e.g., specific numbers, percentage changes,
+  etc.)?
+
+  7. Do you have a preference for the layout of the heatmap, such as whether it should
+  be more horizontal or vertical?
+
+  8. Should the heatmap include a legend or any additional context for the audience
+  to better understand the data?
+
+  9. Are there specific countries or regions that should be highlighted more prominently?'
+answers: '1. I am not sure about the color scheme.
+
+  2. I do not know.
+
+  3. No specific preference for font style or size.
+
+  4. I am not certain about specific ranges or thresholds.
+
+  5. I would like to emphasize the years 2015 to 2020.
+
+  6. Specific numbers and percentage changes would be good.
+
+  7. I have no specific preference for the layout.
+
+  8. A legend would be helpful.
+
+  9. Yes, please highlight countries with notably high numbers, like Syria, Venezuela,
+  and Afghanistan.'
+data_attributes:
+- Year
+- Country
+- Asylum seekers by origin (per capita)
+- Refugees by destination (per capita)
+- Asylum seekers by destination (per capita)
+- Refugees by origin (per capita)

@@ -1,0 +1,57 @@
+initial_prompt: I want to visualize the Tesla stock data from 2010 to 2020. Please
+  create a line chart that shows the trend over this period. The x-axis should represent
+  the dates from the dataset, while the y-axis should represent the stock prices.
+  Include separate lines for the 'Open', 'High', 'Low', and 'Close' prices to show
+  the different aspects of the daily stock performance. Ensure the chart is clear
+  and distinguishable with appropriate legends and titles. Make sure to handle any
+  missing data appropriately. This should help in understanding the stock trends over
+  the decade. Thank you!
+questions: '1. Do you have any specific color preferences for each line (Open, High,
+  Low, Close)?
+
+  2. Would you prefer any specific style for the lines (solid, dashed, dotted)?
+
+  3. Do you want grid lines enabled in the background for better readability?
+
+  4. Should the chart include markers at each data point?
+
+  5. Do you have a preference for the font style or size for the chart titles and
+  legends?
+
+  6. Would you like a specific format for the date labels on the x-axis (e.g., month-year,
+  year only)?
+
+  7. Do you want to include a trendline or moving average in the chart?
+
+  8. Should there be tooltips or labels indicating the exact values at each data point?
+
+  9. Do you want any annotations for significant events or dates within the 2010-2020
+  timeframe?
+
+  10. Should the y-axis be adjusted to fit the data range tightly or keep a fixed
+  scale for all data points?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, grid lines enabled, please.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. Month-year format for the date labels would be great.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. The y-axis should be adjusted to fit the data range tightly.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

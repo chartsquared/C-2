@@ -1,0 +1,56 @@
+initial_prompt: I have a dataset on water quality. I need a box plot to visualize
+  the distribution and range of different water quality parameters like pH, Hardness,
+  Solids, Chloramines, Sulfate, Conductivity, Organic Carbon, Trihalomethanes, and
+  Turbidity. The y-axis should represent the values of these parameters, while the
+  x-axis should list each parameter. Make sure to handle missing values appropriately
+  and include data points for each category. The goal is to easily see the variability
+  and any potential outliers in the water quality attributes.
+questions: '1. Do you have a preferred color scheme for the box plot?
+
+  2. Would you like specific labels or annotations for outliers?
+
+  3. Should the box plot include notches to show the confidence interval around the
+  median?
+
+  4. How would you like the missing values to be handled (e.g., removal, substitution)?
+
+  5. Do you have any specific range or scale preferences for the y-axis?
+
+  6. Would you prefer horizontal or vertical box plots?
+
+  7. Should the box plot include a mean marker within each category?
+
+  8. Do you want gridlines or a specific background for the plot?
+
+  9. Are there any specific legends or titles you would like to include on the chart?
+
+  10. Would you like the data points to be jittered for better visibility?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please include notches to show the confidence interval around the median.
+
+  4. Please remove the missing values.
+
+  5. I do not have any specific range or scale preferences for the y-axis.
+
+  6. I would prefer vertical box plots.
+
+  7. Yes, please include a mean marker within each category.
+
+  8. I do not know.
+
+  9. No specific legends or titles are needed.
+
+  10. Yes, jitter the data points for better visibility.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity

@@ -1,0 +1,47 @@
+initial_prompt: I need a stacked bar chart comparing fuel types for automobiles based
+  on their CO2 emissions (co2TailpipeGpm) and fuel costs (fuelCost08) for the year
+  1985. The X-axis should show different car models from the dataset, and the Y-axis
+  should represent the values for CO2 emissions and fuel costs. Each stack within
+  a bar should differentiate between CO2 emissions and fuel cost, with a legend to
+  distinguish them. This chart should help visualize the impact of traditional gas
+  vehicles in terms of emissions and expenses, to promote the idea of money saving
+  with electric cars.
+questions: '1. Do you have a specific color scheme preference for differentiating
+  between CO2 emissions and fuel costs in the stacked bar chart?
+
+  2. How would you like the legend to be positioned on the chart?
+
+  3. Do you prefer any specific font style or size for the labels and titles on the
+  chart?
+
+  4. Would you like to include data labels on the bars to show exact values of CO2
+  emissions and fuel costs?
+
+  5. Do you have any preferences regarding the scale of the Y-axis, such as logarithmic
+  or linear?
+
+  6. Should the car models on the X-axis be displayed in a particular order, such
+  as alphabetical or based on emission values?
+
+  7. Do you want any specific gridlines or reference lines included in the chart to
+  enhance readability?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No specific preference.
+
+  4. Yes, I would like to include data labels on the bars to show exact values of
+  CO2 emissions and fuel costs.
+
+  5. I prefer a linear scale for the Y-axis.
+
+  6. I am not sure.
+
+  7. No specific preference.'
+data_attributes:
+- model
+- co2TailpipeGpm
+- fuelCost08
+- fuelType
+- year

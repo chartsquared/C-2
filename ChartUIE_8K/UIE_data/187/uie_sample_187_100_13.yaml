@@ -1,0 +1,57 @@
+initial_prompt: 'Create a lollipop chart visualizing the worldwide gross ($m) of Marvel
+  Superhero Movies. Use data from 2015 and 2018, showing films like Ant-Man, Ant-Man
+  & The Wasp, and Avengers: Age of Ultron. Specifically, compare their worldwide gross,
+  domestic gross ($m), and international gross ($m) to highlight differences. Show
+  the percentage budget recovered as a tooltip on the chart. Include the y-axis for
+  the gross amount in $m and the x-axis for the film names. Color each lollipop stick
+  by category to differentiate between movie series.'
+questions: '1. Do you have any preference for the colors used for each movie series
+  category?
+
+  2. Would you like to display any gridlines on the chart?
+
+  3. What style would you prefer for the lollipop stick lines (e.g., dashed, solid)?
+
+  4. Are there any specific font preferences for the labels on the x-axis and y-axis?
+
+  5. Do you prefer a specific alignment or rotation for the x-axis labels (e.g., angled,
+  horizontal)?
+
+  6. Should the chart include a legend to explain the color coding by category?
+
+  7. Do you have a particular preference for the range or scaling of the y-axis?
+
+  8. Would you like to include labels on the lollipop ends to display the exact gross
+  values?
+
+  9. How prominent do you want the tooltip to be when displayed (e.g., background
+  color, text size)?
+
+  10. Are there any specific spacing or margin preferences between the lollipop sticks?'
+answers: '1. I am not sure.
+
+  2. Yes, displaying gridlines on the chart would be helpful.
+
+  3. Solid lines for the lollipop stick lines would be preferred.
+
+  4. I have no specific preference.
+
+  5. Angled alignment for the x-axis labels would be good.
+
+  6. Yes, the chart should include a legend to explain the color coding by category.
+
+  7. I am not sure.
+
+  8. Yes, please include labels on the lollipop ends to display the exact gross values.
+
+  9. Show the tooltip with a clear background color and legible text size, but I don''t
+  have a specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- film
+- category
+- worldwide gross ($m)
+- domestic gross ($m)
+- international gross ($m)
+- '% budget recovered'

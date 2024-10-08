@@ -1,0 +1,49 @@
+initial_prompt: I need a line chart to visualize the distance between various cities
+  in India. The x-axis should represent the origin cities, and the y-axis should show
+  the distance in kilometers. Each line in the chart should represent a destination
+  city. Including multiple destination cities in the same chart will help in comparing
+  the distances from a single origin. Please use the dataset "../Extra_datas/data/217.csv"
+  titled "Indian Cities Distance Dataset" under the "transportation-and-logistics"
+  category for this visualization.
+questions: '1. Do you have any preferred colors or color schemes for the lines representing
+  each destination city?
+
+  2. Do you want gridlines on the chart for better readability?
+
+  3. Should the origin cities on the x-axis be sorted in any specific order (e.g.,
+  alphabetical, by distance)?
+
+  4. Do you prefer labels directly on the lines for each destination city, or should
+  there be a legend?
+
+  5. Do you have any specific font preferences for the axis labels and title?
+
+  6. Would you like to include data markers at each data point on the lines?
+
+  7. Is there any specific chart title you would like to use?
+
+  8. Would you prefer the y-axis to start from zero or from the minimum distance value?
+
+  9. Do you want to display the exact distance values on the y-axis or only major
+  tick marks?'
+answers: '1. I do not have any specific preference for colors.
+
+  2. Yes, I would like gridlines on the chart for better readability.
+
+  3. I am not sure how the origin cities should be sorted.
+
+  4. I prefer a legend for the destination cities.
+
+  5. I do not have any specific preference for the font.
+
+  6. Yes, I would like to include data markers at each data point on the lines.
+
+  7. "Distances Between Various Cities in India"
+
+  8. I would prefer the y-axis to start from zero.
+
+  9. I do not know if I want to display the exact distance values on the y-axis.'
+data_attributes:
+- Origin
+- Destination
+- Distance

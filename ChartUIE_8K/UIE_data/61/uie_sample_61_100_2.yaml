@@ -1,0 +1,40 @@
+initial_prompt: Please create a donut chart visualizing the distribution of unique
+  smartphone brands in the dataset. Ensure the chart highlights the brands with the
+  highest and lowest number of models. Include text annotations for the top three
+  most common brands, displaying the number of models each has. The purpose is to
+  quickly identify market leaders and less represented brands. Utilize highlights
+  to distinguish the top brands by changing their slice colors to make them stand
+  out. This visualization will provide insights into brand diversity within the smartphone
+  market segment.
+questions: '1. Do you have any color preferences for the highlights of the top brands
+  in the donut chart?
+
+  2. Do you prefer specific colors for the other slices in the donut chart?
+
+  3. What font style and size would you like for the text annotations?
+
+  4. Should the chart include a legend alongside the annotations?
+
+  5. Would you like the chart to have a specific title or subtitle?
+
+  6. Do you have any preferences for the order of the slices (e.g., ascending, descending
+  by number of models)?
+
+  7. Are there any specific brands you would like to be emphasized apart from the
+  top three?'
+answers: '1. I do not know.
+
+  2. I have no specific preference.
+
+  3. I am not sure, maybe use something that is clear and readable.
+
+  4. Yes, please include a legend alongside the annotations.
+
+  5. No specific title or subtitle is needed.
+
+  6. Yes, please order the slices in descending order by the number of models.
+
+  7. I do not know.'
+data_attributes:
+- brand_name
+- model_name

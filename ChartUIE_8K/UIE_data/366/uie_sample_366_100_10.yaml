@@ -1,0 +1,47 @@
+initial_prompt: I would like to see a scatter plot for the Udemy Courses dataset.
+  Please plot the number of subscribers (num_subscribers) on the y-axis and the price
+  on the x-axis. Color the points based on the course level (level) to differentiate
+  between the different course levels, and please use different marker shapes for
+  each subject (subject) to make it easier to distinguish between subjects. This will
+  help in understanding the relationship between the course price and the number of
+  subscribers, and how this varies across different levels and subjects.
+questions: '1. Do you have any specific color preferences for representing different
+  course levels?
+
+  2. Do you have preferred shapes for the markers to represent different subjects?
+
+  3. Would you like to include a legend to help readers identify the colors and shapes
+  used in the scatter plot?
+
+  4. Do you prefer any particular axis scales (linear or logarithmic) for either the
+  x-axis or y-axis?
+
+  5. Do you want gridlines to be displayed on the plot for easier reference?
+
+  6. Are there any specific labels or titles you would like for the x-axis, y-axis,
+  and the chart itself?
+
+  7. Would you like to see any trend lines or regression lines added to the scatter
+  plot to highlight the correlation?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I do not know.
+
+  3. Yes, please include a legend.
+
+  4. I am not sure.
+
+  5. Yes, gridlines would be helpful.
+
+  6. No specific labels or titles.
+
+  7. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- num_subscribers
+- price
+- level
+- subject

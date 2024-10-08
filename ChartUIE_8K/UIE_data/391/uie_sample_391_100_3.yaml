@@ -1,0 +1,50 @@
+initial_prompt: I want to visualize the influencer network data using a Treemap. The
+  tree should be organized by the 'group' column, and within each group, the size
+  of the rectangles should represent the 'followers' count. Each rectangle should
+  be labeled with the 'name' of the influencer. If possible, color-code the groups
+  to differentiate them easily. Since this is related to media and communications,
+  I want the Treemap to highlight the differences in follower counts clearly and show
+  how influencers are grouped.
+questions: '1. Do you have any specific color preferences for the different groups?
+
+  2. Would you like a border or a specific edging style for each rectangle in the
+  Treemap?
+
+  3. Is there a particular font style or size you''d prefer for the influencer names
+  within the rectangles?
+
+  4. Do you want to display the follower counts on the rectangles alongside the influencer
+  names?
+
+  5. Should we use a specific padding or spacing between rectangles in the Treemap?
+
+  6. Are there any specific dimensions or aspect ratios you prefer for the Treemap?
+
+  7. Do you want a legend included to explain the color-coding of the groups?
+
+  8. Would you like any particular sorting order for the rectangles within each group
+  based on follower count?'
+answers: '1. I do not know any specific color preferences for the different groups.
+
+  2. I am not sure about a border or a specific edging style for each rectangle in
+  the Treemap.
+
+  3. I have no specific preference for font style or size for the influencer names
+  within the rectangles.
+
+  4. Yes, I would like to display the follower counts on the rectangles alongside
+  the influencer names.
+
+  5. I am not sure about any specific padding or spacing between rectangles in the
+  Treemap.
+
+  6. I have no specific dimensions or aspect ratios in mind for the Treemap.
+
+  7. Yes, I would like a legend included to explain the color-coding of the groups.
+
+  8. Yes, I would like the rectangles within each group to be sorted based on follower
+  count, from highest to lowest.'
+data_attributes:
+- group
+- followers
+- name

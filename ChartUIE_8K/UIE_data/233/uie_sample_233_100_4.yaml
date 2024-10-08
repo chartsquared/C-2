@@ -1,0 +1,47 @@
+initial_prompt: Create a box plot that visualizes the distribution of 'CUML_GPA',
+  'EXP_GPA', and 'GRADE' across the student population. This should help in understanding
+  the spread and central tendency of students' performance evaluations. Additionally,
+  provide separate box plots segmented by 'GENDER' to explore any differences in academic
+  performance between male and female students. Use distinct colors for each grade
+  variable and add appropriate axis labels and a title that reflects the objective
+  of assessing higher education students' performance. This will help in identifying
+  outliers and overall trends in students' academic outcomes.
+questions: '1. Do you have any specific color preferences for the distinct grade variables?
+
+  2. What should the title of the chart be?
+
+  3. Do you have any preferences for the axis labels?
+
+  4. Would you like to include any specific annotations or markers for outliers?
+
+  5. Do you have a preference for the order in which the boxes for ''CUML_GPA'', ''EXP_GPA'',
+  and ''GRADE'' are displayed?
+
+  6. Are there any specific statistical metrics (e.g., mean, median) that you would
+  like to display on the box plots?
+
+  7. Do you have any specific format or style preferences for the box plots (e.g.,
+  whisker range, box width)?
+
+  8. Would you like to add a legend to explain the colors used for each grade variable?'
+answers: '1. I do not have any specific color preferences.
+
+  2. The title of the chart should be "Distribution of Student Performance Evaluations
+  by Gender".
+
+  3. I am not sure about the axis labels, but they should be appropriate for the data.
+
+  4. I do not know if specific annotations or markers for outliers are needed.
+
+  5. I do not have a preference for the order of the boxes.
+
+  6. I would like to display the median on the box plots.
+
+  7. I am not sure about the format or style preferences for the box plots.
+
+  8. Yes, please add a legend to explain the colors used for each grade variable.'
+data_attributes:
+- CUML_GPA
+- EXP_GPA
+- GRADE
+- GENDER

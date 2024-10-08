@@ -1,0 +1,33 @@
+initial_prompt: Visualize global suicide statistics on a choropleth map. Use data-driven
+  text annotations to highlight countries with the highest suicide rates. Also, apply
+  highlights to emphasize significant age and sex differences. The map aims to raise
+  awareness and identify regions needing attention.
+questions: "1. Do you have a preferred color scheme for the choropleth map? \n2. Would\
+  \ you like the text annotations to display exact suicide rates or just highlights?\n\
+  3. How would you prefer the highlights for significant age and sex differences to\
+  \ be displayed (e.g., different colors, shapes, sizes)?\n4. Is there a specific\
+  \ geographic projection you prefer for the map?\n5. Do you have a preferred font\
+  \ style or size for the text annotations? \n6. Are there any specific countries\
+  \ or regions you would like to emphasize more prominently?"
+answers: 'I am not sure.
+
+
+  Display exact suicide rates.
+
+
+  I am not sure.
+
+
+  I do not know.
+
+
+  I have no specific preference.
+
+
+  I am not sure.'
+data_attributes:
+- country
+- suicides_no
+- population
+- sex
+- age

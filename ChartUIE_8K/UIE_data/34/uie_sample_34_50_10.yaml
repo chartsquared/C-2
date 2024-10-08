@@ -1,0 +1,57 @@
+initial_prompt: Create a stacked column chart showing total spending per product category
+  (Wines, Fruits, Meat, etc.) segmented by marital status. Use 'MntWines', 'MntFruits',
+  'MntMeatProducts', 'MntFishProducts', 'MntSweetProducts', and 'MntGoldProds' for
+  spending data, and 'Marital_Status' for segmentation.
+questions: '1. What color scheme do you prefer for the product categories?
+
+  2. Would you like to include data labels on the columns?
+
+  3. Do you prefer the chart to be displayed vertically or horizontally?
+
+  4. Should the y-axis show absolute values or percentages?
+
+  5. Are there specific labels or annotations you want to include on the chart?
+
+  6. Do you have a preference for the font style and size used in the chart?
+
+  7. Would you like gridlines to be displayed on the chart?
+
+  8. Do you want to include a legend, and if so, where should it be positioned?
+
+  9. Is there a particular order in which the product categories should be stacked?
+
+  10. Do you prefer the chart to have a specific title and subtitle? If so, please
+  provide the text.
+
+  11. Should the marital status categories follow a specific order (e.g., alphabetical,
+  based on spending)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Absolute values.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, include a legend. I am not sure where it should be positioned.
+
+  9. I have no specific preference.
+
+  10. Yes, the title should be "Total Spending per Product Category by Marital Status"
+  with no subtitle.
+
+  11. Alphabetical order is fine.'
+data_attributes:
+- MntWines
+- MntFruits
+- MntMeatProducts
+- MntFishProducts
+- MntSweetProducts
+- MntGoldProds
+- Marital_Status

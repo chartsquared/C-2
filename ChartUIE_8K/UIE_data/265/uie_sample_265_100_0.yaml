@@ -1,0 +1,67 @@
+initial_prompt: Create a choropleth map visualizing COVID-19 data, specifically Total
+  Cases per 1M population, across different countries. Highlight countries with the
+  highest and lowest infection rates. Use data-driven text annotations to display
+  values for Total Cases, Total Deaths, and Total Recovered when hovering over each
+  country. The purpose is to assess the global impact of COVID-19 and identify regions
+  with the most significant outbreaks. Ensure the map visually emphasizes areas with
+  severe cases and critical conditions. Use colors to represent different case ranges
+  for better visual understanding.
+questions: '1. Do you have a preferred color scheme for representing different case
+  ranges?
+
+  2. Should the map projection follow any specific geographical standard (e.g., Mercator,
+  Robinson)?
+
+  3. How should countries with missing data be represented on the map?
+
+  4. Should there be a legend indicating the color ranges and their corresponding
+  data values?
+
+  5. Do you have a preference for the font style and size of the text annotations?
+
+  6. Should the annotations for Total Cases, Total Deaths, and Total Recovered include
+  any additional context or formatting?
+
+  7. How should the map handle overlapping labels or crowded regions?
+
+  8. Is there any specific method you want to use to highlight the countries with
+  the highest and lowest infection rates (e.g., border highlight, specific colors)?
+
+  9. Should the map include additional contextual elements, such as country borders
+  or major cities?'
+answers: '1. I am not sure about the preferred color scheme.
+
+  2. I do not have a preference for the map projection.
+
+  3. Countries with missing data can be represented in gray.
+
+  4. Yes, there should be a legend indicating the color ranges and their corresponding
+  data values.
+
+  5. I am not sure about the font style and size of the text annotations.
+
+  6. I do not know if any additional context or formatting is needed for the annotations.
+
+  7. I do not know how the map should handle overlapping labels or crowded regions.
+
+  8. Highlight the countries with the highest and lowest infection rates using specific
+  colors.
+
+  9. I do not have a specific preference for including additional contextual elements
+  like country borders or major cities.'
+data_attributes:
+- 'Country,
+
+  Other'
+- 'Tot Cases/
+
+  1M pop'
+- 'Total
+
+  Cases'
+- 'Total
+
+  Deaths'
+- 'Total
+
+  Recovered'

@@ -1,0 +1,45 @@
+initial_prompt: Create a scatter plot visualizing the rank vs. offline_crack_sec of
+  different passwords, highlighting passwords with strength above 7. Use text annotations
+  to display the offline_crack_sec for these highlighted points. The chart should
+  differentiate between password categories using colors and adjust font_size for
+  highlighted ones. This will help understand the vulnerability of passwords in cybersecurity.
+questions: '1. Do you have a preferred color scheme for differentiating between password
+  categories?
+
+  2. What font size would you prefer for annotations on highlighted points?
+
+  3. Would you like to set specific axis ranges or ticks for the rank and offline_crack_sec
+  axes?
+
+  4. Do you prefer a specific marker shape or size for the scatter plot points?
+
+  5. Are there any specific labels or titles you want for the axes and the chart overall?
+
+  6. Do you want a legend included, and if so, where would you prefer it to be positioned?
+
+  7. Are there any grid lines or background styles you prefer to include in the chart?
+
+  8. Would you like to include any specific tooltips or hover information for additional
+  data points?'
+answers: '1. I am not sure about the preferred color scheme.
+
+  2. I am not sure about the font size for annotations.
+
+  3. I do not have any specific preference for axis ranges or ticks.
+
+  4. I am not sure about the marker shape or size.
+
+  5. I would like the axes labeled as "Rank" and "Offline Crack Time (sec)" and the
+  chart titled "Password Vulnerability Visualization".
+
+  6. I do not know about the legend position.
+
+  7. I do not have a preference for grid lines or background styles.
+
+  8. I do not need tooltips or hover information.'
+data_attributes:
+- rank
+- offline_crack_sec
+- strength
+- category
+- font_size

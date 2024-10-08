@@ -1,0 +1,44 @@
+initial_prompt: Create a heatmap to visualize the wine data, focusing on the relationship
+  between the points and price across different countries. Use text annotations to
+  highlight countries with the highest average points and the most affordable prices.
+  Implement highlights to emphasize regions and winemakers producing exceptional wines.
+  The heatmap should help identify trends and outliers in wine quality and accessibility.
+  Include a color scale for easy interpretation and ensure the chart is accessible
+  to both wine enthusiasts and industry professionals. This visualization will be
+  useful for selecting top wines at various price points.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What specific text annotations would you like for countries with the highest
+  average points and the most affordable prices?
+
+  3. Are there any specific regions or winemakers you want to emphasize in the heatmap?
+
+  4. How would you like the color scale to be displayed for easy interpretation?
+
+  5. Should the chart include any additional labels or legends for better understanding?
+
+  6. Do you prefer the data to be normalized or standardized before visualization?
+
+  7. Would you like to include any specific threshold or cut-off values for highlighting
+  exceptional wines?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Please annotate with text the countries that have the highest average points
+  and the most affordable prices.
+
+  3. I am not sure which specific regions or winemakers to emphasize.
+
+  4. I do not know how I''d like the color scale to be displayed.
+
+  5. Yes, please include additional labels or legends for better understanding.
+
+  6. I am not sure whether the data should be normalized or standardized before visualization.
+
+  7. I do not know if specific threshold or cut-off values should be included for
+  highlighting exceptional wines.'
+data_attributes:
+- country
+- points
+- price
+- region_1
+- winery

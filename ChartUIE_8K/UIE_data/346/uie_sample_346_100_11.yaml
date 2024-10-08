@@ -1,0 +1,54 @@
+initial_prompt: Create a treemap visualizing the global video game sales data. Use
+  the 'Genre' column to categorize the blocks and 'Global_Sales' for the block sizes.
+  Within each genre, further divide by 'Platform' to show distribution. Each block
+  should represent a game, and the size should reflect its global sales. Ensure that
+  missing values are handled appropriately and include a legend for clear interpretation
+  of the data. Highlight the top-selling games across different genres and platforms.
+  Use distinct colors for different genres and shades to differentiate platforms.
+questions: '1. Do you have any preferred color schemes for the distinct genres?
+
+  2. What shade variations would you like to use to differentiate platforms within
+  each genre?
+
+  3. How would you like the legend to be displayed for effective interpretation?
+
+  4. Do you have any specific preferences for handling and displaying missing values
+  in the treemap?
+
+  5. Should the top-selling games be highlighted in any specific way (e.g., bold borders,
+  different colors)?
+
+  6. Is there a specific order you would prefer the genres and platforms to appear
+  in?
+
+  7. Do you want any specific labels or annotations on the blocks for better clarity?
+
+  8. Are there any specific genres or platforms you want to showcase or emphasize
+  more than others?
+
+  9. Would you like the data to be filtered to show only certain years or a specific
+  time range?'
+answers: '1. I am not sure, you can choose the color schemes.
+
+  2. I am not sure about the shade variations, use your best judgement.
+
+  3. I do not know, just make sure the legend is clear and easy to understand.
+
+  4. I have no specific preference for handling missing values, please handle them
+  appropriately.
+
+  5. Yes, please highlight the top-selling games with bold borders.
+
+  6. I do not know, you can decide the order.
+
+  7. Yes, labels on the blocks for game names and sales figures would be good.
+
+  8. I have no specific preferences for showcasing or emphasizing any particular genres
+  or platforms.
+
+  9. I do not have any specific time range, include all available data.'
+data_attributes:
+- Genre
+- Global_Sales
+- Platform
+- Name

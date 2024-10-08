@@ -1,0 +1,50 @@
+initial_prompt: Create a population pyramid using the Women Fashion Trend Dataset
+  to visualize the units sold by product variation size ('product_variation_size_id').
+  Highlight sizes with the highest sales in a distinct color. Annotate top-selling
+  items to show specific units sold, retail price, and rating. This will help identify
+  which sizes are most popular and their correlating performance metrics. The visualization
+  should focus viewer attention on sales distribution among sizes and the associated
+  product ratings to provide insightful trends. Include a key to distinguish highlighted
+  sizes for clarity.
+questions: '1. Do you have a specific color preference for highlighting the sizes
+  with the highest sales?
+
+  2. Would you like to use a particular font style or size for the annotations showing
+  units sold, retail price, and rating?
+
+  3. Should the chart include gridlines for ease of reading the population pyramid?
+
+  4. Do you prefer the data to be displayed in a particular order, such as descending
+  order by units sold, within the population pyramid?
+
+  5. How detailed should the key distinguishing highlighted sizes be? Would you prefer
+  simple color coding or additional textual information?
+
+  6. Are there any specific labeling requirements for the axes, such as custom titles
+  or units?
+
+  7. Do you have a preference for the chart''s overall color scheme or theme?
+
+  8. Would you like to incorporate any specific chart decorations such as legend placement
+  or chart title?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, including gridlines would be helpful for ease of reading.
+
+  4. Yes, please display the data in descending order by units sold.
+
+  5. I would prefer simple color coding.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference for the overall color scheme or theme.
+
+  8. I have no specific preference for chart decorations.'
+data_attributes:
+- units_sold
+- product_variation_size_id
+- retail_price
+- rating
+- title

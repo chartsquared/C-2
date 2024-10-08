@@ -1,0 +1,53 @@
+initial_prompt: Create a stacked column chart showing bike counts ('cnt') per season.
+  Each season section should be stacked by weather code.
+questions: '1. Do you have a preferred color scheme for the different weather codes
+  in the stacked columns?
+
+  2. Would you like to include data labels showing the bike counts on the chart?
+
+  3. Do you have a preference for the order in which the seasons are displayed (e.g.,
+  chronological order starting from Spring)?
+
+  4. Should the chart include a legend to explain the weather codes, and if so, where
+  would you like it positioned (e.g., right, bottom, top)?
+
+  5. Do you want gridlines to be displayed on the chart for better readability of
+  bike counts?
+
+  6. Would you like to include a title for the chart? If so, what should the title
+  be?
+
+  7. Do you prefer the x-axis to display season names or numeric values representing
+  the seasons?
+
+  8. Should the y-axis be in linear scale, or would you prefer a logarithmic scale
+  if there''s a wide range in bike counts?
+
+  9. Would you like to include any specific annotations or reference lines on the
+  chart (e.g., average bike count)?
+
+  10. Do you prefer any particular font style or size for the chart labels and titles
+  for better readability?'
+answers: '1. I do not know.
+
+  2. Yes, I would like to include data labels showing the bike counts.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, the title should be "Seasonal Bike Counts by Weather Condition".
+
+  7. I have no specific preference.
+
+  8. Linear scale is fine.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- cnt
+- season
+- weather_code

@@ -1,0 +1,38 @@
+initial_prompt: Create an area chart using the 'time' column for the x-axis and 'signal'
+  column for the y-axis. Highlight specific data points with text annotations to draw
+  attention to significant peaks in the signal. Use color variations to emphasize
+  changes in signal strength over time. This will help in easily identifying trends
+  and anomalies within the dataset.
+questions: '1. Do you have a preferred color scheme for the area chart?
+
+  2. Would you like to specify the threshold for significant peaks to be highlighted?
+
+  3. How would you like the text annotations for the significant peaks to be formatted
+  (e.g., font size, color)?
+
+  4. Should the x-axis and y-axis have specific labels or units?
+
+  5. Do you have any preferences for the overall style of the chart (e.g., gridlines,
+  background color)?
+
+  6. Is there a specific range of time you would like the chart to focus on?
+
+  7. Do you want the area under the curve to be filled with a gradient color based
+  on signal strength, or a solid color?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Font size should be readable, maybe a bit larger than usual, and the color should
+  be noticeable against the chart background.
+
+  4. X-axis labeled as ''Time'' and y-axis labeled as ''Signal''.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Gradient color based on signal strength sounds good.'
+data_attributes:
+- time
+- signal

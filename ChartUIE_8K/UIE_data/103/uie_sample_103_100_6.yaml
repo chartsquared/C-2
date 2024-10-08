@@ -1,0 +1,54 @@
+initial_prompt: I want a bar chart comparing average unit prices of different product
+  lines across the three branches (A, B, and C). Use data from 'Unit price' and 'Product
+  line' columns, with separate bars for each branch within each product line. Label
+  the x-axis with product lines and the y-axis with average unit prices. Ensure each
+  product line category groups the bars by branch. This will help analyze pricing
+  trends and differences in product categories sold in different branches to make
+  strategic decisions. Highlighting the branches within each product line is crucial
+  for this comparison.
+questions: '1. Do you have any specific color preferences for the bars representing
+  each branch?
+
+  2. Do you want gridlines on the chart for better readability?
+
+  3. Should the bars within each product line be stacked or grouped side-by-side?
+
+  4. What specific font style or size would you prefer for the labels and titles?
+
+  5. Is there a particular order in which you would like the product lines to appear
+  on the x-axis?
+
+  6. Do you have a preference for the scale of the y-axis (e.g., linear, logarithmic)?
+
+  7. Would you like to include a legend to clearly identify the branches?
+
+  8. Do you want data values to be displayed on top of the bars?
+
+  9. Are there any specific branding elements or colors to incorporate for consistency
+  with your company’s visual identity?
+
+  10. Do you have a preferred title for the chart and labels for the axes?'
+answers: '1. I do not know.
+
+  2. Yes, I would like gridlines for better readability.
+
+  3. Grouped side-by-side.
+
+  4. I am not sure.
+
+  5. I do not have a specific order preference.
+
+  6. Linear scale.
+
+  7. Yes, please include a legend.
+
+  8. Yes, please display data values on top of the bars.
+
+  9. I am not sure.
+
+  10. Title: "Average Unit Prices of Product Lines Across Branches", X-axis: "Product
+  Lines", Y-axis: "Average Unit Prices"'
+data_attributes:
+- Unit price
+- Product line
+- Branch

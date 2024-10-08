@@ -1,0 +1,46 @@
+initial_prompt: '"Please create a Choropleth map visualizing the flight connections
+  data from the provided CSV. The map should show flight routes from the start coordinates
+  (start_lat, start_lon) to the end coordinates (end_lat, end_lon). Each route should
+  represent the airline''s flight data with a color gradient based on the ''cnt''
+  (number of flights). Ensure you include airport information (airport1, airport2)
+  and use a suitable color scheme to differentiate clearly between high and low traffic
+  routes. This should help us understand flight traffic distribution and density."'
+questions: '1. Do you have a preferred color gradient for the ''cnt'' (number of flights)
+  to represent traffic density?
+
+  2. Should the map include any specific geographic boundaries or regions of interest?
+
+  3. Do you prefer any specific styling elements for the map, such as borders or labels
+  for the routes?
+
+  4. How detailed should the airport information (airport1, airport2) be displayed
+  on the map?
+
+  5. Would you like to include additional data layers, such as base maps or geographic
+  features, for context?
+
+  6. Should any additional annotations or legends be included on the map to improve
+  clarity?
+
+  7. Are there any specific map projections you prefer?'
+answers: '1. I do not have a preferred color gradient.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Please display the airport names clearly.
+
+  5. I am not sure.
+
+  6. Yes, include a legend to explain the color gradient for clarity.
+
+  7. I do not know.'
+data_attributes:
+- start_lat
+- start_lon
+- end_lat
+- end_lon
+- cnt
+- airport1
+- airport2

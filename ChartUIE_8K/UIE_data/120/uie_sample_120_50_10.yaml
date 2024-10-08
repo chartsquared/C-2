@@ -1,0 +1,50 @@
+initial_prompt: Please create a heatmap showing the correlation between the different
+  categories like Sales, Discount, and Profit across various regions and sub-categories.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Do you want to include specific labels for each cell in the heatmap?
+
+  3. Should the heatmap display only the upper triangle, lower triangle, or the entire
+  correlation matrix?
+
+  4. Do you have a preference for the range of correlation values (e.g., -1 to 1,
+  0 to 1)?
+
+  5. Do you want to include hierarchical clustering on rows, columns, or both?
+
+  6. Would you like the heatmap to display annotations, such as correlation values
+  or categories?
+
+  7. Do you have any specific preferences for the axis labels'' font size or style?
+
+  8. Should missing or null values be handled in a particular way in the heatmap?
+
+  9. Do you want to highlight specific regions or sub-categories in the heatmap?
+
+  10. Are there any additional elements you would like to include, such as legends,
+  titles, or subtitles?'
+answers: '1. I do not know.
+
+  2. Yes, please include specific labels for each cell in the heatmap.
+
+  3. I am not sure.
+
+  4. The range of correlation values should be -1 to 1.
+
+  5. I do not know.
+
+  6. Yes, please display annotations, such as correlation values.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. Yes, please include a legend and a title.'
+data_attributes:
+- Sales
+- Discount
+- Profit
+- Region
+- Sub Category

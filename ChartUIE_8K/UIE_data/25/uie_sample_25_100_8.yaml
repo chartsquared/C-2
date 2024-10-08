@@ -1,0 +1,47 @@
+initial_prompt: Please create a grouped bar chart for the NIFTY-50 stocks dataset.
+  The x-axis should represent the stock symbols, and the y-axis should show the corresponding
+  values. Group the bars by 'Open', 'High', 'Low', 'LTP', 'Volume (lacs)', and 'Turnover
+  (crs.)'. This will allow us to compare these key metrics for each stock side by
+  side. Include all stocks listed in the sample data. Use different colors for each
+  group to visually distinguish between them. Also, ensure the y-axis is properly
+  labeled to reflect the units of measurement for each category.
+questions: '1. Do you have any specific color preferences for each group (''Open'',
+  ''High'', ''Low'', ''LTP'', ''Volume (lacs)'', ''Turnover (crs.)'')?
+
+  2. Would you like to include any specific labels or annotations for individual bars
+  or groups?
+
+  3. What title would you prefer for the chart?
+
+  4. Do you have any preferences for the font style and size for the axis labels and
+  title?
+
+  5. Should the chart include a legend to identify each group, and do you have a preferred
+  position for it (e.g., top, bottom, left, right)?
+
+  6. Is there a specific order you would like to maintain for the stock symbols on
+  the x-axis (alphabetical, by value, etc.)?
+
+  7. Do you prefer a specific style for the grid lines (e.g., dashed, solid) or any
+  particular background color for the chart?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. "Key Metrics Comparison of NIFTY-50 Stocks"
+
+  4. I do not know.
+
+  5. Yes, please include a legend. I do not have a specific position preference.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- Symbol
+- Open
+- High
+- Low
+- LTP
+- Volume (lacs)
+- Turnover (crs.)

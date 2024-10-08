@@ -1,0 +1,53 @@
+initial_prompt: I need a line chart showing the Spotify streams over time for the
+  top 3 songs in 2024. Use data from the given CSV, focusing on the 'Spotify Streams'
+  and 'Release Date' columns. Each song should have its own line, and the x-axis should
+  represent the release dates. The y-axis should show the number of streams, formatted
+  with commas for readability. Also, include labels for each of the lines to identify
+  the corresponding songs. This visualization will help compare the streaming performance
+  of these top tracks over the year.
+questions: '1. Do you have a specific color preference for the lines representing
+  each song?
+
+  2. Would you like to include markers on the data points along the lines?
+
+  3. How would you like to handle dates on the x-axis, such as monthly ticks or specific
+  intervals?
+
+  4. Do you have any preferences for the legend placement in the chart?
+
+  5. Would you like gridlines in the chart, and if so, should they be for both x-axis
+  and y-axis?
+
+  6. Are there any specific font styles or sizes you want for the axis labels and
+  titles?
+
+  7. Is there a particular chart title you would like to include?
+
+  8. Would you prefer the chart to have a background color or border?
+
+  9. Are annotations needed for any specific data points or events?
+
+  10. Would you like to see a trend line or any form of smoothing applied to the data
+  lines?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Monthly ticks would be fine.
+
+  4. I have no specific preference.
+
+  5. Yes, include gridlines for both x-axis and y-axis.
+
+  6. No specific preferences.
+
+  7. "Spotify Streams Over Time for Top 3 Songs in 2024"
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Spotify Streams
+- Release Date

@@ -1,0 +1,48 @@
+initial_prompt: Create a treemap visualization using the provided Forbes Richest People
+  Dataset. The treemap should depict the distribution of net worth across different
+  industries. Use the industry as the main category, and within each industry, have
+  blocks for each individual showing their net worth. Ensure the size of each block
+  within an industry is proportional to the person's net worth. Additionally, include
+  tooltip information that shows the name, net worth, age, and country of each individual
+  when hovering over the blocks.
+questions: '1. Do you have any specific color preferences for different industries?
+
+  2. Do you prefer the labels of industries to be displayed inside the blocks or outside?
+
+  3. Is there a specific font style or size you would like for the labels and tooltips?
+
+  4. Should the tooltip display upon hover be persistent or temporary?
+
+  5. Do you want any specific rounding or formatting for the net worth values in the
+  tooltips?
+
+  6. Is there any specific ordering preference for industries or individuals within
+  each industry (e.g., alphabetical, by net worth)?
+
+  7. Would you like borders between the blocks to be visible? If so, any specific
+  color or thickness for the borders?
+
+  8. Are there any other specific elements or details you would like to be highlighted
+  in the visualization?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I prefer temporary tooltips.
+
+  5. I do not know, any standard formatting is fine.
+
+  6. Please order individuals within each industry by net worth.
+
+  7. Yes, I would like the borders to be visible. I do not have a specific color or
+  thickness preference.
+
+  8. I do not know.'
+data_attributes:
+- Industry
+- Name
+- Net Worth
+- Age
+- Country

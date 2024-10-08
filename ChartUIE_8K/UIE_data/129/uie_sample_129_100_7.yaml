@@ -1,0 +1,46 @@
+initial_prompt: Please create a choropleth map visualizing the latest Covid-19 data
+  for different States/UTs in India. Use data from the CSV file, particularly focusing
+  on the 'Total Cases', 'Active', 'Discharged', 'Deaths' columns. Ensure each state/UT
+  is color-coded based on the total number of cases. Include labels for each region
+  and a legend to make the map easily interpretable. This will help to understand
+  the Covid-19 impact across various regions compared to their population. Thank you!
+questions: '1. Do you have any preference for the color palette used in the choropleth
+  map?
+
+  2. Do you want to include specific color thresholds for the ''Total Cases'' categories?
+
+  3. Should the labels for each region include additional information like population
+  or active cases?
+
+  4. Do you have any specific requirements for the size or position of the legend?
+
+  5. Would you like to highlight specific states/UTs that are of particular interest?
+
+  6. Do you prefer a particular map projection or geography format for the map of
+  India?
+
+  7. Should the population be factored into the color intensity or displayed separately?'
+answers: '<start of user emulated response>
+
+  1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Yes, please include active cases alongside the labels.
+
+  4. I do not know.
+
+  5. No, all states/UTs should be treated equally.
+
+  6. I am not sure.
+
+  7. Yes, the population should be factored into the color intensity.
+
+  <end of user emulated response>'
+data_attributes:
+- State/UTs
+- Total Cases
+- Active
+- Discharged
+- Deaths
+- Population

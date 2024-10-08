@@ -1,0 +1,61 @@
+initial_prompt: 'Please create a box chart for visualizing the distribution of the
+  water quality parameters from the dataset. Focus on key columns: ''ph'', ''Hardness'',
+  ''Solids'', ''Chloramines'', ''Sulfate'', ''Conductivity'', ''Organic_carbon'',
+  ''Trihalomethanes'', and ''Turbidity''. Highlight significant outliers in each parameter
+  to indicate potential water quality issues. Add text annotations to specify the
+  median values of each parameter and draw attention to the ''Potability'' results,
+  distinguishing between potable and non-potable water samples. This visualization
+  will help in understanding water quality and potability.'
+questions: '1. Do you have a preferred color scheme for distinguishing between potable
+  and non-potable water samples?
+
+  2. Would you like the text annotations for the median values to be placed inside
+  or outside the box of the box plot?
+
+  3. Is there a specific style or format you prefer for highlighting significant outliers
+  (e.g., different colors, shapes, or sizes)?
+
+  4. Do you have a particular font preference for the text annotations?
+
+  5. Should gridlines be included in the chart for better readability, and if so,
+  do you have a preference for their style (solid, dashed)?
+
+  6. Would you like the y-axis to be on a logarithmic scale due to the broad range
+  of values across different parameters?
+
+  7. Are there any specific labels or titles you would like for the axes and overall
+  chart?
+
+  8. Is there a particular layout you prefer for the legend, especially in distinguishing
+  between potable and non-potable water samples?
+
+  9. Do you want each parameter to be plotted on the same chart or on separate charts
+  for each parameter?'
+answers: '1. I am not sure.
+
+  2. Inside the box of the box plot.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include gridlines. I have no specific preference for their style.
+
+  6. I am not sure.
+
+  7. No specific labels or titles, just something clear and informative.
+
+  8. I do not know.
+
+  9. All parameters on the same chart would be preferable.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+- Potability

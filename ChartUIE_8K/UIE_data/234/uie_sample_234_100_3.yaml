@@ -1,0 +1,60 @@
+initial_prompt: I’d like to visualize the relationship between customer demographics
+  and their status (Exited or Not) using a stacked column chart. I'd like one axis
+  to represent different demographic factors like 'Geography', 'Gender', and 'Age
+  Group', and the other axis to represent the number of customers. Each column should
+  be stacked to show the proportion of 'Exited' and 'Not Exited' customers within
+  each demographic. This will help us understand which customer segments are more
+  likely to leave the services. Could you please create this visualization? Thanks!
+questions: '1. Do you have a specific preference for the color scheme of the chart,
+  especially for ''Exited'' and ''Not Exited'' segments?
+
+  2. Would you like the age groups to be predefined ranges (e.g., 18-25, 26-35, etc.)
+  or dynamically calculated?
+
+  3. Should the chart include data labels displaying the exact numbers or percentages
+  for each segment within the columns?
+
+  4. Do you prefer any specific order for the demographic factors (e.g., Geography,
+  Gender, and then Age Group)?
+
+  5. Would you like to include a legend that explains the meaning of different colors
+  used in the stacked columns?
+
+  6. Are there any specific titles or labels you would like for the chart, x-axis,
+  and y-axis?
+
+  7. Do you have a preferred font style and size for the chart text elements (titles,
+  labels, legends)?
+
+  8. Should any demographic factor categories (e.g., specific age groups or geographies)
+  be emphasized or highlighted in any specific way?
+
+  9. Do you prefer the chart background to be plain or contain some form of grid lines
+  or background pattern?
+
+  10. Are there any additional annotations or notes you''d like to include in the
+  visualization to provide context for the audience?'
+answers: '1. I am not sure.
+
+  2. Predefined ranges would be good.
+
+  3. Yes, please include data labels displaying the exact numbers for each segment.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a legend.
+
+  6. No specific titles or labels, I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. A plain background is fine.
+
+  10. No additional annotations needed.'
+data_attributes:
+- Geography
+- Gender
+- Age
+- Exited

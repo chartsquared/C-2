@@ -1,0 +1,43 @@
+initial_prompt: Please create a scatter plot visualizing the relationship between
+  Product Price (on the x-axis) and Rating (on the y-axis) from the Jumia Prices and
+  Ratings for all Products 2024 dataset. Use the summarized data columns to plot this
+  information. Plot Price against Rating, making sure to handle the 'EGP' currency
+  in the Prices by converting them to floats. Do not forget to label the axes appropriately
+  and provide a legend if necessary. The scatter plot will help identify any potential
+  correlation between how much a product costs and its customer rating.
+questions: '1. Do you have a specific color preference for the data points in the
+  scatter plot?
+
+  2. Would you prefer any specific shape for the data points in the scatter plot?
+
+  3. Do you wish to include trend lines to better visualize the correlation?
+
+  4. What title would you like for the scatter plot?
+
+  5. Are there any specific labels you want for the x-axis and y-axis, or should we
+  use ''Product Price'' and ''Rating'' respectively?
+
+  6. Do you want any specific annotations or markers for particular data points?
+
+  7. Would you like grid lines to be included in the scatter plot for better readability?
+
+  8. Do you prefer a specific font style or size for the axis labels and legend?'
+answers: '1. I do not have a specific color preference.
+
+  2. I am not sure.
+
+  3. Yes, including trend lines would be helpful.
+
+  4. The title could be "Relationship Between Product Price and Rating on Jumia (2024)".
+
+  5. Please use ''Product Price'' and ''Rating'' for the x-axis and y-axis labels,
+  respectively.
+
+  6. I do not know.
+
+  7. Yes, grid lines would be useful for readability.
+
+  8. I do not have a specific preference for font style or size.'
+data_attributes:
+- Price
+- Rating

@@ -1,0 +1,57 @@
+initial_prompt: Create a stacked bar chart to visualize sales by region. Group data
+  by 'Category' and stack by 'Sub-Category'. Use different colors for each 'Sub-Category'.
+  Include text annotations for the top 3 regions with highest sales per 'Category'
+  to highlight these specific values. Apply highlights to the highest bar in each
+  stack to easily identify peak sales. This chart will help visualize the distribution
+  of sales across different regions and product categories, aiding in business decision-making.
+  Ensure the annotations clearly display the sales figures and the corresponding region
+  and category.
+questions: '1. Do you have any preferences for the color palette used for different
+  ''Sub-Categories''?
+
+  2. What font size and style would you prefer for the text annotations?
+
+  3. Do you prefer a particular orientation for the bar chart (vertical or horizontal)?
+
+  4. How should the highlights for the highest bar in each stack be represented (e.g.,
+  different color, border, pattern)?
+
+  5. Do you want to include a legend for the ''Sub-Category'' colors, and if so, where
+  would you prefer it to be positioned?
+
+  6. Is there a specific format you prefer for displaying the sales figures in the
+  annotations (e.g., currency symbol, decimals)?
+
+  7. Should the chart include gridlines and axes labels to improve readability? If
+  yes, do you have any specific preferences for their appearance?
+
+  8. Do you prefer any specific layout for the chart title and subtitles?'
+answers: '1. I am not sure about the color palette. Please use something that is visually
+  appealing and easy to distinguish.
+
+  2. I do not have a specific preference for the font size and style. Please ensure
+  it is readable.
+
+  3. I prefer a vertical orientation for the bar chart.
+
+  4. I would like the highlights to be represented with a different color for the
+  highest bar in each stack.
+
+  5. Yes, please include a legend for the ''Sub-Category'' colors, but I do not have
+  a specific preference for its position.
+
+  6. Please display the sales figures in the annotations with a currency symbol and
+  no decimals.
+
+  7. Yes, include gridlines and axes labels to improve readability. I do not have
+  specific preferences for their appearance.
+
+  8. I have no specific preference for the layout of the chart title and subtitles.
+
+
+  Thank you!'
+data_attributes:
+- Region
+- Category
+- Sub-Category
+- Sales

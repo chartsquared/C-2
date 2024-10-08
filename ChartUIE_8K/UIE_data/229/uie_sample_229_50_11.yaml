@@ -1,0 +1,52 @@
+initial_prompt: Create a tile map visualizing Covid Cases and Deaths Worldwide. Highlight
+  total cases, total deaths, and active cases for each country with color intensity.
+  Include a legend for quick reference. Emphasize countries with the highest and lowest
+  values.
+questions: '1. Do you have a preferred color scheme for the tile map?
+
+  2. Would you like to include numerical labels on each tile for better clarity?
+
+  3. How would you prefer the legend to be displayed (e.g., on the side, bottom, or
+  as a popup)?
+
+  4. Should the color intensity be uniform across all attributes (total cases, total
+  deaths, and active cases) or have separate scales for each?
+
+  5. Do you want any specific annotations or markers for countries with the highest
+  and lowest values?
+
+  6. Should the map include additional contextual information such as population size
+  or testing rates?
+
+  7. Do you have any specific geographic boundaries or regions you would like to emphasize?
+
+  8. Would you prefer a specific shape or pattern for the tiles (e.g., squares, hexagons)?
+
+  9. Are there any particular countries you would like to highlight or focus on more
+  prominently?
+
+  10. How would you like to handle countries with missing data (e.g., gray out, exclude)?'
+answers: '1. I don’t know.
+
+  2. Yes, please include numerical labels.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Yes, specific annotations for highest and lowest values would be great.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Gray out countries with missing data.'
+data_attributes:
+- Country
+- Total Cases
+- Total Deaths
+- Active Cases

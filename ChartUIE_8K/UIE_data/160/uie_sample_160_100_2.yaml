@@ -1,0 +1,40 @@
+initial_prompt: Create a stacked column chart for wwc_outcomes, visualizing year on
+  the x-axis and the number of wins, losses, and draws (win_status) as stacked bars
+  for each team. Highlight teams with the highest wins and provide text annotations
+  for significant scores. This chart will help us understand team performance trends
+  over the years. Ensure each bar segment is colored differently for clear differentiation.
+  Use highlights to distinguish winning teams and add context with annotations for
+  key matches. The purpose is to provide a visual summary of outcomes for sports-and-recreation
+  analysis.
+questions: '1. Do you have any specific color preferences for the segments representing
+  wins, losses, and draws?
+
+  2. Are there any particular teams you would like to be highlighted or emphasized
+  in the chart?
+
+  3. How would you prefer the text annotations for significant scores to be displayed
+  (e.g., font size, color)?
+
+  4. Do you have any specific preferences for the chart title and axis labels?
+
+  5. Would you like any specific formatting or style for the highlighted segments
+  representing winning teams?
+
+  6. Are there any additional contextual details or annotations you would like to
+  include on the chart?'
+answers: '1. I am not sure about the color preferences for the segments.
+
+  2. I do not know any specific teams to be highlighted.
+
+  3. I am not sure about the display preferences for text annotations.
+
+  4. I have no specific preference for the chart title and axis labels.
+
+  5. I do not know any specific formatting or style for the highlighted winning teams.
+
+  6. I have no specific additional contextual details or annotations to include.'
+data_attributes:
+- year
+- team
+- win_status
+- score

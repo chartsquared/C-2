@@ -1,0 +1,36 @@
+initial_prompt: I have a dataset that provides population information for different
+  countries including their names, codes, and population counts. I need a choropleth
+  map to visualize this data, showing country population sizes with varying color
+  intensities. The countries should be color-coded based on their population, with
+  darker shades representing higher populations and lighter shades indicating lower
+  populations. Also, ensure the map includes a legend to denote the population ranges
+  corresponding with the colors. This will help in easily identifying which countries
+  have larger or smaller populations. Thank you!
+questions: '1. Do you have a specific color palette in mind for the choropleth map?
+
+  2. Would you prefer any specific range or thresholds for the population values in
+  the legend?
+
+  3. Are there any particular geographical regions you want to highlight or emphasize?
+
+  4. Do you want the country names to be displayed directly on the map?
+
+  5. Should the map include borders or boundaries for countries for better visual
+  separation?
+
+  6. Are there any reference lines or markers you would like added to the map?'
+answers: '1. I have no specific preference for the color palette.
+
+  2. I do not know.
+
+  3. I have no specific preference for geographical regions.
+
+  4. I am not sure.
+
+  5. Yes, the map should include borders or boundaries for countries.
+
+  6. I am not sure.'
+data_attributes:
+- name
+- code
+- pop

@@ -1,0 +1,39 @@
+initial_prompt: Please create a histogram that visualizes the distribution of the
+  winning party percentages ('Winner') for each constituency. The histogram should
+  show the count of constituencies on the y-axis and the percentage ranges (binned
+  appropriately) on the x-axis. Make sure to include each party percentage ('CON(%)',
+  'LAB(%)', 'LIB(%)', 'Brexit(%)', 'Green(%)', 'NAT(%)', 'MIN(%)', 'OTH(%)') in the
+  histogram to compare how frequently each party wins with different percentage values.
+  The chart should be informative and easy to interpret.
+questions: '1. Do you have a preferred bin size for the percentage ranges on the x-axis?
+
+  2. What color scheme would you like to use for different parties in the histogram?
+
+  3. Should the histogram include labels for each bin to indicate the range of percentages?
+
+  4. Would you prefer the histogram to include a legend specifying each party''s color?
+
+  5. Are there any specific titles or labels you would like to use for the x-axis
+  and y-axis?
+
+  6. Should the chart include any annotations or additional information to highlight
+  key insights?
+
+  7. Do you have any preferences for the overall layout or style of the chart?
+
+  8. Would you like to display any grid lines or axis lines for better readability?'
+answers: "1. I am not sure about the bin size. Please use an appropriate range.\n\
+  2. I do not know. \n3. Yes, labels for each bin would be helpful.\n4. I am not sure,\
+  \ but a legend might be useful for clarity.\n5. Yes, please label the x-axis as\
+  \ \"Winning Percentage Range\" and the y-axis as \"Count of Constituencies\".\n\
+  6. I do not know.\n7. I do not have any specific preferences for the layout or style.\n\
+  8. Yes, displaying grid lines would improve readability."
+data_attributes:
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)

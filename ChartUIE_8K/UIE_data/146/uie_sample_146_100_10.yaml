@@ -1,0 +1,53 @@
+initial_prompt: Create a treemap to visualize the 2024 Lok Sabha election results
+  in India. Use constituency names as labels, with each block representing a different
+  constituency. The size of each block should reflect the margin of victory. Color-code
+  the blocks by the leading party to differentiate between Bharatiya Janata Party,
+  Indian National Congress, and others. Include leading and trailing candidates' names,
+  and status ('Result Declared') in the details on hover. This will help give a clear
+  visual representation of the election outcomes and margins across various constituencies.
+questions: '1. Do you have a preferred color palette for the different parties?
+
+  2. Should the margin of victory be displayed as exact numbers or represented proportionally
+  within the block size?
+
+  3. How would you like the constituency labels to be displayed for better readability?
+
+  4. Do you want the leading and trailing candidates'' names displayed directly on
+  the blocks or only on hover?
+
+  5. Is there a specific order in which you would like the constituencies to be arranged?
+
+  6. Do you prefer any specific font style or size for the text labels in the treemap?
+
+  7. Should the "Result Declared" status be shown prominently, or only on hover?
+
+  8. Are there any specific visual elements or annotations you want to include on
+  the treemap for enhancing the interpretation of data?
+
+  9. What level of detail would you like for the hover details (e.g., only candidate
+  names and status, or include margin and party names as well)?'
+answers: '1. I am not sure.
+
+  2. Represented proportionally within the block size.
+
+  3. I do not know.
+
+  4. Only on hover.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Only on hover.
+
+  8. I do not know.
+
+  9. Include margin and party names as well.'
+data_attributes:
+- Constituency
+- Leading Candidate
+- Leading Party
+- Trailing Candidate
+- Trailing Party
+- Margin
+- Status

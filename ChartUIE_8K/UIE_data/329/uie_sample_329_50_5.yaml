@@ -1,0 +1,43 @@
+initial_prompt: Please create a heatmap visualization using the provided fibrosis
+  SMOC2 raw counts data. The heatmap should display all given categories (fibrosis
+  and normal) with gene identifiers on the x-axis and their respective counts on the
+  y-axis. Highlight high and low expression levels clearly.
+questions: '1. Do you have any specific color palette preferences for highlighting
+  high and low expression levels?
+
+  2. Would you prefer any particular gradient for the heatmap (e.g., mono-color, bi-color)?
+
+  3. How would you like to handle the labeling of the gene identifiers on the x-axis?
+  (e.g., rotated, abbreviated)
+
+  4. Do you have a preferred minimum and maximum value range for the heatmap scale?
+
+  5. Should the heatmap include a color legend for easier interpretation of expression
+  levels?
+
+  6. Do you prefer gridlines to be displayed on the heatmap for better separation
+  of categories?
+
+  7. Are there any specific values or thresholds you want to highlight distinctly?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. Yes, the heatmap should include a color legend for easier interpretation of expression
+  levels.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- smoc2_fibrosis1
+- smoc2_fibrosis2
+- smoc2_fibrosis3
+- smoc2_fibrosis4
+- smoc2_normal1
+- smoc2_normal3
+- smoc2_normal4

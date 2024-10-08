@@ -1,0 +1,50 @@
+initial_prompt: Create a line chart depicting weather patterns over time using the
+  precipitation, temp_max, temp_min, and wind columns from the dataset.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Would you like to display all four weather attributes (precipitation, temp_max,
+  temp_min, and wind) on one combined line chart, or would you prefer separate line
+  charts for each attribute?
+
+  3. Should the x-axis be labeled with specific intervals (e.g., daily, weekly, monthly)?
+
+  4. Do you want grid lines to be included on the chart?
+
+  5. Should the y-axis scale be the same for all attributes, or should each attribute
+  have its own scale?
+
+  6. Would you like to add data points to the lines to highlight specific values?
+
+  7. Do you prefer any specific type of line style (e.g., solid, dashed, dotted)?
+
+  8. Should the chart include a legend to differentiate between the different attributes?
+
+  9. Would you like to include annotations or markers for significant events or outliers
+  in the data?
+
+  10. Do you have a preferred font style and size for the axis labels and chart title?'
+answers: '1. I am not sure.
+
+  2. I prefer all four weather attributes on one combined line chart.
+
+  3. I am not sure.
+
+  4. Yes, please include grid lines.
+
+  5. Each attribute should have its own scale.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, include a legend to differentiate between the different attributes.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- date
+- precipitation
+- temp_max
+- temp_min
+- wind

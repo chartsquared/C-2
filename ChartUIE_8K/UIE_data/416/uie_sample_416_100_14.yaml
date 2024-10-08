@@ -1,0 +1,39 @@
+initial_prompt: Could you create a donut chart visualizing the proportion of the full-time
+  results (Home Win, Draw, Away Win) for the Bundesliga matches provided in the sample
+  data? It should display the breakdown of wins, draws, and losses for each team based
+  on the 'FTR' column. Please ensure that the chart is easy to interpret with distinct
+  colors for each category and include percentages. Additionally, provide a legend
+  to indicate what each section represents.
+questions: '1. Do you have any specific color preferences for the Home Win, Draw,
+  and Away Win categories?
+
+  2. Would you like the donut chart to have a specific title?
+
+  3. Should there be any specific details in the legend, besides just indicating which
+  color corresponds to which category?
+
+  4. Is there a preferred font style or size for the chart labels and legend?
+
+  5. Do you have any preferences for the layout or sizing of the donut chart?
+
+  6. Should the percentages on the chart be displayed inside the donut slices or outside?
+
+  7. Is there any particular order in which the categories should be displayed (e.g.,
+  Home Win first, then Draw, then Away Win)?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have any specific preferences.
+
+  5. I am not sure.
+
+  6. The percentages should be displayed inside the donut slices.
+
+  7. Home Win first, then Draw, then Away Win.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTR

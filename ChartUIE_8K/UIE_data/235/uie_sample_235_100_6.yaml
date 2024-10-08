@@ -1,0 +1,49 @@
+initial_prompt: Please create a bar chart visualizing the average medical insurance
+  charges by region. Use the provided dataset containing columns such as age, sex,
+  bmi, children, smoker, region, and charges. This analysis will help in understanding
+  the regional differences in insurance costs. Each bar should represent a different
+  region, and the height of the bars should reflect the average insurance charges
+  in that region. Ensure that the chart is easy to read, and the regions are distinctly
+  labeled. The y-axis should represent the average charges, while the x-axis should
+  list the regions.
+questions: '1. Do you have a preferred color scheme for the bars representing different
+  regions?
+
+  2. Would you like to include exact average charge values on top of each bar?
+
+  3. Do you want gridlines on the chart for better readability?
+
+  4. Is there a specific font style or size you prefer for the labels and titles?
+
+  5. Should the chart include a title? If so, do you have a specific title in mind?
+
+  6. Would you like to add a legend to the chart, or is it unnecessary since each
+  bar represents a distinct region?
+
+  7. Do you want to set a specific range for the y-axis, or should it be automatically
+  scaled based on the data?
+
+  8. Should any additional annotations or text be added to highlight particular insights
+  or findings?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. Yes, please include exact average charge values on top of each bar.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. Yes, the title should be "Average Medical Insurance Charges by Region."
+
+  6. A legend is unnecessary since each bar represents a distinct region.
+
+  7. It should be automatically scaled based on the data.
+
+  8. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- region
+- charges

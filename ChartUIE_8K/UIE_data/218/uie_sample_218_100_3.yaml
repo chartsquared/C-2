@@ -1,0 +1,47 @@
+initial_prompt: Please create a violin plot that visualizes the distribution of different
+  labels (e.g., Story, Partnership, Award) from the SAP Press Releases dataset. I
+  want to see how each label type varies in frequency. Ensure the x-axis represents
+  the unique labels and the y-axis represents the count of headlines associated with
+  each label. This will help me understand the distribution and density of headlines
+  under each category. Use distinct colors for each label for clarity. Make sure the
+  plot is detailed and easy to interpret. Thanks!
+questions: '1. Do you have any specific color preferences for each label type?
+
+  2. What level of detail are you expecting in the plot? Would you like any specific
+  statistical summaries to be included (e.g., median, quartiles)?
+
+  3. Do you prefer any specific font styles or sizes for the labels and titles in
+  the chart?
+
+  4. Are there any particular labels you''d like to highlight or differentiate in
+  a unique way?
+
+  5. Would you like the chart to include gridlines? If so, do you prefer major gridlines,
+  minor gridlines, or both?
+
+  6. How detailed should the axis labels be? Are you looking for precise numerical
+  values or broader categories?
+
+  7. Is there a preferred order for the labels on the x-axis (e.g., alphabetical,
+  frequency-based)?
+
+  8. Do you have any specific preferences for the aspect ratio or dimensions of the
+  plot?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I would like to see the median included in the plot.
+
+  3. I do not have a specific preference for font styles or sizes.
+
+  4. I have no specific labels to highlight.
+
+  5. I prefer major gridlines included in the chart.
+
+  6. Precise numerical values on the axis labels would be helpful.
+
+  7. I prefer the labels to be ordered based on frequency.
+
+  8. I do not know.'
+data_attributes:
+- headline
+- label

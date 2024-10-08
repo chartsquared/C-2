@@ -1,0 +1,53 @@
+initial_prompt: Please create a stacked bar chart to visualize worldwide Covid data.
+  Each bar represents a country (e.g., USA, India, France) with segments showing Total
+  Cases, Total Deaths, Total Recovered, Active Cases, and Total Tests. Highlight differences
+  among countries and identify trends. Use distinct colors for each segment and ensure
+  the population is labeled on the x-axis. The data has missing values so handle them
+  appropriately. Opt for data from '229.csv' and focus on practicality and readability,
+  making it easy to compare Covid metrics across nations effectively.
+questions: '1. Do you have any preference for the specific colors used for each segment
+  (Total Cases, Total Deaths, Total Recovered, Active Cases, Total Tests) in the stacked
+  bar chart?
+
+  2. Would you like to include any specific title for the chart?
+
+  3. Do you prefer the population label on the x-axis to be displayed in a specific
+  format, such as commas for thousands?
+
+  4. Are there any specific countries you would like to focus on or highlight in the
+  chart?
+
+  5. How would you prefer the missing values to be handled (e.g., omitted, estimated,
+  or indicated in some way)?
+
+  6. Do you have any preferences for the order in which the segments (Total Cases,
+  Total Deaths, Total Recovered, Active Cases, Total Tests) should be stacked?
+
+  7. Would you like a legend to be included on the chart, and if so, where should
+  it be positioned?
+
+  8. Do you have any specific font or style preferences for the labels and titles
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, you can use "Worldwide Covid Data Comparison" as the title.
+
+  3. Yes, please display the population label on the x-axis using commas for thousands.
+
+  4. No, I do not have specific countries in mind.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please include a legend and position it at the bottom of the chart.
+
+  8. I do not have any specific font or style preferences.'
+data_attributes:
+- Country
+- Total Cases
+- Total Deaths
+- Total Recovered
+- Active Cases
+- Total Test
+- Population

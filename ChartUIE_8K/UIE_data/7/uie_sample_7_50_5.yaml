@@ -1,0 +1,46 @@
+initial_prompt: Create a choropleth map visualizing global meat production by country.
+  Use the 'Country', 'Code', 'Year', and 'Meat, total | Production | tonnes' columns.
+  Highlight production differences in 1961, as detailed in the dataset.
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. Should the map include labels for each country with their meat production values?
+
+  3. Would you like to include a legend to explain the color gradient representing
+  meat production levels?
+
+  4. Do you prefer a specific map projection (e.g., Mercator, Robinson)?
+
+  5. Should the map emphasize any particular regions or countries?
+
+  6. Do you want to include annotations or callouts for countries with extreme values
+  or significant production levels?
+
+  7. Are there any specific stylistic elements you would like to see, such as borders
+  around countries or background grids?
+
+  8. Do you have a preferred level of data granularity (e.g., by country, by continent)?
+
+  9. Is there a specific way you would like to handle countries with missing data
+  or zero meat production?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend to explain the color gradient.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. Yes, please include annotations or callouts for countries with extreme values.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- Country
+- Code
+- Year
+- Meat, total | 00001765 || Production | 005510 || tonnes

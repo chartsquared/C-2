@@ -1,0 +1,33 @@
+initial_prompt: I need a bubble chart showing distances between Russian cities based
+  on the provided dataset. Each bubble should represent a route, with the size indicating
+  the distance. The x-axis will show the 'Order' and the y-axis the 'Destination.'
+  There should be labels for both axes and a title "Russian Cities Distances." Also,
+  include a legend explaining the bubble sizes corresponding to various distances.
+  Make the chart interactive if possible, so that hovering over a bubble reveals detailed
+  information about that route. Use different colors for distinct routes. Thank you!
+questions: '1. Do you have a specific color palette preference for the distinct routes?
+
+  2. Should the bubble sizes be uniform or proportionally scaled based on the distance?
+
+  3. Do you prefer a specific font style or size for the axis labels and title?
+
+  4. Would you like any specific themes or background colors for the chart?
+
+  5. Are there any specific details you want to include in the bubble tooltip when
+  hovering?'
+answers: '1. I do not have a specific color palette preference for the distinct routes.
+
+  2. I am not sure, but I think proportionally scaled based on the distance might
+  be better.
+
+  3. I have no specific preference for the font style or size for the axis labels
+  and title.
+
+  4. I don''t know, any theme or background color that looks good will work.
+
+  5. I am not sure, but showing the route name and exact distance in the tooltip would
+  be helpful.'
+data_attributes:
+- Order
+- Destination
+- Distance

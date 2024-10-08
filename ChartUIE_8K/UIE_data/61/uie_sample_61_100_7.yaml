@@ -1,0 +1,40 @@
+initial_prompt: I need a scatter plot for the SmartPhone Dataset from the computers-and-technology
+  category. Please plot the discounted_price against the rating for different models.
+  Make sure each brand_name has a distinct color. Use rom as the size of the points
+  to highlight storage capacity. Include labelled axes and a legend to differentiate
+  the brands. The chart should help visualize the relationship between price and customer
+  rating, while also showing how storage varies across different models and brands.
+  This visualization will aid in identifying value-for-money smartphones based on
+  user ratings and available storage options.
+questions: '1. Do you have a preferred color palette for different brand names?
+
+  2. Should the legend be placed at a specific location on the chart?
+
+  3. Would you like the axis labels to have specific titles or formats?
+
+  4. Do you prefer a particular size or range for the points to represent storage
+  capacity (ROM)?
+
+  5. Is there a specific style you prefer for the grid lines (e.g., dashed, solid)?
+
+  6. Would you like to add any reference lines or trend lines to the chart? If so,
+  where should they be placed?
+
+  7. Do you have specific limits or ranges for the axes?
+
+  8. Would you prefer any specific font style or size for the labels, titles, or legends?'
+answers: "<start of user emulated response>\n1. I do not have a preferred color palette\
+  \ for different brand names.\n2. I am not sure where the legend should be placed.\n\
+  3. The axis labels should be \"Discounted Price\" for the x-axis and \"Customer\
+  \ Rating\" for the y-axis. \n4. I am not sure about the size or range for the points\
+  \ to represent storage capacity.\n5. I do not know about the style for the grid\
+  \ lines.\n6. I have no specific preference for adding reference lines or trend lines.\n\
+  7. I do not have specific limits or ranges for the axes.\n8. I have no specific\
+  \ preference for font style or size for the labels, titles, or legends.\n<end of\
+  \ user emulated response>"
+data_attributes:
+- brand_name
+- model_name
+- discounted_price
+- rating
+- rom

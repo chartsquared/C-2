@@ -1,0 +1,56 @@
+initial_prompt: Create a grouped bar chart visualizing Kepler Telescope Exoplanet
+  Discoveries. Use 'pl_hostname' on the x-axis, grouped by 'pl_letter', showing their
+  'pl_orbper' and 'pl_bmassj' values. Ensure error bars are displayed for 'pl_orbpererr1'
+  and 'pl_bmassjerr1'. Include distinct colors for each planet letter group and label
+  axes appropriately. Include a legend for clarity.
+questions: '1. Do you have a preferred color palette for the distinct colors representing
+  each planet letter group?
+
+  2. What specific labels would you like on the x-axis and y-axis?
+
+  3. Would you like to include specific titles for the chart and legend?
+
+  4. Should the error bars for ''pl_orbper'' and ''pl_bmassj'' represent one standard
+  deviation, standard error, or custom confidence intervals?
+
+  5. Is there a preferred order for the ''pl_hostname'' on the x-axis?
+
+  6. Are there any specific font styles or sizes you prefer for the labels and legend?
+
+  7. Do you have any specific preferences for the formatting of the legend (e.g.,
+  position, spacing, border)?
+
+  8. Should the chart grid lines be displayed or hidden?
+
+  9. Would you prefer the bars to be displayed with a specific width or spacing between
+  groups?
+
+  10. Are there any additional annotations or specific data points you would like
+  to highlight?'
+answers: '1. I am not sure.
+
+  2. X-axis should be labeled "Planet Hostname", and y-axis should be labeled "Measured
+  Values".
+
+  3. I do not have a specific title in mind.
+
+  4. I am not sure.
+
+  5. I do not have a preferred order for the ''pl_hostname'' on the x-axis.
+
+  6. I am not sure about the font styles or sizes.
+
+  7. I do not have any specific preferences for the legend formatting.
+
+  8. I do not know.
+
+  9. I am not sure about bar width or spacing between groups.
+
+  10. I do not have any additional annotations or specific data points to highlight.'
+data_attributes:
+- pl_hostname
+- pl_letter
+- pl_orbper
+- pl_bmassj
+- pl_orbpererr1
+- pl_bmassjerr1

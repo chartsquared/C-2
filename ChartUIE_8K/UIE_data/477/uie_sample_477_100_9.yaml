@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart tracking the popularity of answers over time for
+  the question "How was Pizza Mercato?" at Pizza Mercato. X-axis should represent
+  time (timestamp) and Y-axis should represent the number of votes. Each line will
+  represent a possible answer (Excellent, Good, Average). The chart should provide
+  a clear comparison of how each rating option fluctuates in popularity over the recorded
+  times. Use different colors for each line to distinguish the answers effectively.
+  Ensure the chart is easy to read and understand. This is for a food-and-drink review
+  analysis.
+questions: '1. Do you have any preference for the time interval on the X-axis (e.g.,
+  days, weeks, months)?
+
+  2. What colors would you like to use for each rating option (Excellent, Good, Average)?
+
+  3. Do you prefer a specific line style (solid, dashed, dotted) for each rating option?
+
+  4. Should the Y-axis be displayed in a particular range or scale (e.g., logarithmic
+  scale)?
+
+  5. Would you like to include data point markers on the lines to highlight individual
+  data points?
+
+  6. Do you need grid lines on the chart for better readability? If so, for both axes
+  or just one?
+
+  7. Is there a specific title you would like to use for the chart?
+
+  8. Would you like to include axis labels? If so, do you have a preference for their
+  wording?
+
+  9. Should we include a legend to distinguish between the different rating options?
+  If yes, do you have a preferred placement for the legend?
+
+  10. Do you prefer any specific font style or size for the chart labels and annotations?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. I don''t know.
+
+  5. I am not sure.
+
+  6. Yes, both axes please.
+
+  7. No specific title, but something related to "Pizza Mercato Feedback".
+
+  8. Yes, please. X-axis: "Time", Y-axis: "Number of Votes".
+
+  9. Yes, a legend would be helpful. I don''t have a preference for its placement.
+
+  10. I do not know.'
+data_attributes:
+- time
+- answer
+- votes

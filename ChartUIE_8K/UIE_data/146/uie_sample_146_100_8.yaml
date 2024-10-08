@@ -1,0 +1,53 @@
+initial_prompt: Create a Choropleth map showcasing the leading political party for
+  each constituency in the 2024 Lok Sabha Election results. Color-code the map based
+  on the leading party, illustrating their strongholds and areas of influence across
+  the country. Highlight the margin of victory by varying the intensity of the color.
+  Ensure that the map is interactive, allowing users to hover over constituencies
+  to view detailed information about the leading candidate, trailing candidate, margin
+  of victory, and status of results. This will provide an insightful visual representation
+  of the election results by region.
+questions: '1. Do you have any specific color preferences for the different political
+  parties?
+
+  2. How many color intensity levels would you like to represent the margin of victory?
+
+  3. Would you prefer any specific geographic boundaries or regions to be emphasized?
+
+  4. Do you have any preference for the base map style (e.g., political, physical,
+  satellite)?
+
+  5. Should there be any specific legends or labels included in the map for better
+  clarity?
+
+  6. Do you have any preferred font style or size for the textual information on the
+  map?
+
+  7. Are there any specific annotations or notes you would like to be included on
+  the map?
+
+  8. Should the map include any additional layers, such as transportation networks
+  or population density, for more context?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. Yes, include legends or labels for better clarity.
+
+  6. I am not sure.
+
+  7. No specific annotations or notes are needed.
+
+  8. I do not know.'
+data_attributes:
+- Constituency
+- Const. No.
+- Leading Candidate
+- Leading Party
+- Trailing Candidate
+- Trailing Party
+- Margin
+- Status

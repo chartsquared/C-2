@@ -1,0 +1,46 @@
+initial_prompt: Please create a line chart using the data from the provided CSV file.
+  Focus on plotting 'x' against 'y'. Include text annotations to highlight significant
+  data points, such as the minimum, maximum, and any notable inflection points on
+  the curve. Use highlights to differentiate these key points visually. This chart
+  is intended for a data science and analytics presentation, aiming to draw viewers'
+  attention to trends and variations in the dataset. The annotations and highlights
+  should aid in quickly identifying and understanding the significance of these points.
+questions: '1. Do you have any specific color preferences for the line and highlighted
+  points?
+
+  2. Would you like gridlines to be included in the background for better readability?
+  If so, should they be horizontal, vertical, or both?
+
+  3. Should the chart include a legend or labels for the data series?
+
+  4. Are there specific styles or fonts you prefer for the text annotations?
+
+  5. Do you want the line to be smoothed (e.g., with spline interpolation) or should
+  it be a straight line connecting the points?
+
+  6. How would you like the inflection points to be marked (e.g., with a specific
+  shape or icon)?
+
+  7. Do you have preferences for the chart title or axis labels?
+
+  8. Are there any specific dimensions or aspect ratios that you anticipate for the
+  chart display?'
+answers: '1. I am not sure.
+
+  2. Yes, include gridlines. Both horizontal and vertical.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Straight line connecting the points.
+
+  6. I would like inflection points to be marked with a distinct shape, like a star
+  or diamond.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- x
+- y

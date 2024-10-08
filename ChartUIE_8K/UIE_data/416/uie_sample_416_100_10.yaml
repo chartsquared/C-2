@@ -1,0 +1,44 @@
+initial_prompt: I have data for Bundesliga points per match from a CSV file with detailed
+  betting odds and match statistics. I want to visualize this data using a box chart.
+  The box chart should show the distribution of points earned per match by different
+  teams. Use "HomeTeam," "AwayTeam," "FTHG" (Full-Time Home Goals), and "FTAG" (Full-Time
+  Away Goals) columns to calculate the points (3 for a win, 1 for a draw, and 0 for
+  a loss). The x-axis should represent teams, and the y-axis should represent points
+  per match. Each box should summarize the points distribution for each team.
+questions: "1. Do you have specific color preferences for different teams?\n2. Would\
+  \ you like to display the median, quartiles, and/or outliers explicitly on the box\
+  \ chart?\n3. Do you have specific labeling preferences for the x-axis (team names)?\n\
+  4. Should the chart title be included? If yes, do you have a preferred title?\n\
+  5. Do you want gridlines to be displayed for easier comparison across teams?\n6.\
+  \ Would you prefer any specific font sizes or styles for the labels and title?\n\
+  7. Do you have any preferences for axis scale ranges or should it be auto-calculated?\
+  \ \n8. Should the box widths be uniform or reflect the number of matches played\
+  \ by each team?\n9. Do you want to include any annotations or specific markers for\
+  \ average points or other statistics?\n10. Are there any specific teams that you\
+  \ would like to highlight or emphasize in the chart?"
+answers: '1. I am not sure.
+
+  2. Yes, I would like to display the median, quartiles, and outliers explicitly on
+  the box chart.
+
+  3. I have no specific preference.
+
+  4. Yes, the chart title should be included. Preferred title: "Distribution of Points
+  Earned Per Match by Bundesliga Teams".
+
+  5. Yes, gridlines should be displayed for easier comparison across teams.
+
+  6. I am not sure.
+
+  7. Auto-calculated axis scale ranges should be fine.
+
+  8. Uniform box widths are preferred.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTAG

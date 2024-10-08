@@ -1,0 +1,58 @@
+initial_prompt: I need a heatmap to analyze the relationships between different factors
+  affecting medical insurance costs. The dataset includes columns like age, sex, bmi,
+  children, smoker, region, and charges. I want to see how these variables correlate
+  with each other, especially with the charges column. Also, highlight significant
+  correlations. This is for a business report on medical insurance cost prediction,
+  so the visualization should be clear and professional. Make sure the heatmap includes
+  a legend and labels for easy interpretation. Thank you!
+questions: '1. Do you have a specific color scheme preference for the heatmap?
+
+  2. Would you like to display the correlation coefficients on the heatmap cells?
+
+  3. How would you prefer significant correlations to be highlighted? (e.g., using
+  different colors, bold outlines, etc.)
+
+  4. Do you want to include annotation text within the heatmap cells?
+
+  5. Should the heatmap include hierarchical clustering to group similar variables
+  together?
+
+  6. Are there specific ranges or thresholds for correlation values that you want
+  to highlight?
+
+  7. Do you have a preferred ordering for the variables in the heatmap?
+
+  8. Would you like gridlines between the cells to be visible or hidden?
+
+  9. Should the heatmap have axis labels rotated for better readability?
+
+  10. Are there any specific tips or titles you would like to include in the heatmap
+  for additional context?'
+answers: '1. I do not have a specific color scheme preference.
+
+  2. Yes, I would like to display the correlation coefficients on the heatmap cells.
+
+  3. I am not sure.
+
+  4. Yes, please include annotation text within the heatmap cells.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference for the ordering of the variables.
+
+  8. I am not sure.
+
+  9. Yes, please rotate axis labels for better readability.
+
+  10. Please include a title that reflects the purpose, such as "Heatmap of Factors
+  Affecting Medical Insurance Costs".'
+data_attributes:
+- age
+- sex
+- bmi
+- children
+- smoker
+- region
+- charges

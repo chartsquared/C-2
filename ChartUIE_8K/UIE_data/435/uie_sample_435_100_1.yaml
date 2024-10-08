@@ -1,0 +1,61 @@
+initial_prompt: Create a histogram highlighting the distribution of points among the
+  top-rated hip-hop songs of all time. Use data annotations to display individual
+  song titles and their respective points on the histogram bars. Highlight the top
+  artist entries to showcase their prominence in the list. Ensure the chart clearly
+  emphasizes the male-dominated nature of the genre by color-coding based on the gender
+  column. Additionally, provide context on the significance of each highlighted song,
+  such as its year of release and artist. The purpose is to visually explore how points
+  are distributed across different years and artists.
+questions: '1. Do you have a preferred color scheme for differentiating between male
+  and female artists?
+
+  2. How would you like the top artist entries to be highlighted? (e.g., bold colors,
+  larger font size, different shading)
+
+  3. Do you have specific preferences for the bin width or range for the histogram
+  bars?
+
+  4. Would you like the data annotations to display all song titles and points or
+  only for specific songs?
+
+  5. Do you have any specific requirements for the font style and size for data annotations
+  and labels?
+
+  6. Would you prefer the chart to include a legend specifically for gender color-coding?
+
+  7. Is there a particular way you would like the significance of each highlighted
+  song (year of release, artist) to be represented? (e.g., footnotes, tooltips)
+
+  8. Would you like the distribution to be segmented by specific time intervals (e.g.,
+  decade, 5-year interval)?
+
+  9. Do you have a preferred layout or orientation for the histogram (e.g., vertical
+  or horizontal bars)?
+
+  10. Should the chart include gridlines, and if so, do you have any preferences for
+  their style or color?'
+answers: '1. I do not know.
+
+  2. Bold colors and larger font size.
+
+  3. I do not know.
+
+  4. All song titles and points.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend for gender color-coding.
+
+  7. Footnotes would be good.
+
+  8. I am not sure.
+
+  9. Vertical bars.
+
+  10. I am not sure.'
+data_attributes:
+- title
+- artist
+- year
+- gender
+- points

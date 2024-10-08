@@ -1,0 +1,60 @@
+initial_prompt: Create a heatmap to visualize the market cap distribution across different
+  sectors and industries for high-tech companies on NASDAQ. Emphasize companies like
+  Apple, Microsoft, and Google using data-driven text annotations that display their
+  market cap, price, and beta values. Use highlights to distinguish these key companies
+  in the Technology sector. This visualization should aid in quickly identifying major
+  players and their relative sizes, offering insights into the concentration of market
+  value within the high-tech sector. Include additional context through non-data-driven
+  annotations regarding sector and industry classifications.
+questions: '1. Do you prefer a specific color scheme for the heatmap to distinguish
+  sectors and industries?
+
+  2. How would you like the highlighted companies (Apple, Microsoft, Google) to be
+  visually distinguished from other companies?
+
+  3. Do you have specific font preferences or sizes for the text annotations displaying
+  market cap, price, and beta values?
+
+  4. Should the heatmap include gridlines to separate different sectors and industries,
+  or would you prefer a more continuous gradient?
+
+  5. Would you like the additional context regarding sector and industry classifications
+  to be placed in a specific location on the chart (e.g., on the side, top, or bottom)?
+
+  6. Do you want to include a legend explaining the colors used in the heatmap, and
+  if so, where should it be placed?
+
+  7. Is there a specific format you would like for numerical values (e.g., commas
+  for thousands, or specific decimal places)?
+
+  8. Should the heatmap display values directly on the chart cells, or would you prefer
+  a tooltip to show values on hover?
+
+  9. Do you have a preferred chart title and axis labels?'
+answers: '1. I am not sure.
+
+  2. Highlight the companies (Apple, Microsoft, Google) using a brighter color or
+  an outline.
+
+  3. I do not know.
+
+  4. Include gridlines to separate different sectors and industries.
+
+  5. Place the additional context regarding sector and industry classifications at
+  the bottom.
+
+  6. Yes, include a legend, placed at the bottom right corner.
+
+  7. Use commas for thousands and one decimal place.
+
+  8. Display values directly on the chart cells.
+
+  9. Title: "Market Cap Distribution of High-Tech Companies on NASDAQ"; X-axis: "Industries";
+  Y-axis: "Sectors".'
+data_attributes:
+- sector
+- industry
+- market_cap
+- name
+- price
+- beta

@@ -1,0 +1,40 @@
+initial_prompt: Create a Choropleth map visualizing the most common languages spoken
+  across different countries. Use the provided dataset to highlight linguistic diversity.
+  Each country should be color-coded based on the number of languages spoken, with
+  a gradient representing the range from fewer to more languages. The map should include
+  a legend explaining the color gradient and be interactive, allowing users to hover
+  over each country to see a tooltip with detailed information on the specific languages
+  spoken. This will provide an insightful view into global language distribution patterns.
+questions: '1. Do you have any specific color gradients in mind for the countries
+  based on the number of languages spoken?
+
+  2. Do you prefer any particular map projection (e.g., Mercator, Robinson, Albers)?
+
+  3. How detailed should the legend be? Should it include specific ranges of languages?
+
+  4. Is there a specific geographic region or countries you want to focus more on
+  or highlight?
+
+  5. Would you like to include any additional annotation or labels on the map besides
+  the country names?
+
+  6. Are there any specific font styles or sizes you would prefer for the text elements
+  on the map?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, the legend should include specific ranges of languages spoken.
+
+  4. I am not sure.
+
+  5. No specific preference, just the country names should be fine.
+
+  6. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Country
+- Languages Spoken

@@ -1,0 +1,58 @@
+initial_prompt: Create a geographic heatmap showing the GDP of different countries
+  across the world. Use the 'Country' column for mapping country names, 'GDP' column
+  for the GDP values, 'Latitude' and 'Longitude' columns for accurate country positioning.
+  Make sure to use a color gradient to represent different GDP levels, with more intense
+  colors representing higher GDPs. Ensure the heatmap is interactive, allowing users
+  to hover over a country to see its GDP value. Please title the map "Global GDP Distribution
+  2023" and include a legend for clarity.
+questions: '1. Do you have specific preferences for the color gradient used to represent
+  different GDP levels?
+
+  2. What range of colors would you like to use for the lower and higher GDP values?
+
+  3. Should we include any particular geographic regions or exclude any specific countries
+  from the visualization?
+
+  4. Do you have a preferred map projection for the geographic heatmap (e.g., Mercator,
+  Robinson)?
+
+  5. Would you like any specific labels or annotations on the map, apart from the
+  GDP values?
+
+  6. Do you have any preferred font styles or sizes for the map''s title and legend?
+
+  7. Are there any specific data ranges or outliers you would like to highlight or
+  treat differently in the heatmap?
+
+  8. Do you have a preference for the map background (e.g., plain, satellite imagery,
+  terrain)?
+
+  9. Would you like to include any additional contextual information or data (e.g.,
+  population, land area) in the hover-over tooltips?
+
+  10. Is there a specific resolution or aspect ratio you prefer for the geographic
+  heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No, please include all countries.
+
+  4. Mercator projection would be fine.
+
+  5. I am not sure.
+
+  6. No specific preference.
+
+  7. I do not know.
+
+  8. Plain background is preferred.
+
+  9. No, just the GDP values are sufficient.
+
+  10. I have no specific preference.'
+data_attributes:
+- Country
+- GDP
+- Latitude
+- Longitude

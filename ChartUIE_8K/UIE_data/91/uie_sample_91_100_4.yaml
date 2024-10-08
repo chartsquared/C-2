@@ -1,0 +1,59 @@
+initial_prompt: I want a heatmap that visualizes the correlation between various factors
+  of Kaggle datasets. Use columns like kernels, discussions, views, downloads, size,
+  and upvotes to show how they are interrelated. Highlight the intensity of their
+  interactions. This will help in identifying which factors are closely related to
+  high engagement and popularity of datasets. The grid should clearly show high correlation
+  areas in darker colors. Add labels for clarity. Use the data provided from the CSV
+  to create this visual representation for better understanding of dataset dynamics
+  on Kaggle.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the intensity of the color gradient to range from a specific color
+  to another (e.g., light blue to dark blue)?
+
+  3. How would you like the correlation values displayed on the heatmap (e.g., rounded
+  to two decimal places, shown inside the cells)?
+
+  4. Should the heatmap have grid lines separating each cell?
+
+  5. Do you have a preference for the orientation of the labels (e.g., horizontal,
+  vertical, or rotated)?
+
+  6. Is there a specific font style or size you prefer for the labels?
+
+  7. Would you like any additional annotations or highlights for particular correlations
+  that are of significant interest?
+
+  8. Do you want a legend included to interpret the color intensities?
+
+  9. Are there any specific margins or padding preferences for the heatmap to fit
+  within a certain space or layout?
+
+  10. Do you have any preference for the aspect ratio or dimensions of the final visualization
+  (e.g., square, rectangular)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Rounded to two decimal places shown inside the cells.
+
+  4. Yes, the heatmap should have grid lines separating each cell.
+
+  5. Horizontal orientation for the labels.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. Yes, a legend included to interpret the color intensities would be helpful.
+
+  9. I do not have any specific margins or padding preferences.
+
+  10. No specific preference for the aspect ratio or dimensions.'
+data_attributes:
+- kernels
+- discussions
+- views
+- downloads
+- size
+- upvotes

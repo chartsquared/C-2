@@ -1,0 +1,32 @@
+initial_prompt: I'd like a box chart visualizing the California Housing Prices dataset.
+  Specifically, I want to see the distribution of median_house_value across different
+  categories of ocean_proximity. This way, I can compare housing prices near the ocean
+  versus inland. Include the median, quartiles, and possible outliers for each ocean_proximity
+  category. Ensure the chart is clearly labeled and color-coded accordingly with an
+  appropriate legend. This will give me a clear understanding of how housing prices
+  vary by proximity to the ocean. Thank you!
+questions: '1. Do you have any specific color preferences for different categories
+  of "ocean_proximity"?
+
+  2. Would you prefer any particular styling or format for the labels on the chart?
+
+  3. Should the chart include gridlines or any other background features for better
+  readability?
+
+  4. Do you have a preferred position for the legend on the chart (e.g., top, bottom,
+  right, left)?
+
+  5. Would you like to include any specific annotations or notes on the chart to highlight
+  particular insights?'
+answers: '1. I have no specific preference for colors.
+
+  2. I am not sure about any particular styling or format for the labels.
+
+  3. Yes, include gridlines for better readability.
+
+  4. I do not have a preferred position for the legend.
+
+  5. I am not sure about including specific annotations or notes.'
+data_attributes:
+- median_house_value
+- ocean_proximity

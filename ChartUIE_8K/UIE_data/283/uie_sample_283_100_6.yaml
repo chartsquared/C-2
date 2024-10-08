@@ -1,0 +1,44 @@
+initial_prompt: Please create a box chart visualizing the age distribution of men
+  and women at the time of divorce. The x-axis should represent the 'Type_of_divorce'
+  (Necesario, Voluntario), and the y-axis should show the 'Age_partner_man' and 'Age_partner_woman'.
+  Separate the data for men and women into different boxes for each type of divorce,
+  and make sure to include outliers. This will help us better understand how age varies
+  between different types of divorces among different genders.
+questions: '1. Do you have any specific preferences for the color scheme or palette
+  to differentiate between men and women in the box chart?
+
+  2. Would you prefer a specific title for the chart, or should I use a default title
+  like ''Age Distribution at the Time of Divorce''?
+
+  3. Are there any specific preferences for the styling of the x-axis and y-axis labels
+  and titles?
+
+  4. Would you like to include additional annotations or labels for median values
+  and quartiles on the boxes?
+
+  5. Do you have any specific preferences for the layout or arrangement of the boxes
+  within each category on the x-axis?
+
+  6. Are there specific preferences regarding the handling or displaying of outliers
+  in the box chart?
+
+  7. Would you like any grid lines or reference lines to be included in the chart
+  background for better readability?'
+answers: '1. I am not sure.
+
+  2. A default title like ''Age Distribution at the Time of Divorce'' is fine.
+
+  3. I do not know.
+
+  4. Yes, please include additional annotations or labels for median values and quartiles
+  on the boxes.
+
+  5. I have no specific preference.
+
+  6. I have no specific preference.
+
+  7. Yes, including grid lines would be helpful for better readability.'
+data_attributes:
+- Type_of_divorce
+- Age_partner_man
+- Age_partner_woman

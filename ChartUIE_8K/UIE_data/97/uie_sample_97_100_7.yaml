@@ -1,0 +1,74 @@
+initial_prompt: I want a heatmap to analyze the correlation between various variables
+  in the supply chain data. Specifically, focus on metrics like Price, Availability,
+  Number of products sold, Revenue generated, Stock levels, Lead times, Order quantities,
+  Shipping times, Shipping costs, Manufacturing costs, and Defect rates. The heatmap
+  should highlight the strengths of these correlations to identify any significant
+  relationships. This visualization will help us understand which factors are most
+  closely related and could impact our business performance. Please ensure the heatmap
+  includes appropriate labels and color coding for clear interpretation.
+questions: '1. Do you have any specific color schemes or palettes you prefer for the
+  heatmap?
+
+  2. Are there particular color scales (e.g., diverging, sequential) you want to use
+  to represent the correlations?
+
+  3. Would you prefer the color intensity to reflect the strength of correlations
+  directly, or should there be specific highlights for strong positive or negative
+  correlations?
+
+  4. Do you have a preference for the range of values displayed for the correlation
+  coefficients (e.g., -1 to 1)?
+
+  5. Should the heatmap include exact numerical correlation values on the cells, or
+  do you prefer to rely solely on color intensity?
+
+  6. Do you want any specific annotations on the heatmap, such as star indicators
+  for statistically significant correlations?
+
+  7. Do you prefer hierarchical clustering or any specific arrangement for the variables
+  in the heatmap to better illustrate their relationships?
+
+  8. How would you like the labels to be formatted (e.g., font size, style)?
+
+  9. Should the heatmap have a title or any supplementary text for explanatory purposes?
+
+  10. Are there specific gridlines or borders you want to include in the heatmap for
+  better separation of cells?
+
+  11. Would you like to see any additional summary statistics or legends on the heatmap
+  for better interpretation?'
+answers: '1. I do not have a specific color scheme in mind.
+
+  2. I am not sure about the color scales.
+
+  3. I would prefer the color intensity to reflect the strength of correlations directly.
+
+  4. I prefer the range of values displayed for the correlation coefficients to be
+  -1 to 1.
+
+  5. I would prefer to include exact numerical correlation values on the cells.
+
+  6. I am not sure about annotations; maybe star indicators could be useful.
+
+  7. I do not know about hierarchical clustering; use a layout that best illustrates
+  relationships.
+
+  8. I have no specific preference for label format.
+
+  9. Yes, please include a title and any necessary explanatory text.
+
+  10. I have no specific preference regarding gridlines or borders.
+
+  11. A legend would be useful for better interpretation.'
+data_attributes:
+- Price
+- Availability
+- Number of products sold
+- Revenue generated
+- Stock levels
+- Lead times
+- Order quantities
+- Shipping times
+- Shipping costs
+- Manufacturing costs
+- Defect rates

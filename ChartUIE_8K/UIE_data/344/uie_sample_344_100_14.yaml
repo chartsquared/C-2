@@ -1,0 +1,59 @@
+initial_prompt: Please create a Choropleth map visualizing the distribution of blockchain-related
+  job opportunities in India for 2022, using data from Glassdoor.com. Make sure to
+  highlight the number of job postings per state, with the color intensity representing
+  the concentration of job posts. Additionally, include details such as the average
+  salary range for the jobs in each state. Use data provided including job titles,
+  companies, locations, easy apply options, and salary limits. This map will help
+  understand which areas have the most blockchain job opportunities and the potential
+  salary expectation in those areas.
+questions: '1. Do you have a preferred color scheme for the Choropleth map?
+
+  2. Would you like to include state labels on the map?
+
+  3. How would you prefer the salary ranges to be displayed — as exact figures or
+  as a range (e.g., minimum to maximum)?
+
+  4. Should the number of job postings be displayed as absolute values or as percentages
+  relative to the highest posting state?
+
+  5. Do you have a preference for the map projection (e.g., Albers, Mercator)?
+
+  6. Should there be any legends or tooltips to explain the color intensity and other
+  data points?
+
+  7. Would you like to highlight specific states or regions for emphasis?
+
+  8. Do you want to include any additional data points, such as job titles or companies,
+  in the map?
+
+  9. Should the map include any annotations or text explanations for certain regions?
+
+  10. What level of detail do you prefer for the map''s geographic boundaries (e.g.,
+  states only, districts within states)?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Yes, please include state labels.
+
+  3. I prefer the salary ranges to be displayed as a range.
+
+  4. Absolute values would be fine.
+
+  5. I am not sure.
+
+  6. Yes, please include legends or tooltips.
+
+  7. No specific states or regions need to be highlighted.
+
+  8. No, just the number of job postings and salary ranges.
+
+  9. I do not have a specific preference.
+
+  10. States only.
+
+  <end of user emulated response>'
+data_attributes:
+- Location
+- Salary_Lower_Limit
+- Salary_Upper_Limit

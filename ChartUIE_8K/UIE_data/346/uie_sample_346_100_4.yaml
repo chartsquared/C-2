@@ -1,0 +1,35 @@
+initial_prompt: Please create a violin plot for the Global Video Game Sales dataset.
+  Use the Genre column on the x-axis to show the distribution of Global_Sales on the
+  y-axis. This will help visualize how sales vary across different game genres globally.
+  Make sure to include outliers and show the quartiles within each genre. Additionally,
+  please use different colors for each genre for better differentiation and add appropriate
+  labels for the axes and the title of the plot. Thank you!
+questions: '1. Do you have a preferred color palette for the different genres?
+
+  2. Is there a specific title you would like for the plot?
+
+  3. Do you want any specific styling for the axis labels and titles?
+
+  4. Would you like a specific font or font size for the labels and title?
+
+  5. Should the plot have grid lines in the background?
+
+  6. Do you prefer a specific order for the genres on the x-axis?
+
+  7. Would you like to add any annotations to highlight specific data points?'
+answers: '1. I am not sure.
+
+  2. "Global Video Game Sales Distribution by Genre"
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, please include grid lines.
+
+  6. No, I have no specific preference.
+
+  7. I do not know.'
+data_attributes:
+- Genre
+- Global_Sales

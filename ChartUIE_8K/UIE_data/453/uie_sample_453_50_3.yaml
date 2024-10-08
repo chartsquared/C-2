@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap showing gene expression levels across different samples,
+  including fetal lung, adenocarcinoma, SCC, LCLC, and SCLC. Use color gradients to
+  represent expression values, with rows representing genes and columns representing
+  sample types.
+questions: '1. What color gradient would you prefer for representing gene expression
+  values (e.g., red to blue, yellow to green)?
+
+  2. Do you have a preference for the scale of the heatmap (e.g., log expression values,
+  standardized values)?
+
+  3. Should the heatmap include a color legend for easier interpretation?
+
+  4. Would you like to cluster rows (genes) and/or columns (samples) to identify patterns
+  or similarities?
+
+  5. Do you want to highlight certain genes or sample types in a specific way (e.g.,
+  bold labels, different color)?
+
+  6. Are there any specific labels or annotations you want to include on the heatmap
+  (e.g., sample type labels, gene function annotations)?
+
+  7. What level of detail do you want for the gene labels (e.g., full gene names,
+  abbreviated names)?
+
+  8. Should any missing data be handled in a specific way (e.g., imputed, marked with
+  a different color)?'
+answers: '1. I am not sure.
+
+  2. Standardized values would be preferable.
+
+  3. Yes, the heatmap should include a color legend for easier interpretation.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. I do not have any specific labels or annotations in mind.
+
+  7. Full gene names would be good.
+
+  8. I am not sure.'
+data_attributes:
+- gene
+- fetal_lung
+- 232-97_SCC
+- 68-96_Adeno
+- 12-00_Adeno
+- 237-97_Adeno
+- 246-97_SCC_p
+- 256-97_LCLC
+- 314-99_SCLC

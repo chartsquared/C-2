@@ -1,0 +1,40 @@
+initial_prompt: Please create a geographic heatmap visualizing the distribution of
+  suppliers and their respective locations. Use the Supplier name and Location data
+  columns to show where each supplier is situated globally. Also, highlight the stock
+  levels at each location. The heatmap should indicate regions with higher stock levels
+  using a gradient color scheme. This will help us identify key geographical areas
+  contributing to our supply chain's inventory. Make sure the map is interactive so
+  we can zoom in on specific regions for a detailed overview of supplier distribution
+  and stock availability. Thank you!
+questions: "1. Do you have a preferred color scheme for the gradient representing\
+  \ stock levels? \n2. How would you like to categorize the different stock levels\
+  \ (e.g., low, medium, high)?\n3. Would you prefer specific labels or tooltips to\
+  \ display more detailed information when hovering over a region?\n4. Are there any\
+  \ specific geographic boundaries (e.g., countries, continents) that you want to\
+  \ emphasize or exclude?\n5. Do you have a preferred map projection (e.g., Mercator,\
+  \ Robinson)?\n6. Is there a specific base map style you prefer (e.g., satellite,\
+  \ terrain, streets)?\n7. Would you like any additional markers or annotations on\
+  \ the map to highlight regions of special interest?\n8. Do you have a preferred\
+  \ font style and size for any text or labels on the map?\n9. Should the map include\
+  \ a legend to explain the color gradient and stock level categories?"
+answers: '1. I do not have a specific preference.
+
+  2. Low, medium, high should work well.
+
+  3. I am not sure.
+
+  4. No specific geographic boundaries to emphasize or exclude.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. No specific preference.
+
+  9. Yes, please include a legend to explain the color gradient and stock level categories.'
+data_attributes:
+- Supplier name
+- Location
+- Stock levels

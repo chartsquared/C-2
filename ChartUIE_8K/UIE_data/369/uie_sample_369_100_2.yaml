@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap to visualize the air travel data between major US
+  cities. Use different colors to highlight the weight of connections between the
+  cities. Annotate key points to indicate cities with highest and lowest weights,
+  and provide context using non-data-driven annotations about the regions. Use text
+  annotations to highlight data points with high or low passenger numbers. The purpose
+  is to easily identify and compare the travel intensity and connectivity between
+  various regions in the US. Highlights should make the Midwest, East, and West regions
+  explicitly stand out.
+questions: '1. Do you have a preferred color scheme or palette for the heatmap?
+
+  2. Should we use a specific range of colors to represent different weight magnitudes?
+
+  3. Do you have preferences for the shape or style of annotations on key points?
+
+  4. How detailed should the non-data-driven annotations about the regions be?
+
+  5. Should we include any specific city landmarks or airports in the annotations
+  about regions?
+
+  6. Would you prefer any specific labeling style or font for the text annotations
+  highlighting data points with high or low passenger numbers?
+
+  7. Do you want any grid lines or borders around the regions to further distinguish
+  the Midwest, East, and West?
+
+  8. Are there any specific cities or connections you want to be specially highlighted
+  or emphasized?
+
+  9. Do you have a preferred orientation (horizontal/vertical) for the heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, a specific range would be nice to distinguish the different weights.
+
+  3. I do not know.
+
+  4. They should be detailed enough to give a good context, but not overly detailed.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, grid lines or borders around regions would be helpful.
+
+  8. Please highlight connections to and from New York City, Los Angeles, and Chicago.
+
+  9. I have no specific preference.'
+data_attributes:
+- weight
+- region
+- source
+- target
+- passengers

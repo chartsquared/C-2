@@ -1,0 +1,39 @@
+initial_prompt: I have a dataset about Superstore Sales that captures various sales
+  metrics such as profit, sales, and regions. I want a Choropleth map visualization
+  highlighting the profit across different states in the United States. Use the ‘State’
+  column to distinguish between the states by color intensity, where darker shades
+  represent higher profit margins. This will help me quickly identify which regions
+  are performing better. Make sure the map includes data labels for each state displaying
+  the profit value. Thank you!
+questions: '1. Do you have a preferred color palette for the Choropleth map?
+
+  2. Should the map have a specific title or any additional annotations?
+
+  3. Do you want a legend to be included to explain the color intensities?
+
+  4. Would you prefer the state labels to be inside the state boundaries or outside
+  with connectors?
+
+  5. Do you want to include any specific font style or size for the data labels and
+  state names?
+
+  6. Should the map include any borderlines for the states, and if so, in what color
+  or style?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, a legend should be included to explain the color intensities.
+
+  4. Inside the state boundaries.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- State
+- Profit

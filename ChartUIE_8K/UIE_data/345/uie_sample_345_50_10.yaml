@@ -1,0 +1,43 @@
+initial_prompt: Create a grouped bar chart comparing internship stipends for different
+  job titles across companies. Use "Company_Name" as the x-axis, distinguish jobs
+  by different colors, and display stipend ranges on the y-axis.
+questions: '1. Do you have a preference for the color scheme to represent different
+  job titles?
+
+  2. Should the chart include a legend to identify the job titles corresponding to
+  each color?
+
+  3. Do you prefer a specific ordering of companies on the x-axis, such as alphabetical
+  or by average stipend?
+
+  4. Would you like grid lines to be displayed on the chart for better readability?
+
+  5. Should the stipend values on the y-axis be displayed as raw numbers or with currency
+  symbols?
+
+  6. Do you want to include error bars to represent the range of stipends, or display
+  the minimum and maximum values directly on the bars?
+
+  7. Would you like to add labels to the bars showing the exact stipend amounts?
+
+  8. Do you prefer horizontal or vertical orientation for the bars?'
+answers: '1. I am not sure.
+
+  2. Yes, the chart should include a legend to identify the job titles corresponding
+  to each color.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. With currency symbols.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Vertical orientation for the bars.'
+data_attributes:
+- Company_Name
+- JobTitles
+- Stipend

@@ -1,0 +1,43 @@
+initial_prompt: Create a box chart for the fish data showing the median, lower 95,
+  and upper 95 bounds for GHG stressor by taxonomic groups on aquaculture. Highlight
+  variance, emphasizing taxa with broader ranges and missing values. Include text
+  annotations to note median values.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. What style of text annotations would you like for the median values (e.g., font
+  size, color, placement)?
+
+  3. Would you like any specific highlighting technique for taxa with broader ranges
+  (e.g., different shades, patterns)?
+
+  4. How would you prefer us to indicate missing values on the chart?
+
+  5. Do you have any preferences for the chart title and axis labels?
+
+  6. Should the box chart include a legend explaining the different bounds?
+
+  7. Is there a particular way you would like the data to be sorted or grouped on
+  the x-axis?
+
+  8. Do you have any specific preferences for the chart''s layout or dimensions?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. Indicate missing values with a special marker or note.
+
+  5. I have no specific preference.
+
+  6. Yes, please include a legend.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- taxa
+- median
+- lower_95
+- upper_95
+- stressor

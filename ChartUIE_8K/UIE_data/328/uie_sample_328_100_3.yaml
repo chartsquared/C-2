@@ -1,0 +1,56 @@
+initial_prompt: I have a yeast dataset with various features like mcg, gvh, alm, etc.
+  I need a box plot to explore the distribution of these features. Please create a
+  box chart for each feature (mcg, gvh, alm, mit, erl, pox, vac, nuc) to compare their
+  spread and identify any outliers. This will help analyze the distribution within
+  each feature and any anomalies in the yeast genomic data. Also, label the charts
+  clearly with the respective feature names on the axis. Thank you!
+questions: '1. Do you have a preferred color palette for the box plots?
+
+  2. Would you like to include a title for each box plot?
+
+  3. Should the y-axis of all box plots be standardized to the same scale or customized
+  for each feature?
+
+  4. Do you want to highlight outliers in a specific way (e.g., with different colors
+  or shapes)?
+
+  5. Is there any specific annotation or annotation style you want to be added to
+  the box plots?
+
+  6. Do you prefer grid lines on the plots for better readability, and if so, should
+  they be both horizontal and vertical?
+
+  7. Would you like to include any summary statistics (e.g., mean, median) on the
+  box plots?
+
+  8. Should the box plots be displayed individually or combined into a single composite
+  chart?
+
+  9. Do you have any specific requirements for the font type and size for the chart
+  labels?'
+answers: '1. I have no specific preference.
+
+  2. Yes, please include a title for each box plot.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, include grid lines for better readability.
+
+  7. I do not know.
+
+  8. Combine into a single composite chart.
+
+  9. I have no specific preference.'
+data_attributes:
+- mcg
+- gvh
+- alm
+- mit
+- erl
+- pox
+- vac
+- nuc

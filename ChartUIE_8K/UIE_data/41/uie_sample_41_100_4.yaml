@@ -1,0 +1,44 @@
+initial_prompt: Create a grouped bar chart visualizing the expression levels of various
+  proteins for different MouseIDs. Use 'MouseID' on the x-axis and the relative protein
+  expression levels of 'DYRK1A_N', 'ITSN1_N', and 'BDNF_N' on the y-axis. Group bars
+  for each protein type by 'MouseID'. Title the chart "Protein Expression Levels by
+  MouseID". Use different colors to represent each protein, and include a legend for
+  clarity. This will help compare protein expression across different MouseIDs in
+  the dataset. Ensure you handle missing values appropriately.
+questions: '1. Do you have any specific color preferences for representing each protein
+  in the grouped bar chart?
+
+  2. How would you like to handle missing values in the dataset (e.g., omit, replace
+  with a specific value)?
+
+  3. What specific font size and type would you prefer for the chart title and axis
+  labels?
+
+  4. Do you have any preferences for the order in which the proteins (''DYRK1A_N'',
+  ''ITSN1_N'', ''BDNF_N'') are displayed?
+
+  5. Would you like to include any specific annotations or markers on the chart to
+  highlight important data points or findings?
+
+  6. Do you want to specify any axis limits for the y-axis (protein expression levels)?
+
+  7. Do you prefer bars to be of a specific width or spacing within the grouped bar
+  chart?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure, maybe you can decide the best way to handle missing values.
+
+  3. I have no specific preference for font size and type.
+
+  4. I do not know, you can display them in any order.
+
+  5. I have no specific preference regarding annotations or markers.
+
+  6. I do not have any preference for y-axis limits.
+
+  7. I do not have any preference for bar width or spacing.'
+data_attributes:
+- MouseID
+- DYRK1A_N
+- ITSN1_N
+- BDNF_N

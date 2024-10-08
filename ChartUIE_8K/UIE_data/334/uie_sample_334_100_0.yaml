@@ -1,0 +1,57 @@
+initial_prompt: Create a heatmap to visualize retail sales forecasting. The heatmap
+  should display the relationship between sales (`venda`), stock (`estoque`), and
+  price (`preco`) over time (`data`). Use text annotations to highlight the highest
+  and lowest sales days. Adjust the color scale to emphasize high and low stock levels.
+  Include highlights to distinguish different price ranges. Ensure data-driven annotations
+  clarify peak periods and low stock warnings. This visualization aims to help business
+  stakeholders quickly interpret sales trends and inventory needs over time, aiding
+  in strategic business decisions.
+questions: '1. Do you have any preferred color palettes for the heatmap?
+
+  2. How would you like the highest and lowest sales days to be annotated (e.g., labels,
+  icons, specific colors)?
+
+  3. Are there any specific price ranges that you would like to see highlighted?
+
+  4. Do you have preferences for the color scale differentiating high and low stock
+  levels?
+
+  5. Would you like the heatmap to include gridlines for better readability?
+
+  6. Are there specific date ranges or time intervals you would prefer the heatmap
+  to focus on?
+
+  7. How detailed do you want the text annotations to be for highlighting peak periods
+  and low stock warnings?
+
+  8. Would you like separate legends for sales, stock levels, and price ranges, or
+  a combined legend?
+
+  9. Is there a preferred font style or size for the annotations and labels?
+
+  10. Do you have any preferences for the overall layout or orientation of the heatmap
+  (e.g., horizontal vs. vertical)?'
+answers: '1. I am not sure.
+
+  2. Labels would be great for annotating the highest and lowest sales days.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, including gridlines for better readability would be helpful.
+
+  6. I am not sure.
+
+  7. Detailed enough to clearly identify peak periods and low stock warnings.
+
+  8. I prefer a combined legend for simplicity.
+
+  9. I do not have a specific preference.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- data
+- venda
+- estoque
+- preco

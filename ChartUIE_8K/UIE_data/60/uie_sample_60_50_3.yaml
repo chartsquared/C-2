@@ -1,0 +1,38 @@
+initial_prompt: Please create a histogram showing the distribution of customer ratings
+  (aggregateRating/ratingValue) for the Best Buy 2024 Windows laptops. Use the rating
+  values to populate the x-axis and the number of reviews (aggregateRating/reviewCount)
+  on the y-axis.
+questions: '1. What color scheme would you prefer for the histogram?
+
+  2. Do you have a specific title in mind for the chart?
+
+  3. Do you want to display specific labels on the x-axis and y-axis?
+
+  4. Would you like to include gridlines in the background of the chart?
+
+  5. Do you prefer any specific font styles or sizes for the text within the chart?
+
+  6. Is there a particular bin size you prefer for the histogram bars?
+
+  7. Do you want any annotations or markers for specific rating values?
+
+  8. Should the chart include a legend, even if there is only one data series?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Labels like "Rating Value" for the x-axis and "Number of Reviews" for the y-axis
+  would be great.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not have any specific preference.
+
+  8. I am not sure.'
+data_attributes:
+- aggregateRating/ratingValue
+- aggregateRating/reviewCount

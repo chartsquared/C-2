@@ -1,0 +1,59 @@
+initial_prompt: I need a heatmap to visualize the Living Planet Index data across
+  different years for Africa. The columns should show the Year, Living Planet Index,
+  Upper CI, and Lower CI. The heatmap should highlight ranges in these indices over
+  time, with color gradients representing index values. This will help in easily identifying
+  trends, spikes, or drops in the Living Planet Index. Also, ensure the heatmap is
+  easy to interpret with a clear legend and labeling for context. We are focusing
+  on biodiversity monitoring, so emphasize any patterns across the 47 years provided.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What ranges should the color gradients represent?
+
+  3. Do you want the years to be displayed on the x-axis or y-axis?
+
+  4. Should the Living Planet Index, Upper CI, and Lower CI be shown in separate heatmaps
+  or combined into one?
+
+  5. Do you have a preference for the scale of the color gradient (e.g., linear, logarithmic)?
+
+  6. Is there a specific format you prefer for the labeling of the axes?
+
+  7. Would you like any specific annotations or markers to emphasize key patterns
+  or trends?
+
+  8. Should the legend be positioned in a particular area of the heatmap?
+
+  9. Do you have a preferred style for the grid lines (e.g., dashed, solid) or want
+  them to be hidden?
+
+  10. How detailed should the tooltip information be if a user hovers over a specific
+  cell in the heatmap?
+
+  11. Should there be any specific threshold values highlighted, such as critical
+  points in the Living Planet Index?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the years to be displayed on the y-axis.
+
+  4. Combine them into one heatmap if possible.
+
+  5. I do not have any specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not have a specific preference.
+
+  9. I prefer solid grid lines.
+
+  10. I do not need tooltip information as this is an image.
+
+  11. I am not sure.'
+data_attributes:
+- Year
+- Living Planet Index
+- Upper CI, Living Planet Index (95% CI)
+- Lower CI, Living Planet Index (95% CI)

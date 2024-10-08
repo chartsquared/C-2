@@ -1,0 +1,61 @@
+initial_prompt: I need a line chart visualizing the prices of high-tech companies
+  on NASDAQ over time. Please use Apple Inc., Microsoft Corporation, and Alphabet
+  Inc. as examples. For each company, plot the price on the y-axis against time on
+  the x-axis. The chart should also show pricing changes and percentage changes as
+  additional lines or markers. This will help in analyzing the pricing trends and
+  volatility of these top tech companies in relation to each other. Ensure that the
+  data points are clearly distinguishable with legends for each company. Thank you!
+questions: '1. Do you have any specific colors you would like to use for each company
+  in the line chart?
+
+  2. Do you prefer a specific line style (solid, dashed, dotted) for the price, pricing
+  changes, and percentage changes?
+
+  3. How would you like the markers for data points to be styled (shape, size, color)
+  for each company?
+
+  4. Would you like the x-axis to represent a specific time interval (days, weeks,
+  months, years)?
+
+  5. Do you require gridlines for better readability, and if so, at what interval?
+
+  6. Would you prefer a specific font style or size for the legends and labels?
+
+  7. Do you want to include annotations for significant price changes or events on
+  the chart?
+
+  8. Should the y-axis be on a linear or logarithmic scale?
+
+  9. Would you like to include a title and subtitle for the chart, and if so, what
+  should they be?
+
+  10. Do you have any preferences for the chart''s background or theme (light, dark,
+  customized)?
+
+  '
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Months would be best.
+
+  5. Yes, I think gridlines at monthly intervals could help.
+
+  6. I have no specific preference.
+
+  7. Yes, annotations for significant price changes or events would be useful.
+
+  8. A linear scale for the y-axis.
+
+  9. Yes, a title "Price Trends of High-Tech Companies on NASDAQ" and subtitle "Apple
+  Inc., Microsoft Corporation, and Alphabet Inc. over Time".
+
+  10. I have no specific preference.'
+data_attributes:
+- price
+- pricing_changes
+- pricing_percentage_changes
+- name
+- symbol

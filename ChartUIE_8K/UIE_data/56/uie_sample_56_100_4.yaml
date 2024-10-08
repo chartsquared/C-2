@@ -1,0 +1,59 @@
+initial_prompt: Please create a line chart visualizing the historical stock data for
+  APPLE. The chart should include multiple lines for the 'Open', 'High', 'Low', 'Close',
+  and 'Adj Close' prices over time. Use the 'Date' column as the x-axis to show the
+  timeline. Ensure the y-axis represents the stock prices. Additionally, add a secondary
+  y-axis to depict the 'Volume' of stocks traded. The goal is to see the price trends
+  over time and compare the trading volume on the same chart. This will help understand
+  price movement and trading activity. Thank you!
+questions: '1. Do you have a preferred color scheme for the lines representing ''Open'',
+  ''High'', ''Low'', ''Close'', and ''Adj Close'' prices?
+
+  2. What style would you like the lines to be (e.g., solid, dashed, dotted)?
+
+  3. Are there specific date ranges you want to focus on or highlight on the x-axis?
+
+  4. Do you prefer a particular type of marker (e.g., circle, square) for data points
+  on the lines?
+
+  5. How would you like the secondary y-axis for ''Volume'' to be formatted (e.g.,
+  color, scale)?
+
+  6. Would you like to include data labels or tooltips for specific data points?
+
+  7. Do you have any preferences for the axis titles and chart title font sizes and
+  styles?
+
+  8. Would you like gridlines on the chart, and if so, in what style?
+
+  9. Are there any annotations or reference lines you would like to add to the chart?
+
+  10. How would you like to display the legend (e.g., position, font size, style)?'
+answers: '1. I have no specific preference for the color scheme.
+
+  2. I am not sure, maybe solid lines would be good.
+
+  3. I am not sure about specific date ranges; any historical data available will
+  work.
+
+  4. I do not have any preference for the type of marker.
+
+  5. I am not sure, just ensure the ''Volume'' is clearly readable and understandable.
+
+  6. I do not know about data labels or tooltips, maybe not necessary.
+
+  7. I have no specific preference for the axis titles and chart title font sizes
+  and styles.
+
+  8. I am not sure about gridlines; whatever is standard.
+
+  9. I have no specific annotations or reference lines to add.
+
+  10. I have no specific preference for the legend display.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

@@ -1,0 +1,54 @@
+initial_prompt: I'd like a line chart to visualize the "Global_Sales" over "Year"
+  for the top-selling video games. Plot the "Name" of the games on the legend to differentiate
+  each line. Ensure the x-axis represents "Year" and the y-axis shows "Global_Sales"
+  in millions. Highlight significant sales trends and peaks for major titles across
+  the years. This will help analyze the popularity and success of different games
+  over time. Please ensure the data points are easy to distinguish with markers and
+  make the chart color-coded for better clarity and engagement.
+questions: '1. Do you have specific color preferences for the lines representing each
+  game?
+
+  2. Would you like to customize the markers on the data points (e.g., shape, size)?
+
+  3. Are there specific years you want to highlight, perhaps with annotations?
+
+  4. Would you prefer a particular font type or size for the axis labels and legend?
+
+  5. Is there a specific way you''d like the legend to be positioned?
+
+  6. Do you have a preference for the chart background color or gridlines'' appearance?
+
+  7. Should the chart include a title, and if so, what should it be?
+
+  8. Would you like the chart to include any reference lines or zones to emphasize
+  significant trends or peaks?
+
+  9. Is there a preferred format for displaying the y-axis values (e.g., with thousand
+  separators, abbreviations)?
+
+  10. Do you want the axis range to be fixed or adaptive to the data provided?'
+answers: '1. I am not sure about specific color preferences.
+
+  2. I do not know, any default markers should be fine.
+
+  3. I have no specific preference.
+
+  4. I am not sure about the font type or size.
+
+  5. I do not know, any standard positioning for the legend is acceptable.
+
+  6. I have no specific preference for the background color or gridlines.
+
+  7. Yes, please title it "Top-Selling Video Games Global Sales Over the Years".
+
+  8. I am not sure, perhaps some significant trends or peaks could be highlighted
+  if it''s clear.
+
+  9. Yes, please display the y-axis values with million abbreviations (e.g., 1M for
+  one million).
+
+  10. I do not know, adaptive to the data provided sounds good.'
+data_attributes:
+- Year
+- Global_Sales
+- Name

@@ -1,0 +1,44 @@
+initial_prompt: Please create a choropleth map visualizing bike and pedestrian counts
+  across different crossings in Seattle over time. Highlight areas with the highest
+  activity. Use data from 419.csv and focus on trends by date and direction.
+questions: '1. What color scheme or palette would you prefer for the choropleth map?
+
+  2. Do you have a preferred date range or specific time intervals you want to focus
+  on?
+
+  3. Should the map include a legend explaining the color gradients?
+
+  4. Do you prefer a specific method of highlighting areas with the highest activity
+  (e.g., color intensity, labels, markers)?
+
+  5. Would you like the data to be aggregated by a particular time unit (e.g., hourly,
+  daily, weekly)?
+
+  6. Do you want different visual indicators for bike counts and pedestrian counts,
+  or should they be combined?
+
+  7. Are there any specific crossings or regions you want to be distinctly labeled
+  on the map?
+
+  8. Should the map include annotations or tooltips for additional context?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the map should include a legend explaining the color gradients.
+
+  4. I prefer using color intensity to highlight areas with the highest activity.
+
+  5. Daily aggregation would be good.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- date
+- crossing
+- direction
+- bike_count
+- ped_count

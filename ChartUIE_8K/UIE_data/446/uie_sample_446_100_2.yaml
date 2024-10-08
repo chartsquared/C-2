@@ -1,0 +1,57 @@
+initial_prompt: I need a grouped bar chart to visualize the number of animal rescues
+  by borough and year. The x-axis should show different boroughs, and the y-axis should
+  display the number of incidents. Each bar group should represent a different year
+  (cal_year). Add text annotations on bars that have the highest and lowest rescue
+  counts to highlight significant data points. This will help in understanding the
+  distribution of animal rescues across boroughs and changes over years. Use vibrant
+  colors to distinguish between different years.
+questions: '1. Do you have a preferred color palette or specific colors you would
+  like to use for each year?
+
+  2. Should the text annotations for the highest and lowest rescue counts include
+  both the number and the year?
+
+  3. Do you have a preferred font style or size for the axis labels, legend, and annotations?
+
+  4. Would you like grid lines on the chart for better readability? If yes, would
+  you prefer them to be horizontal, vertical, or both?
+
+  5. Do you have a preference for the order in which the boroughs are displayed on
+  the x-axis? For example, alphabetical or by rescue count?
+
+  6. Should the years be displayed in ascending or descending order within each bar
+  group?
+
+  7. Do you want to include a title and subtitle for the chart? If so, please provide
+  the text.
+
+  8. Should there be a legend indicating which colors correspond to which years?
+
+  9. Do you prefer bars to be labeled at the center or at the end of each bar?
+
+  10. Would you like any additional annotations or markers, such as overall trends
+  or outliers, to be highlighted in the chart?'
+answers: '1. I do not know.
+
+  2. Yes, the text annotations should include both the number and the year.
+
+  3. I have no specific preference.
+
+  4. Yes, I would like grid lines. Horizontal grid lines would be better for readability.
+
+  5. I am not sure.
+
+  6. Ascending order would be fine.
+
+  7. Yes, title: "Animal Rescues by Borough and Year", subtitle: "Distribution and
+  Trends Over the Years"
+
+  8. Yes, there should be a legend indicating which colors correspond to which years.
+
+  9. At the end of each bar.
+
+  10. I do not know.'
+data_attributes:
+- borough
+- cal_year
+- incident_number

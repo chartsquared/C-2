@@ -1,0 +1,48 @@
+initial_prompt: I would like to see a line chart that shows the trend over loan terms
+  (loan_term) with different loan amounts (loan_amount), income yearly (income_annum),
+  and loan status (loan_status) over time. I want to understand how the loan amount
+  and income influence the approval or rejection status throughout different loan
+  terms. Please plot the loan terms on the x-axis, and have multiple lines representing
+  loan amounts, income, and statuses on the y-axis. This will help in visualizing
+  trends in loan approvals based on financial metrics over time. Thank you!
+questions: '1. Do you have a preferred color scheme for the lines representing different
+  data attributes (loan amounts, income, and loan statuses)?
+
+  2. Would you like any specific line styles (solid, dashed, dotted) for different
+  data attributes?
+
+  3. How would you prefer the loan status to be represented on the chart (e.g., separate
+  lines for approved and rejected, color-coded markers)?
+
+  4. Should we include data point markers on the lines? If yes, do you have a preferred
+  style or shape for these markers?
+
+  5. Would you like to see grid lines on the chart to make it easier to read values?
+
+  6. Do you prefer any specific labels or titles for the axes and the chart overall?
+
+  7. Would you like to include a legend on the chart? If so, where would you prefer
+  it to be positioned (top, bottom, left, right)?
+
+  8. Are there any specific ranges or intervals for the axes that you would like to
+  be set?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I am not sure about the line styles.
+
+  3. Separate lines for approved and rejected statuses would be helpful.
+
+  4. I am not sure about the data point markers.
+
+  5. Yes, please include grid lines to make it easier to read values.
+
+  6. I do not know about specific labels or titles.
+
+  7. Yes, please include a legend, and position it at the top.
+
+  8. I do not know about specific ranges or intervals for the axes.'
+data_attributes:
+- loan_term
+- loan_amount
+- income_annum
+- loan_status

@@ -1,0 +1,58 @@
+initial_prompt: I have a dataset containing information about different continents,
+  including average temperature, population, area, and GDP. I want to create a choropleth
+  map that visualizes these metrics across continents. The map should use color gradients
+  to represent the average temperature and display additional interactive features
+  like tooltips or pop-ups that show the population, area, and GDP when hovering over
+  each continent. Please ensure the map is visually intuitive and allows for easy
+  comparison between the continents. The end goal is to have a clear, informative,
+  and engaging visual representation of this geographic data.
+questions: '1. Do you have a preferred color scheme for the gradient representing
+  the average temperature?
+
+  2. Do you prefer a specific map projection (e.g., Mercator, Robinson)?
+
+  3. Are there specific labels or legends you would like to include on the map?
+
+  4. Do you have a preference for the font style or size used in the map?
+
+  5. Are there any specific data annotations you would like to see on the map?
+
+  6. Would you like to include any geographical boundaries or markers on the map?
+
+  7. Do you have any preferences for the range of the color gradient (e.g., specific
+  temperature ranges)?
+
+  8. Is there a maximum or minimum number of color breaks you prefer for the gradient
+  scale?
+
+  9. Are there particular visual elements you want to emphasize for the general public,
+  researchers, or policymakers?
+
+  10. Would you like to include a title and subtitle for the map? If so, do you have
+  a specific title in mind?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend explaining the color gradient for average temperature.
+
+  4. I have no specific preference.
+
+  5. No, I am not sure.
+
+  6. Yes, include geographical boundaries between the continents.
+
+  7. I do not have a preference for specific temperature ranges.
+
+  8. I am not sure, maybe 5-7 color breaks would be good.
+
+  9. I am not sure.
+
+  10. Yes, please include a title. The title can be "Global Continent Metrics Visualization"
+  and the subtitle "Average Temperature with Population, Area, and GDP".'
+data_attributes:
+- Average_Temperature
+- Population
+- Area
+- GDP
+- Continent

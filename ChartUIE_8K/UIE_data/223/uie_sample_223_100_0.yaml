@@ -1,0 +1,46 @@
+initial_prompt: Create a Choropleth map visualizing India's trade data (1997-July
+  2022) based on countries. Use color gradients to represent the total trade volume.
+  Include text annotations to highlight top 5 countries by total trade and trade balance.
+  Emphasize the countries with significant values using bold borders or contrasting
+  colors. The map should clearly depict export, import, total trade, and trade balance.
+  Use the Financial Year(start) to differentiate the yearly data trends. This visualization
+  will help in understanding India's trade distribution and spotting key trading partners
+  over the years.
+questions: '1. Do you have a preferred color palette for the gradients representing
+  total trade volume?
+
+  2. How would you like the text annotations to appear (e.g., font size, style)?
+
+  3. Do you have a preference for the type of bold borders or contrasting colors to
+  emphasize countries with significant values?
+
+  4. Should the map include a legend for interpreting the color gradients and border
+  styles?
+
+  5. Are there specific formatting styles for the financial years you prefer on the
+  map?
+
+  6. How detailed should the export, import, total trade, and trade balance data be
+  displayed (e.g., as aggregates, by year, etc.)?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer using bold borders for the emphasis.
+
+  4. Yes, the map should include a legend.
+
+  5. I am not sure.
+
+  6. Display the data as aggregates for simplicity.
+
+  <end of user response>'
+data_attributes:
+- Country
+- Export
+- Import
+- Total Trade
+- Trade Balance
+- Financial Year(start)

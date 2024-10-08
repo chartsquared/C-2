@@ -1,0 +1,56 @@
+initial_prompt: Create a bar chart to compare the 'avg_local_pkt_rate' across different
+  'external_ips' names. Highlight data points to emphasize high and low packet rates.
+  Annotate 3-4 highest and lowest values to draw clear insights into the 'avg_local_pkt_rate'
+  distribution. Use different colors to visually distinguish the highlighted bars.
+  This will help in analyzing how external IP interactions influence local packet
+  rates and potentially identify unusual patterns related to network security and
+  Android malware behaviors. Ensure the chart is easily interpretable for cybersecurity
+  analysis, focusing on the traffic behavior of Android devices.
+questions: '1. Do you have a preferred color palette for highlighting the high and
+  low packet rates?
+
+  2. Would you like to see any specific labels or legends to accompany the different
+  colors used for highlighting?
+
+  3. How would you prefer the annotations for the highest and lowest values to be
+  displayed? For example, should they include specific text or symbols?
+
+  4. Do you have a preference for the orientation of the bar chart (vertical or horizontal)?
+
+  5. Should there be any specific order of the bars (e.g., sorted by packet rates,
+  alphabetical by external IPs)?
+
+  6. Are there any specific formatting preferences for the axes labels and titles?
+
+  7. Would you like to include gridlines in the background for better readability
+  of the bar chart?
+
+  8. Do you have a preference for the font style and size for the chart annotations
+  and labels?
+
+  9. Should there be a specific title for the chart? If yes, what should it be?
+
+  10. Is there any additional information or details you would like to be included
+  in tooltips when hovering over the bars?'
+answers: '1. I do not have a preferred color palette.
+
+  2. I am not sure.
+
+  3. Specific text annotations would be fine.
+
+  4. I do not know.
+
+  5. Sorting the bars by packet rates would be useful.
+
+  6. I am not sure.
+
+  7. Yes, please include gridlines for better readability.
+
+  8. I do not have a specific preference for font style and size.
+
+  9. Title the chart "Comparison of Avg Local Packet Rates by External IPs".
+
+  10. I do not know.'
+data_attributes:
+- avg_local_pkt_rate
+- external_ips

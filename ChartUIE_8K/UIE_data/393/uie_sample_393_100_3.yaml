@@ -1,0 +1,63 @@
+initial_prompt: I need a network diagram that shows the academic collaboration between
+  universities. The nodes represent the universities, and the edges show the connections
+  or collaborations between them. Use data from the CSV to visualize this. Each node
+  should be labeled with the university name (like Harvard, MIT, Stanford), and the
+  edges should connect based on the 'source' and 'target' values. The 'value' column
+  can represent the strength or frequency of collaboration. Please ensure missing
+  values are handled appropriately in the visualization. This will help us understand
+  how these institutions are interconnected in education and research collaborations.
+questions: '1. Do you have any specific color preferences for the nodes or edges?
+
+  2. Should the node size vary based on any specific attribute, such as the number
+  of collaborations?
+
+  3. Do you prefer specific shapes for the nodes to represent different types of universities
+  or collaborations?
+
+  4. Is there a particular way you would like missing values to be represented or
+  handled in the visualization?
+
+  5. Would you like the edges to be weighted or styled differently based on the strength
+  or frequency of the collaboration?
+
+  6. Do you want any specific labels or annotations on the edges to indicate the strength
+  or frequency of the collaborations?
+
+  7. Are there any specific universities you want to highlight or focus on in the
+  diagram?
+
+  8. Do you have a preferred layout for the network diagram (e.g., circular, hierarchical,
+  force-directed)?
+
+  9. Should there be a legend or key included to explain the visual encoding of the
+  attributes?
+
+  10. Are there any additional data points or contextual information you’d like included
+  in the visualization?'
+answers: '1. I do not know.
+
+  2. Yes, the node size should vary based on the number of collaborations.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Yes, the edges should be weighted or styled differently based on the strength
+  or frequency of the collaboration.
+
+  6. I do not know.
+
+  7. No, I do not have any specific universities to highlight or focus on.
+
+  8. I prefer a force-directed layout.
+
+  9. Yes, there should be a legend or key included to explain the visual encoding
+  of the attributes.
+
+  10. I am not sure.'
+data_attributes:
+- id
+- name
+- source
+- target
+- value

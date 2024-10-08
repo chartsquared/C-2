@@ -1,0 +1,56 @@
+initial_prompt: Create a box chart visualizing the distribution of radius_mean, texture_mean,
+  and perimeter_mean for different diagnosis groups. Highlight and annotate the medians
+  to easily compare between M (Malignant) and B (Benign).
+questions: '1. What color scheme would you prefer for the different diagnosis groups
+  (M and B)?
+
+  2. Do you have any preferred layout for the box charts (e.g., grouped horizontally
+  or vertically)?
+
+  3. Would you like the medians to be annotated with a specific style (e.g., color,
+  size, or shape of the marker)?
+
+  4. How would you like outliers to be displayed or highlighted, if at all?
+
+  5. Should the chart include grid lines for easier comparison of values across different
+  groups?
+
+  6. What font style and size do you prefer for the labels and annotations?
+
+  7. Is there a specific title or subtitle you want for the chart?
+
+  8. Would you like the axes to be fixed or dynamically adjusted based on the data?
+
+  9. Should the chart include a legend explaining the diagnosis groups?
+
+  10. Do you prefer any specific border style or thickness for the boxes in the box
+  chart?
+
+  11. Would you like to include any specific notes or annotations related to the data
+  on the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Highlighted with a different color, probably.
+
+  4. I do not know.
+
+  5. Yes, grid lines would be helpful.
+
+  6. I do not know.
+
+  7. No specific title in mind.
+
+  8. I am not sure.
+
+  9. Yes, please include a legend.
+
+  10. I have no specific preference.
+
+  11. No specific notes or annotations needed.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- diagnosis

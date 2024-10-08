@@ -1,0 +1,51 @@
+initial_prompt: I need a geographic heatmap to visualize the churn data. I want the
+  heatmap to show the distribution of customers across different geographical regions
+  (Geography column). The map should highlight areas with higher churn rates (Exited
+  column) compared to other regions. The color intensity should represent the churn
+  levels, with a clear legend. Also, include details like the number of active members
+  (IsActiveMember) and credit scores (CreditScore) for each region to provide additional
+  insights. This will help understand where to focus retention strategies for mitigating
+  churn in the business.
+questions: '1. Do you have a specific color scheme preference for the heatmap?
+
+  2. Do you prefer the map to be displayed using a particular geographic projection?
+
+  3. What level of granularity do you prefer for geographic regions (e.g., country,
+  state, city)?
+
+  4. Should the legend be placed in a specific location on the map?
+
+  5. Would you like any specific labeling or annotations on the map?
+
+  6. Do you prefer specific data aggregation methods for displaying the number of
+  active members and credit scores (e.g., mean, median)?
+
+  7. What range of values would you like to see highlighted in the legend for churn
+  levels?
+
+  8. Do you have a preferred font style and size for texts and labels on the map?
+
+  9. Should the heatmap include any additional overlays or markers to highlight specific
+  regions?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Country level would be good.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Mean would be fine.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.'
+data_attributes:
+- Geography
+- Exited
+- IsActiveMember
+- CreditScore

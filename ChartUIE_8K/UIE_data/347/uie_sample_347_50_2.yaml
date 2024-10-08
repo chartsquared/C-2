@@ -1,0 +1,53 @@
+initial_prompt: Create a bar chart showing the top 3 games based on Global Sales,
+  breaking down sales by regions (NA, EU, JP, Other). Annotate with Critic and User
+  Scores. Highlight variations in sales.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars for each region to be stacked or grouped side-by-side?
+
+  3. What type of annotations would you prefer for Critic and User Scores (e.g., labels
+  on bars, tooltips)?
+
+  4. Do you have a specific format for the axis labels and titles?
+
+  5. Should the chart include a legend to differentiate regional sales?
+
+  6. How would you like the variations in sales to be highlighted (e.g., different
+  colors, patterns)?
+
+  7. Are there any specific font preferences for the chart labels and annotations?
+
+  8. Do you want grid lines to be displayed on the chart for easier comparison?
+
+  9. Would you like any particular sorting order for the bars (e.g., by total sales,
+  by region)?
+
+  10. Do you have any preference for the width and spacing of the bars in the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Labels on bars.
+
+  4. I do not know.
+
+  5. Yes, the chart should include a legend.
+
+  6. Different colors.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. By total sales.
+
+  10. I do not know.'
+data_attributes:
+- Name
+- Global_Sales
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales
+- Critic_Score
+- User_Score

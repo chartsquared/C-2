@@ -1,0 +1,59 @@
+initial_prompt: Please create a stacked bar chart visualizing the total SALES per
+  CUSTOMERNAME, segmented by DEALSIZE. Each bar should represent a customer, and different
+  segments within the bar should represent the sizes of the deals (Small, Medium,
+  Large). Use different colors to distinguish the DEALSIZE segments. This will help
+  in understanding the contribution of different deal sizes to the overall sales for
+  each customer in the Automobile Sales data. Additionally, ensure that the chart
+  includes data labels for better clarity and interpretation.
+questions: '1. Do you have a preferred color scheme for the DEALSIZE segments (Small,
+  Medium, Large)?
+
+  2. How would you like the data labels to be displayed? Should they show the actual
+  sales value, percentage, or both?
+
+  3. Would you like to include a legend to denote what each color represents for the
+  DEALSIZE segments?
+
+  4. Do you prefer any specific font styles or sizes for the chart''s labels and title?
+
+  5. Should the chart include gridlines, and if so, would you like them to be horizontal,
+  vertical, or both?
+
+  6. Do you have a preference for the chart''s orientation (vertical bars or horizontal
+  bars)?
+
+  7. Would you like to include any specific annotations or markers on the chart to
+  highlight key insights?
+
+  8. Should the chart show only the top N customers based on total sales, or should
+  it include all customers? If top N, please specify the number.
+
+  9. Do you want the bars to be sorted in a specific order (e.g., ascending or descending
+  by total sales)?
+
+  10. Is there a specific title or subtitle you would like for the chart?'
+answers: '1. I am not sure.
+
+  2. The data labels should show the actual sales value.
+
+  3. Yes, please include a legend to denote what each color represents for the DEALSIZE
+  segments.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include horizontal gridlines.
+
+  6. Vertical bars would be preferred.
+
+  7. I am not sure.
+
+  8. Include all customers.
+
+  9. Yes, please sort the bars in descending order by total sales.
+
+  10. The title should be "Total Sales per Customer Segmented by Deal Size." I do
+  not have a specific subtitle in mind.'
+data_attributes:
+- CUSTOMERNAME
+- SALES
+- DEALSIZE

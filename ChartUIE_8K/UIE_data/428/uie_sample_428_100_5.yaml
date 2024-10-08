@@ -1,0 +1,40 @@
+initial_prompt: Create a scatter plot to visualize the unique word counts used by
+  different rappers over various eras. Utilize the 'recalc' as the x-axis representing
+  some numeric values related to words, and 'words' on the y-axis to represent unique
+  word counts. Each point on the scatter plot should symbolize a rapper, with the
+  color of the points representing the 'color' column (if available) to distinguish
+  different genres or styles. Ensure to handle missing values appropriately, either
+  by ignoring them or using a default value. Title the chart "Unique Words by Rappers
+  Over Time".
+questions: '1. Do you have a preferred color palette for the points representing different
+  genres or styles?
+
+  2. How would you prefer to handle missing values for ''recalc'' and ''words''? Should
+  they be ignored or replaced with a default value?
+
+  3. Would you like to see any specific gridlines or axis ticks on the chart?
+
+  4. Is there a specific format you prefer for the ''words'' numeric values (e.g.,
+  comma-separated)?
+
+  5. Do you prefer any specific font style or size for the chart title, axis labels,
+  and legend?
+
+  6. Are there any additional annotations or notes you would like to include on the
+  scatter plot?'
+answers: '1. I am not sure about the color palette, so I will leave it up to you.
+
+  2. Ignore missing values for ''recalc'' and ''words''.
+
+  3. I do not know; I''ll leave it to your discretion.
+
+  4. I have no specific preference for the format of ''words'' numeric values.
+
+  5. I am not sure about the font style or size; whatever you think works best.
+
+  6. No additional annotations or notes are necessary.'
+data_attributes:
+- recalc
+- words
+- rapper
+- color

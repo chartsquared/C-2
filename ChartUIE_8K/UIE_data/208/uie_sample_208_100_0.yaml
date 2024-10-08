@@ -1,0 +1,60 @@
+initial_prompt: Visualize the Boston Housing dataset using a box plot for each numerical
+  column, particularly focusing on columns like 'MEDV'. Use text annotations to highlight
+  the median, outliers, and skewness in each box plot to emphasize the distribution
+  and variation. Highlight the box plot for 'RM' and 'LSTAT' for a deeper visual analysis,
+  distinguishing elements using different colors. The purpose is to understand the
+  distribution of housing prices and their determining factors, making it easier to
+  spot trends and anomalies in the data. This visualization aims to provide insights
+  pertinent to real estate market analysis.
+questions: '1. Do you have any specific preferences for the color palette to be used
+  in the box plots?
+
+  2. Would you like the text annotations to be positioned in a particular way (e.g.,
+  above the median, near outliers)?
+
+  3. Is there a specific way you would like the box plots for ''RM'' and ''LSTAT''
+  to be highlighted (e.g., thicker borders, different background)?
+
+  4. Do you prefer any specific fonts or sizes for the text annotations?
+
+  5. Should we include gridlines or any background shading to enhance the readability
+  of the box plots?
+
+  6. Are there any additional statistical metrics or information you would like to
+  include in the box plots (e.g., quartiles, mean)?
+
+  7. Do you have a preferred order for the columns in the visualization, or should
+  they be arranged in any specific sequence (e.g., ascending MEDV)?
+
+  8. Would you like to include a legend explaining the color coding and annotations
+  used in the visualization?'
+answers: '1. I am not sure.
+
+  2. Above the median would be great.
+
+  3. Different background for ''RM'' and ''LSTAT'' sounds good.
+
+  4. I do not know.
+
+  5. Yes, including gridlines would be helpful.
+
+  6. The mean would be a nice addition.
+
+  7. I do not have a specific preference.
+
+  8. Yes, a legend would be useful.'
+data_attributes:
+- MEDV
+- RM
+- LSTAT
+- CRIM
+- ZN
+- INDUS
+- CHAS
+- NOX
+- AGE
+- DIS
+- RAD
+- TAX
+- PTRATIO
+- B

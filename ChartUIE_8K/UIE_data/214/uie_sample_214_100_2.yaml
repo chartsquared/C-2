@@ -1,0 +1,59 @@
+initial_prompt: Create a line chart to visualize the trend of suicide numbers over
+  the years, segmented by age group and sex, for different countries. Highlight key
+  data points where the number of suicides spikes, and annotate these points to emphasize
+  critical changes. The purpose of this visualization is to understand the temporal
+  patterns and demographic variations in suicide rates. Additionally, use annotations
+  to provide context, such as political or social changes that might correlate with
+  significant trends. This will help in drawing attention to the most important aspects
+  before diving into a deeper analysis of the data.
+questions: '1. Do you have any specific preferences for the color scheme of the line
+  chart, especially for representing different age groups and sexes?
+
+  2. Should the chart include a legend to denote age groups, sexes, and countries
+  distinctly?
+
+  3. Do you prefer any specific format for the annotations on key data points (e.g.,
+  arrows, text boxes)?
+
+  4. How detailed should the annotations be for political or social changes that might
+  correlate with the trends?
+
+  5. Is there a particular style for chart lines (e.g., solid, dashed) you would like
+  to use for different segments (age groups, sexes, countries)?
+
+  6. What type of axis labels and titles would make the chart most effective for your
+  audience?
+
+  7. Do you prefer a particular layout or design for displaying segmented data by
+  age group and sex (e.g., multi-line overlay, small multiples)?
+
+  8. Would you like to include confidence intervals or error bands to represent data
+  variability?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific preferences.
+
+  2. Yes, the chart should include a legend to denote age groups, sexes, and countries
+  distinctly.
+
+  3. I am not sure.
+
+  4. The annotations should be detailed enough to provide relevant context but not
+  overly cluttered.
+
+  5. I do not know.
+
+  6. Clear and descriptive axis labels and titles that specify the years, number of
+  suicides, and demographic categories would be helpful.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- country
+- year
+- sex
+- age
+- suicides_no

@@ -1,0 +1,61 @@
+initial_prompt: 'Please create a box chart to visualize the CpG values of smoking
+  and non-smoking patients. Use the following columns: ''Smoking Status'' for categorization
+  and ''cg00050873'', ''cg00212031'', ''cg00213748'' among others for the CpG values.
+  The chart should clearly show the distribution of CpG values for each smoking status
+  category. Highlight key differences between smoking categories and optionally annotate
+  outliers. The purpose of this chart is to analyze variations in CpG methylation
+  based on smoking status, aiding in biological research.'
+questions: '1. Do you have any color preferences for the box chart, especially for
+  differentiating between smoking and non-smoking categories?
+
+  2. Do you have a specific preference for the layout or orientation of the boxes
+  (vertical or horizontal)?
+
+  3. Would you like the chart to include grid lines or background shading for better
+  readability?
+
+  4. Is there a specific title or subtitle you would like to include in the chart?
+
+  5. Do you prefer any specific font style or size for the text and labels in the
+  chart?
+
+  6. Should the chart include legends, and if so, where would you prefer them to be
+  positioned (top, bottom, left, right)?
+
+  7. How would you like the outliers to be annotated or highlighted (different color,
+  specific marker, etc.)?
+
+  8. Is there a specific range or scale you want to set for the y-axis (CpG values)?
+
+  9. Do you prefer any specific size or aspect ratio for the chart?
+
+  10. Would you like to display the mean or median values within each box plot?
+
+  11. Should the chart include axis labels, and if so, how would you like them to
+  be formatted?'
+answers: '1. I have no specific preference.
+
+  2. Vertical is fine.
+
+  3. I am not sure.
+
+  4. "CpG Methylation Levels by Smoking Status"
+
+  5. I do not know.
+
+  6. Yes, please include the legend on the right.
+
+  7. Different color for outliers.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. Display the median values.
+
+  11. Yes, label as "CpG Sites" for the x-axis and "Methylation Value" for the y-axis.'
+data_attributes:
+- Smoking Status
+- cg00050873
+- cg00212031
+- cg00213748

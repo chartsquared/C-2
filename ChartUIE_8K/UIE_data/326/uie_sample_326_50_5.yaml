@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap showing the frequency of different technologies used
+  (Technology Name) across various website domains (Website Domain) within the given
+  timeframe (First Seen At to Last Seen At). Color intensity should indicate the technology
+  adoption rate.
+questions: '1. Do you have a specific color scheme preference for the heatmap?
+
+  2. Should the color intensity follow a linear, logarithmic, or any other specific
+  scale?
+
+  3. Do you want any specific labels on the axes, such as shortened domain names or
+  technology names?
+
+  4. How would you prefer to handle missing or incomplete data points?
+
+  5. Should the timeframe be broken down into specific intervals (e.g., by month,
+  quarter)?
+
+  6. Do you need any annotations or additional markers on the heatmap?
+
+  7. What is the desired level of detail for the data points (e.g., exact counts,
+  percentage)?
+
+  8. Is there a specific way you''d like to order the website domains or technologies
+  (e.g., alphabetically, by frequency, by category)?
+
+  9. Do you require a legend or key to explain the color intensities used?
+
+  10. Would you prefer to see any reference lines or grids for better readability?'
+answers: '1. I do not have a specific color scheme preference.
+
+  2. I am not sure.
+
+  3. No specific preference.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Exact counts would be preferred.
+
+  8. Ordering by frequency would be useful.
+
+  9. Yes, a legend or key would be helpful.
+
+  10. I do not know.'
+data_attributes:
+- Website Domain
+- Technology Name
+- First Seen At
+- Last Seen At

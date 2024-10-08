@@ -1,0 +1,43 @@
+initial_prompt: I need a line chart to visualize the trends in customer behavior over
+  time for the Deep Learning A-Z - ANN dataset. Specifically, I want to examine how
+  the CreditScore, Age, Balance, and EstimatedSalary change across different customers.
+  The x-axis should represent the RowNumber, and the y-axis should display the respective
+  data values. Separate lines for CreditScore, Age, Balance, and EstimatedSalary will
+  help to clearly understand the trends and fluctuations. Please make sure to differentiate
+  each line with distinct colors or styles, and include a legend for clarification.
+questions: "1. Do you have a preference for the color palette or specific colors for\
+  \ each line representing 'CreditScore', 'Age', 'Balance', and 'EstimatedSalary'?\n\
+  2. Should the lines be solid, dashed, or do you prefer specific line styles for\
+  \ each attribute?\n3. Do you want grid lines to be displayed on the chart to make\
+  \ it easier to read values?\n4. Would you like the chart to include data point markers\
+  \ for each value on the lines?\n5. Do you prefer a specific font style or size for\
+  \ the axes labels and legend?\n6. Should the chart include axis titles, and if so,\
+  \ do you have specific wording in mind for these titles?\n7. Do you want to add\
+  \ any specific annotations or reference lines (e.g., average lines, important thresholds)\
+  \ to the chart? \n8. Do you prefer a specific ordering or hierarchy for the lines\
+  \ in the legend?\n9. Should the chart include any specific instructions or notes\
+  \ for the audience?"
+answers: '1. I am not sure about the color palette. Any distinct colors would be fine.
+
+  2. I do not have a specific preference for the line styles.
+
+  3. Yes, grid lines would be helpful.
+
+  4. I am not sure, but including data point markers might be useful.
+
+  5. I do not know, any standard font style and size would be okay.
+
+  6. Yes, please include axis titles. "RowNumber" for the x-axis and "Values" for
+  the y-axis would be good.
+
+  7. No, I do not have any specific annotations or reference lines in mind.
+
+  8. I have no specific preference for the order of lines in the legend.
+
+  9. No specific instructions or notes are needed for the audience.'
+data_attributes:
+- RowNumber
+- CreditScore
+- Age
+- Balance
+- EstimatedSalary

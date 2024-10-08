@@ -1,0 +1,54 @@
+initial_prompt: Create a box chart visualizing the distribution of sepal and petal
+  dimensions for the three species in the Iris dataset. Highlight the median values
+  and annotate the extremes.
+questions: '1. Do you have any color preferences for different species in the box
+  chart?
+
+  2. Should there be separate box charts for each dimension (sepal and petal) or combined
+  in one chart?
+
+  3. Do you prefer horizontal or vertical box plots?
+
+  4. Are there any specific annotation styles you prefer for the extremes?
+
+  5. Do you want grid lines or background shading to be included in the chart?
+
+  6. What font style and size do you prefer for the median value annotations?
+
+  7. Would you like to include any titles or labels for the chart and axes? If so,
+  what should they be?
+
+  8. Do you have a specific preference for the box plot whisker method (e.g., Tukey,
+  percentile)?
+
+  9. Should the chart include a legend to differentiate between species?
+
+  10. Are there any specific details or additional information you would like to be
+  included in the tooltip or hover text?'
+answers: '1. I am not sure.
+
+  2. I prefer separate box charts for each dimension.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please include titles and labels. The chart title should be "Distribution
+  of Sepal and Petal Dimensions Across Iris Species" and the axes should be labeled
+  with "Dimension (cm)" and "Species".
+
+  8. I do not know.
+
+  9. Yes, please include a legend to differentiate between species.
+
+  10. I have no specific preference.'
+data_attributes:
+- sepal_length
+- sepal_width
+- petal_length
+- petal_width
+- species

@@ -1,0 +1,53 @@
+initial_prompt: Please create a radar chart to visualize the star data categorized
+  by "Type", displaying the normalized average of "Temperature", "L", "R", "A_M",
+  "Color" (converted to numeric), and "Spectral_Class" (converted to numeric). The
+  chart should illustrate how these attributes vary across different star types classified
+  by NASA. Include axes for each of the star attributes, and use different color lines
+  to represent each type of star. The chart will help in comparing the characteristics
+  of various star types visually. Ensure all data plots are clearly visible and distinguishable.
+questions: '1. Do you have any preferences for the color scheme to be used for different
+  star types?
+
+  2. Would you like the chart to have a legend indicating the star types and their
+  corresponding colors?
+
+  3. Do you prefer a specific layout or design for the radar chart that enhances readability?
+
+  4. Is there a particular way you would like the axes to be labeled or formatted?
+
+  5. Should the chart include labels for the normalized average values on each axis?
+
+  6. Are there any specific font styles or sizes you prefer for the axis labels and
+  legend?
+
+  7. Would you like grid lines to be shown on the radar chart for better visualization
+  of the data points?
+
+  8. Is there a preferred order for displaying the star types or attributes on the
+  chart?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to have a legend indicating the star types and their
+  corresponding colors.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, the chart should include labels for the normalized average values on each
+  axis.
+
+  6. I have no specific preference.
+
+  7. Yes, I would like grid lines to be shown on the radar chart for better visualization
+  of the data points.
+
+  8. I do not know.'
+data_attributes:
+- Temperature
+- L
+- R
+- A_M
+- Color
+- Spectral_Class
+- Type

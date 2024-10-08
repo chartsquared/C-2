@@ -1,0 +1,57 @@
+initial_prompt: Create a heatmap showing the correlation between export/import price
+  indices, industrial production, and employment in the semiconductor industry. Highlight
+  significant changes over time, focusing on periods with missing values to identify
+  potential trends during semiconductor shortages. Add annotations to explain important
+  data points or notable trends.
+questions: '1. Do you have a preferred color scheme or palette for the heatmap?
+
+  2. Should the heatmap include color gradients to represent the strength of the correlations?
+
+  3. Do you have any specific annotations or labels you want to be included in the
+  heatmap?
+
+  4. How would you prefer missing values to be displayed or handled in the heatmap?
+
+  5. Would you like to include a timeline or time markers to highlight significant
+  periods?
+
+  6. Do you prefer specific notes or text explanations for notable trends and data
+  points on the heatmap?
+
+  7. Are there any specific intervals or date ranges you want to focus on?
+
+  8. Should the chart include grid lines or any specific axis formatting?
+
+  9. Do you have any preferences for the overall layout or orientation of the heatmap
+  (horizontal or vertical)?
+
+  10. Are there any specific statistical metrics or thresholds you would like to use
+  to highlight significant correlations?'
+answers: '1. I do not have a specific preference.
+
+  2. Yes, color gradients to represent the strength of the correlations would be good.
+
+  3. I am not sure.
+
+  4. I am not sure how missing values should be displayed, maybe just make it clear
+  that they are missing.
+
+  5. Yes, a timeline or time markers to highlight significant periods would be helpful.
+
+  6. Yes, specific notes or text explanations for notable trends and data points would
+  be useful.
+
+  7. I do not have a specific preference for date ranges.
+
+  8. I am not sure about grid lines or axis formatting.
+
+  9. I do not have a preference for the layout or orientation.
+
+  10. I do not know about specific statistical metrics or thresholds.'
+data_attributes:
+- DATE
+- Export Price Index(End Use of semiconductors)
+- Import Price Index(in $ End Use of semiconductors)
+- No. of employed peoples in semiconductor industry
+- 'Industrial Production: Non-Energy Excluding Motor Vehicles & Parts, Computers,
+  Communications Equipment, and Semiconductors'

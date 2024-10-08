@@ -1,0 +1,59 @@
+initial_prompt: Create a scatter plot to visualize the age-standardized suicide rates
+  per 100,000 population across different countries for the year 2019. On the X-axis,
+  we'll have the different countries (Location), and on the Y-axis, the suicide rates
+  (FactValueNumeric) for both sexes combined, male, and female (Dim1). This will help
+  understand the gender differences in suicide rates among various nations. Add data
+  points for each combination of country and gender, with varying colors or markers
+  to distinguish between male, female, and both sexes categories. Ensure it's clear
+  and distinguishable.
+questions: '1. Do you have a preferred color scheme for differentiating between male,
+  female, and both sexes categories?
+
+  2. Would you like to use specific markers (e.g., circles, triangles, squares) to
+  represent different genders?
+
+  3. Do you have a specific preference for the size of the markers in the scatter
+  plot?
+
+  4. Should we add gridlines for better readability, or do you prefer a cleaner look
+  without them?
+
+  5. Do you want any specific formatting for the X-axis labels, such as rotation or
+  font size?
+
+  6. How would you like the legend to be positioned (e.g., right, bottom, top)?
+
+  7. Do you have a preferred font style or size for the axis titles and labels?
+
+  8. Should we include a title for the scatter plot? If yes, do you have a specific
+  title in mind?
+
+  9. Are there any additional annotations or text that you want to include on the
+  plot for better context or clarity?
+
+  10. Are there specific ranges or limits you would like to set for the X-axis (countries)
+  and Y-axis (suicide rates)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. Yes, please rotate the X-axis labels by 45 degrees for better readability.
+
+  6. Legend at the bottom would be fine.
+
+  7. I am not sure.
+
+  8. Yes, the title should be "Age-Standardized Suicide Rates by Country and Gender
+  (2019)".
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- Location
+- FactValueNumeric
+- Dim1

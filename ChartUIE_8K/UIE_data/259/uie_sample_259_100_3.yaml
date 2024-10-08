@@ -1,0 +1,57 @@
+initial_prompt: I want to create a Choropleth map using the given exoplanet data to
+  visualize the distribution of discovered exoplanets based on their Right Ascension
+  and Declination (coordinates). Each point should be color-coded depending on the
+  discovery method (RV, transit, etc.). Additionally, include hover text showing the
+  Planet Identifier, Discovery Year, and Discovery Method when I move the mouse over
+  points. This will help in identifying any patterns regarding discovery techniques
+  and their locations. Use a realistic and practical approach to represent the data
+  from Open Exoplanet Catalogue accurately.
+questions: '1. Do you have any specific color preferences for different discovery
+  methods (RV, transit, etc.)?
+
+  2. What geographical projections do you prefer for the Choropleth map, if any?
+
+  3. Do you have a preferred range of years to focus on for the Discovery Year attribute?
+
+  4. Would you like any specific visual markers or symbols for different discovery
+  methods?
+
+  5. Do you prefer a particular style or theme for the map (e.g., dark, light, satellite)?
+
+  6. Are there any additional labels or legends you would like to include on the map?
+
+  7. Would you prefer the size or shape of points to vary based on any specific data
+  attribute?
+
+  8. Are there any specific regions or coordinates you would like to highlight on
+  the map?
+
+  9. Do you have any preferred font styles or sizes for the hover text?
+
+  10. Would you like the map to provide any filters or categories for users to explore
+  specific subsets of data?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. No specific preference.
+
+  5. I prefer a light theme for the map.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. No specific regions or coordinates.
+
+  9. No preference for font styles or sizes.
+
+  10. I do not need any filters or categories.'
+data_attributes:
+- PlanetIdentifier
+- RightAscension
+- Declination
+- DiscoveryMethod
+- DiscoveryYear

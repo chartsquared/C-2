@@ -1,0 +1,48 @@
+initial_prompt: I'd like to see a bubble chart visualizing the behavior of credit
+  card customers. For the bubbles, use 'Income_Category' and 'Card_Category' combinations.
+  The bubble size should represent 'Credit_Limit'. On the X-axis, plot ‘Total_Trans_Amt’
+  and on the Y-axis, plot ‘Avg_Utilization_Ratio’. Utilize colors to differentiate
+  between 'Attrition_Flag'. This will help us understand how different customer segments
+  behave in terms of transaction amounts and credit utilization, with a focus on their
+  income category and card type.
+questions: '1. Do you have a preference for the color palette to differentiate between
+  ''Attrition_Flag'' categories?
+
+  2. Do you have any specific preferences for the range or scaling of the X-axis (''Total_Trans_Amt'')
+  and Y-axis (''Avg_Utilization_Ratio'')?
+
+  3. Would you like the chart to include gridlines for better readability or keep
+  it minimalistic?
+
+  4. Should the chart include data labels on the bubbles, such as ''Income_Category''
+  and ''Card_Category'' combinations, or just use tooltips on hover?
+
+  5. Do you prefer a specific font style or size for the axis labels and title?
+
+  6. Would you like to set any specific margins or spacing between the chart elements?
+
+  7. Is there a need for a legend explaining the colors and bubble sizes, or will
+  the chart be self-explanatory?'
+answers: '1. I am not sure about the color palette for ''Attrition_Flag'', so I’ll
+  leave it to your discretion.
+
+  2. I do not have any specific preferences for the range or scaling of the X-axis
+  and Y-axis.
+
+  3. I am not sure about gridlines, let''s go with what you think looks best.
+
+  4. I do not have a specific preference for data labels on the bubbles; tooltips
+  on hover sound good.
+
+  5. I do not know, so please choose a professional looking font style and size.
+
+  6. I am not sure about specific margins or spacing between the chart elements.
+
+  7. Yes, please include a legend explaining the colors and bubble sizes.'
+data_attributes:
+- Income_Category
+- Card_Category
+- Credit_Limit
+- Total_Trans_Amt
+- Avg_Utilization_Ratio
+- Attrition_Flag

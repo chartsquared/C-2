@@ -1,0 +1,42 @@
+initial_prompt: I want a treemap to analyze customer personality traits from the dataset.
+  The treemap should categorize customers based on their marital status and education
+  level. Each inner box should represent education, and its size should reflect the
+  average income within each marital status category. Additionally, color-code the
+  boxes based on the average amount spent on wines (MntWines) to indicate different
+  spending levels. This visualization should help us understand the relationship between
+  marital status, education level, income, and spending on wines in a concise manner.
+  Use data from '../Extra_datas/data/34.csv' for this analysis.
+questions: '1. Do you have any specific preferences for the color scheme to represent
+  different spending levels on wines?
+
+  2. How would you like the income ranges to be displayed within each education level?
+  Should it be in specific intervals?
+
+  3. Do you prefer any particular labels or annotations to be included in the treemap,
+  such as average income values or marital status categories?
+
+  4. Is there a specific order in which the marital status categories should be displayed
+  in the treemap?
+
+  5. Do you have any preference for the font style and size of the text within the
+  treemap boxes?
+
+  6. Should the treemap include a legend to explain the color-coding based on the
+  spending levels on wines?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would prefer average income values and marital status categories to be included.
+
+  4. I do not know.
+
+  5. I do not have any specific preference.
+
+  6. Yes, the treemap should include a legend to explain the color-coding based on
+  the spending levels on wines.'
+data_attributes:
+- Education
+- Marital_Status
+- Income
+- MntWines

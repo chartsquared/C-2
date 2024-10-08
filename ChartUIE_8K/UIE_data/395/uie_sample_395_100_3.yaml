@@ -1,0 +1,61 @@
+initial_prompt: I want a network diagram illustrating the dependencies among various
+  components in a software package. Imagine nodes representing each component name,
+  size indicating relative importance or frequency of use, and directed edges showing
+  import relationships. For instance, show "flare.analytics.cluster.AgglomerativeCluster"
+  linking to all its imports like "flare.animate.Transitioner". Highlight clusters
+  and community structures within the network. Utilize distinctive colors or sizes
+  to depict nodes' unique values and missing values status. The goal is to clearly
+  visualize interconnectedness and dependency structure for better understanding and
+  analysis.
+questions: '1. Do you have any preference for the color scheme to represent different
+  clusters or community structures in the network diagram?
+
+  2. Are there specific colors you would like to use to depict unique values and missing
+  values in the nodes?
+
+  3. Would you like the sizes of the nodes to be proportional to the actual size values
+  or should there be specific size categories?
+
+  4. How would you like the directed edges to be styled (e.g., arrow type, line thickness)
+  to clearly indicate dependency relationships?
+
+  5. Do you have a preferred layout for the network diagram (e.g., circular, hierarchical,
+  force-directed)?
+
+  6. Should there be labels displayed on the nodes, and if so, what information should
+  they contain?
+
+  7. Are there any additional annotations or tooltips you would like to include for
+  better context or details on the nodes and edges?
+
+  8. Should the clusters be highlighted using borders, backgrounds, or any other stylistic
+  approach? If so, please specify.
+
+  9. Are there any additional legends or keys you would like to have included for
+  explaining the node sizes, colors, or edge styles?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. The sizes should be proportional to the actual size values.
+
+  4. I would like the directed edges to have clear arrowheads and different line thicknesses
+  to indicate the strength or type of dependency.
+
+  5. I am not sure.
+
+  6. Yes, labels should be displayed on the nodes, containing the component names.
+
+  7. I do not know.
+
+  8. Yes, clusters should be highlighted using borders.
+
+  9. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- name
+- size
+- imports

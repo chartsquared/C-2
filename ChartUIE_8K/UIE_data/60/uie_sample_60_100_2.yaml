@@ -1,0 +1,34 @@
+initial_prompt: 'Please create a bar chart visualizing the average aggregate rating
+  and the review count for different laptop brands in the Best Buy 2024 Windows Laptops
+  collection. Ensure the X-axis represents the laptop brands, and the Y-axis has two
+  scales: one for the average rating and another for the review count. Use different
+  colors or patterns to differentiate between the ratings and review counts in the
+  bar chart. The goal is to compare the popularity and user satisfaction of various
+  brands effectively.'
+questions: '1. What color scheme or specific colors would you prefer for the ratings
+  and review counts?
+
+  2. Do you have a preference for the type of bar pattern or style for differentiating
+  between the ratings and review counts?
+
+  3. Should the chart include a legend or labels for the different data types (ratings
+  and review counts)?
+
+  4. Would you like to include data labels on the bars themselves to show exact values?
+
+  5. Do you have any specific font preferences for the titles and labels on the chart?'
+answers: '1. I do not have a specific color scheme in mind, so you can choose what
+  looks best.
+
+  2. I am not sure about the bar pattern or style; please choose what you think will
+  be most effective.
+
+  3. Yes, the chart should include a legend or labels for the different data types.
+
+  4. I do not know; it would depend on what you recommend for readability.
+
+  5. I have no specific preference for the font. Use a standard, easily readable font.'
+data_attributes:
+- brand
+- aggregateRating/ratingValue
+- aggregateRating/reviewCount

@@ -1,0 +1,35 @@
+initial_prompt: I'd like a scatter plot for Microsoft Stocks. Use the 'Date' for the
+  x-axis and 'Close' prices for the y-axis. Could you differentiate the points by
+  color for a better visual representation of trends over time? Also, it would be
+  great if you can make the plot interactive, allowing me to hover over points to
+  see the exact values. Since this data goes back to 1986, it might also help to add
+  a zoom in/out function to better navigate through the years. Thank you!
+questions: '1. Do you have any preference for the color palette used to differentiate
+  the points?
+
+  2. Would you like the points to be differentiated by a specific time period (e.g.,
+  decades, specific years)?
+
+  3. Do you prefer any specific axis scale (linear/logarithmic) for either the x-axis
+  or y-axis?
+
+  4. Would you like to add any reference lines or markers for significant dates/events?
+
+  5. Is there any specific format or style you prefer for the labels and tooltips
+  (e.g., font size, color, etc.)?
+
+  6. Do you want any specific annotations or notes included on the chart?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- Date
+- Close

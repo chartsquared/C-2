@@ -1,0 +1,58 @@
+initial_prompt: Create a scatter plot to visualize the extinction threat levels for
+  different plant species across various continents. Use `year_last_seen` and `red_list_category`
+  as your axes. Differentiate points by `continent`. Highlight specific threats such
+  as `threat_ISGD`, `threat_GE`, and `threat_EPM` using different markers or colors.
+  Include a legend to identify these threats. The focus should be on illustrating
+  which continents and time periods have seen higher extinction rates and the associated
+  threats. This will help in understanding the impact of various threats on plant
+  species over time.
+questions: '1. What color palette do you prefer for differentiating the continents?
+
+  2. Do you have a preferred marker style or shape for highlighting specific threats
+  (`threat_ISGD`, `threat_GE`, `threat_EPM`)?
+
+  3. How would you like the legend to be positioned on the chart (e.g., top right,
+  bottom left)?
+
+  4. Do you have any preferred font styles or sizes for the axis labels and legend?
+
+  5. Would you like a grid to be displayed on the chart background for better readability?
+
+  6. Do you prefer any specific orientation (horizontal or vertical) for the x-axis
+  (`year_last_seen`) labels?
+
+  7. Should the chart include annotations or labels for specific data points of interest?
+
+  8. Are there any specific titles or subtitles you would like for the chart or the
+  axes?
+
+  9. How do you want missing values (if any) to be handled or represented in the chart?
+
+  10. Would you like to include a trend line to help visualize the trend over time?'
+answers: '1. I am not sure.
+
+  2. I prefer circles for `threat_ISGD`, squares for `threat_GE`, and triangles for
+  `threat_EPM`.
+
+  3. Top right would be great for the legend.
+
+  4. I do not know, no specific preference.
+
+  5. Yes, please include a grid for better readability.
+
+  6. Horizontal orientation for the x-axis labels is preferable.
+
+  7. I am not sure.
+
+  8. No specific titles or subtitles for now.
+
+  9. I do not know.
+
+  10. Yes, including a trend line would be helpful.'
+data_attributes:
+- year_last_seen
+- red_list_category
+- continent
+- threat_ISGD
+- threat_GE
+- threat_EPM

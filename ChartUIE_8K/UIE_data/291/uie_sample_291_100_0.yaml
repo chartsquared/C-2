@@ -1,0 +1,60 @@
+initial_prompt: Create a stacked bar chart to visualize social media engagement metrics
+  like num_reactions, num_comments, num_shares, etc., for different types of status
+  (link, photo, status, video). Highlight the significant engagement types using different
+  colors or sizes to make them stand out. Use text annotations to specify values for
+  critical data points and trends. Ensure the visualization focuses on comparing engagement
+  across different status types to help analyze which types drive the most interaction.
+  This analysis is crucial for understanding how different content types perform within
+  online communities.
+questions: '1. Do you have a preferred color scheme for highlighting significant engagement
+  types?
+
+  2. Are there specific colors you want to use for each engagement type?
+
+  3. Do you prefer a particular font style or size for the text annotations?
+
+  4. Should the text annotations be placed inside the bars or outside?
+
+  5. Do you want to include a legend to explain the colors or sizes used for different
+  engagement types?
+
+  6. Would you like grid lines on the chart for better readability?
+
+  7. Is there a specific order in which the different types of status should be presented?
+
+  8. Are there any particular engagement metrics (e.g., ''num_reactions'') that you
+  want to be more emphasized?
+
+  9. Do you have preferences for the overall chart layout or aspect ratio (e.g., wider
+  versus taller)?
+
+  10. Would you like to add any additional labels or titles to the chart to provide
+  more context?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Inside the bars would be nice.
+
+  5. Yes, please include a legend.
+
+  6. Yes, grid lines would be helpful.
+
+  7. No specific order.
+
+  8. Emphasize ''num_reactions'' and ''num_shares'' more.
+
+  9. I have no specific preference for layout or aspect ratio.
+
+  10. Add a title like "Social Media Engagement Metrics by Content Type" and labels
+  for the axes.'
+data_attributes:
+- num_reactions
+- num_comments
+- num_shares
+- status_type_link
+- status_type_photo
+- status_type_status
+- status_type_video

@@ -1,0 +1,58 @@
+initial_prompt: Create a stacked bar chart visualizing coffee ratings. Display total
+  cup points and its sensory attributes (aroma, flavor, aftertaste, acidity, body,
+  balance, uniformity, clean cup, sweetness) for each sample. Utilize colors to distinguish
+  different attributes and include data-driven text annotations for highlighting specific
+  ratings. This helps in comparing the overall quality and specific characteristics
+  of different coffee samples effectively. Highlight the samples with the highest
+  and lowest total cup points to draw attention to them. The chart aims to provide
+  a quick visual comparison of the sensory profiles of coffee samples from various
+  origins and producers.
+questions: '1. What title would you like for the chart?
+
+  2. Do you have a specific color palette preference for distinguishing different
+  attributes in the stacked bars?
+
+  3. Would you like to include axis titles and grid lines on the chart?
+
+  4. Do you prefer the samples to be arranged in a specific order, such as by total
+  cup points or alphabetically?
+
+  5. Do you have any specific formatting or styling preferences for the text annotations
+  that highlight specific ratings?
+
+  6. Are there specific labels or legends you would like to include or emphasize on
+  the chart?
+
+  7. Should the chart have a background color or should it remain plain?
+
+  8. Would you like to display exact values on top of the bars for each sensory attribute?
+
+  9. Do you have a preferred font or style for the annotations and labels?'
+answers: '1. Coffee Ratings Comparison
+
+  2. I am not sure.
+
+  3. Yes, please include axis titles and grid lines.
+
+  4. Arrange the samples by total cup points, from highest to lowest.
+
+  5. I am not sure.
+
+  6. Include a legend for the sensory attributes and emphasize the total cup points.
+
+  7. I am not sure.
+
+  8. Yes, display exact values on top of the bars for each sensory attribute.
+
+  9. I do not know.'
+data_attributes:
+- total_cup_points
+- aroma
+- flavor
+- aftertaste
+- acidity
+- body
+- balance
+- uniformity
+- clean_cup
+- sweetness

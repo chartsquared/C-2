@@ -1,0 +1,51 @@
+initial_prompt: Create a scatter plot showing the relationship between demolition
+  dates and people left homeless, categorized by locality. The x-axis should represent
+  the demolition date, and the y-axis should represent the number of people left homeless.
+  Use different colors for each locality to distinguish them.
+questions: '1. Do you have a preferred color palette for the localities in the scatter
+  plot?
+
+  2. Are there any specific colors you want to avoid using?
+
+  3. Would you like to include data point labels for each scatter plot point?
+
+  4. Should the plot include a legend to identify the localities by color?
+
+  5. Do you prefer a specific format for the date labels on the x-axis (e.g., YYYY-MM-DD,
+  MM/DD/YYYY)?
+
+  6. Would you like gridlines to be included in the background of the scatter plot?
+
+  7. Do you prefer a specific font style or size for the axis labels and title?
+
+  8. Do you want to include a title and/or subtitle for the scatter plot? If so, what
+  should they be?
+
+  9. Should any specific locality be highlighted or emphasized in the plot?
+
+  10. Is there a desired range or limit for the x-axis (dates) and y-axis (number
+  of people left homeless)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, the plot should include a legend to identify the localities by color.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. Yes, include a title: "Impact of Demolitions on Homelessness by Locality". No
+  subtitle needed.
+
+  9. I do not know.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- date_of_demolition
+- locality
+- people_left_homeless

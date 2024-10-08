@@ -1,0 +1,51 @@
+initial_prompt: Create a grouped bar chart visualizing the age-standardized suicide
+  rates for specific locations in the Americas (e.g., Antigua and Barbuda, Barbados).
+  Group bars by gender (Male, Female, Both sexes) and display the data for the latest
+  year, 2019. Use text annotations to highlight the exact suicide rates and their
+  confidence intervals for each group. Employ highlights to differentiate between
+  genders visually. This chart will help in understanding the suicide rate differences
+  by gender in various countries within the Americas. Ensure axes are properly labeled
+  and include a legend for clarity.
+questions: '1. Do you have any specific color preferences for differentiating the
+  genders (Male, Female, Both sexes)?
+
+  2. What level of granularity would you like for the axis labels (e.g., should country
+  names be abbreviated or fully spelled out)?
+
+  3. Are there any specific fonts or font sizes you prefer for the text annotations?
+
+  4. Do you prefer the confidence intervals to be displayed using error bars or another
+  method?
+
+  5. Would you like to include gridlines in the background of the chart for better
+  readability?
+
+  6. Should the chart include country-specific symbols or flags next to the country
+  names for better identification?
+
+  7. Do you have a specific title or subtitle in mind for the chart?
+
+  8. Is there any additional descriptive text or context you would like to be included
+  in the chart area?'
+answers: '1. I do not have a specific preference for colors.
+
+  2. Fully spelled out country names would be preferred.
+
+  3. I am not sure about specific fonts or font sizes.
+
+  4. I am not sure, maybe error bars could work.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific title in mind.
+
+  8. I do not have any additional descriptive text to include.'
+data_attributes:
+- Location
+- Dim1
+- FactValueNumeric
+- FactValueNumericLow
+- FactValueNumericHigh
+- Period

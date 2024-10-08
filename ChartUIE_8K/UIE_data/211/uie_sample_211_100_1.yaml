@@ -1,0 +1,55 @@
+initial_prompt: Visualize park scores in San Francisco using a heatmap that highlights
+  parks by score and facility type. Include annotations for top-scoring parks to draw
+  attention to high-quality facilities. Use color variations to emphasize park scores,
+  and text annotations for key data points, noting their names and locations. Aim
+  for clear representation of both park quality and geographical distribution to aid
+  in real-estate decisions. Include a legend for score interpretation and ensure clear
+  labeling of facilities and PQ scores. Highlight outliers and ensure the map is user-friendly
+  for quick insights on park quality across the city.
+questions: '1. Do you have a preferred color palette for the heatmap that emphasizes
+  park scores?
+
+  2. Should each facility type have a distinct color or marker on the map?
+
+  3. How would you like the top-scoring parks to be annotated? (e.g., stars, bold
+  text, different color)
+
+  4. Would you prefer text annotations for key data points to be placed on the map
+  or in a side panel?
+
+  5. Is there a specific way you’d like outliers to be highlighted?
+
+  6. Do you have any preferences for the legend design or placement on the map?
+
+  7. Should the map include a zoom feature to allow for closer examination of specific
+  areas?
+
+  8. Are there any specific geographic regions within San Francisco that should be
+  emphasized or focused on?
+
+  9. Would you like any additional contextual information included, such as nearby
+  landmarks or neighborhood names?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Use stars for the top-scoring parks.
+
+  4. Place text annotations directly on the map.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. No, focus on the entire city.
+
+  9. Yes, include nearby landmarks or neighborhood names.'
+data_attributes:
+- Park
+- Score
+- Facility Type
+- Longitude
+- Latitude
+- Address

@@ -1,0 +1,42 @@
+initial_prompt: I need a heatmap visualizing the relationship between different job
+  titles and the skills required for those positions from the Internshala Jobs Dataset.
+  The x-axis should represent JobTitles while the y-axis should represent Skills.
+  Each cell in the heatmap should indicate how frequently each skill is associated
+  with each job title, with a color gradient to show intensity. This will help quickly
+  identify which skills are most common for specific roles, providing valuable insights
+  for both job seekers to understand skill demand and companies to tailor their job
+  descriptions accordingly. Include data summary annotations to highlight key findings.
+questions: '1. Do you have a preferred color palette or gradient for the heatmap?
+
+  2. How would you like the color intensity to be scaled? For example, logarithmic
+  scale or linear scale?
+
+  3. Do you want specific annotations or highlights for the most frequent skills or
+  job titles?
+
+  4. Is there a particular font style and size you prefer for the labels and legends?
+
+  5. Should the data summary annotations highlight the top skills per job title, overall
+  most frequent skills, or another specific metric?
+
+  6. Do you have a preference for how the grid lines in the heatmap should be displayed
+  or styled?
+
+  7. Would you like the heatmap to include tooltips or labels displaying the actual
+  frequency values when hovered or clicked?'
+answers: '1. I am not sure.
+
+  2. Linear scale should be fine.
+
+  3. Yes, I would like specific annotations for the most frequent skills.
+
+  4. I do not know.
+
+  5. The data summary annotations should highlight the top skills per job title.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- JobTitles
+- Skills

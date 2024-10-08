@@ -1,0 +1,52 @@
+initial_prompt: Create a stacked bar chart to visualize NASA Exoplanets data, showing
+  discovery year on the x-axis and stacking planet types on the y-axis. Highlight
+  years with high discoveries and use text annotations for significant values. Emphasize
+  differences in detection methods with colors or patterns to compare how methods
+  vary over years.
+questions: '1. Do you have any specific color preferences for representing different
+  detection methods?
+
+  2. Is there a particular font style or size you prefer for the text annotations?
+
+  3. Would you like to include any specific titles for the axes and the chart?
+
+  4. Are there any specific years you would like to highlight in the chart?
+
+  5. Do you have a preference for the pattern styles (e.g., stripes, dots) used to
+  differentiate detection methods?
+
+  6. Should the chart include a legend, and if so, where do you prefer it to be located?
+
+  7. Do you have any specific requirements for the bar width or spacing between bars?
+
+  8. Would you like gridlines to be shown on the chart, and if so, in what style?
+
+  9. Do you prefer a particular order for stacking the planet types on the y-axis?
+
+  10. Are there any additional labels or annotations you would like to include in
+  the chart?'
+answers: '1. I am not sure.
+
+  2. I don''t know.
+
+  3. Maybe something like "Discovery Year" for the x-axis and "Number of Planets by
+  Type" for the y-axis. For the chart title, "NASA Exoplanets Discoveries by Year
+  and Planet Type".
+
+  4. Highlight significant years with high discoveries, such as 2014, 2016, and 2018.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend. Maybe at the bottom of the chart.
+
+  7. I have no specific preference.
+
+  8. Yes, include gridlines. Standard style is fine.
+
+  9. I am not sure.
+
+  10. Include text annotations for the significant years mentioned with high discoveries.'
+data_attributes:
+- discovery_year
+- planet_type
+- detection_method

@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap visualizing the distribution of Electric Vehicles
+  (EVs), both BEVs and PHEVs, across counties in Washington State as of February 29,
+  2020. Use color intensity to indicate the total count of EVs in each county, highlighting
+  counties with higher counts. Include annotations for counties with the highest and
+  lowest percentages of EVs, focusing attention on these key data points. The purpose
+  is to visually represent the spread and adoption rate of EVs across different regions
+  for easy comparison and analysis. The chart should be informative for stakeholders
+  interested in the electric vehicle market.
+questions: '1. What color scheme would you prefer for the heatmap?
+
+  2. Do you have a specific preference for the color intensity range?
+
+  3. How should the annotation for counties with the highest and lowest percentages
+  of EVs be displayed (e.g., text size, color, position)?
+
+  4. Would you like to include a legend explaining the color intensity?
+
+  5. Do you have a preferred font style and size for the labels and annotations?
+
+  6. Should the heatmap be accompanied by any specific titles or subtitles?
+
+  7. Is there a specific arrangement or order in which the counties should be displayed?
+
+  8. Do you prefer to highlight counties with the highest and lowest counts in any
+  particular way other than annotations (e.g., border color)?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I would like the annotations to be in a bold font and red color, positioned near
+  the counties with arrows pointing to them.
+
+  4. Yes, please include a legend explaining the color intensity.
+
+  5. I do not have a specific preference for font style and size.
+
+  6. Yes, please include a title like "Distribution of EVs in Washington State (Feb
+  29, 2020)" and a subtitle "Concentration of BEVs and PHEVs by County".
+
+  7. I do not know.
+
+  8. I prefer to highlight counties with the highest and lowest counts using a distinct
+  border color, such as black.'
+data_attributes:
+- County
+- Battery Electric Vehicles (BEVs)
+- Plug-In Hybrid Electric Vehicles (PHEVs)
+- Electric Vehicle (EV) Total
+- Percent Electric Vehicles

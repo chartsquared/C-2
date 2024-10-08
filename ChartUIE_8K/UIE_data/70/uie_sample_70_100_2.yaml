@@ -1,0 +1,49 @@
+initial_prompt: I'd like a candlestick chart visualizing Google (GOOG) stock data
+  from the CSV file. It should display the 'Open', 'High', 'Low', and 'Close' prices
+  over time. Please ensure you include the date on the x-axis for reference. The chart
+  should clearly indicate trends over the dataset period, helping to identify any
+  significant changes in stock prices. Additionally, color-code it to distinguish
+  between bullish and bearish trends. Include an adjustable time range to analyze
+  specific periods. I need it to be clear and interactive if possible. Thank you!
+questions: '1. Do you have any preference for the specific color scheme to distinguish
+  between bullish and bearish trends?
+
+  2. How would you like the date format to be displayed on the x-axis (e.g., ''YYYY-MM-DD'',
+  ''MM/DD/YYYY'', etc.)?
+
+  3. Do you have a preferred background color for the chart?
+
+  4. Would you prefer grid lines on the chart for easier reference, and if so, in
+  which color?
+
+  5. Are there any specific font styles or sizes you prefer for the axis labels and
+  titles?
+
+  6. Would you like to include any reference lines or markers to highlight significant
+  events or thresholds within the stock data?
+
+  7. Do you have a preferred title or subtitle for the chart?
+
+  8. Would you like to display any additional information in tooltips when hovering
+  over individual candlesticks?'
+answers: '1. I do not know.
+
+  2. The date format ''YYYY-MM-DD'' is fine.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Title: "Google (GOOG) Stock Prices Over Time"
+
+  8. I am not sure.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

@@ -1,0 +1,55 @@
+initial_prompt: Please create a stacked bar chart to visualize the distribution of
+  billionaires by industry and country from the Billionaires Statistics Dataset (2023).
+  Use the column 'industries' for the x-axis and stack the bars by 'country'. Also,
+  display each industry's total billionaire count alongside their final worth. Ensure
+  each segment's value is labeled and color-coded by country for clarity. Include
+  a legend, and title the chart "Billionaires by Industry and Country." Make sure
+  the y-axis represents the number of billionaires, and add grid lines for easier
+  reading. Thank you!
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Are there any specific countries you would like to highlight or have different
+  colors for?
+
+  3. Do you prefer the legend to be placed at a specific location within the chart
+  area (e.g., top, bottom, left, right)?
+
+  4. Would you like to include annotations or additional text explanations in any
+  section of the chart?
+
+  5. What font style and size would you prefer for the labels and title?
+
+  6. Do you have any preference for the width of the bars or the spacing between them?
+
+  7. Should the values of ''finalWorth'' be displayed in a specific currency or format?
+
+  8. Would you like to highlight any particular industry by altering its segment’s
+  appearance (e.g., bold outlines, different pattern)?
+
+  9. Do you want to include a specific background color or grid line style for the
+  chart?
+
+  10. Is there a specific chart size or aspect ratio you prefer?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I prefer the legend to be placed at the bottom.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.
+
+  9. I do not know.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- industries
+- country
+- finalWorth

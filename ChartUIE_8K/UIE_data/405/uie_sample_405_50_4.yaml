@@ -1,0 +1,52 @@
+initial_prompt: Please create a stacked area chart visualizing the average sale index
+  over 100 days. The chart should clearly display the sale index and corresponding
+  confidence intervals (CI_left and CI_right). Make it business-friendly!
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should the chart include gridlines for easier readability?
+
+  3. Would you like a legend included to explain what each area represents?
+
+  4. Do you want the days to be labeled on the x-axis every specific number of days
+  (e.g., every 10 days)?
+
+  5. Should the y-axis be labeled with specific intervals, and if so, what interval
+  do you prefer?
+
+  6. Do you prefer a specific font style or size for the labels and titles?
+
+  7. Would you like any specific highlights, such as tooltips or annotations, to emphasize
+  certain data points?
+
+  8. Should the confidence intervals be shaded and differentiated in a specific way
+  (e.g., different patterns or opacities)?
+
+  9. Do you want to include a chart title and subtitle? If so, what should they be?
+
+  10. Do you have a preference for the placement of the legend (e.g., top, bottom,
+  right, left)?'
+answers: '1. I am not sure.
+
+  2. Yes.
+
+  3. Yes.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes. Title: "Average Sale Index Over 100 Days" Subtitle: "Including Confidence
+  Intervals (CI_left and CI_right)"
+
+  10. I am not sure.'
+data_attributes:
+- days
+- sale_index
+- CI_left
+- CI_right

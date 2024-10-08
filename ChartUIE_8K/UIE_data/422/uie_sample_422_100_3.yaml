@@ -1,0 +1,58 @@
+initial_prompt: I am looking for a choropleth map visualizing the best wine you can
+  get around the world. The data should be based on the points and the countries from
+  the provided dataset. Please ensure that different shades indicate the range of
+  wine ratings (points). Additionally, include tooltips showing the country name,
+  average points, and the number of wines reviewed. This visualization should help
+  me quickly identify which countries have the highest-rated wines, according to the
+  provided dataset. Please integrate the missing values and make the map as insightful
+  as possible. Thank you!
+questions: '1. What color palette do you prefer for indicating different ranges of
+  wine ratings on the map?
+
+  2. Do you have any preference for the number of rating intervals or categories displayed
+  on the map?
+
+  3. Should lower-rated wines be represented with lighter or darker shades?
+
+  4. Do you prefer any specific map projection (e.g., Mercator, Robinson) for the
+  choropleth map?
+
+  5. Is there a specific range of rating points you would like to highlight or focus
+  on?
+
+  6. Would you like the countries with missing values to be represented in a special
+  way (e.g., with a unique color or pattern)?
+
+  7. Do you have a preferred layout or positioning for the legend and tooltips on
+  the map?
+
+  8. Is there a specific font style or size preference for the country names and ratings
+  in the tooltips?
+
+  9. Are there any additional details you would like to see in the tooltips aside
+  from the country name, average points, and the number of wines reviewed?
+
+  10. Would you like to include any additional geographical features or labels on
+  the map (e.g., major cities or wine regions) to provide more context?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Yes, a unique color for countries with missing values would be helpful.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. No, the country name, average points, and the number of wines reviewed are sufficient.
+
+  10. I am not sure.'
+data_attributes:
+- country
+- points

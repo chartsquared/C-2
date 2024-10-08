@@ -1,0 +1,49 @@
+initial_prompt: Please create a series of box plots to visualize the distribution
+  of global video game sales across different platforms (like Wii, NES, etc.) and
+  genres. The charts should include key metrics such as NA_Sales, EU_Sales, JP_Sales,
+  and Critic Scores to show spread and outliers. Ensure to handle missing values appropriately,
+  highlight significant outliers, and label each box plot clearly with the platform
+  and genre. This analysis will help understand the performance variation in different
+  markets and the critical reception of games over different platforms and genres.
+questions: '1. What color scheme would you prefer for the different platforms and
+  genres?
+
+  2. Do you have a specific preference for the orientation of the box plots (vertical
+  or horizontal)?
+
+  3. Would you like each platform and genre to be displayed on separate charts or
+  combined in a single chart?
+
+  4. Should the outliers be labeled individually, or would you prefer a general highlight?
+
+  5. Is there a specific way you would like missing values to be treated (e.g., ignored,
+  filled with a certain value)?
+
+  6. Do you prefer any specific font style or size for the labels and titles?
+
+  7. Is there a particular order you would like the platforms and genres to be displayed
+  in?
+
+  8. Do you want any additional metrics or summaries to be included in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. I would prefer each platform and genre to be displayed on separate charts.
+
+  4. A general highlight for outliers would be fine.
+
+  5. I am not sure how to treat missing values.
+
+  6. I do not know.
+
+  7. I do not have a specific order in mind.
+
+  8. No, additional metrics or summaries are not needed.'
+data_attributes:
+- Platform
+- Genre
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Critic_Score

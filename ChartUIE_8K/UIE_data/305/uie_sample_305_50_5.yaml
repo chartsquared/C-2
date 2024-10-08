@@ -1,0 +1,53 @@
+initial_prompt: Create a stacked column chart showing top three companies by workforce
+  size. Stack segments for each company's number of employees. Label each segment
+  with company's stock symbol and share price in USD. Sort columns in descending order
+  of employees.
+questions: '1. Do you have any preference for color schemes for the different segments
+  in the chart?
+
+  2. Should the chart include data labels for the exact number of employees within
+  each segment?
+
+  3. Would you like to display the share price on the chart in a specific format or
+  color?
+
+  4. Do you prefer a specific font style or size for the labels and axes titles?
+
+  5. Is there a specific order for the companies you''d like, or should it strictly
+  follow the descending order of employees?
+
+  6. Do you want any specific gridlines or background styles for the chart?
+
+  7. Do you have any preference for the chart''s title and its styling?
+
+  8. Should the chart include a legend for the stock symbols and share prices?
+
+  9. Are there any specific margin or padding preferences for the chart to improve
+  readability?
+
+  10. Do you want to include any annotations or additional notes on the chart for
+  context?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. It should strictly follow the descending order of employees.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. Yes, the chart should include a legend for the stock symbols and share prices.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Company
+- stock Symbol
+- number of employees
+- share price (USD)

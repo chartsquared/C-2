@@ -1,0 +1,46 @@
+initial_prompt: Please create a stacked bar chart to visualize the prices of different
+  organic products in Sydney groceries. Use the categories "Product Name," "Product
+  Category," "Product Price (INR)" and "Quantity" for the stacks. Highlight variations
+  in prices with color and include text annotations to show specific price values
+  for key products. The chart should help in comparing the prices and appreciating
+  the diversity in the product categories. The main goal is to understand price differences
+  in INR among different organic products available. Annotations should draw focus
+  to significant price differences or unique products.
+questions: '1. Do you have a specific color palette preference for highlighting price
+  variations?
+
+  2. Are there any specific products you want to ensure are annotated on the chart?
+
+  3. Do you prefer any particular style or format for the text annotations?
+
+  4. Should the category labels (e.g., Product Category) be displayed horizontally
+  or rotated for better readability?
+
+  5. Is there a specific order you would like the product categories to be displayed
+  in the chart?
+
+  6. Do you want the chart to display grid lines for better visual alignment?
+
+  7. Do you prefer a specific font style or size for the labels and annotations?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I think the category labels should be rotated for better readability.
+
+  5. I do not know.
+
+  6. Yes, please include grid lines for better visual alignment.
+
+  7. I do not have a specific preference for font style or size.
+
+  <end of user response>'
+data_attributes:
+- Product Name
+- Product Category
+- Product Price (INR)
+- Quantity

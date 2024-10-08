@@ -1,0 +1,84 @@
+initial_prompt: Create a scatter plot to visualize the career prediction dataset.
+  Plot each psychological score (O_score, C_score, E_score, A_score, N_score) on separate
+  axes against Aptitude scores (Numerical, Spatial, Perceptual, Abstract, Verbal)
+  to see correlations. Use text annotations to highlight key data points, such as
+  outliers or significant clusters, based on specific careers. Ensure significant
+  data points related to unique careers are highlighted to draw attention. The visualization
+  should help understand how psychological and aptitude scores relate to various careers,
+  providing practical insight for career guidance in psychology contexts.
+questions: '1. Do you have a preferred color scheme for the scatter plot?
+
+  2. Do you prefer a specific marker style for the scatter plot points?
+
+  3. Should each psychological score and aptitude score pair be differentiated by
+  specific colors or markers?
+
+  4. Do you prefer a specific size for the markers for better visibility?
+
+  5. Do you have any preference regarding the font style and size for the text annotations?
+
+  6. Should the career data points have a unique symbol or color?
+
+  7. How would you prefer the outliers to be highlighted?
+
+  8. Do you want grid lines on the scatter plot? If so, do you have a style preference?
+
+  9. Would you like a legend to differentiate the various psychological scores and
+  aptitude scores?
+
+  10. Do you have a preference for the axes'' scales (e.g., linear, logarithmic)?
+
+  11. Do you want titles and labels for each axis? If so, what should they be?
+
+  12. Should there be an overall title for the scatter plot? If so, what would you
+  like it to be?
+
+  13. Would you like to add reference lines for mean or median values of scores on
+  the scatter plot?
+
+  14. Do you have any preferences for the background of the scatter plot (e.g., color,
+  pattern)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, differentiating by specific colors or markers would be good.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, unique symbols for career data points would be great.
+
+  7. Highlighting outliers with a different color or a larger marker would be good.
+
+  8. I do not know.
+
+  9. Yes, a legend would be helpful.
+
+  10. I am not sure.
+
+  11. Yes, titles and labels would be necessary. You can label the axes with the corresponding
+  psychological and aptitude scores.
+
+  12. Yes, "Correlation Between Psychological and Aptitude Scores in Career Prediction".
+
+  13. Adding reference lines for the mean values would be useful.
+
+  14. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- O_score
+- C_score
+- E_score
+- A_score
+- N_score
+- Numerical Aptitude
+- Spatial Aptitude
+- Perceptual Aptitude
+- Abstract Reasoning
+- Verbal Reasoning
+- Career

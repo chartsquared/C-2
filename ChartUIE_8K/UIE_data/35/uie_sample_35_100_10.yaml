@@ -1,0 +1,61 @@
+initial_prompt: I want a heatmap showing the relationship between different features
+  of credit card customers. Specifically, visualize customer age, income category,
+  and their average utilization ratio. Also, include how dependent count and education
+  level correlate with credit limits and total transaction amounts. The intent is
+  to understand patterns that may influence customer behavior and attrition. Use color
+  gradients to clearly represent high and low values, helping us easily identify trends
+  and outliers in the data. This will be useful for our business to tailor better
+  services for our clients.
+questions: '1. What color scheme do you prefer for the heatmap?
+
+  2. Do you want to normalize the data before visualizing it?
+
+  3. What scale type do you prefer for the heatmap (e.g., linear, logarithmic)?
+
+  4. Would you like the data to be clustered or sorted in any specific way?
+
+  5. Do you have any preferences for the heatmap''s layout (e.g., square cells, rectangular
+  cells)?
+
+  6. Should the heatmap include labels for the axes and individual cells?
+
+  7. Do you want to include a legend to explain the color gradients?
+
+  8. Would you like any specific annotations to be added to the heatmap for certain
+  data points?
+
+  9. Are there any specific ranges for the color gradients you''d prefer to highlight
+  high and low values?
+
+  10. What level of granularity or aggregation do you expect for the data attributes?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer a linear scale type.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, include labels for the axes and individual cells.
+
+  7. Yes, include a legend to explain the color gradients.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I expect a detailed level of granularity for the data attributes.
+
+  <end of user emulated response>'
+data_attributes:
+- Customer_Age
+- Income_Category
+- Avg_Utilization_Ratio
+- Dependent_count
+- Education_Level
+- Credit_Limit
+- Total_Trans_Amt

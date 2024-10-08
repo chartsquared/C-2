@@ -1,0 +1,51 @@
+initial_prompt: Create a choropleth map visualizing the height distribution by country,
+  segmented by gender. The map should highlight differences in average height between
+  the United States, and other countries. Use text annotations to mark key data points
+  for each country, especially where significant height differences exist. The purpose
+  of this visualization is to provide insights into health and nutritional factors
+  across different populations. Highlights should distinguish between genders using
+  different colors. This will make it easier to spot patterns and any anomalies. Make
+  sure to include all given annotations for additional context.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  genders?
+
+  2. Are there any specific countries, aside from the United States, that you would
+  like to highlight?
+
+  3. How detailed would you like the text annotations to be? For example, do you want
+  the exact average heights or just indicators of significant differences?
+
+  4. Do you have a preference for the map projection type (e.g., Mercator, Robinson,
+  Winkel Tripel)?
+
+  5. Are there any specific regions or countries you want to be more prominent or
+  zoomed-in on the map?
+
+  6. Would you like to include any additional contextual information or legends explaining
+  the height ranges and color coding?
+
+  7. Do you have preferences for the font style or size of the text annotations?
+
+  8. Should the choropleth map include country borders or other geographical features
+  for additional context?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Exact average heights would be preferred.
+
+  4. I am not sure.
+
+  5. No specific preference.
+
+  6. Yes, include additional contextual information or legends explaining the height
+  ranges and color coding.
+
+  7. No specific preference.
+
+  8. Yes, the choropleth map should include country borders or other geographical
+  features for additional context.'
+data_attributes:
+- Height
+- Gender
+- Country

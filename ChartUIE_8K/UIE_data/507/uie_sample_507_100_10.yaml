@@ -1,0 +1,54 @@
+initial_prompt: Create a line chart to visualize the voting percentage trends for
+  different political parties (CON, LAB, LIB, Brexit, Green) across various constituencies.
+  Use the 'Name' column for the x-axis to represent different constituencies, and
+  the percentage columns ('CON(%)', 'LAB(%)', 'LIB(%)', 'Brexit(%)', 'Green(%)') for
+  the y-axis to show voting percentages. Include a legend to differentiate between
+  the parties. This will help in analyzing the performance of each party across different
+  areas.
+questions: '1. Do you have any preferences for the color scheme of the lines representing
+  each party?
+
+  2. Would you like the chart to have gridlines for better readability?
+
+  3. Do you prefer any specific style for the lines (e.g., solid, dashed, dotted)?
+
+  4. Should the data points be marked with symbols on the lines?
+
+  5. Do you want specific labels or annotations on the chart?
+
+  6. Do you have a preferred title for the chart?
+
+  7. Would you like to include axis titles or descriptions?
+
+  8. Should the chart have a specific range for the y-axis, or should it be auto-scaled?
+
+  9. Do you want to display exact percentage values at the data points?
+
+  10. Do you have preferences for the font style or size for the legend and axis labels?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to have gridlines for better readability.
+
+  3. I prefer solid lines.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Voting Percentage Trends Across Constituencies.
+
+  7. Yes, please include axis titles. "Constituency" for the x-axis and "Voting Percentage"
+  for the y-axis.
+
+  8. It should be auto-scaled.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)

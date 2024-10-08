@@ -1,0 +1,48 @@
+initial_prompt: Can you generate a heatmap to visualize the correlation between various
+  automobile specifications described in the dataset? Specifically, we are interested
+  in understanding the relationship between 0-60 mph acceleration time, gas mileage,
+  power output, weight, and engine displacement. This visualization would help in
+  identifying patterns and correlations among these attributes of different cars.
+  Make sure to clearly label each axis and include a color bar to indicate the strength
+  of the correlation. This will be a valuable tool for analyzing automobile performance
+  metrics. Thank you!
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. Is there a particular color scheme you would like for indicating the strength
+  of the correlation?
+
+  3. Would you like any specific labels or titles for the axes?
+
+  4. Should the correlation values be displayed on the cells of the heatmap?
+
+  5. Do you have a preference for the ordering of the automobile specifications on
+  the axes?
+
+  6. Are there any specific aspect ratios or dimensions you prefer for the heatmap?
+
+  7. Would you prefer a certain range for the color bar (e.g., -1 to 1 for correlation
+  values)?
+
+  8. Do you have any styling preferences for the heatmap gridlines or borders?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Please label the axes with the specification names: 0-60 mph Acceleration Time,
+  Gas Mileage, Power Output, Weight, Engine Displacement.
+
+  4. Yes, please display the correlation values on the cells.
+
+  5. I do not have a preference.
+
+  6. I do not know.
+
+  7. Yes, please use the range -1 to 1 for the color bar.
+
+  8. I am not sure.'
+data_attributes:
+- 0-60 mph(sec)
+- Gas Mileage(mpg)
+- Power(kW)
+- Weight(kg)
+- Engine Displacement(cc)

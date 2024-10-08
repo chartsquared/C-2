@@ -1,0 +1,59 @@
+initial_prompt: 'Create a heatmap illustrating the frequency of missing values across
+  the columns in the dataset about "Colombo Gems: 200 Prime Spots on TripAdvisor."
+  Highlight columns with higher missing values prominently. Ensure the categories
+  like ''type'', ''name'', ''rankingPosition'', etc., are visible along the axes.
+  Use color gradients to show variations in missing data frequency. Include a legend
+  explaining the color scale for easy interpretation. This will help identify areas
+  needing more data collection or cleaning. Make sure the chart is easy to understand
+  for presentation.'
+questions: '1. Do you have a preference for the color gradient used in the heatmap
+  (e.g., blue to red, green to yellow)?
+
+  2. Should specific columns be emphasized more than others in terms of font size
+  or color?
+
+  3. Do you want grid lines to delineate the cells of the heatmap more clearly?
+
+  4. What level of detail do you want in the legend (e.g., more granular or broader
+  ranges)?
+
+  5. Do you prefer the axes labels to be rotated for better readability?
+
+  6. Is there a preferred order for the columns to be displayed (e.g., by increasing
+  missing values, alphabetical)?
+
+  7. Would you like to include any annotations or notes directly on the heatmap to
+  highlight key findings?
+
+  8. Do you have a preferred font style or size for the text in the chart for better
+  readability during the presentation?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, I think grid lines would help.
+
+  4. I am not sure.
+
+  5. Yes, please rotate the axes labels for better readability.
+
+  6. Please order the columns by increasing missing values.
+
+  7. I do not know.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- type
+- name
+- rankingPosition
+- priceLevel
+- category
+- rating
+- phone
+- address
+- email
+- webUrl
+- website
+- rankingDenominator
+- rankingString
+- numberOfReviews

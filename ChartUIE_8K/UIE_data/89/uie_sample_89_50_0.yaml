@@ -1,0 +1,44 @@
+initial_prompt: Create a box chart to visualize torque variations in relation to different
+  product types (M, L). Highlight any significant outliers in torque data. Use shapes
+  to annotate important data points that indicate potential failure. This will help
+  in predictive maintenance analysis.
+questions: '1. Do you prefer any specific colors or themes for the box chart?
+
+  2. How would you like the significant outliers to be highlighted (e.g., different
+  colors, shapes)?
+
+  3. What shapes do you prefer for annotating important data points indicating potential
+  failure?
+
+  4. Should the box chart include grid lines for easier reading?
+
+  5. Do you have a preference for the layout or orientation of the box chart (e.g.,
+  horizontal or vertical)?
+
+  6. Would you like to include legends or labels for the different categories and
+  annotations?
+
+  7. Do you want a title and axis labels? If yes, please provide them.
+
+  8. How detailed should the tooltip information be when hovering over data points?'
+answers: '1. I do not know.
+
+  2. Different colors.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I have no specific preference.
+
+  6. Yes, please include legends or labels.
+
+  7. Title: "Torque Variations by Product Type", Axis Labels: "Product Type (M, L)"
+  and "Torque"
+
+  8. I do not know.'
+data_attributes:
+- Type
+- Torque [Nm]
+- UDI
+- Failure Type

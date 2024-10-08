@@ -1,0 +1,56 @@
+initial_prompt: Visualize a grouped bar chart to display the count of students based
+  on their 'AcademicPerformance' and 'Gender'. Each group should differentiate between
+  genders (Male, Female) and within each group, use different colors to represent
+  categories in 'AcademicPerformance' (Average, Excellent, Poor, Good). Add text annotations
+  to highlight bars with 'Excellent' performance. Highlight the bar with the highest
+  count using a different color. This will help in understanding the gender differences
+  in academic performance. Title the chart "Gender vs Academic Performance of Students".
+  Use annotations and highlights to enhance insights.
+questions: '1. Do you have preferred colors for differentiating between ''Male'' and
+  ''Female'' groups?
+
+  2. What color would you like to use for highlighting the ''Excellent'' performance
+  category?
+
+  3. Do you have a specific color preference for highlighting the bar with the highest
+  count?
+
+  4. How would you like the text annotations to be styled (e.g., font size, color,
+  bold)?
+
+  5. Are there any specific font preferences for the chart title and axis labels?
+
+  6. Would you like to include a legend, and if so, where should it be positioned
+  (e.g., top, bottom, left, right)?
+
+  7. Do you have any specific preferences for the chart margins and spacing between
+  bars?
+
+  8. Would you like gridlines on the chart, and if so, should they be for both axes
+  or only one (x-axis or y-axis)?
+
+  9. Should the bars have any particular styling (e.g., borders, shadow effects)?'
+answers: '<start of user response>
+
+  1. I do not have a specific preference.
+
+  2. I would like the ''Excellent'' performance category to be highlighted in green.
+
+  3. I am not sure about the color for the highest count bar.
+
+  4. I would like the text annotations to be bold and in black.
+
+  5. I do not know.
+
+  6. Yes, please include a legend at the bottom.
+
+  7. I do not have a specific preference.
+
+  8. Gridlines on both axes would be good.
+
+  9. No particular styling, just standard bars.
+
+  <end of user response>'
+data_attributes:
+- Gender
+- AcademicPerformance

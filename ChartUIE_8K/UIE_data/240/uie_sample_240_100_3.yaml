@@ -1,0 +1,40 @@
+initial_prompt: 'Create a geographic heatmap of German university courses from the
+  "German Univ. Courses: Comprehensive Catalog" dataset. The heatmap should visualize
+  the total number of courses available in each city. Use the ''City Name'' column
+  to determine the locations and the ''Course ID'' to count the number of courses
+  in each city. Different color intensities should represent the varying numbers of
+  courses offered across different cities. Make sure the map is easy to interpret
+  and highlights regions with the highest concentration of courses. This visualization
+  will help understand the distribution of educational opportunities geographically
+  across Germany.'
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like specific labels or tooltips to show the exact number of courses
+  for each city?
+
+  3. Is there a particular map style you prefer (e.g., terrain, satellite, or default)?
+
+  4. Should the map include country borders and major city markers for better context?
+
+  5. Do you have a preference for the intensity gradation method (e.g., linear, logarithmic)?
+
+  6. Should the heatmap include a legend explaining the color intensity scale?
+
+  7. Are there any cities or regions you want to be highlighted or annotated specifically?'
+answers: '1. I am not sure about the color scheme, please choose one that is clear
+  and easy to interpret.
+
+  2. Yes, I would like tooltips to show the exact number of courses for each city.
+
+  3. I do not know, any default map style should be fine.
+
+  4. Yes, including country borders and major city markers would be helpful for context.
+
+  5. I am not sure, please choose the gradation method that best represents the data.
+
+  6. Yes, please include a legend explaining the color intensity scale.
+
+  7. I do not have any specific cities or regions to be highlighted or annotated.'
+data_attributes:
+- City Name
+- Course ID

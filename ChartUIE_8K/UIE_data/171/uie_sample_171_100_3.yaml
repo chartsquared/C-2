@@ -1,0 +1,48 @@
+initial_prompt: I have a dataset about heartbeat sounds classified under several labels
+  and sublabels. Please create a stacked bar chart that shows the distribution of
+  these labels and sublabels. The bars should represent each unique label, and the
+  segments of the bars should represent the respective sublabels within each label.
+  Use different colors to distinguish between sublabels. Make sure the visualization
+  helps in understanding how prevalent each label and sublabel is within the dataset.
+  Additionally, include a legend to indicate which color corresponds to each sublabel.
+questions: '1. Do you have any specific color preferences for the sublabels?
+
+  2. Should the bars be sorted in any particular order (e.g., alphabetical order of
+  labels, descending prevalence)?
+
+  3. Would you like to include any specific titles or labels for the axes?
+
+  4. Do you have a preferred font style or size for the chart text?
+
+  5. Is there a specific layout or size you prefer for the legend?
+
+  6. Would you like percentage values or raw counts displayed on the segments of the
+  bars?
+
+  7. Do you prefer a specific orientation for the chart (horizontal or vertical bars)?
+
+  8. Are there any specific labels or sublabels you would like to highlight or emphasize
+  in the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific color preferences.
+
+  2. I am not sure about the order. Maybe alphabetical order of labels?
+
+  3. I do not know, maybe just standard titles like "Labels" for the x-axis and "Count"
+  for the y-axis?
+
+  4. I am not sure about the font style or size.
+
+  5. I have no specific preference for legend layout or size.
+
+  6. I am not sure. Perhaps raw counts displayed on the segments?
+
+  7. I do not know. Either horizontal or vertical bars should be fine.
+
+  8. No, there are no specific labels or sublabels to highlight.
+
+  <end of user emulated response>'
+data_attributes:
+- label
+- sublabel

@@ -1,0 +1,58 @@
+initial_prompt: Create a heatmap visualizing sales performance across different states
+  in the "Superstore Sales" data. Use "State" as the rows and "Category" as the columns
+  in the heatmap. The color intensity should represent the sum of "Sales" for each
+  state-category combination. Include a legend to show the corresponding sales values
+  for the color intensities. Also, ensure the heatmap is color-blind friendly. Title
+  it "Heatmap of Sales Performance by State and Category".
+questions: '1. Do you have a preferred color palette for the heatmap, keeping in mind
+  it must be color-blind friendly?
+
+  2. What specific color-blind friendly palettes do you prefer among common ones like
+  Deuteranopia, Protanopia, or Tritanopia?
+
+  3. How would you like the heatmap to handle cells with no data? Should they be shown
+  with a specific color or left blank?
+
+  4. Would you like to include value labels within the cells of the heatmap or rely
+  solely on the color intensities and legend?
+
+  5. Do you have preferences for the exact range and gradient of the color intensity
+  (e.g., low sales being light blue, high sales being dark blue)?
+
+  6. Do you have specific font styles or sizes in mind for the title and labels of
+  the heatmap?
+
+  7. Should the states and categories be sorted in a particular order (e.g., alphabetical,
+  by total sales, etc.)?
+
+  8. Are there any specific states or categories you want to highlight or draw attention
+  to in this heatmap?
+
+  9. Do you prefer any specific dimensions (width x height) for the heatmap visualization
+  for better readability and presentation?
+
+  10. Are there particular insights or patterns you are hoping to identify or emphasize
+  with this heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Cells with no data should be shown with a specific color.
+
+  4. I do not have a specific preference.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. Sorting by total sales would be preferred.
+
+  8. I do not have specific states or categories to highlight.
+
+  9. I do not have a specific preference.
+
+  10. I am looking to identify any noticeable sales patterns across states and categories.'
+data_attributes:
+- State
+- Category
+- Sales

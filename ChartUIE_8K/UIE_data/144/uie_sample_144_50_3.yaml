@@ -1,0 +1,50 @@
+initial_prompt: Create a box chart to analyze the distribution of people and minors
+  left homeless across different districts. Use "housing_units" to see variations
+  in demolition reasons.
+questions: '1. Do you prefer a specific color palette for the box chart?
+
+  2. Should the chart include labels for outliers and extreme values?
+
+  3. Do you want the data points to be marked individually within the box plots?
+
+  4. Would you like to display mean values along with the medians in the box plots?
+
+  5. Should the chart have gridlines for easier value estimation?
+
+  6. Do you have a preference for the axis scale (e.g., linear, logarithmic)?
+
+  7. Would you like the districts to be ordered in a particular way (e.g., alphabetically,
+  by number of demolitions)?
+
+  8. Should annotations be included for significant findings or trends?
+
+  9. Do you need a legend to distinguish between ''people left homeless'' and ''minors
+  left homeless'' data within the same chart?
+
+  10. How should the "reason_for_demolition" be represented in the chart (e.g., different
+  colors, separate plots)?'
+answers: '1. I do not know.
+
+  2. Yes.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. By number of demolitions.
+
+  8. I do not know.
+
+  9. Yes.
+
+  10. Different colors.'
+data_attributes:
+- district
+- people_left_homeless
+- minors_left_homeless
+- housing_units
+- reason_for_demolition

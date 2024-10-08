@@ -1,0 +1,51 @@
+initial_prompt: "Create a box chart of \"My Settlers of Catan Games\" showcasing player\
+  \ performance over multiple games. Use the 'points', 'production', 'tradeGain',\
+  \ 'robberCardsGain', 'totalGain', 'tradeLoss', 'robberCardsLoss', 'tribute', 'totalLoss',\
+  \ and 'totalAvailable' columns for the y-values, segmented by the 'player' column\
+  \ on the x-axis. Highlight variations and distributions to easily compare players'\
+  \ stats. Ensure outliers and medians are clearly marked for better insights. Make\
+  \ the chart interactive for detailed exploration of each player's game performance\
+  \ data. \n\n"
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Would you like each player to have different colors for easy distinction?
+
+  3. What style of outliers do you prefer? (e.g., dots, triangles)
+
+  4. How would you like medians to be marked? (e.g., bold lines, different color)
+
+  5. Do you want grid lines in the background for easier comparison?
+
+  6. Are there any specific labeling formats you prefer for the axes?
+
+  7. Would you like tooltips to provide additional details when hovering over the
+  data points?
+
+  8. Do you have any preferences for the chart title and axis titles?'
+answers: '1. I do not know.
+
+  2. Yes, I would like each player to have different colors for easy distinction.
+
+  3. I am not sure.
+
+  4. Bold lines for medians.
+
+  5. Yes, grid lines in the background would be nice.
+
+  6. I don’t have any specific labeling formats for the axes.
+
+  7. I do not know.
+
+  8. I do not have any specific preferences for the chart title and axis titles.'
+data_attributes:
+- player
+- points
+- production
+- tradeGain
+- robberCardsGain
+- totalGain
+- tradeLoss
+- robberCardsLoss
+- tribute
+- totalLoss
+- totalAvailable

@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap to visualize the correlation between the columns
+  in the Apple Stocks dataset. Use columns such as Open, High, Low, Close, Adj Close,
+  and Volume. The heatmap should highlight how these variables are related over the
+  given time period. Make sure to color code the correlations, with stronger correlations
+  having more intense colors. This will help identify any patterns or relationships
+  between stock prices and trading volume over time. Include a color bar for reference.
+  Make sure the date range and sample size are clearly indicated in titles or labels.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. How would you like the color bar to be positioned (e.g., top, right, bottom,
+  left)?
+
+  3. Do you want any specific labels or annotations on the heatmap?
+
+  4. What specific date range should be indicated in the titles or labels?
+
+  5. Do you have any preferences for the scale or range of correlation values on the
+  color bar?
+
+  6. Should the heatmap include grid lines or borders between the cells?
+
+  7. Would you like the correlation values to be displayed inside the heatmap cells?
+
+  8. Is there a specific font style or size you would prefer for the titles and labels?
+
+  9. Are there any additional details or context you would like to be included in
+  the heatmap?'
+answers: '1. I am not sure.
+
+  2. I would prefer the color bar to be positioned on the right.
+
+  3. I do not know.
+
+  4. The specific date range from January 2015 to December 2020 should be indicated
+  in the titles or labels.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please display the correlation values inside the heatmap cells.
+
+  8. I do not have any specific preferences.
+
+  9. I do not know.'
+data_attributes:
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

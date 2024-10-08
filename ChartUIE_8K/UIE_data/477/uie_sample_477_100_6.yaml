@@ -1,0 +1,48 @@
+initial_prompt: I need a bubble chart showcasing the feedback on "Pizza Mercato" from
+  the given dataset (food-and-drink/pizza_jared). The x-axis should represent different
+  answers ("Excellent," "Good," etc.). The y-axis should represent the time. The size
+  of the bubbles should indicate the number of votes received. Each bubble's color
+  should reflect the question ("How was Pizza Mercato?"), while the position indicates
+  the total votes. Ensure the legend explains the color coding for clarity. This will
+  help visualize customer satisfaction over time with respect to the different responses.
+questions: '1. Do you have any specific preferences for the color palette used for
+  the different bubbles?
+
+  2. Would you prefer the bubbles to be transparent or solid in the chart?
+
+  3. Is there a particular time format you prefer for the y-axis (e.g., milliseconds
+  since epoch, date, month)?
+
+  4. What level of granularity do you prefer for the time representation (e.g., days,
+  weeks, months)?
+
+  5. Do you have any specific preferences for the font style and size used in the
+  legend and labels?
+
+  6. Should the chart include gridlines or borders for easier reading?
+
+  7. Is there a specific layout or orientation for the legend that you prefer (e.g.,
+  vertical, horizontal)?
+
+  8. Would you like to include any trend lines or regression lines to highlight the
+  trend further?'
+answers: '1. I have no specific preference for the color palette.
+
+  2. I am not sure about the bubbles being transparent or solid.
+
+  3. I am not sure about the time format for the y-axis.
+
+  4. I prefer the time representation to be in months.
+
+  5. I do not have any specific preferences for the font style and size.
+
+  6. I am not sure about including gridlines or borders.
+
+  7. I am not sure about the layout or orientation of the legend.
+
+  8. I do not know if I want trend lines or regression lines included.'
+data_attributes:
+- answer
+- time
+- votes
+- question

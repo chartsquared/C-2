@@ -1,0 +1,31 @@
+initial_prompt: Create a Choropleth map to visualize the countries shipped to from
+  the dataset, highlighting shipment volume per country. Use "countries_shipped_to"
+  as the key metric for shading the map.
+questions: '1. What color scheme do you prefer for the choropleth map?
+
+  2. Do you want to include a legend to explain the shading scale?
+
+  3. Should we display country names on the map for better clarity?
+
+  4. Do you have any specific preferences for the map projection type (e.g., Mercator,
+  Robinson)?
+
+  5. Would you like to include any filters or dropdowns to dynamically change the
+  shading metric or region?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Yes, I would like to include a legend.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- countries_shipped_to
+- origin_country
+- units_sold

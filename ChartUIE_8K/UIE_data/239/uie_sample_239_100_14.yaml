@@ -1,0 +1,45 @@
+initial_prompt: Please create a heatmap to visualize the global blood type distribution
+  data. The heatmap should display different countries on the y-axis and various blood
+  types (O+, A+, B+, AB+, O-, A-, B-, AB-) on the x-axis. Each cell should represent
+  the percentage of the population with that specific blood type, with a color gradient
+  indicating the value range from low to high. Ensure to highlight missing values
+  distinctly. This chart will help to easily compare blood type distributions across
+  different countries. The dataset includes population statistics, so integrate this
+  where relevant. Thank you.
+questions: '1. Do you have any preference for the color gradient used to indicate
+  the percentage values?
+
+  2. How would you like missing values to be highlighted? (e.g., specific color, pattern,
+  etc.)
+
+  3. Should the population statistics be displayed directly on the heatmap, or integrated
+  into the tooltip/hover information?
+
+  4. Do you have any specific preferences regarding the labels or legends on the chart?
+
+  5. Is there a particular way you would like us to sort the countries on the y-axis?
+
+  6. Would you prefer additional annotations or markers to be included for specific
+  countries or blood types?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- Country
+- O+
+- A+
+- B+
+- AB+
+- O-
+- A-
+- B-
+- AB-
+- Population

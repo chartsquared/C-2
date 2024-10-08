@@ -1,0 +1,52 @@
+initial_prompt: Create a bar chart to visualize the average sale index over days.
+  Use the data from '../Extra_datas/data/405.csv', including CI_left and CI_right
+  for error bars. Focus on unique days and corresponding sale indices to analyze business
+  performance trends.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Should the error bars be displayed in a specific style (bold, dashed, etc.)?
+
+  3. Do you want the chart to include titles and labels for both axes? If so, what
+  should they be?
+
+  4. Would you like to include a legend for the chart? If so, how would you like it
+  to be formatted?
+
+  5. Is there a specific range you would like the y-axis to cover?
+
+  6. Do you have any preference for the bar width or spacing between bars?
+
+  7. Should the days be displayed in a specific order (chronological or custom)?
+
+  8. Would you like grid lines to be included in the chart? If so, in which orientation
+  (horizontal, vertical, or both)?
+
+  9. Do you have any preference for the font style and size for chart labels and titles?
+
+  10. Do you want any additional contextual information or annotations to be included
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please include titles and labels for both axes. The x-axis can be labeled
+  "Days" and the y-axis as "Average Sale Index".
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Chronological order would be best.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- days
+- sale_index
+- CI_left
+- CI_right

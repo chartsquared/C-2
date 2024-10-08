@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap to visualize TED Talk data, focusing on the relationship
+  between views and likes across different dates. Highlight popular talks by modifying
+  element colors for higher views and likes. Add text annotations to provide values
+  for standout talks. The aim is to identify trends, popular topics, and standout
+  speakers. Ensure to include proper context to help understand the timeframe and
+  speaker diversity. Use the data summary as a guide to determine unique topics, missing
+  values, and uniqueness in the dataset. This will aid in educational insights about
+  impactful TED Talks.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the standout talks to be annotated (e.g., bold text, larger
+  font, different color)?
+
+  3. Do you have specific thresholds in mind for what constitutes "higher" views and
+  likes?
+
+  4. Should the dates be displayed in a particular format on the heatmap?
+
+  5. Would you like the speaker names to be included directly on the heatmap or in
+  a separate legend?
+
+  6. Are there any specific TED talk titles you want to highlight or emphasize?
+
+  7. How detailed should the context regarding timeframe and speaker diversity be
+  on the heatmap?
+
+  8. Do you have any preferences for the layout or orientation of the heatmap (e.g.,
+  vertical or horizontal alignment)?'
+answers: '1. I do not have a specific preference.
+
+  2. Bold text with a larger font would be good.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include the speaker names directly on the heatmap.
+
+  6. I do not know any specific titles to highlight.
+
+  7. Context should be detailed enough to understand the variety of topics and the
+  timeframe.
+
+  8. I am not sure.'
+data_attributes:
+- title
+- date
+- views
+- likes
+- author

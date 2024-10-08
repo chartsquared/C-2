@@ -1,0 +1,41 @@
+initial_prompt: Create a Box chart visualizing the 'sale_index' data over 'days' with
+  text annotations for notable data points, highlighting any outliers. This should
+  help analyze the average performance and confidence intervals (CI_left, CI_right)
+  over time, aiding business decisions.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like to include gridlines for better readability?
+
+  3. Do you prefer a specific style or format for text annotations (e.g., font size,
+  color)?
+
+  4. Should the outliers be highlighted in a particular way or with specific markers?
+
+  5. Is there a particular range or limit you would like for the y-axis?
+
+  6. Would you like to see a trend line included in the chart?
+
+  7. Should the confidence intervals be represented in a specific manner (e.g., shaded
+  area, lines)?
+
+  8. Do you have any preferences for the title and axis labels of the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, highlight the outliers with a different color or marker.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, represent the confidence intervals with shaded areas.
+
+  8. I do not know.'
+data_attributes:
+- days
+- sale_index
+- CI_left
+- CI_right

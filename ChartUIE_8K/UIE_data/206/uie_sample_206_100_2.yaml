@@ -1,0 +1,62 @@
+initial_prompt: Create a dot plot visualizing housing prices based on area, bedrooms,
+  bathrooms, and additional features such as mainroad and air conditioning. Highlight
+  houses with 4 stories and those that have guest rooms to show any patterns. Include
+  text annotations for the most expensive and least expensive houses to draw attention
+  to their specific attributes. This will help viewers understand how different features
+  impact housing prices in this real-estate dataset. Highlight unique patterns in
+  these properties by modifying dot sizes or colors to make the insights clearer and
+  more engaging.
+questions: '1. Do you have a preferred color scheme for the dot plot?
+
+  2. How would you like the dots to be sized? Should they reflect any particular attribute?
+
+  3. What kind of text annotations would you prefer for the most and least expensive
+  houses?
+
+  4. Should the dots representing houses with 4 stories or guest rooms have specific
+  colors or shapes?
+
+  5. Do you have a preference for the layout of the plot (e.g., aspect ratio, arrangement
+  of axis)?
+
+  6. Would you like to include grid lines or background shading to enhance readability?
+
+  7. Should we include a legend explaining the colors and sizes used in the dot plot?
+
+  8. Do you prefer to use any specific fonts or text sizes for annotations and labels?
+
+  9. Are there any specific themes or design aesthetics you would like the chart to
+  follow?
+
+  10. Would you like to include any specific titles or labels for the axes?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Just simple text annotations with price and key features (e.g., area, bedrooms,
+  bathrooms).
+
+  4. Yes, dots for houses with 4 stories should have a unique color, and dots for
+  houses with guest rooms should have a distinctive shape.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. Yes, a legend would be helpful to explain the colors and sizes.
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. Yes, please include clear titles and labels for the axes, such as "Housing Prices
+  vs. Area, Bedrooms, Bathrooms".'
+data_attributes:
+- price
+- area
+- bedrooms
+- bathrooms
+- stories
+- mainroad
+- guestroom
+- airconditioning

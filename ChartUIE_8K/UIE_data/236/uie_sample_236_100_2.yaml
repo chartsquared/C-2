@@ -1,0 +1,50 @@
+initial_prompt: Create a box chart to visualize the distribution of song popularity,
+  danceability, and energy across different years and genres. Highlight the outliers
+  in each category to emphasize unusually high or low values. Use text annotations
+  to mark these outliers, noting the artist and song for context. The chart should
+  help us understand trends in music attributes over time and by genre. Highlight
+  genres like 'pop' and 'rock' where variation might be more prominent. This visualization
+  will aid in identifying key trends and outliers in popular music attributes.
+questions: '1. Do you have any specific color preferences for different genres?
+
+  2. Should the outliers be highlighted in a specific color or style?
+
+  3. Do you prefer labels or tooltips for the text annotations of outliers?
+
+  4. Is there a particular way you want the years to be displayed on the x-axis (e.g.,
+  grouped, spaced evenly)?
+
+  5. Would you like to standardize the scales for popularity, danceability, and energy,
+  or keep them independent?
+
+  6. Should the visualization include a legend or any other specific elements for
+  better interpretability?
+
+  7. How detailed do you want the genre breakdown to be for genres like ''pop'' and
+  ''rock'' (e.g., subgenres)?
+
+  8. Do you have a specific font style or size preference for the text annotations
+  and labels?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I prefer labels for the text annotations of outliers.
+
+  4. Spaced evenly would be good.
+
+  5. Keep them independent.
+
+  6. Yes, a legend would be helpful.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- artist
+- song
+- year
+- popularity
+- danceability
+- energy
+- genre

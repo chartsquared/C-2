@@ -1,0 +1,51 @@
+initial_prompt: Please create a line chart using the yeast.csv data. I would like
+  to visualize the trends of the numerical features across different samples. Specifically,
+  plot 'mcg', 'gvh', 'alm', 'mit', 'erl', 'pox', 'vac', 'nuc' on the Y-axis and use
+  a common identifier (like sample index) on the X-axis. Ensure each line represents
+  one of these features. The chart will help us understand the variation among these
+  features in yeast strains. Thank you!
+questions: "1. What color palette would you prefer for the lines representing each\
+  \ feature?\n2. Do you have any preference for the line styles (e.g., solid, dashed,\
+  \ dotted) for different features?\n3. Would you like to include gridlines for better\
+  \ readability? If yes, should they be both horizontal and vertical or only one of\
+  \ them?\n4. Is there a specific range or scale for the Y-axis you'd like to set,\
+  \ or should it be automatically adjusted based on the data?\n5. Do you want to include\
+  \ markers on the lines to highlight individual data points?\n6. Should we add a\
+  \ legend to the chart to clearly identify each feature? If yes, where would you\
+  \ prefer the legend to be positioned (e.g., top, bottom, left, right, or inside\
+  \ the chart)?\n7. Do you want to include axis titles and labels? If so, do you have\
+  \ any specific text you want for them?\n8. Would you like to display the sample\
+  \ index on the X-axis as is, or would you prefer a different identifier? \n9. Do\
+  \ you have a title in mind for the chart, or should we generate one based on the\
+  \ data and purpose?\n10. Are there any specific font preferences for the chart text\
+  \ (title, labels, legend)?"
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, please include gridlines. I do not have a specific preference for horizontal
+  or vertical.
+
+  4. Automatically adjusted based on the data.
+
+  5. I do not know.
+
+  6. Yes, please add a legend. I do not have a specific preference for the position.
+
+  7. Yes, please include axis titles and labels. I do not have specific text in mind.
+
+  8. Sample index on the X-axis is fine.
+
+  9. I do not have a specific title in mind, please generate one based on the data
+  and purpose.
+
+  10. I do not have any specific font preferences.'
+data_attributes:
+- mcg
+- gvh
+- alm
+- mit
+- erl
+- pox
+- vac
+- nuc

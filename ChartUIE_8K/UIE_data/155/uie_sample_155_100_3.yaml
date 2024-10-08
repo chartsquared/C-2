@@ -1,0 +1,54 @@
+initial_prompt: Create a treemap to visualize the distribution of Engineering Graduates'
+  salaries. The chart should display the breakdown by CollegeState, highlighting differences
+  in median Salary across different states. Use categories such as CollegeTier, Specialization,
+  and Degree to provide further granularity in each state. Additionally, incorporate
+  markers for attributes like collegeGPA and GraduationYear to show their influence
+  on Salary. This visual should help in understanding how various educational factors
+  impact graduate salaries across different regions. Please ensure it is clear and
+  easy to interpret for stakeholders.
+questions: '1. What color scheme do you prefer for differentiating categories such
+  as CollegeTier, Specialization, and Degree?
+
+  2. Would you like to use specific color gradients to indicate the influence of collegeGPA
+  and GraduationYear on Salary?
+
+  3. Do you have any preference for the layout or ordering of states in the treemap
+  (e.g., alphabetically, by median salary, etc.)?
+
+  4. How would you like the markers for attributes like collegeGPA and GraduationYear
+  to be displayed (e.g., as tooltips, labels, color intensity)?
+
+  5. Would you prefer to show the exact median salary values in each section of the
+  treemap or just focus on the visual differences?
+
+  6. Is there a specific font or style you would like for the labels and annotations
+  within the treemap?
+
+  7. Do you need any additional contextual information or legends included in the
+  treemap to help stakeholders understand the data better?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, using specific color gradients to indicate the influence of collegeGPA and
+  GraduationYear sounds good.
+
+  3. I do not know.
+
+  4. As tooltips would be fine.
+
+  5. Focusing on the visual differences is preferred.
+
+  6. I do not have a specific preference.
+
+  7. Yes, including a legend would be helpful to understand the data better.
+
+  <end of user emulated response>'
+data_attributes:
+- CollegeState
+- Salary
+- CollegeTier
+- Specialization
+- Degree
+- collegeGPA
+- GraduationYear

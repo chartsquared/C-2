@@ -1,0 +1,54 @@
+initial_prompt: Visualize the World Cup outcomes data 'wwc_outcomes' using a heatmap.
+  The heatmap should display 'team' on the y-axis and 'year' on the x-axis. Each cell
+  should represent the 'score' of the team in a particular year. Use color gradients
+  to show score intensity, making it easy to identify high-scoring teams across years.
+  Additionally, differentiate win statuses ('Won', 'Lost', 'Draw') using varying hues
+  (green for won, red for lost, yellow for draw) to enhance clarity. The goal is to
+  quickly convey performance trends and outcomes over the years for each team in the
+  Women’s World Cup.
+questions: '1. Do you have specific color gradients in mind for showing score intensity?
+
+  2. Are there any specific color codes you prefer for ''Won'', ''Lost'', and ''Draw''
+  statuses?
+
+  3. How would you like to handle years or teams with missing scores?
+
+  4. Do you prefer the heatmap to include axis labels and titles? If yes, can you
+  specify their text?
+
+  5. Is there a specific font style or size you prefer for the labels and titles?
+
+  6. Would you like to add a legend to explain the color gradients and hues, and if
+  so, where should it be placed?
+
+  7. Do you want grid lines to be visible on the heatmap for better readability?
+
+  8. Should there be any annotations or textual information within the heatmap cells?'
+answers: '<start of user emulated response>
+
+  1. I do not have specific color gradients in mind for showing score intensity.
+
+  2. I do not know specific color codes for ''Won'', ''Lost'', and ''Draw'' statuses,
+  but using green for won, red for lost, and yellow for draw is fine.
+
+  3. I am not sure how to handle years or teams with missing scores.
+
+  4. Yes, please include axis labels and titles. The y-axis should be labeled ''Team''
+  and the x-axis ''Year''. The title can be ''Women’s World Cup Team Performance Heatmap''.
+
+  5. I do not have a specific font style or size preference for the labels and titles.
+
+  6. Yes, a legend explaining the color gradients and hues would be helpful. It can
+  be placed on the right side of the heatmap.
+
+  7. Yes, having grid lines visible on the heatmap would be better for readability.
+
+  8. I am not sure if annotations or textual information within the heatmap cells
+  are necessary.
+
+  <end of user emulated response>'
+data_attributes:
+- year
+- team
+- score
+- win_status

@@ -1,0 +1,56 @@
+initial_prompt: I want an Area chart that depicts trends in California housing prices
+  over various ages of housing. The x-axis should represent the housing median age
+  from the data, and the y-axis should display the median house value. The regions
+  in the Area chart should be differentiated by the 'ocean_proximity' attribute to
+  show how proximity to the ocean affects housing values over time. Highlight missing
+  data clearly if possible. Use different colors for each 'ocean_proximity' category
+  to make it clear and visually appealing. Ensure the chart is easy to interpret.
+questions: '1. Do you have a preferred color palette for the different ''ocean_proximity''
+  categories?
+
+  2. Do you prefer specific colors to highlight the missing data?
+
+  3. Should the chart include gridlines for easier interpretation?
+
+  4. Do you want annotations on the chart for significant data points or trends?
+
+  5. What level of detail do you expect in the axis labels and tooltips?
+
+  6. Do you prefer a specific style for the chart legend (e.g., position, size, format)?
+
+  7. Would you like the chart to have a title and subtitles? If so, what should they
+  be?
+
+  8. Are there any specific fonts or font sizes you prefer for text elements on the
+  chart?
+
+  9. Should the chart be optimized for viewing on a specific device or screen size?
+
+  10. Would you like any additional contextual information or notes to be included
+  on the chart?
+
+  '
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the chart should include gridlines for easier interpretation.
+
+  4. I am not sure.
+
+  5. I expect medium level of detail in the axis labels and tooltips.
+
+  6. I do not have a specific preference for the chart legend style.
+
+  7. Yes, the chart should have a title and a subtitle. Title: "Trends in California
+  Housing Prices Over Median Housing Age" Subtitle: "Differentiated by Ocean Proximity"
+
+  8. I do not have specific fonts or font sizes in mind.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- housing_median_age
+- median_house_value
+- ocean_proximity

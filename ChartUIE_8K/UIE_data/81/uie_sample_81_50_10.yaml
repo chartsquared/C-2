@@ -1,0 +1,55 @@
+initial_prompt: Create a choropleth map showing YouTube statistics for different countries.
+  Use 'Country' for regions, 'subscribers' for the main metric, and color intensity
+  to depict 'video views'. Include data on 'Unemployment rate' and 'Urban_population'
+  for additional context.
+questions: '1. Do you have any specific color scheme preferences for the map?
+
+  2. Would you like to use a specific map projection style?
+
+  3. Do you prefer to include labels for each country or keep the map clean and uncluttered?
+
+  4. How detailed would you like the legend to be, particularly with respect to ''video
+  views''?
+
+  5. Should there be a separate legend or annotation for the additional context data
+  like ''Unemployment rate'' and ''Urban_population''?
+
+  6. Do you have a preference for the scale (linear, logarithmic) of ''video views''
+  when depicted by color intensity?
+
+  7. Would you like to include any specific visual cues or annotations for countries
+  with extreme values (high or low)?
+
+  8. Is there a specific layout or positioning you prefer for the title, legend, and
+  additional information on the map?
+
+  9. Would you prefer any specific font style or size for the labels and annotations?
+
+  10. Should the map include interactive tooltip information for each country when
+  hovered over?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I prefer to include labels for each country.
+
+  4. I am not sure.
+
+  5. Yes, a separate legend or annotation for the additional context data would be
+  great.
+
+  6. I am not sure.
+
+  7. Yes, please include visual cues or annotations for countries with extreme values.
+
+  8. I do not know.
+
+  9. I do not know.
+
+  10. I am not looking for an interactive map.'
+data_attributes:
+- Country
+- subscribers
+- video views
+- Unemployment rate
+- Urban_population

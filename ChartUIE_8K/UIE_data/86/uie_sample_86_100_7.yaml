@@ -1,0 +1,50 @@
+initial_prompt: I want a stacked bar chart that shows the distribution of danceability,
+  energy, and acousticness for each listed song in the Spotify dataset. Arrange the
+  songs by their title along the x-axis, and stack the danceability, energy, and acousticness
+  values for each song on the y-axis. Use different colors for each attribute to make
+  it easy to distinguish. The chart should be clear and informative, revealing the
+  differences and similarities in these attributes across different songs. Please
+  ensure the legend is included and the axes are correctly labeled.
+questions: '1. Do you have any specific color scheme preferences for the danceability,
+  energy, and acousticness attributes?
+
+  2. Would you like the bars to display attribute values on hover or as labels within
+  the stacked bar segments?
+
+  3. How would you prefer the songs to be sorted along the x-axis (alphabetical order,
+  by a specific attribute, etc.)?
+
+  4. Do you have any specific requirements for the legend placement or format?
+
+  5. Would you like to include any additional information or annotations on the chart
+  (e.g., average values, trend lines)?
+
+  6. Is there a specific font style or size you prefer for the axis labels and legend
+  text?
+
+  7. What size or aspect ratio would you prefer for the chart to ensure clarity?
+
+  8. Do you have any preferences for the gridlines'' appearance (e.g., color, thickness,
+  dashed or solid lines)?'
+answers: '1. I am not sure about the color scheme preferences.
+
+  2. I would prefer the bars to display attribute values as labels within the stacked
+  bar segments.
+
+  3. I do not know how I would prefer the songs to be sorted along the x-axis.
+
+  4. I have no specific preference for the legend placement or format.
+
+  5. I am not sure about including additional information or annotations on the chart.
+
+  6. I do not have any specific preference for the font style or size for the axis
+  labels and legend text.
+
+  7. I am not sure about the size or aspect ratio for the chart.
+
+  8. I do not know about the gridlines'' appearance preferences.'
+data_attributes:
+- song_title
+- danceability
+- energy
+- acousticness

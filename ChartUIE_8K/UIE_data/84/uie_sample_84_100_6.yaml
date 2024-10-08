@@ -1,0 +1,58 @@
+initial_prompt: Please create a bar chart visualizing the water quality data. The
+  x-axis should indicate different water quality parameters like pH, Hardness, Solids,
+  Chloramines, Sulfate, Conductivity, Organic Carbon, Trihalomethanes, and Turbidity.
+  The y-axis should represent the average values of these parameters. Show different
+  colors for potable and non-potable water to distinguish them easily. Include labels,
+  a title, and a legend to help understand the chart better. Make sure to account
+  for missing values intelligently in your visualization. This will help us understand
+  the overall water quality trends in our dataset.
+questions: '1. What color preferences do you have for distinguishing potable and non-potable
+  water?
+
+  2. Do you have any specific preferences for the chart title?
+
+  3. Are there any specific font styles or sizes you prefer for labels and legends?
+
+  4. How would you like to handle missing values in the visualization?
+
+  5. Do you have a preference for the axis label orientation (horizontal/vertical)?
+
+  6. Would you like any specific gridlines or background color for the chart?
+
+  7. Do you have a preferred layout for the legend (e.g., top, bottom, left, right)?
+
+  8. Are there any additional annotations or markers you would like on the chart?
+
+  9. Would you like to include error bars or confidence intervals for the averages?
+
+  10. Do you prefer specific dimensions or aspect ratios for the bar chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Please handle missing values by calculating the average of the available data.
+
+  5. Horizontal orientation for axis labels would be fine.
+
+  6. I do not have a specific preference.
+
+  7. Bottom layout for the legend would be great.
+
+  8. No additional annotations or markers are needed.
+
+  9. No need to include error bars or confidence intervals.
+
+  10. I do not know.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+- Potability

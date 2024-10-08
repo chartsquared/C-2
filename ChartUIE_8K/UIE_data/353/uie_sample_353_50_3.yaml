@@ -1,0 +1,47 @@
+initial_prompt: Please create a bar chart visualizing the total VALUE for each REPORTDATE
+  based on the data provided. Use the dates from the sample data to showcase the trend
+  from late December 2013 to early January 2014. Since there are multiple entries
+  with the same VALUE, aggregate them accordingly.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Should the bars be displayed vertically or horizontally?
+
+  3. Would you like to include gridlines for easier comparison of values?
+
+  4. Do you prefer to display exact values on top of the bars?
+
+  5. Is there a specific date format you would like to use for the REPORTDATE axis?
+
+  6. Should the x-axis and y-axis have specific titles or labels?
+
+  7. Would you like to add a title or subtitle to the chart?
+
+  8. Do you want to include annotations or markers for significant dates or values?
+
+  9. Is there a specific font style or font size you prefer for the text elements
+  in the chart?
+
+  10. Should the chart include a legend, even if the data is straightforward?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include gridlines for easier comparison of values.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. The x-axis should be labeled "REPORTDATE" and the y-axis should be labeled "Total
+  VALUE".
+
+  7. Yes, please add the title "Total VALUE by REPORTDATE".
+
+  8. I am not sure.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- REPORTDATE
+- VALUE

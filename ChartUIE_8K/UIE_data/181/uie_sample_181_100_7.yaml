@@ -1,0 +1,54 @@
+initial_prompt: I have provided CSV data about Taylor Swift's concert tours, including
+  cities, countries, venues, opening acts, attendance, and revenue. I want to visualize
+  how attendance and revenue vary across different venues and cities to understand
+  the impact of her tours. Please create a stacked bar chart that displays the attendance
+  and revenue for each venue listed in the sample data. Each bar should represent
+  a venue with segments for attendance and revenue. Use distinct colors for attendance
+  and revenue. Ensure the chart clearly shows comparison across venues. Please use
+  labels and legends for clarity. Thank you!
+questions: '1. Do you have any preferred colors for the distinct segments representing
+  attendance and revenue?
+
+  2. Do you prefer a specific color palette for the overall chart?
+
+  3. Would you like to include gridlines for better readability?
+
+  4. Do you have a preference for the chart title or any additional annotations?
+
+  5. Should the y-axis display the values in thousands (e.g., 10K) or as raw numbers?
+
+  6. Do you prefer horizontal or vertical bars for the bar chart?
+
+  7. Would you like to have any specific font style or size for labels and legends?
+
+  8. Should the labels on the x-axis include both venue and city, or just the venue?
+
+  9. Do you want to sort the venues in a specific order (e.g., by attendance, revenue,
+  or alphabetically)?
+
+  10. Would you prefer any additional information or data points to be included in
+  the visualization?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I do not know.
+
+  4. I do not have a preference for the chart title or additional annotations.
+
+  5. The y-axis should display the values in thousands (e.g., 10K).
+
+  6. Vertical bars for the bar chart, please.
+
+  7. I do not know.
+
+  8. The labels on the x-axis should include both venue and city.
+
+  9. I would prefer the venues to be sorted by attendance.
+
+  10. I am not sure.'
+data_attributes:
+- Venue
+- City
+- Attendance (tickets sold / available)
+- Revenue

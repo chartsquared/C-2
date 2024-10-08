@@ -1,0 +1,60 @@
+initial_prompt: Please generate a stacked bar chart to visualize the customer churn
+  data. Each bar should represent a country (Geography), stacked by the number of
+  customers who exited and didn’t exit (Exited). Use colors to differentiate between
+  exited and not exited customers. Highlight the "Geography" categories with the highest
+  churn rates. Annotate the bars with the exact count of exited customers to draw
+  attention to them. This will help in understanding the churn distribution across
+  different regions and identify high-risk areas. The chart should make it easy to
+  compare churn rates across countries.
+questions: '1. Do you have specific colors in mind for exited and not exited customers?
+
+  2. Do you have a preferred font size and style for the annotations?
+
+  3. Would you like to include a title and subtitle for the chart? If so, what should
+  they be?
+
+  4. Do you have a preference for the orientation of the bar labels (horizontal or
+  vertical)?
+
+  5. Is there a specific way you want to highlight the "Geography" categories with
+  the highest churn rates (e.g., different color, bold outline)?
+
+  6. Should the legend be placed in a specific position on the chart (e.g., top, bottom,
+  left, right)?
+
+  7. Do you want the bars to be ordered in any specific way (e.g., ascending or descending
+  order based on churn rates)?
+
+  8. Do you have any specific requirements for the gridlines (e.g., should they be
+  visible or not)?
+
+  9. Would you like to include axis labels? If so, do you have a specific text in
+  mind for these labels?
+
+  10. Do you want any specific margins or padding around the chart?'
+answers: '1. I am not sure about specific colors for exited and not exited customers.
+
+  2. I do not have a preferred font size and style for the annotations, but they should
+  be clearly readable.
+
+  3. Yes, please include a title: "Customer Churn by Geography" and a subtitle: "Comparison
+  of Exited and Not Exited Customers".
+
+  4. Horizontal orientation for the bar labels would be fine.
+
+  5. I am not sure about the specific way to highlight the "Geography" categories
+  with the highest churn rates.
+
+  6. I do not know about the legend position, whatever looks best.
+
+  7. Yes, please order the bars in descending order based on churn rates.
+
+  8. I do not have specific requirements for the gridlines.
+
+  9. Yes, include axis labels. For the y-axis: "Number of Customers" and for the x-axis:
+  "Geography".
+
+  10. I do not have any specific preferences for margins or padding around the chart.'
+data_attributes:
+- Geography
+- Exited

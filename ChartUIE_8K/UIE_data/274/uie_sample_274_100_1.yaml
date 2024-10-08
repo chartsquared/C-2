@@ -1,0 +1,65 @@
+initial_prompt: Create a line chart to predict students' dropout and academic success
+  based on the provided education dataset. Highlight trends in 'Curricular units 1st
+  sem (enrolled)', 'Curricular units 1st sem (approved)', and 'Curricular units 1st
+  sem (grade)'. Annotate key data points where significant performance changes occur.
+  Use different colors for 'Dropout' and 'Graduate' targets to help visualize their
+  academic progress. Adding text annotations for extreme values will help focus attention
+  on those particular data points, aiding in identifying patterns leading to dropout
+  or success. This will serve as a practical tool in educational performance analysis.
+questions: '1. Do you have a preferred color scheme for the different target groups
+  (''Dropout'' and ''Graduate'')?
+
+  2. How would you like to differentiate the lines for ''Curricular units 1st sem
+  (enrolled)'', ''Curricular units 1st sem (approved)'', and ''Curricular units 1st
+  sem (grade)''? (e.g., different line styles like solid, dashed, dotted)
+
+  3. Would you like any specific markers on the lines to indicate data points? If
+  yes, please specify.
+
+  4. Do you prefer any particular text size or font for the annotations?
+
+  5. Should the chart have grid lines, and if so, in which style (major, minor, both)?
+
+  6. Are there any specific colors or styles you would like to use for the text annotations
+  highlighting extreme values and key data points?
+
+  7. Would you like a title and subtitle for the chart? If yes, please provide the
+  text.
+
+  8. Do you have any preference for the position of the legend (e.g., top, bottom,
+  left, right)?
+
+  9. Should the X-axis or Y-axis have specific labels or units of measurement?
+
+  10. Is there a specific order or hierarchy you would like the data attributes to
+  follow in the visualization?
+
+
+  '
+answers: '1. I am not sure.
+
+  2. Different line styles would be good, maybe solid for ''enrolled'', dashed for
+  ''approved'', and dotted for ''grade''.
+
+  3. Yes, please use markers on the data points, but I don’t have a specific type
+  in mind.
+
+  4. I do not know.
+
+  5. Both major and minor grid lines would be helpful.
+
+  6. I do not have specific colors or styles in mind for the annotations.
+
+  7. Yes, title: "Predicting Student Dropout and Success", subtitle: "Analysis of
+  Curricular Units Performance".
+
+  8. I am not sure.
+
+  9. Labels for the X-axis as "Semesters" and the Y-axis as "Performance Metrics".
+
+  10. I do not know.'
+data_attributes:
+- Curricular units 1st sem (enrolled)
+- Curricular units 1st sem (approved)
+- Curricular units 1st sem (grade)
+- Target

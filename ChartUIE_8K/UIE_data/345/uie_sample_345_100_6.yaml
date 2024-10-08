@@ -1,0 +1,35 @@
+initial_prompt: Create a Sunburst chart to visualize the Internshala Jobs Dataset.
+  The dataset includes categories like Company_Name, JobTitles, Skills, Description,
+  Stipend, and Links. For the Sunburst chart, the primary layer should be JobTitles,
+  followed by Company_Name as the secondary layer. The inner layers should represent
+  Skills and Stipend. This will help to understand the distribution of job titles
+  across different companies and the skills paired with their stipends. Include interactive
+  elements to highlight specific segments when clicked. Ensure the chart is color-coded
+  by job title for easy differentiation.
+questions: '1. Do you have any specific preferences for the color palette used for
+  differentiating job titles?
+
+  2. What level of detail or granularity would you like for the Skills and Stipend
+  layers?
+
+  3. Should the Stipend values be displayed as exact values or within ranges?
+
+  4. Would you prefer any specific labels or legends to be included or emphasized
+  in the chart?
+
+  5. Are there any specific companies or job titles that you would like to focus on
+  or highlight in the visualization?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.'
+data_attributes:
+- Company_Name
+- JobTitles
+- Skills
+- Stipend

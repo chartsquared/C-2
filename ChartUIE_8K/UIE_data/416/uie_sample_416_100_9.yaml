@@ -1,0 +1,39 @@
+initial_prompt: Please create a grouped column chart that visualizes Bundesliga teams'
+  points per match for the specified dates. Use 'HomeTeam' and 'AwayTeam' as categories
+  on the x-axis, and plot 'FTHG' and 'FTAG' for home and away goals respectively,
+  showing them side-by-side for each match. Ensure that the columns are color-coded
+  for easy distinction. This will help in comparing the performance of home and away
+  teams across different matches. Add a legend to indicate which colors represent
+  home and away goals. Thank you!
+questions: "1. Do you have any preferred colors for the home and away teams' columns?\n\
+  2. Would you like the chart to include data labels showing the exact values of goals\
+  \ scored?\n3. Is there a specific date range you want the chart to focus on?\n4.\
+  \ Do you have a preferred order for the teams on the x-axis, or should they be sorted\
+  \ by date or another criterion?\n5. What title would you like for the chart? \n\
+  6. Do you want any specific gridlines or markers on the chart?\n7. Should the legend\
+  \ be placed at a specific position on the chart, such as top, bottom, right, or\
+  \ left?\n8. Are there any specific fonts or styles you would like to be used for\
+  \ the text in the chart?\n9. Would you like to include any additional information\
+  \ or annotations in the chart?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. "Bundesliga Teams'' Points Per Match"
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not have any specific preference.
+
+  9. I do not know.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTAG

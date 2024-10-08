@@ -1,0 +1,64 @@
+initial_prompt: I need a grouped column chart to compare the number of missing values
+  and unique values across different data columns in various states. The data includes
+  states along with mlsrc, quantumsrc, and dlsrc values. For each state, show distinct
+  columns for mlsrc, quantumsrc, and dlsrc so I can easily compare these sources.
+  This chart should give a clear visualization of how different states stack up in
+  terms of these sources. Use colors to distinguish between mlsrc, quantumsrc, and
+  dlsrc values. The x-axis should represent different states and the y-axis should
+  represent the values from data columns.
+questions: '1. Do you have a preferred color palette for distinguishing between mlsrc,
+  quantumsrc, and dlsrc values?
+
+  2. How would you like to handle the ordering of states on the x-axis? Alphabetical
+  order or by data values?
+
+  3. Do you prefer any specific labels or annotations to be added to the columns for
+  better clarity?
+
+  4. What level of axis labeling detail do you prefer for the x-axis (states) and
+  y-axis (values)?
+
+  5. Is there a specific font type or size you prefer for the chart labels and titles?
+
+  6. Would you like gridlines to be included in the chart for better readability?
+  If so, should they be on the x-axis, y-axis, or both?
+
+  7. Do you prefer any specific styling for the chart borders or background (e.g.,
+  no borders, light background)?
+
+  8. Would you like a legend to be included? If yes, where should it be positioned
+  (e.g., top, bottom, right, left)?
+
+  9. Should there be any specific titles or subtitles for the chart to make it more
+  descriptive?
+
+  10. Is there a specific format or style you prefer for the values displayed on the
+  y-axis (e.g., integers, percentages)?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. Alphabetical order.
+
+  3. I do not know.
+
+  4. Detailed labeling for both x-axis (states) and y-axis (values).
+
+  5. I do not know.
+
+  6. Yes, gridlines on both x-axis and y-axis.
+
+  7. I do not have a specific preference.
+
+  8. Yes, a legend on the right.
+
+  9. I am not sure.
+
+  10. Integers.
+
+  <end of user emulated response>'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

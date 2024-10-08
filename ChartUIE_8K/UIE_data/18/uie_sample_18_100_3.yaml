@@ -1,0 +1,57 @@
+initial_prompt: Create a line chart visualizing the base stats progression (HP, Attack,
+  Defense, Sp. Attack, Sp. Defense, Speed) over the evolutions of a Pokémon. Use the
+  sample data for Bulbasaur, Ivysaur, and Venusaur from the provided dataset. Each
+  evolutionary stage should be labeled on the x-axis, and the base stats should be
+  plotted on the y-axis. The dataset provided is from "The Complete Pokemon Dataset"
+  under arts-and-entertainment. Please ensure the chart showcases trends in base stats
+  changes as the Pokémon evolves from Bulbasaur to Ivysaur to Venusaur.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Would you like each base stat to have a different line style (e.g., solid, dashed)
+  or color?
+
+  3. Should the y-axis be scaled proportionally to show minor changes in stats effectively?
+
+  4. Do you want data points to be highlighted or marked with symbols?
+
+  5. Would you prefer to include a legend to explain which line corresponds to which
+  base stat?
+
+  6. Are there any specific labels or annotations you would like to include on the
+  chart?
+
+  7. Do you have a preference for the font style or size for the axis labels and chart
+  title?
+
+  8. Would you like grid lines on the chart for better readability?
+
+  9. Should the chart title and axis labels follow a specific naming convention?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please scale the y-axis proportionally.
+
+  4. Yes, I would like the data points to be highlighted with symbols.
+
+  5. Yes, please include a legend.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include grid lines.
+
+  9. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- name
+- attack
+- defense
+- sp_attack
+- sp_defense
+- speed
+- hp

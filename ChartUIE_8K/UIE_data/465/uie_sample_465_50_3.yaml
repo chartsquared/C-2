@@ -1,0 +1,34 @@
+initial_prompt: Create a grouped bar chart showing the average total bill and average
+  tip by gender. Separate the groups by smoker status and day of the week. Use different
+  colors for each day.
+questions: '1. Do you have any specific preferences for the color scheme to be used
+  for each day of the week?
+
+  2. Would you like the bars to be grouped side by side by gender within each smoker
+  status and day, or stacked?
+
+  3. Do you prefer any specific labels or titles for the axes and the chart?
+
+  4. Should the chart include data labels displaying the actual values of the averages
+  on the bars?
+
+  5. Do you prefer a legend explaining the colors used for each day of the week?
+
+  6. What is your preferred ordering for the days of the week in the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- total_bill
+- tip
+- sex
+- smoker
+- day

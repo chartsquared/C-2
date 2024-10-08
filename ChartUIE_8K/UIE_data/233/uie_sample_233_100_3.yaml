@@ -1,0 +1,47 @@
+initial_prompt: Please create a grouped bar chart to compare the GPA (CUML_GPA and
+  EXP_GPA) of students. Use the STUDENTID for the x-axis and plot their cumulative
+  GPA and expected GPA side by side for each student. Highlight each student's performance
+  differences based on their ID. Ensure each bar is distinctly colored for easy comparison.
+  This will help visualize the performance evaluation of higher education students
+  by comparing their cumulative and expected GPAs effectively.
+questions: '1. Do you have a preferred color scheme for the bars?
+
+  2. Should there be specific colors for cumulative GPA and expected GPA, or should
+  they be randomized?
+
+  3. Would you like to include gridlines on the chart for easier reading of values?
+
+  4. Should we include data labels on top of each bar indicating the exact GPA values?
+
+  5. Is there a specific font style or size you prefer for the axis labels and titles?
+
+  6. Would you like to set a custom title for the chart or use a default one?
+
+  7. Do you have any specific preferences for the x-axis and y-axis range settings?
+
+  8. Should we add a legend to differentiate between cumulative GPA and expected GPA?
+
+  9. Do you have any layout preferences for the chart elements (e.g., position of
+  the legend, orientation of the bars)?'
+answers: '1. I do not have a preferred color scheme.
+
+  2. I am not sure, any clear distinction would work.
+
+  3. I do not know.
+
+  4. Yes, including data labels on top of each bar would be helpful.
+
+  5. I do not have a specific preference.
+
+  6. A custom title like "Student GPA Comparison" would be great.
+
+  7. I do not know.
+
+  8. Yes, please add a legend to differentiate between cumulative GPA and expected
+  GPA.
+
+  9. I do not have any layout preferences.'
+data_attributes:
+- STUDENTID
+- CUML_GPA
+- EXP_GPA

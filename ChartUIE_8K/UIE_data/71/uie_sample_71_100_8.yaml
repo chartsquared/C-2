@@ -1,0 +1,36 @@
+initial_prompt: Please create a line chart that visualizes the number of higher education
+  institutions by region in the USA. We have data on various institutions including
+  their ids, regions, names, categories, and URLs. I want to see trends over different
+  regions to understand regional distribution. The x-axis should represent the regions,
+  and the y-axis should represent the count of institutions. If possible, differentiate
+  between private and public categories with different lines or colors. Thank you!
+questions: '1. Do you have any specific color preferences for differentiating between
+  private and public categories?
+
+  2. Would you prefer a specific ordering of the regions on the x-axis?
+
+  3. Should the chart include data labels or tooltips to display exact counts of institutions
+  for each region?
+
+  4. Would you like to include a legend to clearly indicate which line or color represents
+  private and which represents public institutions?
+
+  5. Are there any specific regions you would like to highlight or focus on more prominently?
+
+  6. Do you want any additional annotations or markers on the chart to highlight key
+  insights or trends?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I do not know, any logical ordering is fine.
+
+  3. I am not sure.
+
+  4. Yes, please include a legend.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- region
+- category
+- id

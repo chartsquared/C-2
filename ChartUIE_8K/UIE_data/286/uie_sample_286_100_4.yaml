@@ -1,0 +1,63 @@
+initial_prompt: I want a grouped bar chart that compares the mean values of the radius,
+  texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry,
+  and fractal dimension for different diagnosis types (M and B) in breast cancer data.
+  Each group should represent a specific diagnosis and within each group, individual
+  bars should display the mean values of the different attributes. This will help
+  visualize the differences in these attributes between malignant and benign cases
+  better. Ensure each attribute is labeled clearly along the x-axis, and diagnosis
+  types are distinguished by different colors.
+questions: '1. Do you have a specific color palette preference for distinguishing
+  the diagnosis types (M and B)?
+
+  2. Would you prefer any specific ordering of the attributes on the x-axis?
+
+  3. Do you have a preferred font style or size for the axis labels and chart title?
+
+  4. Would you like to include any specific grid lines, or should they be omitted
+  from the chart?
+
+  5. Is there a particular way you want the legend to be displayed (e.g., position,
+  format)?
+
+  6. Would you like to add data labels to individual bars showing their mean values?
+
+  7. Do you have a preference for the chart title text?
+
+  8. Is there any specific background color or styling preference for the chart?
+
+  9. Would you like to include any annotations or callouts on the chart to highlight
+  key points?
+
+  10. Do you have any preference for the spacing between the bars within each group?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include data labels to show the mean values.
+
+  7. "Comparison of Mean Attribute Values for Malignant (M) and Benign (B) Breast
+  Cancer Cases"
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- diagnosis
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave points_mean
+- symmetry_mean
+- fractal_dimension_mean

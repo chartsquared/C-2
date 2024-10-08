@@ -1,0 +1,45 @@
+initial_prompt: Create a choropleth map to visualize the top-ranked tourist spots
+  in Colombo. Use categories like ATTRACTION and RESTAURANT. Highlight areas based
+  on ranking positions and ratings. Include price levels and number of reviews for
+  more detailed insights.
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. Should the map differentiate between ATTRACTION and RESTAURANT using distinct
+  colors or patterns?
+
+  3. How would you like the ranking positions to be represented on the map? (e.g.,
+  color intensity, icon size)
+
+  4. Should there be a legend explaining the price levels and number of reviews?
+
+  5. Do you have a specific way you want to display the ratings (e.g., stars, numerical
+  scale)?
+
+  6. What type of base map would you prefer (e.g., satellite, street map)?
+
+  7. Would you like to include labels for each tourist spot displaying their name
+  and category?
+
+  8. Are there any specific areas of Colombo that you want to be highlighted or focused
+  on in the map?'
+answers: '1. I am not sure.
+
+  2. Yes, please use distinct colors or patterns for ATTRACTION and RESTAURANT.
+
+  3. I would like ranking positions to be represented by color intensity.
+
+  4. Yes, please include a legend explaining the price levels and number of reviews.
+
+  5. I do not know.
+
+  6. Street map would be preferred.
+
+  7. Yes, please include labels displaying the name and category of each tourist spot.
+
+  8. I am not sure.'
+data_attributes:
+- rankingPosition
+- rating
+- priceLevel
+- numberOfReviews
+- category

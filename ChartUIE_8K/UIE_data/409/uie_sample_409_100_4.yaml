@@ -1,0 +1,48 @@
+initial_prompt: 'I have three columns of data: ''x'', ''y'', and ''group''. ''x''
+  and ''y'' are numerical with no missing values, while ''group'' is categorical with
+  three unique values (A, B, C). I want a strip plot to visualize the data distribution
+  and group comparison for a mineral reserves estimate project in the energy sector.
+  Could you create a strip plot that displays the ''x'' and ''y'' values grouped by
+  ''group''? Make sure the plot clearly shows the different categories (A, B, C) for
+  easy comparison. Include appropriate labels and titles. Thanks!'
+questions: '1. Do you have a preferred color scheme for distinguishing the different
+  categories (A, B, C)?
+
+  2. Would you prefer the x-axis to display ''x'' values and the y-axis to display
+  ''y'' values, or vice versa?
+
+  3. Should the strip plot include any reference lines or markers (such as median
+  or mean lines) for the groups?
+
+  4. Do you prefer any specific style or font for the labels and titles on the chart?
+
+  5. Would you like grid lines to be displayed on the plot for better readability?
+
+  6. Should the legend be placed in a specific location on the plot, or do you have
+  any preference for how it should look?
+
+  7. Are there any specific aspects of the data or context you want highlighted in
+  the title or subtitle of the chart?
+
+  8. Do you have a preference for the spacing and alignment of the categories on the
+  plot?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. I would prefer the x-axis to display ''x'' values and the y-axis to display ''y''
+  values.
+
+  3. I am not sure about including reference lines or markers.
+
+  4. I do not have a specific preference for the style or font of the labels and titles.
+
+  5. Yes, I would like grid lines for better readability.
+
+  6. I am not sure about the legend placement or appearance.
+
+  7. I am not sure about highlighting specific aspects in the title or subtitle.
+
+  8. I do not have a preference for the spacing and alignment of the categories.'
+data_attributes:
+- x
+- y
+- group

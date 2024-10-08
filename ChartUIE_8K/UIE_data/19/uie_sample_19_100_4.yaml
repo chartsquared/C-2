@@ -1,0 +1,53 @@
+initial_prompt: I need a scatter plot for the Amazon Top 50 Bestselling Books from
+  2009 to 2019. On one axis, plot the user ratings, and on the other axis, plot the
+  number of reviews. Use different colors to differentiate between Fiction and Non-Fiction
+  genres. The points should represent different books, with their price as the size
+  of the scatter points. This will help visualize the correlation between user ratings
+  and reviews and identify any notable trends in book genres over the years. Please
+  ensure all relevant data is included for accuracy.
+questions: '1. Do you have a preferred color palette for differentiating between Fiction
+  and Non-Fiction genres?
+
+  2. Would you like the axis labels and title to follow a specific format or style?
+
+  3. Do you have any preference for the size scaling of the scatter points based on
+  the book prices?
+
+  4. Would you like to include any specific annotations or data labels on the scatter
+  points, such as book names or authors?
+
+  5. Is there a particular font style or size you would prefer for the chart labels
+  and legends?
+
+  6. Do you want any specific grid lines or background color for the scatter plot?
+
+  7. Should the chart include a legend explaining the colors and sizes used for different
+  genres and price ranges?
+
+  8. Are there any specific aspects of the chart''s design that should align with
+  your organization''s branding guidelines?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, please include data labels with book names.
+
+  5. I do not have any specific preference.
+
+  6. I am not sure.
+
+  7. Yes, please include a legend explaining the colors and sizes.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- User Rating
+- Reviews
+- Genre
+- Price
+- Name

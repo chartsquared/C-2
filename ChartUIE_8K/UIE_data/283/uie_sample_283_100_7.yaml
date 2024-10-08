@@ -1,0 +1,53 @@
+initial_prompt: I have a dataset that includes various details about divorces in a
+  specific region, such as divorce date, type, age, and occupation of partners as
+  well as marriage details and residency. I would like a heatmap that shows the correlation
+  between the ages of both partners and the monthly income in pesos. Additionally,
+  include data on the duration of the marriage in years and the number of children,
+  highlighting patterns or significant findings. Make it clear and visually appealing,
+  so I can easily identify any correlations. This will help in understanding the socio-economic
+  factors related to divorce.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like to include labels for the axes and data points?
+
+  3. Do you have a specific range for the ages or monthly income that you want to
+  focus on?
+
+  4. Should any specific categories (e.g., occupation or education level) be highlighted
+  in the heatmap?
+
+  5. Do you prefer displaying the correlation values as text within the heatmap cells?
+
+  6. Would you like to include any annotations or notes for patterns and significant
+  findings?
+
+  7. Is there a specific size or aspect ratio you prefer for the heatmap?
+
+  8. Do you have any particular font styles or sizes that you would like to be used
+  in the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Yes, I would like to include labels for the axes and data points.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, displaying the correlation values within the heatmap cells would be helpful.
+
+  6. Yes, please include annotations or notes for patterns and significant findings.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- Age_partner_man
+- Age_partner_woman
+- Monthly_income_partner_man_peso
+- Monthly_income_partner_woman_peso
+- Marriage_duration
+- Num_Children

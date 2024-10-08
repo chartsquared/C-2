@@ -1,0 +1,48 @@
+initial_prompt: Create a treemap chart from `48.csv`. Visualize the relative importance
+  weights, producer price index, number of employed people in the semiconductor industry,
+  and industrial production values. Highlight missing values and export-import price
+  indexes related to semiconductors distinctly.
+questions: '1. Do you have a preference for the color scheme to distinguish between
+  different data attributes or categories?
+
+  2. Would you like to indicate the missing values using a specific color or pattern?
+
+  3. Should the chart display labels on each rectangle, such as the exact values or
+  percentages?
+
+  4. Do you prefer a specific layout algorithm for the treemap, such as squarify,
+  slice, or dice?
+
+  5. How would you like the size of each rectangle to be determined—by relative importance
+  weights or another attribute?
+
+  6. Would you like tooltips or hover information to be included for additional details
+  on each data point?
+
+  7. Should there be a legend explaining the colors and patterns used in the treemap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, please use a specific color to indicate missing values.
+
+  3. I would like exact values to be displayed on each rectangle.
+
+  4. I am not sure.
+
+  5. By relative importance weights.
+
+  6. I do not know.
+
+  7. Yes, a legend would be helpful.
+
+  <end of user emulated response>'
+data_attributes:
+- Relative Importance Weights (Contribution to the Total Industrial Production Index
+  % WISE)
+- Producer Price Index(By Industry in $)
+- No. of employed peoples in semiconductor industry
+- 'Industrial Production: Non-Energy Excluding Motor Vehicles & Parts, Computers,
+  Communications Equipment, and Semiconductors'
+- Export Price Index(End Use of semiconductors)
+- Import Price Index(in $ End Use of semiconductors)

@@ -1,0 +1,50 @@
+initial_prompt: Visualize a scatter plot displaying Total_Bilirubin vs. Ages for Indian
+  liver patients. Highlight male vs. female patients using different colors. Add annotations
+  for outliers and any missing Albumin_and_Globulin_Ratio data points.
+questions: '1. Do you have a preference for the color scheme to differentiate between
+  male and female patients?
+
+  2. Should the outliers be flagged in a specific style (e.g., different shape, size,
+  or color)?
+
+  3. How would you prefer the missing ''Albumin_and_Globulin_Ratio'' data points to
+  be annotated (e.g., text annotation, specific marker)?
+
+  4. Would you like the axes to be labeled in a specific way (e.g., with units or
+  additional descriptions)?
+
+  5. Are there any specific ranges for the axes (Total Bilirubin or Age) that you
+  would like to set?
+
+  6. Do you prefer grid lines to be included or excluded in the background of the
+  chart?
+
+  7. Should a legend be included to explain the color scheme and markers used in the
+  chart?
+
+  8. Are there any additional textual annotations or titles you would like on the
+  chart (e.g., chart title, axis titles, subtitles)?
+
+  9. Do you have a preference for the font style and size for the text in the chart?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. Yes, please include a legend to explain the color scheme and markers.
+
+  8. I do not have a specific preference.
+
+  9. I do not know.'
+data_attributes:
+- Age
+- Gender
+- Total_Bilirubin
+- Albumin_and_Globulin_Ratio

@@ -1,0 +1,45 @@
+initial_prompt: Please create a heatmap to visualize the distribution of job titles
+  against company locations for data science job salaries. Specifically, I'd like
+  to see which job titles are most common in various company locations; this will
+  help us understand regional demand for specific roles. The data should show job
+  titles on one axis and company locations on the other. Make sure to highlight regions
+  with higher concentrations of specific job titles. Use color intensity to represent
+  the number of occurrences for each combination of job title and company location.
+  Thank you!
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like to include labels for specific data points on the heatmap?
+
+  3. Do you prefer a specific ordering for the job titles and company locations on
+  the axes?
+
+  4. Should the heatmap include a legend that explains the color intensity scale?
+
+  5. Do you have any preference for the size and layout of the heatmap?
+
+  6. Is there a particular font style or size you would like for the labels and titles
+  on the chart?
+
+  7. Do you need any annotations or notes to emphasize specific regions with high
+  concentrations?
+
+  8. Should the heatmap display exact counts or just use color intensity to represent
+  data density?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, please include a legend that explains the color intensity scale.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Use color intensity to represent data density.'
+data_attributes:
+- job_title
+- company_location

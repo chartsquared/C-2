@@ -1,0 +1,56 @@
+initial_prompt: I want to visualize Cardano cryptocurrency trends over time using
+  a stacked area chart. The chart should display how values of 'Open', 'High', 'Low',
+  'Close', 'Adj Close', and 'Volume' evolve from date to date. This will help identify
+  potential correlations and trends. Make sure each category is represented distinctly
+  and the areas are stacked to show cumulative values over time. Utilize the data
+  from the file for accurate plotting and ensure the x-axis represents dates while
+  y-axis shows the values. It should be easy to compare these metrics over the given
+  dates.
+questions: '1. Do you have a preferred color scheme for representing different categories?
+
+  2. Would you like to include grid lines for easier comparison of values?
+
+  3. How should the y-axis be scaled? (Linear, logarithmic, etc.)
+
+  4. Do you prefer to display data points along the area chart lines for precise value
+  identification?
+
+  5. Are there any specific labels or annotations you want to include on the chart?
+
+  6. Would you like to highlight any particular date ranges or events in the chart?
+
+  7. Should the legend be placed inside or outside of the chart area?
+
+  8. Do you want to include a title and subtitles for the chart? If so, what should
+  they be?
+
+  9. Do you want each category to have a distinct opacity level for easier differentiation?
+
+  10. Is there a specific font style or size preference for the axes labels and legend?'
+answers: '1. I do not know.
+
+  2. Yes, include grid lines for easier comparison of values.
+
+  3. Linear.
+
+  4. Yes, display data points along the area chart lines for precise value identification.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Inside the chart area.
+
+  8. Yes, include a title "Cardano Cryptocurrency Trends Over Time". No specific subtitles.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

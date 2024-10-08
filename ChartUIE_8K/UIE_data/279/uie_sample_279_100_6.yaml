@@ -1,0 +1,52 @@
+initial_prompt: Please create a heatmap for the "Primate milk and brain size" dataset.
+  The heatmap should visualize the relationships among the nutritional components
+  (kcal.per.g, perc.fat, perc.protein, perc.lactose) and other attributes such as
+  mass and neocortex.perc across the different species. Use the species as labels
+  for the y-axis and the nutritional components, mass, and neocortex.perc as labels
+  for the x-axis. Make sure to handle any missing values appropriately, possibly by
+  omitting or imputing data.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. How would you like missing values to be handled: omitted or imputed?
+
+  3. Do you prefer a specific imputation method for missing values (e.g., mean, median,
+  mode)?
+
+  4. Would you like to display a color bar or legend indicating the scale of values?
+
+  5. Should the heatmap display exact value annotations on the cells?
+
+  6. Do you have any preference for the ordering of species and attributes on the
+  axes?
+
+  7. Are there any specific labels or titles you want to include on the axes and the
+  heatmap?
+
+  8. Would you like grid lines to be shown between the cells?
+
+  9. Do you prefer a specific size or aspect ratio for the heatmap?'
+answers: '1. I am not sure.
+
+  2. Please omit the missing values.
+
+  3. I do not know.
+
+  4. Yes, please display a color bar or legend.
+
+  5. No, I do not need exact value annotations on the cells.
+
+  6. I have no specific preference for the ordering.
+
+  7. I do not know.
+
+  8. Yes, please show grid lines between the cells.
+
+  9. I have no specific preference for the size or aspect ratio.'
+data_attributes:
+- species
+- kcal.per.g
+- perc.fat
+- perc.protein
+- perc.lactose
+- mass
+- neocortex.perc

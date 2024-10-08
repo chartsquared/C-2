@@ -1,0 +1,58 @@
+initial_prompt: I want a box plot visualization that shows the distribution of Max_Speed,
+  Mileage, Power, and Weight for different car Types from a car dataset. Summarize
+  key statistics and highlight any outliers. The chart should help identify trends
+  or unusual values within these categories. Include text annotations for specific
+  outliers, noting their values and significance. Utilize different shades or colors
+  to distinguish between car types, emphasizing any remarkable differences between
+  them. This visualization will be used to understand the general performance and
+  attributes of various types of cars.
+questions: '1. Do you have any preferences for the color palette to distinguish between
+  car types?
+
+  2. Would you like the box plots to be displayed horizontally or vertically?
+
+  3. How detailed should the text annotations for outliers be? For example, should
+  they include just the outlier value or additional context?
+
+  4. Do you have a preferred style or format for summarizing key statistics (e.g.,
+  mean, median, quartiles)?
+
+  5. Are there any specific design elements (grid lines, axis labels, legends) you
+  want to emphasize or avoid in the chart?
+
+  6. Would you prefer a particular font style or size for text annotations and labels?
+
+  7. Should the chart include any specific title or subtitle?
+
+  8. Do you want labels for the y-axis to include units of measurement?
+
+  9. Are there any specific car types you want to highlight more prominently in the
+  visualization?
+
+  10. How would you like the data to be sorted within the box plots (e.g., by car
+  type, by a specific attribute)?'
+answers: '1. I am not sure.
+
+  2. I would prefer the box plots to be displayed vertically.
+
+  3. Just the outlier value with a brief context would be fine.
+
+  4. I do not know.
+
+  5. I want to emphasize grid lines, axis labels, and legends.
+
+  6. I am not sure.
+
+  7. No specific title or subtitle is needed.
+
+  8. Yes, labels for the y-axis should include units of measurement.
+
+  9. I do not know.
+
+  10. By car type.'
+data_attributes:
+- Max_Speed
+- Mileage
+- Power
+- Weight
+- Type

@@ -1,0 +1,37 @@
+initial_prompt: Please create a Donut chart visualizing the average times per lap
+  of different marbles in the Marbula 1 Season 1 championship. Use 'marble_name' for
+  the slices, 'avg_time_lap' to represent each slice's size, and 'team_name' in the
+  legend for additional context. This chart should help in understanding which marbles
+  are quickest on average, providing insights into their performance throughout the
+  season. Ensure the chart is visually engaging by using different colors for each
+  team and clear labels for each marble's average time. This will assist in analyzing
+  race outcomes and performance trends over time.
+questions: '1. Do you have any specific color preferences or themes for representing
+  different teams in the chart?
+
+  2. Would you like to include any specific text or title for the chart?
+
+  3. Should the labels for each marble''s average time be inside or outside the slices?
+
+  4. Do you prefer percentage values to be shown along with average times in the slices?
+
+  5. Is there a preferred font style or size for the labels and legends?
+
+  6. Would you like any specific ordering of the slices, such as by average time or
+  alphabetically by marble name?'
+answers: '1. I do not have any specific color preferences or themes for representing
+  different teams in the chart.
+
+  2. I am not sure.
+
+  3. I prefer the labels for each marble''s average time to be inside the slices.
+
+  4. I do not know.
+
+  5. I have no specific preference for the font style or size for the labels and legends.
+
+  6. I prefer the slices to be ordered by average time.'
+data_attributes:
+- marble_name
+- avg_time_lap
+- team_name

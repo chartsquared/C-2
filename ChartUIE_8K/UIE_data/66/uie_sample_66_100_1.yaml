@@ -1,0 +1,54 @@
+initial_prompt: Create a bar chart to visualize the average ProductPrice for each
+  ProductCategory. Use text annotations to display the exact average prices above
+  each bar to highlight specific values. Make sure to differentiate the bars by ProductBrand
+  using color coding. This visualization will help to easily compare the average prices
+  across categories and brands. Use highlights to focus on the top and bottom categories
+  for better insight. The practical purpose is to analyze pricing trends in consumer
+  electronics for business strategy and market understanding.
+questions: '1. Do you have a preferred color scheme for differentiating ProductBrand
+  bars?
+
+  2. Would you like the bars to be sorted in a specific order, such as descending
+  average price?
+
+  3. Should the bar chart include a legend to identify the ProductBrand colors?
+
+  4. Do you prefer a specific font or size for the text annotations above each bar?
+
+  5. Are there any specific highlights or color accents you want for the top and bottom
+  categories?
+
+  6. Would you like to include gridlines in the chart for better reference points?
+
+  7. Is there a specific title or subtitle you want for the chart?
+
+  8. Should axis labels and tick marks be styled in a particular way?
+
+  9. Do you prefer a specific padding or spacing between the bars?
+
+  10. Is there any particular background color or style you would like for the chart?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Yes, please sort the bars in descending average price order.
+
+  3. Yes, please include a legend to identify the ProductBrand colors.
+
+  4. I am not sure.
+
+  5. I would like the top category to be highlighted in green and the bottom category
+  in red.
+
+  6. Yes, please include gridlines for better reference points.
+
+  7. Title: "Average Product Price by Category and Brand", Subtitle: "Analysis of
+  Consumer Electronics Pricing Trends".
+
+  8. I do not know.
+
+  9. I have no specific preference for the padding or spacing between the bars.
+
+  10. I do not have any specific preference for the background color or style.'
+data_attributes:
+- ProductCategory
+- ProductBrand
+- ProductPrice

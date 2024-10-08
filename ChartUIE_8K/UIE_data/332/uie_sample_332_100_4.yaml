@@ -1,0 +1,43 @@
+initial_prompt: Please create a line chart that visualizes the mutation trends over
+  positions in a DNA sequence. On the x-axis, plot the 'Position' values, and on the
+  y-axis, show the counts of different 'Mutation_Type' (Missense Substitution, Silent
+  Substitution, etc.). The chart should help us understand how mutation types vary
+  across different positions in the DNA sequence. Make sure to distinguish each mutation
+  type with different colors or line styles. This will help us to identify any patterns
+  or hotspots for specific mutation types in the gene data we are analyzing for our
+  biology research.
+questions: '1. Do you have any preferred colors for distinguishing different ''Mutation_Type''?
+
+  2. Would you prefer solid, dashed, or dotted line styles to differentiate the mutation
+  types, or any other specific style?
+
+  3. Is there a specific title you would like for the chart?
+
+  4. Do you need gridlines on the chart for better readability?
+
+  5. Would you like the chart to include labels or legends for the ''Mutation_Type''?
+
+  6. Are there specific axis labels you would prefer for the x-axis and y-axis?
+
+  7. Is there a specific font style or size preference for the chart text such as
+  axis labels, title, and legend?
+
+  8. Do you want to include any specific data points or markers on the lines?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like gridlines on the chart for better readability.
+
+  5. Yes, please include labels or legends for the ''Mutation_Type''.
+
+  6. X-axis: Position, Y-axis: Mutation Count.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- Position
+- Mutation_Type

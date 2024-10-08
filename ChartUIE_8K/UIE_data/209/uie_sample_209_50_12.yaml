@@ -1,0 +1,53 @@
+initial_prompt: Create a bubble chart showing housing prices in New York. Use LATITUDE
+  and LONGITUDE for position, PRICE for bubble size, and differentiate by TYPE. Color-code
+  by BEDS.
+questions: '1. What color palette do you prefer for differentiating the number of
+  bedrooms (BEDS)?
+
+  2. Do you have a preferred shape or style for the bubbles representing different
+  housing types (TYPE)?
+
+  3. Would you like to include a legend explaining the bubble sizes and colors?
+
+  4. Do you prefer the bubbles to be transparent or opaque?
+
+  5. Is there a specific geographic boundary or zoom level you want to focus on within
+  New York?
+
+  6. Do you have a specific preference for the size scale of the bubbles relative
+  to the PRICE?
+
+  7. Are there any specific labels or annotations you want to include on the chart,
+  such as median prices or specific high/low values?
+
+  8. Would you like to add grid lines or a map overlay for better geographic context?
+
+  9. Are there specific font styles or sizes you prefer for the chart labels and title?
+
+  10. How do you want to handle overlapping bubbles, if any, to ensure all data is
+  visible?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like to include a legend explaining the bubble sizes and colors.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- LATITUDE
+- LONGITUDE
+- PRICE
+- TYPE
+- BEDS

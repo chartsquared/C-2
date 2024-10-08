@@ -1,0 +1,50 @@
+initial_prompt: Visualize the Stroke Prediction Dataset using a box plot to display
+  the distribution of 'age' and 'avg_glucose_level' against 'stroke'. Highlight the
+  differences between those who have had a stroke and those who haven't by adjusting
+  the color of the boxes. Annotate key values for age and glucose levels where deviations
+  are significant. This will help in identifying the correlation between stroke, age,
+  and glucose levels, providing insights into how these factors contribute to stroke
+  incidences. Including these annotations aids in quickly pinpointing areas of interest
+  within the dataset.
+questions: '1. Do you have any specific color preferences for highlighting the differences
+  between those who have had a stroke and those who haven''t?
+
+  2. Would you like to add any specific annotations or labels for the key values of
+  age and glucose levels, or should it be automatically determined based on the data?
+
+  3. Do you have a preferred style for the box plots, such as classic, minimalist,
+  or any other specific design?
+
+  4. Do you want to include any descriptive statistics (e.g., mean, median) directly
+  in the visualization for age and glucose levels?
+
+  5. Should the chart include grid lines for better readability, or do you prefer
+  a cleaner look without them?
+
+  6. Are there any specific font styles or sizes you would like to be used for annotations
+  and labels?
+
+  7. Would you like to include axis titles and a legend, and if so, do you have any
+  specific text or formatting preferences for them?
+
+  8. Should the chart have specific dimensions (height and width) or aspect ratios
+  for optimal viewing?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure; automatic determination based on the data is fine.
+
+  3. Minimalist style would be preferred.
+
+  4. Yes, please include mean and median for age and glucose levels.
+
+  5. A cleaner look without grid lines would be nice.
+
+  6. I do not know; standard font styles and sizes are fine.
+
+  7. Yes, include axis titles and a legend. No specific text or formatting preferences.
+
+  8. I am not sure; any dimensions for optimal viewing will work.'
+data_attributes:
+- age
+- avg_glucose_level
+- stroke

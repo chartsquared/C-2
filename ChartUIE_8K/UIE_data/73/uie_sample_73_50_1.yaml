@@ -1,0 +1,54 @@
+initial_prompt: Create a network diagram visualizing Android malware traffic, highlighting
+  connections between external IPs and applications. Annotate nodes with TCP/UDP packets.
+  Make malicious traffic stand out by modifying their color. Ensure unique IPs and
+  apps are clearly visible.
+questions: '1. Do you have any specific color preferences for highlighting malicious
+  traffic?
+
+  2. What colors would you like to use for benign traffic?
+
+  3. Do you prefer certain shapes for nodes representing different types of applications
+  or traffic?
+
+  4. How would you like to annotate the nodes with TCP/UDP packets? (e.g., labels,
+  tooltips, etc.)
+
+  5. Do you have any preferred layout for the network diagram? (e.g., circular, hierarchical,
+  force-directed)
+
+  6. Would you like the network diagram to display edge weights or connection strengths?
+
+  7. Do you have any specific font preferences or sizes for node labels and annotations?
+
+  8. Should the size of the nodes represent the volume of traffic (e.g., number of
+  packets)?
+
+  9. Are there any additional legends or notes you would want to include in the chart?
+
+  10. Do you have any specific styling preferences for the connections/edges between
+  nodes?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Labels would be useful.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, that would be helpful.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- external_ips
+- name
+- tcp_packets
+- udp_packets
+- type

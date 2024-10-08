@@ -1,0 +1,52 @@
+initial_prompt: I need a stacked bar chart for "Global YouTube Statistics 2023". Visualize
+  the top 3 YouTubers by "subscribers" and "video views". Split the bars by "Country"
+  and "channel_type" to show subscriber distribution and video views. Include "uploads"
+  and "subscribers_for_last_30_days" as additional layers in the stack. Make sure
+  to highlight "Music", "Games", "Entertainment" categories distinctively. Use contrasting
+  colors and a clear legend for easy understanding. Include titles and labels to make
+  the information clear. Ensure the chart is visually appealing and informative.
+questions: '1. Do you have a specific color scheme in mind for highlighting the "Music",
+  "Games", and "Entertainment" categories?
+
+  2. How would you like the legend to be positioned in the chart (e.g., top, bottom,
+  right, left)?
+
+  3. Do you have any preference for the chart''s title font and size?
+
+  4. What labels and axis titles would you like to include for the x-axis and y-axis?
+
+  5. Should the data values be displayed on the bars?
+
+  6. Is there a specific order in which you would like to stack the additional layers
+  ("uploads" and "subscribers_for_last_30_days")?
+
+  7. Do you have a preferred background color for the chart?
+
+  8. Would you like grid lines to be included or excluded in the chart? If included,
+  do you have any preferences for their style (e.g., dashed, solid)?'
+answers: '1. I am not sure about the specific color scheme. Please use contrasting
+  colors to make them distinct.
+
+  2. I do not know, you can decide where to place the legend.
+
+  3. I have no specific preference for the title font and size.
+
+  4. The x-axis should be labeled with "Country and Channel Type" and the y-axis should
+  be labeled with "Count".
+
+  5. Yes, display the data values on the bars.
+
+  6. I do not have a specific order for stacking the additional layers.
+
+  7. I have no specific preference for the background color.
+
+  8. I am not sure about grid lines, you can decide based on what looks best.'
+data_attributes:
+- Youtuber
+- subscribers
+- video views
+- Country
+- channel_type
+- uploads
+- subscribers_for_last_30_days
+- category

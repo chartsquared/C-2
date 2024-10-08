@@ -1,0 +1,32 @@
+initial_prompt: Please create a Choropleth map to visualize the import and export
+  data of dogs by state. Colors should represent the total volume of imports and exports,
+  with additional markers for states with missing data.
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. What type of markers would you like to use for states with missing data?
+
+  3. Should the color intensity represent specific ranges of the total volume, and
+  if so, what ranges are you interested in?
+
+  4. Would you prefer any specific labeling or annotation on the map for easier understanding?
+
+  5. Is there a need for a legend or color scale to interpret the colors?
+
+  6. Are there specific states you want to emphasize or highlight apart from those
+  with missing data?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I would prefer basic labels for each state to ensure clear understanding.
+
+  5. Yes, a legend or color scale would be helpful to interpret the colors.
+
+  6. I do not know.'
+data_attributes:
+- location
+- exported
+- imported
+- total

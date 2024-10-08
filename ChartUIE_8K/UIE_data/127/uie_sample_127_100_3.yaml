@@ -1,0 +1,35 @@
+initial_prompt: I need a bar chart for the "Ramen Ratings" dataset. The chart should
+  show the average star ratings for different ramen styles. Each bar will represent
+  a ramen style (e.g., Cup, Pack) on the x-axis, and the y-axis will represent the
+  average rating. Include data for all available styles and ensure the chart is easy
+  to read with labels for both axes and a title "Average Ratings by Ramen Style".
+  This will help visualize which ramen styles generally receive higher ratings. Please
+  use different colors for each bar to differentiate between the styles clearly.
+questions: '1. Do you have a specific color palette preference for the bars?
+
+  2. Is there a particular font style or size you prefer for the axis labels and title?
+
+  3. Would you like the chart to include data labels on the bars to show the exact
+  average ratings?
+
+  4. Do you have a preference for the orientation of the x-axis labels (e.g., horizontal,
+  angled)?
+
+  5. Should there be any specific gridlines or background elements to enhance readability?
+
+  6. Are there any additional annotations or legends you would like to include in
+  the chart?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Yes, including data labels on the bars would be helpful.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.'
+data_attributes:
+- Style
+- Stars

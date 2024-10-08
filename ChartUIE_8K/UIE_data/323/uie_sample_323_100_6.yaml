@@ -1,0 +1,44 @@
+initial_prompt: I need a column chart visualizing the data from 323.csv. The chart
+  should show the states on the x-axis and have three separate bars for mlsrc, quantumsrc,
+  and dlsrc values for each state. This chart will help us analyze which states have
+  the highest values in each of the three data sources. Also, use different colors
+  for each data source for better distinction and add a legend to clarify. We're mainly
+  interested in understanding the trends in online communities usage across different
+  states. Please ensure the chart is clear and easy to interpret. Thank you!
+questions: '1. Do you have any specific color preferences for each data source (mlsrc,
+  quantumsrc, dlsrc)?
+
+  2. Would you like the states on the x-axis to be sorted in any particular order
+  (e.g., alphabetical, by total value)?
+
+  3. Do you prefer any specific font style or size for axis labels and legends?
+
+  4. Should the bars have any particular width or spacing between them?
+
+  5. Is there a specific title you would like for the chart?
+
+  6. Do you want gridlines included in the chart for better readability?
+
+  7. Are there any specific annotations or data labels you would like on the bars?
+
+  8. Do you have any preference for the overall size or aspect ratio of the chart?'
+answers: '1. I am not sure.
+
+  2. By total value.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. No specific title.
+
+  6. Yes, please include gridlines.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

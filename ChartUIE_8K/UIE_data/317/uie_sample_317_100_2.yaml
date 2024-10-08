@@ -1,0 +1,53 @@
+initial_prompt: <start of the annotation list> Create a Choropleth map of India showing
+  hotel distribution per state. Use color gradients to represent the number of hotels
+  per state, highlighting states with the most hotels in darker shades. Include data-driven
+  text annotations for states with the highest and lowest number of hotels. Highlight
+  the top five cities with the most hotels on the map. Provide context about the alcohol
+  availability column, specifying that many entries have missing values. The map will
+  help identify geographic patterns in hotel spread and show regional differences.
+  <end of the annotation list>
+questions: '1. Do you have a preferred color scheme or specific colors you would like
+  to use for the color gradient on the Choropleth map?
+
+  2. Should the color gradient be simple (e.g., shades of a single color) or more
+  complex (e.g., a multi-color gradient)?
+
+  3. Do you prefer a particular type of text annotation style for states with the
+  highest and lowest number of hotels (e.g., font size, font color, or background
+  color)?
+
+  4. How would you like the top five cities with the most hotels to be highlighted
+  on the map (e.g., markers, icons, or different color)?
+
+  5. Would you like the map to include a legend explaining the color gradient and
+  other visual elements?
+
+  6. Is there any specific format or placement for the context about the alcohol availability
+  column and missing values?
+
+  7. Do you have preferences for the overall layout or orientation of the map (e.g.,
+  portrait or landscape)?
+
+  8. Should the map display additional geographic features (e.g., rivers, mountains)
+  to provide more context?'
+answers: '1. I am not sure.
+
+  2. A simple gradient of shades of a single color would be fine.
+
+  3. I do not have a specific preference.
+
+  4. Markers would be great for highlighting the top five cities with the most hotels.
+
+  5. Yes, please include a legend explaining the color gradient and other visual elements.
+
+  6. I do not have specific preferences, but please make sure the context is clear
+  and easy to understand.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- State
+- City
+- Total Rooms
+- Alcohol

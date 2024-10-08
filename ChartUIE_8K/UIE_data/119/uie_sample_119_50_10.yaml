@@ -1,0 +1,52 @@
+initial_prompt: Create a dot plot to visualize the Weekly_Sales over different Dates
+  for each Store. Use different colors to distinguish between Stores. Highlight the
+  points where Holiday_Flag is 1.
+questions: '1. Do you have a preference for the color palette to distinguish between
+  stores?
+
+  2. How would you like the holiday-highlighted points to be styled (e.g., different
+  shape, border color, size)?
+
+  3. Should the dates be displayed in a specific format on the x-axis?
+
+  4. Do you prefer any specific labels or titles for the axes?
+
+  5. Would you like a legend to be included, and if so, where should it be positioned?
+
+  6. What level of granularity would you prefer for the date axis (e.g., daily, weekly,
+  monthly)?
+
+  7. Do you want gridlines in the background? If yes, would you prefer them to be
+  major, minor, or both?
+
+  8. Are there any specific fonts or font sizes you would like to be used for the
+  labels and titles?
+
+  9. Do you prefer a specific layout or orientation for the dot plot (e.g., horizontal,
+  vertical)?
+
+  10. Should the chart have any specific annotations or notes included?'
+answers: '1. I do not have a specific preference.
+
+  2. Different shape would be good.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, include a legend. Position it to the right.
+
+  6. Weekly granularity would be preferred.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- Store
+- Date
+- Weekly_Sales
+- Holiday_Flag

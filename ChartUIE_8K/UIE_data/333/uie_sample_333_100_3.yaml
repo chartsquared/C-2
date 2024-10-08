@@ -1,0 +1,55 @@
+initial_prompt: I'd like to visualize the renewable energy data from 1960 to 2023
+  with a geographic heatmap. The data includes information from various locations
+  represented by country codes and shows the yearly value of renewable energy in kilotonnes
+  of oil equivalent (KTOE). Please create a heatmap that highlights the intensity
+  of renewable energy production across different countries and over the years. Make
+  sure to account for missing values appropriately. Use a gradient color scheme to
+  represent different levels of renewable energy production, with darker colors indicating
+  higher production. This will help me understand global renewable energy trends over
+  time.
+questions: '1. Do you have a preferred color scheme for the gradient in the heatmap?
+
+  2. Are there any specific countries or regions you would like to emphasize in the
+  visualization?
+
+  3. How would you like the missing values to be handled in the heatmap?
+
+  4. Do you have preferences regarding the map projection (e.g., Mercator, Robinson,
+  Equirectangular)?
+
+  5. Should the heatmap include any annotations or labels for better clarity?
+
+  6. Would you like to include any country borders or geographic features in the background?
+
+  7. Is there a preferred font style or size for any text or labels on the heatmap?
+
+  8. Should the heatmap display a legend explaining the gradient color scheme?
+
+  9. Do you have any preferences regarding the time scale display (e.g., every decade,
+  every year)?
+
+  10. Would you like to add any additional data layers or contextual information to
+  the map?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Please interpolate missing values, if possible.
+
+  4. I do not know.
+
+  5. Yes, please include annotations or labels for better clarity.
+
+  6. Yes, include country borders.
+
+  7. I do not have a specific preference.
+
+  8. Yes, include a legend explaining the gradient color scheme.
+
+  9. Please show the data for every decade.
+
+  10. No, I do not want any additional data layers.'
+data_attributes:
+- LOCATION
+- TIME
+- Value

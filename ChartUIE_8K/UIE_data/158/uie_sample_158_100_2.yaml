@@ -1,0 +1,69 @@
+initial_prompt: Create a grouped column chart to visualize student performance based
+  on their major. Use the GPA, study hours per week, and attendance rate as the metrics
+  for comparison. Highlight the differences between genders and mark those with part-time
+  jobs. Provide annotations to highlight standout cases, such as exceptionally high
+  or low GPA, or outliers in study hours. Include some contextual annotations to offer
+  insights into how extracurricular activities might be impacting these metrics. This
+  will help to quickly grasp trends and pinpoint areas where interventions might be
+  needed to improve overall student performance.
+questions: '1. Do you have a preferred color scheme or palette for representing different
+  metrics and categories?
+
+  2. How would you like to differentiate between genders in the chart (e.g., color
+  coding, pattern, etc.)?
+
+  3. Do you prefer specific shapes or markers to indicate part-time job status on
+  the chart?
+
+  4. Are there any particular fonts or font sizes you would like to use for the annotations
+  and labels?
+
+  5. How detailed should the contextual annotations be regarding extracurricular activities''
+  impact on metrics?
+
+  6. Should the standout cases be highlighted with specific colors, shapes, or any
+  other visual cues?
+
+  7. Do you have preferences on the chart layout, such as the order of metrics (GPA,
+  study hours, attendance rate) or how they are grouped?
+
+  8. Would you like a legend to explain the visual encodings used for different attributes
+  (gender, part-time job status, etc.)?
+
+  9. Is there a specific orientation or aspect ratio you prefer for the grouped column
+  chart?
+
+  10. Do you have a preference for how to present outliers, such as using different
+  colors or special symbols?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Color coding would be good.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. The annotations should provide clear and relevant insights, but I am not sure
+  how detailed it should be.
+
+  6. Specific colors would be great to highlight standout cases.
+
+  7. I prefer the metrics to be grouped by GPA, study hours, then attendance rate.
+
+  8. Yes, a legend would be helpful.
+
+  9. I am not sure.
+
+  10. Different colors for outliers would be preferred.
+
+  <end of user emulated response>'
+data_attributes:
+- GPA
+- StudyHoursPerWeek
+- AttendanceRate
+- Major
+- Gender
+- PartTimeJob
+- ExtraCurricularActivities

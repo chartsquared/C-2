@@ -1,0 +1,45 @@
+initial_prompt: I have a dataset containing two columns, 'x' and 'y', with floating-point
+  numbers. There are no missing values, and each column has 5 unique values. Can you
+  create a spline chart to visualize this data? I'd like the x-axis to represent the
+  'x' values and the y-axis to represent the 'y' values. The spline chart should have
+  smooth curves connecting the data points to show the relationship between 'x' and
+  'y'. Please make sure the chart is clear and easy to interpret, suitable for data
+  analysis purposes. Thank you!
+questions: '1. Do you have a preferred color scheme for the spline chart?
+
+  2. Would you like grid lines to be included in the chart for better readability?
+
+  3. Should the chart include data point markers at each ''x'' and ''y'' value?
+
+  4. Do you have a preferred font size and style for axis labels and titles?
+
+  5. Would you like to include a legend, even though there is only one data series?
+
+  6. Should the spline chart have a title? If so, what should it be?
+
+  7. Do you have a preference for the line style (e.g., solid, dashed) for the spline
+  curve?
+
+  8. Would you like any specific range or limits to be set for the x-axis and y-axis?
+
+  9. Do you require annotations or callouts for specific data points?'
+answers: '1. I do not have a specific preference.
+
+  2. Yes, grid lines would be helpful for better readability.
+
+  3. Yes, please include data point markers at each ''x'' and ''y'' value.
+
+  4. I do not have a specific preference for font size and style.
+
+  5. No, a legend is not necessary.
+
+  6. No, the chart does not need a title.
+
+  7. I do not have a specific preference for the line style.
+
+  8. I am not sure.
+
+  9. I do not require annotations or callouts for specific data points.'
+data_attributes:
+- x
+- y

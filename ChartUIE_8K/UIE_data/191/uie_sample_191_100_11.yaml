@@ -1,0 +1,58 @@
+initial_prompt: Please create a grouped bar chart for visualizing the brain tumor
+  dataset. I want to compare the 'Mean', 'Variance', 'Standard Deviation', 'Entropy',
+  'Contrast', and 'Energy' across the two classes (0 and 1). Group the data based
+  on the 'Class' column and plot the mentioned parameters side by side for each class.
+  The x-axis should have the parameters and the y-axis should show their values. Each
+  bar group should represent the Classes for visual comparison of these features in
+  brain tumor analysis. Thanks!
+questions: '1. Do you have any specific color preferences for the bars representing
+  the two classes?
+
+  2. Would you like to include data labels on the bars to show exact values?
+
+  3. Do you prefer any particular font style or size for the axis labels and titles?
+
+  4. Should the y-axis be on a linear scale or a logarithmic scale?
+
+  5. Do you want gridlines in the background for better readability? If so, should
+  they be light or bold?
+
+  6. Is there a specific order in which you would like the statistical parameters
+  to appear on the x-axis?
+
+  7. Would you like to include a legend to indicate which color represents each class?
+
+  8. Should the chart include error bars to show variability or confidence intervals?
+
+  9. Do you have any preferences for the bar width and spacing between bar groups?
+
+  10. Would you like to add a title or subtitle to the chart? If so, please specify
+  the text.'
+answers: '1. I am not sure.
+
+  2. Yes, please include data labels on the bars.
+
+  3. I do not have any specific preference.
+
+  4. Linear scale is fine.
+
+  5. Yes, include gridlines. Light would be better.
+
+  6. I do not know.
+
+  7. Yes, please include a legend.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. Yes, please add a title: "Comparison of Statistical Parameters in Brain Tumor
+  Dataset Across Classes"'
+data_attributes:
+- Class
+- Mean
+- Variance
+- Standard Deviation
+- Entropy
+- Contrast
+- Energy

@@ -1,0 +1,53 @@
+initial_prompt: Please create a heatmap to visualize the distance between various
+  Russian cities. Use the dataset columns 'Order', 'Destination', and 'Distance' as
+  the basis. Highlight the shortest and longest distances to emphasize the extremes.
+  Include data-driven text annotations for the top 5 shortest and longest routes to
+  draw attention to these specific routes. The purpose is to analyze the transportation
+  efficiency and logistics within these cities, making it easier to identify key patterns
+  and outliers. The chart should be practical for logistics planning and transportation
+  optimization.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the heatmap display any specific city order (e.g., alphabetical, by distance)?
+
+  3. Would you like the shortest and longest distances to be highlighted using specific
+  colors or patterns?
+
+  4. How would you prefer the text annotations for the top 5 shortest and longest
+  routes to be formatted (e.g., font size, color, positioning)?
+
+  5. Should there be a particular title or labels for the axes in the heatmap?
+
+  6. Are there any additional labels or legend details you would like included?
+
+  7. Would you like gridlines to be visible on the heatmap?
+
+  8. Do you have any specific preferences for the size and aspect ratio of the heatmap?
+
+  9. Should the distances be represented with any specific units or formatting (e.g.,
+  kilometers, miles, decimal precision)?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please use specific colors to highlight the shortest and longest distances.
+
+  4. I am not sure.
+
+  5. No preference.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Please use kilometers.
+
+  <end of user emulated response>'
+data_attributes:
+- Order
+- Destination
+- Distance

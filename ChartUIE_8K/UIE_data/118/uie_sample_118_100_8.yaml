@@ -1,0 +1,57 @@
+initial_prompt: I need a dot plot visualizing the Indian Liver Patient Records. Specifically,
+  I'd like dots to represent individual records, categorized by Gender. Use Age on
+  the X-axis and Total_Bilirubin on the Y-axis. Additionally, color-code the dots
+  based on the Dataset column to distinguish different groups within the dataset.
+  Make sure to include a legend. This will help to identify any potential correlation
+  between age, bilirubin levels, and gender in the liver patient records. Please ensure
+  the plot is clear and easy to interpret.
+questions: '1. Do you have any specific preferences for the title of the chart?
+
+  2. Would you like to customize the axis labels or use the default labels derived
+  from the data attributes?
+
+  3. Do you prefer a specific color palette for color-coding the dots based on the
+  Dataset column?
+
+  4. How do you want the legend to be displayed, and is there any specific information
+  you want to include in the legend?
+
+  5. Are there any specific formatting or styling preferences for the dots (e.g.,
+  size, shape, border)?
+
+  6. Would you like gridlines on the background for better readability of the chart?
+
+  7. Do you want to include any reference lines or markers to highlight specific value
+  ranges or thresholds?
+
+  8. Is there any specific font style or size preference for the labels, title, or
+  legend?
+
+  9. Would you prefer to display data labels or tooltips with specific information
+  on hover for each dot?
+
+  10. Are there any additional annotations or notes you would like to add to the chart?'
+answers: '1. I am not sure.
+
+  2. Default labels derived from the data attributes are fine.
+
+  3. I do not have a specific preference.
+
+  4. I have no specific preference.
+
+  5. Default styling for the dots is okay with me.
+
+  6. Yes, gridlines would be helpful.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- Age
+- Gender
+- Total_Bilirubin
+- Dataset

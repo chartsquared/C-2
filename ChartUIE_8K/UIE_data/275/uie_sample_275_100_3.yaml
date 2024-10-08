@@ -1,0 +1,45 @@
+initial_prompt: I need a choropleth map visualizing the distribution of mismanaged
+  plastic waste globally over different years. Use "coastal-population-vs-mismanaged-plastic.csv"
+  from environmental science data. Highlight countries based on the amount of mismanaged
+  plastic waste in tonnes, with color gradients depicting various levels. Include
+  year as a filter to see changes over time. The map should also show coastal population
+  density as an overlay. Ensure missing data is appropriately handled. This is for
+  analyzing environmental impact and helping target areas for stricter waste management
+  policies.
+questions: '1. Do you have any preference for the color gradients used in the choropleth
+  map to depict various levels of mismanaged plastic waste?
+
+  2. What color scheme would you like to use for the coastal population density overlay?
+
+  3. How would you prefer the missing data to be handled or represented on the map?
+
+  4. Is there a specific year range you are particularly interested in for the year
+  filter?
+
+  5. Do you have any specific design preferences for the map''s legend and labels?
+
+  6. Are there any additional details or annotations you''d like to include on the
+  map to provide more context to the viewers?
+
+  7. Would you like to see any specific countries highlighted or detailed more prominently
+  on the map?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer missing data to be represented in a neutral color or pattern,
+  such as grey or hashed lines.
+
+  4. I am particularly interested in the period from 2000 to 2020.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not have any specific countries in mind, but highlighting countries with
+  the highest amounts of mismanaged plastic waste would be helpful.'
+data_attributes:
+- Entity
+- Year
+- Mismanaged plastic waste (tonnes)
+- Coastal population

@@ -1,0 +1,52 @@
+initial_prompt: I need a stacked area chart showing GameStop's historical stock prices
+  over time. The x-axis should display the dates, while the y-axis should display
+  the price values. Different segments within the area chart should represent open
+  price, high price, low price, and close price to visualize their variations day
+  by day. Include volume as another shaded area for additional context. Make sure
+  that the chart is easy to read and understand, with each price type clearly differentiated
+  by color. This will help in visualizing how GameStop's stock has fluctuated. Thank
+  you!
+questions: '1. Do you have a specific color scheme preference for differentiating
+  the price types (open, high, low, close prices) and volume?
+
+  2. How would you like the volume to be represented in the chart - as a separate
+  shaded area at the bottom of the chart or an overlay on the primary price segments?
+
+  3. Would you prefer a specific date range to be displayed on the x-axis, or should
+  it include the entire dataset?
+
+  4. Are there any specific labels, annotations, or markers that you would like to
+  be included in the chart for better readability?
+
+  5. What level of granularity would you like for the x-axis (e.g., daily, weekly,
+  monthly)?
+
+  6. Do you have any preferences regarding the y-axis scale (e.g., linear or logarithmic)?
+
+  7. Would you like a legend to be included, and if so, where should it be positioned
+  (e.g., top, bottom, left, right)?
+
+  8. Are there any specific aspects of the chart (e.g., font size, axis labels, grid
+  lines) that you would like to customize for better readability and presentation?'
+answers: '1. I don''t have a specific color scheme preference.
+
+  2. I am not sure.
+
+  3. Include the entire dataset.
+
+  4. I do not know.
+
+  5. Daily granularity would be preferred.
+
+  6. I have no specific preference.
+
+  7. Yes, include a legend. Preferably at the bottom.
+
+  8. I am not sure.'
+data_attributes:
+- date
+- open_price
+- high_price
+- low_price
+- close_price
+- volume

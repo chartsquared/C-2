@@ -1,0 +1,42 @@
+initial_prompt: Create a geographic heatmap of real estate prices, highlighting regions
+  with varying house prices. Annotate areas with high and low price concentrations
+  to emphasize trends. Include geographical coordinates, house age, and proximity
+  to MRT stations.
+questions: '1. Do you have any specific color schemes or gradients in mind for representing
+  different price ranges on the heatmap?
+
+  2. Would you prefer specific annotations or markers for high and low price concentrations,
+  or should they be automatically generated based on the data?
+
+  3. How detailed should the geographic boundaries be? Are city-level boundaries sufficient,
+  or do you prefer neighborhood or district-level granularity?
+
+  4. Would you like to include a legend to explain the color coding for different
+  house prices and other attributes?
+
+  5. Do you have a preference for the type of map background (e.g., satellite, street
+  map, terrain)?
+
+  6. Should the heatmap focus on a particular region or cover a broader area?
+
+  7. Are there any specific labeling or font preferences for annotations and axis
+  titles?'
+answers: '1. I am not sure.
+
+  2. I prefer specific annotations.
+
+  3. I prefer neighborhood or district-level granularity.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- X2 house age
+- X3 distance to the nearest MRT station
+- X5 latitude
+- X6 longitude
+- Y house price of unit area

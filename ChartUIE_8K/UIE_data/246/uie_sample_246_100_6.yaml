@@ -1,0 +1,49 @@
+initial_prompt: I have a dataset on bacteria, detailing their names, families, where
+  they are found, and if they are harmful to humans. I'd like a treemap visualization
+  to better understand the composition and distribution of these bacteria. Please
+  create a treemap where each rectangle represents a bacterial species, categorized
+  primarily by their family and colored based on whether they are harmful to humans.
+  The size of each rectangle could be uniform since we don't have a frequency measure.
+  Additionally, maybe include the "Where Found" information within each cell for better
+  context understanding.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  harmful and non-harmful bacteria?
+
+  2. Are there any specific fonts or text styles you prefer for displaying the "Where
+  Found" information within each cell?
+
+  3. What level of detail would you like for the labels of each rectangle representing
+  bacterial species (e.g., full name, abbreviated name)?
+
+  4. Do you have a preference for the layout style of the treemap (e.g., squarified,
+  slice-and-dice)?
+
+  5. Should the treemap have a legend or key to explain the color coding for harmfulness?
+
+  6. Would you like any additional data annotations or notes to be included within
+  the treemap cells?
+
+  7. Is there a particular order or hierarchy in which you want the families to be
+  displayed in the treemap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Full name would be better.
+
+  4. I am not sure.
+
+  5. Yes, a legend explaining the color coding for harmfulness would be helpful.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Name
+- Family
+- Where Found
+- Harmful to Humans

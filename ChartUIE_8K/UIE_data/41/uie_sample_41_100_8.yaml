@@ -1,0 +1,51 @@
+initial_prompt: I have a dataset on mice protein expression. I need a histogram visualizing
+  the distribution of protein levels for any three proteins (e.g., BDNF_N, ERK_N,
+  and GFAP_N) across different mice. Use the protein expression values, ignoring missing
+  data, and categorize them by 'Genotype' (Control vs. Ts65Dn). Make sure to use different
+  colors for each genotype to clearly distinguish them in the histogram. Also, include
+  a legend and labels for the X-axis (Protein Expression Levels) and Y-axis (Frequency).
+questions: '1. Do you have any specific color preferences for the Control and Ts65Dn
+  genotypes in the histogram?
+
+  2. Is there a particular bin width or number of bins you would like for the histogram?
+
+  3. Would you like the histogram to have any specific title or text annotations?
+
+  4. Should the X-axis range be standardized across all three proteins, or should
+  each have its range?
+
+  5. Do you prefer a specific font style or size for axis labels and legend text?
+
+  6. Would you like to include grid lines in the histogram for better readability?
+
+  7. Do you want the histograms for each protein to be displayed separately or overlaid
+  in the same chart for comparison?
+
+  8. Is there a specific order you would like the histograms to follow (e.g., BDNF_N,
+  ERK_N, GFAP_N)?
+
+  9. Do you have any other specific requirements or preferences for the chart layout
+  or design?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I have no specific preference.
+
+  7. Display the histograms separately for each protein.
+
+  8. No specific order.
+
+  9. No other specific requirements.'
+data_attributes:
+- MouseID
+- BDNF_N
+- ERK_N
+- GFAP_N
+- Genotype

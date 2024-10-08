@@ -1,0 +1,46 @@
+initial_prompt: I need a bubble chart visualization for the Near-Earth Comets data.
+  The chart should plot the semi-major axis (\(Q\)) on the x-axis, eccentricity (\(e\))
+  on the y-axis, and use the period (\(P\)) to define the size of the bubbles. Additionally,
+  highlight and annotate '1P/Halley', '2P/Encke', and '3D/Biela' to draw attention
+  to these key comets. Remember to make the highlighted bubbles visually distinct.
+  This is for an astronomy project aiming to compare the orbits and periods of these
+  comets.
+questions: '1. Do you have any specific color preferences for the highlighted bubbles?
+
+  2. How would you like the annotations to be displayed (e.g., labels, tooltips)?
+
+  3. Do you have a specific scale preference for the size of the bubbles?
+
+  4. Would you like gridlines to be included on the chart?
+
+  5. Do you have a preferred font style or size for the annotations and labels?
+
+  6. Do you prefer a particular background color or theme for the chart?
+
+  7. Should the non-highlighted bubbles have a specific transparency level?
+
+  8. Would you like to include a legend to explain the size and color of the bubbles?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Labels would be fine.
+
+  3. I do not know.
+
+  4. Yes, please include gridlines.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. Yes, please include a legend.
+
+  <end of user emulated response>'
+data_attributes:
+- Q
+- e
+- P
+- Object

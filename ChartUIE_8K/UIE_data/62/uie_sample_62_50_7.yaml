@@ -1,0 +1,48 @@
+initial_prompt: Create a bubble chart for the dataset showing Apple's stock prices.
+  Use 'Date' for the x-axis, 'Volume' for bubble size, and 'Close', 'Open' prices
+  for y-axis.
+questions: '1. Do you have a preferred color scheme for the bubbles based on the trading
+  volume?
+
+  2. Would you like to distinguish between ''Open'' and ''Close'' prices using different
+  bubble shapes or colors?
+
+  3. How would you like to aggregate the data, if at all (e.g., daily, weekly, monthly)?
+
+  4. Do you prefer any specific labels on the axes or data points?
+
+  5. Would you like to include gridlines on the chart to improve readability?
+
+  6. Are there any particular time periods you would like to highlight?
+
+  7. Do you have preferences for the size range of the bubbles representing the ''Volume''?
+
+  8. Would you like to include a legend explaining the bubble sizes?
+
+  9. How should overlapping bubbles be handled in terms of display?
+
+  10. Would you like to add a trend line to illustrate the overall trend?'
+answers: '1. I am not sure.
+
+  2. Yes, please use different colors for ''Open'' and ''Close'' prices.
+
+  3. Daily data will be fine.
+
+  4. I do not have any specific preference for labels.
+
+  5. Yes, please include gridlines.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, include a legend for bubble sizes.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Date
+- Open
+- Close
+- Volume

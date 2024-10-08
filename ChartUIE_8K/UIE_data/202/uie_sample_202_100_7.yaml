@@ -1,0 +1,48 @@
+initial_prompt: Please create a spline chart for the Facial Emotion Recognition Dataset.
+  The x-axis should represent the 'set_id' ranging from 0 to 19, and the y-axis should
+  show 'age'. Each spline line should represent different 'countries' (RU, etc.) and
+  use different colors for 'gender' (male, female). This chart should help us visualize
+  the age distribution for different genders and countries. It is important to differentiate
+  between the lines and use legends. Dataset spans over ages 20 to 60. Missing values
+  are zero.
+questions: '1. Do you have a preference for the color palette used to differentiate
+  genders?
+
+  2. Would you like specific markers or line styles for each country to enhance differentiation?
+
+  3. Should the legend be placed in a specific location on the chart?
+
+  4. Is there a specific font style or size you prefer for the axis labels and title?
+
+  5. Do you require gridlines on the chart for better readability of the data?
+
+  6. Would you like to include data labels for each point on the spline?
+
+  7. Is there a particular title or subtitle you would like to include on the chart?
+
+  8. Are there any additional annotations or highlights you want on specific data
+  points or ranges?'
+answers: '<start of user response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I have no specific preference.
+
+  5. Yes, please include gridlines.
+
+  6. I do not know.
+
+  7. The title could be “Age Distribution in Facial Emotion Recognition Dataset”.
+
+  8. I am not sure.
+
+  <end of user response>'
+data_attributes:
+- set_id
+- gender
+- age
+- country

@@ -1,0 +1,57 @@
+initial_prompt: Create a box chart showing the distribution of peak positions for
+  Christmas songs on the Billboard Hot 100 chart. Use data from 1958, highlighting
+  the week positions and peak positions. Differentiate the songs by performer and
+  mark the instances where a song re-entered the chart. Include labels for quartiles,
+  median, and any outliers. Highlight key performers like Chuck Berry and Bobby Helms.
+  The X-axis should represent different songs while the Y-axis should show peak positions.
+  The chart should help visualize how often and how high Christmas songs rank, providing
+  insights into their popularity over time.
+questions: '1. Do you have any specific color preferences for differentiating songs
+  by performers?
+
+  2. Would you prefer the quartile, median, and outliers to be displayed with specific
+  colors or labels?
+
+  3. Do you have a preferred style for highlighting key performers like Chuck Berry
+  and Bobby Helms?
+
+  4. Are there any specific fonts or font sizes you want for the labels and titles?
+
+  5. Should the instances where a song re-entered the chart be marked with a specific
+  symbol or color?
+
+  6. Do you have any preferences for the positioning or appearance of the legend on
+  the chart?
+
+  7. Would you like any specific gridlines or background style for the chart?
+
+  8. Are there any additional annotations or notes you would want to include on the
+  chart?'
+answers: '<start of user emulated response>
+
+  1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I would prefer the instances where a song re-entered the chart to be marked with
+  a specific symbol.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- weekid
+- week_position
+- song
+- performer
+- peak_position
+- instance
+- previous_week_position

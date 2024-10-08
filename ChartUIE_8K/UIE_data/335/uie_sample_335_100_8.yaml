@@ -1,0 +1,44 @@
+initial_prompt: Create a geographic heatmap using the provided Superstore Sales data.
+  The heatmap should show the sales distribution across different states in the United
+  States. Use the 'State' for geographic location and 'Sales' for the intensity of
+  the heatmap. Highlight regions with higher sales with warmer colors and lower sales
+  with cooler colors. Ensure the map is interactive so users can hover over each state
+  to see the total sales figures. This will help visualize sales performance regionally
+  and identify key market areas. Add a legend to interpret the heatmap colors easily.
+questions: '1. Do you have specific color preferences for the warmer and cooler regions
+  on the heatmap?
+
+  2. Should the heatmap include state borders for better geographical context, and
+  if yes, what color should the borders be?
+
+  3. Do you have a preference for the base map style (e.g., satellite, terrain, minimal)?
+
+  4. Should we include additional labels such as state names or sales figures on the
+  map, and if so, how should they be displayed?
+
+  5. Is there a particular font style or size you prefer for the legend and tooltips?
+
+  6. Any specific title or caption you would like to add to the visualization?
+
+  7. Should the heatmap be scalable to different devices (e.g., mobile, tablet, desktop)?
+
+  8. Are there any accessibility considerations we should take into account (e.g.,
+  colorblind-friendly palette)?'
+answers: '1. I do not know.
+
+  2. Yes, please include state borders. I am not sure about the color.
+
+  3. I do not know.
+
+  4. Yes, include state names. I do not know how they should be displayed.
+
+  5. I do not know.
+
+  6. No specific title or caption.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- State
+- Sales

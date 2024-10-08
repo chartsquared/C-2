@@ -1,0 +1,50 @@
+initial_prompt: Create a scatter plot to visualize the correlation between 'Period'
+  and 'Price' with points colored by 'Color' and sized by 'Number'. Highlight certain
+  points to distinguish specific elements for trends analysis.
+questions: '1. Do you have any specific preferences for the color scheme used to represent
+  ''Color''?
+
+  2. How would you prefer the highlighted points to be distinguished (e.g., different
+  shape, border, or color)?
+
+  3. Are there specific conditions or criteria for highlighting particular data points?
+
+  4. Would you like the axis labels to follow any specific format or labeling convention?
+
+  5. Do you have a preference for the range or scale of the ''Period'' and ''Price''
+  axes (e.g., logarithmic vs. linear)?
+
+  6. Should the chart include a legend to explain the meaning of point sizes and colors?
+
+  7. Is there a preference for the size range of the points based on ''Number''?
+
+  8. Would you like any annotations or labels on specific data points for better clarity?
+
+  9. Do you need gridlines on the chart for better readability, and if so, in which
+  orientation (horizontal, vertical, or both)?
+
+  10. Is there a preferred title or label that should be included on the chart?'
+answers: '1. I am not sure.
+
+  2. Different shape would be good.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Linear scale is fine.
+
+  6. Yes, a legend should be included.
+
+  7. I am not sure.
+
+  8. I do not have a preference.
+
+  9. Both horizontal and vertical gridlines would be helpful.
+
+  10. "Correlation between Period and Price" would be a suitable title.'
+data_attributes:
+- Period
+- Price
+- Color
+- Number

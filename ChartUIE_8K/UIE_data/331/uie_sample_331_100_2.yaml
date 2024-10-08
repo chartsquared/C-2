@@ -1,0 +1,43 @@
+initial_prompt: Create a stacked bar chart to visualize the amino acid composition
+  of different proteins from Pseudomonas aeruginosa. Each bar represents a protein,
+  and sections within the bar represent counts of each amino acid type. Annotate the
+  chart with data-driven elements highlighting proteins with the highest and lowest
+  molecular weights. Further, use highlights to differentiate between more and less
+  hydrophobic proteins. This visualization aims to compare the composition and properties
+  of these proteins, helping in biological analysis and interpretation. Make sure
+  to label axes and proteins clearly for better understanding.
+questions: '1. Do you have a specific color scheme preference for highlighting the
+  different amino acids in the stacked bar chart?
+
+  2. How would you like the proteins with the highest and lowest molecular weights
+  to be highlighted (e.g., different border colors, shadow effects)?
+
+  3. What type of highlights would you prefer to differentiate between more and less
+  hydrophobic proteins (e.g., color intensity, pattern fill)?
+
+  4. Do you have a specific preference for the order in which proteins are displayed
+  on the x-axis (e.g., sorted by molecular weight, alphabetical order)?
+
+  5. Would you like any specific annotations or labels for the axes and protein names
+  (e.g., font size, font type)?
+
+  6. Do you have a preference for the chart title and its placement?'
+answers: '1. I am not sure.
+
+  2. Different border colors for the highest and lowest molecular weights would be
+  great.
+
+  3. Color intensity would work well to differentiate between more and less hydrophobic
+  proteins.
+
+  4. Sorted by molecular weight, please.
+
+  5. I do not know.
+
+  6. I have no specific preference.'
+data_attributes:
+- ID
+- Name
+- Amino_Acid_Composition
+- Molecular_Weight
+- Hydrophobicity

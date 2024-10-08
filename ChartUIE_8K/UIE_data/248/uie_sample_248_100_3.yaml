@@ -1,0 +1,58 @@
+initial_prompt: Create a stacked column chart to visualize the differential gene expression
+  in Taxol-resistant breast cancer cell lines. The chart should display the 'Cell
+  Line' on the x-axis, with different colors representing each unique 'Gene.symbol'.
+  The y-axis should show the log fold change ('logFC') values. Each cell line should
+  have stacked bars showing the logFC for different genes, and labels should indicate
+  the corresponding 'P.Value'. This will help us understand how specific genes are
+  upregulated or downregulated in different cell lines in response to Taxol.
+questions: '1. What color palette do you prefer for distinguishing different ''Gene.symbol''
+  categories?
+
+  2. Do you want the bars to have any specific ordering within each ''Cell Line''?
+
+  3. What font style and size would you like for axis labels and titles?
+
+  4. Do you have any specific preferences for the range or scaling of the y-axis (logFC
+  values)?
+
+  5. Would you like a legend, and if so, where should it be placed?
+
+  6. How would you like the ''P.Value'' labels formatted—in terms of font size, placement,
+  and any specific notation?
+
+  7. Do you have any preferences for the overall layout and size of the chart?
+
+  8. Would you prefer gridlines on the chart for better readability of the values,
+  especially on the y-axis?
+
+  9. Are there any additional annotations or markers you would want to highlight specific
+  genes or values?
+
+  10. Do you want any specific background color or design for the chart to enhance
+  readability or visual appeal?'
+answers: '1. I''m not sure, any visually distinct palette will work.
+
+  2. I do not have a specific preference for the ordering.
+
+  3. I am not sure about the font style, but a legible size would be good.
+
+  4. I do not have a specific preference; use what is standard.
+
+  5. Yes, a legend would be helpful. You can place it wherever it fits best.
+
+  6. I am not sure about the formatting details, just make the P.Values clear and
+  readable.
+
+  7. I have no specific preferences for the layout and size.
+
+  8. Yes, gridlines on the y-axis would be helpful for readability.
+
+  9. I do not need additional annotations or markers.
+
+  10. I do not have any specific preference for the background color—whatever enhances
+  readability is fine.'
+data_attributes:
+- Gene.symbol
+- P.Value
+- logFC
+- Cell Line

@@ -1,0 +1,47 @@
+initial_prompt: I have a dataset about students' grades and several attributes like
+  age, sex, studytime, and family support, among others. Could you create a heatmap
+  that visualizes the correlation between these variables and students' final grades
+  (G3)? I'm particularly interested in seeing how factors like study time, family
+  relationship quality, and failures impact grades. Please make sure to highlight
+  the strong correlations so we can easily identify which factors are most influential.
+  Also, include a color bar and clear labels for better readability.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Should the color bar represent values on a linear scale or would you prefer a
+  logarithmic scale?
+
+  3. Are there specific correlation thresholds that you want to highlight, such as
+  strong positive or negative correlations?
+
+  4. Would you like to include the exact correlation values as annotations on the
+  heatmap?
+
+  5. Do you prefer labels and values in the heatmap to be in a particular font style
+  or size?
+
+  6. Should the heatmap be oriented in a particular way, such as with attributes listed
+  along the rows or columns?
+
+  7. Are there any additional variables not listed that you would like to see included
+  in the heatmap?'
+answers: '1. I am not sure about the color scheme, use what you think is best for
+  readability.
+
+  2. I do not know, just go with what is standard.
+
+  3. Yes, highlight strong correlations above 0.5 and below -0.5.
+
+  4. Yes, please include the exact correlation values as annotations.
+
+  5. I am not sure about font style or size, use what is commonly used.
+
+  6. No specific preference for orientation; use what is most clear.
+
+  7. No, I think the listed variables cover what I am interested in.'
+data_attributes:
+- age
+- sex
+- studytime
+- famrel
+- failures
+- G3

@@ -1,0 +1,57 @@
+initial_prompt: I want to visualize the Cardiovascular_Disease_Dataset data using
+  a heatmap. Specifically, I want to see the correlation between the different columns
+  such as age, gender, chestpain, restingBP, serumcholestrol, fastingbloodsugar, etc.
+  Highlight significant relationships, especially focusing on the 'target' column
+  to identify risk factors for cardiovascular disease. The heatmap should be color-coded
+  for easy interpretation, with legend and axis labels. Ensure that missing values
+  are addressed and that the data types are correctly handled, particularly for numeric
+  values. This visualization will help in understanding how different variables correlate
+  with heart disease.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. How do you prefer significant relationships to be highlighted (e.g., through
+  specific color intensities, annotations)?
+
+  3. What threshold for correlation coefficients would you consider as significant?
+
+  4. Do you have a preference for the size of the heatmap (e.g., dimensions in pixels)?
+
+  5. Would you like to include any specific annotations on the heatmap?
+
+  6. Is there any particular way you want the axis labels to be formatted (e.g., font
+  size, style)?
+
+  7. Do you prefer the heatmap to display all possible correlations or only selected
+  ones?
+
+  8. Should the heatmap also include the actual numeric correlation values within
+  each cell?'
+answers: '1. I do not know.
+
+  2. Through specific color intensities.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Display all possible correlations.
+
+  8. Yes, include the actual numeric correlation values within each cell.'
+data_attributes:
+- age
+- gender
+- chestpain
+- restingBP
+- serumcholestrol
+- fastingbloodsugar
+- restingrelectro
+- maxheartrate
+- exerciseangia
+- oldpeak
+- slope
+- noofmajorvessels
+- target

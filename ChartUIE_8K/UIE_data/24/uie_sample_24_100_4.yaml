@@ -1,0 +1,54 @@
+initial_prompt: Please create a box plot visualizing student grades (G1, G2, G3) based
+  on different categorical features such as school, sex, and address. The plot should
+  show the distribution of grades for these categories, highlighting medians, quartiles,
+  and outliers. This will help in understanding trends and variations in student performance
+  across these groups. Also, include individual data points overlaid on the box plots
+  to provide a clear picture of the grade distribution. Make sure the chart is easy
+  to interpret and visually appealing for educational insights.
+questions: '1. Do you have a preferred color palette for the box plots?
+
+  2. Do you want the categories (school, sex, address) displayed side-by-side or stacked?
+
+  3. Should we use different colors for individual data points based on categories?
+
+  4. Do you have a preference for the size and style of individual data points?
+
+  5. Would you like to include gridlines in the background for better readability?
+
+  6. Do you prefer specific labels or annotations for median, quartiles, and outliers?
+
+  7. Is there a particular font style or size you want for titles, labels, and legends?
+
+  8. Do you want the chart title and axis labels styled in a particular way?
+
+  9. Should we use any specific thematic elements to make the chart more visually
+  appealing?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, different colors for individual data points based on categories would be
+  good.
+
+  4. I do not know.
+
+  5. Yes, please include gridlines for better readability.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- G1
+- G2
+- G3
+- school
+- sex
+- address

@@ -1,0 +1,119 @@
+initial_prompt: Create a heatmap that visualizes the protein expression levels from
+  the "Mice Protein Expression" dataset. Use the protein names listed in the 'Column'
+  field, excluding 'MouseID', 'Genotype', 'Treatment', 'Behavior', and 'class'. The
+  heatmap should show the expression levels for the three samples provided ('309_1',
+  '309_2', '309_3'). Color code the protein expression values, with different colors
+  representing low, medium, and high expression levels. Exclude proteins with missing
+  values from the heatmap. Title the heatmap "Mice Protein Expression Heatmap".
+questions: '1. Do you have any preference for the color scheme used to represent low,
+  medium, and high protein expression levels?
+
+  2. Would you like the heatmap to include value annotations on the cells, or should
+  it only display colors?
+
+  3. How would you prefer missing values to be handled or indicated if they arise
+  during the visualization process?
+
+  4. Should the heatmap display gridlines between cells, or would you prefer a seamless
+  appearance?
+
+  5. Do you have any specific preferences for the font type and size for the title
+  "Mice Protein Expression Heatmap" and other labels?
+
+  6. Would you like to include a legend to explain the color coding of the expression
+  levels?
+
+  7. Do you want the protein names to be displayed along both axes, or should they
+  be limited to one axis?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would prefer missing values to be excluded from the heatmap.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, I would like to include a legend to explain the color coding of the expression
+  levels.
+
+  7. The protein names should be displayed along one axis.'
+data_attributes:
+- DYRK1A_N
+- ITSN1_N
+- BDNF_N
+- NR1_N
+- NR2A_N
+- pAKT_N
+- pBRAF_N
+- pCAMKII_N
+- pCREB_N
+- pELK_N
+- pERK_N
+- pJNK_N
+- PKCA_N
+- pMEK_N
+- pNR1_N
+- pNR2A_N
+- pNR2B_N
+- pPKCAB_N
+- pRSK_N
+- AKT_N
+- BRAF_N
+- CAMKII_N
+- CREB_N
+- ELK_N
+- ERK_N
+- GSK3B_N
+- JNK_N
+- MEK_N
+- TRKA_N
+- RSK_N
+- APP_N
+- Bcatenin_N
+- SOD1_N
+- MTOR_N
+- P38_N
+- pMTOR_N
+- DSCR1_N
+- AMPKA_N
+- NR2B_N
+- pNUMB_N
+- RAPTOR_N
+- TIAM1_N
+- pP70S6_N
+- NUMB_N
+- P70S6_N
+- pGSK3B_N
+- pPKCG_N
+- CDK5_N
+- S6_N
+- ADARB1_N
+- AcetylH3K9_N
+- RRP1_N
+- BAX_N
+- ARC_N
+- ERBB4_N
+- nNOS_N
+- Tau_N
+- GFAP_N
+- GluR3_N
+- GluR4_N
+- IL1B_N
+- P3525_N
+- pCASP9_N
+- PSD95_N
+- SNCA_N
+- Ubiquitin_N
+- pGSK3B_Tyr216_N
+- SHH_N
+- BAD_N
+- BCL2_N
+- pS6_N
+- pCFOS_N
+- SYP_N
+- H3AcK18_N
+- EGR1_N
+- H3MeK4_N
+- CaNA_N

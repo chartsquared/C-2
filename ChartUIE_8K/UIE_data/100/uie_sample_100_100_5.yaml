@@ -1,0 +1,59 @@
+initial_prompt: Create an Area Chart to visualize the trend of units sold over time
+  for different product themes from the Women Fashion Trend Dataset. The x-axis should
+  represent the crawl month, and the y-axis should show the units sold. Use different
+  colors to differentiate between themes such as 'summer', 'winter', etc. Highlight
+  any peaks in sales and provide a legend. This will help identify seasonal trends
+  in women's fashion. Make sure the chart is easy to read and interpret, reflecting
+  the fluctuations in units sold across different months.
+questions: '1. Do you have any specific color preferences for differentiating between
+  product themes?
+
+  2. Do you have a preferred color scheme (e.g., pastel, vibrant, monochromatic)?
+
+  3. Would you like gridlines to be included for better readability of the chart?
+
+  4. Do you prefer the x-axis labels to display every month, or only specific intervals
+  (e.g., quarterly)?
+
+  5. What specific title would you like for the chart?
+
+  6. Do you have a preference on the font size and style for the chart labels and
+  title?
+
+  7. Should the chart legend be positioned at a specific location (e.g., top-right,
+  bottom-left)?
+
+  8. Do you want any specific annotations or callouts for the peaks in sales?
+
+  9. Would you like to include the exact units sold values at the peaks or along the
+  area segments?
+
+  10. Should the y-axis start from zero, or do you prefer it to be dynamically scaled
+  based on the data range?
+
+  11. Do you have a preference for the overall size or aspect ratio of the chart?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Yes, include gridlines for better readability.
+
+  4. Only specific intervals, such as quarterly.
+
+  5. "Seasonal Trends in Women''s Fashion: Units Sold Over Time"
+
+  6. I am not sure.
+
+  7. Top-right.
+
+  8. I have no specific preference.
+
+  9. Yes, include the exact units sold values at the peaks.
+
+  10. The y-axis should start from zero.
+
+  11. I am not sure.'
+data_attributes:
+- crawl_month
+- units_sold
+- theme

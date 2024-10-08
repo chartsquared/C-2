@@ -1,0 +1,61 @@
+initial_prompt: I need a line chart to visualize the data on demolitions of Palestinian
+  structures by Israel. Specifically, I want the x-axis to display the "date_of_demolition"
+  and the y-axis to show the number of "housing_units" demolished. The chart should
+  also highlight categories like "type_of_sturcture" (residential vs non-residential)
+  and "reason_for_demolition" with distinct colors or markers. Including trends over
+  time for different localities and districts would also be helpful. Use the unique
+  values and other summary statistics to ensure the chart captures significant trends
+  and anomalies.
+questions: '1. Do you have a preferred color palette for highlighting different categories
+  such as ''type_of_sturcture'' and ''reason_for_demolition''?
+
+  2. Would you like to see separate trend lines for each locality and district, or
+  should they be shown as a combined overall trend?
+
+  3. How would you prefer the anomalies or significant trends to be highlighted? (e.g.,
+  different markers, colors, or annotations)
+
+  4. Do you need specific labels or legends for each category and trend line?
+
+  5. Is there a particular date range you want to focus on, or should the entire dataset
+  be displayed?
+
+  6. Do you have any specific preferences for the style or appearance of the line
+  chart (e.g., line thickness, dashed vs. solid lines)?
+
+  7. Would you like to include summary statistics (mean, median, etc.) directly on
+  the chart?
+
+  8. Do you require grid lines or any other background features for easier readability?
+
+  9. Should the y-axis be fixed at a certain scale, or should it adjust dynamically
+  based on the data?
+
+  10. Are there any additional annotations or notes you would like to include on the
+  chart for context?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Different markers would be helpful.
+
+  4. Yes, specific labels or legends would be useful.
+
+  5. The entire dataset should be displayed.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. Yes, grid lines would be useful for easier readability.
+
+  9. The y-axis should adjust dynamically based on the data.
+
+  10. I do not know.'
+data_attributes:
+- date_of_demolition
+- housing_units
+- type_of_sturcture
+- reason_for_demolition
+- locality
+- district

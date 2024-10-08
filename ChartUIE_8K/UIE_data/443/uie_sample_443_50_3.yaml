@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap showing the frequency of obstacles per round stage
+  for different locations and seasons. Use obstacle_name as the primary axis, and
+  categorize by round_stage and location to observe trends.
+questions: '1. Do you have any specific color schemes in mind for the heatmap?
+
+  2. Would you prefer a sequential or diverging color scale?
+
+  3. Do you want to include annotations in the cells to show the exact frequency values?
+
+  4. Should the heatmap display only the top or most frequent obstacles, or include
+  all obstacle names?
+
+  5. Do you want to add any labels or titles to the axes and heatmap?
+
+  6. Should the heatmap include a legend for better understanding of the color scale?
+
+  7. Would you like to apply any specific clustering or ordering for the rows (obstacle
+  names) and columns (round stages and locations)?
+
+  8. Is there any preferred layout for the categorization by ''round_stage'' and ''location''
+  - side-by-side or stacked?
+
+  9. Do you need any specific information or captions to be added to the heatmap for
+  better context?
+
+  10. Should the seasons be represented in any specific order (chronological or custom)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include annotations to show the exact frequency values.
+
+  4. I am not sure. Maybe include all obstacle names for a comprehensive view.
+
+  5. Yes, please add labels or titles to the axes and the heatmap.
+
+  6. Yes, the heatmap should include a legend for better understanding of the color
+  scale.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- season
+- location
+- round_stage
+- obstacle_name

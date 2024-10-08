@@ -1,0 +1,79 @@
+initial_prompt: Create a heatmap to visualize the environmental impact of various
+  food products. Highlight high emissions and resource usage areas to draw attention
+  to them. Use text annotations to detail specific values, particularly for total
+  emissions and freshwater withdrawals. This will help in quickly identifying which
+  food products have the highest environmental impact. Make sure to include all columns
+  in the heatmap to compare factors like greenhouse gas emissions, land use, and eutrophying
+  emissions across different food products. The purpose is to emphasize the sustainability
+  of food consumption.
+questions: '1. Do you have any specific color scheme preferences for the heatmap to
+  make extremes more noticeable?
+
+  2. Would you like the heatmap to include any gradient or solid color transitions
+  between high and low values?
+
+  3. Are there any particular font styles or sizes you prefer for the text annotations?
+
+  4. Do you have a preference for the layout or orientation of the heatmap (e.g.,
+  vertical or horizontal axis arrangement)?
+
+  5. Should the heatmap include a legend or color bar for reference? If yes, do you
+  have any specific requirements for it?
+
+  6. Do you want to highlight specific ranges of values using different shades or
+  patterns?
+
+  7. Do you prefer any specific ordering for the food products, such as alphabetical
+  or sorted by a specific attribute?
+
+  8. Would you like grid lines to be visible or invisible in the heatmap?
+
+  9. How would you like to handle missing values in the dataset within the heatmap?
+
+  10. Are there any preferences for margin sizes or spacing between the heatmap elements?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the heatmap to include gradient color transitions between high
+  and low values.
+
+  3. I do not have any specific font styles or sizes in mind.
+
+  4. I am not sure.
+
+  5. Yes, the heatmap should include a legend or color bar for reference. I do not
+  have any specific requirements for it.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not have a preference for grid lines.
+
+  9. I am not sure.
+
+  10. I do not have any specific preferences for margin sizes or spacing between the
+  heatmap elements.'
+data_attributes:
+- Food product
+- Land use change
+- Animal Feed
+- Farm
+- Processing
+- Transport
+- Packaging
+- Retail
+- Total_emissions
+- Eutrophying emissions per 1000kcal (gPO₄eq per 1000kcal)
+- Eutrophying emissions per kilogram (gPO₄eq per kilogram)
+- Eutrophying emissions per 100g protein (gPO₄eq per 100 grams protein)
+- Freshwater withdrawals per 1000kcal (liters per 1000kcal)
+- Freshwater withdrawals per 100g protein (liters per 100g protein)
+- Freshwater withdrawals per kilogram (liters per kilogram)
+- Greenhouse gas emissions per 1000kcal (kgCO₂eq per 1000kcal)
+- Greenhouse gas emissions per 100g protein (kgCO₂eq per 100g protein)
+- Land use per 1000kcal (m² per 1000kcal)
+- Land use per kilogram (m² per kilogram)
+- Land use per 100g protein (m² per 100g protein)
+- Scarcity-weighted water use per kilogram (liters per kilogram)
+- Scarcity-weighted water use per 100g protein (liters per 100g protein)
+- Scarcity-weighted water use per 1000kcal (liters per 1000 kilocalories)

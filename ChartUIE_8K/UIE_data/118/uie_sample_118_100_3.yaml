@@ -1,0 +1,59 @@
+initial_prompt: Please create a histogram to analyze the distribution of age among
+  the Indian Liver Patient Records dataset. Additionally, include separate histograms
+  for gender showing the distribution of liver enzyme levels such as Total Bilirubin,
+  Direct Bilirubin, Alkaline Phosphotase, Alamine Aminotransferase, and Aspartate
+  Aminotransferase. Ensure the histograms are easy to compare and interpret, highlighting
+  any significant differences or patterns observed between male and female patients.
+  This will help in understanding the prevalence and severity of liver conditions
+  across different ages and genders. Include labels, legends, and a title for clarity.
+  Thank you!
+questions: '1. Do you have a preferred color scheme for the histograms?
+
+  2. What bin sizes would you prefer for the histograms?
+
+  3. Do you have any preferred font styles or sizes for labels and titles?
+
+  4. Should the gender-specific histograms be displayed side by side or in separate
+  rows?
+
+  5. Do you prefer a specific style for the legend (e.g., positioned at the top, bottom,
+  left, or right)?
+
+  6. Are there any specific annotations or highlights you would like to include in
+  the histograms?
+
+  7. Would you like the histograms to include grid lines for better readability?
+
+  8. Do you have any preferences for the aspect ratio or size of the histograms?
+
+  9. Should the histograms include any additional descriptive statistics, such as
+  mean or median lines?
+
+  10. Do you prefer horizontal or vertical histograms for any specific attribute?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Side by side would be better for comparison.
+
+  5. I have no specific preference.
+
+  6. No specific annotations are needed.
+
+  7. Yes, grid lines would be helpful.
+
+  8. I do not have any specific preference.
+
+  9. Yes, including mean and median lines would be helpful.
+
+  10. Vertical histograms are preferred.'
+data_attributes:
+- Age
+- Gender
+- Total_Bilirubin
+- Direct_Bilirubin
+- Alkaline_Phosphotase
+- Alamine_Aminotransferase
+- Aspartate_Aminotransferase

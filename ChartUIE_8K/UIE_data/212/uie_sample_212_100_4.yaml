@@ -1,0 +1,58 @@
+initial_prompt: I have a dataset detailing park attendance in various boroughs of
+  New York City for different sports activities each week. I'd like a geographic heatmap
+  that displays the total attendance across different boroughs like Queens, Brooklyn,
+  etc. This heatmap should highlight which boroughs have the highest and lowest attendance
+  figures. Please ensure the color gradient accurately represents attendance density,
+  helping identify hotspots. Utilize the attendance data from each day of the week
+  and compile it to show overall trends. This visualization will help in understanding
+  and planning for high-demand areas in sports and recreation.
+questions: '1. Do you prefer any specific color gradient for the heatmap to represent
+  the attendance density?
+
+  2. Would you like to include borough names or labels directly on the heatmap?
+
+  3. Do you have any preference for the geographic boundaries or map style (e.g.,
+  terrain, satellite, simple)?
+
+  4. Are there any specific Boroughs you want highlighted or emphasized in the visualization?
+
+  5. Would you like to add a legend to explain the color gradient representing attendance
+  density?
+
+  6. Do you have any specific size requirements or aspect ratio for the map?
+
+  7. Would you like to include data labels for attendance numbers on the heatmap for
+  each borough?
+
+  8. Do you prefer the heatmap to show a weekly aggregate or a daily breakdown of
+  attendance?
+
+  9. Are there any additional annotations or markers you’d like to include on the
+  map?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include borough names or labels directly on the heatmap.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, please add a legend to explain the color gradient representing attendance
+  density.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I prefer the heatmap to show a weekly aggregate of attendance.
+
+  9. I have no specific preference.'
+data_attributes:
+- Borough Location
+- Sunday's Attendance
+- Monday's Attendance
+- Tuesday's Attendance
+- Wednesday's Attendance
+- Thursday's Attendance
+- Friday's Attendance
+- Saturday's Attendance

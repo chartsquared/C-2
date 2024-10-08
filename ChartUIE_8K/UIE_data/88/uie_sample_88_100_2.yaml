@@ -1,0 +1,52 @@
+initial_prompt: '<start of user instructions>
+
+  Visualize the trends in salaries across different job categories in data science
+  from 2020 to 2023 using a line chart. Include data-driven text annotations to highlight
+  salary peaks for specific job titles like ''Data Architect'' and ''Data DevOps Engineer''.
+  Use highlights to differentiate job categories by color. Annotate the experience
+  levels (''Mid-level'', ''Senior'') on the chart to show how they impact salaries.
+  This chart will help in understanding salary fluctuations and trends within the
+  data science field, aiding professionals and companies in making informed career
+  and hiring decisions.
+
+  <end of user instructions>'
+questions: '1. Do you have a preferred color scheme for differentiating job categories?
+
+  2. Should the line chart differentiate between mid-level and senior experience levels
+  through different markers or line styles?
+
+  3. Do you prefer any specific font style or size for the text annotations?
+
+  4. How do you want the chart to handle multiple lines for different job categories?
+
+  5. Would you like grid lines or a background shade on the chart for better readability?
+
+  6. How would you like to display the legend on the chart (e.g., placement and orientation)?
+
+  7. Are there any specific formatting preferences for the axes (e.g., labels, scale,
+  units)?
+
+  8. Do you have a preference for the format or style of highlighting salary peaks
+  for specific job titles?'
+answers: '1. I am not sure.
+
+  2. Yes, different markers or line styles for mid-level and senior experience levels
+  would be great.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, grid lines or a background shade for better readability would be helpful.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- work_year
+- job_title
+- job_category
+- salary_in_usd
+- experience_level

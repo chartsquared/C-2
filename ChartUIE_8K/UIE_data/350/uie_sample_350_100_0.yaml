@@ -1,0 +1,53 @@
+initial_prompt: Please create a bar chart visualizing the total stats of Pokémon through
+  different generations. Ensure the bars are grouped by generation and highlight any
+  legendary Pokémon to distinguish them from others. Annotate the top three Pokémon
+  with the highest total stats to make them stand out. This visualization will help
+  compare the evolution of Pokémon stats across generations and identify trends or
+  outliers among the legendary Pokémon, providing a clear overview of their performance
+  spectrum. Use colors and labels for clarity and easy understanding.
+questions: '1. Do you have any specific color preferences for the bars representing
+  each generation?
+
+  2. How would you like the legendary Pokémon to be highlighted (e.g., different color,
+  pattern, or both)?
+
+  3. Do you have a preferred font style or size for the annotations of the top three
+  Pokémon?
+
+  4. Should the bars representing the top three Pokémon with the highest stats be
+  in a different color or pattern to stand out?
+
+  5. Do you prefer the chart to have a title? If so, what should it be?
+
+  6. Are there specific label formats you would like to use for the x-axis (generations)
+  and y-axis (total stats)?
+
+  7. Would you like a legend included in the chart to explain the color-coding or
+  patterns?
+
+  8. Should there be gridlines in the background to aid in reading the values?
+
+  9. Do you prefer a specific order for the generations on the x-axis (e.g., ascending,
+  descending)?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure, maybe a different color would work.
+
+  3. I am not sure.
+
+  4. Yes, that would be great.
+
+  5. Yes, it should be titled. Let''s call it "Evolution of Pokémon Stats Across Generations".
+
+  6. I do not know.
+
+  7. Yes, a legend would be helpful.
+
+  8. I do not know.
+
+  9. Ascending order would be fine.'
+data_attributes:
+- total
+- generation
+- legendary
+- name

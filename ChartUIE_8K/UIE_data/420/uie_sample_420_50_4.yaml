@@ -1,0 +1,56 @@
+initial_prompt: Create a stacked bar chart displaying bike counts and pedestrian counts
+  over time at different crossings. Use "date" for the x-axis, and stack "bike_count"
+  and "ped_count" on the y-axis.
+questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Should the x-axis labels be displayed at a specific interval (e.g., daily, weekly,
+  monthly)?
+
+  3. Do you want the chart to show any specific time range or all available data?
+
+  4. Is there a specific format for the date that you''d prefer on the x-axis?
+
+  5. How would you like missing values in the bike and pedestrian counts to be handled
+  (e.g., leave gaps, interpolate)?
+
+  6. Do you prefer to include a legend to distinguish between bike counts and pedestrian
+  counts in the stacks?
+
+  7. Would you like any gridlines to be displayed on the chart?
+
+  8. Is there a specific order you prefer for the crossings to be displayed?
+
+  9. Should the chart include titles for the axes and the chart itself? If so, do
+  you have specific wording preferences?
+
+  10. Do you have any preference for the bar width or spacing between bars?
+
+  11. Would you like to include data labels on the bars showing the count values?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Show all available data.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend to distinguish between bike counts and pedestrian
+  counts in the stacks.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. Yes, please include titles. For the chart, "Bike and Pedestrian Counts Over Time,"
+  for the y-axis, "Count," and for the x-axis, "Date."
+
+  10. I am not sure.
+
+  11. I have no specific preference.'
+data_attributes:
+- date
+- crossing
+- bike_count
+- ped_count

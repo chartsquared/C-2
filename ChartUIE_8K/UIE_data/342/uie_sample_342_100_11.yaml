@@ -1,0 +1,45 @@
+initial_prompt: 'Hi there,
+
+
+  I''d like to visualize the trading volume of Cardano over time. Could you create
+  a histogram using the ''Volume'' data from the CSV file I provided? Please plot
+  the trading volume along the Y-axis and the corresponding dates along the X-axis.
+  I''m particularly interested in seeing the distribution and frequency of high trading
+  volume days, so make sure the bins are appropriately spaced to highlight any peaks
+  in trading activity. This will help me understand the trading patterns and identify
+  any significant spikes in volume. Thanks!'
+questions: '1. Do you have a preferred color scheme for the histogram?
+
+  2. Would you like gridlines to be included on the chart?
+
+  3. Do you prefer a specific style for the bins (e.g., equal-width, variable-width)?
+
+  4. Should the x-axis labels be rotated for better readability?
+
+  5. Do you want the chart to include a title and axis labels? If so, do you have
+  any preferences for the text?
+
+  6. Would you like to see any additional annotations or markers for high volume days?
+
+  7. Do you prefer any specific font style or size for the text on the chart?
+
+  8. Are there any specific date ranges you would like to highlight or focus on?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines.
+
+  3. I am not sure.
+
+  4. Yes, please rotate the x-axis labels for better readability.
+
+  5. Yes, please include a title and axis labels. I prefer "Cardano Trading Volume
+  Over Time" as the title, and "Date" for the x-axis and "Volume" for the y-axis.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. I do not know.'
+data_attributes:
+- Date
+- Volume

@@ -1,0 +1,55 @@
+initial_prompt: Create a scatter plot for the NIFTY-50 stocks dataset. On the x-axis,
+  have the '52w H' (52-week high) and on the y-axis, plot the '% Chng' (percentage
+  change). Make each point represent one stock symbol from the dataset. Include distinct
+  colors for each point and add labels to denote the stock symbols. It would be great
+  if the plot also highlights the trend or correlation between the 52-week high and
+  the percentage change. This will help visualize the stock performance relative to
+  their one-year high values.
+questions: '1. Do you have any specific color preferences for the distinct points
+  representing each stock symbol?
+
+  2. Would you prefer a specific font style or size for the stock symbol labels?
+
+  3. Do you have a preferred layout or size for the chart (e.g., square, widescreen)?
+
+  4. Should the trend or correlation be shown using a specific type of line (e.g.,
+  linear trend line, polynomial curve)?
+
+  5. Do you have a preference for the background color or grid style of the chart?
+
+  6. Would you like to include any specific titles for the x-axis and y-axis, or should
+  they just be ''52w H'' and ''% Chng''?
+
+  7. Do you require any specific legend format or positioning on the chart?
+
+  8. Are there any specific annotations or markers you would like to include to highlight
+  certain stocks or data points?
+
+  9. Do you have a preferred style for dot shapes (e.g., circles, squares) on the
+  scatter plot?
+
+  10. Should the axes have specific limits or range of values, or should they be set
+  automatically based on the data?'
+answers: '1. I do not have a specific color preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I prefer a linear trend line.
+
+  5. I am not sure.
+
+  6. They can just be ''52w H'' and ''% Chng''.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. Circles would be good.
+
+  10. They can be set automatically based on the data.'
+data_attributes:
+- 52w H
+- '% Chng'
+- Symbol

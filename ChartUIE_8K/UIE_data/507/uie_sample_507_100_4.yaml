@@ -1,0 +1,48 @@
+initial_prompt: Please create a grouped bar chart comparing the vote percentages for
+  each party (CON, LAB, LIB, Brexit, Green, NAT, MIN, OTH) for the three constituencies
+  provided (Aldershot, Aldridge-Brownhills, Altrincham and Sale West). Each constituency
+  should be a separate group of bars, with different colored bars representing each
+  party's percentage within that group. Make sure to include a legend to differentiate
+  the parties and label both axes appropriately (constituencies on the x-axis and
+  percentage on the y-axis). Thank you!
+questions: '1. Do you have any specific color preferences for each party in the bar
+  chart?
+
+  2. Would you like the bars to be ordered in any specific sequence for each constituency,
+  such as by vote percentage or party name?
+
+  3. Do you prefer any specific font style or size for the axis labels and legend?
+
+  4. Is there a preferred width or spacing for the bars within each group?
+
+  5. Are there any specific ranges or scales you would like to use for the y-axis
+  (percentage axis)?
+
+  6. Would you like to display the exact vote percentage values on top of each bar?
+
+  7. Is there any additional information or annotation you would like to include on
+  the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, displaying the exact vote percentage values on top of each bar would be
+  helpful.
+
+  7. I do not have any additional information or annotations to include.'
+data_attributes:
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Name

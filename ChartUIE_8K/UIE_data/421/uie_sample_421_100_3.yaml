@@ -1,0 +1,42 @@
+initial_prompt: Create a heatmap to visualize the male dominance in Nobel Prize awards.
+  Use the data on Nobel Prize laureates from the CSV file to show the ratio of male
+  to female winners across different prize categories and years. The x-axis should
+  represent the prize year, and the y-axis should represent the prize categories (e.g.,
+  Chemistry, Literature, Medicine). The heatmap should indicate the number of male
+  and female laureates, with different colors representing males and females. Ensure
+  the color intensity reflects the count of laureates. This will help to highlight
+  gender disparity in Nobel Prize awards.
+questions: '1. Do you have any color preferences for representing male and female
+  laureates?
+
+  2. What color scheme would you prefer for indicating the intensity of laureates''
+  counts?
+
+  3. Do you have any specific preferences for the text format and size of the axis
+  labels?
+
+  4. Would you like to include any specific title or subtitle for the heatmap?
+
+  5. Do you want to display legend labels in a particular format?
+
+  6. Are there any specific font preferences you have for the label and legends?
+
+  7. Do you prefer a specific layout for the heatmap, such as square or rectangular
+  cells?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include the title "Gender Disparity in Nobel Prize Awards."
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I am not sure.'
+data_attributes:
+- prize_year
+- category
+- gender

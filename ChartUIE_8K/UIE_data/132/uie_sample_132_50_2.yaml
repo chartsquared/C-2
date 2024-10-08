@@ -1,0 +1,51 @@
+initial_prompt: Create a box chart visualizing monthly forest fire numbers across
+  states in Brazil from 1998 to 2018. Use text annotations for significant outliers
+  and highlight months with the most fires.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How would you like the outliers to be annotated? (e.g., with specific text, symbols)
+
+  3. Should the chart include a legend, and if so, what details should it cover?
+
+  4. Do you want gridlines in the background to help interpret the data?
+
+  5. What labels or titles would you like for the x-axis and y-axis?
+
+  6. Is there a specific way you''d prefer the months to be displayed on the x-axis?
+  (e.g., abbreviated, full names)
+
+  7. How would you like the months with the most fires to be highlighted? (e.g., different
+  color, bold labels)
+
+  8. Do you need any additional information such as the total number of fires per
+  state to be included in the chart?
+
+  9. Is there a particular format you would like for the text annotations on the significant
+  outliers?
+
+  10. Would you like the chart to include a summary or descriptive statistics of the
+  data?'
+answers: '1. I am not sure.
+
+  2. With specific text noting the state and number of fires.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. X-axis: "Month", Y-axis: "Number of Fires"
+
+  6. Abbreviated.
+
+  7. Different color.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I am not sure.'
+data_attributes:
+- year
+- state
+- month
+- number

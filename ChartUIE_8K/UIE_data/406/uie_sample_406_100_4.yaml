@@ -1,0 +1,47 @@
+initial_prompt: Create a heatmap using the dataset from "GDP & Life Expectancy" social-science
+  data. The heatmap should show the relationship between life expectancy and GDP per
+  capita across different countries, differentiated by continents. Use "lifeExp" on
+  one axis and "gdpPercap" on the other axis. Each cell's color should represent the
+  population size ("pop") of the corresponding country to add another layer of information.
+  Ensure the continental differences are clearly distinguishable, potentially by using
+  annotations or color gradation for easy interpretation.
+questions: '1. Do you have any specific color palette preferences for differentiating
+  continents?
+
+  2. Would you like to include any specific annotations or markers on the heatmap?
+
+  3. How would you prefer the population size to be represented through the color
+  gradation?
+
+  4. Are there any specific labels or legends you would like to include to enhance
+  the interpretability of the heatmap?
+
+  5. Do you have a preference for the scaling method to be used for GDP per capita
+  or life expectancy axes (e.g., linear or logarithmic)?
+
+  6. Would you like a title or description to be included on the heatmap? If so, what
+  should it be?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I would like population size to be represented through a color gradation that
+  becomes darker with larger populations.
+
+  4. Yes, please include a legend to explain the colors for population size and indicate
+  which colors correspond to which continents.
+
+  5. Linear scaling would be preferred for both axes.
+
+  6. Yes, please include a title. The title should be "Relationship between Life Expectancy
+  and GDP per Capita across Continents".
+
+  <end of user emulated response>'
+data_attributes:
+- country
+- continent
+- lifeExp
+- pop
+- gdpPercap

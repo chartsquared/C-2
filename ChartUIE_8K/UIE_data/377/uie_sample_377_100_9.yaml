@@ -1,0 +1,57 @@
+initial_prompt: Please create an area chart utilizing the election data provided.
+  The x-axis should represent the different constituencies (Name), while the y-axis
+  should show the vote percentages for each party (CON(%), LAB(%), LIB(%), Green(%),
+  etc.). Different colors should represent each party's area to show their respective
+  percentages clearly. Make sure to include a legend to identify the parties. This
+  chart will help visualize the distribution of votes across different constituencies,
+  emphasizing the winning party and comparing their shares of votes. Thank you!
+questions: '1. Do you have a preferred color scheme for the different parties?
+
+  2. What should be the title of the chart?
+
+  3. Do you have any preferences for the x-axis and y-axis labels?
+
+  4. Should the y-axis be set to a specific range, such as 0% to 100%?
+
+  5. Would you like to include data labels on the chart for each percentage point?
+
+  6. Should the chart include gridlines for better readability?
+
+  7. Do you have a preferred font style or size for the labels and legend?
+
+  8. Should the chart background be a specific color or remain white?
+
+  9. Do you want any specific formatting for the legend, such as its position (e.g.,
+  top, bottom, right, left)?
+
+  10. Are there any additional annotations or markings you would like to include on
+  the chart?'
+answers: '1. I have no specific preference.
+
+  2. The title of the chart should be "Vote Percentage Distribution Across Constituencies".
+
+  3. I am not sure.
+
+  4. Yes, the y-axis should be set to a specific range, such as 0% to 100%.
+
+  5. I do not know.
+
+  6. Yes, include gridlines for better readability.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. The legend should be positioned at the bottom.
+
+  10. I do not know.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Green(%)
+- Brexit(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)

@@ -1,0 +1,59 @@
+initial_prompt: I need a box chart to visualize the "Heart Failure Prediction Dataset,"
+  focusing on health metrics. Specifically, I want box plots for age, resting blood
+  pressure, cholesterol, and maximum heart rate to see data distribution. Use different
+  colors to differentiate groups with and without heart disease. Include labels, axis
+  titles, and a legend for clarity. Show any outliers distinctly. This visualization
+  will help discern patterns or anomalies in critical health indicators for patients
+  with and without heart disease. Make sure the chart is clean and easy to understand.
+questions: '1. Do you have any specific color preferences for differentiating the
+  groups with and without heart disease?
+
+  2. What title would you like to give to the overall chart?
+
+  3. Do you have any preferred font styles or sizes for the labels and axis titles?
+
+  4. Would you like the outliers to be highlighted in a specific way or with specific
+  colors?
+
+  5. Is there a specific ordering you prefer for the box plots (e.g., Age first, then
+  RestingBP, etc.)?
+
+  6. Do you need any specific annotations or notes on the chart for clarity?
+
+  7. Do you have any specific requirements for the legend''s position on the chart
+  (e.g., top, bottom, left, right)?
+
+  8. Is there a particular style or format you prefer for the axis titles (e.g., "Age
+  (years)" or just "Age")?
+
+  9. Should any grid lines be included or excluded in the chart for better readability?
+
+  10. Do you have a preferred format for numbering on the axes (e.g., two decimal
+  places, no decimals)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I would like the outliers to be highlighted distinctly, maybe in red or another
+  noticeable color.
+
+  5. Age first, then Resting Blood Pressure, Cholesterol, and Maximum Heart Rate.
+
+  6. I do not have any specific annotations or notes in mind.
+
+  7. I am not sure.
+
+  8. "Age (years)", "Resting Blood Pressure (mm Hg)", "Cholesterol (mg/dL)", "Maximum
+  Heart Rate (bpm)"
+
+  9. I do not know.
+
+  10. No specific preference, but no decimals should be fine.'
+data_attributes:
+- Age
+- RestingBP
+- Cholesterol
+- MaxHR
+- HeartDisease

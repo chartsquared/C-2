@@ -1,0 +1,41 @@
+initial_prompt: I'd like to visualize the real estate data using a line chart. The
+  chart should compare the 'MEDV' (Median Value of Homes) with various other attributes
+  like 'CRIM' (Crime rate), 'RM' (Number of rooms), and 'LSTAT' (Lower status of the
+  population). Can you plot 'MEDV' on the y-axis and the selected features on the
+  x-axis? Additionally, it would be helpful to color-code the lines for each feature
+  to differentiate them easily. This way, I can observe how these features impact
+  home values over different data points.
+questions: "1. Do you have any preference for the color scheme used for color-coding\
+  \ the lines?\n2. Would you like to add any labels or annotations on specific data\
+  \ points or trends?\n3. Are there any specific titles or labels you would like for\
+  \ the axes?\n4. Do you want to include a legend to identify each feature being compared?\n\
+  5. What level of granularity or data aggregation would you prefer for the x-axis\
+  \ (e.g., monthly, yearly)? \n6. Do you have a preferred font style or size for the\
+  \ chart labels and titles?\n7. Would you like grid lines on the chart for better\
+  \ readability? If so, should they be on both axes or just one?\n8. Are there any\
+  \ specific range limits for the y-axis or x-axis that you would like to set?\n9.\
+  \ Do you prefer any particular line style (e.g., solid, dashed, dotted) for the\
+  \ different attributes?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the y-axis should be labeled as ''Median Value of Homes (MEDV)'' and the
+  x-axis should be labeled for each feature (''CRIM'', ''RM'', ''LSTAT'').
+
+  4. Yes, please include a legend.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. Yes, grid lines on both axes would be helpful.
+
+  8. I do not have any specific range limits.
+
+  9. I am not sure.'
+data_attributes:
+- MEDV
+- CRIM
+- RM
+- LSTAT

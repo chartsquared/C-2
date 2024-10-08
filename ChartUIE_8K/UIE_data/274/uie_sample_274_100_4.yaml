@@ -1,0 +1,49 @@
+initial_prompt: Please create a heatmap to visualize the correlation between different
+  features and the target variable in predicting students' dropout and academic success.
+  Include features like Marital status, Course, Mother's qualification, Father's occupation,
+  Tuition fees up to date, Age at enrollment, Curricular units (both semesters), Unemployment
+  rate, Inflation rate, and GDP. Highlight strong correlations and differences that
+  can help identify key factors influencing dropout rates and academic success.
+questions: '1. What color palette do you prefer for the heatmap?
+
+  2. Do you want to include a legend to interpret the correlation values? If yes,
+  where should it be positioned?
+
+  3. Should the correlation values be displayed directly on the heatmap cells?
+
+  4. Do you prefer any specific range or threshold to highlight strong correlations?
+
+  5. How do you want to handle missing values in the dataset (if any)?
+
+  6. Do you have a preferred layout orientation (e.g., vertical or horizontal) for
+  the heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend. I do not have a specific preference for its position.
+
+  3. Yes, please display the correlation values directly on the heatmap cells.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.'
+data_attributes:
+- Marital status
+- Course
+- Mother's qualification
+- Father's occupation
+- Tuition fees up to date
+- Age at enrollment
+- Curricular units 1st sem (credited)
+- Curricular units 1st sem (enrolled)
+- Curricular units 1st sem (evaluations)
+- Curricular units 1st sem (approved)
+- Curricular units 2nd sem (credited)
+- Curricular units 2nd sem (enrolled)
+- Curricular units 2nd sem (evaluations)
+- Curricular units 2nd sem (approved)
+- Unemployment rate
+- Inflation rate
+- GDP
+- Target

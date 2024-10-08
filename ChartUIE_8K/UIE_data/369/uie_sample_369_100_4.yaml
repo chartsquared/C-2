@@ -1,0 +1,50 @@
+initial_prompt: 'Please create a geographic network graph that visualizes air travel
+  between major US cities. The graph should display nodes representing cities like
+  New York, Los Angeles, Chicago, etc., and edges indicating travel routes. The weight
+  of the nodes should correspond to the city''s significance in the network, and regions
+  should be color-coded. Missing values like passengers can be highlighted or interpolated
+  if possible. This visualization will help us understand travel intensity and regional
+  connections. Ensure the graph is interactive for detailed insights. Data source:
+  travel data provided.'
+questions: '1. Do you have a preferred color scheme for the regions?
+
+  2. Would you like the nodes to have specific shapes or styles based on city significance?
+
+  3. How would you like the edges representing travel routes to be styled (e.g., thickness,
+  dash pattern)?
+
+  4. Should the weight of the nodes be displayed as labels or tooltips?
+
+  5. How would you prefer to handle the missing values (highlighting vs. interpolation)
+  for passengers?
+
+  6. Are there specific cities that should be emphasized or labeled prominently on
+  the map?
+
+  7. Do you have preferences for the map''s geographical projection or base map style?
+
+  8. Would you like any additional data layers to be included, such as airports or
+  geographic landmarks?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Thickness would be great.
+
+  4. Labels would be preferred.
+
+  5. Highlight the missing values.
+
+  6. New York, Los Angeles, Chicago should be emphasized.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- id
+- name
+- weight
+- region
+- source
+- target
+- passengers

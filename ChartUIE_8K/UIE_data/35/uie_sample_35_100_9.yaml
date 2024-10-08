@@ -1,0 +1,54 @@
+initial_prompt: Please create a column chart that shows the average credit limit and
+  the total transaction amount by customer age group for our credit card customers.
+  Use the sample data provided. The X-axis should represent customer age groups (e.g.,
+  40-45, 46-50, 51-55), and the Y-axis should show the average credit limit on one
+  column and the total transaction amount on another. Separate the columns by age
+  group and color them differently for clarity. This will help us visualize the spending
+  behavior and credit limits across different age groups in our customer base.
+questions: '1. Do you have specific age groups in mind, or should the standard groups
+  (e.g., 40-45, 46-50, 51-55) be used?
+
+  2. Do you prefer any specific colors for the columns representing average credit
+  limit and total transaction amount?
+
+  3. Would you like to include data labels on the columns to show the exact values?
+
+  4. Is there a specific order you want the age groups displayed in on the X-axis?
+
+  5. Do you need any specific formatting or scales for the Y-axis (such as currency
+  format for average credit limit and total transaction amount)?
+
+  6. Do you have a preferred font style or size for axis labels and titles?
+
+  7. Should there be any additional elements like gridlines or annotations on the
+  chart?
+
+  8. Would you like to include a legend to differentiate between the columns for average
+  credit limit and total transaction amount?
+
+  9. Do you require any specific title for the chart?
+
+  10. Are there any specific dimensions or aspect ratios you prefer for the chart?'
+answers: '1. Standard groups (e.g., 40-45, 46-50, 51-55) are fine.
+
+  2. I do not have specific colors in mind.
+
+  3. I am not sure about data labels.
+
+  4. I do not know about a specific order for the age groups.
+
+  5. Yes, please use a currency format for the Y-axis.
+
+  6. I have no specific preference for font style or size.
+
+  7. I am not sure about additional elements like gridlines or annotations.
+
+  8. Yes, please include a legend.
+
+  9. No specific title, but something indicative of the data would be nice.
+
+  10. I do not know about specific dimensions or aspect ratios.'
+data_attributes:
+- Customer_Age
+- Credit_Limit
+- Total_Trans_Amt

@@ -1,0 +1,56 @@
+initial_prompt: Please create a heatmap visualizing the correlation between different
+  blood test parameters (ALB, ALP, ALT, AST, BIL, CHE, CHOL, CREA, GGT, PROT) in the
+  Hepatitis C Prediction Dataset. The heatmap should help to easily identify which
+  parameters have strong positive or negative correlations with each other. Make sure
+  to highlight both strong correlations and weak or no correlations in the heatmap
+  for a comprehensive analysis. Use shades of blue for positive correlations and shades
+  of red for negative correlations.
+questions: '1. Do you have a specific range of correlations that you would like to
+  be highlighted as strong?
+
+  2. What threshold values would you prefer for distinguishing between strong, weak,
+  and no correlations?
+
+  3. Do you have a preference for the color intensity for both strong positive and
+  negative correlations?
+
+  4. Would you like the heatmap to include numerical values within each cell to represent
+  the correlation coefficient?
+
+  5. How would you prefer the correlation matrix to be sorted (e.g., alphabetical
+  order of parameters, by strength of correlation, etc.)?
+
+  6. Do you have any preference for the size and dimensions of the heatmap?
+
+  7. Should axis labels be oriented in a specific way (e.g., horizontal, vertical,
+  diagonal)?
+
+  8. Is there any specific title or labeling you would like for the heatmap and its
+  axes?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, I would like the heatmap to include numerical values within each cell to
+  represent the correlation coefficient.
+
+  5. By strength of correlation would be preferable.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. No specific title or labeling preferences.'
+data_attributes:
+- ALB
+- ALP
+- ALT
+- AST
+- BIL
+- CHE
+- CHOL
+- CREA
+- GGT
+- PROT

@@ -1,0 +1,51 @@
+initial_prompt: Create a box chart visualizing MonthlyCharges from the Telco Customer
+  Churn data. Highlight customers with high churn rates to emphasize risk factors.
+  Annotate outliers to provide insights into unusual cases. This visualization will
+  help understand charge distribution and identify any correlation between high charges
+  and churn. Use appropriate highlights and annotations to make key data points stand
+  out and offer context.
+questions: '1. Do you have a specific color preference for highlighting customers
+  with high churn rates?
+
+  2. Would you prefer any particular color scheme for the box chart?
+
+  3. How would you like outliers to be annotated — with labels, icons, or another
+  method?
+
+  4. Should we use specific markers or shapes for different types of annotations?
+
+  5. Do you have a preferred font style and size for the annotations?
+
+  6. Are there any specific ranges or thresholds for MonthlyCharges that you would
+  like to highlight differently?
+
+  7. Would you like the chart to display gridlines for better readability?
+
+  8. Do you have a preferred layout for the chart''s legend and labels?
+
+  9. Should the chart include a title and subtitles? If so, do you have specific text
+  in mind?
+
+  10. How detailed should the tooltips be for data points in the box chart?'
+answers: '1. I do not know.
+
+  2. I have no specific preference.
+
+  3. With labels.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, highlight charges above $80 differently.
+
+  7. Yes, display gridlines for better readability.
+
+  8. I do not have a preference.
+
+  9. Include a title related to "Monthly Charges and Churn" and no specific subtitle.
+
+  10. I am not sure.'
+data_attributes:
+- MonthlyCharges
+- Churn

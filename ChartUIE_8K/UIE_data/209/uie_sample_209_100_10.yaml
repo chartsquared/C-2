@@ -1,0 +1,45 @@
+initial_prompt: Create a Treemap visualizing the New York Housing Market data. Use
+  the `PRICE` column to represent the size of each segment in the Treemap. Categorize
+  the segments by `TYPE`, `LOCALITY`, and `BEDS`. Each type (e.g., Condo for sale,
+  House for sale) should be a distinct color. Show detailed labels by combining `ADDRESS`
+  and `PRICE`. This will help in identifying high-value properties quickly. Use `FORMATTED_ADDRESS`
+  for tooltips that appear on hovering. Ensure the data is easy to understand for
+  real-estate investors and homebuyers.
+questions: '1. Do you have any specific preferences for the color palette to distinguish
+  property types?
+
+  2. How would you like the detailed labels to be formatted?
+
+  3. Do you have a preference for the default sorting order for the segments (e.g.,
+  by PRICE or TYPE)?
+
+  4. How granular would you like the `BEDS` category to be (e.g., exact number of
+  beds, grouped ranges)?
+
+  5. Is there a preferred text size or style for the labels?
+
+  6. Do you have any preferences for the complexity of the tooltips? How much information
+  should they contain beyond the `FORMATTED_ADDRESS`?
+
+  7. Should we include any specific annotations or highlights for properties above
+  a certain price threshold?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. By PRICE.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. Just the `FORMATTED_ADDRESS` would be fine.
+
+  7. I do not know.'
+data_attributes:
+- PRICE
+- TYPE
+- LOCALITY
+- BEDS
+- ADDRESS
+- FORMATTED_ADDRESS

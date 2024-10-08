@@ -1,0 +1,55 @@
+initial_prompt: Please create a column chart visualizing the distribution of the different
+  spectral classes (Spectral_Class) of stars and their corresponding types (Type).
+  The x-axis should represent the spectral classes, while the y-axis should show the
+  count of stars in each class categorized by their type. Utilize different colors
+  to differentiate between the star types (0 to 5) to reflect their distribution.
+  This visualization will help in understanding the prevalence of each spectral class
+  and type among the dataset described, focusing on the characteristics like temperature,
+  luminosity, radius, and other attributes.
+questions: '1. What title would you like for the chart?
+
+  2. Do you have any specific preferences for the colors used to differentiate between
+  the star types (0 to 5)?
+
+  3. Would you like to display the exact count of stars above the columns?
+
+  4. Do you have any preferences for the font style or size for the axis labels and
+  title?
+
+  5. Should the chart have gridlines for better readability?
+
+  6. Would you prefer the legend to be displayed at a specific location (e.g., top,
+  right, bottom)?
+
+  7. Is there a specific order you would like the spectral classes to appear on the
+  x-axis?
+
+  8. Do you prefer a specific width for the columns to enhance clarity?
+
+  9. Should the y-axis have a specific range or should it be automatically adjusted
+  based on the data?
+
+  10. Would you like to include annotations or notes on the chart to highlight particular
+  insights?'
+answers: '1. "Distribution of Star Spectral Classes and Types"
+
+  2. I am not sure.
+
+  3. Yes.
+
+  4. I do not know.
+
+  5. Yes.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. It should be automatically adjusted based on the data.
+
+  10. No.'
+data_attributes:
+- Spectral_Class
+- Type

@@ -1,0 +1,54 @@
+initial_prompt: Please create a stacked bar chart comparing the different models of
+  smartphones based on their discount rates. Use the discounted price and original
+  price to calculate the discount for each model. Group the bars by brand names and
+  stack them by model names. Ensure the chart clearly shows the discount percentage
+  for each model within a brand so that we can easily compare different smartphone
+  models. Also, make sure to include legends and labels for clarity. Thank you!
+questions: '1. Do you have any specific color preferences for the different brands
+  or models?
+
+  2. Would you like the discount percentages to be displayed on the bars directly?
+
+  3. Do you have a preference for the orientation of the labels (horizontal, vertical,
+  or angled)?
+
+  4. Is there a specific font style and size you prefer for the labels and legends?
+
+  5. Do you want grid lines to be included in the chart for better readability?
+
+  6. Is there any particular order you would like the brands or models to be sorted
+  in?
+
+  7. Would you like any specific titles for the chart, axes, and legend?
+
+  8. Should the chart include a background color or any special styling?
+
+  9. Do you want to highlight any specific brand or model in the chart?
+
+  10. Would you prefer a specific width and height for the bars?'
+answers: '1. I have no specific preference.
+
+  2. Yes, I would like the discount percentages to be displayed on the bars directly.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. For the chart title: "Smartphone Discount Comparison by Brand and Model". For
+  the axes: "Brand" for the x-axis and "Discount Percentage" for the y-axis. The legend
+  title can be "Smartphone Models".
+
+  8. I do not know.
+
+  9. I have no specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- brand_name
+- model_name
+- discounted_price
+- original_price

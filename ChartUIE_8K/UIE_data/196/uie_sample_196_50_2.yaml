@@ -1,0 +1,55 @@
+initial_prompt: Create a line chart tracking memory scores before and after the drug's
+  usage for different individuals, highlighting key points. Annotate changes in memory
+  scores with text annotations. Focus on visualizing the differences (Diff) to understand
+  drug impact.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Would you like to distinguish individuals by different line styles or colors?
+
+  3. Are there any specific key points you want to highlight in the chart?
+
+  4. How would you prefer the annotations to be displayed on the chart (e.g., tooltips,
+  labels on lines)?
+
+  5. Do you want the chart to include grid lines for better readability?
+
+  6. Should the x-axis and y-axis have specific labels or titles?
+
+  7. Would you like to include a legend in the chart?
+
+  8. Are there any specific font preferences for text annotations and labels?
+
+  9. Should the differences (Diff) be highlighted in a specific way, such as using
+  bars or markers?
+
+  10. Do you have a preferred format for presenting individual data points (e.g.,
+  markers, dots, or none)?
+
+  11. Are there any restrictions or guidelines for the chart dimensions or layout?'
+answers: '1. I am not sure.
+
+  2. Different colors would be great.
+
+  3. I’d like to highlight notable increases or decreases in memory scores for individuals.
+
+  4. Labels on lines.
+
+  5. Yes, please include grid lines.
+
+  6. Memory Scores on the y-axis and Time (Before and After) on the x-axis.
+
+  7. Yes, a legend would be helpful.
+
+  8. I do not have a specific preference.
+
+  9. Highlight differences with markers.
+
+  10. Markers would be good.
+
+  11. I am not sure.'
+data_attributes:
+- first_name
+- last_name
+- Mem_Score_Before
+- Mem_Score_After
+- Diff

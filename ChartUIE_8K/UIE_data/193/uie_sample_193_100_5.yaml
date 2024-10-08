@@ -1,0 +1,44 @@
+initial_prompt: I would like a bar chart that visualizes the distribution of star
+  types based on their Spectral_Class. Each bar should represent a different type
+  of star, classified by their Spectral_Class, and the height of the bar should indicate
+  the count of stars in that class. Additionally, use different colors for each bar
+  to represent unique Spectral Classes. This will help me understand the prevalence
+  of each star type within this dataset. Please also label the x-axis as "Spectral
+  Class" and the y-axis as "Number of Stars." Thank you!
+questions: '1. Do you have any specific preferences for the color palette to be used
+  for the different Spectral Classes?
+
+  2. Would you like the bars to be sorted in any specific order (e.g., alphabetically
+  by Spectral_Class, by frequency)?
+
+  3. What should be the title of the chart?
+
+  4. Do you have any preferences for the font style or size for the labels and title?
+
+  5. Would you like gridlines on the chart for better visualization?
+
+  6. Do you want any specific annotations or data labels (e.g., exact count of stars)
+  on the bars?
+
+  7. Should there be any specific margin or padding around the chart?
+
+  8. Do you have a preferred orientation for the chart (e.g., vertical or horizontal
+  bar chart)?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. "Distribution of Star Types by Spectral Class"
+
+  4. I do not know.
+
+  5. Yes, gridlines would be helpful.
+
+  6. Yes, please include the exact count of stars on the bars.
+
+  7. I do not know.
+
+  8. Vertical bar chart, please.'
+data_attributes:
+- Spectral_Class
+- Type

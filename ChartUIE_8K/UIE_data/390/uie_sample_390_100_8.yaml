@@ -1,0 +1,56 @@
+initial_prompt: Create a network graph to visualize the Company Collaboration Network
+  showing nodes for each individual (id, name, group) and edges for collaborations
+  (source, target, weight). Highlight different groups with distinct colors and adjust
+  edge thickness based on weight to reflect collaboration strength. Ensure missing
+  values are handled appropriately, and label nodes clearly. Use this to understand
+  collaboration patterns within the business context and identify key influencers
+  in the network.
+questions: '1. Do you have any preference for the layout of the network graph, such
+  as force-directed, circular, or hierarchical?
+
+  2. What color scheme would you prefer for differentiating between groups?
+
+  3. How would you like to handle missing values in the data?
+
+  4. Should the node size vary based on any specific attribute, such as the number
+  of connections or another metric?
+
+  5. Do you have any specific requirements for the labeling of nodes (e.g., font size,
+  font color, etc.)?
+
+  6. Is there a particular way you''d like the edge thickness to be scaled based on
+  the weight?
+
+  7. Would you prefer any specific shapes for different groups of nodes?
+
+  8. Are there any additional annotations or highlights you would like to include
+  in the graph?
+
+  9. Do you have any specific preferences regarding the overall style and aesthetics
+  of the network graph?'
+answers: '1. I am not sure, but maybe a force-directed layout would be good.
+
+  2. I do not have a specific color scheme in mind; you can choose what works best
+  for clarity.
+
+  3. I am not sure how to handle missing values.
+
+  4. Yes, the node size should vary based on the number of connections to highlight
+  key influencers.
+
+  5. I do not know, but the labels should be clear and readable.
+
+  6. I am not sure, but it should reflect the collaboration strength effectively.
+
+  7. I do not have a preference for node shapes.
+
+  8. I do not think I need additional annotations or highlights.
+
+  9. I have no specific preferences regarding the overall style and aesthetics.'
+data_attributes:
+- id
+- name
+- group
+- source
+- target
+- weight

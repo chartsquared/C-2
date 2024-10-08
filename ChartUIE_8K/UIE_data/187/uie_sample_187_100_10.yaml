@@ -1,0 +1,43 @@
+initial_prompt: Please create a stacked column chart to compare the worldwide gross
+  ($m), domestic gross ($m), and international gross ($m) for each film in the dataset.
+  The X-axis should represent the films, and each stack should show the breakdown
+  of these three gross categories. Include labels showing the percentage each part
+  contributes to the total gross. Highlight different categories like "Ant-Man," "Avengers,"
+  etc., with distinct color coding. Title the chart "Marvel Superhero Movies Box Office
+  Performance" and ensure the legend is clear.
+questions: '1. Do you have a preferred color palette for the different categories
+  like "Ant-Man" and "Avengers"?
+
+  2. How would you like the percentages to be displayed on the chart (e.g., inside
+  the bars, on top of the bars, etc.)?
+
+  3. Do you have a specific font style and size preference for the chart title and
+  labels?
+
+  4. Would you like any additional annotations or markers on the chart?
+
+  5. Is there a specific order you want the films to be displayed on the X-axis?
+
+  6. Do you have a preference for the width and spacing of the columns in the stacked
+  column chart?
+
+  7. Are there any specific guidelines for the legend placement or format?'
+answers: '1. I am not sure.
+
+  2. I would like the percentages to be displayed inside the bars.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I do not have a specific order in mind.
+
+  6. I am not sure.
+
+  7. I have no specific guidelines for the legend placement.'
+data_attributes:
+- film
+- category
+- worldwide gross ($m)
+- domestic gross ($m)
+- international gross ($m)

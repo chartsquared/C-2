@@ -1,0 +1,51 @@
+initial_prompt: Create a line chart for my Settlers of Catan games. Use 'gameNum'
+  along the x-axis and plot lines for 'points', 'production', 'totalGain', and 'totalAvailable'
+  for each player. The chart should help visualize the progression and performance
+  of each player over different games. Include a legend to identify each player by
+  their 'player' number.
+questions: '1. Do you have a preferred color scheme for the lines representing each
+  player?
+
+  2. Would you like the chart to have a grid for easier reading of values?
+
+  3. Do you have any preference for the style of the lines (e.g., solid, dashed, dotted)?
+
+  4. Would you like to include data markers (e.g., circles, squares) on the lines
+  to highlight individual data points?
+
+  5. What title would you like for the chart?
+
+  6. Do you want any labels or annotations on specific points within the chart?
+
+  7. How would you prefer the legend to be positioned on the chart (e.g., right, bottom,
+  top, left)?
+
+  8. Do you want specific colors assigned to particular players, or should they be
+  randomly assigned?
+
+  9. Would you like any additional information to be displayed when hovering over
+  the lines, such as exact values or game details?'
+answers: '1. I have no specific preference.
+
+  2. Yes, I would like the chart to have a grid for easier reading of values.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. "Settlers of Catan Game Progression and Performance"
+
+  6. I am not sure.
+
+  7. Right.
+
+  8. Randomly assigned.
+
+  9. No, I just want an image, not interactive data visualization.'
+data_attributes:
+- gameNum
+- player
+- points
+- production
+- totalGain
+- totalAvailable

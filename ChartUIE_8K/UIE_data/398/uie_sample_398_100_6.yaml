@@ -1,0 +1,35 @@
+initial_prompt: 'I have trading volume data for oil and coal, including columns for
+  date, oil, and coal volume. Can you create a histogram for me that visualizes the
+  distribution of oil and coal trading volumes? I want to see if there are any particular
+  trends in the volume distribution over a given period. It would be helpful to have
+  this histogram based on the sample data provided: oil prices (135.98, 147.49, 146.93)
+  and coal volumes (13560.077, 13434.653, 13318.875) over the dates (2013-04-28 to
+  2013-04-30). Thanks!'
+questions: '1. Do you have any specific color preferences for the histograms representing
+  oil and coal volumes?
+
+  2. Would you like the histograms to be displayed side-by-side or overlaid on each
+  other for easier comparison?
+
+  3. Are there any particular axes labels or titles you would like to include in the
+  chart?
+
+  4. Do you prefer using specific bin widths for the histograms, or are you open to
+  the default settings?
+
+  5. Would you like to include any additional annotations or markers to highlight
+  specific points or trends in the data?'
+answers: '1. I have no specific preference for colors.
+
+  2. I am not sure.
+
+  3. "Distribution of Oil and Coal Trading Volumes" as the title, with "Trading Volume"
+  on the x-axis and "Frequency" on the y-axis.
+
+  4. I do not know.
+
+  5. I do not know.'
+data_attributes:
+- date
+- oil
+- coal

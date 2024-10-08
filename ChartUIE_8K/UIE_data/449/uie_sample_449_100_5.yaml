@@ -1,0 +1,45 @@
+initial_prompt: Create a bubble chart using the data from the given file. The chart
+  should plot Engine Displacement (cc) on the x-axis and Gas Mileage (mpg) on the
+  y-axis to analyze their relationship. Use the Weight (kg) column to represent the
+  size of the bubbles and differentiate bubbles with distinct colors based on Power
+  (kW). Ensure the chart is clear with appropriate labels, legends, and a title that
+  reflects the engine displacement and gas mileage data for automobiles. Also, include
+  a tooltip to display detailed information for each bubble point on hover.
+questions: '1. Do you have a preference for the color palette used to differentiate
+  the bubbles based on Power (kW)?
+
+  2. Would you prefer a specific shape for the bubbles, or are standard circular bubbles
+  acceptable?
+
+  3. Are there any particular font styles or sizes you would like for the chart title,
+  axis labels, and legend?
+
+  4. Is there a specific way you would like the data points to be sorted or organized?
+
+  5. Do you have any requirements for the chart''s background, such as gridlines or
+  color?
+
+  6. Would you like to include any specific thresholds or reference lines on the chart
+  for better analysis?
+
+  7. Do you have a preferred title for the chart or should it follow a default format
+  reflecting the data analyzed?'
+answers: '1. I am not sure.
+
+  2. Standard circular bubbles are acceptable.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. A preferred title could be: "Relationship Between Engine Displacement and Gas
+  Mileage in Automobiles".'
+data_attributes:
+- Engine Displacement(cc)
+- Gas Mileage(mpg)
+- Weight(kg)
+- Power(kW)

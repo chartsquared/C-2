@@ -1,0 +1,42 @@
+initial_prompt: 'Create a choropleth map depicting the distribution of YouTube channels''
+  statistics on a global scale. Ensure the map color-codes countries by the number
+  of top-ranking YouTube channels based on their total video views. Highlight each
+  country to display additional data: average subscribers, video views, and channel
+  types prevalent within that country. Incorporate relevant details like unemployment
+  rate, urban population, and tertiary education enrollment to provide social context.
+  The map should vividly represent data from the "Global YouTube Statistics 2023"
+  dataset. Aim for a comprehensive yet clear visualization of YouTube''s global impact.'
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. Would you like any specific countries to be highlighted or annotated?
+
+  3. How would you like the additional data (average subscribers, video views, and
+  channel types) to be displayed when a country is highlighted?
+
+  4. Is there a specific range or categorization for the unemployment rate, urban
+  population, and tertiary education enrollment that should be used?
+
+  5. Do you have a preferred style for the map projection (e.g., Mercator, Robinson)?
+
+  6. Should the map include any specific labels or legends for better interpretation?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Display the additional data in a tooltip or pop-up box when a country is clicked
+  or hovered over.
+
+  4. I do not know.
+
+  5. I do not have a specific preference.
+
+  6. Yes, the map should include labels and legends for better interpretation.'
+data_attributes:
+- Country
+- video views
+- subscribers
+- channel_type
+- Population
+- Unemployment rate
+- Urban_population
+- Gross tertiary education enrollment (%)

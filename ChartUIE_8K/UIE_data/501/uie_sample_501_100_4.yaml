@@ -1,0 +1,48 @@
+initial_prompt: Create a geographic heatmap using the penguin dataset from the given
+  CSV file. The heatmap should show the distribution of different penguin species
+  across the three islands mentioned (Torgersen, Biscoe, Dream). Use varying colors
+  to represent species and intensity to show body mass. Also, highlight the average
+  bill length and flipper length for penguins on each island. Ensure to indicate the
+  missing values for the bill length, bill depth, flipper length, body mass, and sex.
+  This will help in visualizing the penguin populations effectively.
+questions: '1. Do you have a preferred color palette for representing the different
+  species?
+
+  2. How would you like the missing values to be indicated on the heatmap (e.g., specific
+  symbols, colors)?
+
+  3. Should the heatmap display a legend for the intensity of body mass?
+
+  4. How would you prefer the average bill length and flipper length to be highlighted
+  on each island (e.g., text labels, markers)?
+
+  5. Do you have any preferences for the geographical representation of the islands
+  (e.g., specific map style or projection)?
+
+  6. Are there any specific annotations or additional information you would like to
+  be included on the heatmap?
+
+  7. Do you have any preferences regarding the label formats or scales for the measurable
+  attributes?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the heatmap should display a legend for the intensity of body mass.
+
+  4. Text labels would be preferable for highlighting the average bill length and
+  flipper length on each island.
+
+  5. I do not know.
+
+  6. No, I have no specific preference.
+
+  7. I am not sure.'
+data_attributes:
+- species
+- island
+- bill_length_mm
+- bill_depth_mm
+- flipper_length_mm
+- body_mass_g
+- sex

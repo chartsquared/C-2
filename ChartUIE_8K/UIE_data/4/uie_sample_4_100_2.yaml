@@ -1,0 +1,64 @@
+initial_prompt: Please create a line chart visualizing employment growth trends using
+  LinkedIn data for various industries. Plot the ISIC section, ISIC section name,
+  industry_sk, and industry name. Highlight different industrial groups and divisions
+  with distinct colors. Add text annotations to emphasize key data points and trends,
+  especially where notable increases or dips in employment growth occur. The purpose
+  is to provide insights into employment trends across the agriculture sector and
+  other industries, helping businesses and analysts understand where job growth is
+  occurring. Use highlights to draw attention to the most significant changes.
+questions: '1. Do you have any preference for the color scheme to highlight different
+  industrial groups and divisions?
+
+  2. Are there specific points or trends you would like to be annotated with text?
+
+  3. How detailed should the text annotations be for key data points and trends?
+
+  4. Do you have a specific timeframe for the employment growth trends you want to
+  visualize?
+
+  5. Would you like to see any specific industries or ISIC sections emphasized more
+  than others?
+
+  6. Do you prefer the chart to have gridlines or not?
+
+  7. Are there any specific font styles or sizes you prefer for text annotations and
+  labels on the chart?
+
+  8. Would you like to include a legend to explain the colors used for different industrial
+  groups and divisions?
+
+  9. How would you like to handle overlapping text annotations if they occur in dense
+  data areas?
+
+  10. Should the x-axis and y-axis have specific titles or labels?
+
+  11. Is there a specific way you prefer the data to be aggregated (e.g., monthly,
+  quarterly, annually)?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure; maybe medium detail.
+
+  4. I am not sure.
+
+  5. I would like the agriculture sector emphasized more.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Yes, I would like to include a legend.
+
+  9. I am not sure.
+
+  10. Titles or labels would be useful, but I do not have specific preferences.
+
+  11. I do not know.'
+data_attributes:
+- isic_section
+- isic_section_name
+- industry_sk
+- industry_name
+- Industry_group_sk
+- Industry_group_name

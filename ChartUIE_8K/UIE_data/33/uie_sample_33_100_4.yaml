@@ -1,0 +1,45 @@
+initial_prompt: Could you create a grouped bar chart to visualize the comparison of
+  'MonthlyIncome' and 'YearsAtCompany' for different 'JobRoles'? I want to see how
+  income and tenure vary across different job roles. Please group the bars by 'JobRole'
+  and use different colors or patterns to differentiate between 'MonthlyIncome' and
+  'YearsAtCompany'. Make sure the chart has appropriate labels and a legend for clarity.
+  This will help in understanding the income distribution and retention based on different
+  roles within the company. Thank you!
+questions: '1. Do you have any specific preferences for the color scheme or patterns
+  used to differentiate between ''MonthlyIncome'' and ''YearsAtCompany''?
+
+  2. What title would you like for the chart?
+
+  3. Do you have any specific requirements for the axis labels?
+
+  4. Are there any particular font styles and sizes you prefer for the labels and
+  legend?
+
+  5. Would you like to include grid lines in the background of the chart?
+
+  6. Is there a specific way you want the legend to be formatted or positioned?
+
+  7. Do you prefer any specific ordering for the ''JobRole'' categories on the x-axis?
+
+  8. Do you have any preferences for the overall style or theme of the chart (e.g.,
+  minimalistic, professional, colorful)?'
+answers: '1. I am not sure about the color scheme or patterns, but make sure the difference
+  is clearly visible.
+
+  2. Title: "Comparison of Monthly Income and Years at Company Across Job Roles".
+
+  3. Axis labels: X-axis: Job Roles, Y-axis: Value
+
+  4. I do not have any specific preference for the font styles and sizes.
+
+  5. Yes, please include grid lines.
+
+  6. I am not sure about the legend format or position, just make sure it is clear.
+
+  7. I do not have a specific order for the ''JobRole'' categories.
+
+  8. I prefer a professional style.'
+data_attributes:
+- MonthlyIncome
+- YearsAtCompany
+- JobRole

@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap using the Sleep Health and Lifestyle Dataset to visualize
+  the correlation between various parameters like Sleep Duration, Quality of Sleep,
+  Physical Activity Level, Stress Level, BMI Category, Blood Pressure, and Heart Rate.
+  This will help identify patterns and relationships, such as how physical activity
+  affects sleep quality or how stress levels correlate with heart rate. Ensure that
+  the missing values, particularly in the Sleep Disorder column, are handled appropriately,
+  perhaps by highlighting gaps in data collection. Use color gradients to represent
+  different levels of correlation or distribution across the dataset attributes.
+questions: '1. Do you have a color gradient preference for the heatmap to represent
+  different levels of correlation?
+
+  2. Would you like to include annotations in the heatmap to display correlation values
+  on each cell?
+
+  3. How would you prefer missing values to be highlighted in the heatmap?
+
+  4. Should we display a legend to explain the color gradient scale?
+
+  5. Is there a specific order in which you would like the parameters to be displayed
+  on the heatmap axes?
+
+  6. Would you prefer any specific font size or style for the labels and annotations?
+
+  7. Should the heatmap include labels for both axes to indicate the parameters?
+
+  8. Are there any specific ranges or thresholds of correlation that you would like
+  to highlight distinctly?'
+answers: '1. I do not know.
+
+  2. Yes, please include annotations to display correlation values on each cell.
+
+  3. I am not sure.
+
+  4. Yes, a legend explaining the color gradient scale would be helpful.
+
+  5. I do not have a specific order in mind.
+
+  6. I do not know.
+
+  7. Yes, please include labels for both axes to indicate the parameters.
+
+  8. I am not sure.'
+data_attributes:
+- Sleep Duration
+- Quality of Sleep
+- Physical Activity Level
+- Stress Level
+- BMI Category
+- Blood Pressure
+- Heart Rate
+- Sleep Disorder

@@ -1,0 +1,55 @@
+initial_prompt: I want to create a heatmap to visualize the appearance of X-men characters
+  in Chris Claremont comics. Use the dataset provided to compare the frequency of
+  different characters across various issues. Focus on columns like 'issue', 'character',
+  and 'speech', 'thought', 'narrative', and 'depicted'. Make sure the heatmap highlights
+  how these variables interact with each character and issue. It should show where
+  each character appears most frequently and their engagement type. This will help
+  in understanding the character dynamics and their prominence in the comic series.
+questions: '1. Do you have a specific color scheme preference for the heatmap?
+
+  2. Would you like to include a legend or key to explain the color intensity?
+
+  3. Do you prefer any particular layout or orientation for the heatmap (e.g., issues
+  on the x-axis, characters on the y-axis)?
+
+  4. Should the heatmap highlight any specific ranges or thresholds of frequency with
+  distinct colors?
+
+  5. Would you like to include any additional annotations or labels for better clarity?
+
+  6. Do you have a specific preference for the font style or size used in the chart?
+
+  7. Should the axis labels be rotated or formatted in a certain way to improve readability?
+
+  8. Do you want to include gridlines or other separators between cells of the heatmap?
+
+  9. Would you like to normalize the data (e.g., relative frequencies) or use raw
+  counts in the heatmap?
+
+  10. Is there a specific title or subtitle you would like to include in the heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend or key to explain the color intensity.
+
+  3. I prefer issues on the x-axis and characters on the y-axis.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. Raw counts would be preferred.
+
+  10. No specific title or subtitle needed.'
+data_attributes:
+- issue
+- character
+- speech
+- thought
+- narrative
+- depicted

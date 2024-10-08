@@ -1,0 +1,56 @@
+initial_prompt: Create a line chart to visualize the bakery sales data over time.
+  Use the DateTime column for the x-axis and the number of Transactions for the y-axis.
+  Highlight the weekends to show their impact on sales. Annotate high sales points
+  to emphasize busy periods. The goal is to identify trends and patterns in sales
+  across different days and dayparts. This will help understand customer behavior
+  and optimize business strategy. Make sure to differentiate weekdays from weekends
+  with distinct colors and include relevant text annotations for notable data points.
+  Focus on making the data easy to interpret for business insights.
+questions: '1. Do you have preferred colors for differentiating weekdays from weekends?
+
+  2. Do you have any specific formatting preferences for the text annotations on high
+  sales points?
+
+  3. Should the chart include a legend to explain the different colors used?
+
+  4. Would you like gridlines to be included or excluded on the chart background?
+
+  5. Do you prefer any specific font style or size for the axis labels and titles?
+
+  6. Is there a specific time format you prefer for the DateTime axis (e.g., YYYY-MM-DD,
+  MM/DD/YYYY)?
+
+  7. Should the line chart include data markers at each data point, or do you prefer
+  a smooth line without markers?
+
+  8. Do you want any specific thresholds or reference lines to be included in the
+  chart (e.g., average sales line)?
+
+  9. Are there any specific high sales periods you already know of that should be
+  pre-annotated on the chart?
+
+  10. Would you prefer the annotations to be placed directly on the chart or in a
+  separate legend?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, the chart should include a legend to explain the different colors used.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I prefer the DateTime axis to be in the format YYYY-MM-DD.
+
+  7. I prefer a smooth line without markers.
+
+  8. I am not sure.
+
+  9. I do not have any specific high sales periods in mind.
+
+  10. I would prefer the annotations to be placed directly on the chart.'
+data_attributes:
+- DateTime
+- TransactionNo
+- DayType

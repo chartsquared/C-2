@@ -1,0 +1,54 @@
+initial_prompt: Create a bar chart comparing CO2 levels (average of CO2[ppm], fit[ppm],
+  and CO2Filled[ppm]) over the years. Highlight anomalies using text annotations for
+  data points with essential drop or spike. Provide context with seasonality adjustments
+  for each bar to understand trends better.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Should the anomalies be highlighted using specific colors or shapes for the text
+  annotations?
+
+  3. Do you prefer the text annotations for anomalies to be displayed side-by-side
+  or above/below the respective bars?
+
+  4. Is there a specific format for the labels on the x-axis and y-axis that you prefer?
+
+  5. Would you like to include gridlines in the chart to enhance readability?
+
+  6. Do you want the bars to have a specific style, such as solid, striped, or gradient?
+
+  7. Should the legend include detailed descriptions of the seasonally adjusted values?
+
+  8. Is there a specific range or scale you prefer for the y-axis to ensure clear
+  visualization of trends?
+
+  9. Are you interested in including any additional contextual information, such as
+  relevant events or policies, as annotations in the chart?
+
+  10. Do you prefer a specific font style or size for the text labels and annotations?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Side-by-side would be good.
+
+  4. I do not know.
+
+  5. Yes, please include gridlines.
+
+  6. I am not sure.
+
+  7. Yes, please include detailed descriptions.
+
+  8. I do not know.
+
+  9. Yes, please include any relevant events or policies.
+
+  10. I have no specific preference.'
+data_attributes:
+- Yr
+- CO2[ppm]
+- fit[ppm]
+- CO2Filled[ppm]
+- seasonallyAdjusted[ppm]
+- seasonallyAdjustedFit[ppm]
+- seasonallyAdjustedFilled[ppm]

@@ -1,0 +1,48 @@
+initial_prompt: Please create a scatter plot for the Meta company dataset to visualize
+  the relationship between 'Date' and 'Close' prices. Ensure data points are clearly
+  marked, with 'Date' on the x-axis and 'Close' prices on the y-axis. Make sure to
+  handle the date format accurately. Additionally, include data point colors to differentiate
+  the trading volumes using a color gradient. This will help in understanding how
+  the trading volume impacts the closing prices over time. The chart should be interactive
+  to easily hover over and see date and closing price values. Thank you!
+questions: '1. Do you have a preferred color gradient for differentiating trading
+  volumes?
+
+  2. What date format would you like used on the x-axis (e.g., MM/DD/YYYY, YYYY-MM-DD)?
+
+  3. Would you like any specific annotations or labels on the chart?
+
+  4. Do you have any preferences for the size or style of the data points?
+
+  5. Would you like to include grid lines on the chart for better readability?
+
+  6. Are there any specific time ranges or periods you would like to emphasize in
+  the chart?
+
+  7. Do you prefer a specific font type or size for the chart labels and titles?
+
+  8. Would you like to include a legend to explain the color gradient used for trading
+  volumes?
+
+  9. Do you have a preferred title for the chart?'
+answers: '1. I am not sure.
+
+  2. YYYY-MM-DD
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, please include grid lines for better readability.
+
+  6. I do not have any specific time ranges or periods to emphasize.
+
+  7. I have no specific preference for the font type or size.
+
+  8. Yes, please include a legend to explain the color gradient used for trading volumes.
+
+  9. I do not know.'
+data_attributes:
+- Date
+- Close
+- Volume

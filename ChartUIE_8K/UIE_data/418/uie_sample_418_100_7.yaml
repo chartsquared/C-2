@@ -1,0 +1,54 @@
+initial_prompt: I have data on malaria death rates from 1990 to 2016. I need a bubble
+  chart to visualize this. Each bubble should represent a country, with the x-axis
+  showing the years from 1990 to 2016, and the y-axis displaying the death rates per
+  100,000 people. The size of the bubbles should indicate the number of deaths. Please
+  include all available countries in the dataset and ensure to highlight trends over
+  these years. Missing values can be excluded.
+questions: '1. Do you have a preferred color scheme for the bubbles representing different
+  countries?
+
+  2. Should the chart include a legend to identify each country, or do you prefer
+  to hover over bubbles to see the country name?
+
+  3. Would you like gridlines on the x-axis and y-axis to enhance readability?
+
+  4. Do you prefer a specific font style or size for the axis titles and labels?
+
+  5. Should the chart include a title and subtitles? If so, do you have specific wording
+  in mind?
+
+  6. Do you want to highlight specific countries or regions in the chart?
+
+  7. Would you like to add annotations or data labels to indicate significant events
+  or data points?
+
+  8. Should the chart have a specific size or aspect ratio?
+
+  9. Do you prefer the bubbles to be semi-transparent to better view overlapping data
+  points?
+
+  10. Would you like to include a trend line to show the overall trend in death rates?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please include gridlines.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a title. "Malaria Death Rates from 1990 to 2016"
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not have a preference.
+
+  9. Yes, semi-transparent bubbles would be good.
+
+  10. Yes, please include a trend line.'
+data_attributes:
+- Entity
+- Year
+- 'Deaths - Malaria - Sex: Both - Age: Age-standardized (Rate) (per 100,000 people)'
+- Code

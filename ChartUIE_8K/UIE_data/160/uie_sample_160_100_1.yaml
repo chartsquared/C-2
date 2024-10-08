@@ -1,0 +1,66 @@
+initial_prompt: Visualize the "wwc_outcomes" data using a grouped bar chart to represent
+  different teams' scores across years and rounds. Annotate the highest and lowest
+  scores to focus viewers' attention. Use highlights to distinguish winning statuses
+  by color coding. Include data-driven text annotations for yearly_game_id values
+  for additional context. This helps in understanding team performance trends over
+  time, especially in different rounds. The practical purpose is to analyze team performance
+  and identify key patterns and outliers in different matches. Ensure the chart clearly
+  shows win/loss status for easier comparison.
+questions: '1. Do you have a specific color palette preference for distinguishing
+  win/loss statuses?
+
+  2. Would you like to highlight the highest and lowest scores with specific marker
+  styles?
+
+  3. Do you prefer a particular font style or size for text annotations, including
+  yearly_game_id values?
+
+  4. Should the legend be placed in a specific location on the chart?
+
+  5. Are there any specific chart dimensions or aspect ratio preferences you have
+  in mind?
+
+  6. Is there a specific range for the y-axis you would like to set, or should it
+  be automatically scaled?
+
+  7. Do you want the team names (categories) to be sorted in any specific order?
+
+  8. Would you like gridlines to be included on the chart? If yes, should they be
+  in a specific style or color?
+
+  9. Should the bar groups be separated by a specific margin or space?
+
+  10. Do you want to include tooltips that appear on hover for additional data insights,
+  such as scores or win statuses?
+
+  11. Would you like any additional contextual information or title to be included
+  in the chart, such as a subtitle or footnote?'
+answers: '1. I do not know.
+
+  2. Yes, please highlight the highest and lowest scores with specific marker styles.
+
+  3. I am not sure.
+
+  4. No specific preference.
+
+  5. No specific preference.
+
+  6. Automatically scaled should be fine.
+
+  7. I do not know.
+
+  8. Yes, include gridlines. I do not have a specific style or color in mind.
+
+  9. I do not know.
+
+  10. No, I want an image, not an interactive chart.
+
+  11. Yes, include a title that indicates the chart is about team performance trends
+  and win/loss statuses over time.'
+data_attributes:
+- year
+- team
+- score
+- round
+- yearly_game_id
+- win_status

@@ -1,0 +1,78 @@
+initial_prompt: Create a heatmap to visualize correlations between different features
+  like 'radius_mean', 'texture_mean', and 'perimeter_mean', etc., in the breast cancer
+  dataset. Highlight differences between benign and malignant diagnoses. This is to
+  explore feature relationships in breast cancer data.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Would you like the color intensity to be normalized across the entire dataset
+  or separately for benign and malignant diagnoses?
+
+  3. Should the color legend include specific labels or ranges?
+
+  4. Do you have a preference for the font size and style for labels and annotations?
+
+  5. Would you like gridlines to separate the cells of the heatmap?
+
+  6. Should the heatmap include annotations for the correlation values within the
+  cells?
+
+  7. Is there a specific size or aspect ratio you would prefer for the heatmap?
+
+  8. Do you want to include a hierarchical clustering dendrogram to show the grouping
+  of similar features?
+
+  9. Should there be any specific titles or subtitles for the heatmap?
+
+  10. Would you like to include additional elements like data source notes or author
+  information?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, please include annotations for the correlation values within the cells.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave points_mean
+- symmetry_mean
+- fractal_dimension_mean
+- radius_se
+- texture_se
+- perimeter_se
+- area_se
+- smoothness_se
+- compactness_se
+- concavity_se
+- concave points_se
+- symmetry_se
+- fractal_dimension_se
+- radius_worst
+- texture_worst
+- perimeter_worst
+- area_worst
+- smoothness_worst
+- compactness_worst
+- concavity_worst
+- concave points_worst
+- symmetry_worst
+- fractal_dimension_worst
+- diagnosis

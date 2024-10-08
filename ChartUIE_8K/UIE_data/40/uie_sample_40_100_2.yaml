@@ -1,0 +1,66 @@
+initial_prompt: 'I want to create a box chart using the Hepatitis C Prediction Dataset.
+  Please visualize the distribution of the following variables: Age, ALB, ALP, ALT,
+  AST, BIL, CHE, CHOL, CREA, GGT, and PROT. I want to compare the statistical spread
+  and identify any potential outliers for each of these variables. The data is classified
+  by Category, and I''d prefer it to be color-coded based on Sex. This will help in
+  analyzing the variances and outlier detections within the different demographics,
+  specifically for each health marker. Thank you!'
+questions: '1. Do you have any preferences for the color palette to represent different
+  sexes?
+
+  2. Would you like gridlines to be included in the background to assist in reading
+  the values?
+
+  3. Do you want to include a legend explaining the color coding for Sex?
+
+  4. Should the box plots be displayed horizontally or vertically?
+
+  5. Is there a specific order in which you want the variables to be displayed on
+  the chart?
+
+  6. Would you like to include mean or median markers in the box plots?
+
+  7. Do you have any preferences for the inclusion and style of data labels or annotations
+  for the outliers?
+
+  8. Should the y-axis be the same scale for all variables, or customized for each
+  variable?
+
+  9. Would you like to include a title and subtitles for the chart? If so, do you
+  have any specific text in mind?'
+answers: '1. I do not have any specific preference for the color palette to represent
+  different sexes.
+
+  2. Yes, I would like gridlines to be included in the background to assist in reading
+  the values.
+
+  3. Yes, please include a legend explaining the color coding for Sex.
+
+  4. I am not sure.
+
+  5. I do not know if there is a specific order for the variables.
+
+  6. Yes, please include median markers in the box plots.
+
+  7. I do not have any specific preference for the inclusion and style of data labels
+  or annotations for the outliers.
+
+  8. Customized for each variable would be better.
+
+  9. Yes, a title and subtitles would be good. For the title: "Box Plot Distribution
+  of Health Markers", and for the subtitle: "Classified by Category and Color-Coded
+  by Sex".'
+data_attributes:
+- Age
+- ALB
+- ALP
+- ALT
+- AST
+- BIL
+- CHE
+- CHOL
+- CREA
+- GGT
+- PROT
+- Category
+- Sex

@@ -1,0 +1,61 @@
+initial_prompt: Create a scatter plot illustrating the relationship between concrete
+  compressive strength (csMPa) and the age of the concrete samples. Use different
+  colors to highlight the data points for various ages. Provide text annotations for
+  specific data points, particularly the highest and lowest csMPa values, to draw
+  focus. The purpose of this plot is to help urban planners visualize how concrete
+  strength develops over time, which is crucial for infrastructure projects. The chart
+  should be clear and easy to read, with the x-axis representing the age in days and
+  the y-axis showing the compressive strength in MPa.
+questions: '1. Do you have any specific preferences for the color palette used to
+  highlight different ages of the concrete samples?
+
+  2. Do you want gridlines on the chart? If so, should they be both horizontal and
+  vertical?
+
+  3. Are there any specific font styles or sizes you prefer for text annotations and
+  axis labels?
+
+  4. Do you want the legend to be displayed on the chart? If so, do you have a preference
+  for its location?
+
+  5. Should the chart have a title? If yes, do you have a preferred title in mind?
+
+  6. Do you have any specific preferences for the marker style (e.g., circles, squares)
+  in the scatter plot?
+
+  7. How would you like the axes to be labeled specifically? Would you like any additional
+  information included in the labels?
+
+  8. Is there a specific background color preference for the chart area or the entire
+  plot?
+
+  9. Should the axes have fixed scales, or should they adjust based on the data range?
+
+  10. Would you prefer data point annotations to be displayed always or only upon
+  hovering/clicking?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, gridlines would be helpful. Both horizontal and vertical.
+
+  3. I am not sure.
+
+  4. Yes, please display the legend. I have no specific preference for its location.
+
+  5. Yes, "Concrete Strength Development Over Time".
+
+  6. I am not sure.
+
+  7. X-axis: "Age (days)", Y-axis: "Compressive Strength (MPa)"
+
+  8. I do not have a specific preference.
+
+  9. The axes should adjust based on the data range.
+
+  10. I would prefer data point annotations to be displayed always.
+
+  <end of user emulated response>'
+data_attributes:
+- age
+- csMPa

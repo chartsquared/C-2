@@ -1,0 +1,62 @@
+initial_prompt: Create a heatmap to visualize the literacy rates and GDP per capita
+  across various countries and regions. Include data on population density, coastline
+  ratio, and infant mortality rate as additional dimensions of interest. Highlight
+  differences between regions to showcase disparities. Use color gradients to easily
+  distinguish between high and low values across these metrics. Ensure the heatmap
+  offers interactive elements to filter by region and population size for deeper insights.
+  This visualization will help in understanding socio-economic conditions worldwide.
+  Refer to the "Countries of the World" dataset for comprehensive data on social and
+  economic indicators.
+questions: '1. Do you have any preference for the color gradient used to distinguish
+  between high and low values?
+
+  2. Should any specific regions or countries be emphasized in the heatmap?
+
+  3. Do you prefer a particular layout or grouping for the regions displayed in the
+  heatmap?
+
+  4. Are there specific thresholds or categories for population density, coastline
+  ratio, or infant mortality rate that should be highlighted?
+
+  5. Would you like to include any particular annotations or labels for extreme values
+  or notable data points?
+
+  6. Is there a specific order you would like the countries or regions to be displayed
+  in the heatmap?
+
+  7. Do you have preferences for the size or aspect ratio of the heatmap?
+
+  8. Are there any particular colorblind-friendly palettes you would like us to consider?
+
+  9. Should the heatmap include a legend or key with detailed explanations of the
+  color gradients?'
+answers: '<start user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. Yes, the heatmap should include a legend or key with detailed explanations of
+  the color gradients.
+
+  <end user emulated response>'
+data_attributes:
+- Country
+- Region
+- Pop. Density (per sq. mi.)
+- Coastline (coast/area ratio)
+- Infant mortality (per 1000 births)
+- GDP ($ per capita)
+- Literacy (%)

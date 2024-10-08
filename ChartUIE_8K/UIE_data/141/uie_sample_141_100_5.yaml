@@ -1,0 +1,42 @@
+initial_prompt: Create a heatmap visualizing the Economic Freedom of the World dataset.
+  Use the 'year' column for the x-axis and 'countries' for the y-axis. The color intensity
+  should represent the 'ECONOMIC FREEDOM' scores. Ensure missing values are appropriately
+  handled or denoted. Highlight countries in the top and bottom quartiles distinctly
+  to show extreme economic freedom differences. Include a color legend for clarity.
+  Make sure the heatmap is clear, informative, and easily interpretable, emphasizing
+  trends over the years.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. How would you prefer missing values to be handled or denoted in the heatmap?
+
+  3. Do you have a specific range or scale preference for the color intensity representing
+  ''ECONOMIC FREEDOM'' scores?
+
+  4. How would you like the countries in the top and bottom quartiles to be highlighted?
+  (e.g., specific colors, patterns, etc.)
+
+  5. Do you prefer any specific font styles or sizes for the axis labels and legend?
+
+  6. Should the heatmap include gridlines between the cells for better readability?
+
+  7. Do you want any annotations or labels directly on the heatmap cells for extreme
+  values?'
+answers: '1. I am not sure.
+
+  2. Please denote missing values with a distinct color, such as grey.
+
+  3. I do not know.
+
+  4. Highlight the countries in the top quartile with a bright color like green and
+  the bottom quartile with red.
+
+  5. I am not sure.
+
+  6. Yes, include gridlines between the cells for better readability.
+
+  7. I do not know.'
+data_attributes:
+- year
+- countries
+- ECONOMIC FREEDOM
+- quartile

@@ -1,0 +1,40 @@
+initial_prompt: 'Please create a bar chart visualizing the number of exoplanet discoveries
+  by the detection method. Use the data from the "pl_discmethod" column to categorize
+  the methods and the "pl_hostname" column to count the total discoveries for each
+  method. Ensure the chart clearly depicts each detection method on the x-axis and
+  the number of discoveries on the y-axis. Title the chart appropriately to reflect
+  the data context: "Kepler Telescope Exoplanet Discoveries by Detection Method."
+  Include distinct colors for each bar to differentiate the methods. This will help
+  analyze the most effective detection methods.'
+questions: '1. What color scheme do you prefer for the bars in the chart?
+
+  2. Do you have any preference for the font style and size for the chart title and
+  labels?
+
+  3. Would you like to include any specific gridlines or tick marks on the x-axis
+  or y-axis?
+
+  4. Do you have a particular layout or style for displaying the legend?
+
+  5. Should the bars be displayed in a particular order (e.g., ascending or descending
+  by the number of discoveries)?
+
+  6. Would you like to include any annotations or data labels directly on the bars?
+
+  7. Do you have a preferred aspect ratio or size for the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not have any specific preference.
+
+  4. I am not sure.
+
+  5. No specific order preference.
+
+  6. Yes, please include data labels directly on the bars.
+
+  7. I do not know.'
+data_attributes:
+- pl_discmethod
+- pl_hostname

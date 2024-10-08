@@ -1,0 +1,54 @@
+initial_prompt: Create a dot plot for "NASA Astronauts, 1959-Present" categorized
+  by "Year" and "Group". Each dot should represent an astronaut, colored to indicate
+  "Status" (Active, Retired, etc.). Size of the dot should reflect the number of "Space
+  Flights". Plot "Birth Place" on the y-axis to see geographic distribution over time.
+  Highlight "Space Walks" on a secondary scale. Ensure missing values are handled
+  gracefully. This visualization will show trends in astronaut selection, geographic
+  diversity, and experience over time.
+questions: '1. Do you have a preferred color scheme for representing different "Status"
+  categories?
+
+  2. How would you like missing values to be handled or represented in the visualization?
+
+  3. Do you have any specific preferences for the size scale of the dots based on
+  "Space Flights"?
+
+  4. Would you like any specific labels or annotations to be included on the plot?
+
+  5. Are there any particular geographic regions or "Birth Places" that you would
+  like to highlight or focus on?
+
+  6. Should the secondary scale for "Space Walks" be represented in a specific way
+  (e.g., different color intensity, additional markers)?
+
+  7. Do you prefer a specific orientation or arrangement for the "Year" and "Group"
+  categories on the plot?
+
+  8. Are there any additional context or notes that should accompany the visualization?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Missing values should be indicated with a specific marker, maybe a gray dot or
+  dashed outline.
+
+  3. I do not have any specific preferences for the size scale of the dots.
+
+  4. No specific labels or annotations are needed.
+
+  5. I do not have a specific region to focus on.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference for the arrangement of "Year" and "Group".
+
+  8. No additional context or notes are necessary.
+
+  <end of user emulated response>'
+data_attributes:
+- Year
+- Group
+- Status
+- Birth Place
+- Space Flights
+- Space Walks

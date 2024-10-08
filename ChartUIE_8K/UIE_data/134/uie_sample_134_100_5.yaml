@@ -1,0 +1,54 @@
+initial_prompt: I have a dataset containing avocado prices and sales volumes by region,
+  year, and type. I want a grouped bar chart that compares the average price and total
+  volume for each region, broken down by year. The x-axis should show the regions,
+  and the y-axis should show the values. Each bar group represents a year, with one
+  bar for average price and another bar for total volume within each group. Please
+  label the axes and add a legend to distinguish between average price and total volume.
+  This will help visualize trends in avocado pricing and sales.
+questions: '1. Do you have a specific color scheme preference for the bars representing
+  average price and total volume?
+
+  2. Do you prefer a particular font style or size for axis labels and legends?
+
+  3. Would you like the chart to include gridlines on the y-axis for better readability?
+
+  4. How should the years be ordered within each region group on the x-axis (chronological
+  or specific custom order)?
+
+  5. Are there any specific regions you would like to focus on or exclude from the
+  chart?
+
+  6. Do you want the chart to include data labels showing the exact values of average
+  price and total volume on each bar?
+
+  7. Do you have a preferred title for the chart? If so, please specify.
+
+  8. Is there any additional information or annotation you would like to include in
+  the chart to highlight specific trends or insights?
+
+  9. Do you have any preferences for the width or spacing between the bars within
+  each group?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like the chart to include gridlines on the y-axis for better readability.
+
+  4. Chronological order for the years would be best.
+
+  5. I am not sure, but including all the regions would be ideal.
+
+  6. Yes, please include data labels showing the exact values of average price and
+  total volume on each bar.
+
+  7. "Average Avocado Prices and Total Sales Volumes by Region and Year"
+
+  8. I do not have any specific additional information or annotations in mind.
+
+  9. I do not have a specific preference for the width or spacing between the bars
+  within each group.'
+data_attributes:
+- AveragePrice
+- Total Volume
+- region
+- year

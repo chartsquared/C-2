@@ -1,0 +1,50 @@
+initial_prompt: Create a scatter plot visualizing Kepler telescope exoplanet discoveries.
+  Plot the orbital period vs. orbital semi-major axis. Use text annotations to highlight
+  planets with the longest and shortest orbital periods. Include highlights to emphasize
+  planets discovered via radial velocity.
+questions: '1. Do you have a specific color scheme preference?
+
+  2. How would you prefer the text annotations to be displayed (font size, color,
+  etc.)?
+
+  3. Should the highlights for planets discovered via radial velocity be represented
+  as different shapes, colors, or both?
+
+  4. Would you like gridlines on the scatter plot?
+
+  5. Do you have any preference for the background color of the chart?
+
+  6. Should the axes be in log scale or linear scale?
+
+  7. Do you prefer the data points to have a specific marker size?
+
+  8. Would you like to include a legend to differentiate discovery methods?
+
+  9. Do you have any specific title for the scatter plot and the axes labels?
+
+  10. Should any specific planets other than those with the longest and shortest orbital
+  periods be annotated or highlighted?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Different shapes.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Log scale.
+
+  7. I have no specific preference.
+
+  8. Yes.
+
+  9. Title: "Kepler Telescope Exoplanet Discoveries", X-axis: "Orbital Semi-major
+  Axis (AU)", Y-axis: "Orbital Period (days)"
+
+  10. I do not know.'
+data_attributes:
+- pl_orbper
+- pl_orbsmax
+- pl_discmethod

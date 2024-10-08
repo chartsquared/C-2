@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap to visualize correlations between columns in the
+  dataset. The heatmap will help identify patterns and relationships between `x.1`,
+  `x.2`, `y.1`, `y.2`, `z.1`, and `z.2`. Use color gradients to indicate the strength
+  of correlations. Add annotations to highlight key correlations, focusing the viewer's
+  attention on significant relationships. The practical purpose is to provide insights
+  into interdependencies between different variables in a Klein Bottle data context,
+  important for data science analysis. Include text annotations for clarity and context.
+  Use distinct colors to highlight significant correlations for easy identification.
+questions: "1. Do you have any preferred color gradients for indicating the strength\
+  \ of correlations?\n2. Are there specific colors you would like to use to highlight\
+  \ significant correlations?\n3. What font style and size do you prefer for text\
+  \ annotations?\n4. Do you have a preferred layout or orientation for the heatmap\
+  \ (e.g., square, rectangular, rotated)?\n5. Are there any specific correlation thresholds\
+  \ that you consider significant and want highlighted? \n6. Do you prefer any specific\
+  \ style for annotation borders or highlights (e.g., bold, different color)?\n7.\
+  \ Should the heatmap include a legend explaining the color gradient and correlation\
+  \ strength?\n8. Do you have preferences for the axis labels and titles' formatting?\n\
+  9. Is there any particular way you want to handle or display equal values for `x.2`,\
+  \ `y.2`, and `z.2`?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer a clear and readable font style, maybe Arial or Helvetica, and a moderate
+  size like 10-12.
+
+  4. I do not have a specific preference.
+
+  5. Correlations above 0.7 or below -0.7 should be highlighted.
+
+  6. Bold annotation borders would be nice.
+
+  7. Yes, please include a legend explaining the color gradient and correlation strength.
+
+  8. I prefer clear and straightforward formatting for axis labels and titles.
+
+  9. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- x.1
+- x.2
+- y.1
+- y.2
+- z.1
+- z.2

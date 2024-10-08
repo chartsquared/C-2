@@ -1,0 +1,46 @@
+initial_prompt: I need a parallel coordinates chart to visualize the data from the
+  2024 Lok Sabha Election Results in India. Each line should represent a constituency,
+  showing how the Leading Candidate, Leading Party, Trailing Candidate, Trailing Party,
+  and Margin compare across different constituencies. Highlight constituencies with
+  a large margin as it shows the winner's dominance. Also, display status for easy
+  understanding of the outcome in each case. This visualization will help in comparing
+  trends and margins between different political parties and their candidates. Make
+  sure to label the axes clearly for easy interpretation.
+questions: '1. Do you have a preferred color scheme for highlighting constituencies
+  with a large margin?
+
+  2. How would you like the margins to be categorized as "large"?
+
+  3. Should each party be represented by specific colors or patterns for better distinction?
+
+  4. Do you have preferences for the orientation and organization of the axes?
+
+  5. Would you like any additional labels or annotations on the chart for key constituencies
+  or notable results?
+
+  6. Is there a preferred order of attributes on the axes to better visualize the
+  trends and comparisons?
+
+  7. Should any specific constituencies be highlighted or emphasized differently apart
+  from those with a large margin?'
+answers: '1. I am not sure.
+
+  2. A margin above 20,000 votes can be categorized as "large".
+
+  3. Yes, each party should be represented by specific colors for better distinction.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. No, just highlight those with a large margin.'
+data_attributes:
+- Constituency
+- Leading Candidate
+- Leading Party
+- Trailing Candidate
+- Trailing Party
+- Margin
+- Status

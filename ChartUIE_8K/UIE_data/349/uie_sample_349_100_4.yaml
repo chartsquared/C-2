@@ -1,0 +1,39 @@
+initial_prompt: I need a line chart to visualize the video game sales data over the
+  years. Specifically, plot the years on the x-axis and the global sales on the y-axis.
+  Different lines should represent different platforms to show the trend of sales
+  for each platform over time. Include labels and a legend for clarity. The goal is
+  to understand how the sales of games have changed over time across different platforms.
+  Include the top five most popular platforms based on unique game counts. This will
+  help identify trends and patterns in the video game industry.
+questions: '1. Do you have a preferred color scheme for the lines representing different
+  platforms?
+
+  2. Would you prefer a grid in the background to enhance readability?
+
+  3. Should the chart include data point markers in addition to the line?
+
+  4. Do you have any preference for the style of lines (e.g., solid, dashed)?
+
+  5. Is there a specific font style or size you prefer for the labels and legend?
+
+  6. Do you require any particular axis scaling (e.g., logarithmic) for better visualization
+  of trends?
+
+  7. Would you like to include tooltips or annotations for specific data points?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, please include data point markers.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not need tooltips or annotations.'
+data_attributes:
+- year
+- global_sales
+- platform

@@ -1,0 +1,49 @@
+initial_prompt: Create a histogram of employee MonthlyIncome to understand salary
+  distribution. Annotate the chart to highlight high-frequency income ranges and any
+  outliers. Utilize annotations to emphasize peaks and variations in the salary distribution.
+  This will help in analyzing employee compensation in relation to attrition and performance
+  metrics.
+questions: '1. Do you have a preferred number of bins for the histogram?
+
+  2. Do you prefer certain color schemes for the histogram bars?
+
+  3. Should the x-axis be labeled with specific income ranges or left with default
+  bin ranges?
+
+  4. Do you want gridlines on the chart?
+
+  5. Any preference on how outliers are marked?
+
+  6. Should the chart include a title? If so, what should it be?
+
+  7. Are there specific fonts or sizes for text annotations you would like?
+
+  8. Should the y-axis display frequency counts or percentages?
+
+  9. Would you prefer the chart to have a legend, or should it be omitted?
+
+  10. Do you have specific labels for the peaks and variations that you would like
+  to be highlighted?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. I do not know.
+
+  4. I prefer gridlines on the chart.
+
+  5. I am not sure.
+
+  6. Yes, the title should be "Employee Monthly Income Distribution".
+
+  7. I do not have a specific preference.
+
+  8. Frequency counts on the y-axis.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- MonthlyIncome
+- Attrition
+- PerformanceRating

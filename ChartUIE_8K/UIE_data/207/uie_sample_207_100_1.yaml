@@ -1,0 +1,54 @@
+initial_prompt: Let's create a dot plot using the provided Boston Housing dataset.
+  X-axis represents 'RM' (average number of rooms per dwelling) and Y-axis represents
+  'MEDV' (Median value of owner-occupied homes in USD). Use 'LSTAT' (lower status
+  of the population) and 'PTRATIO' (pupil-teacher ratio) as annotations for each dot
+  to highlight housing quality and education access. This visualization will help
+  analyze the relationship between room numbers and property value, emphasizing areas
+  with diverse economic statuses and education levels. Include highlights on points
+  where 'MEDV' is exceptionally high or low to focus on outliers.
+questions: '1. Do you have any specific color preferences for the dots or annotations?
+
+  2. Would you like to use different colors or shapes for highlighting outliers with
+  exceptionally high or low ''MEDV'' values?
+
+  3. Do you prefer any specific font style or size for the annotations (''LSTAT''
+  and ''PTRATIO'')?
+
+  4. Should the chart include gridlines or background shading to enhance readability?
+
+  5. Would you like data points to be labeled with specific identifiers (e.g., neighborhood
+  names)?
+
+  6. Do you prefer any specific ranges or intervals for the X-axis (''RM'') and Y-axis
+  (''MEDV'')?
+
+  7. Do you want to include a legend to explain the annotations and highlights used
+  in the chart?
+
+  8. Are there any specific thresholds for ''LSTAT'' and ''PTRATIO'' that you would
+  like to be highlighted differently?
+
+  9. Would you like tooltips or data labels to appear when hovering over individual
+  dots for additional information display?'
+answers: '1. I am not sure.
+
+  2. Yes, using different colors for highlighting outliers would be great.
+
+  3. I have no specific preference.
+
+  4. Yes, including gridlines would enhance readability.
+
+  5. I am not sure.
+
+  6. I do not have specific ranges or intervals.
+
+  7. Yes, please include a legend to explain the annotations and highlights.
+
+  8. I am not sure about specific thresholds.
+
+  9. I do not know, since I am looking for an image and not an interactive visualization.'
+data_attributes:
+- RM
+- MEDV
+- LSTAT
+- PTRATIO

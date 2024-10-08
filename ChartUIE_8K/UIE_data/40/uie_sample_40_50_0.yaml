@@ -1,0 +1,36 @@
+initial_prompt: Create a treemap visualizing the distribution of patients by category,
+  gender, and age. Emphasize categories with text annotations and highlight age groups
+  with distinctive colors. Aim to simplify the identification of trends in liver function
+  indicators within the Hepatitis C dataset.
+questions: '1. Do you have any preferred color palette for highlighting different
+  age groups?
+
+  2. Would you like to use specific text annotations for the categories? If so, please
+  provide the details.
+
+  3. How would you like the gender to be represented within the treemap?
+
+  4. Should the size of the rectangles be proportional to the number of patients in
+  each category, gender, and age group?
+
+  5. Do you have a preference for the layout algorithm (e.g., squarified, slice-and-dice)
+  for the treemap?
+
+  6. Are there any additional liver function indicators you would like to include
+  in the visualization?'
+answers: '1. I do not have a specific preference.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, the size of the rectangles should be proportional to the number of patients
+  in each category, gender, and age group.
+
+  5. I do not know.
+
+  6. I am not sure.'
+data_attributes:
+- Category
+- Age
+- Sex

@@ -1,0 +1,37 @@
+initial_prompt: Create a choropleth map to visualize the number of animal rescue incidents
+  per borough. Use the 'borough' and 'incident_number' columns to aggregate the data.
+  Highlight each borough in varying colors based on the count of incidents. Include
+  data points like 'latitude' and 'longitude' to ensure accurate mapping locations.
+  Consider adding a tooltip feature to display specific details when hovering over
+  each borough, such as 'incident_notional_cost', 'property_type', and 'animal_group_parent'.
+  This will help in understanding the distribution and types of animal rescues across
+  different areas. Use the property categories for coloring criteria.
+questions: '1. Do you have a preferred color palette for highlighting the boroughs
+  based on the count of incidents?
+
+  2. Would you like to set any specific range or scale for the color intensity based
+  on the incident count?
+
+  3. Do you prefer any particular map projection or style for the choropleth map?
+
+  4. Should we include legends or labels on the map to indicate the meaning of each
+  color gradient?
+
+  5. Do you have any preference for the placement or styling of the tooltip information?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include legends or labels.
+
+  5. I do not have a specific preference.'
+data_attributes:
+- borough
+- incident_number
+- latitude
+- longitude
+- incident_notional_cost
+- property_type
+- animal_group_parent

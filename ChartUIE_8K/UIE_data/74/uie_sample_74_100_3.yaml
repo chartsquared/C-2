@@ -1,0 +1,33 @@
+initial_prompt: Create a world map choropleth visualization showcasing global cybersecurity
+  performance using the provided data. Highlight countries by their "CEI" (Cybersecurity
+  Exposure Index) values. Ensure higher CEI values are represented by darker shades.
+  Additionally, implement tooltips displaying each country’s "Country," "Region,"
+  "CEI," "GCI," "NCSI," and "DDL" details when hovered over. This visualization will
+  help identify regional security trends and vulnerabilities in a visually compelling
+  way. Ensure the map is interactive and user-friendly to accommodate a broad audience,
+  including those with minimal technical background.
+questions: '1. Do you have any color preferences for the map''s choropleth shading?
+
+  2. Would you like to include a legend to explain the scale of CEI values?
+
+  3. Do you prefer any specific font style or size for the text on the map?
+
+  4. Should the borders of the countries be highlighted or emphasized in any way?
+
+  5. Are there any specific regions or countries you would like to highlight or focus
+  on?
+
+  6. Would you like to include any additional annotations or markers on the map?'
+answers: "<start of user emulated response>\n1. I do not have any specific color preferences.\n\
+  2. Yes, please include a legend to explain the scale of CEI values.\n3. I do not\
+  \ have a specific preference for the font style or size.\n4. I am not sure about\
+  \ highlighting the borders of the countries. \n5. I do not have any specific regions\
+  \ or countries to focus on.\n6. I am not sure about additional annotations or markers.\n\
+  <end of user emulated response>"
+data_attributes:
+- Country
+- Region
+- CEI
+- GCI
+- NCSI
+- DDL

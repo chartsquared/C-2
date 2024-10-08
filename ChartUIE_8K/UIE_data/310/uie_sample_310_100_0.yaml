@@ -1,0 +1,46 @@
+initial_prompt: 'Create a Treemap showcasing the languages spoken in New York City,
+  segmented by "World Region". Each tile should represent a language, with size indicating
+  "Global Speakers" and color denoting "Status" (e.g., Residential, Historical). Highlight
+  tiles with missing values in "Global Speakers" differently. Annotate notable languages
+  such as Abaza and Abruzzese, showing their "Country" and "Location". Purpose: To
+  visualize the diversity and status of languages in NYC, providing insights into
+  cultural demographics and residential distribution.'
+questions: "1. What color scheme do you prefer for denoting different \"Status\" categories\
+  \ (e.g., Residential, Historical)?\n2. How would you like the tiles with missing\
+  \ \"Global Speakers\" values to be highlighted (e.g., specific color, pattern)?\n\
+  3. Do you have a preference for the font style or size for the annotation of notable\
+  \ languages such as Abaza and Abruzzese?\n4. Is there a particular layout preference\
+  \ for the treemap (e.g., squarified, slice-and-dice)?\n5. Are there any specific\
+  \ colors or patterns you would like to avoid?\n6. Do you prefer a specific background\
+  \ color or texture for the treemap? \n7. Should the \"World Region\" segments be\
+  \ visually distinct from each other, and if so, how (e.g., borders, shades)?\n8.\
+  \ Would you like to include a legend or key to explain colors and patterns used\
+  \ in the treemap?\n9. Do you have a preferred width to height ratio or size for\
+  \ the treemap?\n10. Should the annotations for notable languages stand out in a\
+  \ specific way (e.g., bold, italic, colored text)?"
+answers: '1. I am not sure.
+
+  2. Specific color.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Yes, through shades.
+
+  8. Yes.
+
+  9. I do not have a preference.
+
+  10. Bold.'
+data_attributes:
+- Language
+- World Region
+- Country
+- Global Speakers
+- Location
+- Status

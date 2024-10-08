@@ -1,0 +1,51 @@
+initial_prompt: Create a line chart showing Age and MMSE scores over PatientID from
+  the Alzheimer's Disease Dataset. Highlight differences in BMI, and add text annotations
+  for significant highs and lows in MMSE scores.
+questions: '1. Do you have any color preferences for highlighting the differences
+  in BMI?
+
+  2. What specific thresholds or criteria should be used to identify significant highs
+  and lows in MMSE scores for text annotations?
+
+  3. Would you prefer additional gridlines for better readability?
+
+  4. Do you have a preferred font style or size for the text annotations?
+
+  5. Should the chart include a legend to explain the highlighted BMI differences?
+
+  6. Are there any specific labeling preferences for the x-axis (PatientID) and y-axis
+  (Age and MMSE scores)?
+
+  7. Would you like to include data point markers on the line chart?
+
+  8. Do you prefer a specific line style (e.g., solid, dashed) for the Age and MMSE
+  score lines?
+
+  9. Should the chart include a title? If so, do you have a preferred title?
+
+  10. Would you like to display the exact values of Age, MMSE scores, and BMI on hover
+  or directly on the chart?'
+answers: '1. I am not sure.
+
+  2. Highs above 25 and lows below 10 for MMSE scores would be significant.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, include a legend.
+
+  6. I do not have specific labeling preferences.
+
+  7. I am not sure.
+
+  8. Solid lines would be preferred.
+
+  9. Yes, "Patient Age and MMSE Scores with BMI Highlights."
+
+  10. No, just the text annotations for significant highs and lows.'
+data_attributes:
+- PatientID
+- Age
+- MMSE
+- BMI

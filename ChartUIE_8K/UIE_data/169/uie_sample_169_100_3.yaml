@@ -1,0 +1,52 @@
+initial_prompt: I need a line chart to visualize the progression and follow-up times
+  for patients with soft tissue sarcomas. Specifically, I want to plot 'Time – diagnosis
+  to MRI scan (days)', 'Time – diagnosis to last follow-up (days)', and 'Time – diagnosis
+  to outcome (days)' against 'Age' for each patient. Use different colors or line
+  styles to distinguish between these time intervals. This will help understand how
+  these time metrics vary with age across different patients. Ensure labels and legends
+  are clear. Thanks!
+questions: '1. What line styles do you prefer for distinguishing between the different
+  time intervals?
+
+  2. Do you have any preferred colors for each time interval?
+
+  3. Is there a specific title you would like for the chart?
+
+  4. Do you have any preference for the appearance of the axis labels?
+
+  5. Are there any specific font sizes or styles you prefer for the labels and legends?
+
+  6. Would you like to include data point markers on the lines?
+
+  7. Is there a particular layout or positioning you prefer for the legend?
+
+  8. Do you have any specific requirements for the gridlines on the chart?
+
+  9. Would you like to add any annotations or notes to the chart?
+
+  10. Do you want any custom labeling for the data points or axes?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No specific title, just something that indicates it''s about soft tissue sarcomas.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include data point markers on the lines.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. No, no annotations or notes needed.
+
+  10. No custom labeling required. Standard labels for the data points and axes are
+  fine.'
+data_attributes:
+- Age
+- Time – diagnosis to MRI scan (days)
+- Time – diagnosis to last follow-up (days)
+- Time – diagnosis to outcome (days)

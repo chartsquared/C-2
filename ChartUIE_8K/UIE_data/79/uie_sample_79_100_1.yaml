@@ -1,0 +1,62 @@
+initial_prompt: I want to create a scatter plot to visualize the relationship between
+  students' MBA percentage (mba_p) and their salaries (salary) post-campus recruitment.
+  Highlight different specialisations (specialisation) with unique colors and add
+  text annotations for data points where students are "Placed." This will help identify
+  trends in salaries based on MBA performance and specializations. Please ensure missing
+  salary data is handled appropriately and doesn't affect the plot. The focus is on
+  understanding how MBA scores and specializations influence placement outcomes.
+questions: '1. Do you have any specific preferences for the color scheme to highlight
+  different specializations?
+
+  2. Would you prefer a specific style or font for the text annotations?
+
+  3. Do you want to include a legend to identify the colors representing different
+  specializations?
+
+  4. Do you have a preference for how the missing salary data should be depicted or
+  handled on the scatter plot?
+
+  5. Would you like to include axis labels and titles on the chart? If so, do you
+  have any specific text in mind?
+
+  6. Is there a particular axis scale (linear or logarithmic) you prefer for the MBA
+  percentages and salaries?
+
+  7. Would you like to include grid lines on the chart for better readability? If
+  so, do you have a preference for their style or color?
+
+  8. Do you want to set specific limits or ranges for the x-axis (MBA percentage)
+  or y-axis (salary)?
+
+  9. Are there any additional elements or details you would like to see in the scatter
+  plot (e.g., data point markers, trend lines, etc.)?
+
+  10. Do you have a specific title in mind for the scatter plot?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a legend to identify the colors representing different specializations.
+
+  4. I do not have a specific preference, but please ensure missing salary data doesn''t
+  affect the plot.
+
+  5. Yes, please include axis labels and titles. For the x-axis: "MBA Percentage,"
+  and for the y-axis: "Salary (in currency units)." The chart title can be "Relationship
+  between MBA Percentage and Salary by Specialization."
+
+  6. I am not sure.
+
+  7. Yes, including grid lines would be helpful. I do not have a preference for their
+  style or color.
+
+  8. I do not have specific limits or ranges in mind.
+
+  9. Including data point markers and trend lines would be beneficial.
+
+  10. The title can be "Relationship between MBA Percentage and Salary by Specialization."'
+data_attributes:
+- mba_p
+- salary
+- specialisation
+- status

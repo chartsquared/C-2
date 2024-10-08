@@ -1,0 +1,67 @@
+initial_prompt: I have a dataset detailing the statewise professional profile of suicide
+  victims over various years, broken down by gender and age group. I need a parallel
+  coordinates chart to visualize this data. The chart should include states, years,
+  causes of suicide, and the different male and female age categories to display the
+  relationships and trends in suicide rates among various professions and demographics.
+  This visualization will help identify any significant patterns or anomalies in the
+  data. Please ensure the axes are clearly labeled and differentiate males from females
+  effectively for easier analysis.
+questions: '1. Do you have any specific color preferences for differentiating between
+  male and female data points?
+
+  2. Do you prefer a specific color palette for the states, age groups, or causes
+  of suicide?
+
+  3. Would you like to include data labels or tooltips for more detailed information
+  on hover?
+
+  4. Should the chart include a legend to clearly differentiate between different
+  categories such as states, age groups, or causes?
+
+  5. Do you have any preferences for the thickness of the lines in the parallel coordinates
+  chart?
+
+  6. Would you like gridlines to be included for better readability?
+
+  7. Do you have any specific font preferences for the axis labels and titles?
+
+  8. Should the chart be normalized or scaled in any way for better comparison?
+
+  9. Do you prefer any specific arrangement or order of the axes?
+
+  10. Are there any specific anomalies or patterns you would like to highlight in
+  the visualization?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, the chart should include a legend to clearly differentiate between different
+  categories such as states, age groups, or causes.
+
+  5. I am not sure.
+
+  6. Yes, please include gridlines for better readability.
+
+  7. I do not have any specific font preferences.
+
+  8. I am not sure.
+
+  9. I do not have a specific preference for the arrangement or order of the axes.
+
+  10. I do not know.'
+data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Male upto 14 years
+- Male 15-29 years
+- Male 30-44 years
+- Male 45-59 years
+- Male 60 years and above
+- Female upto 14 years
+- Female 15-29 years
+- Female 30-44 years
+- Female 45-59 years
+- Female 60 years and above

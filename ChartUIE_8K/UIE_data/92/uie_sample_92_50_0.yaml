@@ -1,0 +1,43 @@
+initial_prompt: Create a heatmap to visualize life expectancy, health expenditure,
+  and CO2 emissions across regions. Highlight low-income countries and annotate top
+  three with highest health expenditure.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the regions to be clustered in any specific way?
+
+  3. How would you like low-income countries to be highlighted (e.g., specific color,
+  bold outlines)?
+
+  4. Is there a specific method or color you prefer for annotating the top three countries
+  with the highest health expenditure?
+
+  5. Should the heatmap display values on the cells, or would you prefer a color gradient
+  only?
+
+  6. Do you have any specific preferences for the heatmap''s axis labels and titles?
+
+  7. Would you prefer any specific legend format for representing the data ranges?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Highlight low-income countries with bold outlines.
+
+  4. I am not sure.
+
+  5. Display values on the cells.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Country Name
+- Region
+- IncomeGroup
+- Life Expectancy World Bank
+- CO2
+- Health Expenditure %

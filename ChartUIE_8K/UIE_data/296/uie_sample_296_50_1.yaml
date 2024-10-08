@@ -1,0 +1,40 @@
+initial_prompt: Create a treemap visualizing Colombo's top 200 spots from TripAdvisor,
+  highlighting attractions, restaurants, and hotels. Annotate top-rated locations
+  with ratings and review counts for emphasis. Use color differences to distinguish
+  categories and visual cues to spotlight top-ranked places, drawing viewer attention
+  to their popularity and user reviews.
+questions: '1. Do you have a preferred color scheme for distinguishing between attractions,
+  restaurants, and hotels?
+
+  2. How would you like the top-rated locations to be annotated? For example, specific
+  placement or style of text.
+
+  3. Do you have a preference for how the size of each rectangle in the treemap should
+  be determined (e.g., based on ranking position, number of reviews, or rating)?
+
+  4. Are there specific fonts or font sizes you prefer for the annotations?
+
+  5. Would you like specific visual cues (such as borders or icons) to spotlight top-ranked
+  places, and if so, do you have preferences for these cues?
+
+  6. Do you want to include any additional information or filters (e.g., price level)
+  in the treemap visualization?'
+answers: '1. I do not have a specific color scheme in mind.
+
+  2. I am not sure about the text placement or style.
+
+  3. I am not sure how the size should be determined.
+
+  4. I have no specific preference for fonts or font sizes.
+
+  5. Yes, please use visual cues to spotlight top-ranked places, but I am not sure
+  about the specific cues to use.
+
+  6. I am not sure about additional information or filters.'
+data_attributes:
+- type
+- name
+- rankingPosition
+- category
+- rating
+- numberOfReviews

@@ -1,0 +1,54 @@
+initial_prompt: Please create a scatter plot using the house sales data in King County,
+  USA. On the x-axis, plot the 'sqft_living' (square footage of the living space)
+  and on the y-axis, plot the 'price' of the houses. Color the points based on the
+  number of 'bedrooms' to see how the number of bedrooms correlates with the price
+  and size of the house. Additionally, add a trend line to show the overall price
+  trend as the living space increases.
+questions: '1. Do you have a preferred color scheme for the scatter plot?
+
+  2. Would you like specific markers or shapes used for the data points?
+
+  3. Do you prefer a particular style for the trend line (e.g., dashed, solid)?
+
+  4. Should the axes have specific scales, such as logarithmic, or should they remain
+  linear?
+
+  5. Do you have preferences for the title and labels of the axes?
+
+  6. Would you like any annotations or labels on the data points?
+
+  7. Should grid lines be displayed on the plot? If so, any preferences for their
+  style?
+
+  8. Do you prefer having any specific font type or size for the text elements in
+  the chart?
+
+  9. Are there any additional legends or notes you''d like included in the chart?
+
+  10. Would you like the chart to include tooltips or additional data displayed when
+  hovering over the data points (even though only non-interactive aspects should be
+  considered for design)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Solid would be fine.
+
+  4. Linear scales should be good.
+
+  5. Title: "House Prices vs. Living Space in King County". X-axis: "Living Space
+  (sqft)". Y-axis: "Price ($)".
+
+  6. I do not know.
+
+  7. Yes, display grid lines. I am not sure about the style.
+
+  8. I do not have a specific preference.
+
+  9. No, just the standard legend will do.
+
+  10. No, tooltips or additional data on hover are not needed.'
+data_attributes:
+- sqft_living
+- price
+- bedrooms

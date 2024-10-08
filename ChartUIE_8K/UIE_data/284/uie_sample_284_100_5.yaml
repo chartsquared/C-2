@@ -1,0 +1,48 @@
+initial_prompt: I want a bar chart that shows the average BMI for different age groups
+  (e.g., 60-69, 70-79, 80-89). Use the Alzheimer's Disease Dataset. The bars should
+  be different colors for each age range. Title the chart "Average BMI by Age Group".
+  Make sure to label the X-axis with the age ranges and the Y-axis with the average
+  BMI values. Use data from the `Age` and `BMI` columns. Highlight if there is any
+  particular age group with significantly higher or lower BMI. Thanks!
+questions: '1. Do you prefer specific colors for the different age ranges?
+
+  2. What font style and size would you prefer for the title, axis labels, and axis
+  values?
+
+  3. Would you like any gridlines on the chart? If so, should they be on the X-axis,
+  Y-axis, or both?
+
+  4. Do you have any preference for the bar width or spacing between the bars?
+
+  5. Should the chart include data labels on the bars indicating the average BMI values?
+
+  6. Do you prefer the chart to follow a specific style or theme?
+
+  7. Would you like to include a legend in the chart to denote the age ranges, even
+  when the bars are color-coded?
+
+  8. Is there any specific way you''d like us to highlight the age group with significantly
+  higher or lower BMI (e.g., using a different color or pattern)?
+
+  9. Do you want any annotations or notes on the chart to emphasize particular observations?'
+answers: '1. I do not have a specific preference for colors.
+
+  2. I am not sure about the font style and size, any standard one will do.
+
+  3. Yes, I would like gridlines on both the X-axis and Y-axis.
+
+  4. I do not know, any standard bar width and spacing would be fine.
+
+  5. Yes, please include data labels on the bars indicating the average BMI values.
+
+  6. I have no specific preference for the style or theme.
+
+  7. Including a legend would be helpful.
+
+  8. Yes, please use a different color to highlight the age group with significantly
+  higher or lower BMI.
+
+  9. I do not know, any standard annotations would be fine.'
+data_attributes:
+- Age
+- BMI

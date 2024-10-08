@@ -1,0 +1,53 @@
+initial_prompt: I have some data related to people's demographics and their feedback
+  on online food services. I would like to visualize this using a column chart. The
+  chart should have the "Age" on the x-axis and the count of occurrences for each
+  age group on the y-axis. It should be color-coded by "Gender". Additionally, I would
+  like to include a separate column for each "Marital Status" within each age group
+  to see how these categories distribute across different ages. This chart will help
+  understand the demographics of food service users.
+questions: '1. Do you have any preferences for the color palette used for gender differentiation?
+
+  2. Would you like to specify particular age group intervals for the x-axis?
+
+  3. How would you prefer marital statuses to be visually distinguished within each
+  age group? (e.g., different shades, patterns)
+
+  4. Do you want to include any specific labels or annotations on the chart?
+
+  5. Are there any specific font styles or sizes you prefer for the axis labels and
+  titles?
+
+  6. Would you like gridlines to be included in the chart for easier interpretation?
+
+  7. Do you have any preference for the ordering of the age groups on the x-axis (e.g.,
+  ascending)?
+
+  8. Would you like to display the counts on top of each column for clarity?
+
+  9. Are there any additional elements you would like to include, such as a legend
+  or a title for the chart?
+
+  10. How should missing or zero values be handled in the chart, if any exist?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. Different shades would be fine.
+
+  4. I don''t know.
+
+  5. I have no specific preference.
+
+  6. Yes, including gridlines would be helpful.
+
+  7. Yes, please order the age groups in ascending order.
+
+  8. Yes, display the counts on top of each column for clarity.
+
+  9. Yes, please include a legend and a title for the chart.
+
+  10. I am not sure.'
+data_attributes:
+- Age
+- Gender
+- Marital Status

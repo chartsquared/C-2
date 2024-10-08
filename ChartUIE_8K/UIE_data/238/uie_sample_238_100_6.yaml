@@ -1,0 +1,53 @@
+initial_prompt: I need a bubble chart that visualizes the sentiment and engagement
+  of comments on the 'Shape of You' song over time. The X-axis should represent the
+  "Published At" dates, and the Y-axis should show the number of "Likes" each comment
+  received. The size of the bubbles should reflect the "Reply Count" to each comment.
+  Additionally, color-code the bubbles based on the uniqueness of the comments (perhaps
+  using the unique values in the "Comment" column). This visualization should help
+  analyze how different comments are received and their level of engagement over time.
+questions: '1. What title would you like for the chart?
+
+  2. Do you have any preferences for the color palette to be used for the bubble colors?
+
+  3. Should the x-axis and y-axis have specific labels or units?
+
+  4. Do you want gridlines on the chart for better readability?
+
+  5. Would you like to include tooltips to display details of each comment when hovering
+  over the bubbles?
+
+  6. Should there be a legend explaining the color-coding of the bubbles?
+
+  7. Do you prefer a particular order for the dates on the x-axis (e.g., ascending
+  or descending)?
+
+  8. Is there a specific range for the y-axis (number of likes) you want to set?
+
+  9. Do you want to include data labels directly on the bubbles?
+
+  10. Are there any specific fonts or styles you prefer for the text in the chart?'
+answers: '1. I am not sure about the title, maybe something simple like "Shape of
+  You - Comment Sentiment and Engagement Over Time".
+
+  2. I do not have any specific preference for the color palette.
+
+  3. X-axis label: "Published At", Y-axis label: "Likes".
+
+  4. Yes, gridlines would be helpful for readability.
+
+  5. I am not sure.
+
+  6. Yes, a legend explaining the color-coding of the bubbles would be good.
+
+  7. I have no specific preference for the order of dates.
+
+  8. I do not know if there should be a specific range for the y-axis.
+
+  9. I am not sure about including data labels directly on the bubbles.
+
+  10. I have no specific preference for fonts or styles.'
+data_attributes:
+- Comment
+- Published At
+- Likes
+- Reply Count

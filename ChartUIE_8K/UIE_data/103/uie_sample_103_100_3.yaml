@@ -1,0 +1,41 @@
+initial_prompt: 'Please create a box chart to visualize the distribution of unit prices
+  and quantities across different product lines from the sales dataset. The x-axis
+  should represent the six product lines, and the y-axis should show two metrics:
+  unit price and quantity. This will help compare the variability and median values
+  of unit prices and quantities for each product line. Ensure each product line is
+  distinctly marked and color-coded for clarity. Additionally, include outliers in
+  the box chart to show any extreme values. Thank you!'
+questions: '1. Do you have any preference for the colors used to distinctly mark each
+  product line?
+
+  2. Would you prefer the box plots for unit price and quantity to be side by side
+  for each product line or stacked vertically?
+
+  3. Do you have a preference for the style of outliers, such as dots or crosses?
+
+  4. Should the y-axis for unit prices and quantities share the same scale for easier
+  comparison, or should they be independently scaled?
+
+  5. Is there a specific layout or positioning for the legend you prefer?
+
+  6. Do you want any specific annotations or labels on the chart to highlight key
+  insights or medians?
+
+  7. Are there any specific font styles or sizes you prefer for the labels and title?'
+answers: '1. I do not have any specific preference for the colors.
+
+  2. I am not sure.
+
+  3. Dots for outliers would be fine.
+
+  4. They should be independently scaled for better clarity.
+
+  5. No specific preference for the legend positioning.
+
+  6. I do not know.
+
+  7. No specific preference for font styles or sizes.'
+data_attributes:
+- Product line
+- Unit price
+- Quantity

@@ -1,0 +1,60 @@
+initial_prompt: Create a scatter plot visualizing bike_count vs. date from the crossing
+  data. Apply text annotations to indicate peak bike counts and highlight points where
+  ped_count data is missing. This visualization helps identify trends and gaps in
+  the bike count data.
+questions: '1. Do you have a preferred color scheme for the scatter plot?
+
+  2. Would you like the x-axis (date) to be displayed in a specific date format (e.g.,
+  YYYY-MM, MM/DD/YYYY)?
+
+  3. How would you like the data points for missing ped_count to be highlighted (e.g.,
+  different color, shape)?
+
+  4. Do you have a specific style for the text annotations indicating peak bike counts
+  (e.g., font size, color, placement)?
+
+  5. Should there be grid lines on the scatter plot? If yes, do you have preferences
+  for their appearance (e.g., color, line style)?
+
+  6. Would you like to include a title for the scatter plot? If so, do you have a
+  preferred title?
+
+  7. Do you have any preferences for the axis labels (e.g., label text, font size,
+  color)?
+
+  8. Should the peak bike counts be annotated with specific labels or just highlighted
+  visually?
+
+  9. Would you like to include a legend in the scatter plot? If yes, do you have any
+  preferences for its appearance and placement?
+
+  10. Is there a specific range or limit you would like to set for the y-axis (bike_count)
+  to improve visualization?
+
+  11. Would you prefer the use of markers for the scatter plot data points? If so,
+  do you have any preferences for the marker style?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Different color would work.
+
+  4. I am not sure.
+
+  5. Yes, grid lines are okay, but I have no specific preference for their appearance.
+
+  6. Yes, "Bike Count Over Time".
+
+  7. No specific preference.
+
+  8. Just highlighted visually.
+
+  9. Yes, but I am not sure about the appearance and placement.
+
+  10. I have no specific preference.
+
+  11. I do not know.'
+data_attributes:
+- date
+- bike_count
+- ped_count

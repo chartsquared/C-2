@@ -1,0 +1,57 @@
+initial_prompt: I need a Choropleth map visualizing the Economic Freedom of the World
+  dataset. Please use the "ISO_code" to represent countries and color the map based
+  on the "ECONOMIC FREEDOM" scores from the dataset. The map should show the economic
+  freedom scores for the year 2016. Include a legend to indicate what the colors represent
+  in terms of Economic Freedom scores. Ensure that higher scores are depicted in shades
+  of green and lower scores in shades of red. The color transition should be smooth
+  to reflect subtle differences in economic freedom between countries.
+questions: '1. Do you have a preferred map projection (e.g., Mercator, Robinson)?
+
+  2. Would you like to include country borders or boundaries on the map?
+
+  3. Do you prefer any specific font style and size for country labels and the legend?
+
+  4. Is there a specific range of values you would like to highlight or annotate on
+  the map?
+
+  5. Do you have a maximum or minimum threshold for the economic freedom scores''
+  colors?
+
+  6. Would you like to add tooltips or labels for additional country-specific information
+  when the user hovers over a country (e.g., rank or quartile)?
+
+  7. Do you have a preferred title or caption for the map?
+
+  8. Do you want any additional annotations or callout boxes for specific countries?
+
+  9. Would you like the legend to be placed in a specific position (e.g., top-right,
+  bottom-left) on the map?
+
+  10. Is there any specific color gradient you prefer for the shades of green and
+  red?'
+answers: '1. I am not sure.
+
+  2. Yes, please include country borders.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not have a specific threshold in mind.
+
+  6. I am not sure.
+
+  7. "Economic Freedom of the World: 2016"
+
+  8. No, I do not need additional annotations.
+
+  9. I am not sure.
+
+  10. Use a smooth gradient transitioning from red (low scores) to green (high scores).
+
+
+  Thank you!'
+data_attributes:
+- ISO_code
+- ECONOMIC FREEDOM
+- year

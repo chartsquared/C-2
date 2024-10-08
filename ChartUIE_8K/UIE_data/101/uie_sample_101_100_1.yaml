@@ -1,0 +1,53 @@
+initial_prompt: Create a line chart visualizing product prices over different retailers
+  from the provided dataset. Use the 'Product Price' for the Y-axis and 'Product Brand'
+  as the X-axis. Highlight the highest and lowest prices with distinct colors. Annotate
+  these points with their price values and product names. This chart aims to show
+  price variation across brands and emphasize the most expensive and cheapest products.
+  Additionally, use data-driven text annotations to display product ratings next to
+  the price points to provide context on consumer perception relative to price.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How would you like the text annotations to be styled (e.g., font size, color,
+  and positioning)?
+
+  3. Should the line representing product prices be smooth or straight?
+
+  4. Do you want gridlines on the chart? If yes, do you have a preference for their
+  style and color?
+
+  5. Would you like the chart to have a title and, if so, what should the title be?
+
+  6. Do you prefer any specific axis labels or styles for the X and Y axes?
+
+  7. Should there be a legend on the chart, and if so, do you have a specific preference
+  for its position and appearance?
+
+  8. Is there a particular way you would like the highest and lowest prices to be
+  highlighted (e.g., specific shapes or colors for markers)?
+
+  9. Are there any additional labels or markers that you would like to include on
+  the chart?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Straight.
+
+  4. Yes, I would like gridlines, but I do not have a specific preference for their
+  style and color.
+
+  5. Yes, please use "Product Price Variation Across Brands" as the title.
+
+  6. I do not know.
+
+  7. Yes, a legend would be helpful, but I have no specific preference for its position
+  and appearance.
+
+  8. Highlight the highest price in red and the lowest price in blue.
+
+  9. I am not sure.'
+data_attributes:
+- Product Price
+- Product Brand
+- Product Name
+- Product Rating

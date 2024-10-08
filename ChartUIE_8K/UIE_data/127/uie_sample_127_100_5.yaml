@@ -1,0 +1,36 @@
+initial_prompt: 'I have a dataset of ramen reviews with columns like Review #, Brand,
+  Variety, Style, Country, Stars, and Top Ten. I want to create a scatter plot to
+  visualize the relationship between the ''Stars'' rated by users and the different
+  ''Brands'' of ramen noodles. On the X-axis, plot the ''Stars'' ratings, and on the
+  Y-axis, plot the different ''Brands''. Different colors can be used to represent
+  various ''Styles'' of ramen (e.g., Cup, Pack). This will help in understanding which
+  brands generally receive higher ratings and which style is most popular among users.'
+questions: '1. Do you have a specific color palette preference for different ''Styles''
+  of ramen, or should we use a default palette?
+
+  2. Would you like to include a legend that identifies the colors used for different
+  ''Styles''?
+
+  3. Is there a preferred order for displaying the ''Brands'' on the Y-axis (e.g.,
+  alphabetical, based on average rating)?
+
+  4. Are there any specific brands that you would like to highlight or annotate in
+  the scatter plot?
+
+  5. Do you prefer a logarithmic or linear scale for the ''Stars'' ratings on the
+  X-axis?
+
+  6. Would you like to include gridlines or background shading to enhance readability?
+
+  7. Are there any specific font preferences for axis labels and titles?
+
+
+  '
+answers: "1. I do not have a specific color palette preference. \n2. Yes, please include\
+  \ a legend.\n3. I am not sure. \n4. No, there are no specific brands to highlight.\n\
+  5. A linear scale for the 'Stars' ratings is fine.\n6. I do not know.\n7. I have\
+  \ no specific preference."
+data_attributes:
+- Stars
+- Brand
+- Style

@@ -1,0 +1,43 @@
+initial_prompt: I have a dataset of Samsung stock prices with columns like Date, Open,
+  High, Low, Close, Adj Close, and Volume. Can you create a heatmap to visualize the
+  relationship between these different stock price columns over time? Specifically,
+  I am interested in seeing how the opening, closing, high, and low prices correlate
+  with each other. Could you use a color gradient to show these relationships clearly?
+  This would help me understand which stock prices move together and the overall market
+  trend. Please make sure the heatmap is easy to interpret. Thank you!
+questions: '1. Do you have a preferred color palette or gradient for the heatmap?
+
+  2. Are there any specific labels or annotations you would like to include on the
+  heatmap?
+
+  3. How would you like the dates to be displayed along the axis (e.g., specific intervals,
+  date formatting)?
+
+  4. Would you like to include a legend to explain the color gradient?
+
+  5. Is there a particular aspect ratio or size you prefer for the heatmap?
+
+  6. Do you have any preferences for the grid lines or borders on the heatmap?
+
+  7. Should the heatmap display values within each cell, or do you prefer a cleaner
+  look without numbers?'
+answers: '1. I am not sure about the color palette; you can choose what is most commonly
+  used for stock heatmaps.
+
+  2. I do not know if I need any specific labels or annotations.
+
+  3. I would like the dates to be displayed in monthly intervals.
+
+  4. Yes, please include a legend to explain the color gradient.
+
+  5. I do not have a specific preference for the aspect ratio or size.
+
+  6. I do not have any preferences for grid lines or borders.
+
+  7. I prefer a cleaner look without numbers in each cell.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

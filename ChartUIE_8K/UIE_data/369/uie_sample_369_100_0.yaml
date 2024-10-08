@@ -1,0 +1,43 @@
+initial_prompt: Create a line chart visualizing air travel between major US cities.
+  Use the "weight" column for the line values, representing the intensity of travel,
+  with different lines for each "region". Highlight significant cities such as New
+  York, Los Angeles, and Chicago, to draw attention to their travel weights. Add data-driven
+  text annotations to these highlighted cities to display their travel weights. This
+  will help in understanding the travel dynamics and regional connections among these
+  major cities and provide insights into passenger movements.
+questions: "1. Do you have a preferred color scheme for the different regions in the\
+  \ line chart?\n2. What line styles (solid, dashed, dotted) would you prefer for\
+  \ distinguishing between different regions?\n3. Would you like specific markers\
+  \ (such as circles, squares) on data points for the regions? If so, please specify.\n\
+  4. How would you prefer the highlighted significant cities (New York, Los Angeles,\
+  \ and Chicago) to be marked (e.g., larger markers, different colors)?\n5. Do you\
+  \ have any preferences for the positioning of the text annotations for the significant\
+  \ cities?\n6. Are there any specific font styles or sizes you prefer for the text\
+  \ annotations?\n7. Is there a specific layout or aspect ratio you prefer for the\
+  \ line chart?\n8. Should the chart include a legend to explain the different regions\
+  \ and their corresponding styles/colors?\n9. Do you have any preferences for the\
+  \ axis labels and their formatting? \n10. Would you like grid lines on the chart\
+  \ for better readability? If so, horizontal, vertical, or both?"
+answers: '1. I am not sure.
+
+  2. Solid lines would be fine.
+
+  3. I have no specific preference.
+
+  4. Larger markers for the significant cities.
+
+  5. Positioned near the markers would be good.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, a legend should be included.
+
+  9. Label the axes clearly, but I have no specific formatting preferences.
+
+  10. Yes, both horizontal and vertical grid lines would be helpful.'
+data_attributes:
+- name
+- weight
+- region

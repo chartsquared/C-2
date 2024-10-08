@@ -1,0 +1,54 @@
+initial_prompt: 'Please create a heatmap that visualizes the professional profile
+  of suicide victims across different states and years. I want to see different causes
+  of suicide among various age groups for both males and females. Highlight the intensity
+  based on the number of incidents. This should help us identify high-risk demographics
+  and causes. Include a legend and clear labels for better interpretation. Make sure
+  all states, years, causes, and age groups are covered. Thanks!
+
+
+  '
+questions: "1. Do you have a preference for the color palette used in the heatmap?\
+  \ \n2. How many color bins would you like to use to represent different intensities?\n\
+  3. Would you prefer a specific arrangement for the age groups (e.g., youngest to\
+  \ oldest) in the heatmap?\n4. Do you have a preferred order for the causes of suicide,\
+  \ or should they be arranged alphabetically?\n5. Should the heatmap display absolute\
+  \ numbers or normalized values (e.g., percentages)?\n6. Are there any specific annotations\
+  \ or highlights you would like to include for certain data points?\n7. Do you have\
+  \ a preferred font style or size for the labels and legend?\n8. Would you like to\
+  \ distinguish between male and female data using different color intensities or\
+  \ patterns?\n9. Should the heatmap include any particular margin settings for better\
+  \ readability?\n10. Would you prefer horizontal, vertical, or square cells for the\
+  \ heatmap?"
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, please arrange the age groups from youngest to oldest.
+
+  4. Arrange the causes alphabetically.
+
+  5. Display absolute numbers.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, distinguish between male and female using different color intensities.
+
+  9. I am not sure.
+
+  10. Square cells would be preferred.'
+data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Male upto 14 years
+- Male 15-29 years
+- Male 30-44 years
+- Male 45-59 years
+- Male 60 years and above
+- Female upto 14 years
+- Female 15-29 years
+- Female 30-44 years
+- Female 45-59 years
+- Female 60 years and above

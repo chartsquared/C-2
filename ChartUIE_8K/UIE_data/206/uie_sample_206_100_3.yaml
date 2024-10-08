@@ -1,0 +1,50 @@
+initial_prompt: I have a dataset containing housing prices along with various attributes
+  like area, bedrooms, bathrooms, stories, mainroad, guestroom, basement, hot water
+  heating, air conditioning, parking, preferred area, and furnishing status. Please
+  create a grouped bar chart to compare the average prices of houses based on the
+  number of bedrooms and bathrooms. The x-axis should show the number of bedrooms
+  and bathrooms grouped together (e.g., 2 bedrooms 1 bathroom, 3 bedrooms 2 bathrooms),
+  and the y-axis should show the average price of houses in each group. Use different
+  colors to distinguish between the number of bedrooms. Thank you!
+questions: '1. Do you have any color preferences for the bars representing each number
+  of bedrooms?
+
+  2. Would you like the chart to include grid lines for easier readability?
+
+  3. Do you prefer any specific font or style for the axis labels and titles?
+
+  4. Should the chart include data labels showing the exact average price values on
+  each bar?
+
+  5. Are there any specific chart dimensions or aspect ratio you would like to maintain?
+
+  6. Would you like to customize the legend''s position or style in the chart?
+
+  7. Are there any specific title or subtitles you would like to add to the chart?
+
+  8. Do you have any preference for the bar width or spacing between bars?
+
+  9. Should there be any annotations or reference lines on the chart to emphasize
+  certain data points?'
+answers: '1. I do not know.
+
+  2. Yes, please include grid lines for easier readability.
+
+  3. I am not sure.
+
+  4. Yes, please include data labels showing the exact average price values on each
+  bar.
+
+  5. I do not have any specific preferences for chart dimensions or aspect ratio.
+
+  6. I am not sure.
+
+  7. No specific titles or subtitles are needed.
+
+  8. I have no specific preference for bar width or spacing between bars.
+
+  9. I am not sure.'
+data_attributes:
+- bedrooms
+- bathrooms
+- price

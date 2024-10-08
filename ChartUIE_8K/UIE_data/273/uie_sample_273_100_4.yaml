@@ -1,0 +1,57 @@
+initial_prompt: 'I have a dataset from ''Global Electricity Access: Country-Level
+  Analysis'' which includes country names, codes, years, and the percentage of the
+  population with access to electricity. Specifically, I want to create a scatter
+  plot that shows the trend of electricity access over time. On the x-axis, plot the
+  years, and on the y-axis, plot the percentage of the population with access to electricity.
+  Use different colors or markers to represent different countries. Make sure to handle
+  missing values appropriately. This will help in visualizing how access to electricity
+  has changed globally across years.'
+questions: '1. Do you have a preferred color palette for different countries?
+
+  2. Are there any specific countries you want to highlight or focus on?
+
+  3. Would you like to display data points for every year, or should some years be
+  aggregated?
+
+  4. How would you like to handle missing values in the dataset?
+
+  5. Do you have any preferences for the marker shapes used for different countries?
+
+  6. Would you like to add trend lines for each country to show the overall direction
+  of change over time?
+
+  7. Do you prefer any specific font or style for the labels and legend?
+
+  8. Should any additional information be included in tooltips when hovering over
+  the data points?
+
+  9. Do you require a title or subtitle for the scatter plot? If so, what should it
+  be?
+
+  10. Would you like any reference lines or bands to highlight specific milestones
+  or thresholds in electricity access?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I would like to display data points for every year.
+
+  4. Handle missing values by either interpolating or omitting those points.
+
+  5. I have no specific preference.
+
+  6. Yes, please add trend lines for each country.
+
+  7. No specific preference for the font or style.
+
+  8. I am not sure.
+
+  9. Yes, the title should be "Global Electricity Access Over Time" and no subtitle
+  is needed.
+
+  10. I do not know.'
+data_attributes:
+- Entity
+- Code
+- Year
+- Access to electricity (% of population)

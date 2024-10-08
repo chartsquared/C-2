@@ -1,0 +1,35 @@
+initial_prompt: Create a dumbbell chart showing the distribution of purchases across
+  the three types of purchases (Web Purchases, Catalog Purchases, and Store Purchases)
+  for each customer ID. Highlight how the number of purchases varies from the minimum
+  to the maximum for each type. This will show the spread and concentration of purchases
+  across different channels, offering insights into customer purchase behavior. Make
+  sure to color-code the types for clarity and include labels for each data point
+  to make the chart informative and easy to understand.
+questions: '1. Do you prefer specific colors for each type of purchase (Web, Catalog,
+  Store) in the chart?
+
+  2. How would you like the minimum and maximum purchases to be highlighted in the
+  dumbbell chart?
+
+  3. Do you have any preferences for the size and type of data point labels?
+
+  4. Would you like the chart to include a legend for the color-coded types of purchases?
+
+  5. Are there any specific fonts or styles you would prefer for the labels and titles
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. I would like the minimum and maximum purchases to be highlighted with different
+  markers or colors.
+
+  3. I do not know.
+
+  4. Yes, I would like the chart to include a legend for the color-coded types of
+  purchases.
+
+  5. I am not sure.'
+data_attributes:
+- ID
+- NumWebPurchases
+- NumCatalogPurchases
+- NumStorePurchases

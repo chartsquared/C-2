@@ -1,0 +1,38 @@
+initial_prompt: I have a dataset detailing IQ scores across multiple countries. Using
+  this data, I want to visualize the IQ distribution for each country. Please create
+  a grouped bar chart to compare the average IQ scores between countries (Country_1
+  and others if available). Make sure to label the countries and their average IQ
+  scores appropriately on the chart. Each bar should represent the average IQ for
+  a country. If additional countries exist in the dataset, include them in the chart
+  too. The chart should provide a clear comparison of IQ distributions across different
+  countries.
+questions: '1. Do you have a specific color scheme preference for the bars representing
+  different countries?
+
+  2. Would you prefer the chart to include average IQ scores directly on top of each
+  bar?
+
+  3. How detailed do you want the axis labels to be (e.g., full country names, abbreviations)?
+
+  4. Is adding a title to the chart important for you? If so, do you have a preferred
+  title?
+
+  5. Do you want a legend in the chart to distinguish the countries, or is it unnecessary
+  due to direct labeling?
+
+  6. Are there any specific fonts or styles you prefer for the chart labels and title?'
+answers: '1. I do not know.
+
+  2. Yes, I would prefer the chart to include average IQ scores directly on top of
+  each bar.
+
+  3. Full country names.
+
+  4. Yes, adding a title is important. I do not have a specific title in mind.
+
+  5. I do not know.
+
+  6. I am not sure.'
+data_attributes:
+- country
+- iq

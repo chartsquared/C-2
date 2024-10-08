@@ -1,0 +1,43 @@
+initial_prompt: Create a dot plot to visualize the New York Housing Market data. Plot
+  property prices on the y-axis and property sizes in square feet on the x-axis. Differentiate
+  types of properties (e.g., Condo for sale, House for sale) using different colors
+  or markers. Make sure to label axes and include a legend. Show all data points from
+  the 'PRICE' and 'PROPERTYSQFT' columns, without omitting any. This will help in
+  understanding the relationship between property size and price across different
+  property types in New York.
+questions: '1. Do you have any specific color preferences for differentiating the
+  types of properties?
+
+  2. Do you prefer specific shapes or markers for the different property types?
+
+  3. Would you like any specific range for the x-axis (property sizes) or y-axis (property
+  prices)?
+
+  4. Do you have a preferred font style or size for the axis labels and legend?
+
+  5. Should the legend be placed in a specific location on the chart?
+
+  6. Do you want grid lines to be included in the plot for better readability?
+
+  7. Would you like any particular style for the data points (e.g., size, transparency)?
+
+  8. Do you require any annotations or additional information to be added to the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not have a preference.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Yes, grid lines would be helpful.
+
+  7. I do not know.
+
+  8. No, no additional annotations or information is needed.'
+data_attributes:
+- PRICE
+- PROPERTYSQFT
+- TYPE

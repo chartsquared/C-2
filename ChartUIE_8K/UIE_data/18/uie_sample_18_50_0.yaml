@@ -1,0 +1,62 @@
+initial_prompt: Create a heatmap to visualize the resistance (against_* columns) of
+  Pokémon across different types. Highlight stronger resistances with green and weaknesses
+  with red. Annotate notable Pokémon names and their total base stats within the heatmap
+  to provide context and draw attention to significant data points.
+questions: '1. Do you have a preferred color gradient for the heatmap, other than
+  green for stronger resistances and red for weaknesses?
+
+  2. Would you like to specify a particular font type or size for the annotations
+  of notable Pokémon names and their total base stats?
+
+  3. Should the annotations for Pokémon names and their total base stats appear in
+  a specific color?
+
+  4. Are there any specific Pokémon names you want to ensure are annotated within
+  the heatmap?
+
+  5. Would you like to include any particular title or labels for the heatmap?
+
+  6. Do you have a preference for the arrangement of columns (types of resistance)
+  in the heatmap?
+
+  7. Should the axis labels include additional details, such as type effectiveness
+  ratios or other contextual information?
+
+  8. Do you desire gridlines or borders around each cell in the heatmap for enhanced
+  clarity?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- against_bug
+- against_dark
+- against_dragon
+- against_electric
+- against_fairy
+- against_fight
+- against_fire
+- against_flying
+- against_ghost
+- against_grass
+- against_ground
+- against_ice
+- against_normal
+- against_poison
+- against_psychic
+- against_rock
+- against_steel
+- against_water
+- base_total
+- name

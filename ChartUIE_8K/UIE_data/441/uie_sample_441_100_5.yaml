@@ -1,0 +1,47 @@
+initial_prompt: Please create an area chart for women college basketball teams using
+  the given data. The x-axis should represent the "year," and the y-axis should show
+  "reg_percent" for regular season performance as different areas for each "school."
+  Use different colors for each school to distinguish them. Highlight significant
+  peaks and troughs, if any. Ensure the legend includes school names. This will help
+  visualize trends over the years for regular-season performance. Thank you!
+questions: '1. Do you have any preferred colors for specific schools or a general
+  color scheme for the chart?
+
+  2. Is there a specific font or style you would like for the chart labels and legend?
+
+  3. Do you want the chart to include data labels for specific data points along the
+  lines?
+
+  4. Are there any specific years or schools you would like to highlight in the chart?
+
+  5. Do you have a preference for the arrangement or orientation of the legend on
+  the chart?
+
+  6. Should grid lines be included on the chart, and if so, what style or color would
+  you prefer for them?
+
+  7. Are there any specific titles or subtitles you would like to include on the chart
+  to provide context?
+
+  8. Would you like the y-axis to have a specific range or scale, or should it be
+  automatically adjusted to fit the data?'
+answers: '1. I do not have any specific preferred colors.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. No specific years or schools to highlight.
+
+  5. I do not know.
+
+  6. Yes, please include grid lines; I have no specific preference for their style
+  or color.
+
+  7. No specific titles or subtitles.
+
+  8. The y-axis should be automatically adjusted to fit the data.'
+data_attributes:
+- year
+- reg_percent
+- school

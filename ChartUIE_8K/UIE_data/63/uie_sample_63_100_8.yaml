@@ -1,0 +1,50 @@
+initial_prompt: I'd like to create a pie chart to visualize the distribution of customer
+  purchases across different product categories based on the `ProductCategory` column
+  in the dataset. I want to see the percentage each category contributes to the total
+  number of purchases. This will help me understand which product categories are the
+  most and least popular among customers. By knowing the popularity of each category,
+  I can make more informed decisions about inventory and marketing strategies. Please
+  use the `NumberOfPurchases` data to ensure the chart accurately reflects the distribution.
+  Thank you!
+questions: '- Do you have any preferred color schemes or specific colors you want
+  to use for each product category in the pie chart?
+
+  - Would you like to display the percentage value on each segment of the pie chart?
+
+  - Do you want to include labels for each product category directly on the pie chart
+  or in a legend?
+
+  - Would you prefer the pie chart to be in 2D or 3D?
+
+  - Do you have any specific font preferences for the labels and percentages?
+
+  - Would you like to see the chart title, and if so, do you have a specific title
+  in mind?
+
+  - Should the chart include data source information or any additional annotations?
+
+  - Do you have any preference regarding the arrangement of the segments (e.g., sorted
+  by size, alphabetical order)?
+
+  - Would you like to highlight or emphasize any specific category within the pie
+  chart?'
+answers: '- I have no specific preference.
+
+  - Yes, I would like to display the percentage value on each segment of the pie chart.
+
+  - I am not sure.
+
+  - 2D is fine.
+
+  - I have no specific preference.
+
+  - Yes, let''s have the title "Distribution of Customer Purchases by Product Category".
+
+  - No, data source information or additional annotations are not necessary.
+
+  - I do not know.
+
+  - No, I don''t need to highlight any specific category.'
+data_attributes:
+- ProductCategory
+- NumberOfPurchases

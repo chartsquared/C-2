@@ -1,0 +1,41 @@
+initial_prompt: I need a scatter plot visualization for the ninja warrior obstacle
+  course data. Please plot each obstacle's order across different seasons, using different
+  colors for each location. Also, the points should be differentiated based on the
+  round stage. The X-axis needs to represent the seasons, while the Y-axis will display
+  the obstacle order. This will help analyze the consistency and evolution of obstacle
+  orders in various locations over time. Display the names of some key obstacles as
+  labels on the plot to make it insightful. Thank you!
+questions: '1. Do you have any preferred color palette for differentiating locations?
+
+  2. Are there specific obstacles you consider "key" for labeling on the plot?
+
+  3. How would you like the round stages to be differentiated (e.g., shapes, sizes
+  of the points)?
+
+  4. Should there be a legend to differentiate locations and round stages?
+
+  5. Do you have any preferences for the style and font of the labels for key obstacles?
+
+  6. What are your preferences for the axis titles and overall chart title, if any?
+
+  7. Would you like gridlines to be included on the plot for better readability?'
+answers: '1. I am not sure.
+
+  2. Yes, please label the "Warped Wall," "Salmon Ladder," and "Rope Climb."
+
+  3. I do not know.
+
+  4. Yes, include a legend to differentiate locations and round stages.
+
+  5. I have no specific preference.
+
+  6. X-axis title: "Seasons," Y-axis title: "Obstacle Order," Chart title: "Evolution
+  of Ninja Warrior Obstacle Orders by Location and Stage."
+
+  7. Yes, include gridlines for better readability.'
+data_attributes:
+- season
+- location
+- round_stage
+- obstacle_order
+- obstacle_name

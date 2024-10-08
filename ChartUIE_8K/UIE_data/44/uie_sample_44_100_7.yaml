@@ -1,0 +1,51 @@
+initial_prompt: Please create a scatter plot for the amino acids data showing the
+  relationship between Molecular Weight and residue Weight. Use different colors to
+  represent each unique amino acid (Name), and add labels for the three sample amino
+  acids provided (Alanine, Cysteine, Aspartic acid). Also, include markers to indicate
+  the pKa1 values as the size of the points. This visualization will help us to compare
+  the molecular and residue weights, while also observing the acid dissociation constant.
+  Thank you!
+questions: '1. Do you have any specific color preferences for the different amino
+  acids?
+
+  2. Would you like a specific shape for the markers or is the default acceptable?
+
+  3. Is there a preferred font style or size for the labels of the sample amino acids?
+
+  4. Do you prefer a specific range or scale for the x-axis and y-axis?
+
+  5. Should the labels for the sample amino acids be placed in a particular location
+  relative to their points (e.g., above, below, to the left, to the right)?
+
+  6. Do you have any specific preferences for the title or labels of the x-axis and
+  y-axis?
+
+  7. Would you like the chart to include a legend, and if so, do you have any preferences
+  for its location?
+
+  8. Are there any gridlines or background styles you would like to use or avoid?
+
+  9. Is there a preferred format or style for the data point size representation based
+  on the pKa1 values?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Default font style and size are fine.
+
+  4. I have no specific preference.
+
+  5. Below the points sounds good.
+
+  6. No specific preferences for title or axis labels.
+
+  7. Yes, please include a legend; location is flexible.
+
+  8. No specific preferences for gridlines or background styles.
+
+  9. I am not sure.'
+data_attributes:
+- Name
+- Molecular Weight
+- Residue Weight
+- pKa1

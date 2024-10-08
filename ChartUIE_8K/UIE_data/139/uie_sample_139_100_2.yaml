@@ -1,0 +1,40 @@
+initial_prompt: Create a bar chart visualizing the count of banking crises over different
+  years for various countries. Use the 'banking_crisis' data to segment bars into
+  'crisis' and 'no_crisis'. Include text annotations to highlight specific years with
+  systemic crises. Highlight bars representing years with currency crises in a different
+  color for emphasis. The goal is to provide a clear visual representation of economic
+  stability trends across different countries and years. This will help in understanding
+  the frequency and impact of banking crises alongside other economic crises within
+  the African context.
+questions: '1. Do you have any preferred colors for highlighting the bars representing
+  different crises (banking crises vs. currency crises)?
+
+  2. Would you like to use specific symbols or styles for text annotations highlighting
+  systemic crises?
+
+  3. Do you have a preferred layout or orientation for the bar chart (vertical or
+  horizontal)?
+
+  4. How would you prefer the bars to be grouped or stacked (grouped by country or
+  stacked by crisis type)?
+
+  5. Is there a particular font style or size you would like for the text annotations
+  and axis labels?
+
+  6. Should there be a legend included in the chart? If so, do you have a preference
+  for its placement?
+
+  7. Do you need a specific title or subtitle for the chart?
+
+  8. Are there any specific years or countries you would like to highlight more prominently?'
+answers: "1. I am not sure.\n2. I do not know.\n3. Vertical orientation would be preferred.\n\
+  4. Grouped by country.\n5. I am not sure.\n6. Yes, a legend should be included.\
+  \ I have no preference for its placement.\n7. Title: \"Banking Crises in African\
+  \ Countries Over the Years\" \n   Subtitle: \"Analyzing economic stability through\
+  \ banking and currency crises\"\n8. I do not know."
+data_attributes:
+- year
+- country
+- banking_crisis
+- currency_crises
+- systemic_crisis

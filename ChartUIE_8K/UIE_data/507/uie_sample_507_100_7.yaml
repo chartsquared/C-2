@@ -1,0 +1,49 @@
+initial_prompt: I want an area chart that visualizes the electorate size for different
+  areas along with the distribution of votes among different parties (CON, LAB, LIB,
+  Green) across those areas. Use "Area" on the x-axis and "Electorate" on the y-axis,
+  and stack the vote percentages for each party to show their share within the electorate.
+  This will help to compare the party dominance and voter turnout across different
+  regions. Please include legend and color coding for each party to differentiate.
+questions: '1. Do you have any specific color preferences for each party in the chart?
+
+  2. Would you like any specific layout for the legend (e.g., vertical or horizontal)?
+
+  3. Do you prefer a particular font style or size for the labels and titles?
+
+  4. Are there any specific regions you want to highlight or focus on?
+
+  5. Do you have a preference for the ordering of areas on the x-axis (e.g., alphabetical,
+  by electorate size)?
+
+  6. Would you like to include data markers or labels on the stacked areas for additional
+  detail?
+
+  7. Is there a specific title you would like for the chart?
+
+  8. Do you want grid lines on the chart for better readability?
+
+  9. Would you like to include a subtitle or any additional annotations?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. No, I do not have any specific regions to highlight.
+
+  5. By electorate size, please.
+
+  6. Yes, please include data markers or labels for additional detail.
+
+  7. "Electorate Distribution and Vote Shares by Area"
+
+  8. Yes, please include grid lines for better readability.
+
+  9. No, I do not need a subtitle or additional annotations.'
+data_attributes:
+- Area
+- Electorate
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Green(%)

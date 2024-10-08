@@ -1,0 +1,45 @@
+initial_prompt: Create a stacked bar chart showing the distribution of different property
+  types (TYPE) across various localities (LOCALITY) with PRICE. Color code by property
+  type for clarity.
+questions: '1. Do you have a preferred color palette for property types?
+
+  2. What title would you like to have for the chart?
+
+  3. Do you prefer specific labels for the x-axis and y-axis, or should we use ''Localities''
+  and ''Prices'' respectively?
+
+  4. Would you like to include a legend indicating property types? If so, where should
+  it be positioned?
+
+  5. Is there a specific order in which you would like the localities to be arranged?
+  (e.g., alphabetical, by median price, etc.)
+
+  6. Do you want to display the exact price values on the bars?
+
+  7. Should the y-axis display be in specific units (e.g., thousands, millions)?
+
+  8. Are there specific font preferences for the chart text (title, axis labels, legends)?
+
+  9. Would you like any annotations or additional information displayed in the chart
+  (e.g., average prices, highest price for each locality)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Localities and Prices would be fine.
+
+  4. Yes, please include a legend. I am not sure where it should be positioned.
+
+  5. I am not sure.
+
+  6. No, exact price values do not need to be displayed on the bars.
+
+  7. I do not know.
+
+  8. No specific font preferences.
+
+  9. I am not sure.'
+data_attributes:
+- TYPE
+- LOCALITY
+- PRICE

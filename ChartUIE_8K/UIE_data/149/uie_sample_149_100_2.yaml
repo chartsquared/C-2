@@ -1,0 +1,48 @@
+initial_prompt: Please create a geographic heatmap showing the distribution of texts
+  by their authors from the 16th century Portuguese corpus. Use the "Tokens" data
+  to indicate volume, highlighting authors with notably high token counts. Annotate
+  key authors like José de Anchieta and João de Barros, focusing on their contributions
+  and impact areas. Include visual elements to distinguish the time periods captured.
+  The intent is to analyze the geographical spread and concentration of literary works
+  to understand cultural and linguistic development.
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. Should the heatmap include a legend to explain the color scale and token counts?
+
+  3. How would you prefer key authors like José de Anchieta and João de Barros to
+  be annotated (e.g., specific markers, labels)?
+
+  4. Would you like the time periods to be represented by distinct colors or another
+  visual element?
+
+  5. Are there specific geographic regions or areas that you want to highlight or
+  focus on?
+
+  6. Should the map include place names or geographic markers for better context?
+
+  7. Would you prefer the token volume to be represented by varying color intensity
+  or another method (e.g., size of markers)?
+
+  8. Do you have particular font preferences or styles for the text annotations on
+  the map?'
+answers: '1. I have no specific preference.
+
+  2. Yes, the heatmap should include a legend to explain the color scale and token
+  counts.
+
+  3. Specific markers and labels would be great for annotating key authors like José
+  de Anchieta and João de Barros.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Yes, the map should include place names or geographic markers for better context.
+
+  7. Varying color intensity would work well for representing token volume.
+
+  8. I do not have any specific font preferences.'
+data_attributes:
+- Author
+- Tokens
+- Year

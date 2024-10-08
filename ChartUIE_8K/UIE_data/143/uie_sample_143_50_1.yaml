@@ -1,0 +1,33 @@
+initial_prompt: Create a bar chart visualizing the number of representatives per district
+  from the U.S. 117th House. Use colors to distinguish their party affiliation (Republican
+  or Democrat). Include annotations for those with the longest-held positions.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  the Republican and Democrat parties?
+
+  2. Would you like the names of the representatives with the longest-held positions
+  to be displayed as tooltips or directly annotated on the bars?
+
+  3. Do you prefer to sort the districts by the number of representatives or keep
+  them in alphabetical order?
+
+  4. Is there a specific font style or size you prefer for the annotations and labels?
+
+  5. Do you have a preference for the orientation of the bar chart (vertical or horizontal)?
+
+  6. Would you like to include a legend explaining the color coding for party affiliations?
+
+  7. Is there a specific title you would like for the chart?
+
+  8. Do you want gridlines on the chart to enhance readability?
+
+  9. Would you like to display the exact number of representatives on top of each
+  bar?'
+answers: "1. I do not know.\n2. I would like the names directly annotated on the bars.\n\
+  3. I am not sure.\n4. I have no specific preference.\n5. I prefer a vertical orientation.\
+  \ \n6. Yes, please include a legend.\n7. I do not know.\n8. I am not sure.\n9. Yes,\
+  \ please display the exact number on top of each bar."
+data_attributes:
+- distict_name
+- 'member '
+- 'party '
+- 'assumed_office '

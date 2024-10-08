@@ -1,0 +1,65 @@
+initial_prompt: Create a heatmap visualizing the distribution of slopes (Beginner,
+  Intermediate, Difficult) across different resorts and countries in the European
+  Ski Resorts dataset. Use text annotations to highlight the resorts with the highest
+  total slopes and lift capacities, and distinguish these entries with a distinct
+  color. The purpose is to help users quickly identify which resorts offer the most
+  extensive skiing options and the best facilities. Additionally, use highlights to
+  indicate resorts with snowparks and night skiing, emphasizing their recreational
+  offerings.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How significant should the color differentiation be for resorts with the highest
+  total slopes and lift capacities?
+
+  3. What style and size of text annotations do you prefer for highlighting resorts?
+
+  4. Would you like distinct markers or icons used for snowparks and night skiing
+  highlights?
+
+  5. Do you prefer the resorts to be sorted by country or by some other criteria on
+  the heatmap?
+
+  6. How detailed should the text annotations be for each resort?
+
+  7. Is there a specific background or grid style you would like for the heatmap?
+
+  8. Do you prefer any specific font type for the text annotations?
+
+  9. Should the highlight colors for snowparks and night skiing be different from
+  each other?
+
+  10. Would you like to include any specific legends or labels on the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. The color differentiation should be quite significant to make these resorts stand
+  out.
+
+  3. I do not know.
+
+  4. Yes, distinct markers or icons would be helpful.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. Yes, the highlight colors should be different for snowparks and night skiing.
+
+  10. Yes, a legend would be helpful to explain the highlights and color coding.
+
+  <end of user emulated response>'
+data_attributes:
+- Resort
+- Country
+- BeginnerSlope
+- IntermediateSlope
+- DifficultSlope
+- TotalSlope
+- LiftCapacity
+- Snowparks
+- NightSki

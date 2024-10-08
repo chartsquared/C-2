@@ -1,0 +1,60 @@
+initial_prompt: I want a geographic heatmap showing regions where people save the
+  most money by using electric cars compared to gasoline cars. Use the data provided,
+  particularly focusing on 'fuelCost08', 'comb08', and 'youSaveSpend'. Highlight areas
+  with greater savings in a distinct color and gasoline areas in another. The heatmap
+  should be easy to read and visually appealing. Include the 'city08', 'highway08',
+  and 'make' to enhance the detail. Display data from different years to indicate
+  trends over time. Please ensure the map is interactive so users can zoom into specific
+  regions.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the regions to be divided? (e.g., by state, county, zip code)
+
+  3. Would you prefer the data to be aggregated annually, monthly, or a different
+  time interval?
+
+  4. Do you want tooltips to display specific information when hovering over a region?
+
+  5. Would you like to include any legends or keys to explain the colors used in the
+  heatmap?
+
+  6. Are there any particular fonts or styling preferences you''d like for labels
+  and annotations on the map?
+
+  7. Would you like the map to have a specific title or subtitle?
+
+  8. Do you want any additional filters (e.g., filter by make or year) to allow users
+  to customize the visualization?
+
+  9. Are there any specific geographic projections you prefer for the map (e.g., Mercator,
+  Albers)?
+
+  10. Do you have any preferences for how the trend data across different years should
+  be displayed on the map?'
+answers: '1. I am not sure.
+
+  2. By state would be ideal.
+
+  3. Annually aggregated data would be preferred.
+
+  4. I do not know.
+
+  5. Yes, please include legends or keys to explain the colors used.
+
+  6. I do not have any specific preferences for fonts or styling.
+
+  7. No specific title or subtitle in mind.
+
+  8. I am not sure about additional filters.
+
+  9. I do not know about geographic projections.
+
+  10. I am not sure how the trend data should be displayed across different years.'
+data_attributes:
+- fuelCost08
+- comb08
+- youSaveSpend
+- city08
+- highway08
+- make
+- year

@@ -1,0 +1,56 @@
+initial_prompt: Please create a line chart visualizing the IBM stock data from 1962.
+  Use the 'Date' as the x-axis and plot separate lines for 'Open', 'High', 'Low',
+  and 'Close' prices on the y-axis. Make sure the chart is clear and labels are easy
+  to read, showing trends over time. Also, include a secondary y-axis for 'Volume'
+  to see trading activity.
+questions: '1. Do you have any preferred color scheme or specific colors for the ''Open'',
+  ''High'', ''Low'', and ''Close'' lines?
+
+  2. Would you like to highlight specific date ranges or events in the chart?
+
+  3. Should the chart include grid lines or background shading for easier reading?
+
+  4. What level of detail would you prefer for the x-axis labels (e.g., years, months,
+  specific dates)?
+
+  5. Do you want any annotations or markers for significant highs and lows in the
+  stock prices?
+
+  6. Should the y-axes for price and volume be labeled in any particular way or have
+  specific formatting (e.g., currency format, thousand separators)?
+
+  7. Would you like to add any descriptive titles or subtitles to the chart?
+
+  8. Are there any specific fonts or font sizes you would like to use for labels and
+  titles?
+
+  9. Should the legend be positioned in a particular location on the chart?
+
+  10. Do you wish to include any trend lines or moving averages on the price lines?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, include grid lines for easier reading.
+
+  4. Specific dates would be preferable.
+
+  5. Yes, please add annotations for significant highs and lows in the stock prices.
+
+  6. Label the y-axes with currency format for prices and thousand separators for
+  volume.
+
+  7. Yes, please include descriptive titles and subtitles.
+
+  8. I am not sure about specific fonts or font sizes.
+
+  9. I do not have a specific preference for the legend position.
+
+  10. Yes, include trend lines or moving averages on the price lines.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

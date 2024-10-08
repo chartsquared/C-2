@@ -1,0 +1,40 @@
+initial_prompt: Create a heatmap visualizing the total amount spent to influence by
+  each lobbyist and report period. Use text annotations for highlighting missing values
+  and unique combinations of lobbyist names and report types. Highlight any particularly
+  high expenditures to distinguish them.
+questions: '1. What color scheme would you prefer for the heatmap, especially for
+  highlighting high expenditures?
+
+  2. Do you have a preferred method for annotating missing values (e.g., specific
+  text or symbol)?
+
+  3. How would you like the unique combinations of lobbyist names and report types
+  to be highlighted (e.g., color-coding, bold text)?
+
+  4. Is there a specific threshold for expenditures that you consider "particularly
+  high" and should be highlighted?
+
+  5. Do you have any preferences for the text size and font for the annotations?
+
+  6. What layout or aspect ratio do you prefer for the heatmap?
+
+  7. Would you like any specific color or style distinction for rows/columns associated
+  with particular lobbyists or report periods?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Bold text sounds good.
+
+  4. Expenditures over $100,000 should be highlighted.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- Lobbyist Name
+- Report
+- Report Type
+- Total Amount Spent to Influence

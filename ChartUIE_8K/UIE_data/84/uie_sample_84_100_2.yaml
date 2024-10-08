@@ -1,0 +1,47 @@
+initial_prompt: Create a pie chart using the water quality data to visualize the distribution
+  of missing values across different attributes. Highlight sections with the most
+  missing data to emphasize the completeness of the dataset. Annotate significant
+  segments to display the counts of missing values for each attribute. This will help
+  in identifying key areas needing attention for data cleansing. Make sure the chart
+  is clear and visually appealing to laypersons and experts alike, focusing on data
+  completeness. Use the provided sample data as an example to ensure realistic representation.
+questions: '1. Do you have a preferred color scheme for the pie chart?
+
+  2. Would you like the chart to include a legend or would you prefer direct annotations
+  on each segment?
+
+  3. How would you like the missing value counts to be annotated on the chart (e.g.,
+  percentages, absolute numbers, both)?
+
+  4. Do you prefer a specific font style or size for the annotations and labels?
+
+  5. Should there be a title or subtitle on the pie chart, and if so, what should
+  it be?
+
+  6. Do you have any preference for how the segments with the most missing data should
+  be highlighted (e.g., different color, shading, border)?
+
+  7. Would you like any supplementary information or context to be included in the
+  chart (such as a brief explanation or note on the dataset)?
+
+  8. Is there a specific order in which you would like the segments to be arranged
+  (e.g., by the amount of missing data, alphabetically)?'
+answers: '1. I am not sure.
+
+  2. I would prefer direct annotations on each segment.
+
+  3. Both percentages and absolute numbers would be great.
+
+  4. I do not know.
+
+  5. Yes, the title should be "Distribution of Missing Values in Water Quality Data".
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. By the amount of missing data, please.'
+data_attributes:
+- ph
+- Sulfate
+- Trihalomethanes

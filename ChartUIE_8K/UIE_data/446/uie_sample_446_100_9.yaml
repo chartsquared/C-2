@@ -1,0 +1,53 @@
+initial_prompt: Create a stacked bar chart to visualize the number of animal rescues
+  based on different animal groups (e.g., Dog, Fox) and types of incidents. Use the
+  'borough' as the category axis and show separate stacks for each 'special_service_type'.
+  Count incidents for each borough and show relative frequencies within each borough.
+  This will allow us to compare the types of animal rescues across different boroughs.
+  The chart should help in identifying hotspots for specific animal rescue types and
+  will be useful for resource allocation. Add legends and axis labels for clarity.
+questions: '1. Do you have any preferences for the color scheme of the chart?
+
+  2. How would you like the legend to be positioned (e.g., right, top, bottom, left)?
+
+  3. Do you want specific colors assigned to certain animal groups or incident types?
+
+  4. Would you prefer a specific style for the axis labels (e.g., font size, font
+  type)?
+
+  5. Should data labels be included on the bars for more precise numbers?
+
+  6. Do you have a recommended title for the chart?
+
+  7. Are there any specific annotations or markers you would like on the chart?
+
+  8. Would you like grid lines to be shown on the chart?
+
+  9. Do you prefer a particular format for the relative frequencies (e.g., percentage,
+  decimal)?
+
+  10. Is there any additional contextual information you would like included in the
+  chart?'
+answers: '1. I don''t know.
+
+  2. I am not sure.
+
+  3. I don''t know.
+
+  4. I have no specific preference.
+
+  5. Yes, please include data labels on the bars.
+
+  6. Title: "Animal Rescues by Borough and Incident Type"
+
+  7. No specific annotations or markers.
+
+  8. Yes, please show grid lines.
+
+  9. Use percentages for the relative frequencies.
+
+  10. No additional contextual information is needed.'
+data_attributes:
+- animal_group_parent
+- borough
+- special_service_type
+- type_of_incident

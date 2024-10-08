@@ -1,0 +1,33 @@
+initial_prompt: Create a stacked column chart that visualizes the IQ distribution
+  across different countries. Use the data from the file '381.csv'. The chart should
+  have countries on the x-axis and IQ scores on the y-axis. Each country's column
+  should represent the IQ scores of different individuals stacked atop each other.
+  Ensure the chart is color-coded for easy differentiation between the stacked segments
+  within each country's column. Include appropriate labels and a legend to clarify
+  the information. This will help in comparing the cognitive performance amongst the
+  three given countries.
+questions: "1. Do you have any specific color preferences for the different segments\
+  \ within each country's column?\n2. What style of labels would you prefer for the\
+  \ x-axis and y-axis? \n3. Should the font size and type for the labels have any\
+  \ specific requirements?\n4. Do you prefer the legend to be placed in any specific\
+  \ location on the chart?\n5. Would you like to include any specific titles for the\
+  \ chart and axes?\n6. Should the chart include grid lines, and if so, do you have\
+  \ a preference for their style or color?\n7. Is there any additional text or annotation\
+  \ you would like included on the chart?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. The chart title could be "IQ Distribution Across Different Countries," and the
+  axes could be labeled "Country" for the x-axis and "IQ Score" for the y-axis.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- country
+- iq

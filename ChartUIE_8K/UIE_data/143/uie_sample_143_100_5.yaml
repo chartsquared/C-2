@@ -1,0 +1,40 @@
+initial_prompt: Create a choropleth map showing the distribution of congressional
+  members by party affiliation across different districts. Use the 'distict_name'
+  to define the geographic areas and 'party' to represent the data visually. Include
+  a legend to differentiate between 'Republican' and 'Democrat'. Highlight the 'assumed_office'
+  year as an overlay to show new versus long-term representatives within the districts.
+  This will help visualize political representation and tenure across the U.S. House
+  of Representatives for the 117th Congress. Make sure the map is interactive, allowing
+  us to hover over districts for more details about the members.
+questions: '1. Do you have a preferred color scheme for representing ''Republican''
+  and ''Democrat'' parties on the map?
+
+  2. How would you like the ''assumed_office'' years to be depicted as an overlay
+  (e.g., different shades, patterns, or another form of visual representation)?
+
+  3. Do you want any specific labeling on the map, such as displaying district names
+  or member names directly on the map?
+
+  4. Do you prefer any particular style or theme for the map (e.g., modern, classic,
+  minimalistic)?
+
+  5. How detailed should the legend be for distinguishing between parties and tenure
+  (e.g., should it include year ranges for tenure)?
+
+  6. Are there any specific regions or districts that you would like to highlight
+  or focus more on within the map?'
+answers: '1. I prefer using red for ''Republican'' and blue for ''Democrat''.
+
+  2. I am not sure.
+
+  3. Displaying district names directly on the map would be helpful.
+
+  4. I do not know.
+
+  5. Yes, the legend should include year ranges for tenure.
+
+  6. I do not know.'
+data_attributes:
+- distict_name
+- party
+- assumed_office

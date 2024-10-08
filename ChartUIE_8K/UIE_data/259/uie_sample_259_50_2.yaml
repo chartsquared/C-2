@@ -1,0 +1,57 @@
+initial_prompt: Create a scatter plot visualizing the relationship between SemiMajorAxisAU
+  and PeriodDays. Highlight confirmed planets distinctly. Include text annotations
+  for outliers in terms of extreme values. Use color to differentiate between different
+  discovery methods. This is for the Open Exoplanet Catalogue.
+questions: '1. Do you have a preferred color palette for differentiating discovery
+  methods?
+
+  2. How would you prefer to see the confirmed planets highlighted (e.g., different
+  marker shapes, sizes, or border styles)?
+
+  3. Do you have any preferred formats for text annotations for outliers (e.g., font
+  size, color, or placement)?
+
+  4. Would you prefer gridlines or axis ticks for better readability, and if so, in
+  what style?
+
+  5. Do you have any specific preferences for the chart background (e.g., color, transparency)?
+
+  6. Would you like to include a legend in the chart, and if yes, where would you
+  prefer it to be placed?
+
+  7. Are there any specific titles or labels you would like for the axes and the overall
+  chart?
+
+  8. Do you have any preferences for the aspect ratio or size of the chart?
+
+  9. Would you like to apply any specific scaling (e.g., logarithmic) to the axes
+  to better visualize the data?'
+answers: '<start of user emulated response>
+
+
+  1. I am not sure.
+
+  2. Different marker shapes would be good.
+
+  3. I do not have a preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, and you can place it wherever you think is best.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference.
+
+  9. I am not sure.
+
+
+  <end of user emulated response>'
+data_attributes:
+- SemiMajorAxisAU
+- PeriodDays
+- PlanetIdentifier
+- TypeFlag
+- DiscoveryMethod

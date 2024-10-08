@@ -1,0 +1,52 @@
+initial_prompt: I would like to generate a scatter plot using the provided dataset
+  of high-tech companies on NASDAQ. The scatter plot should visualize the relationship
+  between the 'market_cap' (Y-axis) and 'price' (X-axis) for these companies. The
+  data points should be differentiated by colors based on the 'sector', and each point
+  should be labeled with the 'symbol' of the company. Make sure missing data is appropriately
+  handled, for example, by using an indication for missing values. The chart should
+  also have labels and a title.
+questions: '1. What title would you prefer for the scatter plot?
+
+  2. Do you have any specific preferences for the X-axis and Y-axis labels?
+
+  3. What color scheme would you like to use for differentiating sectors?
+
+  4. How would you like missing data to be indicated on the chart?
+
+  5. Would you prefer a legend to explain the colors representing different sectors?
+
+  6. Do you have a specific font style or size preference for the labels and title?
+
+  7. Should the data points be represented with specific shapes or just simple dots?
+
+  8. Do you have a preferred size for the markers representing the data points?
+
+  9. Would you like to include grid lines for better readability? If so, do you have
+  a preference for their appearance?'
+answers: '<start of user emulated response>
+
+  1. I would prefer the title "Market Cap vs Price for NASDAQ High-Tech Companies".
+
+  2. X-axis label: "Price ($)", Y-axis label: "Market Cap (Billion $)".
+
+  3. I am not sure.
+
+  4. Please use a distinct symbol or color for missing data.
+
+  5. Yes, I would prefer a legend.
+
+  6. I do not have a specific preference.
+
+  7. Just simple dots are fine.
+
+  8. I do not know.
+
+  9. Yes, I would like to include grid lines, but I have no specific preference for
+  their appearance.
+
+  <end of user emulated response>'
+data_attributes:
+- symbol
+- price
+- sector
+- market_cap

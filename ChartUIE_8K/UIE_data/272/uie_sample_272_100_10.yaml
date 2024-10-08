@@ -1,0 +1,50 @@
+initial_prompt: I need a Choropleth map to visualize global EV sales and stock data
+  from 2010 to 2024. Highlight regions by EV stock share, EV sales share, and EV sales,
+  using different colors for each metric. Ensure each region's data is clearly differentiated
+  by year and powertrain type. Use "percent" and "Vehicles" units where applicable.
+  The map should provide an easy-to-understand visual representation of the distribution
+  and trends of electric vehicle adoption over the years. Include a legend to interpret
+  the colors and differentiate between historical, current, and projected data.
+questions: '1. Do you have a preferred color scheme for differentiating between EV
+  stock share, EV sales share, and EV sales?
+
+  2. How would you like the data differentiated between historical, current, and projected
+  data in the legend?
+
+  3. Would you prefer specific color hues or gradients for each metric?
+
+  4. Are there any specific map projections (e.g., Mercator, Robinson) you would like
+  the choropleth map to use?
+
+  5. Should the map include any specific annotations or markers for significant data
+  points?
+
+  6. Do you have any preferences for the style and size of the legend?
+
+  7. Would you like to include any tooltips for additional information when hovering
+  over a region?
+
+  8. How would you prefer to represent the units "percent" and "Vehicles" visually
+  on the map?'
+answers: '1. I am not sure.
+
+  2. Differentiate them clearly, maybe with distinct patterns or shades.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. No specific preference for the style and size of the legend.
+
+  7. I do not know.
+
+  8. Use "percent" for EV stock share and EV sales share, and "Vehicles" for EV sales.'
+data_attributes:
+- region
+- parameter
+- year
+- powertrain
+- unit
+- value

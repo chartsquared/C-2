@@ -1,0 +1,49 @@
+initial_prompt: Create a line chart displaying 'median', 'lower_95', and 'upper_95'
+  values on the Y-axis against different 'taxa' on the X-axis from the dataset.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Should we display data points for ''median'', ''lower_95'', and ''upper_95''
+  on the lines?
+
+  3. Do you want grid lines in the background of the chart?
+
+  4. Would you prefer to label axes with their full titles or with abbreviated labels?
+
+  5. Should the chart include a legend to differentiate between ''median'', ''lower_95'',
+  and ''upper_95''?
+
+  6. Do you want to add a title to the chart? If so, what should it be?
+
+  7. Should the X-axis (for ''taxa'') be sorted in any specific order?
+
+  8. Would you like the chart to have any specific dimensions or aspect ratio?
+
+  9. Do you have a preference for the font size and style of the axis labels?
+
+  10. Should the Y-axis have a specific range, or should it be auto-scaled based on
+  the data?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend to differentiate between ''median'', ''lower_95'',
+  and ''upper_95''.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. Auto-scaled based on the data is fine.'
+data_attributes:
+- taxa
+- median
+- lower_95
+- upper_95

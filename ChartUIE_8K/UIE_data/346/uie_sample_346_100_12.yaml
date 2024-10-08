@@ -1,0 +1,54 @@
+initial_prompt: I have a dataset of global video game sales, and I'm interested in
+  visualizing the sales trends over time. Can you help me create a line chart showing
+  global sales for the top 5 games over the years? I would like the x-axis to represent
+  the years and the y-axis to show global sales in millions. The lines should represent
+  each of the top 5 games. Additionally, please consider any missing values and handle
+  them appropriately, so the chart remains accurate and informative. Thank you!
+questions: '1. Do you have any specific color preferences for the lines representing
+  each of the top 5 games?
+
+  2. Would you like any specific line styles (e.g., solid, dashed, dotted) for each
+  game?
+
+  3. Do you prefer any particular font style or size for the axis labels and title?
+
+  4. Should we add data markers (e.g., dots at each data point) on the lines for emphasis?
+
+  5. Is there a specific way you want to handle the missing values (e.g., interpolation,
+  removing)?
+
+  6. Do you have any preferences for the chart background (e.g., grid lines, color)?
+
+  7. Would you like to include legends on the chart to identify each game?
+
+  8. Should we add any annotations or trend lines to highlight specific events or
+  trends?
+
+  9. Do you want any specific formatting for the y-axis labels (e.g., currency format,
+  decimal places)?
+
+  10. Are there any additional notes or information you would like to include on the
+  chart?'
+answers: '1. I do not know.
+
+  2. I am not sure, any style you think works best is fine.
+
+  3. I have no specific preference.
+
+  4. Yes, please add data markers on the lines for emphasis.
+
+  5. Please use interpolation to handle the missing values.
+
+  6. I am not sure, any standard format is fine.
+
+  7. Yes, please include legends to identify each game.
+
+  8. I do not know.
+
+  9. No specific formatting needed, just keep it simple.
+
+  10. No additional notes or information needed.'
+data_attributes:
+- Year
+- Global_Sales
+- Name

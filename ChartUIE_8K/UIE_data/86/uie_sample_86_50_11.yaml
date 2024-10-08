@@ -1,0 +1,41 @@
+initial_prompt: Create a radar chart comparing acousticness, danceability, energy,
+  instrumentalness, liveness, loudness, speechiness, tempo, valence for sampled songs
+  'Mask Off', 'Redbone', 'Xanny Family'. Use Spotify song attributes data provided.
+questions: '1. Do you have a preferred color scheme for the radar chart?
+
+  2. Would you like the chart to include labels for each attribute and song title?
+
+  3. Should we include grid lines for better readability?
+
+  4. Do you want each song to be represented with a different line style or marker?
+
+  5. Is there a specific order you want the attributes to be displayed in around the
+  radar chart?
+
+  6. Would you like the values to be normalized to a common scale?
+
+  7. Should we include a legend to differentiate the songs?'
+answers: '1. I am not sure.
+
+  2. Yes, please include labels for each attribute and song title.
+
+  3. Yes, include grid lines for better readability.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Yes, include a legend to differentiate the songs.'
+data_attributes:
+- acousticness
+- danceability
+- energy
+- instrumentalness
+- liveness
+- loudness
+- speechiness
+- tempo
+- valence
+- song_title

@@ -1,0 +1,52 @@
+initial_prompt: Create a scatter plot to visualize the election data. Plot "Electorate"
+  on the x-axis and "CON(%)", "LAB(%)", and "LIB(%)" on the y-axis for different MPs.
+  Highlight the winning party in each constituency using different colors. Add annotations
+  for key constituencies such as 'Aldershot', 'Aldridge-Brownhills', and 'Altrincham
+  and Sale West' to show values and winning party. The purpose is to explore voting
+  distribution across counties and identify patterns in voter preferences and party
+  dominance. The context is political analysis during elections.
+questions: '1. Do you have any specific preferences for the color scheme to represent
+  different winning parties?
+
+  2. Are there any additional constituencies besides ''Aldershot'', ''Aldridge-Brownhills'',
+  and ''Altrincham and Sale West'' you would like to highlight?
+
+  3. How would you prefer the annotations to be displayed (e.g., tooltips, labels
+  directly on the chart)?
+
+  4. Do you have any preferences for the chart title and axis labels?
+
+  5. Would you like to include a legend to explain the colors and symbols used?
+
+  6. Are there any specific font styles or sizes you prefer for the text elements?
+
+  7. Do you want to include grid lines in the background for better readability?
+
+  8. Do you have any preferences for the markers and their sizes used to represent
+  different data points?
+
+  9. Should we include a summary or key takeaways from the data directly on the chart?'
+answers: '1. I am not sure.
+
+  2. No, just those three constituencies are fine.
+
+  3. Labels directly on the chart.
+
+  4. I do not know.
+
+  5. Yes, please include a legend.
+
+  6. I have no specific preference.
+
+  7. Yes, include grid lines.
+
+  8. I do not know.
+
+  9. No, just the plot is fine.'
+data_attributes:
+- Electorate
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Winner
+- Name

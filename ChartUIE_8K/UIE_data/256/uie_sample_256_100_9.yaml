@@ -1,0 +1,43 @@
+initial_prompt: Create a parallel coordinates chart using the ECG of Cardiac Ailments
+  Dataset, focusing on columns like "hbpermin," "PQseg," "QRSseg," "QTseg," and "STseg."
+  Highlight patterns across these attributes to help visualize differences in ECG
+  signals for cardiac conditions. Make sure to include labels for better understanding
+  and color-code the lines based on the "ECG_signal" column. This chart will help
+  in identifying trends and anomalies in heartbeats and segments that can indicate
+  various cardiac issues. Ensure the chart is interactive for detailed exploration
+  and analysis.
+questions: "1. Do you have any preference for the color palette used for color-coding\
+  \ the lines based on the 'ECG_signal' column?\n2. Should the chart include grid\
+  \ lines for better readability?\n3. Do you prefer any specific style or font for\
+  \ the labels?\n4. Would you like to add tooltips for additional data points or explanations\
+  \ when hovering over the lines?\n5. Should the axis ranges be automatically scaled,\
+  \ or would you prefer to set custom ranges?\n6. Do you have any specific preferences\
+  \ for the line styles or thickness? \n7. Should we include a legend to explain the\
+  \ color-coding of the 'ECG_signal' column?\n8. Would you like to display any statistical\
+  \ summaries or markers for key data points or anomalies on the chart?"
+answers: '1. I am not sure about the color palette, go with what you think is best.
+
+  2. Yes, the chart should include grid lines for better readability.
+
+  3. I have no specific preference for the style or font for the labels.
+
+  4. Yes, please add tooltips for additional data points or explanations when hovering
+  over the lines.
+
+  5. I am not sure about the axis ranges, you can decide what''s best.
+
+  6. I do not know about the line styles or thickness, choose what you think works
+  well.
+
+  7. Yes, please include a legend to explain the color-coding of the ''ECG_signal''
+  column.
+
+  8. I would like to display statistical summaries or markers for key data points
+  or anomalies on the chart.'
+data_attributes:
+- hbpermin
+- PQseg
+- QRSseg
+- QTseg
+- STseg
+- ECG_signal

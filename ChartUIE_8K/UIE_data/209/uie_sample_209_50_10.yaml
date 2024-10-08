@@ -1,0 +1,40 @@
+initial_prompt: Create a treemap of the New York Housing Market showing property counts
+  and distribution by type, price, and location. Highlight the most expensive properties
+  and their brokers.
+questions: '1. What color palette do you prefer for distinguishing different property
+  types in the treemap?
+
+  2. Do you have a preference for the specific threshold to define ''most expensive''
+  properties to be highlighted?
+
+  3. Would you like the broker''s name to be displayed on the treemap directly or
+  in a tooltip on hover?
+
+  4. How should we handle properties with the same price to avoid overlap in the treemap?
+
+  5. Should the treemap include labels for each location, or is a hover feature sufficient
+  for displaying location details?
+
+  6. Do you prefer any specific method for sorting the property types within the treemap
+  (e.g., by price, by location)?
+
+  7. Are there any particular textual annotations or legends you would like to include
+  in the treemap?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I think labels for each location would be good.
+
+  6. I do not know.
+
+  7. I do not know.'
+data_attributes:
+- BROKERTITLE
+- TYPE
+- PRICE
+- LOCALITY

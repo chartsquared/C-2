@@ -1,0 +1,52 @@
+initial_prompt: I need a box chart to visualize the cardiovascular disease dataset,
+  focusing on different age groups and their corresponding resting blood pressure
+  levels. The data should be categorized by gender and chest pain type. This will
+  help understand the distribution of blood pressure readings across various age brackets,
+  and how these factors interplay with cardiovascular health risks. The chart should
+  include age on the x-axis and resting blood pressure on the y-axis, with separate
+  box plots for each gender and chest pain category. Highlight any significant outliers
+  or trends, particularly in relation to the target variable.
+questions: '1. What color schemes do you prefer for distinguishing between genders
+  and chest pain types in the chart?
+
+  2. Would you like to include gridlines on the chart for better readability?
+
+  3. Do you prefer a particular style for the box plots (e.g., traditional, with notches)?
+
+  4. Should the age groups be evenly split, or do you have specific age brackets in
+  mind?
+
+  5. Would you like to display the actual data points on the box plots to identify
+  individual readings?
+
+  6. Should outliers be color-coded or highlighted in a specific manner?
+
+  7. Do you prefer any specific labels or annotations for trends and significant findings?
+
+  8. Is there a particular font style or size you prefer for axis labels and titles?
+
+  9. Would you like to include a legend or a description box to explain the chart
+  elements?'
+answers: '1. I do not know.
+
+  2. Yes, include gridlines for better readability.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, displaying the actual data points on the box plots would be helpful.
+
+  6. Yes, please color-code or highlight the outliers.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. Yes, include a legend or a description box to explain the chart elements.'
+data_attributes:
+- age
+- gender
+- chestpain
+- restingBP
+- target

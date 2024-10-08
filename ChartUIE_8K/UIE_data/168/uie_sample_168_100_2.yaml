@@ -1,0 +1,39 @@
+initial_prompt: Please visualize the UCI Heart Disease dataset with a histogram showing
+  the distribution of 'age' across all samples. Highlight key age groups with different
+  colors to easily identify risk groups. Add text annotations to showcase critical
+  values like mean and median ages. Also, highlight elements where any heart disease
+  condition ('num' > 0) appears. The histogram should help in understanding the age
+  distribution and its correlation with heart disease prevalence. This visualization
+  aims to provide insights into which age groups are most affected by heart disease,
+  aiding in targeted healthcare strategies.
+questions: '1. What color palette would you prefer for highlighting different age
+  groups and risk groups?
+
+  2. Do you have a specific range for age groups that you would like to see highlighted,
+  or should default intervals be used?
+
+  3. Where would you prefer the text annotations for mean and median ages to be placed
+  within the chart?
+
+  4. Do you have a preference for the style and format of the text annotations (e.g.,
+  font size, color)?
+
+  5. Is there a specific way you would like the elements with heart disease conditions
+  (''num'' > 0) to be highlighted (e.g., a distinct color or marker)?
+
+  6. How many bins would you like in the histogram, or would you prefer an automatically
+  determined optimal number of bins?'
+answers: '1. I am not sure.
+
+  2. Default intervals can be used.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. A distinct color would be good.
+
+  6. I would prefer an automatically determined optimal number of bins.'
+data_attributes:
+- age
+- num

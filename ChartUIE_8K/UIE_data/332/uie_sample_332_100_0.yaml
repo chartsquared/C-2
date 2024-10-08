@@ -1,0 +1,57 @@
+initial_prompt: Create a bar chart to visualize the types of DNA mutations. Highlight
+  the different mutation types ('Missense Substitution', 'Silent Substitution', etc.)
+  with different colors. Add text annotations to show actual values of unique positions,
+  reference codons, and query codons on each bar. This can help identify which mutations
+  are most prevalent and draw attention to specific data points. Use highlights to
+  emphasize important bars to clearly distinguish various mutation types. The chart
+  should help in understanding the frequency and type distribution of mutations for
+  further biological analysis.
+questions: '1. Do you have a preferred color scheme for highlighting different mutation
+  types?
+
+  2. Would you like the bars to be sorted in any specific order (e.g., by frequency
+  of mutation types or alphabetically)?
+
+  3. Do you have any preferences for the font size and style of text annotations for
+  values of unique positions, reference codons, and query codons?
+
+  4. Should the bars have any particular width or spacing between them?
+
+  5. Do you want to include a legend to explain the color coding of mutation types?
+
+  6. Would you prefer specific labels or titles for the axes and the chart itself?
+
+  7. Are there any specific bars or mutation types you would like to emphasize more
+  than others?
+
+  8. Do you have any preference for the display format of numerical values (e.g.,
+  integer or decimal)?
+
+  9. Would you like to include grid lines or not? If yes, any specific preference
+  on their style?
+
+  10. Is there a specific chart size or aspect ratio you have in mind?'
+answers: '1. I am not sure.
+
+  2. By frequency of mutation types.
+
+  3. I do not have a specific preference.
+
+  4. I do not know.
+
+  5. Yes, include a legend.
+
+  6. I do not have a specific preference.
+
+  7. Emphasize ''Missense Substitution'' and ''Silent Substitution''.
+
+  8. Integer format.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Position
+- Reference_Codon
+- Query_Codon
+- Mutation_Type

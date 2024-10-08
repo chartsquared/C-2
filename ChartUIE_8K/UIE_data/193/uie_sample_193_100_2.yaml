@@ -1,0 +1,48 @@
+initial_prompt: Please create a violin plot to visualize the star data, focusing on
+  the distribution of 'Temperature', 'L', 'R', and 'A_M' across different 'Type' categories.
+  Highlight significant differences in these distributions to aid in the classification
+  of star types. Annotate key points to emphasize unique values or outliers, and provide
+  comments to contextualize these findings, especially in relation to their 'Color'
+  and 'Spectral_Class'. Make the plot visually appealing and informative, aligning
+  with the Star Type Classification used by NASA.
+questions: '1. Do you have any preferred color schemes for distinguishing different
+  ''Type'' categories?
+
+  2. Would you prefer specific markers or shapes for annotating unique values or outliers?
+
+  3. Is there a particular style or format you prefer for the annotations and comments
+  on the chart?
+
+  4. Do you have any preferences for the axis labels and title formatting?
+
+  5. Should the plot background be plain or have a grid for better reference?
+
+  6. Do you have any specific requirements for the legend placement or style?
+
+  7. Would you prefer any special font types or sizes for the text annotations and
+  comments?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I do not know.
+
+  4. No specific preferences.
+
+  5. A grid for better reference would be nice.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- Temperature
+- L
+- R
+- A_M
+- Type
+- Color
+- Spectral_Class

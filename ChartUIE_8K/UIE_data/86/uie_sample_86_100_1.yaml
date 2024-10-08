@@ -1,0 +1,48 @@
+initial_prompt: Please create a histogram using the Spotify Song Attributes data.
+  The histogram should display the distribution of 'danceability' scores among the
+  songs. Use text annotations to highlight the mean value of 'danceability' and any
+  notable outliers. Additionally, use visual highlights such as color changes to emphasize
+  these annotated points. The purpose of this visualization is to understand the overall
+  danceability trend in the dataset, helping to see if most songs are generally danceable
+  or not. This will give insights into the general tempo and rhythm trends in popular
+  songs.
+questions: '1. Do you have a specific range of ''danceability'' scores that you would
+  like to focus on in the histogram?
+
+  2. What color scheme would you prefer for highlighting the mean value and outliers
+  in the histogram?
+
+  3. Are there specific bin widths or number of bins you would prefer for the histogram?
+
+  4. Would you prefer to include any labels or titles for the x-axis and y-axis?
+
+  5. Do you have any preferences for the overall style or theme of the histogram (e.g.,
+  minimalist, detailed, color palette)?
+
+  6. Would you like the mean value and outliers to be annotated with specific labels
+  or text descriptions? If yes, please specify.
+
+  7. Is there a specific font style or size you would like to use for the text annotations?
+
+  8. Do you want any additional statistics or metrics displayed on the histogram besides
+  the mean value and outliers?'
+answers: '1. I am not sure.
+
+  2. I would prefer a blue color for highlighting the mean value and a red color for
+  outliers.
+
+  3. I do not have a specific preference.
+
+  4. Yes, please include labels for the x-axis as ''Danceability Scores'' and the
+  y-axis as ''Number of Songs''.
+
+  5. I do not know.
+
+  6. Yes, please annotate the mean value with ''Mean Danceability'' and the outliers
+  with ''Outlier'' labels.
+
+  7. I do not know.
+
+  8. No, just the mean value and outliers are fine.'
+data_attributes:
+- danceability

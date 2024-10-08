@@ -1,0 +1,53 @@
+initial_prompt: <start of the annotation list> Create a histogram using the weather
+  dataset, focusing on the 'temp_max' column to visualize the distribution of maximum
+  temperatures over the recorded period. Highlight the bins with most frequent temperatures
+  distinctively. Use text annotations to emphasize specific frequency values and make
+  them stand out. The purpose of this visualization is to understand how extreme or
+  mild the weather has been across the years. Provide additional context about unusual
+  temperature patterns if any. Ensure all chart elements are clearly labeled for better
+  understanding. <end of the annotation list>
+questions: '1. Do you have a preferred color scheme for the bins and highlights in
+  the histogram?
+
+  2. What range of temperatures would you consider as ''extreme'' or ''unusual''?
+
+  3. Would you like a specific bin width for the histogram, or should it be auto-calculated?
+
+  4. How would you like unusual temperature patterns to be represented on the chart?
+
+  5. Do you want any specific labels or legends for highlighted temperature bins?
+
+  6. Are there any specific years or periods you want to focus on within the recorded
+  timeframe?
+
+  7. Do you have a preference for the placement and style of text annotations?
+
+  8. Would you like the axis titles to be formatted in a particular way, e.g., font
+  size or style?
+
+  9. Should the chart include a title or subtitle? If yes, do you have any specific
+  wording in mind?
+
+  10. Would you like gridlines to be included or excluded from the chart?'
+answers: '1. I am not sure about the color scheme.
+
+  2. I would consider temperatures above 35°C or below 0°C as ''extreme''.
+
+  3. I do not have a specific preference, auto-calculated is fine.
+
+  4. I am not sure how they should be represented.
+
+  5. No, I do not need specific labels or legends for the highlighted bins.
+
+  6. I do not have any specific years or periods to focus on.
+
+  7. I am not sure about the placement and style of text annotations.
+
+  8. I do not know about the axis titles, no specific preference.
+
+  9. Yes, please include a title. Something like "Distribution of Maximum Temperatures
+  Over the Years".
+
+  10. I do not have a preference about gridlines.'
+data_attributes:
+- temp_max

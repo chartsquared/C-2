@@ -1,0 +1,58 @@
+initial_prompt: Create a heatmap to visualize bike and pedestrian traffic at different
+  times of the day for various crossings. Use the 'date' column to represent the time
+  of day, and show data across different 'crossing' locations. 'bike_count' and 'ped_count'
+  should be represented with varying colors to indicate density. Focus on high-traffic
+  areas and times, highlighting trends or patterns. Ensure missing values do not skew
+  the results. This will help in understanding and optimizing urban-planning for Seattle's
+  green wave initiative. Use clear labels for times, crossings, and counts for readability.
+questions: '1. Do you have specific color preferences for representing high, medium,
+  and low densities?
+
+  2. Is there a preferred color scheme for ''bike_count'' and ''ped_count'', or can
+  they be the same?
+
+  3. Would you like the time of day to be broken down into specific intervals (e.g.,
+  hourly, every 30 minutes)?
+
+  4. Should weekends and weekdays be shown separately, or can they be combined?
+
+  5. Do you want any specific focus or emphasis on certain crossings or times of day?
+
+  6. Would you prefer the heatmap to show absolute counts or normalized counts (e.g.,
+  density relative to the maximum observed count)?
+
+  7. Is there a preference for how missing values should be handled or indicated on
+  the heatmap?
+
+  8. Are there any specific labels or legends you''d like to be included or customized
+  (e.g., specific font size, style)?
+
+  9. Do you have a preferred layout or orientation for the heatmap (e.g., time on
+  the x-axis and crossing on the y-axis, or vice versa)?
+
+  10. Would you like annotations or markers on high-traffic areas and times for better
+  readability?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. Hourly intervals would be great.
+
+  4. I do not know.
+
+  5. Focus on high-traffic crossings and times, please.
+
+  6. Absolute counts would be preferred.
+
+  7. Please ensure missing values do not skew the results.
+
+  8. I have no specific preference.
+
+  9. Time on the x-axis and crossing on the y-axis sounds good.
+
+  10. Yes, annotations on high-traffic areas and times would help with readability.'
+data_attributes:
+- date
+- crossing
+- bike_count
+- ped_count

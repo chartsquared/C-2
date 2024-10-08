@@ -1,0 +1,41 @@
+initial_prompt: I need a heatmap for the Lok Sabha Election Results 2024 in India.
+  Use the provided data to visualize the leading and trailing parties across different
+  constituencies. The heatmap should display constituencies on the x-axis and parties
+  on the y-axis, highlighting the number of constituencies led and trailed by each
+  party. Differentiating colors should indicate margins to show which candidates had
+  larger or smaller winning margins. Include clear labels and a legend for easy interpretation.
+  Make sure to manage the missing data and maintain readability with an appropriate
+  color scale.
+questions: '1. Do you have a preferred color scheme for differentiating margins?
+
+  2. What specific labels or titles would you like to include on the axes?
+
+  3. How would you like to handle the missing data in the heatmap?
+
+  4. Do you prefer a specific ordering for the constituencies and parties on the axes?
+
+  5. Are there any specific constituencies or parties you would like to highlight
+  in the heatmap?
+
+  6. Do you have a preferred format or style for the legend?
+
+  7. Would you like to include any additional information or annotations on the heatmap?'
+answers: '1. I am not sure.
+
+  2. Constituencies on the x-axis and Parties on the y-axis. Title: "Lok Sabha Election
+  Results 2024".
+
+  3. Please handle missing data with a neutral color or grey.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. No, additional information or annotations are not necessary.'
+data_attributes:
+- Constituency
+- Leading Party
+- Trailing Party
+- Margin

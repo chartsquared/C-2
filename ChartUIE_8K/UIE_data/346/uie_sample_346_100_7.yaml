@@ -1,0 +1,56 @@
+initial_prompt: Create a heatmap to visualize the relationship across different regions'
+  sales (NA_Sales, EU_Sales, JP_Sales, Other_Sales) of video games. Color intensity
+  should represent the sales volume. Use data filtering for significant publishers
+  and genres, highlighting notable trends. Optionally, subset data by era (pre-2000
+  vs post-2000) to show shifts over time. Ensure data clarity with appropriate axis
+  labels and color gradients. Highlight high-selling games to emphasize sales spikes.
+  Use descriptive titles and legends to provide context. The heatmap should reveal
+  sales concentration differences across regions and over time.
+questions: '1. Do you have any specific preference for the color gradient used in
+  the heatmap?
+
+  2. Are there any particular publishers or genres you would like to focus on?
+
+  3. How would you prefer high-selling games to be highlighted? (e.g., bold outlines,
+  different color tones)
+
+  4. Do you have a preference for the time segmentation between pre-2000 and post-2000?
+
+  5. Is there a specific title or description you would like to use for the heatmap
+  and its legend?
+
+  6. Would you like to include any particular axis labels or text annotations to enhance
+  data clarity?
+
+  7. Are there any specific regions (NA, EU, JP, Other) you would like to emphasize
+  more in the heatmap?
+
+  8. Is there a specific threshold for sales volume that you want to set for filtering
+  significant data points?'
+answers: '1. I am not sure, I have no specific preference.
+
+  2. I do not know, I have no specific preference.
+
+  3. I would prefer high-selling games to be highlighted with bold outlines.
+
+  4. I am not sure, whatever works best to show trends over time.
+
+  5. No specific title in mind, but something descriptive of video game sales across
+  regions would be good.
+
+  6. Yes, clear axis labels for NA_Sales, EU_Sales, JP_Sales, and Other_Sales would
+  be appreciated.
+
+  7. I do not know, no specific preference.
+
+  8. I do not have a specific threshold, but focusing on significant sales figures
+  that stand out would be great.'
+data_attributes:
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales
+- Genre
+- Publisher
+- Year
+- Name

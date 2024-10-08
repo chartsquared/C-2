@@ -1,0 +1,59 @@
+initial_prompt: Create a bar chart to compare different primate species based on their
+  average percentage of fat, protein, and lactose. Highlight the species with the
+  highest and lowest values in each category. Add text annotations to display the
+  exact percentage values for these highlighted species. The purpose of this visualization
+  is to understand the nutritional composition of primate milk and its potential relationship
+  to brain size. This can visually emphasize how nutrition might correlate with neocortex
+  percentage, which will aid in analyzing biological and evolutionary trends.
+questions: '1. Would you prefer a horizontal or vertical bar chart?
+
+  2. Do you have any specific color preferences for the bars representing fat, protein,
+  and lactose?
+
+  3. How would you like the highlighted species (with the highest and lowest values)
+  to be indicated? For example, different colors, border outlines, or shading?
+
+  4. Is there a specific font style or size you prefer for the text annotations displaying
+  the exact percentage values?
+
+  5. Would you like the chart to include grid lines, and if so, should they be major
+  or minor grid lines?
+
+  6. Do you have any preference for the background color of the chart?
+
+  7. Should the chart include a title and subtitle, and if so, what text should be
+  used?
+
+  8. Do you want axis labels for both the x-axis and y-axis? If so, what specific
+  labels would you prefer?
+
+  9. Would you like a legend to differentiate among fat, protein, and lactose percentages,
+  and where would you like it positioned?
+
+  10. Should the chart include any additional information or annotations related to
+  neocortex percentage, or focus solely on the nutritional components?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Different colors.
+
+  4. I am not sure.
+
+  5. Major grid lines.
+
+  6. I do not know.
+
+  7. Yes. Title: "Nutritional Composition of Primate Milk". Subtitle: "Comparison
+  of Fat, Protein, and Lactose Percentages".
+
+  8. Yes. X-axis: "Primate Species". Y-axis: "Percentage Composition".
+
+  9. Yes, positioned at the top right.
+
+  10. Focus solely on the nutritional components.'
+data_attributes:
+- species
+- perc.fat
+- perc.protein
+- perc.lactose

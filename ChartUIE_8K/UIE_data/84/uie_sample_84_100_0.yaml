@@ -1,0 +1,59 @@
+initial_prompt: Create a heatmap to visualize the water quality data. Highlight missing
+  values for columns like 'ph' and 'Sulfate', and use text annotations to display
+  unique values. Color-code each cell based on 'Potability' to differentiate potable
+  and non-potable water. Display the data types and emphasize missing values with
+  highlights to capture the viewer's attention for better data quality assessment
+  and energy analysis. This will help in identifying which areas have incomplete data
+  and need attention for better water quality management. Show sample data points
+  for context and clarity.
+questions: '1. Do you have any color preferences for highlighting missing values and
+  representing different potability statuses (potable vs non-potable)?
+
+  2. Would you prefer a specific scale or gradient for the heatmap colors?
+
+  3. Should the annotations display the full unique value or can they be abbreviated?
+
+  4. Do you want any specific format or style for the text annotations?
+
+  5. Is there a preferred label or legend setup for better readability and understanding
+  of the chart?
+
+  6. Do you need any additional markers or indicators other than highlights for missing
+  values?
+
+  7. Should the sample data points be displayed in a specific format or area on the
+  chart?
+
+  8. Do you have any preferences for the gridlines or cell borders on the heatmap
+  for better visual clarity?
+
+  9. Would you like to include any additional contextual information or notes directly
+  on the heatmap?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. The annotations can display the full unique values.
+
+  4. I do not have any specific preference for the text annotations style.
+
+  5. I prefer a clear and concise label or legend setup for readability.
+
+  6. I do not know.
+
+  7. The sample data points should be displayed clearly alongside the heatmap.
+
+  8. I do not have any specific preference for the gridlines or cell borders.
+
+  9. I do not know.'
+data_attributes:
+- ph
+- Sulfate
+- Potability
+- Hardness
+- Solids
+- Chloramines
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity

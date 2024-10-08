@@ -1,0 +1,37 @@
+initial_prompt: Create a stacked bar chart visualizing the count of different 'class'
+  values (STAR, GALAXY) across various 'run' values. Annotate the chart to highlight
+  specific bars where the count of 'GALAXY' significantly exceeds 'STAR.' Utilize
+  color highlights to distinguish between the different classes for better visualization.
+  This will help in understanding the distribution of celestial objects over different
+  observational runs in the Sloan Digital Sky Survey DR14. Add text annotations to
+  indicate the most and least frequent 'run' values.
+questions: '1. Do you have any specific color preferences for distinguishing between
+  the ''STAR'' and ''GALAXY'' classes?
+
+  2. Would you like to set a specific threshold for what constitutes a ''significant''
+  difference between ''GALAXY'' and ''STAR'' counts, or should this be determined
+  automatically?
+
+  3. Are there any specific fonts or font sizes you prefer for the text annotations?
+
+  4. Do you have a preference for the positioning of the annotations indicating the
+  most and least frequent ''run'' values?
+
+  5. Should the y-axis be displayed with a particular scale (e.g., logarithmic) or
+  specific range?
+
+  6. Do you prefer the chart to include a legend, and if so, should it be placed in
+  a specific location on the chart?
+
+  7. How would you like the bars to be sorted (e.g., by ''run'' values in ascending
+  order, descending order, or based on the count of ''GALAXY'' values)?'
+answers: "1. I am not sure about specific color preferences.\n2. I do not know, let's\
+  \ determine the significant difference automatically.\n3. I do not have a specific\
+  \ preference for fonts or font sizes.\n4. I do not have a preference for the positioning\
+  \ of the annotations indicating the most and least frequent 'run' values.\n5. I\
+  \ am not sure about the y-axis scale. \n6. Yes, please include a legend. I do not\
+  \ have a preference for its location.\n7. I have no specific preference, sorting\
+  \ by 'run' values in ascending order is probably fine."
+data_attributes:
+- class
+- run

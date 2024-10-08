@@ -1,0 +1,57 @@
+initial_prompt: Please create a candlestick chart for Jumia stock prices using the
+  data provided. The x-axis should represent the 'Date' and the y-axis should represent
+  the stock prices. Each candlestick should show the 'Open', 'High', 'Low', and 'Close'
+  values for each respective date. This will help in visualizing the price movements
+  over time. Include volumes as a secondary chart in the same figure to show trade
+  volumes for each date. Make sure the chart is clear and the dates are readable.
+  Thank you!
+questions: '1. Do you have any preference for the chart''s color scheme?
+
+  2. What is your preferred style for candlesticks (e.g., traditional, hollow)?
+
+  3. Do you want grid lines to be shown on the chart for better readability?
+
+  4. Would you like to add specific annotations or markers to highlight key events
+  or dates?
+
+  5. Do you have a preference for the position and style of the legend on the chart?
+
+  6. Should the volume bars be displayed in a specific color or pattern?
+
+  7. Do you want any additional labels or titles on the chart (e.g., chart title,
+  subtitles, axis labels)?
+
+  8. Is there any specific date range you want to focus on, or should the chart display
+  the entire data set?
+
+  9. Would you like to see any trend lines or moving averages overlaid on the candlestick
+  chart?
+
+  10. Are there any additional visual elements or effects you would like to incorporate
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. Traditional
+
+  3. Yes, please
+
+  4. I do not know
+
+  5. I am not sure
+
+  6. I do not know
+
+  7. Yes, please add a chart title and axis labels
+
+  8. Display the entire data set
+
+  9. No, thank you
+
+  10. I do not know'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

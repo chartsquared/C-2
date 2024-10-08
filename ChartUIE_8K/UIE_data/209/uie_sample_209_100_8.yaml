@@ -1,0 +1,56 @@
+initial_prompt: Please create a stacked bar chart visualizing the relationship between
+  property type ("TYPE") and the number of beds ("BEDS") for the New York housing
+  market. Each bar should represent a type of property and be divided into segments
+  based on the number of beds, showing how many properties of each type fall into
+  each bed category. This will help us understand the distribution of bed counts across
+  different property types in the market. Use different colors for each bed category
+  to make the segments easily distinguishable. Thank you!
+questions: '1. Do you have any specific color preferences or a color palette you would
+  like to use for different bed categories?
+
+  2. What is your preferred order for displaying property types on the x-axis?
+
+  3. Do you want to include labels for the segments representing the number of properties
+  in each bed category?
+
+  4. Would you like to include a legend to map colors to bed categories?
+
+  5. Is there a specific title you would like for the chart?
+
+  6. Do you prefer to include gridlines for better readability? If so, should they
+  be for both axes or only one?
+
+  7. Would you like to add axis titles for the x-axis and y-axis? If yes, what should
+  they be?
+
+  8. Are there any specific font styles or sizes you prefer for chart labels and titles?
+
+  9. Would you like to highlight any specific property type or bed category in the
+  chart?
+
+  10. Do you have any preferences for the chart''s overall layout, such as its aspect
+  ratio or size?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to include labels for the segments representing the number
+  of properties in each bed category.
+
+  4. Yes, please include a legend to map colors to bed categories.
+
+  5. The title can be "Distribution of Beds Across Property Types in New York Housing
+  Market."
+
+  6. Yes, include gridlines for both axes for better readability.
+
+  7. Yes, for the x-axis: "Property Type" and for the y-axis: "Number of Properties."
+
+  8. I am not sure.
+
+  9. I do not have any specific preference.
+
+  10. I have no specific preference.'
+data_attributes:
+- TYPE
+- BEDS

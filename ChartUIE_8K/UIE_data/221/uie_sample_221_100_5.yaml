@@ -1,0 +1,44 @@
+initial_prompt: I have trip data including Trip ID, Destination, Dates, Duration,
+  Traveler details, and Costs. I need a heatmap that visualizes the relationship between
+  different destinations and average accommodation cost. Also, show how traveler age
+  correlates with transportation cost across various destinations. The heatmap should
+  help identify patterns or trends in costs associated with different traveler demographics
+  and destination preferences. Please ensure the heatmap highlights high and low-cost
+  areas prominently. Provide clear labels for all axes and a legend explaining the
+  color gradients used for cost variations. Thank you!
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Do you prefer specific color gradients to represent high and low-cost areas?
+
+  3. What range of ages would you like to be highlighted for traveler age correlations?
+
+  4. Would you like to include any specific annotation or markers on the heatmap?
+
+  5. Do you have a preference for the size or format of the heatmap?
+
+  6. Are there any specific destinations you want to ensure are prominently featured?
+
+  7. Is there a specific way you want the data to be grouped or categorized on the
+  heatmap?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Ages between 20 and 60, please.
+
+  4. I am not sure.
+
+  5. No specific preference.
+
+  6. I do not know.
+
+  7. Group data by destination.
+
+  <end of user response>'
+data_attributes:
+- Destination
+- Accommodation cost
+- Traveler age
+- Transportation cost

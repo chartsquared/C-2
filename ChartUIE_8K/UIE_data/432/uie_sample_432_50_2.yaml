@@ -1,0 +1,52 @@
+initial_prompt: Create a bar chart showing the total votes per episode for a TV series.
+  Use text annotations to highlight episodes with the highest IMDB ratings. Emphasize
+  the air dates for these highlighted episodes.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Should the bars be grouped by season or displayed consecutively by episode?
+
+  3. Would you like the episode titles to be displayed on the x-axis or as tooltips?
+
+  4. Do you have a preferred font style and size for the text annotations?
+
+  5. How many top-ranked episodes would you like to highlight based on IMDB ratings?
+
+  6. Should the air dates be displayed as part of the text annotations or as separate
+  labels?
+
+  7. Is there a specific layout or orientation you prefer for the chart (e.g., horizontal
+  versus vertical bars)?
+
+  8. Do you have a preference for the range or scale of the y-axis representing total
+  votes?
+
+  9. Would you like any specific legend or explanatory notes to be included in the
+  chart?
+
+  10. Are there any additional visual elements or highlights you would like to add?'
+answers: '1. I am not sure.
+
+  2. Displayed consecutively by episode.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. I want to highlight the top 3 highest-rated episodes.
+
+  6. The air dates should be displayed as part of the text annotations.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. I have no specific preference.'
+data_attributes:
+- season
+- episode
+- title
+- imdb_rating
+- total_votes
+- air_date

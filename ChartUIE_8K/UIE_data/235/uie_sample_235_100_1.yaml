@@ -1,0 +1,41 @@
+initial_prompt: Create a histogram using the provided medical insurance dataset. Focus
+  on visualizing the distribution of 'charges' as the main variable. Apply text annotations
+  to highlight specific data points, such as the highest and lowest charges. Utilize
+  highlights to distinguish between smokers and non-smokers, and add a legend to clarify
+  this distinction. The purpose of this chart is to better understand the range and
+  frequency of medical charges and how smoking status potentially influences costs.
+  Include context regarding the business utility of predicting insurance costs.
+questions: '1. Do you have a specific color preference for highlighting smokers and
+  non-smokers in the histogram?
+
+  2. Would you prefer a particular style or font for the text annotations?
+
+  3. Is there a specific range or bin size you would like for the histogram?
+
+  4. Do you have a preference for the position and style of the legend on the chart?
+
+  5. Are there any additional contextual details you would like included in the annotations
+  or in the chart title?
+
+  6. Should the chart include any specific statistical measures (e.g., mean, median)
+  alongside the distribution visualization?
+
+  7. Do you prefer the highest and lowest charges to be highlighted using different
+  colors or some other method?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I think including the mean would be useful.
+
+  7. Yes, I prefer the highest and lowest charges to be highlighted using different
+  colors.'
+data_attributes:
+- charges
+- smoker

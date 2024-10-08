@@ -1,0 +1,37 @@
+initial_prompt: Please create a heatmap to visualize the heartbeat sounds dataset.
+  The chart should use color intensity to represent the density of data points across
+  different labels and sublabels. Highlight segments where labels are missing to easily
+  identify gaps in data. Use text annotations to call out specific data points, highlighting
+  areas with 'artifact' labels for closer inspection. This will help in focusing on
+  patterns and variations. The purpose is to provide a clear visual overview of the
+  dataset, emphasizing areas that need further analysis or have significant findings.
+questions: '1. Do you have a preferred color palette for the heatmap to represent
+  different densities?
+
+  2. How would you like missing labels to be highlighted (e.g., specific color, pattern)?
+
+  3. What level of detail should the text annotations include for specific data points?
+
+  4. Is there a specific size for the text annotations you would prefer?
+
+  5. Should the background of the heatmap be a particular color or gradient?
+
+  6. Are there any specific labels or sublabels other than ''artifact'' that need
+  to be highlighted?
+
+  7. What are your preferences for the axis labels and titles?
+
+  8. Do you have a preferred layout or aspect ratio for the heatmap?
+
+  9. Should the chart include a legend to explain the color intensities?
+
+  10. Do you have any preferences for the font type and size for the text annotations
+  and labels?'
+answers: "<start of user emulated response>\n1. I am not sure.\n2. Maybe a specific\
+  \ color, like red, to highlight missing labels.\n3. I do not know. \n4. I am not\
+  \ sure.\n5. I have no specific preference.\n6. I am not sure.\n7. No specific preferences.\n\
+  8. I do not know.\n9. Yes, please include a legend to explain the color intensities.\n\
+  10. I have no specific preference.\n<end of user emulated response>"
+data_attributes:
+- label
+- sublabel

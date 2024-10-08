@@ -1,0 +1,44 @@
+initial_prompt: I have a dataset about heart failure prediction. Can you help me create
+  a line chart using the provided data? Specifically, I would like to visualize the
+  trend of MaxHR (maximum heart rate) across different ages for both males and females.
+  Additionally, it would be great to differentiate between those who have heart disease
+  and those who do not. This will help me understand how heart rate varies with age
+  and gender in relation to heart failure. Please make sure the line chart is clear
+  and includes legends for gender and heart disease status. Thank you!
+questions: '1. What color scheme do you prefer for differentiating genders?
+
+  2. Do you have a preferred color for distinguishing the presence or absence of heart
+  disease?
+
+  3. How would you like the axes to be labeled?
+
+  4. Do you have a specific title for the chart in mind?
+
+  5. What level of gridline detail do you prefer on the chart (e.g.,_major gridlines,
+  minor gridlines)?
+
+  6. Would you like any specific data points to be highlighted?
+
+  7. Is there a particular font style and size you prefer for the labels and legends?
+
+  8. Do you prefer straight or smoothed lines in the line chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. MaxHR on the y-axis and Age on the x-axis.
+
+  4. Heart Rate Trends by Age, Gender, and Heart Disease Status.
+
+  5. Major gridlines.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Smoothed lines.'
+data_attributes:
+- Age
+- Sex
+- MaxHR
+- HeartDisease

@@ -1,0 +1,50 @@
+initial_prompt: I’d like to visualize the exoplanet discoveries data via a Choropleth
+  map showing the density of discovered exoplanets per star mass in different regions
+  of the sky. Utilize the 'ra' and 'dec' coordinates for the map's spatial aspect.
+  Highlight areas with dense discoveries in darker shades. Include a color legend
+  to easily interpret the density levels. The map should be interactive, allowing
+  zoom and hover-over details for specific star masses and exoplanet counts. Ensure
+  it’s user-friendly for both amateur astronomers and the general public interested
+  in Kepler Telescope discoveries.
+questions: '1. Do you have a preferred color scheme for the Choropleth map?
+
+  2. What level of granularity do you prefer for the density shading?
+
+  3. Would you like labels for specific points or regions on the map?
+
+  4. Do you have a specific scale or unit preference for star mass?
+
+  5. Should the color legend be placed at a particular position on the map?
+
+  6. Do you have a preference for the map projection type (e.g., Mercator, equirectangular)?
+
+  7. Would you like to include any specific annotations or notes on the map?
+
+  8. Is there a specific font style or size you prefer for the legend and labels?
+
+  9. Should there be specific thresholds for highlighting different density levels?
+
+  10. Are there any additional details you want to include in the hover-over tooltips?'
+answers: '1. I am not sure.
+
+  2. I prefer a medium level of granularity for the density shading.
+
+  3. Yes, labels for specific points or regions on the map would be good.
+
+  4. I do not have a specific scale or unit preference for star mass.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Include star mass and exoplanet counts in the hover-over tooltips.'
+data_attributes:
+- ra
+- dec
+- st_mass

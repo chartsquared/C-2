@@ -1,0 +1,49 @@
+initial_prompt: I want to visualize the average salary in USD across different job
+  categories and experience levels in the data science field. Please create a grouped
+  bar chart where the x-axis represents different job categories, and within each
+  category, group the bars by experience levels (Mid-level, Senior, etc.). The y-axis
+  should show the average salary in USD. Make sure each bar group is distinct and
+  easy to compare. Title the chart "Average Salary by Job Category and Experience
+  Level in Data Science". Use different colors for each experience level for clarity.
+questions: '1. Do you have a specific color palette you prefer for different experience
+  levels?
+
+  2. Would you like the bars within each job category to be displayed side by side
+  or stacked?
+
+  3. Do you have a preference for the font style and size of the chart title and axis
+  labels?
+
+  4. Should the chart include data labels showing the exact average salary values
+  on the bars?
+
+  5. Do you want grid lines on the chart for easier comparison of salary levels across
+  categories and experience levels?
+
+  6. Should there be a legend indicating which color corresponds to which experience
+  level?
+
+  7. Do you prefer a specific ordering for the job categories on the x-axis (e.g.,
+  alphabetically, by average salary, custom order)?
+
+  8. Is there a specific range for the y-axis you want to set, or should it auto-adjust
+  based on the data?'
+answers: '1. I do not know.
+
+  2. Side by side.
+
+  3. I have no specific preference.
+
+  4. Yes, please include data labels showing the exact average salary values.
+
+  5. I am not sure.
+
+  6. Yes, there should be a legend.
+
+  7. Custom order would be great if possible, otherwise no specific preference.
+
+  8. It should auto-adjust based on the data.'
+data_attributes:
+- job_category
+- experience_level
+- salary_in_usd

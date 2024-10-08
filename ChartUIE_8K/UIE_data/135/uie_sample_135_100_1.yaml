@@ -1,0 +1,44 @@
+initial_prompt: Please create a scatter plot using the Breast Cancer Wisconsin (Diagnostic)
+  Data Set to visualize the relationship between 'radius_mean' and 'texture_mean'.
+  Highlight data points where 'diagnosis' is 'M' in red and 'B' in green. Annotate
+  three data points with the highest 'radius_mean', mentioning their corresponding
+  'id'. The purpose of this visualization is to observe any distinguishable patterns
+  between malignant and benign tumors in terms of their size and texture. This can
+  help in understanding the features associated with different diagnoses. Provide
+  proper labels and a legend for clarity.
+questions: '1. What title would you prefer for the scatter plot?
+
+  2. Do you have any preference for the x-axis and y-axis labels?
+
+  3. What size and style of font should be used for the annotations?
+
+  4. Would you like the data points to be of a specific shape or size?
+
+  5. Do you have a preference for the legend''s location on the chart?
+
+  6. Should there be grid lines in the background of the scatter plot?
+
+  7. Do you want any specific range for the x-axis and y-axis values?
+
+  8. Is there a particular style or color theme you would like to follow for the overall
+  chart?'
+answers: '1. "Relationship between Radius Mean and Texture Mean in Breast Cancer Diagnosis"
+
+  2. Yes, x-axis: ''Radius Mean'', y-axis: ''Texture Mean''
+
+  3. I am not sure
+
+  4. I do not know
+
+  5. I am not sure
+
+  6. Yes, grid lines would be helpful
+
+  7. I don’t know
+
+  8. I have no specific preference'
+data_attributes:
+- id
+- diagnosis
+- radius_mean
+- texture_mean

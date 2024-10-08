@@ -1,0 +1,55 @@
+initial_prompt: I want a stacked column chart that shows the number of languages spoken
+  in different world regions of New York City. For each region, stack the columns
+  by the Language Families present in that region. Use "World Region" for the x-axis
+  and the count of "Language Family" for the y-axis. Each stack segment should represent
+  a different language family. Make sure the chart is labeled with the total number
+  of languages spoken in each region. This will help visualize the diversity of languages
+  and their families across different regions in NYC.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should each language family be represented by a specific color?
+
+  3. Do you want the chart to display data labels for each stack segment?
+
+  4. How would you like the total number of languages spoken in each region to be
+  displayed?
+
+  5. Do you have any specific font preferences for the chart labels and titles?
+
+  6. Would you like a legend to identify the language families in the chart?
+
+  7. Do you prefer the x-axis and y-axis to have grid lines?
+
+  8. Should the y-axis be scaled linearly or logarithmically?
+
+  9. Do you want any specific title for the chart?
+
+  10. Are there any specific annotations or notes you would like to include in the
+  chart?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. Yes, each language family should be represented by a specific color.
+
+  3. I am not sure.
+
+  4. The total number of languages spoken in each region should be displayed at the
+  top of each column.
+
+  5. I do not have any specific font preferences.
+
+  6. Yes, please include a legend to identify the language families.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. "Language Diversity Across World Regions in NYC"
+
+  10. I do not have any specific annotations or notes to include.
+
+  <end of user emulated response>'
+data_attributes:
+- World Region
+- Language Family

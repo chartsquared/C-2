@@ -1,0 +1,62 @@
+initial_prompt: Please create a violin plot with the 'High', 'Low', 'Open', and 'Close'
+  prices for META stock over time. Annotate the plot to highlight peak and bottom
+  prices, and provide a brief historical context to relate to the significant points.
+questions: '1. Do you have any specific color preferences for the violin plot?
+
+  2. Would you like the annotations for the peak and bottom prices to have specific
+  styles or colors?
+
+  3. Is there a particular time interval (e.g., daily, weekly, monthly) you would
+  prefer for displaying the stock prices over time?
+
+  4. Should the x-axis be formatted in a specific way (e.g., displaying each date,
+  only months, only years)?
+
+  5. Would you prefer any specific fonts or text sizes for the annotations and labels?
+
+  6. Are there any particular historical events or contexts you would like to be highlighted
+  on the plot?
+
+  7. Do you have preferences for the plot background (e.g., gridlines, background
+  color)?
+
+  8. Should the violin plot include interquartile range (IQR) lines or other statistical
+  indicators?
+
+  9. Do you have any preferences for the legend (e.g., its position, whether it should
+  be included)?
+
+  10. Would you like to include a title and/or subtitle for the plot? If so, do you
+  have specific wording in mind?
+
+  11. Are there any specific margins or padding preferences for the plot layout?'
+answers: '1. I am not sure.
+
+  2. I would like the annotations to be noticeable, maybe a different color than the
+  violins.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I do not have a specific preference.
+
+  6. If possible, it would be helpful to highlight major events such as earnings reports
+  or significant company announcements.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Please include a title: "META Stock Prices Over Time" and a subtitle: "Highlighting
+  Peak and Bottom Prices".
+
+  11. I do not have any specific preferences.'
+data_attributes:
+- Date
+- High
+- Low
+- Open
+- Close

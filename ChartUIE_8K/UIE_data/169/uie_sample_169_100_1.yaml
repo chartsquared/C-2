@@ -1,0 +1,49 @@
+initial_prompt: Create a bar chart to compare the Ages and Outcomes of patients segmented
+  by their Histological type and Sex, highlighting those with 'High' Grade and 'Leiomyosarcoma'
+  MSKCC type. Annotate data points showing the 'Status (NED, AWD, D)' for each demographic.
+  Use color coding to differentiate between different treatment forms. This visualization
+  will help understand the distribution and treatment outcomes for different patient
+  groups in the study on Soft Tissue Sarcomas. Ensure to include 'Treatment' and 'Site
+  of primary STS' as additional context.
+questions: "1. Do you have a preferred color scheme for the chart?\n2. How would you\
+  \ like to differentiate between different treatment forms using color coding? \n\
+  3. Is there a specific way you would like the data points to be annotated for 'Status\
+  \ (NED, AWD, D)'?\n4. Do you prefer any specific arrangement for segmenting by 'Histological\
+  \ type' and 'Sex' on the X-axis?\n5. Should the 'Site of primary STS' be displayed\
+  \ as labels, or do you have another preference?\n6. Would you like to display error\
+  \ bars or confidence intervals for the data points?\n7. Do you have a preference\
+  \ for the bar orientation (horizontal or vertical)?\n8. Are there any specific legends\
+  \ or titles you would like to include in the chart?\n9. Should we use any specific\
+  \ font style or size for the labels and annotations?"
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I am not sure, maybe use different colors for each treatment type.
+
+  3. I do not know.
+
+  4. I prefer them to be segmented by Sex first and then by Histological type.
+
+  5. Display the ''Site of primary STS'' as labels.
+
+  6. I am not sure.
+
+  7. Vertical orientation for the bars.
+
+  8. Include a title like "Comparison of Ages and Outcomes for Soft Tissue Sarcoma
+  Patients" and a legend explaining the colors for treatment forms.
+
+  9. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- Age
+- Outcome (recurrence, mets)
+- Histological type
+- Sex
+- Grade
+- MSKCC type
+- Status (NED, AWD, D)
+- Treatment
+- Site of primary STS

@@ -1,0 +1,46 @@
+initial_prompt: Please create a Bubble chart to visualize the worldwide Covid-19 data.
+  I want the "Country" on the x-axis and "Population" on the y-axis. The size of the
+  bubbles should represent "Total Cases", and the color should represent "Total Deaths".
+  This will help me understand the Covid-19 impact in different countries, correlating
+  population size with reported cases and deaths. Ensure missing values are handled
+  appropriately, possibly by using averages or median values to fill gaps.
+questions: '1. Do you have a preferred color scheme for the bubbles?
+
+  2. Would you like to include any specific annotations or labels on the bubbles?
+
+  3. How would you prefer to handle the missing values: using averages or median values?
+
+  4. Do you want any gridlines on the chart?
+
+  5. What title would you like for the chart?
+
+  6. Do you have a preference for the font style and size for the axis labels and
+  title?
+
+  7. Should there be a legend to explain the bubble sizes and colors?
+
+  8. Are there any specific countries you want to highlight or focus on in the chart?
+
+  9. Would you like to include a descriptive caption or summary below the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Use median values to handle the missing data.
+
+  4. I am not sure.
+
+  5. Covid-19 Impact by Country
+
+  6. I do not know.
+
+  7. Yes, include a legend.
+
+  8. I do not know.
+
+  9. I do not know.'
+data_attributes:
+- Country
+- Population
+- Total Cases
+- Total Deaths

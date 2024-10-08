@@ -1,0 +1,45 @@
+initial_prompt: I need a heatmap to visualize the correlation between various factors
+  from the US Police Shootings dataset. Specifically, I want to see how age, gender,
+  race, signs_of_mental_illness, threat_level, manner_of_death, and armed status correlate.
+  The dataset columns should be used as axes to display how frequently these combinations
+  occur. The heatmap should highlight areas with higher frequencies in darker colors.
+  This will help identify patterns and relationships between these factors in the
+  context of police shootings across the US. Please make the chart easy to read and
+  interpret.
+questions: '1. Do you have a preference for the color scheme used in the heatmap?
+
+  2. Should the heatmap include any specific labels or annotations for clarity?
+
+  3. How detailed should the axis labels be (e.g., should they display every possible
+  value or categories instead)?
+
+  4. Would you like to include a legend explaining the color intensity?
+
+  5. Are there any specific visual styles or themes you prefer for the chart (e.g.,
+  minimalist, bold, business-like)?
+
+  6. Do you have any preferences for the grid lines or borders within the heatmap?
+
+  7. Should there be any additional text or notes included in the chart to provide
+  context?'
+answers: '1. I am not sure.
+
+  2. Yes, specific labels or annotations for clarity would be helpful.
+
+  3. I am not sure.
+
+  4. Yes, I would like to include a legend explaining the color intensity.
+
+  5. I do not have a specific preference.
+
+  6. I do not know.
+
+  7. Yes, some text or notes to provide context would be useful.'
+data_attributes:
+- age
+- gender
+- race
+- signs_of_mental_illness
+- threat_level
+- manner_of_death
+- armed

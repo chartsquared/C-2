@@ -1,0 +1,61 @@
+initial_prompt: Create a histogram visualizing the frequency distribution of 'label'
+  in the dataset, which outlines heartbeat sounds for health analysis. Highlight the
+  data points with missing 'sublabel' values to emphasize areas needing attention.
+  Additionally, attach data-driven text annotations depicting the exact count of missing
+  'sublabel' values. This visualization aims to identify the prevalence of different
+  'label' categories and draw focus to incomplete data points for potential quality
+  improvement. Utilize the dataset efficiently to ensure clarity and actionability
+  for health data review purposes.
+questions: '1. Do you have a preferred color scheme for highlighting data points with
+  missing ''sublabel'' values and distinguish between different ''label'' categories?
+
+  2. Would you like the histogram to display the frequency counts on the y-axis, or
+  would you prefer percentages?
+
+  3. Should the x-axis display the ''label'' categories in alphabetical order, or
+  would a custom order be more useful?
+
+  4. What style or format would you prefer for the text annotations showing the count
+  of missing ''sublabel'' values?
+
+  5. Are there any specific labels or titles you want to include for the chart, axes,
+  or legend?
+
+  6. Do you have a preference for the bin width or number of bins if applicable for
+  the histogram?
+
+  7. Would you like gridlines to be included in the chart to improve readability?
+
+  8. Is there a specific font style or size you prefer for the text within the chart?
+
+  9. Should any additional context or metadata be included in the chart for clarity
+  and interpretation?
+
+  10. Do you want any specific margins or padding settings around the chart elements
+  for better spacing?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Frequency counts on the y-axis, please.
+
+  3. Alphabetical order is fine.
+
+  4. I do not know.
+
+  5. Just the standard labels and titles would be fine.
+
+  6. I am not sure.
+
+  7. Yes, gridlines would be helpful.
+
+  8. I am not sure.
+
+  9. No additional context or metadata is needed.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- label
+- sublabel

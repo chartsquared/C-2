@@ -1,0 +1,61 @@
+initial_prompt: 'Please create a line chart visualizing protein expression levels
+  over time for three selected proteins: DYRK1A_N, ITSN1_N, and BDNF_N. Use the MouseID
+  as the x-axis to represent individual mice samples and the protein levels as the
+  y-axis. Distinguish different proteins using color-coded lines. Include legend labels
+  for clarity. Ensure the chart clearly showcases the expression patterns among the
+  samples in the dataset for easy comparison of the protein levels. The line chart
+  should also reflect Genotype, Treatment, and Behavior for comprehensive analysis.
+  Thank you!'
+questions: '1. Do you have a preferred color scheme for the lines representing the
+  different proteins?
+
+  2. Would you like specific marker styles or shapes to be used for the data points
+  on the lines?
+
+  3. Do you have font preferences or sizes for the axis labels and legend?
+
+  4. Do you prefer the line chart to include grid lines, and if so, in which orientation
+  (horizontal, vertical or both)?
+
+  5. Should the Genotype, Treatment, and Behavior be displayed as annotations or color-coded
+  within the chart, and if so, how would you like them to be represented?
+
+  6. Do you want to include any specific titles or subtitles for the chart?
+
+  7. Would you like any specific ranges or limits set on the y-axis for highlighting
+  certain expression levels?
+
+  8. Should the chart include data point values displayed directly on the graph?
+
+  9. Are there any specific formatting preferences for the legend (e.g., position,
+  style)?
+
+  10. Do you have any preferences on the background color or style of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have any specific preferences for marker styles or shapes.
+
+  3. I have no specific preference for font sizes or styles.
+
+  4. I prefer grid lines in both orientations.
+
+  5. I think color-coding Genotype, Treatment, and Behavior within the chart would
+  be helpful.
+
+  6. No specific titles or subtitles are needed.
+
+  7. I do not have any specific ranges or limits for the y-axis.
+
+  8. I am not sure if displaying data point values directly is necessary.
+
+  9. I have no specific formatting preferences for the legend.
+
+  10. I have no preferences on the background color or style.'
+data_attributes:
+- MouseID
+- DYRK1A_N
+- ITSN1_N
+- BDNF_N
+- Genotype
+- Treatment
+- Behavior

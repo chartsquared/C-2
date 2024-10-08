@@ -1,0 +1,43 @@
+initial_prompt: Create a heatmap to visualize the correlation between different factors
+  affecting higher education students' performance. Use data from '233.csv'. Display
+  the relationships between variables like 'AGE', 'GENDER', 'HS_TYPE', 'SCHOLARSHIP',
+  'STUDY_HRS', 'READ_FREQ', 'ATTEND_DEPT', 'CUML_GPA', and 'EXP_GPA'. Highlight the
+  strength of correlations using a gradient color scale. Ensure clear labeling for
+  all axes and legend for color coding to interpret the correlations easily. Provide
+  a clear title "Correlation between Factors and GPA in Higher Education" to give
+  context to the visual.
+questions: '1. Do you have any preference for the specific color gradient to be used
+  on the heatmap?
+
+  2. Should we follow any specific scheme for labeling the axes and legends (e.g.,
+  abbreviations, full forms)?
+
+  3. Would you like the heatmap to include gridlines for easier readability?
+
+  4. Do you prefer any particular font style or size for the labels, title, and legend?
+
+  5. Should the heatmap include any specific annotations or notes for certain data
+  points?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I prefer full forms for labeling the axes and legends.
+
+  3. Yes, include gridlines for easier readability.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- AGE
+- GENDER
+- HS_TYPE
+- SCHOLARSHIP
+- STUDY_HRS
+- READ_FREQ
+- ATTEND_DEPT
+- CUML_GPA
+- EXP_GPA

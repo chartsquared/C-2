@@ -1,0 +1,63 @@
+initial_prompt: Create a heatmap visualizing the population growth of countries over
+  the decades. Use columns 'country' and 'year' to map the population changes. Highlight
+  countries with significant growth or decline. For clarity, ensure color gradients
+  represent growth rates from 1970 to 2023. Also, include a legend explaining the
+  colors. Provide an overall view of how populations have evolved continent-wise.
+  Ensure the heatmap is granular enough to show differences at the country level but
+  aggregated to continents for broader trends. This will help in analyzing global
+  and regional demographic changes.
+questions: '1. Do you have any specific color schemes in mind for representing the
+  growth rates?
+
+  2. Should we include any specific annotations or callouts for countries with significant
+  growth or decline?
+
+  3. Do you prefer a particular range for the color gradients (e.g., green for growth,
+  red for decline)?
+
+  4. How many color intervals would you like the legend to have for better clarity?
+
+  5. Would you like to include any reference lines or markers indicating specific
+  years of interest?
+
+  6. Should the heatmap display countries in any specific order (e.g., alphabetical,
+  by growth rate, etc.)?
+
+  7. Do you have any preferences for the layout or orientation of the heatmap (e.g.,
+  horizontal or vertical)?
+
+  8. Would you like to see any additional context or overlays, such as population
+  density or area size, included in the heatmap?
+
+  9. Are there any specific continents or regions you want to highlight or focus on
+  more prominently?'
+answers: '1. I am not sure.
+
+  2. Yes, please include annotations or callouts for countries with significant growth
+  or decline.
+
+  3. Green for growth and red for decline would be preferred.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. By growth rate would be preferable.
+
+  7. I do not know.
+
+  8. No additional context or overlays are needed.
+
+  9. No, I have no specific preference.'
+data_attributes:
+- country
+- continent
+- 1970 population
+- 1980 population
+- 1990 population
+- 2000 population
+- 2010 population
+- 2015 population
+- 2020 population
+- 2022 population
+- 2023 population

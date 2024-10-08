@@ -1,0 +1,55 @@
+initial_prompt: Please create an area chart visualizing Apple stock prices over time.
+  The x-axis should represent the 'Date' and the y-axis should represent the 'Close'
+  prices. Alongside, please include areas for 'Open', 'High', and 'Low' prices for
+  comparative analysis. Ensure that volume is depicted as an underlaying gradient
+  or separate area chart at the bottom to indicate trading activity. Make the chart
+  interactive, if possible, so I can hover over dates to see exact values. Keep the
+  design clean and professional, reflecting the business context of the data. Thank
+  you!
+questions: '1. Do you have a preferred color scheme for the chart areas representing
+  ''Open'', ''High'', ''Low'', and ''Close'' prices?
+
+  2. Should the volume be displayed as an underlaying gradient or as a separate area
+  chart at the bottom?
+
+  3. Do you want gridlines on the chart for better readability?
+
+  4. Are there any specific fonts or font sizes you prefer for the labels and legends?
+
+  5. Do you have a preference for the format or style of the date labels on the x-axis?
+
+  6. Would you like to include a legend to differentiate ''Open'', ''High'', ''Low'',
+  and ''Close'' prices?
+
+  7. Do you want any specific annotations or markers (e.g., significant events) on
+  the chart?
+
+  8. Should the y-axis have any predefined range or should it auto-scale based on
+  the data?
+
+  9. Is there a specific line style (solid, dashed, etc.) you prefer for the boundaries
+  separating different areas in the chart?'
+answers: '1. I am not sure.
+
+  2. As a separate area chart at the bottom.
+
+  3. Yes, gridlines would be helpful.
+
+  4. No specific preference.
+
+  5. I do not know.
+
+  6. Yes, please include a legend.
+
+  7. I am not sure.
+
+  8. It should auto-scale based on the data.
+
+  9. I do not know.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

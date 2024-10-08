@@ -1,0 +1,45 @@
+initial_prompt: Create a bar chart based on the data showing the EV stock share, EV
+  sales share, and EV sales for Australia in 2011 across different powertrains. Display
+  the 'region' on the x-axis and 'value' on the y-axis. Use different colors to represent
+  EV stock share, EV sales share, and EV sales. Include a legend for clarity. Ensure
+  the chart is titled "EV Metrics for Australia, 2011".
+questions: '1. Do you have a specific color scheme preference for representing the
+  different EV metrics (EV stock share, EV sales share, and EV sales)?
+
+  2. Do you prefer any specific font style or size for the chart title and labels?
+
+  3. Should the y-axis be in absolute numbers or percentages, or should it vary depending
+  on the unit of the metric?
+
+  4. Would you like gridlines included in the chart for better readability?
+
+  5. Do you have a preference for the placement and style of the legend?
+
+  6. Would you like to include data labels on the bars to show the exact values?
+
+  7. Is there a specific order in which you would like the powertrain categories displayed
+  on the x-axis?
+
+  8. Would you prefer the chart to be in a horizontal or vertical bar format?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. Yes, please include gridlines.
+
+  5. I have no specific preference.
+
+  6. Yes, I would like to include data labels on the bars.
+
+  7. I do not know.
+
+  8. Vertical bar format would be preferred.'
+data_attributes:
+- region
+- value
+- parameter
+- powertrain
+- year
+- unit

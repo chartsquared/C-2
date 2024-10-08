@@ -1,0 +1,52 @@
+initial_prompt: '<start of user emulated instruction>
+
+  Please create a scatter plot for the dataset found in ''../Extra_datas/data/15.csv''.
+  I want to visualize the relationship between ''x.1'' and ''y.1''. Since ''x.2'',
+  ''y.2'', ''z.1'', and ''z.2'' have minimal variability and mostly zeros, they should
+  be excluded from the scatter plot. Kindly ensure that the axes are labeled appropriately,
+  and the plot has a title "Scatter Plot of x.1 vs y.1". It should also reflect any
+  patterns or correlations between these variables clearly.
+
+  <end of user emulated instruction>'
+questions: '1. Do you have a preferred color for the data points in the scatter plot?
+
+  2. Would you like the data points to have specific shapes or sizes?
+
+  3. Should the scatter plot include a trend line or regression line to help illustrate
+  the correlation?
+
+  4. Is there a specific font style or size you prefer for the axes labels and title?
+
+  5. Do you want grid lines on the scatter plot? If so, should they be in a specific
+  style or color?
+
+  6. Would you like the scatter plot to include any annotations, such as labeling
+  specific data points or adding notes?
+
+  7. Are there any specific axes limits or scales you prefer (e.g., logarithmic scale,
+  custom range)?
+
+  8. Should the plot include a legend, and if so, what information would you like
+  it to contain?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, a trend line to help illustrate the correlation would be helpful.
+
+  4. I have no specific preference.
+
+  5. Yes, grid lines would be nice, but I have no specific style or color in mind.
+
+  6. I am not sure.
+
+  7. I do not have specific axes limits or scales in mind.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- x.1
+- y.1

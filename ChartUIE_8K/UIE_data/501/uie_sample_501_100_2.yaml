@@ -1,0 +1,59 @@
+initial_prompt: Create a scatter plot illustrating the relationship between bill length
+  and bill depth for different penguin species. Highlight outliers and add text annotations
+  for data points with missing values in bill length and bill depth. Ensure the species,
+  sex, and year data are reflected via different colors and shapes. This visualization
+  will help infer trends and differences across species, aiding in zoological studies.
+  Include a legend and title to make the chart self-explanatory.
+questions: '1. Do you have a preferred color palette for the different species, sex,
+  and year?
+
+  2. What shapes would you like to represent the different sex categories?
+
+  3. How would you like the outliers to be highlighted (e.g., with a specific color,
+  shape, or border)?
+
+  4. Do you have any specific text annotation format or style preference for marking
+  missing values?
+
+  5. Is there a specific layout or arrangement you prefer for the legend?
+
+  6. Do you have any preference for the title text and style for the scatter plot?
+
+  7. Would you like grid lines to be displayed on the scatter plot, and if so, do
+  you have any style preferences for them?
+
+  8. Should there be axis labels, and do you have any specific format or text you
+  would prefer for them?
+
+  9. Do you have any preferences for the size of the data points or the overall size
+  of the scatter plot?
+
+  10. Are there any specific fonts or font sizes you would like to use for the annotations,
+  legend, or title?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Highlight outliers with a specific border color.
+
+  4. I have no specific preference.
+
+  5. I do not have a specific layout preference for the legend.
+
+  6. The title could be "Penguin Bill Length vs. Bill Depth Across Species".
+
+  7. Yes, display grid lines, but I am not sure about the style preferences.
+
+  8. Yes, please include axis labels. "Bill Length (mm)" for the x-axis and "Bill
+  Depth (mm)" for the y-axis.
+
+  9. I have no specific preference for the size of data points or the overall size
+  of the scatter plot.
+
+  10. I am not sure.'
+data_attributes:
+- species
+- bill_length_mm
+- bill_depth_mm
+- sex
+- year

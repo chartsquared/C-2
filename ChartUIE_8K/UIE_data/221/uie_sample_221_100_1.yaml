@@ -1,0 +1,52 @@
+initial_prompt: Create a stacked bar chart to visualize the total costs of accommodations
+  and transportation for each destination, using the Traveler Trip Dataset. Include
+  text annotations to display specific costs for each bar segment. Highlight different
+  accommodation types with unique colors and stack transportation costs atop the accommodation
+  costs for each destination. This chart will help to compare the travel expenses
+  between destinations and identify cost patterns. Ensure that missing values and
+  different data types are appropriately handled. The purpose is to provide a clear
+  visual comparison of travel expenses for better budget planning.
+questions: '1. Do you have any preferred color scheme for highlighting different accommodation
+  types?
+
+  2. Are there any specific destinations you want to focus on or exclude?
+
+  3. Would you like gridlines to be included in the chart for better readability?
+
+  4. Do you prefer a particular font style or size for the text annotations displaying
+  costs?
+
+  5. Should the chart include a legend to indicate different accommodation types?
+
+  6. How would you like missing values to be handled or displayed, if at all?
+
+  7. Do you require any specific format for the cost values (e.g., currency symbol,
+  decimal places)?
+
+  8. Should the chart include axis labels and titles for clarity, and if so, any specific
+  wording?
+
+  9. Are there any specific intervals or ranges you prefer for the y-axis scale?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include gridlines for better readability.
+
+  4. I do not have a specific preference.
+
+  5. Yes, the chart should include a legend to indicate different accommodation types.
+
+  6. Please exclude missing values from the chart.
+
+  7. Yes, include currency symbols like $ and use two decimal places for the costs.
+
+  8. Yes, include axis labels and titles. For the x-axis: "Destinations", for the
+  y-axis: "Total Costs ($)", and the title: "Comparison of Travel Expenses by Destination".
+
+  9. I do not have a specific preference.'
+data_attributes:
+- Destination
+- Accommodation type
+- Accommodation cost
+- Transportation cost

@@ -1,0 +1,43 @@
+initial_prompt: Please create a scatter plot for the "in-vehicle coupon recommendation"
+  dataset. Plot "income" on the x-axis and "age" on the y-axis. Differentiate points
+  by the "Y" column to show whether the coupon was accepted or not. Use different
+  colors for accepted (Y=1) and not accepted (Y=0) coupons. Include labels and a legend
+  to identify these groups.
+questions: '1. Do you have any specific colors you prefer to use for the accepted
+  and not accepted coupons?
+
+  2. Do you prefer specific label names for the axes or should they be ''Income''
+  and ''Age'' as per the data attributes?
+
+  3. Is there a preferred format for the legend or should we use the default setting?
+
+  4. Do you want to include gridlines in the scatter plot for better readability?
+
+  5. Would you like a title for the scatter plot? If so, do you have any specific
+  title in mind?
+
+  6. Do you want to display data points with any specific markers or symbols for better
+  differentiation?
+
+  7. Is there any specific font style or size you prefer for the labels and legend?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. ''Income'' and ''Age'' are fine.
+
+  3. I am not sure.
+
+  4. Yes, please include gridlines.
+
+  5. Yes, the title should be "Income vs. Age: Coupon Acceptance".
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- income
+- age
+- Y

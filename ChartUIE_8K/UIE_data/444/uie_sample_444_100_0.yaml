@@ -1,0 +1,56 @@
+initial_prompt: Create a heatmap to visualize the distribution of 'cost_km_millions'
+  across different 'city' and 'line' combinations. Highlight values with significant
+  deviations from the average to emphasize areas with unusually high or low construction
+  costs. Use annotations to display exact figures for these outliers. This visualization
+  aims to provide a clear, comparative view of transit project costs across Canadian
+  cities, helping to identify potential factors influencing cost variations for informed
+  governmental decision-making. Ensure the heatmap is intuitive with a color gradient
+  representing cost intensity.
+questions: '1. Do you have a preferred color gradient for representing cost intensity?
+
+  2. Are there specific colors you prefer for highlighting unusually high or low construction
+  costs?
+
+  3. How would you like the annotations for outliers to be displayed? (e.g., font
+  size, color)
+
+  4. Do you have any preferences for the positioning of annotations on the heatmap?
+
+  5. Would you like gridlines or borders between cells to enhance readability?
+
+  6. Is there a preferred size or aspect ratio for the heatmap?
+
+  7. Do you want a specific title and/or subtitle for the heatmap?
+
+  8. Should there be labels for the axes and, if so, any specific formatting for them?
+
+  9. Would you like a legend to explain the color gradient, and if so, where should
+  it be placed?
+
+  10. Do you have any preferences for the font style and size for various textual
+  elements in the heatmap?'
+answers: '1. I am not sure about the preferred color gradient.
+
+  2. I do not know; maybe use bright colors for high costs and cool colors for low
+  costs.
+
+  3. I am not sure about the specifics, just make it readable.
+
+  4. I do not know; wherever they fit best without overcrowding the heatmap.
+
+  5. Yes, please include gridlines or borders to enhance readability.
+
+  6. I do not have a specific preference for size or aspect ratio.
+
+  7. No specific title or subtitle, unless you think it would help.
+
+  8. Yes, labels for the axes would be helpful; no specific formatting needed.
+
+  9. Yes, a legend explaining the color gradient should be included; I trust your
+  judgment for placement.
+
+  10. I am not sure about the font style and size; just make it clear and legible.'
+data_attributes:
+- city
+- line
+- cost_km_millions

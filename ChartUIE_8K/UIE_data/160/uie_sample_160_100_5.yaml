@@ -1,0 +1,54 @@
+initial_prompt: Create a bar chart from the provided "wwc_outcomes" data set, focusing
+  on visualizing the number of wins for each team (as given by the win_status column)
+  across different years. The chart should have years on the x-axis and the number
+  of wins on the y-axis. Each bar should represent a team, and different colors should
+  be used for different teams. This will help in understanding which teams performed
+  best over the years in the sports-and-recreation context.
+questions: '1. Do you have a preferred color palette for distinguishing different
+  teams?
+
+  2. Would you like the years on the x-axis to be displayed in a specific format (e.g.,
+  full year, abbreviated)?
+
+  3. How would you like the labels on the x-axis and y-axis to be formatted (e.g.,
+  font size, font type)?
+
+  4. Do you want grid lines on the chart? If so, do you prefer them for both axes
+  or just one?
+
+  5. Do you have a preference for the width of the bars in the bar chart?
+
+  6. Would you like to display data values on top of each bar?
+
+  7. Should the legend be positioned in a specific location (e.g., top, bottom, left,
+  right) on the chart?
+
+  8. Are there specific years or teams you want to highlight in the chart?
+
+  9. Would you like to include a title for the chart? If so, what should it be?
+
+  10. Do you have any specific requirements for the axis titles other than the default
+  ''Years'' for the x-axis and ''Number of Wins'' for the y-axis?'
+answers: '1. I am not sure.
+
+  2. Full year format is preferred.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, displaying data values on top of each bar would be helpful.
+
+  7. I am not sure.
+
+  8. No, there are no specific years or teams to highlight.
+
+  9. Yes, the title should be "WWC Team Wins Over the Years".
+
+  10. I do not have any specific requirements for the axis titles.'
+data_attributes:
+- year
+- team
+- win_status

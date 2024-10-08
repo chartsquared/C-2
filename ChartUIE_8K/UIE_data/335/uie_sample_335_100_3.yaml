@@ -1,0 +1,41 @@
+initial_prompt: I’d like a grouped column chart for the Superstore Sales data. The
+  x-axis should display the "State" categories, and the y-axis should represent "Sales"
+  values. Group the columns by "Category" to compare sales across different states
+  within each product category (Furniture, Office Supplies, Technology). Please color-code
+  the categories for clarity. Additionally, include a legend to differentiate between
+  the categories. Ensure the chart has clear labels, a title for context, and a clean,
+  professional look suitable for business reporting and analysis. Thank you!
+questions: '1. Do you have a preferred title for the chart?
+
+  2. Do you have any specific preferences for the color scheme?
+
+  3. How would you like the axis labels to be styled (font size, font type, etc.)?
+
+  4. Would you like any specific gridlines or background elements on the chart?
+
+  5. Do you prefer the sales values to be displayed on the bars or as hover-over tooltips?
+
+  6. Are there any specific formatting requirements for the legend?
+
+  7. Is there a target value or benchmark line you would like to include on the y-axis?
+
+  8. Would you prefer any annotations or data callouts on specific data points?'
+answers: '1. I am not sure, any appropriate title would work.
+
+  2. I do not have any specific preferences for the color scheme.
+
+  3. I am not sure about the styling for the axis labels.
+
+  4. I do not know, please decide based on what looks best.
+
+  5. I prefer the sales values to be displayed on the bars.
+
+  6. I do not have any specific formatting requirements for the legend.
+
+  7. I do not know, no specific preference.
+
+  8. I do not have any preference for annotations or data callouts.'
+data_attributes:
+- State
+- Sales
+- Category

@@ -1,0 +1,56 @@
+initial_prompt: 'Please create a scatter plot using the Dubois Challenge tweets data.
+  Plot the ''datetime'' on the x-axis and ''like_count'' on the y-axis. Use different
+  colors to distinguish between ''retweet_count'' values. Also, include tooltips to
+  show ''content'' when hovering over the data points. This will help visualize tweet
+  engagement over time and understand the correlation between time and likes for tweets
+  participating in the #DuBoisChallenge.'
+questions: '1. Do you have a preferred color palette for representing different ''retweet_count''
+  values?
+
+  2. Would you like any specific markers or shapes for the data points?
+
+  3. Do you have a preferred font style or size for the axis labels and title?
+
+  4. Should the x-axis ''datetime'' be displayed with a specific date format (e.g.,
+  "YYYY-MM-DD", "MM/DD/YYYY")?
+
+  5. Do you need gridlines on the plot? If so, do you have preferences for their style
+  or color?
+
+  6. Would you like to include a legend to explain the colors representing ''retweet_count''
+  values? If yes, where should it be positioned?
+
+  7. Do you have a preference for the title of the scatter plot? If yes, please specify
+  the title.
+
+  8. Should the tooltips display any additional information besides ''content'' (e.g.,
+  ''datetime'', ''like_count'', ''retweet_count'')?
+
+  9. Is there a specific size or aspect ratio you prefer for the scatter plot?
+
+  10. Do you have any specific requirements for the axis scales (e.g., logarithmic
+  scale, specific range limits)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. YYYY-MM-DD format would be good.
+
+  5. I am not sure.
+
+  6. Yes, include a legend. I do not have a preference for its position.
+
+  7. Scatter Plot of #DuBoisChallenge Tweet Engagement
+
+  8. Yes, include ''datetime'' and ''like_count'' in the tooltips.
+
+  9. I do not know.
+
+  10. I have no specific requirements.'
+data_attributes:
+- datetime
+- like_count
+- retweet_count
+- content

@@ -1,0 +1,47 @@
+initial_prompt: Create a heatmap to visualize the Apple stock data, showing correlations
+  between variables like Open, High, Low, Close, Adj Close, and Volume from 1980-12-12
+  to the recent date. Add text annotations to highlight specific values and trends
+  over time, especially focusing on peak volumes and significant price changes. Use
+  highlights to distinguish key periods, such as market highs and lows. The purpose
+  is to clearly present stock performance trends and make it easier to identify important
+  financial events and anomalies in Apple's historical stock data.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Are there any specific time periods you want to emphasize within the heatmap?
+
+  3. How would you like the text annotations to be represented on the chart (e.g.,
+  font size, color)?
+
+  4. Would you like to include any specific legends or keys to help interpret the
+  heatmap?
+
+  5. Do you prefer a particular style for highlighting key periods (e.g., shaded areas,
+  outlines)?
+
+  6. Are there any specific date ranges you want to exclude from the visualization?
+
+  7. Would you like to see any additional statistical information or metrics alongside
+  the heatmap?'
+answers: '1. I am not sure.
+
+  2. I''d like to emphasize periods during significant market highs and lows, such
+  as the 2008 financial crisis, the rise in tech stocks around 2010, and the COVID-19
+  pandemic period.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I prefer shaded areas to highlight key periods.
+
+  6. I have no specific preference.
+
+  7. I do not know.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

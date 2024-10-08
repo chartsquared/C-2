@@ -1,0 +1,35 @@
+initial_prompt: 'Please create a heatmap using the provided data to visualize the
+  median values of environmental stressors (GHG) across different taxa in aquaculture
+  production. Utilize the ''median'' column for color intensity, and place ''taxa''
+  on one axis and ''stressor'' on the other. Exclude columns with missing data. Highlight
+  how different taxa contribute to environmental impacts. Title the heatmap: "GHG
+  Emissions by Taxa in Aquaculture". Ensure the color scale represents the range of
+  median values effectively for clear visual comparison.'
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What should be the range of the color scale for the median values?
+
+  3. Would you like to include any specific labels or annotations on the heatmap?
+
+  4. Is there a particular font style or size you would prefer for the title and axis
+  labels?
+
+  5. Do you want the color scale to be discreet or continuous?
+
+  6. Are there any specific taxa or stressors you want to highlight or differentiate
+  in the heatmap?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. Continuous color scale.
+
+  6. I am not sure.'
+data_attributes:
+- taxa
+- stressor
+- median

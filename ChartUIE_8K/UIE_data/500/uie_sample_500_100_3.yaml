@@ -1,0 +1,73 @@
+initial_prompt: I have a dataset on squirrel sightings in NYC with geographic coordinates
+  (latitude and longitude) and various squirrel behaviors. I envision a geographic
+  heatmap of NYC showing the density of squirrel sightings. Different colors could
+  represent the concentration of sightings, possibly segregated by primary fur color.
+  We should also plot interactive points, where clicking a point reveals additional
+  data such as specific squirrel behaviors observed at that location. This heatmap
+  will help visualize where squirrels are most commonly found and highlight behavioral
+  patterns. Can you create this map?
+questions: '1. Do you have a specific color palette preference for representing the
+  concentrations of squirrel sightings?
+
+  2. How many color gradients would you prefer for indicating density levels on the
+  heatmap?
+
+  3. Would you like the primary fur color to be represented with specific colors on
+  the map?
+
+  4. Do you prefer any specific map styles or basemaps (e.g., satellite view, street
+  map, terrain map)?
+
+  5. Is there a particular size or shape you prefer for the interactive points on
+  the map?
+
+  6. Should the visualization include any labels or legends, and if so, do you have
+  a preference for how they should be styled?
+
+  7. Are there any specific geographic boundaries (e.g., neighborhoods, boroughs)
+  you would like highlighted or overlaid on the map?
+
+  8. Is there any other contextual information or data layers you would like to include
+  on the map for better reference?
+
+  9. Do you have any preferences for the display of the map, such as initial zoom
+  level or center position?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like the primary fur color to be represented with specific colors
+  on the map.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. Yes, the visualization should include labels or legends, but I have no specific
+  preference for their style.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I have no specific preference.'
+data_attributes:
+- long
+- lat
+- primary_fur_color
+- specific_location
+- running
+- chasing
+- climbing
+- eating
+- foraging
+- other_activities
+- kuks
+- quaas
+- moans
+- tail_flags
+- tail_twitches
+- approaches
+- indifferent
+- runs_from
+- other_interactions

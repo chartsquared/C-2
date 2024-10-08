@@ -1,0 +1,57 @@
+initial_prompt: Generate a scatter plot for Rotten Tomatoes Top Movies Ratings and
+  Technical dataset. Plot critic_score on the x-axis and people_score on the y-axis.
+  Each point represents a movie, and the size of the points should represent the total_reviews.
+  Color the points based on the genre. Additionally, include tooltips to show the
+  title, year, and synopsis for each data point. This will help visualize the relationship
+  between critic scores and audience scores, and how they correlate with the number
+  of reviews and genre diversity.
+questions: '1. Do you have any preferred color palette for the points based on genre?
+
+  2. Would you like a specific shape for the points, or are default circles acceptable?
+
+  3. Should the x-axis and y-axis have specific limits or scaling (e.g., logarithmic)?
+
+  4. Do you prefer a specific font style or size for the axis labels and titles?
+
+  5. Would you like to include a legend, and if so, where should it be placed on the
+  chart?
+
+  6. Do you have any preferences for the size range of the points based on total_reviews?
+
+  7. Would you like grid lines on the chart, and if so, do you have any preferences
+  for their appearance?
+
+  8. Should the chart have specific annotations or markers for particular data points?
+
+  9. Do you have any preferences for the overall layout or theme of the chart (e.g.,
+  minimalistic, detailed)?
+
+  10. Would you like the data points to be slightly transparent to help with overlapping
+  points?'
+answers: '1. I do not know.
+
+  2. Default circles are acceptable.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a legend. I am not sure about the placement.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I prefer a minimalistic theme.
+
+  10. Yes, slightly transparent data points would be good.'
+data_attributes:
+- critic_score
+- people_score
+- total_reviews
+- genre
+- title
+- year
+- synopsis

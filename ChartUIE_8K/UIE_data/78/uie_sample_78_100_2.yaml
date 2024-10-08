@@ -1,0 +1,50 @@
+initial_prompt: Create a stacked bar chart visualizing the number of Reddit posts
+  about COVID-19 vaccines by their score, with separate bars for each unique title.
+  Highlight posts about AstraZeneca. Annotate key data points like the highest and
+  lowest scores and any significant gaps in scores. This will help understand the
+  distribution and reception of different posts. Provide context about the timing
+  of these posts, especially around critical dates for vaccine approvals. Add editorial
+  comments for clarity on less obvious data trends. Use different colors to distinguish
+  between posts and make highlights stand out visually.
+questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Do you prefer specific colors for highlighting posts about AstraZeneca?
+
+  3. Is there a specific format or style for annotations that you would like?
+
+  4. Do you have preferences for the placement of editorial comments?
+
+  5. Should the chart include a legend to explain the colors used for different posts?
+
+  6. Is there a specific date format you would like for timestamps in annotations?
+
+  7. How detailed should the context about the timing of posts be regarding vaccine
+  approval dates?
+
+  8. Are there specific labels or titles you would like on the chart axes?
+
+  9. Do you have preferences on the font style and size for text in the chart?'
+answers: '1. I do not know.
+
+  2. Preferably, something that stands out like bright red or orange.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, please include a legend.
+
+  6. I am not sure.
+
+  7. I would like the context to be fairly detailed, especially noting critical approval
+  dates.
+
+  8. Yes, labels like "Reddit Post Titles" for the x-axis and "Score" for the y-axis
+  would be good.
+
+  9. I do not know.'
+data_attributes:
+- title
+- score
+- timestamp
+- created

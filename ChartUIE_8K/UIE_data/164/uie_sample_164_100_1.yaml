@@ -1,0 +1,46 @@
+initial_prompt: Please create a heatmap to visualize the activity of expenditure lobbyists
+  on a monthly basis. Use the columns "Date Filed," "Lobbyist Name," and "Total Amount
+  Spent to Influence." Annotate the heatmap to highlight the specific lobbyists with
+  the highest total amounts spent. Include missing value highlights to emphasize data
+  gaps. This visualization aims to identify and emphasize trends and significant expenditures
+  over time. The purpose is to analyze the influence patterns of various lobbyists
+  in the given periods. Provide a legend for clear interpretation of the color coding
+  used in the heatmap.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the missing values to be highlighted?
+
+  3. Is there a specific format you prefer for annotating the highest total amounts
+  spent by lobbyists?
+
+  4. Should the heatmap display monthly data aggregations or individual daily/weekly
+  data points?
+
+  5. Do you have any specific preferences for the legend''s placement and design?
+
+  6. Are there any specific lobbyists you want to focus on in the annotations besides
+  the ones with the highest expenditures?
+
+  7. Would you like the heatmap to include gridlines to separate the months and lobbyists
+  clearly?
+
+  8. Do you prefer the x-axis or y-axis to display the months?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No specific format preference.
+
+  4. Monthly data aggregations would be preferred.
+
+  5. I have no specific preference.
+
+  6. No, just focus on the ones with the highest expenditures.
+
+  7. Yes, include gridlines to separate the months and lobbyists clearly.
+
+  8. I prefer the x-axis to display the months.'
+data_attributes:
+- Date Filed
+- Lobbyist Name
+- Total Amount Spent to Influence

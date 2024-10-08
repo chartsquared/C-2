@@ -1,0 +1,47 @@
+initial_prompt: 'Please create a heatmap using the given Machine Predictive Maintenance
+  Classification data. The heatmap should visualize the correlation between numerical
+  features: ''Air temperature [K]'', ''Process temperature [K]'', ''Rotational speed
+  [rpm]'', ''Torque [Nm]'', and ''Tool wear [min]''. Highlight the strength of correlations
+  using different color intensities. Exclude non-numerical columns like ''UDI'', ''Product
+  ID'', ''Type'', ''Target'', and ''Failure Type''. Ensure that you label the axes
+  and include a legend for easier interpretation. Focus on showcasing how these variables
+  are interrelated to help in predictive maintenance analysis. Thank you!'
+questions: '1. Do you have a preference for the color scheme to be used in the heatmap?
+
+  2. What range of correlation values do you want to see highlighted with specific
+  colors?
+
+  3. Would you like gridlines separating each cell in the heatmap?
+
+  4. Are there any specific annotations or labels you want inside the heatmap cells
+  (e.g., exact correlation values)?
+
+  5. Do you have a preferred font style or size for the axis labels and legend?
+
+  6. Should the heatmap have a title or any additional text for context?
+
+  7. Would you prefer the heatmap to have a specific size or aspect ratio?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include gridlines separating each cell.
+
+  4. Yes, please include the exact correlation values inside the heatmap cells.
+
+  5. I am not sure.
+
+  6. Yes, please include a title: "Correlation Heatmap for Predictive Maintenance
+  Analysis."
+
+  7. I do not know.
+
+  <end of user response>'
+data_attributes:
+- Air temperature [K]
+- Process temperature [K]
+- Rotational speed [rpm]
+- Torque [Nm]
+- Tool wear [min]

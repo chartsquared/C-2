@@ -1,0 +1,55 @@
+initial_prompt: Please create a stacked column chart for Walmart Sales data. I want
+  to visualize the comparison between Weekly Sales, Temperature, and Fuel Price over
+  different dates, broken down by Store. Ensure each stack represents a separate Store
+  ID, showing the contribution of Weekly Sales, Temperature, and Fuel Price. Highlight
+  holiday weeks for better understanding. This should help in identifying any trends
+  or correlations between sales, weather, and fuel prices, while considering holiday
+  impacts. The unique values can guide the color coding of different stacks. Thanks!
+questions: '1. Do you have any specific color preferences for different Store IDs
+  in the stacked column chart?
+
+  2. How would you like the holiday weeks to be highlighted in the chart (e.g., with
+  a different color, markers, or shading)?
+
+  3. Would you prefer any specific ordering for the data stacks on each column (e.g.,
+  Weekly Sales at the bottom, Temperature in the middle, Fuel Price at the top)?
+
+  4. Do you have any preferences for the date formatting on the x-axis?
+
+  5. What level of granularity would you like for the x-axis (e.g., daily, weekly,
+  or monthly intervals)?
+
+  6. Are there any specific labels or annotations you want to be included on the chart?
+
+  7. Would you like to include a legend to distinguish between different data attributes
+  (Weekly Sales, Temperature, Fuel Price) and stores? If so, where would you like
+  it positioned?
+
+  8. Do you have a preference for the chart title and axis labels?
+
+  9. Would you like gridlines to be included in the chart for better readability?'
+answers: '1. I do not have any specific color preferences for different Store IDs.
+
+  2. I am not sure, maybe use shading to highlight holiday weeks.
+
+  3. I am not sure.
+
+  4. I do not have any specific preference for date formatting on the x-axis.
+
+  5. Weekly intervals sound good.
+
+  6. I do not know.
+
+  7. Yes, I would like a legend to distinguish between different data attributes and
+  stores. Place it to the right of the chart.
+
+  8. I do not have a specific preference for the chart title and axis labels.
+
+  9. Yes, please include gridlines for better readability.'
+data_attributes:
+- Store
+- Date
+- Weekly_Sales
+- Holiday_Flag
+- Temperature
+- Fuel_Price

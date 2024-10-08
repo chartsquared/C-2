@@ -1,0 +1,46 @@
+initial_prompt: Plot a line chart of IMDB ratings over episodes from seasons 1 to
+  9. Annotate highest and lowest rated episodes. Highlight significant spikes and
+  drops.
+questions: '1. Do you have a preferred color scheme for the line and annotations?
+
+  2. Would you like to label each episode with its title, or just annotate the highest
+  and lowest rated episodes?
+
+  3. Should the x-axis be segmented by seasons, with each episode marked within its
+  season?
+
+  4. Do you have a preference for the style of the line (e.g., solid, dashed)?
+
+  5. Would you like gridlines to be displayed on the chart?
+
+  6. How would you like significant spikes and drops to be highlighted (e.g., different
+  color, markers)?
+
+  7. Do you prefer a specific font style or size for the annotations and labels?
+
+  8. Should we include a legend to indicate what the annotations and highlights represent?
+
+  9. Would you like any additional information to be displayed in tooltips when hovering
+  over data points?'
+answers: '1. I am not sure.
+
+  2. Just annotate the highest and lowest rated episodes.
+
+  3. Yes, the x-axis should be segmented by seasons, with each episode marked within
+  its season.
+
+  4. I have no specific preference.
+
+  5. Yes, I would like gridlines to be displayed on the chart.
+
+  6. Different color, please.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.'
+data_attributes:
+- season
+- episode
+- imdb_rating

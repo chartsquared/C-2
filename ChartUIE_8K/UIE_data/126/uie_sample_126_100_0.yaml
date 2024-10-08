@@ -1,0 +1,43 @@
+initial_prompt: Create a Geographic heatmap visualizing California housing prices,
+  with data points representing different locations. Use color to indicate median
+  house values, highlighting the most expensive and least expensive areas. Include
+  text annotations to show the exact values of outlier data points, such as unusually
+  high or low house prices. Ensure the heatmap displays dimensions like longitude,
+  latitude, median income, and housing median age to provide context. The chart's
+  purpose is to identify regional trends in housing prices and factors influencing
+  them. Highlight regions near the bay for focused analysis. Ensure missing values
+  are appropriately handled.
+questions: '1. Do you have a specific color scheme or gradient preference for indicating
+  the median house values on the heatmap?
+
+  2. Would you prefer any specific styling for text annotations, such as font size
+  or color?
+
+  3. Should there be a specific symbol or marker for outliers, and if so, what kind?
+
+  4. Do you have a preference for the range or number of color intensity levels?
+
+  5. How would you like the regions near the bay to be highlighted for focused analysis
+  (e.g., different color, border)?
+
+  6. Do you have a preference for how missing values should be represented or handled
+  in the heatmap?
+
+  7. Would you like a legend to interpret the colors used, and if so, do you have
+  styling preferences for it?
+
+  8. Is there a specific map style or base map you prefer (e.g., satellite view, street
+  map)?'
+answers: "1. I am not sure about a specific color scheme or gradient. \n2. I do not\
+  \ know about styling for text annotations.\n3. I would prefer a distinct symbol\
+  \ for outliers, maybe a star or a different color marker.\n4. I don't have a specific\
+  \ preference for the range or number of color intensity levels.\n5. Highlight regions\
+  \ near the bay with a different color.\n6. I am not sure how missing values should\
+  \ be handled.\n7. Yes, I would like a legend, but I have no specific styling preferences.\n\
+  8. I have no specific preference for the map style."
+data_attributes:
+- longitude
+- latitude
+- median_income
+- housing_median_age
+- median_house_value

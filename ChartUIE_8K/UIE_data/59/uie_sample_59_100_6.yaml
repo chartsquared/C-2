@@ -1,0 +1,52 @@
+initial_prompt: I have a dataset of GameStop historical stock prices with columns
+  like date, open_price, high_price, low_price, close_price, volume, and adjclose_price.
+  I want to create a heatmap that visualizes the correlation between these variables
+  over time. Please use the data to plot a correlation matrix heatmap. Make sure it
+  includes all the columns and highlights relationships, especially focusing on how
+  close_price correlates with volume and other price metrics. Additionally, the heatmap
+  should be visually appealing, with a color gradient that clearly shows variations
+  in correlation strength. Thank you!
+questions: '1. Do you have any preference for the color gradient used in the heatmap?
+
+  2. Would you like to include annotations within the heatmap cells to display the
+  correlation coefficient values?
+
+  3. Is there a specific color palette you prefer for highlighting strong vs. weak
+  correlations?
+
+  4. Do you have a preference for the range of correlation values (e.g., -1 to 1)
+  represented in the color gradient?
+
+  5. Are there any specific labels or titles you would like to include in the heatmap
+  (e.g., title, axis labels)?
+
+  6. Would you like to adjust the size of the heatmap or the individual cells for
+  better readability?
+
+  7. Do you have a preferred font style or size for the heatmap labels and annotations?
+
+  8. Should the heatmap include grid lines separating the cells, and if so, do you
+  have any preference for their style and color preferences?'
+answers: '1. I do not have a specific preference.
+
+  2. Yes, I would like to include annotations within the heatmap cells.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. No specific labels or titles are necessary.
+
+  6. I do not have a preference for the size; just ensure it''s readable.
+
+  7. I am not sure.
+
+  8. I do not have a specific preference for grid lines.'
+data_attributes:
+- date
+- open_price
+- high_price
+- low_price
+- close_price
+- volume
+- adjclose_price

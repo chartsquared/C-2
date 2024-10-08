@@ -1,0 +1,45 @@
+initial_prompt: '<start of user instructions>
+
+  I have a dataset from a COVID-19 Complete Blood Count (CBC) database and I''m interested
+  in a scatter plot visualization. I want to see the relationship between "Patient
+  Age" and "Neutrophils Count". Can you create a scatter plot that shows "Patient
+  Age" on the x-axis and "Neutrophils Count" on the y-axis? Use different colors or
+  markers for the "Outcome" category to distinguish between "Recovered" and "Not Recovered"
+  patients. This will help me understand if there''s any correlation between age and
+  neutrophil levels. Thank you!
+
+  <end of user instructions>'
+questions: '1. Do you have any preferences for the colors used to distinguish between
+  "Recovered" and "Not Recovered" patients?
+
+  2. What size would you prefer for the markers on the scatter plot?
+
+  3. Would you like to include any gridlines on the chart for better readability?
+
+  4. Should the axes have any specific ranges or can they be automatically adjusted
+  based on the data?
+
+  5. Do you have any preferences for the chart''s title and axis labels'' fonts and
+  sizes?
+
+  6. Would you like to include a legend on the chart to explain the color coding or
+  markers?
+
+  7. Do you prefer the chart to have any specific background color or style?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I would like to include gridlines for better readability.
+
+  4. The axes can be automatically adjusted based on the data.
+
+  5. I have no specific preference.
+
+  6. Yes, please include a legend to explain the color coding or markers.
+
+  7. I do not know.'
+data_attributes:
+- Patient Age
+- Neutrophils Count
+- Outcome

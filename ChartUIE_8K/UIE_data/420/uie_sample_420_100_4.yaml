@@ -1,0 +1,52 @@
+initial_prompt: Please create a stacked column chart using the data from '../Extra_datas/data/420.csv'.
+  The x-axis should represent the different 'crossings', and the y-axis should display
+  the counts. Each column should be stacked to show 'bike_count' and 'ped_count' for
+  each crossing. I want to visualize how bike and pedestrian counts compare at each
+  crossing. Filter the data to exclude any missing values for clearer analysis. Also,
+  color-code the stacks with distinct colors for 'bike_count' and 'ped_count' to differentiate
+  them easily.
+questions: '1. Do you have any specific color preferences for ''bike_count'' and ''ped_count''?
+
+  2. Would you like to include data labels on the columns?
+
+  3. Do you have a preferred order for the crossings on the x-axis or should they
+  be sorted by data values?
+
+  4. Should the y-axis be set to a specific scale or range?
+
+  5. Would you like grid lines for easier comparison between columns? If yes, should
+  they be light or prominent?
+
+  6. Do you prefer a specific font style or size for the axis labels and title?
+
+  7. Should the chart include a legend to differentiate between ''bike_count'' and
+  ''ped_count''?
+
+  8. Would you like to highlight any specific crossings or data points in the chart?
+
+  9. Should the chart have a title or any additional annotations for clarity?
+
+  10. Do you prefer the chart background to be a specific color or keep it neutral?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Yes, include a legend.
+
+  8. I am not sure.
+
+  9. Yes, the chart should have a title.
+
+  10. I have no specific preference.'
+data_attributes:
+- crossing
+- bike_count
+- ped_count

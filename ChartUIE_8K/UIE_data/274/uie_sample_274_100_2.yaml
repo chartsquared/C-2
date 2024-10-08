@@ -1,0 +1,51 @@
+initial_prompt: Create a stacked bar chart to visualize students' academic success
+  and dropout rates. Use different colors to represent 'Dropout' and 'Graduate' statuses.
+  Highlight elements like 'Age at enrollment', 'Gender', and 'Marital status' to see
+  their influence on the target variable. Annotate specific bars with values for clarity.
+  This will help in predicting students' dropout and academic success. Include unemployment
+  and inflation rates as contextual annotations to understand external economic influences.
+  Use the sample data provided to structure the chart. Ensure it is visually engaging
+  and emphasizes key insights.
+questions: '1. Do you have a preference for the color palette used in the stacked
+  bar chart to represent ''Dropout'' and ''Graduate'' statuses?
+
+  2. How would you prefer the data on ''Age at enrollment'', ''Gender'', and ''Marital
+  status'' to be highlighted or differentiated in the chart?
+
+  3. Would you like the unemployment and inflation rates to be displayed as annotations
+  on specific bars, as separate overlays, or in another manner?
+
+  4. Should the annotations for specific bars include just the values, or additional
+  information/context as well?
+
+  5. Do you have any particular font style, size, or orientation preferences for the
+  labels and annotations?
+
+  6. Are there any specific tools or software you prefer for generating this visualization?
+
+  7. How would you like to handle instances where data for ''Age at enrollment'',
+  ''Gender'', or ''Marital status'' is missing or incomplete?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Please use different shades or patterns to differentiate them clearly.
+
+  3. Display them as annotations on specific bars.
+
+  4. Include additional information/context where relevant.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. Use averages or medians to handle missing or incomplete data.
+
+  <end of user emulated response>'
+data_attributes:
+- Age at enrollment
+- Gender
+- Marital status
+- Target
+- Unemployment rate
+- Inflation rate

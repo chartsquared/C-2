@@ -1,0 +1,53 @@
+initial_prompt: Please create a heatmap for the given dataset that visualizes the
+  relationships between Average Temperature, Population, Area, GDP, and Continent.
+  The heatmap should show how these variables correlate with each other across different
+  continents. This visualization will help identify patterns or trends among the continents
+  in terms of temperature, population, area size, and economic indicators. Use the
+  data provided and ensure clear labels and a legend for easy interpretation. Make
+  sure that missing values, if any, are handled appropriately. The heatmap should
+  be visually clear and easy to understand.
+questions: '1. Do you have a preference for the color palette used in the heatmap?
+
+  2. Should the heatmap include numerical values within the cells to show exact correlation
+  coefficients?
+
+  3. Would you like the heatmap to use a specific range for the correlation coefficients
+  (e.g., -1 to 1)?
+
+  4. Do you want the heatmap to display the data in a particular order (e.g., alphabetical
+  order of continents)?
+
+  5. Is there a preferred size or aspect ratio for the heatmap?
+
+  6. Do you want to include annotations for significant correlations or trends?
+
+  7. Should the legend be displayed in a specific position (left, right, top, bottom)?
+
+  8. Would you like to add titles or subtitles for additional context in the heatmap?
+
+  9. Should the heatmap follow a specific grid layout or spacing between cells?'
+answers: '1. I am not sure.
+
+  2. Yes, please include numerical values within the cells to show exact correlation
+  coefficients.
+
+  3. Yes, the heatmap should use a specific range for the correlation coefficients,
+  from -1 to 1.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. Yes, please include titles or subtitles for additional context in the heatmap.
+
+  9. I do not know.'
+data_attributes:
+- Average_Temperature
+- Population
+- Area
+- GDP
+- Continent

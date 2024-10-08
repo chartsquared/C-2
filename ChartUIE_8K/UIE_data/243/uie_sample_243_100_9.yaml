@@ -1,0 +1,54 @@
+initial_prompt: Create a grouped bar chart to visualize the weather data from the
+  Global Metropolis Weather Dataset. Each group should represent a different location,
+  with bars for each weather attribute like Temperature (°C), Feels Like (°C), Humidity
+  (%), Wind Speed (kph), Cloud Cover (%), Pressure (mb), UV Index, and Visibility
+  (km). Make sure each bar's color represents a unique weather attribute for clear
+  distinction and comparison between locations. Include a legend for the weather attributes
+  and label the x-axis with different locations and the y-axis with the corresponding
+  values.
+questions: '1. Do you have any specific color preferences for each weather attribute?
+
+  2. Do you want the bars to be displayed in a particular order within each group?
+
+  3. Would you like to display data labels on each bar to show exact values?
+
+  4. Do you have a preference for the format or style of the legend?
+
+  5. Is there a specific range or scaling you prefer for the y-axis?
+
+  6. Do you have a preferred font type or size for the x-axis and y-axis labels?
+
+  7. Should the chart include gridlines for easier comparison across different locations
+  and attributes?
+
+  8. Are there any specific visual elements (like background color or border styles)
+  you would like included in the chart?
+
+  9. How many locations do you plan to include in the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please display data labels on each bar.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, please include gridlines for easier comparison.
+
+  8. I do not have any specific visual elements in mind.
+
+  9. Around 4-5 locations.'
+data_attributes:
+- Location
+- Temperature (°C)
+- Feels Like (°C)
+- Humidity (%)
+- Wind Speed (kph)
+- Cloud Cover (%)
+- Pressure (mb)
+- UV Index
+- Visibility (km)

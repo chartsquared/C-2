@@ -1,0 +1,44 @@
+initial_prompt: Create a choropleth map visualizing the birth countries of Nobel Prize
+  laureates from 1901. Use different shades to represent the number of laureates born
+  in each country. Highlight countries with high laureate counts for emphasis. Include
+  text annotations for select countries to display exact numbers. This will support
+  analyzing patterns of Nobel Prize distribution by geography, focusing on male dominance
+  as the dataset mostly mentions men. Ensure the visualization effectively communicates
+  where Nobel laureates are predominantly born, aligning with social-science studies
+  on gender distribution and geographic origins.
+questions: '1. Do you have a preferred color scheme or palette for different shades
+  on the choropleth map?
+
+  2. Which countries would you like to have text annotations for displaying exact
+  numbers of laureates?
+
+  3. How would you like the highlighted countries with high laureate counts to be
+  visually emphasized?
+
+  4. Do you prefer any specific map projection style (e.g., Mercator, Robinson)?
+
+  5. Would you like any additional information displayed on hover for better insight?
+
+  6. Is there a particular legend format or placement you prefer for explaining the
+  shades used in the map?
+
+  7. Do you have a specific font style or size preference for text annotations and
+  labels?'
+answers: '1. I am not sure.
+
+  2. The United States, United Kingdom, Germany, and France.
+
+  3. I would like them to be visually emphasized with a brighter or more contrasting
+  shade.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.'
+data_attributes:
+- birth_country
+- laureate_id
+- gender

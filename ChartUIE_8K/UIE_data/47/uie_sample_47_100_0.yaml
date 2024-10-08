@@ -1,0 +1,74 @@
+initial_prompt: '<start of the annotation list>
+
+  1. Text Annotations: Highlight brand names with annotations displaying their average
+  ratings and total reviews.
+
+  Purpose: Focus on brands with the best user feedback.
+
+  Other Uses: Show editorial comments about standout models.
+
+  3. Highlights: Differentiate models with high discounts using color highlights.
+
+  Purpose: Emphasize the most discounted laptops visually.
+
+  <end of the annotation list>
+
+
+  Create a bar chart visualizing the latest prices of various laptop brands from March
+  2022 data. Highlight brands/ models with the highest discounts and add text annotations
+  displaying average ratings and the number of user reviews for each brand. This will
+  assist buyers in identifying well-rated laptops with significant discounts.'
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be grouped by brand or individual model?
+
+  3. Should the bars be sorted in any specific order (e.g., by price, discount, or
+  rating)?
+
+  4. How would you prefer the discounts to be highlighted (e.g., specific colors,
+  patterns)?
+
+  5. Do you have any specific preferences for the font style or size of the text annotations?
+
+  6. Would you like to display the average ratings and number of reviews directly
+  on the bars or as callout boxes?
+
+  7. Is there any specific title or subtitle you would like to include on the chart?
+
+  8. Should the x-axis or y-axis be labeled in a particular way (e.g., currency format
+  for prices)?
+
+  9. Would you like to add any legends or additional information in the chart?
+
+  10. Do you want to include any specific editorial comments or additional notes on
+  standout models?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Individual model.
+
+  3. By discount.
+
+  4. Specific colors would be great.
+
+  5. I do not know.
+
+  6. Directly on the bars.
+
+  7. I have no specific preference.
+
+  8. Yes, use currency format for prices.
+
+  9. I am not sure.
+
+  10. No, I don''t have any specific comments to add.
+
+  <end of user emulated response>'
+data_attributes:
+- brand
+- model
+- latest_price
+- discount
+- star_rating
+- reviews

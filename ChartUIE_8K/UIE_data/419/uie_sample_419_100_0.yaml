@@ -1,0 +1,60 @@
+initial_prompt: Create a box chart visualizing bike_count and ped_count data over
+  time to highlight patterns and anomalies in Seattle's urban planning efforts. Annotate
+  specific outliers and significant trends. Highlight key crossings to show areas
+  with the highest activity levels. Use different colors to distinguish between bike
+  and pedestrian counts, emphasizing the importance of each for city infrastructure
+  planning. Include annotations to describe the observed trends and anomalies for
+  better context and editorial insights. This will help in identifying areas requiring
+  improvements and planning better for future urban infrastructure.
+questions: '1. Do you have a preferred color scheme for representing bike and pedestrian
+  counts?
+
+  2. Do you prefer specific annotation styles for outliers and trends (e.g., text
+  labels, arrows, highlighting)?
+
+  3. Is there a particular way you would like key crossings to be highlighted (e.g.,
+  different shapes, special colors)?
+
+  4. What is your preferred layout for the box chart, such as vertical or horizontal
+  orientation?
+
+  5. Are there any specific time intervals you would like to focus on (e.g., yearly,
+  monthly, daily)?
+
+  6. Would you like gridlines to be included in the background for better reference,
+  and if so, do you have a preference for their style or color?
+
+  7. Do you prefer a particular font style or size for annotations and labels?
+
+  8. Should the chart include a legend to differentiate between bike count and ped
+  count, and if so, where would you like the legend to be positioned?
+
+  9. Are there any specific crossings that you want to always be highlighted or focused
+  on in the chart?
+
+  10. Do you require any specific margin or spacing specifications around the chart
+  for better readability?'
+answers: '1. I don''t have a specific preference.
+
+  2. Text labels and arrows would be preferred for annotations.
+
+  3. I am not sure.
+
+  4. Vertical orientation.
+
+  5. Monthly intervals would be ideal.
+
+  6. Yes, include gridlines. No specific preference for style or color.
+
+  7. I do not know.
+
+  8. Yes, include a legend. Position it at the bottom.
+
+  9. I am not sure.
+
+  10. No specific preference.'
+data_attributes:
+- date
+- bike_count
+- ped_count
+- crossing

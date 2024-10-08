@@ -1,0 +1,48 @@
+initial_prompt: Create a line chart depicting patient ages versus time from diagnosis
+  to last follow-up days. Highlight treatment types and outcomes for soft tissue sarcoma
+  patients.
+questions: '1. Do you have a preferred color palette for the line chart?
+
+  2. Should different treatment types be represented by different line styles or colors?
+
+  3. How would you like the patient outcomes (Status) to be highlighted or annotated?
+
+  4. Do you prefer any specific markers for different data points on the line chart?
+
+  5. Is there a specific title or labels you would like for the axes?
+
+  6. Do you want gridlines to be displayed on the chart for better readability?
+
+  7. Should there be a legend to differentiate between treatment types and outcomes?
+
+  8. Are there any specific data ranges you want to focus on or highlight?
+
+  9. Do you have a preferred font style or size for the chart labels and titles?
+
+  10. Would you like any specific formatting for the time axis (e.g., date format,
+  intervals)?'
+answers: '1. I do not have a specific preference.
+
+  2. Different colors.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. "Patient Ages" for the y-axis and "Time from Diagnosis to Last Follow-Up (Days)"
+  for the x-axis.
+
+  6. I do not have a specific preference.
+
+  7. Yes.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not know.'
+data_attributes:
+- Age
+- Time – diagnosis to last follow-up (days)
+- Treatment
+- Status (NED, AWD, D)

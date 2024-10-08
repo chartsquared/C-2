@@ -1,0 +1,49 @@
+initial_prompt: Create a box chart visualizing the nutritional values (calories, proteins,
+  fat, carbohydrate) of different Indonesian foods and drinks using the given dataset.
+  Display each nutrition type on the y-axis and the different foods on the x-axis
+  to compare their value ranges. Highlight outliers to indicate items with significantly
+  high or low nutrition values. Label each food appropriately with their names for
+  clear identification. Provide a color-coded legend for each nutrient. Title the
+  chart "Nutritional Distribution of Indonesian Foods and Drinks" to reflect the dataset
+  context. Include the source of the data at the bottom.
+questions: '1. Do you have any specific color preferences for the color-coded legend
+  of each nutrient?
+
+  2. Would you like any particular style or font for the titles and labels?
+
+  3. Are there any specific sizes for the text or labels that you prefer to ensure
+  readability?
+
+  4. Should the outliers be marked with a particular symbol or style?
+
+  5. Do you have any preferences regarding the background color or grid lines of the
+  chart?
+
+  6. Would you like the chart to have any specific margins or padding for better display?
+
+  7. Are there any additional annotations or notes that you would like to include
+  on the chart?
+
+  8. Should the source of the data be formatted in any specific way at the bottom
+  of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I think outliers should be marked with a different symbol or style.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I do not know.'
+data_attributes:
+- calories
+- proteins
+- fat
+- carbohydrate
+- name

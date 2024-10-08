@@ -1,0 +1,57 @@
+initial_prompt: Visualize a heatmap to display the presence and absence of various
+  underwater features, such as coral reefs, pavement, rhodolith, etc., across different
+  sites sampled. Utilize columns like 'SITE ID' and 'DATE COLLECTED' for the sites
+  and 'CORAL REEF', 'PAVEMENT', 'RHODOLITH', etc., for habitat features. Each cell
+  should indicate 'Present' or 'Absent' by color intensity. Add layers for each feature,
+  ensuring clarity and ease of comparison across sites. Consider using color gradients
+  to depict the presence/absence effectively. Tie this to environmental-science data
+  to assess benthic habitat health.
+questions: '1. Do you have any specific color preferences for indicating ''Present''
+  or ''Absent'' in the heatmap?
+
+  2. Would you prefer a specific color gradient for the heatmap to enhance clarity
+  and comparison?
+
+  3. Should the heatmap have any specific annotations or labels for easier interpretation?
+
+  4. Do you want the sites to be grouped or ordered in a particular manner, such as
+  by ''DATE COLLECTED'' or another criterion?
+
+  5. Are there any specific legends or keys you would like to include for better understanding
+  of the heatmap?
+
+  6. Is there a preference for the size or scale of the heatmap cells for readability?
+
+  7. Would you like to include any additional data or references in the heatmap for
+  context?'
+answers: '<start user emulated response>
+
+  1. I do not have any specific color preferences.
+
+  2. I am not sure, something that enhances clarity and comparison would be good.
+
+  3. Yes, please include annotations or labels for easier interpretation.
+
+  4. Please order the sites by ''DATE COLLECTED''.
+
+  5. I do not know, whatever you think is best for understanding the heatmap.
+
+  6. I am not sure, but it should be readable.
+
+  7. No, the data provided should be sufficient.
+
+  <end user emulated response>'
+data_attributes:
+- SITE ID
+- DATE COLLECTED
+- CORAL REEF
+- PAVEMENT
+- RHODOLITH
+- SAND
+- HARD CORAL
+- SOFT CORAL
+- MACROALGAE
+- SPONGE
+- SEAGRASS
+- ARTIFICIAL
+- UNKNOWN

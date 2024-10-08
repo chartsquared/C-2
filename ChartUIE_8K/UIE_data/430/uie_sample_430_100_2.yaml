@@ -1,0 +1,47 @@
+initial_prompt: Create a histogram to visualize the distribution of 'weeks_on_chart'
+  for songs in the Billboard Hot 100, explicitly highlighting Christmas songs. Use
+  text annotations to highlight key points, such as the most extended charting weeks
+  for a song. The chart should help identify how many weeks popular tracks, especially
+  Christmas hits, stayed on the chart. This visualization will provide insights into
+  the staying power of seasonal music versus regular releases, drawing attention to
+  enduring holiday classics. Ensure the x-axis represents weeks and the y-axis shows
+  the number of songs.
+questions: '1. Do you have a preferred color scheme for highlighting Christmas songs
+  versus regular songs?
+
+  2. Would you like specific bins for the histogram or should we use an automatic
+  binning method?
+
+  3. Should the text annotations highlighting key points use a specific font size
+  or style?
+
+  4. Do you prefer grid lines to be displayed on the histogram?
+
+  5. Would you like a legend included to distinguish between Christmas songs and regular
+  songs?
+
+  6. Is there a particular way you would like the x-axis and y-axis labeled or formatted?
+
+  7. Do you have a preference for the placement or styling of the title for the chart?
+
+  8. Are there any specific Christmas songs you want to highlight within the text
+  annotations?'
+answers: '1. I am not sure.
+
+  2. Use an automatic binning method.
+
+  3. I do not know.
+
+  4. Yes, display grid lines.
+
+  5. Yes, include a legend to distinguish between Christmas songs and regular songs.
+
+  6. I have no specific preference.
+
+  7. No specific preference for the title placement or styling.
+
+  8. I am not sure.'
+data_attributes:
+- weeks_on_chart
+- song
+- performer

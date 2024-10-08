@@ -1,0 +1,57 @@
+initial_prompt: Create a stacked bar chart to visualize the availability of TV shows
+  across Netflix, Hulu, Prime Video, and Disney+. Use the 'Title' column for the X-axis
+  and the streaming platforms (Netflix, Hulu, Prime Video, Disney+) for the Y-axis
+  values. Each bar should represent a TV show, stacked to show which platforms the
+  show is available on (1 for available, 0 for not available). Make sure to use different
+  colors to represent each streaming platform distinctly. This will help in comparing
+  the distribution of TV shows across these platforms conveniently.
+questions: '1. Do you have a preferred color palette for representing the different
+  streaming platforms?
+
+  2. Are there any specific labels you would like on the X-axis (for TV show titles)
+  if the number of titles is large?
+
+  3. Do you want the chart to include a legend to differentiate the streaming platforms?
+
+  4. Should any tooltips or hover text be included to show more details when hovering
+  over a bar?
+
+  5. Do you want the bar chart to be oriented vertically or horizontally?
+
+  6. Is there a specific order in which you would like the TV shows to be displayed
+  on the X-axis (alphabetical, by release year, etc.)?
+
+  7. Would you like any additional grid lines or reference lines for better readability?
+
+  8. Should the availability values (1 for available, 0 for not available) be displayed
+  on the bars or only indicated by the color stack?
+
+  9. Are there any specific annotations or highlights you would like to add to the
+  chart?
+
+  10. Is there a specific chart title or subtitle you would prefer?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, include a legend to differentiate the streaming platforms.
+
+  4. I do not know.
+
+  5. Vertically oriented bar chart.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Only indicated by the color stack.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- Title
+- Netflix
+- Hulu
+- Prime Video
+- Disney+

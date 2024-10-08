@@ -1,0 +1,59 @@
+initial_prompt: I have a dataset about distances between various Indian cities from
+  the transportation and logistics sector. I would like to create a Choropleth map
+  that visualizes the distances between different origins and destinations. The map
+  should highlight city pairs based on the distance value, showing connections between
+  cities with graduated color scales indicating the distance. Ideally, cities with
+  shorter distances should be in one color, while longer distances should be in another.
+  This visualization should help in understanding the spatial distribution and connectivity
+  between these key locations in India.
+questions: '1. Do you have a preferred color scheme or specific colors you would like
+  to use for representing shorter and longer distances on the Choropleth map?
+
+  2. Would you like the map to include city names or labels for easier identification
+  of the origins and destinations?
+
+  3. Should the map display any additional geographical features such as state boundaries
+  or major rivers?
+
+  4. Do you have a preferred geographic projection for the map (e.g., Mercator, Robinson)?
+
+  5. Do you want any specific legend design or placement for indicating the distance
+  values on the map?
+
+  6. Are there any specific cities that you would like to emphasize or highlight more
+  prominently on the map?
+
+  7. Would you like the map to include a title and/or subtitle? If so, what should
+  the text be?
+
+  8. Is there a particular style or theme you prefer for the map (e.g., modern, classic,
+  minimalistic)?
+
+  9. Do you want to include any tooltips or annotations that provide additional information
+  about the distances between city pairs when hovered over?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference for colors.
+
+  2. Yes, please include city names or labels.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. No specific cities need to be highlighted.
+
+  7. Yes, please include a title. The title should be "Distances Between Major Indian
+  Cities".
+
+  8. I have no specific preference for the style.
+
+  9. No, tooltips or annotations are not necessary.
+
+  <end of user emulated response>'
+data_attributes:
+- Origin
+- Destination
+- Distance

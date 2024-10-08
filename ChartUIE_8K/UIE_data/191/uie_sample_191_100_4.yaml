@@ -1,0 +1,52 @@
+initial_prompt: 'Please create a box chart for the dataset provided on brain tumor
+  health. The box chart should include the following features: Mean, Variance, Standard
+  Deviation, Entropy, Skewness, Kurtosis, Contrast, Energy, ASM, Homogeneity, Dissimilarity,
+  and Correlation. Ensure the chart visually distinguishes between the two classes
+  (0 and 1). This will help to compare the statistical properties and dispersion measures
+  for both classes effectively. The chart should have appropriate labels and a legend
+  for clarity.'
+questions: '1. Do you have any preferred color scheme for distinguishing between the
+  two classes (0 and 1)?
+
+  2. Would you like the mean to be displayed as a distinct marker on the box chart?
+
+  3. Is there a specific order in which you would like the statistical properties
+  to be displayed on the chart?
+
+  4. Do you have any preferences for the style and size of the labels and legends
+  in the chart?
+
+  5. Are there any specific titles or annotations you would like to include in the
+  chart?
+
+  6. Would you like grid lines to be included in the background of the box chart for
+  better readability?
+
+  7. Do you have a preference for the aspect ratio or dimensions of the chart?'
+answers: '1. I am not sure, perhaps use contrasting colors for clarity.
+
+  2. Yes, I would like the mean to be displayed as a distinct marker.
+
+  3. I do not have a specific order in mind.
+
+  4. I am not sure about the style and size; go with something standard and readable.
+
+  5. I do not know, just standard titles and annotations should be fine.
+
+  6. Yes, please include grid lines for better readability.
+
+  7. I do not have a preference for the aspect ratio or dimensions.'
+data_attributes:
+- Class
+- Mean
+- Variance
+- Standard Deviation
+- Entropy
+- Skewness
+- Kurtosis
+- Contrast
+- Energy
+- ASM
+- Homogeneity
+- Dissimilarity
+- Correlation

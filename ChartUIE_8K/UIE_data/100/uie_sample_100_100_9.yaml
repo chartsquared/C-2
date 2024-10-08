@@ -1,0 +1,57 @@
+initial_prompt: Please create a box chart to visualize the distribution of prices
+  for women’s fashion items from the dataset. Make sure to use the 'price' column.
+  Each point on the box chart should represent individual prices, showing the range,
+  interquartile range, and any outliers. Additionally, differentiate the box plots
+  based on the 'units_sold' column by categorizing them into high, medium, and low
+  units sold. This will help us understand how prices vary with the quantity sold.
+  Ensure the chart is clearly labeled and easy to interpret. Thank you!
+questions: '1. Do you have any specific preferences for the color schemes of the different
+  categories (high, medium, low units sold)?
+
+  2. Would you like to add a title to the chart? If so, do you have a specific title
+  in mind?
+
+  3. Do you have specific labels for the high, medium, and low units sold categories?
+
+  4. Is there a particular way you would like to categorize the units sold into high,
+  medium, and low? For example, would you like to use specific numeric ranges?
+
+  5. Do you prefer any specific font styles or sizes for the chart labels and title?
+
+  6. Would you like to add any additional annotations or comments on the chart to
+  highlight specific points or trends?
+
+  7. Is there a preferred way to display outliers (e.g., specific marker shapes or
+  colors)?
+
+  8. Do you want any gridlines on the chart? If so, do you have a preference for the
+  style (solid, dashed, etc.)?
+
+  9. Are there any additional metrics or information you would like displayed alongside
+  the box plots?
+
+  10. Would you like a legend to be included in the chart, and if so, do you have
+  any preferences for its placement?'
+answers: '1. I do not have any specific preferences for the color schemes.
+
+  2. I am not sure.
+
+  3. No specific labels in mind.
+
+  4. I am not sure, please use your best judgment for categorizing units sold.
+
+  5. I do not have any specific font styles or sizes in mind.
+
+  6. I do not know.
+
+  7. I do not have a preference for displaying outliers.
+
+  8. I am not sure about the gridlines.
+
+  9. No additional metrics are needed.
+
+  10. Yes, I would like a legend included, but I do not have a preference for its
+  placement.'
+data_attributes:
+- price
+- units_sold

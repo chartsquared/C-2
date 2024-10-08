@@ -1,0 +1,39 @@
+initial_prompt: Create a geographic heatmap of San Francisco park scores, highlighting
+  parks with high and low scores. Annotate noteworthy parks with their names and scores.
+  Use color intensity to represent the score magnitude.
+questions: '1. Do you have a specific color palette in mind for representing the score
+  magnitudes on the heatmap?
+
+  2. Do you prefer a particular style or theme for the map background (e.g., light,
+  dark, satellite)?
+
+  3. How would you like the park annotations to appear (e.g., labels, tooltips)?
+
+  4. Are there specific parks you consider noteworthy and want explicitly highlighted?
+
+  5. Do you have a preference for the map''s initial zoom level and center point?
+
+  6. Would you like any additional layers or markers (e.g., city landmarks) included
+  on the map for context?
+
+  7. What level of granularity do you prefer for the score representation (e.g., exact
+  values, score ranges)?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Golden Gate Park and Presidio, please.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. Exact values, please.'
+data_attributes:
+- ParkID
+- Park
+- Score
+- Longitude
+- Latitude

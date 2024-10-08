@@ -1,0 +1,41 @@
+initial_prompt: Create a bubble chart using Bundesliga data. Use 'HomeTeam' and 'AwayTeam'
+  for x and y axes respectively. Bubble size should represent 'FTHG' (Full Time Home
+  Goals). Color bubbles based on 'FTR' (Full Time Result).
+questions: '1. Do you have any specific preferences for the axis labels and title
+  of the chart?
+
+  2. What color palette would you like to use for representing the ''FTR'' (Full Time
+  Result)?
+
+  3. Would you like to see grid lines on the chart?
+
+  4. Is there a specific font style or size you prefer for the labels and title?
+
+  5. What level of detail do you require for the axis tick marks (e.g., team names
+  displayed horizontally or wrapped)?
+
+  6. Do you prefer the bubbles to be semitransparent or opaque?
+
+  7. Should the chart include a legend explaining the bubble colors and sizes?
+
+  8. Would you like to have tooltips showing details when hovering over the bubbles?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. Semitransparent.
+
+  7. Yes.
+
+  8. I have no specific preference.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTR

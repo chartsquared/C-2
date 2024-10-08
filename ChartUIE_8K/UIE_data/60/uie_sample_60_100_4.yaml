@@ -1,0 +1,50 @@
+initial_prompt: Please create a stacked bar chart per brand showing the average rating
+  (aggregateRating/ratingValue) and total review count (aggregateRating/reviewCount)
+  for each model. The x-axis should represent the brands, and each bar should be divided
+  into sections for each model within the brand. Add another set of bars representing
+  the average price (offers/price) where data is available. This will help visualize
+  the customer feedback and pricing structure for various Windows laptops from Dell,
+  Lenovo, etc. Make sure the chart visually contrasts between the rating, review count,
+  and price data.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should specific colors be used to differentiate between average rating, review
+  count, and average price?
+
+  3. Are there any specific brands or models you would like to highlight in the chart?
+
+  4. Would you like the chart to include data labels for the values of average rating,
+  review count, and average price?
+
+  5. Do you prefer a particular order for the brands on the x-axis (e.g., alphabetical,
+  based on average rating, etc.)?
+
+  6. Should there be any specific annotations or notes on the chart to highlight key
+  insights?
+
+  7. Is there a desired font style or size for the chart labels and titles?
+
+  8. Do you have a preferred title for the chart or labels for the x-axis and y-axis?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include data labels for the values of average rating, review count,
+  and average price.
+
+  5. I prefer the brands to be in alphabetical order on the x-axis.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. The title can be "Customer Feedback and Pricing Structure for Various Windows
+  Laptops". The x-axis label should be "Brands" and the y-axis label should be "Values".'
+data_attributes:
+- brand
+- model
+- aggregateRating/ratingValue
+- aggregateRating/reviewCount
+- offers/price

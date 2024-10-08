@@ -1,0 +1,54 @@
+initial_prompt: Please create a scatter plot visualizing the relationship between
+  the Pokémon's base total stats and their height (in meters). Use the "base_total"
+  for the y-axis and "height_m" for the x-axis. Each point should represent a Pokémon
+  from the dataset, with different colors for different Pokémon types (use the "type1"
+  column to differentiate). This will help to see if there's any correlation between
+  a Pokémon's size and its overall power level. Ensure to label the axes and include
+  a legend for the Pokémon types.
+questions: '1. Do you have any specific preferences for the color palette used to
+  represent the different Pokémon types?
+
+  2. Would you prefer a particular style for the points (e.g., circles, squares, triangles)?
+
+  3. Do you have any preferences for the grid lines (e.g., dotted, solid, none)?
+
+  4. Should the plot include a trend line to show the correlation more clearly?
+
+  5. Do you want any specific font styles or sizes for the axis labels and legend?
+
+  6. Do you have any preferences for the size of the plot (e.g., width and height)?
+
+  7. Would you like to include tooltips or labels for each point showing Pokémon names
+  or other details?
+
+  8. Are there any specific types of annotations you’d like on the plot (e.g., lines
+  marking average height/total stats)?
+
+  9. Would you prefer the legend to be placed in a specific location (e.g., top right,
+  bottom left)?
+
+  10. Are there any specific titles or subtitles you would like to include for the
+  chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- base_total
+- height_m
+- type1

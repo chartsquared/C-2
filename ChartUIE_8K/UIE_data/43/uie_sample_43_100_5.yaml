@@ -1,0 +1,48 @@
+initial_prompt: Please create a scatter plot for the Blood Dataset to visualize the
+  relationship between Recency, Frequency, and Monetary against Time. The x-axis should
+  represent the Time and the y-axis should represent either Recency, Frequency, or
+  Monetary, with points differentiated by the Class. Ensure clear labels and a legend
+  for ease of understanding, highlighting any noticeable patterns in the health data
+  between regular donors and non-regular donors. This visualization will help understand
+  the recency, frequency, and monetary contribution patterns over different time intervals
+  for different donor classes.
+questions: '1. Do you have any preferred color schemes or palettes for differentiating
+  the data points by ''Class''?
+
+  2. Would you like to include grid lines on the chart?
+
+  3. Is there a specific style or font you prefer for labels and legends?
+
+  4. Do you have any preferences for the shape or size of the data points?
+
+  5. Should the axes have specific scales or should they be automatically determined
+  based on the data?
+
+  6. Would you like to add any specific annotations or labels to highlight key patterns
+  or points in the data?
+
+  7. Is there any specific title or subtitle you would like to include for the scatter
+  plot?
+
+  8. Do you prefer the legend to be placed at a specific location within the chart?'
+answers: '1. I am not sure about the color schemes.
+
+  2. Yes, please include grid lines.
+
+  3. I have no specific preference for the style or font.
+
+  4. I am not sure about the shape or size of the data points.
+
+  5. The axes should be automatically determined based on the data.
+
+  6. I do not know about adding specific annotations or labels.
+
+  7. Please title it "Blood Donation Patterns by Donor Class".
+
+  8. I am not sure about the legend placement.'
+data_attributes:
+- Recency
+- Frequency
+- Monetary
+- Time
+- Class

@@ -1,0 +1,59 @@
+initial_prompt: I want a line chart that visualizes the trend of housing prices over
+  time in the New York Housing Market. Please use the 'PRICE' column for the y-axis
+  and combine it with a time dimension based on the 'ADDRESS' or 'MAIN_ADDRESS' data
+  to show how prices vary across different properties. Highlight different property
+  types like 'Condo for sale' and 'House for sale' using different line colors. This
+  chart should help analyze how property prices have changed in various locations
+  within New York.
+questions: '1. Do you have a preference for the time intervals on the x-axis (e.g.,
+  yearly, quarterly, monthly)?
+
+  2. How would you like to handle properties with incomplete or missing time data
+  in the ''ADDRESS'' or ''MAIN_ADDRESS''?
+
+  3. Do you have a specific color scheme in mind for the different property types
+  (''Condo for sale'' and ''House for sale'')?
+
+  4. Would you like to include grid lines for better readability, and if so, do you
+  have a preference for their style (e.g., dashed, dotted)?
+
+  5. Would you prefer to have data points marked on the lines, or just the lines themselves?
+
+  6. Is there a specific way you would like the legend to be positioned or formatted?
+
+  7. Do you want the y-axis (''PRICE'') to be displayed with specific formatting,
+  such as including dollar signs or commas for thousands?
+
+  8. Are there any additional annotations or markers you would like to highlight specific
+  data points or trends?
+
+  9. Would you like to display a summary or aggregate data (like an average price
+  line) on the chart?
+
+  10. Are there any specific font sizes or styles you prefer for the labels and titles
+  on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, I would like to include grid lines, but I do not have a preference for their
+  style.
+
+  5. I would prefer to have data points marked on the lines.
+
+  6. I am not sure.
+
+  7. Yes, please display the y-axis with dollar signs and commas for thousands.
+
+  8. I do not know.
+
+  9. Yes, I would like to display an average price line on the chart.
+
+  10. I have no specific preference.'
+data_attributes:
+- PRICE
+- ADDRESS
+- MAIN_ADDRESS
+- TYPE

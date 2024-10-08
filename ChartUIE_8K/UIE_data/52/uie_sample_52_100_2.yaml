@@ -1,0 +1,42 @@
+initial_prompt: Create a bar chart that shows the average price of computers grouped
+  by their screen sizes. Use text annotations to display exact average prices on each
+  bar for clarity. Highlight bars where the screen size is 15 inches or more to emphasize
+  larger screen sizes. This would help in understanding the price variation among
+  different screen sizes and could guide users looking to balance cost with display
+  size for computer purchases. Utilize the "Basic Computer Data" context for this
+  visualization to make it practical and relevant.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. What font type and size would you prefer for the text annotations?
+
+  3. How would you like the bars for screen sizes 15 inches or more to be highlighted
+  (e.g., different color, pattern, bold outline)?
+
+  4. Would you like the y-axis to be labeled, and if so, do you have a specific label
+  in mind?
+
+  5. Do you prefer the chart to be displayed in a specific orientation (e.g., horizontal
+  or vertical bars)?
+
+  6. Should the bars be arranged in ascending or descending order based on screen
+  size or average price?
+
+  7. Is there any additional information you would like to include in the chart (e.g.,
+  title, subtitle, legend)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Different color would be fine.
+
+  4. Yes, label it as "Average Price ($)".
+
+  5. I prefer vertical bars.
+
+  6. Arrange them in ascending order based on screen size.
+
+  7. Yes, please include a title "Average Price of Computers by Screen Size" and a
+  subtitle "Highlighting Screen Sizes 15 inches or More".'
+data_attributes:
+- price
+- screen

@@ -1,0 +1,55 @@
+initial_prompt: Create a dot plot to visualize key features for Parkinson Disease
+  detection. Use "MDVP:Fo(Hz)", "MDVP:Fhi(Hz)", and "MDVP:Flo(Hz)" on the x-axis and
+  "status" on the y-axis to show the distribution. Include annotations for specific
+  data points with aberrant values in jitter, shimmer, and HNR to highlight potential
+  indicators of disease presence. The purpose is to identify patterns and outliers
+  in the vocal measurements that correlate with Parkinson's disease, helping in understanding
+  and diagnosing the condition. Highlight significant spread and PPE values using
+  different colors or sizes for emphasis.
+questions: '1. Do you have any specific preferences for the colors to use for different
+  data points or categories?
+
+  2. Is there a particular style of annotations you prefer for the data points with
+  aberrant values in jitter, shimmer, and HNR?
+
+  3. Would you like the data points to be represented in different shapes in addition
+  to colors?
+
+  4. Is there a specific range or threshold for what you consider as aberrant values
+  in jitter, shimmer, and HNR?
+
+  5. Do you prefer a specific layout or alignment for the x-axis labels ("MDVP:Fo(Hz)",
+  "MDVP:Fhi(Hz)", and "MDVP:Flo(Hz)")?
+
+  6. Should the dot plot include any gridlines or background shading for better visualization?
+
+  7. Do you have any preference for the font style and size for the labels and annotations?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference for colors.
+
+  2. I am not sure, but clear and readable annotations would be helpful.
+
+  3. I do not know.
+
+  4. I am not sure, use your best judgment for identifying aberrant values.
+
+  5. I have no specific preference for the layout of the x-axis labels.
+
+  6. I do not know, but if it helps in visualization, feel free to include gridlines
+  or background shading.
+
+  7. I do not have a preference for the font style and size.
+
+
+  <end of user emulated response>'
+data_attributes:
+- MDVP:Fo(Hz)
+- MDVP:Fhi(Hz)
+- MDVP:Flo(Hz)
+- status
+- MDVP:Jitter(%)
+- MDVP:Shimmer
+- HNR
+- spread1
+- PPE

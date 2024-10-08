@@ -1,0 +1,30 @@
+initial_prompt: Create a choropleth map visualizing the web search trends from Google
+  Trends by state. Highlight the intensity of online community interest in each state
+  using various color shades. Include the data sources mlsrc, quantumsrc, and dlsrc
+  in the visualization.
+questions: "1. Do you have any preferred color schemes for the choropleth map?\n2.\
+  \ Would you like a legend to be included to explain the color shades used?\n3. Should\
+  \ the map display absolute values or normalized values (e.g., per capita)?\n4. Do\
+  \ you want labels or tooltips for each state with detailed information?\n5. How\
+  \ should we handle states with no data or zero interest? \n6. Would you prefer the\
+  \ data sources (mlsrc, quantumsrc, dlsrc) to be combined into a single metric, or\
+  \ displayed separately?\n7. Is there a specific geographical projection you prefer\
+  \ for the map?"
+answers: '1. I am not sure.
+
+  2. Yes, I would like a legend included.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- state
+- mlsrc
+- quantumsrc
+- dlsrc

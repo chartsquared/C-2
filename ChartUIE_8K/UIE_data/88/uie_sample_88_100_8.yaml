@@ -1,0 +1,44 @@
+initial_prompt: 'Create a column chart titled "Jobs and Salaries in Data Science."
+  The chart should display the average salary_in_usd for different job titles within
+  various job categories. Use data from ''88.csv''. The x-axis should represent job
+  titles, categorized by job categories, and the y-axis should show the average salary
+  in USD. Separate the columns by employment type: Full-time, Part-time, and Freelance.
+  Add a legend to differentiate the employment types and use different colors for
+  each job category. This will help visualize salary differences across roles and
+  employment types.'
+questions: '1. Do you have a preferred color palette for differentiating the job categories?
+
+  2. Do you want to include data labels on top of each column to show the exact average
+  salary in USD?
+
+  3. Would you like grid lines on the y-axis for easier comparison of salaries?
+
+  4. Do you have a specific order in mind for the job categories and job titles on
+  the x-axis, or should they be sorted alphabetically/by average salary?
+
+  5. Should the y-axis have a specific range or interval, or can it be determined
+  automatically based on the data?
+
+  6. Do you have a preferred font style and size for the axis labels and chart title?
+
+  7. Would you like to include any annotations or callouts for highlighting significant
+  salary differences or specific job roles?'
+answers: '1. I am not sure about the color palette.
+
+  2. Yes, I''d like to include data labels on top of each column to show the exact
+  average salary in USD.
+
+  3. Yes, please include grid lines on the y-axis for easier comparison of salaries.
+
+  4. I do not know, you can sort them in whichever way makes the chart most readable.
+
+  5. The y-axis range can be determined automatically based on the data.
+
+  6. I have no specific preference for the font style and size.
+
+  7. I am not sure about annotations or callouts.'
+data_attributes:
+- job_title
+- job_category
+- salary_in_usd
+- employment_type

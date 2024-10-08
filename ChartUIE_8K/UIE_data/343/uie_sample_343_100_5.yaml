@@ -1,0 +1,55 @@
+initial_prompt: Please create a bubble chart using the provided Ethereum historical
+  data from the file '../Extra_datas/data/343.csv'. The x-axis should represent the
+  'Date', the y-axis should indicate the 'Price', and the bubble size should correspond
+  to 'Vol.'. Additionally, the color of the bubbles can change based on the 'Change
+  %'. Make sure to display the tooltips with detailed information for each data point
+  when hovered over. Thank you!
+questions: '1. Do you have any specific color preferences for the bubbles based on
+  the ''Change %'' values?
+
+  2. What date range would you like the x-axis to cover, or should it display the
+  entire dataset?
+
+  3. Do you prefer any particular scale (linear or logarithmic) for the y-axis representing
+  ''Price''?
+
+  4. Should the size of the bubbles representing ''Vol.'' be scaled in a specific
+  way?
+
+  5. Do you have a preference for how the ''Price'' values are formatted (e.g., currency
+  format)?
+
+  6. Do you want gridlines or reference lines on the chart for better readability?
+
+  7. Would you like to highlight any specific data points or trends on the chart?
+
+  8. Are there any additional labels or annotations you would like to include on the
+  chart?
+
+  9. Do you prefer a specific layout or aspect ratio for the chart?'
+answers: '<start of user response>
+
+  1. I do not have any specific color preferences.
+
+  2. Display the entire dataset.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Please format the ''Price'' values in currency format.
+
+  6. Yes, gridlines would be helpful.
+
+  7. I do not have any specific points to highlight.
+
+  8. No additional labels or annotations.
+
+  9. No specific preference for layout or aspect ratio.
+
+  <end of user response>'
+data_attributes:
+- Date
+- Price
+- Vol.
+- Change %

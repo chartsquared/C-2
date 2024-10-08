@@ -1,0 +1,57 @@
+initial_prompt: Create a box chart visualizing the Percent Change in Consumer Spending
+  for each State FIPS code across different spending categories such as ACF, AER,
+  GEN, GRF, HCS, TWS. Annotate significant outliers and median values with text annotations
+  to highlight trends.
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Should specific states be highlighted or emphasized in the chart?
+
+  3. Would you like to see gridlines or background shading in the chart for better
+  readability?
+
+  4. Are there any specific font styles and sizes you prefer for the text annotations?
+
+  5. Do you want the chart to have a title and subtitles? If so, any specific text
+  you have in mind?
+
+  6. Should there be legends for each spending category, and if yes, where do you
+  prefer them to be placed (e.g., top, bottom, side)?
+
+  7. How would you like the axis labels to appear? Any specific orientation (horizontal/vertical)
+  or formatting preferences?
+
+  8. Do you have any preferences regarding the display of whiskers in the box chart?
+
+  9. Is there a specific way you want the outliers to be marked (e.g., distinct symbols
+  or colors)?
+
+  10. Would you like the median values to be displayed in a specific style (e.g.,
+  bold, highlighted color)?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. No specific preference.
+
+  5. Yes, title: "Percent Change in Consumer Spending by State and Category," subtitles
+  can be "Data categorized as ACF, AER, GEN, GRF, HCS, TWS."
+
+  6. Yes, legends would be helpful, placed at the bottom.
+
+  7. No specific preference.
+
+  8. I am not sure.
+
+  9. Distinct symbols would be preferred for marking outliers.
+
+  10. Median values should be highlighted, maybe in bold or a distinct color.'
+data_attributes:
+- State FIPS code
+- Accommodation and food service (ACF) spending
+- Arts, entertainment, and recreation (AER) spending
+- General merchandise stores (GEN) and apparel and accessories (AAP) spending
+- Grocery and food store (GRF) spending
+- 'Health care and social assistance (HCS) spending '
+- Transportation and warehousing (TWS) spending

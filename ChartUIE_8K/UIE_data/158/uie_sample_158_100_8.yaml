@@ -1,0 +1,44 @@
+initial_prompt: Create a stacked column chart to compare the average GPA and Attendance
+  Rate by Major. Use different colors to represent GPA and Attendance Rate respectively.
+  Ensure the x-axis represents the different Majors from the dataset, and the y-axis
+  shows the average values. Each Major column should be divided into two segments,
+  one for GPA and one for Attendance rate, making it easy to compare these metrics
+  across different Majors. Add legend for clarity and ensure the visual is easily
+  interpretable. The purpose is to examine if there is any significant performance
+  disparity among different Majors.
+questions: '1. Do you have specific color preferences for the GPA and Attendance Rate
+  segments?
+
+  2. Is there a preferred order for displaying the Majors on the x-axis?
+
+  3. Would you like any specific titles for the x-axis and y-axis?
+
+  4. Should the chart include any specific annotations or labels?
+
+  5. Do you prefer a specific font style or size for the legend and axis labels?
+
+  6. Is there any specific range or scale you’d like to set for the y-axis?
+
+  7. Would you like gridlines on the chart for better readability?
+
+  8. Do you have a preference for the chart''s overall aesthetic or theme (e.g., minimalist,
+  professional, colorful)?'
+answers: '1. I do not have specific color preferences.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. No specific annotations or labels are necessary.
+
+  5. I do not have a specific preference for the font style or size.
+
+  6. I am not sure.
+
+  7. Yes, gridlines would be helpful for better readability.
+
+  8. I prefer a professional aesthetic for the chart.'
+data_attributes:
+- Major
+- GPA
+- AttendanceRate

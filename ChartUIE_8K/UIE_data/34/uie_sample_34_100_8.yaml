@@ -1,0 +1,53 @@
+initial_prompt: Create a column chart to visualize customer spending habits across
+  different product categories. Use the 'MntWines', 'MntFruits', 'MntMeatProducts',
+  'MntFishProducts', 'MntSweetProducts', and 'MntGoldProds' columns to represent total
+  spending in each category. Each column should represent one category, showcasing
+  the sum of all values within that category. This will help in understanding which
+  product categories generate the most revenue from customers. Color each column differently
+  for clarity.
+questions: '1. What title would you prefer for the chart?
+
+  2. Do you have specific preferences for the colors of each column?
+
+  3. Would you like to include data labels on each column to show exact values?
+
+  4. Should the chart include a legend explaining the color coding of the columns?
+
+  5. Do you have any preferences for the axis labels and format?
+
+  6. Should there be grid lines for better readability?
+
+  7. Do you have a preferred order for the product categories on the x-axis?
+
+  8. Would you like to add any specific notes or footnotes to the chart?
+
+  9. Should the y-axis have a specific range or should it be auto-scaled based on
+  the data?'
+answers: '<start of user response>
+
+  1. "Customer Spending Across Product Categories"
+
+  2. I have no specific preference.
+
+  3. Yes, please include data labels.
+
+  4. I am not sure.
+
+  5. I do not have any specific preferences.
+
+  6. Yes, include grid lines.
+
+  7. I am not sure.
+
+  8. No, I do not need any specific notes or footnotes.
+
+  9. The y-axis should be auto-scaled based on the data.
+
+  <end of user response>'
+data_attributes:
+- MntWines
+- MntFruits
+- MntMeatProducts
+- MntFishProducts
+- MntSweetProducts
+- MntGoldProds

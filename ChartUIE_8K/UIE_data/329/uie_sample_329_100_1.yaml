@@ -1,0 +1,67 @@
+initial_prompt: I need a line chart to visualize the SMOC2 raw counts across different
+  samples in the context of fibrosis and normal conditions. The dataset includes various
+  samples labeled as smoc2_fibrosis1, smoc2_fibrosis2, up to smoc2_normal4. For annotations,
+  highlight the highest and lowest values in each sample for easy comparison. This
+  will help emphasize critical differences in SMOC2 expressions between fibrotic and
+  normal tissues. Please ensure the chart is clear and makes it easy to discern trends
+  and anomalies across the samples.
+questions: '1. Do you have any color preferences for the lines representing fibrotic
+  and normal conditions?
+
+  2. Which title would you like for the chart?
+
+  3. Are there any specific font styles or sizes you prefer for the labels and annotations?
+
+  4. Do you want a legend included in the chart? If so, any specific preferences for
+  its placement?
+
+  5. Should the axes be labeled with any specific descriptions?
+
+  6. Do you prefer gridlines on the chart? If yes, should they be major, minor, or
+  both?
+
+  7. Are there any specific markers you want to use for the highest and lowest values
+  in each sample?
+
+  8. Would you like the chart background to be a specific color or kept as default
+  (white)?
+
+  9. Are there any additional data points or ranges you want specifically highlighted
+  or annotated on the chart?
+
+  10. Do you have any specific preferences for the line style (e.g., dashed, solid)
+  for different conditions?'
+answers: '1. I prefer colors that distinctly differentiate between fibrotic (maybe
+  red) and normal (maybe blue) conditions.
+
+  2. "SMOC2 Raw Counts across Fibrotic and Normal Samples"
+
+  3. I am not sure about specific font styles or sizes.
+
+  4. Yes, I would like a legend included. I do not have a specific preference for
+  its placement.
+
+  5. The axes should be labeled "Samples" for the x-axis and "SMOC2 Raw Counts" for
+  the y-axis.
+
+  6. Yes, I would like gridlines. Major gridlines should be fine.
+
+  7. I am not sure about specific markers, but it should be clear which points are
+  the highest and lowest.
+
+  8. I do not have a specific preference for the background color, default white is
+  fine.
+
+  9. No, there are no additional specific data points or ranges I want highlighted
+  beyond the highest and lowest values.
+
+  10. I do not have specific preferences for line styles; solid lines for both would
+  be okay.'
+data_attributes:
+- smoc2_fibrosis1
+- smoc2_fibrosis2
+- smoc2_fibrosis3
+- smoc2_fibrosis4
+- smoc2_normal1
+- smoc2_normal3
+- smoc2_normal4

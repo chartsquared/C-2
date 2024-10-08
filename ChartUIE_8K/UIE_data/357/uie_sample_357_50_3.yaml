@@ -1,0 +1,47 @@
+initial_prompt: Create a bar chart to visualize the number of customers exited based
+  on their CreditScore. Compare this across different Genders and Geographies for
+  effective analysis.
+questions: '1. Do you have a preference for the color scheme of the bar chart?
+
+  2. Do you prefer the bars to be grouped or stacked based on Gender and Geography?
+
+  3. Would you like to include axis titles and labels? If so, what should they be?
+
+  4. Do you have a specific order for the categories (e.g., Geographies) on the x-axis?
+
+  5. Should the chart display gridlines?
+
+  6. Do you prefer to include data labels on each bar to show the exact numbers?
+
+  7. Should the credit scores be displayed in specific intervals or ranges?
+
+  8. Would you like to add a legend to distinguish between different Genders and Geographies?
+
+  9. Do you want to set a specific title for the chart? If so, what should it be?
+
+  10. Is there a specific font style or size you prefer for the chart text elements?'
+answers: '1. I do not know.
+
+  2. Grouped
+
+  3. Yes, the x-axis should be "Credit Score" and the y-axis should be "Number of
+  Exited Customers".
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, intervals of 50.
+
+  8. Yes
+
+  9. "Customer Exits by Credit Score, Gender, and Geography"
+
+  10. I have no specific preference.'
+data_attributes:
+- CreditScore
+- Gender
+- Geography
+- Exited

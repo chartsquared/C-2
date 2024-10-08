@@ -1,0 +1,45 @@
+initial_prompt: I need a scatter plot for analyzing stroke patterns in the Stroke
+  Prediction Dataset. Please plot 'avg_glucose_level' on the x-axis and 'bmi' on the
+  y-axis. Use different colors to indicate 'gender' (e.g., blue for Male, red for
+  Female). Additionally, differentiate by 'smoking_status' using different shapes
+  or markers (e.g., circles for 'formerly smoked', squares for 'never smoked'). Ensure
+  the chart highlights any visible trends between glucose levels, BMI, and the likelihood
+  of experiencing a stroke. Include a legend and axis labels.
+questions: '1. Do you have any specific preferences for the title of the scatter plot?
+
+  2. Do you prefer any specific color shades for ''gender'' other than blue for Male
+  and red for Female?
+
+  3. Would you like to include grid lines in the background of the chart?
+
+  4. Do you prefer any specific font style or size for the axis labels and legend?
+
+  5. Should the chart include data point labels for each marker?
+
+  6. Would you like to highlight any specific ranges or thresholds on the axes?
+
+  7. How would you like to handle missing BMI values (e.g., omit points, use a placeholder
+  value)?
+
+  8. Do you have a preference for the size of the markers used for different ''smoking_status''
+  categories?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include grid lines.
+
+  4. I do not have any specific preference for font style or size.
+
+  5. No, the chart does not need data point labels for each marker.
+
+  6. I am not sure.
+
+  7. I am not sure, please handle missing BMI values as you see fit.
+
+  8. I have no specific preference for the size of the markers.'
+data_attributes:
+- avg_glucose_level
+- bmi
+- gender
+- smoking_status

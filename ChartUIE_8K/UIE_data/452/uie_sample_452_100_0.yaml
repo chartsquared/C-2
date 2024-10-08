@@ -1,0 +1,60 @@
+initial_prompt: 'Create a scatter plot to visualize relationships in the Dow Jones
+  Industrial Average data. On the X-axis, use ''Temperature(K)'' and ''Temperature(K).1'',
+  and on the Y-axis, ''Pressure(Liquid)'' and ''Pressure(Gas)''. Highlight points
+  where there''s a significant variation in pressure. Include text annotations for
+  notable data points to emphasize key temperatures and pressures. Purpose: Understand
+  correlations and patterns, focusing on outliers or unique points in the dataset.
+  The use of text annotations will help in identifying specific data trends and anomalies.
+  Suitable for business analysis and decision-making contexts.'
+questions: '1. Do you have any preference for the color scheme of the scatter plot?
+
+  2. How would you like significant variations in pressure to be highlighted (e.g.,
+  different colors, sizes, or markers)?
+
+  3. Do you have a specific format or style for text annotations for notable data
+  points?
+
+  4. Should the X-axis and Y-axis have specific labels or units other than the default?
+
+  5. Would you like grid lines to be included in the scatter plot for better readability?
+
+  6. Is there a specific range for the X and Y axes that you would prefer to focus
+  on?
+
+  7. Do you have any specific fonts or styles in mind for the axis labels and titles?
+
+  8. Would you prefer to avoid overlapping text annotations, and if so, how should
+  they be managed (e.g., using callouts or leader lines)?
+
+  9. Should the scatter plot include a legend to distinguish between different data
+  points or categories?
+
+  10. Are there any additional elements you would like to include, such as trend lines
+  or regression lines, to further understand correlations and patterns?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Different colors would be good to highlight significant variations in pressure.
+
+  3. I do not have a specific format or style for text annotations.
+
+  4. I am not sure about needing specific labels or units for the X-axis and Y-axis.
+
+  5. Yes, please include grid lines for better readability.
+
+  6. I do not have a specific range for the X and Y axes in mind.
+
+  7. I do not have a specific preference for fonts or styles for the axis labels and
+  titles.
+
+  8. Yes, I’d prefer to avoid overlapping text annotations; callouts or leader lines
+  would be helpful.
+
+  9. Yes, a legend would be useful to distinguish between different data points or
+  categories.
+
+  10. I do not know about including trend lines or regression lines.'
+data_attributes:
+- Temperature(K)
+- Pressure(Liquid)
+- Temperature(K).1
+- Pressure(Gas)

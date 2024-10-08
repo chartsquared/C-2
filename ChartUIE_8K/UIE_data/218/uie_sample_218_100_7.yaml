@@ -1,0 +1,49 @@
+initial_prompt: Please create a pie chart from the data provided in the CSV file,
+  visualizing the distribution of different 'label' categories present in the 'headline'
+  dataset. The chart should clearly show each category's percentage share of the total
+  data points. Remember, the labels include values like 'Story', 'Partnership', and
+  'Award', among others. This visualization will help us understand the primary focus
+  areas of the SAP press releases at a glance. Make sure the chart is easy to interpret
+  and visually appealing, with each slice labeled appropriately with both the label
+  name and percentage.
+questions: '1. Do you have a preferred color scheme for the pie chart?
+
+  2. Would you like the chart to include a legend, or should the labels on the slices
+  be sufficient?
+
+  3. How detailed should the percentage labels be (e.g., whole numbers or one decimal
+  place)?
+
+  4. Are there any specific fonts you prefer for the labels and title?
+
+  5. Should each slice have a border or outline for better distinction?
+
+  6. Is there a specific order in which you want the categories to appear (e.g., in
+  descending order of percentage)?
+
+  7. Would you like to include the total number of data points on the chart?
+
+  8. Do you want any additional text or annotation on the chart, such as a subtitle
+  or note?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. The labels on the slices should be sufficient.
+
+  3. Whole numbers would be good.
+
+  4. I do not know.
+
+  5. Yes, a border or outline would be helpful for better distinction.
+
+  6. I am not sure, maybe in descending order of percentage.
+
+  7. Yes, including the total number of data points would be helpful.
+
+  8. No additional text or annotation is needed.
+
+  <end of user emulated response>'
+data_attributes:
+- headline
+- label

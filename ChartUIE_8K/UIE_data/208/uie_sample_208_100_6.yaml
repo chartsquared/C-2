@@ -1,0 +1,53 @@
+initial_prompt: 'I want to create a detailed line chart for a real estate project
+  using the ''Boston House Prices-Advanced Regression Techniques'' dataset. Specifically,
+  I want to visualize how the median value of owner-occupied homes (MEDV) changes
+  with three other variables: average number of rooms per dwelling (RM), per capita
+  crime rate by town (CRIM), and proportion of non-retail business acres per town
+  (INDUS). Please use different colors for each variable to show the trends clearly
+  and include a legend. Ensure the x-axis represents the observations.'
+questions: '1. Do you have any preference for the color scheme or specific colors
+  for each variable?
+
+  2. What title would you like for the chart?
+
+  3. Are there any specific labels or annotations you want on the x-axis or y-axis?
+
+  4. Would you like grid lines to be displayed on the chart?
+
+  5. Do you prefer a particular font style or size for the labels and title?
+
+  6. Do you need to display data points along the lines, or just the lines themselves?
+
+  7. Should the legend be positioned in a specific place, such as at the top, bottom,
+  left, or right of the chart?
+
+  8. Is there a specific range or scale you would like for the y-axis?
+
+  9. Would you like to include a trend line or any form of regression line to highlight
+  overall trends?
+
+  10. Do you need any annotations or notes on specific data points?'
+answers: '1. I do not have any specific preference.
+
+  2. I do not know.
+
+  3. I am not sure about specific labels or annotations.
+
+  4. Yes, please include grid lines.
+
+  5. I have no specific preference.
+
+  6. Just the lines themselves are fine.
+
+  7. Position the legend at the bottom of the chart.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I do not need any annotations or notes on specific data points.'
+data_attributes:
+- CRIM
+- INDUS
+- RM
+- MEDV

@@ -1,0 +1,59 @@
+initial_prompt: Create a heatmap to visualize the correlation between different network
+  traffic features in the Android Malware dataset. Use columns like 'tcp_packets,'
+  'dist_port_tcp,' 'external_ips,' 'volume_bytes,' 'udp_packets,' 'tcp_urg_packet,'
+  'source_app_packets,' 'remote_app_packets,' 'source_app_bytes,' 'remote_app_bytes,'
+  'duration,' 'avg_local_pkt_rate,' 'avg_remote_pkt_rate,' 'dns_query_times,' and
+  'type.' Highlight which features most strongly correlate with the 'type' to identify
+  patterns of benign and malicious traffic. Make sure to handle any non-numeric data
+  appropriately and clearly label the axes.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like non-numeric data (e.g., ''type'') to be handled or represented
+  in the heatmap?
+
+  3. Would you prefer any particular scaling method for the data (e.g., normalization,
+  standardization)?
+
+  4. Are there specific axis labels or annotations you would like to include or customize?
+
+  5. Do you have any preferences for the display of the correlation coefficients (e.g.,
+  display as text on each cell)?
+
+  6. Would you like to include a legend explaining the color gradient and correlation
+  coefficients?
+
+  7. Do you prefer a specific order for the network traffic features on the axes?
+
+  8. Are there any specific features or correlations you would like to highlight or
+  annotate particularly?'
+answers: '1. I have no specific preference.
+
+  2. Please encode ''type'' as numeric values.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, display the correlation coefficients as text on each cell.
+
+  6. Yes, include a legend explaining the color gradient and correlation coefficients.
+
+  7. I have no specific preference.
+
+  8. Please particularly highlight the correlations with the ''type'' feature.'
+data_attributes:
+- tcp_packets
+- dist_port_tcp
+- external_ips
+- volume_bytes
+- udp_packets
+- tcp_urg_packet
+- source_app_packets
+- remote_app_packets
+- source_app_bytes
+- remote_app_bytes
+- duration
+- avg_local_pkt_rate
+- avg_remote_pkt_rate
+- dns_query_times
+- type

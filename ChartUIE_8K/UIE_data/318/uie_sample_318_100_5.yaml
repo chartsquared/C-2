@@ -1,0 +1,60 @@
+initial_prompt: Create a Treemap to visualize hotels based on their location in Munnar.
+  Use 'Location' as the primary segment, and within each location, segment by 'Hotel
+  Name'. Each hotel's size should reflect the number of 'Reviews' it has received.
+  Color-code the hotels based on their 'Star Rating' to show quality. This chart will
+  help travelers identify popular hotels in different areas and their quality at a
+  glance. Ensure it's easy to interpret the number of reviews and star ratings for
+  quick decision-making. This should help users find suitable accommodation in various
+  parts of Munnar.
+questions: '1. Do you have a preferred color scheme for the star ratings?
+
+  2. Should the treemap include labels for each hotel with their names and number
+  of reviews, or just their names?
+
+  3. Would you like to include a legend explaining the color codes for star ratings?
+
+  4. Do you prefer a specific order (e.g., alphabetical, by number of reviews) for
+  the hotels within each location?
+
+  5. How detailed should the location segments be (e.g., neighborhoods, general areas)?
+
+  6. Should the treemap display hover-over tooltips with additional information about
+  each hotel (e.g., star rating, exact number of reviews)?
+
+  7. Is it necessary for the chart to include a title and subtitle? If so, do you
+  have any specific wording in mind?
+
+  8. Should the sizes of the hotel segments be proportional to the number of reviews,
+  or would you like a different scaling method?
+
+  9. Do you need any supplementary information or notes about the hotels to be displayed
+  within the treemap?
+
+  10. Are there any specific font styles or sizes you prefer for the labels and text
+  within the treemap?'
+answers: '1. I don''t have a specific preference for the color scheme, so please choose
+  a palette that makes the star ratings easy to distinguish.
+
+  2. Just their names, please.
+
+  3. Yes, please include a legend.
+
+  4. I am not sure.
+
+  5. General areas would be fine.
+
+  6. I do not know.
+
+  7. Yes, a title and subtitle would be useful. The title could be "Munnar Hotels
+  Overview" and the subtitle "Popularity and Quality Ratings by Reviews".
+
+  8. Sizes proportional to the number of reviews, please.
+
+  9. I don''t think supplementary information is necessary within the treemap.
+
+  10. I have no specific preference for font styles or sizes.'
+data_attributes:
+- Location
+- Hotel Name\t\t\t\t\t\t\t\t\t
+- Reviews
+- Star Rating

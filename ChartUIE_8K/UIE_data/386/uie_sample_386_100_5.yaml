@@ -1,0 +1,56 @@
+initial_prompt: I need a line chart to compare different car metrics from your database.
+  The chart should plot Max Speed, Mileage, Power, and Weight for different car types
+  like Sedan and Hatchback. Each car type should be a separate series on the chart,
+  showing data points for the metrics to visualize how they differ. The x-axis will
+  be the metrics (Max Speed, Mileage, Power, Weight), and the y-axis will be their
+  values. Ensure the chart has a legend to distinguish between car types. This will
+  help me analyze the performance and characteristics of each car type visually.
+questions: '1. Do you have a preferred color scheme for different car types in the
+  legend?
+
+  2. Would you like data points to be marked with symbols on the line chart for better
+  visibility?
+
+  3. Do you have any specific font preferences for axis labels and legend text?
+
+  4. Should the y-axis have a specific range or scale (e.g., linear or logarithmic)?
+
+  5. Do you require gridlines for better readability of the chart?
+
+  6. Would you like to include data labels for each point on the lines?
+
+  7. Do you have a preferred size or aspect ratio for the chart?
+
+  8. Should the chart include a title and subtitle? If so, what should they be?
+
+  9. Do you need tooltips to appear when hovering over data points for additional
+  information?
+
+  10. Should the x-axis labels (the metrics) be rotated or formatted in a specific
+  way for clarity?'
+answers: '1. I do not know.
+
+  2. Yes, please mark data points with symbols.
+
+  3. I have no specific preference.
+
+  4. I am not sure about the y-axis range, but linear scale should be fine.
+
+  5. Yes, please include gridlines for better readability.
+
+  6. Yes, include data labels for each point.
+
+  7. I do not know.
+
+  8. Yes, include a title "Car Metrics Comparison" and subtitle "Comparison of Sedan
+  and Hatchback Metrics".
+
+  9. I do not need tooltips.
+
+  10. I have no specific preference.'
+data_attributes:
+- Max_Speed
+- Mileage
+- Power
+- Weight
+- Type

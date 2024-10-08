@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap visualizing the capture weights of different fish
+  species in relation to their LCA and Gephart categories. The x-axis should represent
+  the species, the y-axis should represent the categories (LCA and Gephart combined),
+  and the color intensity should represent the capture values. Highlight same-species
+  variations within multiple categories. Include data labels for capture weights.
+  Use a gradient color scheme for better clarity. Emphasize missing data points by
+  a distinguishable pattern or color. Make sure the heatmap is clear and easily interpretable.
+questions: '1. Do you have any preference for specific color gradients for the heatmap?
+
+  2. How would you like the missing data points to be represented (e.g., specific
+  color or pattern)?
+
+  3. Should the data labels for capture weights be displayed on all cells, or only
+  on cells with data?
+
+  4. Do you have any specific font preferences for the data labels and axis labels?
+
+  5. Would you prefer a specific ordering of fish species and categories on the axes?
+
+  6. Is there a particular range or set of thresholds for the color intensity you
+  want to emphasize?
+
+  7. Do you have any preferences for the overall layout or aspect ratio of the heatmap?
+
+  8. Are there any additional annotations or markers you would like to include?'
+answers: '<start of user response>
+
+  1. I do not have a specific preference for color gradients.
+
+  2. I am not sure, maybe a specific pattern like stripes or a distinct color?
+
+  3. Data labels for capture weights on all cells, please.
+
+  4. I have no specific preference for fonts.
+
+  5. I do not have a specific ordering preference for the axes.
+
+  6. I do not know any specific set of thresholds.
+
+  7. I have no specific preference for the layout or aspect ratio.
+
+  8. I am not sure; whatever you think best for clarity.
+
+  <end of user response>'
+data_attributes:
+- Species
+- LCA_Category
+- LCA_Category_sub
+- Gephart Category
+- Capture

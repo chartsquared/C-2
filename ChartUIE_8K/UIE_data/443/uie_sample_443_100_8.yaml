@@ -1,0 +1,57 @@
+initial_prompt: "Create a grouped bar chart to visualize the obstacles in Ninja Warrior\
+  \ based on the season and their order. Use data from seasons 1 to 10, grouped by\
+  \ location and round stage. Each bar should represent an obstacle name with its\
+  \ order as the value. Ensure the bars are grouped by season and location on the\
+  \ x-axis and color-coded by round stage. Additionally, include a legend to distinguish\
+  \ between round stages. This should help in understanding the progression and variety\
+  \ of obstacles across different seasons and locations. \n\nFormat the chart to include\
+  \ labels for the axes and a title."
+questions: '1. Do you have a preference for the style and positioning of the legend?
+
+  2. What specific color palette would you like for distinguishing different round
+  stages?
+
+  3. Do you have a preferred font style and size for the axis labels and chart title?
+
+  4. Would you like grid lines to be included on the chart?
+
+  5. Should the obstacle names be displayed in a particular orientation, such as horizontal
+  or vertical?
+
+  6. Are there any specific annotations or highlights you want to be included in the
+  chart?
+
+  7. Do you have any preferences for the format of the axis labels, such as including
+  specific units or formatting?
+
+  8. Would you like a specific width and height for the grouped bars?
+
+  9. Are there any other elements or decorations you''d like incorporated into the
+  chart, like a subtitle or caption?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. Yes, please include grid lines.
+
+  5. Horizontal orientation for obstacle names would be great.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. No, I have no other preferences.
+
+  <end of user emulated response>'
+data_attributes:
+- season
+- location
+- round_stage
+- obstacle_name
+- obstacle_order

@@ -1,0 +1,34 @@
+initial_prompt: Create a bubble chart visualizing the high-tech companies on NASDAQ
+  from the dataset. The x-axis should represent the 'price' of the stocks, the y-axis
+  should show the 'market_cap,' and the size of the bubbles should indicate 'share_volume.'
+  Each bubble should be labeled with the 'symbol.' This will give a clear overview
+  of the companies’ stock prices, market capitalization, and trading volumes, helping
+  to analyze their market positions effectively. Ensure color-coding for sectors if
+  possible. The chart will assist in identifying the relative size and value of tech
+  companies in the industry.
+questions: '1. Do you have any specific preferences for the color palette used for
+  different sectors?
+
+  2. Would you like to include grid lines on the chart for better readability?
+
+  3. Do you have any preferences for the font style and size for the labels?
+
+  4. Would you prefer a specific scale (e.g., logarithmic) for the axes?
+
+  5. Do you want to add any specific annotations or markers on the chart for particular
+  data points?'
+answers: '1. I do not know.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I do not know.'
+data_attributes:
+- symbol
+- price
+- market_cap
+- share_volume
+- sector

@@ -1,0 +1,41 @@
+initial_prompt: Create a bubble chart showing book sales performance. Use 'Book_average_rating'
+  for the x-axis, 'units sold' for the y-axis, and 'gross sales' for bubble size.
+  Differentiate genres using bubble colors.
+questions: '1. Do you have a preference for the color palette to differentiate between
+  genres?
+
+  2. Would you like to add labels to the bubbles for better identification? If so,
+  which attribute should be labeled?
+
+  3. Do you have a specific size range for the bubbles to ensure they are clearly
+  visible but not overlapping too much?
+
+  4. Should there be any specific formatting for the axes, such as log scale for better
+  distribution visualization?
+
+  5. Do you want a legend to explain the genre colors, and if so, where should it
+  be positioned?
+
+  6. Is there a specific title or subtitle you would like to include in the bubble
+  chart?
+
+  7. Are there any specific gridlines or reference lines you would like to add to
+  the chart for better context?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- Book_average_rating
+- units sold
+- gross sales
+- genre

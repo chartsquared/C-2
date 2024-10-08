@@ -1,0 +1,51 @@
+initial_prompt: I have a dataset of Palmer Penguins with details like species, island,
+  bill length, bill depth, flipper length, body mass, sex, and year. I need to visualize
+  this data using a Violin plot. Could you create a Violin plot that shows the distribution
+  of body mass across different species and islands? Highlight how the body mass varies
+  between male and female penguins within each species on different islands. This
+  will help in identifying any significant differences in body mass based on species
+  and location. Thank you!
+questions: '1. What color palette do you prefer for distinguishing between different
+  species and sexes?
+
+  2. Would you like to include a legend to explain the color coding for species and
+  sexes?
+
+  3. Do you have a specific preference for the orientation of the violin plot (vertical
+  or horizontal)?
+
+  4. Do you prefer to include gridlines in the plot for better readability?
+
+  5. Should the violin plot include individual data points overlayed or just the distribution?
+
+  6. Are there any specific annotations or labels you would like to add for the islands
+  or species on the plot?
+
+  7. Would you prefer to use different line styles for males and females within the
+  same species?
+
+  8. Do you have a preference for the scale of the y-axis (e.g., linear, log)?
+
+  9. Would you like to display summary statistics (mean, median) within the plot?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I prefer to include individual data points overlayed.
+
+  6. I do not have any specific annotations or labels in mind.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. Yes, I would like to display summary statistics within the plot.'
+data_attributes:
+- species
+- island
+- body_mass_g
+- sex

@@ -1,0 +1,52 @@
+initial_prompt: Please create a box chart to visualize historical stock market data
+  for Google. The data contains attributes like Date, Open, High, Low, Close, Adj
+  Close, and Volume spanning Google's founding years. Each box should represent the
+  distribution of stock prices (Open, High, Low, Close, Adj Close) over these years,
+  showcasing central tendency and variability. Highlight outliers, if present. Also,
+  include the trading Volume as an additional dimension, perhaps with color intensity
+  or box width. The chart should help analyze stock performance trends and volatility
+  over time.
+questions: '1. Do you have any specific color preferences for representing different
+  years or volume intensity?
+
+  2. Should the x-axis be divided by specific time intervals, such as months, quarters,
+  or years?
+
+  3. Do you want to include a legend for trading volume, indicating different color
+  intensities or box widths?
+
+  4. Is there a specific range of years you would like to focus on, or should all
+  historical data be included?
+
+  5. Do you prefer any particular order for the box plots (e.g., chronological)?
+
+  6. Would you like to add any specific annotations or markers to highlight significant
+  events or trends?
+
+  7. Do you prefer any specific style (e.g., traditional, modern, minimalistic) for
+  the overall appearance of the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. The x-axis should be divided by years.
+
+  3. Yes, include a legend for trading volume.
+
+  4. Include all historical data.
+
+  5. Chronological order is preferred.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

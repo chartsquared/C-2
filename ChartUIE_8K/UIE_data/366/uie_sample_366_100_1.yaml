@@ -1,0 +1,54 @@
+initial_prompt: Please create an area chart visualizing the number of subscribers
+  over the published timestamps for various courses in the Udemy dataset. Ensure to
+  include text annotations on key data points, like the course with the maximum and
+  minimum subscribers. Highlight different levels of courses using distinct colors
+  to easily differentiate. The purpose of this visualization is to identify trends
+  in course popularity over time and understand which types of courses attract more
+  subscribers. This chart will help in analyzing the growth and popularity of online
+  courses in Business Finance, which can be useful for course creators and marketers.
+questions: '1. Do you have any specific preferences for the color palette used to
+  differentiate the levels of courses?
+
+  2. Are there particular font styles or sizes you prefer for the text annotations
+  on key data points?
+
+  3. Would you like the chart to display a legend, and if so, where should it be positioned
+  on the chart?
+
+  4. Do you have any specific date formatting preferences for the published timestamps
+  on the x-axis?
+
+  5. Is there a particular order you would like for the levels of courses to be displayed
+  in the legend or chart?
+
+  6. Do you want to include grid lines for easier reference to the data points?
+
+  7. Should there be any specific titles or labels for the axes?
+
+  8. Would you like to include any additional notes or descriptions in the chart to
+  provide context to the audience?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Yes, a legend would be good. I am not sure about the position.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please include grid lines.
+
+  7. Yes, please include titles for the axes. Something like "Published Timestamps"
+  for the x-axis and "Number of Subscribers" for the y-axis.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- published_timestamp
+- num_subscribers
+- course_title
+- level

@@ -1,0 +1,62 @@
+initial_prompt: Create a scatter plot visualizing the Living Planet Index over the
+  years for different entities like Africa. Highlight critical years with text annotations
+  showing index values, and use CI lines for upper and lower confidence intervals.
+  Use shapes like arrows to emphasize significant trends or changes in the Living
+  Planet Index. This visualization helps in understanding the biodiversity trends
+  over time, making it easier to compare historical data and discern patterns or anomalies
+  within the specified periods. Use the Living Planet Index as the main focus for
+  the biological context.
+questions: '1. Do you have any specific color preferences for the scatter plot and
+  CI lines?
+
+  2. Which critical years would you like to highlight with text annotations?
+
+  3. What specific shapes or icons would you prefer for emphasizing significant trends
+  or changes?
+
+  4. Do you have a preferred style or format for text annotations (e.g., font size,
+  color)?
+
+  5. Should the CI lines be solid, dashed, or another style?
+
+  6. How would you like the axis labels and titles to be presented in terms of font
+  size and style?
+
+  7. Do you prefer any specific markers or symbols for the data points in the scatter
+  plot?
+
+  8. Would you like any legends or keys to be included in the chart?
+
+  9. Are there any specific trends or changes in the Living Planet Index that you
+  would like to emphasize with arrows or other shapes?
+
+  10. Do you have a preference for the chart''s background color or gridlines?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Highlight the years 2000, 2010, and 2020.
+
+  3. Arrows would be ideal for emphasizing significant trends or changes.
+
+  4. I do not know.
+
+  5. Solid CI lines would be best.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include a legend.
+
+  9. Emphasize the significant decline after 2000.
+
+  10. I do not have a specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- Entity
+- Year
+- Living Planet Index
+- Upper CI, Living Planet Index (95% CI)
+- Lower CI, Living Planet Index (95% CI)

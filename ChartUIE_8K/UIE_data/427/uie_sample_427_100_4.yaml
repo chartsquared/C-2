@@ -1,0 +1,59 @@
+initial_prompt: Please create a bubble chart illustrating the relationship between
+  fuel cost, CO2 emissions, and city mileage for different car models and makes. The
+  x-axis should represent the fuel cost (fuelCost08), the y-axis should represent
+  CO2 emissions (co2TailpipeGpm), and the bubble size should indicate the city mileage
+  (city08). Additionally, use different colors to differentiate between car makes.
+  This chart will help visualize how different models compare in terms of cost efficiency
+  and environmental impact, aiding in deciding potential savings and benefits from
+  switching to more efficient vehicles.
+questions: '1. Do you have a preferred chart title?
+
+  2. Would you like to include a legend? If yes, where would you prefer it to be positioned?
+
+  3. Do you have any specific preferences for the colors used to differentiate car
+  makes?
+
+  4. Should the x-axis and y-axis have specific labels or units displayed beside the
+  axis titles?
+
+  5. Do you have a specific range you want to set for the x-axis (fuel cost) or y-axis
+  (CO2 emissions)?
+
+  6. Would you like to include gridlines on the chart? If yes, should they be for
+  both the x and y axes?
+
+  7. Is there a specific font or font size you prefer for the axis labels, title,
+  or legend?
+
+  8. Do you have any preferences for the bubble sizes'' scale or range?
+
+  9. Would you like to include data labels (e.g., car model names) directly on the
+  bubbles? If yes, how would you like them to be positioned?
+
+  10. Do you prefer a specific background color or style for the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend. I do not know where to position it.
+
+  3. I have no specific preference.
+
+  4. Yes, the x-axis should be labeled "Fuel Cost (USD)", and the y-axis should be
+  labeled "CO2 Emissions (grams per mile)".
+
+  5. I do not know.
+
+  6. Yes, please include gridlines for both the x and y axes.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. Yes, include data labels with car model names. I am not sure about the positioning.
+
+  10. I do not know.'
+data_attributes:
+- fuelCost08
+- co2TailpipeGpm
+- city08
+- make
+- model

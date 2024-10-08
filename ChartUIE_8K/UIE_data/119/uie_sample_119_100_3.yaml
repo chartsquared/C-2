@@ -1,0 +1,46 @@
+initial_prompt: I need a box plot showing the distribution of Weekly_Sales across
+  different Stores. The x-axis should represent store numbers, and the y-axis should
+  show Weekly_Sales. Each box should capture the range of sales data for each store.
+  Please include outliers and medians to provide a clear view of the sales performance
+  per store. The chart should help me identify which stores are performing well and
+  which are underperforming based on their weekly sales data. This will aid in making
+  informed business decisions for improving sales in lower-performing stores.
+questions: '1. Do you have a preference for the color scheme of the box plot?
+
+  2. Would you like to include gridlines in the background for better readability?
+
+  3. Should the x-axis be labeled with store numbers or store names (if available)?
+
+  4. Do you prefer any specific font style or size for the labels and title?
+
+  5. Would you like the chart to include a title and, if so, any specific wording
+  for it?
+
+  6. Do you want to display any additional statistical information such as means or
+  quartiles on the box plot?
+
+  7. Should the boxes be displayed with a specific width or padding between them?
+
+  8. Do you prefer the plot to be displayed horizontally instead of vertically?
+
+  9. Are there any specific stores you would like to be highlighted or differentiated?'
+answers: '1. I am not sure.
+
+  2. Yes, please include gridlines for better readability.
+
+  3. The x-axis should be labeled with store numbers.
+
+  4. I do not have a specific preference.
+
+  5. Yes, include a title: "Distribution of Weekly Sales Across Stores".
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. No, I prefer the plot to be displayed vertically.
+
+  9. I do not have any specific stores to be highlighted.'
+data_attributes:
+- Store
+- Weekly_Sales

@@ -1,0 +1,48 @@
+initial_prompt: Create a stacked bar chart to visualize the total sales of different
+  car makers over various years. Each car maker should be a distinct color within
+  the stack, and the years should be on the x-axis. Highlight car makers that have
+  significantly higher sales with brighter colors. Use annotations like arrows or
+  rectangles to spotlight major trends, such as peaks or drops in sales for specific
+  car makers. Place the car price on the y-axis and separate bars for each year. This
+  visualization should help compare how different car makers perform over time in
+  sales.
+questions: '1. Do you have a preferred color palette for the distinct colors representing
+  each car maker?
+
+  2. How would you like the brighter colors to distinguish car makers with significantly
+  higher sales?
+
+  3. Are there specific trends you want to focus on for annotations, such as peaks
+  or drops during particular years?
+
+  4. Would you like any specific styling or placement for the annotations (arrows
+  or rectangles)?
+
+  5. Is there a specific order you want the car makers to be displayed within the
+  stacks?
+
+  6. Do you want any particular labels or legends to be highlighted?
+
+  7. Is there a preferred font or style for the text in the annotation and axis labels?
+
+  8. Would you like gridlines or background shading to be included in the chart for
+  better readability?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Focus on peaks and significant drops in sales during specific years.
+
+  4. Arrows pointing at peaks, and rectangles around significant drops would work.
+
+  5. I have no specific preference.
+
+  6. Please highlight the legends for clarity.
+
+  7. I do not have a preferred font or style.
+
+  8. Gridlines might help with readability.'
+data_attributes:
+- CarMaker
+- CarModelYear
+- Sales

@@ -1,0 +1,69 @@
+initial_prompt: Please create a stacked column chart displaying the statistical properties
+  of brain tumor images. Use columns for Mean, Variance, Standard Deviation, Entropy,
+  Skewness, Kurtosis, Contrast, Energy, ASM, Homogeneity, Dissimilarity, Correlation,
+  and Coarseness. Each column should represent a different image, and each stack should
+  indicate the measurement value for that property. Ensure both Class 0 and Class
+  1 data are distinctly visualized. This will help in understanding the distribution
+  and variability in these properties across different classes of brain tumor images.
+questions: '1. Do you have any color preferences for visualizing Class 0 and Class
+  1 data?
+
+  2. How would you like the measurement values to be displayed on each stack (e.g.,
+  as a label with the exact value, percentage, or neither)?
+
+  3. Do you prefer a specific order for the statistical properties (e.g., Mean first,
+  Variance second)?
+
+  4. Is there a specific range or scale for the y-axis that you would prefer?
+
+  5. Are there any gridline or axis preferences you have (e.g., major/minor gridlines,
+  axis titles)?
+
+  6. Would you like a legend to distinguish between different classes or statistical
+  properties?
+
+  7. Do you have any font or style preferences for labels and titles?
+
+  8. Are there any additional annotations or markers you would like to include in
+  the chart?
+
+  9. Do you prefer certain elements to be emphasized or highlighted in the chart (e.g.,
+  maximum values, particular images)?
+
+  10. Do you have preferences for the orientation of the chart (e.g., vertical vs.
+  horizontal stacked columns)?'
+answers: '1. I am not sure.
+
+  2. Exact values would be fine.
+
+  3. I do not have a specific order preference.
+
+  4. I am not sure.
+
+  5. I do not have any specific preferences for gridlines or axis titles.
+
+  6. Yes, a legend to distinguish between different classes would be helpful.
+
+  7. I do not have any font or style preferences.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Vertical stacked columns are preferred.'
+data_attributes:
+- Image
+- Class
+- Mean
+- Variance
+- Standard Deviation
+- Entropy
+- Skewness
+- Kurtosis
+- Contrast
+- Energy
+- ASM
+- Homogeneity
+- Dissimilarity
+- Correlation
+- Coarseness

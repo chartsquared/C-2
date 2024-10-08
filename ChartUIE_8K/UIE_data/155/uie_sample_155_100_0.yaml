@@ -1,0 +1,60 @@
+initial_prompt: 'Visualize the distribution of engineering graduate salaries using
+  a stacked bar chart. Utilize categories: Gender, Degree, and Specialization. Highlight
+  differences in salary based on these dimensions. Annotate significant data points
+  to draw attention. Make sure to illustrate the variation in College Tier''s impact
+  on salaries. The goal is to predict salary outcomes based on education details,
+  emphasizing college GPA, graduation year, and specific engineering specializations.
+  The chart should effectively communicate salary trends and help in understanding
+  the factors influencing engineering graduate salaries in different regions and specialties.'
+questions: '1. Do you have a preferred color scheme for the stacked bar chart?
+
+  2. Would you like the chart to be displayed horizontally or vertically?
+
+  3. Is there a specific order in which you would like the categories (Gender, Degree,
+  Specialization) to be stacked?
+
+  4. How would you like significant data points to be annotated (e.g., specific labels,
+  arrows, different colors)?
+
+  5. Do you prefer any specific font or text size for the annotations and labels?
+
+  6. Would you like a legend to be included, and if so, where should it be positioned
+  (e.g., top, bottom, side of the chart)?
+
+  7. Should the X-axis or Y-axis be log-scaled due to the range of salary values?
+
+  8. Should we group the Graduation Year data by specific ranges or display each year
+  individually?
+
+  9. Do you want to emphasize certain categories within Gender, Degree, or Specialization
+  using different shades or patterns?
+
+  10. Is there any specific region or specialty that needs to be highlighted differently
+  in the chart?'
+answers: '1. I do not know.
+
+  2. Vertically.
+
+  3. I am not sure.
+
+  4. Different colors and arrows would be good.
+
+  5. I do not know.
+
+  6. Yes, a legend should be included. Positioned at the bottom of the chart.
+
+  7. I am not sure.
+
+  8. Group the Graduation Year data by specific ranges.
+
+  9. I am not sure.
+
+  10. No specific region or specialty needs to be highlighted differently.'
+data_attributes:
+- Gender
+- Degree
+- Specialization
+- CollegeTier
+- collegeGPA
+- GraduationYear
+- Salary

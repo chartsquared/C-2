@@ -1,0 +1,41 @@
+initial_prompt: I'd like to create a column chart visualizing the "IMDB Votes per
+  Episode" for the TV show data in the provided file. The chart should display the
+  different episodes on the x-axis and the total number of votes each episode received
+  on the y-axis. Make sure to include season information in the x-axis labels for
+  clarity. Could you please generate this chart for me? Thank you!
+questions: '1. Do you have a preferred color palette for the column chart?
+
+  2. Would you like the columns to be grouped or stacked by season?
+
+  3. Should the chart include data labels displaying the vote count on each bar?
+
+  4. Do you have a specific font preference for the axis labels and titles?
+
+  5. Would you like to include a legend, or is it unnecessary given the x-axis labels?
+
+  6. Are there any specific gridline preferences (e.g., major or minor gridlines)?
+
+  7. Should the chart''s title be centered or aligned differently?
+
+  8. Would you like to have tooltips showing additional information when you hover
+  over the columns?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include data labels displaying the vote count on each bar.
+
+  4. I have no specific preference.
+
+  5. A legend is unnecessary given the x-axis labels.
+
+  6. I am not sure.
+
+  7. Centered, please.
+
+  8. I do not know.'
+data_attributes:
+- season
+- episode
+- title
+- total_votes

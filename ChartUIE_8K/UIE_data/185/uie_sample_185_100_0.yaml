@@ -1,0 +1,67 @@
+initial_prompt: Create a bar chart to visualize the percent change in consumer spending
+  across different categories for various state FIPS codes on specific dates. The
+  x-axis should represent the categories, including All Merchant Category Codes, ACF,
+  AER, GEN and AAP, GRF, HCS, TWS, and retail spending both including and excluding
+  grocery. The y-axis should show the percent change in spending. Use text annotations
+  to highlight the values for each bar, emphasizing those with significant changes.
+  Highlight bars with extreme values in different colors. Ensure the chart effectively
+  communicates spending trends across categories.
+questions: '1. Do you have a preferred color palette for highlighting bars with extreme
+  values?
+
+  2. Which color would you like to use for bars representing significant positive
+  changes?
+
+  3. Which color would you prefer for bars representing significant negative changes?
+
+  4. Do you want specific categories to be highlighted or emphasized more than others?
+
+  5. Is there a specific order you would like the categories to appear on the x-axis?
+
+  6. Do you prefer the text annotations to be inside or above the bars?
+
+  7. Is there a specific font style or size you prefer for the text annotations?
+
+  8. Should the chart include a legend to explain the color coding for significant
+  changes?
+
+  9. Would you like gridlines to be included to help interpret the percent changes
+  on the y-axis?
+
+  10. Do you want any specific labels or titles for the axes and the chart overall?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. Above the bars.
+
+  7. No specific preference.
+
+  8. Yes, please include a legend.
+
+  9. Yes, please include gridlines.
+
+  10. Please title the chart "Percent Change in Consumer Spending by Category" and
+  label the axes with "Categories" for the x-axis and "Percent Change" for the y-axis.
+
+  <end of user emulated response>'
+data_attributes:
+- State FIPS code
+- Date
+- All merchant category codes spending
+- Accommodation and food service (ACF) spending
+- Arts, entertainment, and recreation (AER) spending
+- General merchandise stores (GEN) and apparel and accessories (AAP) spending
+- Grocery and food store (GRF) spending
+- Health care and social assistance (HCS) spending
+- Transportation and warehousing (TWS) spending
+- Retail spending, including grocery (AAP, CEC, GEN, GRF, HIC, ETC, SGH)
+- Retail spending, excluding grocery ((AAP, CEC, GEN, HIC, ETC, SGH)

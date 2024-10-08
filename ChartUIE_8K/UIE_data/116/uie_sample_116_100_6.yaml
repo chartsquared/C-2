@@ -1,0 +1,56 @@
+initial_prompt: I have data on coffee preferences and consumption from a recent survey.
+  Please create a line chart that visualizes the average number of cups of coffee
+  consumed daily across different age groups (18-24, 25-34, etc.). Additionally, plot
+  another line showing the preferred brewing method (e.g., drip, capsule, bean-to-cup)
+  across these age groups. Each line should represent an age group, showing trends
+  in both coffee consumption and brewing preferences. This will help to understand
+  the correlation between age, consumption, and brewing methods. Ensure the chart
+  is clear and easy to read. Thank you!
+questions: '1. Do you have any preferred color schemes for the line chart?
+
+  2. Do you want to use different line styles (e.g., dashed, dotted) to distinguish
+  between age groups?
+
+  3. Should the x-axis represent specific age ranges, or do you prefer a continuous
+  age scale?
+
+  4. Do you want data points to be marked on the lines?
+
+  5. Is there a specific title you would like for the chart?
+
+  6. Do you need any specific annotations or labels on the chart?
+
+  7. Would you like to include a legend to differentiate between coffee consumption
+  and brewing methods?
+
+  8. Do you have a preference for the chart''s gridlines (e.g., minor, major, none)?
+
+  9. Should the chart include axis titles, and if so, what should they be?
+
+  10. Do you prefer setting specific limits for the y-axis, or should it adjust based
+  on the data automatically?'
+answers: '1. I do not have any specific color scheme preference.
+
+  2. I am not sure.
+
+  3. The x-axis should represent specific age ranges.
+
+  4. Yes, I would like data points to be marked on the lines.
+
+  5. I do not have a specific title.
+
+  6. I am not sure.
+
+  7. Yes, please include a legend to differentiate between coffee consumption and
+  brewing methods.
+
+  8. I do not know.
+
+  9. Yes, the chart should include axis titles. The x-axis should be titled "Age Groups"
+  and the y-axis should be titled "Cups/Brewing Method Preference."
+
+  10. The y-axis should adjust based on the data automatically.'
+data_attributes:
+- age
+- cups
+- brew

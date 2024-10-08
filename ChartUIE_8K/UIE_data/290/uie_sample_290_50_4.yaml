@@ -1,0 +1,51 @@
+initial_prompt: Please create a stacked bar chart showing the number of unique species
+  observed per genus in different habitats. Each bar will represent a genus, and the
+  segments will represent distinct habitats such as Open, Forest, and Urban.
+questions: '1. Do you have a preferred color scheme for distinguishing different habitats
+  in the stacked bar chart?
+
+  2. Would you like the genus names to be displayed vertically or horizontally on
+  the x-axis?
+
+  3. Should the chart include a legend to identify the different habitats?
+
+  4. Do you want to include grid lines for easier comparison across genera?
+
+  5. Is there a specific ordering of genera that you prefer (e.g., alphabetical, by
+  number of species)?
+
+  6. Would you like to display the exact number of unique species on each segment
+  of the bars?
+
+  7. Should the y-axis show the number of species in intervals (e.g., 0, 10, 20) or
+  as a continuous scale?
+
+  8. Do you want to include axis titles and, if so, what should they be?
+
+  9. Is there any specific font style or size preference for the labels and titles?
+
+  10. Do you prefer the bars to be displayed with any specific width or spacing between
+  them?'
+answers: '1. I am not sure.
+
+  2. Horizontally.
+
+  3. Yes.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes.
+
+  7. I am not sure.
+
+  8. Yes, "Number of Unique Species" for the y-axis and "Genus" for the x-axis.
+
+  9. I do not have any specific preference.
+
+  10. I do not have any specific preference.'
+data_attributes:
+- genus
+- species
+- habitat

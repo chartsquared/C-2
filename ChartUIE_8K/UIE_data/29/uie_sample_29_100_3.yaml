@@ -1,0 +1,39 @@
+initial_prompt: I have a dataset related to traffic prediction. The dataset includes
+  columns for DateTime, Junction, Vehicles, and ID. Could you please create a scatter
+  plot chart from this data? I want to visualize the number of vehicles passing through
+  different junctions over time. Please ensure that the DateTime is on the x-axis,
+  the number of Vehicles is on the y-axis, and use different colors to represent different
+  junctions. This should help in identifying traffic patterns at various junctions.
+  Thank you!
+questions: '1. Do you have a preferred color palette for representing different junctions?
+
+  2. What time intervals would you like the DateTime axis to display (e.g., hourly,
+  daily, weekly)?
+
+  3. Would you like to include grid lines or any specific axis formatting?
+
+  4. Do you want any specific markers or shapes for the scatter plot points?
+
+  5. Should the chart include a title or any specific labels for the axes?
+
+  6. Are there any specific thresholds or reference lines you''d like to see on the
+  y-axis (Vehicles)?
+
+  7. Do you have a preferred font style or size for the chart labels and title?'
+answers: '1. I am not sure.
+
+  2. Hourly would be best.
+
+  3. Yes, please include grid lines.
+
+  4. I do not know.
+
+  5. Yes, please include a title and labels for the axes.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- DateTime
+- Junction
+- Vehicles

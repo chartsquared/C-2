@@ -1,0 +1,48 @@
+initial_prompt: I have a dataset with the latest Covid-19 India Statewise Data. I
+  want to visualize this data using a stacked bar chart. The chart should display
+  each State/UT on the x-axis and the y-axis should represent the number of cases,
+  segmented into Active, Discharged, and Death cases. Additionally, use different
+  colors to clearly distinguish between Active, Discharged, and Death segments in
+  each bar. Make sure to label the bars with relevant metrics and percentages for
+  clarity. Include a legend and appropriate axis titles. This visualization will help
+  in comparing Covid-19 impact across different States/UTs.
+questions: '1. Do you have a preference for the color scheme used to distinguish between
+  Active, Discharged, and Death segments?
+
+  2. Would you like to include data labels inside the bars, outside the bars, or both?
+
+  3. Do you have any specific font size or style preferences for the labels and axis
+  titles?
+
+  4. Should the legend be placed inside the chart area or outside, and on which side
+  (top, bottom, left, right)?
+
+  5. Would you like grid lines to be displayed on the chart? If so, do you have a
+  preference for their style (solid, dashed) or color?
+
+  6. Do you prefer the x-axis labels (State/UTs) to be horizontal, vertical, or angled?
+
+  7. Are there any specific States/UTs you want to highlight or emphasize in the chart?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific preference for the color scheme.
+
+  2. I would like data labels both inside the bars with the exact numbers and outside
+  the bars with percentages.
+
+  3. I am not sure about the font size or style preferences.
+
+  4. The legend should be placed outside and on the right side.
+
+  5. Yes, I would like grid lines. I do not have a preference for their style or color.
+
+  6. I prefer the x-axis labels to be angled.
+
+  7. I do not know if any specific States/UTs need to be highlighted.
+
+  <end of user emulated response>'
+data_attributes:
+- State/UTs
+- Active
+- Discharged
+- Deaths

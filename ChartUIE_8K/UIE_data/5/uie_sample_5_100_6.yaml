@@ -1,0 +1,61 @@
+initial_prompt: Create a bubble chart to visualize the professional profile of suicide
+  victims statewise. Each bubble should represent a different cause of suicide, with
+  the size of the bubble corresponding to the "Grand Total" of suicides for that cause.
+  Use the x-axis for "Year" and the y-axis for "Total Male" suicides. The color of
+  the bubbles should differentiate between "Total Male" and "Total Female." This will
+  help us understand the prevalence of different suicide causes across states and
+  gender distribution over the years.
+questions: '1. Do you have a preferred color scheme or specific colors you want to
+  use for differentiating between "Total Male" and "Total Female" bubbles?
+
+  2. Would you like to include state names (STATE/UT) in the bubble tooltips or labels
+  for better contextual understanding?
+
+  3. Do you prefer the bubbles to be semi-transparent to allow overlapping bubbles
+  to be visible?
+
+  4. Is there any specific range or interval for the "Year" axis you would like to
+  set?
+
+  5. Would you like to include a legend to explain the colors representing "Total
+  Male" and "Total Female" on the chart?
+
+  6. Do you have a preferred font style or size for the axis labels and chart title?
+
+  7. Would you like to display data labels inside the bubbles indicating the "Grand
+  Total"?
+
+  8. Do you need any grid lines or background lines to help with the readability of
+  the chart?
+
+  9. Is there any specific order you want the causes of suicides (CAUSE) to be displayed
+  or just alphabetically sorted?
+
+  10. Do you have any preference for the title of the chart?'
+answers: '1. I do not know.
+
+  2. Yes, include state names (STATE/UT) in the bubble tooltips or labels.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Yes, include a legend to explain the colors representing "Total Male" and "Total
+  Female."
+
+  6. I do not have a specific preference.
+
+  7. Yes, display data labels inside the bubbles indicating the "Grand Total."
+
+  8. Yes, include grid lines to help with the readability of the chart.
+
+  9. I am not sure.
+
+  10. No specific preference for the title.'
+data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Total Male
+- Total Female
+- Grand Total

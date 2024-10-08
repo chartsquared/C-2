@@ -1,0 +1,47 @@
+initial_prompt: Create a heatmap depicting the number of employees across different
+  companies. Color intensity should reflect workforce size. Use data from "../Extra_datas/data/305.csv."
+  Include companies ranked 1 to 3 with stock symbols, share prices, and origins.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Would you like to include a legend explaining the color intensities on the heatmap?
+
+  3. Do you prefer a particular font style or size for the company names and other
+  text labels?
+
+  4. Should the stock symbols, share prices, and company origins be displayed as tooltips
+  or within the cells of the heatmap?
+
+  5. How would you like the companies ranked 1 to 3 to be highlighted (e.g., bold
+  text, different color border)?
+
+  6. Do you require axis labels or titles for the heatmap?
+
+  7. Do you have any preferences for the heatmap''s overall layout or aspect ratio?
+
+  8. Should there be any annotations or additional information displayed on the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, include a legend.
+
+  3. I do not know.
+
+  4. Within the cells of the heatmap.
+
+  5. Different color border.
+
+  6. Yes, axis labels and titles.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Rank
+- Company
+- stock Symbol
+- number of employees
+- share price (USD)
+- Company origin

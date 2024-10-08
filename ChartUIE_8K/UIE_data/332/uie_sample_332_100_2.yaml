@@ -1,0 +1,47 @@
+initial_prompt: Create a network diagram showing DNA mutations in different positions.
+  Node size represents mutation frequency, and edges link positions with the same
+  mutation type. Use text annotations to highlight key positions and their mutation
+  types (e.g., missense or silent). Emphasize nodes with high mutation counts using
+  colors or size. This visual will help understand mutation patterns and relationships,
+  aiding in genetic research or medical studies. Include 3 sample positions (5, 44,
+  81) with respective codons and mutation types to give context. This way, the viewer’s
+  attention is drawn to critical mutations and their distribution.
+questions: '1. Do you have a preferred color scheme for highlighting nodes with high
+  mutation counts?
+
+  2. Would you like to specify the font type and size for text annotations?
+
+  3. Should the edges have different styles or weights depending on the mutation type?
+
+  4. Is there a specific shape you prefer for the nodes other than circles?
+
+  5. Do you want any additional legends or explanatory text included in the chart?
+
+  6. Are there specific key positions, apart from the provided examples (5, 44, 81),
+  that you would like to highlight?
+
+  7. How detailed should the text annotations be for the highlighted key positions?
+
+  8. Would you prefer a specific layout for the network diagram (e.g., circular, hierarchical)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, different styles or weights for edges depending on the mutation type would
+  be great.
+
+  4. I have no specific preference.
+
+  5. Yes, please include a legend or explanatory text.
+
+  6. No, the provided examples (5, 44, 81) are fine.
+
+  7. Detailed text annotations to provide context for the highlighted key positions
+  would be helpful.
+
+  8. I am not sure.'
+data_attributes:
+- Position
+- Reference_Codon
+- Query_Codon
+- Mutation_Type

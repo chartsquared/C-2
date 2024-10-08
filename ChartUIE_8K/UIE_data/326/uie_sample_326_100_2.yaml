@@ -1,0 +1,58 @@
+initial_prompt: Create a bar chart visualizing the number of unique "Technology Name"
+  entries per "Website Domain". Highlight domains with the highest technology count.
+  Annotate specific data points to reflect the first and last seen dates for a few
+  highlighted technologies. The chart aims to show technological adoption trends across
+  different business websites, emphasizing those with the broadest range of technology
+  use. This visualization helps stakeholders understand which sites are leaders in
+  technology application and monitor their technological landscape over time. The
+  practicality of this chart lies in its ability to identify and showcase domain leaders
+  in technology usage.
+questions: '1. Do you have a specific color scheme preference for highlighting the
+  domains with the highest technology count?
+
+  2. How many of the top domains'' technology counts would you like us to highlight?
+
+  3. Would you prefer the annotations for the first and last seen dates to be displayed
+  as tooltips or directly on the bars?
+
+  4. Do you have a preference for the orientation of the bar chart (e.g., vertical
+  or horizontal)?
+
+  5. Would you like the chart to include gridlines for better readability, and if
+  so, do you prefer them to be major or minor gridlines?
+
+  6. Are there any specific font styles or sizes you would like for the chart''s labels
+  and annotations?
+
+  7. Do you want to include a legend to explain the highlighted domains, or should
+  it be inferred from the color scheme?
+
+  8. Should we include any specific title or subtitle for the chart to provide more
+  context?
+
+  9. Would you like to include axis labels, and if so, do you have any preferred wording
+  for them?'
+answers: '1. I am not sure.
+
+  2. I would like to highlight the top 5 domains'' technology counts.
+
+  3. I am not sure.
+
+  4. Vertical.
+
+  5. Yes, I would like to include minor gridlines for better readability.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. Yes, please include a title "Technological Adoption Trends Across Business Websites"
+  and a subtitle "Highlighting Domains with the Broadest Range of Technology Use".
+
+  9. Yes, please include axis labels. For the x-axis: "Website Domain" and for the
+  y-axis: "Unique Technology Count".'
+data_attributes:
+- Website Domain
+- Technology Name
+- First Seen At
+- Last Seen At

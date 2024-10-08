@@ -1,0 +1,52 @@
+initial_prompt: Create a candlestick chart visualizing Meta company's stock data with
+  specific text annotations highlighting data points from key dates, such as the opening
+  and closing prices. Utilize highlights to emphasize significant changes in stock
+  prices by altering the color of important candlesticks. The purpose is to offer
+  a clear, visual trend of the company's stock performance over time, help in quick
+  comparison, and draw attention to potentially impactful trading days. This chart
+  aids in business analysis and strategic decision-making. Text annotations should
+  also include notes for context where relevant, enhancing overall understanding.
+questions: '1. Do you have a preferred color scheme for the candlestick chart and
+  highlights for significant changes?
+
+  2. Should the annotations be displayed at specific positions on the chart (e.g.,
+  above the candlesticks, in a side panel)?
+
+  3. Are there any specific date ranges or key dates you want to ensure are annotated
+  on the chart?
+
+  4. Do you have a preference for the font style and size of the text annotations?
+
+  5. Would you like to include any additional visual elements such as trend lines
+  or moving averages?
+
+  6. How detailed should the context notes be for the text annotations (e.g., brief
+  tooltip vs. detailed description)?
+
+  7. Are there any particular thresholds or criteria for categorizing "significant
+  changes" in stock prices that should be highlighted?
+
+  8. Do you want to include volume information on the same chart, perhaps as a secondary
+  axis?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please annotate dates like earnings announcements, major product launches,
+  or major market events specific to Meta.
+
+  4. I have no specific preference.
+
+  5. Adding trend lines or moving averages would be helpful.
+
+  6. Brief tooltips should be enough.
+
+  7. I am not sure.
+
+  8. Yes, please include volume information on the same chart as a secondary axis.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close

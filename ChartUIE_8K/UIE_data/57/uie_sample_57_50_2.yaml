@@ -1,0 +1,31 @@
+initial_prompt: Create a treemap visualization showing various marketing channels,
+  highlighting cost, conversion rates, and revenue generated per channel. Use text
+  annotations to emphasize the most and least effective channels in terms of conversion
+  and revenue.
+questions: '1. Do you have any preference for the color scheme used in the treemap?
+
+  2. Should the size of the rectangles in the treemap represent the cost, revenue,
+  or conversion rate?
+
+  3. Would you like to specify any custom thresholds for determining the most and
+  least effective channels, or should the system determine these based on the data?
+
+  4. How detailed should the text annotations be for the most and least effective
+  channels?
+
+  5. Would you prefer to see absolute values or percentages for conversion rates in
+  the annotations?'
+answers: '1. I have no specific preference.
+
+  2. The size of the rectangles should represent the revenue.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Percentages for conversion rates.'
+data_attributes:
+- channel
+- cost
+- conversion_rate
+- revenue

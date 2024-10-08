@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap to visualize the lung cancer prediction data. Highlight
+  key variables like 'Age', 'Smoking', and 'Genetic Risk' to show their impact on
+  cancer levels ('Low', 'Medium', 'High'). Use text annotations to describe values
+  for specific data points, especially for those variables that show strong correlations.
+  Highlight columns with unique data like 'Patient Id' and 'Level' for better differentiation.
+  This will help in understanding how various factors contribute to the risk levels
+  predicted for lung cancer. Include context on health focus from the dataset details.
+questions: '1. Do you have a color scheme preference for the heatmap?
+
+  2. What specific font style and size would you like for text annotations?
+
+  3. Do you prefer to display numerical values within the heatmap cells?
+
+  4. Should the heatmap include a legend to explain the color gradients for lung cancer
+  levels?
+
+  5. Do you want any specific sorting or ordering of the rows and columns?
+
+  6. Is there a preference for the layout or positioning of the unique data columns
+  such as ''Patient Id'' and ''Level''?
+
+  7. Are there any specific axis titles or labels you would like to include?
+
+  8. Do you have any specific preference for the annotation method for strong correlations?
+
+  9. Should the context on health focus be included as a separate note or integrated
+  within the heatmap itself?'
+answers: '1. I do not know.
+
+  2. I do not know.
+
+  3. I prefer to display numerical values within the heatmap cells.
+
+  4. Yes, include a legend to explain the color gradients for lung cancer levels.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. No specific axis titles or labels are needed.
+
+  8. I do not know.
+
+  9. Integrated within the heatmap itself.'
+data_attributes:
+- Age
+- Smoking
+- Genetic Risk
+- Patient Id
+- Level

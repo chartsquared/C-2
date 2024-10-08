@@ -1,0 +1,53 @@
+initial_prompt: I have a dataset containing Samsung stock prices with columns for
+  Date, Open, High, Low, Close, Adj Close, and Volume. Could you please create a bar
+  chart for me that shows the trading volume over time? Use the Date for the x-axis
+  and the Volume for the y-axis. I'd like to see how the trading volume varies on
+  different dates. This will help me understand the trading activity and volume trends
+  for Samsung stocks. Thank you!
+questions: '1. Do you have a preferred color scheme or palette for the bar chart?
+
+  2. Would you like the bars to be solid or display patterns?
+
+  3. Should the Date labels on the x-axis be formatted in a specific way (e.g., "YYYY-MM-DD",
+  "MMM DD, YYYY")?
+
+  4. Do you prefer gridlines to be shown or hidden on the chart?
+
+  5. Would you like to include a title and axis labels? If so, please provide the
+  title and labels.
+
+  6. Do you want to show data values on the top of the bars?
+
+  7. Is there a specific date range you want to focus on, or should the entire dataset
+  be displayed?
+
+  8. Do you prefer a vertical or horizontal bar chart?
+
+  9. Should there be any specific markers or annotations on significant volume changes
+  or dates?
+
+  10. How detailed should the x-axis labels be (e.g., every day, every week, every
+  month)?'
+answers: '1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, please use "Trading Volume Over Time" as the title, "Date" for the x-axis,
+  and "Volume" for the y-axis.
+
+  6. I am not sure.
+
+  7. The entire dataset should be displayed.
+
+  8. Vertical bar chart.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- Date
+- Volume

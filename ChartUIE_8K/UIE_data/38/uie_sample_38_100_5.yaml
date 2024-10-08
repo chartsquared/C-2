@@ -1,0 +1,47 @@
+initial_prompt: I want to visualize the distribution of salaries in USD for different
+  job titles in the data science field. Please create a histogram showing the frequency
+  of salary ranges (in USD) on the x-axis, broken down by job titles on the y-axis.
+  The histogram should give a clear view of how salaries are spread across various
+  roles such as Data Scientist, Machine Learning Scientist, and Big Data Engineer.
+  Ensure the chart is color-coded by job title and includes a legend. The data context
+  should be maintained, reflecting salaries from different countries and experience
+  levels.
+questions: '1. Do you have any preferred color scheme for different job titles?
+
+  2. What bin size would you prefer for the salary ranges on the x-axis?
+
+  3. Should the legend be displayed inside or outside the chart area?
+
+  4. Do you have any specific title or labels you would like to include for the axes?
+
+  5. Would you like to include grid lines to help read the histogram?
+
+  6. Do you prefer a horizontal or vertical bar layout for job titles on the y-axis?
+
+  7. Is there a particular font style or size you prefer for the text in the chart?
+
+  8. Do you want to include any annotations or specific markers to highlight certain
+  data points?
+
+  9. Would you like to display the exact count of salaries within each range on the
+  histogram bars?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I don''t know.
+
+  4. Please include "Salary in USD" for the x-axis and "Frequency" for the y-axis.
+
+  5. Yes, include grid lines.
+
+  6. Horizontal bar layout for job titles.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. Yes, display the exact count of salaries within each range on the histogram bars.'
+data_attributes:
+- job_title
+- salary_in_usd

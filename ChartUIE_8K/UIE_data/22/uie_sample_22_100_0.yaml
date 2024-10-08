@@ -1,0 +1,57 @@
+initial_prompt: I need a stacked bar chart to visualize the price distribution across
+  different car bodies from the provided automobile data. The chart should include
+  annotations displaying the average price for each car body type. Please highlight
+  the car body types that have significantly higher or lower average prices compared
+  to others to make it easier to identify trends. This visualization will help in
+  understanding the relationship between car body types and their pricing, which is
+  crucial for our car price prediction analysis. Ensure the chart is clear and focused
+  on these aspects.
+questions: '1. Do you have any specific color preferences for different car body types?
+
+  2. Would you like the chart to include a legend explaining the colors used for each
+  car body type?
+
+  3. Do you want to set a specific threshold to highlight car body types with significantly
+  higher or lower average prices, or should we determine this automatically?
+
+  4. Do you have a preferred format for the annotations displaying the average prices
+  for each car body type?
+
+  5. Would you like the bars to be ordered by the car body types, or by the average
+  price in ascending or descending order?
+
+  6. Are there any specific fonts or font sizes you prefer for the annotations and
+  labels in the chart?
+
+  7. Do you want grid lines on the chart for better readability?
+
+  8. Would you prefer to display exact price values on the chart or just the relative
+  comparison?
+
+  9. Is there a specific title you would like to use for the chart?
+
+  10. Do you have any preferences for the axis labels or units for the price data?'
+answers: '1. I do not have any specific color preferences for different car body types.
+
+  2. Yes, I would like the chart to include a legend explaining the colors used for
+  each car body type.
+
+  3. I am not sure about the threshold, please determine it automatically.
+
+  4. I do not know, use a format that is clear and easily readable.
+
+  5. Please order the bars by the average price in descending order.
+
+  6. I do not have any specific preferences for fonts or font sizes.
+
+  7. Yes, please include grid lines on the chart for better readability.
+
+  8. I would prefer to display exact price values on the chart.
+
+  9. Please use the title "Price Distribution Across Different Car Body Types" for
+  the chart.
+
+  10. I have no specific preference for the axis labels or units for the price data.'
+data_attributes:
+- carbody
+- price

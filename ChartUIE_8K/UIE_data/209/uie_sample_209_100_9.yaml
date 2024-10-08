@@ -1,0 +1,62 @@
+initial_prompt: Create a heatmap to visualize the New York Housing Market dataset.
+  Highlight correlations between PROPERTY SQFT, PRICE, BEDS, and BATHS across various
+  localities. Use different shades to show high and low values—darker shades for higher
+  values and lighter for lower. Ensure the heatmap includes labels for the types of
+  properties, such as Condos and Houses. The goal is to easily identify trends and
+  outliers in the housing market. Also, include state and locality information for
+  more insightful analysis. This will help in understanding where larger, more expensive
+  homes are located.
+questions: '1. Do you have specific preferences regarding the color scheme for the
+  heatmap?
+
+  2. What size and resolution do you prefer for the heatmap?
+
+  3. Are there any specific font styles or sizes you prefer for the labels?
+
+  4. Should the heatmap include any specific annotations or markers for outliers?
+
+  5. Do you have a preference for the layout or orientation of the heatmap?
+
+  6. Would you like any additional legends or explanations included for better understanding
+  of the color gradations?
+
+  7. Are there any specific thresholds for ''high'' and ''low'' values that you would
+  like us to use for the different shades?
+
+  8. Should the labels for property types (e.g., Condos, Houses) be prominently displayed
+  in a particular way?
+
+  9. Is there a need to group or categorize localities in any specific manner on the
+  heatmap?
+
+  10. Are there any other specific visual elements you would like to include to enhance
+  the interpretability for your target audience?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include specific annotations or markers for outliers.
+
+  5. I do not know.
+
+  6. Yes, additional legends or explanations for better understanding of the color
+  gradations would be helpful.
+
+  7. I am not sure.
+
+  8. Yes, the labels for property types (e.g., Condos, Houses) should be prominently
+  displayed.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- PROPERTYSQFT
+- PRICE
+- BEDS
+- BATH
+- LOCALITY
+- TYPE
+- STATE

@@ -1,0 +1,35 @@
+initial_prompt: Create a Sankey chart to visualize the 2022 World Cup knockout stages
+  from Round of 16 to the Final. Each node represents a match, showing the progression
+  of teams and their victories. Use highlights and text annotations to emphasize winning
+  teams and key match scores. The purpose of this visualization is to trace the journey
+  of the winning team, Argentina, and other notable paths in the tournament. Focus
+  on making the connections between rounds clear and visually distinct for better
+  understanding. Use colors to differentiate stages and winners' paths. Keep the user
+  engaged with contextual annotations.
+questions: '1. Do you have specific colors in mind for differentiating the stages
+  and winners'' paths?
+
+  2. Are there particular key match scores or matches you want to emphasize more prominently?
+
+  3. Would you prefer any specific styling for the text annotations (e.g., font size,
+  bold, color)?
+
+  4. Do you have any preferred layout or arrangement for the nodes and links in the
+  Sankey chart?
+
+  5. Would you like the nodes to include any additional information beyond the match
+  name, winner, and score?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to emphasize the Final match and any match involving Argentina.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. No, just the match name, winner, and score is enough.'
+data_attributes:
+- name
+- winner
+- score
+- children

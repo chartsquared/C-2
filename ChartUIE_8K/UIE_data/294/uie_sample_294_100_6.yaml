@@ -1,0 +1,45 @@
+initial_prompt: Create a histogram to visualize the engagement metrics of Cristiano
+  Ronaldo's tweets captured in the CSV data. Focus on retweetCount, replyCount, likeCount,
+  quoteCount, and bookmarkCount. Use separate histograms for each metric to highlight
+  their distributions. Make sure to label the x-axis with the engagement metrics and
+  the y-axis with the frequency of occurrences. This will provide insights into how
+  fans interact with Ronaldo’s tweets.
+questions: '1. Do you have a preferred color scheme for the histograms?
+
+  2. Would you like a specific bin size for the histograms or should it be auto-calculated?
+
+  3. Do you prefer any particular style or font for the axes labels and title?
+
+  4. Should there be any grid lines on the plot for better readability?
+
+  5. Do you want to include any statistical summary (mean, median, standard deviation)
+  on the histograms?
+
+  6. Are there any specific dimensions or aspect ratios you prefer for the plots?
+
+  7. Do you have a preferred order for displaying the histograms (e.g., retweetCount
+  first, then replyCount, etc.)?
+
+  8. Would you like to include annotations or highlights for significant points or
+  values on the histograms?'
+answers: '1. I am not sure.
+
+  2. Auto-calculated bin size is fine.
+
+  3. I do not have any specific preference.
+
+  4. Yes, grid lines for better readability would be helpful.
+
+  5. I am not sure.
+
+  6. I do not have any specific preference.
+
+  7. RetweetCount first, then replyCount, likeCount, quoteCount, and bookmarkCount.
+
+  8. I am not sure.'
+data_attributes:
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

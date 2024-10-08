@@ -1,0 +1,56 @@
+initial_prompt: Please create a heatmap displaying the correlation between chemical
+  components in the glass dataset. Ensure that all columns (RI, Na, Mg, Al, Si, K,
+  Ca, Ba, Fe) and the target (Type) are included.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. How would you like to display the correlation values (e.g., within the cells
+  using a specific font size)?
+
+  3. Do you have any specific preferences for the axis labels and titles?
+
+  4. Should we include a color legend to interpret the correlation scale?
+
+  5. Do you have any particular layout preferences for the heatmap?
+
+  6. Would you like to highlight any specific correlations or ranges within the heatmap?
+
+  7. Should the heatmap include gridlines for better readability?
+
+  8. Do you have a preferred size or aspect ratio for the heatmap?
+
+  9. Would you like to display annotations or text indicating correlation strength
+  within the cells?
+
+  10. Do you have any preferences for clustering or ordering of rows and columns based
+  on correlation strength?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include a color legend to interpret the correlation scale.
+
+  5. I have no specific preference.
+
+  6. I have no specific preferences.
+
+  7. Yes, please include gridlines for better readability.
+
+  8. I do not know.
+
+  9. Yes, please display annotations or text indicating correlation strength within
+  the cells.
+
+  10. I am not sure.'
+data_attributes:
+- RI
+- Na
+- Mg
+- Al
+- Si
+- K
+- Ca
+- Ba
+- Fe
+- Type

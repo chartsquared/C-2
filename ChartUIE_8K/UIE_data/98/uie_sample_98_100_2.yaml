@@ -1,0 +1,50 @@
+initial_prompt: I need an area chart that shows the total sales over time for a supermarket
+  business. Each area's color should represent different branches (A, B, C), and within
+  each branch, differentiate between members and normal customers. Please highlight
+  the points of highest sales with text annotations showing the exact total and the
+  date. Additionally, use visual highlights to distinguish days with high ratings
+  (greater than 9) by making those areas pop out in the chart. The purpose is to visualize
+  sales trends and identify peak performance periods and their associated customer
+  segments.
+questions: '1. Do you prefer specific colors for each branch (A, B, C) and customer
+  type (members, normal customers)?
+
+  2. Do you have any preference for the style or format of the text annotations for
+  the highest sales points?
+
+  3. How would you like the areas with high ratings (greater than 9) to be visually
+  distinguished (e.g., different color, pattern, opacity)?
+
+  4. What date format would you prefer for the x-axis labels?
+
+  5. How granular do you want the time intervals to be on the x-axis (e.g., daily,
+  weekly, monthly)?
+
+  6. Do you have any specific preferences for the chart''s overall color scheme or
+  design style (e.g., minimalist, vibrant)?
+
+  7. Would you like to include a legend to differentiate between the branches and
+  customer types?
+
+  8. Do you have any specific preferences for the title or subtitle of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. A different color for high ratings would be good.
+
+  4. I am not sure.
+
+  5. Monthly intervals sound good.
+
+  6. I have no specific preference.
+
+  7. Yes, please include a legend.
+
+  8. I do not know.'
+data_attributes:
+- Date
+- Total
+- Branch
+- Customer type
+- Rating

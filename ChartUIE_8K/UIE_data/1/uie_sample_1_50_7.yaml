@@ -1,0 +1,30 @@
+initial_prompt: Create a stacked bar chart showing the GDP composition by sectors
+  for the top 3 ranked countries. Use different colors for Agriculture, Industry,
+  and Services GDP. Label the countries on the x-axis and GDP values on the y-axis.
+questions: "1. Do you have a preferred color scheme for the different GDP sectors\
+  \ (Agriculture, Industry, Services)?\n2. Would you like to include any specific\
+  \ text labels or annotations on the bars?\n3. Do you prefer a specific ordering\
+  \ of the countries on the x-axis?\n4. What units of measurement would you like to\
+  \ display on the y-axis (e.g., million $, billion $)?\n5. Do you have preferences\
+  \ for the font style and size for the labels and title?\n6. Would you like any gridlines\
+  \ or background elements on the chart for better readability? \n7. Do you prefer\
+  \ the chart to have a title, and if so, what should it be?"
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Billion dollars.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, the title should be "GDP Composition by Sector for Top 3 Countries".'
+data_attributes:
+- Rank
+- Country/Economy
+- Agriculture GDP
+- IndustryGDP
+- ServicesGDP

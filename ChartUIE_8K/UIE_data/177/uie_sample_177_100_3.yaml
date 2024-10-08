@@ -1,0 +1,56 @@
+initial_prompt: Please create a choropleth map showcasing the geographical distribution
+  of company growth as inferred from financial news sentiment analysis. The map should
+  highlight different regions based on the sentiment (neutral, negative, positive)
+  of the mentioned news articles related to business. Use varying shades or colors
+  to represent the sentiment intensity and ensure each region's shade accurately reflects
+  the sentiment data. The map should be interactive, allowing users to hover or click
+  on a region to view specific details about the sentiments and associated news headlines.
+  This will help identify regional performance trends visually. Thank you!
+questions: '1. Do you prefer specific colors for each sentiment category (neutral,
+  negative, positive)?
+
+  2. Would you like to include a legend to explain the color coding and intensity
+  levels?
+
+  3. Do you have a preference for the map projection (e.g., Mercator, Albers)?
+
+  4. Should the map display political boundaries, major cities, or any other geographical
+  features?
+
+  5. Would you like to display data labels or tooltips that show the exact sentiment
+  score when hovering over a region?
+
+  6. Do you want regions with no data to be represented in a specific color or remain
+  blank?
+
+  7. Is there a preferred font style and size for any text on the map (e.g., region
+  names, data labels)?
+
+  8. Should the map include a title and description, and if so, what should they be?
+
+  9. Do you want to include a zoom and pan feature for easier navigation through different
+  regions?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend to explain the color coding and intensity
+  levels.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, displaying data labels or tooltips that show the exact sentiment score when
+  hovering over a region would be good.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, the map should include a title and description. The title could be "Geographical
+  Distribution of Company Growth Based on Financial News Sentiment Analysis."
+
+  9. I am not sure.'
+data_attributes:
+- neutral
+- According to Gran , the company has no plans to move all production to Russia ,
+  although that is where the company is growing .

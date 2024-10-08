@@ -1,0 +1,42 @@
+initial_prompt: I need a bar chart to visualize the number of interactions by 'src_ip_country_code'.
+  The chart should display the country codes on the x-axis and the count of interactions
+  on the y-axis. This will help in understanding which countries are generating the
+  most suspicious web traffic interactions. Use different colors for each bar to make
+  it visually appealing and clear. Make sure to label the axes and provide a concise
+  title for the chart, such as "Suspicious Web Interactions by Country." This will
+  aid in quickly identifying potential threats based on their origin.
+questions: '1. Do you have any specific colors in mind for each bar?
+
+  2. What font style or size would you prefer for the chart title and axis labels?
+
+  3. Is there a specific chart background color or gridline preference you have?
+
+  4. Do you want to include data labels on each bar to show the exact count of interactions?
+
+  5. Do you prefer vertical or horizontal orientation for the bar chart?
+
+  6. Should the bars be sorted in ascending or descending order based on the count
+  of interactions?
+
+  7. Do you have any specific preferences for the chart legend, if needed?
+
+  8. Are there any additional annotations or markers you would like to include on
+  the chart?'
+answers: '1. I have no specific preference for colors.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I want to include data labels on each bar to show the exact count of interactions.
+
+  5. Vertical orientation is preferred.
+
+  6. The bars should be sorted in descending order based on the count of interactions.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- src_ip_country_code
+- rule_names

@@ -1,0 +1,41 @@
+initial_prompt: Create a choropleth map showing flight counts (cnt) between airports.
+  Use start_lat, start_lon, end_lat, and end_lon for geolocation, and cnt for intensity.
+  Visualize airline routes.
+questions: '1. Do you have a specific color scheme preference for the choropleth map?
+
+  2. Should the map highlight specific flight routes more prominently than others?
+
+  3. Do you prefer the map to display airport names or codes?
+
+  4. Would you like to include a legend to explain the intensity of flight counts?
+
+  5. Should the map show additional geographic features, such as country borders or
+  major cities?
+
+  6. Do you have a preference for the map''s initial zoom level and center point?
+
+  7. Are there specific regions or airports that should be emphasized or de-emphasized?
+
+  8. Would you like to incorporate different line styles or thickness to distinguish
+  between flight routes based on flight counts?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the map to display airport codes.
+
+  4. I would like to include a legend to explain the intensity of flight counts.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I have no specific preference.'
+data_attributes:
+- start_lat
+- start_lon
+- end_lat
+- end_lon
+- cnt

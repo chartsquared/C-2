@@ -1,0 +1,61 @@
+initial_prompt: Create a box chart to visualize the effectiveness of different Pokémon
+  types against other types using the dataset. The x-axis should represent Pokémon
+  types (type1), and the y-axis should show the effectiveness value (against_bug to
+  against_water). This will help in understanding the vulnerability of each Pokémon
+  type against others. Please use the provided data, "The Complete Pokemon Dataset,"
+  focusing on their defensive stats. Ensure the box chart clearly shows the range,
+  median, and any outliers in effectiveness to highlight the strengths and weaknesses
+  of each type.
+questions: '1. Do you have a preference for the color scheme of the box chart?
+
+  2. Would you like to include a title for the chart? If so, what should it be?
+
+  3. Do you have a specific font style or size preference for the labels and title?
+
+  4. Do you want grid lines displayed on the chart?
+
+  5. Should the box chart include annotations or labels for the median and any outliers?
+
+  6. How detailed should the axis labels be (e.g., short type names vs. full type
+  names)?
+
+  7. Do you have a preference for the orientation of the x-axis labels (horizontal,
+  vertical, or angled)?
+
+  8. Would you like to include a legend or key for the colors used, even though each
+  box represents a distinct type?'
+answers: '1. I do not have a specific preference for the color scheme.
+
+  2. Yes, the title should be "Effectiveness of Pokémon Types Against Others."
+
+  3. I am not sure about the font style or size.
+
+  4. Yes, I would like grid lines displayed on the chart.
+
+  5. Yes, please include annotations or labels for the median and any outliers.
+
+  6. Short type names for the axis labels are fine.
+
+  7. Horizontal orientation for the x-axis labels is preferred.
+
+  8. I am not sure if a legend or key is necessary.'
+data_attributes:
+- type1
+- against_bug
+- against_dark
+- against_dragon
+- against_electric
+- against_fairy
+- against_fight
+- against_fire
+- against_flying
+- against_ghost
+- against_grass
+- against_ground
+- against_ice
+- against_normal
+- against_poison
+- against_psychic
+- against_rock
+- against_steel
+- against_water

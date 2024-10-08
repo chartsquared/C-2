@@ -1,0 +1,42 @@
+initial_prompt: Create a heatmap to analyze the relationship between the number of
+  prime numbers (nprimes) and the RSA variant's encryption time (encrTime) and decryption
+  time (decrTime). Use the data points provided in the CSV file stored at ../Extra_datas/data/320.csv
+  for the analysis. Please ensure the heatmap is color-coded to clearly indicate different
+  time values to help visualize how increasing 'nprimes' affects 'encrTime' and 'decrTime'.
+  Include labels for both axes and a legend for the color gradient. This is for an
+  RSA variant analysis in a cryptocurrency and blockchain context.
+questions: '1. Do you have a preferred color gradient for the heatmap?
+
+  2. Are there specific axis label formats or titles you would like?
+
+  3. Should the heatmap include specific gridlines or axis ticks?
+
+  4. Do you have a preference for the range of values on the color scale?
+
+  5. Would you prefer a logarithmic or linear scale for the time values?
+
+  6. How detailed should the legend for the color gradient be?
+
+  7. Are there any specific font styles or sizes you would prefer for the labels and
+  legend?'
+answers: '<start user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  <end user response>'
+data_attributes:
+- nprimes
+- encrTime
+- decrTime

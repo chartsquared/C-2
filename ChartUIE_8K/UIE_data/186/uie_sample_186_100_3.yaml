@@ -1,0 +1,48 @@
+initial_prompt: I'd like to visualize the JoJo Stands Stats from the file provided,
+  focusing on the different attributes (PWR, SPD, RNG, PER, PRC, DEV) for each Stand.
+  Please create a heatmap that shows the intensity of these attributes across different
+  Stands. The idea is to easily compare how different Stands excel in each attribute
+  by using color gradients. Ensure missing values are handled appropriately. Also,
+  include a legend to make it easy to understand the heatmap. This will help in analyzing
+  the strengths and weaknesses of each Stand visually. Thank you!
+questions: '1. Do you have a preferred color gradient or specific color palette for
+  the heatmap?
+
+  2. How would you like the missing values to be handled (e.g., filled with a default
+  value, removed, or indicated in a specific way)?
+
+  3. Would you like any specific annotations or labels on the heatmap cells?
+
+  4. Are there any specific Stands or attributes you want to highlight more prominently?
+
+  5. Do you have a preference for the size and dimensions of the heatmap?
+
+  6. Would you like the stands to be sorted or ordered in a particular way (e.g.,
+  alphabetically, by a specific attribute)?
+
+  7. Do you prefer a specific font style or size for the legend and labels?
+
+
+  '
+answers: '1. I am not sure; any visually appealing color gradient is fine.
+
+  2. Please fill the missing values with a default value.
+
+  3. I do not have a specific preference for annotations or labels on the heatmap
+  cells.
+
+  4. I do not know; no specific Stands or attributes to highlight.
+
+  5. I do not have a preference for the size and dimensions of the heatmap.
+
+  6. Sorting alphabetically might be useful, but I am not sure.
+
+  7. I have no specific preference for the font style or size for the legend and labels.'
+data_attributes:
+- Stand
+- PWR
+- SPD
+- RNG
+- PER
+- PRC
+- DEV

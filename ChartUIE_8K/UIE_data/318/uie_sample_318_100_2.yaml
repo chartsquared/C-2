@@ -1,0 +1,56 @@
+initial_prompt: Create a heatmap visualizing the ratings of the hotels in Munnar,
+  Kerala, as presented by MakeMyTrip. Use the columns 'Hotel Name', 'Rating', and
+  'Star Rating' for the heatmap. Text Annotations should highlight the 'Rating Description'
+  and 'Reviews'. Color code the heatmap based on the 'Rating' values to visually distinguish
+  higher-rated hotels. This will help in quickly identifying the top-rated hotels
+  and comparing their reviews and star ratings. The purpose is to find the best-rated
+  hotels and see the correlation between ratings and reviews.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. Would you like the color gradient to be linear or segmented?
+
+  3. What specific range of ''Rating'' values should have more distinct colors, if
+  any?
+
+  4. Do you prefer any specific font style or size for text annotations?
+
+  5. Should the hotels be sorted in a particular order (e.g., by ''Rating'', ''Star
+  Rating'', or ''Reviews'')?
+
+  6. Do you want any specific scale (e.g., log scale) to be used for the ''Reviews''
+  count?
+
+  7. Is there a maximum or minimum ''Rating'' value that you want to highlight or
+  focus on?
+
+  8. Would you like to include tooltips when hovering over the heatmap cells for additional
+  information?
+
+  9. Are there any specific legends or labels you want to be prominently displayed?
+
+  10. Do you have a preference for the layout or size of the heatmap?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Please sort the hotels by ''Rating''.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. No specific legends or labels are needed.
+
+  10. I do not have a preference for the layout or size.'
+data_attributes:
+- Hotel Name\t\t\t\t\t\t\t\t\t
+- Rating
+- Star Rating
+- Rating Description
+- Reviews

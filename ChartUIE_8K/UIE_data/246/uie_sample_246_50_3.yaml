@@ -1,0 +1,38 @@
+initial_prompt: Create a choropleth map using the Bacteria Dataset to show regions
+  where different bacterial families (e.g. Enterobacteriaceae, Staphylococcaceae)
+  are predominantly found. Highlight areas with harmful bacteria to humans.
+questions: '1. Do you have a specific color scheme in mind to represent different
+  bacterial families and harmful areas?
+
+  2. Should we use a specific geographic region or map projection for the choropleth
+  map?
+
+  3. Do you prefer a legend to explain the color coding for different bacterial families
+  and harmful levels?
+
+  4. Would you like to include any labels or markers for specific locations on the
+  map?
+
+  5. Is there a preferred level of geographic granularity (e.g., country, state/province,
+  city) for the map?
+
+  6. Should the intensity of harmful areas be represented with different shades or
+  patterns?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I prefer a legend to explain the color coding for different bacterial families
+  and harmful levels.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, the intensity of harmful areas should be represented with different shades
+  or patterns.'
+data_attributes:
+- Name
+- Family
+- Where Found
+- Harmful to Humans

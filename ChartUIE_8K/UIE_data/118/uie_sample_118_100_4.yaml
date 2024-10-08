@@ -1,0 +1,54 @@
+initial_prompt: 'Please create a stacked column chart using the "Indian Liver Patient
+  Records" dataset. The x-axis should represent the "Gender" column (Male and Female).
+  For each gender group, stack the counts of different bilirubin levels ("Total_Bilirubin":
+  low [0-1], moderate [1-3], high [3-10], very high [>10]). The y-axis should show
+  the patient count. This visualization will help to understand the distribution of
+  bilirubin levels across genders in liver patients. Ensure the chart is easy to interpret.
+  Thank you!'
+questions: '1. Do you have a specific color palette preference for the different bilirubin
+  levels (low, moderate, high, very high)?
+
+  2. Would you like to add any specific title to the chart?
+
+  3. Do you want grid lines to be displayed on the chart for easier reading?
+
+  4. Should there be a legend to explain what each stack color represents?
+
+  5. Do you have preferences for font style and size for axis labels and the chart
+  title?
+
+  6. Would you like to include data labels on each stack within the columns to show
+  exact counts?
+
+  7. Is there a preference for the order in which the bilirubin levels are stacked
+  (e.g., from low to very high or vice versa)?
+
+  8. Do you have a preference for the format and labels for the x-axis and y-axis?
+
+  9. Would you prefer the bars to have specific spacing between them?
+
+  10. Should there be any specific annotations or reference lines (e.g., average bilirubin
+  levels) added to the chart?'
+answers: '1. I do not know.
+
+  2. Yes, the title should be "Distribution of Bilirubin Levels Across Genders in
+  Liver Patients".
+
+  3. I am not sure.
+
+  4. Yes, please include a legend.
+
+  5. I do not have specific preferences.
+
+  6. Yes, please include data labels.
+
+  7. I do not have a specific preference.
+
+  8. I do not have a specific preference.
+
+  9. I do not know.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- Gender
+- Total_Bilirubin

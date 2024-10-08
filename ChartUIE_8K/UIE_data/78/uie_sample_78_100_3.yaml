@@ -1,0 +1,49 @@
+initial_prompt: 'Create a scatter plot to visualize data from ''78.csv''. Use ''created''
+  for the x-axis and ''score'' for the y-axis. Each point should represent a unique
+  ''id'' colored by ''comms_num''. Include unique ''title'' labels for points. Highlight
+  temporal trends in Reddit posts about vaccine myths, especially the impact on scores
+  over time. Ensure axes are properly labeled and add a title: "Reddit Vaccine Myths:
+  Score Trends vs. Post Creation Time". Add a legend to differentiate ''comms_num''.
+  Include tooltip feature if possible for detailed information on hover or click.'
+questions: '1. Do you have any color preferences for differentiating ''comms_num''?
+
+  2. What font family and size would you prefer for axis labels and the chart title?
+
+  3. How would you like the unique ''title'' labels for points to be displayed (e.g.,
+  font size, color, orientation)?
+
+  4. Would you prefer any specific styling for the data points (e.g., shape, size)?
+
+  5. Do you have a preferred format for the date on the x-axis?
+
+  6. Would you like to include a grid in the plot? If so, any specific preferences
+  for its appearance?
+
+  7. Is there a preferred location for the legend on the chart?
+
+  8. Do you have any preferences for the style and placement of axis ticks and labels?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I prefer the date to be in the format "YYYY-MM-DD".
+
+  6. Yes, include a grid. I am not sure about its appearance.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  <end of user response>'
+data_attributes:
+- created
+- score
+- id
+- comms_num
+- title

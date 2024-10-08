@@ -1,0 +1,60 @@
+initial_prompt: 'I want to visualize the trends of different operational parameters
+  over time to monitor machine performance and predict maintenance needs. Specifically,
+  create a line chart for each parameter: ''Air temperature [K]'', ''Process temperature
+  [K]'', ''Rotational speed [rpm]'', ''Torque [Nm]'', and ''Tool wear [min]''. Include
+  a time-based x-axis using ''UDI'' as a proxy for time. Also, indicate points where
+  ''Target'' value is 1 to highlight when a failure occurs. This should help in understanding
+  the patterns leading to failures.'
+questions: '1. Do you have a preference for the color scheme of the lines for each
+  parameter?
+
+  2. Would you like to include grid lines on the chart for better readability?
+
+  3. Should the points where the ''Target'' value is 1 be indicated with a specific
+  marker style or color?
+
+  4. Do you prefer any specific line styles (solid, dashed, dotted) for the different
+  parameters?
+
+  5. Would you like to see a legend on the chart to identify the different parameters?
+
+  6. Should the chart include tooltips or annotations for the highlighted failure
+  points?
+
+  7. Do you have preferences for the scale and range of the y-axis for each line chart?
+
+  8. Would you like to display any statistical summaries (such as mean, median) on
+  the chart?
+
+  9. Should the x-axis labels (UDI) be formatted in a specific way (e.g., rotated,
+  in intervals)?
+
+  10. Do you have any preference for the font style and size for axis labels and titles?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include grid lines on the chart for better readability.
+
+  3. Yes, please use a specific marker style or color to indicate the points where
+  the ''Target'' value is 1.
+
+  4. I am not sure.
+
+  5. Yes, I would like to see a legend on the chart to identify the different parameters.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not have any specific preference.'
+data_attributes:
+- UDI
+- Air temperature [K]
+- Process temperature [K]
+- Rotational speed [rpm]
+- Torque [Nm]
+- Tool wear [min]
+- Target

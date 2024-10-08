@@ -1,0 +1,54 @@
+initial_prompt: Visualize the Real Time Space Mission Dataset with a line chart showing
+  "Year" on the x-axis and "MissionStatus" on the y-axis. Annotate highlights of key
+  missions from the "Mission" data to emphasize mission activities over the years.
+  The annotated points should include the "Company" and "Rocket" details, especially
+  for any 'Retired' status rockets. Include data-driven text annotations for notable
+  changes in "MissionStatus" and ensure the unique missions are highlighted for better
+  clarity. Also, clarify missing values for "Price" and "Time" fields as context for
+  gaps in the timeline.
+questions: '1. Do you have any preference for the color scheme of the line chart?
+
+  2. Would you like to distinguish different companies by colors or markers?
+
+  3. Do you have a preference for the style of annotations (e.g., arrows, labels,
+  tooltip)?
+
+  4. Is there a specific format you would like for the data-driven text annotations?
+
+  5. Should the annotated key missions be highlighted with different markers or shapes?
+
+  6. How detailed do you want the annotations to be regarding ''Company'' and ''Rocket''
+  details?
+
+  7. Would you like to handle missing values in "Price" and "Time" with specific symbols
+  or color coding?
+
+  8. Do you prefer a particular type of line for the chart (e.g., dashed, solid)?
+
+  9. Should the y-axis (MissionStatus) have any specific labeling conventions or thresholds?'
+answers: '1. I am not sure.
+
+  2. Yes, distinguishing different companies by colors would be helpful.
+
+  3. I do not know.
+
+  4. No specific preference for the format.
+
+  5. Yes, please highlight the annotated key missions with different markers or shapes.
+
+  6. Quite detailed, especially for ''Retired'' status rockets.
+
+  7. Yes, handle missing values with specific symbols or color coding.
+
+  8. I am not sure.
+
+  9. No specific labeling conventions for the y-axis.'
+data_attributes:
+- Year
+- MissionStatus
+- Mission
+- Company
+- Rocket
+- Price
+- Time
+- RocketStatus

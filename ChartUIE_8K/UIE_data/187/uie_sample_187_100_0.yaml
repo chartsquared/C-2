@@ -1,0 +1,65 @@
+initial_prompt: Create a bar chart visualizing the worldwide gross of Marvel superhero
+  movies. Annotate values for each bar to highlight key figures and add contextual
+  text annotations for budget recovery percentages. Utilize color highlights to distinguish
+  different movie categories, like 'Ant-Man' and 'Avengers,' to compare their performance
+  effectively. The chart should serve to analyze the financial success of these films,
+  emphasizing opening weekend figures and the split between domestic and international
+  gross. The chart should make it easier to grasp the overall performance and differences
+  among these blockbuster movies from Marvel.
+questions: '1. Do you have any specific requirements for the chart title?
+
+  2. What font size and style do you prefer for the text annotations?
+
+  3. Do you have a preference for the color scheme used to highlight different movie
+  categories?
+
+  4. Should the bars be sorted in any particular order, such as by worldwide gross
+  or release date?
+
+  5. Do you have any specific preferences for the layout of the axis labels and legends?
+
+  6. Is there a specific format you prefer for displaying the annotated values (e.g.,
+  nearest million)?
+
+  7. Should the chart include gridlines or other reference lines for better readability?
+
+  8. Do you want to include a specific subtitle or caption for additional context?
+
+  9. Do you prefer vertical or horizontal bars for the bar chart?
+
+  10. Are there any specific accessibility considerations you would like us to include
+  in the chart design?'
+answers: '<start of user emulated response>
+
+  1. I am not sure, maybe something simple like "Marvel Superhero Movies: Worldwide
+  Gross".
+
+  2. I do not know, something that is clear and readable.
+
+  3. I would prefer a color scheme where different movie categories like ''Ant-Man''
+  and ''Avengers'' are easily distinguishable, but I am not sure about specific colors.
+
+  4. Sorted by worldwide gross would be best.
+
+  5. I have no specific preference.
+
+  6. Annotating values to the nearest million sounds good.
+
+  7. Yes, please include gridlines for better readability.
+
+  8. No specific subtitle or caption comes to mind.
+
+  9. I prefer vertical bars for the bar chart.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- film
+- category
+- worldwide gross ($m)
+- budget
+- domestic gross ($m)
+- international gross ($m)
+- opening weekend ($m)
+- '% budget recovered'

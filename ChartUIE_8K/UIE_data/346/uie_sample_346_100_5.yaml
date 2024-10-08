@@ -1,0 +1,54 @@
+initial_prompt: Create a grouped column chart depicting the sales distribution of
+  the top three best-selling video games. Use 'Genre' on the x-axis and stack the
+  'NA_Sales', 'EU_Sales', 'JP_Sales', and 'Other_Sales' for each Genre. Ensure each
+  game (Wii Sports, Super Mario Bros., and Mario Kart Wii) is distinguished by different
+  colors. The chart should visually convey the regional popularity of each game by
+  showing variations in sales across North America, Europe, Japan, and other regions.
+  Label axes appropriately and include a legend for clarity.
+questions: '1. Do you have any preference for the color scheme used to differentiate
+  the games?
+
+  2. Would you like to include data labels on the bars to show exact sales figures?
+
+  3. Do you have a particular order preference for the genres along the x-axis?
+
+  4. Should the chart include gridlines for easier readability?
+
+  5. Do you prefer any specific font style or size for the axes labels and title?
+
+  6. Is there a specific title you would like for the chart?
+
+  7. Would you like the legend to be positioned in a particular location (e.g., top,
+  bottom, right, left)?
+
+  8. Should the sales values be displayed in a specific unit (e.g., millions, billions)?
+
+  9. Do you have any preference for the width of the bars?
+
+  10. Would you like any additional information to be included in the chart?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not have a particular order preference.
+
+  4. Yes, please include gridlines.
+
+  5. I do not have a specific preference.
+
+  6. "Sales Distribution of Top Three Best-Selling Video Games by Region"
+
+  7. Top
+
+  8. Millions
+
+  9. I am not sure.
+
+  10. No, that''s all.'
+data_attributes:
+- Genre
+- Name
+- NA_Sales
+- EU_Sales
+- JP_Sales
+- Other_Sales

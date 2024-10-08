@@ -1,0 +1,50 @@
+initial_prompt: Create a scatter plot visualizing the relationship between Age and
+  UPDRS scores from the Parkinson's Disease Dataset. Use data annotations to display
+  values of key data points (e.g., highest and lowest UPDRS scores). Highlight the
+  points with different colors based on Diagnosis. This will help identify the distribution
+  of motor symptoms severity across different ages and understand the correlation
+  between age and Parkinson's disease progression. Make sure each dot is a patient,
+  and use varied colors for diagnosed versus non-diagnosed. Include a legend and title
+  for context.
+questions: '1. Do you have any preferences for the specific color palette to be used
+  in the scatter plot?
+
+  2. Are there any specific annotations you would like to include apart from the highest
+  and lowest UPDRS scores?
+
+  3. What size should the dots representing patients be?
+
+  4. Do you have a particular font style or size preference for the title and legend?
+
+  5. Would you like grid lines to be displayed on the scatter plot?
+
+  6. Do you prefer axis labels to be horizontal or vertical?
+
+  7. Are there any specific ranges for the age or UPDRS score axes that you would
+  like to set?
+
+  8. Do you have a preference for the position of the legend on the chart?
+
+  9. Would you like to include any additional context or notes within the visualization?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Yes, please include grid lines.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. No, just the requested elements are fine.'
+data_attributes:
+- Age
+- UPDRS
+- Diagnosis
+- PatientID

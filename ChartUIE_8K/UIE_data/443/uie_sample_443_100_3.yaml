@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap to visualize the popularity of different obstacle
+  courses across various locations and seasons in Ninja Warrior. Use 'location' on
+  the y-axis and 'season' on the x-axis. The intensity of the heatmap should indicate
+  the frequency of different 'obstacle_names' appearing in each 'round_stage' and
+  'obstacle_order' should be taken into account. This will help identify which obstacles
+  are most commonly featured in each location over the seasons. Ensure the heatmap
+  is color-coded to easily distinguish the frequency of occurrence.
+questions: '1. Do you have a specific color palette in mind for the heatmap?
+
+  2. What range of color intensity would be most effective for distinguishing frequencies?
+
+  3. Do you prefer any specific label formatting or font style on the axes?
+
+  4. Would you like to include axis titles and/or gridlines for better readability?
+
+  5. Do you have a preference for the size or aspect ratio of the heatmap?
+
+  6. Should the heatmap include annotations on cells to display frequency values explicitly?
+
+  7. Is there a particular way you would like to handle the display of zero frequencies
+  or missing data?
+
+  8. Would you prefer a specific ordering for the locations and/or seasons other than
+  alphabetical or chronological?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color palette in mind.
+
+  2. I am not sure about the range of color intensity, whatever you think is best.
+
+  3. I have no specific preference for label formatting or font style on the axes.
+
+  4. Yes, including axis titles and gridlines would be great for better readability.
+
+  5. I do not have a preference for the size or aspect ratio of the heatmap.
+
+  6. Yes, it would be helpful to include annotations on cells to display frequency
+  values explicitly.
+
+  7. I am not sure how to handle zero frequencies or missing data.
+
+  8. No specific ordering preference other than alphabetical for locations and chronological
+  for seasons.
+
+  <end of user emulated response>'
+data_attributes:
+- season
+- location
+- round_stage
+- obstacle_name
+- obstacle_order

@@ -1,0 +1,46 @@
+initial_prompt: Please create a box plot to visualize the distribution of 'x' and
+  'y' values divided by the 'group' category. This will help us compare the central
+  tendencies and ranges for each group ('A', 'B', 'C'). Ensure the plot clearly shows
+  the quartiles, medians, and any outliers. This visualization will assist in assessing
+  the variation in mineral reserves estimates for energy groups across different categories.
+  Use different colors for each group for better distinction. Adding a title and axis
+  labels will enhance clarity.
+questions: '1. Do you have any specific title in mind for the box plot?
+
+  2. What labels would you prefer for the x-axis and y-axis?
+
+  3. Do you have specific colors in mind for groups ''A'', ''B'', and ''C''?
+
+  4. Would you like a legend to be included in the plot?
+
+  5. Should the plot include grid lines for better readability?
+
+  6. Do you prefer a certain font style or size for the text in the plot?
+
+  7. Are there any specific outlier markers you want to use for the plot?
+
+  8. Would you like to include any annotations on the plot?
+
+  9. Do you want to adjust the range of values displayed on the axes?'
+answers: '1. I am not sure, perhaps "Distribution of Mineral Reserves Estimates by
+  Group".
+
+  2. x-axis: "Group Category", y-axis: "Values of x and y".
+
+  3. I have no specific preference.
+
+  4. Yes, please include a legend.
+
+  5. Yes, grid lines would be helpful.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I have no specific preference.'
+data_attributes:
+- x
+- y
+- group

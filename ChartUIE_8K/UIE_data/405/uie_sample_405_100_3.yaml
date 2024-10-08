@@ -1,0 +1,53 @@
+initial_prompt: Please create a bar chart to visualize the average sale index across
+  the days. The chart should have "days" on the x-axis and "sale index" on the y-axis.
+  Highlight the confidence intervals (CI_left and CI_right) as error bars to show
+  the range of uncertainty for each sale index. Make sure to include the exact values
+  and labels for clarity. This will help our business to understand the sales trends
+  over time as well as the reliability of the data. Thank you!
+questions: '1. Do you have specific color preferences for the bars and error bars?
+
+  2. Would you prefer the x-axis labels to be displayed horizontally or angled?
+
+  3. Should we include grid lines on the chart? If yes, do you prefer horizontal,
+  vertical, or both?
+
+  4. Do you have a preference for the font type and size for the labels?
+
+  5. Where would you like the legend to be positioned (if needed)?
+
+  6. Do you want the confidence intervals to be represented in a specific style, such
+  as dotted or dashed lines?
+
+  7. Would you like a title on the chart? If yes, do you have a specific wording in
+  mind?
+
+  8. Is there any specific area you want to highlight on the chart, such as a particular
+  range of days?
+
+  9. Should we include any annotations or additional information on the chart?
+
+  10. Do you have a preference for the default size (dimensions) of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, horizontal grid lines would be helpful.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, a title would be great. Please use "Average Sale Index Over Days".
+
+  8. No, I have no specific preference.
+
+  9. No additional annotations are needed.
+
+  10. I do not have a specific preference for the size.'
+data_attributes:
+- days
+- sale_index
+- CI_left
+- CI_right

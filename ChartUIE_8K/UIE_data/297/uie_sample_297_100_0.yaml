@@ -1,0 +1,64 @@
+initial_prompt: Create a geographic heatmap to visualize the potability of water samples
+  based on the given data columns. Use the 'Potability' column to highlight areas
+  where water is potable (colored green) and non-potable (colored red). Include annotations
+  to display average values of 'ph', 'Hardness', 'Solids', 'Chloramines', 'Sulfate',
+  'Conductivity', 'Organic_carbon', 'Trihalomethanes', and 'Turbidity' for selected
+  regions. This will help in understanding regional water quality variations and focus
+  on areas needing attention for improving water safety. The chart should emphasize
+  regions with missing data to identify data collection gaps.
+questions: '1. Do you have any preferred geographic regions to emphasize in the heatmap?
+
+  2. What specific color palettes or shades would you prefer for the green and red
+  color coding?
+
+  3. Do you have any preferred locations for annotations on the chart?
+
+  4. Would you like a specific format for the annotations displaying average values?
+
+  5. Are there any additional stylistic elements (such as borders, font styles, or
+  sizes) you would like included in the chart?
+
+  6. How would you like the regions with missing data to be visually highlighted?
+
+  7. Do you want any particular basemap style or mapping service (e.g., Google Maps,
+  OpenStreetMap)?
+
+  8. Should there be any specific labeling for the geographic areas or regions on
+  the map?
+
+  9. Are there any specific legends or titles you would like to include in the heatmap?'
+answers: '<emulated amateur user response>
+
+
+  1. I am not sure.
+
+  2. I prefer using a medium green for potable and a medium red for non-potable areas.
+
+  3. I do not know.
+
+  4. I am not sure, I''ll leave that up to you.
+
+  5. I have no specific preference.
+
+  6. Highlight regions with missing data using a gray shade.
+
+  7. I do not know, whichever is best.
+
+  8. I am not sure.
+
+  9. Yes, please include a legend to distinguish between potable, non-potable, and
+  regions with missing data, and a title that reflects the water quality heatmap.
+
+
+  <end of emulated amateur user response>'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic_carbon
+- Trihalomethanes
+- Turbidity
+- Potability

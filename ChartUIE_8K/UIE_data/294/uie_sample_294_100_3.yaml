@@ -1,0 +1,58 @@
+initial_prompt: Create a line chart visualizing engagement trends for Ronaldo's tweets.
+  The x-axis should represent the dates (createdAt), and the y-axis should display
+  counts. Plot separate lines for retweetCount, replyCount, likeCount, quoteCount,
+  and bookmarkCount to highlight how each metric evolves over time. This will help
+  understand which tweets garnered the most interaction and identify patterns like
+  spikes in likes or retweets on specific dates. Using the data summary and sample
+  provided, we can discern trends in fan engagement metrics efficiently. Make the
+  chart readable with distinct colors for each engagement type.
+questions: '1. Do you have preferred colors for each engagement type (retweetCount,
+  replyCount, likeCount, quoteCount, bookmarkCount)?
+
+  2. Do you prefer any specific date format for the x-axis labels?
+
+  3. Would you like to include gridlines on the chart for better readability?
+
+  4. Do you have a preference for the line style (solid, dashed, etc.) or thickness
+  for each engagement type?
+
+  5. Should the chart include a legend to identify each engagement type line?
+
+  6. Do you want to highlight specific dates or events on the chart where major spikes
+  occur?
+
+  7. Are there any specific titles or labels you would like to use for the x-axis,
+  y-axis, or the chart itself?
+
+  8. Do you have a preference for the chart''s background color?
+
+  9. Would you like to include data point markers on the lines to show specific values?
+
+  10. Should the chart display tooltips when hovering over specific data points to
+  show detailed values?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, include gridlines for better readability.
+
+  4. I do not know.
+
+  5. Yes, include a legend to identify each engagement type line.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not know.
+
+  9. Yes, include data point markers on the lines to show specific values.
+
+  10. I do not know.'
+data_attributes:
+- createdAt
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

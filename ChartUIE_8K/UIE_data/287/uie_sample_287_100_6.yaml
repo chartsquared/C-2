@@ -1,0 +1,54 @@
+initial_prompt: I need a box chart visualization for the Parkinson's Disease Dataset.
+  Specifically, I am interested in comparing the distribution of BMI, PhysicalActivity,
+  and DietQuality among patients. I want to see the spread and any outliers in these
+  variables because they likely impact Parkinson's disease management. The box chart
+  should mark median values and quartiles clearly. Including all unique values isn't
+  necessary. Confidential patient data like PatientID and DoctorInCharge should be
+  excluded for privacy. The chart will help understand how lifestyle factors vary
+  in this dataset and potentially correlate with Parkinson's symptoms.
+questions: '1. Do you have a preference for the color scheme of the box chart?
+
+  2. Should the chart include grid lines for better readability?
+
+  3. Do you want the chart to highlight specific quartiles with different colors or
+  patterns?
+
+  4. Would you like to include any additional annotations on the chart for median
+  or outlier values?
+
+  5. Is there a preferred orientation for the box plots (horizontal or vertical)?
+
+  6. Should the chart have a specific title or subtitle?
+
+  7. Do you want axis labels to be formatted in a particular way (e.g., font size
+  or style)?
+
+  8. How detailed should the tooltips or hover information be when viewing the chart?
+
+  9. Do you have a preference for the layout or positioning of the legend, if included?
+
+  10. Would you like any specific labels or notes included within the plot area to
+  mark significant data points or ranges?'
+answers: '1. I do not know.
+
+  2. Yes, please include grid lines for better readability.
+
+  3. I am not sure.
+
+  4. Yes, please include annotations for median and outlier values.
+
+  5. Vertical orientation is preferred.
+
+  6. I do not have a specific preference.
+
+  7. I do not know.
+
+  8. I do not have a specific preference.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- BMI
+- PhysicalActivity
+- DietQuality

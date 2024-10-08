@@ -1,0 +1,38 @@
+initial_prompt: Create a bubble chart to visualize Amazon's 500 Bestsellers in Laptop
+  Gear data. The x-axis should represent star ratings, the y-axis should represent
+  price values, and the size of the bubbles should correspond to the number of reviews.
+  Highlight products with missing values in stars and reviews count differently. Annotate
+  the top 5 products with the highest star ratings and review counts.
+questions: '1. Do you have any preference for the color scheme of the chart?
+
+  2. How would you like the products with missing values in stars and reviews count
+  to be highlighted (e.g., specific colors or patterns)?
+
+  3. Do you have a preferred method for annotating the top 5 products with the highest
+  star ratings and review counts (e.g., text labels, arrows)?
+
+  4. What level of detail would you like in the annotations for the top 5 products?
+
+  5. Is there a specific title you would like for the chart?
+
+  6. Do you want gridlines on the chart? If so, in which style?
+
+  7. Any specific font style and size preference for labels and annotations?'
+answers: '1. I am not sure about the color scheme.
+
+  2. I do not know how I want the products with missing values to be highlighted.
+
+  3. Text labels would be great for annotating the top 5 products.
+
+  4. I am not sure about the level of detail on the annotations.
+
+  5. I do not have a specific title in mind.
+
+  6. I am not sure about the gridlines.
+
+  7. I do not have a specific preference for font style and size.'
+data_attributes:
+- price/value
+- stars
+- reviewsCount
+- title

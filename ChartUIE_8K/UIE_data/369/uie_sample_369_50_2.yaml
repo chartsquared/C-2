@@ -1,0 +1,45 @@
+initial_prompt: Create a heatmap to visualize air travel between major US cities.
+  Highlight regions and annotate nodes with city names, weights, and passenger counts
+  to emphasize travel volume.
+questions: '1. Do you have any color preferences for the heatmap?
+
+  2. Are there specific regions or cities you would like to emphasize more than others?
+
+  3. How would you like the annotation of city names, weights, and passenger counts
+  to be displayed: inside the nodes, near the nodes, or on hover?
+
+  4. Would you prefer a gradient color scale for the weight and passenger count values,
+  or distinct color intervals?
+
+  5. Do you have a preferred labeling format for weights and passenger counts (e.g.,
+  exact numbers, thousands, millions)?
+
+  6. Do you require any specific legends or color keys to be included on the heatmap?
+
+  7. Is there a specific layout or orientation you favor for displaying the heatmap
+  (e.g., horizontal, vertical, grid-based)?
+
+  8. Are there any specific data thresholds or ranges that you want to be highlighted
+  distinctively on the map?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Near the nodes.
+
+  4. I would prefer a gradient color scale.
+
+  5. Exact numbers.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- name
+- weight
+- region
+- source
+- target
+- passengers

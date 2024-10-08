@@ -1,0 +1,49 @@
+initial_prompt: Create a Choropleth map highlighting different regions based on the
+  presence of Pastry defects in steel plates. Use the 'X_Minimum' and 'Y_Minimum'
+  columns for geographic coordinates. Color the map regions by the count of Pastry
+  defects. Make sure to include a legend explaining the color coding.
+questions: '1. Do you have any preference for the color scheme used to indicate the
+  count of Pastry defects?
+
+  2. How many color gradients would you like to have in the legend?
+
+  3. Is there a specific range or threshold for counts that you want to highlight
+  in the map?
+
+  4. Do you prefer a specific style or format for the legend explaining the color
+  coding?
+
+  5. Would you like to include any specific annotations or labels on the map?
+
+  6. Do you have any preference for the map''s background style or type (e.g., satellite,
+  terrain, plain)?
+
+  7. Is there a need to display the geographic coordinates explicitly on the map?
+
+  8. Do you prefer to include any additional context or data on the map, such as the
+  boundaries of regions or additional geographic landmarks?
+
+  9. Should the map include any particular zoom level or focus area by default?
+
+  '
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Yes, please include labels for the regions.
+
+  6. Plain background style would be fine.
+
+  7. No, the geographic coordinates do not need to be displayed.
+
+  8. Showing the boundaries of regions would be helpful.
+
+  9. I am not sure.'
+data_attributes:
+- X_Minimum
+- Y_Minimum
+- Pastry

@@ -1,0 +1,48 @@
+initial_prompt: Please create a heatmap of the Bakery Sales Dataset. I'd like the
+  heatmap to visualize the frequency of different items sold at various times of the
+  day, broken down by day part (e.g., morning, afternoon, evening) and distinguishing
+  between weekday and weekend sales. This should help me understand trends in customer
+  purchasing behavior over different times and days. Make sure to include clear labels
+  and a color scale to show intensity.
+questions: '1. Do you have any preferred color schemes for the heatmap?
+
+  2. Would you like the heatmap to be segmented by specific time intervals within
+  each day part?
+
+  3. Do you want the heatmap to include a legend explaining the color intensity?
+
+  4. Are there any specific labels or annotations you want included in the heatmap?
+
+  5. Would you like to see separate heatmaps for weekdays and weekends, or combined
+  into one heatmap?
+
+  6. Is there a specific range of dates you are particularly interested in analyzing?
+
+  7. Would you prefer any specific ordering of items or day parts in the heatmap?
+
+  8. Do you have a preferred format for the labels on the axes (e.g., full date, abbreviated
+  day names)?
+
+  9. Should the heatmap display absolute frequencies or normalized values?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I want the heatmap to include a legend explaining the color intensity.
+
+  4. I do not know.
+
+  5. I am not sure, maybe combined into one heatmap.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I prefer abbreviated day names.
+
+  9. Absolute frequencies would be fine.'
+data_attributes:
+- Items
+- DateTime
+- Daypart
+- DayType

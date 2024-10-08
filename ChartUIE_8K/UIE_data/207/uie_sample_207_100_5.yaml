@@ -1,0 +1,36 @@
+initial_prompt: I need a heatmap to visualize the relationships between the variables
+  RM, LSTAT, PTRATIO, and MEDV in the Boston Housing dataset. Please use a color-coded
+  scale to show the correlation between these variables, highlighting positive and
+  negative correlations. Make sure the heatmap is clear and easy to interpret, as
+  I want to understand how these different real estate metrics interact with each
+  other. Ensure all labels are included for clarity. Thank you!
+questions: "1. Do you have a preferred color scheme for the heatmap? \n2. Would you\
+  \ like the color gradient to be centered around a specific correlation value (e.g.,\
+  \ 0)?\n3. Do you have a preference for the range of correlation values to be displayed\
+  \ (e.g., -1 to 1)?\n4. Should the heatmap include annotations displaying the exact\
+  \ correlation values?\n5. Do you prefer the labels to be displayed in a particular\
+  \ font size or style?\n6. Do you have any specific requirements for the layout of\
+  \ the heatmap (e.g., square or rectangular cells)?\n7. Are there any additional\
+  \ elements or details you would like to include in the heatmap (e.g., gridlines,\
+  \ title, legend)?\n8. Should we include any specific padding or spacing between\
+  \ the cells for better readability?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the range of correlation values should be -1 to 1.
+
+  4. Yes, I would like annotations displaying the exact correlation values.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. A title and a legend would be helpful.
+
+  8. I do not know.'
+data_attributes:
+- RM
+- LSTAT
+- PTRATIO
+- MEDV

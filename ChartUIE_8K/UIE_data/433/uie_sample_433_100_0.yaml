@@ -1,0 +1,53 @@
+initial_prompt: Create a bar chart to visualize the production of craft beer. The
+  x-axis should represent different brewer sizes, and the y-axis should show the number
+  of brewers. Display text annotations for the top three brewer sizes. Highlight the
+  bars representing '6,000,001 Barrels and Over', '1,000,001 to 6,000,000 Barrels',
+  and '500,001 to 1,000,000 Barrels' to emphasize their importance. The chart will
+  help us understand the distribution of craft beer production across different brewer
+  sizes and how many brewers fall into each category. This is useful for the food-and-drink
+  industry analysis.
+questions: '1. What color scheme do you prefer for the chart?
+
+  2. Do you have a specific font style or size for the text annotations?
+
+  3. How would you like the highlighted bars to be formatted (e.g., different color,
+  pattern)?
+
+  4. Do you want a specific order for the brewer sizes on the x-axis (e.g., ascending
+  size, descending size)?
+
+  5. Should the chart include a legend to explain the highlighted bars?
+
+  6. Would you like to add a title and subtitle to the chart? If so, please specify.
+
+  7. Do you have a preference for the position of the text annotations (e.g., inside
+  bar, outside bar)?
+
+  8. Should there be gridlines on the y-axis? If yes, should they be subtle or prominent?
+
+  9. Do you want to include any specific labels for the x-axis and y-axis?
+
+  10. Would you prefer any specific margin or padding around the chart elements?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Different color would be good.
+
+  4. Descending size.
+
+  5. Yes, please include a legend.
+
+  6. Yes, title: "Distribution of Craft Beer Production by Brewer Size", subtitle:
+  "Number of Brewers Across Different Production Scales".
+
+  7. Outside bar.
+
+  8. Yes, subtle gridlines.
+
+  9. Yes, x-axis: "Brewer Size (Barrels)", y-axis: "Number of Brewers".
+
+  10. I do not know.'
+data_attributes:
+- brewer_size
+- n_of_brewers

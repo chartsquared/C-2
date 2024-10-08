@@ -1,0 +1,37 @@
+initial_prompt: Create a heatmap visualizing golf course distributions across different
+  regions and counties in New York State Parks. Highlight regions with higher densities,
+  and use text annotations to display specific values where densities are highest.
+  This will help to quickly identify key areas of interest for golf enthusiasts and
+  park management, focusing especially on Suffolk County as seen in the sample data.
+  Ensure the chart is user-friendly and visually emphasizes critical data points for
+  effective analysis. Provide contextual and orientation annotations to help users
+  understand the golf facility locations in relation to municipal boundaries and zip
+  codes.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. What density thresholds should be used to highlight regions with higher densities?
+
+  3. How would you like the text annotations to be styled (font, size, color)?
+
+  4. Should the heatmap include labels for all counties or only those with higher
+  densities?
+
+  5. Do you prefer a specific orientation for the heatmap (portrait or landscape)?
+
+  6. Should municipal boundaries and zip codes be displayed as overlays on the heatmap?
+
+  7. Would you prefer any specific map projection for geographical accuracy?
+
+  8. Are there any additional contextual annotations you would like to include?'
+answers: "1. I am not sure. \n2. I do not know.\n3. I am not sure.\n4. Include labels\
+  \ for only those counties with higher densities.\n5. I have no specific preference.\n\
+  6. Yes, municipal boundaries and zip codes should be displayed as overlays on the\
+  \ heatmap.\n7. I do not know.\n8. No, I do not have any additional contextual annotations\
+  \ to include."
+data_attributes:
+- Region
+- County
+- Longitude
+- Latitude
+- NYS Municipal Boundaries
+- New York Zip Codes

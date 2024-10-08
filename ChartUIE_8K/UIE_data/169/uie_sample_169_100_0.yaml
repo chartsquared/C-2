@@ -1,0 +1,47 @@
+initial_prompt: Create a heatmap to visualize the correlation between different columns
+  such as Age, Grade, Histological type, MSKCC type, Outcome, Sex, Site of primary
+  STS, Status, and Treatment in the provided data. Highlight areas with strong correlations
+  and annotate significant correlations to help understand relationships within the
+  dataset. This visualization will serve as a useful tool for segmenting and analyzing
+  soft tissue sarcomas, aiding in identifying important patterns and differences among
+  various patient demographics and treatment outcomes. Ensure the heatmap is clear
+  and easy to interpret for healthcare professionals and researchers.
+questions: '1. What color scheme preferences do you have for the heatmap?
+
+  2. Do you have specific threshold values for highlighting strong correlations?
+
+  3. How would you like significant correlations to be annotated (e.g., with numerical
+  values, asterisks)?
+
+  4. Do you prefer the heatmap to display clusters or groups of related variables?
+
+  5. Is there a specific order in which you would like the variables to be arranged
+  on the heatmap?
+
+  6. Should missing or ''-''-coded data be handled in a specific way in the heatmap?
+
+  7. What labeling conventions do you prefer for the axes and correlation values?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. With numerical values.
+
+  4. Yes, I prefer the heatmap to display clusters or groups of related variables.
+
+  5. I do not have a specific order in which I would like the variables to be arranged.
+
+  6. Handle missing or ''-''-coded data by excluding them from the correlation analysis.
+
+  7. Use clear and concise labeling for the axes and correlation values to ensure
+  the heatmap is easy to interpret.'
+data_attributes:
+- Age
+- Grade
+- Histological type
+- MSKCC type
+- Outcome (recurrence, mets)
+- Sex
+- Site of primary STS
+- Status (NED, AWD, D)
+- Treatment

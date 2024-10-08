@@ -1,0 +1,43 @@
+initial_prompt: Create a geographic heatmap using the Sloan Digital Sky Survey DR14
+  data, plotting RA (right ascension) and Dec (declination) coordinates. Customize
+  with color intensity based on redshift values to show distribution patterns.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like to include a legend to interpret the color intensities?
+
+  3. Should the heatmap include gridlines for better readability?
+
+  4. Would you prefer a particular range of values for redshift to be highlighted?
+
+  5. Are there specific zoom levels or ranges for RA and Dec that should be focused
+  on?
+
+  6. Should the map projection be customized in any particular way?
+
+  7. Do you want to include any textual annotations or labels on notable data points?
+
+  8. Is there a specific scale or range for the color intensity you would like to
+  use?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, a legend would be helpful.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- ra
+- dec
+- redshift

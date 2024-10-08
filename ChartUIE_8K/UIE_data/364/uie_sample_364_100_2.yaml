@@ -1,0 +1,49 @@
+initial_prompt: Create a scatter plot visualizing the Rotten Tomatoes scores versus
+  the release year of movies available on Netflix. Highlight movies with a Rotten
+  Tomatoes score above 95/100. Annotate the titles and scores of the top three movies
+  (with the highest Rotten Tomatoes scores). The purpose is to identify trends over
+  time and recognize highly-rated films. Use different colors to represent different
+  streaming services (Netflix, Hulu, Prime Video, Disney+). This will help in understanding
+  the distribution and availability of top-rated movies across platforms.
+questions: '1. Do you have a preferred color scheme for representing different streaming
+  services?
+
+  2. Would you like the labels for the top three movies to be styled in a particular
+  way?
+
+  3. How would you prefer the highlight for movies with a Rotten Tomatoes score above
+  95/100 to be displayed (e.g., different marker shape, color, or size)?
+
+  4. Do you have any specific preferences for the axis scales or labels?
+
+  5. Should any specific grid lines or reference lines be included in the scatter
+  plot?
+
+  6. Is there a particular font style or size you would prefer for any text annotations
+  or labels?'
+answers: '<start of user emulated response>
+
+
+  1. I am not sure.
+
+  2. I do not have any specific preference.
+
+  3. Maybe use a different color for the markers to highlight movies with a score
+  above 95/100.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not have any specific preference.
+
+
+  <end of user emulated response>'
+data_attributes:
+- Title
+- Year
+- Rotten Tomatoes
+- Netflix
+- Hulu
+- Prime Video
+- Disney+

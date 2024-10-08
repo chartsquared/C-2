@@ -1,0 +1,51 @@
+initial_prompt: "Create a heatmap for the Smartphone Dataset to visualize the percentage\
+  \ of missing values across different features. This will help identify columns with\
+  \ significant data gaps that might need attention. Highlight columns like rating,\
+  \ reviews, and ram where you notice missing values. Additionally, distinguish common\
+  \ attributes like brand_name, model_name, and battery to get an overall sense related\
+  \ to completeness. This chart will help in assessing the data quality and determine\
+  \ areas that require data cleaning or imputation. \n\n"
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. Would you like to set a specific range for the color gradient in the heatmap?
+
+  3. Do you prefer showing the exact percentage values within each cell of the heatmap?
+
+  4. How would you like missing values to be highlighted or annotated in the heatmap?
+
+  5. Are there specific labels or titles you would like on the axes and heatmap itself?
+
+  6. Would you like to include a legend to interpret the color scale used in the heatmap?
+
+  7. Should the order of columns be based on the percentage of missing values or remain
+  as per the dataset order?
+
+  8. Do you have a preferred size or aspect ratio for the heatmap?
+
+  9. Would you like any additional annotations or markers to highlight specific columns
+  such as ''rating'', ''reviews'', and ''ram''?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please show the exact percentage values within each cell.
+
+  4. I would prefer missing values to be highlighted in a distinct color.
+
+  5. I do not have any specific labels or titles in mind.
+
+  6. Yes, please include a legend to interpret the color scale.
+
+  7. The order of columns should be based on the percentage of missing values.
+
+  8. I do not know.
+
+  9. Yes, please include additional annotations to highlight specific columns such
+  as ''rating'', ''reviews'', and ''ram''.'
+data_attributes:
+- rating
+- reviews
+- ram
+- brand_name
+- model_name
+- battery

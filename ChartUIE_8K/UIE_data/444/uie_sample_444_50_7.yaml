@@ -1,0 +1,37 @@
+initial_prompt: Create a grouped bar chart comparing the real_cost of transit projects
+  across Canadian cities. Group by city and include costs in CAD. Highlight tunnel
+  percentage for each project using different bar colors.
+questions: '1. What color scheme do you prefer for highlighting the tunnel percentage?
+
+  2. Do you want the bars to be arranged in ascending or descending order of real_cost?
+
+  3. Would you like to include data labels showing the exact real_cost values on the
+  bars?
+
+  4. Should we include annotations or a legend explaining the color coding for the
+  tunnel percentage?
+
+  5. Do you prefer a specific font style or size for axis labels and titles?
+
+  6. Is there a particular style or format you prefer for the chart title and axis
+  titles?
+
+  7. How would you like to handle cases where multiple projects exist in the same
+  city — should they be grouped within their city on the x-axis?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, include data labels showing the exact real_cost values on the bars.
+
+  4. Yes, include a legend explaining the color coding for the tunnel percentage.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes, they should be grouped within their city on the x-axis.'
+data_attributes:
+- city
+- real_cost
+- tunnel_per

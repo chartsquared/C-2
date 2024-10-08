@@ -1,0 +1,61 @@
+initial_prompt: Create a line chart showing the trends in house prices over time.
+  Use the 'X1 transaction date' on the x-axis and 'Y house price of unit area' on
+  the y-axis. Highlight data points with text annotations that display values linked
+  to each point to draw attention to specific price changes. Additionally, use different
+  colors to emphasize significant trends or anomalies. The chart should help in understanding
+  how house prices vary with factors like house age, distance to MRT station, number
+  of convenience stores, and geographical location. Ensure clarity and focus on significant
+  insights.
+questions: '1. Do you have a preferred color scheme for this chart?
+
+  2. How would you like significant trends or anomalies to be highlighted (specific
+  colors, shapes, etc.)?
+
+  3. Do you prefer the text annotations to appear on hover or be permanently visible
+  on the chart?
+
+  4. Are there specific time intervals you are interested in highlighting (e.g., yearly,
+  quarterly, monthly)?
+
+  5. Would you like trend lines or moving averages to be included in the chart?
+
+  6. Should there be separate trend lines or markers for different regions based on
+  geographical location data?
+
+  7. Do you prefer a specific font style or size for the text annotations?
+
+  8. Are there any particular thresholds or benchmarks that should be used to identify
+  significant trends or anomalies?
+
+  9. Would you like to include a legend explaining the different colors and markers
+  used on the chart?
+
+  10. Is there any other specific information or annotations you would like to see
+  on the chart?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Permanently visible.
+
+  4. I am not sure.
+
+  5. Yes, include trend lines.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. Yes, please include a legend.
+
+  10. No, that will be all.'
+data_attributes:
+- X1 transaction date
+- Y house price of unit area
+- X2 house age
+- X3 distance to the nearest MRT station
+- X4 number of convenience stores
+- X5 latitude
+- X6 longitude

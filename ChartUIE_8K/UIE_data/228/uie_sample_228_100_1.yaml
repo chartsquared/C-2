@@ -1,0 +1,46 @@
+initial_prompt: Create a bar chart for the 'DEPARTMENT' column, counting the unique
+  'NAME' entries per department. Highlight the departments with the highest and lowest
+  counts to emphasize the distribution. Annotate the department names with the highest
+  counts to focus viewer attention. This visualization aims to provide a quick overview
+  of the employee distribution across departments, highlighting areas with more or
+  fewer board/commission members, which is valuable for organizational analysis within
+  the context of the Chicago Ethics Pledge data. This helps identify any departments
+  that might require attention or additional resources.
+questions: '1. Do you have any preferred color schemes for highlighting the departments
+  with the highest and lowest counts?
+
+  2. Would you like a specific font style or size for the annotations on the department
+  names with the highest counts?
+
+  3. Should the bar chart be oriented vertically or horizontally?
+
+  4. Do you prefer a specific layout or design for the legend and axis labels?
+
+  5. Is there a specific order you want the departments to be displayed in (e.g.,
+  alphabetical, descending by count)?
+
+  6. Are there any specific titles or subtitles you would like on the chart?
+
+  7. Do you have a preference for the width and spacing of the bars in the chart?
+
+  8. Would you like any additional contextual information or notes to be included
+  on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Horizontally.
+
+  4. I do not know.
+
+  5. Descending by count.
+
+  6. Title: "Employee Distribution Across Departments"; Subtitle: "Count of Board/Commission
+  Members per Department".
+
+  7. I am not sure.
+
+  8. No.'
+data_attributes:
+- DEPARTMENT
+- NAME

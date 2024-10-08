@@ -1,0 +1,51 @@
+initial_prompt: Create a scatter plot using the yeast.csv dataset from the genomics
+  category. Plot the 'mcg' values on the X-axis and 'gvh' values on the Y-axis. Highlight
+  data points classified under 'name' column as 'MIT' in a different color to distinguish
+  them. Include text annotations displaying 'alm' values for these highlighted points.
+  The purpose of this chart is to visually analyze the relationship between 'mcg'
+  and 'gvh', with a focus on how 'alm' values vary among the 'MIT' classified points.
+  This will help in understanding specific patterns and anomalies within the genomics
+  data.
+questions: '1. Do you have a preferred color scheme for the scatter plot, especially
+  for highlighting the ''MIT'' classified points?
+
+  2. Are there specific sizes or types of markers you prefer for the data points?
+
+  3. Do you want grid lines to be displayed on the chart? If yes, should they be major
+  grid lines, minor grid lines, or both?
+
+  4. Should the axis labels and title have any specific formatting (font size, style,
+  or color)?
+
+  5. Do you want to display a legend on the chart? If yes, where should it be placed
+  (top, bottom, left, right)?
+
+  6. Should the chart have a specific title? If yes, please provide the title.
+
+  7. Do you have any preferences for the size or resolution of the text annotations
+  for ''alm'' values?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific color scheme in mind, so please choose one that makes
+  the ''MIT'' points clearly distinguishable.
+
+  2. I am not sure about the marker types or sizes.
+
+  3. I am not sure about grid lines.
+
+  4. I do not have any specific preferences for the formatting of the axis labels
+  and title.
+
+  5. Yes, please display a legend on the chart. The placement can be on the right.
+
+  6. Yes, the title should be "Scatter Plot of mcg vs gvh with MIT Points Highlighted".
+
+  7. I do not know about specific preferences for the size or resolution of the text
+  annotations for ''alm'' values.
+
+  <end of user emulated response>'
+data_attributes:
+- mcg
+- gvh
+- alm
+- name

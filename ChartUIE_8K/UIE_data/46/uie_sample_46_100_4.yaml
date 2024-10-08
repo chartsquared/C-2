@@ -1,0 +1,53 @@
+initial_prompt: Please create a heatmap for the "Access to Computers From Home OECD"
+  dataset. The heatmap should display the availability of home computers over time
+  across different locations. On the x-axis, represent the 'TIME' (years), and on
+  the y-axis, represent the 'LOCATION' (countries). The intensity/color of the heatmap
+  cells should represent the 'Value' which is the percentage of households with computers.
+  Ensure to handle any missing values appropriately. The heatmap should make it easy
+  to compare computer access trends across different countries over the years. Thank
+  you!
+questions: '1. Do you have any preferred color scheme for the heatmap?
+
+  2. Would you like to include a legend to explain the color intensity?
+
+  3. Do you have any specific range or scale for the color intensity?
+
+  4. Should we include labels for the x-axis (years) and y-axis (countries)?
+
+  5. How would you like missing values to be handled (e.g., leave blank, use a specific
+  color, interpolate)?
+
+  6. Do you have any specific font preferences or sizes for axis labels and titles?
+
+  7. Should gridlines or borders be included in the heatmap cells?
+
+  8. Would you like to add any annotations or text within the heatmap cells?
+
+  9. Do you prefer a specific orientation or layout for the heatmap (e.g., square
+  cells, rectangular cells)?
+
+  10. Are there any specific countries or years you would like to highlight or focus
+  on?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend to explain the color intensity.
+
+  3. I do not know.
+
+  4. Yes, include labels for the x-axis (years) and y-axis (countries).
+
+  5. Use a specific color for missing values.
+
+  6. I am not sure.
+
+  7. Yes, please include gridlines or borders in the heatmap cells.
+
+  8. No, no annotations or text within the heatmap cells.
+
+  9. I do not know.
+
+  10. No, I do not have any specific countries or years to highlight.'
+data_attributes:
+- LOCATION
+- TIME
+- Value

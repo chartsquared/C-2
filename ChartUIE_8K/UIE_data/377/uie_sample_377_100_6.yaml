@@ -1,0 +1,58 @@
+initial_prompt: 'Please create a stacked column chart to visualize election results
+  from the CSV data provided. Each column should represent a constituency (e.g., Aldershot,
+  Aldridge-Brownhills) and be broken down into segments showing the percentage votes
+  for each party: CON, LAB, LIB, Brexit, Green, NAT, MIN, and OTH. The y-axis should
+  represent the percentage of the vote, and the x-axis should list the names of the
+  constituencies. Ensure each party has a unique color for easy differentiation. The
+  chart should clearly indicate which party won in each constituency. This helps analyze
+  voting patterns.'
+questions: '1. Do you have a preference for the color palette for the different parties?
+
+  2. Would you like to include gridlines in the chart to improve readability?
+
+  3. Do you want to add labels for the percentage values on each segment of the columns?
+
+  4. Should the chart include a legend indicating which color corresponds to which
+  party?
+
+  5. Do you have a specific format or style preference for the x-axis and y-axis labels
+  (e.g., font size, font type)?
+
+  6. Are there any particular constituencies you would like to highlight or emphasize?
+
+  7. Would you prefer a specific order for constituencies on the x-axis, such as alphabetical
+  or by a particular metric (e.g., winning party)?
+
+  8. Is there any additional information you want to display on the chart, such as
+  total votes for each constituency?
+
+  9. Do you want to include any annotations or notes within the chart to explain specific
+  data points?'
+answers: '1. I do not have a specific preference for the color palette.
+
+  2. I am not sure.
+
+  3. Yes, please include the labels for the percentage values on each segment.
+
+  4. Yes, please include a legend.
+
+  5. I do not have any specific format or style preference for the labels.
+
+  6. I do not know.
+
+  7. I am not sure, so alphabetical order should be fine.
+
+  8. No, just the percentage votes.
+
+  9. No annotations or notes are necessary.'
+data_attributes:
+- Name
+- CON(%)
+- LAB(%)
+- LIB(%)
+- Brexit(%)
+- Green(%)
+- NAT(%)
+- MIN(%)
+- OTH(%)
+- Winner

@@ -1,0 +1,53 @@
+initial_prompt: I have this dataset `414.csv` about cropland in different continents
+  spanning several years. I need a bar chart to visualize the historical trends of
+  cropland areas for each continent. Ensure the x-axis represents the years and the
+  y-axis shows the cropland area (HYDE 2017). Each bar should be color-coded by continent.
+  I'll use this chart to analyze and compare how cropland usage has evolved over time
+  across different continents. Missing values in the 'Code' column can be ignored
+  for this visualization. Thanks!
+questions: '1. Do you have a preferred color palette for the continents?
+
+  2. How detailed should the year intervals be on the x-axis (e.g., yearly, every
+  5 years, every 10 years)?
+
+  3. Do you have a specific title or label for the chart?
+
+  4. Would you like to include grid lines on the chart for better readability?
+
+  5. Should there be specific markers or annotations for significant years or events?
+
+  6. Do you have a preferred font style or size for the axis labels and title?
+
+  7. Should the legend be placed in a specific position on the chart (e.g., top, bottom,
+  left, right)?
+
+  8. Do you need data labels on the bars to display the exact cropland area values?
+
+  9. Would you like to apply any specific data smoothing or aggregation methods for
+  the yearly data?
+
+  10. Should the chart include any reference lines (e.g., average cropland area) for
+  context?'
+answers: '1. I am not sure.
+
+  2. Every 5 years would be fine.
+
+  3. I do not have a specific preference.
+
+  4. Yes, grid lines would be great for readability.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. No, data labels on the bars are not necessary.
+
+  9. I am not sure.
+
+  10. No, reference lines are not needed.'
+data_attributes:
+- Entity
+- Year
+- Cropland (HYDE (2017))

@@ -1,0 +1,51 @@
+initial_prompt: Create a Choropleth map visualizing the World Happiness Report 2023
+  data. Use the 'Country name' for the geographic locations and 'Ladder score' for
+  the color gradient, indicating the happiness levels in each country. Highlight countries
+  with higher Ladder scores in darker shades and lower scores in lighter shades. Include
+  additional layers for 'Logged GDP per capita', 'Social support', and 'Healthy life
+  expectancy' for detailed insights. Ensure the map is interactive, allowing users
+  to hover over each country to see these variables' exact values and other relevant
+  details.
+questions: '1. Do you have a preferred color palette for the color gradient?
+
+  2. Would you like to include labels or tooltips showing the country names on the
+  map?
+
+  3. Should the additional layers (''Logged GDP per capita'', ''Social support'',
+  ''Healthy life expectancy'') be displayed as separate layers or combined into a
+  single tooltip?
+
+  4. Do you have a specific range for the "Ladder score" colors, such as specific
+  values for the darkest and lightest shades?
+
+  5. Would you like to include a legend or key to help interpret the color gradient
+  and additional layers?
+
+  6. Is there a particular geographic projection you prefer for visualizing the world
+  map?
+
+  7. Would you like any specific HTML or CSS styling elements on the map?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. Yes, please include labels or tooltips showing the country names.
+
+  3. I do not know, maybe combine them into a single tooltip?
+
+  4. I am not sure.
+
+  5. Yes, include a legend or key to help interpret the color gradient and additional
+  layers.
+
+  6. I do not know.
+
+  7. I do not have any specific preference for HTML or CSS styling elements.
+
+  <end of user response>'
+data_attributes:
+- Country name
+- Ladder score
+- Logged GDP per capita
+- Social support
+- Healthy life expectancy

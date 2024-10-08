@@ -1,0 +1,61 @@
+initial_prompt: '<start of chart instructions>
+
+  Create a bar chart visualizing CO2 Emissions and Forest Area by Country. Use text
+  annotations to highlight the top emitters. Highlight countries with the largest
+  forest areas to emphasize their environmental status.
+
+  <end of chart instructions>'
+questions: '1. Do you have a preference for the color scheme of the bar chart?
+
+  2. How would you like the text annotations to be formatted (e.g., font size, color)?
+
+  3. Should we use different colors to differentiate between CO2 emissions and forest
+  area bars?
+
+  4. Do you want specific labels or legend for the bars representing CO2 emissions
+  and forest areas?
+
+  5. Would you prefer the chart to be displayed in a specific order (e.g., ascending/descending)?
+
+  6. Are there any specific countries you want to ensure are particularly highlighted
+  in the chart?
+
+  7. Do you have preferences on the axis labels and their appearance (e.g., font style,
+  size)?
+
+  8. Should the chart include grid lines for better readability?
+
+  9. Do you want to include a title and subtitle for the chart? If so, do you have
+  any specific text in mind?
+
+  10. Would you like to include additional annotations or notes on specific bars or
+  sections of the chart?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please use different colors.
+
+  4. I am not sure.
+
+  5. Yes, please display in descending order based on CO2 emissions.
+
+  6. Highlight the top 5 CO2 emitters and also countries like Brazil, Russia, and
+  Canada.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. Yes, title: "CO2 Emissions and Forest Area by Country"; subtitle: "Highlighting
+  Top Emitters and Largest Forests"
+
+  10. No specific additional annotations or notes.
+
+  <end of user response>'
+data_attributes:
+- Country
+- CO2Emissions
+- ForestArea

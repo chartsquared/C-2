@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap to visualize the correlation between all columns
+  in the provided dataset. This should include 'Time(sec)', 'Amplitude(a.u.)', and
+  the unnamed columns to reveal patterns and relationships.
+questions: '1. Do you have any specific preferences for the color scheme of the heatmap?
+
+  2. Would you like to display the correlation values within the heatmap cells?
+
+  3. Should the heatmap include a color bar legend to indicate the correlation value
+  ranges?
+
+  4. Are there any specific labels or annotations you would like to include for the
+  unnamed columns?
+
+  5. Do you have any preferences for the font size or style for axis labels and annotations?
+
+  6. Would you like to highlight any particular correlation threshold (e.g., above
+  0.8 or below -0.8)?
+
+  7. Are there any grid lines or borders preferences for the heatmap cells?
+
+  8. Do you want to include a title or subtitle for the heatmap? If so, what should
+  they be?
+
+  9. Should the heatmap support tooltips that show additional information when hovering
+  over a cell?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to display the correlation values within the heatmap cells.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include a title "Correlation Heatmap" and a subtitle "Relationships
+  Between Columns".
+
+  9. I do not know.'
+data_attributes:
+- Time(sec)
+- Ampltiude(a.u.)
+- 'Unnamed: 2'
+- 'Unnamed: 3'
+- 'Unnamed: 4'
+- 'Unnamed: 5'

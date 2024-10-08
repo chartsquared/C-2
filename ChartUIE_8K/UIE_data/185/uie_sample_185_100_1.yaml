@@ -1,0 +1,63 @@
+initial_prompt: Create a stacked column chart to visualize the percent change in consumer
+  spending by category for different states. Use the columns for all merchant category
+  codes, accommodation and food service, arts, entertainment, and recreation, general
+  merchandise and apparel, grocery and food stores, health care and social assistance,
+  transportation and warehousing, retail including grocery, and retail excluding grocery.
+  Annotate specific values to highlight significant changes. The purpose is to compare
+  spending changes across categories and states over time, aiding business analysis.
+questions: '1. Do you have a preferred color palette for the stacked column chart?
+
+  2. How would you like the states to be ordered (e.g., alphabetical, by spending
+  change)?
+
+  3. Are there specific categories you want to emphasize within the chart?
+
+  4. Do you have preferences for the style and placement of annotations for highlighting
+  significant changes?
+
+  5. What time intervals (e.g., monthly, quarterly) should be displayed on the x-axis?
+
+  6. Do you have preferences for labeling axes and titles for the chart?
+
+  7. Is there a particular font or style you would like to use for the chart''s text
+  elements?
+
+  8. How many states would you like to display simultaneously, or should it include
+  all states in the dataset?
+
+  9. Should any legends be included, and where would you prefer them to be located?
+
+  10. Do you have any preferences for including additional reference lines or markers
+  (e.g., average lines, threshold markers)?'
+answers: '1. I am not sure about the color palette.
+
+  2. I am not sure about the state order.
+
+  3. Yes, I would like to emphasize accommodation and food service, and retail (including
+  grocery and excluding grocery).
+
+  4. I do not have specific preferences for annotations.
+
+  5. Monthly intervals would be nice.
+
+  6. I do not have specific preferences for labeling axes and titles.
+
+  7. I do not have a specific font or style preference.
+
+  8. I am not sure how many states should be displayed simultaneously.
+
+  9. Yes, please include legends, placement can be at the bottom.
+
+  10. I do not know about reference lines or markers.'
+data_attributes:
+- State FIPS code
+- Date
+- All merchant category codes spending
+- Accommodation and food service (ACF) spending
+- Arts, entertainment, and recreation (AER) spending
+- General merchandise stores (GEN) and apparel and accessories (AAP) spending
+- Grocery and food store (GRF) spending
+- Health care and social assistance (HCS) spending
+- Transportation and warehousing (TWS) spending
+- Retail spending, including grocery (AAP, CEC, GEN, GRF, HIC, ETC, SGH)
+- Retail spending, excluding grocery ((AAP, CEC, GEN, HIC, ETC, SGH)

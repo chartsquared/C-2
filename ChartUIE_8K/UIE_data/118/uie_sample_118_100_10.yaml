@@ -1,0 +1,50 @@
+initial_prompt: I need a treemap chart to visualize the Indian Liver Patient Records
+  dataset. The treemap should show the distribution of liver patients based on different
+  attributes. Use the 'Gender' as the primary category, and within each gender, split
+  by 'Age' groups. Each age group should then be further split by levels of 'Total_Bilirubin'.
+  Ensure the sizes of the rectangles represent the count of records in each category,
+  and use color coding to distinguish between the levels of 'Albumin_and_Globulin_Ratio'.
+  Make it interactive to allow drill-downs.
+questions: '1. Do you have any color preferences for distinguishing the levels of
+  ''Albumin_and_Globulin_Ratio''?
+
+  2. Would you like specific age group ranges to be used, or should the age groups
+  be automatically determined?
+
+  3. Do you prefer a certain order for displaying the categories (e.g., sorting by
+  age in ascending/descending order)?
+
+  4. Are there any specific fonts or styles you would like for the labels and legends?
+
+  5. How detailed should the labels be (e.g., include counts, percentages, or both)?
+
+  6. Do you have any preferred width-to-height ratio for the treemap to ensure it
+  fits well in a particular layout?
+
+  7. Would you like any specific titles or annotations included in the treemap chart?
+
+  8. Are there any particular themes or color palettes you prefer for the overall
+  design of the treemap?'
+answers: '1. I am not sure about any specific color preferences for distinguishing
+  the levels of ''Albumin_and_Globulin_Ratio''.
+
+  2. I do not know; please use automatically determined age groups.
+
+  3. I prefer sorting the categories by age in ascending order.
+
+  4. I do not have specific font or style preferences for the labels and legends.
+
+  5. Please include both counts and percentages in the labels.
+
+  6. I am not sure about the width-to-height ratio; please choose what fits best.
+
+  7. I would like a title that clearly indicates that this is a treemap of the Indian
+  Liver Patient Records.
+
+  8. I have no specific preferences for themes or color palettes; please use what
+  looks best for clarity and aesthetics.'
+data_attributes:
+- Gender
+- Age
+- Total_Bilirubin
+- Albumin_and_Globulin_Ratio

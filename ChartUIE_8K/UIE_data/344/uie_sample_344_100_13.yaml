@@ -1,0 +1,41 @@
+initial_prompt: Create a Treemap visualization for the dataset "Blockchain Jobs India
+  2022" from Glassdoor.com, found in the file '../Extra_datas/data/344.csv'. This
+  chart should display job titles in blocks sized by the range between the salary
+  lower and upper limits, and color-coded by company. Highlight companies with more
+  unique job titles. Consider including easy-apply jobs in a distinct color. Use location
+  data to label each block with the respective city or indicate if it's a remote role.
+  Ensure all details are clear and easy to interpret for quick analysis.
+questions: '1. Do you have a preferred color palette for the treemap visualization?
+
+  2. How would you like the ''Easy Apply'' jobs to be color-coded?
+
+  3. Do you prefer any specific font style or size for the labels (cities or remote
+  roles) inside the blocks?
+
+  4. Should specific companies or job titles be highlighted in a distinct way besides
+  color coding?
+
+  5. Are there any additional details or information you want to include in the tooltip
+  (if any) when hovering over the blocks?'
+answers: '<start of user response>
+
+  1. I do not have a specific preference for the color palette.
+
+  2. I am not sure, maybe something distinct like bright yellow or orange.
+
+  3. I do not have a specific preference for the font style or size.
+
+  4. I don''t know, just highlighting companies with more unique job titles should
+  be enough.
+
+  5. I am not sure, include any additional relevant information if you think it will
+  help.
+
+  <end of user response>'
+data_attributes:
+- Title
+- Company
+- Location
+- Easy Apply
+- Salary_Lower_Limit
+- Salary_Upper_Limit

@@ -1,0 +1,44 @@
+initial_prompt: I have a dataset of student performance details. I want to visualize
+  the frequency distribution of different grades (GPA) among students. Please create
+  a histogram showing the number of students for each GPA range. Ensure the x-axis
+  represents the GPA categories (e.g., 0.0-1.0, 1.0-2.0, etc.) and the y-axis represents
+  the number of students in each GPA range. Additionally, include another histogram
+  for the number of absences among the students, with the x-axis representing the
+  range of absences and the y-axis showing the frequency of students within those
+  ranges. Thank you!
+questions: '1. What title would you prefer for each histogram?
+
+  2. Are there specific colors you want for the bars in each histogram?
+
+  3. Do you have a preferred range or bin size for the GPA categories?
+
+  4. Do you have a preferred range or bin size for the absence categories?
+
+  5. Should the histograms include grid lines on the background?
+
+  6. Do you want any specific labels or annotations on the histograms?
+
+  7. Should the x-axis and y-axis have particular labels or fonts?
+
+  8. Is there a specific font style you prefer for the axis labels and titles?'
+answers: '1. The title for the GPA histogram could be "Distribution of Student GPAs".
+  For the absences histogram, "Distribution of Student Absences".
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Yes, include grid lines on the background.
+
+  6. No specific labels or annotations are needed.
+
+  7. Basic axis labels like "GPA Range" and "Number of Students" for GPA histogram,
+  and "Absence Range" and "Number of Students" for the absences histogram are fine,
+  no specific font preference.
+
+  8. I have no specific preference.'
+data_attributes:
+- GPA
+- Absences

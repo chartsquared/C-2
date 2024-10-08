@@ -1,0 +1,45 @@
+initial_prompt: Please create a heatmap visualizing the height distribution by country
+  and gender. The data includes columns for Height (in float), Gender (Male/Female),
+  and Country (United States, Canada, Mexico). I want to see how the height values
+  are distributed across different genders and countries. No missing values are present
+  in the dataset. Use distinct colors to differentiate between various heights, and
+  ensure that the heatmap clearly shows the comparisons and patterns in height across
+  the groups. The visualization should be easy to interpret and provide meaningful
+  insights into height distribution.
+questions: '1. Do you have any preference for the color palette to be used in the
+  heatmap?
+
+  2. What range of height values would you like the heatmap to focus on, if any specific
+  range is preferred?
+
+  3. Is there a specific order in which you would like countries and genders to be
+  displayed on the axis (e.g., alphabetical order or any other logical sequence)?
+
+  4. Do you prefer to include labels or annotations on the heatmap cells to show the
+  actual height values or percentages?
+
+  5. Would you like to include a legend explaining the color scale used for different
+  height values?
+
+  6. Are there any specific gridlines or separators you prefer between different countries
+  or gender categories?
+
+  7. Do you have a preference for the overall layout or dimensions of the heatmap
+  (e.g., square, rectangular)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Alphabetical order would be fine.
+
+  4. Yes, please include labels on the heatmap cells to show the actual height values.
+
+  5. Yes, include a legend explaining the color scale used for different height values.
+
+  6. I do not have any specific preference.
+
+  7. I have no specific preference.'
+data_attributes:
+- Height
+- Gender
+- Country

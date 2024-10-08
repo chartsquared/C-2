@@ -1,0 +1,46 @@
+initial_prompt: Please create a box chart to compare the distribution of fat, protein,
+  and lactose percentages in the milk of different primate species. Highlight the
+  differences within the "Strepsirrhine" clade. Use the columns 'perc.fat', 'perc.protein',
+  and 'perc.lactose'. Show individual species as data points and add labels for clarity.
+  Highlight outliers, if any.
+questions: '1. Do you have a preferred color scheme for highlighting the "Strepsirrhine"
+  clade?
+
+  2. Would you like the outliers to be marked with a specific symbol or color?
+
+  3. How would you like the individual species data points to be represented (e.g.,
+  dots, triangles)?
+
+  4. Do you have any preference for the orientation of the labels (e.g., horizontal,
+  vertical, angled)?
+
+  5. Is there a specific font style or size you would like for the labels and axis
+  titles?
+
+  6. Would you like any specific gridlines or axis scales to be emphasized?
+
+  7. Should the box chart include any additional summary statistics (e.g., mean, median)
+  as lines or annotations?
+
+  8. Do you prefer any particular ordering for the species on the x-axis?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the outliers to be marked with a specific symbol or color.
+
+  3. I would like the individual species data points to be represented as dots.
+
+  4. I have no specific preference for the orientation of the labels.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, please include the median as a line.
+
+  8. I have no specific preference for the ordering of the species on the x-axis.'
+data_attributes:
+- perc.fat
+- perc.protein
+- perc.lactose
+- clade
+- species

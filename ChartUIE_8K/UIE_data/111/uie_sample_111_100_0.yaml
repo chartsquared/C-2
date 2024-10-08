@@ -1,0 +1,60 @@
+initial_prompt: Create a column chart visualizing the tax rates and income brackets
+  for different filing statuses from the CSV file. Each column should represent a
+  different filing status (Married Filing Jointly, Married Filing Separately, Single
+  Filer, Head of Household) for the year 2021. Highlight the income brackets and annotate
+  them with their respective tax rates. The goal of the chart is to easily compare
+  the tax rate distribution across different filing statuses. This visualization is
+  crucial for data analytics to understand trends and differences in tax obligations.
+questions: '1. What color scheme would you prefer for the different filing statuses?
+
+  2. Do you have a preferred font style and size for the annotations?
+
+  3. Would you like the columns to be grouped or stacked?
+
+  4. Should the chart include a legend to identify each filing status?
+
+  5. Is there a specific order in which the filing statuses should be displayed?
+
+  6. Would you like gridlines to be displayed on the chart?
+
+  7. Do you have a preference for the background color of the chart?
+
+  8. Should the tax rates be displayed as percentages or decimal values in the annotations?
+
+  9. Do you want to include any specific labels or titles for the axes?
+
+  10. Is there a specific width and height you prefer for the chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I would like the columns to be grouped.
+
+  4. Yes, please include a legend.
+
+  5. Display them in this order: Single Filer, Married Filing Jointly, Married Filing
+  Separately, Head of Household.
+
+  6. Yes, please display gridlines.
+
+  7. I have no specific preference.
+
+  8. Display the tax rates as percentages.
+
+  9. Yes, please include labels for the axes.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Year
+- Married Filing Jointly (Rates/Brackets)
+- Married Filing Jointly ($)
+- Married Filing Separately (Rates/Brackets)
+- Married Filing Separately ($)
+- Single Filer (Rates/Brackets)
+- Single Filer ($)
+- Head of Household (Rates/Brackets)
+- Head of Household ($)

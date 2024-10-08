@@ -1,0 +1,48 @@
+initial_prompt: Create a geographic heatmap visualizing the volume of web traffic
+  interactions across different countries based on the provided dataset. Highlight
+  regions with high traffic from countries like AE, US, and CA. Annotate specific
+  IP addresses and bytes transferred to draw attention to unusual activity. Use the
+  ‘Suspicious Web Traffic’ and ‘Adversary Infrastructure Interaction’ observations
+  to provide context. The goal is to focus on identifying potential cybersecurity
+  threats and their geographical origins, making it easier to spot and address areas
+  of concern. Include necessary color codes to emphasize traffic intensity.
+questions: '1. Do you have a preferred color scheme for indicating different levels
+  of web traffic intensity?
+
+  2. Would you like any specific color to be used for highlighting regions with high
+  traffic from AE, US, and CA?
+
+  3. Should the annotations for IP addresses and bytes transferred be displayed as
+  tooltips or directly on the map?
+
+  4. Do you have any preference for the map projection type (e.g., Mercator, Robinson)?
+
+  5. Are there any particular thresholds for byte traffic that should trigger specific
+  visual markers for unusual activity?
+
+  6. How prominently would you like the ''Suspicious Web Traffic'' and ''Adversary
+  Infrastructure Interaction'' observations to be displayed? Any specific way of showing
+  these?
+
+  7. Would you prefer to have a legend or a separate section to explain the color
+  codes used for traffic intensity?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Directly on the map.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Prominently, but I am not sure about the specific way.
+
+  7. Yes, a legend would be good.'
+data_attributes:
+- src_ip
+- src_ip_country_code
+- bytes_in
+- rule_names
+- observation_name
+- dst_ip

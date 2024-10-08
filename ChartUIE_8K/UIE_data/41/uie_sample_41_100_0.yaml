@@ -1,0 +1,47 @@
+initial_prompt: I want to create a Sunburst chart visualizing the Mice Protein Expression
+  data. The chart should represent hierarchical data with 'Genotype' at the top level,
+  branching into 'Treatment', then 'Behavior', and the innermost level showing different
+  class categories. Highlight the segments based on the 'class' column. Include text
+  annotations for key protein expression values like 'DYRK1A_N', 'BDNF_N', and 'NR1_N'.
+  The purpose is to understand the distribution and hierarchical relationship of protein
+  expressions among different genotype, treatment, and behavior groups in mice.
+questions: '1. Do you have any preferences for the color palette used to highlight
+  the segments based on the ''class'' column?
+
+  2. Would you like the text annotations for key protein expression values to be inside
+  the segments or outside with connecting lines?
+
+  3. Do you have any specific font preferences for the text annotations?
+
+  4. Should we include a legend or any additional labels to clarify the hierarchy
+  levels?
+
+  5. Do you prefer a specific format or style for displaying the protein expression
+  values within the annotations (e.g., decimal places, units)?
+
+  6. Would you like to display additional information as tooltips when hovering over
+  the segments?'
+answers: '<start of user response>
+
+  1. I am not sure about the color palette, use something that is visually distinct.
+
+  2. I would like the text annotations for key protein expression values to be inside
+  the segments.
+
+  3. I have no specific font preferences.
+
+  4. Yes, please include a legend to clarify the hierarchy levels.
+
+  5. Display the protein expression values with one decimal place.
+
+  6. I am not sure about displaying additional information as tooltips.
+
+  <end of user response>'
+data_attributes:
+- Genotype
+- Treatment
+- Behavior
+- class
+- DYRK1A_N
+- BDNF_N
+- NR1_N

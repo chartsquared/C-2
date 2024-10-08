@@ -1,0 +1,53 @@
+initial_prompt: Please create a box plot visualization of life expectancy, population,
+  and GDP per capita for different countries across continents. I’d like the chart
+  highlighted to emphasize the differences between continents. Ensure annotations
+  are used to display the values of life expectancy, population, and GDP per capita
+  for at least some countries to draw attention to their data points. Keep in mind
+  that this data comes from the social science domain, focusing on comparing GDP and
+  life expectancy across various regions. This helps to identify trends and socioeconomic
+  disparities among the countries.
+questions: '1. Do you have any preferences for the color scheme of the chart?
+
+  2. Should specific continents be highlighted in certain colors?
+
+  3. How many countries'' data points do you want annotated for life expectancy, population,
+  and GDP per capita?
+
+  4. Do you have a preferred font style and size for the annotations and labels?
+
+  5. Should the box plot display outliers explicitly or should they be omitted?
+
+  6. Would you like to include a legend to differentiate continents?
+
+  7. Do you prefer horizontal or vertical box plots?
+
+  8. Should the axes be standardized or allow for variable scaling based on the data?
+
+  9. Would you like to include gridlines to improve readability?
+
+  10. Do you have a preference for the order of the continents displayed on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. At least 5 countries'' data points should be annotated.
+
+  4. I have no specific preference.
+
+  5. Outliers should be displayed explicitly.
+
+  6. Yes, a legend to differentiate continents should be included.
+
+  7. I prefer vertical box plots.
+
+  8. Axes should allow for variable scaling based on the data.
+
+  9. Yes, include gridlines to improve readability.
+
+  10. I have no specific preference.'
+data_attributes:
+- country
+- continent
+- lifeExp
+- pop
+- gdpPercap

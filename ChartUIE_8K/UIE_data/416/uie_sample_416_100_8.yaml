@@ -1,0 +1,47 @@
+initial_prompt: I want to create a bubble chart visualizing the Bundesliga points
+  per match. Use the columns 'HomeTeam', 'AwayTeam', 'FTHG' (Full Time Home Goals),
+  'FTAG' (Full Time Away Goals), 'HS' (Home Shots), and 'AS' (Away Shots) from the
+  provided data. On the x-axis, plot the 'HomeTeam', and on the y-axis, plot the 'AwayTeam'.
+  The size of the bubbles should represent the total goals scored (FTHG + FTAG), and
+  the color should represent the difference in shots (HS - AS). This will help compare
+  teams based on their goals and shooting statistics. Use distinct colors for positive
+  and negative differences in shots.
+questions: '1. Do you have a preferred color scheme for the bubbles representing the
+  difference in shots?
+
+  2. Do you want to include specific labels for each bubble, such as the total goals
+  scored or team names?
+
+  3. Do you have a preference for the size range of the bubbles?
+
+  4. Would you like to include a legend to explain the color coding of the shot differences?
+
+  5. Do you want gridlines on the chart for better reference, or should they be minimal?
+
+  6. Is there a specific order in which the teams should be plotted on the x-axis
+  or y-axis?
+
+  7. Do you want to emphasize any particular team or match with a distinct visual
+  element?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include the total goals scored as labels for each bubble.
+
+  3. I do not know.
+
+  4. Yes, I would like to include a legend to explain the color coding of the shot
+  differences.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. No, I do not want to emphasize any particular team or match with a distinct visual
+  element.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTHG
+- FTAG
+- HS
+- AS

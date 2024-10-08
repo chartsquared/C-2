@@ -1,0 +1,61 @@
+initial_prompt: Please create a line chart visualizing the trends in medical charges
+  based on age, using the data from the Medical Cost Personal Datasets. Ensure the
+  line chart shows how charges vary with age and include different lines for male
+  and female to compare their medical costs. Additionally, highlight any patterns
+  or anomalies, such as the impact of the number of children and smoking status on
+  the charges. The chart should help understand how medical expenses change over a
+  person's lifetime and the factors influencing these costs. Thank you!
+questions: '1. Do you have any specific color preferences for different lines representing
+  male and female?
+
+  2. Would you like the chart to include a legend explaining the colors or styles
+  of the lines?
+
+  3. Do you prefer the lines to be solid, dashed, or dotted?
+
+  4. Should the x-axis and y-axis have specific range limits or be automatically adjusted
+  based on the data?
+
+  5. Do you want grid lines in the background to make the chart easier to read?
+
+  6. Are there any specific age intervals or bins you would like to use for the x-axis?
+
+  7. Would you like to include data points or markers on the lines?
+
+  8. Do you prefer the chart to have a title and axis labels? If so, what should they
+  be?
+
+  9. Should the chart include annotations or highlights to identify significant patterns
+  or anomalies, such as the impact of smoking status and number of children?
+
+  10. Would you like to include a trend line or a moving average to better visualize
+  the overall trends?'
+answers: '1. I do not have any specific color preferences.
+
+  2. Yes, I would like the chart to include a legend explaining the colors or styles
+  of the lines.
+
+  3. I am not sure.
+
+  4. The axes can be automatically adjusted based on the data.
+
+  5. Yes, I want grid lines in the background to make the chart easier to read.
+
+  6. I do not know.
+
+  7. Yes, I would like to include data points or markers on the lines.
+
+  8. Yes, the chart should have a title and axis labels. The title could be "Trends
+  in Medical Charges by Age and Gender," and the axis labels could be: x-axis "Age"
+  and y-axis "Medical Charges ($)".
+
+  9. Yes, the chart should include annotations or highlights to identify significant
+  patterns or anomalies, such as the impact of smoking status and the number of children.
+
+  10. I am not sure.'
+data_attributes:
+- age
+- sex
+- charges
+- children
+- smoker

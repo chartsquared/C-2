@@ -1,0 +1,45 @@
+initial_prompt: Create a choropleth map to visualize the U.S. minimum wage by state
+  from 1968 to 2020. The map should use color gradients to represent the "Effective.Minimum.Wage.2020.Dollars"
+  for each state in each year. Add text annotations to highlight significant changes
+  and outliers. Ensure the map includes a legend and tooltips for detailed information.
+  Utilize highlights to distinguish states with the highest and lowest minimum wages.
+  The purpose of this visualization is to analyze economic trends and compare state
+  policies on minimum wage over time.
+questions: '1. Do you have a preferred color gradient for representing the "Effective.Minimum.Wage.2020.Dollars"
+  values on the choropleth map?
+
+  2. How would you like significant changes and outliers to be annotated on the map
+  (e.g., text boxes, arrows)?
+
+  3. Do you have specific text you want included in the annotations for significant
+  changes and outliers?
+
+  4. Is there a preference for the placement of the legend on the map (e.g., top-right,
+  bottom-left)?
+
+  5. Are there specific threshold values or ranges you want to use to highlight states
+  with the highest and lowest minimum wages?
+
+  6. Do you have a preferred style or format for the tooltips that display detailed
+  information?
+
+  7. Would you like to include any additional contextual information or visual elements
+  on the map?'
+answers: '1. I am not sure.
+
+  2. Text boxes would be fine.
+
+  3. I do not have specific text, but please highlight key years and large wage changes.
+
+  4. I am not sure.
+
+  5. I don''t know the specific thresholds; just highlight the top and bottom 10%
+  or whatever works best.
+
+  6. I am not sure.
+
+  7. No, I do not have any additional information or elements to include.'
+data_attributes:
+- Year
+- State
+- Effective.Minimum.Wage.2020.Dollars

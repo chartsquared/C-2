@@ -1,0 +1,44 @@
+initial_prompt: Create a Dot plot visualizing the average points per game (pts) vs
+  player age (age) for NBA players. Use different colors to represent different teams
+  (team_abbreviation) and size the dots by the number of games played (gp).
+questions: '1. Do you have any specific preference for the color palette to represent
+  different teams?
+
+  2. What axis labels and titles would you like for the x-axis (player age) and y-axis
+  (average points per game)?
+
+  3. Do you have a preferred style or font for the chart''s text elements, such as
+  titles, labels, and legends?
+
+  4. Would you prefer gridlines on the chart, or should they be minimized or removed?
+
+  5. Are there any particular annotations or data point labels you want highlighted
+  on the plot?
+
+  6. Do you have a preferred range for the x-axis and y-axis, or should it be automatically
+  scaled based on the data?
+
+  7. Is there a specific order you want for the legend representing different teams?
+
+  8. Would you like any additional information or contextual text included in the
+  chart''s title or subtitle?'
+answers: '1. I do not know.
+
+  2. X-axis: "Player Age", Y-axis: "Average Points Per Game (PTS)"
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Automatically scaled based on the data.
+
+  7. I do not know.
+
+  8. I have no specific preference.'
+data_attributes:
+- pts
+- age
+- team_abbreviation
+- gp

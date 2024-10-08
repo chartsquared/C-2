@@ -1,0 +1,46 @@
+initial_prompt: I need a candlestick chart for the stock data ranging from 18 May'12
+  to 13 Oct'21. The chart should display daily open, high, low, and close prices using
+  color codes to indicate price rises (green) and falls (red). The x-axis should represent
+  the date, while the y-axis should show stock prices. Please include volume as a
+  bar graph at the bottom of the candlestick chart. Make sure to incorporate this
+  data accordingly to clearly visualize trends over the specified date range. Also,
+  indicate any dividends and stock splits.
+questions: '1. Do you have a preferred color scheme for the candlestick chart other
+  than the green for price rises and red for price falls?
+
+  2. Would you like the volume bar graph to have a specific color or follow the same
+  color scheme as the candlestick chart?
+
+  3. How would you like the dividends and stock splits to be indicated on the chart
+  (e.g., special markers, text annotations)?
+
+  4. Do you have a particular preference for the size and aspect ratio of the chart?
+
+  5. Are there any specific date or price labels you would like to emphasize on the
+  axes?
+
+  6. Would you like to include any grid lines or background shading to enhance readability?
+
+  7. Is there a specific font or style you prefer for the axis labels and chart annotations?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Special markers would be good for indicating dividends and stock splits.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. Yes, including grid lines would help with readability.
+
+  7. I do not have a specific preference for the font or style.'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume
+- Dividends
+- Stock Splits

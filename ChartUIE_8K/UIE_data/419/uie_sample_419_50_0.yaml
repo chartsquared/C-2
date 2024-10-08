@@ -1,0 +1,49 @@
+initial_prompt: Please create a box chart to visualize bike and pedestrian counts
+  over time at various crossings in Seattle. Highlight outliers and include text annotations
+  to show peak usage times. This will help with urban planning and managing pedestrian
+  and bike traffic effectively.
+questions: '1. Do you have any specific preferences for the color scheme of the chart?
+
+  2. Are there any specific time intervals (e.g., hourly, daily, weekly) you would
+  like the data to be aggregated by?
+
+  3. Would you like to include any specific labels or legends for the different crossings?
+
+  4. Do you have any preferences for the style and positioning of the text annotations
+  for peak usage times?
+
+  5. Should the chart include grid lines or domain boundaries for better readability?
+
+  6. Are there any particular crossing locations you would like to focus on or prioritize
+  in the visualization?
+
+  7. Do you have any specific preferences for the display format of the date (e.g.,
+  MM/DD/YYYY, Month Year)?
+
+  8. Would you like to differentiate bike counts and pedestrian counts by using different
+  markers or box plot styles?
+
+  9. Do you prefer the chart to highlight outliers using a specific marker or color?'
+answers: '1. I am not sure.
+
+  2. Daily intervals would be best.
+
+  3. Yes, please include labels or legends for the different crossings.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I have no specific preference.
+
+  8. Yes, please differentiate bike counts and pedestrian counts by using different
+  markers or box plot styles.
+
+  9. Yes, please highlight outliers using a specific marker or color.'
+data_attributes:
+- date
+- crossing
+- bike_count
+- ped_count

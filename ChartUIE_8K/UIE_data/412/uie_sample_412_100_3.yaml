@@ -1,0 +1,44 @@
+initial_prompt: I am working on a project about how European countries generated electricity
+  in 2018 and I need a detailed heatmap. The data covers different types of electricity
+  generation like "Conventional thermal," "Nuclear," and "Hydro" for various countries.
+  It also includes data from previous years (2016 and 2017) that can be useful for
+  context. Please create a heatmap visualizing the electricity generation types for
+  different European countries in 2018. Make it clear which countries rely more on
+  specific types of electricity. Use intensity of color to represent the magnitude.
+  Thank you!
+questions: '1. Do you have a preference for a specific color palette or intensity
+  scale for the heatmap?
+
+  2. Would you like to include labels for the exact values on the heatmap cells?
+
+  3. Is there a preferred ordering of countries or types of electricity generation
+  on the axes?
+
+  4. Should we include a legend or a separate color bar to explain the intensity of
+  the colors?
+
+  5. Do you want grid lines or borders around each heatmap cell?
+
+  6. Is there any specific sizing requirement for the heatmap, e.g., dimensions or
+  aspect ratio?
+
+  7. Should the countries or types of electricity generation be grouped or categorized
+  in any specific way?'
+answers: '1. I am not sure.
+
+  2. Yes, please include labels for the exact values on the heatmap cells.
+
+  3. I do not know.
+
+  4. Yes, please include a legend or a separate color bar to explain the intensity
+  of the colors.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I do not know.'
+data_attributes:
+- country
+- type
+- '2018'

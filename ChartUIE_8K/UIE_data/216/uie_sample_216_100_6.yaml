@@ -1,0 +1,63 @@
+initial_prompt: Create a heatmap to visualize the global air transport data from 2005
+  to 2020. Each cell should represent the registered carrier departures for different
+  countries and years. Use a color gradient to depict the number of departures, with
+  darker shades for higher values. Make sure to handle missing data appropriately
+  by either marking or excluding it. Provide separate columns for each year and rows
+  for each country coded by their respective names. Include a legend for clarity and
+  ensure the map is easily interpretable for both data analysts and stakeholders.
+questions: '1. Do you have a preferred color gradient for the heatmap?
+
+  2. How would you like missing data to be handled: marked explicitly or excluded?
+
+  3. Do you want any specific annotations on the heatmap for better clarity?
+
+  4. What level of detail should the legend include?
+
+  5. Is there a specific order in which countries should be displayed (e.g., alphabetically,
+  by number of departures)?
+
+  6. Are there any specific countries or regions you want to highlight or focus on
+  in the heatmap?
+
+  7. Do you have a preferred font style or size for country names and years?
+
+  8. Should the chart include gridlines for better cell separation, and if so, how
+  prominent should they be?
+
+  9. Are there any particular thresholds for the number of departures that you would
+  like to mark or emphasize?'
+answers: '1. I am not sure.
+
+  2. Mark missing data explicitly.
+
+  3. I do not know.
+
+  4. Detail enough to differentiate various ranges of departures.
+
+  5. Alphabetically.
+
+  6. I do not have specific countries or regions to highlight.
+
+  7. I do not have a specific preference.
+
+  8. Yes, include gridlines. I do not know how prominent they should be.
+
+  9. I am not sure.'
+data_attributes:
+- Country Name
+- 2005 [YR2005]
+- 2006 [YR2006]
+- 2007 [YR2007]
+- 2008 [YR2008]
+- 2009 [YR2009]
+- 2010 [YR2010]
+- 2011 [YR2011]
+- 2012 [YR2012]
+- 2013 [YR2013]
+- 2014 [YR2014]
+- 2015 [YR2015]
+- 2016 [YR2016]
+- 2017 [YR2017]
+- 2018 [YR2018]
+- 2019 [YR2019]
+- 2020 [YR2020]

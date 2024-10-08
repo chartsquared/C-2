@@ -1,0 +1,57 @@
+initial_prompt: Create a geographic heatmap using the Medical Cost Personal Datasets
+  to visualize the distribution of 'charges' across different 'regions'. Highlight
+  regions with higher charges using more intense colors. Add text annotations to show
+  average charges in each region, focusing on significantly high or low values to
+  draw attention. The goal is to identify regional cost disparities and potential
+  correlations with factors like 'bmi', 'smoker', and 'children'. This will help in
+  understanding regional healthcare expenses and guide policy or insurance-related
+  decisions.
+questions: '1. Do you have a preferred color palette for the geographic heatmap?
+
+  2. Would you like a specific color intensity range to highlight regions with higher
+  charges?
+
+  3. Is there a specific map projection or geographic layout you prefer?
+
+  4. Do you want custom labels or specific formatting for the text annotations showing
+  average charges?
+
+  5. Should the map include a legend or key to indicate the color scale and its meaning?
+
+  6. Are there any specific regions you want to emphasize or give more focus to in
+  the visualization?
+
+  7. Do you prefer a particular font style or size for the annotations and labels?
+
+  8. Would you like to include any additional data points or markers on the map aside
+  from the color intensity and text annotations?
+
+  9. Should the map include any borders, graticules, or other geographical features
+  to enhance readability?
+
+  10. Are there any specific chart titles or captions you would like to include?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. I prefer to have the average charges clearly labeled with perhaps a bold font.
+
+  5. Yes, please include a legend to indicate the color scale and its meaning.
+
+  6. No specific regions need more focus.
+
+  7. I have no specific preference for font style or size.
+
+  8. I am not sure.
+
+  9. Yes, please include borders and other geographical features to enhance readability.
+
+  10. I do not have any specific titles or captions in mind.'
+data_attributes:
+- charges
+- region
+- bmi
+- smoker
+- children

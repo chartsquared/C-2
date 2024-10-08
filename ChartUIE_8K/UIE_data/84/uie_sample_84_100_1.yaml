@@ -1,0 +1,43 @@
+initial_prompt: Please create a line chart to visualize Water Quality data over time.
+  Focus on variables like pH, Hardness, Solids, Chloramines, and Sulfate to show trends
+  and inconsistencies. Highlight missing values for clarity. Annotate notable peaks
+  and troughs to emphasize significant changes. Ensure the potability status is also
+  represented. The intent is to understand fluctuations and identify potential water
+  quality issues.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. Should each variable have a different line style (e.g., solid, dashed) or color?
+
+  3. How would you like the missing values to be indicated on the chart?
+
+  4. Do you have a specific format for annotating notable peaks and troughs?
+
+  5. Is there a preferred way to represent potability status on the chart?
+
+  6. Should the x-axis be formatted in a particular way (e.g., date format)?
+
+  7. Would you like a legend to identify the different variables?
+
+  8. Do you have specific axis labels or chart title in mind?'
+answers: '1. I am not sure.
+
+  2. Each variable having a different color would be good.
+
+  3. I''m not sure.
+
+  4. I do not have a specific format in mind.
+
+  5. I am not sure.
+
+  6. Yes, the x-axis should be formatted as dates.
+
+  7. Yes, a legend would be helpful to identify the different variables.
+
+  8. No, I do not have specific axis labels or a chart title in mind.'
+data_attributes:
+- ph
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Potability

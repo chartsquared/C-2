@@ -1,0 +1,41 @@
+initial_prompt: Create a box plot to visualize the sale index data over 100 days.
+  Annotate key points such as the median and outliers to focus viewer attention. Highlight
+  the interquartile range to emphasize data distribution. The purpose is to analyze
+  average sale index trends for the business, providing insight on performance variability.
+questions: '1. Do you have a preferred color scheme for the box plot?
+
+  2. Would you like the days to be shown on the x-axis with specific labels or intervals?
+
+  3. Should the whiskers represent all data points within 1.5 IQR of the lower and
+  upper quartile or would you prefer a different range for the whiskers?
+
+  4. How should outliers be marked (e.g., as dots, different color, etc.)?
+
+  5. Is there a specific style or format in which you would like the median to be
+  annotated?
+
+  6. Do you want gridlines on the plot for better readability?
+
+  7. Should the plot include a title and axis labels? If so, please provide the desired
+  text.
+
+  8. Are there any specific fonts or font sizes you prefer for annotations and labels?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Outliers should be marked as dots.
+
+  5. I do not have a specific preference.
+
+  6. Yes, I would like gridlines for better readability.
+
+  7. Yes, the plot should include a title "Sale Index Over 100 Days" and axis labels
+  "Days" and "Sale Index".
+
+  8. I do not have a specific preference.'
+data_attributes:
+- days
+- sale_index

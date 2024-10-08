@@ -1,0 +1,41 @@
+initial_prompt: Please create a histogram using the Parkinson Disease Detection dataset.
+  I want separate histograms for 'MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)', and 'MDVP:Flo(Hz)'
+  columns. This will help visualize the frequency distribution of these vocal measurements
+  among individuals. Each histogram should be clearly labeled with title and axis
+  labels, and preferably use different colors for each histogram to distinguish them.
+  This will aid in understanding the spread and central tendency of these features
+  in patients with Parkinson’s disease.
+questions: '1. Do you have any preferences for the bin size or number of bins for
+  the histograms?
+
+  2. Would you like the histograms to be displayed side-by-side or in a stacked layout?
+
+  3. Do you have specific colors in mind for each of the histograms?
+
+  4. Are there any specific titles or labels you would like to use for the histograms
+  and axes?
+
+  5. Do you prefer a specific font style or size for the titles, labels, and legends?
+
+  6. Would you like to include any summary statistics (e.g., mean, median, mode) on
+  the histograms?
+
+  7. Do you want gridlines on the histograms? If so, any specific preferences for
+  their appearance?'
+answers: '1. I am not sure.
+
+  2. I would like the histograms to be displayed side-by-side.
+
+  3. I do not have specific colors in mind.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I do not know.'
+data_attributes:
+- MDVP:Fo(Hz)
+- MDVP:Fhi(Hz)
+- MDVP:Flo(Hz)

@@ -1,0 +1,50 @@
+initial_prompt: Create a stacked column chart showing the counts of patients with
+  different education levels (EducationLevel) against their diagnoses (Diagnosis).
+  Color-code the stacks by smoking status (Smoking). Title it "Education Level Distribution
+  by Diagnosis and Smoking Status - Alzheimer's Dataset".
+questions: '1. Do you have any color preferences for the smoking status categories?
+
+  2. Would you like to display the exact count or percentage of patients within each
+  stack?
+
+  3. Do you prefer any specific ordering of the education levels along the x-axis?
+
+  4. Should the chart include data labels inside or outside the columns?
+
+  5. Is there a specific font or font size you would like for the chart title and
+  axis labels?
+
+  6. Would you like gridlines to be displayed in the background of the chart?
+
+  7. Do you prefer any particular axis scaling (e.g., linear or logarithmic)?
+
+  8. Should there be a legend to identify the smoking status categories, and if so,
+  where should it be placed (e.g., top, bottom, left, right)?
+
+  9. Are there any specific axis titles or descriptions you would like to include?
+
+  10. Do you want to include any annotations or markers to highlight specific data
+  points or trends?'
+answers: '1. I am not sure.
+
+  2. I would prefer to display the exact count.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I do not have any specific preference.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Yes, please include a legend. I am not sure where it should be placed.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- EducationLevel
+- Diagnosis
+- Smoking

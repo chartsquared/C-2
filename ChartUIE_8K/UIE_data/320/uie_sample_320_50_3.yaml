@@ -1,0 +1,58 @@
+initial_prompt: Please create a line chart for the given RSA data, plotting 'nbits',
+  'nprimes', and 'msgsize' on the x-axis and 'spawnTime', 'encrTime', 'decrTime',
+  and 'memory' on the y-axis to analyze performance.
+questions: '1. What colors would you prefer for different lines representing ''spawnTime'',
+  ''encrTime'', ''decrTime'', and ''memory''?
+
+  2. Do you have a specific line style preference (e.g., solid, dashed, dotted) for
+  different lines?
+
+  3. Would you like to include grid lines on the chart for better readability?
+
+  4. Do you prefer a legend to be included, and if so, where would you like it to
+  be positioned (e.g., top, bottom, left, right)?
+
+  5. Should the x-axis and y-axis have labels, and if so, do you have specific wording
+  for those labels?
+
+  6. Would you like to include data markers for each data point on the lines?
+
+  7. Is there a specific title you would like for the chart?
+
+  8. Do you have a preference for the scale of the axes (e.g., linear, logarithmic)?
+
+  9. Should the chart include axis tick marks at specific intervals?
+
+  10. Would you like to include annotations or callouts for specific data points or
+  trends in the data?
+
+  11. Do you prefer a specific font style or size for the labels and title?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include grid lines.
+
+  4. Yes, please include a legend, positioned at the bottom.
+
+  5. Yes, label the x-axis as "Input Parameters" and the y-axis as "Performance Metrics".
+
+  6. I do not know.
+
+  7. Yes, the title should be "RSA Performance Analysis".
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I am not sure.
+
+  11. I have no specific preference.'
+data_attributes:
+- nbits
+- nprimes
+- msgsize
+- spawnTime
+- encrTime
+- decrTime
+- memory

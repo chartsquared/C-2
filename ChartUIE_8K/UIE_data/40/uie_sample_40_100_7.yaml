@@ -1,0 +1,38 @@
+initial_prompt: Please create a scatter plot for the Hepatitis C Prediction Dataset
+  focusing on health parameters. Use Age on the x-axis and AST levels on the y-axis.
+  Color code the data points based on the Category (e.g., Blood Donor, Suspect Blood
+  Donor, Hepatitis). Include data labels for Sex and add a legend. Ensure missing
+  values are handled appropriately. Use different marker shapes to represent unique
+  values in Sex. The scatter plot should help visualize any correlation between Age
+  and AST levels across the different categories in the dataset. Thank you!
+questions: "1. Do you have any specific color preferences for different categories\
+  \ (e.g., Blood Donor, Suspect Blood Donor, Hepatitis)?\n2. What style or types of\
+  \ marker shapes would you prefer to represent unique values in Sex (e.g., circles\
+  \ for male, squares for female)?\n3. Would you like the axes to have a uniform scale,\
+  \ logarithmic scale, or any other specific type of scaling?\n4. Do you have any\
+  \ preferences for the size or appearance of the data labels for Sex?\n5. Are there\
+  \ any specific legend positions or styles you would prefer (e.g., top-right, bottom,\
+  \ outside the plot)?\n6. Would you like to include any specific titles or subtitles\
+  \ for the chart and axes? \n7. Do you have any preferences for handling missing\
+  \ values (e.g., omit, impute with mean, median)?\n8. Would you like grid lines in\
+  \ the background, and if so, any specific style (e.g., solid, dashed)?"
+answers: '1. I do not have any specific color preferences.
+
+  2. Circles for male and squares for female would be fine.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. Top-right would be fine.
+
+  6. I do not know.
+
+  7. Omit missing values.
+
+  8. Yes, grid lines would be good, solid style.'
+data_attributes:
+- Age
+- AST
+- Category
+- Sex

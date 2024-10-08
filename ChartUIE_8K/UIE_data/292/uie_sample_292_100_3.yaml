@@ -1,0 +1,51 @@
+initial_prompt: I need a stacked column chart for the bakery sales dataset. Each column
+  should represent a unique day part (e.g., Morning, Afternoon, etc.), and the columns
+  should be stacked to show different items sold during these times. Use colors to
+  distinguish between different items. Ensure the x-axis represents the different
+  Dayparts and the y-axis represents the number of transactions. Additionally, differentiate
+  between DayType (Weekday vs. Weekend) using different shades or patterns to provide
+  more insight into sales distribution across week types. Please create this visualization
+  accordingly. Thanks!
+questions: '1. Do you have any preference for the color scheme to represent different
+  items sold?
+
+  2. Do you prefer specific shades or patterns to differentiate between Weekday and
+  Weekend sales?
+
+  3. Do you have any preference on the ordering of the Dayparts on the x-axis?
+
+  4. Would you like grid lines on the y-axis for better readability of the number
+  of transactions?
+
+  5. Do you have any specific labels or titles you would prefer for the x-axis and
+  y-axis?
+
+  6. Do you want to include a legend to clearly distinguish between different items
+  sold and DayTypes?
+
+  7. Do you have a preferred font style or size for the labels and titles in the chart?
+
+  8. Would you like to include data labels on the columns to display the exact number
+  of transactions?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the following order: Morning, Afternoon, Evening, Night.
+
+  4. Yes, I would like grid lines on the y-axis for better readability.
+
+  5. I prefer "Dayparts" for the x-axis and "Number of Transactions" for the y-axis.
+
+  6. Yes, including a legend would be helpful to clearly distinguish between different
+  items sold and DayTypes.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.'
+data_attributes:
+- TransactionNo
+- Items
+- DateTime
+- Daypart
+- DayType

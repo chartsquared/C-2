@@ -1,0 +1,61 @@
+initial_prompt: Create a heatmap comparing male and female driving test results across
+  different regions, using the provided dataset. Highlight regions with the highest
+  and lowest average test scores and use annotations to mark these specific data points.
+  Additionally, include annotations for any significant correlations between BMI,
+  age, and test results. The purpose is to visualize any noticeable gender differences
+  in test performance and any regional patterns, as well as understanding how factors
+  like BMI and age might influence driving test outcomes. This will help in identifying
+  trends and areas that may need attention.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like the regions to be sorted in any specific order (e.g., alphabetically,
+  by average test score)?
+
+  3. How would you like the annotations for the highest and lowest average test scores
+  to be styled (e.g., color, shape, size)?
+
+  4. Do you have any specific preferences for the axis labels and titles?
+
+  5. Is there a particular font style or size you would like to use for the text in
+  the heatmap?
+
+  6. How would you like the correlations between BMI, age, and test results to be
+  represented (e.g., text annotations, lines, color gradients)?
+
+  7. Do you prefer the heatmap to show absolute values or normalized values (e.g.,
+  percentage, z-scores)?
+
+  8. Would you like any additional legends or keys to be included in the heatmap for
+  better understanding?
+
+  9. Are there any specific region groupings you would like to highlight or focus
+  on?
+
+  10. What level of detail would you like in the annotations (e.g., numerical values,
+  short descriptions, statistical significance)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would like the annotations to be styled with a noticeable color and slightly
+  larger size for emphasis.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I prefer the correlations to be represented with text annotations.
+
+  7. Normalized values would be preferred.
+
+  8. Yes, please include additional legends or keys for better understanding.
+
+  9. I do not have any specific preferences for region groupings.
+
+  10. Numerical values along with statistical significance would be ideal.'
+data_attributes:
+- Gender
+- Driving test result
+- region
+- Bmi
+- age

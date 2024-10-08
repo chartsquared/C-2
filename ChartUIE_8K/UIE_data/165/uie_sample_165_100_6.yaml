@@ -1,0 +1,61 @@
+initial_prompt: I'd like a bubble chart to visualize this health data for lung cancer
+  prediction. Use Age, Air Pollution, Alcohol Use, Dust Allergy, Smoking, and Genetic
+  Risk on the x and y axes. The bubble sizes should represent the Level of lung cancer
+  risk (Low, Medium, High). Different colors should denote Gender. Please ensure it's
+  easy to see the potential correlation between these factors and lung cancer risk.
+  Use the sample data provided (first three entries) for this visualization. This
+  will help identify any patterns or trends in lung cancer predictors. Include a legend
+  for clarity.
+questions: '1. Do you have a preferred color palette for the different genders?
+
+  2. Is there a specific order you want for plotting the x-axis and y-axis attributes?
+
+  3. Would you prefer the x-axis to display discrete categories or a continuous range?
+
+  4. Do you want a grid layout to be included for easier readability?
+
+  5. Should the bubble sizes be proportional to the level of lung cancer risk on a
+  linear or logarithmic scale?
+
+  6. Are there any specific axis labels or titles you would prefer to use?
+
+  7. Do you have any preference regarding the size or dimensions of the chart for
+  better clarity?
+
+  8. How would you like the legend to be displayed, e.g., inside the chart area, to
+  the right, or below it?
+
+  9. Would you like to include data labels on the bubbles to display specific information,
+  such as numerical values for Age or Air Pollution?
+
+  10. Do you have any particular font preferences or sizes for the axis labels and
+  legend?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. Yes, I would prefer a grid layout for easier readability.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I have no specific preference.
+
+  8. Display the legend to the right.
+
+  9. Yes, include data labels on the bubbles to display specific information like
+  Age or Air Pollution.
+
+  10. I do not know.'
+data_attributes:
+- Age
+- Air Pollution
+- Alcohol use
+- Dust Allergy
+- Smoking
+- Genetic Risk
+- Level
+- Gender

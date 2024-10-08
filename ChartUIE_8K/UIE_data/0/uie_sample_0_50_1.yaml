@@ -1,0 +1,50 @@
+initial_prompt: Create a heatmap to visualize the relationships between N, P, K, temperature,
+  humidity, pH, and rainfall across different crops. Highlight specific crops to emphasize
+  trends. Add text annotations to focus attention on unique outliers or significant
+  data points. Tailor it for agricultural insights.
+questions: '1. Do you have a specific color scheme in mind for the heatmap?
+
+  2. Are there specific crops you would like to highlight or emphasize?
+
+  3. How would you prefer outliers and significant data points to be annotated (e.g.,
+  with arrows, text labels)?
+
+  4. What level of granularity do you want for the text annotations (e.g., numerical
+  values, categorical labels)?
+
+  5. Do you have preferences for the layout and orientation of the heatmap (e.g.,
+  size, aspect ratio)?
+
+  6. Should the heatmap include a legend and if so, where would you prefer it to be
+  positioned?
+
+  7. Are there any specific labels or titles you would like to include for the heatmap
+  or its axes?
+
+  8. Would you like to include gridlines or borders within the heatmap for better
+  clarity?'
+answers: '1. I am not sure.
+
+  2. I would like to highlight rice, wheat, and corn.
+
+  3. With text labels.
+
+  4. Numerical values.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. “Crop Nutrient and Environmental Data” for the title and appropriate labels for
+  each axis corresponding to the data variables.
+
+  8. I have no specific preference.'
+data_attributes:
+- N
+- P
+- K
+- temperature
+- humidity
+- ph
+- rainfall
+- label

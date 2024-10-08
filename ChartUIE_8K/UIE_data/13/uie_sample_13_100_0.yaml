@@ -1,0 +1,51 @@
+initial_prompt: Please create a histogram chart to visualize the ARM stock data, highlighting
+  specific data points to draw attention and include annotations that describe the
+  values for those highlighted points. This chart should help us analyze the stock
+  performance over time. The y-axis should represent the Closing Price while the x-axis
+  should show the dates. Moreover, ensure that the volume is also visible, showing
+  how the trading volume changes. This visualization will be useful for business analysis
+  and understanding stock trends.
+questions: '1. Do you have a preferred color scheme for the histogram and volume bars?
+
+  2. How would you like the specific data points to be highlighted (e.g., different
+  color, shape)?
+
+  3. Where would you like the annotations for the highlighted points to be placed
+  (e.g., above, below)?
+
+  4. Should the volume be displayed as a secondary y-axis or integrated into the primary
+  plot?
+
+  5. Do you want any gridlines to be visible on the chart?
+
+  6. What level of date granularity do you prefer on the x-axis (e.g., daily, weekly,
+  monthly)?
+
+  7. Do you have a specific font style and size preference for the axis labels and
+  annotations?
+
+  8. Should the chart title and axes labels include specific text or formatting?
+
+  9. Are there any specific date ranges or data points that you definitely want to
+  ensure are highlighted?'
+answers: '1. I am not sure.
+
+  2. I would prefer the specific data points to be highlighted with a different color.
+
+  3. I do not know.
+
+  4. Integrated into the primary plot would be good.
+
+  5. Yes, I would like gridlines to be visible.
+
+  6. Weekly granularity would be ideal.
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  9. I do not know.'
+data_attributes:
+- Date
+- Close
+- Volume

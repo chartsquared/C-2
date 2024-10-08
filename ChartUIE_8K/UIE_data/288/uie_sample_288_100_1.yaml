@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap visualizing the correlation among all 'mean' feature
+  variables in the Breast Cancer Dataset (Wisconsin Diagnostic UCI). Use data annotations
+  to highlight values, particularly focusing on the highly correlated pairs. Shapes
+  like rectangles can emphasize clusters of strong correlations. This will help in
+  identifying patterns and relationships among features like radius_mean, texture_mean,
+  and perimeter_mean for cancer diagnosis analysis. The visualization aims to aid
+  in understanding feature interactions, which could be pivotal for medical practitioners
+  or researchers focusing on breast cancer diagnosis.
+questions: '1. Do you have any specific color preferences for the heatmap?
+
+  2. What color scheme would you like to use to highlight high and low correlations?
+
+  3. How would you like the data annotations to be displayed (e.g., font size, color)?
+
+  4. Are there any specific thresholds for correlation values that you want to emphasize
+  using shapes like rectangles?
+
+  5. Do you prefer any particular layout or aspect ratio for the heatmap?
+
+  6. Should the axis labels be styled in a particular way (e.g., font type, size,
+  color)?
+
+  7. Do you want to include a legend to explain the color scale and correlation values?
+  If so, how should it be styled?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the data annotations to be in a readable font size and color, perhaps
+  in black.
+
+  4. I am not sure.
+
+  5. No specific preference for the layout or aspect ratio.
+
+  6. I do not know.
+
+  7. Yes, a legend would be helpful. I am not sure about the styling.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave points_mean
+- symmetry_mean
+- fractal_dimension_mean

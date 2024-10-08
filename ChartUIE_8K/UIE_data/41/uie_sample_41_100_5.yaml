@@ -1,0 +1,53 @@
+initial_prompt: I have a dataset on mouse protein expression levels categorized by
+  genotype, treatment, behavior, and class. I need a stacked bar chart that shows
+  the expression levels of different proteins (like DYRK1A_N, BDNF_N, NR1_N, etc.)
+  for each genotype ('Control' and 'Ts65Dn'), segmented by treatment ('Memantine'
+  vs. 'Saline') and behavior ('C/S', 'S/C', etc.). Each bar should represent a unique
+  protein, and segments should represent different experimental conditions. This will
+  help analyze how protein expressions vary under different conditions. Thank you!
+questions: '1. Do you have a color scheme preference for the different segments of
+  the bar chart?
+
+  2. Would you like to include error bars or variability indicators within the stacked
+  bars?
+
+  3. Do you have a preference for the order in which the segments are stacked?
+
+  4. What level of granularity do you prefer for the y-axis (protein expression levels)?
+
+  5. Would you like axis labels and legends to include specific information or descriptions?
+
+  6. Do you have a preferred style for the x-axis labels (e.g., angled, vertical,
+  summarized)?
+
+  7. Is there a specific font style or size you prefer for the chart labels and titles?
+
+  8. Do you want to include any annotations or reference markers on the chart?
+
+  9. Do you have a preferred background style or gridline presentation for the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Control'', then ''Ts65Dn'' would be preferred
+
+  4. I would like the y-axis to have a detailed granularity to show distinct differences
+  in protein expression levels.
+
+  5. Yes, please include axis labels and legends with specific information about the
+  genotypes, treatments, and behaviors.
+
+  6. I have no specific preference.
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- DYRK1A_N
+- BDNF_N
+- NR1_N
+- Genotype
+- Treatment
+- Behavior

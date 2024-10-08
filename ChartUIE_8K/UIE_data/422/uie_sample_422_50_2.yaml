@@ -1,0 +1,36 @@
+initial_prompt: Create a heatmap displaying wine ratings by country and price, with
+  text annotations highlighting top-rated countries and provinces. Additionally, use
+  highlights to emphasize regions with the highest prices. This will help identify
+  the best and most expensive wine regions globally.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like a specific format for the text annotations?
+
+  3. Do you prefer the text annotations to be inside or outside the heatmap cells?
+
+  4. Should the regions with the highest prices be highlighted using a specific color?
+
+  5. How many top-rated countries and provinces should be annotated?
+
+  6. Do you have a preferred range for the wine prices to be displayed in the heatmap?
+
+  7. Would you like the heatmap to be sorted by any specific attribute, such as country
+  or price?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. Maybe the top 5 countries and provinces.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- country
+- points
+- price
+- province

@@ -1,0 +1,57 @@
+initial_prompt: Create a grouped bar chart to visualize the blockchain job data in
+  India for 2022 from Glassdoor.com. Display the average salary range (lower and upper
+  limits) for different job titles across various companies and locations. Highlight
+  jobs that offer "Easy Apply" to show their accessibility. Include annotations to
+  specifically point out standout salaries and notable companies. This helps focus
+  on key job opportunities and salary expectations in the blockchain sector, assisting
+  job seekers in making informed decisions.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Would you like specific companies or job titles to be highlighted in a certain
+  way?
+
+  3. Should the chart include a legend to indicate which bars represent which data
+  attributes?
+
+  4. Is there a specific way you want the salary ranges to be annotated on the chart?
+
+  5. Do you prefer displaying the data in a particular order (e.g., by company, location,
+  or salary range)?
+
+  6. Would you like to display the "Easy Apply" jobs with a distinct marker or color?
+
+  7. Is there a specific font style or size you prefer for annotations and labels?
+
+  8. Should we include any specific additional information in the annotations, such
+  as job responsibilities or company benefits?
+
+  9. Do you want grid lines on the chart for better readability?
+
+  10. Is there a preferred title for the chart or particular headings for the axes?'
+answers: '1. I am not sure.
+
+  2. Yes, please highlight jobs from top companies like Infosys, TCS, and Wipro.
+
+  3. Yes, a legend would be helpful.
+
+  4. I am not sure.
+
+  5. Display the data by salary range.
+
+  6. Yes, use a distinct color for "Easy Apply" jobs.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. Yes, include grid lines for better readability.
+
+  10. "Blockchain Job Salaries in India (2022)" for the title, and "Job Titles" for
+  the X-axis and "Salary Range (INR)" for the Y-axis.'
+data_attributes:
+- Title
+- Company
+- Location
+- Easy Apply
+- Salary_Lower_Limit
+- Salary_Upper_Limit

@@ -1,0 +1,58 @@
+initial_prompt: Create a heatmap to visualize the B2B technographic data from the
+  US Techsalerator. The heatmap should display the relationship between Website Domain
+  and Technology Name, with the intensity representing how frequently each technology
+  is used by each domain. Ensure to highlight the 'First Seen At' and 'Last Seen At'
+  periods to observe technology adoption trends over time. Include annotations for
+  missing 'Ticker' values to highlight gaps. This visualization will help us quickly
+  understand the tech stack landscape of different companies and identify key technology
+  trends and gaps in the recorded data.
+questions: '1. Do you have any preferred color schemes for the heatmap?
+
+  2. Would you like the heatmap to have a specific title or subtitle?
+
+  3. Should the heatmap include a legend to explain the intensity values?
+
+  4. Do you have any preferences for the font style or size for axis labels and annotations?
+
+  5. Should the annotations for missing ''Ticker'' values be in a specific format
+  or color?
+
+  6. Do you prefer the time periods ''First Seen At'' and ''Last Seen At'' to be displayed
+  in any particular date format?
+
+  7. Would you like grid lines to be shown or hidden in the heatmap?
+
+  8. How would you prefer to handle overlapping texts or labels in densely populated
+  areas of the heatmap?
+
+  9. Do you need additional tooltips to provide more information on hover?
+
+  10. Should the heatmap be divided into specific time intervals or segments for better
+  visibility of trends over time?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, the heatmap should include a legend to explain the intensity values.
+
+  4. I do not have any specific preference.
+
+  5. The annotations for missing ''Ticker'' values should be in red to highlight the
+  gaps.
+
+  6. I am not sure.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. No, additional tooltips are not necessary.
+
+  10. Yes, the heatmap should be divided into specific time intervals to better visualize
+  trends over time.'
+data_attributes:
+- Website Domain
+- Technology Name
+- First Seen At
+- Last Seen At
+- Ticker

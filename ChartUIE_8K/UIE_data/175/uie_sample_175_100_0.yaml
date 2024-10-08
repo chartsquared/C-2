@@ -1,0 +1,65 @@
+initial_prompt: Create a Choropleth map visualizing millionaire density by country
+  using the Billionaires Statistics Dataset (2023). Highlight countries with the highest
+  final worth and annotate top billionaires, indicating their net worth and industry.
+  Include data on GDP, life expectancy, and primary and tertiary education enrollment
+  for additional context. The map should distinguish countries clearly, emphasizing
+  those with significant billionaire populations and economic indicators. The purpose
+  is to give a clear geographical distribution of billionaires globally, spotlighting
+  economic factors tied to wealth accumulation. Make it visually appealing and easy
+  to understand for general audiences.
+questions: '1. Do you have any preferred color schemes for the Choropleth map?
+
+  2. Should specific regions or countries be emphasized with distinct colors or shades?
+
+  3. Do you want any specific geographical boundaries or mapping projections (e.g.,
+  Mercator, Robinson)?
+
+  4. Are there particular fonts or font styles you prefer for annotations and labels?
+
+  5. How detailed should the annotations for top billionaires be (e.g., just net worth
+  and industry, or more information)?
+
+  6. Should there be a legend that explains the color coding for different ranges
+  of millionaire density?
+
+  7. Do you prefer the inclusion of any specific economic indicators in the legend
+  or side panel for additional context?
+
+  8. Would you like any interactive tooltip or static label features for each country
+  when hovering over them?
+
+  9. Do you have a preference for the map''s orientation and centering (e.g., centered
+  on the equator, a specific country, or region)?
+
+  10. Should there be a title and subtitle on the map? If so, do you have preferred
+  wording for either?'
+answers: '1. I am not sure.
+
+  2. Yes, please emphasize countries with the highest final worth with distinct colors.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. Just net worth and industry are fine.
+
+  6. Yes, please include a legend to explain the color coding for different ranges
+  of millionaire density.
+
+  7. Yes, please include GDP, life expectancy, and primary and tertiary education
+  enrollment in the legend or side panel.
+
+  8. I am not sure.
+
+  9. I have no preference for the map''s orientation and centering.
+
+  10. Yes, please include a title and subtitle. For the title: "Global Distribution
+  of Billionaires in 2023" and for the subtitle: "Economic Indicators and Wealth Concentrations
+  by Country."'
+data_attributes:
+- country
+- finalWorth
+- gdp_country
+- life_expectancy_country
+- gross_primary_education_enrollment_country
+- gross_tertiary_education_enrollment

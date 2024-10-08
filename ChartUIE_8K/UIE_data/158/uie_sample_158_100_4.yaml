@@ -1,0 +1,56 @@
+initial_prompt: I need a heatmap visualizing the correlation between students' GPA
+  and several factors like Study Hours Per Week, Attendance Rate, Age, and whether
+  they have a Part-Time Job or participate in Extra-Curricular Activities. The data
+  is from a student performance dataset. Please ensure that the different variables
+  are clearly labeled and the intensity of the colors helps to easily understand the
+  strength and direction of the correlations. Also, indicate any significant trends
+  or patterns on the heatmap. Thank you!
+questions: '1. Do you have any preference for the color palette to be used in the
+  heatmap?
+
+  2. Would you like to highlight certain correlation thresholds on the heatmap (e.g.,
+  high correlations in bold or a different color)?
+
+  3. Do you want the correlation coefficients to be displayed on the cells of the
+  heatmap?
+
+  4. Is there a specific ordering of variables you would prefer on the axes?
+
+  5. Do you have any preference for the size or aspect ratio of the heatmap?
+
+  6. Would you like a legend to be included that explains the color intensity in terms
+  of correlation strength?
+
+  7. Are there any specific annotations or labels you would like to add to the heatmap
+  to clarify trends or patterns?
+
+  8. Is there a specific way you would prefer significant trends or patterns to be
+  indicated on the heatmap (e.g., text annotations, color changes)?
+
+  9. Do you want the heatmap to include grid lines to separate cells?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like the correlation coefficients to be displayed on the cells of
+  the heatmap.
+
+  4. I do not have a specific preference for the ordering of variables.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend to explain the color intensity in terms of correlation
+  strength.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes, I would like the heatmap to include grid lines to separate cells.'
+data_attributes:
+- GPA
+- StudyHoursPerWeek
+- AttendanceRate
+- Age
+- PartTimeJob
+- ExtraCurricularActivities

@@ -1,0 +1,59 @@
+initial_prompt: Please create a box plot visualization of the Japan LOTO7 raw data.
+  The box plots should show the distribution of values for "main1" through "main7".
+  Include text annotations for the median values of each box plot to highlight central
+  tendencies. Also, use highlights to emphasize the range of values for each "main"
+  column, drawing attention to outliers. The purpose of this visualization is to analyze
+  and understand the spread and central patterns in the LOTO7 numbers.
+questions: '1. Do you have any color preferences for the box plots or highlights?
+
+  2. Would you like the whiskers of the box plot to extend to a specific range, such
+  as 1.5 IQR (Interquartile Range), or should they encompass all data points?
+
+  3. Do you have a preferred style or format for the text annotations showing the
+  median values (e.g., font size, font color)?
+
+  4. Should the outliers be represented in a particular way (e.g., specific marker
+  style or color)?
+
+  5. Do you want gridlines on the chart, and if so, should they be light or prominent?
+
+  6. Should the axis labels (for both x and y axes) follow a specific style or format?
+
+  7. Would you like the chart to have a title and subtitle? If yes, please provide
+  the text and any style preferences.
+
+  8. Do you prefer any specific layout for the legend, or should it be omitted entirely?
+
+  9. Are there any specific margins or padding preferences for the chart area?
+
+  10. Should the box plots be arranged vertically or horizontally?
+
+  '
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. No specific preference.
+
+  4. I do not know.
+
+  5. Light gridlines would be fine.
+
+  6. I have no specific preference.
+
+  7. Yes, please add a title "Japan LOTO7 Number Distribution" and a subtitle "Analyzing
+  main1 to main7".
+
+  8. No specific preference.
+
+  9. I am not sure.
+
+  10. Vertically arranged box plots, please.'
+data_attributes:
+- main1
+- main2
+- main3
+- main4
+- main5
+- main6
+- main7

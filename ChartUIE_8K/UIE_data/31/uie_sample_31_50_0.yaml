@@ -1,0 +1,51 @@
+initial_prompt: Create a heatmap to visualize customer churn rates across different
+  payment methods and contract types. Annotate significant differences to highlight
+  trends. Focus on total charges and monthly charges for additional insights into
+  customer behavior.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like to include a legend to explain the color scales used in the heatmap?
+
+  3. How would you prefer to annotate significant differences on the heatmap (e.g.,
+  symbols, text)?
+
+  4. Do you want gridlines to be visible on the heatmap?
+
+  5. Should the heatmap include axis labels and titles for clarity?
+
+  6. Would you prefer to display exact values in each cell of the heatmap?
+
+  7. Do you have specific font preferences for text annotations and labels?
+
+  8. What is your desired range for the color scale (e.g., logarithmic, linear)?
+
+  9. Do you want to display tooltips that show detailed information when hovering
+  over each cell?
+
+  10. Are there any specific thresholds or benchmarks you want highlighted on the
+  heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend.
+
+  3. Symbols would be preferred to annotate significant differences.
+
+  4. I do not know.
+
+  5. Yes, please include axis labels and titles.
+
+  6. I am not sure.
+
+  7. I do not have specific font preferences.
+
+  8. I do not know.
+
+  9. No, I am looking for an image, not interactive visualization.
+
+  10. I am not sure.'
+data_attributes:
+- PaymentMethod
+- Contract
+- Churn
+- MonthlyCharges
+- TotalCharges

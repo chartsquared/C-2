@@ -1,0 +1,53 @@
+initial_prompt: I need a bar chart to visualize the data from `../Extra_datas/data/123.csv`.
+  Please show the counts of unique values for the 'Number' column. Use different colors
+  for each bar to distinguish them easily. Also, indicate the period with relevant
+  labels. The data is related to win-go color predictions, part of arts and entertainment.
+  Ensure the chart is clear and easily understandable, as it will be part of a performance
+  prediction analysis. Add proper titles and labels for clarity. Thank you!
+questions: '1. Do you have a specific title in mind for the bar chart?
+
+  2. What label do you prefer for the x-axis?
+
+  3. What label do you prefer for the y-axis?
+
+  4. Do you have any preferred colors for the different bars?
+
+  5. Should the bars be ordered in a specific way (e.g., ascending or descending)?
+
+  6. Are there any particular fonts or styles you prefer for labels and titles?
+
+  7. Should the chart include a legend?
+
+  8. What level of detail should be shown for the period labels (e.g., full date,
+  year, etc.)?
+
+  9. Is there any additional text or annotations you would like to include in the
+  chart?
+
+  10. Would you prefer grid lines to be displayed on the chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Unique Numbers
+
+  3. Count
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Yes
+
+  8. Full date
+
+  9. No
+
+  10. Yes
+
+  <end of user emulated response>'
+data_attributes:
+- Number
+- Period

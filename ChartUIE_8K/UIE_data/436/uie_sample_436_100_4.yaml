@@ -1,0 +1,56 @@
+initial_prompt: Create a stacked bar chart to visualize the Marbula 1 Season 1 championship
+  ranking over time. Each bar should represent a race and be divided into segments
+  for each team, showing their respective points. Use different colors for each team,
+  and ensure the x-axis represents the dates of the races and the y-axis represents
+  the points scored. Highlight key races and make the chart interactive, allowing
+  for details on hover. Add legends and labels for clarity.
+questions: '1. Do you have specific color preferences for different teams?
+
+  2. Would you prefer the dates on the x-axis to be formatted in a particular way
+  (e.g., ''DD-MMM-YY'', ''MM/DD/YYYY'')?
+
+  3. How would you like key races to be highlighted (e.g., special markers, different
+  colors)?
+
+  4. Do you have a preference for where the legend should be placed (e.g., top, right,
+  bottom, left)?
+
+  5. What level of detail would you like on the labels (e.g., exact points, team names,
+  both)?
+
+  6. Do you prefer grid lines on the chart, and if so, for which axis (x-axis, y-axis,
+  both)?
+
+  7. Would you like any specific annotations or text boxes added to the chart for
+  important insights or notes?
+
+  8. How much spacing would you like between the bars representing each race?
+
+  9. Is there a particular font style or size you prefer for the titles and labels?
+
+  10. Would you like the chart to include a title and subtitle? If so, do you have
+  any preferred text for them?'
+answers: '1. I do not have specific color preferences for different teams.
+
+  2. I am not sure about the date format for the x-axis.
+
+  3. I would like key races to be highlighted with special markers.
+
+  4. I do not know where the legend should be placed.
+
+  5. I prefer the labels to include both exact points and team names.
+
+  6. I would prefer grid lines on the y-axis.
+
+  7. I am not sure about specific annotations or text boxes.
+
+  8. I do not know how much spacing is needed between the bars.
+
+  9. I have no specific preference for font style or size.
+
+  10. Yes, I would like the chart to include a title and subtitle.'
+data_attributes:
+- date
+- race
+- team_name
+- points

@@ -1,0 +1,55 @@
+initial_prompt: Create a choropleth map illustrating travel destinations by traveler
+  nationality from the Traveler Trip Dataset. Use the 'Traveler nationality' for the
+  geographic regions and 'Destination' counts to represent the data on the map. Ensure
+  the map highlights the frequency of trips to various destinations based on traveler
+  nationality. Additionally, color-code the map to differentiate the popularity of
+  destinations among different nationalities. The result should visually depict how
+  travelers from diverse nationalities prefer specific travel destinations, facilitating
+  insights into travel trends. Ensure it's easy to interpret for travel agencies and
+  tourism boards.
+questions: '1. Do you have a preferred color scheme for differentiating the popularity
+  of destinations among different nationalities?
+
+  2. Would you prefer a specific granularity for the traveler nationality regions
+  (e.g., continents, countries)?
+
+  3. Should the choropleth map include labels for traveler nationalities or travel
+  destinations?
+
+  4. Do you have any preference on the geographic projection for the map (e.g., Mercator,
+  Robinson)?
+
+  5. How would you like to handle overlapping regions or destinations, if they occur
+  on the map?
+
+  6. Is there a specific range or legend format you prefer for the color-coded representation
+  of destination counts?
+
+  7. Do you want the map to include any additional annotations or markers to highlight
+  key travel destinations or trends?
+
+  8. Would you like the map to display aggregate data or show individual data points
+  for each trip?
+
+  9. Do you have a specific aspect ratio or size preference for the choropleth map?'
+answers: '1. I am not sure.
+
+  2. Countries would be preferred.
+
+  3. I would prefer labels for travel destinations.
+
+  4. I do not know.
+
+  5. I am not sure how to handle overlapping regions or destinations.
+
+  6. I do not have a specific range or legend format in mind.
+
+  7. Yes, please include additional annotations or markers to highlight key travel
+  destinations or trends.
+
+  8. I prefer aggregate data.
+
+  9. I have no specific preference regarding the aspect ratio or size.'
+data_attributes:
+- Traveler nationality
+- Destination

@@ -1,0 +1,42 @@
+initial_prompt: Create a scatter plot showing the relationship between critic scores
+  and people scores for top-rated movies. Group by genre and use different colors
+  for each genre.
+questions: '1. Do you have a preferred color palette for different genres?
+
+  2. Would you like the chart to display data labels for each point?
+
+  3. Should we include a legend to specify the genres represented by various colors?
+
+  4. Do you prefer any specific marker shapes for different genres on the scatter
+  plot?
+
+  5. What title would you like to give to the scatter plot?
+
+  6. Do you want gridlines in the background of the scatter plot?
+
+  7. What axis labels do you prefer for the x-axis and y-axis?
+
+  8. Would you like to add a trendline to show the overall correlation?
+
+  9. Do you prefer any specific range or scaling for the x-axis and y-axis?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, please include a legend.
+
+  4. I do not know.
+
+  5. "Relationship Between Critic Scores and People Scores for Top-Rated Movies"
+
+  6. I have no specific preference.
+
+  7. X-axis: "Critic Scores", Y-axis: "People Scores"
+
+  8. I have no specific preference.
+
+  9. I am not sure.'
+data_attributes:
+- critic_score
+- people_score
+- genre

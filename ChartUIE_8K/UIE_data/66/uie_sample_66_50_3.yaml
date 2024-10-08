@@ -1,0 +1,41 @@
+initial_prompt: Create a heatmap to visualize the correlation between customer demographics
+  (age, gender), product details (category, brand, price), and purchase behavior (frequency,
+  satisfaction, intent) in predicting electronics sales.
+questions: '1. Do you have a specific color scheme preference for the heatmap?
+
+  2. How would you like to handle the display of correlation values on the heatmap
+  (e.g., display all values, only significant values)?
+
+  3. Would you prefer distinct labels for each cell in the heatmap?
+
+  4. Do you have a preferred method for scaling or normalizing the data before plotting
+  the heatmap?
+
+  5. Are there any particular grid line styles or thicknesses you prefer for the heatmap?
+
+  6. Do you want to include any additional annotations or markers on the heatmap?
+
+  7. Should we use a specific range for the color intensity to highlight strong correlations?'
+answers: '1. I do not know.
+
+  2. Only significant values.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. Yes, a specific range for the color intensity to highlight strong correlations
+  would be helpful.'
+data_attributes:
+- CustomerAge
+- CustomerGender
+- ProductCategory
+- ProductBrand
+- ProductPrice
+- PurchaseFrequency
+- CustomerSatisfaction
+- PurchaseIntent

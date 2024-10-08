@@ -1,0 +1,37 @@
+initial_prompt: Please create a heatmap to visualize the relationship between the
+  offline_crack_sec and strength values for the different passwords in the provided
+  dataset. Use rank as the y-axis and password category as the x-axis. Color the cells
+  based on the offline_crack_sec values. Highlight the cells using strength values
+  as an overlay to display different security levels of passwords. This will help
+  in understanding how difficult it is to crack various categories of passwords and
+  which categories generally have stronger passwords. Incorporate font_size for additional
+  granularity if possible. Thanks!
+questions: '1. Do you have a preferred color scheme for the heatmap to represent offline_crack_sec
+  values?
+
+  2. How would you like the overlay for the strength values to be displayed (e.g.,
+  varying cell border thickness, text annotations)?
+
+  3. Should the font_size be directly displayed on the heatmap cells, or should it
+  be used as a scaling factor for some visual attribute (e.g., cell size)?
+
+  4. Are there any specific labels or legends you would like to include on the axes
+  or within the heatmap?
+
+  5. Would you prefer a specific title or subtitle for the heatmap?'
+answers: '1. I do not have a specific preference.
+
+  2. Text annotations would be good for displaying the strength values.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. The title could be "Heatmap of Password Categories vs. Offline Crack Time", with
+  a subtitle of "Strength values annotated within cells".'
+data_attributes:
+- rank
+- category
+- offline_crack_sec
+- strength
+- font_size

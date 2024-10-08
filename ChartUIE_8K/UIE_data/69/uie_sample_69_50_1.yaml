@@ -1,0 +1,47 @@
+initial_prompt: Create a scatter plot to visualize suspicious web traffic interactions,
+  focusing on bytes_in and bytes_out. Highlight points by src_ip_country_code. Annotate
+  significant data points to emphasize the detection of adversary infrastructure.
+questions: '1. What color palette do you prefer for highlighting different src_ip_country_code
+  points?
+
+  2. Do you have specific criteria for which data points should be annotated as significant?
+
+  3. Would you like to include axis labels and a chart title? If so, what should they
+  be?
+
+  4. Do you prefer a specific marker shape or style for the scatter plot points?
+
+  5. Should the chart include a legend to explain the color coding for src_ip_country_code?
+
+  6. Is there a particular range for bytes_in or bytes_out that we should zoom in
+  on?
+
+  7. Would you like grid lines to be displayed on the chart for better reference?
+  If so, should they be major or minor grid lines?
+
+  8. Do you have any specific font preferences for the annotations and labels?
+
+  9. Is there any additional contextual information that you would like displayed
+  on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, include axis labels. Title: “Suspicious Web Traffic Interactions”. X-axis:
+  “Bytes Out”. Y-axis: “Bytes In”.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not know.'
+data_attributes:
+- bytes_in
+- bytes_out
+- src_ip_country_code

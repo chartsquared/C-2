@@ -1,0 +1,53 @@
+initial_prompt: 'Please create a line chart visualizing water quality metrics over
+  time for region LV-SW-012. The x-axis should represent the Time in hours, and y-axis
+  should display values for Pollution Index, Water Temp, Ammonia Nitrogen, Hosphorus,
+  and Dissolved Oxygen. Each metric should have a separate line for clear comparison.
+  Include a legend to differentiate lines. Use different colors for each line and
+  ensure the chart is easy to read. Data to be used is from multiple time points,
+  specifically: ''2020/3/1 00:00:00'', ''2020/3/1 04:00:00'', ''2020/3/1 08:00:00''.
+  Highlight trends and variations. Thank you!'
+questions: '1. Do you have a preferred color palette for the lines?
+
+  2. Do you prefer the lines to be solid, dashed, or a mixture of both?
+
+  3. Should the chart include markers at each data point?
+
+  4. What font style and size would you like for the labels and legend?
+
+  5. Do you have a preference for the gridlines (e.g., visible, dotted, or none)?
+
+  6. Would you like to include a title or subtitle for the chart? If yes, please specify.
+
+  7. Should the y-axis have a set range, or should it be auto-scaled based on the
+  data?
+
+  8. Do you prefer the chart background to be white, colored, or transparent?
+
+  9. Would you like to highlight specific data points or trends with annotations?
+  If so, please specify.'
+answers: '1. I do not have a preferred color palette for the lines.
+
+  2. I prefer the lines to be solid.
+
+  3. I am not sure about including markers at each data point.
+
+  4. I do not have a specific preference for the font style and size for the labels
+  and legend.
+
+  5. I prefer the gridlines to be visible.
+
+  6. Yes, please include the title "Water Quality Metrics Over Time for Region LV-SW-012."
+
+  7. I am not sure if the y-axis should have a set range or be auto-scaled.
+
+  8. I prefer the chart background to be white.
+
+  9. I do not know whether specific data points or trends should be highlighted with
+  annotations.'
+data_attributes:
+- Time
+- Pollution Index
+- Water Temp
+- Ammonia Nitrogen(mg/L)
+- Hosphorus(mg/L)
+- Dissolved Oxygen(mg/L)

@@ -1,0 +1,48 @@
+initial_prompt: I have some cardiovascular disease data with various patient attributes
+  and conditions such as age, gender, chest pain, and more. I would like to create
+  a column chart that shows the distribution of the 'age' and 'gender' of patients
+  against the 'target' variable (1 for disease presence and 0 for absence). Please
+  ensure the chart clearly differentiates between male and female patients and highlights
+  which age groups and genders are more prevalent in having the disease. The goal
+  is to quickly visualize and interpret which demographics are most affected by cardiovascular
+  diseases.
+questions: '1. Do you have a preferred color scheme for differentiating male and female
+  patients?
+
+  2. What age groups would you like to use for segmentation (e.g., 0-10, 11-20, etc.)?
+
+  3. Should the chart include gridlines for easier readability?
+
+  4. Would you like to display data labels on the bars for precise values?
+
+  5. Do you prefer vertical or horizontal column bars for this chart?
+
+  6. Is it necessary to include a legend in the chart to indicate gender?
+
+  7. Should the chart have a specific title? If so, what should it be?
+
+  8. Do you have any preference for the font style or size used in the chart?
+
+  9. Would you like to include a trend line or any additional markers to emphasize
+  specific data points?'
+answers: '1. I am not sure.
+
+  2. 0-10, 11-20, 21-30, 31-40, 41-50, 51-60, 61-70, 71-80, 81-90.
+
+  3. Yes.
+
+  4. Yes, please.
+
+  5. Vertical column bars.
+
+  6. Yes, it is necessary.
+
+  7. "Cardiovascular Disease Distribution by Age and Gender"
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- age
+- gender
+- target

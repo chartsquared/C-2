@@ -1,0 +1,32 @@
+initial_prompt: Create a geographic heatmap of property prices in New York, using
+  latitude and longitude. Highlight areas with higher prices, differentiate by property
+  type (Condo, House), and show number of beds.
+questions: '1. Do you have a preferred color scheme for differentiating property types
+  or highlighting areas with higher prices?
+
+  2. Would you like to display price ranges in the legend or as specific data labels
+  on the heatmap?
+
+  3. Do you prefer a specific type of marker or symbol to represent different property
+  types?
+
+  4. How would you like the number of beds to be displayed? As a tooltip, label, or
+  through classification on the map?
+
+  5. Is there a specific map style or base map (e.g., satellite, terrain, street map)
+  you would prefer to use?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. As a label.
+
+  5. I have no specific preference.'
+data_attributes:
+- LATITUDE
+- LONGITUDE
+- PRICE
+- TYPE
+- BEDS

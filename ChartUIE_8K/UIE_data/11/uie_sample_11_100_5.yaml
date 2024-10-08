@@ -1,0 +1,35 @@
+initial_prompt: Please create a histogram to visualize the distribution of the 'RestaurantLessThan20'
+  column from the in-vehicle coupon recommendation dataset. This data shows how often
+  individuals frequent restaurants where the average meal price is less than $20.
+  The histogram should highlight the different frequency ranges (e.g., 'never', 'less
+  than once a month', '1-3 times a month', '4-8 times a month', 'more than 8 times
+  a month'). This will help us understand the dining habits of passengers within this
+  price range to better tailor our in-vehicle coupon offerings. Thank you!
+questions: '1. Do you have a preferred color scheme for the histogram?
+
+  2. Should the bars be labeled with the exact frequency counts?
+
+  3. Do you want gridlines in the background of the histogram?
+
+  4. Would you like to include a title or caption for the histogram? If so, what should
+  it be?
+
+  5. Is there a specific format for the axes labels you prefer (e.g. horizontal, angled)?
+
+  6. Should there be any annotations or highlights on specific frequency ranges?
+
+  7. Do you prefer the bars to have a specific width or spacing?
+
+  8. Should the histogram have a legend, even if it only shows one data attribute?
+
+  9. Do you want to include any additional textual information directly on the histogram?'
+answers: "1. I don't have a specific preference for the color scheme.\n2. Yes, please\
+  \ label the bars with the exact frequency counts.\n3. I am not sure about the gridlines.\
+  \ \n4. Yes, the title should be \"Distribution of Dining Frequency for Restaurants\
+  \ with Meals Less Than $20\".\n5. I don’t have a specific preference for the format\
+  \ of the axes labels.\n6. I am not sure about annotations or highlights on specific\
+  \ ranges.\n7. I do not know about the bar width or spacing preference.\n8. No, the\
+  \ histogram does not need a legend.\n9. No, additional textual information is not\
+  \ necessary."
+data_attributes:
+- RestaurantLessThan20

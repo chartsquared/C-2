@@ -1,0 +1,53 @@
+initial_prompt: Please create a heatmap showing the correlation between the different
+  resources (columns 2-12) and total available resources for each player. Highlight
+  any strong positive or negative correlations. Use the data from Settlers of Catan
+  games.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like labels or annotations for the correlation values displayed directly
+  on the heatmap?
+
+  3. Should we use a specific scale (e.g., -1 to 1) for the correlation values, and
+  if so, would you like this scale to be visually indicated with a legend?
+
+  4. Do you want to highlight only the significant correlations (e.g., above 0.7 or
+  below -0.7), and if so, what thresholds would you prefer?
+
+  5. How would you like the resources to be ordered on the heatmap (e.g., in the order
+  of columns, alphabetically, based on correlation strength)?
+
+  6. Do you have a preference for the size or dimensions of the heatmap?
+
+  7. Should there be grid lines separating the cells in the heatmap?
+
+  8. Would you prefer the heatmap to be clustered by similarity to show groupings
+  of resources with similar correlations?'
+answers: '1. I do not know.
+
+  2. Yes, I would like labels or annotations for the correlation values displayed
+  directly on the heatmap.
+
+  3. I am not sure.
+
+  4. Yes, please highlight only the significant correlations above 0.7 or below -0.7.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. I am not sure.'
+data_attributes:
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+- '10'
+- '11'
+- '12'
+- totalAvailable

@@ -1,0 +1,47 @@
+initial_prompt: Please create a heatmap based on the Bitcoin data from 9th-Apr-2014
+  to 30th-Dec-2022. The heatmap should visualize the correlation between different
+  numerical variables such as 'priceUSD', 'size', 'transactions', 'mining_profitability',
+  'marketcap', 'transactionfees', 'tweets', and 'google_trends'. This will help to
+  understand how these variables are interconnected. Make sure to handle any missing
+  values and use an appropriate color gradient to differentiate the levels of correlation.
+  The axes should be properly labeled for clarity.
+questions: "1. Do you have any specific preferences for the color gradient used in\
+  \ the heatmap?\n2. Is there a particular style or theme you would like the heatmap\
+  \ to follow?\n3. Do you have any specific size requirements for the heatmap?\n4.\
+  \ Would you like to include any titles or footnotes on the heatmap? If yes, please\
+  \ specify.\n5. Are there any specific font types or sizes you prefer for the labels\
+  \ and titles?\n6. Should the heatmap include a legend to explain the correlation\
+  \ values? \n7. Do you prefer a specific range of correlation values (e.g., -1 to\
+  \ 1) to be highlighted in the heatmap?\n8. Would you like the heatmap to show only\
+  \ significant correlations above a certain threshold?\n9. Are there any particular\
+  \ annotations or markers you would like to add to the heatmap for better clarity?\n\
+  10. Do you have a preference for the format of the correlation values (e.g., decimal\
+  \ places) displayed on the heatmap?"
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, please include a title: "Correlation Heatmap of Bitcoin Variables (2014-2022)".
+
+  5. I am not sure.
+
+  6. Yes, the heatmap should include a legend to explain the correlation values.
+
+  7. I do not know.
+
+  8. No specific preference for significant correlations, please show all correlations.
+
+  9. I am not sure.
+
+  10. No, I have no specific preference for the format of the correlation values.'
+data_attributes:
+- priceUSD
+- size
+- transactions
+- mining_profitability
+- marketcap
+- transactionfees
+- tweets
+- google_trends

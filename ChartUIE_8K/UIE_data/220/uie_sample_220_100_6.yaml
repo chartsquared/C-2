@@ -1,0 +1,32 @@
+initial_prompt: I need a scatter plot for the "Russian Cities Distance Dataset" under
+  transportation and logistics. The chart should visualize the distances between different
+  city pairs. Use the 'Order' column for the x-axis and the 'Distance' column for
+  the y-axis, and apply different colors or markers for each unique 'Destination'.
+  Include legends and axis labels for clarity. Make sure to highlight any potential
+  patterns or outliers in the distances between the cities. Keep it simple but informative
+  enough for someone studying intercity transportation logistics.
+questions: '1. Do you have any specific preferences for the colors or markers to be
+  used for each unique ''Destination''?
+
+  2. How would you prefer the outliers to be highlighted in the scatter plot?
+
+  3. Do you have a preference for the style or format of the legends?
+
+  4. Are there any specific labels or titles you would like on the axes or the chart
+  itself?
+
+  5. Do you require grid lines on the chart for better readability?'
+answers: '1. I am not sure.
+
+  2. I don''t know, maybe with a different color or bigger marker size.
+
+  3. I have no specific preference.
+
+  4. X-axis: "Order", Y-axis: "Distance (km)", Title: "Distances Between Russian City
+  Pairs"
+
+  5. Yes, please include grid lines for better readability.'
+data_attributes:
+- Order
+- Distance
+- Destination

@@ -1,0 +1,41 @@
+initial_prompt: Create a treemap to visualize the sales distribution across different
+  categories and sub-categories from the Superstore Sales dataset. Use 'Category'
+  and 'Sub-Category' as hierarchy levels, with 'Sales' determining the size of each
+  box. Include profit margins as color intensities.
+questions: '1. Do you have any specific color preferences or color schemes for indicating
+  profit margins?
+
+  2. Would you like labels for each category and sub-category to be shown inside the
+  boxes, or should they appear as a tooltip on hover?
+
+  3. How would you like to handle categories or sub-categories with very small sales
+  values? Should they be aggregated under an "Others" category?
+
+  4. Is there a specific order in which you would like categories and sub-categories
+  to be displayed (e.g., highest sales first)?
+
+  5. Would you prefer any specific font style or size for the text within the treemap?
+
+  6. Should the treemap include a legend explaining the color intensities associated
+  with profit margins?
+
+  7. Do you need any additional annotations or highlights, such as marking the top-performing
+  category or sub-category?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, aggregate under an "Others" category.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. Yes, include a legend explaining the color intensities.
+
+  7. I do not know.'
+data_attributes:
+- Category
+- Sub-Category
+- Sales
+- Profit

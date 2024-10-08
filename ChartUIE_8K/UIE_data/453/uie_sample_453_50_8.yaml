@@ -1,0 +1,64 @@
+initial_prompt: 'Please create a bar chart using the dataset from ''453.csv'', showing
+  the gene expression levels across different samples like Adeno, SCC, LCLC, and SCLC.
+  Focus on three specific genes: IMAGE:196992, IMAGE:587847, and IMAGE:1049185.'
+questions: '1. Do you have a preferred color palette for the bars to distinguish between
+  different genes or samples?
+
+  2. Should the x-axis represent the genes or the samples?
+
+  3. How would you like the y-axis to be labeled? (e.g., ''Gene Expression Level'',
+  ''Expression Intensity'')
+
+  4. Would you prefer the bars to be grouped or stacked for comparing the gene expression
+  levels?
+
+  5. Should error bars be included to indicate variability or confidence intervals
+  in the data?
+
+  6. Do you have specific preferences for the chart title and axis labels?
+
+  7. Would you like to display data values on top of each bar?
+
+  8. Do you have any preferences for the font style or size for labels and titles?
+
+  9. Should the legend be displayed and if so, where would you prefer it to be positioned?
+  (e.g., top, bottom, left, right)
+
+  10. Are there any specific samples that should be highlighted or emphasized in the
+  chart?'
+answers: '1. I am not sure.
+
+  2. The x-axis should represent the samples.
+
+  3. The y-axis should be labeled as ''Gene Expression Level''.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not have specific preferences.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I do not know.
+
+  10. I do not have any specific samples to highlight.'
+data_attributes:
+- gene
+- 68-96_Adeno
+- 11-00_Adeno
+- 69-96_Adeno
+- 234-97_Adeno
+- 237-97_Adeno
+- 157-96_SCC
+- 239-97_SCC
+- 166-96_SCC
+- 245-97_SCC
+- 3-SCC
+- 248-97_LCLC
+- 256-97_LCLC
+- 314-99_SCLC
+- 315-99_SCLC
+- 207-97_SCLC

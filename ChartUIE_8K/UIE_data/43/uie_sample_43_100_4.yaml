@@ -1,0 +1,56 @@
+initial_prompt: Create a bar chart to visualize the Blood Dataset health data. Use
+  the 'Class' column to represent the different classes on the x-axis. For each class,
+  create bars for 'Recency', 'Frequency', 'Monetary', and 'Time' to show the average
+  value of each metric. Ensure the y-axis reflects these values clearly. Add appropriate
+  labels and a legend to distinguish the different metrics. This will help in comparing
+  the characteristics of each class. This visualization aims to facilitate understanding
+  of blood donation patterns and behaviors over time and by different user classes.
+questions: '1. Do you have any specific color preferences for the bars representing
+  ''Recency'', ''Frequency'', ''Monetary'', and ''Time''?
+
+  2. Would you prefer a stacked bar chart or grouped bar chart to display the data?
+
+  3. Do you have a preferred font style or size for the labels and legend?
+
+  4. Are there any specific axis label formats you would like (e.g., prefixing a unit,
+  specific decimal places)?
+
+  5. Should the chart include gridlines for easier comparison, and if so, in which
+  style (dashed, solid)?
+
+  6. Do you prefer the legend to be placed inside or outside the chart area?
+
+  7. Are there any particular chart title or subtitle preferences that you have?
+
+  8. Would you like to highlight any specific class or metric within the chart?
+
+  9. Should the y-axis be set to start from zero, or should it be flexible based on
+  the data range?
+
+  10. Do you have any preferences for the background color of the chart area or the
+  space around the chart?'
+answers: '1. I am not sure.
+
+  2. I prefer a grouped bar chart.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. Yes, please include gridlines in a solid style.
+
+  6. Outside the chart area.
+
+  7. I do not have a specific preference.
+
+  8. I am not sure.
+
+  9. The y-axis should start from zero.
+
+  10. I do not have any preferences.'
+data_attributes:
+- Class
+- Recency
+- Frequency
+- Monetary
+- Time

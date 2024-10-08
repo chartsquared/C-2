@@ -1,0 +1,42 @@
+initial_prompt: Create a bar chart that shows the total alcohol consumption per capita
+  (liters of pure alcohol) for different countries over multiple years. The x-axis
+  should represent the countries, and the y-axis should show the total alcohol consumption
+  per capita. Use different bars to depict the data for each year within the same
+  country. This will help visualize trends in alcohol consumption over time across
+  different regions. Ensure the chart is clear, with labels for countries, years,
+  and consumption values. Use distinct colors for different years to differentiate
+  them easily.
+questions: '1. Do you have any specific preference for the color scheme to represent
+  different years?
+
+  2. Do you prefer the countries to be sorted in a particular order on the x-axis
+  (e.g., alphabetically or by consumption values)?
+
+  3. Would you like value labels to be displayed on top of each bar?
+
+  4. How many years of data would you like to display at most?
+
+  5. Do you have any preferences for the font type and size for the labels and titles?
+
+  6. Would you like gridlines to be included for better readability of the chart?
+
+  7. Do you have any specific requirements for the chart title or legends?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference; either alphabetically or by consumption
+  values works.
+
+  3. Yes, I would like value labels to be displayed on top of each bar.
+
+  4. I would like to display data for at most 5 years.
+
+  5. I am not sure.
+
+  6. Yes, please include gridlines for better readability.
+
+  7. I do not have any specific requirements for the chart title or legends.'
+data_attributes:
+- Entity
+- Year
+- Total alcohol consumption per capita (liters of pure alcohol, projected estimates,
+  15+ years of age)

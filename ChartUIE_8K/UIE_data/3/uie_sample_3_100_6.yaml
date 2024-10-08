@@ -1,0 +1,54 @@
+initial_prompt: Create a Choropleth map visualizing global rice production statistics
+  from the dataset. The map should display countries with varying shades based on
+  rice production (tons). Additionally, include hover-over information to show detailed
+  metrics such as total rice production, production rank, rice production per person,
+  acreage, and yield per hectare. Ensure the map is interactive so users can explore
+  and compare the data. Utilize the latest data available from the dataset to provide
+  the most accurate and up-to-date visualization. Title the map "Global Rice Production
+  Statistics" and include a legend explaining the color gradients.
+questions: '1. What color scheme do you prefer for representing different levels of
+  rice production (e.g., shades of green, blue, or a gradient from light to dark)?
+
+  2. Do you have a preference for specific countries to be highlighted or annotated
+  on the map?
+
+  3. How would you like the legend to be styled (e.g., horizontal or vertical, specific
+  colors)?
+
+  4. Do you have any preferences for the hover-over information format or order of
+  displayed metrics?
+
+  5. Would you like any additional annotations or markers on the map for specific
+  insights?
+
+  6. Are there any geographical boundaries or regions you want to emphasize or de-emphasize
+  on the map?
+
+  7. Do you have a preference for the granularity of the data classification (e.g.,
+  equal intervals, quantiles, natural breaks)?
+
+  8. What font style and size would you prefer for the map title and legend text?'
+answers: '1. I am not sure, but a gradient from light to dark might work well.
+
+  2. I do not have any specific preferences for countries to be highlighted or annotated.
+
+  3. I am not sure about the legend style, maybe vertical.
+
+  4. I would prefer the metrics in this order: total rice production, production rank,
+  rice production per person, acreage, and yield per hectare.
+
+  5. I do not have a specific preference for additional annotations or markers.
+
+  6. I do not know about emphasizing or de-emphasizing any regions.
+
+  7. I am not sure about the data classification granularity.
+
+  8. I have no specific preference for the font style or size, just need it to be
+  readable.'
+data_attributes:
+- Country
+- Rice Production (Tons)
+- Rank of Rice Production
+- Rice Production Per Person (Kg)
+- Rice Acreage (Hectare)
+- Rice Yield (Kg / Hectare)

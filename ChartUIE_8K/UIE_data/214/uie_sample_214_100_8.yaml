@@ -1,0 +1,51 @@
+initial_prompt: I want to create a heatmap using the WHO Suicide Statistics dataset.
+  The heatmap should visualize the suicides_no across different countries over the
+  years, categorized by sex and age groups. Highlight areas with missing values to
+  identify data gaps. Color intensity should represent the number of suicides. Make
+  sure the data ranges are clear and the chart is easy to understand. Save the final
+  visualization as a PNG file.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Would you like a specific range of years to focus on or include all available
+  years?
+
+  3. Should we use a specific color to highlight missing values?
+
+  4. Do you have any preferred method for annotating the heatmap values (e.g., numerical
+  values on tiles)?
+
+  5. Is there a specific order or grouping you''d like for the countries, age groups,
+  or sexes?
+
+  6. Do you prefer a particular font style or size for the labels and titles?
+
+  7. Do you want to include a legend or key to explain the color intensity representing
+  the number of suicides?
+
+  8. Should the heatmap include gridlines or dividers to separate sections clearly?
+
+  9. Would you like to display any additional statistical summaries or trends alongside
+  the heatmap?'
+answers: '1. I have no specific preference.
+
+  2. Include all available years.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. Yes, please include a legend or key.
+
+  8. Yes, include gridlines or dividers.
+
+  9. I do not know.'
+data_attributes:
+- country
+- year
+- sex
+- age
+- suicides_no

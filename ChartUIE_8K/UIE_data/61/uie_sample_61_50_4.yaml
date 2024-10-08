@@ -1,0 +1,51 @@
+initial_prompt: Create a line chart displaying the trend in discounted prices over
+  different models for each brand. Use the "brand_name" and "model_name" on the x-axis
+  and "discounted_price" on the y-axis.
+questions: '1. Do you have a preferred color scheme for the line chart?
+
+  2. How would you like the brands to be distinguished on the chart (e.g., different
+  line styles, colors, or markers)?
+
+  3. Do you want to include data labels for specific points on the lines?
+
+  4. Should the x-axis labels rotate for better readability, given that both brand
+  and model names will be displayed?
+
+  5. Do you want to include a legend to identify the brands and models?
+
+  6. What level of detail do you prefer for the y-axis (e.g., should it include grid
+  lines, specific labeling increments)?
+
+  7. Do you want the chart to display any specific annotations or highlights for certain
+  data points or trends?
+
+  8. Should the chart include a title and, if so, what should it be?
+
+  9. Is there any specific font style or size you prefer for the chart text (axes
+  labels, title, etc.)?
+
+  10. Would you like to add a secondary y-axis for any additional data attributes,
+  or should the focus remain solely on discounted prices?'
+answers: '1. I am not sure.
+
+  2. Different colors for the brands, please.
+
+  3. I do not know.
+
+  4. Yes, x-axis labels should rotate for better readability.
+
+  5. Yes, please include a legend.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. Yes, the title should be "Discounted Prices Trend by Brand and Model."
+
+  9. I do not have a specific preference.
+
+  10. No, the focus should remain solely on discounted prices.'
+data_attributes:
+- brand_name
+- model_name
+- discounted_price

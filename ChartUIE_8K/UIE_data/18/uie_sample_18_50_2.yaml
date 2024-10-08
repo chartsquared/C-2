@@ -1,0 +1,37 @@
+initial_prompt: Create a Treemap visualizing the Pokemon classifications based on
+  their base_total stats. Include text annotations to highlight legendary Pokemon.
+  Use color highlights to distinguish different generations, helping to emphasize
+  their distribution.
+questions: '1. What color scheme would you prefer for distinguishing between different
+  generations?
+
+  2. Do you have any specific font preferences for the text annotations highlighting
+  the legendary Pokemon?
+
+  3. Would you like the text annotations for legendary Pokemon to include any additional
+  information, such as the name or base_total stats?
+
+  4. Should the size of the rectangles in the Treemap be proportional to the base_total
+  stats directly, or should it be normalized in some way?
+
+  5. Do you have any preferences for the layout of the Treemap, such as a traditional
+  rectangular layout or a squarified layout?
+
+  6. Are there any specific categories or classifications of Pokemon you would like
+  to focus on or exclude from the visualization?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include the name and base_total stats.
+
+  4. It should be proportional to the base_total stats directly.
+
+  5. I am not sure.
+
+  6. I do not know.'
+data_attributes:
+- base_total
+- classfication
+- is_legendary
+- generation

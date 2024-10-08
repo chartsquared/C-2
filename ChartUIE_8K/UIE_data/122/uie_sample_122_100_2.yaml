@@ -1,0 +1,51 @@
+initial_prompt: I need a scatter plot illustrating video game sales data. Each point
+  should represent a video game, with 'Year' on the x-axis and 'Global_Sales' on the
+  y-axis. Use data-driven text annotations to highlight the top 3 games with the highest
+  global sales. These annotations should display the game name and sales figures.
+  Highlight data points for Nintendo-published games in a different color to distinguish
+  them from others. This visualization will help analyze trends over time and highlight
+  top-selling games and publishers in the video game industry.
+questions: '1. Do you have a specific color preference for the data points representing
+  Nintendo-published games?
+
+  2. What color scheme would you prefer for the other data points?
+
+  3. Do you have a preference for the size of the data points?
+
+  4. How would you like the top 3 games with the highest global sales to be highlighted?
+  Specific color or shape?
+
+  5. Do you prefer the text annotations to be positioned in a particular way relative
+  to the data points?
+
+  6. Would you like a legend to be included in the chart? If so, where should it be
+  positioned?
+
+  7. Should the axis labels have a specific font size or style?
+
+  8. Do you want grid lines on the scatter plot? If yes, should they be for both x
+  and y axes or just one?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Highlight the top 3 games with a specific color.
+
+  5. I am not sure.
+
+  6. Yes, I would like a legend, but I don''t have a specific position preference.
+
+  7. I have no specific preference.
+
+  8. Yes, please include grid lines for both x and y axes.
+
+  <end of user emulated response>'
+data_attributes:
+- Year
+- Global_Sales
+- Name
+- Publisher

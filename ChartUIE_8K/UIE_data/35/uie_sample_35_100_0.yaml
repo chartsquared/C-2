@@ -1,0 +1,41 @@
+initial_prompt: 'Create a box chart visualizing customer ages segmented by attrition
+  flag. Highlight the median customer age for both existing and attrited clients to
+  draw attention to differences. Annotate key outliers in each segment to provide
+  additional insights on customer age distribution. Include labels for better understanding
+  and context, such as "Median Age: X years." This visualization will help identify
+  age trends related to customer retention and attrition in our credit card business.
+  Utilize the data columns directly from the dataset provided for accuracy.'
+questions: '1. Do you have any preference for the color scheme to be used in the box
+  chart?
+
+  2. Should the median age lines be in a distinct color or style for clear differentiation?
+
+  3. Do you prefer specific annotations for outliers, or should general symbols be
+  used?
+
+  4. Would you like the axis labels to include specific font styles or sizes?
+
+  5. Is there a particular format for the "Median Age: X years" label that you prefer?
+
+  6. Should the box chart include a title and subtitle? If yes, do you have any specific
+  wording in mind?
+
+  7. Are there any branding guidelines or color palettes that should be followed for
+  the visualization?'
+answers: '1. I do not know.
+
+  2. Yes, the median age lines should be in a distinct color for clear differentiation.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. Yes, please include a title and subtitle. Title: "Customer Age Distribution by
+  Attrition Flag," Subtitle: "Highlighting Median Ages for Existing and Attrited Clients".
+
+  7. I do not know.'
+data_attributes:
+- Attrition_Flag
+- Customer_Age

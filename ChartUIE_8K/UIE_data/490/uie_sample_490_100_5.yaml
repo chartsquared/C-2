@@ -1,0 +1,36 @@
+initial_prompt: Please create a pie chart visualizing the distribution of 'LCA_Category_sub'
+  from the provided data set. Highlight the proportion of different sub-categories
+  within the 'Fish (capture)' LCA category. Make sure the segments for 'Carp & catfish',
+  'Tilapia', and 'Trout & salmon' are clearly distinguishable. The chart should also
+  include a legend or label indicating each segment's percentage share. Since there
+  are missing values in 'Gephart Match', it's best to ignore this column for now.
+  This chart will be used for a fish matching zoology study.
+questions: "1. Do you have any specific color preferences for the segments of 'Carp\
+  \ & catfish', 'Tilapia', and 'Trout & salmon'?\n2. Would you prefer the percentage\
+  \ share labels to be displayed inside the segments, outside the segments, or as\
+  \ a legend?\n3. Are there any specific fonts or font sizes you would like to be\
+  \ used for labels and legends?\n4. Should the pie chart have a title? If yes, please\
+  \ specify the title.\n5. Would you like the chart to include any specific annotations\
+  \ or additional information? \n6. Do you have any preference for the overall style\
+  \ or theme of the chart (e.g., modern, classic, minimalist)?\n7. Is there a particular\
+  \ order in which you want the segments to be displayed (e.g., descending/ascending\
+  \ by value)?\n8. Should the chart include value labels (e.g., actual numbers) in\
+  \ addition to percentage labels?"
+answers: '1. I am not sure.
+
+  2. I would prefer the percentage share labels to be displayed inside the segments.
+
+  3. I do not know.
+
+  4. Yes, the title should be "Distribution of Fish (Capture) LCA Sub-Categories".
+
+  5. No specific annotations or additional information.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. No, percentage labels will be sufficient.'
+data_attributes:
+- LCA_Category
+- LCA_Category_sub

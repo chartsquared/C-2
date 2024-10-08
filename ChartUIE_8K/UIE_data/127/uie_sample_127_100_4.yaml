@@ -1,0 +1,52 @@
+initial_prompt: I have a dataset from the "Ramen Ratings" category that includes reviews
+  of ramen brands from various countries. I'd like to create a geographic heatmap
+  to visualize the data. The heatmap should highlight the density of ramen variety
+  ratings by country. Each country should be colored based on the number of reviews
+  it has, with nuances showing how highly the ramen from that country were rated.
+  Please ensure the map is interactive, allowing for zooming in on specific countries
+  for detailed information.
+questions: '1. Do you have any specific color scheme preferences for the heatmap?
+
+  2. How would you like the rating nuances to be displayed (e.g., gradient, distinct
+  color ranges)?
+
+  3. Do you prefer any particular map projection (e.g., Mercator, Robinson, etc.)?
+
+  4. Would you like the country boundaries to be highlighted or emphasized in any
+  way?
+
+  5. Should there be any specific thresholds for coloring based on the number of reviews
+  (e.g., above 100 reviews in a darker shade)?
+
+  6. Do you want any labels or tooltips to appear when hovering over countries?
+
+  7. Is there a specific type of legend you prefer for the heatmap (e.g., continuous
+  gradient bar, discrete categories)?
+
+  8. Are there any specific countries or regions of focus that you want to emphasize?
+
+  9. Do you need a sidebar or additional panel to display detailed information when
+  a country is clicked?'
+answers: '1. I am not sure.
+
+  2. Gradient.
+
+  3. I do not know.
+
+  4. Yes, I would like the country boundaries to be highlighted.
+
+  5. Yes, a darker shade for reviews above 100.
+
+  6. Yes, labels or tooltips should appear when hovering over countries.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. No, I do not need a sidebar or additional panel for detailed information.'
+data_attributes:
+- 'Review #'
+- Brand
+- Variety
+- Country
+- Stars

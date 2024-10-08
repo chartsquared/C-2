@@ -1,0 +1,30 @@
+initial_prompt: Create a grouped bar chart comparing Mean, Variance, and Standard
+  Deviation for each class in the brain tumor dataset. Include Class 0 and Class 1
+  subgroups, each showing the three metrics.
+questions: '1. What color scheme do you prefer for the different bars representing
+  Mean, Variance, and Standard Deviation?
+
+  2. Do you have a preference for the ordering of the metrics (Mean, Variance, Standard
+  Deviation) within each class group?
+
+  3. Would you like to include error bars to indicate variability or uncertainty in
+  the measurements?
+
+  4. How would you prefer to label each group of bars (e.g., including the metric
+  names on the x-axis or using a legend)?
+
+  5. What level of axis detail do you prefer (e.g., gridlines, tick marks)?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I don''t know.
+
+  4. Including the metric names on the x-axis would be preferred.
+
+  5. I am not sure.'
+data_attributes:
+- Class
+- Mean
+- Variance
+- Standard Deviation

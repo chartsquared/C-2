@@ -1,0 +1,60 @@
+initial_prompt: I want to see histograms for the age distribution from the stroke
+  prediction dataset. Include gender-based segmentation to compare distributions between
+  males, females, and others. Also, create additional histograms for avg_glucose_level
+  and bmi, highlighting the differences between stroke and non-stroke patients. Make
+  sure to handle missing bmi values appropriately in the visualizations. The charts
+  should help understand if there are any apparent trends or patterns in the data
+  regarding stroke occurrences related to age, glucose levels, and bmi. Show clear
+  legends and labels for easy interpretation.
+questions: '1. Do you have any preferred color schemes for distinguishing different
+  genders and stroke statuses in the histograms?
+
+  2. What bin widths or intervals would you prefer for the histograms of age, avg_glucose_level,
+  and bmi?
+
+  3. How would you like the axis labels to be formatted?
+
+  4. Should the charts include a title? If yes, do you have any specific titles in
+  mind for each histogram?
+
+  5. Do you have a preferred layout for displaying the histograms? For example, should
+  age, avg_glucose_level, and bmi histograms be displayed in a single row or column?
+
+  6. Would you like the missing bmi values to be represented in a specific way in
+  the histograms? For example, using imputation or annotations?
+
+  7. How detailed should the legends be? For example, would you prefer simple labels
+  like ''Male'', ''Female'', ''Others'' and ''Stroke'', ''Non-Stroke'', or more descriptive
+  ones?
+
+  8. Are there any specific font styles or sizes you prefer for the chart annotations
+  and labels?
+
+  9. Would you like any additional annotations or markers to highlight significant
+  patterns or differences in the data?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, include titles. For age: "Age Distribution by Gender", for avg_glucose_level:
+  "Avg Glucose Level and Stroke Status", for bmi: "BMI and Stroke Status".
+
+  5. I am not sure.
+
+  6. Yes, use imputation to handle missing bmi values in the histograms.
+
+  7. I prefer simple labels like ''Male'', ''Female'', ''Others'' and ''Stroke'',
+  ''Non-Stroke''.
+
+  8. I do not know.
+
+  9. Yes, add annotations to highlight significant patterns or differences in the
+  data.'
+data_attributes:
+- age
+- gender
+- avg_glucose_level
+- bmi
+- stroke

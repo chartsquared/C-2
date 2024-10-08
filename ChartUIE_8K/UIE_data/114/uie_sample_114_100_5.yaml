@@ -1,0 +1,59 @@
+initial_prompt: Create a stacked bar chart comparing European Ski Resorts. Use 'Resort'
+  on the X-axis and stack 'BeginnerSlope', 'IntermediateSlope', and 'DifficultSlope'
+  on the Y-axis. Include values from 'HighestPoint' and 'TotalSlope'. Color code the
+  slopes for clear differentiation. Add a legend for the slopes. Use data from '../Extra_datas/data/114.csv'.
+  This will help visualize the distribution of slope difficulties across different
+  resorts in various countries. Ensure the chart is easy to read and informative for
+  skiing enthusiasts planning their next trip. Include titles and labels for clarity.
+questions: '1. Do you have any specific colors in mind for the different slope difficulties
+  (Beginner, Intermediate, Difficult)?
+
+  2. What title would you prefer for the chart?
+
+  3. Do you have a preferred font style or size for the chart''s title and axis labels?
+
+  4. Would you like the values for ''HighestPoint'' and ''TotalSlope'' to be displayed
+  on the chart in any specific way, such as a tooltip or data label?
+
+  5. How would you prefer the resort names (''Resort'') to be formatted on the X-axis,
+  especially if the names are lengthy?
+
+  6. Would you like gridlines to be included in the chart for easier reading of the
+  values? If so, in which color and style?
+
+  7. Do you prefer any specific formatting for the legend, such as its position (top,
+  bottom, left, or right) or orientation (horizontal or vertical)?
+
+  8. Are there any specific margin or padding preferences to ensure all labels and
+  elements are clearly visible?
+
+  9. Should the chart include any specific annotations or markers to highlight certain
+  data points or resorts?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Comparison of Slope Difficulties in European Ski Resorts.
+
+  3. I do not know.
+
+  4. Display ''HighestPoint'' and ''TotalSlope'' as data labels.
+
+  5. No specific preference.
+
+  6. Yes, include gridlines. I am not sure about the color and style.
+
+  7. Position the legend at the bottom, horizontal orientation.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Resort
+- BeginnerSlope
+- IntermediateSlope
+- DifficultSlope
+- HighestPoint
+- TotalSlope

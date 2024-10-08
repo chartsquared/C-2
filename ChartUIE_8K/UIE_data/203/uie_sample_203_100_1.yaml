@@ -1,0 +1,45 @@
+initial_prompt: Create a scatter plot to visualize the Age Detection - Face Recognition
+  Dataset. Plot 'file' on the x-axis and 'age' on the y-axis. Use different colors
+  to distinguish 'split' values, highlighting 'train' and 'test' sets. Include annotations
+  to pinpoint files associated with the youngest and oldest age groups, emphasizing
+  their importance in understanding age distribution in the dataset. This will show
+  how age ranges are distributed across different files in the dataset, useful for
+  analyzing trends and patterns in age recognition using facial images.
+questions: '1. Do you have any specific color preferences for distinguishing the ''train''
+  and ''test'' sets?
+
+  2. Which style would you like for the annotation of the youngest and oldest age
+  groups (e.g., arrow, text box)?
+
+  3. Should the y-axis (''age'') be categorized or remain as text?
+
+  4. Do you prefer any specific layout or orientation for the legend?
+
+  5. Is there a particular font or size you would like for the labels and annotations?
+
+  6. Would you like to include any gridlines for better readability?
+
+  7. Should any specific themes or styles be applied to the chart (e.g., minimalistic,
+  bold)?
+
+  8. Are there any specific points or files you want to highlight or that should be
+  emphasized other than the youngest and oldest age groups?'
+answers: '1. I do not know.
+
+  2. I prefer text box annotations.
+
+  3. I am not sure.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Yes, include gridlines for better readability.
+
+  7. I have no specific preference.
+
+  8. No, just the youngest and oldest age groups should be emphasized.'
+data_attributes:
+- file
+- age
+- split

@@ -1,0 +1,47 @@
+initial_prompt: Create a dot plot to visualize the relationship between income levels
+  and the amount spent on wines among customers. On the x-axis, plot 'Income', and
+  on the y-axis, plot 'MntWines'. Each dot should represent an individual customer,
+  with color coding based on 'Education' level to provide additional insights into
+  any patterns or clusters. This will help in understanding if education level influences
+  spending on wines relative to income. Data points with missing 'Income' values should
+  be excluded. Ensure the plot clearly labels each axis and includes a legend for
+  educational levels. Thank you!
+questions: '1. Do you have any specific preferences for the dot colors representing
+  different education levels?
+
+  2. Would you like the plot to include gridlines for better readability? If yes,
+  which style do you prefer?
+
+  3. Is there a specific font style or size you would like to use for the axis labels
+  and legend?
+
+  4. Do you have a preference for the size of the dots in the plot?
+
+  5. Should the income axis be in linear scale, log scale, or any other preferred
+  scale?
+
+  6. What title would you like to have for the plot, if any?
+
+  7. Would you prefer any annotations or data labels for the dots?
+
+  8. Do you have a preferred orientation for the legend (e.g., top, bottom, left,
+  right)?'
+answers: '1. I am not sure.
+
+  2. Yes, gridlines would be helpful. I do not know which style to prefer.
+
+  3. I am not sure.
+
+  4. I have no specific preference for the size of the dots.
+
+  5. Linear scale for the income axis, please.
+
+  6. "Relationship Between Income Levels and Wine Spending by Education Level"
+
+  7. No, annotations or data labels for the dots are not needed.
+
+  8. I have no specific preference for the legend orientation.'
+data_attributes:
+- Income
+- MntWines
+- Education

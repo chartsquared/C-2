@@ -1,0 +1,57 @@
+initial_prompt: Create a bar chart showing the average lifespan and top speed of various
+  animals from the provided dataset. Use text annotations to highlight the animals
+  with the longest lifespan and the highest top speed. Additionally, apply highlight
+  annotations to distinguish endangered species by using a different color. The chart
+  should provide a clear comparison of the lifespan and speed of each animal while
+  emphasizing those that are particularly noteworthy for their longevity or quickness,
+  and also identifying those with vulnerable conservation status.
+questions: '1. Do you have specific color preferences for the bars representing different
+  attributes such as lifespan and top speed?
+
+  2. Should the bars for endangered species be a specific color? If yes, please specify.
+
+  3. Do you prefer a horizontal or vertical bar chart layout?
+
+  4. Do you have any font preferences for the text annotations?
+
+  5. Would you like grid lines to be included in the chart for easier comparison?
+
+  6. Do you have any specific preferences for the bar thickness?
+
+  7. Should the chart include a legend explaining the color coding and annotations?
+
+  8. Do you have a preference for the placement of the text annotations (e.g., inside
+  the bar, above the bar)?
+
+  9. Is there a specific title you would like for the chart?
+
+  10. Are there any specific labels or units you would like to be used on the x-axis
+  and y-axis?'
+answers: '<start of user emulated response>
+
+  1. I do not have specific color preferences for the bars.
+
+  2. Yes, the bars for endangered species should be red.
+
+  3. I prefer a vertical bar chart layout.
+
+  4. I am not sure.
+
+  5. Yes, please include grid lines.
+
+  6. I have no specific preference for the bar thickness.
+
+  7. Yes, the chart should include a legend explaining the color coding and annotations.
+
+  8. Above the bar.
+
+  9. I do not have a specific title in mind.
+
+  10. Average Lifespan (years) for one axis and Top Speed (km/h) for the other axis.
+
+  <end of user emulated response>'
+data_attributes:
+- Animal
+- Lifespan (years)
+- Top Speed (km/h)
+- Conservation Status

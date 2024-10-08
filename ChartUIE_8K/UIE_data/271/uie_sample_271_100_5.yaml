@@ -1,0 +1,58 @@
+initial_prompt: I'd like to generate a geographic heatmap based on the travel data
+  in the CSV file. The heatmap should display flight routes starting from 'start_lat'
+  and 'start_lon' to 'end_lat' and 'end_lon', with intensity or thickness of lines
+  indicating 'cnt' values (number of flights). Each route should be color-coded by
+  the 'airline'. The starting and ending points, represented by 'airport1' and 'airport2',
+  should be marked as well. This visualization will help to identify the most frequent
+  routes and the dominance of specific airlines. Please ensure the map is interactive
+  for better user experience.
+questions: '1. Do you have a preferred color palette for the airline routes?
+
+  2. How would you like the starting and ending points (airports) to be marked on
+  the map (e.g. circles, icons)?
+
+  3. Would you like to display labels for the airports on the map?
+
+  4. What type of base map do you prefer for the geographic heatmap (e.g. street map,
+  satellite imagery, terrain)?
+
+  5. Is there a specific geographic area you would like the map to focus on initially?
+
+  6. Do you want to include a legend explaining the color-coding of the airlines and
+  the line thickness for flight counts?
+
+  7. Should the intensity or thickness of the lines representing the number of flights
+  have a specific scale or range?
+
+  8. Are there any additional annotations or details you would like to include on
+  the map?
+
+  9. Do you have a preference for the size or resolution of the visual elements (e.g.
+  line thickness, marker size)?'
+answers: '1. I am not sure.
+
+  2. Circles would be good for marking starting and ending points.
+
+  3. Yes, I would like to display labels for the airports.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend explaining the color-coding of the airlines and
+  the line thickness for flight counts.
+
+  7. I do not have a specific scale or range in mind.
+
+  8. I do not know.
+
+  9. I have no specific preference.'
+data_attributes:
+- start_lat
+- start_lon
+- end_lat
+- end_lon
+- airline
+- airport1
+- airport2
+- cnt

@@ -1,0 +1,50 @@
+initial_prompt: Please create a dot plot visualizing Covid-19 data worldwide using
+  the provided dataset. On the X-axis, label it with country names. On the Y-axis,
+  plot the values for Total Cases and Total Deaths. Use different colors to distinguish
+  between Total Cases and Total Deaths. Ensure to indicate any missing values and
+  use appropriate scaling for readability. The goal is to have a clear visual comparison
+  of the Covid-19 impact in various countries. This plot will help in understanding
+  which countries were most affected based on the number of cases and deaths reported.
+questions: '1. Do you have a preferred color scheme for distinguishing between Total
+  Cases and Total Deaths?
+
+  2. Should we use a specific symbol or shape for the dots representing Total Cases
+  and Total Deaths?
+
+  3. How would you like missing values to be indicated on the chart?
+
+  4. Do you have a preference for the scale type on the Y-axis (e.g., linear, logarithmic)?
+
+  5. Would you like any labels or annotations on specific data points or countries?
+
+  6. Do you prefer the countries on the X-axis to be sorted in a particular order
+  (e.g., alphabetically, by Total Cases, by Total Deaths)?
+
+  7. Is there a specific font style or size you prefer for the axis labels and legend?
+
+  8. Would you like to include grid lines for improved readability?
+
+  9. Are there any additional data filters or criteria you would like to apply to
+  the dataset before visualization?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Indicate missing values with a specific symbol, maybe a cross or a different
+  color.
+
+  4. Linear scale on the Y-axis would be preferable.
+
+  5. I am not sure.
+
+  6. Sort the countries by Total Cases.
+
+  7. I do not have a specific preference.
+
+  8. Yes, include grid lines for improved readability.
+
+  9. No, no additional filters or criteria needed.'
+data_attributes:
+- Country
+- Total Cases
+- Total Deaths

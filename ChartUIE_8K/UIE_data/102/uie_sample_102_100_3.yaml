@@ -1,0 +1,41 @@
+initial_prompt: I need a heatmap to visualize the relationships and intensity between
+  different scents and base notes of perfumes. Specifically, I want to see how frequently
+  each scent pairs with specific base notes. Include different concentrations (EDT,
+  EDP) as an extra layer of information through color gradients. Moreover, ensure
+  data points such as item rating and new price are visualized through size or density
+  differences within the same heatmap. Keep it focused on the 'noon perfume' dataset
+  under 'fashion-and-beauty' category. Aesthetic appeal and clarity are key; it should
+  be easy to interpret at a glance. Thanks!
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. How would you like the concentrations (EDT, EDP) represented within the color
+  gradients? Any specific tonal range?
+
+  3. Do you have a preferred method for displaying item rating and new price—through
+  size variations or density differences?
+
+  4. Are there any particular labels or legends that you want to highlight for better
+  clarity?
+
+  5. Do you prefer a particular layout or orientation for the heatmap (e.g., horizontal
+  vs. vertical alignment of scents and base notes)?
+
+  6. Is there any specific font style or size you prefer for the text on the heatmap
+  to ensure readability?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I am not sure about the specific tonal range for concentrations (EDT, EDP).
+
+  3. I prefer size variations for displaying item rating and new price.
+
+  4. I do not know; highlight any key labels or legends that will improve clarity.
+
+  5. I do not have a preference for layout or orientation.
+
+  6. I have no specific preference for font style or size.'
+data_attributes:
+- scents
+- base_note
+- concentration
+- item_rating
+- new_price

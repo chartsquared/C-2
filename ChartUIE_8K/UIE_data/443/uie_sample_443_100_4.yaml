@@ -1,0 +1,49 @@
+initial_prompt: Create a column chart to visualize the distribution of obstacle types
+  by order in each round stage for different locations and seasons in the Ninja Warrior
+  games. Each bar should represent a unique obstacle, grouped by the stages in the
+  competition and color-coded by location. Include legends for season, location, and
+  round stage. Ensure the x-axis shows obstacle names and the y-axis displays the
+  obstacle order. This visualization aims to highlight obstacle frequency and order
+  variations across different rounds, thereby providing actionable insights for game
+  planners on course design and difficulty progression.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. Should the bars be displayed in a specific order, such as ascending or descending
+  based on obstacle order?
+
+  3. Do you want any specific font or font size for the axis labels and legends?
+
+  4. Do you prefer to display data labels on the bars for better clarity?
+
+  5. Is there any specific way you would like the legend to be positioned (e.g., top,
+  bottom, left, right)?
+
+  6. How detailed should the gridlines be on the chart (e.g., light, moderate, or
+  heavy)?
+
+  7. Would you like to include any additional annotations or notes on the chart for
+  clarity?
+
+  8. Are there any specific guidelines or standards you prefer to follow for color-blind
+  accessibility?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like data labels on the bars for better clarity.
+
+  5. I have no specific preference.
+
+  6. Moderate gridlines would be good.
+
+  7. No, I do not need additional annotations or notes.
+
+  8. I am not sure.'
+data_attributes:
+- season
+- location
+- round_stage
+- obstacle_name
+- obstacle_order

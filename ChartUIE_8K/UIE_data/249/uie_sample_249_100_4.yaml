@@ -1,0 +1,58 @@
+initial_prompt: I need a step line chart that visualizes the pricing changes of High-Tech
+  companies on NASDAQ. The chart should include symbols and names like Apple, Microsoft,
+  and Alphabet. Track the price, pricing changes, and pricing percentage changes over
+  time. The x-axis should represent a timeline, while the y-axis shows the pricing
+  data. Include a legend for each company. It should highlight market movements visually
+  for better trend analysis. I also want to see the market cap and share volume alongside
+  the pricing data. Please ensure it's clear and concise for business analysis purposes.
+questions: '1. What is the desired time interval for the x-axis (daily, weekly, monthly,
+  etc.)?
+
+  2. How would you like the y-axis to be scaled (linear, logarithmic)?
+
+  3. Do you have a preference for specific colors to represent each company in the
+  legend?
+
+  4. Should the market cap and share volume be displayed in separate panels or overlaid
+  on the same chart?
+
+  5. For pricing data, should we use closing prices, average prices, or another metric?
+
+  6. Would you like to include any annotations or markers for significant events affecting
+  the companies?
+
+  7. Do you prefer a particular style for the step line (e.g., step-before, step-after)?
+
+  8. Should the chart include gridlines, and if so, how dense should they be?
+
+  9. Are there specific date ranges or periods you want to highlight on the chart?
+
+  10. Would you like to include a moving average or any other trend indicators for
+  the pricing data?'
+answers: '1. I am not sure.
+
+  2. Linear scaling.
+
+  3. I do not have a specific preference.
+
+  4. Separate panels would be better.
+
+  5. Use closing prices.
+
+  6. Yes, including annotations for significant events would be helpful.
+
+  7. I am not sure.
+
+  8. Yes, include gridlines, but I have no preference for density.
+
+  9. I do not know.
+
+  10. Yes, include a moving average.'
+data_attributes:
+- symbol
+- name
+- price
+- pricing_changes
+- pricing_percentage_changes
+- market_cap
+- share_volume

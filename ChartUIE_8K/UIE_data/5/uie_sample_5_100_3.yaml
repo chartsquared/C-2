@@ -1,0 +1,71 @@
+initial_prompt: I want to visualize the statewise professional profile of suicide
+  victims using a grouped column chart. Specifically, I want to compare the total
+  number of male and female victims across different age groups for various causes
+  of suicide in the year 2001. Each group should represent a different cause (such
+  as House Wife, Service (Government), Service (Private)), and within each group,
+  there should be columns representing the different age categories (Male upto 14
+  years, Male 15-29 years, etc.) for both males and females. This will help me understand
+  the distribution of suicide victims by profession and age.
+questions: '1. Do you have a preferred color scheme for the chart?
+
+  2. How would you like the age groups to be labeled on the x-axis?
+
+  3. Do you want to include a legend to distinguish between male and female victims?
+  If so, where should it be positioned?
+
+  4. Should the y-axis show absolute numbers or percentages?
+
+  5. Do you want to display data labels on the columns to show the exact numbers?
+
+  6. Would you like grid lines on the chart for easier interpretation?
+
+  7. Is there a specific order you would like the causes of suicide to be grouped
+  in?
+
+  8. Do you want to highlight any specific data points or trends within the chart?
+
+  9. Should there be any annotation or reference lines to indicate significant thresholds
+  or milestones?
+
+  10. How would you prefer to handle missing or zero values in the chart?
+
+  11. Do you want to include a title and subtitle for the chart? If so, please provide
+  the preferred text.'
+answers: '1. I have no specific preference.
+
+  2. I have no specific preference.
+
+  3. Yes, I would like to include a legend to distinguish between male and female
+  victims. I am not sure where it should be positioned.
+
+  4. The y-axis should show absolute numbers.
+
+  5. I am not sure.
+
+  6. Yes, I would like grid lines on the chart for easier interpretation.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. I do not know.
+
+  10. I am not sure.
+
+  11. Yes, please include a title and subtitle. The title should be "Statewise Professional
+  Profile of Suicide Victims in 2001" and the subtitle should be "Distribution by
+  Profession, Age, and Gender".'
+data_attributes:
+- STATE/UT
+- Year
+- CAUSE
+- Male upto 14 years
+- Male 15-29 years
+- Male 30-44 years
+- Male 45-59 years
+- Male 60 years and above
+- Female upto 14 years
+- Female 15-29 years
+- Female 30-44 years
+- Female 45-59 years
+- Female 60 years and above

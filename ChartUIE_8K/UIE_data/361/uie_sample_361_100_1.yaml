@@ -1,0 +1,48 @@
+initial_prompt: Create a scatter plot using the Cardiovascular_Disease_Dataset displaying
+  the relationship between age (x-axis) and maxheartrate (y-axis). Use text annotations
+  to highlight specific patients, specifically those with restingBP above 140 or serumcholestrol
+  above 200. Highlight these datapoints by changing their color. The purpose of this
+  visualization is to identify and focus on patients who may be at higher cardiovascular
+  risk, aiding in health assessments. Also, include the target variable to differentiate
+  between patients with and without cardiovascular disease using different shapes
+  for each group.
+questions: '1. Do you have any specific preferences for the color scheme to highlight
+  patients with high restingBP or serumcholestrol levels?
+
+  2. Would you like to use specific shapes to represent patients with and without
+  cardiovascular disease?
+
+  3. Are there any specific annotations or labels you would like to include for highlighting
+  important data points?
+
+  4. Would you prefer a specific range or scale for the x-axis (age) and y-axis (maxheartrate)?
+
+  5. Do you have a preference for the size of the markers for each datapoint?
+
+  6. Is there a specific title you would like for the scatter plot?
+
+  7. Do you need a legend to differentiate the shapes and colors used in the plot?
+
+  8. Would you prefer gridlines in the background of the scatter plot for better readability?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. Yes, a legend would be helpful.
+
+  8. I am not sure.'
+data_attributes:
+- age
+- maxheartrate
+- restingBP
+- serumcholestrol
+- target
+- patientid

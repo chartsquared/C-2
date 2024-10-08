@@ -1,0 +1,46 @@
+initial_prompt: I need a stacked column chart to visualize book data from Goodreads.
+  Specifically, I want to see the distribution of average ratings across different
+  authors. The chart should have authors on the x-axis and their books' average ratings
+  on the y-axis. Use different colors for each rating category to highlight differences.
+  Include annotations to emphasize authors with the highest and lowest average ratings.
+  The visualization should help in quickly identifying which authors have the most
+  consistently high-rated books. This will be used for a study in arts and entertainment.
+questions: '1. Do you have a specific color palette preference for the rating categories?
+
+  2. What categories or ranges should be used for the average ratings?
+
+  3. How would you like the authors to be sorted on the x-axis (e.g., alphabetically,
+  by average rating, etc.)?
+
+  4. Do you have a preference for the annotation style for highlighting authors with
+  the highest and lowest average ratings?
+
+  5. Are there any specific font styles or sizes you prefer for the labels and annotations?
+
+  6. Do you want to include a legend for the rating categories, and if so, where should
+  it be positioned?
+
+  7. Should the chart include a title and/or subtitle, and if so, what should they
+  be?
+
+  8. Is there any additional text or notes you would like to include on the chart?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I am not sure.
+
+  3. By average rating.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please include a legend. I am not sure where it should be positioned.
+
+  7. Yes, include a title and subtitle. Title: "Distribution of Average Ratings Across
+  Authors from Goodreads", Subtitle: "Highlighting Authors with the Most Consistently
+  High-Rated Books".
+
+  8. No additional text or notes are needed.'
+data_attributes:
+- authors
+- average_rating

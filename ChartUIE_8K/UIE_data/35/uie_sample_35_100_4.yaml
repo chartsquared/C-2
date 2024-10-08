@@ -1,0 +1,53 @@
+initial_prompt: I want a line chart that visualizes the trend of the Total_Trans_Amt
+  over time (Months_on_book) for customers categorized by Income_Category. Additionally,
+  include different lines to show the variation by Gender to see if there's any noticeable
+  difference in transaction amounts between males and females over the same period.
+  This will help in analyzing customer behavior across different income brackets and
+  genders over their relationship duration with the bank.
+questions: '1. Do you have a preferred color scheme for different Income_Category
+  lines?
+
+  2. Should different Genders be represented by different line styles or colors?
+
+  3. Do you want data points to be marked on the lines, or just the lines themselves?
+
+  4. Would you prefer a specific type of line smoothing (e.g., straight lines, spline)?
+
+  5. Should the x-axis (Months_on_book) be uniformly scaled, or would you like any
+  specific intervals?
+
+  6. Do you need any specific labels or annotations on the chart to highlight key
+  points?
+
+  7. Are there any specific ranges or limits you want set for the y-axis (Total_Trans_Amt)?
+
+  8. Would you like a legend to be displayed, and if so, do you have a preference
+  for its location on the chart?
+
+  9. Do you have a preference for the background style (e.g., gridlines, backgrounds)?
+
+  10. Should any data labels or values be displayed directly on the chart lines?'
+answers: '1. I do not have a specific preference.
+
+  2. Different colors, but I''m not sure.
+
+  3. I am not sure.
+
+  4. I prefer straight lines.
+
+  5. Uniformly scaled, but I do not know about specific intervals.
+
+  6. I do not know.
+
+  7. No specific ranges or limits.
+
+  8. Yes, a legend should be displayed. I do not have a preference for its location.
+
+  9. Gridlines would be nice, but I am not sure about the background style.
+
+  10. I do not know.'
+data_attributes:
+- Total_Trans_Amt
+- Months_on_book
+- Income_Category
+- Gender

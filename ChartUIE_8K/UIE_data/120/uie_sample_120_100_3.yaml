@@ -1,0 +1,45 @@
+initial_prompt: Please create a stacked column chart showing the total sales for each
+  city with different sub-categories stacked within each city. Use the data provided
+  in the Supermart Grocery Sales - Retail Analytics Dataset. The x-axis should represent
+  the cities, and the y-axis should represent total sales. Each stacked color should
+  denote a different sub-category to help visualize the sales contributions of each
+  sub-category within every city. This will help us analyze the sales distribution
+  across various cities and sub-categories within the retail grocery business.
+questions: '1. Do you have any specific color preferences for the different sub-categories?
+
+  2. Should the cities on the x-axis be sorted in any particular order (e.g., alphabetically,
+  by total sales)?
+
+  3. Do you want to include data labels on the bars to show the exact sales figures?
+
+  4. Do you have a preference for the width of the columns in the chart?
+
+  5. Would you like a legend to be included, and if so, where should it be positioned?
+
+  6. Is there a particular font style or size that you want to be used for labels
+  and titles?
+
+  7. Do you want to add a title to the chart, and if yes, what should it be?
+
+  8. Should the y-axis have a specific range, or should it auto-adjust based on the
+  data?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like to include data labels on the bars to show the exact sales
+  figures.
+
+  4. I do not know.
+
+  5. Yes, I would like a legend to be included. It can be positioned at the bottom.
+
+  6. I do not have a specific preference for the font style or size.
+
+  7. Yes, please add a title: "Total Sales Distribution Across Cities and Sub-Categories".
+
+  8. The y-axis should auto-adjust based on the data.'
+data_attributes:
+- City
+- Sales
+- Sub Category

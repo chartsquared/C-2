@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap using the World Happiness Report 2023 data. Emphasize
+  the 'Ladder score' across different countries. Use annotations to highlight top
+  scoring countries like Finland, Denmark, and Iceland. The heatmap should visualize
+  how 'Logged GDP per capita', 'Social support', and 'Healthy life expectancy' contribute
+  to these scores, with specific annotations on key influencers (e.g., GDP, social
+  support). This visualization should assist in understanding the psychological factors
+  contributing to perceived happiness globally. Highlight outliers and patterns, making
+  it clear which factors are most impactful on overall happiness.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. How detailed should the annotations be for top-scoring countries?
+
+  3. Should the heatmap include a legend explaining the color scale?
+
+  4. Do you prefer the country names to be displayed on the x-axis or y-axis?
+
+  5. Would you like to include a title and subtitles for the heatmap?
+
+  6. Should the annotations for key influencers (e.g., GDP, social support) be located
+  inside or outside the heatmap cells?
+
+  7. How would you like outliers to be highlighted (e.g., different colors, symbols)?
+
+  8. Do you have specific font preferences or sizes for the labels and annotations?'
+answers: '1. I am not sure.
+
+  2. Detailed enough to highlight why they are top-scoring.
+
+  3. Yes.
+
+  4. I do not know.
+
+  5. Yes.
+
+  6. Inside the heatmap cells.
+
+  7. Different colors.
+
+  8. I do not know.'
+data_attributes:
+- Country name
+- Ladder score
+- Logged GDP per capita
+- Social support
+- Healthy life expectancy
+- 'Explained by: Log GDP per capita'
+- 'Explained by: Social support'
+- 'Explained by: Healthy life expectancy'

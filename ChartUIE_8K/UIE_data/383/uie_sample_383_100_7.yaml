@@ -1,0 +1,65 @@
+initial_prompt: Create a lollipop chart that visualizes how people evaluate service
+  in a business context. Use the columns representing different qualitative likelihoods
+  (like "Highly Likely," "Probable," etc.) as the x-axis. For each likelihood column,
+  plot the unique values on the y-axis with the corresponding data points marked by
+  circles at the top of each line. Ensure all values (float64 and int64) from the
+  sample data are accurately represented. This should help to compare different levels
+  of service evaluation visually.
+questions: '1. Do you have any preference for the color scheme of the chart?
+
+  2. Would you like to include grid lines for better readability?
+
+  3. Do you have a specific preference for the size or thickness of the lollipop stems
+  and circles?
+
+  4. Do you want the x-axis labels to be rotated for better visibility?
+
+  5. Is there any preferred order for the x-axis categories?
+
+  6. Would you like to add data labels to the circles on the chart?
+
+  7. Do you want to include a legend to explain the different data attributes?
+
+  8. Are there any specific fonts or font sizes you prefer for the axis labels and
+  titles?
+
+  9. Do you want to highlight any particular categories or data points?
+
+  10. Would you like to include any annotations or notes on the chart for clarification?'
+answers: '1. I do not know.
+
+  2. Yes, I would like to include grid lines for better readability.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, please add data labels to the circles on the chart.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. No, there is no need to highlight any particular categories or data points.
+
+  10. I have no specific preference.'
+data_attributes:
+- Almost Certainly
+- Highly Likely
+- Very Good Chance
+- Probable
+- Likely
+- Probably
+- We Believe
+- Better Than Even
+- About Even
+- We Doubt
+- Improbable
+- Unlikely
+- Probably Not
+- Little Chance
+- Almost No Chance
+- Highly Unlikely
+- Chances Are Slight

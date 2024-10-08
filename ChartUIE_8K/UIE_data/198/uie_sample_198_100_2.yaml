@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap using the "Emotion Dataset" to visualize the distribution
+  of emotions (fear, anger, etc.) in the given comments. The x-axis should represent
+  unique comments, and the y-axis should represent different emotions. Annotations
+  should highlight key data points, focusing on comments with extreme emotions, and
+  provide context or editorial notes. Use color intensity to show the concentration
+  of each emotion. This visualization will help understand the prevalence of certain
+  emotions in different scenarios, useful for psychological analysis and identifying
+  patterns. Make sure to annotate specific interesting trends or anomalies in the
+  dataset.
+questions: "1. Do you have a preferred color scheme for the heatmap?\n2. How would\
+  \ you like the annotations for key data points to be styled? \n3. Should the heatmap\
+  \ include a legend explaining the color intensity?\n4. Do you prefer the x-axis\
+  \ labels (unique comments) to be angled or rotated for better readability?\n5. Are\
+  \ there specific thresholds or criteria for identifying \"extreme emotions\" that\
+  \ should be highlighted in the annotations?\n6. Do you want grid lines to be visible\
+  \ on the heatmap?\n7. Should the heatmap include tooltips for additional context\
+  \ on hover?\n8. Do you prefer the heatmap to be presented in a specific size or\
+  \ aspect ratio?\n9. Is there a particular font style or size you prefer for the\
+  \ annotations and axis labels?\n10. Should the heatmap be titled or include a subtitle\
+  \ to provide additional context? If so, what should it be?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I would like the annotations for key data points to be highlighted with bold
+  text and a slightly different color.
+
+  3. Yes, the heatmap should include a legend explaining the color intensity.
+
+  4. I do not have a specific preference.
+
+  5. Comments with extreme emotions could be those with the highest and lowest values,
+  but I am not sure about a specific threshold.
+
+  6. I do not know.
+
+  7. I do not have a specific preference.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. Yes, the heatmap should be titled "Emotion Distribution in Comments" with a
+  subtitle "Analyzing Emotional Prevalence for Psychological Insights."
+
+  <end of user emulated response>'
+data_attributes:
+- Comment
+- Emotion

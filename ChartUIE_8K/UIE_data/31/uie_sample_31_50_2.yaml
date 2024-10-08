@@ -1,0 +1,46 @@
+initial_prompt: Create a box chart displaying MonthlyCharges for Telco customers,
+  grouped by Churn status. Highlight outliers and annotate minimum, median, and maximum
+  charges for each group. The goal is to understand the distribution and impact on
+  customer churn.
+questions: '1. Do you have a preferred color scheme for the box chart?
+
+  2. Would you like to customize the style of the outliers?
+
+  3. Do you have any specific font preferences for the annotations?
+
+  4. Should the chart include a title and/or subtitle? If so, please specify.
+
+  5. Do you want gridlines on the chart? If yes, should they be major, minor, or both?
+
+  6. Should the axes labels be customized? If yes, please specify the labels.
+
+  7. Would you like to include any additional notes or legends on the chart?
+
+  8. Is there any specific order you would like the categories to be displayed in?
+
+  9. Do you have a preferred orientation for the chart (vertical or horizontal)?
+
+  10. Should the chart include a background color or remain plain?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include a title "Monthly Charges Distribution by Churn Status" and
+  a subtitle "Understanding the impact on customer churn."
+
+  5. Yes, major gridlines only.
+
+  6. Yes, X-axis label: "Churn Status" and Y-axis label: "Monthly Charges ($)".
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Vertical orientation.
+
+  10. Remain plain.'
+data_attributes:
+- MonthlyCharges
+- Churn

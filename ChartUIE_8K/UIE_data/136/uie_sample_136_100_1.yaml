@@ -1,0 +1,43 @@
+initial_prompt: Create a bar chart to visualize the average glucose levels among different
+  age groups for stroke patients. Use highlights to distinguish age groups with higher
+  glucose levels. Add text annotations displaying the average glucose levels on the
+  bars. Highlight insights around glucose levels to focus attention on key health
+  risks. This practical visualization helps in understanding stroke risk factors and
+  is part of a health dataset aimed at stroke prediction. Include context like work
+  type and smoking status in the chart's narrative.
+questions: '1. Do you have any preferred color scheme for highlighting age groups
+  with higher glucose levels?
+
+  2. How would you like the age groups to be categorized (e.g., specific age ranges)?
+
+  3. Are there specific colors you want for text annotations on the bars?
+
+  4. Would you like the chart to include a legend to explain color highlights and
+  annotations?
+
+  5. Do you have a preference for the placement of text annotations (e.g., inside
+  or above the bars)?
+
+  6. Is there any specific context or narrative text you would like to include about
+  work type and smoking status?
+
+  7. How detailed should the context about work type and smoking status be—just general
+  trends or specific statistics?'
+answers: '1. I am not sure.
+
+  2. I do not know, maybe common five or ten-year ranges?
+
+  3. I have no specific preference.
+
+  4. Yes, I would like the chart to include a legend.
+
+  5. Inside the bars would be nice, but I''m not sure.
+
+  6. General trends about work type and smoking status would be good.
+
+  7. Just general trends are fine.'
+data_attributes:
+- age
+- avg_glucose_level
+- work_type
+- smoking_status

@@ -1,0 +1,69 @@
+initial_prompt: '
+
+  Please create a grouped column chart using the Shark Tank India Companies dataset.
+  The x-axis should represent different brands, and the y-axis should show the investment
+  amount in lakhs INR. Each brand should have columns grouped by the investors (Anupam,
+  Ashneer, Namita, Aman, Peyush, Vineeta, Ghazal) who invested in them, highlighting
+  how much each investor contributed to the respective brands. This will help visualize
+  which brands received investments from which investors and the amount they invested.
+  Use contrasting colors for each investor to make the chart clear and easy to read.'
+questions: '1. Do you have a preferred size or aspect ratio for the chart?
+
+  2. Would you like to include axis titles and chart titles? If so, do you have specific
+  text in mind for them?
+
+  3. Do you prefer any specific font style or size for the chart labels and titles?
+
+  4. Should gridlines be displayed on the chart, and if so, for both axes or just
+  one?
+
+  5. Would you like the chart to include a legend for the investors? If yes, any specific
+  placement or format preference for the legend?
+
+  6. Do you have any preference for the order in which the investors are listed or
+  displayed in the grouped columns?
+
+  7. Should the y-axis scale be adjusted to fit a specific range or use a default
+  auto-scaling?
+
+  8. Do you have a preferred color palette or specific colors for each investor’s
+  columns?
+
+  9. Would you like to include data labels showing the investment amounts directly
+  on the columns?
+
+  10. Should the chart include any form of annotation or highlights for specific brands
+  or investment values?'
+answers: '1. I am not sure.
+
+  2. Yes, please include axis titles and a chart title. For the chart title, use "Investments
+  by Shark Tank India Investors". For the x-axis, use "Brands", and for the y-axis,
+  use "Investment Amount in Lakhs INR".
+
+  3. I do not know.
+
+  4. Yes, please display gridlines on both axes.
+
+  5. Yes, include a legend for the investors. I have no specific preference for the
+  placement or format.
+
+  6. I do not know.
+
+  7. Use a default auto-scaling for the y-axis.
+
+  8. I am not sure, just use contrasting colors for each investor.
+
+  9. Yes, please include data labels showing the investment amounts directly on the
+  columns.
+
+  10. I do not know.'
+data_attributes:
+- Brand
+- Investment Amount (In Lakhs INR)
+- Anupam
+- Ashneer
+- Namita
+- Aman
+- Peyush
+- Vineeta
+- Ghazal

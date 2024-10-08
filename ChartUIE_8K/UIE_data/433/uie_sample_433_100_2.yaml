@@ -1,0 +1,51 @@
+initial_prompt: Create a histogram displaying the distribution of 'total_barrels'
+  from 2009 to 2019, categorized by 'brewer_size'. Highlight the '6,000,001 Barrels
+  and Over' and '1,000,001 to 6,000,000 Barrels' categories to emphasize the larger
+  production scales. Add text annotations indicating key data points for 'total_barrels'
+  and 'taxable_removals'. This visualization will help to understand the production
+  scale and tax contributions of different brewer sizes in the craft beer industry.
+  Ensure the chart is clear and focuses on the significant differences in production
+  volumes among various brewer sizes.
+questions: '1. Do you have a preferred color scheme for the histogram categories,
+  especially for the highlighted brewer sizes?
+
+  2. Would you like the histogram to display counts or percentages?
+
+  3. Where would you prefer the text annotations to be placed on the chart?
+
+  4. Should the chart include a legend or any explanatory text to make the categories
+  clear?
+
+  5. Do you have a preference for the font style and size for the text annotations
+  and labels?
+
+  6. How would you like the x-axis and y-axis to be labeled?
+
+  7. Is there any specific title you want to give to the chart?
+
+  8. Do you have any preference for the bin width or the number of bins in the histogram?
+
+  9. Would you like gridlines to be shown on the chart? If so, in which orientation
+  (e.g., both horizontal and vertical, just horizontal)?'
+answers: '1. I am not sure.
+
+  2. Percentages.
+
+  3. I am not sure.
+
+  4. Yes, include a legend.
+
+  5. I have no specific preference.
+
+  6. X-axis: ''Brewer Size'', Y-axis: ''Total Barrels''.
+
+  7. I have no specific preference.
+
+  8. I do not know.
+
+  9. Yes, both horizontal and vertical.'
+data_attributes:
+- year
+- brewer_size
+- total_barrels
+- taxable_removals

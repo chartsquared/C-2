@@ -1,0 +1,52 @@
+initial_prompt: I want a heatmap showing the correlation between different Pokémon
+  stats. The data includes columns like hp, attack, defense, sp_attack, sp_defense,
+  and speed. Highlight key areas with strong positive or negative correlations, with
+  clear text annotations for values above 0.7 or below -0.7. The purpose is to visualize
+  how different stats are related to each other, which would be useful for understanding
+  Pokémon strengths and weaknesses. Make sure to highlight any significant findings
+  so they're easily noticeable in the heatmap. This is for a Pokémon game analysis.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Do you want the heatmap to include a color legend to indicate the strength of
+  the correlations?
+
+  3. Should the heatmap display grid lines for better readability?
+
+  4. Do you have a specific preference for the font style or size for the text annotations
+  in the heatmap?
+
+  5. Would you like to include axis labels and titles for the heatmap?
+
+  6. Should the heatmap be oriented in a specific way (e.g., horizontal or vertical)?
+
+  7. Do you have a preferred layout for highlighting the significant findings?
+
+  8. Do you want to include any additional information or context (e.g., Pokémon types)
+  in the visualization?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. Yes, I would like the heatmap to include a color legend to indicate the strength
+  of the correlations.
+
+  3. Yes, the heatmap should display grid lines for better readability.
+
+  4. I am not sure.
+
+  5. Yes, please include axis labels and titles for the heatmap.
+
+  6. I do not have a specific preference.
+
+  7. I am not sure.
+
+  8. No, I do not want to include any additional information or context in the visualization.
+
+  <end of user emulated response>'
+data_attributes:
+- hp
+- attack
+- defense
+- sp_attack
+- sp_defense
+- speed

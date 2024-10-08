@@ -1,0 +1,32 @@
+initial_prompt: I have data on Spotify song attributes, specifically their characteristics
+  like danceability, energy, and duration. I'd like to create a pie chart that shows
+  the distribution of songs by artist. The chart should break down the percentage
+  of songs each artist contributes to the dataset. This will help me understand which
+  artists have the most songs in the collection. Please use the "artist" column for
+  categorization and ensure that each slice represents an artist's portion of the
+  total songs. This should give a clear visualization of artist representation within
+  the given dataset.
+questions: "1. Do you have any specific color preferences for the pie chart slices?\n\
+  2. Would you like to display the artist names directly on the chart slices or in\
+  \ a legend?\n3. Should the percentages be displayed on the pie chart slices?\n4.\
+  \ Do you have a preferred title for the pie chart?\n5. How many artists would you\
+  \ like to display? Should less frequent artists be grouped into an \"Others\" category?\
+  \ \n6. Do you want to include the exact count of songs per artist along with the\
+  \ percentage?\n7. Is there a specific order you would like the artists to be displayed\
+  \ in, such as by descending order of their song count?"
+answers: '1. I am not sure.
+
+  2. I would like the artist names directly on the chart slices.
+
+  3. Yes, the percentages should be displayed on the pie chart slices.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.'
+data_attributes:
+- artist
+- 'Unnamed: 0'

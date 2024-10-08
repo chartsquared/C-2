@@ -1,0 +1,46 @@
+initial_prompt: Create a heatmap to visualize the correlation between various metrics
+  like Suscribers, Visits, Likes, and Comments for the top 1000 YouTube channels.
+  Use colors to indicate the intensity of the correlation. For instance, strong positive
+  correlations should be in bold colors and weak or negative correlations in lighter
+  shades. Make sure to label the axes clearly with the metrics and include a legend
+  to explain the color coding. Display countries on the y-axis and metrics on the
+  x-axis to explore regional trends. This will help identify patterns and insights
+  in YouTube channel performance.
+questions: "1. Do you have any specific color schemes in mind for indicating the intensity\
+  \ of the correlation? \n2. Do you prefer categorical colors (for distinct regions)\
+  \ or a gradient scale (for correlation strength)?\n3. Are there any specific colors\
+  \ you want to avoid in the heatmap?\n4. How would you like the legend to be formatted\
+  \ (e.g., specific ranges for color intensity)?\n5. Do you have any preference for\
+  \ the order in which countries are displayed on the y-axis (e.g., alphabetical order,\
+  \ based on another metric)?\n6. Are there specific countries or metrics you want\
+  \ to highlight or emphasize in the heatmap?\n7. Do you have a preference for the\
+  \ font size or style for the axis labels and legend to ensure readability?\n8. Are\
+  \ there any additional annotations or overlays you would like to include in the\
+  \ heatmap?\n9. How detailed do you want the tooltip or hover information to be,\
+  \ if applicable?\n10. Would you like grid lines to be present in the heatmap to\
+  \ separate the cells clearly?"
+answers: '1. I am not sure.
+
+  2. Gradient scale for correlation strength.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. Alphabetical order would be fine.
+
+  6. I have no specific preference.
+
+  7. Ensure readability, but I do not know the specifics.
+
+  8. I am not sure.
+
+  9. I do not need tooltips or hover information.
+
+  10. Yes, include grid lines to separate the cells clearly.'
+data_attributes:
+- Suscribers
+- Visits
+- Likes
+- Comments
+- Country

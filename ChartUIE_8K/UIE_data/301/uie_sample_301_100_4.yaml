@@ -1,0 +1,50 @@
+initial_prompt: I have a dataset on atmospheric carbon dioxide levels over several
+  decades. Could you create an area chart using this data? The chart should show the
+  trend of Carbon Dioxide (ppm) over time, with the x-axis representing the 'Year'
+  and the y-axis representing 'Carbon Dioxide (ppm)'. Please ensure missing values
+  are handled appropriately, and use a distinct color for the area to make the trend
+  clear. Adding gridlines and a legend would also be helpful. Thank you!
+questions: '1. Do you have a specific color preference for the area fill?
+
+  2. Which color would you like the gridlines to be?
+
+  3. Would you prefer the legend to be positioned in a specific part of the chart,
+  such as top-right, bottom-left, etc.?
+
+  4. How would you like the missing values to be handled? Should they be interpolated,
+  left as gaps, or handled in another specific way?
+
+  5. Are there any specific annotations or markers you would like to include to highlight
+  key events or periods in the data?
+
+  6. Do you have a preferred style for the x-axis and y-axis labels (font size, color,
+  etc.)?
+
+  7. Would you like to add a title to the chart? If so, what should it be?
+
+  8. Do you want to include axis titles? If yes, any specific wording for the x-axis
+  and y-axis titles?
+
+  9. Are there any specific time periods or data ranges you would like to zoom in
+  on or highlight?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the legend to be positioned at the top-right.
+
+  4. The missing values should be interpolated.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Yes, the title should be "Atmospheric Carbon Dioxide Levels Over Time."
+
+  8. Yes, the x-axis title should be "Year" and the y-axis title should be "Carbon
+  Dioxide (ppm)."
+
+  9. I am not sure.'
+data_attributes:
+- Year
+- Carbon Dioxide (ppm)

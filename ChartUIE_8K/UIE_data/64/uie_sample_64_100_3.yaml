@@ -1,0 +1,45 @@
+initial_prompt: I have a dataset of Apple stock prices with columns like Date, Open,
+  High, Low, Close, Adjusted Close, and Volume. I need a heatmap to visualize this
+  data effectively. The heatmap should highlight correlations between different measures
+  like Open, High, Low, Close, Adj Close, and Volume over time. It should help identify
+  periods with high trading volumes and price changes. Ensure that the heatmap is
+  easy to interpret, with a clear legend and color gradient to show various intensities.
+  This visual representation will help in understanding the stock's performance trends.
+  Thank you!
+questions: '1. Do you have any preference for the color gradient used in the heatmap?
+
+  2. Would you like to include any specific annotations or markers for particular
+  dates or periods in the heatmap?
+
+  3. Do you prefer a specific layout for the legend of the heatmap?
+
+  4. Are there any specific ranges or thresholds you would like highlighted in the
+  heatmap?
+
+  5. Would you like the heatmap to display exact correlation values, or just visually
+  represent the correlations through colors?
+
+  6. Do you have a preferred ordering of the variables (e.g., Open, Close, Volume)
+  on the axes?
+
+  7. Should weekends and non-trading days be excluded from the heatmap?'
+answers: '1. I am not sure about the color gradient.
+
+  2. I do not know if specific annotations are needed.
+
+  3. I have no specific preference for the legend layout.
+
+  4. I am not sure about specific ranges or thresholds.
+
+  5. I prefer the heatmap to visually represent correlations through colors.
+
+  6. I do not have a preferred ordering of the variables.
+
+  7. Yes, exclude weekends and non-trading days.'
+data_attributes:
+- Open
+- High
+- Low
+- Close
+- Adj Close
+- Volume

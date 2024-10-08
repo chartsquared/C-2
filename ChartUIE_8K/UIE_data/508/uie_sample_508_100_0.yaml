@@ -1,0 +1,60 @@
+initial_prompt: I want a bar chart that visualizes the environmental impact of different
+  bread types across countries. Use "Product details" on the x-axis and "GHG Emissions
+  (kg CO2eq, IPCC2013 incl CC feedbacks)" on the y-axis. Highlight the bars for each
+  country with different colors. Annotate bars with values for "Land Use (m2*year)"
+  to show additional environmental impact. The chart should help in understanding
+  how different bread production impacts the environment across various countries.
+questions: '1. Do you have any preferences for the color palette to be used for different
+  countries?
+
+  2. Should the bars have any specific style or pattern to differentiate between bread
+  types besides colors?
+
+  3. Do you want the y-axis to start at zero, or should it be adjusted based on the
+  data range?
+
+  4. Do you have any preference on the font style and size for the annotations and
+  labels?
+
+  5. Would you like gridlines to be shown on the chart to aid in reading values, and
+  if so, should they be major, minor, or both?
+
+  6. Do you prefer any specific positioning or styling for the chart legend?
+
+  7. Should there be any title or subtitle added to the chart? If so, what should
+  it be?
+
+  8. Do you prefer a specific layout or orientation for the x-axis labels to ensure
+  readability (e.g., slanted or horizontal)?
+
+  9. Do you have any preferences for the chart margins or spacing between bars?
+
+  10. Should the chart include any specific footnotes or sources of data?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not know.
+
+  5. Yes, I would like gridlines to be shown. Both major and minor.
+
+  6. I have no specific preference.
+
+  7. Yes, the title should be "Environmental Impact of Bread Production Across Countries".
+  No subtitle needed.
+
+  8. I have no specific preference.
+
+  9. I do not know.
+
+  10. Yes, please include the sources of data at the bottom of the chart.
+
+
+  '
+data_attributes:
+- Product_details
+- Country
+- GHG Emissions (kg CO2eq, IPCC2013 incl CC feedbacks)
+- Land Use (m2*year)

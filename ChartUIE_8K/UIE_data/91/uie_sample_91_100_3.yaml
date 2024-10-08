@@ -1,0 +1,50 @@
+initial_prompt: Create a treemap visualization of the complete Kaggle datasets collection
+  that highlights the number of unique values for each column category. Use the 'title'
+  and 'description' for labeling, and represent each unique value count with hierarchical
+  squares. Each square should display the split of unique counts in columns like 'kernels,'
+  'discussions,' 'views,' and 'downloads.' Group the squares under categories like
+  'views' and 'downloads' to show which ones have the highest variety. Use color codes
+  to differentiate between various metrics such as upvotes and featured status, making
+  prominent ones more visible.
+questions: '1. Do you have a preferred color palette for differentiating between various
+  metrics?
+
+  2. Should the labels for ''title'' and ''description'' be displayed fully or abbreviated?
+
+  3. Do you have a preference for the hierarchical levels or depth in the treemap?
+
+  4. Would you like any specific categories (such as ''views'' and ''downloads'')
+  to be emphasized more prominently?
+
+  5. Should the size of the squares represent any additional metric besides unique
+  value count?
+
+  6. Do you have a preference for the font style or size of the labels?
+
+  7. How would you like negative or zero values to be handled in the visualization?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. I am not sure, but maybe abbreviated if space is an issue.
+
+  3. I have no specific preference.
+
+  4. Yes, can you please emphasize ''views'' and ''downloads'' more prominently?
+
+  5. No, just the unique value count.
+
+  6. I am not sure, no specific preference.
+
+  7. I do not know. Maybe you could provide a suggestion?
+
+  <end of user emulated response>'
+data_attributes:
+- title
+- description
+- kernels
+- discussions
+- views
+- downloads
+- upvotes
+- featured

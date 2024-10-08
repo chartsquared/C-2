@@ -1,0 +1,54 @@
+initial_prompt: Create a heatmap showing the relationship between city and highway
+  fuel economy (city08, highway08) and the fuel costs (fuelCost08) for different car
+  makes and models. Highlight areas that can help identify the most economical options.
+questions: '1. What specific color scheme would you prefer for the heatmap (e.g.,
+  cool tones, warm tones, or a specific palette)?
+
+  2. Do you prefer the axes to be labeled in a particular way?
+
+  3. Would you like to include a legend that explains the color intensity or gradient?
+  If yes, where should it be positioned?
+
+  4. Should the data points be displayed with value annotations for each cell in the
+  heatmap?
+
+  5. Do you have any preferences for the gridline style (e.g., solid, dashed, or no
+  gridlines)?
+
+  6. Would you like to highlight the most economical car models with a specific color
+  or marker?
+
+  7. Should the heatmap have any specific title or subtitle?
+
+  8. Do you want to add any specific notes or footnotes on the heatmap?
+
+  9. Would you prefer specific font styles or sizes for labels and title texts?
+
+  10. Is there a particular way you would like the data to be ordered on the axes
+  (e.g., alphabetically by make/model, by fuel efficiency, or by fuel cost)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, a legend would be helpful. I am not sure where it should be positioned.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, I would like to highlight the most economical car models with a specific
+  color.
+
+  7. The title should be "Fuel Economy vs. Fuel Cost for Car Makes and Models."
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. The data should be ordered by fuel efficiency.'
+data_attributes:
+- make
+- model
+- city08
+- highway08
+- fuelCost08

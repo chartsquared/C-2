@@ -1,0 +1,53 @@
+initial_prompt: Please create an area chart using the Walmart sales data to visualize
+  Weekly_Sales over time (Date). Highlight the periods with Holiday_Flag set to 1
+  in a different color to emphasize their impact on sales. Annotate the data points
+  with the highest and lowest sales values to draw attention to these outliers. Ensure
+  the labels for axes, including Temperature, Fuel_Price, CPI, and Unemployment, are
+  clear to provide context. This visualization will help in understanding the trends
+  and key factors affecting sales performance, aiding business decision-making.
+questions: '1. Do you have a preferred color scheme for the area chart, particularly
+  for differentiating the holiday periods?
+
+  2. Would you like the highest and lowest sales values annotated with specific text
+  or just symbol markers?
+
+  3. Is there a specific style you prefer for the axis labels (font size, font type,
+  etc.)?
+
+  4. How detailed would you like the contextual information (Temperature, Fuel_Price,
+  CPI, Unemployment) to be in the axis labels?
+
+  5. Would you prefer gridlines in the chart for better readability? If so, should
+  they apply to both axes or just one?
+
+  6. Do you have a preference for the positioning of the legend on the chart (top,
+  bottom, left, right)?
+
+  7. Should the chart include a title? If so, any specific wording for it?
+
+  8. Would you prefer the annotations for outliers to be placed directly on the chart
+  or in a separate section below/above the chart?'
+answers: '1. I am not sure.
+
+  2. Annotate with specific text.
+
+  3. I do not know.
+
+  4. Detailed enough to provide clear context for trends.
+
+  5. Yes, apply to both axes.
+
+  6. No specific preference.
+
+  7. Yes, the title should be "Walmart Weekly Sales Over Time with Key Influencing
+  Factors."
+
+  8. Directly on the chart.'
+data_attributes:
+- Date
+- Weekly_Sales
+- Holiday_Flag
+- Temperature
+- Fuel_Price
+- CPI
+- Unemployment

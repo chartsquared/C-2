@@ -1,0 +1,44 @@
+initial_prompt: I need a stacked bar chart to visualize the student performance data.
+  The chart should display the scores of students in math, reading, and writing, broken
+  down by their gender. The purpose of this visualization is to analyze the performance
+  differences between male and female students and identify any notable patterns.
+  Additionally, include data-driven annotations on a few data points to highlight
+  exemplary or concerning scores. Finally, use highlights to differentiate between
+  the scores, ensuring the colors represent the subjects clearly. This should help
+  in understanding how gender might influence academic performance in different subjects.
+questions: '1. Do you have any specific color preferences for representing the subjects
+  (math, reading, writing) in the stacked bar chart?
+
+  2. What type of annotations would you like to see on the data points (e.g., numerical
+  values, percentage change, labels)?
+
+  3. How many exemplary or concerning scores would you like to highlight with annotations?
+
+  4. Do you have any preferences for the layout or orientation of the bar chart (horizontal
+  vs. vertical)?
+
+  5. Would you like to include any specific titles or labels for the x-axis and y-axis?
+
+  6. Should the chart include a legend to clearly differentiate between the subjects,
+  and if so, where would you prefer it to be positioned?'
+answers: '<start user emulated response>
+
+  1. I am not sure.
+
+  2. Numerical values would be good.
+
+  3. I would like to highlight around 3-5 exemplary or concerning scores.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. Yes, a legend would be helpful. I am not sure about the position, maybe in a
+  corner?
+
+  <end user emulated response>'
+data_attributes:
+- gender
+- math score
+- reading score
+- writing score

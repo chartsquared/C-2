@@ -1,0 +1,51 @@
+initial_prompt: Create a line chart to visualize the distances between different cities
+  in Russia. Use the "Order" column for the x-axis to represent the start location,
+  and the "Distance" column for the y-axis to show the distances. Color code the lines
+  based on the "Destination" column to distinguish between different routes. This
+  will help analyze the transportation and logistics patterns across these cities.
+  Ensure the chart clearly shows trends and variations in distances to aid in logistical
+  planning. Include legends and labels for clarity.
+questions: '1. Do you have a preferred color palette for the color-coding of different
+  routes?
+
+  2. Would you like the x-axis to be sorted in any particular way (e.g., alphabetically,
+  by distance)?
+
+  3. How would you prefer the lines to be styled (e.g., solid, dashed)?
+
+  4. Are there specific cities or routes you would like to highlight in the chart?
+
+  5. What level of granularity do you want for the labels on the axes (e.g., every
+  city, every nth city)?
+
+  6. Do you have a preference for the positioning of the legend?
+
+  7. Would you like any specific annotations or markers to be included for certain
+  data points?
+
+  8. Are there any specific thresholds or benchmarks you would like indicated in the
+  chart?
+
+  9. Do you require grid lines in the chart, and if so, should they be for both axes
+  or just one?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Solid lines would be fine.
+
+  4. I do not know.
+
+  5. Every city would be good if possible.
+
+  6. I have no specific preference.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. Grid lines for both axes would be helpful.'
+data_attributes:
+- Order
+- Destination
+- Distance

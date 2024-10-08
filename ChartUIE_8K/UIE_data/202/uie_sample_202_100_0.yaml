@@ -1,0 +1,56 @@
+initial_prompt: Please create a histogram to visualize the age distribution from the
+  Facial Emotion Recognition Dataset. Use different colors to represent different
+  countries (RU, etc.) and include data-driven annotations for the age groups with
+  the highest frequency. Ensure that gender (FEMALE) is also highlighted if it impacts
+  the age distribution. This visualization will help us understand the demographics
+  of age and country effectively, aiding in psychological analysis. Annotate the key
+  data points that attract the most attention to facilitate immediate insights into
+  age trends within the dataset.
+questions: '1. Do you have a preferred color palette for representing different countries?
+
+  2. How would you like the impact of gender (FEMALE) to be highlighted in the histogram?
+
+  3. Are there specific age group intervals you prefer for the histogram (e.g., 10-year
+  intervals)?
+
+  4. Would you like to include a legend or any specific labels for the different colors
+  used?
+
+  5. Do you have a preference for the style of annotations for the age groups with
+  the highest frequency (e.g., arrows, text boxes)?
+
+  6. Is there a specific font style or size you prefer for the annotations and labels?
+
+  7. Would you like gridlines to be included in the histogram for easier readability?
+
+  8. Do you have a preference for the overall layout or orientation of the histogram
+  (e.g., horizontal vs vertical bars)?
+
+  9. Are there any specific margins or padding you prefer around the chart?
+
+  10. Would you prefer the key data points to be highlighted in a specific manner
+  (e.g., bold, larger size, different color)?'
+answers: '1. I am not sure.
+
+  2. I would like the impact of gender (FEMALE) to be highlighted using a different
+  pattern or shade within the bars.
+
+  3. Yes, 10-year intervals would be preferred.
+
+  4. Yes, please include a legend with specific labels for the different colors used.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference.
+
+  7. Yes, gridlines would be helpful for readability.
+
+  8. Vertical bars are preferable.
+
+  9. I do not have a specific preference.
+
+  10. Yes, please highlight key data points with bold text and a larger size for clarity.'
+data_attributes:
+- age
+- country
+- gender

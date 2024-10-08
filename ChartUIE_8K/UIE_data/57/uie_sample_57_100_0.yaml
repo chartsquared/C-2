@@ -1,0 +1,55 @@
+initial_prompt: Please create a bar chart to visualize the customer acquisition cost
+  across different channels. The chart should have customer_id on the x-axis, separated
+  by channel categories, and cost on the y-axis. Use text annotations to highlight
+  the highest cost values in each channel category to emphasize them for better clarity.
+  Additionally, use different colors for each channel to make the chart visually distinct.
+  This visualization will help in understanding which channels incur the most cost
+  and offer insights for evaluating the customer lifetime value effectively.
+questions: '1. Do you have a preferred color palette for the different channels?
+
+  2. Would you like the chart to include a title? If so, what should it be?
+
+  3. Would you prefer the text annotations for the highest cost values to be in a
+  specific font or style?
+
+  4. Should the x-axis labels (customer_id) be rotated for better readability, and
+  if so, at what angle?
+
+  5. Is there a preferred order for displaying the channels on the x-axis, or should
+  they be sorted based on the channel list?
+
+  6. Do you want to include grid lines on the chart for better reference, or should
+  they be omitted?
+
+  7. Is there a specific format you would like for the cost values on the y-axis (e.g.,
+  currency symbol, number of decimal places)?
+
+  8. Would you like to include a legend to identify the different colors for each
+  channel?
+
+  9. Should there be any specific margin or padding preferences around the chart to
+  enhance its appearance?'
+answers: '1. I do not have a specific preference for the color palette.
+
+  2. Yes, the chart should include a title. The title should be "Customer Acquisition
+  Cost Across Different Channels".
+
+  3. I am not sure.
+
+  4. Yes, the x-axis labels (customer_id) should be rotated for better readability,
+  maybe at a 45-degree angle.
+
+  5. I do not know.
+
+  6. Yes, include grid lines for better reference.
+
+  7. The cost values on the y-axis should have a currency symbol (e.g., $) and no
+  decimal places.
+
+  8. Yes, include a legend to identify the different colors for each channel.
+
+  9. I have no specific preference.'
+data_attributes:
+- customer_id
+- channel
+- cost

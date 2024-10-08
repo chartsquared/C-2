@@ -1,0 +1,48 @@
+initial_prompt: Create a scatter plot to analyze student success based on their curricular
+  unit performance. Use "Age at enrollment" as the X-axis and "Curricular units 1st
+  sem (grade)" and "Curricular units 2nd sem (grade)" as the Y-axes. Differentiate
+  points by student outcome ("Dropout" or "Graduate") using color coding. This will
+  help visualize any correlation between age and academic performance, and how it
+  impacts student success or dropout rates. Ensure the plot is clear and includes
+  a legend for outcome categories.
+questions: '1. Do you have a preference for the color scheme used to differentiate
+  the "Dropout" and "Graduate" categories?
+
+  2. Would you like to use different marker shapes for "Dropout" and "Graduate" for
+  additional differentiation?
+
+  3. Is there a specific title you would like to use for the scatter plot?
+
+  4. Do you want to label the axes with specific titles or leave them with the data
+  attribute names?
+
+  5. Should the legend be placed in a specific position on the chart (e.g., top-right,
+  bottom-left)?
+
+  6. Do you have any preferences for the range or scaling of the axes?
+
+  7. Would you prefer any grid lines or background styling for better readability
+  of the scatter plot?
+
+  8. Do you want to include any additional information or annotations on the chart,
+  such as average performance lines or trend lines?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Label the axes with specific titles.
+
+  5. I do not know.
+
+  6. I do not have a specific preference.
+
+  7. Yes, include grid lines for better readability.
+
+  8. I am not sure.'
+data_attributes:
+- Age at enrollment
+- Curricular units 1st sem (grade)
+- Curricular units 2nd sem (grade)
+- Output

@@ -1,0 +1,49 @@
+initial_prompt: Create a heatmap to visualize the coffee ratings data. Use columns
+  like total_cup_points, aroma, flavor, aftertaste, acidity, body, balance, and sweetness
+  to show how different coffee attributes score across various samples. Highlight
+  missing values and defects using distinct colors. Ensure the chart showcases correlation
+  patterns among the attributes. This will help identify quality trends and any anomalies
+  in the dataset. Include a clear legend and labels for easy interpretation, and consider
+  different color gradients to represent scoring variations effectively. Make it interactive
+  for better user engagement.
+questions: '1. Do you have any specific color schemes or palettes in mind for the
+  heatmap?
+
+  2. How would you prefer the missing values and defects to be highlighted, in terms
+  of color or pattern?
+
+  3. Do you have a preferred layout for the legend and labels on the chart?
+
+  4. Are there specific scoring variations that you want particular attention drawn
+  to through color gradients?
+
+  5. Is there a specific range or scaling you''d prefer for the heatmap values?
+
+  6. Are there any specific fonts or font sizes you prefer for the labels and legend?
+
+  7. Would you like the axes to be labeled in a specific way or order?'
+answers: '1. I do not know.
+
+  2. I am not sure, but maybe a distinct color like red for defects and a pattern
+  for missing values.
+
+  3. I have no specific preference.
+
+  4. I do not know.
+
+  5. I have no specific range or scaling in mind.
+
+  6. I do not have any specific preferences for fonts or font sizes.
+
+  7. I am not sure about the axes labeling.'
+data_attributes:
+- total_cup_points
+- aroma
+- flavor
+- aftertaste
+- acidity
+- body
+- balance
+- sweetness
+- category_one_defects
+- category_two_defects

@@ -1,0 +1,52 @@
+initial_prompt: Create a violin plot highlighting the distribution of 'radius_mean'
+  and 'area_mean' for different 'diagnosis' types. Add text annotations for outliers.
+  Highlight significant differences. This helps in visualizing variations in breast
+  cancer measurements, aiding diagnosis.
+questions: '1. Do you have any specific color preferences for different ''diagnosis''
+  types?
+
+  2. How would you like the significant differences to be highlighted (e.g., color,
+  bold outlines)?
+
+  3. Do you prefer a specific style for the text annotations of outliers?
+
+  4. Should the text annotations include specific details like values, identifiers,
+  or both?
+
+  5. Do you have any preferences for the axis labels and titles?
+
+  6. Would you like grid lines to be displayed on the chart? If yes, do you prefer
+  a specific style or color for them?
+
+  7. Is there a particular size or aspect ratio you would like for the chart?
+
+  8. Do you want to include a legend for different ''diagnosis'' types and other annotations?
+  If so, where should it be positioned?
+
+  9. Do you have any preferences for the font style and size used in the chart?
+
+  10. Are there any other specific details or customizations you would like to include
+  in the violin plot?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Values and identifiers.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, include a legend. I am not sure where.
+
+  9. I do not know.
+
+  10. I am not sure.'
+data_attributes:
+- radius_mean
+- area_mean
+- diagnosis

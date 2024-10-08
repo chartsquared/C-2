@@ -1,0 +1,57 @@
+initial_prompt: Create a box chart to visualize the distribution of values within
+  each attribute (PWR, SPD, RNG, PER, PRC, DEV) for the stands listed in Jojo's Bizarre
+  Adventure dataset. Highlight the Boxes for attributes with higher median (e.g.,
+  PWR and PER) to emphasize their significance. Include text annotations to display
+  values for these attributes above select points and mention unique values as labels.
+  This will help users quickly grasp which attributes are more pronounced or varied,
+  providing insight into the distribution of stand attributes. Make use of color variations
+  to distinguish between the different attribute columns.
+questions: '1. What color scheme do you prefer for distinguishing between different
+  attribute columns?
+
+  2. Do you have a preference for the style or format of text annotations?
+
+  3. Would you like specific colors for highlighting the boxes with higher median
+  values?
+
+  4. Is there a specific font style or size you prefer for the labels and annotations?
+
+  5. Do you have any preference for the layout or orientation of the chart (e.g.,
+  vertical or horizontal box plots)?
+
+  6. Would you like to include grid lines or background shading to enhance readability?
+
+  7. Do you prefer specific markers or symbols for the unique values as labels?
+
+  8. Should outliers be marked differently in the box chart? If so, how?
+
+  9. Is there a specific way you''d like the legend to be organized or displayed?
+
+  10. Do you have any requirements for the spacing or padding between different boxes
+  in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific preference.
+
+  3. Yes, maybe something like bold red for PWR and blue for PER.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. Yes, including grid lines would be helpful.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not have any specific requirements.
+
+  10. I do not know.'
+data_attributes:
+- PWR
+- SPD
+- RNG
+- PER
+- PRC
+- DEV

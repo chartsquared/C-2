@@ -1,0 +1,43 @@
+initial_prompt: Create a treemap showing the distribution of global sales across different
+  genres and platforms. Use colors to differentiate genres and sub-divide by platforms.
+  The size of each block should reflect the Global_Sales value.
+questions: '1. Do you have a preferred color scheme for differentiating genres?
+
+  2. How would you like to handle platforms within genres? Should they be distinctly
+  labeled or visually separated in a specific way?
+
+  3. Would you prefer the genre labels to be inside the blocks, outside, or does it
+  not matter?
+
+  4. Do you want the platform labels to be nested within the respective genre blocks
+  or as separate annotations?
+
+  5. Is there a specific order you would like the genres or platforms to be displayed
+  in (e.g., alphabetical, by sales volume)?
+
+  6. Are there any specific genres or platforms you would like to highlight or emphasize?
+
+  7. What level of detail do you prefer for the block labels (e.g., exact sales values,
+  percentage of total sales)?
+
+  8. Do you want a legend to explain the color-coding of genres, or is it sufficient
+  for the colors to be intuitively understood?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I have no specific preference.
+
+  5. I do not know.
+
+  6. I am not sure.
+
+  7. Exact sales values.
+
+  8. A legend to explain the color-coding of genres would be good.'
+data_attributes:
+- Genre
+- Platform
+- Global_Sales

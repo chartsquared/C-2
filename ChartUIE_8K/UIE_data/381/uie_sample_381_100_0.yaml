@@ -1,0 +1,60 @@
+initial_prompt: '<start of user instruction>
+
+  Create a bar chart showing the IQ distribution across three countries from the dataset.
+  Ensure the x-axis represents the countries and the y-axis displays the average IQ.
+  Highlight the country with the highest average IQ using a different color. Annotate
+  the bar for each country with its corresponding average IQ value to provide a clear
+  comparison. This chart aims to visualize the differences in average IQ for social
+  science analysis.
+
+  <end of user instruction>'
+questions: '1. Do you have preferred colors for the bars representing the different
+  countries?
+
+  2. Which color would you like to use to highlight the country with the highest average
+  IQ?
+
+  3. Do you prefer the bar chart to have a grid for better readability or a cleaner
+  look without a grid?
+
+  4. Is there a specific font style or size you would prefer for the annotations on
+  each bar?
+
+  5. Would you like to include titles for the x-axis and y-axis? If so, what should
+  they be?
+
+  6. Should the chart include a legend or should the colors alone distinguish the
+  countries?
+
+  7. Do you have a preference for the overall style of the chart (e.g., minimalist,
+  detailed, professional, etc.)?
+
+  8. Would you like any specific formatting for the values annotated on the bars (e.g.,
+  number of decimal places, font color)?
+
+  9. Do you prefer the bars to be displayed vertically or horizontally?
+
+  10. Should the chart include an overall title? If so, what should it be?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. A cleaner look without a grid.
+
+  4. I am not sure.
+
+  5. Yes. The x-axis should be titled "Countries" and the y-axis should be titled
+  "Average IQ."
+
+  6. I do not know.
+
+  7. Professional.
+
+  8. No specific preference.
+
+  9. Vertically.
+
+  10. Yes, it should be "Average IQ Distribution Across Three Countries."'
+data_attributes:
+- country
+- iq

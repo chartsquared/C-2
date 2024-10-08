@@ -1,0 +1,56 @@
+initial_prompt: Let's create a bar chart visualizing the average wine points by country
+  from the dataset. Highlight the top 5 countries with the highest average points.
+  Add text annotations displaying the exact average points for these highlighted countries
+  to draw attention to them. This will help identify which countries consistently
+  produce high-rated wines. The chart's purpose is to assist wine enthusiasts and
+  buyers in selecting the best wines based on review scores. Ensure the chart is clear
+  and visually engaging to enhance the viewer's understanding and appreciation of
+  high-quality wines from different regions.
+questions: '1. Do you have any specific color preferences for the bars or the highlighted
+  top 5 countries?
+
+  2. How would you like the text annotations to be formatted (e.g., font size, style,
+  color)?
+
+  3. Would you prefer the countries to be listed in ascending or descending order
+  of average points?
+
+  4. Do you want gridlines to be included in the chart for easier value estimation?
+
+  5. Is there a particular style or theme you prefer for the bar chart (e.g., minimalistic,
+  colorful, professional)?
+
+  6. Would you like to add a title and labels to the axes? If so, do you have specific
+  text for them?
+
+  7. Do you have a preference for the chart''s aspect ratio or size (e.g., square,
+  wide, tall)?
+
+  8. Should the chart include a legend or other explanatory notes?
+
+  9. Are there any specific fonts you prefer for the chart''s text elements?
+
+  10. Do you want the chart background to be a specific color or remain plain?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I''d prefer the countries to be listed in descending order of average points.
+
+  4. Yes, I would like gridlines to be included for easier value estimation.
+
+  5. I have no specific preference.
+
+  6. Yes, please add a title and labels to the axes. Title: "Average Wine Points by
+  Country," X-axis: "Country," Y-axis: "Average Points."
+
+  7. I have no specific preference.
+
+  8. I am not sure.
+
+  9. I do not have a specific preference for fonts.
+
+  10. I have no specific preference for the chart background.'
+data_attributes:
+- country
+- points

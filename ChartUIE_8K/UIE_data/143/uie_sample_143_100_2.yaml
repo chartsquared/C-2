@@ -1,0 +1,42 @@
+initial_prompt: Create a scatter plot to visualize the relationship between the "assumed_office"
+  and "born" columns for members of the U.S. 117th House of Representatives. Use the
+  "party" column to color-code the points, distinguishing between Republicans and
+  other party members. Implement text annotations to highlight members with unique
+  educational backgrounds. The plot should emphasize the distribution of ages at which
+  members assumed office. The purpose is to understand if there's a pattern or trend
+  in the age of members when they first took office. Add a title and appropriate axis
+  labels for clarity.
+questions: '1. Do you have a specific title in mind for the scatter plot?
+
+  2. What labels would you prefer for the x-axis and y-axis?
+
+  3. Are there any specific colors you would like to use for Republicans and other
+  party members?
+
+  4. Do you have a preferred font style for the text annotations?
+
+  5. How would you like the unique educational backgrounds to be highlighted in the
+  annotations (e.g., specific keywords, formatting)?
+
+  6. Are there any specific age ranges or office assumption years you would like to
+  emphasize?
+
+  7. Would you prefer grid lines to be included or omitted in the scatter plot?'
+answers: '1. I am not sure, any appropriate title would work.
+
+  2. Assumed Office Year (x-axis), Year of Birth (y-axis)
+
+  3. No specific preference.
+
+  4. I do not know.
+
+  5. Highlight in bold or different color keywords related to their educational backgrounds.
+
+  6. I am not sure.
+
+  7. I have no specific preference.'
+data_attributes:
+- assumed_office
+- born
+- party
+- education

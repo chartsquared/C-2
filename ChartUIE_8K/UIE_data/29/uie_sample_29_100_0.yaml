@@ -1,0 +1,52 @@
+initial_prompt: Please create a histogram visualizing the number of vehicles over
+  time at different junctions using the traffic prediction dataset. Highlight the
+  junctions with the highest and lowest vehicle counts to draw attention to busy and
+  less busy areas. Annotate the peaks of vehicle counts to show the busiest times
+  specifically. Use different colors or sizes for junctions to make comparisons easier.
+  Make sure to include contextual information to help understand the data better.
+  The purpose of this chart is to analyze traffic patterns at various junctions, aiding
+  in better traffic management and planning.
+questions: '1. Do you have any preference for the color scheme used to differentiate
+  between junctions?
+
+  2. Would you like the histogram bins to represent specific time intervals (e.g.,
+  hourly, daily, weekly)?
+
+  3. Do you prefer the vehicle counts to be represented by different sizes or different
+  colors for each junction?
+
+  4. Should the peaks and troughs be annotated with specific labels or just highlighted
+  visually?
+
+  5. Is there any specific contextual information you would like to be included (e.g.,
+  weather conditions, special events)?
+
+  6. How would you like the x-axis and y-axis to be labeled?
+
+  7. Would you like any additional legends or keys to explain the color or size variations
+  in the chart?
+
+  8. Is there a specific format or style for annotations that you prefer?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Hourly intervals would be great.
+
+  3. Different colors for each junction.
+
+  4. Just highlighted visually.
+
+  5. I do not know.
+
+  6. The x-axis as "Time of Day" and y-axis as "Number of Vehicles".
+
+  7. Yes, a legend to explain the color variations.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- DateTime
+- Junction
+- Vehicles

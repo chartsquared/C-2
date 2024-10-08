@@ -1,0 +1,45 @@
+initial_prompt: Please create a line chart to visualize the pricing trends of different
+  perfume brands over time. Use the 'old_price' and 'new_price' columns to plot the
+  prices for each brand, differentiating between them using different line styles
+  or colors. Include the 'ml' information to show bottle size variations. The x-axis
+  should represent the brands while the y-axis should indicate the prices. Additionally,
+  incorporate 'item_rating' as a secondary y-axis to observe if there's any correlation
+  between price changes and customer ratings. The context is perfume products in the
+  fashion and beauty industry.
+questions: '1. Do you have a preference for the chart title?
+
+  2. Do you have specific line styles or colors in mind for differentiating the brands?
+
+  3. How would you like the bottle sizes (''ml'') to be displayed in the chart?
+
+  4. Do you have any preferences for the labels on the x-axis and y-axis?
+
+  5. What range or specific starting point would you like for the y-axes (prices and
+  ratings)?
+
+  6. Would you like to include any gridlines or background colors?
+
+  7. Are there any specific fonts or font sizes you prefer for the chart text?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. No specific preference.
+
+  3. I don''t know.
+
+  4. No specific preference.
+
+  5. I am not sure.
+
+  6. I don''t know.
+
+  7. No specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- brand
+- old_price
+- new_price
+- ml
+- item_rating

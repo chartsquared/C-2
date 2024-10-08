@@ -1,0 +1,37 @@
+initial_prompt: I need a bar chart showing the top 10 most streamed Spotify songs
+  of 2023. The x-axis should represent the track names, and the y-axis should show
+  the number of streams. Please color-code the bars based on the artist's name to
+  differentiate between them. Additionally, include labels for the release month and
+  day on the bars. This will help in quickly identifying the release timing of the
+  top songs. Use the provided data format for accuracy. Thank you!
+questions: '1. Do you have a preference for the order of the bars (e.g., descending
+  order of streams)?
+
+  2. What color scheme would you prefer for differentiating the artists?
+
+  3. Would you like to include grid lines on the chart for easier comparison of streams?
+
+  4. Should the track names on the x-axis be horizontally or vertically oriented?
+
+  5. Do you want the data labels (release month and day) on top of the bars or inside
+  the bars?
+
+  6. Are there any specific fonts or styles you would like for the chart labels and
+  titles?'
+answers: '1. Yes, please order the bars in descending order of streams.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Horizontally oriented would be preferable.
+
+  5. On top of the bars would be great.
+
+  6. I do not have any specific preference for fonts or styles.'
+data_attributes:
+- track_name
+- artist(s)_name
+- released_month
+- released_day
+- streams

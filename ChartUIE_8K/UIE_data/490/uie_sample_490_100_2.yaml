@@ -1,0 +1,44 @@
+initial_prompt: Create a heatmap to visualize the categorization of fish species from
+  the dataset, focusing on the 'LCA_Category_sub' column against 'FAO Match'. Annotate
+  the cells with the count of occurrences where 'Gephart Match' is missing to highlight
+  the discrepancies in data matching. This visualization aims to emphasize areas with
+  missing 'Gephart Match' data, helping to identify specific fish categories with
+  data gaps. Use varying shades to indicate frequency, and annotate the most and least
+  common categories for a clear overview. This will help in understanding the data
+  distribution and identifying focus areas for further research.
+questions: "1. Do you have a preferred color scheme for the heatmap?\n2. Would you\
+  \ like a specific range for the varying shades to indicate frequency?\n3. How would\
+  \ you like the missing 'Gephart Match' data to be annotated in the cells?\n4. Do\
+  \ you prefer a specific font style or size for the annotations?\n5. Should the heatmap\
+  \ include a legend for better understanding of the frequency shading?\n6. Is there\
+  \ a particular layout preference you have for the heatmap (e.g., vertical or horizontal\
+  \ label orientation)?\n7. Do you need any specific axis labels or titles to be included\
+  \ in the heatmap?\n8. Are there any additional details or information you would\
+  \ like to have included in the annotations for the most and least common categories?\n\
+  9. Would you like gridlines or borders around the cells to be visible? \n10. Is\
+  \ there a specific size or aspect ratio you prefer for the heatmap?"
+answers: '1. I do not have a preferred color scheme.
+
+  2. I am not sure.
+
+  3. I''d like the missing ''Gephart Match'' data to be annotated with an asterisk
+  (*) and the count.
+
+  4. I do not know.
+
+  5. Yes, the heatmap should include a legend for better understanding of the frequency
+  shading.
+
+  6. I am not sure.
+
+  7. Yes, please include axis labels and a title: "Fish Species Categorization Heatmap".
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. I do not have a specific size or aspect ratio preference.'
+data_attributes:
+- LCA_Category_sub
+- FAO Match
+- Gephart Match

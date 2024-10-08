@@ -1,0 +1,45 @@
+initial_prompt: I have a dataset with information on total bills and tips at a restaurant,
+  including details about the customer such as sex, smoking status, day of the week,
+  and meal time. Please create a grouped bar chart that shows the average total bill
+  and tip amounts for each day of the week, separated by sex. This will help visualize
+  how spending habits vary by day and gender. Make sure the x-axis has the days of
+  the week and the y-axis shows the amounts in dollars. The groups should distinguish
+  between male and female customers. Thank you!
+questions: '1. Do you have a specific color palette preference for distinguishing
+  between male and female customers?
+
+  2. Would you like the average total bill and tip amounts to be displayed on the
+  bars?
+
+  3. Do you prefer any specific font style or size for the axis labels and titles?
+
+  4. Should the chart include a legend to clearly identify male and female categories?
+
+  5. Do you want gridlines on the chart for easier readability of values?
+
+  6. Is there a particular format or style you prefer for the title of the chart?
+
+  7. Would you like to include error bars to show variability in the data?
+
+  8. Do you have any preference for the order in which days of the week should be
+  displayed on the x-axis?'
+answers: '1. I am not sure.
+
+  2. Yes, please display the average total bill and tip amounts on the bars.
+
+  3. I do not have a specific preference for the font style or size.
+
+  4. Yes, please include a legend to clearly identify the male and female categories.
+
+  5. I am not sure.
+
+  6. I do not have a specific preference for the title format or style.
+
+  7. I am not sure.
+
+  8. I prefer the days of the week to be displayed from Monday to Sunday.'
+data_attributes:
+- total_bill
+- tip
+- sex
+- day

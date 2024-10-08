@@ -1,0 +1,56 @@
+initial_prompt: I need a heatmap created to visualize the missing values of course
+  information in German universities. Specifically, I want to see which columns have
+  the most missing data to identify gaps in the dataset. Include columns such as Course
+  ID, Course Name, Subject Name, University Name, City Name, Teaching languages, Required
+  German language, Required English language, Beginning, Duration of Programme, and
+  Tuition Fees. This will help in understanding which areas need more data collection
+  or improvement. The heatmap should clearly display the percentage of missing values
+  for each column.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the color intensity represent the percentage of missing values or another
+  metric?
+
+  3. Do you want the heatmap to include numerical annotations indicating the exact
+  percentage of missing values?
+
+  4. Should the heatmap include a legend or color bar to explain the color coding?
+
+  5. Is there a specific order in which you would like the columns to be displayed?
+
+  6. Do you want gridlines to separate the cells within the heatmap?
+
+  7. Should the column labels be rotated or formatted in a specific way for better
+  readability?
+
+  8. Would you like to highlight or emphasize columns with the highest percentage
+  of missing data?'
+answers: '1. I do not have a specific preference.
+
+  2. The color intensity should represent the percentage of missing values.
+
+  3. Yes, I want the heatmap to include numerical annotations indicating the exact
+  percentage of missing values.
+
+  4. Yes, the heatmap should include a legend or color bar to explain the color coding.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. I am not sure, whatever you think is best for readability.
+
+  8. Yes, please highlight or emphasize columns with the highest percentage of missing
+  data.'
+data_attributes:
+- Course ID
+- Course Name
+- Subject Name
+- University Name
+- City Name
+- Teaching languages
+- Required German language
+- Required English language
+- Beginning
+- Duration of Programme
+- Tuition Fees

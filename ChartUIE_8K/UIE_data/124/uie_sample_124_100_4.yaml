@@ -1,0 +1,46 @@
+initial_prompt: Create a heatmap to visualize the correlation between various player
+  stats (like points, rebounds, assists, net rating, etc.) for NBA players. Highlight
+  strong positive and negative correlations. Group by teams (team_abbreviation) to
+  show different team patterns. The x and y axes should feature statistical categories
+  such as pts, reb, ast, net_rating, etc. Include a color bar to indicate the strength
+  of correlations, helping to easily identify high and low values. Make sure the heatmap
+  is clear, with labels for each stat category for easy interpretation.
+questions: '1. Do you have a preferred color scheme for the heatmap (e.g., red-blue,
+  green-purple)?
+
+  2. What range of correlation values would you like to highlight as strong positive
+  or negative correlations?
+
+  3. Should the team labels be displayed prominently on the heatmap, or should they
+  be excluded for a cleaner look?
+
+  4. Do you prefer the heatmap to have gridlines separating each cell, or should it
+  be seamless?
+
+  5. Would you like to include additional statistical categories beyond pts, reb,
+  ast, and net_rating? If so, please specify.
+
+  6. How would you like the strength of the correlations to be represented in the
+  color bar (e.g., linear, logarithmic)?
+
+  7. Should the heatmap include labels for the correlation values within each cell,
+  or should it solely rely on color intensity for interpretation?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. The team labels should be displayed prominently.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. The heatmap should include labels for the correlation values within each cell.'
+data_attributes:
+- team_abbreviation
+- pts
+- reb
+- ast
+- net_rating

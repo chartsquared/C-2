@@ -1,0 +1,42 @@
+initial_prompt: 'Please create a radar chart that visualizes the performance metrics
+  of champions in the given dataset. I want to see the following fields plotted: Winrate,
+  %T, Winrate(B), Winrate(R), Bans(%), and Picks and Bans(%). Each champion should
+  form a separate plot on the radar chart to easily compare their performance across
+  these metrics. This should help in analyzing champions'' effectiveness and popularity
+  in the game.'
+questions: '1. Do you have a preference for the color scheme of the radar chart?
+
+  2. Would you like the chart to display data values at each point on the radar chart?
+
+  3. Should each champion''s plot have different line styles (e.g., solid, dashed,
+  dotted) for distinction?
+
+  4. Do you have any preference for the scale (e.g., percentage, normalized) for the
+  axes?
+
+  5. Would you like to see any specific chart titles, subtitles, or labels?
+
+  6. Should the chart legend be positioned in a specific location?
+
+  7. Is there a specific font style or size you prefer for the chart text?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to display data values at each point on the radar
+  chart.
+
+  3. I do not know.
+
+  4. I have no specific preference.
+
+  5. I am not sure.
+
+  6. I have no specific preference.
+
+  7. I do not know.'
+data_attributes:
+- Winrate
+- '%T'
+- Winrate(B)
+- Winrate(R)
+- Bans(%)
+- Picks and Bans(%)

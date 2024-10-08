@@ -1,0 +1,41 @@
+initial_prompt: 'Let''s create a Parallel Coordinates chart to visualize the genomics
+  data from the Ecoli Data Set. We will focus on the columns: mcg, gvh, lip, chg,
+  aac, alm1, and alm2. The chart should highlight data points with specific range
+  values or patterns. Include annotations to display important values and trends for
+  selected sequences, such as maxima or minima. This visualization will help in comparing
+  and identifying correlations between different attributes in the Ecoli sequences.
+  Ensure the chart is clear and color-coded to distinguish different sequences. Add
+  labels for better context and interpretation.'
+questions: '1. Do you have a specific color scheme preference for distinguishing different
+  sequences?
+
+  2. Are there particular range values or patterns you want to highlight within the
+  data points?
+
+  3. Which important values or trends do you want annotated – maxima, minima, or both?
+
+  4. Do you prefer a specific type of labeling for context and interpretation (e.g.,
+  axis labels, legend labels, data point labels)?
+
+  5. Would you like the chart to display any specific statistical summaries (e.g.,
+  mean, median) for each attribute?'
+answers: '1. I do not have a specific color scheme preference for distinguishing different
+  sequences.
+
+  2. I am not sure, but highlighting any noticeable ranges or extreme values would
+  be helpful.
+
+  3. Both maxima and minima would be great to annotate.
+
+  4. Axis labels and legend labels would be sufficient.
+
+  5. I do not know if specific statistical summaries are needed, but basic ones like
+  mean or median could be useful if it helps with interpretation.'
+data_attributes:
+- mcg
+- gvh
+- lip
+- chg
+- aac
+- alm1
+- alm2

@@ -1,0 +1,49 @@
+initial_prompt: Create a scatter plot highlighting the routes flown by airline AA.
+  Emphasize the start and end latitudes and longitudes to visualize travel paths between
+  different airports. Include annotations for the start and end airports, especially
+  where the 'cnt' values are highest, to showcase the most frequented routes.
+questions: '1. Do you have any preference for the color scheme or style of the scatter
+  plot?
+
+  2. Do you prefer any specific shapes for the start and end points on the scatter
+  plot?
+
+  3. How would you like the annotations for the start and end airports to be displayed
+  (e.g., size, position, font)?
+
+  4. Would you like the size or color of the points to reflect the ''cnt'' values?
+
+  5. Is there a particular background map you would prefer to use for the geographical
+  context?
+
+  6. Should the chart include a legend, and if so, what information should it display?
+
+  7. Would you like gridlines or any other specific chart elements (e.g., axis labels,
+  titles)?'
+answers: '<start of user emulated response>
+
+  1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. Yes, I would like the size or color of the points to reflect the ''cnt'' values.
+
+  5. I am not sure.
+
+  6. Yes, the chart should include a legend displaying information about the ''cnt''
+  values.
+
+  7. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- start_lat
+- start_lon
+- end_lat
+- end_lon
+- airline
+- airport1
+- airport2
+- cnt

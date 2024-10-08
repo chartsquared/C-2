@@ -1,0 +1,55 @@
+initial_prompt: Create a stacked column chart to visualize the construction costs
+  of different subway lines in various Canadian cities, such as Vancouver and Toronto,
+  from the provided dataset. Each column should represent a city, and within each
+  city column, stack different subway lines. The height of each stack should represent
+  the construction cost in CAD, and the color of each stack section should differentiate
+  the subway lines. Add labels for city names and line names. Include a legend for
+  line identification, and tooltip functionality to display cost details on hover.
+  Ensure the x-axis represents cities and the y-axis represents costs in millions
+  of CAD.
+questions: '1. Do you have a preference for specific colors to represent different
+  subway lines?
+
+  2. Would you like to have grid lines in the background of the chart for better readability?
+
+  3. Should the chart have a title? If yes, what title would you like?
+
+  4. Do you have a specific font style or size preference for the labels and legend?
+
+  5. Would you like to include axis titles for both the x-axis and y-axis? If so,
+  what should they be?
+
+  6. Should the y-axis start at zero or another specified value?
+
+  7. Do you prefer any specific ordering of the cities on the x-axis?
+
+  8. Would you like the subway lines to be ordered by cost within each city?
+
+  9. Do you have any preference on the padding or spacing between the city columns?
+
+  10. Should the legend be placed in a specific position in the chart (e.g., top,
+  right, bottom, left)?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to have grid lines.
+
+  3. Yes, the title should be "Subway Construction Costs Across Canadian Cities".
+
+  4. I have no specific preference.
+
+  5. Yes, the x-axis title should be "Cities" and the y-axis title should be "Cost
+  (Millions of CAD)".
+
+  6. The y-axis should start at zero.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not have any preference.
+
+  10. The legend should be placed at the bottom.'
+data_attributes:
+- city
+- line
+- cost

@@ -1,0 +1,55 @@
+initial_prompt: Create a heatmap depicting the correlation matrix of the physical
+  and chemical properties of amino acids. Use properties like Molecular Weight, Residue
+  Weight, pKa1, pKb2, pKx3, pl4, H, VSC, P1, P2, SASA, and NCISC. Make sure to handle
+  missing values appropriately and ensure the heatmap clearly shows how each property
+  correlates with the others. This visualization will help in understanding the relationships
+  and interactions among various amino acid properties. Use appropriate colors to
+  indicate strength and direction of correlations for easy interpretation.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like us to handle missing values (e.g., imputation, removal)?
+
+  3. What range of correlation values would you prefer for the color scale?
+
+  4. Would you like the correlation values to be displayed on the heatmap cells?
+
+  5. Do you have any specific preferences for the heatmap labels (e.g., font size,
+  orientation)?
+
+  6. Should the heatmap include a hierarchical clustering dendrogram?
+
+  7. Would you like any specific annotations or markers on the heatmap?
+
+  8. Is there a preferred sizing or aspect ratio for the heatmap?
+
+  9. Should the heatmap include a legend to explain the color scale?'
+answers: '1. I am not sure.
+
+  2. Please handle missing values with imputation.
+
+  3. I am not sure.
+
+  4. Yes, I would like the correlation values to be displayed on the heatmap cells.
+
+  5. I do not have any specific preference.
+
+  6. I am not sure.
+
+  7. I do not have any specific preference.
+
+  8. I do not have any specific preference.
+
+  9. Yes, the heatmap should include a legend to explain the color scale.'
+data_attributes:
+- Molecular Weight
+- Residue Weight
+- pKa1
+- pKb2
+- pKx3
+- pl4
+- H
+- VSC
+- P1
+- P2
+- SASA
+- NCISC

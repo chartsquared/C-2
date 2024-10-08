@@ -1,0 +1,57 @@
+initial_prompt: Create a heatmap displaying the correlation between weather parameters
+  over time. Highlight areas with significant precipitation, temperature variations,
+  and wind speed. Annotate specific dates where weather patterns such as 'drizzle'
+  and 'rain' were observed. This should help identify trends and anomalies in weather
+  conditions throughout the year. Ensure the heatmap effectively emphasizes unique
+  and recurring weather events for better predictive insights and decision-making
+  related to weather forecasts. Visualizing this will aid in understanding the interaction
+  between different weather elements and their seasonal impact.
+questions: '1. Do you have any specific color schemes or palettes you prefer for the
+  heatmap?
+
+  2. Should the heatmap display a particular time granularity (e.g., daily, weekly,
+  monthly)?
+
+  3. Are there specific thresholds for precipitation, temperature variations, and
+  wind speed that you want to highlight?
+
+  4. Would you like the annotated dates for weather patterns (''drizzle'', ''rain'')
+  to have specific markers or colors?
+
+  5. Do you prefer any specific layout or orientation for the heatmap (e.g., chronological
+  order, grouped by seasons)?
+
+  6. Should the heatmap include a legend or specific labels for better interpretability?
+
+  7. Are there any additional weather parameters you would like to include or exclude
+  from the visualization?
+
+  8. Do you have preferences for the font style or size for annotations and labels
+  on the heatmap?
+
+  9. Would you like to see any trend lines or additional statistical indicators (e.g.,
+  average lines) overlaid on the heatmap?'
+answers: '1. I do not know.
+
+  2. Daily would be ideal.
+
+  3. I am not sure.
+
+  4. Yes, specific markers or colors would be great for the annotated dates.
+
+  5. Chronological order sounds good.
+
+  6. Yes, please include a legend or specific labels.
+
+  7. I do not have any specific preferences for additional weather parameters.
+
+  8. I do not know.
+
+  9. I am not sure.'
+data_attributes:
+- date
+- precipitation
+- temp_max
+- temp_min
+- wind
+- weather

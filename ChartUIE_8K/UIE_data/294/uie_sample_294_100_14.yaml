@@ -1,0 +1,50 @@
+initial_prompt: Please create a step line chart visualizing the engagement trends
+  of Ronaldo's tweets over time. Use columns like createdAt (x-axis) and metrics like
+  retweetCount, replyCount, likeCount, quoteCount, and bookmarkCount (y-axis). The
+  chart should distinctly illustrate how each metric changes stepwise across individual
+  tweet timestamps. This will help understand the pattern of engagement over time
+  for Ronaldo's tweets. Label each line clearly and add a legend for easy identification
+  of different engagement metrics. Utilize colors to differentiate the step lines
+  for each metric.
+questions: '1. Do you have any specific color preferences for the step lines representing
+  different engagement metrics?
+
+  2. Would you like the X-axis to display dates in a specific format?
+
+  3. Do you have a preferred font style or size for the labels and legend?
+
+  4. Should the chart include gridlines for easier reference?
+
+  5. Would you like any specific annotations or markers to highlight key points or
+  events on the chart?
+
+  6. Do you have a preferred position for the legend (e.g., top, bottom, left, right)?
+
+  7. Should the Y-axis be scaled to start from zero, or would you like it to dynamically
+  scale based on the data range?
+
+  8. Do you want to include any background color or pattern in the chart?
+
+  '
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I have no specific preference.
+
+  4. Yes, include gridlines for easier reference.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Dynamically scale the Y-axis based on the data range.
+
+  8. I have no specific preference.'
+data_attributes:
+- createdAt
+- retweetCount
+- replyCount
+- likeCount
+- quoteCount
+- bookmarkCount

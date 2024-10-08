@@ -1,0 +1,42 @@
+initial_prompt: I have a dataset on cardiovascular disease with various patient details
+  like age, gender, chest pain type, cholesterol levels, etc. I'd like to visualize
+  this data in a Marimekko chart to understand the distribution and relationships
+  among different variables like age groups, cholesterol levels, and chest pain types.
+  Please color-code different categories for easy comprehension, and make sure the
+  proportions of each category are accurately represented. Please ensure that the
+  chart is clear and easy to understand for someone without any technical background.
+questions: '1. Do you have a preferred color scheme for different categories?
+
+  2. Do you want specific age groups or a custom age segmentation (e.g., 0-20, 21-40,
+  41-60, 61+)?
+
+  3. Should we include a legend to explain the color codes?
+
+  4. Do you need any specific labels on the chart for easier comprehension?
+
+  5. Would you prefer any specific series order (e.g., age groups displayed before
+  cholesterol levels)?
+
+  6. Should the chart include a title or description for context? If yes, what should
+  it say?
+
+  7. Do you have a preferred font size or style for the chart text to ensure clarity?'
+answers: '1. I do not have a preferred color scheme, please use colors that are easy
+  to distinguish.
+
+  2. I am not sure about the age groups; please use what you think is best.
+
+  3. Yes, please include a legend to explain the color codes.
+
+  4. I do not have any specific labels in mind; just make sure it''s easy to comprehend.
+
+  5. I am not sure about the series order, please choose the most logical one.
+
+  6. Yes, please include a title: "Distribution of Cardiovascular Disease Variables".
+
+  7. I do not have a preferred font size or style; just ensure it is clear and readable.'
+data_attributes:
+- age
+- gender
+- chestpain
+- serumcholestrol

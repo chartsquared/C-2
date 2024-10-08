@@ -1,0 +1,52 @@
+initial_prompt: I want to visualize the performance of Marvel superhero movies
+  using parallel coordinates. The chart should display attributes such as film title,
+  category, worldwide gross, budget, critics' and audience scores, opening weekend
+  gross, % gross from opening weekend, and year. This will help to compare how different
+  movies within the Marvel universe perform across various metrics. Please include
+  all the data points from the given dataset to provide a comprehensive view. This
+  will allow for easy comparison and analysis of trends between different Marvel superhero
+  films.
+questions: '1. Do you have any specific preferences for the color scheme of the
+  parallel coordinates chart?
+
+  2. Do you prefer any specific order for displaying the data attributes on the parallel
+  coordinates chart?
+
+  3. Would you like to highlight any particular movies or categories within the visualization?
+
+  4. Do you have any preference for the scale (linear or logarithmic) for any of the
+  numerical axes?
+
+  5. Would you like to include a legend in the chart to distinguish between different
+  categories or attributes?
+
+  6. Do you have any specific preferences for the appearance of lines (e.g., solid,
+  dashed) or their opacity on the chart?
+
+  7. Are there any reference lines or markers you would like to include to indicate
+  significant values or thresholds?
+
+  8. Do you have any preferences regarding the font style and size for axis labels
+  and titles?
+
+  9. Would you like to include interactive tooltips or labels for better readability
+  of specific data points?
+
+  10. Are there any additional annotations or textual descriptions you would like
+  to include on the chart for better context?'
+answers: "1. I am not sure.\n2. I do not have any specific preference.\n3. I would\
+  \ like to highlight movies from the Avengers series.\n4. I am not sure.\n5. Yes,\
+  \ please include a legend to distinguish between different categories or attributes.\n\
+  6. I do not know.\n7. I am not sure.\n8. I do not have any specific preference.\n\
+  9. No, I have no specific preference. \n10. No, I do not need any additional annotations\
+  \ or textual descriptions."
+data_attributes:
+  - film
+  - category
+  - worldwide gross ($m)
+  - budget
+  - critics % score
+  - audience % score
+  - opening weekend ($m)
+  - % gross from opening weekend
+  - year

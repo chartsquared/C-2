@@ -1,0 +1,55 @@
+initial_prompt: I have a dataset on cardiovascular health with multiple variables
+  like age, gender, chest pain, and more. I want to visualize the distribution and
+  spread of a few key numeric variables to understand their variability and central
+  tendency across different categories. Specifically, create a violin plot for the
+  'age' variable segmented by 'gender,' 'chestpain,' and 'target.' This will help
+  me analyze the spread and median age in different patient groups. Ensure that the
+  plot allows comparison between these categories clearly. This can offer insights
+  into how age distribution varies across different conditions and outcomes in heart
+  disease.
+questions: '1. Do you have a specific color palette or theme preference for the chart?
+
+  2. Do you prefer any specific ordering for the ''gender,'' ''chestpain,'' and ''target''
+  categories in the chart?
+
+  3. Should the chart include specific axis labels or titles?
+
+  4. Would you like individual data points to be displayed in the violin plot?
+
+  5. Do you want to include a legend to distinguish between categories?
+
+  6. Should the chart have grid lines to enhance readability?
+
+  7. Do you prefer any specific font style or size for the text in the chart?
+
+  8. Would you like to include summary statistics (e.g., mean, median) overlay on
+  the violin plots?
+
+  9. Do you want any annotations or notes on the chart to highlight key observations?
+
+  10. Should the chart include confidence intervals or any other statistical indicators?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include specific axis labels and titles.
+
+  4. I am not sure.
+
+  5. Yes, please include a legend to distinguish between categories.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  8. Yes, please include summary statistics like the median overlay on the violin
+  plots.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- age
+- gender
+- chestpain
+- target

@@ -1,0 +1,44 @@
+initial_prompt: Create a scatter plot for the Heart Disease Dataset. Plot 'age' on
+  the x-axis and 'cholesterol' on the y-axis. Use different colors to differentiate
+  between the 'sex' category (0 for female, 1 for male). Include a legend to indicate
+  the sex of the individuals. Make sure to label the axes and title the chart appropriately.
+  Additionally, use different markers to represent the 'target' variable (0 for no
+  disease, 1 for disease). This will help visualize the relation between age, cholesterol
+  level, and the occurrence of heart disease.
+questions: '1. Do you have any preferred color schemes or specific colors you would
+  like to use for differentiating between the sex categories?
+
+  2. Is there a specific title you would prefer for the chart?
+
+  3. Do you have any specific preferences for the labels of the x-axis (''age'') and
+  y-axis (''cholesterol'')?
+
+  4. For markers representing the ''target'' variable, do you have any preferred shapes
+  or symbols you would like to use for ''no disease'' and ''disease''?
+
+  5. Are there any specific fonts or font sizes you would like to use for the chart
+  text (title, axis labels, legend)?
+
+  6. Do you have any preferences regarding the position of the legend on the chart
+  (e.g., top right, bottom left)?
+
+  7. Would you like to add any additional annotations or highlights to the chart to
+  emphasize particular data points or trends?'
+answers: '1. I am not sure.
+
+  2. I am not sure, maybe "Heart Disease: Age vs Cholesterol Levels".
+
+  3. No specific preferences.
+
+  4. I do not know, just something distinguishable.
+
+  5. No specific preferences.
+
+  6. Top right might be good.
+
+  7. I am not sure.'
+data_attributes:
+- age
+- cholesterol
+- sex
+- target

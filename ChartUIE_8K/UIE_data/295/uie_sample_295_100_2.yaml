@@ -1,0 +1,46 @@
+initial_prompt: Create a bar chart that compares the average AdSpend across different
+  CampaignChannels. Highlight the Email channel by changing its color. Add text annotations
+  to show the exact AdSpend values on top of each bar. The visualization aims to emphasize
+  the differences in ad spending across channels and draw special attention to the
+  Email channel. The purpose is to inform marketing strategies by identifying which
+  channels are currently receiving the most and least investment in terms of advertising
+  expenses.
+questions: '1. Do you have a preferred color for highlighting the Email channel?
+
+  2. Is there a specific font style or size you would like for the text annotations
+  on top of each bar?
+
+  3. Do you prefer the bars to be displayed in a particular order (e.g., ascending,
+  descending)?
+
+  4. Are there any specific colors you would like to use for the other campaign channels?
+
+  5. Would you like the chart to include a title or subtitle? If yes, please specify
+  the text.
+
+  6. Do you want a legend to differentiate between the highlighted Email channel and
+  other channels?
+
+  7. Is there a preferred format for displaying the AdSpend values in the annotations
+  (e.g., currency format)?
+
+  8. Would you like any additional information or metrics to be included in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I prefer the bars to be displayed in descending order.
+
+  4. I am not sure.
+
+  5. Yes, please include a title: "Average AdSpend Across Campaign Channels".
+
+  6. Yes, I would like a legend to differentiate between the highlighted Email channel
+  and other channels.
+
+  7. Yes, please display the AdSpend values in currency format.
+
+  8. I do not know.'
+data_attributes:
+- CampaignChannel
+- AdSpend

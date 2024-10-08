@@ -1,0 +1,54 @@
+initial_prompt: Create a stacked column chart to visualize the age-standardized suicide
+  rates from 2000-2019 for the Americas region. Each column should represent a different
+  year, with segments stacked to show the rates for different sexes (Male, Female,
+  Both sexes). Highlight the most recent year's data. Add text annotations to indicate
+  exact rates for key points, especially for the latest year. This visualization helps
+  in understanding the trend in suicide rates over time and differences between sexes.
+  Use clear labels and a legend for easy interpretation, focusing on the changes and
+  highlights per year.
+questions: '1. Do you have a preferred color scheme for the segments representing
+  different sexes?
+
+  2. What font style and size do you prefer for the text annotations?
+
+  3. Should the columns have any specific width or spacing between them?
+
+  4. Do you prefer any specific style for highlighting the most recent year''s data?
+
+  5. Would you like to include any specific title or subtitle for the chart?
+
+  6. Do you want gridlines to be displayed in the background of the chart?
+
+  7. Should the legend have any specific arrangement or placement in the chart?
+
+  8. Are there any specific labels or units you prefer for the X-axis and Y-axis?
+
+  9. Do you require any additional markers or lines to indicate significant data points
+  or trends?
+
+  10. Would you like to include a source citation or any additional notes on the chart?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I prefer a bold outline or a different shade for the most recent year''s data.
+
+  5. Yes, please include a title: "Age-Standardized Suicide Rates in the Americas
+  (2000-2019)" and a subtitle: "Rates per 100,000 population, segmented by sex".
+
+  6. Yes, please display gridlines in the background.
+
+  7. I do not have a specific preference.
+
+  8. X-axis: "Year", Y-axis: "Suicide Rates (per 100,000 population)"
+
+  9. Yes, please include markers for significant trends if possible.
+
+  10. Yes, please include a source citation at the bottom: "Source: [Data Source]"'
+data_attributes:
+- Period
+- Dim1
+- FactValueNumeric
+- IsLatestYear

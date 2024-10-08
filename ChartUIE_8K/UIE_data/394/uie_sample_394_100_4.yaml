@@ -1,0 +1,52 @@
+initial_prompt: Please create a tree map visualizing company roles and hierarchy based
+  on the provided dataset. Each block should represent an individual’s name (e.g.,
+  company.CEO.JohnSmith) as part of the company structure. The size of each block
+  should correspond to the 'size' attribute, and each block should also show connections
+  (imports) to visualize relationships/hierarchies within the organization. Include
+  subcategories like CEO, CFO, etc., to accurately depict the business structure as
+  per company relationships. Looking for a clear, detailed representation that outlines
+  how roles interact and hierarchy flows in the business.
+questions: '1. Do you have any preferences regarding the color scheme for different
+  roles or hierarchical levels?
+
+  2. How would you like the subcategories such as CEO, CFO, etc., to be labeled or
+  distinguished within the tree map?
+
+  3. Should the thickness or style of the connections (imports) indicating relationships
+  be differentiated in any specific way?
+
+  4. Do you prefer any particular font style or size for the names displayed within
+  each block?
+
+  5. Are there any specific details or annotations that you prefer to be included
+  in the tree map for clarity?
+
+  6. Would you like to incorporate any additional legends or keys to explain the visual
+  elements in the tree map?
+
+  7. Do you have a preference for how detailed or simplified the hierarchical connections
+  should be displayed?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Please label the subcategories clearly with their roles (e.g., CEO, CFO) and
+  include their names within the blocks.
+
+  3. I do not know.
+
+  4. I have no specific preference for font style or size.
+
+  5. Include annotations showing the size attribute clearly within each block for
+  better understanding.
+
+  6. I am not sure.
+
+  7. I prefer a detailed display of hierarchical connections to show how each role
+  reports to another.
+
+  <end of user emulated response>'
+data_attributes:
+- name
+- size
+- imports

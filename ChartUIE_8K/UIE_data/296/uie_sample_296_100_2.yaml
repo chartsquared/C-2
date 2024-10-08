@@ -1,0 +1,57 @@
+initial_prompt: 'Create a donut chart to visualize the data from Colombo Gems: 200
+  Prime Spots on TripAdvisor. The inner ring should represent the type of place (Attraction,
+  Restaurant). The outer ring should break down into categories (attraction, restaurant).
+  Highlight sections with higher ratings or more reviews to capture the viewer’s attention.
+  Annotate key places like those with the highest rating or ranking position, using
+  text annotations. The chart''s purpose is to give a clear visual representation
+  of the distribution and popularity of different spots in Colombo, aiding travelers
+  in identifying top places to visit.'
+questions: '1. Do you have any preferred color schemes for indicating different categories
+  (e.g., types of places, rating levels)?
+
+  2. How would you like the higher-rated or more-reviewed sections to be highlighted
+  (e.g., brighter colors, larger sections)?
+
+  3. Do you prefer any specific font style or size for text annotations and labels?
+
+  4. Should there be a legend explaining the different sections and their meanings?
+  If so, do you have a preference for its placement on the chart?
+
+  5. Would you like the chart to include percentage numbers inside each section, or
+  should it only display the names of the categories?
+
+  6. Is there a specific title or subtitle you would like to include in the chart?
+  If so, please specify the text.
+
+  7. Should the chart have any particular background color or design to enhance visual
+  appeal?
+
+  8. Do you have a preference for the thickness of the inner and outer rings of the
+  donut chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Brighter colors.
+
+  3. I do not know.
+
+  4. Yes, a legend would be helpful. I am not sure about its placement.
+
+  5. Percentage numbers would be great.
+
+  6. Title: "Colombo Gems: 200 Prime Spots" Subtitle: "Distribution and Popularity
+  of Top Spots"
+
+  7. I am not sure.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- type
+- category
+- name
+- rating
+- numberOfReviews
+- rankingPosition

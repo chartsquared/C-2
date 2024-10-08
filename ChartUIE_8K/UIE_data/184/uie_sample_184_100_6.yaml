@@ -1,0 +1,46 @@
+initial_prompt: 'Create a bar chart visualizing Rotten Tomatoes scores for top movies.
+  The chart should display critic scores vs. people scores for each movie using different
+  colors. Include movies Black Panther, Avengers: Endgame, and Mission: Impossible
+  -- Fallout. Ensure critic scores and people scores are labeled clearly. Title the
+  chart "Critic vs. People Scores: Top Movies". Show each movie title below the respective
+  bars. Highlight significant discrepancies between critic and people scores for easier
+  comparison. The chart''s x-axis should list movie titles, and the y-axis should
+  indicate scores from 0 to 100.'
+questions: '1. Do you have a preferred color scheme for distinguishing between critic
+  scores and people scores?
+
+  2. Should the significant discrepancies be highlighted in a specific way (e.g.,
+  using arrows, highlighting bars)?
+
+  3. Would you like gridlines on the chart for better readability?
+
+  4. What font style and size do you prefer for the chart title and labels?
+
+  5. Do you want any additional annotations or comments on specific data points?
+
+  6. Would you like the chart to include a legend to distinguish between critic scores
+  and people scores?
+
+  7. Is there a specific format for the movie titles on the x-axis (e.g., abbreviation,
+  full title)?
+
+  8. Do you have any preferences for the axis labels'' orientation (vertical or horizontal)?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, gridlines would be helpful.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend.
+
+  7. Full title, please.
+
+  8. Horizontal orientation for the axis labels.'
+data_attributes:
+- title
+- critic_score
+- people_score

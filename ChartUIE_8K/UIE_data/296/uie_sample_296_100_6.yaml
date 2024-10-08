@@ -1,0 +1,44 @@
+initial_prompt: Create a bar chart to visualize "Number of Reviews" for different
+  types of places in Colombo. Use the columns "type", "name", "numberOfReviews", and
+  "rating" from the provided data. The X-axis should represent the names of the places,
+  and the Y-axis should show the number of reviews. Each bar should be colored based
+  on the rating, giving a gradient from low to high ratings. Ensure to sort the bars
+  in descending order of the number of reviews to highlight the most reviewed spots.
+  The chart should display all available places categorized as either ATTRACTION or
+  RESTAURANT.
+questions: '1. Do you have a specific color palette preference for the gradient representing
+  the ratings?
+
+  2. Would you prefer any specific font style or size for the axis labels and titles?
+
+  3. Should the names of the places be displayed horizontally or rotated vertically
+  on the X-axis?
+
+  4. Do you want any specific annotations or markers on the bars to indicate the exact
+  number of reviews?
+
+  5. Is there a particular chart title or subtitle you would like to use?
+
+  6. Would you like to include a legend to explain the color gradient for ratings?
+
+  7. Do you have a preference for the bar width or spacing between bars?'
+answers: '1. I do not have a specific color palette preference for the gradient representing
+  the ratings.
+
+  2. I am not sure about any specific font style or size for the axis labels and titles.
+
+  3. The names of the places can be displayed horizontally on the X-axis.
+
+  4. Yes, I would like annotations or markers on the bars to indicate the exact number
+  of reviews.
+
+  5. I do not have a particular chart title or subtitle in mind.
+
+  6. Yes, please include a legend to explain the color gradient for ratings.
+
+  7. I do not have any preference for the bar width or spacing between bars.'
+data_attributes:
+- type
+- name
+- numberOfReviews
+- rating

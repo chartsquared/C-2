@@ -1,0 +1,38 @@
+initial_prompt: Create a scatter plot visualizing the difference in memory scores
+  before and after taking the drug for each individual in the data. The x-axis should
+  represent the memory score before taking the drug, and the y-axis should represent
+  the memory score after. Differentiate the points by the 'Happy_Sad_group' using
+  different colors and indicate the dosage on each point. This should help visualize
+  any patterns or correlations between mood groups, drug dosage, and changes in memory
+  scores. Make sure to include a legend and appropriate labels for clarity.
+questions: "1. Do you have any specific color preferences for the 'Happy_Sad_group'?\n\
+  2. What style and size do you prefer for indicating the dosage on each point?\n\
+  3. Are there any specific axis scales or ranges you would like to set for the x\
+  \ and y axes?\n4. Do you want grid lines on the scatter plot, and if so, in which\
+  \ style?\n5. Is there a particular font or size preference for the labels and legend?\
+  \ \n6. Do you want to include specific markers or shapes for the data points?\n\
+  7. Should there be any specific title for the scatter plot?\n8. Would you like additional\
+  \ annotations or data labels on any specific data points?\n9. Is there a particular\
+  \ order for the legend items you prefer?"
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. No specific preference.
+
+  4. Yes, grid lines would be helpful, but I am not sure about the style.
+
+  5. I do not have any specific preference for font or size.
+
+  6. I do not know.
+
+  7. The title could be "Memory Scores Before and After Taking the Drug".
+
+  8. I am not sure.
+
+  9. No specific preference.'
+data_attributes:
+- Mem_Score_Before
+- Mem_Score_After
+- Happy_Sad_group
+- Dosage

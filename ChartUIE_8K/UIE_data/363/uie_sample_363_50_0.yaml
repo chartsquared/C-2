@@ -1,0 +1,36 @@
+initial_prompt: Create a choropleth map visualizing US police shootings by state.
+  Use color intensity to represent the number of incidents per state. Highlight states
+  with the highest occurrences. Add annotations to contextualize the data and emphasize
+  key insights related to mental illness signs or threat levels.
+questions: '1. Do you have a preferred color scheme for the choropleth map?
+
+  2. Should we use a specific color to highlight states with the highest occurrences?
+
+  3. Do you have a preferred format for the annotations (e.g., text boxes, callouts)?
+
+  4. Would you like the map to include state labels or names for easier identification?
+
+  5. Do you want a legend included to explain the color intensity?
+
+  6. Should the map include additional geographic markers such as major cities or
+  regions?
+
+  7. Do you prefer any specific font style or size for the annotations and labels?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Text boxes would be fine.
+
+  4. Yes, please include state labels or names.
+
+  5. Yes, a legend would be helpful.
+
+  6. I do not know.
+
+  7. I am not sure.'
+data_attributes:
+- state
+- id
+- signs_of_mental_illness
+- threat_level

@@ -1,0 +1,44 @@
+initial_prompt: Please create a heatmap showing the relationship between Order Quantity
+  and Sales Channel across different Warehouses, highlighting the Unit Cost and Unit
+  Price variations.
+questions: '1. Do you have a preference for the color scheme in the heatmap?
+
+  2. Would you like to include specific annotations or labels on the heatmap?
+
+  3. Should the heatmap display values within the cells for precise data reference?
+
+  4. Do you prefer a specific ordering for the axes, such as alphabetical or based
+  on value size?
+
+  5. Would you like to include a legend explaining the color intensity corresponding
+  to the data values?
+
+  6. Do you have a preference for the scale used to represent Unit Cost and Unit Price
+  (e.g., log scale)?
+
+  7. Should we use separate color gradients for Unit Cost and Unit Price, or a single
+  combined gradient?
+
+  8. Do you need any specific grouping or clustering within the heatmap to better
+  visualize correlations?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, I would like to display values within the cells for precise data reference.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a legend explaining the color intensity.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I do not have a specific preference.'
+data_attributes:
+- Order Quantity
+- Sales Channel
+- WarehouseCode
+- Unit Cost
+- Unit Price

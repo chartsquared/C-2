@@ -1,0 +1,50 @@
+initial_prompt: Using the given customer churn modelling data, create a line chart
+  to visualize the trends in the 'CreditScore' over the 'Age' of customers. The x-axis
+  should represent 'Age', and the y-axis should represent 'CreditScore'. Add lines
+  to differentiate between customers who have exited (Exited=1) and those who have
+  not exited (Exited=0) the service. Include labels and a legend for clarity. This
+  will help us to observe any correlations between age and credit score, and how they
+  might relate to customer churn.
+questions: '1. What color scheme do you prefer for differentiating customers who have
+  exited (Exited=1) from those who have not (Exited=0)?
+
+  2. Do you have a preference for the style of the lines (solid, dashed, etc.) representing
+  different groups in the chart?
+
+  3. Would you like any specific font styles or sizes for the labels and legend?
+
+  4. Should there be any specific title for the overall chart and the axes?
+
+  5. Do you prefer the chart to have grid lines for better readability?
+
+  6. Are there any specific annotations or markers you would like to add to the chart?
+
+  7. Would you prefer the data points to be highlighted along the line, or should
+  the line be smooth without individual data points?
+
+  8. Is there any particular order or sorting you''d like for the ''Age'' on the x-axis?
+
+  9. Do you have a preference for the chart''s aspect ratio or size?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Please use "Customer Age" for the x-axis title and "Credit Score" for the y-axis
+  title. The overall chart title can be "Credit Score vs. Age with Customer Churn
+  Status".
+
+  5. Yes, grid lines for better readability would be helpful.
+
+  6. I do not know.
+
+  7. I would prefer the line to be smooth without individual data points.
+
+  8. No specific order or sorting preference for the ''Age'' on the x-axis.
+
+  9. I do not have a specific preference for the chart''s aspect ratio or size.'
+data_attributes:
+- Age
+- CreditScore
+- Exited

@@ -1,0 +1,59 @@
+initial_prompt: Please create a box chart visualizing the 'Total_Bilirubin', 'Direct_Bilirubin',
+  'Alkaline_Phosphotase', 'Alamine_Aminotransferase', and 'Aspartate_Aminotransferase'
+  values from the Indian Liver Patient Records dataset. The chart should compare these
+  values for different genders. This visualization will help in understanding the
+  distribution and variability of these liver function indicators between male and
+  female patients. Make sure to highlight any significant outliers or deviations in
+  the data. The x-axis should represent the type of liver function test and the y-axis
+  should represent the measured values.
+questions: '1. Do you have any specific color preferences for different genders in
+  the chart?
+
+  2. Would you prefer any specific style or size for outlier markers to ensure they
+  are highlighted effectively?
+
+  3. Are there any particular axis label formats or fonts you prefer?
+
+  4. Do you want gridlines in the background to enhance readability?
+
+  5. Should a legend be included, and if so, where would you prefer it to be placed?
+
+  6. Are there any specific titles or subtitles you would like to include for the
+  chart or axes?
+
+  7. Do you prefer any particular order for the liver function tests on the x-axis?
+
+  8. Would you like any reference lines or markers for specific value thresholds in
+  the chart?
+
+  9. Are there any preferences for the display of data points (e.g., jittering in
+  the box plot)?
+
+  10. Would you like the summary statistics (mean, median) to be explicitly marked
+  on the box plots?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. Yes, please include gridlines for better readability.
+
+  5. Yes, include a legend. I am not sure where it should be placed.
+
+  6. No specific titles or subtitles.
+
+  7. I have no specific preference for the order.
+
+  8. I am not sure.
+
+  9. I am not sure.
+
+  10. Yes, please mark the median on the box plots.'
+data_attributes:
+- Total_Bilirubin
+- Direct_Bilirubin
+- Alkaline_Phosphotase
+- Alamine_Aminotransferase
+- Aspartate_Aminotransferase
+- Gender

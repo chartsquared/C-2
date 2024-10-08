@@ -1,0 +1,48 @@
+initial_prompt: I need a bar chart to visualize the UCI Heart Disease Data. It should
+  compare the number of patients with different types of chest pain ('cp') across
+  the four datasets ('dataset'). Each bar should represent one type of chest pain
+  (e.g., typical angina, atypical angina, non-anginal pain, asymptomatic) and group
+  the bars by the dataset (e.g., Cleveland, Hungarian, Switzerland, Long Beach). Missing
+  values can be ignored. Also, differentiate the bars by color for easy comparison.
+  Make sure the labels are clear and the chart is easy to interpret.
+questions: '1. Do you have a preferred color palette for the bars representing different
+  types of chest pain?
+
+  2. Would you like to include a legend explaining the colors used for each type of
+  chest pain?
+
+  3. Do you have a preference for the orientation of the bar chart (vertical or horizontal)?
+
+  4. Do you prefer any specific style or font for the labels and titles?
+
+  5. Would you like to include any specific title or subtitle for the chart?
+
+  6. Do you want gridlines to be included in the chart for better readability?
+
+  7. Is there a particular order in which you would like the datasets (e.g., Cleveland,
+  Hungarian, Switzerland, Long Beach) to appear?
+
+  8. How would you like to handle data labels on the bars (e.g., inside the bar, outside
+  the bar, or not at all)?
+
+  9. Do you need any specific annotations or notes displayed on the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, please include a legend.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Title: "Distribution of Chest Pain Types Across Datasets"
+
+  6. Yes, include gridlines for better readability.
+
+  7. No specific order.
+
+  8. Inside the bar would be good.
+
+  9. No specific annotations or notes needed.'
+data_attributes:
+- cp
+- dataset

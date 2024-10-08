@@ -1,0 +1,45 @@
+initial_prompt: Please create a pie chart using the data provided in the file location
+  '../Extra_datas/data/403.csv'. The chart should visualize the probability of rain
+  by different states. Each slice of the pie chart should represent a state, labeled
+  by the 'code' column, and the size of each slice should be determined by the corresponding
+  'prob' value. The chart should clearly show which states are more likely to experience
+  rain based on the given probabilities. Ensure the chart is color-coded and has a
+  legend for easier interpretation. The data is related to weather and emphasizes
+  probabilities.
+questions: '1. Do you have any preference on the specific color scheme to be used
+  for the pie chart slices?
+
+  2. Would you like the chart to include percentage values along with labels on the
+  slices?
+
+  3. Do you prefer a 2D or 3D representation for the pie chart?
+
+  4. Should the pie chart include data labels with both the state code and probability
+  values?
+
+  5. Do you have any specific font preference for the labels and legend?
+
+  6. Would you like the legend to be positioned in a specific location on the chart
+  (e.g., right, bottom, top)?
+
+  7. Should the chart include a title? If so, what should the title be?'
+answers: '<start of user emulated response>
+
+  1. I do not have any specific preference.
+
+  2. Yes, please include percentage values along with labels on the slices.
+
+  3. I am not sure.
+
+  4. Yes, include data labels with both the state code and probability values.
+
+  5. I do not have any specific font preference.
+
+  6. I am not sure.
+
+  7. Yes, the title should be "Probability of Rain by State".
+
+  <end of user emulated response>'
+data_attributes:
+- code
+- prob

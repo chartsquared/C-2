@@ -1,0 +1,67 @@
+initial_prompt: Please create a histogram to visualize the distribution of engagement
+  metrics like reactions, comments, shares, likes, etc., from the provided social
+  media data. Annotate key data points to highlight interesting trends, such as unusually
+  high or low engagement for specific post types (link, photo, status, video). Use
+  color to differentiate metrics and draw attention to significant variations. Highlight
+  the purpose of the chart to provide a clear overview of social media engagement,
+  focusing on elements like reactions and comments, and use annotations to emphasize
+  noteworthy data points. The chart should be easy to interpret for general audience.
+questions: '1. Do you have a preferred color palette for differentiating the engagement
+  metrics?
+
+  2. Are there specific labels or legends you prefer to use for each engagement metric?
+
+  3. How would you like key data points to be annotated (e.g., arrows, call-outs,
+  highlighted text)?
+
+  4. Do you have any preference for the bin size or range in the histogram?
+
+  5. Would you prefer the chart to be in a specific orientation (vertical or horizontal)?
+
+  6. Are there any particular post types (link, photo, status, video) that you would
+  like to focus on or prioritize in the visualization?
+
+  7. Do you have a preference for the font style and size used for annotations and
+  labels?
+
+  8. Would you like to include a title or a subtitle on the chart? If so, do you have
+  any specific text in mind?
+
+  9. Are there any specific gridlines or axes styles you prefer to make the chart
+  easier to interpret?
+
+  10. How would you like the chart to handle overlapping data points or bars?'
+answers: '1. I do not have a specific preference.
+
+  2. I am not sure.
+
+  3. Arrows and call-outs would be great for annotating key data points.
+
+  4. I do not know.
+
+  5. Vertical orientation would be preferred.
+
+  6. No, I do not have any specific preference for post types.
+
+  7. I do not have a specific preference.
+
+  8. Yes, please include a title: "Social Media Engagement Overview". No specific
+  subtitle needed.
+
+  9. I do not know.
+
+  10. I am not sure, but making sure the data points are clear would be important.'
+data_attributes:
+- num_reactions
+- num_comments
+- num_shares
+- num_likes
+- num_loves
+- num_wows
+- num_hahas
+- num_sads
+- num_angrys
+- status_type_link
+- status_type_photo
+- status_type_status
+- status_type_video

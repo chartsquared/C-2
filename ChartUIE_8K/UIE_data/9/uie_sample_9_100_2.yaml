@@ -1,0 +1,51 @@
+initial_prompt: '<start of user instructions>
+
+  Create a bubble chart visualizing the value added per worker in agriculture, forestry,
+  and fishing across different countries. Use the "country" on the x-axis, "Year"
+  on the y-axis, and size the bubbles by "Agriculture, forestry, and fishing, value
+  added per worker (constant 2015 US$)". Each bubble should be colored uniquely by
+  "Codes" to distinguish different countries. Include text annotations to highlight
+  outliers or trends. This will help visualize agricultural productivity and enable
+  a comparative analysis over time.
+
+  <end of user instructions>'
+questions: '1. Do you have any specific color palette preferences for distinguishing
+  different countries by "Codes"?
+
+  2. Would you like to include a legend to explain the color coding of the bubbles?
+
+  3. Do you have a preference for the format or placement of the text annotations
+  highlighting outliers or trends?
+
+  4. Is there a specific range or scale you would like to use for the bubble sizes
+  to represent "Agriculture, forestry, and fishing, value added per worker (constant
+  2015 US$)"?
+
+  5. Do you have any preferences for the appearance and format of the x-axis and y-axis
+  labels (e.g., font size, font type, rotation)?
+
+  6. Should the chart include grid lines or any other specific background elements
+  to enhance readability?
+
+  7. Would you prefer the chart to have a title or subtitle, and if so, do you have
+  any specific wording for them?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to include a legend.
+
+  3. I do not have a specific preference for the format or placement of the text annotations.
+
+  4. I am not sure about the specific range or scale for the bubble sizes.
+
+  5. I do not have any specific preferences for the appearance and format of the x-axis
+  and y-axis labels.
+
+  6. Grid lines would be helpful to enhance readability.
+
+  7. Yes, the chart should include a title. Something like "Agricultural Productivity
+  per Worker Over Time Across Different Countries" would be good.'
+data_attributes:
+- country
+- Codes
+- Year
+- Agriculture, forestry, and fishing, value added per worker (constant 2015 US$)

@@ -1,0 +1,42 @@
+initial_prompt: Please create a scatter plot using the Rolling Stone Album Rankings
+  data. Plot "release_year" on the x-axis and "rank_2020" on the y-axis to visualize
+  how album rankings have changed over time. Annotate significant data points, such
+  as high-ranking albums, with their "clean_name" and "rank_2020". Highlight albums
+  from the "Rock n' Roll/Rhythm & Blues" genre for emphasis. The chart should help
+  identify trends and the influence of specific genres across different years.
+questions: '1. Do you have any specific color preferences for the different genres,
+  particularly for highlighting the "Rock n'' Roll/Rhythm & Blues" genre?
+
+  2. What threshold do you consider for an album to be labeled as ''high-ranking''
+  for annotation purposes?
+
+  3. Do you prefer a title for the chart? If so, please provide the preferred title.
+
+  4. Would you like to include axis labels, grid lines, or background color customization?
+
+  5. Are there any particular fonts or styles you prefer for the annotations and axis
+  labels?
+
+  6. Should there be a legend to differentiate genres or highlighted data points?
+
+  7. Do you prefer the data points to be circles, squares, or another shape for better
+  visualization?'
+answers: '1. I am not sure.
+
+  2. High-ranking could be within the top 20, I think.
+
+  3. I do not know.
+
+  4. Yes, please include axis labels and grid lines. I am not sure about the background
+  color.
+
+  5. I do not have any specific preference.
+
+  6. I am not sure.
+
+  7. I do not know.'
+data_attributes:
+- release_year
+- rank_2020
+- clean_name
+- genre

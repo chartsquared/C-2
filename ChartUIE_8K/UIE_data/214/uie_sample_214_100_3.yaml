@@ -1,0 +1,51 @@
+initial_prompt: '<start of user emulated instruction>
+
+  I want a box chart visualizing the relationship between suicide numbers and population
+  across different age groups and genders. Please use the WHO Suicide Statistics data.
+  Let''s identify any outliers in the suicide rates over the years for various countries
+  by breaking it down into male and female categories and across different age ranges.
+  Highlight the distribution and spread of suicide numbers within these groups. Ensure
+  the chart clearly represents data over the years to observe any trends or anomalies.
+
+  <end of user emulated instruction>'
+questions: '1. Do you have any preferences for the color scheme to differentiate between
+  male and female categories?
+
+  2. Is there a specific way you would like age groups to be represented or ordered
+  on the chart?
+
+  3. How would you prefer outliers to be highlighted in the box chart?
+
+  4. Would you like to include any specific annotations or labels for the outliers?
+
+  5. Do you have preferences for the time range to be displayed on the x-axis?
+
+  6. Should the chart include trend lines or markers for specific years to denote
+  significant events or changes?
+
+  7. Are there any particular countries you want to focus on or compare within the
+  chart?'
+answers: '<start of user emulated response>
+
+  1. I do not know.
+
+  2. I am not sure.
+
+  3. Please use a distinct color or symbol to highlight the outliers.
+
+  4. I do not know.
+
+  5. No specific preference.
+
+  6. I am not sure.
+
+  7. No specific countries, just a global view is fine.
+
+  <end of user emulated response>'
+data_attributes:
+- country
+- year
+- sex
+- age
+- suicides_no
+- population

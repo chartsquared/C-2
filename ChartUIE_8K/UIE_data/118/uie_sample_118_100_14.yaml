@@ -1,0 +1,55 @@
+initial_prompt: Please create a bar chart to visualize the distribution of patients'
+  age groups in the Indian Liver Patient Records dataset. The x-axis should represent
+  different age groups (e.g., 0-10, 11-20, ..., 61-70, 71+), and the y-axis should
+  represent the count of patients in each age group. Additionally, use different colors
+  to distinguish between male and female patients within each age group. This will
+  help to better understand the age and gender distribution of liver patients in the
+  dataset. Thank you!
+questions: '1. Do you have a preferred color palette for distinguishing between male
+  and female patients?
+
+  2. What title would you like for the chart?
+
+  3. Would you like the age groups to have custom labels, or should we use the default
+  ranges (e.g., 0-10, 11-20, etc.)?
+
+  4. Do you prefer a specific font style or size for the chart labels and titles?
+
+  5. Should the legend be placed in a specific location (e.g., top, bottom, left,
+  right)?
+
+  6. Would you like gridlines on the chart? If so, should they be only for the y-axis,
+  x-axis, or both?
+
+  7. Is there a specific format you prefer for displaying the count values on the
+  y-axis (e.g., integers, thousands with comma separators)?
+
+  8. Do you need any additional annotations or markers on the chart (e.g., highlighting
+  a specific age group)?
+
+  9. Should the bars be displayed with specific spacing between age groups or clustered
+  tightly together?
+
+  10. Do you have a preference for the orientation of the bars (vertical or horizontal)?'
+answers: '1. I am not sure.
+
+  2. "Age and Gender Distribution of Liver Patients"
+
+  3. Use the default ranges (e.g., 0-10, 11-20, etc.).
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Yes, please include gridlines for both the y-axis and x-axis.
+
+  7. Integers would be preferred.
+
+  8. No, additional annotations or markers are not needed.
+
+  9. I do not know.
+
+  10. Vertical orientation is preferred.'
+data_attributes:
+- Age
+- Gender

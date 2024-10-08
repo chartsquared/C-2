@@ -1,0 +1,53 @@
+initial_prompt: Please create a network graph visualizing the academic collaboration
+  between universities as detailed in the provided dataset. The nodes should represent
+  the universities (e.g., Harvard, MIT, Stanford), and the edges should illustrate
+  the collaborations (source to target) and their intensity (value). Incorporate the
+  missing data points sensibly and ensure the different types of collaborations are
+  distinguishable. Add labels to nodes and, if possible, hover or click details to
+  provide more information about each node and connection. Please color code the types
+  of collaborations for better clarity.
+questions: '1. Do you have a preferred layout for the network graph (e.g., circular,
+  force-directed)?
+
+  2. Is there a specific color palette you would like for the different types of collaborations?
+
+  3. How would you prefer missing data points to be handled or represented?
+
+  4. Do you have preferences for the size of nodes based on specific attributes (e.g.,
+  size proportional to the number of collaborations)?
+
+  5. Should the edge thickness vary according to the intensity of the collaborations?
+  If so, what range or scale should be used?
+
+  6. Are there any specific font styles or sizes you would like for the labels on
+  the nodes?
+
+  7. Is there any additional information you''d like displayed in the hover or click
+  details for each node and connection?
+
+  8. Would you like to include a legend to explain the types of collaborations and
+  their color coding? If so, do you have a specific placement preference for the legend?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific color palette in mind.
+
+  3. I am not sure about how to handle missing data points.
+
+  4. I do not know.
+
+  5. Yes, the edge thickness should vary according to the intensity of the collaborations,
+  but I am not sure about the range or scale.
+
+  6. I do not have preferences for the font styles or sizes.
+
+  7. I would like additional information displayed in the hover or click details,
+  but I am not sure what specific information.
+
+  8. Yes, please include a legend to explain the types of collaborations and their
+  color coding. I do not have a specific placement preference for the legend.'
+data_attributes:
+- name
+- source
+- target
+- type
+- value

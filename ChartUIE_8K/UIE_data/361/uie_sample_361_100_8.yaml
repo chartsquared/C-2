@@ -1,0 +1,41 @@
+initial_prompt: I need a stacked bar chart that visualizes the distribution of chest
+  pain types among different age groups and their associated targets (condition presence
+  or absence). Please use the 'age', 'chestpain', and 'target' columns from the cardiovascular
+  disease dataset. The y-axis should represent counts, the x-axis should represent
+  different age groups, and the bars should be stacked by chest pain types with different
+  colors representing the target condition. This will help us understand the correlation
+  between age, chest pain types, and the presence of cardiovascular disease.
+questions: '1. Do you have a specific color scheme in mind for differentiating the
+  target conditions and chest pain types?
+
+  2. How would you like the age groups to be divided (e.g., in decades)?
+
+  3. Is there any specific order in which you want the chest pain types to be stacked
+  in the bars?
+
+  4. Would you like to include labels or annotations on the bars to show the counts
+  or percentages?
+
+  5. Do you prefer the chart to have a legend, and if so, where would you like it
+  to be positioned (e.g., right, bottom)?
+
+  6. Are there any specific titles or axis labels you would like to use for the chart?
+
+  7. Do you have any preference for the font style and size used in the chart?'
+answers: '1. I am not sure.
+
+  2. Yes, in decades would be good.
+
+  3. I do not know.
+
+  4. Yes, please include labels to show the counts.
+
+  5. Yes, I prefer the legend to be positioned at the bottom.
+
+  6. No specific preference.
+
+  7. I have no specific preference.'
+data_attributes:
+- age
+- chestpain
+- target

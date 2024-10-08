@@ -1,0 +1,57 @@
+initial_prompt: Create a grouped bar chart comparing the GNI (PPP) and Life Expectancy
+  of Korea, Kuwait, and Kenya over the years 2008, 2009, and 2010. Use different colors
+  to represent each country within the bars. Annotate key values for GNI and Life
+  Expectancy at points where there are significant changes or notable trends. For
+  example, highlight the highest life expectancy and the lowest GNI among the countries
+  in each year. The chart should help visualize economic and health trends across
+  these countries, emphasizing how these factors evolve over time.
+questions: '1. Do you have a preferred style or theme for the chart (e.g., modern,
+  classic, minimalist)?
+
+  2. What specific colors would you like to use for each country?
+
+  3. Do you have a preferred font style and size for labels and annotations?
+
+  4. How would you like key values to be annotated (e.g., arrow pointers, different
+  color text, bold text)?
+
+  5. Would you like gridlines to be visible on the chart?
+
+  6. Do you prefer a specific order for the countries within each group on the bar
+  chart?
+
+  7. How would you like the legend to be displayed (e.g., top, bottom, side)?
+
+  8. Do you want the y-axes to be on a linear or logarithmic scale?
+
+  9. Are there any specific labels or titles you would like for the axes and the chart?
+
+  10. Would you prefer the bars to be spaced closely together or have more separation?'
+answers: '1. I am not sure.
+
+  2. Korea: Blue, Kuwait: Green, Kenya: Orange.
+
+  3. I do not know.
+
+  4. Arrow pointers would be good to annotate key values.
+
+  5. I am not sure.
+
+  6. No specific preference.
+
+  7. I do not know.
+
+  8. Linear scale.
+
+  9. X-axis: "Year", Y-axis: "Value", Chart Title: "GNI (PPP) and Life Expectancy
+  Comparison (2008-2010)".
+
+  10. I have no specific preference.'
+data_attributes:
+- Time
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Korea, Rep. [KOR]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kuwait [KWT]
+- GNI, PPP (current international $) [NY.GNP.MKTP.PP.CD] - Kenya [KEN]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Korea, Rep. [KOR]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kuwait [KWT]
+- Life expectancy at birth, total (years) [SP.DYN.LE00.IN] - Kenya [KEN]

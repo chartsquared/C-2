@@ -1,0 +1,49 @@
+initial_prompt: 'Create an Area chart showing the trend of average product ratings
+  over different months for women''s fashion items. Use crawl_month on the x-axis
+  and average rating on the y-axis. Ensure each line represents a different theme:
+  summer, casual, and winter. Use colors to distinguish between themes.'
+questions: '1. Do you have a specific color palette preference for distinguishing
+  between the themes?
+
+  2. Would you prefer to see gridlines on the chart for easier reading of values?
+
+  3. Do you prefer a specific font style and size for the axis labels and title?
+
+  4. Would you like to include data points or markers on the lines for specific months?
+
+  5. Should the area under each line be filled with a solid color or gradient?
+
+  6. Do you have a preference for the placement and styling of the legend?
+
+  7. Would you like to display the exact rating values on the chart at each month?
+
+  8. Is there any specific range you want to set for the y-axis (average rating)?
+
+  9. Do you want to include annotations or highlights for notable trends or changes
+  within the chart?
+
+  10. Would you like to set a specific aspect ratio for the chart or should it be
+  dynamic based on the display area?'
+answers: '1. I have no specific preference.
+
+  2. I am not sure.
+
+  3. I have no specific preference.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not know.
+
+  9. I am not sure.
+
+  10. I have no specific preference.'
+data_attributes:
+- crawl_month
+- rating
+- theme

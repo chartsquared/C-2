@@ -1,0 +1,39 @@
+initial_prompt: Create a stacked bar chart visualizing the conversion rate by campaign
+  type and channel. Highlight the segments with high conversion rates. Add text annotations
+  to show exact conversion rates on each bar.
+questions: '1. What color palette would you prefer for highlighting different campaign
+  types and channels?
+
+  2. Do you have any specific preferences for the bar width or spacing between bars?
+
+  3. Is there a particular font style or size you would like for the text annotations?
+
+  4. Would you like to include a legend to differentiate between campaign types and
+  channels?
+
+  5. Are there any specific segments or threshold values for high conversion rates
+  that you would like to highlight?
+
+  6. Do you prefer the chart to be displayed in any particular order, such as by highest
+  conversion rate or alphabetical order of campaign types and channels?
+
+  7. Is there any additional information or contextual data you would like to include
+  alongside the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I do not have a specific preference.
+
+  4. Yes, I would like to include a legend to differentiate between campaign types
+  and channels.
+
+  5. The segments with conversion rates above 20% should be highlighted.
+
+  6. I am not sure.
+
+  7. I do not have specific additional information or contextual data to include.'
+data_attributes:
+- CampaignType
+- CampaignChannel
+- ConversionRate

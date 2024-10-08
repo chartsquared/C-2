@@ -1,0 +1,52 @@
+initial_prompt: Create a heatmap to visualize the percent change in consumer spending
+  across different categories for given dates and state FIPS codes.
+questions: '1. Do you have preferred color schemes for the heatmap?
+
+  2. Is there a specific range of percent change values you would like to highlight?
+
+  3. Would you like to include labels for each cell to show exact values?
+
+  4. Do you prefer the date to be displayed in a specific format?
+
+  5. Should the heatmap include a legend to explain the color scale?
+
+  6. Are there specific categories of spending you want to focus on or exclude?
+
+  7. How do you prefer the data to be aggregated, if at all (e.g., by month, by week)?
+
+  8. Do you need gridlines between cells for better readability?
+
+  9. Should the heatmap handle missing data in any special way?
+
+  10. Do you have specific preferences for axis labels and titles?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, I would like to include labels for each cell to show exact values.
+
+  4. I do not know.
+
+  5. Yes, the heatmap should include a legend to explain the color scale.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I have no specific preference.
+
+  9. I am not sure.
+
+  10. I do not know.'
+data_attributes:
+- State FIPS code
+- Date
+- All merchant category codes spending
+- Accommodation and food service (ACF) spending
+- Arts, entertainment, and recreation (AER) spending
+- General merchandise stores (GEN) and apparel and accessories (AAP) spending
+- Grocery and food store (GRF) spending
+- Health care and social assistance (HCS) spending
+- Transportation and warehousing (TWS) spending
+- Retail spending, including grocery (AAP, CEC, GEN, GRF, HIC, ETC, SGH)
+- Retail spending, excluding grocery ((AAP, CEC, GEN, HIC, ETC, SGH)

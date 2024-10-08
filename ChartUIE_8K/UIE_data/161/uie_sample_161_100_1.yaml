@@ -1,0 +1,56 @@
+initial_prompt: Create a choropleth map of the US, highlighting states based on the
+  density of licensed digital TV station transmitters from the provided dataset. Use
+  different color gradients to represent varying transmitter densities. Annotate key
+  states, such as Alaska, with specific data on transmitter counts and main licensees
+  to draw attention. The map should help identify regions with high concentrations
+  of transmitters, facilitating a better understanding of digital TV coverage across
+  the country for media and communications analysis. Please ensure the annotations
+  provide clear insights into the highlighted areas.
+questions: '1. Do you have a preferred color palette for the gradient representing
+  transmitter densities?
+
+  2. What level of detail would you like for the annotations on key states?
+
+  3. Should the annotations include exact transmitter counts and main licensees, or
+  would a summary suffice?
+
+  4. How would you like the color gradients to be scaled (e.g., linear, logarithmic)?
+
+  5. Are there any specific states, besides Alaska, that you want to be highlighted
+  or annotated?
+
+  6. Do you have a preference for the map projection (e.g., Mercator, Albers)?
+
+  7. Would you like labels for all states or just the key ones?
+
+  8. Should the map include a legend to explain the color gradients?
+
+  9. Do you have any specific font or style preferences for the annotations and labels
+  on the map?
+
+  10. Are there any additional data elements or overlays you would like to see on
+  the map (e.g., major cities, geographical features)?'
+answers: '1. I do not have a specific color palette preference.
+
+  2. I would like a moderate level of detail for the annotations.
+
+  3. Exact transmitter counts and main licensees would be preferred.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I do not know.
+
+  7. Just the key ones.
+
+  8. Yes, please include a legend.
+
+  9. I do not have any specific font or style preferences.
+
+  10. I do not know.'
+data_attributes:
+- STATE
+- index
+- CALLSIGN
+- LICENSEE

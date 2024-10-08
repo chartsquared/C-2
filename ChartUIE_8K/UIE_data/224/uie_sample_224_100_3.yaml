@@ -1,0 +1,45 @@
+initial_prompt: Create a heatmap to visualize the correlation of sales between different
+  states in the Superstore Sales Dataset. The x-axis should represent the various
+  product categories (Furniture, Office Supplies, Technology), and the y-axis should
+  represent the states. Use color intensity to indicate the magnitude of sales, with
+  darker colors representing higher sales. Include a color legend to differentiate
+  the sales values. Make sure missing data points are handled appropriately. The visualization
+  should help identify which product categories perform best in which states. This
+  will assist in strategic decision-making for regional sales planning.
+questions: '1. Do you have any preference for the color palette used in the heatmap?
+
+  2. Would you like to display the exact sales values on the heatmap or prefer it
+  to be just color intensity-based?
+
+  3. How would you like to handle missing data points in the heatmap?
+
+  4. Do you have a specific ordering preference for states and categories in the heatmap?
+
+  5. What title would you like for the heatmap to clearly convey its purpose?
+
+  6. Do you want grid lines to be displayed for better readability, or should they
+  be omitted for a cleaner look?
+
+  7. Are there any specific annotations or labels you would like to be included in
+  the heatmap?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I think just color intensity-based would be fine.
+
+  3. I am not sure.
+
+  4. No specific preference.
+
+  5. "Sales Performance by Product Category and State"
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- State
+- Category
+- Sales

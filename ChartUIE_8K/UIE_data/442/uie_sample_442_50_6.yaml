@@ -1,0 +1,48 @@
+initial_prompt: Create a heatmap to visualize mobile subscriptions by year and country.
+  Use different shades to indicate subscription levels. Exclude missing values. Use
+  the "continent" column to differentiate regions with distinct colors.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like to handle countries with significantly different subscription
+  levels?
+
+  3. Should the heatmap include a legend or explanatory text?
+
+  4. Do you prefer a particular font style and size for the labels?
+
+  5. How would you like to indicate missing values (e.g., leave blank, use a specific
+  color)?
+
+  6. Are there specific countries or years you want to emphasize in the heatmap?
+
+  7. What range of years should be included in the visualization?
+
+  8. Should the heatmap be optimized for print, presentation, or web display?
+
+  9. Do you have a preference for the order of countries or regions on the heatmap?
+
+  10. Is there a specific aspect ratio or size you prefer for the heatmap?'
+answers: '1. I do not know.
+
+  2. I am not sure.
+
+  3. Yes, the heatmap should include a legend.
+
+  4. I have no specific preference.
+
+  5. Leave blank.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Web display.
+
+  9. I have no specific preference.
+
+  10. I do not know.'
+data_attributes:
+- entity
+- year
+- mobile_subs
+- continent

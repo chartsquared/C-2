@@ -1,0 +1,64 @@
+initial_prompt: Create a heatmap highlighting the threats faced by extinct plants
+  across continents, emphasizing data points linked to endangered species. Utilize
+  text annotations to depict unique values and occurrences in each category.
+questions: '1. Do you have a preference for the color scheme of the heatmap?
+
+  2. How would you like the text annotations to be displayed? (e.g., inside the cells,
+  outside the cells, with arrows)
+
+  3. Do you want to include a legend to explain the threat levels?
+
+  4. Would you prefer to use any specific font style or size for the annotations?
+
+  5. Should the heatmap be organized in any particular order? (e.g., by continent,
+  by threat levels)
+
+  6. Are there any specific continents or threats you would like to highlight more
+  prominently?
+
+  7. What level of granularity do you prefer for the threat levels? (e.g., binary,
+  categorical, continuous)
+
+  8. Would you like to include any additional reference lines or markers to emphasize
+  specific data points?
+
+  9. Do you prefer a specific layout or orientation for the heatmap? (e.g., horizontal,
+  vertical)
+
+  10. Should the extinct plants be grouped by any other attribute such as country
+  or group besides continent?'
+answers: '1. I am not sure.
+
+  2. Inside the cells.
+
+  3. Yes, include a legend to explain the threat levels.
+
+  4. I do not know.
+
+  5. By continent.
+
+  6. I am not sure.
+
+  7. Categorical.
+
+  8. I do not know.
+
+  9. Horizontal.
+
+  10. I do not know.'
+data_attributes:
+- binomial_name
+- continent
+- threat_AA
+- threat_BRU
+- threat_RCD
+- threat_ISGD
+- threat_EPM
+- threat_CC
+- threat_HID
+- threat_P
+- threat_TS
+- threat_NSM
+- threat_GE
+- threat_NA
+- red_list_category

@@ -1,0 +1,47 @@
+initial_prompt: Create a choropleth map visualizing global suicide rates from 1985
+  to 2016. The data includes countries, years, sex, age groups, suicide numbers, populations,
+  and GDP. Focus on representing "suicides/100k pop" across different countries and
+  years. Highlight variations by country and significant trends over time. Use color
+  gradients to differentiate suicide rates, ensuring clear visual distinctions between
+  low and high rates. Incorporate interactive elements such as tooltips displaying
+  detailed info (country, year, rate). Additionally, group data by sex and age to
+  show demographic differences. Provide options to filter by year and generation.
+questions: '1. Do you have a preferred color gradient for the choropleth map to indicate
+  low to high suicide rates?
+
+  2. What kind of geographical boundaries or map projection do you prefer for the
+  global map?
+
+  3. Do you have any specific preferences for labeling regions or countries on the
+  map?
+
+  4. Would you like the legend for the color gradient to be in a specific location
+  on the map?
+
+  5. Are there specific age groups or sex categories that you would like to be highlighted
+  or given more visual prominence?
+
+  6. Do you have a preferred layout or style for displaying the filter options by
+  year and generation?
+
+  7. What font style and size do you prefer for any textual elements such as labels,
+  legends, and tooltips?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not have any specific preference.
+
+  4. I do not have any specific preference.
+
+  5. Please highlight the differences between sexes (male and female).
+
+  6. I do not know.
+
+  7. I have no specific preference.'
+data_attributes:
+- country
+- year
+- suicides/100k pop
+- sex
+- age

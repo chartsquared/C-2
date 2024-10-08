@@ -1,0 +1,37 @@
+initial_prompt: Please create a network graph showing the relationships between influencers
+  in the media and communications sector using the given dataset. Highlight nodes
+  by group and size by followers.
+questions: '1. Do you have a preferred color scheme for highlighting different groups
+  of influencers?
+
+  2. How would you like the follower count to be represented in the node size? (e.g.,
+  linear scaling, logarithmic scaling)
+
+  3. Should the graph include labels for each influencer''s name?
+
+  4. Do you prefer specific shapes for the nodes based on groups, or should all nodes
+  have the same shape?
+
+  5. Would you like to include any additional information on hover or click for each
+  node? (e.g., detailed profile, additional stats)
+
+  6. How would you like the edges (relationships) to be styled or colored? (e.g.,
+  uniform, based on type or strength of relationship)'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not have a specific preference.
+
+  4. I am not sure.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.'
+data_attributes:
+- id
+- name
+- group
+- followers
+- source
+- target

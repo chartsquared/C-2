@@ -1,0 +1,60 @@
+initial_prompt: Please create a scatter plot visualization for the Housing Prices
+  Dataset. Plot 'area' on the x-axis and 'price' on the y-axis to understand the relationship
+  between property size and price in the real estate market. Use different colors
+  or markers to distinguish between furnishing status ('furnished', 'semi-furnished',
+  'unfurnished'). Ensure mainroad status ('yes' or 'no') is depicted through different
+  symbols or a legend. This will help in identifying how mainroad access and furnishing
+  status affect property prices and area. Additionally, provide gridlines for better
+  readability. Thank you!
+questions: '1. Do you have a preferred color scheme or palette for distinguishing
+  between furnishing statuses?
+
+  2. How would you like the symbols for mainroad status (e.g., shapes like circles,
+  squares, triangles) to be represented?
+
+  3. Should the chart include titles and labels for the x-axis and y-axis? If so,
+  what should they be?
+
+  4. Would you like a gridline at specific intervals or a general gridline for better
+  readability?
+
+  5. Do you prefer any specific range limits for the x-axis (''area'') and y-axis
+  (''price'')?
+
+  6. Would you like to include a title for the scatter plot? If so, what should it
+  be?
+
+  7. Do you have any preferences for the font size and style for labels and legends?
+
+  8. Should the legend be positioned in a specific part of the chart (e.g., top-right,
+  bottom-left)?
+
+  9. Would you like to add data point markers or labels to highlight specific properties?
+
+  10. Do you have specific preferences for the background color of the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include titles and labels. The x-axis should be labeled ''Area''
+  and the y-axis should be labeled ''Price''.
+
+  4. General gridlines for better readability.
+
+  5. I have no specific preference.
+
+  6. Yes, the title should be ''Housing Prices vs. Area with Furnishing and Mainroad
+  Status''.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. No, no specific data point markers or labels are needed.
+
+  10. I have no specific preference.'
+data_attributes:
+- area
+- price
+- furnishingstatus
+- mainroad

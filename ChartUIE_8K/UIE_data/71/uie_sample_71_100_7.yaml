@@ -1,0 +1,58 @@
+initial_prompt: Please create a bubble chart visualizing higher education institutions
+  in the USA from the dataset. Use the "region" as the x-axis and "id" as the y-axis,
+  and represent unique values in the "category" with different colors. For the size
+  of the bubbles, use the unique values in the "name" column. Ensure all the regions
+  and categories are easily distinguishable and labeled properly. The chart should
+  offer a clear comparison of institutions by category and name distribution across
+  different regions.
+questions: '1. Do you have any specific color preferences for representing the categories?
+
+  2. How would you like the bubbles to be scaled—linearly or logarithmically?
+
+  3. Are there any specific font styles or sizes you prefer for the labels?
+
+  4. Should the labels for the regions and categories be placed inside or outside
+  the bubbles for better readability?
+
+  5. Do you want grid lines to be present on the chart background? If yes, what style
+  do you prefer (dotted, solid, etc.)?
+
+  6. Are there any specific regions or categories you want to highlight or differentiate
+  more prominently?
+
+  7. Do you have any preferences for the overall chart background color or theme (e.g.,
+  light, dark)?
+
+  8. Is there a specific title or subtitle you would like to include on the chart?
+
+  9. Do you want to include a legend to explain the colors and bubble sizes? If yes,
+  where would you prefer the legend to be placed?
+
+  10. Are there any annotations or additional information you would like to display
+  on the chart?'
+answers: '1. I do not have any specific color preferences for representing the categories.
+
+  2. I am not sure about the scaling, maybe linear is fine.
+
+  3. I have no specific preference for font styles or sizes.
+
+  4. I am not sure, you can decide what is more readable.
+
+  5. I do not know much about grid lines, so any style is fine.
+
+  6. I do not have any specific regions or categories to highlight.
+
+  7. I have no preference for the overall chart background color or theme.
+
+  8. Please include the title "Comparison of Higher Education Institutions by Region
+  and Category".
+
+  9. Yes, include a legend explaining the colors and bubble sizes. Place the legend
+  on the right side of the chart.
+
+  10. I do not have any additional annotations or information to display.'
+data_attributes:
+- id
+- region
+- name
+- category

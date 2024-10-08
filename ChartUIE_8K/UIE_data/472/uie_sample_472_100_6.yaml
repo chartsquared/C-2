@@ -1,0 +1,41 @@
+initial_prompt: Please create a grouped bar chart using the data from '../Extra_datas/data/472.csv'.
+  The chart should compare the values for the years 2000 and 2020 for each country
+  listed, grouped by their respective group. Each country should have two bars, one
+  for the year 2000 and one for 2020, with colors representing the different groups.
+  Ensure the chart is appropriately labeled with the country names on the x-axis and
+  the values on the y-axis. Title the chart "Country Values Comparison in 2000 and
+  2020 by Group".
+questions: '1. Do you have any specific preferences for the color palette to be used
+  for different groups?
+
+  2. Would you like the chart to have grid lines on the y-axis for easier comparison
+  of values?
+
+  3. Do you prefer the bars to have a specific width or spacing between them?
+
+  4. Should the y-axis have a fixed range, or should it adjust based on the data values?
+
+  5. Do you want the legend to be placed in a particular location on the chart?
+
+  6. Do you want data labels showing the exact values on top of each bar?
+
+  7. Should the countries be sorted in any specific order on the x-axis, such as alphabetically
+  or by group?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like the chart to have grid lines on the y-axis.
+
+  3. I do not know.
+
+  4. The y-axis should adjust based on the data values.
+
+  5. I have no specific preference.
+
+  6. Yes, I want data labels showing the exact values on top of each bar.
+
+  7. The countries should be sorted alphabetically on the x-axis.'
+data_attributes:
+- Country Name
+- '2000'
+- '2020'
+- group

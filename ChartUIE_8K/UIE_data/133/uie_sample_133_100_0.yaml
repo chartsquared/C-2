@@ -1,0 +1,57 @@
+initial_prompt: Create a heatmap using the London bike sharing dataset. Plot 'timestamp'
+  on the x-axis and 'season' on the y-axis. Use color to represent 'cnt' (bike count)
+  values. Annotations should highlight data points where 'cnt' peaks, drawing attention
+  to the times and seasons with the highest bike usage. This visualization will help
+  identify peak usage patterns related to different seasons and times, useful for
+  resource allocation and planning in social science research. Add text annotations
+  to provide context such as weather conditions or holidays.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. How would you like the weather conditions and holidays to be represented in the
+  annotations?
+
+  3. Do you have any specific time intervals you prefer for the ''timestamp'' axis
+  (e.g., hourly, daily, monthly)?
+
+  4. Would you like gridlines to be included in the heatmap for easier reading?
+
+  5. Do you want the seasons to be labeled in any specific format (e.g., Winter, Spring,
+  Summer, Autumn vs. numerical values)?
+
+  6. Would you like a legend explaining the color gradient for ''cnt'' (bike count)
+  values?
+
+  7. Any specific font style or size preferences for the text annotations?
+
+  8. Do you want to highlight peak usage using arrows or any other specific markers
+  in the heatmap?
+
+  9. Would you prefer any specific layout for the overall chart area (e.g., portrait
+  or landscape orientation)?
+
+  10. Is there a particular size or aspect ratio you prefer for the visualization?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Hourly intervals, please.
+
+  4. Yes, please include gridlines.
+
+  5. Winter, Spring, Summer, Autumn.
+
+  6. Yes, I would like a legend.
+
+  7. I am not sure.
+
+  8. Yes, highlighting peak usage with arrows would be great.
+
+  9. I do not have a specific preference.
+
+  10. I do not have a specific preference.'
+data_attributes:
+- timestamp
+- season
+- cnt
+- weather_code
+- is_holiday

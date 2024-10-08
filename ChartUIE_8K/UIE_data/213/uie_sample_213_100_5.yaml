@@ -1,0 +1,50 @@
+initial_prompt: Create a scatter plot visualizing NYS Golf Courses from the provided
+  dataset. The x-axis should represent the Longitude, and the y-axis should represent
+  the Latitude. Each point on the scatter plot will represent a specific golf course,
+  with different colors used to differentiate courses in various State Parks. Tooltips
+  on the scatter points should display the State Park and Course Name for better context.
+  Please ensure the map is plotted accurately with proper longitude and latitude scales
+  and labeled axes. This will help in visualizing the geographic distribution of the
+  golf courses across New York State.
+questions: '1. Do you have any specific color palette preferences for differentiating
+  the State Parks?
+
+  2. Do you prefer any particular style for the scatter plot points (e.g., circles,
+  squares)?
+
+  3. Would you like the axes to have grid lines for easier reading, or do you prefer
+  a cleaner look?
+
+  4. Do you have a preferred font style or size for the axis labels and tooltips?
+
+  5. Would you like to include a legend on the scatter plot to identify the color
+  association with each State Park?
+
+  6. Do you want to have a title for the scatter plot? If so, what should the title
+  be?
+
+  7. Are there any specific longitude and latitude ranges that you would like to focus
+  on in the plot?
+
+  8. Would you like to add geographical features (e.g., rivers, state boundaries)
+  to the background of the scatter plot for better context?'
+answers: '1. I am not sure.
+
+  2. Circles would be fine.
+
+  3. I prefer a cleaner look.
+
+  4. I do not have a specific preference.
+
+  5. Yes, please include a legend.
+
+  6. Yes, the title should be "Geographic Distribution of NYS Golf Courses."
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- Longitude
+- Latitude
+- State Park
+- Course Name

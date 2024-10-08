@@ -1,0 +1,66 @@
+initial_prompt: Create a heatmap to visualize the correlation between demographic
+  and clinical factors (Age, Sex, Grade, etc.) and outcomes (Time to follow-up, Treatment)
+  for Soft Tissue Sarcoma patients. Highlight significant correlations. Include text
+  annotations for key findings.
+questions: '1. Do you have any specific color schemes or palettes you prefer for the
+  heatmap?
+
+  2. Would you like to include a color legend to indicate the strength of correlations?
+
+  3. How would you prefer to handle non-significant correlations (e.g., using a neutral
+  color)?
+
+  4. Are there any specific text annotations or comments you want to include for key
+  findings?
+
+  5. Do you have a preferred method for determining and highlighting significant correlations
+  (e.g., p-values, threshold values)?
+
+  6. Would you like the heatmap to include grid lines to separate cells more clearly?
+
+  7. Do you prefer the heatmap to show raw correlation values or only highlight significant
+  ones?
+
+  8. Should the heatmap include labels on both axes for all demographic and clinical
+  factors and outcomes?
+
+  9. Is there a specific way you would like to order or cluster the rows and columns
+  in the heatmap (e.g., hierarchical clustering, alphabetical)?
+
+  10. Should any specific demographic or clinical factors be emphasized or focused
+  on more prominently in the visualization?
+
+  11. Do you have a preferred font style or size for the text annotations in the heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, include a color legend to indicate the strength of correlations.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. Show raw correlation values.
+
+  8. Yes, include labels on both axes for all demographic and clinical factors and
+  outcomes.
+
+  9. I am not sure.
+
+  10. I am not sure.
+
+  11. I am not sure.'
+data_attributes:
+- Age
+- Sex
+- Grade
+- Histological type
+- MSKCC type
+- Outcome (recurrence, mets)
+- Time – MRI scan to PET scan (days)
+- Time – diagnosis to MRI scan (days)
+- Time – diagnosis to last follow-up (days)
+- Treatment

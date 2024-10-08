@@ -1,0 +1,81 @@
+initial_prompt: Create a heatmap visualizing the correlation between the different
+  numerical features (like radius_mean, texture_mean, area_mean, etc.) in the breast
+  cancer dataset to identify strong relationships among variables.
+questions: '1. Do you have a specific color scheme in mind for the heatmap?
+
+  2. Should the heatmap include annotations displaying the correlation values?
+
+  3. Do you have a preferred range for the correlation values (e.g., -1 to 1)?
+
+  4. Would you like a specific correlation method to be used (e.g., Pearson, Spearman)?
+
+  5. Do you prefer a specific ordering or clustering of the features in the heatmap?
+
+  6. Are there any specific labels or headers you would like to include on the heatmap?
+
+  7. Do you have a specific size or aspect ratio in mind for the heatmap?
+
+  8. Would you like gridlines to be included in the heatmap?
+
+  9. Should the heatmap include a legend to explain the color scale?
+
+  10. Do you have any preferences for the font type and size used in the heatmap?
+
+  11. Do you want to highlight specific ranges of correlation values with distinct
+  colors?
+
+  12. Is there any specific title or subtitle you would like for the heatmap?'
+answers: '1. I am not sure.
+
+  2. Yes, please include annotations displaying the correlation values.
+
+  3. I am not sure.
+
+  4. I do not have a specific preference.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. Yes, please include a legend to explain the color scale.
+
+  10. I am not sure.
+
+  11. I do not know.
+
+  12. I do not have a specific title or subtitle in mind.'
+data_attributes:
+- radius_mean
+- texture_mean
+- perimeter_mean
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave points_mean
+- symmetry_mean
+- fractal_dimension_mean
+- radius_se
+- texture_se
+- perimeter_se
+- area_se
+- smoothness_se
+- compactness_se
+- concavity_se
+- concave points_se
+- symmetry_se
+- fractal_dimension_se
+- radius_worst
+- texture_worst
+- perimeter_worst
+- area_worst
+- smoothness_worst
+- compactness_worst
+- concavity_worst
+- concave points_worst
+- symmetry_worst
+- fractal_dimension_worst

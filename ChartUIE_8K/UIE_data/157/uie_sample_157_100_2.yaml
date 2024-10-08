@@ -1,0 +1,44 @@
+initial_prompt: Create a treemap visualizing the SAT exam results with the focus on
+  the 'Number of Test Takers' and the 'Critical Reading Mean' scores for each school.
+  Highlight schools with high 'Critical Reading Mean' scores to draw attention to
+  top performers. Utilize text annotations to show exact scores for a few top and
+  bottom schools. This visualization aims to provide a comparative view of school
+  performance in critical reading, helping identify patterns and outliers in education
+  quality. The treemap should be color-coded to easily distinguish between different
+  performance levels across the schools.
+questions: '1. Do you have a preferred color palette for distinguishing between different
+  performance levels?
+
+  2. How many top and bottom schools would you like to have text annotations for?
+
+  3. Is there a specific color you would like to use for highlighting schools with
+  high ''Critical Reading Mean'' scores?
+
+  4. Should each school’s ''Number of Test Takers'' be represented by the size of
+  the rectangles in the treemap?
+
+  5. Do you have any preferences for font style or size for the text annotations?
+
+  6. Would you like to include labels for each school on the treemap itself, or is
+  a legend sufficient?
+
+  7. Are there any specific schools that you definitely want to include in the text
+  annotations regardless of their score?'
+answers: '1. I am not sure.
+
+  2. I am not sure, maybe the top 5 and bottom 5 schools.
+
+  3. I do not know.
+
+  4. Yes, the size of the rectangles should represent the ''Number of Test Takers.''
+
+  5. I do not have any specific preference for font style or size.
+
+  6. Labels for each school on the treemap would be good.
+
+  7. I do not have any specific schools in mind for text annotations.'
+data_attributes:
+- DBN
+- School Name
+- Number of Test Takers
+- Critical Reading Mean

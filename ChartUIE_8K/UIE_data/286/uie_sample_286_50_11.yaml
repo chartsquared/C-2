@@ -1,0 +1,43 @@
+initial_prompt: Create a scatter plot to visualize 'radius_mean' vs 'texture_mean'.
+  Differentiate points by 'diagnosis' (M or B). Highlight trends that may indicate
+  patterns related to breast cancer. Use colors for clarity.
+questions: '1. Do you have a preferred color scheme for differentiating between ''M''
+  and ''B'' diagnoses?
+
+  2. Would you like to add a trend line to highlight potential patterns in the scatter
+  plot?
+
+  3. Do you prefer specific marker shapes or sizes for ''M'' and ''B'' diagnoses?
+
+  4. Do you have any specific preferences for the axis labels and title of the scatter
+  plot?
+
+  5. Would you like to include tooltips or labels to display additional information
+  for each data point?
+
+  6. Are there any specific ranges or limits you would like to set for the axes?
+
+  7. Do you have any preferences regarding the background style of the plot (e.g.,
+  grid lines, background color)?
+
+  8. Would you like to include a legend to explain the colors and markers used in
+  the plot?'
+answers: '1. I am not sure.
+
+  2. Yes, I would like to add a trend line.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. I do not know.
+
+  6. I do not know.
+
+  7. I do not know.
+
+  8. Yes, I would like to include a legend.'
+data_attributes:
+- radius_mean
+- texture_mean
+- diagnosis

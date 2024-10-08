@@ -1,0 +1,48 @@
+initial_prompt: I need a Choropleth map showcasing the world population distribution
+  by country. Use the latest population data (2022) from the given CSV file. Each
+  country should be color-coded based on its population density. Ensure the map includes
+  clear legend and labels for better interpretation. Additionally, display the continents
+  separately and provide a tooltip that shows detailed information including the growth
+  rate and world population percentage when hovering over each country. This visualization
+  will help in understanding population distribution and density globally.
+questions: '1. Do you have any preferred color schemes or palettes for the choropleth
+  map?
+
+  2. How would you like the continents to be visually distinguished from one another?
+
+  3. What specific style or format would you prefer for the legend?
+
+  4. Are there any specific font styles or sizes you would like for the labels?
+
+  5. Would you prefer a specific map projection (e.g., Mercator, Robinson, etc.)?
+
+  6. Is there a particular way you''d like the tooltip to appear (e.g., background
+  color, font size, etc.)?
+
+  7. Are there any specific countries or regions you want to highlight or emphasize
+  on the map?
+
+  8. Would you like any additional annotations or markers on the map, such as capitals
+  or major cities?'
+answers: '1. I am not sure.
+
+  2. Different colors for each continent could work well.
+
+  3. No specific preference.
+
+  4. I do not know.
+
+  5. Mercator projection would be fine.
+
+  6. No specific preference.
+
+  7. No, all countries should be treated equally.
+
+  8. I am not sure.'
+data_attributes:
+- Country/Territory
+- 2022 Population
+- Density (per km²)
+- Growth Rate
+- World Population Percentage
+- Continent

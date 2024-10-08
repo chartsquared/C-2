@@ -1,0 +1,48 @@
+initial_prompt: I need a scatter plot visualizing data from the Boston Housing dataset.
+  Please plot 'RM' on the x-axis and 'MEDV' on the y-axis to show the relationship
+  between the average number of rooms per dwelling and the median value of homes in
+  USD. Color the points based on 'LSTAT' to reflect the percentage of lower status
+  of the population, using a gradient where lower 'LSTAT' values are blue and higher
+  'LSTAT' values are red. Additionally, include 'PTRATIO' as a size variable for the
+  points—bigger points for higher pupil-teacher ratio values. Titles and labels should
+  be clear for all axes and legend.
+questions: '1. Do you have a preferred color gradient for ''LSTAT'' other than the
+  suggested blue to red gradient?
+
+  2. Would you prefer a specific size range for the points based on ''PTRATIO''?
+
+  3. Should the scatter plot include a trend line to better visualize the relationship
+  between ''RM'' and ''MEDV''?
+
+  4. Do you have specific preferences for the plot background, such as grid style
+  or background color?
+
+  5. Are there any specific font styles or sizes you prefer for the titles, labels,
+  and legend?
+
+  6. Should the chart include any annotations or notes on specific points or areas
+  of interest?
+
+  7. Would you like to set any axis range or limits for ''RM'' and ''MEDV''?'
+answers: '<start of user response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, please include a trend line.
+
+  4. I am not sure.
+
+  5. I have no specific preference.
+
+  6. I do not know.
+
+  7. I have no specific preference.
+
+  <end of user response>'
+data_attributes:
+- RM
+- MEDV
+- LSTAT
+- PTRATIO

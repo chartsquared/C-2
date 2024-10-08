@@ -1,0 +1,38 @@
+initial_prompt: Create a network diagram to visualize the dependencies among software
+  packages. Nodes represent packages from the 'name' column, with edges showing 'imports'
+  relationships. Sizes of nodes correspond to the 'size' data.
+questions: '1. Do you prefer specific colors or color schemes for the nodes and edges?
+
+  2. Would you like the nodes to be labeled with the package names?
+
+  3. Do you have a preference for the layout style of the network diagram (e.g., force-directed,
+  circular, hierarchical)?
+
+  4. Should the edges display any additional information, such as the type of relationship
+  or weight?
+
+  5. Do you want the node sizes to be scaled proportionally to their ''size'' attribute
+  explicitly, or do you have a preferred scaling factor?
+
+  6. Are there any specific packages or dependencies you would like to highlight or
+  emphasize in the diagram?
+
+  7. Do you prefer the chart to include a legend or key explaining the node sizes
+  and colors?'
+answers: '1. I have no specific preference.
+
+  2. Yes, I would like the nodes to be labeled with the package names.
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I do not know.
+
+  6. I have no specific preference.
+
+  7. I am not sure.'
+data_attributes:
+- name
+- size
+- imports

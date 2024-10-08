@@ -1,0 +1,59 @@
+initial_prompt: 'I want to create a box chart to visualize the salary distribution
+  in USD across different job titles in the data science field. The chart should show
+  salary variations for each job title, including quartiles, medians, and potential
+  outliers. Use the provided data on work_year, job_title, and salary_in_usd. Color-code
+  the boxes according to the experience level to distinguish differences between Mid-level
+  and Senior positions. This will help analyze salary trends and compare how salaries
+  vary among job titles and experience levels in data science and analytics.
+
+
+  '
+questions: '1. What color scheme do you prefer for distinguishing between Mid-level
+  and Senior positions?
+
+  2. Do you want to include a legend to explain the color-coding for experience levels?
+
+  3. How would you like the job titles to be ordered on the x-axis? Alphabetically,
+  by median salary, or another specific order?
+
+  4. Do you have a preference for the axis labels'' font size and style?
+
+  5. Would you like to include grid lines for better readability of the chart?
+
+  6. Should we use a specific style or theme for the box chart (e.g., minimalist,
+  professional, modern)?
+
+  7. Do you want to add any specific title for the chart?
+
+  8. Would you prefer to display the actual salary values on the median and quartile
+  lines?
+
+  9. Are there any specific annotations or data points you would like to highlight
+  on the chart?
+
+  10. How would you prefer to handle potential outliers in the data visualization?
+  Should they be displayed prominently or discreetly?'
+answers: '1. I''m not sure.
+
+  2. Yes, I want to include a legend.
+
+  3. By median salary.
+
+  4. I don''t have a specific preference.
+
+  5. Yes, include grid lines.
+
+  6. I am not sure.
+
+  7. Yes, "Salary Distribution Across Job Titles in Data Science".
+
+  8. I do not know.
+
+  9. No specific annotations or data points to highlight.
+
+  10. Display potential outliers prominently.'
+data_attributes:
+- work_year
+- job_title
+- salary_in_usd
+- experience_level

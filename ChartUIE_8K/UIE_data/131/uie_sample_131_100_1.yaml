@@ -1,0 +1,64 @@
+initial_prompt: '<start of user emulated instruction>
+
+  Create a grouped column chart to illustrate the unique values of different attributes
+  in the mushroom classification dataset. Highlight and annotate columns representing
+  ''class'', ''cap-shape'', ''odor'', and ''habitat'' based on their unique value
+  quantities to help identify key distinguishing features among various categories.
+  Emphasize the ''class'' attribute to show the distribution between edible and poisonous
+  mushrooms. This visualization will aid in understanding the attributes'' diversity
+  and their potential use in distinguishing mushroom types, which is critical for
+  biology studies focused on mushroom classification and identification.
+
+  <end of user emulated instruction>'
+questions: '1. Do you have any specific color preferences for the columns representing
+  each attribute?
+
+  2. Would you like specific annotations or labels for the highlighted columns? If
+  so, please specify.
+
+  3. Do you prefer a particular font style or size for the text in the chart?
+
+  4. Should the columns representing the ''class'' attribute be emphasized in a specific
+  way (e.g., bold, different color)?
+
+  5. Would you like a legend to be included in the chart?
+
+  6. Should the y-axis represent the count of unique values or percentages?
+
+  7. Do you have preferences for the chart''s title and axis labels?
+
+  8. Would you like grid lines to be included in the background for easier reference?
+
+  9. Is there a specific order in which you''d like the attributes to be displayed?
+
+  10. Do you prefer a vertical or horizontal column chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, please include labels for the columns representing ''class'', ''cap-shape'',
+  ''odor'', and ''habitat''.
+
+  3. I do not have a specific preference.
+
+  4. Yes, bold and in a different color for the ''class'' attribute columns would
+  be good.
+
+  5. I do not know.
+
+  6. The y-axis should represent the count of unique values.
+
+  7. I do not have specific preferences.
+
+  8. I am not sure.
+
+  9. I do not know.
+
+  10. Vertical column chart.
+
+  <end of user emulated response>'
+data_attributes:
+- class
+- cap-shape
+- odor
+- habitat

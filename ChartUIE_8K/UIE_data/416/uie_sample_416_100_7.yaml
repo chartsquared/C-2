@@ -1,0 +1,41 @@
+initial_prompt: Please create a bar chart to visualize the Bundesliga points per match
+  based on the given dataset. I want the x-axis to represent each team's name (HomeTeam
+  and AwayTeam), and the y-axis to represent the total points they earned in each
+  match (Home Win = 3 points, Draw = 1 point, Away Win = 3 points). Aggregate the
+  data to show the total points each team has earned. Use different colors to distinguish
+  between home and away points. Ensure to include a legend and proper labels on the
+  axes for clarity.
+questions: '1. Do you have any specific color preferences for the home and away points
+  bars?
+
+  2. Would you like the bars to be displayed in a particular order, such as by total
+  points or alphabetically by team name?
+
+  3. Should the home and away bars for each team be grouped together or displayed
+  separately?
+
+  4. What specific font type or size do you prefer for the axis labels and titles?
+
+  5. Do you have any preferences for the legend placement on the chart?
+
+  6. Should there be any specific gridlines or background shading included in the
+  chart?
+
+  7. Would you like any additional annotations or data labels included on the bars?'
+answers: '1. I am not sure about specific color preferences.
+
+  2. I do not know about the order.
+
+  3. I am not sure; maybe grouped together?
+
+  4. I have no specific preference for the font type or size.
+
+  5. I do not know about the legend placement.
+
+  6. I am not sure about gridlines or background shading.
+
+  7. I do not have any specific preference for additional annotations or data labels.'
+data_attributes:
+- HomeTeam
+- AwayTeam
+- FTR

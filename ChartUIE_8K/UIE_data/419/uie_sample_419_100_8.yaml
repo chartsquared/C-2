@@ -1,0 +1,50 @@
+initial_prompt: I'd like a line chart visualizing bike and pedestrian counts over
+  time from the "Riding the Green Wave in Seattle" dataset. Use the 'date' on the
+  x-axis and two separate lines for 'bike_count' and 'ped_count' on the y-axis. Could
+  you differentiate between the 'bike_count' and 'ped_count' with distinct colors?
+  I want to observe the differences in bike and pedestrian traffic patterns over the
+  recorded period. Please ensure that timestamps are properly formatted and missing
+  values are handled appropriately. The crossing locations and directions might also
+  affect the count variations, so could these be referenced too? Thank you!
+questions: '1. Do you have any specific color preferences for differentiating ''bike_count''
+  and ''ped_count'' lines?
+
+  2. Would you like to see separate line charts for different ''crossing'' locations
+  and ''direction'', or combined into a single chart?
+
+  3. How would you prefer missing values to be handled: filled in, interpolated, or
+  left as gaps?
+
+  4. Do you have any specific date format preferences for the x-axis labels?
+
+  5. Are there any specific time intervals (e.g., daily, weekly, monthly) you''d like
+  the x-axis to be segmented into?
+
+  6. Do you want trend lines or additional markers to highlight significant points
+  on the chart?
+
+  7. Any preference for the chart title and axis labels?
+
+  8. Would you like a legend to be included to differentiate between the variables,
+  and if so, where should it be placed on the chart?'
+answers: '1. I do not have any specific color preferences.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I do not have any specific date format preferences.
+
+  5. I am not sure.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. Yes, please include a legend, and it can be placed on the right side of the chart.'
+data_attributes:
+- date
+- bike_count
+- ped_count
+- crossing
+- direction

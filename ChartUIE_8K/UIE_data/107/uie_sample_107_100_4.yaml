@@ -1,0 +1,51 @@
+initial_prompt: 'Create a scatter plot to visualize the Indian Startup Funding data.
+  Plot ''Date dd/mm/yyyy'' on the x-axis and ''Amount in USD'' on the y-axis. Differentiate
+  the points by ''City Location'' using different colors. This plot should help identify
+  trends over time and any potential funding hotspots across different cities. Size
+  the markers by the amount of missing values in ''Industry Vertical'', indicating
+  data quality for informed decision-making. Include a legend to explain the color
+  coding of cities. Use an informative title: "Indian Startup Funding Trends and City-wise
+  Distribution".'
+questions: '1. What color palette or specific colors would you prefer to differentiate
+  the cities?
+
+  2. Do you have any preferences for the size range of the markers?
+
+  3. How detailed would you like the legend to be? Should it include any additional
+  information besides city names and marker sizes?
+
+  4. Is there a specific date format you prefer on the x-axis (e.g., month/year)?
+
+  5. Are there any specific font styles or sizes you prefer for the title and axis
+  labels?
+
+  6. Would you like grid lines on the plot? If so, any preference for their style
+  (e.g., dashed, dotted)?
+
+  7. Do you prefer a specific style for the markers (e.g., circles, squares, triangles)?
+
+  8. Are there any additional annotations or labels you would like to see on the chart?'
+answers: '<start of user emulated response>
+
+  1. I am not sure about the colors, whatever looks good.
+
+  2. I do not know.
+
+  3. Just city names and marker sizes.
+
+  4. Month/Year format is fine.
+
+  5. I am not sure.
+
+  6. Yes, grid lines would be helpful. No specific preference for their style.
+
+  7. Circles would be nice.
+
+  8. I have no specific preference.
+
+  <end of user emulated response>'
+data_attributes:
+- Date dd/mm/yyyy
+- Amount in USD
+- City Location
+- Industry Vertical

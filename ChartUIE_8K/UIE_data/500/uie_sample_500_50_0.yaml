@@ -1,0 +1,46 @@
+initial_prompt: Create a stacked bar chart to visualize the behaviors (running, chasing,
+  climbing, etc.) of squirrels by their primary fur color. Highlight the squirrel
+  IDs and dates for specific observations to emphasize trends. This helps understand
+  the activity patterns and interactions among different fur colors in NYC parks.
+questions: '1. Do you have any preferred color scheme for displaying different fur
+  colors in the stacked bar chart?
+
+  2. Would you like the chart to show data labels with specific observation counts
+  on each segment of the bars?
+
+  3. How would you like to handle dates in the chart? For example, should they be
+  aggregated by month, week, or displayed as individual dates?
+
+  4. Do you prefer any specific order for the behaviors (running, chasing, climbing,
+  etc.) within each bar segment?
+
+  5. Would you like the primary fur colors to be sorted in any specific order, such
+  as by frequency or alphabetically?
+
+  6. How would you like to highlight the squirrel IDs and dates for specific observations?
+  Would a tooltip, annotation, or color highlight be preferable?
+
+  7. Is there any specific size or dimension preference for the chart to ensure readability
+  and clarity?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. I do not know.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. I would like to highlight the squirrel IDs and dates using annotations.
+
+  7. I do not have a specific preference.'
+data_attributes:
+- unique_squirrel_id
+- date
+- primary_fur_color
+- running
+- chasing
+- climbing
+- eating
+- foraging

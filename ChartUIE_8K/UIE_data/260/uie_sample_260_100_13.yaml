@@ -1,0 +1,54 @@
+initial_prompt: Create a line chart to visualize the orbital period ('pl_orbper')
+  of the exoplanets discovered by the Kepler Telescope over time. On the x-axis, plot
+  the 'rowupdate' dates, and on the y-axis, plot the 'pl_orbper' values. Make sure
+  to include data points for each entry and connect them with lines. Highlight notable
+  discoveries or anomalies with different colors or markers. The chart should provide
+  a clear trend line showing the progression of orbital period discoveries made by
+  Kepler. Ensure axis labels are readable, and include a legend if multiple data sets
+  or categories are depicted.
+questions: '1. Do you have any preference for the title of the chart?
+
+  2. What specific colors would you like for highlighting notable discoveries or anomalies?
+
+  3. Do you want any specific markers for notable anomalies? If yes, please specify.
+
+  4. Is there a specific date format you prefer for the x-axis?
+
+  5. Do you want to include grid lines in the chart? If yes, should they be both horizontal
+  and vertical?
+
+  6. Should the trend line be smoothed (e.g., a moving average) or raw (connecting
+  each data point directly)?
+
+  7. Do you have any preference for the line style or thickness?
+
+  8. Would you like to display data point values or tooltips when hovering over data
+  points?
+
+  9. Should we include labels or annotations for notable discoveries directly on the
+  chart?
+
+  10. If there are missing values in the data, do you prefer to interpolate these
+  points or leave gaps in the line?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific color preference.
+
+  3. I do not know.
+
+  4. I am not sure.
+
+  5. Yes, include grid lines. I am not sure about horizontal and vertical.
+
+  6. I prefer a raw trend line.
+
+  7. I do not know.
+
+  8. No preference.
+
+  9. Yes, please include labels or annotations for notable discoveries.
+
+  10. I do not know.'
+data_attributes:
+- pl_orbper
+- rowupdate

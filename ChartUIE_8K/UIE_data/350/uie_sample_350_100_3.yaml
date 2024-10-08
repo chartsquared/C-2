@@ -1,0 +1,61 @@
+initial_prompt: Please create a line chart displaying the progression of the Pokémon
+  stats over generations. Use the 'total', 'hp', 'attack', 'defense', 'sp_attack',
+  'sp_defense', and 'speed' columns as separate lines. The x-axis should represent
+  the 'number' of the Pokémon, and the y-axis should reflect the different stat values.
+  Include a legend to distinguish between the different stats. Ensure missing values
+  are handled appropriately. This will help visualize the evolution of Pokémon attributes
+  through the generations.
+questions: '1. Do you have a preferred color scheme for the different stat lines?
+
+  2. What level of granularity do you want on the x-axis labels (e.g., every Pokémon,
+  every 10 Pokémon, etc.)?
+
+  3. Do you prefer a specific style for the lines (e.g., solid, dashed, dotted)?
+
+  4. Should the y-axis have a fixed range, or should it be dynamically adjusted based
+  on the data?
+
+  5. Do you want to include grid lines for better readability? If so, how dense should
+  they be?
+
+  6. Are there any specific fonts or font sizes you would like to use for the axis
+  labels, title, and legend?
+
+  7. Do you want to highlight specific generations or key points in the chart?
+
+  8. Should additional annotations or markers be added to indicate important events
+  or milestones?
+
+  9. How would you like missing values to be handled (e.g., interpolated, left blank)?
+
+  10. Do you have any preferences for the chart title and subtitle?'
+answers: '1. I am not sure.
+
+  2. Every 10 Pokémon would be good.
+
+  3. Solid lines would be preferred.
+
+  4. I do not know.
+
+  5. Yes, including grid lines would be helpful. I have no specific preference for
+  density.
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. I do not have specific milestones in mind.
+
+  9. I am not sure.
+
+  10. The chart title could be "Evolution of Pokémon Stats Over Generations", but
+  I don''t have a specific subtitle in mind.'
+data_attributes:
+- number
+- total
+- hp
+- attack
+- defense
+- sp_attack
+- sp_defense
+- speed

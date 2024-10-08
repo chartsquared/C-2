@@ -1,0 +1,51 @@
+initial_prompt: I have a dataset of Walmart sales which includes Store number, Date,
+  Weekly Sales, Holiday Flag, Temperature, Fuel Price, CPI, and Unemployment. I'd
+  like to visualize the correlation between these variables using a heatmap. The heatmap
+  should help me understand how these factors influence weekly sales and if there
+  are any patterns or significant relationships among the variables, especially during
+  holidays. Provide a detailed, easy-to-understand heatmap showcasing correlations
+  clearly.
+questions: '1. Do you have any preferences for the color scheme of the heatmap?
+
+  2. Do you want to include labels for the correlation values within each cell?
+
+  3. Would you prefer the heatmap to have a particular range for correlation values
+  (e.g., -1 to 1)?
+
+  4. Are there specific variables you want to highlight or emphasize in the heatmap?
+
+  5. Would you like a title or specific annotations for the heatmap?
+
+  6. Should we include grid lines in the heatmap for better differentiation of cells?
+
+  7. Do you have a preferred layout or aspect ratio for the heatmap?
+
+  8. Do you want to include a legend to explain the color gradient?
+
+  9. Is there a specific font style or size you prefer for the text within the heatmap?'
+answers: '1. I do not know.
+
+  2. Yes, include labels for the correlation values within each cell.
+
+  3. Yes, please use the range -1 to 1 for correlation values.
+
+  4. I am not sure.
+
+  5. Yes, please include a title like "Correlation Heatmap of Walmart Sales Dataset".
+
+  6. I do not know.
+
+  7. I am not sure.
+
+  8. Yes, please include a legend to explain the color gradient.
+
+  9. I do not know.'
+data_attributes:
+- Store
+- Date
+- Weekly_Sales
+- Holiday_Flag
+- Temperature
+- Fuel_Price
+- CPI
+- Unemployment

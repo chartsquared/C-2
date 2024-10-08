@@ -1,0 +1,53 @@
+initial_prompt: I'd like to visualize credit card customer data using a scatter plot.
+  Please create a scatter plot showing the relationship between 'Customer_Age' and
+  'Total_Trans_Amt'. Use different colors to distinguish between 'Marital_Status'
+  categories ('Married', 'Single', etc.). Also, vary the size of the scatter points
+  based on the 'Credit_Limit'. The x-axis should be 'Customer_Age' and the y-axis
+  'Total_Trans_Amt'. This will help in understanding how transaction amount varies
+  with age and marital status. Thank you!
+questions: '1. Do you have any specific colors you prefer for each ''Marital_Status''
+  category?
+
+  2. What range of sizes do you prefer for the scatter points based on ''Credit_Limit''?
+
+  3. Should the scatter plot include a legend indicating the ''Marital_Status'' categories
+  and point sizes?
+
+  4. Would you like any specific markers or shapes for the scatter points?
+
+  5. Do you prefer any specific type of gridlines or background?
+
+  6. Should there be any specific annotations or labels on specific data points?
+
+  7. Do you want to include any trend lines or regression lines in the scatter plot?
+
+  8. Are there any particular axis labels or titles you''d like to use?
+
+  9. Do you have preferences for the font type and size used in the chart?
+
+  10. Would you like to set any specific axis limits for ''Customer_Age'' and ''Total_Trans_Amt''?'
+answers: '1. I do not have any specific preference.
+
+  2. I am not sure.
+
+  3. Yes, the scatter plot should include a legend indicating the ''Marital_Status''
+  categories and point sizes.
+
+  4. I do not know.
+
+  5. I have no specific preference.
+
+  6. I am not sure.
+
+  7. I do not have any specific preference for trend lines or regression lines.
+
+  8. Please label the x-axis as ''Customer_Age'' and the y-axis as ''Total_Trans_Amt''.
+
+  9. I do not know.
+
+  10. I have no specific preference for axis limits.'
+data_attributes:
+- Customer_Age
+- Total_Trans_Amt
+- Marital_Status
+- Credit_Limit

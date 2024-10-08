@@ -1,0 +1,59 @@
+initial_prompt: Create a bar chart visualizing the air travel between major U.S. cities,
+  focusing on the regions. Highlight and annotate bars for New York, Los Angeles,
+  and Chicago to emphasize their passenger traffic. Use different colors for each
+  region (East, West, Midwest) to distinguish the data and make it visually appealing.
+  Include annotations to display the weight for these cities, directing viewer attention
+  to their relative importance in air travel. The chart aims to provide an overview
+  of regional travel patterns and insights into significant city hubs. Ensure all
+  annotations are clear and relevant to the highlighted data points.
+questions: '1. Do you have a specific preference for the color palette to be used
+  for different regions (East, West, Midwest)?
+
+  2. How would you like the bars for New York, Los Angeles, and Chicago to be highlighted
+  (e.g., different shades, borders, patterns)?
+
+  3. What level of detail do you require for annotations on the chart?
+
+  4. Do you have a preferred font style and size for the annotations and labels?
+
+  5. How should the weights for New York, Los Angeles, and Chicago be displayed in
+  the annotations?
+
+  6. Would you like a title and subtitle for the chart? If so, please specify the
+  text.
+
+  7. Do you have any preference for the layout or orientation of the chart (e.g.,
+  vertical or horizontal bars)?
+
+  8. Should the chart include grid lines or background elements to enhance readability?
+
+  9. Do you have any specific requirements for the legend placement and style on the
+  chart?'
+answers: '<start of user emulated response>
+
+  1. I don''t have a specific preference for the color palette.
+
+  2. I am not sure, maybe you can use different colors or patterns to highlight them.
+
+  3. Detailed enough to clearly show the importance of New York, Los Angeles, and
+  Chicago.
+
+  4. I do not have a specific preference.
+
+  5. Please display the weights as numerical values attached to the highlighted bars.
+
+  6. Yes, Title: "Air Travel Between Major U.S. Cities" and Subtitle: "Focusing on
+  Regional Patterns in 2023"
+
+  7. I don’t know, please choose what looks best.
+
+  8. Yes, include grid lines to enhance readability.
+
+  9. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- name
+- region
+- passengers
+- weight

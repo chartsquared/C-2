@@ -1,0 +1,59 @@
+initial_prompt: Create a scatter plot using the cancer classification data where the
+  x-axis represents 'mean radius' and the y-axis represents 'mean smoothness'. Annotate
+  specific data points with their values and highlight malignant cases in red and
+  benign cases in blue. This will help in visualizing the correlation between 'mean
+  radius' and 'mean smoothness' for different cancer classifications. Focus on displaying
+  both the distribution of points and the classification differences. Make sure to
+  include a legend that identifies the benign and malignant cases.
+questions: '1. Do you have specific preferences for the color shades of the data points
+  for malignant and benign cases?
+
+  2. How many data points would you like to annotate, and do you have specific criteria
+  for selecting them?
+
+  3. Do you prefer any particular style or format for data point annotations (e.g.,
+  font size, color)?
+
+  4. Would you like to customize the title or labels for the x-axis and y-axis?
+
+  5. Are there any specific requirements for the legend''s placement or styling?
+
+  6. Do you have a preferred range or scale for the x-axis and y-axis?
+
+  7. Would you like to include grid lines or any background patterns?
+
+  8. Is there a specific aspect ratio or size requirement for the scatter plot?
+
+  9. Are there any additional elements or annotations you would like to include beyond
+  the specified data points?
+
+  10. Would you prefer to highlight any trends or lines of best fit in the scatter
+  plot?'
+answers: '<start user emulated response>
+
+  1. I do not have specific preferences.
+
+  2. I would like to annotate 5 data points. I do not have specific criteria for selecting
+  them.
+
+  3. I am not sure.
+
+  4. No, the default ones are fine.
+
+  5. No specific requirements.
+
+  6. I am not sure.
+
+  7. Grid lines would be nice.
+
+  8. No specific size requirement.
+
+  9. No additional elements needed.
+
+  10. No, just the scatter plot with the classifications highlighted is sufficient.
+
+  <end user emulated response>'
+data_attributes:
+- mean radius
+- mean smoothness
+- benign_0__mal_1

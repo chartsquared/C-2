@@ -1,0 +1,50 @@
+initial_prompt: Visualize a geographic heatmap for the supply chain data. Highlight
+  regions based on the order count and delivery dates. Use text annotations to display
+  key delivery performance metrics like average delivery time and discount rates.
+  Emphasize warehouses with the highest and lowest order numbers to evaluate efficiency.
+  Highlight warehouses and customer locations to distinguish high and low-performing
+  areas. This will provide insights into regional differences in supply chain performance,
+  helping in identifying areas for improvement. Include currency variations in the
+  tooltip for context. Display supply chain trends clearly and visually.
+questions: '1. Do you have a preferred color scheme for the heatmap?
+
+  2. Should the map focus on any specific geographic regions or include a global view?
+
+  3. Do you have a preferred method for highlighting warehouses and customer locations?
+
+  4. Would you like to include a legend for order counts and delivery dates?
+
+  5. How would you prefer the text annotations for delivery performance metrics to
+  be styled?
+
+  6. Do you have any specific preferences for the size and placement of the annotations?
+
+  7. Should the tooltips display additional metrics other than currency variations,
+  such as specific order details?
+
+  8. Are there any specific sorting or filtering options you would like to include
+  for the warehouses based on their performance?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I am not sure.
+
+  4. Yes, please include a legend for order counts and delivery dates.
+
+  5. I do not have a specific preference.
+
+  6. I am not sure.
+
+  7. I am not sure.
+
+  8. I do not know.'
+data_attributes:
+- OrderNumber
+- WarehouseCode
+- OrderDate
+- ShipDate
+- DeliveryDate
+- Order Quantity
+- Discount Applied
+- CurrencyCode

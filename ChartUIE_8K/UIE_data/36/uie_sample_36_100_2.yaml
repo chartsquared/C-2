@@ -1,0 +1,46 @@
+initial_prompt: Create a line chart that visualizes house prices over time in King
+  County, USA by using the 'date' and 'price' columns. Highlight data points from
+  certain dates to emphasize key trends and variations. Annotate these points with
+  specific prices to draw attention. Ensure the chart differentiates between properties
+  based on the number of bedrooms or bathrooms using different colors or line styles.
+  This visualization aims to help understand how prices have changed historically,
+  providing insights into market trends and informing business decisions in real estate
+  investments or sales strategies.
+questions: '1. Do you prefer a specific color palette for differentiating properties
+  based on the number of bedrooms or bathrooms?
+
+  2. Do you have any preferred styles for the lines (e.g., dashed, dotted) to separate
+  categories like number of bedrooms or bathrooms?
+
+  3. Are there any specific dates or price points you would like to highlight with
+  annotations?
+
+  4. Would you like the chart to have grid lines, and if so, how prominent should
+  they be?
+
+  5. Do you want a title for the chart or any specific labels on the axes?
+
+  6. Are there any particular font styles or sizes you prefer for the annotations
+  and labels?
+
+  7. Do you need a legend to distinguish between different categories, and if so,
+  where would you prefer it to be placed?'
+answers: '1. I am not sure.
+
+  2. I am not sure.
+
+  3. Yes, highlight data points from January 2015, July 2017, and March 2020.
+
+  4. I have no specific preference.
+
+  5. Yes, title the chart "Historical House Prices in King County, USA". Label the
+  axes as "Date" and "Price".
+
+  6. I do not know.
+
+  7. Yes, please include a legend. I have no specific preference for its placement.'
+data_attributes:
+- date
+- price
+- bedrooms
+- bathrooms

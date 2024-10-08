@@ -1,0 +1,31 @@
+initial_prompt: I need a Choropleth map visualizing the Superstore Sales Dataset.
+  The map should depict sales distribution across different states in the United States.
+  Use color gradients to represent the magnitude of sales, with darker colors indicating
+  higher sales and lighter colors indicating lower sales. Make sure to label each
+  state with its name and include a legend to explain the color scale. Include hover-over
+  tooltips that show the exact sales figures for each state. This will help in analyzing
+  regional sales performance effectively. Ensure the map is interactive for more detailed
+  exploration of the sales data. Thank you!
+questions: '1. Do you have a preferred color palette for the gradient?
+
+  2. Are there specific states you want to highlight or focus on?
+
+  3. Do you have any specific preferences for the styling of the state labels?
+
+  4. Would you like the legend to be displayed in a particular position on the map?
+
+  5. Are there any additional annotations or markers you would like to include on
+  the map?'
+answers: '1. I am not sure about the color palette, but a gradient from light blue
+  to dark blue sounds good.
+
+  2. I do not have any specific states to highlight or focus on.
+
+  3. I do not know.
+
+  4. I am not sure about the position of the legend, please use your best judgment.
+
+  5. I do not have any additional annotations or markers to include.'
+data_attributes:
+- State
+- Sales

@@ -1,0 +1,53 @@
+initial_prompt: Create a Treemap to visualize the perfume brands, classifications,
+  and price differences. Use the sizes of the rectangles to reflect the old prices,
+  and color to show price reduction percentages. Text annotations should highlight
+  the top brands and most discounted products. Emphasize the average ratings and scent
+  notes. Use seller ratings and number of reviews for additional contextual information.
+  This will help users quickly identify the best deals and most popular products.
+  The visualization should focus on bringing attention to highly rated, well-priced
+  perfumes from reputable sellers within the fashion and beauty category.
+questions: '1. Do you have a preferred color scheme for representing price reduction
+  percentages?
+
+  2. Are there specific top brands or discounted products you want to highlight in
+  the text annotations?
+
+  3. How would you like the average ratings and scent notes to be displayed?
+
+  4. Do you have a preference for how seller ratings and the number of reviews should
+  be incorporated into the Treemap?
+
+  5. Is there a specific hierarchy you prefer for representing the classifications
+  (e.g., brand first, then price reduction)?
+
+  6. Do you have specific size ranges you would like the rectangles to adhere to based
+  on old prices?
+
+  7. Should there be any specific labels or legends included to explain the data visuals
+  effectively?'
+answers: '1. I am not sure.
+
+  2. I do not have specific top brands or discounted products in mind, so please highlight
+  the most notable ones based on the data you have.
+
+  3. Could you display the average ratings and scent notes as small text within the
+  rectangles?
+
+  4. I do not know.
+
+  5. I would prefer the brand to be represented first, and then the price reduction.
+
+  6. I do not have specific size ranges in mind, so please use what you think would
+  work best.
+
+  7. Yes, please include labels or legends to explain the data visuals effectively.'
+data_attributes:
+- brand
+- old_price
+- new_price
+- item_rating
+- scents
+- seller
+- seller_rating
+- num_seller_ratings
+- name

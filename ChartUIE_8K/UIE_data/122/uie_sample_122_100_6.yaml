@@ -1,0 +1,46 @@
+initial_prompt: I’m looking to create a bubble chart that visualizes data on video
+  game sales from the provided dataset. Specifically, I want each bubble to represent
+  a game, with the bubble size corresponding to the Global Sales. The x-axis should
+  denote the Year of release, and the y-axis should denote NA_Sales. Color the bubbles
+  based on the Genre of the game. This way, I can easily identify trends over time
+  and the popularity of different genres in terms of sales. Use the sample data provided
+  as a starting point.
+questions: "1. Do you have a preferred color palette for the genres?\n2. Would you\
+  \ like to include a legend explaining the genre colors?\n3. Do you have specific\
+  \ axis label formats or preferences (e.g., font size, style)?\n4. Should the x-axis\
+  \ be continuous or categorical?\n5. Do you want grid lines on the chart? If so,\
+  \ any preference on their style?\n6. Would you like to include data point labels\
+  \ or tooltips for each bubble?\n7. Do you have a preferred bubble size range or\
+  \ scale factor for the Global Sales?\n8. Should we use a specific theme or style\
+  \ for the chart background?\n9. Do you have any specific requirements for the chart\
+  \ title and axis titles (e.g., text, font size)? \n10. Would you like to set minimum\
+  \ and maximum limits for any of the axes?"
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. Yes, please include a legend explaining the genre colors.
+
+  3. I do not have a specific preference for the axis labels.
+
+  4. Categorical should be fine.
+
+  5. Yes, I would like grid lines. I do not have a preference on their style.
+
+  6. I do not know.
+
+  7. I do not have a preferred bubble size range or scale factor.
+
+  8. I am not sure.
+
+  9. Chart title: "Video Game Sales Trends". Axis titles can be "Year of Release"
+  for the x-axis and "NA Sales" for the y-axis.
+
+  10. I do not know.
+
+  <end of user emulated response>'
+data_attributes:
+- Year
+- NA_Sales
+- Global_Sales
+- Genre

@@ -1,0 +1,52 @@
+initial_prompt: Create a grouped bar chart comparing Monthly Income of men vs women
+  for each divorce type (Necesario and Voluntario). Include age groups and distinguish
+  nationality for both partners.
+questions: '1. What age group intervals do you prefer (e.g., 20-29, 30-39)?
+
+  2. Do you have a specific color scheme preference for men vs women in the bar chart?
+
+  3. How would you like nationalities to be distinguished (e.g., different shades,
+  patterns)?
+
+  4. Should the chart display income on a linear or logarithmic scale?
+
+  5. Do you want to include labels displaying exact income values on the bars?
+
+  6. Should the chart include error bars to indicate the variability of monthly income?
+
+  7. What level of gridline detail do you prefer (e.g., major gridlines only, both
+  major and minor)?
+
+  8. Would you like to see individual data points plotted on the bars?
+
+  9. Do you have any specific preferences for the chart title and axis labels?
+
+  10. Should there be a legend explaining the colors and patterns used in the chart?'
+answers: '1. I am not sure.
+
+  2. I do not have a specific color scheme preference.
+
+  3. I am not sure.
+
+  4. I want the income displayed on a linear scale.
+
+  5. I would like to include labels displaying exact income values on the bars.
+
+  6. I am not sure.
+
+  7. I do not know.
+
+  8. I am not sure.
+
+  9. I do not have a specific preference.
+
+  10. Yes, there should be a legend explaining the colors and patterns used in the
+  chart.'
+data_attributes:
+- Type_of_divorce
+- Monthly_income_partner_man_peso
+- Monthly_income_partner_woman_peso
+- Age_partner_man
+- Age_partner_woman
+- Nationality_partner_man
+- Nationality_partner_woman

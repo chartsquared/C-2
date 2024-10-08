@@ -1,0 +1,44 @@
+initial_prompt: Please create a stacked bar chart visualizing San Francisco Park Scores.
+  Each bar represents a different park (use the 'Park' column), and the stacks within
+  each bar represent the various 'Facility Types' at that park. The height of each
+  stack should correlate to the 'Score' associated with each facility type. Group
+  the data by 'PSA' regions to compare the scores across different regions. The chart
+  should be clearly labeled with axes, a legend for the facility types, and different
+  colors for the stacks.
+questions: '1. Do you have a preference for the colors used for the different facility
+  types?
+
+  2. Are there any specific parks or PSA regions you would like to highlight?
+
+  3. Do you prefer the scores to be displayed as labels on top of each stack in the
+  bar charts?
+
+  4. Would you like gridlines to be included in the background of the chart for easier
+  comparison?
+
+  5. Do you want any specific font style or size for the labels and legend?
+
+  6. Should the chart include a title? If yes, do you have a specific title in mind?
+
+  7. Are there any additional annotations or notes you want to include on the chart?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Yes, I prefer the scores to be displayed as labels on top of each stack in the
+  bar charts.
+
+  4. Yes, I would like gridlines to be included in the background of the chart for
+  easier comparison.
+
+  5. I am not sure.
+
+  6. Yes, the chart should include a title. The title can be "San Francisco Park Scores
+  by Facility Type and PSA Region."
+
+  7. I do not know.'
+data_attributes:
+- Park
+- Facility Type
+- Score
+- PSA

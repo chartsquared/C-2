@@ -1,0 +1,55 @@
+initial_prompt: Create a bar chart visualizing Jumia's stock price movements. Include
+  bars for the Open, High, Low, and Close prices for selected dates to show variations.
+  Use text annotations to display precise values on the bars for easy reference. Highlight
+  significant changes or unusual volumes to draw attention. This chart helps in understanding
+  Jumia's stock trend over time, providing a clear visual representation for business
+  analysis. Keep the chart clean and focused, emphasizing the key data points without
+  overwhelming the viewer. Ensure the dates are displayed on the x-axis, and prices
+  on the y-axis.
+questions: '1. What date range would you like to focus on for the chart?
+
+  2. Are there specific dates that are of particular interest to you?
+
+  3. Do you prefer the bars for ''Open'', ''High'', ''Low'', and ''Close'' prices
+  to be grouped together for each date or displayed separately?
+
+  4. How would you like significant changes or unusual volumes to be highlighted?
+  (e.g., different bar colors, markers, etc.)
+
+  5. Do you have a preferred color scheme for the bars and annotations?
+
+  6. Should the text annotations show values in a specific format or precision (e.g.,
+  two decimal places)?
+
+  7. Would you like any specific labels or titles for the x-axis, y-axis, and chart
+  title?
+
+  8. Are there specific benchmarks (e.g., average prices, daily volume thresholds)
+  that you want to include for reference?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I do not know.
+
+  3. Grouped together for each date.
+
+  4. Different bar colors.
+
+  5. I do not know.
+
+  6. Two decimal places.
+
+  7. Yes, "Date" for x-axis, "Price" for y-axis, and "Jumia''s Stock Price Movements"
+  for the chart title.
+
+  8. I am not sure.
+
+  <end of user emulated response>'
+data_attributes:
+- Date
+- Open
+- High
+- Low
+- Close
+- Volume

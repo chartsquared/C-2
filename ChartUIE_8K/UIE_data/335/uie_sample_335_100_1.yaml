@@ -1,0 +1,54 @@
+initial_prompt: 'Create an Area chart to visualize the Superstore Sales data, focusing
+  on the ''Sales'' over time (''Order Date''). Highlight top-performing products by
+  increasing their area opacity and adding text annotations for their sales values.
+  Use ''City'' and ''Category'' to segment the data for more granular insights. Purpose:
+  Understand sales trends and identify high-performing products.'
+questions: '1. Do you have any specific color preferences for different segments or
+  categories?
+
+  2. What time granularity would you prefer for the ''Order Date'' axis (e.g., daily,
+  monthly, quarterly)?
+
+  3. Would you like to see a legend on the chart? If yes, where should it be placed?
+
+  4. How would you like the top-performing products to be distinguished visually (e.g.,
+  specific color, pattern)?
+
+  5. Do you have any preferences for the font style and size for text annotations?
+
+  6. Should the chart include gridlines for better readability?
+
+  7. Do you prefer a particular orientation for the category axis labels (e.g., angled,
+  horizontal, vertical)?
+
+  8. How many top-performing products would you like to highlight in the chart?
+
+  9. Are there any specific threshold criteria to determine the top-performing products?
+
+  10. Would you like to include any reference lines or markers on the chart to indicate
+  sales targets or benchmarks?'
+answers: '1. I am not sure.
+
+  2. Monthly sounds good.
+
+  3. Yes, I would like a legend. I do not know where it should be placed.
+
+  4. I am not sure, but maybe a specific color could work.
+
+  5. I have no specific preference.
+
+  6. Yes, including gridlines would be good.
+
+  7. I am not sure.
+
+  8. Highlight the top 5 products.
+
+  9. I do not have specific threshold criteria.
+
+  10. I am not sure.'
+data_attributes:
+- Order Date
+- Sales
+- City
+- Category
+- Product Name

@@ -1,0 +1,53 @@
+initial_prompt: I want to visualize a treemap using the NASA Astronauts data from
+  1959 to the present. The treemap should categorize astronauts based on their 'Group'
+  with further subdivisions for 'Status' (Active, Retired, Deceased). Each rectangle
+  should represent an astronaut and be color-coded by 'Gender' (Male, Female). The
+  size of the rectangles should correspond to the number of 'Space Flights' each astronaut
+  has completed. Please ensure to include informative labels with the astronaut's
+  name and the number of spacewalks. The aim is to get a visual understanding of the
+  distribution and achievements of astronauts over time.
+questions: '1. Do you have a preferred color scheme for representing the different
+  genders?
+
+  2. How would you like to handle astronauts with zero spacewalks in the labels?
+
+  3. Should the labels be always visible, or only on hover/click?
+
+  4. Do you have a specific size preference or range for the rectangles based on the
+  number of space flights?
+
+  5. Is there any specific arrangement or order you prefer for the categories within
+  the treemap?
+
+  6. Would you like to include any supplementary information or legends explaining
+  the categories and color codes?
+
+  7. How would you like to handle astronauts where some data might be missing or incomplete?
+
+  8. Do you have any specific preferences for the fonts or styles of the labels?'
+answers: '<start of user emulated response>
+
+  1. I do not have a specific preference.
+
+  2. Please note them as "0 spacewalks."
+
+  3. I am not sure.
+
+  4. I do not know.
+
+  5. I am not sure.
+
+  6. Yes, please include a legend explaining the categories and color codes.
+
+  7. Please mention it clearly if some data is missing or incomplete.
+
+  8. I do not have any specific preferences.
+
+  <end of user emulated response>'
+data_attributes:
+- Name
+- Group
+- Status
+- Gender
+- Space Flights
+- Space Walks

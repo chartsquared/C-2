@@ -1,0 +1,56 @@
+initial_prompt: Create a heatmap that visualizes the health status of honey bees across
+  different locations and dates in the BeeImage Dataset. Use the provided data with
+  columns - 'location', 'date', and 'health'. Each cell in the heatmap should represent
+  the count of a specific health status for honey bees at a particular location and
+  date. This visualization will help in identifying patterns in bee health over time
+  and across different regions. Ensure the heatmap is color-coded to differentiate
+  varying counts, making it easier to spot trends and anomalies in the dataset.
+questions: '1. Do you have a specific color palette preference for the heatmap?
+
+  2. Would you like the dates to be displayed in any specific format?
+
+  3. Should the heatmap cells display the count values, or do you prefer them to be
+  hidden?
+
+  4. Do you have a preference for how the date axis is organized (e.g., daily, monthly
+  intervals)?
+
+  5. Are there any specific locations you wish to highlight or compare in the heatmap?
+
+  6. Would you like to include a legend to explain the color-coding of the heatmap?
+
+  7. Do you have any preferences for the text font and size in the heatmap?
+
+  8. Should the health statuses be ordered in a specific way (e.g., by severity)?
+
+  9. Do you want to add labels or annotations to highlight specific trends or anomalies?
+
+  10. Are there any additional annotations or titles you would like to add to the
+  heatmap for better clarity?'
+answers: '<start of user emulated response>
+
+  1. I don''t have a specific color palette preference.
+
+  2. I am not sure about the date format.
+
+  3. The heatmap cells should display the count values.
+
+  4. I do not know about the date axis organization.
+
+  5. I don''t have any specific locations to highlight.
+
+  6. Yes, please include a legend.
+
+  7. I''m not sure about the text font and size.
+
+  8. Order the health statuses by severity.
+
+  9. I do not know about adding labels or annotations.
+
+  10. No additional annotations or titles are needed.
+
+  <end of user emulated response>'
+data_attributes:
+- location
+- date
+- health

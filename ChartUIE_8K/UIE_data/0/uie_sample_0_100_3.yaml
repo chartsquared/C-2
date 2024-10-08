@@ -1,0 +1,51 @@
+initial_prompt: I need a bubble chart to visualize the Crop Recommendation Dataset.
+  The chart should use 'temperature' on the x-axis and 'humidity' on the y-axis. Each
+  bubble should represent a unique crop type (from the 'label' column), with the bubble
+  size determined by the average 'rainfall' for that crop. I want each bubble to be
+  color-coded according to the 'label' for easy distinction. This will help me understand
+  the correlation between temperature, humidity, and different crop types.
+questions: '1. Do you have a preferred color palette for the bubbles representing
+  different crop types?
+
+  2. What scale would you prefer for the axes (linear or logarithmic)?
+
+  3. Do you want any specific labels or annotations on the bubbles or axes?
+
+  4. Would you like to have gridlines on the chart for better readability?
+
+  5. Are there any specific title or subtitle you want to include in the chart?
+
+  6. Is there a preferred size range for the bubbles?
+
+  7. Would you like to display a legend explaining the bubble colors and sizes?
+
+  8. Do you have any specific font style or size preferences for the text in the chart?
+
+  9. Should the chart background be a specific color or remain white?
+
+  10. Would you like to include any trend lines or reference lines to help highlight
+  correlations?'
+answers: '1. I do not have a specific preference.
+
+  2. I prefer a linear scale for the axes.
+
+  3. I am not sure.
+
+  4. Yes, I would like to have gridlines for better readability.
+
+  5. I do not have a specific title or subtitle in mind.
+
+  6. I am not sure.
+
+  7. Yes, I would like to display a legend explaining the bubble colors and sizes.
+
+  8. I do not know.
+
+  9. I have no specific preference; white is fine.
+
+  10. I am not sure.'
+data_attributes:
+- temperature
+- humidity
+- rainfall
+- label

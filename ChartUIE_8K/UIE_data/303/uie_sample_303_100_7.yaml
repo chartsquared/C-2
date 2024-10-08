@@ -1,0 +1,54 @@
+initial_prompt: Please create a scatter plot to visualize the underwater video assessment
+  of benthic habitats data. Use the 'LATITUDE' and 'LONGITUDE' columns for the x and
+  y axes, respectively. Color-code the points by 'SITE TYPE'. Include markers for
+  'DEPTH' to indicate the depth of each point. Each marker should also differentiate
+  between 'PAVEMENT' presence and absence. Add a hover tooltip to show detailed information
+  including 'DATE COLLECTED', 'TIME COLLECTED', 'SITE ID', and 'URL LINK'. Make sure
+  the plot is easy to read and informative.
+questions: '1. Do you have a preference for the color palette to be used for the ''SITE
+  TYPE'' categories?
+
+  2. How would you like the markers indicating ''DEPTH'' to be represented (e.g.,
+  size, color gradient)?
+
+  3. What type of symbol would you prefer for differentiating ''PAVEMENT'' presence
+  and absence (e.g., circle for presence, square for absence)?
+
+  4. Do you have any specific preferences for the tooltip format or layout containing
+  ''DATE COLLECTED'', ''TIME COLLECTED'', ''SITE ID'', and ''URL LINK''?
+
+  5. Is there a particular font or font size that you would like for axis labels and
+  titles?
+
+  6. Would you like gridlines to be included in the plot? If so, do you have a preference
+  for their style (e.g., dashed, solid)?
+
+  7. Do you have a preference for the overall styling/theme of the plot (e.g., minimalist,
+  detailed)?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I would like the markers indicating ''DEPTH'' to be represented by size.
+
+  3. Circle for presence and square for absence sounds good.
+
+  4. I do not have a specific preference for the tooltip format or layout.
+
+  5. I am not sure about the font or font size for axis labels and titles.
+
+  6. Yes, include gridlines. I do not have a preference for their style.
+
+  7. I prefer a detailed plot.
+
+  <end of user emulated response>'
+data_attributes:
+- LATITUDE
+- LONGITUDE
+- SITE TYPE
+- DEPTH
+- PAVEMENT
+- DATE COLLECTED
+- TIME COLLECTED
+- SITE ID
+- URL LINK

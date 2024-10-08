@@ -1,0 +1,46 @@
+initial_prompt: I need a parallel coordinates plot to visualize the data where each
+  line represents an observation. The lines should display how variables 'y', 'x1',
+  and 'x2' change across dimensions. Include data-driven text annotations to highlight
+  key observations for 'x1' and 'x2'. It's essential to draw attention to values showing
+  significant differences. Also, apply highlights to these elements to make them stand
+  out. The visualization should help in identifying trends or patterns in these variables,
+  which is crucial for understanding the relationships among 'y', 'x1', and 'x2' in
+  analytical contexts.
+questions: '1. Do you have a preferred color scheme for the highlights and text annotations?
+
+  2. How would you like the text annotations for key observations to be displayed
+  (e.g., font size, placement)?
+
+  3. Are there any specific thresholds for ''significant differences'' that should
+  be highlighted?
+
+  4. Do you have any preferences regarding the axis scaling or normalization for the
+  parallel coordinates plot?
+
+  5. Should the lines be smoothed or retain their raw form when representing the observations?
+
+  6. Are there any specific labels or legends you want included in the chart?
+
+  7. How detailed or granular would you like the highlights to be within the dataset
+  (e.g., top 5% extremes, outliers beyond a standard deviation)?
+
+  8. Do you prefer a certain style for the lines (e.g., dotted, solid, varying thickness)?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. Significant differences can be highlighted based on the top 5% extreme values.
+
+  4. I have no specific preference.
+
+  5. Retain their raw form when representing the observations.
+
+  6. I am not sure.
+
+  7. Highlight the top 5% extremes as well as any clear outliers.
+
+  8. A solid line style would be preferred.'
+data_attributes:
+- y
+- x1
+- x2

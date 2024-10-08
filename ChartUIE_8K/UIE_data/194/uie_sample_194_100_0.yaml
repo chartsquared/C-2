@@ -1,0 +1,48 @@
+initial_prompt: Create a network diagram based on the Sloan Digital Sky Survey DR14
+  data. Focus on visualizing connections between different celestial objects (stars,
+  galaxies) classified in the dataset. Use node size to represent 'redshift' values,
+  and edge color to indicate run and camcol similarities. Highlight elements with
+  extreme redshift values. Add text annotations for objects with significant redshift
+  to highlight key observations. This visualization aims at showcasing spatial relationships
+  and helping identify patterns in celestial object classification and distribution.
+  The context is space-and-astronomy to enhance understanding of cosmic structures.
+questions: '1. Do you have a preferred layout for the network diagram (e.g., circular,
+  hierarchical, force-directed)?
+
+  2. Which color palette would you prefer for representing edge colors based on run
+  and camcol similarities?
+
+  3. Are there any specific objects with significant redshift values for which you
+  would like more detailed annotations?
+
+  4. Do you have a preference for the size range of the nodes based on redshift values?
+
+  5. Would you like to use any specific shapes for nodes representing different classes
+  (e.g., stars and galaxies)?
+
+  6. What level of detail do you prefer for the text annotations (e.g., minimal, moderate,
+  or extensive)?
+
+  7. Do you have any particular preferences for the background color or theme of the
+  network diagram?'
+answers: '1. I am not sure.
+
+  2. I do not know.
+
+  3. I would like detailed annotations for Quasars with extreme redshift values.
+
+  4. I do not have a specific preference.
+
+  5. I am not sure.
+
+  6. Moderate level of detail for the text annotations.
+
+  7. I do not have any particular preferences.'
+data_attributes:
+- objid
+- ra
+- dec
+- run
+- camcol
+- class
+- redshift

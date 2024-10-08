@@ -1,0 +1,50 @@
+initial_prompt: Please create a heatmap visualizing the correlation among various
+  attributes like Age, DailyRate, DistanceFromHome, MonthlyIncome, and YearsAtCompany
+  from the IBM HR Analytics Employee Attrition & Performance dataset. Highlight areas
+  of high correlation with a different color. Include text annotations to show values
+  of key correlations that might indicate attrition risk factors, such as low job
+  satisfaction or high overtime. Your visualization should make it easy to identify
+  patterns that could help in understanding and reducing employee attrition. Use color
+  gradients effectively to emphasize the importance of these correlations.
+questions: '1. Do you have a preferred color palette for the heatmap?
+
+  2. What color would you like to use to highlight areas of high correlation?
+
+  3. Do you prefer any specific font or style for the text annotations?
+
+  4. Are there any specific correlation threshold values that should be annotated?
+
+  5. Should the annotations show all correlation values, or only key correlations
+  indicating potential attrition risk factors?
+
+  6. Would you like to include any titles or labels to provide additional context
+  within the heatmap?
+
+  7. Do you have any preferences for the placement or appearance of the legend?
+
+  8. Are there any specific instructions for the axis labels and tick marks?'
+answers: '1. I do not have a specific color palette in mind.
+
+  2. I am not sure.
+
+  3. I am not sure.
+
+  4. I am not sure.
+
+  5. Annotate only key correlations indicating potential attrition risk factors.
+
+  6. A title indicating it''s a heatmap of correlations among attributes should be
+  included.
+
+  7. I do not have any specific preferences for the placement or appearance of the
+  legend.
+
+  8. I do not have any specific instructions for the axis labels and tick marks.'
+data_attributes:
+- Age
+- DailyRate
+- DistanceFromHome
+- MonthlyIncome
+- YearsAtCompany
+- JobSatisfaction
+- OverTime

@@ -1,0 +1,42 @@
+initial_prompt: Create a bar chart illustrating the popularity of the top 50 Spotify
+  songs of 2019, broken down by genre and artist name.
+questions: '1. Do you have a preferred color scheme for the bar chart?
+
+  2. Would you like the bars to be grouped by genre or by artist name?
+
+  3. Should the bars within each group be stacked or placed side by side?
+
+  4. Do you have specific font preferences for the axis labels and title?
+
+  5. Do you want to include a legend in the chart?
+
+  6. Should the popularity values be displayed on the bars?
+
+  7. Do you have a preference for the chart''s orientation (vertical or horizontal
+  bars)?
+
+  8. Would you like to include gridlines on the chart?
+
+  9. Should there be any specific annotations or highlights for certain songs or genres?'
+answers: '1. I don''t know.
+
+  2. By genre.
+
+  3. I am not sure.
+
+  4. I don''t know.
+
+  5. Yes.
+
+  6. Yes, that would be helpful.
+
+  7. I have no specific preference.
+
+  8. I don''t know.
+
+  9. I am not sure.'
+data_attributes:
+- Track.Name
+- Artist.Name
+- Genre
+- Popularity

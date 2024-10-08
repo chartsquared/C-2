@@ -1,0 +1,47 @@
+initial_prompt: I'd like a dot plot to visualize Spotify song attributes based on
+  the dataset provided. Please plot 'danceability' on the X-axis and 'energy' on the
+  Y-axis. Each dot should represent a song, using 'song_title' for labels. Color-code
+  the dots by 'target'. This will help identify the relationship between danceability
+  and energy for each song and how it correlates with the target attribute. Use a
+  clear legend and make sure axes are labeled accordingly. I'd also appreciate tooltips
+  for each dot showing 'artist' and 'valence' info when hovered over. Thank you!
+questions: '1. Do you have a preference for the dot size in the plot?
+
+  2. What color scheme would you like for the color-coding of the ''target'' attribute?
+
+  3. Would you like the X-axis and Y-axis to be scaled linearly or logarithmically?
+
+  4. Do you prefer any specific titles or labels for the X-axis and Y-axis beyond
+  ''danceability'' and ''energy''?
+
+  5. Should the plot have grid lines for better readability, and if yes, what style
+  do you prefer for those grid lines?
+
+  6. Do you have any specific preferences for the font style and size of the labels
+  and legend?
+
+  7. Would you like any specific marker shape for the dots representing the songs?'
+answers: '<start of user emulated response>
+
+  1. I am not sure.
+
+  2. I have no specific preference.
+
+  3. I am not sure.
+
+  4. No, just use ''danceability'' and ''energy''.
+
+  5. Yes, grid lines would be helpful. I don''t have a specific style preference.
+
+  6. I do not know.
+
+  7. No specific preference for the marker shape.
+
+  <end of user emulated response>'
+data_attributes:
+- danceability
+- energy
+- song_title
+- target
+- artist
+- valence
