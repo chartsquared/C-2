@@ -1,6 +1,6 @@
 # ChartAJ and ChartUIE-8K: Rich AI Feedback for Chart Generation
 
-![ChartAJ and ChartUIE-8K](chartaj_image.png)
+![ChartAJ and ChartUIE-8K](chartaj.png)
 
 ## Contents 
 - [Project Site](#project-site)
@@ -44,6 +44,7 @@ This project requires several Python packages to be installed. The dependencies 
 
     ```bash
     pip freeze > requirements.txt
+    ```
 
 
 
