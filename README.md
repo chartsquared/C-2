@@ -48,15 +48,9 @@ This project requires several Python packages to be installed. The dependencies 
 
 
 
-
-
-
-
-
-
 ## ChartUIE
 
-The ChartUIE-8k (Chart User Instruction Emulator) data set can be found in the `ChartUIE_8k` folder. The dataset used to generate ChartUIE-8k is located in the `UIE_data/data` folder and includes various .csv and .json files from a range of categories, such as Business, Health, and more.
+The ChartUIE-8k (Chart User Instruction Emulator) data set can be found in the `ChartUIE_8k/UIE_data` folder. The dataset used to generate ChartUIE-8k is located in the `ChartUIE_8k/data` folder. It includes .csv and .json files from a range of categories, such as Business, Health, and more. The licencse for each data is attached as `{index}_info.yaml` for each data index.
 <!-- 
 ## ChartAgent
 
