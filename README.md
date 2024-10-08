@@ -11,8 +11,7 @@ Demonstration of the pre and post feedback of our ChartAJ is provided in our sit
 
 ## ChartUIE
 
-UIE_data is given in "UIE_data/data" folder.
-(TO BE WRITTEN)
+The ChartUIE-8k (Chart User Instruction Emulator) data set can be found in the `ChartUIE_8k` folder. The dataset used to generate ChartUIE-8k is located in the `UIE_data/data` folder and includes various .csv and .json files from a range of categories, such as Business, Health, and more.
 
 ## ChartAgent
 
