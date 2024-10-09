@@ -52,11 +52,12 @@ ChartAJ entails 3 modules:
 ### Module 1
 Module 1 is responsible for domain grounding, leveraging insights from the extensive chart literature in prominent venues. Three essential factors (1) Task, (2) Purpose, and (3) Audience are decomposed from the user query through `prompts/AJ_SD.txt` in `semantic_decompose(data)` function. Then, it is fused with the Basic Criteria (b, general and high-level criteria for chart evaluations) assigned to `basic_criteria` variable in `autojudge.py`, establishing <i>q-specific criteria</i>-specializing the general Basic Criteria (b) with `prompts/AJ_criteria_establishment.txt` prompt.
 
-### Module 2
-Module 2 is in charge of binarizing the <i>q-specific criteria</i> into Yes or No questions and evaluating the questions through additional subjective or objective filtering. The prompt for binarization is provided in `prompts/AJ_create_eval_q.txt`, and the prompt for evaluation is in `prompts/AJ_execute_eval.txt`.
 
-### Module 3
-Module 3 makes each evaluation QA set to be categorized into four actions—RETAIN, EDIT, ADD, or DISCARD. These evaluations are then converted into actionable code feedback. We provide the prompt `prompts/AJ_generate_feedback.txt` for generating code centric feedback.
+
+2. Criteria Binarization: The established criteria are transformed into multiple binary (Yes or No) questions for detailed scoring and feedback. We provide the prompts in `prompts/AJ_create_eval_q.txt`
+
+3. Visual Evaluation and Code Feedback: The chart is assessed against the multiple binary evaluation questions, with each QA set categorized into four actions—RETAIN, EDIT, ADD, or DISCARD. These evaluations are then converted into actionable code feedback to refine the initial d2c code. We provide two prompts for this: `prompts/AJ_execute_eval.txt` for evaluation question assessment with an attached target chart plot, and `prompts/AJ_generate_feedback.txt` for generating code centric feedback.
+
 
 ## ChartUIE-8K
 
