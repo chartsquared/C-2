@@ -1,7 +1,5 @@
 # ChartAJ and ChartUIE-8K: Rich AI Feedback for Chart Generation
 
-![ChartAJ and ChartUIE-8K](chartaj.png)
-
 ## Contents 
 - [Project Site](#project-site)
 - [Requirements](#requirements)
@@ -47,7 +45,7 @@ This project requires several Python packages to be installed. The dependencies 
 ## ChartAJ
 ChartAJ is a reasoning framework for automatic chart generation evaluation and rich feedback. We use GPT 4o and Claude 3.5 Sonnet as the base models for ChartAJ. The code for ChartAJ is in `autojudge.py`, and the overall workflow can be run in the `main.ipynb` file.
 
-ChartAJ entails 3 modules:
+![ChartAJ](chartaj.png)
 
 ### Module 1
 Module 1 is responsible for domain grounding, leveraging insights from the extensive chart literature in prominent venues. Three essential factors (1) Task, (2) Purpose, and (3) Audience are decomposed from the user query through `prompts/AJ_SD.txt` in `semantic_decompose(data)` function. Then, it is fused with the Basic Criteria (b, general and high-level criteria for chart evaluations) assigned to `basic_criteria` variable in `autojudge.py`, establishing <i>q-specific criteria</i>-specializing the general Basic Criteria (b) with `prompts/AJ_criteria_establishment.txt` prompt.
