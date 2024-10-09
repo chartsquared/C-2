@@ -48,7 +48,7 @@ ChartAJ is a reasoning framework for automatic chart generation evaluation and r
 ![ChartAJ](chartaj.png)
 
 ### Module 1
-Module 1 is responsible for domain grounding, leveraging insights from the extensive chart literature in prominent venues. Three essential factors (1) Task, (2) Purpose, and (3) Audience are decomposed from the user query through `prompts/AJ_SD.txt` in `semantic_decompose(data)` function. Then, it is fused with the Basic Criteria (b, general and high-level criteria for chart evaluations) assigned to `basic_criteria` variable in `autojudge.py`, establishing <i>q-specific criteria</i>-specializing the general Basic Criteria (b) with `prompts/AJ_criteria_establishment.txt` prompt.
+Module 1 is responsible for domain grounding, leveraging insights from the extensive chart literature in prominent venues. Three essential factors (1) Task, (2) Purpose, and (3) Audience are decomposed from the user query through `prompts/AJ_SD.txt`. Then, it is fused with the Basic Criteria (b, general and high-level criteria for chart evaluations) assigned to `basic_criteria` variable in `autojudge.py`, establishing <i>q-specific criteria</i>-specializing the general Basic Criteria (b) with `prompts/AJ_criteria_establishment.txt` prompt.
 
 ### Module 2
 Module 2 is in charge of binarizing the <i>q-specific criteria</i> into Yes or No questions and evaluating the questions through additional subjective or objective filtering. The prompt for binarization is provided in `prompts/AJ_create_eval_q.txt`, and the prompt for evaluation is in `prompts/AJ_execute_eval.txt`.
