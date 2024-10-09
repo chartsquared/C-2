@@ -2,88 +2,79 @@
     "code feedback": [
         {
             "tag": "EDIT",
-            "explanation": "The wheat data shows 'nan' values, which indicates there might be no wheat data in the CSV file. We need to handle this case.",
+            "explanation": "Replace crop type numbers with actual crop names on X-axis",
             "before": [
-                "Line 18: wheat_data = data[data['label'] == 'wheat']"
+                "Line 28: x = np.arange(len(avg_values.index))"
             ],
             "after": [
-                "Line 18: wheat_data = data[data['label'] == 'wheat']",
-                "Line 19: if wheat_data.empty:",
-                "Line 20:     print('No wheat data found in the CSV file.')",
-                "Line 21:     wheat_avg_N, wheat_avg_P, wheat_avg_K = 0, 0, 0",
-                "Line 22: else:",
-                "Line 23:     wheat_avg_N = wheat_data['N'].mean()",
-                "Line 24:     wheat_avg_P = wheat_data['P'].mean()",
-                "Line 25:     wheat_avg_K = wheat_data['K'].mean()"
+                "Line 28: x = np.arange(len(avg_values.index))",
+                "Line 29: plt.xticks(x, avg_values.index, rotation=45, ha='right')"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "To make wheat more visually distinct from rice, we should change its color.",
+            "explanation": "Highlight rice values with distinct colors",
             "before": [
-                "Line 47: ax.bar(x, wheat_values, width, label='Wheat', color='green')"
+                "Line 39: plt.bar(x[np.where(avg_values.index == i)][0] - bar_width, row[nutrient], bar_width, color='red')",
+                "Line 41: plt.bar(x[np.where(avg_values.index == i)][0], row[nutrient], bar_width, color='green')",
+                "Line 43: plt.bar(x[np.where(avg_values.index == i)][0] + bar_width, row[nutrient], bar_width, color='blue')"
             ],
             "after": [
-                "Line 47: ax.bar(x, wheat_values, width, label='Wheat', color='yellow')"
-            ]
-        },
-        {
-            "tag": "ADD",
-            "explanation": "Add units for the average values on the y-axis.",
-            "before": [
-                "Line 52: ax.set_ylabel('Average Values')"
-            ],
-            "after": [
-                "Line 52: ax.set_ylabel('Average Values (kg/ha)')"
-            ]
-        },
-        {
-            "tag": "ADD",
-            "explanation": "Include a brief explanation of N, P, K in the title for audiences less familiar with these terms.",
-            "before": [
-                "Line 53: ax.set_title('Average N, P, K Values for Different Crops')"
-            ],
-            "after": [
-                "Line 53: ax.set_title('Average N (Nitrogen), P (Phosphorus), K (Potassium) Values for Different Crops')"
+                "Line 39: plt.bar(x[np.where(avg_values.index == i)][0] - bar_width, row[nutrient], bar_width, color='darkred', edgecolor='black', linewidth=2)",
+                "Line 41: plt.bar(x[np.where(avg_values.index == i)][0], row[nutrient], bar_width, color='darkgreen', edgecolor='black', linewidth=2)",
+                "Line 43: plt.bar(x[np.where(avg_values.index == i)][0] + bar_width, row[nutrient], bar_width, color='darkblue', edgecolor='black', linewidth=2)"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Modify the wheat annotation to handle potential 'nan' values.",
+            "explanation": "Include clear text annotations for wheat, showing its N, P, K values",
             "before": [
-                "Line 65: ax.annotate(f'Wheat: ({wheat_avg_N:.2f}, {wheat_avg_P:.2f}, {wheat_avg_K:.2f})',"
+                "Line 47: if i in ['rice', 'wheat']:",
+                "Line 48: plt.text(x[np.where(avg_values.index == i)][0], max(row) + 1, f\"{i}: N={row['N']:.1f}, P={row['P']:.1f}, K={row['K']:.1f}\", ha='center')"
             ],
             "after": [
-                "Line 65: wheat_annotation = f'Wheat: ({wheat_avg_N:.2f}, {wheat_avg_P:.2f}, {wheat_avg_K:.2f})' if not wheat_data.empty else 'Wheat: No data'",
-                "Line 66: ax.annotate(wheat_annotation,"
+                "Line 47: if i in ['rice', 'wheat']:",
+                "Line 48: plt.text(x[np.where(avg_values.index == i)][0], max(row) + 5, f\"{i}:\\nN={row['N']:.1f}\\nP={row['P']:.1f}\\nK={row['K']:.1f}\", ha='center', va='bottom', fontweight='bold')"
             ]
         },
         {
             "tag": "ADD",
-            "explanation": "Add more crop types for a comprehensive comparison.",
+            "explanation": "Add a label for the Y-axis indicating 'Average Nutrient Value'",
             "before": [
-                "Line 20: other_crops_data = data[(data['label'] != 'rice') & (data['label'] != 'wheat')]"
+                "Line 54: plt.ylabel('Average Nutrient Value')"
             ],
             "after": [
-                "Line 20: crop_types = data['label'].unique()",
-                "Line 21: crop_data = {crop: data[data['label'] == crop] for crop in crop_types if crop not in ['rice', 'wheat']}",
-                "Line 22: crop_averages = {crop: {nutrient: crop_data[crop][nutrient].mean() for nutrient in ['N', 'P', 'K']} for crop in crop_data}"
+                "Line 54: plt.ylabel('Average Nutrient Value (mg/kg)', fontweight='bold')"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Modify the plotting code to include more crop types.",
+            "explanation": "Increase font size of x-axis labels for better legibility",
+            "before": [],
+            "after": [
+                "Line 30: plt.tick_params(axis='x', labelsize=10)"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Slightly reduce white space at the top to make room for clearer crop labels",
             "before": [
-                "Line 46: ax.bar(x - width, rice_values, width, label='Rice', color='blue')",
-                "Line 47: ax.bar(x, wheat_values, width, label='Wheat', color='green')",
-                "Line 48: ax.bar(x + width, other_crops_values, width, label='Other Crops', color='red')"
+                "Line 19: plt.figure(figsize=(8, 6))"
             ],
             "after": [
-                "Line 46: colors = plt.cm.rainbow(np.linspace(0, 1, len(crop_types)))",
-                "Line 47: for i, (crop, values) in enumerate(crop_averages.items()):",
-                "Line 48:     ax.bar(x + (i-1)*width, list(values.values()), width, label=crop, color=colors[i])",
-                "Line 49: ax.bar(x + (len(crop_types)-2)*width, rice_values, width, label='Rice', color='blue')",
-                "Line 50: ax.bar(x + (len(crop_types)-1)*width, wheat_values, width, label='Wheat', color='yellow')"
+                "Line 19: plt.figure(figsize=(10, 6))",
+                "Line 20: plt.subplots_adjust(top=0.9, bottom=0.15)"
+            ]
+        },
+        {
+            "tag": "ADD",
+            "explanation": "Sort crops by a specific nutrient value to highlight trends more clearly",
+            "before": [
+                "Line 15: avg_values = data.groupby('label')[['N', 'P', 'K']].mean()"
+            ],
+            "after": [
+                "Line 15: avg_values = data.groupby('label')[['N', 'P', 'K']].mean()",
+                "Line 16: avg_values = avg_values.sort_values(by='N', ascending=False)"
             ]
         }
     ]

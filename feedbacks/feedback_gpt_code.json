@@ -1,44 +1,49 @@
 {
     "code feedback": [
         {
-            "tag": "EDIT",
-            "explanation": "Correct the issue where 'wheat' annotations show 'nan'. This occurs because the wheat_data may be empty or contain NaN values, leading to incorrect mean calculations. Apply dropna() function to handle missing data appropriately.",
+            "tag": "RETAIN",
+            "explanation": "The current bar chart implementation and use of colors for differentiation are effective and convey the necessary information clearly.",
             "before": [
-                "Line 19: rice_avg_N = rice_data['N'].mean()",
-                "Line 20: rice_avg_P = rice_data['P'].mean()",
-                "Line 21: rice_avg_K = rice_data['K'].mean()",
-                "Line 23: wheat_avg_N = wheat_data['N'].mean()",
-                "Line 24: wheat_avg_P = wheat_data['P'].mean()",
-                "Line 25: wheat_avg_K = wheat_data['K'].mean()"
+                "Line 36: plt.bar(...)"
             ],
             "after": [
-                "Line 19: rice_avg_N = rice_data['N'].dropna().mean()",
-                "Line 20: rice_avg_P = rice_data['P'].dropna().mean()",
-                "Line 21: rice_avg_K = rice_data['K'].dropna().mean()",
-                "Line 23: wheat_avg_N = wheat_data['N'].dropna().mean()",
-                "Line 24: wheat_avg_P = wheat_data['P'].dropna().mean()",
-                "Line 25: wheat_avg_K = wheat_data['K'].dropna().mean()"
+                "Line 36: plt.bar(...)"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Reposition annotations to avoid overlap with the bars for better clarity.",
+            "explanation": "Ensure annotations for 'rice' and 'wheat' appear above each bar with sufficient offset to avoid overlap with other visual elements.",
             "before": [
-                "Line 40: ax.annotate(f'Rice: ({rice_avg_N:.2f}, {rice_avg_P:.2f}, {rice_avg_K:.2f})', xy=(0.1, 0.9), xycoords='axes fraction', horizontalalignment='left', verticalalignment='top')",
-                "Line 44: ax.annotate(f'Wheat: ({wheat_avg_N:.2f}, {wheat_avg_P:.2f}, {wheat_avg_K:.2f})', xy=(0.1, 0.85), xycoords='axes fraction', horizontalalignment='left', verticalalignment='top')"
+                "Line 51: plt.text(x[np.where(avg_values.index == i)][0], max(row) + 1, f\"{i}: N={row['N']:.1f}, P={row['P']:.1f}, K={row['K']:.1f}\", ha='center')"
             ],
             "after": [
-                "Line 40: ax.annotate(f'Rice: ({rice_avg_N:.2f}, {rice_avg_P:.2f}, {rice_avg_K:.2f})', xy=(0.7, 0.9), xycoords='axes fraction', horizontalalignment='left', verticalalignment='center')",
-                "Line 44: ax.annotate(f'Wheat: ({wheat_avg_N:.2f}, {wheat_avg_P:.2f}, {wheat_avg_K:.2f})', xy=(0.7, 0.85), xycoords='axes fraction', horizontalalignment='left', verticalalignment='center')"
+                "Line 51: plt.text(x[np.where(avg_values.index == i)][0], max(row) + 5, f\"{i}: N={row['N']:.1f}, P={row['P']:.1f}, K={row['K']:.1f}\", ha='center')"
             ]
         },
         {
-            "tag": "ADD",
-            "explanation": "Add visual cues, like bolding, to enhance emphasis on the 'rice' and 'wheat' data segments.",
-            "before": [],
+            "tag": "EDIT",
+            "explanation": "Adjust the width of the figure to prevent crowding and improve the spacing of bars for readability.",
+            "before": [
+                "Line 22: plt.figure(figsize=(8, 6))"
+            ],
             "after": [
-                "Line 30: ax.bar(x - width, rice_values, width, label='Rice', color='blue', edgecolor='black', linewidth=1.5)",
-                "Line 31: ax.bar(x, wheat_values, width, label='Wheat', color='green', edgecolor='black', linewidth=1.5)"
+                "Line 22: plt.figure(figsize=(12, 6))"
+            ]
+        },
+        {
+            "tag": "RETAIN",
+            "explanation": "The legend and axis labels successfully describe data series and axes respectively, aiding in the understanding of nutrient values.",
+            "before": [
+                "Line 53: plt.legend()",
+                "Line 58: plt.xlabel('Crop Type')",
+                "Line 59: plt.ylabel('Average Nutrient Value')",
+                "Line 60: plt.title(...)"
+            ],
+            "after": [
+                "Line 53: plt.legend()",
+                "Line 58: plt.xlabel('Crop Type')",
+                "Line 59: plt.ylabel('Average Nutrient Value')",
+                "Line 60: plt.title(...)"
             ]
         }
     ]

@@ -47,11 +47,15 @@ This project requires several Python packages to be installed. The dependencies 
     pip freeze > requirements.txt
     ```
 
+5. **API KEY**:
+
+    For the full functionality of this project, you might need to set up API keys for certain services. We use `OpenAI`, `Anthropic`, `Groq`, and `Deepinfra` API providers.
+
 
 
 ## ChartUIE
 
-The ChartUIE-8k (Chart User Instruction Emulator) data set can be found in the `ChartUIE_8k/UIE_data` folder. The dataset used to generate ChartUIE-8k is located in the `ChartUIE_8k/data` folder. It includes .csv and .json files from a range of categories, such as Business, Health, and more. The license for each data is attached as `{index}_info.yaml` for each data index.
+The ChartUIE-8k (Chart User Instruction Emulator) data set can be found in the `ChartUIE_8K/UIE_data` folder. The dataset used to generate ChartUIE-8k is located in the `ChartUIE_8K/data` folder. It includes .csv and .json files from a range of categories, such as Business, Health, and more. The license for each data is attached as `{index}_info.yaml` for each data index.
 <!-- 
 ## ChartAgent
 
@@ -61,7 +65,7 @@ ChartAgent performs two d2c tasks in the workflow. The first task is the initial
 
 ## ChartAJ
 
-ChartAJ provides automated, rich feedback on the initial chart. We use GPT-4o and Claude 3.5 Sonnet as the models for ChartAJ. The code for ChartAJ is in `autojudge.py`, and the overall workflow can be run in the `main.ipynb` file.
+ChartAJ provides automated, rich feedback on the initial chart. We use GPT-4o and Claude 3.5 Sonnet as the models for ChartAJ. The code for ChartAJ is in `autojudge.py`, and the overall workflow can be run in the `main.ipynb` file.[here]
 
 The feedback process follows three key steps:
 
