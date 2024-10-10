@@ -39,7 +39,14 @@ This project requires several Python packages to be installed. The dependencies 
 
 4. **API KEY**:
 
-    You can choose to run the LLMs on your own devices or use APIs. We use the following API providers: `OpenAI` for GPT-4o, `Anthropic` for Claude 3.5 Sonnet,`Groq` for Llama 3.1 70B, and `Deepinfra` for Gemma 2 27B.
+    You can choose to run the LLMs on your own devices or use APIs. We use the following API providers: `OpenAI` for GPT-4o, `Anthropic` for Claude 3.5 Sonnet,`Groq` for Llama 3.1 70B, and `Deepinfra` for Gemma 2 27B. Set api keys of the API providers in first cell of the `main.ipynb` file.
+    ```bash
+    OPENAI_API_KEY = "<INSERT API KEY>"
+    ANTHROPIC_API_KEY = "<INSERT API KEY>"
+    GROQ_API_KEY = "<INSERT API KEY>"
+    DEEPINFRA_API_KEY = "<INSERT API KEY>"
+    ```
+
 
 
 ## ChartAJ
