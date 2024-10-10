@@ -58,7 +58,7 @@ Module 3 makes each evaluation QA set to be categorized into four actions—RETA
 
 ## ChartUIE-8K
 
-The ChartUIE-8K (Chart User Interaction Emulation) evaluation set can be found in the `ChartUIE_8K/UIE_evaluation_set` directory. The underlying data sets corresponding to each query is located in the `ChartUIE_8K/data` directory. It includes .csv and .json files. The range of different chart types and topics used are mentioned in `chart_topics.yaml` and `chart_types.yaml` files. The license for each data is documented in `{index}_info.yaml` for each data index. This repository was made under non-profit academic use. Users of this repository should consider the license documented in `{index}_info.yaml`.
+The ChartUIE-8K (Chart User Interaction Emulation) evaluation set can be found in the `ChartUIE_8K/UIE_evaluation_set` directory. Every file in the set follows the naming convention `uie_sample_{idx}_{word_count}_{sub_idx}.yaml`, where `idx` refers to the sample index, `word_count` indicates the number of words (either 50 or 100), and `sub_idx` is an additional index for multiple variations of each `idx` sample. The underlying data sets corresponding to each query is located in the `ChartUIE_8K/data` directory. It includes .csv and .json files. The range of different chart types and topics used are mentioned in `chart_topics.yaml` and `chart_types.yaml` files. The license for each data is documented in `{idx}_info.yaml` for each data index. This repository was made under non-profit academic use. Users of this repository should consider the license documented in `{idx}_info.yaml`.
 <!-- 
 ## ChartAgent
 
