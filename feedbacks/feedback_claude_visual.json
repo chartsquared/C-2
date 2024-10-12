@@ -1,262 +1,199 @@
 {
     "evaluation": [
         {
-            "Q1": "Does the chart effectively compare N, P, K values across different crops?",
+            "Q1": "Does the chart effectively compare the average N, P, K values across different crops?",
             "A1": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Bar chart format effectively showing N, P, K values for each crop"
+                    "improvement": "The grouped bar chart effectively shows N, P, K values for multiple crops"
                 },
                 {
                     "tag": "EDIT",
-                    "improvement": "Improve x-axis labels to show actual crop names instead of numbers"
+                    "improvement": "Consider reordering crops alphabetically or by nutrient values for easier comparison"
                 }
             ]
         },
         {
-            "Q2": "Are rice and wheat clearly distinguishable from other crops in the visualization?",
+            "Q2": "Are the 'rice' values clearly highlighted with distinct colors?",
             "A2": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "ADD",
-                    "improvement": "Highlight rice and wheat bars with distinct colors or patterns"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Add clear labels for rice and wheat directly on the chart"
+                    "improvement": "Highlight 'rice' bars with a distinct color to make them stand out"
                 }
             ]
         },
         {
-            "Q3": "Does the chart use a bar format to represent the average N, P, K values for each crop?",
-            "A3": "YES",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Bar format effectively represents N, P, K values for each crop"
-                }
-            ]
-        },
-        {
-            "Q4": "Are the text annotations for rice and wheat clearly visible and accurate?",
-            "A4": "NO",
+            "Q3": "Does the chart include text annotations for 'rice' and 'wheat' displaying their average N, P, K values?",
+            "A3": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "ADD",
-                    "improvement": "Include clear text annotations for wheat, showing its N, P, K values"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Move rice annotation to be closer to its corresponding bars for better clarity"
+                    "improvement": "Include text annotations for 'rice' and 'wheat' showing their N, P, K values"
                 }
             ]
         },
         {
-            "Q5": "Is the color scheme consistent and does it aid in differentiating between crops?",
+            "Q4": "Is the chart type a bar chart as specified in the user instruction?",
+            "A4": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The grouped bar chart format effectively displays the data as requested"
+                }
+            ]
+        },
+        {
+            "Q5": "Are the axis labels clear and informative, allowing for easy interpretation of the data?",
             "A5": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Consistent color scheme for N, P, K across all crops"
+                    "improvement": "The x-axis label 'Crop' and y-axis label 'Average Value' are clear and informative"
                 },
                 {
                     "tag": "EDIT",
-                    "improvement": "Use more distinct colors for rice to highlight it as requested"
+                    "improvement": "Consider adding units to the y-axis label for more clarity (e.g., 'Average Value (kg/ha)')"
                 }
             ]
         },
         {
-            "Q6": "Are the axes clearly labeled, with crop names on the X-axis and N, P, K values on the Y-axis?",
+            "Q6": "Is there a clear visual hierarchy that guides attention to key information, particularly for rice and wheat?",
             "A6": "NO",
-            "Q_type": "Fact-checking",
+            "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Replace crop type numbers with actual crop names on X-axis"
+                    "tag": "ADD",
+                    "improvement": "Highlight rice and wheat bars with distinct colors to create visual hierarchy"
                 },
                 {
-                    "tag": "EDIT",
-                    "improvement": "Add a label for the Y-axis indicating 'Average Nutrient Value'"
+                    "tag": "ADD",
+                    "improvement": "Consider adding text annotations or markers to draw attention to rice and wheat"
                 }
             ]
         },
         {
-            "Q7": "Does the chart have a clear title that reflects its content?",
+            "Q7": "Does the chart have a clear, concise title that accurately describes its content?",
             "A7": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Clear and descriptive title 'Average N, P, K Values for Different Crops'"
+                    "improvement": "The title 'Average Nutrient Values per Crop' accurately describes the chart content"
                 }
             ]
         },
         {
-            "Q8": "Are the N, P, K values for each crop visually grouped together?",
+            "Q8": "Is the color scheme used in the chart easily distinguishable and appropriate for the target audience?",
             "A8": "YES",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "N, P, K values for each crop are grouped together as adjacent bars"
-                }
-            ]
-        },
-        {
-            "Q9": "Is there a legend explaining the color coding (if used) that doesn't obstruct the main chart?",
-            "A9": "YES",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Clear legend explaining color coding for N, P, K without obstructing the chart"
-                }
-            ]
-        },
-        {
-            "Q10": "Is the overall layout of the chart efficient, with a good balance between data and white space?",
-            "A10": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Efficient use of space with good balance between data and white space"
+                    "improvement": "The grayscale color scheme is easily distinguishable"
                 },
                 {
                     "tag": "EDIT",
-                    "improvement": "Slightly reduce white space at the top to make room for clearer crop labels"
+                    "improvement": "Consider using color to highlight key crops (rice and wheat) for better emphasis"
                 }
             ]
         },
         {
-            "Q11": "Are all text elements, including labels and annotations, legible and consistent in style?",
+            "Q9": "Are the font choices and sizes appropriate and legible for all text elements in the chart?",
+            "A9": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The font choices and sizes are appropriate and legible for all text elements"
+                },
+                {
+                    "tag": "EDIT",
+                    "improvement": "Consider increasing the font size of the x-axis labels for better readability"
+                }
+            ]
+        },
+        {
+            "Q10": "Does the chart avoid unnecessary decorative elements that might distract from the data?",
+            "A10": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The chart design is clean and free from unnecessary decorative elements"
+                }
+            ]
+        },
+        {
+            "Q11": "Is the overall presentation of the chart simple and clear enough for agricultural researchers, farmers, and policymakers to understand?",
             "A11": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Consistent font style and size for all text elements"
+                    "improvement": "The chart presents data in a simple and clear manner suitable for the target audience"
                 },
                 {
-                    "tag": "EDIT",
-                    "improvement": "Increase font size of x-axis labels for better legibility"
+                    "tag": "ADD",
+                    "improvement": "Consider adding a brief explanation or context to help interpret the nutrient values"
                 }
             ]
         },
         {
-            "Q12": "Is the level of detail appropriate for agricultural researchers, farmers, and agronomists?",
+            "Q12": "Does the chart allow for easy identification of trends or patterns in nutrient requirements among crops?",
             "A12": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Appropriate level of detail showing N, P, K values for multiple crops"
+                    "improvement": "The grouped bar chart allows for comparison of nutrient requirements across crops"
                 },
                 {
-                    "tag": "ADD",
-                    "improvement": "Include units of measurement for N, P, K values for more precise information"
+                    "tag": "EDIT",
+                    "improvement": "Consider sorting crops by a specific nutrient value to make trends more apparent"
                 }
             ]
         },
         {
-            "Q13": "Does the chart facilitate the identification of trends or patterns in nutrient requirements across crops?",
+            "Q13": "Is the contrast between text and background colors sufficient for good readability?",
             "A13": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Bar chart format allows for easy comparison of nutrient requirements across crops"
-                },
+                    "improvement": "The black text on white background provides good contrast for readability"
+                }
+            ]
+        },
+        {
+            "Q14": "If present, do grid lines effectively aid in value comparisons without cluttering the chart?",
+            "A14": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "The light gray grid lines aid in value comparisons without cluttering the chart"
+                }
+            ]
+        },
+        {
+            "Q15": "Does the chart balance highlighting rice and wheat while maintaining visibility of other crops?",
+            "A15": "NO",
+            "Q_type": "Subjective",
+            "feedback": [
                 {
                     "tag": "EDIT",
-                    "improvement": "Sort crops by a specific nutrient value to highlight trends more clearly"
-                }
-            ]
-        },
-        {
-            "Q14": "Are there any overlapping elements that might hinder data interpretation?",
-            "A14": "NO",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Clear separation between bars and no overlapping elements"
-                }
-            ]
-        },
-        {
-            "Q15": "If present, do grid lines enhance readability without detracting from the visualization?",
-            "A15": "YES",
-            "Q_type": "Subjective",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Light grid lines enhance readability without overwhelming the data"
-                }
-            ]
-        },
-        {
-            "Q16": "Is there a clear visual hierarchy that emphasizes rice and wheat while maintaining overall data integrity?",
-            "A16": "NO",
-            "Q_type": "Subjective",
-            "feedback": [
+                    "improvement": "Highlight rice and wheat bars with distinct colors to balance emphasis"
+                },
                 {
                     "tag": "ADD",
-                    "improvement": "Highlight rice and wheat bars with distinct colors or patterns"
-                },
-                {
-                    "tag": "EDIT",
-                    "improvement": "Increase emphasis on rice and wheat through annotation placement or bar width"
-                }
-            ]
-        },
-        {
-            "Q17": "Are the bars proportional to the data values they represent?",
-            "A17": "YES",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Bars are correctly proportional to their respective data values"
-                }
-            ]
-        },
-        {
-            "Q18": "Does the chart avoid unnecessary visual elements that might distract from its main message?",
-            "A18": "YES",
-            "Q_type": "Subjective",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Clean design without unnecessary decorative elements"
-                }
-            ]
-        },
-        {
-            "Q19": "Can the Y-axis scale adequately represent the range of N, P, K values for all crops?",
-            "A19": "YES",
-            "Q_type": "Fact-checking",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Y-axis scale from 0 to 200 adequately represents all N, P, K values"
-                }
-            ]
-        },
-        {
-            "Q20": "Is the spacing between bars and groups sufficient for clear visual separation?",
-            "A20": "YES",
-            "Q_type": "Subjective",
-            "feedback": [
-                {
-                    "tag": "RETAIN",
-                    "improvement": "Adequate spacing between bars and groups for clear visual separation"
+                    "improvement": "Add text annotations for rice and wheat to draw attention while maintaining visibility of other crops"
                 }
             ]
         }

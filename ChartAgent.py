@@ -68,18 +68,17 @@ class ChartAgent:
         )
         memory['d2c_prompt'] = d2c_prompt
         # Run the D2C model and update memory
-        memory['d2c_before_feedback'] = self.run_d2c(d2c_prompt, self.ca_memory)
+        memory['unparsed_pre_feedback_code'] = self.run_d2c(d2c_prompt, self.ca_memory)
         # Write to file after every update
         self.write_memory_to_file(memory)
         self.ca_memory.append({"role": "user", "content": d2c_prompt})
-        self.ca_memory.append({"role": "assistant", "content": memory['d2c_before_feedback']})
+        self.ca_memory.append({"role": "assistant", "content": memory['unparsed_pre_feedback_code']})
         
-        memory['result_code'] = self.parse_code_blocks(memory['d2c_before_feedback'])[0]
-        memory['imported_modules'] = self.parse_modules(memory['result_code'])
+        memory['pre_feedback_code'] = self.parse_code_blocks(memory['unparsed_pre_feedback_code'])[0]
+        memory['imported_modules'] = self.parse_modules(memory['pre_feedback_code'])
 
         # Write to file after every update
         self.write_memory_to_file(memory)
-        self.write_memory_to_file(self.ca_memory, "ca_memory.json")
 
         return memory
     
@@ -98,8 +97,8 @@ class ChartAgent:
             file_index=f"autojudge_{file_index}(gpt_feedback)"
             )
         memory['16_asking_chartagent_to_improve_visualization(gpt4o)'] = d2c_prompt_icl_gpt
-        memory['d2c_icl(gpt4o)'] = self.run_d2c(d2c_prompt_icl_gpt, self.ca_memory)
-        memory['result_code_icl(gpt4o)'] = self.parse_code_blocks(memory['d2c_icl(gpt4o)'])
+        memory['unparsed_post_feedback_code(gpt4o)'] = self.run_d2c(d2c_prompt_icl_gpt, self.ca_memory)
+        memory['post_feedback_code(gpt4o)'] = self.parse_code_blocks(memory['unparsed_post_feedback_code(gpt4o)'])
 
         if use_claude:
             # D2C Task post feedback (feedback from claude)
@@ -112,12 +111,12 @@ class ChartAgent:
                 file_index=f"autojudge_{file_index}(claude_feedback)"
                 )
             memory['16_asking_chartagent_to_improve_visualization(claude)'] = d2c_prompt_icl_claude
-            memory['d2c_icl(claude)'] = self.run_d2c(d2c_prompt_icl_claude, self.ca_memory)
-            memory['result_code_icl(claude)'] = self.parse_code_blocks(memory['d2c_icl(claude)'])
+            memory['unparsed_post_feedback_code(claude)'] = self.run_d2c(d2c_prompt_icl_claude, self.ca_memory)
+            memory['post_feedback_code(claude)'] = self.parse_code_blocks(memory['unparsed_post_feedback_code(claude)'])
             self.write_memory_to_file(memory)
 
-            return memory['result_code_icl(gpt4o)'], memory['result_code_icl(claude)']
+            return memory['post_feedback_code(gpt4o)'], memory['post_feedback_code(claude)']
         
         else:
-            return memory['result_code_icl(gpt4o)']
+            return memory['post_feedback_code(gpt4o)']
         

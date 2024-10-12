@@ -1,49 +1,27 @@
 {
     "code feedback": [
         {
-            "tag": "RETAIN",
-            "explanation": "The current bar chart implementation and use of colors for differentiation are effective and convey the necessary information clearly.",
+            "tag": "EDIT",
+            "explanation": "The 'colors' assignment uses a list comprehension incorrectly for highlighting 'rice'. It also does not address 'wheat'. Adjust the hue parameter to differentiate 'rice' and 'wheat'.",
             "before": [
-                "Line 36: plt.bar(...)"
+                "Line 14: colors = ['orange' if crop == 'rice' else 'gray' for crop in avg_values['label']]"
             ],
             "after": [
-                "Line 36: plt.bar(...)"
+                "Line 14: colors = {'N': 'lightblue', 'P': 'lightgreen', 'K': 'lightcoral'}",
+                "Line 16: palette = ['orange' if crop == 'rice' else 'blue' if crop == 'wheat' else 'gray' for crop in avg_values['label']]"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "Ensure annotations for 'rice' and 'wheat' appear above each bar with sufficient offset to avoid overlap with other visual elements.",
+            "explanation": "The seaborn barplot should use the correct color assignment by modifying the parameter to ensure proper palette usage.",
             "before": [
-                "Line 51: plt.text(x[np.where(avg_values.index == i)][0], max(row) + 1, f\"{i}: N={row['N']:.1f}, P={row['P']:.1f}, K={row['K']:.1f}\", ha='center')"
+                "Line 16: barplot = sns.barplot(x='label', y='value', hue='variable',",
+                "Line 17: data=pd.melt(avg_values, ['label']),",
+                "Line 18: palette=colors)"
             ],
             "after": [
-                "Line 51: plt.text(x[np.where(avg_values.index == i)][0], max(row) + 5, f\"{i}: N={row['N']:.1f}, P={row['P']:.1f}, K={row['K']:.1f}\", ha='center')"
-            ]
-        },
-        {
-            "tag": "EDIT",
-            "explanation": "Adjust the width of the figure to prevent crowding and improve the spacing of bars for readability.",
-            "before": [
-                "Line 22: plt.figure(figsize=(8, 6))"
-            ],
-            "after": [
-                "Line 22: plt.figure(figsize=(12, 6))"
-            ]
-        },
-        {
-            "tag": "RETAIN",
-            "explanation": "The legend and axis labels successfully describe data series and axes respectively, aiding in the understanding of nutrient values.",
-            "before": [
-                "Line 53: plt.legend()",
-                "Line 58: plt.xlabel('Crop Type')",
-                "Line 59: plt.ylabel('Average Nutrient Value')",
-                "Line 60: plt.title(...)"
-            ],
-            "after": [
-                "Line 53: plt.legend()",
-                "Line 58: plt.xlabel('Crop Type')",
-                "Line 59: plt.ylabel('Average Nutrient Value')",
-                "Line 60: plt.title(...)"
+                "Line 18: palette=colors)",
+                "Line 19: barplot = sns.barplot(x='label', y='value', hue='variable', data=pd.melt(avg_values, ['label']), palette=palette)"
             ]
         }
     ]

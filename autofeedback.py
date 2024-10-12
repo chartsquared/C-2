@@ -3,13 +3,13 @@ from LLM import LLM
 import re
 import yaml
 
-class AutoJudge:
+class AutoFeedback:
     def __init__(self, gpt_api_key, claude_api_key, rendered_img, memory, data, run_only_gpt = False):
         self.memory = memory.copy()
-        self.aj_gpt = LLM(model_name='gpt-4o', api_key=gpt_api_key)
-        self.aj_claude = LLM(model_name='claude', api_key=claude_api_key)
-        self.aj_memory_gpt = []
-        self.aj_memory_claude = []
+        self.af_gpt = LLM(model_name='gpt-4o', api_key=gpt_api_key)
+        self.af_claude = LLM(model_name='claude', api_key=claude_api_key)
+        self.af_memory_gpt = []
+        self.af_memory_claude = []
         self.initial_instruction: str = self.memory["initial_prompt"]
         self.data_attributes: str = self.memory["data_attributes"]
         self.run_only_gpt: bool = run_only_gpt
@@ -22,7 +22,7 @@ class AutoJudge:
         self.claude_audience: str = self.memory["05_audience(claude)"]
         self.questions: str = self.memory['questions']
         self.answers: str = self.memory['answers']
-        self.code: str = self.memory['result_code']
+        self.code: str = self.memory['pre_feedback_code']
         self.rendered_img:list = rendered_img
         self.basic_criteria: str = """
         Chart Type
@@ -54,22 +54,22 @@ class AutoJudge:
         self.feedback_claude_code = ""
 
     def judge(self):     
-        self.aj_memory_gpt = []
-        self.aj_memory_claude = []
+        self.af_memory_gpt = []
+        self.af_memory_claude = []
         print("###### Establishing Criteria ...")
         # 1. Establish Criteria
         # Input: initial_instruction, task, purpose, Q, A
         #<GPT4o>
-        with open("prompts/AJ_criteria_establishment.txt", mode="r", encoding="utf-8") as file:
+        with open("prompts/AF_criteria_establishment.txt", mode="r", encoding="utf-8") as file:
             establishment_prompt_template = file.read()
         establishment_prompt_gpt = establishment_prompt_template.format(
             basic_criteria = self.basic_criteria, initial_instruction= self.initial_instruction, Q=self.questions, A=self.answers, tasks = self.gpt_task, purpose= self.gpt_purpose,\
             audience = self.gpt_audience
         )
-        self.memory['10_asking_autojudge_to_establish_criteria(gpt4o)'] = establishment_prompt_gpt
-        self.memory['11_criteria(gpt4o)']=self.aj_gpt.run(establishment_prompt_gpt, [], self.aj_memory_gpt)
-        self.aj_memory_gpt.append({"role": "user","content": establishment_prompt_gpt})
-        self.aj_memory_gpt.append({"role": "assistant","content": self.memory['11_criteria(gpt4o)']})
+        self.memory['10_asking_autofeedback_to_establish_criteria(gpt4o)'] = establishment_prompt_gpt
+        self.memory['11_criteria(gpt4o)']=self.af_gpt.run(establishment_prompt_gpt, [], self.af_memory_gpt)
+        self.af_memory_gpt.append({"role": "user","content": establishment_prompt_gpt})
+        self.af_memory_gpt.append({"role": "assistant","content": self.memory['11_criteria(gpt4o)']})
 
         if not self.run_only_gpt:
             #<Claude>
@@ -77,54 +77,54 @@ class AutoJudge:
                 basic_criteria = self.basic_criteria, initial_instruction=self.initial_instruction, Q=self.questions, A=self.answers, tasks=self.claude_task, purpose=self.claude_purpose, \
                 audience = self.claude_audience
             )
-            self.memory['10_asking_autojudge_to_establish_criteria(claude)'] = establishment_prompt_claude
-            self.memory['11_criteria(claude)'] = self.aj_claude.run(establishment_prompt_claude, [], self.aj_memory_claude)
-            self.aj_memory_claude.append({"role": "user","content": establishment_prompt_claude})
-            self.aj_memory_claude.append({"role": "assistant","content": self.memory['11_criteria(claude)']})
+            self.memory['10_asking_autofeedback_to_establish_criteria(claude)'] = establishment_prompt_claude
+            self.memory['11_criteria(claude)'] = self.af_claude.run(establishment_prompt_claude, [], self.af_memory_claude)
+            self.af_memory_claude.append({"role": "user","content": establishment_prompt_claude})
+            self.af_memory_claude.append({"role": "assistant","content": self.memory['11_criteria(claude)']})
 
         print("###### Creating Evaluation Questions ...")
         # 2. Create Evaluation Questions
         # Input: image, task, purpose, criteria
         #<GPT4o>
-        with open("prompts/AJ_create_eval_q.txt", mode="r", encoding="utf-8") as file:
+        with open("prompts/AF_create_eval_q.txt", mode="r", encoding="utf-8") as file:
             question_generation_prompt_template = file.read()
         question_generation_prompt_gpt = question_generation_prompt_template.format(
             task=self.gpt_task, purpose=self.gpt_purpose, criteria=self.memory['11_criteria(gpt4o)'], audience=self.gpt_audience
             )
-        self.memory['12_asking_autojudge_to_create_eval_questions(gpt4o)'] = question_generation_prompt_gpt
-        self.memory['13_evaluation_questions(gpt4o)'] = self.aj_gpt.run(question_generation_prompt_gpt, [], self.aj_memory_gpt)
-        self.aj_memory_gpt.append({"role": "user","content": question_generation_prompt_gpt})
-        self.aj_memory_gpt.append({"role": "assistant","content": self.memory['13_evaluation_questions(gpt4o)']})
+        self.memory['12_asking_autofeedback_to_create_eval_questions(gpt4o)'] = question_generation_prompt_gpt
+        self.memory['13_evaluation_questions(gpt4o)'] = self.af_gpt.run(question_generation_prompt_gpt, [], self.af_memory_gpt)
+        self.af_memory_gpt.append({"role": "user","content": question_generation_prompt_gpt})
+        self.af_memory_gpt.append({"role": "assistant","content": self.memory['13_evaluation_questions(gpt4o)']})
 
         #<Claude>
         question_generation_prompt_claude = question_generation_prompt_template.format(
             task=self.claude_task, purpose=self.claude_purpose, criteria=self.memory['11_criteria(claude)'], audience=self.claude_audience
             )
-        self.memory['12_asking_autojudge_to_create_eval_questions(claude)'] = question_generation_prompt_claude
-        self.memory['13_evaluation_questions(claude)'] = self.aj_claude.run(question_generation_prompt_claude, [], self.aj_memory_claude)
-        self.aj_memory_claude.append({"role": "user","content": question_generation_prompt_claude})
-        self.aj_memory_claude.append({"role": "assistant","content": self.memory['13_evaluation_questions(claude)']})
+        self.memory['12_asking_autofeedback_to_create_eval_questions(claude)'] = question_generation_prompt_claude
+        self.memory['13_evaluation_questions(claude)'] = self.af_claude.run(question_generation_prompt_claude, [], self.af_memory_claude)
+        self.af_memory_claude.append({"role": "user","content": question_generation_prompt_claude})
+        self.af_memory_claude.append({"role": "assistant","content": self.memory['13_evaluation_questions(claude)']})
         print("###### Evaluating ...")
         # 3. Evaluate
         # Input: questions, Image
         #<GPT4o>
-        with open("prompts/AJ_execute_eval.txt", mode="r", encoding="utf-8") as file:
+        with open("prompts/af_execute_eval.txt", mode="r", encoding="utf-8") as file:
             evaluation_prompt_template = file.read()
         evaluation_prompt_gpt = evaluation_prompt_template.format(
             evaluation_questions = self.memory['13_evaluation_questions(gpt4o)'], initial_instruction=self.initial_instruction)
-        self.memory['14_asking_autojudge_to_evaluate(gpt4o)'] = evaluation_prompt_gpt
-        self.memory['15_evaluation_vfeedback(gpt4o)'] = self.aj_gpt.run(evaluation_prompt_gpt + "Handle this task based on the image provided.", self.rendered_img, self.aj_memory_gpt)
-        self.aj_memory_gpt.append({"role":"user","content": evaluation_prompt_gpt})
-        self.aj_memory_gpt.append({"role":"assistant","content":self.memory['15_evaluation_vfeedback(gpt4o)']})
+        self.memory['14_asking_autofeedback_to_evaluate(gpt4o)'] = evaluation_prompt_gpt
+        self.memory['15_evaluation_vfeedback(gpt4o)'] = self.af_gpt.run(evaluation_prompt_gpt + "Handle this task based on the image provided.", self.rendered_img, self.af_memory_gpt)
+        self.af_memory_gpt.append({"role":"user","content": evaluation_prompt_gpt})
+        self.af_memory_gpt.append({"role":"assistant","content":self.memory['15_evaluation_vfeedback(gpt4o)']})
 
         if not self.run_only_gpt:
             #<Claude>
             evaluation_prompt_claude = evaluation_prompt_template.format(
                 evaluation_questions=self.memory['13_evaluation_questions(claude)'], initial_instruction=self.initial_instruction)
-            self.memory['14_asking_autojudge_to_evaluate(claude)'] = evaluation_prompt_claude
-            self.memory['15_evaluation_vfeedback(claude)'] = self.aj_claude.run(evaluation_prompt_claude + "Handle this task based on the image provided.", self.rendered_img, self.aj_memory_claude)
-            self.aj_memory_claude.append({"role":"user","content": evaluation_prompt_claude})
-            self.aj_memory_claude.append({"role":"assistant","content": self.memory['15_evaluation_vfeedback(claude)']})
+            self.memory['14_asking_autofeedback_to_evaluate(claude)'] = evaluation_prompt_claude
+            self.memory['15_evaluation_vfeedback(claude)'] = self.af_claude.run(evaluation_prompt_claude + "Handle this task based on the image provided.", self.rendered_img, self.af_memory_claude)
+            self.af_memory_claude.append({"role":"user","content": evaluation_prompt_claude})
+            self.af_memory_claude.append({"role":"assistant","content": self.memory['15_evaluation_vfeedback(claude)']})
         
     def semantic_decompose(self, data):
         task = {}
@@ -152,16 +152,16 @@ class AutoJudge:
         # Ask ChartAgent about the Task, Purpose, and Audience
         query = {"Task": None, "Purpose": None, "Audience": None}
                 
-        with open("prompts/AJ_SD.txt", "r", encoding="utf-8") as file:
+        with open("prompts/AF_SD.txt", "r", encoding="utf-8") as file:
             semantics_decomposition_template = file.read()
         sd_gpt_prompt = semantics_decomposition_template.format(initial_instruction=self.initial_instruction, data=data, task=task, query=query)
         self.memory['05_ask_for_Task_Purpose_Audience(gpt4o)'] = sd_gpt_prompt
-        self.memory['04_response_w_attributes_task_purpose(gpt4o)']= self.aj_gpt.run(sd_gpt_prompt, [], self.aj_memory_gpt)
+        self.memory['04_response_w_attributes_task_purpose(gpt4o)']= self.af_gpt.run(sd_gpt_prompt, [], self.af_memory_gpt)
         
         if not self.run_only_gpt:
             sd_claude_prompt = semantics_decomposition_template.format(initial_instruction=self.initial_instruction, data=data, task=task, query=query)
             self.memory['05_ask_for_Task_Purpose_Audience(claude)'] = sd_claude_prompt
-            self.memory['04_response_w_attributes_task_purpose(claude)'] = self.aj_claude.run(sd_claude_prompt, [], self.aj_memory_claude)
+            self.memory['04_response_w_attributes_task_purpose(claude)'] = self.af_claude.run(sd_claude_prompt, [], self.af_memory_claude)
                 
         # EXTRACT ONLY THE DICTIONARY VARIABLE PART FROM THE RESPONSE, EXCLUDING OTHER PARTS
         gpt_query_response = self.memory['04_response_w_attributes_task_purpose(gpt4o)']
@@ -185,9 +185,9 @@ class AutoJudge:
             self.memory['05_audience(claude)'] = claude_query_response['Audience']
 
     def feedback(self, additional_tag:str = ""):
-        # if aj_memory_gpt and aj_memory_claude are not empty and have more than 6 elements, initialize them with their first 6 indices
-        self.aj_memory_gpt = self.aj_memory_gpt[:6]
-        self.aj_memory_claude = self.aj_memory_claude[:6]
+        # if af_memory_gpt and af_memory_claude are not empty and have more than 6 elements, initialize them with their first 6 indices
+        self.af_memory_gpt = self.af_memory_gpt[:6]
+        self.af_memory_claude = self.af_memory_claude[:6]
         
         print("###### Parsing Visual Feedback ...")
         # Feedback parsing
@@ -246,17 +246,17 @@ class AutoJudge:
         # 4. Generate Feedback
         # Input: evaluation_vfeedback, code
         #<GPT4o>
-        with open("prompts/AJ_generate_feedback.txt", mode="r", encoding="utf-8") as file:
+        with open("prompts/AF_generate_feedback.txt", mode="r", encoding="utf-8") as file:
             feedback_generation_prompt_template = file.read()
         feedback_generation_prompt_gpt = feedback_generation_prompt_template.format(
             initial_instruction=self.initial_instruction, code=self.code, attributes=self.data_attributes,
             retain=self.feedback_gpt_classified["RETAIN"], discard=self.feedback_gpt_classified["DISCARD"], edit=self.feedback_gpt_classified["EDIT"], add=self.feedback_gpt_classified["ADD"]
             )
 
-        self.memory['16_asking_autojudge_to_generate_feedback(gpt4o)'] = feedback_generation_prompt_gpt
-        self.memory['17_feedback(gpt4o)'] = self.aj_gpt.run(feedback_generation_prompt_gpt, self.rendered_img, self.aj_memory_gpt)
-        self.aj_memory_gpt.append({"role":"user","content": feedback_generation_prompt_gpt})
-        self.aj_memory_gpt.append({"role":"assistant","content": self.memory['17_feedback(gpt4o)']})
+        self.memory['16_asking_autofeedback_to_generate_feedback(gpt4o)'] = feedback_generation_prompt_gpt
+        self.memory['17_feedback(gpt4o)'] = self.af_gpt.run(feedback_generation_prompt_gpt, self.rendered_img, self.af_memory_gpt)
+        self.af_memory_gpt.append({"role":"user","content": feedback_generation_prompt_gpt})
+        self.af_memory_gpt.append({"role":"assistant","content": self.memory['17_feedback(gpt4o)']})
 
         if not self.run_only_gpt:
             #<Claude>
@@ -264,14 +264,14 @@ class AutoJudge:
                 initial_instruction=self.initial_instruction, code=self.code, attributes=self.data_attributes,
                 retain=self.feedback_claude_classified["RETAIN"], discard=self.feedback_claude_classified["DISCARD"], edit=self.feedback_claude_classified["EDIT"], add=self.feedback_claude_classified["ADD"]
                 )
-            self.memory['16_asking_autojudge_to_generate_feedback(claude)'] = feedback_generation_prompt_claude
-            self.memory['17_feedback(claude)'] = self.aj_claude.run(feedback_generation_prompt_claude, self.rendered_img, self.aj_memory_claude)
-            self.aj_memory_claude.append({"role":"user","content": feedback_generation_prompt_claude})
-            self.aj_memory_claude.append({"role":"assistant","content": self.memory['17_feedback(claude)']})
+            self.memory['16_asking_autofeedback_to_generate_feedback(claude)'] = feedback_generation_prompt_claude
+            self.memory['17_feedback(claude)'] = self.af_claude.run(feedback_generation_prompt_claude, self.rendered_img, self.af_memory_claude)
+            self.af_memory_claude.append({"role":"user","content": feedback_generation_prompt_claude})
+            self.af_memory_claude.append({"role":"assistant","content": self.memory['17_feedback(claude)']})
 
     def feedback_parse(self, additional_tag: str = ""):
-        self.aj_memory_gpt = self.aj_memory_gpt[:8]
-        self.aj_memory_claude = self.aj_memory_claude[:8]
+        self.af_memory_gpt = self.af_memory_gpt[:8]
+        self.af_memory_claude = self.af_memory_claude[:8]
 
         print("###### Parsing Code Feedback ...")
         # Feedback parsing
@@ -328,11 +328,11 @@ class AutoJudge:
             self.feedback_claude_code = self.feedback_claude_code.strip()
         else:
             self.feedback_claude_code = ""
-        # save memory in AJ.json
+        # save memory in af.json
         # if additional_tag == "":
-        #     with open("prompts/AJ.json", "w", encoding="utf-8") as file:
+        #     with open("prompts/af.json", "w", encoding="utf-8") as file:
         #         json.dump(self.memory, file, indent=4)
         # else:
-        #     with open(f"prompts/AJ_{additional_tag}.json", "w", encoding="utf-8") as file:
+        #     with open(f"prompts/af_{additional_tag}.json", "w", encoding="utf-8") as file:
         #         json.dump(self.memory, file, indent=4)            
         return self.memory, self.feedback_gpt_classified, self.feedback_claude_classified, self.feedback_gpt_code, self.feedback_claude_code
