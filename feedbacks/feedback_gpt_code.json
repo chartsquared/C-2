@@ -2,26 +2,54 @@
     "code feedback": [
         {
             "tag": "EDIT",
-            "explanation": "The 'colors' assignment uses a list comprehension incorrectly for highlighting 'rice'. It also does not address 'wheat'. Adjust the hue parameter to differentiate 'rice' and 'wheat'.",
+            "explanation": "Edit titles to explicitly mention comparison of nutrient needs across different crops.",
             "before": [
-                "Line 14: colors = ['orange' if crop == 'rice' else 'gray' for crop in avg_values['label']]"
+                "Line 23: axes[i].set_title(f'Average {column} values')"
             ],
             "after": [
-                "Line 14: colors = {'N': 'lightblue', 'P': 'lightgreen', 'K': 'lightcoral'}",
-                "Line 16: palette = ['orange' if crop == 'rice' else 'blue' if crop == 'wheat' else 'gray' for crop in avg_values['label']]"
+                "Line 23: axes[i].set_title(f'Comparison of Average {column} Nutrient Needs')"
             ]
         },
         {
             "tag": "EDIT",
-            "explanation": "The seaborn barplot should use the correct color assignment by modifying the parameter to ensure proper palette usage.",
+            "explanation": "Adjust the spacing for crop labels to avoid overlapping and improve readability.",
             "before": [
-                "Line 16: barplot = sns.barplot(x='label', y='value', hue='variable',",
-                "Line 17: data=pd.melt(avg_values, ['label']),",
-                "Line 18: palette=colors)"
+                "Line 36: fig.tight_layout()"
             ],
             "after": [
-                "Line 18: palette=colors)",
-                "Line 19: barplot = sns.barplot(x='label', y='value', hue='variable', data=pd.melt(avg_values, ['label']), palette=palette)"
+                "Line 36: fig.tight_layout(pad=3.0)"
+            ]
+        },
+        {
+            "tag": "EDIT",
+            "explanation": "Consider using horizontal bars to improve visibility of crop names.",
+            "before": [
+                "Line 18: axes[i].bar(label, avg_values.loc[j, column], color=colors[j])"
+            ],
+            "after": [
+                "Line 18: axes[i].barh(label, avg_values.loc[j, column], color=colors[j])",
+                "Line 31: axes[i].set_xlabel('Average value')",
+                "Line 32: axes[i].set_ylabel('Crop')"
+            ]
+        },
+        {
+            "tag": "ADD",
+            "explanation": "Include annotations for 'wheat' and adjust spacing to prevent overlap, improving clarity.",
+            "before": [
+                "Line 29: xytext=(0, 5), ha='center'"
+            ],
+            "after": [
+                "Line 29: xytext=(0, 10), ha='center'"
+            ]
+        },
+        {
+            "tag": "ADD",
+            "explanation": "Add a legend to explain the color coding, specifically highlighting the unique color for 'rice'.",
+            "before": [],
+            "after": [
+                "Line 33: handles = [plt.Line2D([0], [0], color='red', lw=4), plt.Line2D([0], [0], color='blue', lw=4)]",
+                "Line 34: labels = ['Rice', 'Other Crops']",
+                "Line 35: axes[i].legend(handles, labels)"
             ]
         }
     ]
