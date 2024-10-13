@@ -1,4 +1,4 @@
-# C^2: Scalable Auto-Feedback for Chart Generation
+# C²: Scalable Auto-Feedback for Chart Generation
 
 ## Contents 
 - [Project Site](#project-site)
