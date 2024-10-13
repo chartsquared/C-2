@@ -21,8 +21,8 @@ This project requires several Python packages to be installed. The dependencies 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/chartsquared/C2-ChartAF-and-ChartUIE8K.git
-   cd C2-ChartAF-and-ChartUIE8K
+   git clone https://github.com/chartsquared/C-2.git
+   cd C-2
 
 2. **Install Dependencies**:
 
