@@ -10,7 +10,7 @@
 
 ## Project Site
 
-Qualitative demonstration of the pre- and post-feedback of ChartAF is provided in [our project site](https://chartaj.github.io/).
+Qualitative demonstration of the pre- and post-feedback of ChartAF is provided in [our project site](https://chartsquared.github.io/).
 
 ## Requirements
 
@@ -21,7 +21,7 @@ This project requires several Python packages to be installed. The dependencies 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/chartaj/C2-ChartAF-and-ChartUIE8K.git
+   git clone https://github.com/chartsquared/C2-ChartAF-and-ChartUIE8K.git
    cd C2-ChartAF-and-ChartUIE8K
 
 2. **Install Dependencies**:
