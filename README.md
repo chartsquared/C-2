@@ -1,4 +1,4 @@
-# C²: Scalable Auto-Feedback for Chart Generation
+# C²: Scalable Auto-Feedback for LLM-based Chart Generation
 
 ## Contents 
 - [Project Site](#project-site)
