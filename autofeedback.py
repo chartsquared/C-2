@@ -152,7 +152,7 @@ class AutoFeedback:
         # Ask ChartAgent about the Task, Purpose, and Audience
         query = {"Task": None, "Purpose": None, "Audience": None}
                 
-        with open("prompts/AF_SD.txt", "r", encoding="utf-8") as file:
+        with open("prompts/AF_TPA.txt", "r", encoding="utf-8") as file:
             semantics_decomposition_template = file.read()
         sd_gpt_prompt = semantics_decomposition_template.format(initial_instruction=self.initial_instruction, data=data, task=task, query=query)
         self.memory['05_ask_for_Task_Purpose_Audience(gpt4o)'] = sd_gpt_prompt
