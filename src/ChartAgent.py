@@ -96,7 +96,7 @@ class ChartAgent:
             retain= feedback_gpt_classified['RETAIN'], modification=feedback_gpt_code,
             file_index=f"autojudge_{file_index}(gpt_feedback)"
             )
-        memory['16_asking_chartagent_to_improve_visualization(gpt4o)'] = d2c_prompt_icl_gpt
+        memory['12_asking_chartagent_to_improve_visualization(gpt4o)'] = d2c_prompt_icl_gpt
         memory['unparsed_post_feedback_code(gpt4o)'] = self.run_d2c(d2c_prompt_icl_gpt, self.ca_memory)
         memory['post_feedback_code(gpt4o)'] = self.parse_code_blocks(memory['unparsed_post_feedback_code(gpt4o)'])
 
@@ -110,7 +110,7 @@ class ChartAgent:
                 retain=feedback_claude_classified['RETAIN'], modification=feedback_claude_code,
                 file_index=f"autojudge_{file_index}(claude_feedback)"
                 )
-            memory['16_asking_chartagent_to_improve_visualization(claude)'] = d2c_prompt_icl_claude
+            memory['12_asking_chartagent_to_improve_visualization(claude)'] = d2c_prompt_icl_claude
             memory['unparsed_post_feedback_code(claude)'] = self.run_d2c(d2c_prompt_icl_claude, self.ca_memory)
             memory['post_feedback_code(claude)'] = self.parse_code_blocks(memory['unparsed_post_feedback_code(claude)'])
             self.write_memory_to_file(memory)

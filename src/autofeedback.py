@@ -14,12 +14,12 @@ class AutoFeedback:
         self.data_attributes: str = self.memory["data_attributes"]
         self.run_only_gpt: bool = run_only_gpt
         self.semantic_decompose(data)
-        self.gpt_task: str = self.memory['05_task(gpt4o)']
-        self.gpt_purpose: str = self.memory['05_purpose(gpt4o)']
-        self.gpt_audience: str = self.memory['05_audience(gpt4o)']
-        self.claude_task: str = self.memory["05_task(claude)"]
-        self.claude_purpose: str = self.memory["05_purpose(claude)"]
-        self.claude_audience: str = self.memory["05_audience(claude)"]
+        self.gpt_task: str = self.memory['03_task(gpt4o)']
+        self.gpt_purpose: str = self.memory['03_purpose(gpt4o)']
+        self.gpt_audience: str = self.memory['03_audience(gpt4o)']
+        self.claude_task: str = self.memory["03_task(claude)"]
+        self.claude_purpose: str = self.memory["03_purpose(claude)"]
+        self.claude_audience: str = self.memory["03_audience(claude)"]
         self.questions: str = self.memory['questions']
         self.answers: str = self.memory['answers']
         self.code: str = self.memory['pre_feedback_code']
@@ -66,10 +66,10 @@ class AutoFeedback:
             basic_criteria = self.basic_criteria, initial_instruction= self.initial_instruction, Q=self.questions, A=self.answers, tasks = self.gpt_task, purpose= self.gpt_purpose,\
             audience = self.gpt_audience
         )
-        self.memory['10_asking_autofeedback_to_establish_criteria(gpt4o)'] = establishment_prompt_gpt
-        self.memory['11_criteria(gpt4o)']=self.af_gpt.run(establishment_prompt_gpt, [], self.af_memory_gpt)
+        self.memory['04_asking_autofeedback_to_establish_criteria(gpt4o)'] = establishment_prompt_gpt
+        self.memory['05_criteria(gpt4o)']=self.af_gpt.run(establishment_prompt_gpt, [], self.af_memory_gpt)
         self.af_memory_gpt.append({"role": "user","content": establishment_prompt_gpt})
-        self.af_memory_gpt.append({"role": "assistant","content": self.memory['11_criteria(gpt4o)']})
+        self.af_memory_gpt.append({"role": "assistant","content": self.memory['05_criteria(gpt4o)']})
 
         if not self.run_only_gpt:
             #<Claude>
@@ -77,10 +77,10 @@ class AutoFeedback:
                 basic_criteria = self.basic_criteria, initial_instruction=self.initial_instruction, Q=self.questions, A=self.answers, tasks=self.claude_task, purpose=self.claude_purpose, \
                 audience = self.claude_audience
             )
-            self.memory['10_asking_autofeedback_to_establish_criteria(claude)'] = establishment_prompt_claude
-            self.memory['11_criteria(claude)'] = self.af_claude.run(establishment_prompt_claude, [], self.af_memory_claude)
+            self.memory['04_asking_autofeedback_to_establish_criteria(claude)'] = establishment_prompt_claude
+            self.memory['05_criteria(claude)'] = self.af_claude.run(establishment_prompt_claude, [], self.af_memory_claude)
             self.af_memory_claude.append({"role": "user","content": establishment_prompt_claude})
-            self.af_memory_claude.append({"role": "assistant","content": self.memory['11_criteria(claude)']})
+            self.af_memory_claude.append({"role": "assistant","content": self.memory['05_criteria(claude)']})
 
         print("###### Creating Evaluation Questions ...")
         # 2. Create Evaluation Questions
@@ -89,21 +89,21 @@ class AutoFeedback:
         with open("../prompts/AF_create_eval_q.txt", mode="r", encoding="utf-8") as file:
             question_generation_prompt_template = file.read()
         question_generation_prompt_gpt = question_generation_prompt_template.format(
-            task=self.gpt_task, purpose=self.gpt_purpose, criteria=self.memory['11_criteria(gpt4o)'], audience=self.gpt_audience
+            task=self.gpt_task, purpose=self.gpt_purpose, criteria=self.memory['05_criteria(gpt4o)'], audience=self.gpt_audience
             )
-        self.memory['12_asking_autofeedback_to_create_eval_questions(gpt4o)'] = question_generation_prompt_gpt
-        self.memory['13_evaluation_questions(gpt4o)'] = self.af_gpt.run(question_generation_prompt_gpt, [], self.af_memory_gpt)
+        self.memory['06_asking_autofeedback_to_create_eval_questions(gpt4o)'] = question_generation_prompt_gpt
+        self.memory['07_evaluation_questions(gpt4o)'] = self.af_gpt.run(question_generation_prompt_gpt, [], self.af_memory_gpt)
         self.af_memory_gpt.append({"role": "user","content": question_generation_prompt_gpt})
-        self.af_memory_gpt.append({"role": "assistant","content": self.memory['13_evaluation_questions(gpt4o)']})
+        self.af_memory_gpt.append({"role": "assistant","content": self.memory['07_evaluation_questions(gpt4o)']})
 
         #<Claude>
         question_generation_prompt_claude = question_generation_prompt_template.format(
-            task=self.claude_task, purpose=self.claude_purpose, criteria=self.memory['11_criteria(claude)'], audience=self.claude_audience
+            task=self.claude_task, purpose=self.claude_purpose, criteria=self.memory['05_criteria(claude)'], audience=self.claude_audience
             )
-        self.memory['12_asking_autofeedback_to_create_eval_questions(claude)'] = question_generation_prompt_claude
-        self.memory['13_evaluation_questions(claude)'] = self.af_claude.run(question_generation_prompt_claude, [], self.af_memory_claude)
+        self.memory['06_asking_autofeedback_to_create_eval_questions(claude)'] = question_generation_prompt_claude
+        self.memory['07_evaluation_questions(claude)'] = self.af_claude.run(question_generation_prompt_claude, [], self.af_memory_claude)
         self.af_memory_claude.append({"role": "user","content": question_generation_prompt_claude})
-        self.af_memory_claude.append({"role": "assistant","content": self.memory['13_evaluation_questions(claude)']})
+        self.af_memory_claude.append({"role": "assistant","content": self.memory['07_evaluation_questions(claude)']})
         print("###### Evaluating ...")
         # 3. Evaluate
         # Input: questions, Image
@@ -111,20 +111,20 @@ class AutoFeedback:
         with open("../prompts/af_execute_eval.txt", mode="r", encoding="utf-8") as file:
             evaluation_prompt_template = file.read()
         evaluation_prompt_gpt = evaluation_prompt_template.format(
-            evaluation_questions = self.memory['13_evaluation_questions(gpt4o)'], initial_instruction=self.initial_instruction)
-        self.memory['14_asking_autofeedback_to_evaluate(gpt4o)'] = evaluation_prompt_gpt
-        self.memory['15_evaluation_vfeedback(gpt4o)'] = self.af_gpt.run(evaluation_prompt_gpt + "Handle this task based on the image provided.", self.rendered_img, self.af_memory_gpt)
+            evaluation_questions = self.memory['07_evaluation_questions(gpt4o)'], initial_instruction=self.initial_instruction)
+        self.memory['08_asking_autofeedback_to_evaluate(gpt4o)'] = evaluation_prompt_gpt
+        self.memory['09_evaluation_vfeedback(gpt4o)'] = self.af_gpt.run(evaluation_prompt_gpt + "Handle this task based on the image provided.", self.rendered_img, self.af_memory_gpt)
         self.af_memory_gpt.append({"role":"user","content": evaluation_prompt_gpt})
-        self.af_memory_gpt.append({"role":"assistant","content":self.memory['15_evaluation_vfeedback(gpt4o)']})
+        self.af_memory_gpt.append({"role":"assistant","content":self.memory['09_evaluation_vfeedback(gpt4o)']})
 
         if not self.run_only_gpt:
             #<Claude>
             evaluation_prompt_claude = evaluation_prompt_template.format(
-                evaluation_questions=self.memory['13_evaluation_questions(claude)'], initial_instruction=self.initial_instruction)
-            self.memory['14_asking_autofeedback_to_evaluate(claude)'] = evaluation_prompt_claude
-            self.memory['15_evaluation_vfeedback(claude)'] = self.af_claude.run(evaluation_prompt_claude + "Handle this task based on the image provided.", self.rendered_img, self.af_memory_claude)
+                evaluation_questions=self.memory['07_evaluation_questions(claude)'], initial_instruction=self.initial_instruction)
+            self.memory['08_asking_autofeedback_to_evaluate(claude)'] = evaluation_prompt_claude
+            self.memory['09_evaluation_vfeedback(claude)'] = self.af_claude.run(evaluation_prompt_claude + "Handle this task based on the image provided.", self.rendered_img, self.af_memory_claude)
             self.af_memory_claude.append({"role":"user","content": evaluation_prompt_claude})
-            self.af_memory_claude.append({"role":"assistant","content": self.memory['15_evaluation_vfeedback(claude)']})
+            self.af_memory_claude.append({"role":"assistant","content": self.memory['09_evaluation_vfeedback(claude)']})
         
     def semantic_decompose(self, data):
         task = {}
@@ -155,34 +155,34 @@ class AutoFeedback:
         with open("../prompts/AF_TPA.txt", "r", encoding="utf-8") as file:
             semantics_decomposition_template = file.read()
         sd_gpt_prompt = semantics_decomposition_template.format(initial_instruction=self.initial_instruction, data=data, task=task, query=query)
-        self.memory['05_ask_for_Task_Purpose_Audience(gpt4o)'] = sd_gpt_prompt
-        self.memory['04_response_w_attributes_task_purpose(gpt4o)']= self.af_gpt.run(sd_gpt_prompt, [], self.af_memory_gpt)
+        self.memory['01_ask_for_Task_Purpose_Audience(gpt4o)'] = sd_gpt_prompt
+        self.memory['02_response_w_attributes_task_purpose(gpt4o)']= self.af_gpt.run(sd_gpt_prompt, [], self.af_memory_gpt)
         
         if not self.run_only_gpt:
             sd_claude_prompt = semantics_decomposition_template.format(initial_instruction=self.initial_instruction, data=data, task=task, query=query)
-            self.memory['05_ask_for_Task_Purpose_Audience(claude)'] = sd_claude_prompt
-            self.memory['04_response_w_attributes_task_purpose(claude)'] = self.af_claude.run(sd_claude_prompt, [], self.af_memory_claude)
+            self.memory['01_ask_for_Task_Purpose_Audience(claude)'] = sd_claude_prompt
+            self.memory['02_response_w_attributes_task_purpose(claude)'] = self.af_claude.run(sd_claude_prompt, [], self.af_memory_claude)
                 
         # EXTRACT ONLY THE DICTIONARY VARIABLE PART FROM THE RESPONSE, EXCLUDING OTHER PARTS
-        gpt_query_response = self.memory['04_response_w_attributes_task_purpose(gpt4o)']
+        gpt_query_response = self.memory['02_response_w_attributes_task_purpose(gpt4o)']
         gpt_query_response = gpt_query_response[gpt_query_response.find("{") : gpt_query_response.rfind("}") + 1]
 
         gpt_query_response = gpt_query_response.replace("'", "\'")
         gpt_query_response = json.loads(gpt_query_response)
-        self.memory['05_task(gpt4o)'] = gpt_query_response['Task']
-        self.memory['05_purpose(gpt4o)'] = gpt_query_response['Purpose']
-        self.memory['05_audience(gpt4o)'] = gpt_query_response['Audience']
+        self.memory['03_task(gpt4o)'] = gpt_query_response['Task']
+        self.memory['03_purpose(gpt4o)'] = gpt_query_response['Purpose']
+        self.memory['03_audience(gpt4o)'] = gpt_query_response['Audience']
 
         # EXTRACT ONLY THE DICTIONARY VARIABLE PART FROM THE RESPONSE, EXCLUDING OTHER PARTS
         if not self.run_only_gpt:
-            claude_query_response = self.memory['04_response_w_attributes_task_purpose(claude)']
+            claude_query_response = self.memory['02_response_w_attributes_task_purpose(claude)']
             claude_query_response = claude_query_response[claude_query_response.find("{") : claude_query_response.rfind("}") + 1]
 
             claude_query_response = claude_query_response.replace("'", "\'")
             claude_query_response = json.loads(claude_query_response)
-            self.memory['05_task(claude)'] = claude_query_response['Task']
-            self.memory['05_purpose(claude)'] = claude_query_response['Purpose']
-            self.memory['05_audience(claude)'] = claude_query_response['Audience']
+            self.memory['03_task(claude)'] = claude_query_response['Task']
+            self.memory['03_purpose(claude)'] = claude_query_response['Purpose']
+            self.memory['03_audience(claude)'] = claude_query_response['Audience']
 
     def feedback(self, additional_tag:str = ""):
         # if af_memory_gpt and af_memory_claude are not empty and have more than 6 elements, initialize them with their first 6 indices
@@ -191,9 +191,9 @@ class AutoFeedback:
         
         print("###### Parsing Visual Feedback ...")
         # Feedback parsing
-        self.feedback_gpt = self.memory['15_evaluation_vfeedback(gpt4o)']
+        self.feedback_gpt = self.memory['09_evaluation_vfeedback(gpt4o)']
         if not self.run_only_gpt:
-            self.feedback_claude = self.memory['15_evaluation_vfeedback(claude)']
+            self.feedback_claude = self.memory['09_evaluation_vfeedback(claude)']
 
         # Extract the feedback from the ```json``` block
         self.feedback_gpt = self.feedback_gpt[self.feedback_gpt.find("```json") + 7 : self.feedback_gpt.rfind("```")].strip()
@@ -253,10 +253,10 @@ class AutoFeedback:
             retain=self.feedback_gpt_classified["RETAIN"], discard=self.feedback_gpt_classified["DISCARD"], edit=self.feedback_gpt_classified["EDIT"], add=self.feedback_gpt_classified["ADD"]
             )
 
-        self.memory['16_asking_autofeedback_to_generate_feedback(gpt4o)'] = feedback_generation_prompt_gpt
-        self.memory['17_feedback(gpt4o)'] = self.af_gpt.run(feedback_generation_prompt_gpt, self.rendered_img, self.af_memory_gpt)
+        self.memory['10_asking_autofeedback_to_generate_feedback(gpt4o)'] = feedback_generation_prompt_gpt
+        self.memory['11_feedback(gpt4o)'] = self.af_gpt.run(feedback_generation_prompt_gpt, self.rendered_img, self.af_memory_gpt)
         self.af_memory_gpt.append({"role":"user","content": feedback_generation_prompt_gpt})
-        self.af_memory_gpt.append({"role":"assistant","content": self.memory['17_feedback(gpt4o)']})
+        self.af_memory_gpt.append({"role":"assistant","content": self.memory['11_feedback(gpt4o)']})
 
         if not self.run_only_gpt:
             #<Claude>
@@ -264,10 +264,10 @@ class AutoFeedback:
                 initial_instruction=self.initial_instruction, code=self.code, attributes=self.data_attributes,
                 retain=self.feedback_claude_classified["RETAIN"], discard=self.feedback_claude_classified["DISCARD"], edit=self.feedback_claude_classified["EDIT"], add=self.feedback_claude_classified["ADD"]
                 )
-            self.memory['16_asking_autofeedback_to_generate_feedback(claude)'] = feedback_generation_prompt_claude
-            self.memory['17_feedback(claude)'] = self.af_claude.run(feedback_generation_prompt_claude, self.rendered_img, self.af_memory_claude)
+            self.memory['10_asking_autofeedback_to_generate_feedback(claude)'] = feedback_generation_prompt_claude
+            self.memory['11_feedback(claude)'] = self.af_claude.run(feedback_generation_prompt_claude, self.rendered_img, self.af_memory_claude)
             self.af_memory_claude.append({"role":"user","content": feedback_generation_prompt_claude})
-            self.af_memory_claude.append({"role":"assistant","content": self.memory['17_feedback(claude)']})
+            self.af_memory_claude.append({"role":"assistant","content": self.memory['11_feedback(claude)']})
 
     def feedback_parse(self, additional_tag: str = ""):
         self.af_memory_gpt = self.af_memory_gpt[:8]
@@ -275,9 +275,9 @@ class AutoFeedback:
 
         print("###### Parsing Code Feedback ...")
         # Feedback parsing
-        self.feedback_gpt = self.memory['17_feedback(gpt4o)']
+        self.feedback_gpt = self.memory['11_feedback(gpt4o)']
         if not self.run_only_gpt:
-            self.feedback_claude = self.memory['17_feedback(claude)']
+            self.feedback_claude = self.memory['11_feedback(claude)']
 
         # Extract the feedback from the ```json``` block
         self.feedback_gpt = self.feedback_gpt[self.feedback_gpt.find("```json") + 7 : self.feedback_gpt.rfind("```")].strip()
