@@ -1,0 +1,18 @@
+{
+    "code feedback": [
+        {
+            "tag": "ADD",
+            "explanation": "Add annotations for 'wheat' similar to 'rice' to ensure clarity in the chart.",
+            "before": [
+                "Line 27: if crop in ['rice', 'wheat']:",
+                "Line 28: ax.text(i, df[df['label'] == crop]['N'].mean() + 1, f\"({df[df['label'] == crop]['N'].mean():.2f}, {df[df['label'] == crop]['P'].mean():.2f}, {df[df['label'] == crop]['K'].mean():.2f})\", ha='center')"
+            ],
+            "after": [
+                "Line 27: if crop == 'rice':",
+                "Line 28: ax.text(i, df[df['label'] == crop]['N'].mean() + 1, f\"({df[df['label'] == crop]['N'].mean():.2f}, {df[df['label'] == crop]['P'].mean():.2f}, {df[df['label'] == crop]['K'].mean():.2f})\", ha='center')",
+                "Line 29: elif crop == 'wheat':",
+                "Line 30: ax.text(i, df[df['label'] == crop]['N'].mean() + 1, f\"({df[df['label'] == crop]['N'].mean():.2f}, {df[df['label'] == crop]['P'].mean():.2f}, {df[df['label'] == crop]['K'].mean():.2f})\", ha='center')"
+            ]
+        }
+    ]
+}

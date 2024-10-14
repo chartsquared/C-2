@@ -60,7 +60,7 @@ class AutoFeedback:
         # 1. Establish Criteria
         # Input: initial_instruction, task, purpose, Q, A
         #<GPT4o>
-        with open("prompts/AF_criteria_establishment.txt", mode="r", encoding="utf-8") as file:
+        with open("../prompts/AF_criteria_establishment.txt", mode="r", encoding="utf-8") as file:
             establishment_prompt_template = file.read()
         establishment_prompt_gpt = establishment_prompt_template.format(
             basic_criteria = self.basic_criteria, initial_instruction= self.initial_instruction, Q=self.questions, A=self.answers, tasks = self.gpt_task, purpose= self.gpt_purpose,\
@@ -86,7 +86,7 @@ class AutoFeedback:
         # 2. Create Evaluation Questions
         # Input: image, task, purpose, criteria
         #<GPT4o>
-        with open("prompts/AF_create_eval_q.txt", mode="r", encoding="utf-8") as file:
+        with open("../prompts/AF_create_eval_q.txt", mode="r", encoding="utf-8") as file:
             question_generation_prompt_template = file.read()
         question_generation_prompt_gpt = question_generation_prompt_template.format(
             task=self.gpt_task, purpose=self.gpt_purpose, criteria=self.memory['11_criteria(gpt4o)'], audience=self.gpt_audience
@@ -108,7 +108,7 @@ class AutoFeedback:
         # 3. Evaluate
         # Input: questions, Image
         #<GPT4o>
-        with open("prompts/af_execute_eval.txt", mode="r", encoding="utf-8") as file:
+        with open("../prompts/af_execute_eval.txt", mode="r", encoding="utf-8") as file:
             evaluation_prompt_template = file.read()
         evaluation_prompt_gpt = evaluation_prompt_template.format(
             evaluation_questions = self.memory['13_evaluation_questions(gpt4o)'], initial_instruction=self.initial_instruction)
@@ -128,7 +128,7 @@ class AutoFeedback:
         
     def semantic_decompose(self, data):
         task = {}
-        with open('./prompts/purpose_self_reflection.json', 'r', encoding="utf-8") as file:
+        with open('../prompts/purpose_self_reflection.json', 'r', encoding="utf-8") as file:
             tasks = json.load(file)
             task["Show External Context"] = tasks["Type"]["Recall"]["Subtype"]["External context"]["description"]
             task["Show Confirmation"] = tasks["Type"]["Recall"]["Subtype"]["Confirmation"]["description"]
@@ -152,7 +152,7 @@ class AutoFeedback:
         # Ask ChartAgent about the Task, Purpose, and Audience
         query = {"Task": None, "Purpose": None, "Audience": None}
                 
-        with open("prompts/AF_TPA.txt", "r", encoding="utf-8") as file:
+        with open("../prompts/AF_TPA.txt", "r", encoding="utf-8") as file:
             semantics_decomposition_template = file.read()
         sd_gpt_prompt = semantics_decomposition_template.format(initial_instruction=self.initial_instruction, data=data, task=task, query=query)
         self.memory['05_ask_for_Task_Purpose_Audience(gpt4o)'] = sd_gpt_prompt
@@ -246,7 +246,7 @@ class AutoFeedback:
         # 4. Generate Feedback
         # Input: evaluation_vfeedback, code
         #<GPT4o>
-        with open("prompts/AF_generate_feedback.txt", mode="r", encoding="utf-8") as file:
+        with open("../prompts/AF_generate_feedback.txt", mode="r", encoding="utf-8") as file:
             feedback_generation_prompt_template = file.read()
         feedback_generation_prompt_gpt = feedback_generation_prompt_template.format(
             initial_instruction=self.initial_instruction, code=self.code, attributes=self.data_attributes,
@@ -327,12 +327,5 @@ class AutoFeedback:
                     self.feedback_claude_code += f"{feedback['explanation']}\n---\n*Please change [{feedback['before']}] to [{feedback['after']}\n\n"
             self.feedback_claude_code = self.feedback_claude_code.strip()
         else:
-            self.feedback_claude_code = ""
-        # save memory in af.json
-        # if additional_tag == "":
-        #     with open("prompts/af.json", "w", encoding="utf-8") as file:
-        #         json.dump(self.memory, file, indent=4)
-        # else:
-        #     with open(f"prompts/af_{additional_tag}.json", "w", encoding="utf-8") as file:
-        #         json.dump(self.memory, file, indent=4)            
+            self.feedback_claude_code = ""            
         return self.memory, self.feedback_gpt_classified, self.feedback_claude_classified, self.feedback_gpt_code, self.feedback_claude_code

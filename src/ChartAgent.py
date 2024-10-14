@@ -58,7 +58,7 @@ class ChartAgent:
     def run_d2c_task(self, data, data_path, file_index, memory):
         self.ca_memory = []
         """Run the D2C task with the specified model."""
-        with open("prompts/ca_d2c.txt", "r", encoding="utf-8") as file:
+        with open("../prompts/ca_d2c.txt", "r", encoding="utf-8") as file:
             d2c_prompt = file.read()
 
         d2c_prompt = d2c_prompt.format(
@@ -89,7 +89,7 @@ class ChartAgent:
 
         # D2C Task post feedback (feedback from gpt4o)
         d2c_prompt_icl_gpt = None
-        with open("prompts/ca_d2c_after_feedback.txt", "r", encoding="utf-8") as file:
+        with open("../prompts//ca_d2c_after_feedback.txt", "r", encoding="utf-8") as file:
             d2c_prompt_icl_gpt = file.read()
         d2c_prompt_icl_gpt = d2c_prompt_icl_gpt.format(
             initial_instruction=memory['initial_prompt'],
@@ -103,7 +103,7 @@ class ChartAgent:
         if use_claude:
             # D2C Task post feedback (feedback from claude)
             d2c_prompt_icl_claude = None
-            with open("prompts/ca_d2c_after_feedback.txt", "r", encoding="utf-8") as file:
+            with open("../prompts//ca_d2c_after_feedback.txt", "r", encoding="utf-8") as file:
                 d2c_prompt_icl_claude = file.read()
             d2c_prompt_icl_claude = d2c_prompt_icl_claude.format(
                 initial_instruction=memory['initial_prompt'],
