@@ -76,9 +76,9 @@ The ChartUIE-8K (Chart User Interaction Emulation) evaluation set can be found i
 
 Throughout the `main.ipynb` workflow, an end-to-end example is generated and stored in the `memory.json` file at the final stage of execution. The keys containing specific numbers refer to different modules:
 
-- Keys containing '01' to '03' Module 1
-- Keys containing '04' to '09' Module 2
-- Keys containing '10' to '11' Module 3
+- Module 1: Keys from '01' to '03'
+- Module 2: Keys from '04' to '09'
+- Module 3: Keys from '10' to '11'
 
 <!-- 
 ## ChartAgent
