@@ -77,7 +77,9 @@ The ChartUIE-8K (Chart User Interaction Emulation) evaluation set can be found i
 Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and stored in the `memory.json` file at the final stage of execution. The keys containing specific numbers refer to different modules:
 
 - Module 1: 
+
     Decomposition of Query into Task, Purpose, and Task
+
     REQUEST
     ```
         "You are a data visualization expert.
@@ -100,6 +102,7 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
 
 - Module 2: 
     Query Specific Criteria Establishment
+
     REQUEST
     ```
         "You are a data visualization expert.
@@ -115,6 +118,7 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
             - Prioritize legibility and adhere to consistent textual criteria. Text elements, such as legends, titles, and labels, should be legible and easy to read, with sufficient contrast against the background. Consistent font size, style, and placement should be maintained to create a cohesive
         ...
     ```
+
     RESPONSE
     ```
         "To ensure a high-quality data visualization that effectively meets the specified requirements and serves the intended purpose, a comprehensive set of criteria must be developed. These criteria should focus on the essential chart components, considering user instructions, user requests, tasks, purpose, and the target audience. Here's a detailed and objective list of criteria for evaluating the given data visualization:
@@ -130,6 +134,7 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
     ```
 
     Binarization of query-Specific Criteria into Yes/No Questions
+
     REQUEST
     ```
         "You are an expert critic.
@@ -184,6 +189,7 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
     ```
 
     Evaluation of generated charts by answering Yes/No questions
+
     REQUEST
     ```
             "You are an expert evaluator (judge, critic) of the attached data visualization image.
@@ -257,7 +263,9 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
         '''
     ```
 - Module 3: 
+
     Association to actionable code-centric feedback
+
     REQUEST
     ```
     "You are an expert software engineer on the Quality Assurance team.
