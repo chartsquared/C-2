@@ -76,9 +76,9 @@ The ChartUIE-8K (Chart User Interaction Emulation) evaluation set can be found i
 
 Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and stored in the `memory.json` file at the final stage of execution. The keys containing specific numbers refer to different modules:
 
-- Module 1: 
+### Module 1: 
 
-    Decomposition of Query into Task, Purpose, and Task
+- Decomposition of Query into Task, Purpose, and Task
 
     REQUEST
     ```
@@ -100,8 +100,9 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
             "{"Task": "Comparison By Factor", "Purpose": "To visualize and compare the average N, P, K values for different crops, with a special focus on rice and wheat. This visualization aims to effectively illustrate the nutrient requirements of various crops, highlighting the differences between them.",  "Audience": "Agricultural researchers, farmers, and agronomists who are interested in understanding and comparing the nutrient needs of different crops, particularly rice and wheat."}"
     ```
 
-- Module 2: 
-    Query Specific Criteria Establishment
+### Module 2: 
+
+- Query Specific Criteria Establishment
 
     REQUEST
     ```
@@ -133,7 +134,7 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
            ..."
     ```
 
-    Binarization of query-Specific Criteria into Yes/No Questions
+- Binarization of query-Specific Criteria into Yes/No Questions
 
     REQUEST
     ```
@@ -188,7 +189,7 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
         ...
     ```
 
-    Evaluation of generated charts by answering Yes/No questions
+- Evaluation of generated charts by answering Yes/No questions
 
     REQUEST
     ```
@@ -262,9 +263,9 @@ Throughout the `src/main.ipynb` workflow, an end-to-end example is generated and
             }
         '''
     ```
-- Module 3: 
+### Module 3: 
 
-    Association to actionable code-centric feedback
+- Association to actionable code-centric feedback
 
     REQUEST
     ```
