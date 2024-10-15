@@ -100,7 +100,7 @@ Throughout the `src/main.ipynb` workflow, a complete end-to-end example is gener
             "{"Task": "Comparison By Factor", "Purpose": "To visualize and compare the average N, P, K values for different crops, with a special focus on rice and wheat. This visualization aims to effectively illustrate the nutrient requirements of various crops, highlighting the differences between them.",  "Audience": "Agricultural researchers, farmers, and agronomists who are interested in understanding and comparing the nutrient needs of different crops, particularly rice and wheat."}"
     ```
 
-- Query Specific Criteria Establishment
+- Query Specific Criteria Establishment with Basic Criteria
 
     REQUEST
     ```
