@@ -1,112 +1,189 @@
 {
     "evaluation": [
         {
-            "Q1": "Does the chart use a bar format to facilitate easy comparisons of N, P, K values across different crops?",
+            "Q1": "Does the chart use a bar format to effectively compare average nutrient values across different crops?",
             "A1": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Keep the bar format as it effectively facilitates comparison."
+                    "improvement": "Maintain the bar chart format as it effectively compares the nutrient values."
                 }
             ]
         },
         {
-            "Q2": "Are the bars for 'rice' distinctly colored to highlight them effectively compared to other crops?",
+            "Q2": "Are the 'rice' values clearly highlighted with distinct colors from other crops?",
             "A2": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Continue using distinct colors for 'rice' to make it standout."
+                    "improvement": "Continue using distinct colors to highlight 'rice' values for clarity."
                 }
             ]
         },
         {
-            "Q3": "Is the color scheme used in the chart accessible to those with color vision deficiencies, ensuring all crops are easily distinguishable?",
+            "Q3": "Are text annotations included for 'rice' and 'wheat', showing their average N, P, K values prominently?",
             "A3": "NO",
-            "Q_type": "Subjective",
-            "feedback": [
-                {
-                    "tag": "EDIT",
-                    "improvement": "Use color schemes that are accessible for color vision deficiencies, perhaps by adjusting contrast or using patterns."
-                }
-            ]
-        },
-        {
-            "Q4": "Do text annotations for 'rice' and 'wheat' display their average N, P, K values clearly and legibly?",
-            "A4": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Add clear and legible annotations for 'rice' and 'wheat' displaying their average N, P, K values."
+                    "tag": "ADD",
+                    "improvement": "Include text annotations for 'wheat' to ensure both 'rice' and 'wheat' are labeled with average values."
                 }
             ]
         },
         {
-            "Q5": "Does the chart maintain clarity and readability, avoiding excessive visual clutter and unnecessary embellishments?",
-            "A5": "NO",
+            "Q4": "Is a color palette used that accommodates viewers with color vision deficiencies and maintains a consistent scheme across nutrient data?",
+            "A4": "NO",
             "Q_type": "Subjective",
             "feedback": [
                 {
                     "tag": "EDIT",
-                    "improvement": "Reduce text overlap on the x-axis for better readability."
+                    "improvement": "Consider using a color-blind-friendly palette to ensure accessibility."
                 }
             ]
         },
         {
-            "Q6": "Are the axis titles and labels informative and concise, clearly explaining the nutrient types and respective units?",
+            "Q5": "Are the axes clearly labeled, with the Y-axis showing 'Average Nutrient Values' and the X-axis representing 'Crops'?",
+            "A5": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Keep clear axis labels for easy identification and understanding."
+                }
+            ]
+        },
+        {
+            "Q6": "Does the Y-axis scale accommodate all data points comfortably, without truncation of any values?",
             "A6": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Keep the concise axis titles and labels."
+                    "improvement": "The Y-axis scale effectively accommodates all data points."
                 }
             ]
         },
         {
-            "Q7": "Is a legend included only if necessary to enhance understanding, ensuring the chart is mostly self-explanatory?",
+            "Q7": "Is there a legend included to explain any color codings used in the chart?",
             "A7": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "ADD",
-                    "improvement": "Add a legend to explain color coding, especially since 'rice' is highlighted."
+                    "improvement": "Include a legend to explain the color coding for viewer clarity."
                 }
             ]
         },
         {
-            "Q8": "Are the bars grouped or sequenced in a manner that facilitates an intuitive comparison of nutrient values across crops?",
+            "Q8": "Does the chart include grid lines to enhance readability without overwhelming the viewer?",
             "A8": "NO",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "ADD",
+                    "improvement": "Add subtle grid lines to help viewers read the values more easily."
+                }
+            ]
+        },
+        {
+            "Q9": "Is the font style professional and suitable for an academic and practical audience, ensuring legibility?",
+            "A9": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Keep the current font style as it is professional and legible."
+                }
+            ]
+        },
+        {
+            "Q10": "Is the font size used in annotations and axis labels appropriate for clarity and readability?",
+            "A10": "NO",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "EDIT",
-                    "improvement": "Consider rearranging or grouping bars for more intuitive comparisons between crops."
+                    "improvement": "Increase the font size of annotations and labels for better readability."
                 }
             ]
         },
         {
-            "Q9": "Is the axis scaling appropriate to highlight differences in nutrient values without cramming or sparsity?",
-            "A9": "YES",
+            "Q11": "Does the chart include a concise and informative title that reflects the comparison of crop nutrient requirements?",
+            "A11": "YES",
             "Q_type": "Fact-checking",
             "feedback": [
                 {
                     "tag": "RETAIN",
-                    "improvement": "Keep the current axis scaling as it effectively highlights differences in values."
+                    "improvement": "Retain the informative titles that clarify the focus of each chart."
                 }
             ]
         },
         {
-            "Q10": "Does the chart align with the expectations of agricultural researchers, farmers, and agronomists, effectively communicating the intended insights?",
-            "A10": "NO",
+            "Q12": "Is the layout of the bars grouped rather than stacked, unless stacking improves understanding?",
+            "A12": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Continue using a grouped layout to effectively compare nutritional values."
+                }
+            ]
+        },
+        {
+            "Q13": "Are the bars spaced appropriately to avoid clutter or unnecessary empty space?",
+            "A13": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Bar spacing is appropriate and should be maintained for clarity."
+                }
+            ]
+        },
+        {
+            "Q14": "Are unnecessary background elements minimized to maintain focus on the data?",
+            "A14": "YES",
+            "Q_type": "Fact-checking",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Retain the clean background to keep focus on the data."
+                }
+            ]
+        },
+        {
+            "Q15": "Does the chart effectively communicate the intended purpose of comparing nutrient needs, with a focus on highlighting 'rice'?",
+            "A15": "YES",
             "Q_type": "Subjective",
             "feedback": [
                 {
-                    "tag": "EDIT",
-                    "improvement": "Improve clarity by addressing text overlap and ensuring annotations are legible to better meet audience expectations."
+                    "tag": "RETAIN",
+                    "improvement": "The visual effectively highlights 'rice' and communicates its purpose."
+                }
+            ]
+        },
+        {
+            "Q16": "Is the chart tailored aesthetically for an audience of agronomists, farmers, and agricultural researchers?",
+            "A16": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Aesthetic choices are appropriate for the intended academic audience."
+                }
+            ]
+        },
+        {
+            "Q17": "Does the chart include sufficient detail for informed decision-making while maintaining simplicity?",
+            "A17": "YES",
+            "Q_type": "Subjective",
+            "feedback": [
+                {
+                    "tag": "RETAIN",
+                    "improvement": "Sufficient detail is included, maintaining simplicity for easy understanding."
                 }
             ]
         }
