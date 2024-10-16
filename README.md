@@ -7,6 +7,7 @@
 - [Requirements](#requirements)
 - [ChartAF](#chartaf)
 - [ChartUIE-8K](#chartuie-8k)
+- [ChartAF In-context Tuning Process Example](#chartaf-in-context-tuning-process-example)
 
 ## Project Site
 
