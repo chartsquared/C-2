@@ -128,7 +128,7 @@ class AutoFeedback:
         
     def semantic_decompose(self, data):
         task = {}
-        with open('../prompts/purpose_self_reflection.json', 'r', encoding="utf-8") as file:
+        with open('../prompts/tasks.json', 'r', encoding="utf-8") as file:
             tasks = json.load(file)
             task["Show External Context"] = tasks["Type"]["Recall"]["Subtype"]["External context"]["description"]
             task["Show Confirmation"] = tasks["Type"]["Recall"]["Subtype"]["Confirmation"]["description"]
