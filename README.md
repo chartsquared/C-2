@@ -358,7 +358,16 @@ Throughout the `src/main.ipynb` workflow, a complete end-to-end example is gener
     '''
     ```
 
-
+## Reference
+```
+@inproceedings{
+koh2024c2,
+      title={$C^2$: Scalable Auto-Feedback for LLM-based Chart Generation}, 
+      author={Woosung Koh and Jang Han Yoon and MinHyung Lee and Youngjin Song and Jaegwan Cho and Jaehyun Kang and Taehyeon Kim and Se-young Yun and Youngjae Yu and Bongshin Lee}
+booktitle={The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL (NAACL)},
+year={2025},
+} 
+```
 <!-- 
 ## ChartAgent
 
