@@ -1,6 +1,9 @@
-# C²: Scalable Auto-Feedback for LLM-based Chart Generation
+# [NAACL 2025 Oral] C²: Scalable Auto-Feedback for LLM-based Chart Generation
 
 ![](assets/overview.png)
+
+## Updates
+[2025.03.08] C² is accepted as an Oral Presentation in NAACL 2025
 
 ## Contents 
 - [Project Site](#project-site)
