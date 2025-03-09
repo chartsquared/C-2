@@ -12,6 +12,10 @@
 - [ChartUIE-8K](#chartuie-8k)
 - [ChartAF In-context Tuning Process Example](#chartaf-in-context-tuning-process-example)
 
+## Contact
+- Woosung (Reiss) Koh: reiss.koh@gmail.com (https://github.com/reiss-koh)
+- Janghan Yoon: jeffrobot99@gmail.com
+
 ## Project Site
 
 Qualitative demonstration of the pre- and post-feedback of ChartAF is provided in [our project site](https://chartsquared.github.io/).
